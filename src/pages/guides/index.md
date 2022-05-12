@@ -29,6 +29,4 @@ The refresh token grant type is automatically added to OAuth clients created aft
 
 ## JWT
 
-A JWT client is best if you are creating an application that needs to programmatically authenticate calls to 
-the Adobe Analytics APIs. A new JWT token can be generated whenever the old one is about to expire so your application
-can continue to make API calls.
+A JWT client is best if you are creating an application that needs to programmatically authenticate calls to the Adobe Analytics APIs. A new JWT token can be generated whenever the old one is about to expire so your application can continue to make API calls.
