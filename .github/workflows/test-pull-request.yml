@@ -1,23 +1,20 @@
 ---
 ###########################
-###########################
 ## Pull request testing ##
 ###########################
-###########################
 name: CI
-
-#
 # Documentation:
 # - Workflow syntax: https://help.github.com/en/articles/workflow-syntax-for-github-actions
 # - SuperLinter: https://github.com/github/super-linter
 # - Markdown linter: https://github.com/DavidAnson/markdownlint
+# - Link validation: https://github.com/remarkjs/remark-validate-links
 
 ######################################################
 # Start the job on a pull request to the main branch #
 ######################################################
 on:
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   validate:
@@ -61,5 +58,3 @@ jobs:
         # Run build step only if link check is successful
         if: ${{ success() }}
         run: npm run build
-
-
