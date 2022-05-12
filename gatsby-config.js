@@ -74,7 +74,7 @@ module.exports = {
             path: '/guides/jwt_authentication/'
           }
         ]
-      }
+      },
       {
         title: 'Reporting API',
         path: '/guides/reporting_api/',
