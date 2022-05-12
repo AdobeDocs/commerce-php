@@ -35,7 +35,7 @@ Lorem ipsum dolor sit amet
 
 <DiscoverBlock slots="link, text"/>
 
-[Extension Developer](extension-developer/)
+[Extension Developer](extensions/)
 
 Lorem ipsum dolor sit amet
 
@@ -53,7 +53,7 @@ Lorem ipsum dolor sit amet
 
 <DiscoverBlock slots="link, text"/>
 
-[Coding Standard](coding-standard/)
+[Coding Standard](coding-standards/)
 
 Lorem ipsum dolor sit amet
 
