@@ -4,7 +4,7 @@
 ###########################
 name: CI
 # Documentation:
-# - Workflow syntax: https://help.github.com/en/articles/workflow-syntax-for-github-actions
+# - Workflow: https://help.github.com/en/articles/workflow-syntax-for-github-actions
 # - SuperLinter: https://github.com/github/super-linter
 # - Markdown linter: https://github.com/DavidAnson/markdownlint
 # - Link validation: https://github.com/remarkjs/remark-validate-links
