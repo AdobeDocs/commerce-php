@@ -1,21 +1,19 @@
 {
-  "private": true,
-  "name": "dev-site-documentation-template",
-  "version": "1.0.0",
+  "name": "commerce-php",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AdobeDocs/dev-site-documentation-template"
-  },
-  "author": {
-    "name": "Stephan Ringel",
-    "url": "https://github.com/icaraps"
+    "url": "https://github.com/AdobeDocs/commerce-php"
   },
   "dependencies": {
     "@adobe/gatsby-theme-aio": "^4.2.1",
     "gatsby": "^4.13.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
+  },
+  "devDependencies": {
+    "remark-cli": "^10.0.1",
+    "remark-validate-links": "^11.0.2"
   },
   "scripts": {
     "start": "gatsby build && gatsby serve",
@@ -24,6 +22,12 @@
     "dev:https": "gatsby develop --https --host localhost.corp.adobe.com --port 9000",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "test:links": "remark src/pages --quiet --frail"
+  },
+  "remarkConfig": {
+    "plugins": [
+      "remark-validate-links"
+    ]
   }
 }
