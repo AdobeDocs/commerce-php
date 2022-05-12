@@ -14,6 +14,8 @@ There are multiple type of authentication for authenticating with the analytics 
 about authenticating with Adobe's APIs is located here. Specific information related to authenticating
 with the analytics APIs is available in the sections below
 
+[test](migrating/inde.md)
+
 ## OAuth
 
 Use an OAuth client if you are creating an application that requires an end use to authenticate before
