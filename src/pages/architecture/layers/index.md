@@ -5,8 +5,6 @@ description: Learn about layered application design and details about each layer
 
 # Architectural layers overview
 
-## Magento as layered software
-
 At its highest level, Magento's product architecture consists of the core product code plus optional *modules*. These optional modules enhance or replace the basic product code.
 
 If you are substantially customizing the basic Magento product, [module](https://glossary.magento.com/module) development will be your central focus. Modules organize code that supports a particular task or feature. A module can include code to change the look-and-feel of your [storefront](https://glossary.magento.com/storefront) as well as its fundamental behavior.

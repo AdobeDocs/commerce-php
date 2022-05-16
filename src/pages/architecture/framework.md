@@ -50,9 +50,9 @@ lib/
 {:.bs-callout-tip}
 The `vendor/magento/framework` directory maps to the `Magento\Framework` [namespace](https://glossary.magento.com/namespace).
 
-## Highlights of Magento Framework
+## Framework highlights
 
-The Magento Framework (`lib/internal/Magento/Framework/`) provides a robust range of functionality. If you are an [extension](https://glossary.magento.com/extension) developer, you may be interested in this subset of Framework namespaces.
+The Commerce Framework (`lib/internal/Magento/Framework/`) provides a robust range of functionality. If you are an [extension](https://glossary.magento.com/extension) developer, you may be interested in this subset of Framework namespaces.
 
 |Namespace|Purpose|
 |--- |--- |

@@ -5,7 +5,7 @@ description: Learn about the critical role that modules play in the Commerce fra
 
 # Module overview
 
-## What is a Magento module? {#arch-modules-overview}
+## What is a module?
 
 A *module* is a logical group -- that is, a directory containing blocks, controllers, helpers, models -- that are related to a specific business feature. In keeping with Magento's commitment to optimal modularity, a [module](https://glossary.magento.com/module) encapsulates one feature and has minimal dependencies on other modules.
 
@@ -35,7 +35,7 @@ If you are creating a new module for distribution, create the `app/code/<vendor>
 
 Inside this folder, you will find all the code related to this module, including the `etc/module.xml` file, which contains the name and version of the module, as well as any dependencies.
 
-### Module location conventions {#m2arch-module-conventions-location}
+### Module location conventions
 
 The following table shows the *recommended* location within the Magento file system for specific components.
 

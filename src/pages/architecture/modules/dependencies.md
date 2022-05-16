@@ -5,8 +5,6 @@ description: Learn about the two types of module dependencies in the Commerce fr
 
 # Module dependencies
 
-## Overview {#m2devgde-moddep-intro}
-
 A *software dependency* identifies  one software component's reliance on another for proper functioning. A core principle of Magento architecture is the **minimization of software dependencies**. Instead of being closely interrelated with other modules, modules are optimally designed to be *loosely coupled*. Loosely coupled modules require little or no knowledge of other modules to perform their tasks.
 
 Each Magento [module](https://glossary.magento.com/module) is responsible for a unique feature. In practice, this means that:
@@ -19,7 +17,7 @@ Each Magento [module](https://glossary.magento.com/module) is responsible for a 
 
 *  Removing or disabling a module does not result in disabling other modules.
 
-## Two types of dependencies {#m2devgde-moddep-declare-dep}
+## Dependency types
 
 There are two types of Magento [module](https://glossary.magento.com/module) dependencies: hard and soft.
 
@@ -105,7 +103,7 @@ Although Magento architecture favors loosely coupled software components, module
 {:.bs-callout-tip}
 Note: You can lose the historical information contained in a module if the module is removed or disabled. We recommend alternative storage of module information before you remove or disable a module.
 
-## Inappropriate dependencies {#m2devgde-moddep-inapp-dep}
+## Inappropriate dependencies
 
 Avoid creating these dependencies:
 
@@ -113,18 +111,18 @@ Avoid creating these dependencies:
 *  Undeclared
 *  Incorrect
 
-## Dependencies between modules in different presentation layers {#m2devgde-moddep-diff-layer}
+## Dependencies between modules in different presentation layers
 
 You can build dependencies between the modules belonging to different layers.
 
-## Dependencies in the Framework layer {#m2devgde-moddep-frmwk-layer}
+## Dependencies in the Framework layer
 
 A module belonging to the Magento Framework can be used in the application layer by an explicit dependency.
 
 {:.bs-callout-tip}
 In this case, using interfaces is preferable to using classes. You can build dependencies between classes in the Magento Framework even if they belong to different modules.
 
-## Dependencies in the application layer {#m2devgde-moddep-app-layer}
+## Dependencies in the application layer
 
 A module belonging to the application layer cannot be used in the Magento Framework.
 

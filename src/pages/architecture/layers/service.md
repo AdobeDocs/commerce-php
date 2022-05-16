@@ -5,8 +5,6 @@ description: Learn about the architectural service layer of the Commerce framewo
 
 # Service layer
 
-## What is a Service layer?
-
 The service layer provides a bridge between the presentation layer and the domain layer and resource-specific data.
 This is implemented using *service contracts*, which are defined using [PHP](https://glossary.magento.com/php) interfaces.
 

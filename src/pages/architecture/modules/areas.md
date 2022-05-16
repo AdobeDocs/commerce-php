@@ -5,13 +5,11 @@ description: Learn what an "area" is in the context of Commerce framework module
 
 # Modules and areas
 
-## Overview {#m2arch-module-areas-overview}
-
 An *area* is a logical component that organizes code for optimized request processing. Magento uses areas to streamline web service calls by loading only the dependent code for the specified area.  Each of the default areas defined by Magento can contain completely different code on how to process URLs and requests.
 
 For example, if you are invoking a REST web service call, rather than load all the code related to generating user [HTML](https://glossary.magento.com/html) pages, you can specify a separate area that loads code whose scope is limited to answering  REST calls.
 
-### Magento area types
+## Area types
 
 Magento is organized into these main areas:
 
@@ -49,7 +47,7 @@ You can enable or disable an area within a module. If this module is enabled, it
 
 *  Areas are registered in the [Dependency Injection](https://glossary.magento.com/dependency-injection) framework `di.xml` file.
 
-### Note about Magento request processing
+### Note about request processing
 
 Magento processes a URL request by first stripping off the base URL. The first path segment of the remaining URL identifies the request area.
 

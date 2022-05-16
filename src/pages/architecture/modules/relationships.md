@@ -5,8 +5,6 @@ description: Learn about the different types of relationships thay modules have 
 
 # Module relationships
 
-## Overview {#m2arch-module-relationships-overview}
-
 Understanding how one [module](https://glossary.magento.com/module) relates to another helps determine how it reacts to changes in that module.
 
 A single module can have the following types of relationships with another module:
