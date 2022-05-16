@@ -7,7 +7,7 @@ description: Learn about how extensibility has been designed to maximize your ab
 
 Product *extensibility* describes how easy it is to expand a product's feature set. An extensible product has been designed from its earliest  stages for customization and enhancement. Extensible products are designed for ease in expanding your installation's feature set, enriching current features, and integrating with third-party software.
 
-Maximizing extensibility has been our goal through all aspects of development. Core tasks such as shipping are packaged as discrete modules, and you expand your features by installing modules that you either buy from third-party vendors or create yourself. While logic specific to each [shipping carrier](https://glossary.magento.com/shipping-carrier) is packaged in a discrete module, you can easily add or delete shipping providers by simply adding or deleting modules. The Commerce framework provides common logic to control routing and other core application functions.
+Maximizing extensibility has been our goal through all aspects of development. Core tasks such as shipping are packaged as discrete modules, and you expand your features by installing modules that you either buy from third-party vendors or create yourself. While logic specific to each [shipping carrier](https://glossary.magento.com/shipping-carrier) is packaged in a discrete module, you can easily add or delete shipping providers by simply adding or deleting modules. The Adobe Commerce and Magento Open Source framework (Commerce framework) provides common logic to control routing and other core application functions.
 
 ## What makes a product extensible?
 
