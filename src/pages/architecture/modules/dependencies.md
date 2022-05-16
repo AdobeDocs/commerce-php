@@ -138,7 +138,7 @@ At a high level, there are three main steps for managing module dependencies:
 
 1. (*Optional*) Define the desired load order of config files and `.css` files in the `module.xml` file.
 
-Example: Module A declares a dependency upon Module B. Thus, in Module A's `module.xml` file, Module B is listed in the `<sequence>` list, so that B's files are loaded before A's. Additionally, you must declare a dependency upon Module B in A's `composer.json` file. Furthermore, in the [deployment configuration]({{page.baseurl}}/config-guide/config/config-php.html), Modules A and B must both be defined as enabled.
+Example: Module A declares a dependency upon Module B. Thus, in Module A's `module.xml` file, Module B is listed in the `<sequence>` list, so that B's files are loaded before A's. Additionally, you must declare a dependency upon Module B in A's `composer.json` file. Furthermore, in the [deployment configuration](https://devdocs.magento.com/guides/v2.4/config-guide/config/config-php.html), Modules A and B must both be defined as enabled.
 
 `etc/module.xml`
 
@@ -168,4 +168,4 @@ return [
 {:.ref-header}
 Related topics
 
-[Module overview]({{page.baseurl}}/architecture/archi_perspectives/components/modules/mod_intro.html)
+[Module overview](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_intro.html)

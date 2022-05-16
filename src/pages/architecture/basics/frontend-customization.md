@@ -96,10 +96,10 @@ Related topics
 
 <!-- Link Definitions -->
 
-[Extensibility and modularity]:{{page.baseurl}}/architecture/extensibility.html
-[Global extensibility features]: {{page.baseurl}}/architecture/global_extensibility_features.html
-[Admin Pattern Library]: {{page.baseurl}}/pattern-library/bk-pattern.html
-[Overview of UI components]: {{page.baseurl}}/ui_comp_guide/bk-ui_comps.html
-[Frontend Developer Guide]: {{page.baseurl}}/frontend-dev-guide/bk-frontend-dev-guide.html
-[JavaScript Developer Guide]: {{page.baseurl}}/javascript-dev-guide/bk-javascript-dev-guide.html
+[Extensibility and modularity]:https://devdocs.magento.com/guides/v2.4/architecture/extensibility.html
+[Global extensibility features]: https://devdocs.magento.com/guides/v2.4/architecture/global_extensibility_features.html
+[Admin Pattern Library]: https://devdocs.magento.com/guides/v2.4/pattern-library/bk-pattern.html
+[Overview of UI components]: https://devdocs.magento.com/guides/v2.4/ui_comp_guide/bk-ui_comps.html
+[Frontend Developer Guide]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html
+[JavaScript Developer Guide]: https://devdocs.magento.com/guides/v2.4/javascript-dev-guide/bk-javascript-dev-guide.html
 [Commerce Marketplace]: https://marketplace.magento.com/

@@ -9,16 +9,16 @@ Magento incorporates the core architectural principles of object-oriented, PHP-b
 
 The following discussion focuses on how these topics apply directly to Magento:
 
-*  [Magento technology stack]({{page.baseurl}}/install-gde/system-requirements.html)
-*  [Magento View Model]({{page.baseurl}}/extension-dev-guide/view-models.html)
-*  [Extensibility]({{page.baseurl}}/architecture/extensibility.html)
-*  [Modularity]({{page.baseurl}}/architecture/extensibility.html#modularity)
-*  [Event-driven architecture]({{page.baseurl}}/extension-dev-guide/events-and-observers.html)
-*  [Security]({{page.baseurl}}/architecture/security_intro.html)
+*  [Magento technology stack](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html)
+*  [Magento View Model](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/view-models.html)
+*  [Extensibility](https://devdocs.magento.com/guides/v2.4/architecture/extensibility.html)
+*  [Modularity](https://devdocs.magento.com/guides/v2.4/architecture/extensibility.html#modularity)
+*  [Event-driven architecture](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/events-and-observers.html)
+*  [Security](https://devdocs.magento.com/guides/v2.4/architecture/security_intro.html)
 
 {:.ref-header}
 Related topics
 
-[Architectural diagrams]({{page.baseurl}}/architecture/archi_perspectives/arch_diagrams.html)
+[Architectural diagrams](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/arch_diagrams.html)
 
-[Versioning]({{page.baseurl}}/extension-dev-guide/versioning/)
+[Versioning](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/versioning/)

@@ -16,7 +16,7 @@ The Magento platform and components are explained from the perspective of severa
 -  Installers
 -  Integrators
 
-More detailed information about building online stores, using the Magento APIs, installing, configuring, and extending the platform is included in other books in our [Magento library]({{site.baseurl}}/index.html).
+More detailed information about building online stores, using APIs, installing, configuring, and extending the platform is included in other sections of the [developer guide](https://devdocs.magento.com).
 
 <TextBlock slots="image, heading, text, links" width="50%" />
 

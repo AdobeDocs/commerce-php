@@ -74,11 +74,11 @@ Presentation layer components make calls to the service layer, which in turn sen
 {:.ref-header}
 Related topics
 
-[Architectural diagrams]({{page.baseurl}}/architecture/archi_perspectives/arch_diagrams.html)
+[Architectural diagrams](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/arch_diagrams.html)
 
-[Architectural layers overview]({{page.baseurl}}/architecture/archi_perspectives/ALayers_intro.html)
+[Architectural layers overview](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/ALayers_intro.html)
 
 <!-- Link definitions -->
-[Frontend Developer Guide]: {{page.baseurl}}/frontend-dev-guide/bk-frontend-dev-guide.html
-[GraphQL Developer Guide]: {{ page.baseurl }}/graphql/
+[Frontend Developer Guide]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html
+[GraphQL Developer Guide]: https://devdocs.magento.com/guides/v2.4/graphql/
 [PWA Studio docs]: http://pwastudio.io

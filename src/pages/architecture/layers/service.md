@@ -41,9 +41,9 @@ The service contract of a [module](https://glossary.magento.com/module) is defin
 
 This directory contains:
 
-*  Service interfaces in the `/Api` [namespace](https://glossary.magento.com/namespace) of the module ([Catalog API][catalog-api]).
+*  Service interfaces in the `/Api` [namespace](https://glossary.magento.com/namespace) of the module ([Catalog API](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Api)).
 
-*  Data (or *entity*) interfaces in the `Api/Data` directory ([Catalog API/Data][catalog-api-data]).
+*  Data (or *entity*) interfaces in the `Api/Data` directory ([Catalog API/Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Api/Data)).
    Data entities* are data structures passed to and returned from service interfaces.
 
    Files in the data directory contain `get()` and `set()` methods for entries in the entity table and extension attributes.
@@ -72,8 +72,5 @@ However, if the client code uses the interface definition only, no class change 
 {:.ref-header}
 Related topics
 
-*  [Architectural diagrams]({{page.baseurl}}/architecture/archi_perspectives/arch_diagrams.html)
-*  [Architectural layers overview]({{page.baseurl}}/architecture/archi_perspectives/ALayers_intro.html)
-
-[catalog-api]: {{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Catalog/Api
-[catalog-api-data]: {{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Catalog/Api/Data
+*  [Architectural diagrams](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/arch_diagrams.html)
+*  [Architectural layers overview](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/ALayers_intro.html)

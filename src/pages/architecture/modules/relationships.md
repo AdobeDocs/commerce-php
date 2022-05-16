@@ -48,4 +48,4 @@ If module A replaces module B, it needs to be able to do so in such a way that o
 {:.ref-header}
 Related topics
 
-[Module overview]({{page.baseurl}}/architecture/archi_perspectives/components/modules/mod_intro.html)
+[Module overview](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_intro.html)

@@ -19,7 +19,7 @@ The purpose of a module is to provide specific product features by implementing 
 
 ## Module components
 
-A module is a directory that contains the PHP and [XML](https://glossary.magento.com/xml) files (blocks, controllers, helpers, models) that are related to a specific business feature, such as Shipping. Specifically, a Magento module is composed of these software components: [themes]({{page.baseurl}}/frontend-dev-guide/themes/theme-overview.html), [libraries]({{page.baseurl}}/architecture/archi_perspectives/third-party-libs.html), and [language packages]({{page.baseurl}}/frontend-dev-guide/translations/xlate.html#m2devgde-xlate-languagepack).
+A module is a directory that contains the PHP and [XML](https://glossary.magento.com/xml) files (blocks, controllers, helpers, models) that are related to a specific business feature, such as Shipping. Specifically, a Magento module is composed of these software components: [themes](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/themes/theme-overview.html), [libraries](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/third-party-libs.html), and [language packages](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/xlate.html#m2devgde-xlate-languagepack).
 
 ## Module locations
 
@@ -69,11 +69,11 @@ Related topics
 
 <!-- Link Definitions  -->
 [Github repo]: https://github.com/magento/magento2/tree/2.3/app/code/Magento
-[Module dependencies]: {{page.baseurl}}/architecture/archi_perspectives/components/modules/mod_depend.html
-[Modules and areas]: {{page.baseurl}}/architecture/archi_perspectives/components/modules/mod_and_areas.html
-[Module location and naming conventions]: {{page.baseurl}}/architecture/archi_perspectives/components/modules/mod_intro.html
-[PHP Developer Guide]: {{page.baseurl}}/extension-dev-guide/bk-extension-dev-guide.html
-[Frontend Developer Guide]: {{page.baseurl}}/frontend-dev-guide/bk-frontend-dev-guide.html
-[themes]: {{page.baseurl}}/frontend-dev-guide/themes/theme-overview.html
-[libraries]: {{page.baseurl}}/architecture/archi_perspectives/third-party-libs.html
-[language packages]: {{page.baseurl}}/frontend-dev-guide/translations/xlate.html#m2devgde-xlate-languagepack
+[Module dependencies]: https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_depend.html
+[Modules and areas]: https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_and_areas.html
+[Module location and naming conventions]: https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_intro.html
+[PHP Developer Guide]: https://devdocs.magento.com/guides/v2.4/extension-dev-guide/bk-extension-dev-guide.html
+[Frontend Developer Guide]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html
+[themes]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/themes/theme-overview.html
+[libraries]: https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/third-party-libs.html
+[language packages]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/xlate.html#m2devgde-xlate-languagepack

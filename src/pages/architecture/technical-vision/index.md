@@ -13,5 +13,5 @@ Learn more about the [Magento web API][].
 See the [Magento Coding Standards][] for information about writing clean, readable code.
 
 <!-- Link Definitions -->
-[Magento web API]: {{page.baseurl}}/get-started/bk-get-started-api.html
-[Magento Coding Standards]: {{page.baseurl}}/coding-standards/bk-coding-standards.html
+[Magento web API]: https://devdocs.magento.com/guides/v2.4/get-started/bk-get-started-api.html
+[Magento Coding Standards]: https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html

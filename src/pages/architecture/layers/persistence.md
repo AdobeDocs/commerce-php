@@ -33,8 +33,8 @@ Read more about writing [declarative XML schemas][].
 {:.ref-header}
 Related topics
 
-[Architectural diagrams]({{page.baseurl}}/architecture/archi_perspectives/arch_diagrams.html)
-[Architectural layers overview]({{page.baseurl}}/architecture/archi_perspectives/ALayers_intro.html)
+[Architectural diagrams](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/arch_diagrams.html)
+[Architectural layers overview](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/ALayers_intro.html)
 
 <!-- Link Definitions -->
-[declarative XML schemas]: {{ page.baseurl }}/extension-dev-guide/declarative-schema/db-schema.html
+[declarative XML schemas]: https://devdocs.magento.com/guides/v2.4/extension-dev-guide/declarative-schema/db-schema.html

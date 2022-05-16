@@ -39,11 +39,11 @@ The wider Magento ecosystem provides an extensive community and rich third-party
 
 ### Open-source software to create and manage extensions
 
-Magento is built on open-source technologies, created for the development community. For example, it uses [Composer](https://glossary.magento.com/composer) to manage dependencies. See [Technology Stack]({{page.baseurl}}/install-gde/system-requirements.html) for a complete list of technologies used.
+Magento is built on open-source technologies, created for the development community. For example, it uses [Composer](https://glossary.magento.com/composer) to manage dependencies. See [Technology Stack](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) for a complete list of technologies used.
 
 ### Coding standards
 
-Adherence to standard best practices for [PHP](https://glossary.magento.com/php) and [JavaScript](https://glossary.magento.com/javascript) code ensures that the code base is sound. Magento has adopted most of the PSR2 Coding Standards for PHP. See [Coding Standards]({{page.baseurl}}/coding-standards/bk-coding-standards.html) for more information.
+Adherence to standard best practices for [PHP](https://glossary.magento.com/php) and [JavaScript](https://glossary.magento.com/javascript) code ensures that the code base is sound. Magento has adopted most of the PSR2 Coding Standards for PHP. See [Coding Standards](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html) for more information.
 
 ### Upgrade and versioning strategies
 
@@ -97,19 +97,19 @@ See [Plug-ins][] in [PHP Developer Guide][] for information on declaring and pri
 {:.ref-header}
 Related topics
 
-[Architectural basics]({{page.baseurl}}/architecture/archi_perspectives/ABasics_intro.html)
+[Architectural basics](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/ABasics_intro.html)
 
-[Global features that support extensibility]({{page.baseurl}}/architecture/global_extensibility_features.html)
+[Global features that support extensibility](https://devdocs.magento.com/guides/v2.4/architecture/global_extensibility_features.html)
 
-[Ease of frontend customization]({{page.baseurl}}/architecture/frontend_custom_strategies.html)
+[Ease of frontend customization](https://devdocs.magento.com/guides/v2.4/architecture/frontend_custom_strategies.html)
 
-[Extensibility and modularity]({{page.baseurl}}/architecture/extensibility.html)
+[Extensibility and modularity](https://devdocs.magento.com/guides/v2.4/architecture/extensibility.html)
 
 <!-- Link definitions -->
-[PHP Developer Guide]: {{page.baseurl}}/extension-dev-guide/bk-extension-dev-guide.html
+[PHP Developer Guide]: https://devdocs.magento.com/guides/v2.4/extension-dev-guide/bk-extension-dev-guide.html
 [Commerce Marketplace]: https://marketplace.magento.com/
-[Technology Stack]: {{page.baseurl}}/install-gde/system-requirements.html
-[Plug-ins]: {{page.baseurl}}/extension-dev-guide/plugins.html
-[Service layer]: {{page.baseurl}}/architecture/archi_perspectives/service_layer.html
-[Getting Started with Magento Web APIs]: {{page.baseurl}}/get-started/bk-get-started-api.html
-[Coding Standards]: {{page.baseurl}}/coding-standards/bk-coding-standards.html
+[Technology Stack]: https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html
+[Plug-ins]: https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html
+[Service layer]: https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/service_layer.html
+[Getting Started with Magento Web APIs]: https://devdocs.magento.com/guides/v2.4/get-started/bk-get-started-api.html
+[Coding Standards]: https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html

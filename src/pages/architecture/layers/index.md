@@ -24,12 +24,12 @@ Layered application design offers many advantages, but users of Magento will app
 {:.ref-header}
 Related topics
 
-[Architectural diagrams]({{page.baseurl}}/architecture/archi_perspectives/arch_diagrams.html)
+[Architectural diagrams](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/arch_diagrams.html)
 
-[Presentation layer]({{page.baseurl}}/architecture/archi_perspectives/present_layer.html)
+[Presentation layer](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/present_layer.html)
 
-[Service layer]({{page.baseurl}}/architecture/archi_perspectives/service_layer.html)
+[Service layer](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/service_layer.html)
 
-[Domain layer]({{page.baseurl}}/architecture/archi_perspectives/domain_layer.html)
+[Domain layer](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/domain_layer.html)
 
-[Persistence layer]({{page.baseurl}}/architecture/archi_perspectives/persist_layer.html)
+[Persistence layer](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/persist_layer.html)
