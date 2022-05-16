@@ -45,7 +45,7 @@ module.exports = [
   },
   {
     title: "Coding standards",
-    path: "https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html",
+    path: "/architecture/coding-standards/",
   },
   {
     title: "Framework",
@@ -79,7 +79,7 @@ module.exports = [
     pages: [
       {
         title: "Web API",
-        path: "https://devdocs.magento.com/guides/v2.4/get-started/bk-get-started-api.html"
+        path: "/architecture/technical-vision/web-api/",
       }
     ],
   },
