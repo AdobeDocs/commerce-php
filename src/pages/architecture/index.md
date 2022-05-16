@@ -34,7 +34,7 @@ Review fundamental architectural principles of object-oriented, PHP-based applic
 
 ## Layers
 
-Learn about layered application design and details about each layer 
+Learn about layered application design and details about each layer
 
 -  [Learn more](layers/)
 
