@@ -5,9 +5,9 @@ description: Learn how the Adobe Secure Product Lifecycle has influenced the dev
 
 # Security
 
-The security of your data and digital experiences is our priority. To better protect Adobe Commerce and Magento Open Source installations from the physical layer up, we have implemented hundreds of processes and controls to help us comply with [industry-accepted standards][1], regulations, and certifications. To help protect installations from the software layer down, we build in security measures that are based on the [Adobe Secure Product Lifecyle][2].
+The security of your data and digital experiences is our priority. To better protect Adobe Commerce and Magento Open Source installations from the physical layer up, we have implemented hundreds of processes and controls to help us comply with [industry-accepted standards][1], regulations, and certifications. To help protect installations from the software layer down, we build in security measures that are based on the [Adobe Secure Product Lifecyle](https://www.adobe.com/security/engineering.html).
 
-Although there is no single way to eliminate all security risks, there are many steps you can take to harden your installations and make them a less attractive target for bad actors. The [Security Best Practices Guide][3] offers insight and practical guidelines to help protect all installations from security incidents.
+Although there is no single way to eliminate all security risks, there are many steps you can take to harden your installations and make them a less attractive target for bad actors. The [Security Best Practices Guide](https://www.adobe.com/content/dam/acom/en/security/pdfs/Adobe-Magento-Commerce-Best-Practices-Guide.pdf) offers insight and practical guidelines to help protect all installations from security incidents.
 
 ## Examples of built-in security measures
 
@@ -17,7 +17,7 @@ Magento has strengthened the hashing algorithms (SHA-256) used in password manag
 
 ### Improved prevention of cross-site scripting (XSS) attacks by making escaped data the default
 
-The Magento Framework has adopted conventions that regulate the escaping of data in output. These conventions include the ability to escape  output for [HTML](https://glossary.magento.com/html) pages (HTML, JSON, and JavaScript) and email. Where possible, escaping is transparent to client code. See [Security measures against XSS attacks](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/xss-protection.html) in the [Frontend](https://glossary.magento.com/frontend) Developer Guide.
+The Commerce framework has adopted conventions that regulate the escaping of data in output. These conventions include the ability to escape  output for [HTML](https://glossary.magento.com/html) pages (HTML, JSON, and JavaScript) and email. Where possible, escaping is transparent to client code. See [Security measures against XSS attacks](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/xss-protection.html) in the [Frontend](https://glossary.magento.com/frontend) Developer Guide.
 
 ### More flexible file system ownership and permissions
 
@@ -36,12 +36,3 @@ Magento safeguards your store from clickjacking attacks by using an X-Frame-Opti
 ### Use of non-default Admin URL
 
 A simple [Admin](https://glossary.magento.com/magento-admin) [URL](https://glossary.magento.com/url) (like `admin` or `backend`) makes it easy to target attacks on specific locations using automated password guessing. To prevent against this type of attack, Magento by default creates a random Admin URI when you install the product. The CLI command `php bin/magento info:adminuri` is provided so that you can  see the URI if you forget it. You can also use the CLI to change this URI.  Although the use of a non-default admin URL will not secure the site, its use will help prevent large-scale automated attacks. See [Display or change the Admin URI](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-adminurl.html) in Configuration Guide for more information.
-
-{:.ref-header}
-Related topics
-
-[Configuration Guide](https://devdocs.magento.com/guides/v2.4/config-guide/bk-config-guide.html)
-
-[1]: https://docs.magento.com/m2/ee/user_guide/stores/compliance-industry.html
-[2]: https://www.adobe.com/security/engineering.html
-[3]: https://www.adobe.com/content/dam/acom/en/security/pdfs/Adobe-Magento-Commerce-Best-Practices-Guide.pdf

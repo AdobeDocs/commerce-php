@@ -15,11 +15,11 @@ Magento provides several tools to help you significantly jumpstart the storefron
 
 *  Magento Blank [Theme](https://glossary.magento.com/theme)
 
-*  [Overview of UI components][]
+*  [Overview of UI components](https://devdocs.magento.com/guides/v2.4/ui_comp_guide/bk-ui_comps.html)
 
-*  [Admin Pattern Library][]
+*  [Admin Pattern Library](https://devdocs.magento.com/guides/v2.4/pattern-library/bk-pattern.html)
 
-See the [Frontend Developer Guide][] for information on creating your themes.
+See the [Frontend Developer Guide](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html) for information on creating your themes.
 
 ### Magento Blank theme
 
@@ -34,11 +34,11 @@ Using Magento standard coding and styling tools can help:
 
 This component [library](https://glossary.magento.com/library) contains standard reusable components for form features, such as fields and buttons, and navigation elements. The Magento UI library is a set of generic web components and Magento-specific patterns, which simplifies the process of Magento theme creation and customization.
 
-See [Overview of UI components][] for details about this library.
+See [Overview of UI components](https://devdocs.magento.com/guides/v2.4/ui_comp_guide/bk-ui_comps.html) for details about this library.
 
 ### Admin pattern library
 
-A *pattern library* is a collection of user interface (UI) design patterns that can be re-used in locations throughout your product installation. The [Admin Pattern Library][] defines examples of components that administrators working with the storefront can use.
+A *pattern library* is a collection of user interface (UI) design patterns that can be re-used in locations throughout your product installation. The [Admin Pattern Library](https://devdocs.magento.com/guides/v2.4/pattern-library/bk-pattern.html) defines examples of components that administrators working with the storefront can use.
 
 Form elements included in the [Admin](https://glossary.magento.com/magento-admin) pattern library include:
 
@@ -52,7 +52,7 @@ Users of the default Magento storefront encounter examples of these form element
 
 The Magento [Admin](https://glossary.magento.com/admin) Pattern library is built on the Less preprocessor and implemented as a [module](https://glossary.magento.com/module). You can download a free, current version of this module from [Commerce Marketplace](https://marketplace.magento.com/).
 
-See [Admin Pattern Library][] for more information on using this library.
+See [Admin Pattern Library](https://devdocs.magento.com/guides/v2.4/pattern-library/bk-pattern.html) for more information on using this library.
 
 ## Storefront customization levels
 
@@ -76,30 +76,6 @@ In addition to replacing CSS files, you might need to replace small amounts of H
 
 Delivering a sharply different shopping experience than the default Magento installation provides is a more substantial task. However, the tradeoff might be a more complicated experience integrating additional extensions into your installation in the future.
 
-{:.bs-callout-tip}
- Any customization of your storefront will work optimally, and provide the easiest path for later upgrades, if you follow the best practice of consistently compartmentalizing code by type. For example, keep all HTML in [PHTML](https://glossary.magento.com/phtml) files; keep all JavaScript in JavaScript files.
+<InlineAlert variant="success" slots="text"/>
 
-{:.ref-header}
-Related topics
-
-[Extensibility and modularity][]
-
-[Global extensibility features][]
-
-[Admin Pattern Library][]
-
-[Overview of UI components][]
-
-[Frontend Developer Guide][]
-
-[JavaScript Developer Guide][]
-
-<!-- Link Definitions -->
-
-[Extensibility and modularity]:https://devdocs.magento.com/guides/v2.4/architecture/extensibility.html
-[Global extensibility features]: https://devdocs.magento.com/guides/v2.4/architecture/global_extensibility_features.html
-[Admin Pattern Library]: https://devdocs.magento.com/guides/v2.4/pattern-library/bk-pattern.html
-[Overview of UI components]: https://devdocs.magento.com/guides/v2.4/ui_comp_guide/bk-ui_comps.html
-[Frontend Developer Guide]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html
-[JavaScript Developer Guide]: https://devdocs.magento.com/guides/v2.4/javascript-dev-guide/bk-javascript-dev-guide.html
-[Commerce Marketplace]: https://marketplace.magento.com/
+Any customization of your storefront will work optimally, and provide the easiest path for later upgrades, if you follow the best practice of consistently compartmentalizing code by type. For example, keep all HTML in [PHTML](https://glossary.magento.com/phtml) files; keep all JavaScript in JavaScript files.

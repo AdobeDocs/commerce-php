@@ -5,13 +5,11 @@ description: Learn about the critical role that modules play in the Commerce fra
 
 # Module overview
 
-## What is a module?
-
 A *module* is a logical group -- that is, a directory containing blocks, controllers, helpers, models -- that are related to a specific business feature. In keeping with Magento's commitment to optimal modularity, a [module](https://glossary.magento.com/module) encapsulates one feature and has minimal dependencies on other modules.
 
-Modules and themes are the units of customization in Magento. Modules provide business features, with supporting logic,  while themes strongly influence user experience and [storefront](https://glossary.magento.com/storefront) appearance. Both components have a life cycle that allows them to be installed, deleted, and disabled. From the perspective of both merchants and [extension](https://glossary.magento.com/extension) developers, modules are the central unit of Magento organization.
+Modules and themes are the units of customization in Commerce. Modules provide business features, with supporting logic,  while themes strongly influence user experience and [storefront](https://glossary.magento.com/storefront) appearance. Both components have a life cycle that allows them to be installed, deleted, and disabled. From the perspective of both merchants and [extension](https://glossary.magento.com/extension) developers, modules are the central unit of Magento organization.
 
-The Magento Framework provides a set of core logic: [PHP](https://glossary.magento.com/php) code, libraries, and the basic functions that are inherited by the modules and other components.
+The Commerce framework provides a set of core logic: [PHP](https://glossary.magento.com/php) code, libraries, and the basic functions that are inherited by the modules and other components.
 
 ## Purpose of a module
 
@@ -19,7 +17,11 @@ The purpose of a module is to provide specific product features by implementing 
 
 ## Module components
 
-A module is a directory that contains the PHP and [XML](https://glossary.magento.com/xml) files (blocks, controllers, helpers, models) that are related to a specific business feature, such as Shipping. Specifically, a Magento module is composed of these software components: [themes](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/themes/theme-overview.html), [libraries](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/third-party-libs.html), and [language packages](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/xlate.html#m2devgde-xlate-languagepack).
+A module is a directory that contains the PHP and [XML](https://glossary.magento.com/xml) files (blocks, controllers, helpers, models) that are related to a specific business feature, such as Shipping. Specifically, a module is composed of the following software components:
+
+-  [Themes](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/themes/theme-overview.html)
+-  [Libraries](libraries.md)
+-  [Language packs](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/xlate.html#m2devgde-xlate-languagepack)
 
 ## Module locations
 
@@ -54,26 +56,6 @@ We refer to a component's root directory as the top-level directory in which you
 
 Magento developers, administrators, and anyone building a Magento website will want to review all relevant topics surrounding their particular goals and use cases.
 
-See [PHP Developer Guide][] for specific instructions on extending modules.
+See [PHP Developer Guide](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/bk-extension-dev-guide.html) for specific instructions on extending modules.
 
-See [Frontend Developer Guide][] for information on implementing themes and other components.
-
-{:.ref-header}
-Related topics
-
-[Module dependencies][]
-
-[Modules and areas][]
-
-[Module location and naming conventions][]
-
-<!-- Link Definitions  -->
-[Github repo]: https://github.com/magento/magento2/tree/2.3/app/code/Magento
-[Module dependencies]: https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_depend.html
-[Modules and areas]: https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_and_areas.html
-[Module location and naming conventions]: https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_intro.html
-[PHP Developer Guide]: https://devdocs.magento.com/guides/v2.4/extension-dev-guide/bk-extension-dev-guide.html
-[Frontend Developer Guide]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html
-[themes]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/themes/theme-overview.html
-[libraries]: https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/third-party-libs.html
-[language packages]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/xlate.html#m2devgde-xlate-languagepack
+See [Frontend Developer Guide](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html) for information on implementing themes and other components.

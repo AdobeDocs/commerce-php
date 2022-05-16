@@ -70,8 +70,3 @@ catalog/product_compare/add = Magento/Catalog/Controller/Product/Compare/Add.php
 ```
 
 Note that only the **execute()** method of any given controller is executed.
-
-{:.ref-header}
-Related topics
-
-[Module overview](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_intro.html)

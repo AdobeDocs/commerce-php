@@ -71,6 +71,10 @@ module.exports = [
         title: "Module dependencies",
         path: "/architecture/modules/dependencies/",
       },
+      {
+        title: "Third-party libraries",
+        path: "/architecture/modules/libraries/",
+      },
     ],
   },
   {

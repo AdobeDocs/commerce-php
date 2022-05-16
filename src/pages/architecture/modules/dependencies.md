@@ -80,7 +80,8 @@ The `<sequence>` node of `app/code/<Vendor>/<Module>/etc/module.xml` file also c
   </module>
 ```
 
-{:.bs-callout-tip}
+<InlineAlert variant="success" slots="text"/>
+
 If a module uses code from another module, it should declare the dependency explicitly.
 
 ## Module install order
@@ -98,10 +99,11 @@ Although Magento architecture favors loosely coupled software components, module
 
 *  [PHP](https://glossary.magento.com/php) extensions
 
-*  libraries (either Magento Framework [library](https://glossary.magento.com/library) or third party libraries)
+*  libraries (either Commerce framework [library](https://glossary.magento.com/library) or third party libraries)
 
-{:.bs-callout-tip}
-Note: You can lose the historical information contained in a module if the module is removed or disabled. We recommend alternative storage of module information before you remove or disable a module.
+<InlineAlert variant="info" slots="text"/>
+
+You can lose the historical information contained in a module if the module is removed or disabled. We recommend alternative storage of module information before you remove or disable a module.
 
 ## Inappropriate dependencies
 
@@ -117,14 +119,15 @@ You can build dependencies between the modules belonging to different layers.
 
 ## Dependencies in the Framework layer
 
-A module belonging to the Magento Framework can be used in the application layer by an explicit dependency.
+A module belonging to the Commerce framework can be used in the application layer by an explicit dependency.
 
-{:.bs-callout-tip}
-In this case, using interfaces is preferable to using classes. You can build dependencies between classes in the Magento Framework even if they belong to different modules.
+<InlineAlert variant="success" slots="text"/>
+
+In this case, using interfaces is preferable to using classes. You can build dependencies between classes in the Commerce framework even if they belong to different modules.
 
 ## Dependencies in the application layer
 
-A module belonging to the application layer cannot be used in the Magento Framework.
+A module belonging to the application layer cannot be used in the Commerce framework.
 
 You can build dependencies between classes in the application layer, but these classes must belong to the same module. Dependencies between the modules of the application layer should be built only by the [service contract](https://glossary.magento.com/service-contract) or the service provider interface (SPI).
 
@@ -164,8 +167,3 @@ return [
     ]
 ];
 ```
-
-{:.ref-header}
-Related topics
-
-[Module overview](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_intro.html)

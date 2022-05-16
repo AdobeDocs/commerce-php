@@ -11,7 +11,8 @@ The domain layer holds the business logic layer of a Magento [module](https://gl
 
 *  (Optionally) Including the implementation of service contracts, although not their definition.
 
-{:.bs-callout-tip}
+<InlineAlert variant="success" slots="text"/>
+
 **Best practice:** Use service contracts to communicate with the domain layer by passing data types through strongly typed objects. This helps you avoid the need to replace presentation layer code when replacing business layer logic.
 
 ## Models
@@ -35,10 +36,3 @@ There are three primary ways of accessing a module's domain-layer code:
    *  `di.xml` files (with an SPI contract)
 
 Your strategy for calling another module's domain-layer code is highly dependent upon the unique configuration and needs of your system.
-
-{:.ref-header}
-Related topics
-
-[Architectural diagrams](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/arch_diagrams.html)
-
-[Architectural layers overview](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/ALayers_intro.html)

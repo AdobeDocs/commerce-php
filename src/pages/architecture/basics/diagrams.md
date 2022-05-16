@@ -10,8 +10,3 @@ Depending upon your role and purpose for learning more about Magento, there are 
 The following diagram illustrates the components and shows the "layers" or tiers in Magento.
 
 ![Architectural Diagram](../../_images/archi_diagram_desired-state.png)
-
-**Related topics**
-
--  [Architecture layers overview](../layers/index.md)
--  [Service Isolation](https://github.com/magento/architecture/blob/master/design-documents/service-isolation.md)

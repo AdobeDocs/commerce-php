@@ -28,13 +28,4 @@ These are XML files that are used to specify the final state of the database.
 These files replace PHP update scripts that were required when upgrading a module.
 These files allow you to skip the progressive upgrade scripts and jump right to the final state of the database.
 
-Read more about writing [declarative XML schemas][].
-
-{:.ref-header}
-Related topics
-
-[Architectural diagrams](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/arch_diagrams.html)
-[Architectural layers overview](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/ALayers_intro.html)
-
-<!-- Link Definitions -->
-[declarative XML schemas]: https://devdocs.magento.com/guides/v2.4/extension-dev-guide/declarative-schema/db-schema.html
+Read more about writing [declarative XML schemas](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/declarative-schema/db-schema.html).

@@ -44,8 +44,3 @@ If both module A and C customize module B, be careful about how these customizat
 If module A replaces module B, it needs to be able to do so in such a way that other modules are not affected. That will mean not having direct hard dependencies on module B, but rather dependencies on a third module, module C, that both module A and B implement.
 
 ![Module relationship scenarios: A replaces B](../../_images/archi_fourth_relate.png)
-
-{:.ref-header}
-Related topics
-
-[Module overview](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_intro.html)

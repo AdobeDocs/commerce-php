@@ -20,16 +20,3 @@ Layered application design offers many advantages, but users of Magento will app
 *  Stringent separation of business logic from presentation logic simplifies the customization process. For example, you can alter your storefront appearance without affecting any of the [backend](https://glossary.magento.com/backend) business logic.
 
 *  Clear organization of code predictably points [extension](https://glossary.magento.com/extension) developers to code location.
-
-{:.ref-header}
-Related topics
-
-[Architectural diagrams](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/arch_diagrams.html)
-
-[Presentation layer](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/present_layer.html)
-
-[Service layer](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/service_layer.html)
-
-[Domain layer](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/domain_layer.html)
-
-[Persistence layer](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/persist_layer.html)

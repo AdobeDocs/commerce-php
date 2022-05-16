@@ -1,23 +1,24 @@
 ---
-title: Commerce Framework | Commerce PHP Extensions
+title: Commerce framework | Commerce PHP Extensions
 description: Learn how the Commerce framework controls the way application components interact.
 ---
 
 # Commerce framework
 
-The Magento Framework controls how application components interact, including request flow, routing, indexing, caching, and [exception](https://glossary.magento.com/exception) handling. It provides services that reduce the effort of creating modules that contain business logic, contributing to the goal of both making Magento code more modular as well as decreasing dependencies.
+The Commerce framework controls how application components interact, including request flow, routing, indexing, caching, and [exception](https://glossary.magento.com/exception) handling. It provides services that reduce the effort of creating modules that contain business logic, contributing to the goal of both making Magento code more modular as well as decreasing dependencies.
 
 This primarily [PHP](https://glossary.magento.com/php) software component is organized into logical groups called *libraries*, which all modules can call.  Most of the framework code sits under the domain layer or encloses the presentation, service, and domain layers. The framework contains no business logic.
-(Although the Magento Framework does not contain resource models, it does contain a [library](https://glossary.magento.com/library) of code to help implement a resource model.)
+(Although the Commerce framework does not contain resource models, it does contain a [library](https://glossary.magento.com/library) of code to help implement a resource model.)
 
-{:.bs-callout-tip}
-Don't confuse the Magento Framework with the Zend web application framework that ships with Magento.
+<InlineAlert variant="success" slots="text"/>
+
+Don't confuse the Commerce framework with the Zend web application framework that ships with the Commerce framework.
 
 You should never modify Framework files, although if you are extending Magento, you must know how to call Framework libraries. Modules you create will typically inherit from classes and interfaces defined in the Framework directories.
 
 ## Responsibilities
 
-The Magento Framework provides libraries that help reduce the effort of creating modules that contain business logic.
+The Commerce framework provides libraries that help reduce the effort of creating modules that contain business logic.
 
 The Framework is responsible for operations that are useful for potentially all modules, including:
 
@@ -29,7 +30,7 @@ The Framework is responsible for operations that are useful for potentially all 
 
 ## Organization
 
-Here is the Magento Framework folder structure:
+Here is the Commerce framework folder structure:
 
 ```tree
 vendor/
@@ -47,12 +48,13 @@ lib/
 
 *  `/lib/web` contains JavaScript and CSS/LESS files. These files reside  under `web` and not `internal` because they are accessible from a web browser, while the PHP code under `internal` is not. (Any code that a web browser must access should be under `web`, while everything else under `internal`.)
 
-{:.bs-callout-tip}
+<InlineAlert variant="success" slots="text"/>
+
 The `vendor/magento/framework` directory maps to the `Magento\Framework` [namespace](https://glossary.magento.com/namespace).
 
 ## Framework highlights
 
-The Commerce Framework (`lib/internal/Magento/Framework/`) provides a robust range of functionality. If you are an [extension](https://glossary.magento.com/extension) developer, you may be interested in this subset of Framework namespaces.
+The Commerce framework (`lib/internal/Magento/Framework/`) provides a robust range of functionality. If you are an [extension](https://glossary.magento.com/extension) developer, you may be interested in this subset of Framework namespaces.
 
 |Namespace|Purpose|
 |--- |--- |

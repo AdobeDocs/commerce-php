@@ -26,7 +26,7 @@ Magento themes organize both the visual aspect of your storefront and certain as
 
 Each [theme](https://glossary.magento.com/theme) resides in a unique directory and contains custom page layouts, templates, skins, and language files that work together to create a distinct user experience.
 
-For an extensive introduction to theme elements and an overview of how to extend and override the default Magento themes, see the [Frontend Developer Guide][].
+For an extensive introduction to theme elements and an overview of how to extend and override the default Magento themes, see the [Frontend Developer Guide](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html).
 
 ## GraphQL
 
@@ -34,7 +34,7 @@ GraphQL is a data query language developed internally by Facebook in 2012 before
 
 GraphQL allows you to define the structure of the data that you need, and the server returns only the data you request. Each GraphQL-capable module contains a declarative schema that defines the syntax for queries that the module supports, as well as the attributes that can be returned. If you run a REST call such as GET /V1/products/:sku on a simple product, the system might fetch more than 100 lines of data. If all you need is the current price, the call has returned significantly more information than you need. With GraphQL, a query against the same SKU could return just the price.
 
-More information can be found in the [GraphQL Developer Guide][].
+More information can be found in the [GraphQL Developer Guide](https://devdocs.magento.com/guides/v2.4/graphql/).
 
 ## Progressive Web Apps
 
@@ -42,7 +42,7 @@ The Magento Progressive Web App (PWA) Studio project is a set of developer tools
 PWA is a way to present a Magento storefront via a set of React JavaScript components.
 Using Magento as a headless backend, you can use PWA components to create mobile friendly frontend.
 
-You can read more about how PWA works with Magento in the [PWA Studio docs][].
+You can read more about how PWA works with Magento in the [PWA Studio docs][https://developer.adobe.com/commerce/pwa-studio/].
 
 ## View model
 
@@ -70,15 +70,3 @@ The View layer calls code from the Model to get information about the state of t
 
 Web users interact with components of the presentation layer to select actions that initiate calls to the underlying layers.
 Presentation layer components make calls to the service layer, which in turn sends requests to the [domain](https://glossary.magento.com/domain) layer.
-
-{:.ref-header}
-Related topics
-
-[Architectural diagrams](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/arch_diagrams.html)
-
-[Architectural layers overview](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/ALayers_intro.html)
-
-<!-- Link definitions -->
-[Frontend Developer Guide]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html
-[GraphQL Developer Guide]: https://devdocs.magento.com/guides/v2.4/graphql/
-[PWA Studio docs]: http://pwastudio.io

@@ -68,9 +68,3 @@ The `di.xml` file specifies which PHP class to use for the interface `Magento\Cu
 
 Another module can change this interface file by specifying a different class name.
 However, if the client code uses the interface definition only, no class change is necessary.
-
-{:.ref-header}
-Related topics
-
-*  [Architectural diagrams](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/arch_diagrams.html)
-*  [Architectural layers overview](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/ALayers_intro.html)
