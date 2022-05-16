@@ -11,7 +11,7 @@ The Magento platform and components are explained from the perspective of severa
 
 -  Merchants
 -  Web store developers (frontend developers)
--  [Extension](https://glossary.magento.com/extension) developers
+-  Extension developers
 -  System administrators
 -  Installers
 -  Integrators

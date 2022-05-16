@@ -64,7 +64,6 @@ You can enhance your storefront by adding unique attributes to the default produ
 |EAV|no|
 |Custom|yes|
 |Extension|no|
-{:style="table-layout:auto"}
 
 Attribute types fall into three general categories:
 

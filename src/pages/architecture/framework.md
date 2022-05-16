@@ -66,7 +66,6 @@ The Commerce framework (`lib/internal/Magento/Framework/`) provides a robust ran
 |`Magento\Framework\View`|Contains code to render pages and layouts.|
 |`Magento\Framework\Data`|Contains additional classes that handle forms.|
 |`Magento\Framework\Url`|Contains code to look up other pages in Magento.|
-{:style="table-layout:auto"}
 
 Other namespaces under `Magento\Framework` that will interest extension developers:
 
@@ -83,4 +82,3 @@ Other namespaces under `Magento\Framework` that will interest extension develope
 |`Magento\Framework\Exception`|Contains the basic exceptions that are thrown throughout the Magento codebase.|
 |`Magento\Framework\Event`|Contains the code that publishes synchronous events and that handles observers for any Magento event is handled here.|
 |`Magento\Framework\Validator`|Contains the code that validates data (currencies, not empty) and that handles observers for any Magento event.|
-{:style="table-layout:auto"}
