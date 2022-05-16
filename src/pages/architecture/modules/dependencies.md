@@ -5,9 +5,9 @@ description: Learn about the two types of module dependencies in the Commerce fr
 
 # Module dependencies
 
-A *software dependency* identifies  one software component's reliance on another for proper functioning. A core principle of Magento architecture is the **minimization of software dependencies**. Instead of being closely interrelated with other modules, modules are optimally designed to be *loosely coupled*. Loosely coupled modules require little or no knowledge of other modules to perform their tasks.
+A *software dependency* identifies  one software component's reliance on another for proper functioning. A core principle of the Adobe Commerce and Magento Open Source framework (Commerce framework) architecture is the **minimization of software dependencies**. Instead of being closely interrelated with other modules, modules are optimally designed to be *loosely coupled*. Loosely coupled modules require little or no knowledge of other modules to perform their tasks.
 
-Each Magento [module](https://glossary.magento.com/module) is responsible for a unique feature. In practice, this means that:
+Each [module](https://glossary.magento.com/module) is responsible for a unique feature. In practice, this means that:
 
 *  Several modules cannot be responsible for one feature.
 
@@ -19,7 +19,7 @@ Each Magento [module](https://glossary.magento.com/module) is responsible for a 
 
 ## Dependency types
 
-There are two types of Magento [module](https://glossary.magento.com/module) dependencies: hard and soft.
+There are two types of [module](https://glossary.magento.com/module) dependencies: hard and soft.
 
 ### Hard dependencies
 
@@ -86,14 +86,14 @@ If a module uses code from another module, it should declare the dependency expl
 
 ## Module install order
 
-Magento installs modules in the following order:
+The Commerce framework installs modules in the following order:
 
 1. The module serving as a dependency for another module
 1. The module dependent on it
 
 ## Appropriate dependencies
 
-Although Magento architecture favors loosely coupled software components, modules can contain dependencies upon these software components:
+Although the Commerce framework architecture favors loosely coupled software components, modules can contain dependencies upon these software components:
 
 *  other modules
 

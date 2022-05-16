@@ -33,7 +33,7 @@ Once implemented, a web service can make a single API call and return an informa
 
 *  Web services (SOAP and REST API calls)
 
-*  Other Magento modules through service contracts
+*  Other modules through service contracts
 
 ## Service contract anatomy
 

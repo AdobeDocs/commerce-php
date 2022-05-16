@@ -5,7 +5,7 @@ description: Learn how the Commerce framework controls the way application compo
 
 # Commerce framework
 
-The Commerce framework controls how application components interact, including request flow, routing, indexing, caching, and [exception](https://glossary.magento.com/exception) handling. It provides services that reduce the effort of creating modules that contain business logic, contributing to the goal of both making Magento code more modular as well as decreasing dependencies.
+The Adobe Commerce and Magento Open Source framework (Commerce framework) controls how application components interact, including request flow, routing, indexing, caching, and [exception](https://glossary.magento.com/exception) handling. It provides services that reduce the effort of creating modules that contain business logic, contributing to the goal of both making Commerce code more modular as well as decreasing dependencies.
 
 This primarily [PHP](https://glossary.magento.com/php) software component is organized into logical groups called *libraries*, which all modules can call.  Most of the framework code sits under the domain layer or encloses the presentation, service, and domain layers. The framework contains no business logic.
 (Although the Commerce framework does not contain resource models, it does contain a [library](https://glossary.magento.com/library) of code to help implement a resource model.)
@@ -14,7 +14,7 @@ This primarily [PHP](https://glossary.magento.com/php) software component is org
 
 Don't confuse the Commerce framework with the Zend web application framework that ships with the Commerce framework.
 
-You should never modify Framework files, although if you are extending Magento, you must know how to call Framework libraries. Modules you create will typically inherit from classes and interfaces defined in the Framework directories.
+You should never modify framework files, although if you are extending Commerce, you must know how to call framework libraries. Modules you create will typically inherit from classes and interfaces defined in the framework directories.
 
 ## Responsibilities
 
@@ -58,27 +58,27 @@ The Commerce framework (`lib/internal/Magento/Framework/`) provides a robust ran
 
 |Namespace|Purpose|
 |--- |--- |
-|`Magento\Framework\DataObject`|Provides standard functionality for storing and retrieving data through magic methods. This is the base class for many Magento classes.|
-|`Magento\Framework\Model`|Contains base Model classes that almost all Magento Model classes extend from.|
+|`Magento\Framework\DataObject`|Provides standard functionality for storing and retrieving data through magic methods. This is the base class for many classes.|
+|`Magento\Framework\Model`|Contains base Model classes that almost all model classes extend from.|
 |`Magento\Framework\Model\AbstractModel`||
 |`Magento\Framework\Model\ResourceModel\AbstractResource`||
 |`Magento\Framework\Controller`|Contains classes to help return different types of results (for example, JSON and redirects).|
 |`Magento\Framework\View`|Contains code to render pages and layouts.|
 |`Magento\Framework\Data`|Contains additional classes that handle forms.|
-|`Magento\Framework\Url`|Contains code to look up other pages in Magento.|
+|`Magento\Framework\Url`|Contains code to look up other pages.|
 
 Other namespaces under `Magento\Framework` that will interest extension developers:
 
 |Namespace|Purpose|
 |--- |--- |
 |`Magento\Framework\ObjectManager`|Used to provide dependency injection.|
-|`Magento\Framework\App`|Contains framework code that has knowledge about the Magento application. This code bootstraps the application and reads in the initial configuration. It also contains the entry point to the command line tools, the web application, and the cron job. And finally, it routes requests while providing the deployment context (such as reading in the configuration for the database configuration, languages, and caching systems).|
+|`Magento\Framework\App`|Contains framework code that has knowledge about the Commerce application. This code bootstraps the application and reads in the initial configuration. It also contains the entry point to the command line tools, the web application, and the cron job. And finally, it routes requests while providing the deployment context (such as reading in the configuration for the database configuration, languages, and caching systems).|
 |`Magento\Framework\Api`|Contains base classes for advanced functionality of extendable objects through the system (that is, objects that can be extended to add new data through Commerce Marketplace extensions).|
 |`Magento\Framework\Config`|Contains the generic configuration reader. Each config file has its own specialized reader extending these classes.|
 |`Magento\Framework\Filesystem`|Contains classes that handle reading from and writing to the file system.|
 |`Magento\Framework\HTTP\PhpEnvironment`||
 |`Magento\Framework\Session`||
 |`Magento\Framework\Stdlib\Cookie`|Code to handle the HTTP request/responses as well as session/cookies is found here.|
-|`Magento\Framework\Exception`|Contains the basic exceptions that are thrown throughout the Magento codebase.|
-|`Magento\Framework\Event`|Contains the code that publishes synchronous events and that handles observers for any Magento event is handled here.|
-|`Magento\Framework\Validator`|Contains the code that validates data (currencies, not empty) and that handles observers for any Magento event.|
+|`Magento\Framework\Exception`|Contains the basic exceptions that are thrown throughout the Commerce codebase.|
+|`Magento\Framework\Event`|Contains the code that publishes synchronous events and that handles observers for any Commerce event is handled here.|
+|`Magento\Framework\Validator`|Contains the code that validates data (currencies, not empty) and that handles observers for any Commerce event.|

@@ -5,7 +5,7 @@ description: Learn about the architectural persistence layer of the Commerce fra
 
 # Persistence layer
 
-Magento uses an active record pattern strategy for persistence. In this system, the model object contains a *resource model* that maps an object to one or more database rows. A resource model is responsible for performing functions such as:
+The Adobe Commerce and Magento Open Source framework (Commerce framework) uses an active record pattern strategy for persistence. In this system, the model object contains a *resource model* that maps an object to one or more database rows. A resource model is responsible for performing functions such as:
 
 *  Executing all CRUD (create, read, update, delete) requests. The resource model contains the SQL code for completing these requests.
 
@@ -23,7 +23,7 @@ The `Customer`, `Catalog` and `Order` resource models use EAV attributes.
 
 ## XML Declarative schema
 
-With Magento 2.3, we introduced Declarative XML Schemas.
+With Adobe Commerce and Magento Opem Source 2.3, we introduced Declarative XML Schemas.
 These are XML files that are used to specify the final state of the database.
 These files replace PHP update scripts that were required when upgrading a module.
 These files allow you to skip the progressive upgrade scripts and jump right to the final state of the database.

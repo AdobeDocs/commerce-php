@@ -7,7 +7,7 @@ description: Explore resources that describe the foundational elements of the Ad
 
 The Architecture Guide provides a high-level introduction and view of the Adobe Commerce and Magento Open Source framework.
 
-The Magento platform and components are explained from the perspective of several audiences:
+The Adobe Commerce and Magento Open Source framework (Commerce framework) and components are explained from the perspective of several audiences:
 
 -  Merchants
 -  Web store developers (frontend developers)

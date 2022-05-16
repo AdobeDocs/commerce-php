@@ -5,9 +5,9 @@ description: Learn about the critical role that modules play in the Commerce fra
 
 # Module overview
 
-A *module* is a logical group -- that is, a directory containing blocks, controllers, helpers, models -- that are related to a specific business feature. In keeping with Magento's commitment to optimal modularity, a [module](https://glossary.magento.com/module) encapsulates one feature and has minimal dependencies on other modules.
+A *module* is a logical group -- that is, a directory containing blocks, controllers, helpers, models -- that are related to a specific business feature. In keeping with Adobe's commitment to optimal modularity, a [module](https://glossary.magento.com/module) encapsulates one feature and has minimal dependencies on other modules.
 
-Modules and themes are the units of customization in Commerce. Modules provide business features, with supporting logic,  while themes strongly influence user experience and [storefront](https://glossary.magento.com/storefront) appearance. Both components have a life cycle that allows them to be installed, deleted, and disabled. From the perspective of both merchants and [extension](https://glossary.magento.com/extension) developers, modules are the central unit of Magento organization.
+Modules and themes are the units of customization in Commerce. Modules provide business features, with supporting logic,  while themes strongly influence user experience and [storefront](https://glossary.magento.com/storefront) appearance. Both components have a life cycle that allows them to be installed, deleted, and disabled. From the perspective of both merchants and [extension](https://glossary.magento.com/extension) developers, modules are the central unit of Adobe Commerce and Magento Open Source framework (Commerce framework) organization.
 
 The Commerce framework provides a set of core logic: [PHP](https://glossary.magento.com/php) code, libraries, and the basic functions that are inherited by the modules and other components.
 
@@ -25,13 +25,13 @@ A module is a directory that contains the PHP and [XML](https://glossary.magento
 
 ## Module locations
 
-Modules typically live in the `vendor` directory of a Magento installation, in a directory with the following PSR-0 compliant format: `vendor/<vendor>/<type>-<module-name>`, where `<type>` can be one of the following values:
+Modules typically live in the `vendor` directory of an Adobe Commerce or Magento Open Source installation, in a directory with the following PSR-0 compliant format: `vendor/<vendor>/<type>-<module-name>`, where `<type>` can be one of the following values:
 
 -  **`module`** - for modules (`module-customer-import-export`)
 -  **`theme`** - for frontend and admin themes (`theme-frontend-luma` or `theme-adminhtml-backend`)
 -  **`language`** - for language packs (`language-de_de`)
 
-For example, the Customer Import/Export module of Magento can be found at `vendor/magento/module-customer-import-export`.
+For example, the Customer Import/Export module can be found at `vendor/magento/module-customer-import-export`.
 
 If you are creating a new module for distribution, create the `app/code/<vendor>/<type>-<module-name>` directory and the required directories within it.
 
@@ -39,11 +39,11 @@ Inside this folder, you will find all the code related to this module, including
 
 ### Module location conventions
 
-The following table shows the *recommended* location within the Magento file system for specific components.
+The following table shows the *recommended* location within the file system for specific components.
 
 (A [module](https://glossary.magento.com/module) must include a `registration.php` file in its root folder.)
 
-We refer to a component's root directory as the top-level directory in which you develop component code. Typically, this directory is located in one of the following directories relative to the Magento root directory:
+We refer to a component's root directory as the top-level directory in which you develop component code. Typically, this directory is located in one of the following directories relative to your Adobe Commerce or Magento Open Source root directory:
 
 |Entity|Location|
 |---|---|
@@ -54,7 +54,7 @@ We refer to a component's root directory as the top-level directory in which you
 
 ## Working with modules
 
-Magento developers, administrators, and anyone building a Magento website will want to review all relevant topics surrounding their particular goals and use cases.
+Developers, administrators, and anyone building an Adobe Commerce or Magento Open Source website will want to review all relevant topics surrounding their particular goals and use cases.
 
 See [PHP Developer Guide](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/bk-extension-dev-guide.html) for specific instructions on extending modules.
 

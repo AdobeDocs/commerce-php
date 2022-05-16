@@ -5,13 +5,13 @@ description: Learn what an "area" is in the context of Commerce framework module
 
 # Modules and areas
 
-An *area* is a logical component that organizes code for optimized request processing. Magento uses areas to streamline web service calls by loading only the dependent code for the specified area.  Each of the default areas defined by Magento can contain completely different code on how to process URLs and requests.
+An *area* is a logical component that organizes code for optimized request processing. The Adobe Commerce and Magento Open Source framework (Commerce framework) uses areas to streamline web service calls by loading only the dependent code for the specified area.  Each of the default areas defined by the Commerce framework can contain completely different code on how to process URLs and requests.
 
 For example, if you are invoking a REST web service call, rather than load all the code related to generating user [HTML](https://glossary.magento.com/html) pages, you can specify a separate area that loads code whose scope is limited to answering  REST calls.
 
 ## Area types
 
-Magento is organized into these main areas:
+The Commerce framework is organized into these main areas:
 
 *  **Admin** (`adminhtml`): entry point for this area is `pub/index.php`. The [Admin](https://glossary.magento.com/admin) panel area includes the code needed for store management. The /app/design/adminhtml directory contains all the code for components you'll see while working in the Admin.
 
@@ -21,7 +21,7 @@ Magento is organized into these main areas:
 
 *  **Cron** (`crontab`): In `pub/cron.php`, the [`\Magento\Framework\App\Cron`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Cron.php#L68-L70) class always loads the 'crontab' area.
 
-You can also send requests to Magento using the SOAP, REST and GraphQL APIs. These three areas
+You can also send requests to the Commerce framework using the SOAP, REST and GraphQL APIs. These three areas
 
 *  **Web API REST** (`webapi_rest`): entry point for this area is `pub/index.php`. The REST area has a front controller that understands how to do [URL](https://glossary.magento.com/url) lookups for REST-based URLs.
 
@@ -37,7 +37,7 @@ If your [extension](https://glossary.magento.com/extension) works in several dif
 
 Each area declares itself within a module. All resources specific for an area are located within the same module as well.
 
-You can enable or disable an area within a module. If this module is enabled, it injects an area's routers into the general application's routing process. If this module is disabled, Magento will not load an area's routers and, as a result, an area's resources and specific functionality are not available.
+You can enable or disable an area within a module. If this module is enabled, it injects an area's routers into the general application's routing process. If this module is disabled, the Commerce framework will not load an area's routers and, as a result, an area's resources and specific functionality are not available.
 
 ### Module/area interaction guidelines
 
@@ -49,9 +49,9 @@ You can enable or disable an area within a module. If this module is enabled, it
 
 ### Note about request processing
 
-Magento processes a URL request by first stripping off the base URL. The first path segment of the remaining URL identifies the request area.
+The Commerce framework processes a URL request by first stripping off the base URL. The first path segment of the remaining URL identifies the request area.
 
-After the area name, the URI segment specifies the *frontname*. When an HTTP request arrives, Magento extracts the handle from the URL and interprets it as follows:
+After the area name, the URI segment specifies the *frontname*. When an HTTP request arrives, the Commerce framework extracts the handle from the URL and interprets it as follows:
 
 ```http
 [frontName]/[controller folder]/[controller class]

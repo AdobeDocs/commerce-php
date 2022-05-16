@@ -5,15 +5,15 @@ description: Learn about the architectural presentation layer of the Commerce fr
 
 # Presentation layer
 
-When you interact with the Magento web interface, you are interacting with *presentation layer* code. The presentation layer is the top layer of the four layers (presentation, service, domain, and persistence layers) described by the Magento architecture.
+When you interact with the The Adobe Commerce and Magento Open Source framework (Commerce framework) web interface, you are interacting with *presentation layer* code. The presentation layer is the top layer of the four layers (presentation, service, domain, and persistence layers) described by the Commerce framework architecture.
 
-The presentation layer contains both view elements **(layouts, blocks, templates)** and **controllers**, which process commands to and from the user interface. Presentation code controls web user interaction with the product and its appearance. You can extensively customize the user interface by using HTML, CSS, and [PHTML](https://glossary.magento.com/phtml) files to modify elements of the presentation layer. Basically, the presentation layer represents the customization of HTML, CSS, JavaScript, Magento UI, PHTML files, and block files.
+The presentation layer contains both view elements **(layouts, blocks, templates)** and **controllers**, which process commands to and from the user interface. Presentation code controls web user interaction with the product and its appearance. You can extensively customize the user interface by using HTML, CSS, and [PHTML](https://glossary.magento.com/phtml) files to modify elements of the presentation layer. Basically, the presentation layer represents the customization of HTML, CSS, JavaScript, UI, PHTML files, and block files.
 
 ## Who uses the Presentation layer?
 
-Magento uses *areas* to efficiently make web service calls, loading only the dependent code that is required for the particular type of user. Three types of Magento users interact with presentation layer code:
+The Commerce framework uses *areas* to efficiently make web service calls, loading only the dependent code that is required for the particular type of user. Three types of users interact with presentation layer code:
 
-*  **Web users** interact with the storefront, where they can see the View model of data displayed by Magento and interact with product UI elements to request data for view and manipulation. These users work within the `frontend` area.
+*  **Web users** interact with the storefront, where they can see the view model of data displayed by the Commerce framework and interact with product UI elements to request data for view and manipulation. These users work within the `frontend` area.
 
 *  **System administrators** customizing a [storefront](https://glossary.magento.com/storefront) can indirectly manipulate the presentation layer by, for example, adding themes or widgets to the frontend.
 
@@ -21,16 +21,17 @@ Magento uses *areas* to efficiently make web service calls, loading only the dep
 
 ## Presentation layer components
 
-One helpful way of understanding the Magento presentation layer components is by examining Magento *themes*.
-Magento themes organize both the visual aspect of your storefront and certain aspects of product behavior.
+One helpful way of understanding the presentation layer component is by examining *themes*.
+
+Themes organize both the visual aspect of your storefront and certain aspects of product behavior.
 
 Each [theme](https://glossary.magento.com/theme) resides in a unique directory and contains custom page layouts, templates, skins, and language files that work together to create a distinct user experience.
 
-For an extensive introduction to theme elements and an overview of how to extend and override the default Magento themes, see the [Frontend Developer Guide](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html).
+For an extensive introduction to theme elements and an overview of how to extend and override the default themes, see the [Frontend Developer Guide](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html).
 
 ## GraphQL
 
-GraphQL is a data query language developed internally by Facebook in 2012 before being publicly released in 2015. Magento implements GraphQL to provide an alternative to REST and SOAP web APIs for frontend development.
+GraphQL is a data query language developed internally by Facebook in 2012 before being publicly released in 2015. The Commerce framework implements GraphQL to provide an alternative to REST and SOAP web APIs for frontend development.
 
 GraphQL allows you to define the structure of the data that you need, and the server returns only the data you request. Each GraphQL-capable module contains a declarative schema that defines the syntax for queries that the module supports, as well as the attributes that can be returned. If you run a REST call such as GET /V1/products/:sku on a simple product, the system might fetch more than 100 lines of data. If all you need is the current price, the call has returned significantly more information than you need. With GraphQL, a query against the same SKU could return just the price.
 
@@ -38,15 +39,15 @@ More information can be found in the [GraphQL Developer Guide](https://devdocs.m
 
 ## Progressive Web Apps
 
-The Magento Progressive Web App (PWA) Studio project is a set of developer tools that allow you to develop, deploy, and maintain a PWA storefront on top of Magento 2.
-PWA is a way to present a Magento storefront via a set of React JavaScript components.
-Using Magento as a headless backend, you can use PWA components to create mobile friendly frontend.
+The Progressive Web App (PWA) Studio project is a set of developer tools that allow you to develop, deploy, and maintain a PWA storefront on top of the Commerce framework.
+PWA is a way to present a storefront using a set of React JavaScript components.
+Using the Commerce framework as a headless backend, you can use PWA components to create mobile friendly frontend.
 
-You can read more about how PWA works with Magento in the [PWA Studio docs][https://developer.adobe.com/commerce/pwa-studio/].
+You can read more about how PWA works with the Commerce framework in the [PWA Studio docs][https://developer.adobe.com/commerce/pwa-studio/].
 
 ## View model
 
-Magento generates the [HTML](https://glossary.magento.com/html) for a page to display to a user from a tree of view elements.
+The Commerce framework generates the [HTML](https://glossary.magento.com/html) for a page to display to a user from a tree of view elements.
 
 View elements fall into two main categories: blocks and containers.
 
