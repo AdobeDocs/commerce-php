@@ -46,7 +46,7 @@ Learn about layered application design and details about each layer
 
 Review these technical guidelines before you contribute code to Adobe Commerce and Magento Open Source projects
 
--  [Learn more](coding-standards/)
+-  [Learn more](coding-standards.md)
 
 <TextBlock slots="image, heading, text, links" width="50%" />
 
@@ -56,7 +56,7 @@ Review these technical guidelines before you contribute code to Adobe Commerce a
 
 Learn how the Commerce framework controls the way application components interact
 
--  [Learn more](framework/)
+-  [Learn more](framework.md)
 
 <TextBlock slots="image, heading, text, links" width="50%" />
 
