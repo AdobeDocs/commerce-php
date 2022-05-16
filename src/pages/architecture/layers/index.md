@@ -1,8 +1,9 @@
 ---
-group: architecture-guide
-title: Architectural layers overview
-menu_title: Architectural layers
+title: Architectural Layers Overview | Commerce PHP Extensions
+description: Learn about layered application design and details about each layer.
 ---
+
+# Architectural layers overview
 
 ## Magento as layered software
 

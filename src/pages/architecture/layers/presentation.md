@@ -1,7 +1,9 @@
 ---
-group: architecture-guide
-title: Presentation Layer
+title: Presentation Layer | | Commerce PHP Extensions
+description: Learn about the architectural presentation layer of the Commerce framework.
 ---
+
+# Presentation layer
 
 ## What is the Magento Presentation layer?
 

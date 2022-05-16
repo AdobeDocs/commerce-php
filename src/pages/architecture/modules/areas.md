@@ -1,8 +1,9 @@
 ---
-group: architecture-guide
-title: Modules and areas
-menu_title: Modules and areas
+title: Modules and Areas | Commerce PHP Extensions
+description: Learn what an "area" is in the context of Commerce framework modules.
 ---
+
+# Modules and areas
 
 ## Overview {#m2arch-module-areas-overview}
 

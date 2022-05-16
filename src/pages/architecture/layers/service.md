@@ -1,8 +1,9 @@
 ---
-group: architecture-guide
-title: Service layer
-menu_title: Service layer
+title: Service Layer | Commerce PHP Extensions
+description: Learn about the architectural service layer of the Commerce framework.
 ---
+
+# Service layer
 
 ## What is a Service layer?
 

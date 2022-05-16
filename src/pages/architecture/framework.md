@@ -1,9 +1,9 @@
 ---
-group: architecture-guide
-title: Commerce and Magento Framework
+title: Commerce Framework | Commerce PHP Extensions
+description: Learn how the Commerce framework controls the way application components interact.
 ---
 
-## Overview
+# Commerce framework
 
 The Magento Framework controls how application components interact, including request flow, routing, indexing, caching, and [exception](https://glossary.magento.com/exception) handling. It provides services that reduce the effort of creating modules that contain business logic, contributing to the goal of both making Magento code more modular as well as decreasing dependencies.
 

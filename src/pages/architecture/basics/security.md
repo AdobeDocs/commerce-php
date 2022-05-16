@@ -1,10 +1,9 @@
 ---
-group: architecture-guide
-subgroup: Architectural Basics
-title: Security overview
-menu_title: Security
-menu_order:
+title: Security | Commerce PHP Extensions
+description: Learn how the Adobe Secure Product Lifecycle has influenced the development of the Commerce framework.
 ---
+
+# Security
 
 The security of your data and digital experiences is our priority. To better protect {{site.data.var.ee}} and {{site.data.var.ce}} installations from the physical layer up, we have implemented hundreds of processes and controls to help us comply with [industry-accepted standards][1], regulations, and certifications. To help protect installations from the software layer down, we build in security measures that are based on the [Adobe Secure Product Lifecyle][2].
 

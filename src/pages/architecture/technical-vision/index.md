@@ -1,7 +1,9 @@
 ---
-group: architecture-guide
-title: Magento technical vision
+title: Technical Vision | Commerce PHP Extensions\
+description: Review resources that describe the aspirational vision that guides development of the Commerce framework.
 ---
+
+# Technical vision
 
 The Magento technical vision is a collection of documents that describe the desired state of the Magento platform.
 

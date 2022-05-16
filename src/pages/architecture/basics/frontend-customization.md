@@ -1,9 +1,9 @@
 ---
-group: architecture-guide
-title: Ease of frontend customization
+title: Frontend Customization | Commerce PHP Extensions
+description: Discover tools designed to help you customize your Adobe Commerce or Magento Open Source storefront.
 ---
 
-## Overview {#m2arch-whatis-overview}
+# Frontend customization
 
 The Magento [frontend](https://glossary.magento.com/frontend) is designed to optimize [storefront](https://glossary.magento.com/storefront) customization, with highly extensible *themes* being the central customization mechanism.
 

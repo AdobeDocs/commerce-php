@@ -1,8 +1,9 @@
 ---
-group: architecture-guide
-title: Architectural basics overview
-menu_title: Architectural basics
+title: Architectural Basics | Commerce PHP Extensions
+description: Review fundamental architectural principles of object-oriented, PHP-based applications.
 ---
+
+# Architectural basics
 
 Magento incorporates the core architectural principles of object-oriented, PHP-based applications. Comprehensive discussions of these general principles exist both on-line and in printed form.
 

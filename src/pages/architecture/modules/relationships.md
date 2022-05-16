@@ -1,8 +1,9 @@
 ---
-group: architecture-guide
-title: Module relationships
-menu_title: Module relationships
+title: Module Relationships | Commerce PHP Extensions
+description: Learn about the different types of relationships thay modules have with each other.
 ---
+
+# Module relationships
 
 ## Overview {#m2arch-module-relationships-overview}
 

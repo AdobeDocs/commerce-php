@@ -1,10 +1,9 @@
 ---
-group: architecture-guide
-title: Extensibility and modularity
-menu_title: Extensibility and modularity
+title: Extensibility and Modularity | Commerce PHP Extensions
+description: Learn about how extensibility has been designed to maximize your ability to customize and enhance the Commerce framework.
 ---
 
-## Overview
+# Extensibility and modularity
 
 Product *extensibility* describes how easy it is to expand a product's feature set. An extensible product has been designed from its earliest  stages for customization and enhancement. Extensible products are designed for ease in expanding your installation's feature set, enriching current features, and integrating with third-party software.
 

@@ -1,8 +1,9 @@
 ---
-group: architecture-guide
-title: Module dependencies
-menu_title: Module dependencies
+title: Module Dependencies | Commerce PHP Extensions
+description: Learn about the two types of module dependencies in the Commerce framework; hard and soft.
 ---
+
+# Module dependencies
 
 ## Overview {#m2devgde-moddep-intro}
 

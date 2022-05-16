@@ -1,7 +1,9 @@
 ---
-group: architecture-guide
-title: Persistence layer
+title: Persistence Layer | Commerce PHP Extensions
+description: Learn about the architectural persistence layer of the Commerce framework.
 ---
+
+# Persistence layer
 
 Magento uses an active record pattern strategy for persistence. In this system, the model object contains a *resource model* that maps an object to one or more database rows. A resource model is responsible for performing functions such as:
 

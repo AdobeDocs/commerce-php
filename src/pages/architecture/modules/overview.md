@@ -1,9 +1,9 @@
 ---
-group: architecture-guide
-title: Module overview
-menu_title: Module overview
-redirect_from: guides/v2.4/install-gde/basics/basics_module.html
+title: Module Overview | Commerce PHP Extensions
+description: Learn about the critical role that modules play in the Commerce framework.
 ---
+
+# Module overview
 
 ## What is a Magento module? {#arch-modules-overview}
 

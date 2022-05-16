@@ -1,10 +1,9 @@
 ---
-group: architecture-guide
-title: Domain layer
-menu_title: Domain layer
+title: Domain Layer | Commerce PHP Extensions
+description: Learn about the architectural domain layer of the Commerce framework.
 ---
 
-## The Magento Domain layer
+# Domain layer
 
 The domain layer holds the business logic layer of a Magento [module](https://glossary.magento.com/module). It typically does not contain resource-specific or database-specific information. Its primary functions include:
 
