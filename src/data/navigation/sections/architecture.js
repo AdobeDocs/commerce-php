@@ -9,7 +9,7 @@ module.exports = [
     pages: [
       {
         title: "Diagrams",
-        path: "/architecture/basics/diagrams",
+        path: "/architecture/basics/diagrams/",
       },
       {
         title: "Frontend customization",
@@ -17,7 +17,7 @@ module.exports = [
       },
       {
         title: "Security",
-        path: "/architecture/basics/security",
+        path: "/architecture/basics/security/",
       },
     ],
   },
