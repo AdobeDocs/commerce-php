@@ -7,20 +7,20 @@ module.exports = [
       title: "Architecture",
       path: "/architecture/",
     },
-    {
-      title: "Extension Developer",
-      path: "/extensions/",
-    },
-    {
-      title: "Best Practices",
-      path: "/best-practices/",
-    },
-    {
-      title: "Module Reference",
-      path: "/module-reference/",
-    },
-    {
-      title: "Coding Standards",
-      path: "/coding-standards/",
-    },
+    // {
+    //   title: "Extension Developer",
+    //   path: "/extensions/",
+    // },
+    // {
+    //   title: "Best Practices",
+    //   path: "/best-practices/",
+    // },
+    // {
+    //   title: "Module Reference",
+    //   path: "/module-reference/",
+    // },
+    // {
+    //   title: "Coding Standards",
+    //   path: "/coding-standards/",
+    // },
   ];
