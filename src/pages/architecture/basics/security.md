@@ -5,7 +5,7 @@ description: Learn how the Adobe Secure Product Lifecycle has influenced the dev
 
 # Security
 
-The security of your data and digital experiences is our priority. To better protect Adobe Commerce and Magento Open Source installations from the physical layer up, we have implemented hundreds of processes and controls to help us comply with [industry-accepted standards][1], regulations, and certifications. To help protect installations from the software layer down, we build in security measures that are based on the [Adobe Secure Product Lifecyle](https://www.adobe.com/security/engineering.html).
+The security of your data and digital experiences is our priority. To better protect Adobe Commerce and Magento Open Source installations from the physical layer up, we have implemented hundreds of processes and controls to help us comply with [industry-accepted standards](https://docs.magento.com/m2/ee/user_guide/stores/compliance-industry.html), regulations, and certifications. To help protect installations from the software layer down, we build in security measures that are based on the [Adobe Secure Product Lifecyle](https://www.adobe.com/security/engineering.html).
 
 Although there is no single way to eliminate all security risks, there are many steps you can take to harden your installations and make them a less attractive target for bad actors. The [Security Best Practices Guide](https://www.adobe.com/content/dam/acom/en/security/pdfs/Adobe-Magento-Commerce-Best-Practices-Guide.pdf) offers insight and practical guidelines to help protect all installations from security incidents.
 
