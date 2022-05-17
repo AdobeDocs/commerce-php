@@ -56,6 +56,9 @@ MD012:
   # Consecutive blank lines
   maximum: 1
 
+# MD013/line-length - Line length
+MD013: false
+
 # MD018/no-missing-space-atx - No space after hash on atx style heading
 MD018: true
 
