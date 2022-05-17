@@ -29,7 +29,7 @@ You can also send requests to the Commerce framework using the SOAP, REST and Gr
 
 *  **Web API SOAP** (`webapi_soap`): entry point for this area is `pub/index.php`.
 
-## How areas work with modules {#m2arch-module-using}
+## How areas work with modules
 
 Modules define which resources are visible and accessible in an area, as well as an area's behavior. The same [module](https://glossary.magento.com/module) can influence several areas. For instance, the RMA module is represented partly in the `adminhtml` area and partly in the `frontend` area.
 
