@@ -1,0 +1,38 @@
+---
+title: Security | Commerce PHP Extensions
+description: Learn how the Adobe Secure Product Lifecycle has influenced the development of the Commerce framework.
+---
+
+# Security
+
+The security of your data and digital experiences is our priority. To better protect Adobe Commerce and Magento Open Source installations from the physical layer up, we have implemented hundreds of processes and controls to help us comply with [industry-accepted standards][1], regulations, and certifications. To help protect installations from the software layer down, we build in security measures that are based on the [Adobe Secure Product Lifecyle](https://www.adobe.com/security/engineering.html).
+
+Although there is no single way to eliminate all security risks, there are many steps you can take to harden your installations and make them a less attractive target for bad actors. The [Security Best Practices Guide](https://www.adobe.com/content/dam/acom/en/security/pdfs/Adobe-Magento-Commerce-Best-Practices-Guide.pdf) offers insight and practical guidelines to help protect all installations from security incidents.
+
+## Examples of built-in security measures
+
+### Enhanced password management
+
+Adobe has strengthened the hashing algorithms (SHA-256) used in password management. The Adobe Commerce and Magento Open Source framework (Commerce framework) now supports Argon2ID13 through the PHP sodium extension, which requires the libsodium library version 1.0.13 or higher.
+
+### Improved prevention of cross-site scripting (XSS) attacks by making escaped data the default
+
+The Commerce framework has adopted conventions that regulate the escaping of data in output. These conventions include the ability to escape  output for [HTML](https://glossary.magento.com/html) pages (HTML, JSON, and JavaScript) and email. Where possible, escaping is transparent to client code. See [Security measures against XSS attacks](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/xss-protection.html) in the [Frontend](https://glossary.magento.com/frontend) Developer Guide.
+
+### More flexible file system ownership and permissions
+
+Starting in version 2.0.6, the Commerce framework no longer explicitly sets file system permissions. Instead, we recommend that certain files and directories be writable in a development environment and read-only in a production environment.
+
+To provide you with a simple way to restrict access to the file system in production, we provide the flexibility for you to further restrict those permissions using a [umask](http://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html).
+
+For an overview, see [Overview of ownership and permissions](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+
+For details about ownership and permissions in development and production, see [ownership and permissions in development and production](https://devdocs.magento.com/guides/v2.4/config-guide/prod/prod_file-sys-perms.html).
+
+### Improved prevention of clickjacking exploits
+
+The Commerce framework safeguards your store from clickjacking attacks by using an X-Frame-Options HTTP request header. For more information, see [X-Frame-Options header](https://devdocs.magento.com/guides/v2.4/config-guide/secy/secy-xframe.html).
+
+### Use of non-default Admin URL
+
+A simple [Admin](https://glossary.magento.com/magento-admin) [URL](https://glossary.magento.com/url) (like `admin` or `backend`) makes it easy to target attacks on specific locations using automated password guessing. To prevent against this type of attack, the Commerce framework by default creates a random Admin URI when you install the product. The CLI command `php bin/magento info:adminuri` is provided so that you can  see the URI if you forget it. You can also use the CLI to change this URI.  Although the use of a non-default admin URL will not secure the site, its use will help prevent large-scale automated attacks. See [Display or change the Admin URI](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-adminurl.html) in Configuration Guide for more information.

@@ -3,11 +3,13 @@ title: Commerce PHP Extensions
 description: Review resources for developing PHP-based extensions for Adobe Commerce and Magento Open Source.
 ---
 
-<Hero slots="heading, text" background="rgb(244, 111, 37)"/>
+<Hero slots="image, heading, text"/>
+
+![Commerce PHP Extensions](_images/home-bg.jpeg)
 
 # Commerce PHP Extensions
 
-Lorem ipsum dolor sit amet
+Learn how to create and maintain PHP extensions for Adobe Commerce and Magento Open Source.
 
 <Resources slots="heading, links"/>
 
@@ -31,9 +33,9 @@ Use these sections to learn about how to develop PHP extensions.
 
 [Architecture](architecture/)
 
-Lorem ipsum dolor sit amet
+Explore resources that describe the foundational elements of the Adobe Commerce and Magento Open Source framework.
 
-<DiscoverBlock slots="link, text"/>
+<!-- <DiscoverBlock slots="link, text"/>
 
 [Extension Developer](extensions/)
 
@@ -55,7 +57,7 @@ Lorem ipsum dolor sit amet
 
 [Coding Standard](coding-standards/)
 
-Lorem ipsum dolor sit amet
+Lorem ipsum dolor sit amet -->
 
 <DiscoverBlock width="100%" slots="heading, link, text"/>
 
