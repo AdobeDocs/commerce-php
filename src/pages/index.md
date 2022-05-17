@@ -9,7 +9,7 @@ description: Review resources for developing PHP-based extensions for Adobe Comm
 
 # Commerce PHP Extensions
 
-The resources listed here contain information for developers who want to cusomtize or extend the Adobe Commerce and Magento Open Source applications. You can also create extensions that introduce new functionality and distribute them to merchants.
+The resources listed here contain information for developers who want to customize or extend the Adobe Commerce and Magento Open Source applications. You can also create extensions that introduce new functionality and distribute them to merchants.
 
 <Resources slots="heading, links"/>
 
@@ -33,7 +33,7 @@ Use these sections to learn about how to develop PHP extensions.
 
 [Architecture](architecture/)
 
-Explore resources that describe the foundational elements of the Adobe Commerce and Magento Open Source framework
+Explore resources that describe the foundational elements of the Adobe Commerce and Magento Open Source framework.
 
 <!-- <DiscoverBlock slots="link, text"/>
 

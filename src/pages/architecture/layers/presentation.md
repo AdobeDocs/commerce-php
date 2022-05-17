@@ -1,5 +1,5 @@
 ---
-title: Presentation Layer | | Commerce PHP Extensions
+title: Presentation Layer | Commerce PHP Extensions
 description: Learn about the architectural presentation layer of the Commerce framework.
 ---
 
