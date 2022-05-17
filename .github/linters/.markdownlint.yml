@@ -129,3 +129,8 @@ MD046:
 
 # MD047/single-trailing-newline - Files should end with a single newline character
 MD047: true
+
+# MD048/code-fence-style - Code fence style
+MD048:
+  # Code fence style
+  style: "consistent"
