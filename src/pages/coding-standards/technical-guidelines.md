@@ -536,7 +536,7 @@ You need to read configuration from different sources (like database or filesyst
     MUST process (handle or re-throw) exceptions of the underlying layer.
 
 6.1.3. A layer MUST NOT depend on a layer that invokes (above) it. A layer MUST only depend on a layer directly below it.
-![Magento architecture layers]({{site.baseurl}}/common/images/archi_diagrams_layers_alt4.jpg)
+![Commerce architecture layers](../_images/archi_diagrams_layers_alt4.jpg)
 
 ### 6.2. Presentation layer
 

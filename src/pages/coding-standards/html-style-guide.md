@@ -115,7 +115,7 @@ Use no space before the colon and one space after the colon for the sake of read
 
 Use appropriate HTML5 elements for blocks. The following diagram shows how to define which HTML5 element to use for a block:
 
-![]({{ site.baseurl }}/common/images/h5d-sectioning-flowchart.png)
+![HTML5 element flowchart](../_images/h5d-sectioning-flowchart.png)
 
 ## Class names
 
