@@ -14,7 +14,7 @@ Following these standards is optional for third-party Magento developers, but do
 
 Use [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt) to interpret the "MUST," "MUST NOT," "REQUIRED," "SHALL," "SHALL NOT," "SHOULD," "SHOULD NOT," "RECOMMENDED," "MAY," and "OPTIONAL keywords."
 
-## Scope of the standard {#scope}
+## Scope of the standard
 
 The goal of this standard is to unify usage of code DocBlocks for all files, not specific to a particular language.
 
@@ -166,7 +166,7 @@ interface MetadataObjectInterface
  */
 ```
 
-## Code structural elements {#code-elements}
+## Code structural elements
 
 A structural element is defined in [phpDocumentor](http://phpdoc.org/) as part of the imperative source code, such as PHP or JavaScript, or procedural SQL.
 For example:
@@ -259,7 +259,7 @@ class Csv extends AdapterAbstract
 require_once __DIR__ . '/../../functions.php';
 ```
 
-### Classes and interfaces {#classes-interfaces}
+### Classes and interfaces
 
 Classes and interfaces should have a short description with a human-readable description of the class.
 If the short description adds no additional information beyond what the type name already supplies, the
@@ -330,7 +330,7 @@ class Profiler
     protected static $instance = null;
 ```
 
-### Functions and methods {#functions-methods}
+### Functions and methods
 
 In general, a typed method signature must be preferred over PHPDoc annotations whenever possible.
 
@@ -417,7 +417,7 @@ protected function merge($configFiles)
 }
 ```
 
-#### Divergence in @throws tag {#throws}
+#### Divergence in @throws tag
 
 In general, use the `@throws` tag when the code uses *throw*:
 
@@ -519,7 +519,7 @@ For example:
     }
 ```
 
-#### @return tag {#return}
+#### @return tag
 
 In general, method return type signatures should be prefered over `@return` type annotations.
 If that is not possible due to ambiguous return types or backward compatibility constraints, the `@return` type annotation must be used.
@@ -577,14 +577,14 @@ Templates are no longer supported by PHPDocumentor. Therefore, they MUST NOT be 
 
 It is encouraged to replace existing DocBlock templates with regular DocBlock comments when the file is being modified.
 
-## Structure of documentation space {#documentation-space}
+## Structure of documentation space
 
 `@author` ,`@category`, `@package`, and `@subpackage` MUST NOT be used.
 Documentation is organized with the use of namespaces.
 
 ## Other DocBlock tags
 
-### @inheritdoc tag {#inheritdoc}
+### @inheritdoc tag
 
 The `@inheritdoc` tag SHOULD NOT be used.
 If a child class method requires a long description to explain its purpose, it may use `@inheritdoc` to indicate the new description is intended as an addition to the parent method description.
@@ -652,7 +652,7 @@ class LimitedMutableClass implements MutableInterface
 }
 ```
 
-### @api tag {#api}
+### @api tag
 
 The `@api` tag indicates the code is part of the public API and is subject to the [Magento Backward Compatibility Policy](https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy/).
 
@@ -662,7 +662,7 @@ You do not need to annotate each method individually.
 
 See [Semantic Versioning 2.0.0](http://semver.org/) for information about changing and updating code while maintaining backward compatibility.
 
-### @deprecated tag {#deprecated}
+### @deprecated tag
 
 A deprecated class or method is one that has been superseded and may cease to exist in the future.
 It will be retained to provide backward compatibility until the next major component release.
@@ -711,7 +711,7 @@ public function setScopedPrice($price, $scopeType, $scopeId)
 }
 ```
 
-### @var inline tag {#var}
+### @var inline tag
 
 For the purpose of automatic type hinting in an IDE, an inline notation of `@var` tag can be used wherever the IDE is unable to resolve variable type.
 This tag declares variables that will emerge in following lines of code:
@@ -733,7 +733,7 @@ This notation is also valid:
 foreach ($errors as $error) {
 ```
 
-### @see tag {#see}
+### @see tag
 
 Besides the normal way of using `@see` tags as [recommended by phpDocumentor](https://manual.phpdoc.org/HTMLSmartyConverter/HandS/phpDocumentor/tutorial_tags.see.pkg.html), it may be used as an addition to `@var`, when the `@var` is already used in this comment.
 
@@ -747,7 +747,7 @@ Specifically, this is possible when a PHP file is composed from multiple file in
  */
 ```
 
-### @method tag {#method}
+### @method tag
 
 The `@method` allows a class to know which ‘magic’ methods are callable.
 
@@ -783,7 +783,7 @@ class Image extends AbstractModel
 }
 ```
 
-### @link tag {#link}
+### @link tag
 
 The `@link` tag indicates a custom relation between the associated Structural Elements and a website, identified by an absolute URI.
 
@@ -797,7 +797,7 @@ Syntax:
 
 Any other valid DocBlock tags may be specified, if the author deems it necessary, but only if they bring valuable non-obvious information.
 
-## Formatting conventions {#format-conventions}
+## Formatting conventions
 
 ### Padding tags
 
@@ -813,7 +813,7 @@ If there are two or more tags together in one DocBlock, their values may be padd
  */
 ```
 
-### Formatting consistency {#format-consistency}
+### Formatting consistency
 
 In a given DocBlock, the formatting style must be consistent.
 

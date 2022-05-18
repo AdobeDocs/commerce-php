@@ -239,7 +239,7 @@ Bad solutions include passing in a reference type to hold error information or a
 These basically amount to a primitive [exception](https://glossary.magento.com/exception) handling hack.
 Feel free to use custom exceptions when appropriate.
 
-### Standard features {#standard-features}
+### Standard features
 
 For maximum portability and compatibility, use standard features whenever possible.
 

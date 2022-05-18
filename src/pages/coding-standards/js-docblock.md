@@ -9,14 +9,14 @@ functional_areas:
   - Standards
 ---
 
-## Introduction {#frontend-dev-guide-javascript-js-coding-docblock-overview}
+## Introduction
 
 To add [JavaScript](https://glossary.magento.com/javascript) code inline documentation, follow these guidelines. Some parts of Magento code may not comply with this standard, but we are working to gradually improve this. Following these standard is optional for 3rd-party Magento developers, but will help to create consistent, clean, and easy to read inline documentation.
 This standard are a subset of [Google JavaScript Style Guide](https://google.github.io/styleguide/javascriptguide.xml) regulations.
 
 Use [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt) to interpret the "must," "must not," "required," "shall," "shall not," "should," "should not," "recommended," "may," and "optional" keywords.
 
-## Use JSDoc {#frontend-dev-guide-javascript-js-coding-docblock-use}
+## Use JSDoc
 
 Document all files, classes, methods, and properties with JSDoc comments.
 
@@ -24,7 +24,7 @@ Inline comments should be of the "//" type.
 
 It is recommended to avoid sentence fragments in documentation blocks. Use sentence-style capitalization and put a period at the end. Sentence fragmentation is acceptable in inline commentaries to keep it short.
 
-### Comment syntax {#frontend-dev-guide-javascript-js-coding-docblock-syntax}
+### Comment syntax
 
 JSDoc comments requirements:
 
@@ -44,7 +44,7 @@ Example:
 
 Many tools extract [metadata](https://glossary.magento.com/metadata) from JSDoc comments to validate and optimize the code.
 
-### JSDoc indentation {#frontend-dev-guide-javascript-js-coding-docblock-indentation}
+### JSDoc indentation
 
 If you have to line break a block tag, you should treat this as breaking a code statement and indent it four spaces.
 
@@ -62,7 +62,7 @@ project.MyClass.prototype.method = function(foo) {
 };
 ```
 
-### Class comments {#frontend-dev-guide-javascript-js-coding-docblock-classcomments}
+### Class comments
 
 Classes must be documented with a description, and appropriate type tags.
 
@@ -78,7 +78,7 @@ project.MyClass = function(arg1, arg2) {
 };
 ```
 
-### Method and function comments {#frontend-dev-guide-javascript-js-coding-docblock-methodcomments}
+### Method and function comments
 
 A description must be provided along with parameters. Method descriptions should start with a sentence written in the third person declarative voice.
 
@@ -95,7 +95,7 @@ function someMethod(obj) {
 }
 ```
 
-### Property comments {#frontend-dev-guide-javascript-js-coding-docblock-propertycomments}
+### Property comments
 
 ```javascript
 /**
@@ -106,9 +106,9 @@ function someMethod(obj) {
 project.MyClass.prototype.someProperty = 4;
 ```
 
-### JSDoc tag reference {#frontend-dev-guide-javascript-js-coding-docblock-tagreference}
+### JSDoc tag reference
 
-#### @const {#frontend-dev-guide-javascript-js-coding-docblock-const}
+#### @const
 
 Marks a variable read-only and suitable for inlining. Generates warnings if it is rewritten. Constants should also be ALL_CAPS, but the annotation should help eliminate reliance on the naming convention.
 
@@ -126,7 +126,7 @@ Marks a variable read-only and suitable for inlining. Generates warnings if it i
 mynamespace.DEFAULT_TIMEZONE = 'GMT';
 ```
 
-#### @extends {#frontend-dev-guide-javascript-js-coding-docblock-extends}
+#### @extends 
 
 Used with `@constructor` to indicate that a class inherits from another class.
 
@@ -142,7 +142,7 @@ project.MyClass.EmptyNodeList = function() {
 };
 ```
 
-#### @interface {#frontend-dev-guide-javascript-js-coding-docblock-interface}
+#### @interface
 
 Used to indicate that the function defines an interface.
 
@@ -165,7 +165,7 @@ function Polygon() {};
 Polygon.prototype.getSides = function() {};
 ```
 
-#### @implements {#frontend-dev-guide-javascript-js-coding-docblock-implements}
+#### @implements
 
 Used with `@constructor` to indicate that a class implements an interface.
 
@@ -188,7 +188,7 @@ Square.prototype.draw = function() {
 };
 ```
 
-#### @lends {#frontend-dev-guide-javascript-js-coding-docblock-lends}
+#### @lends
 
 Indicates that the keys of an object literal should be treated as properties of some other object. This annotation should only appear on object literals.
 
@@ -205,7 +205,7 @@ project.MyClass.extend(
 );
 ```
 
-#### @override {#frontend-dev-guide-javascript-js-coding-docblock-override}
+#### @override
 
 Indicates that a method or property of a subclass intentionally hides a method or property of the superclass. If no other documentation is included, the method or property also inherits documentation from its superclass.
 
@@ -219,7 +219,7 @@ project.SubClass.prototype.toString() {
 };
 ```
 
-#### @param {#frontend-dev-guide-javascript-js-coding-docblock-param}
+#### @param
 
 Used with method, function and constructor calls to document the arguments of a function.
 
@@ -238,7 +238,7 @@ Type names must be enclosed in curly braces. If the type is omitted, the compile
 };
 ```
 
-#### @return {#frontend-dev-guide-javascript-js-coding-docblock-return}
+#### @return
 
 Used with method and function calls to document the return type. When writing descriptions for boolean parameters, prefer "Whether the component is visible" to "True if the component is visible, false otherwise". If there is no return value, do not use an `@return` tag.
 
@@ -254,7 +254,7 @@ namespace.Storage.prototype.getLastId = function() {
 };
 ```
 
-#### @this {#frontend-dev-guide-javascript-js-coding-docblock-this}
+#### @this
 
 The type of the object in whose context a particular method is called. Required when the this [keyword](https://glossary.magento.com/keyword) is referenced from a function that is not a prototype method.
 
@@ -272,7 +272,7 @@ pinto.chat.RosterWidget.extern('getRosterElement',
 );
 ```
 
-#### @type {#frontend-dev-guide-javascript-js-coding-docblock-type}
+#### @type
 
 Identifies the type of a variable, property, or expression.
 
@@ -285,7 +285,7 @@ Identifies the type of a variable, property, or expression.
 var hexId = hexId;
 ```
 
-#### @typedef {#frontend-dev-guide-javascript-js-coding-docblock-typedef}
+#### @typedef
 
 This annotation can be used to declare an alias of a more complex type.
 
@@ -299,7 +299,7 @@ namespace.readNumber = function(x) {
 }
 ```
 
-### JavaScript types {#frontend-dev-guide-javascript-js-coding-docblock-jstypes}
+### JavaScript types
 
 <table>
    <tbody>
@@ -467,7 +467,7 @@ new project.MyClass()</pre></td>
   </tbody>
 </table>
 
-#### JavaScript type language {#frontend-dev-guide-javascript-js-coding-docblock-typelang}
+#### JavaScript type language
 
 <table>
    <tbody>
