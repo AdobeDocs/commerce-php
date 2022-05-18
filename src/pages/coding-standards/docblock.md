@@ -112,7 +112,8 @@ If the description or short description happens to be the first one after the Do
 
 ### License Notice and Copyright
 
- {:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 This section is applicable to Magento core files only. Please follow it if you are a contributing developer.
 
 Any file in the Magento source should have a header with license and copyright notice.

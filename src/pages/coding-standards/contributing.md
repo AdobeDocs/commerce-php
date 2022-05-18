@@ -27,7 +27,8 @@ PHPCS rules are called sniffs. A sniff is just a static code analyzer that will 
 
 Follow the [official PHPCS guide](https://github.com/squizlabs/PHP_CodeSniffer/wiki/Coding-Standard-Tutorial) steps to write a sniff.
 
-{:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 The [magento-coding-standard](https://github.com/magento/magento-coding-standard) repository has examples at the `Magento2/Sniffs` directory.
 
 Sniffs must be also covered by a unit test to ensure its behaviour is correct. This unit test defines a set of line numbers, each of them with a number of expected errors or warnings, which will be compared with the results obtained from executing the sniff against one or several fixtures containing real code.
@@ -42,7 +43,8 @@ Add your new sniff to the `Magento2/ruleset.xml` file, so it is executed alongsi
 
 Depending on the type of issue returned, the rule will have assigned a type of *warning* or *error*, as well as a severity level from 10 to 1, being 10 the most severe. This number is assigned based on your own judgment, but make sure to review the current sniffs and their assigned levels beforehand to get an idea of in which severity your new issue fits better.
 
-{:.bs-callout-warning}
+<InlineAlert variant="warning" slots="text"/>
+
 Rules are sorted by severity.
 
 ## Creating a new ESLint rule
@@ -59,5 +61,6 @@ As with PHPCS sniffs, ESLint rules need to be covered by a unit test in order to
 1. When your code is ready, open a pull request against the magento-coding-standard from your branch into the upstream `develop`.
 1. PR will be reviewed by the repository's maintainers and merged.
 
-{:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 Review general [documentation for contributors](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
