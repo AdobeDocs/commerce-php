@@ -25,7 +25,7 @@ module.exports = [
         },
         {
           title: "jQuery widget coding standard",
-          path: "/coding-standards/jquery-widget/",
+          path: "/coding-standards/jquery-widgets/",
         },
         {
           title: "LESS coding standard",
@@ -37,12 +37,12 @@ module.exports = [
         },
         {
           title: "Contributing",
-          path: "/coding-standards/conntributing/",
+          path: "/coding-standards/contributing/",
         },
       ],
     },
     {
       title: "Technical guidelines",
-      path: "/coding-standards/technica-guidelines/",
+      path: "/coding-standards/technical-guidelines/",
     },
   ];
