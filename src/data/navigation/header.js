@@ -19,8 +19,8 @@ module.exports = [
     //   title: "Module Reference",
     //   path: "/module-reference/",
     // },
-    // {
-    //   title: "Coding Standards",
-    //   path: "/coding-standards/",
-    // },
+    {
+      title: "Coding Standards",
+      path: "/coding-standards/",
+    },
   ];
