@@ -50,7 +50,7 @@ Use [RFC2119](https://tools.ietf.org/html/rfc2119) to interpret keywords like:
 
 2.2.1. An object MUST be ready for use after instantiation. No additional public initialization methods are allowed.
 
-{% collapsible Examples: %}
+Examples:
 
 __Not recommended:__
 
@@ -101,10 +101,6 @@ class Config
 }
 ```
 
-{% endcollapsible %}
-
----
-
 2.2.2. Factories SHOULD be used for object instantiation instead of `new` keyword. An object SHOULD be replaceable for testing or extensibility purposes.
 Exception: [DTOs](https://en.wikipedia.org/wiki/Data_transfer_object). There is no behavior in DTOs, so there is no reason for its replaceability.
 Tests can create real DTOs for stubs.
@@ -114,7 +110,7 @@ Data interfaces,  Exceptions and `Zend_Db_Expr` are examples of DTOs.
 
 2.3.1. Constructor SHOULD throw an exception when validation of an argument has failed.
 
-{% collapsible Example: %}
+Example:
 
 ``` php
 class Composite
@@ -142,13 +138,9 @@ class Composite
 }
 ```
 
-{% endcollapsible %}
-
----
-
 2.3.2. Events MUST NOT be triggered in constructors.
 
-{% collapsible Examples: %}
+Examples:
 
 __Not recommended:__
 
@@ -203,13 +195,9 @@ class Config
 }
 ```
 
-{% endcollapsible %}
-
----
-
 2.4. All dependencies MUST be requested by the most generic type that is required by the client object.
 
-{% collapsible Examples: %}
+Examples:
 
 __Not recommended:__
 
@@ -245,14 +233,11 @@ class SessionManager
 }
 ```
 
-{% endcollapsible %}
-
----
-
 2.5. Proxies and interceptors MUST NEVER be explicitly requested in constructors.
 
 2.6. Inheritance SHOULD NOT be used. Composition SHOULD be used for code reuse.
-{% collapsible Examples: %}
+
+Examples:
 
 __Not recommended:__
 
@@ -320,10 +305,6 @@ class Edit extends Action
 }
 ```
 
-{% endcollapsible %}
-
----
-
 2.7. All non-public properties and methods SHOULD be private.
 
 2.8. Abstract classes MUST NOT be marked as public `@api`.
@@ -339,7 +320,8 @@ class Edit extends Action
 2.13. Static methods SHOULD NOT be used.
 
 2.14. [Temporal coupling](http://blog.ploeh.dk/2011/05/24/DesignSmellTemporalCoupling/) MUST be avoided
-{% collapsible Example #1: %}
+
+Example #1:
 
 __Not recommended:__
 
@@ -368,11 +350,7 @@ echo $url->get($baseUrl, 'custom/path');
 // Only one way to use API, no temporal coupling.
 ```
 
-{% endcollapsible %}
-
----
-
-{% collapsible Example #2: %}
+Example #2:
 
 __Not recommended:__
 
@@ -433,10 +411,6 @@ class View extends Template
 // More flexible, no dependencies between classes, no temporal coupling.
 ```
 
-{% endcollapsible %}
-
----
-
 2.15. Method chaining in class design MUST be avoided.
 
 2.16. [Law of Demeter](https://en.wikipedia.org/wiki/Law_of_Demeter) SHOULD be obeyed.
@@ -447,13 +421,10 @@ class View extends Template
 
 2.17.2. Composites SHOULD be used when there is a need to work with a tree as a single object.
 
-{% collapsible Example: %}
+Example:
 
 You need to read configuration from different sources (like database or filesystem) and want to make the reading process configurable: allow extensions to add more configuration sources. In this case, you can create a `ConfigReaderInterface` with a composite implementation - `ConfigReaderComposite`, and configure particular readers as children of a composite reader.
 
- {% endcollapsible %}
-
----
 2.17.3. Strategy SHOULD be used when there are multiple algorithms for performing an operation.
 
 ## 3. Dependency injection
@@ -867,7 +838,7 @@ You need to read configuration from different sources (like database or filesyst
 
 14.1. All values (including objects) passed to an [event](https://glossary.magento.com/event) MUST NOT be modified in the event observer. Instead, plugins SHOULD BE used for modifying the input or output of a function.
 
-{% collapsible Example: %}
+Example:
 
 ``` php
 use Magento\Framework\App\DataObject;
@@ -895,10 +866,6 @@ class SampleEventObserverThatModifiesInputs implements ObserverInterface
     }
 }
 ```
-
-{% endcollapsible %}
-
----
 
 14.2. Events used SHOULD be observed as specifically as possible. A `global` subscription to an event SHOULD NOT be used when the area impacted is just `frontend`.
 
