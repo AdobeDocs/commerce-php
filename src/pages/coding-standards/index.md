@@ -12,11 +12,11 @@ Like many large projects, Magento has coding standards.
 
 Use Magento's coding standards when you contribute to Magento's codebase or create extensions.
 
--  [Code demarcation standard]({{ page.baseurl }}/coding-standards/code-standard-demarcation.html)
--  [PHP coding standard]({{ page.baseurl }}/coding-standards/code-standard-php.html)
--  [JavaScript coding standard]({{ page.baseurl }}/coding-standards/code-standard-javascript.html)
--  [jQuery widget coding standard]({{ page.baseurl }}/coding-standards/code-standard-jquery-widgets.html)
--  [DocBlock standard]({{ page.baseurl }}/coding-standards/docblock-standard-general.html)
--  [JavaScript DocBlock standard]({{ page.baseurl }}/coding-standards/docblock-standard-javascript.html)
--  [LESS coding standard]({{ page.baseurl }}/coding-standards/code-standard-less.html)
--  [HTML style guide]({{ page.baseurl }}/coding-standards/code-standard-html.html)
+-  [Code demarcation standard](code-demarcation.md)
+-  [PHP coding standard](php.md)
+-  [JavaScript coding standard](js.md)
+-  [jQuery widget coding standard](jquery-widgets.md)
+-  [DocBlock standard](docblock.md)
+-  [JavaScript DocBlock standard](js-docblock.md)
+-  [LESS coding standard](less.md)
+-  [HTML style guide](html-style-guide.md)

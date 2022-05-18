@@ -16,7 +16,7 @@ These guidelines came from many years of hard work, experience, and discussions.
 
 ### Text conventions
 
-Use [RFC2119] to interpret keywords like:
+Use [RFC2119](https://tools.ietf.org/html/rfc2119) to interpret keywords like:
 
 *  MUST and MUST NOT
 
@@ -44,7 +44,7 @@ Use [RFC2119] to interpret keywords like:
 
 ## 2. Class design
 
-2.1. Object decomposition MUST follow the [SOLID principles].
+2.1. Object decomposition MUST follow the [SOLID principles](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)).
 
 2.2. Object instantiation
 
@@ -338,7 +338,7 @@ class Edit extends Action
 
 2.13. Static methods SHOULD NOT be used.
 
-2.14. [Temporal coupling] MUST be avoided
+2.14. [Temporal coupling](http://blog.ploeh.dk/2011/05/24/DesignSmellTemporalCoupling/) MUST be avoided
 {% collapsible Example #1: %}
 
 __Not recommended:__
@@ -439,7 +439,7 @@ class View extends Template
 
 2.15. Method chaining in class design MUST be avoided.
 
-2.16. [Law of Demeter] SHOULD be obeyed.
+2.16. [Law of Demeter](https://en.wikipedia.org/wiki/Law_of_Demeter) SHOULD be obeyed.
 
 2.17. Patterns
 
@@ -530,7 +530,7 @@ You need to read configuration from different sources (like database or filesyst
 
 ### 6.1. All layers
 
-6.1.1. Application SHOULD be structured in compliance with the [CQRS principle].
+6.1.1. Application SHOULD be structured in compliance with the [CQRS principle](https://martinfowler.com/bliki/CQRS.html).
 
 6.1.2. Every application layer (Presentation, Service Contracts, Data Access)
     MUST process (handle or re-throw) exceptions of the underlying layer.
@@ -578,7 +578,7 @@ You need to read configuration from different sources (like database or filesyst
 
 6.4.2.1. Methods that have similar names MUST serve similar purposes across different services, but they still MAY have different signatures.
 
-6.4.2.2. Service contracts SHOULD NOT be used for read scenarios on the storefront. Instead, GraphQL SHOULD be used for storefront scenarios. Check out [web API technical vision]({{ page.baseurl }}/coding-standards/technical-vision/webapi.html) for more details.
+6.4.2.2. Service contracts SHOULD NOT be used for read scenarios on the storefront. Instead, GraphQL SHOULD be used for storefront scenarios. Check out [web API technical vision](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api/) for more details.
 
 6.4.2.3. Each service interface SHOULD declare a single public method. An interface name SHOULD reflect the task or action to be performed. For example, `Magento\InventoryApi\Api\StockSourceLinksDeleteInterface::execute(array $links)`. The only exception is a Repository API, which MAY be added for convenience and MUST be limited to singular CRUD operations and `getList($searchCriteria)`.
 
@@ -704,7 +704,7 @@ You need to read configuration from different sources (like database or filesyst
 
 ## 9. Browser-Server interaction in web application
 
-9.1. All Client-Server calls must follow the [HTTP Protocol].
+9.1. All Client-Server calls must follow the [HTTP protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol).
 
 9.2. All customer-agnostic data (Products, Categories, CMS Pages) MUST be rendered on a server and cached in a public [cache](https://glossary.magento.com/cache) server (Varnish).
 
@@ -718,7 +718,7 @@ You need to read configuration from different sources (like database or filesyst
 
 9.7. All state-modifying requests from a browser SHOULD be performed with AJAX requests.
 
-9.8. If an error occurs during request handling, the server MUST return an appropriate [HTTP Status Code] and an explanation of an error in the response body.
+9.8. If an error occurs during request handling, the server MUST return an appropriate [HTTP status code](https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html) and an explanation of an error in the response body.
 
 9.9. All headers MUST be respected.
 
@@ -738,9 +738,9 @@ You need to read configuration from different sources (like database or filesyst
 
 10.3.2 Code MUST NOT make use of the synchronous form of `require` (`require('moduleIdentifier')`).
 
-10.4. The [W3C Content Security Policy] MUST be followed.
+10.4. The [W3C Content Security Policy](https://w3c.github.io/webappsec-csp/) MUST be followed.
 
-10.5. ESLint [rules][rules] SHOULD BE followed.
+10.5. ESLint [rules](https://github.com/magento/magento-coding-standard/blob/develop/eslint/.eslintrc-magento) SHOULD BE followed.
 
 10.5.1. ECMAScript 5.1 SHOULD be used as a JS standard.
 
@@ -801,7 +801,7 @@ You need to read configuration from different sources (like database or filesyst
 
 #### 11.3.3. Elements
 
-11.3.3.1. All element selectors MUST follow these [best practices]({{ site.baseurl }}/mftf/docs/best-practices.html).
+11.3.3.1. All element selectors MUST follow these [best practices](https://devdocs.magento.com/mftf/docs/best-practices.html).
 
 11.3.3.2. The element `name` MUST be unique within the `<section>`.
 
@@ -855,7 +855,7 @@ You need to read configuration from different sources (like database or filesyst
 
 ## 13. Command line interface (CLI)
 
-13.1. Magento 2 [CLI Command Naming Guidelines] MUST be followed.
+13.1. Magento 2 [CLI command naming guidelines](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/cli-cmds/cli-naming-guidelines.html) MUST be followed.
 
 13.2. A CLI command MUST be created for any functionality intended to be used by a system integrator/system administrator/developer (for example: change indexer mode, generate a configuration file, etc.).
 
@@ -928,7 +928,7 @@ class SampleEventObserverThatModifiesInputs implements ObserverInterface
 
 15.3.1. Sanitize input; escape output.
 
-15.3.2. Follow [XSS prevention strategies guidelines]({{ page.baseurl }}/extension-dev-guide/xss-protection.html) for escaping output.
+15.3.2. Follow [XSS prevention strategies guidelines](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/xss-protection.html) for escaping output.
 
 15.3.3. Incoming data should be casted to the expected type. String data should be validated/sanitized.
 
@@ -989,16 +989,3 @@ class SampleEventObserverThatModifiesInputs implements ObserverInterface
 ## 17. Services
 
 17.1. New features with limited customization scenarios SHOULD be implemented as a thin extension that will communicate to a service that contains business logic. This allows developers to release features independently of Magento and makes feature upgrades easier.
-
-<!-- LINKS: DEFINITIONS AND ADDRESSES -->
-
-[RFC2119]: https://tools.ietf.org/html/rfc2119
-[SOLID principles]: https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)
-[Temporal coupling]: http://blog.ploeh.dk/2011/05/24/DesignSmellTemporalCoupling/
-[Law of Demeter]: https://en.wikipedia.org/wiki/Law_of_Demeter
-[CQRS principle]: https://martinfowler.com/bliki/CQRS.html
-[HTTP Protocol]: https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
-[HTTP Status Code]: https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html
-[W3C Content Security Policy]: https://w3c.github.io/webappsec-csp/
-[rules]: https://github.com/magento/magento-coding-standard/blob/develop/eslint/.eslintrc-magento
-[CLI Command Naming Guidelines]: {{ page.baseurl }}/extension-dev-guide/cli-cmds/cli-naming-guidelines.html

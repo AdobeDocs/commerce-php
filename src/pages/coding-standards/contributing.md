@@ -11,7 +11,7 @@ functional_areas:
 
 Like many large projects, Magento has coding standards.
 
-Use the [Magento coding standards]({{site.baseurl}}/guides/v2.4/coding-standards/bk-coding-standards.html) when you contribute to the Magento codebase or create an extension. It is possible that a rule that you consider important is not covered yet.
+Use the [coding standards](index.md) when you contribute to the Adobe Commerce and Magento Open Source codebase or create an extension. It is possible that a rule that you consider important is not covered yet.
 
 You can add your own custom rules, using either PHPCS or ESLint, and contribute those to the [magento-coding-standard](https://github.com/magento/magento-coding-standard) repository so everyone can use those custome rules.
 
@@ -60,4 +60,4 @@ As with PHPCS sniffs, ESLint rules need to be covered by a unit test in order to
 1. PR will be reviewed by the repository's maintainers and merged.
 
 {:.bs-callout-info}
-Review general [Adobe Commerce documentation for contributors]({{ site.baseurl }}/contributor-guide/contributing.html).
+Review general [documentation for contributors](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).

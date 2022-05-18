@@ -6,22 +6,23 @@ functional_areas:
   - Standards
 ---
 
-Use Magento's [ESLint Rules][eslint-rules] to make sure your code adheres to Magento's coding standards.
+Use Magento's [ESLint Rules](https://github.com/magento/magento-coding-standard/blob/develop/eslint/.eslintrc-magento) to make sure your code adheres to Magento's coding standards.
 Developers writing [JavaScript](https://glossary.magento.com/javascript) and [jQuery](https://glossary.magento.com/jquery) code for Magento must adhere to these guidelines and follow the standards listed in this document.
 
 Use [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt) to interpret the "must," "must not," "required," "shall," "shall not," "should," "should not," "recommended," "may," and "optional" keywords.
 
-Magento uses the [jQuery library][jquery] including standard and custom [jQuery widgets][jquery-widgets].
-For the jQuery widget coding standard, see [jQuery widget coding standard][jquery-widget-coding-standard].
+Magento uses the [jQuery library](https://jquery.com/) including standard and custom [jQuery widgets](http://api.jqueryui.com/category/widgets).
+
+For the jQuery widget coding standard, see [jQuery widget coding standard](jquery-widgets.md).
 
 ## Eslint code analysis
 
-Use [ESLint][eslint] to ensure the quality of your JavaScript code.
+Use [ESLint](http://eslint.org/) to ensure the quality of your JavaScript code.
 
 ESLint is a community-driven tool that detects errors and potential problems in JavaScript code.
 It can use custom rules to enforce specific coding standards.
 
-*  [Magento ESLint Rules][eslint-rules]
+*  [Magento ESLint Rules](https://github.com/magento/magento-coding-standard/blob/develop/eslint/.eslintrc-magento)
 
 ## Additional formatting standards
 
@@ -356,16 +357,8 @@ var foo = 'bar',
 
 ## Custom rules
 
-There is a set of custom Eslint rules to ensure code compatiblity with the latest versions of 3rd party libraries.
+There is a set of custom Eslint rules to ensure code compatiblity with the latest versions of third-party libraries.
 
-These custom rules are included using the `rulePaths` setting in the [Eslint Grunt configuration][grunt-eslint-configuration].
+These custom rules are included using the `rulePaths` setting in the [Eslint Grunt configuration](https://github.com/magento/magento2/blob/2.4/dev/tools/grunt/configs/eslint.json).
 
-The source code of the rules can be found in the [Eslint custom rules folder][eslint-custom-rules-folder].
-
-[jquery]: https://jquery.com/
-[jquery-widgets]: http://api.jqueryui.com/category/widgets
-[jquery-widget-coding-standard]: {{ page.baseurl }}/coding-standards/code-standard-jquery-widgets.html
-[eslint]: http://eslint.org/
-[eslint-rules]: https://github.com/magento/magento-coding-standard/blob/develop/eslint/.eslintrc-magento
-[grunt-eslint-configuration]: {{ site.mage2bloburl }}/{{ page.guide_version }}/dev/tools/grunt/configs/eslint.json
-[eslint-custom-rules-folder]: {{ site.mage2bloburl }}/{{ page.guide_version }}/dev/tests/static/testsuite/Magento/Test/Js/_files/eslint/rules/
+The source code of the rules can be found in the [Eslint custom rules folder](https://github.com/magento/magento2/tree/2.4/dev/tests/static/testsuite/Magento/Test/Js/_files/eslint).
