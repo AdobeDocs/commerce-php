@@ -55,7 +55,7 @@ Lorem ipsum dolor sit amet -->
 
 <DiscoverBlock slots="link, text"/>
 
-[Coding Standard](coding-standards/)
+[Coding Standards](coding-standards/)
 
 Review Adobe Commerce and Magento Open Source coding standards for different languages, including PHP, JavaScript, LESS, and jQuery.
 
