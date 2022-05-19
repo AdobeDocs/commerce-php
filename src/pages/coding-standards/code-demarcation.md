@@ -5,11 +5,11 @@ description: Review code demarcation standards for Adobe Commerce and Magento Op
 
 # Code demarcation standrad
 
-Magento core developers must follow the Magento code demarcation standard.
+Core developers must follow the code demarcation standard.
 
 This standard is recommended for third-party [extension](https://glossary.magento.com/extension) developers.
 
-Some parts of Magento code might not comply with the standard, but we are working to gradually improve this.
+Some parts of code might not comply with the standard, but we are working to gradually improve this.
 
 The standard was developed in the scope of our efforts to ensure the following:
 

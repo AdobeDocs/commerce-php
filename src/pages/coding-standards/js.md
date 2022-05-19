@@ -5,12 +5,12 @@ description: Review standards for writing JavaScript and jQuery code for Adobe C
 
 # JavaScript coding standard
 
-Use Magento's [ESLint Rules](https://github.com/magento/magento-coding-standard/blob/develop/eslint/.eslintrc-magento) to make sure your code adheres to Magento's coding standards.
-Developers writing [JavaScript](https://glossary.magento.com/javascript) and [jQuery](https://glossary.magento.com/jquery) code for Magento must adhere to these guidelines and follow the standards listed in this document.
+Use the [ESLint rules](https://github.com/magento/magento-coding-standard/blob/develop/eslint/.eslintrc-magento) to make sure your code adheres to the coding standards.
+Developers writing [JavaScript](https://glossary.magento.com/javascript) and [jQuery](https://glossary.magento.com/jquery) code for Adobe Commerce and Magento Open Source must adhere to these guidelines and follow the standards listed in this document.
 
 Use [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt) to interpret the "must," "must not," "required," "shall," "shall not," "should," "should not," "recommended," "may," and "optional" keywords.
 
-Magento uses the [jQuery library](https://jquery.com/) including standard and custom [jQuery widgets](http://api.jqueryui.com/category/widgets).
+Adobe Commerce and Magento Open Source uses the [jQuery library](https://jquery.com/) including standard and custom [jQuery widgets](http://api.jqueryui.com/category/widgets).
 
 For the jQuery widget coding standard, see [jQuery widget coding standard](jquery-widgets.md).
 
@@ -21,7 +21,7 @@ Use [ESLint](http://eslint.org/) to ensure the quality of your JavaScript code.
 ESLint is a community-driven tool that detects errors and potential problems in JavaScript code.
 It can use custom rules to enforce specific coding standards.
 
-*  [Magento ESLint Rules](https://github.com/magento/magento-coding-standard/blob/develop/eslint/.eslintrc-magento)
+*  [ESLint rules](https://github.com/magento/magento-coding-standard/blob/develop/eslint/.eslintrc-magento)
 
 ## Additional formatting standards
 
@@ -44,7 +44,7 @@ This reduces the quantity of the changed lines in a diff and makes code safer in
 
 ### Indentation
 
-Indentation in Magento code uses four spaces.
+Indentation in code uses four spaces.
 
 Tabs are not allowed as indentation.
 

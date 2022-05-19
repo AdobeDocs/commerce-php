@@ -5,7 +5,7 @@ description: Review the fundamental coding and application design principles tha
 
 # Technical guidelines
 
-Magento core developers use this document as a reference during code reviews; some rules have corresponding code checks in the Magento static tests.
+Core developers use this document as a reference during code reviews; some rules have corresponding code checks in the static tests.
 
 These guidelines came from many years of hard work, experience, and discussions. We strongly believe that new technical initiatives should follow these recommendations, and the existing code should be improved to meet them.
 
@@ -666,7 +666,7 @@ You need to read configuration from different sources (like database or filesyst
 
 8.6. A module MUST NOT contain references to [theme](https://glossary.magento.com/theme) resources.
 
-8.7. A component MUST NOT rely either on dependencies of dependencies or on dependencies of the project it is included in (e.g., Magento application). All component dependencies MUST be stated explicitly.
+8.7. A component MUST NOT rely either on dependencies of dependencies or on dependencies of the project it is included in (e.g., Adobe Commerce or Magento Open Source application). All component dependencies MUST be stated explicitly.
 
 ## 9. Browser-Server interaction in web application
 
@@ -694,7 +694,7 @@ You need to read configuration from different sources (like database or filesyst
 
 ## 10. JavaScript (JS) application
 
-10.1. The Magento 2 [UI Component](https://glossary.magento.com/ui-component) framework MUST be used to build frontend applications.
+10.1. The [UI Component](https://glossary.magento.com/ui-component) framework MUST be used to build frontend applications.
 
 10.2. Only private content SHOULD be rendered in browser.
 
@@ -821,7 +821,7 @@ You need to read configuration from different sources (like database or filesyst
 
 ## 13. Command line interface (CLI)
 
-13.1. Magento 2 [CLI command naming guidelines](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/cli-cmds/cli-naming-guidelines.html) MUST be followed.
+13.1. [CLI command naming guidelines](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/cli-cmds/cli-naming-guidelines.html) MUST be followed.
 
 13.2. A CLI command MUST be created for any functionality intended to be used by a system integrator/system administrator/developer (for example: change indexer mode, generate a configuration file, etc.).
 

@@ -5,7 +5,7 @@ description: Review standards for writing PHP code for Adobe Commerce and Magent
 
 # PHP coding standard
 
-The Magento core development team uses the [Magento Coding Standard](https://github.com/magento/magento-coding-standard). We recommend that developers who create extensions and customizations also use this standard.
+The core development team uses the [Magento Coding Standard](https://github.com/magento/magento-coding-standard). We recommend that developers who create extensions and customizations also use this standard.
 
 The Magento Coding Standard provides a set of rules that covers the following:
 
@@ -18,14 +18,14 @@ The Magento Coding Standard provides a set of rules that covers the following:
 *  The use of PHP superglobals
 *  Empty code blocks
 *  Improper exception handling
-*  Raw SQL queries and many other general PHP and Magento-specific code issues.
+*  Raw SQL queries and many other general PHP and Adobe Commerce and Magento Open Source-specific code issues.
 
 ### Coding standard compliance
 
 Developers should consistently use [PHP_CodeSniffer](http://pear.php.net/manual/en/package.php.php-codesniffer.faq.php) to enhance the readability of the code and ensure that it meets the Magento Coding Standard. [PHP_CodeSniffer](http://pear.php.net/manual/en/package.php.php-codesniffer.faq.php) is the most popular tool in use throughout the [PHP](https://glossary.magento.com/php) development community.
 It provides the mechanism of checking code compliance with specific coding standard.
 
-The set of Magento rules is located in [`ruleset.xml`](https://github.com/magento/magento-coding-standard/blob/develop/Magento2/ruleset.xml) file of Magento Coding Standard.
+The set of rules is located in [`ruleset.xml`](https://github.com/magento/magento-coding-standard/blob/develop/Magento2/ruleset.xml) file of the Magento Coding Standard.
 
 Learn more about using rule sets with PHP CodeSniffer [ruleset](http://pear.php.net/manual/en/package.php.php-codesniffer.annotated-ruleset.php)
 
@@ -49,4 +49,4 @@ Examples:
   $this->get(\Magento\Path\To\Class::class);
 ```
 
-The [coding standards overview](index.md) introduces Magento-specific practices for PHP, JavaScript, and [JQuery](https://glossary.magento.com/jquery).
+The [coding standards overview](index.md) introduces Adobe Commerce and Magento Open Source-specific practices for PHP, JavaScript, and [JQuery](https://glossary.magento.com/jquery).

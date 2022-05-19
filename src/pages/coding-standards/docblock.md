@@ -5,11 +5,11 @@ description: Review standards for adding inline documentation to PHP code in Ado
 
 # DocBlock standard
 
-This standard defines Magento requirements and conventions for adding inline code documentation, known as *DocBlock*s.
+This standard defines the requirements and conventions for adding inline code documentation, known as *DocBlock*s.
 
-Some parts of Magento code might not comply with this standard, but we are working to improve this.
+Some parts of the code might not comply with this standard, but we are working to improve this.
 
-Following these standards is optional for third-party Magento developers, but doing so helps to create consistent, clean, and easy to read inline documentation.
+Following these standards is optional for third-party developers, but doing so helps to create consistent, clean, and easy to read inline documentation.
 
 Use [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt) to interpret the "MUST," "MUST NOT," "REQUIRED," "SHALL," "SHALL NOT," "SHOULD," "SHOULD NOT," "RECOMMENDED," "MAY," and "OPTIONAL keywords."
 
@@ -74,7 +74,7 @@ Below are ways of improving code to help simplify documentation:
 
 ## Files
 
-Each Magento source code file must have a DocBlock header with a short description of the file.
+Each source code file must have a DocBlock header with a short description of the file.
 After the short description, there can be a long description.
 
 Both short and long descriptions (for file headers and herein) must be separated from other elements using one empty line (implied empty line in terms of DocBlock syntax, where any line within DocBlock starts from `*`.
@@ -113,9 +113,9 @@ If the description or short description happens to be the first one after the Do
 
 <InlineAlert variant="info" slots="text"/>
 
-This section is applicable to Magento core files only. Please follow it if you are a contributing developer.
+This section is applicable to core files only. Please follow it if you are a contributing developer.
 
-Any file in the Magento source should have a header with license and copyright notice.
+Any file in the source should have a header with license and copyright notice.
 Exceptions are files with formats that do not support commenting.
 
 License notice and copyright MUST be declared at the very beginning of the file.
@@ -654,7 +654,7 @@ class LimitedMutableClass implements MutableInterface
 
 ### @api tag
 
-The `@api` tag indicates the code is part of the public API and is subject to the [Magento Backward Compatibility Policy](https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy/).
+The `@api` tag indicates the code is part of the public API and is subject to the [Backward Compatibility Policy](https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy/).
 
 The `@api` tag can be applied to a constant, a method, or to the entire class/interface.
 If the `@api` tag is applied at the file level, then all methods within the file are part of the public [API](https://glossary.magento.com/api).

@@ -5,11 +5,11 @@ description: Review standards for writing LESS and CSS code for Adobe Commerce a
 
 # LESS coding standard
 
-This standard defines Magento internal requirements for code formatting and style for teams that develop LESS and [CSS](https://glossary.magento.com/css) code.
+This standard defines internal requirements for code formatting and style for teams that develop LESS and [CSS](https://glossary.magento.com/css) code.
 
-Some parts of Magento code might not comply with this coding standard yet, but we are working to gradually improve this.
+Some parts of the code might not comply with this coding standard yet, but we are working to gradually improve this.
 
-This coding standard is optional for third-party Magento developers.
+This coding standard is optional for third-party developers.
 
 ## General rules
 
@@ -276,7 +276,7 @@ First, second and third level comments should have two spaces after "//". Inline
 
 #### Types
 
-Magento supports the two most recent versions of all major browsers. Internet Explorer is supported from version 9 and later.
+Adobe Commerce and Magento Open Source support the two most recent versions of all major browsers. Internet Explorer is supported from version 9 and later.
 
 You can use almost all CSS3 selectors: descendants, attributes, pseudo classes, structural, pseudo elements, and so on.
 
@@ -340,7 +340,7 @@ Class names should be lowercase, start with a letter (except helper classes), wo
 
 Helper class names should be lowercase and start with underscore ("_").
 
-Some parts of Magento code might not comply with this standard yet. You might still find helper names with no underscores. We are working to gradually remove the inconsistency.
+Some parts of the code might not comply with this standard yet. You might still find helper names with no underscores. We are working to gradually remove the inconsistency.
 
 **Example:**
 

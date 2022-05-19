@@ -5,7 +5,7 @@ description: Share your feedback about Adobe Commerce and Magento Open Source co
 
 # Contributing
 
-Like many large projects, Magento has coding standards.
+Like many large projects, Adobe Commerce and Magento Open Source have coding standards.
 
 Use the [coding standards](index.md) when you contribute to the Adobe Commerce and Magento Open Source codebase or create an extension. It is possible that a rule that you consider important is not covered yet.
 

@@ -5,15 +5,15 @@ description: Review standards for developing jQuery widgets for Adobe Commerce a
 
 # jQuery widget coding standard
 
-In the Magento system, all jQuery UI widgets and interactions are built on a simple, reusable base---the [jQuery UI Widget Factory](http://jqueryui.com/widget/).
+All Adobe Commerce and Magento Open Source jQuery UI widgets and interactions are built on a simple, reusable base---the [jQuery UI Widget Factory](http://jqueryui.com/widget/).
 
 The factory provides a flexible base for building complex, stateful plug-ins with a consistent [API](https://glossary.magento.com/api).
 It is designed not only for plug-ins that are part of [jQuery](https://glossary.magento.com/jquery) UI, but for general usage by developers who want to create object-oriented components without reinventing common infrastructure.
 
 For more information, see the [jQuery Widget API documentation](http://api.jqueryui.com/jQuery.widget/).
 
-This standard is mandatory for Magento core developers and recommended for third-party [extension](https://glossary.magento.com/extension) developers.
-Some parts of Magento code might not comply with the standard, but we are working to gradually improve this.
+This standard is mandatory for core developers and recommended for third-party [extension](https://glossary.magento.com/extension) developers.
+Some parts of the code might not comply with the standard, but we are working to gradually improve this.
 
 Use [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt) to interpret the "must," "must not," "required," "shall," "shall not," "should," "should not," "recommended," "may," and "optional" keywords.
 
@@ -250,11 +250,11 @@ When a component is initialized, it is also important to send parameters to it, 
 
    Do not instantiate a widget or call a widget's methods inside another widget.
 
-*  Make widgets abstract enough so that they can be used anywhere in Magento.
+*  Make widgets abstract enough so that they can be used anywhere in the code.
 
    For example, the `mage.dropdown` widget is applicable in many other scenarios, unlike `mage.topShoppingCart`.
 
-*  Place abstract, share-able widgets under the `<install dir>/pub/lib/<your company>` directory so non-Magento applications can access them.
+*  Place abstract, share-able widgets under the `<install dir>/pub/lib/<your company>` directory so that other applications can access them.
 
    For example:
 
@@ -267,7 +267,7 @@ When a component is initialized, it is also important to send parameters to it, 
        dialog.js
    ```
 
-*  Place Magento-specific widgets under the `<install dir>/app/code/<namespace>/<module-name>/view/<area-name>/js` directory.
+*  Place Adobe Commerce and Magento Open Source-specific widgets under the `<install dir>/app/code/<namespace>/<module-name>/view/<area-name>/js` directory.
 
    For example:
 
