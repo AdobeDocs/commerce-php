@@ -1,6 +1,6 @@
 ---
 title: Coding Standards | Commerce PHP Extensions
-description: placeholder 
+description: Review Adobe Commerce and Magento Open Source coding standards for different languages, including PHP, JavaScript, LESS, and jQuery. 
 ---
 
 # Coding standards
