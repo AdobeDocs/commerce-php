@@ -1,6 +1,6 @@
 ---
 title: PHP Coding Standard | Commerce PHP Extensions
-description:
+description: Review standards for writing PHP code for Adobe Commerce and Magento Open Source projects.
 ---
 
 # PHP coding standard

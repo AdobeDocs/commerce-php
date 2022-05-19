@@ -1,6 +1,6 @@
 ---
 title: JavaScript DocBlock Standard | Commerce PHP Extensions
-description:
+description: Review standards for adding inline documentation to JavaScript code in Adobe Commerce and Magento Open Source projects. 
 ---
 
 # JavaScript DocBlock standard

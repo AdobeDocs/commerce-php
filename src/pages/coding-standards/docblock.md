@@ -1,6 +1,6 @@
 ---
 title: DocBlock Standard | Commerce PHP Extensions
-description:
+description: Review standards for adding inline documentation to PHP code in Adobe Commerce and Magento Open Source projects.
 ---
 
 # DocBlock standard

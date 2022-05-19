@@ -1,6 +1,6 @@
 ---
 title: JavaScript Coding Standard | Commerce PHP Extensions
-description:
+description: Review standards for writing JavaScript and jQuery code for Adobe Commerce and Magento Open Source projects.
 ---
 
 # JavaScript coding standard

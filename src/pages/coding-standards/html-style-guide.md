@@ -1,11 +1,11 @@
 ---
 title: HTML Style Guide | Commerce PHP Extensions
-description:
+description: Review the standards for writing HTML, LESS, and CSS code for Adobe Commerce and Magento Open Source projects.
 ---
 
 # HTML style guide
 
-This style guide defines Magento internal requirements for [HTML](https://glossary.magento.com/html) code style for teams that develop Less and [CSS](https://glossary.magento.com/css) code. We recommend that developers who create extensions and customizations also use these standards.
+This style guide defines Magento internal requirements for [HTML](https://glossary.magento.com/html) code style for teams that develop LESS and [CSS](https://glossary.magento.com/css) code. We recommend that developers who create extensions and customizations also use these standards.
 
 The guide is based on the [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.xml) with certain modifications that are described further.
 

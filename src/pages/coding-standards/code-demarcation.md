@@ -1,6 +1,6 @@
 ---
 title: Code Demarcation Standard | Commerce PHP Extensions
-description:
+description: Review code demarcation standards for Adobe Commerce and Magento Open Source extension development.
 ---
 
 # Code demarcation standrad

@@ -1,11 +1,11 @@
 ---
 title: Less Coding Standard | Commerce PHP Extensions
-description:
+description: Review standards for writing LESS and CSS code for Adobe Commerce and Magento Open Source projects.
 ---
 
 # LESS coding standard
 
-This standard defines Magento internal requirements for code formatting and style for teams that develop Less and [CSS](https://glossary.magento.com/css) code.
+This standard defines Magento internal requirements for code formatting and style for teams that develop LESS and [CSS](https://glossary.magento.com/css) code.
 
 Some parts of Magento code might not comply with this coding standard yet, but we are working to gradually improve this.
 
