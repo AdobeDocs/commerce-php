@@ -178,6 +178,7 @@ JavaScript never ends a statement if the next token is an infix or bracket opera
 Use single quotes instead of double quotes for consistency.
 
 This is helpful when creating strings that include HTML:
+
 ```javascript
 var msg = '<span class="text">Hello World!</div>';
 ```

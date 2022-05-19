@@ -508,9 +508,9 @@ You need to read configuration from different sources (like database or filesyst
 
 6.2.1. According to CQRS, the Presentation layer hosts the Command and the Query Infrastructures:
 
-*  **Command** for Actions
+*  __Command__ for Actions
 
-*  **Query** for [Layout](https://glossary.magento.com/layout) and its elements (Blocks and UI Components)
+*  __Query__ for [Layout](https://glossary.magento.com/layout) and its elements (Blocks and UI Components)
 
 6.2.2. Request, Response, Session, Store Manager and Cookie objects MUST be used only in the Presentation layer.
 
