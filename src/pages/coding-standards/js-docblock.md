@@ -1,12 +1,6 @@
 ---
-group: coding-standards
-subgroup: 01_Coding standards
-title: JavaScript DocBlock standard
-landing-page: Coding standards
-menu_title: JavaScript DocBlock standard
-menu_order: 6
-functional_areas:
-  - Standards
+title: JavaScript DocBlock Standard | Commerce PHP Extensions
+description:
 ---
 
 # JavaScript DocBlock standard

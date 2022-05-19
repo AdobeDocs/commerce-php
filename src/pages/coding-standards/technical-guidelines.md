@@ -1,12 +1,9 @@
 ---
-group: coding-standards
-functional_areas:
-    - Standards
+title: Technical Guidelines | Commerce PHP Extensions
+description:
 ---
 
-## About this document
-
-### Overview
+# Technical guidelines
 
 This document lists the fundamental coding and application design principles that guide Magento 2 developer team members.
 
@@ -14,7 +11,7 @@ Magento core developers use this document as a reference during code reviews; so
 
 These guidelines came from many years of hard work, experience, and discussions. We strongly believe that new technical initiatives should follow these recommendations, and the existing code should be improved to meet them.
 
-### Text conventions
+## Text conventions
 
 Use [RFC2119](https://tools.ietf.org/html/rfc2119) to interpret keywords like:
 

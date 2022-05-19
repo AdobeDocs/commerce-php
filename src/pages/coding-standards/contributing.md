@@ -1,13 +1,9 @@
 ---
-group: coding-standards
-subgroup: 01_Coding standards
-landing-page: Coding standards
-title: Contributing
-menu_title: Contributing
-menu_order: 10
-functional_areas:
-- Standards
+title: Contributing | Commerce PHP Extensions
+description:
 ---
+
+# Contributing
 
 Like many large projects, Magento has coding standards.
 

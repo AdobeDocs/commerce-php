@@ -1,10 +1,9 @@
 ---
-group: coding-standards
-subgroup: 01_Coding standards
-title: DocBlock standard
-functional_areas:
-  - Standards
+title: DocBlock Standard | Commerce PHP Extensions
+description:
 ---
+
+# DocBlock standard
 
 This standard defines Magento requirements and conventions for adding inline code documentation, known as *DocBlock*s.
 

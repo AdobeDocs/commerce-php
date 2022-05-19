@@ -1,25 +1,21 @@
 ---
-group: coding-standards
-subgroup: 01_Coding standards
-title: jQuery widget coding standard
-landing-page: Coding standards
-menu_title: jQuery widget coding standard
-menu_order: 7
-functional_areas:
-  - Standards
+title: jQuery Widget Coding Standard | Commerce PHP Extensions
+description:
 ---
 
-In the Magento system, all jQuery UI widgets and interactions are built on a simple, reusable base---the [jQuery UI Widget Factory][jquery-ui-widget-factory].
+# jQuery widget coding standard
+
+In the Magento system, all jQuery UI widgets and interactions are built on a simple, reusable base---the [jQuery UI Widget Factory](http://jqueryui.com/widget/).
 
 The factory provides a flexible base for building complex, stateful plug-ins with a consistent [API](https://glossary.magento.com/api).
 It is designed not only for plug-ins that are part of [jQuery](https://glossary.magento.com/jquery) UI, but for general usage by developers who want to create object-oriented components without reinventing common infrastructure.
 
-For more information, see the [jQuery Widget API documentation][jquery-ui-api-doc].
+For more information, see the [jQuery Widget API documentation](http://api.jqueryui.com/jQuery.widget/).
 
 This standard is mandatory for Magento core developers and recommended for third-party [extension](https://glossary.magento.com/extension) developers.
 Some parts of Magento code might not comply with the standard, but we are working to gradually improve this.
 
-Use [RFC 2119][rfc2119] to interpret the "must," "must not," "required," "shall," "shall not," "should," "should not," "recommended," "may," and "optional" keywords.
+Use [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt) to interpret the "must," "must not," "required," "shall," "shall not," "should," "should not," "recommended," "may," and "optional" keywords.
 
 ## Naming conventions
 
@@ -171,7 +167,7 @@ When a component is initialized, it is also important to send parameters to it, 
 
 ## Development standards
 
-*  Widgets should comply with the [single responsibility principle][single-responsibility-principle].
+*  Widgets should comply with the [single responsibility principle](https://en.wikipedia.org/wiki/Single_responsibility_principle).
 
    Widgets should not have responsibilities not related to the [entity](https://glossary.magento.com/entity) described by the widget.
 
@@ -248,9 +244,9 @@ When a component is initialized, it is also important to send parameters to it, 
    });
    ```
 
-*  You must use [DOM event bubbling][dom-event-bubbling] to perform one-way communication between a child widget and its parent widget.
+*  You must use [DOM event bubbling](http://stackoverflow.com/questions/4616694/what-is-event-bubbling-and-capturing) to perform one-way communication between a child widget and its parent widget.
 
-*  Widgets must comply with the [Law of Demeter][law-of-demeter] principle.
+*  Widgets must comply with the [Law of Demeter](http://en.wikipedia.org/wiki/Law_of_Demeter) principle.
 
    Do not instantiate a widget or call a widget's methods inside another widget.
 
@@ -346,10 +342,3 @@ When a component is initialized, it is also important to send parameters to it, 
     For example: `click.foo`.
    *  Maintains proper `this` context inside the handlers, so it is not necessary to use the `$.proxy()` method.
    *  Event handlers are automatically namespaced and cleaned up on destruction.
-
-[jquery-ui-widget-factory]: http://jqueryui.com/widget/
-[jquery-ui-api-doc]: http://api.jqueryui.com/jQuery.widget/
-[rfc2119]: http://www.ietf.org/rfc/rfc2119.txt
-[single-responsibility-principle]: https://en.wikipedia.org/wiki/Single_responsibility_principle
-[dom-event-bubbling]: http://stackoverflow.com/questions/4616694/what-is-event-bubbling-and-capturing
-[law-of-demeter]: http://en.wikipedia.org/wiki/Law_of_Demeter

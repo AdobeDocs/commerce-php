@@ -1,10 +1,9 @@
 ---
-group: coding-standards
-title: JavaScript coding standard
-landing-page: Coding standards
-functional_areas:
-  - Standards
+title: JavaScript Coding Standard | Commerce PHP Extensions
+description:
 ---
+
+# JavaScript coding standard
 
 Use Magento's [ESLint Rules](https://github.com/magento/magento-coding-standard/blob/develop/eslint/.eslintrc-magento) to make sure your code adheres to Magento's coding standards.
 Developers writing [JavaScript](https://glossary.magento.com/javascript) and [jQuery](https://glossary.magento.com/jquery) code for Magento must adhere to these guidelines and follow the standards listed in this document.

@@ -1,13 +1,9 @@
 ---
-group: coding-standards
-subgroup: 01_Coding standards
-title: HTML style guide
-landing-page: Coding standards
-menu_title: HTML style guide
-menu_order: 9
-functional_areas:
-  - Standards
+title: HTML Style Guide | Commerce PHP Extensions
+description:
 ---
+
+# HTML style guide
 
 This style guide defines Magento internal requirements for [HTML](https://glossary.magento.com/html) code style for teams that develop Less and [CSS](https://glossary.magento.com/css) code. We recommend that developers who create extensions and customizations also use these standards.
 

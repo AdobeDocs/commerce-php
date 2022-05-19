@@ -1,13 +1,9 @@
 ---
-group: coding-standards
-subgroup: 01_Coding standards
-title: Less coding standard
-landing-page: Coding standards
-menu_title: Less coding standard
-menu_order: 8
-functional_areas:
-  - Standards
+title: Less Coding Standard | Commerce PHP Extensions
+description:
 ---
+
+# LESS coding standard
 
 This standard defines Magento internal requirements for code formatting and style for teams that develop Less and [CSS](https://glossary.magento.com/css) code.
 

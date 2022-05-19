@@ -1,13 +1,9 @@
 ---
-group: coding-standards
-subgroup: 01_Coding standards
-landing-page: Coding standards
-title: Code demarcation standard
-menu_title: Code demarcation standard
-menu_order: 1
-functional_areas:
-  - Standards
+title: Code Demarcation Standard | Commerce PHP Extensions
+description:
 ---
+
+# Code demarcation standrad
 
 Magento core developers must follow the Magento code demarcation standard.
 
