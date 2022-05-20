@@ -22,7 +22,9 @@ Use [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt) to interpret the "MUST," "MU
 
 ## Semantics
 
-### For attribute names and values you must use meaningful unabbreviated lowercase words comprised of Latin characters concatenated with a hyphen (`-`)
+### Attribute names and values
+
+For attribute names and values you must use meaningful unabbreviated lowercase words comprised of Latin characters concatenated with a hyphen (`-`)
 
 -  Helps simplify and unify naming conventions that are used to apply visual styles to page elements.
 
@@ -50,7 +52,9 @@ Use [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt) to interpret the "MUST," "MU
 <a href="#some_id">Scroll to text</a>
 ```
 
-### Semantic representation may rely on ID attribute
+### Attribute IDs
+
+Semantic representation may rely on ID attribute
 
 -  Forces engineers to think about reusable page components instead of unique singleton components.
 -  Reduces long-term maintenance efforts.
@@ -99,7 +103,9 @@ $('#my-special-menu').on('click','li[id^="button"]', function() { ... })
 #my-special-menu > li { ... }
 ```
 
-### You must follow the separation of presentation and content methodology
+### Presentation and content
+
+You must follow the separation of presentation and content methodology
 
 The following list will help you make a distinction between the actual meaning of a document, and how this meaning is presented to its readers:
 
@@ -121,7 +127,9 @@ The following list will help you make a distinction between the actual meaning o
 -  visualization
 -  view
 
-### You must use semantic HTML markup only, and must not use presentation markup
+### HTML markup
+
+You must use semantic HTML markup only, and must not use presentation markup
 
 **Acceptable:**
 
@@ -139,7 +147,9 @@ The following list will help you make a distinction between the actual meaning o
 
 ## Code demarcation
 
-### Visual representation must rely only on HTML `class` attributes, CSS pseudo-classes and pseudo-elements, HTML tags, and form element's type attribute and form elements state attributes (example: `disabled`, `checked`).
+### Visual representation
+
+Visual representation must rely only on HTML `class` attributes, CSS pseudo-classes and pseudo-elements, HTML tags, and form element's type attribute and form elements state attributes (example: `disabled`, `checked`).
 
 As the first option, you are required to use [HTML](https://glossary.magento.com/html) class attributes. In case this option is not applicable then it is recommended to use HTML tags and form element's type attribute.
 
@@ -173,7 +183,9 @@ section[role="main"] { ... }
 [role="menu] [role="menuitem"].active { ... }
 ```
 
-### You must not hard-code CSS styles in JavaScript files
+### Hard-coded CSS styles
+
+You must not hard-code CSS styles in JavaScript files
 
 Exception: CSS attributes where values must be calculated beyond the css-topics/LESS code.
 
@@ -210,7 +222,9 @@ this.element.on('click', function() {
 });
 ```
 
-### You must not use inline CSS styles inside HTML tags
+### Inline CSS styles
+
+You must not use inline CSS styles inside HTML tags
 
 -  Improves style extensibility allowing engineers to overload styles easier by toggling classes.
 -  Enforces clean, strict separation between visual presentation and markup.
@@ -230,7 +244,7 @@ this.element.on('click', function() {
 
 ## Business logic and JavaScript
 
-### Business logic must rely on only the form, form element name attributes, or data attributes
+Business logic must rely on only the form, form element name attributes, or data attributes
 
 -  Enforces clean, strict separation between visual and business logic layers.
 -  Allows frontend and backend teams to work independently.
@@ -274,7 +288,9 @@ $('form').validate();
 $('[role="menu"]').navigation();
 ```
 
-### You must assign HTML helper classes in JavaScript to modify presentation layer
+### HTML helper classes
+
+You must assign HTML helper classes in JavaScript to modify presentation layer
 
 HTML helper class names added in JavaScript REQUIRE underscore symbol ("_") at the beginning and must be written in lowercase.
 
@@ -296,7 +312,9 @@ HTML helper class names added in JavaScript REQUIRE underscore symbol ("_") at t
 <div class="sales-report hidden">Content</div>
 ```
 
-### You must not select DOM elements based on HTML structure
+### DOM elements
+
+You must not select DOM elements based on HTML structure
 
 -  Allows frontend teams to modify markup and themes without affecting business logic.
 
@@ -314,7 +332,9 @@ this.element.children().children().html('hello world');
 this.element.parent().find('[data-action="edit"]').data('entity_id');
 ```
 
-### You must use jQuery templates to insert recurring markup into DOM structure
+### jQuery templates
+
+You must use jQuery templates to insert recurring markup into DOM structure
 
 -  Reinstates emphasis on jQuery templates. For more information, see JavaScript Coding Best Practices.
 -  Reduces long-term maintenance efforts by having markup code stored in one place.
@@ -322,7 +342,9 @@ this.element.parent().find('[data-action="edit"]').data('entity_id');
 
 ## PHTML templates and PHP files
 
-### You must not hard-code inline CSS styles in PHP classes
+### Hard-coded CSS styles
+
+You must not hard-code inline CSS styles in PHP classes
 
 -  Reduces long-term maintenance efforts by having styles stored in one place.
 -  Simplifies debugging and reduces number of files to be modified.
@@ -354,7 +376,9 @@ $fieldset->addField('new_category_parent', 'text', [
 ...
 ```
 
-### You must not hard-code inline JavaScript in PHP classes
+### Inline JavaScript
+
+You must not hard-code inline JavaScript in PHP classes
 
 -  Reduces long term maintenance by having frontend business logic stored in one place.
 -  Reduces the number of files to be modified.
@@ -414,7 +438,9 @@ jQuery('#{$htmlId}-suggest').treeSuggest({$selectorOptions});
 <?php echo $this->getAfterElementHtml(); ?>
 ```
 
-### You must not hard-code HTML markup (used in the `<body>` tag) in PHP classes
+### HTML markup
+
+You must not hard-code HTML markup (used in the `<body>` tag) in PHP classes
 
 -  Reduces long-term maintenance efforts by having markup stored in one place.
 -  Reduces the number of files to be modified.
