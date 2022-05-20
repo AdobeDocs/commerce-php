@@ -7,10 +7,10 @@ module.exports = [
       title: "Architecture",
       path: "/architecture/",
     },
-    // {
-    //   title: "Extension Developer",
-    //   path: "/extensions/",
-    // },
+    {
+      title: "Developer",
+      path: "/developer/",
+    },
     // {
     //   title: "Best Practices",
     //   path: "/best-practices/",
