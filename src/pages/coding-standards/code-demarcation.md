@@ -3,7 +3,7 @@ title: Code Demarcation Standard | Commerce PHP Extensions
 description: Review code demarcation standards for Adobe Commerce and Magento Open Source extension development.
 ---
 
-# Code demarcation standrad
+# Code demarcation standard
 
 Core developers must follow the code demarcation standard.
 
