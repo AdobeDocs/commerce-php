@@ -39,25 +39,25 @@ Explore resources that describe the foundational elements of the Adobe Commerce 
 
 [Extension Developer](extensions/)
 
-Lorem ipsum dolor sit amet
+Lorem ipsum dolor sit amet -->
 
-<DiscoverBlock slots="link, text"/>
+<!-- <DiscoverBlock slots="link, text"/>
 
 [Best Practices](best-practices/)
 
-Lorem ipsum dolor sit amet
+Lorem ipsum dolor sit amet -->
 
-<DiscoverBlock slots="link, text"/>
+<!-- <DiscoverBlock slots="link, text"/>
 
 [Module Reference](module-reference/)
 
-Lorem ipsum dolor sit amet
+Lorem ipsum dolor sit amet -->
 
 <DiscoverBlock slots="link, text"/>
 
-[Coding Standard](coding-standards/)
+[Coding Standards](coding-standards/)
 
-Lorem ipsum dolor sit amet -->
+Review Adobe Commerce and Magento Open Source coding standards for different languages, including PHP, JavaScript, LESS, and jQuery.
 
 <DiscoverBlock width="100%" slots="heading, link, text"/>
 
