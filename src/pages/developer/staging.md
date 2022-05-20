@@ -1,7 +1,7 @@
 ---
 group: php-developer-guide
 title: Staging (Adobe Commerce only)
-ee_only: true
+edition: ee
 ---
 
 Staging functionality enables you to create scheduled campaigns, manage campaigns on dashboard and manipulate each future store object update. Moreover, you can preview a [storefront](https://glossary.magento.com/storefront) during the future campaign.
