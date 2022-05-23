@@ -16,7 +16,7 @@ The main disadvantage of this approach is that Magento applies changes blindly. 
 Declarative setup is based on database structure declarations, and is used in projects such as [Doctrine](http://www.doctrine-project.org/). Schema files declare what the database structure should be,
 and Magento determines the differences between the current table structure and what it should be. These differences can be represented with atomic SQL operations.
 
-Magento prioritizes the declarative schema and executes the declarative install schemas before the [data and schema patches]({{ page.baseurl }}/extension-dev-guide/declarative-schema/data-patches.html).
+Magento prioritizes the declarative schema and executes the declarative install schemas before the [data and schema patches](patches.md).
 
 The following example, extracted from the `Catalog/etc/db_schema.xml` file, defines the `catalog_product_entity_datetime` table:
 
@@ -54,7 +54,7 @@ The `<Module_Vendor>/<Module_Name>/etc/db_schema.xml` file declares a module's d
 
 <InlineAlert variant="info" slots="text"/>
 
-If you have enabled [URN highlighting]({{ page.baseurl }}/config-guide/cli/config-cli-subcommands-urn.html), you can use the PhpStorm autocomplete feature after choosing a node's `xsi:type`. This will also allow you to view which attributes are available on each line of your `db_schema.xml` file
+If you have enabled [URN highlighting](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-urn.html), you can use the PhpStorm autocomplete feature after choosing a node's `xsi:type`. This will also allow you to view which attributes are available on each line of your `db_schema.xml` file
 
 ### Top-level node
 
@@ -156,7 +156,7 @@ A column can have the following attributes:
 
 For more information about each type, refer to the annotations in the corresponding XSD file.
 
-*  [Composer]({{page.baseurl}}/install-gde/composer.html) or [GitHub]({{page.baseurl}}/install-gde/prereq/dev_install.html) installation: `<Magento_root_directory/lib/internal/Magento/Framework/Setup/Declaration/Schema/etc`
+*  [Composer](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html) or [GitHub](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/dev_install.html) installation: `<Magento_root_directory/lib/internal/Magento/Framework/Setup/Declaration/Schema/etc`
 
 Example:
 
@@ -171,7 +171,7 @@ The `constraint` subnode always contains the following attributes:
 Attribute | Description
 --- | ---
 `type` | One of `primary`, `unique`, or `foreign`
-`referenceId` |  A custom identifier that is used only for relation mapping in the scope of `db_schema.xml` files. The real entity in the database has a system-generated name. The most convenient way to set the value of this attribute is to use the value that is written in the module's `db_schema_whitelist.json`  file when you [run the `generate-whitelist` command]({{ page.baseurl}}/extension-dev-guide/declarative-schema/migration-commands.html#create-whitelist).
+`referenceId` |  A custom identifier that is used only for relation mapping in the scope of `db_schema.xml` files. The real entity in the database has a system-generated name. The most convenient way to set the value of this attribute is to use the value that is written in the module's `db_schema_whitelist.json`  file when you [run the `generate-whitelist` command](migration-scripts.md#create-a-schema-whitelist).
 
 The `primary` and `unique` constraints are called "internal" constraints, because they can be applied only to the scope of the table where they are created. Internal constraints define one or more `column` subnodes. Each subnode defines a constrained column.
 
@@ -209,7 +209,7 @@ The `index` subnode has the same structure as internal constraints but contains 
 
 Attribute | Description
 --- | ---
-`referenceId` |  A custom identifier that is used only for relation mapping in the scope of `db_schema.xml` files. The real entity in the database has a system-generated name. The most convenient way to set the value of this attribute is to use the value that is written in the module's `db_schema_whitelist.json`  file when you [run the `generate-whitelist` command]({{ page.baseurl}}/extension-dev-guide/declarative-schema/migration-commands.html#create-whitelist).
+`referenceId` |  A custom identifier that is used only for relation mapping in the scope of `db_schema.xml` files. The real entity in the database has a system-generated name. The most convenient way to set the value of this attribute is to use the value that is written in the module's `db_schema_whitelist.json`  file when you [run the `generate-whitelist` command](migration-scripts.md#create-a-schema-whitelist).
 `indexType` | The value must be `btree`, `fulltext`, or `hash`
 
 Example:
@@ -245,7 +245,7 @@ The following example creates the `declarative_table` table with four columns. T
 
 <InlineAlert variant="info" slots="text"/>
 
-When creating a new table, remember to [generate]({{ page.baseurl}}/extension-dev-guide/declarative-schema/migration-commands.html#create-whitelist) the `db_schema_whitelist.json` file.
+When creating a new table, remember to [generate](migration-scripts.md#create-a-schema-whitelist) the `db_schema_whitelist.json` file.
 
 ### Drop a table
 
@@ -326,7 +326,7 @@ The following example adds the `date_closed` column.
 
 <InlineAlert variant="info" slots="text"/>
 
-When adding a new column into table, remember to [generate]({{ page.baseurl}}/extension-dev-guide/declarative-schema/migration-commands.html#create-whitelist) the `db_schema_whitelist.json` file.
+When adding a new column into table, remember to [generate](migration-scripts.md#create-a-schema-whitelist) the `db_schema_whitelist.json` file.
 
 ### Drop a column from a table
 
@@ -500,5 +500,4 @@ When a module is disabled in `app/etc/config.php`, its database schema configura
 Please note that the `db_schema_whitelist.json` file of disabled modules is still read during upgrades of installs, so the declarative schema system can perform the necessary operations.
 Practically, this means that if you disable a module which uses declarative schema and run `bin/magento setup:upgrade`, *its database tables will be dropped* (see more details and discussion at  https://github.com/magento/magento2/issues/24926). Please consider using `setup:upgrade --safe-mode=1` in order to create a database backup after disabling a module and then eventually `setup:upgrade --data-restore=1` if you enable the module back and wish to restore from that backup.
 
-[How to generate urns?]:{{ page.baseurl }}/config-guide/cli/config-cli-subcommands-urn.html
-[Db Schema Autocomplete]:{{ page.baseurl }}/extension-dev-guide/declarative-schema/images/db-schema-autocomplete.png
+[How to generate urns?]:https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-urn.html

@@ -37,7 +37,7 @@ The following components are involved in the indexing process:
             <th>Description</th>
         </tr>
         <tr>
-            <td><a href="{{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Indexer" target="_blank">Magento_Indexer</a></td>
+            <td><a href="https://github.com/magento/magento2/blob/2.4/app/code/Magento/Indexer" target="_blank">Magento_Indexer</a></td>
             <td>Implements:
                 <ul>
                     <li>indexer declaration</li>
@@ -48,7 +48,7 @@ The following components are involved in the indexing process:
             </td>
         </tr>
         <tr>
-            <td><a href="{{ site.mage2bloburl }}/{{ page.guide_version }}/lib/internal/Magento/Framework/Mview" target="_blank">Magento\Framework\Mview</a></td>
+            <td><a href="https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Mview" target="_blank">Magento\Framework\Mview</a></td>
             <td>
                 <ul>
                     <li>Allows tracking database changes for a certain <a href="https://glossary.magento.com/entity" target="_blank">entity</a> (product, <a href="https://glossary.magento.com/category" target="_blank">category</a>, etc.) and running change handler.</li>
@@ -71,7 +71,7 @@ Each index can perform the following types of reindex operations:
 
    Full reindexing can be caused by a variety of things, including creating a new web store or new customer group.
 
-   You can optionally fully reindex at any time using the [command line]({{ page.baseurl }}/config-guide/cli/config-cli-subcommands-index.html).
+   You can optionally fully reindex at any time using the [command line](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html).
 
 *  Partial reindex, which means rebuilding the database tables only for the things that changed (like changing a single product attribute or price)
 
@@ -93,7 +93,7 @@ Database Status|Admin Status|Description
 The database status can be seen when viewing the SQL table `indexer_state`.
 The admin status can be seen when viewing the indexer grid in Admin or when running the index status from the CLI.
 
-The Magento indexing mechanism uses the status value in reindex triggering process. You can check the status of an indexer in the [Admin](https://glossary.magento.com/admin) panel in **System >** Tools **> Index Management** or manually using the [command line]({{ page.baseurl }}/config-guide/cli/config-cli-subcommands-index.html#view-indexer-status).
+The Magento indexing mechanism uses the status value in reindex triggering process. You can check the status of an indexer in the [Admin](https://glossary.magento.com/admin) panel in **System >** Tools **> Index Management** or manually using the [command line](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#view-indexer-status).
 
 ### Using application lock mode for reindex processes
 
@@ -142,7 +142,7 @@ To set these options:
 1. From the **Actions** list, click the indexing mode.
 1. Click **Submit**.
 
-You can also reindex from the [command line]({{ page.baseurl }}/config-guide/cli/config-cli-subcommands-index.html#configure-indexers)
+You can also reindex from the [command line](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers)
 
 The following figure shows an example of setting indexers to Update by Schedule:
 
@@ -216,25 +216,25 @@ it defines IDs to be re-indexed from the change log by last applied `version_id`
 
 You can reindex by:
 
-*  Using a [cron job]({{ page.baseurl }}/config-guide/cli/config-cli-subcommands-cron.html), which is preferred because indexing runs every minute.
-*  Using the [`magento indexer:reindex [indexer]`]({{ page.baseurl }}/config-guide/cli/config-cli-subcommands-index.html#config-cli-subcommands-index-reindex) command, which reindexes selected indexers, or all indexers, one time only.
+*  Using a [cron job](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html), which is preferred because indexing runs every minute.
+*  Using the [`magento indexer:reindex [indexer]`](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#config-cli-subcommands-index-reindex) command, which reindexes selected indexers, or all indexers, one time only.
 
 ## Magento indexers {#m2devgde-indexing-outofbox}
 
-The Magento `Open Source` application implements the following indexers (use [bin/magento indexer:info]({{ page.baseurl }}/reference/cli/magento.html#indexerinfo) to list the indexers):
+The Magento `Open Source` application implements the following indexers (use [bin/magento indexer:info](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#indexerinfo) to list the indexers):
 
 | Indexer name | Indexer method name | Indexer class | Description |
 | --- | --- | --- | --- |
-| Design Config Grid | `design_config_grid` | [Magento\Theme\Model\Indexer\Design\Config]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Theme/Model/Indexer/Design/Config.php) | |
-| Customer Grid | `customer_grid` | [Magento\Framework\Indexer\Action\Entity]({{ site.mage2bloburl }}/{{ page.guide_version }}/lib/internal/Magento/Framework/Indexer/Action/Entity.php) | Rebuilds the customer grid index. Not supported by the `Update by Schedule` indexing mode. See the [Help Center article](https://support.magento.com/hc/en-us/articles/360025481892-New-customer-records-are-not-displayed-in-the-Customers-grid-after-importing-them-from-CSV). |
-| Category products | `catalog_category_product` | [Magento\Catalog\Model\Indexer\Category\Product]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Catalog/Model/Indexer/Category/Product.php) | Creates category/products association |
-| Product categories | `catalog_product_category` | [Magento\Catalog\Model\Indexer\Product\Category]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Catalog/Model/Indexer/Product/Category.php) | Creates category/products association |
-| Product price | `catalog_product_price` | [Magento\Catalog\Model\Indexer\Product\Price]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Catalog/Model/Indexer/Product/Price.php) | Pre-calculates product prices |
-| Product entity attribute value | `catalog_product_attribute` | [Magento\Catalog\Model\Indexer\Product\Eav]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Catalog/Model/Indexer/Product/Eav.php) | Reorganizes the EAV product structure to flat structure |
-| Stock | `cataloginventory_stock` | [Magento\CatalogInventory\Model\Indexer\Stock]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/CatalogInventory/Model/Indexer/Stock.php) |  |
-| Catalog rule product | `catalogrule_rule` | [Magento\CatalogRule\Model\Indexer\Rule\RuleProductIndexer]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/CatalogRule/Model/Indexer/Rule/RuleProductIndexer.php) |  |
-| Catalog product rule | `catalogrule_product` | [Magento\CatalogRule\Model\Indexer\Product\ProductRuleIndexer]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/CatalogRule/Model/Indexer/Product/ProductRuleIndexer.php) |  |
-| Catalog search | `catalogsearch_fulltext` | [Magento\CatalogSearch\Model\Indexer\Fulltext]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/CatalogSearch/Model/Indexer/Fulltext.php) |  |
+| Design Config Grid | `design_config_grid` | [Magento\Theme\Model\Indexer\Design\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Theme/Model/Indexer/Design/Config.php) | |
+| Customer Grid | `customer_grid` | [Magento\Framework\Indexer\Action\Entity](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Indexer/Action/Entity.php) | Rebuilds the customer grid index. Not supported by the `Update by Schedule` indexing mode. See the [Help Center article](https://support.magento.com/hc/en-us/articles/360025481892-New-customer-records-are-not-displayed-in-the-Customers-grid-after-importing-them-from-CSV). |
+| Category products | `catalog_category_product` | [Magento\Catalog\Model\Indexer\Category\Product](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/Indexer/Category/Product.php) | Creates category/products association |
+| Product categories | `catalog_product_category` | [Magento\Catalog\Model\Indexer\Product\Category](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/Indexer/Product/Category.php) | Creates category/products association |
+| Product price | `catalog_product_price` | [Magento\Catalog\Model\Indexer\Product\Price](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/Indexer/Product/Price.php) | Pre-calculates product prices |
+| Product entity attribute value | `catalog_product_attribute` | [Magento\Catalog\Model\Indexer\Product\Eav](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/Indexer/Product/Eav.php) | Reorganizes the EAV product structure to flat structure |
+| Stock | `cataloginventory_stock` | [Magento\CatalogInventory\Model\Indexer\Stock](https://github.com/magento/magento2/blob/2.4/app/code/Magento/CatalogInventory/Model/Indexer/Stock.php) |  |
+| Catalog rule product | `catalogrule_rule` | [Magento\CatalogRule\Model\Indexer\Rule\RuleProductIndexer](https://github.com/magento/magento2/blob/2.4/app/code/Magento/CatalogRule/Model/Indexer/Rule/RuleProductIndexer.php) |  |
+| Catalog product rule | `catalogrule_product` | [Magento\CatalogRule\Model\Indexer\Product\ProductRuleIndexer](https://github.com/magento/magento2/blob/2.4/app/code/Magento/CatalogRule/Model/Indexer/Product/ProductRuleIndexer.php) |  |
+| Catalog search | `catalogsearch_fulltext` | [Magento\CatalogSearch\Model\Indexer\Fulltext](https://github.com/magento/magento2/blob/2.4/app/code/Magento/CatalogSearch/Model/Indexer/Fulltext.php) |  |
 
 Adobe Commerce also provides the following indexers:
 

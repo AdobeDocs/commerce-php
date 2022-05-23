@@ -65,16 +65,16 @@ class BaseFactory
 
 ## Writing factories
 
-Unless you require specific behavior for your factory classes, you do not need to explicitly define them because they are an [automatically generated]({{ page.baseurl }}/extension-dev-guide/code-generation.html) class type.
-When you reference a factory in a class constructor, Magento's [object manager]({{ page.baseurl }}/extension-dev-guide/object-manager.html) generates the factory class if it does not exist.
+Unless you require specific behavior for your factory classes, you do not need to explicitly define them because they are an [automatically generated](code-generation.md) class type.
+When you reference a factory in a class constructor, Magento's [object manager](object-manager/index.md) generates the factory class if it does not exist.
 
 Factories follow the naming convention `<class-type>Factory` where `<class-type>` is the name of the class the factory instantiates.
 
-For example the automatically generated `Magento\Cms\Model\BlockFactory` class is a factory that instantiates the class [`Magento\Cms\Model\Block`]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Cms/Model/Block.php).
+For example the automatically generated `Magento\Cms\Model\BlockFactory` class is a factory that instantiates the class [`Magento\Cms\Model\Block`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Cms/Model/Block.php).
 
 ## Using factories
 
-You can get the singleton instance of a factory for a specific model using [dependency injection]({{ page.baseurl }}/extension-dev-guide/depend-inj.html).
+You can get the singleton instance of a factory for a specific model using [dependency injection](dependency-injection.md).
 
 The following example shows a class getting the `BlockFactory` instance through the constructor:
 
@@ -106,11 +106,11 @@ The `Flag` class has a `$data` constructor parameter which corresponds to the da
 
 Factories are smart enough to resolve dependencies and allow you to get the correct instance of an interface as defined in your module's `di.xml`.
 
-For example, in the [`CatalogInventory`]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/CatalogInventory) module, the `di.xml` file contains the following entry:
+For example, in the [`CatalogInventory`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/CatalogInventory) module, the `di.xml` file contains the following entry:
 
 ```xml
 <preference for="Magento\CatalogInventory\Api\Data\StockItemInterface" type="Magento\CatalogInventory\Model\Stock\Item" />
 ```
 
-It instructs Magento to use the specific [`Item`]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/CatalogInventory/Model/Stock/Item.php) class wherever the [`StockItemInterface`]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/CatalogInventory/Api/Data/StockItemInterface.php) is used.
+It instructs Magento to use the specific [`Item`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/CatalogInventory/Model/Stock/Item.php) class wherever the [`StockItemInterface`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/CatalogInventory/Api/Data/StockItemInterface.php) is used.
 When a class in that [module](https://glossary.magento.com/module) includes the factory `StockItemInterfaceFactory` as a dependency, Magento generates a factory that is capable of creating the specific `Item` objects.

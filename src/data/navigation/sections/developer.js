@@ -95,7 +95,7 @@ module.exports = [
       pages: [
         {
           title: "Paclage a component",
-          path: "/developer/package/package-component/",
+          path: "/developer/package/component/",
         },
         {
           title: "Distribute a package",

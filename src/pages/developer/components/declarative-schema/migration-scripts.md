@@ -38,7 +38,7 @@ The Schema Listener Tool cannot convert everything that can appear in a pre-Mage
 *  The tool supports only DDL operations represented in `\Magento\Framework\DB\Adapter\Pdo\Mysql`. As a result, the tool ignores all custom DDL operations.
 *  The tool ignores all raw SQL in your `InstallSchema` or `UpgradeSchema` scripts.
 *  Any DDL statements in a `Recurring` file will not be transferred to the new schema, because this file should be designed to run during each installation or upgrade.
-*  See [Configure declarative schema]({{ page.baseurl }}/extension-dev-guide/declarative-schema/db-schema.html) if you need to make manual modifications to your schema.
+*  See [Configure declarative schema](configuration.md) if you need to make manual modifications to your schema.
 
 ## Convert install/upgrade data scripts to the data patch format
 
@@ -56,7 +56,7 @@ Old data scripts cannot be converted automatically. The following steps help mak
 
    `--type[=<type>]` - Specifies what type of patch to generate. The default is `data`.
 
-1. All released modules that previously used upgrade scripts must support backward compatibility by implementing `\Magento\Framework\Setup\Patch\PatchVersionInterface` and the `getVersion` method. This method allows you to skip changes that were applied in previous versions and were done by old scripts. The returned value of the `getVersion` method in this case should be equal to the value of a version in `version_compare` function in old scripts. When the `InstallData.php` script does not have any versions to compare, you can specify the first version of your module. See [Develop declarative data and schema patches]({{ page.baseurl }}/extension-dev-guide/declarative-schema/data-patches.html) for more information.
+1. All released modules that previously used upgrade scripts must support backward compatibility by implementing `\Magento\Framework\Setup\Patch\PatchVersionInterface` and the `getVersion` method. This method allows you to skip changes that were applied in previous versions and were done by old scripts. The returned value of the `getVersion` method in this case should be equal to the value of a version in `version_compare` function in old scripts. When the `InstallData.php` script does not have any versions to compare, you can specify the first version of your module. See [Develop declarative data and schema patches](patches.md) for more information.
 
 ## Dry run mode
 
@@ -107,7 +107,7 @@ Each CSV file contains a row that defines the column (or other database entity) 
 
 ![Dump Example](../../../_images/dump_example.png)
 
-## Create a schema whitelist {#create-whitelist}
+## Create a schema whitelist
 
 Backward compatibility must be maintained. Therefore, declarative schema does not automatically delete database tables, columns or keys that are not defined in a `db_schema.xml` file. Declarative schema cannot delete these elements because these items can be declared somewhere else, such as in an `Setup/UpgradeSchema.php` file.
 
@@ -174,7 +174,7 @@ This file is a temporary solution. It will be removed in the future, when upgrad
 
 ## Resolve reference IDs
 
-The sample `db_schema_whitelist.json` file above contains system-generated constraint and index names. [Configure your `db_schema.xml` file]({{ page.baseurl }}/extension-dev-guide/declarative-schema/db-schema.html) so that the `referenceId` attributes match these values.
+The sample `db_schema_whitelist.json` file above contains system-generated constraint and index names. [Configure your `db_schema.xml` file](configuration.md) so that the `referenceId` attributes match these values.
 
 <InlineAlert variant="info" slots="text"/>
 

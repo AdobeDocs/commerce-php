@@ -7,7 +7,7 @@ functional_areas:
 
 Bulk operations are actions that are performed on a large scale. Example bulk operations tasks include importing or exporting items, changing prices on a mass scale, and assigning products to a warehouse.
 
-For each individual task of a bulk operation, the system creates a message that is published in a [message queue]( {{page.baseurl}}/config-guide/mq/rabbitmq-overview.html). A consumer runs in the background and processes the messages that it receives. Because tasks are processed in the background through the message queue system, when a merchant launches a bulk operation from the [Admin](https://glossary.magento.com/admin) panel, control is quickly returned to the merchant. In previous releases, the merchant could not use the Admin panel until all tasks were completed.
+For each individual task of a bulk operation, the system creates a message that is published in a [message queue](https://devdocs.magento.com/guides/v2.4/config-guide/mq/rabbitmq-overview.html). A consumer runs in the background and processes the messages that it receives. Because tasks are processed in the background through the message queue system, when a merchant launches a bulk operation from the [Admin](https://glossary.magento.com/admin) panel, control is quickly returned to the merchant. In previous releases, the merchant could not use the Admin panel until all tasks were completed.
 
 The primary Bulk Operation interface is `OperationInterface`. It defines the getter and setter methods the bulk operation uses to create and process messages. The following interfaces are also used:
 
@@ -56,7 +56,7 @@ The `BulkManagementInterface::scheduleBulk` is responsible for publishing bulk o
 <td>The Admin user ID that executes this bulk operation.</td></tr>
 </table>
 
-See [Create a publisher]( {{page.baseurl}}/extension-dev-guide/message-queues/implement-bulk.html#createpublisher) for a detailed example of a [publisher](https://glossary.magento.com/publisher-subscriber-pattern).
+See [Create a publisher](bulk-operations-example.md#create-a-publisher) for a detailed example of a [publisher](https://glossary.magento.com/publisher-subscriber-pattern).
 
 ### Consume messages
 
@@ -89,7 +89,7 @@ try {
 }
 ```
 
-See [Create a consumer]( {{page.baseurl}}/extension-dev-guide/message-queues/implement-bulk.html#createconsumer) for a detailed example of a consumer.
+See [Create a consumer](bulk-operations-example.md#create-a-consumer) for a detailed example of a consumer.
 
 ### Get the status of operations
 
@@ -104,5 +104,5 @@ Value | Constant
 
 #### Related Topic
 
-*  [Message Queues Overview]( {{page.baseurl}}/config-guide/mq/rabbitmq-overview.html)
-*  [Example bulk operations implementation]({{page.baseurl}}/extension-dev-guide/message-queues/implement-bulk.html)
+*  [Message Queues Overview](https://devdocs.magento.com/guides/v2.4/config-guide/mq/rabbitmq-overview.html)
+*  [Example bulk operations implementation](bulk-operations-example.md)

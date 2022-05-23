@@ -59,4 +59,4 @@ Keep in mind that you might be able to handle your module's configuration solely
 
 #### Next
 
-[Create your component file structure]({{ page.baseurl }}/extension-dev-guide/build/module-file-structure.html)
+[Create your component file structure](component-file-structure.md)

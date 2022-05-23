@@ -150,7 +150,7 @@ class ProductAttributesUpdater
 
 The after methods have access to all the arguments of their observed methods. When the observed method completes, Magento passes the result and arguments to the next after method that follows. If the observed method does not return a result (`@return void`), then it passes a `null` value to the next after method.
 
-Below is an example of an after method that accepts the `null` result and arguments from the observed `login` method for [`Magento\Backend\Model\Auth`]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Backend/Model/Auth.php):
+Below is an example of an after method that accepts the `null` result and arguments from the observed `login` method for [`Magento\Backend\Model\Auth`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Backend/Model/Auth.php):
 
 ```php
 <?php
@@ -189,7 +189,7 @@ class AuthLogger
 
 After methods do not need to declare all the arguments of their observed methods except those that the method uses and any arguments from the observed method that come before those used arguments.
 
-The following example is a class with an after method for [`\Magento\Catalog\Model\Product\Action::updateWebsites($productIds, $websiteIds, $type)`]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Catalog/Model/Product/Action.php):
+The following example is a class with an after method for [`\Magento\Catalog\Model\Product\Action::updateWebsites($productIds, $websiteIds, $type)`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/Product/Action.php):
 
 ```php
 <?php
@@ -346,9 +346,9 @@ class MyUtilityUpdater
 
 The `sortOrder` property from the `plugin` node declared in `di.xml` determines the plugin's prioritization when more than one plugin is observing the same method.
 
-The [`Magento\Framework\Interception\PluginListInterface`]({{ site.mage2bloburl }}/{{ page.guide_version }}/lib/internal/Magento/Framework/Interception/PluginListInterface.php) which is implemented by [`Magento\Framework\Interception\PluginList\PluginList`]({{ site.mage2bloburl }}/{{ page.guide_version }}/lib/internal/Magento/Framework/Interception/PluginList/PluginList.php) is responsible to define when to call the before, around, or after methods respecting this prioritization.
+The [`Magento\Framework\Interception\PluginListInterface`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Interception/PluginListInterface.php) which is implemented by [`Magento\Framework\Interception\PluginList\PluginList`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Interception/PluginList/PluginList.php) is responsible to define when to call the before, around, or after methods respecting this prioritization.
 
-If two or more plugins have the same `sortOrder` value or do not specify it, the [component load order]({{ page.baseurl }}/extension-dev-guide/build/module-load-order.html) declared in the `sequence` node from `module.xml` and [area]({{ page.baseurl}}/extension-dev-guide/build/di-xml-file.html#areas-and-application-entry-points) will define the merge sequence. Check the component load order in `app/etc/config.php` file.
+If two or more plugins have the same `sortOrder` value or do not specify it, the [component load order](../build/component-load-order.md) declared in the `sequence` node from `module.xml` and [area](../build/schema-validation.md) will define the merge sequence. Check the component load order in `app/etc/config.php` file.
 
 Magento executes plugins using these rules during each plugin execution in two main flows:
 
@@ -426,7 +426,7 @@ With these methods:
 | **around**    |                  | aroundDispatch() |                  |
 | **after**     | afterDispatch()  | afterDispatch()  | afterDispatch()  |
 
-`PluginB`::`aroundDispatch()` defines the [$next]({{ site.mage2bloburl }}/{{ page.guide_version }}/lib/internal/Magento/Framework/Interception/Interceptor.php) argument with a `callable` type. For example:
+`PluginB`::`aroundDispatch()` defines the [$next](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Interception/Interceptor.php) argument with a `callable` type. For example:
 
 ```php
 <?php
@@ -481,7 +481,7 @@ Using these methods:
 | **around**    |                  | aroundDispatch() |                  |
 | **after**     | afterDispatch()  | afterDispatch()  | afterDispatch()  |
 
-`PluginB`::`aroundDispatch()` does not define the [$next]({{ site.mage2bloburl }}/{{ page.guide_version }}/lib/internal/Magento/Framework/Interception/Interceptor.php) argument with a `callable` type. For example:
+`PluginB`::`aroundDispatch()` does not define the [$next](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Interception/Interceptor.php) argument with a `callable` type. For example:
 
 ```php
 <?php
@@ -578,5 +578,5 @@ When disabling the plugin, make sure to use the same path format to call and dis
 {:.ref-header}
 Related topics
 
-*  [Dependency injection]({{ page.baseurl }}/extension-dev-guide/depend-inj.html)
-*  [Events and observers]({{ page.baseurl }}/extension-dev-guide/events-and-observers.html)
+*  [Dependency injection](dependency-injection.md)
+*  [Events and observers](events-and-observers/index.md)

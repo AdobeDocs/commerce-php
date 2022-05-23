@@ -98,6 +98,6 @@ These variables have a store view scope level and have all the features availabl
 Custom Variable entities can also be created in your module's `DataInstall` or `DataUpgrade` classes.
 See [Module Lifecycle] for more information.
 
-[Variable module]: https://github.com/magento/magento2/tree/{{page.guide_version}}/app/code/Magento/Variable/etc
-[Module Lifecycle]: {{page.baseurl }}/extension-dev-guide/prepare/lifecycle.html
-[`di.xml`]: {{page.baseurl }}/extension-dev-guide/build/di-xml-file.html
+[Variable module]: https://github.com/magento/magento2/tree/2.4/app/code/Magento/Variable/etc
+[Module Lifecycle]: ../prepare/extension-lifecycle.md
+[`di.xml`]: ../build/dependency-injection-file.md

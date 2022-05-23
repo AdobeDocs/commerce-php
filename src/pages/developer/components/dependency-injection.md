@@ -127,21 +127,21 @@ To get around this limitation, injectable objects can depend on [factories] that
 {:.ref-header}
 Related topics
 
-*  [The `di.xml` file]({{ page.baseurl }}/extension-dev-guide/build/di-xml-file.html)
-*  [ObjectManager]({{ page.baseurl }}/extension-dev-guide/object-manager.html)
-*  [Plugins]({{ page.baseurl }}/extension-dev-guide/plugins.html)
-*  [Routing]({{ page.baseurl }}/extension-dev-guide/routing.html)
-*  [Magento application initialization and bootstrap]({{ page.baseurl }}/config-guide/bootstrap/magento-bootstrap.html)
-*  [Module Dependencies]({{ page.baseurl }}/architecture/archi_perspectives/components/modules/mod_depend.html)
-*  [Programming concepts]({{ page.baseurl }}/extension-dev-guide/api-concepts.html)
+*  [The `di.xml` file](../build/dependency-injection-file.md)
+*  [ObjectManager](object-manager/index.md)
+*  [Plugins](plugins.md)
+*  [Routing](routing.md)
+*  [Magento application initialization and bootstrap](https://devdocs.magento.com/guides/v2.4/config-guide/bootstrap/magento-bootstrap.html)
+*  [Module Dependencies](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_depend.html)
+*  [Programming concepts](api-concepts.md)
 
 [Dependency Injection]: https://en.wikipedia.org/wiki/Dependency_injection
 [dependency inversion principle]: http://www.oodesign.com/dependency-inversion-principle.html
-[`di.xml`]: {{ page.baseurl }}/extension-dev-guide/build/di-xml-file.html
-[`ObjectManager`]: {{ page.baseurl }}/extension-dev-guide/object-manager.html
-[code compiler tool]: {{ page.baseurl }}/config-guide/cli/config-cli-subcommands-compiler.html
-[proxies]: {{ page.baseurl }}/extension-dev-guide/proxies.html
-[proxy]: {{ page.baseurl }}/extension-dev-guide/proxies.html
-[factories]: {{ page.baseurl }}/extension-dev-guide/factories.html
-[interceptors]: {{ page.baseurl }}/extension-dev-guide/plugins.html
-[`Product`]: {{ site.mage2bloburl }}/{{page.guide_version}}/app/code/Magento/Catalog/Model/Product.php
+[`di.xml`]: ../build/dependency-injection-file.md
+[`ObjectManager`]: object-manager/index.md
+[code compiler tool]: https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-compiler.html
+[proxies]: proxies.md
+[proxy]: proxies.md
+[factories]: factories.md
+[interceptors]: plugins.md
+[`Product`]: https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/Product.php

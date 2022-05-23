@@ -129,11 +129,11 @@ class CustomerAgeContextPlugin
 
 The `subject->setValue` argument specifies the value for newcomer context and is used to guarantee parity during cache key generation for newcomers and users who already received the `X-Magento-Vary` cookie.
 
-For another example of a context class, see [Magento/Framework/App/Http/Context]({{ site.mage2bloburl }}/{{ page.guide_version }}/lib/internal/Magento/Framework/App/Http/Context.php).
+For another example of a context class, see [Magento/Framework/App/Http/Context](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Http/Context.php).
 
 ### `X-Magento-Vary` cookie
 
-Use the `X-Magento-Vary` cookie to transfer context on the HTTP layer. HTTP proxies can be configured to calculate a unique identifier for cache based on the cookie and URL. For example, [our sample Varnish 4 configuration]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/PageCache/etc/varnish4.vcl#L63-L68) uses the following:
+Use the `X-Magento-Vary` cookie to transfer context on the HTTP layer. HTTP proxies can be configured to calculate a unique identifier for cache based on the cookie and URL. For example, [our sample Varnish 4 configuration](https://github.com/magento/magento2/blob/2.4/app/code/Magento/PageCache/etc/varnish4.vcl#L63-L68) uses the following:
 
 ```conf
 sub vcl_hash {
@@ -150,7 +150,7 @@ You can clear cached content immediately after a entity changes. Magento uses  `
 
 This section shows you how to tell Magento what cache to clear when you change an entity.
 
-First, your entity [module](https://glossary.magento.com/module) must implement [`Magento/Framework/DataObject/IdentityInterface`]({{ site.mage2bloburl }}/{{ page.guide_version }}/lib/internal/Magento/Framework/DataObject/IdentityInterface.php) as follows:
+First, your entity [module](https://glossary.magento.com/module) must implement [`Magento/Framework/DataObject/IdentityInterface`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/DataObject/IdentityInterface.php) as follows:
 
 ```php
 <?php

@@ -203,9 +203,9 @@ It covers the following cases:
 -  Other of previously mentioned. Output is not escaped. Test is red.
 
 <!-- Link Definitions -->
-[product listing template]: {{ site.mage2bloburl }}/78bb169ff9721c8d05c35b4c29a4464fd45bccbe/app/code/Magento/Catalog/view/frontend/templates/product/list.phtml#L16
-[Template guide]: {{ page.baseurl }}/frontend-dev-guide/templates/template-overview.html
+[product listing template]: https://github.com/magento/magento2/blob/78bb169ff9721c8d05c35b4c29a4464fd45bccbe/app/code/Magento/Catalog/view/frontend/templates/product/list.phtml#L16
+[Template guide]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/templates/template-overview.html
 [Cross-site scripting]: https://owasp.org/www-community/attacks/xss/
-[Magento binding syntax]: {{ page.baseurl }}/ui_comp_guide/concepts/magento-bindings.html
-[UI component data providers]: {{ page.baseurl }}/ui_comp_guide/concepts/ui_comp_data_source.html
+[Magento binding syntax]: https://devdocs.magento.com/guides/v2.4/ui_comp_guide/concepts/magento-bindings.html
+[UI component data providers]: https://devdocs.magento.com/guides/v2.4/ui_comp_guide/concepts/ui_comp_data_source.html
 [Magento Coding Standard]: https://github.com/magento/magento-coding-standard

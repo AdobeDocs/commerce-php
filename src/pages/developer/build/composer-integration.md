@@ -211,15 +211,15 @@ Where:
 ---
 
 **Next:**
-[Define your configuration files]({{ page.baseurl }}/extension-dev-guide/build/required-configuration-files.html)
+[Define your configuration files](required-configuration-files.md)
 
 [0]: https://getcomposer.org/
 [2]: https://packagist.org/
 [3]: https://getcomposer.org/doc/05-repositories.md#path
 [4]: https://www.iso.org/iso-639-language-codes.html
-[5]: {{ site.baseurl }}/marketplace/sellers/profile-company.html
+[5]: https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-company/
 [6]: https://marketplace.magento.com/
 [7]: https://marketplace.magento.com
-[8]: {{ page.baseurl }}/extension-dev-guide/package/package_module.html#package-metapackage
+[8]: ../package/package-component.md#package-metapackage
 [9]: https://getcomposer.org/doc/03-cli.md#create-project
-[10]: {{ page.baseurl }}/install-gde/composer.html
+[10]: https://devdocs.magento.com/guides/v2.4/install-gde/composer.html

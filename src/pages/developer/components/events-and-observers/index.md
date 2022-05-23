@@ -16,7 +16,7 @@ Events are dispatched by modules when certain actions are triggered. In addition
 
 ### Dispatching events
 
-Events can be dispatched using the [`Magento\Framework\Event\ManagerInterface`]({{ site.mage2bloburl }}/{{ page.guide_version }}/lib/internal/Magento/Framework/Event/ManagerInterface.php) class. This class can be obtained through [dependency injection]({{ page.baseurl }}/extension-dev-guide/depend-inj.html) by defining the dependency in your constructor.
+Events can be dispatched using the [`Magento\Framework\Event\ManagerInterface`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Event/ManagerInterface.php) class. This class can be obtained through [dependency injection](../dependency-injection.md) by defining the dependency in your constructor.
 
 To dispatch an event, call the `dispatch` function of the event manager class and provide it with the name of the event you want to dispatch along with an array of data you wish to provide to observers.
 
@@ -96,7 +96,7 @@ Observers are a certain type of Magento class that can influence general behavio
 
 ### Creating an observer
 
-To create an observer, you must place your class file under your `<module-root>/Observer` directory. Your observer class should implement [`Magento\Framework\Event\ObserverInterface`]({{ site.mage2bloburl }}/{{ page.guide_version }}/lib/internal/Magento/Framework/Event/ObserverInterface.php) and define its `execute` function.
+To create an observer, you must place your class file under your `<module-root>/Observer` directory. Your observer class should implement [`Magento\Framework\Event\ObserverInterface`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Event/ObserverInterface.php) and define its `execute` function.
 
 Below is an example of the basic observer class structure:
 
@@ -166,7 +166,7 @@ The `observer` [xml](https://glossary.magento.com/xml) element has the following
 *  `name` (required) - The name of the observer for the event definition.
 *  `instance` (required) - The fully qualified class name of the observer.
 *  `disabled` - Determines whether this observer is active or not. Default value is false.
-*  `shared` - Determines the [lifestyle]({{ page.baseurl }}/extension-dev-guide/build/di-xml-file.html#object-lifestyle-configuration) of the class. Default is `true`.
+*  `shared` - Determines the [lifestyle](../../build/dependency-injection-file.md#object-lifestyle-configuration) of the class. Default is `true`.
 
 {: .bs-callout-warning}
 The observer name must be unique, or an override will occur.
@@ -207,4 +207,4 @@ Below is an example of how to disable the previously created observer.
 
 ## Recommended Reading
 
-*  [Observers best practices]({{ page.baseurl }}/ext-best-practices/extension-coding/observers-bp.html)
+*  [Observers best practices](https://devdocs.magento.com/guides/v2.4/ext-best-practices/extension-coding/observers-bp.html)

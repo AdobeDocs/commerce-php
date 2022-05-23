@@ -9,11 +9,11 @@ functional_areas:
 ---
 
 A configuration importer provides consistent configurations across multiple systems (such as development, staging, and production).
-This is useful for deployment strategies such as [pipeline deployment]({{ page.baseurl }}/config-guide/deployment/pipeline/).
+This is useful for deployment strategies such as [pipeline deployment](https://devdocs.magento.com/guides/v2.4/config-guide/deployment/pipeline/).
 
 Magento uses configuration importers to import configuration data from the shared configuration file, `config.php`, to the appropriate storage, such as a database.
 
-Use the [`magento app:config:import` command]({{ page.baseurl }}/config-guide/cli/config-cli-subcommands-config-mgmt-import.html) to import the configuration from the command line.
+Use the [`magento app:config:import` command](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-config-mgmt-import.html) to import the configuration from the command line.
 
 Currently Magento has the following importers:
 
@@ -42,7 +42,7 @@ All Magento importers implement the interface [`Magento\Framework\App\Deployment
 ### Implement your own importer
 
 1. Create an `Importer` class that implements [`Magento\Framework\App\DeploymentConfig\ImporterInterface`][importer-interface].
-1. Register your importer in your module's [`di.xml`]({{ page.baseurl }}/extension-dev-guide/depend-inj.html):
+1. Register your importer in your module's [`di.xml`](../components/dependency-injection.md):
 
    ```xml
    <type name="Magento\Deploy\Model\DeploymentConfig\ImporterPool">
@@ -67,8 +67,8 @@ An array cannot be imported by more than one importer.
 
 ## More information
 
-*  [Sensitive and system-specific settings]({{ page.baseurl }}/extension-dev-guide/configuration/sensitive-and-environment-settings.html)
-*  [config.php reference]({{ page.baseurl }}/config-guide/prod/config-reference-configphp.html)
-*  [env.php reference]({{ page.baseurl }}/config-guide/prod/config-reference-envphp.html)
+*  [Sensitive and system-specific settings](sensitive-environment-settings.md)
+*  [config.php reference](https://devdocs.magento.com/guides/v2.4/config-guide/prod/config-reference-configphp.html)
+*  [env.php reference](https://devdocs.magento.com/guides/v2.4/config-guide/prod/config-reference-envphp.html)
 
-[importer-interface]:{{ site.mage2bloburl }}/{{ page.guide_version }}/lib/internal/Magento/Framework/App/DeploymentConfig/ImporterInterface.php
+[importer-interface]:https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/DeploymentConfig/ImporterInterface.php

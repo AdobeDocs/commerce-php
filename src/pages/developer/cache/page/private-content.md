@@ -5,17 +5,17 @@ title: Private content
 
 Since private content is specific to individual users, it is reasonable to handle it on the client (i.e., web browser).
 
-Use our [customer-data]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Customer/view/frontend/web/js/customer-data.js) JS library to store private data in local storage, invalidate private data using customizable rules, and synchronize data with the backend.
+Use our [customer-data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/view/frontend/web/js/customer-data.js) JS library to store private data in local storage, invalidate private data using customizable rules, and synchronize data with the backend.
 
 This example displays a product comparison on a cacheable page.
 
 ## Create a section source {#config-cache-priv-how-source}
 
-The section source class is responsible for retrieving data for the section. As a best practice, we recommend that you put your code within the `Vendor/ModuleName/CustomerData` namespace. Your classes must implement the [`Magento\Customer\CustomerData\SectionSourceInterface`]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Customer/CustomerData/SectionSourceInterface.php) interface.
+The section source class is responsible for retrieving data for the section. As a best practice, we recommend that you put your code within the `Vendor/ModuleName/CustomerData` namespace. Your classes must implement the [`Magento\Customer\CustomerData\SectionSourceInterface`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/CustomerData/SectionSourceInterface.php) interface.
 
 The public method `getSectionData` must return an array with data for a private block.
 
-[Example]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Catalog/CustomerData/CompareProducts.php#L61-L70)
+[Example](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/CustomerData/CompareProducts.php#L61-L70)
 
 Add the following to your component's [dependency injection](https://glossary.magento.com/dependency-injection) configuration (`di.xml`):
 
@@ -47,7 +47,7 @@ Initialize the component as follows:
 </script>
 ```
 
-[Example]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Catalog/view/frontend/templates/product/compare/sidebar.phtml#L50-L52)
+[Example](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/view/frontend/templates/product/compare/sidebar.phtml#L50-L52)
 
 ## Configure a UI component {#config-cache-priv-how-ui}
 
@@ -60,11 +60,11 @@ initialize: function () {
 }
 ```
 
-[Example]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Catalog/view/frontend/web/js/view/compare-products.js#L32-L33)
+[Example](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/view/frontend/web/js/view/compare-products.js#L32-L33)
 
 All properties are available in the template where the UI component initialized.
 
-[Example of defining a UI component in a layout]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Catalog/view/frontend/layout/default.xml#L55-L61)
+[Example of defining a UI component in a layout](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/view/frontend/layout/default.xml#L55-L61)
 
 ## Invalidate private content
 
@@ -80,7 +80,7 @@ The are some exception cases:
 {: .bs-callout-info }
 Product information will not be simultaneously updated in customer cart (product name, price, product enabled/disabled). Information will be updated after what comes first: `section_data_lifetime` time passed or an action that the update cart triggered.
 
-The following example adds comments to [app/code/Magento/Catalog/etc/frontend/sections.xml]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Catalog/etc/frontend/sections.xml) so you can see what the code is doing.
+The following example adds comments to [app/code/Magento/Catalog/etc/frontend/sections.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/etc/frontend/sections.xml) so you can see what the code is doing.
 
 ```xml
 <?xml version="1.0"?>
@@ -134,8 +134,8 @@ Use only HTTP POST or PUT methods to change state (e.g., adding to a shopping ca
 
 Other examples:
 
--  [Checkout]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Checkout/etc/frontend/sections.xml)
--  [Customer]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Customer/etc/frontend/sections.xml)
+-  [Checkout](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Checkout/etc/frontend/sections.xml)
+-  [Customer](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/etc/frontend/sections.xml)
 
 ## Version private content {#config-priv-vers}
 

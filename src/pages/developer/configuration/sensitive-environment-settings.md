@@ -104,9 +104,9 @@ Related topics
 
 *  [Configuration importers][config-importers]
 *  [The di.xml file][di-xml]
-*  [Developer roadmap]({{ page.baseurl }}/extension-dev-guide/intro/developers_roadmap.html)
-*  [Dependency injection]({{ page.baseurl }}/extension-dev-guide/depend-inj.html)
+*  [Developer roadmap](../roadmap.md)
+*  [Dependency injection](../components/dependency-injection.md)
 
-[typepool]: {{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Config/Model/Config/TypePool.php
-[di-xml]: {{ page.baseurl }}/extension-dev-guide/build/di-xml-file.html
-[config-importers]: {{ page.baseurl }}/extension-dev-guide/configuration/importers.html
+[typepool]: https://github.com/magento/magento2/blob/2.4/app/code/Magento/Config/Model/Config/TypePool.php
+[di-xml]: ../build/dependency-injection-file.md
+[config-importers]: importers.md

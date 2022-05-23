@@ -178,4 +178,4 @@ To avoid naming your command the same as another command, we recommend:
 {:.ref-header}
 Related topic
 
-[How to add CLI commands]({{ page.baseurl }}/extension-dev-guide/cli-cmds/cli-howto.html)
+[How to add CLI commands](create-new.md)

@@ -11,7 +11,7 @@ This document describes how bulk operations can be implemented. There are three 
 *  Create a consumer that receives and processes messages
 *  Configure the message queues
 
-### Create a publisher {#createpublisher}
+### Create a publisher
 
 A publisher's duties include scheduling a bulk operation. It must generate a `bulkUuid` for each operation, send each operation to the message queue, and report on the status of each operations.
 
@@ -150,7 +150,7 @@ class ScheduleBulk
 
 {% endcollapsible %}
 
-### Create a consumer {#createconsumer}
+### Create a consumer
 
 A consumer class receives messages from the message queue and changes the status after it is processed. The following example defines a consumer that handles price update bulk operations.
 
@@ -291,7 +291,7 @@ The message queue topology must be configured to implement bulk operations. Crea
 *  `queue_publisher.xml`
 *  `queue_topology.xml`
 
-For more information about the `di.xml` file, see [Dependency Injection]({{page.baseurl}}/extension-dev-guide/depend-inj.html). For information the other files, see [Configure message queues]({{page.baseurl}}/extension-dev-guide/message-queues/config-mq.html).
+For more information about the `di.xml` file, see [Dependency Injection](../dependency-injection.md). For information the other files, see [Configure message queues](configuration.md).
 
 #### Create `communication.xml`
 
@@ -355,6 +355,6 @@ The `queue_topology.xml` file defines the message routing rules and declares que
 
 #### Related Topics
 
-*  [Message Queues Overview]({{page.baseurl}}/config-guide/mq/rabbitmq-overview.html)
-*  [Bulk Operations]({{page.baseurl}}/extension-dev-guide/message-queues/bulk-operations.html)
-*  [Configure message queues]({{page.baseurl}}/extension-dev-guide/message-queues/config-mq.html)
+*  [Message Queues Overview](https://devdocs.magento.com/guides/v2.4/config-guide/mq/rabbitmq-overview.html)
+*  [Bulk Operations](bulk-operations.md)
+*  [Configure message queues](configuration.md)

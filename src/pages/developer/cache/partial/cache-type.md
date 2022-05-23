@@ -165,8 +165,8 @@ $cacheKey  = \VendorName\ModuleName\Model\Cache\Type\CacheType::TYPE_IDENTIFIER;
 $this->typeList->cleanType($cacheKey);
 ```
 
-[tagscope]: {{ site.mage2bloburl }}/{{ page.guide_version }}/lib/internal/Magento/Framework/Cache/Frontend/Decorator/TagScope.php
-[type]: {{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Customer/Model/Cache/Type/Notification.php
+[tagscope]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Frontend/Decorator/TagScope.php
+[type]: https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/Model/Cache/Type/Notification.php
 
 ## Examples {#m2devgde-cache-type-model}
 

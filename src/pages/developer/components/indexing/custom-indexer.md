@@ -15,7 +15,7 @@ To implement your own indexer, add the following code in your module:
 
 ### Custom indexer logic
 
-Your custom indexer class should implement [\Magento\Framework\Indexer\ActionInterface]({{ site.mage2bloburl }}/{{ page.guide_version }}/lib/internal/Magento/Framework/Indexer/ActionInterface.php), and the indexer should be able to perform three types of operations:
+Your custom indexer class should implement [\Magento\Framework\Indexer\ActionInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Indexer/ActionInterface.php), and the indexer should be able to perform three types of operations:
 
 *  Row reindex: processing a single entry from a dictionary; responsibility of `executeRow($id)`
 *  List reindex: processing a set of dictionary entries; responsibility of `executeList($ids)`, where `$ids` is an array of [entity](https://glossary.magento.com/entity) IDs
@@ -30,7 +30,7 @@ Declare a new indexer process in the `etc/indexer.xml` file with the following a
 | `id` | Yes | A unique indexer ID |
 | `class` | No | The class that processes indexer methods (`executeFull`, `executeList`, `executeRow`) |
 | `primary` | No | The source provider |
-| `shared_index` | No | Use this option to improve performance if your indexer is related to another indexer. In this [example]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/CatalogRule/etc/indexer.xml), if the Catalog Product Rule index needs to be reindexed, but other catalog product rule indexes are up-to-date, then only the Catalog Product Rule is reindexed. |
+| `shared_index` | No | Use this option to improve performance if your indexer is related to another indexer. In this [example](https://github.com/magento/magento2/blob/2.4/app/code/Magento/CatalogRule/etc/indexer.xml), if the Catalog Product Rule index needs to be reindexed, but other catalog product rule indexes are up-to-date, then only the Catalog Product Rule is reindexed. |
 | `view_id` | No | The ID of the view element that is defined in the `mview.xml` configuration file. |
 
 For example,
@@ -86,7 +86,7 @@ Add the `mview.xml` configuration file in the `etc` module directory, where you 
 *  the database tables the indexer tracks
 *  what column data is sent to the indexer
 
-[Example]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Catalog/etc/mview.xml)
+[Example](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/etc/mview.xml)
 
 All Mview declarations related to a module should be declared in one file.
 

@@ -24,7 +24,7 @@ To configure a web API, read these topics:
 -  [webapi.xsd XML schema file](#validate-webapi)
 -  [Forcing Request Parameters](#forced-parameters)
 
-## Configure a web API {#configure-webapi}
+## Configure a web API
 
 To configure a web API for a service, you define XML elements and attributes in the `app/code/Magento/<MODULE>/etc/webapi.xml` file, where `<MODULE> is the module name.` For example, the web API for the Customer service is defined in the `app/code/Magento/Customer/etc/webapi.xml` configuration file.
 
@@ -174,7 +174,7 @@ To define web API components, set these attributes on these XML elements in the
                `ref`.
                   Required. Referenced resource. Valid values are `self`, `anonymous`, or a Magento resource, such as `Magento_Customer::group`.
                <strong>Note</strong>:The Magento web API framework enables guest users to access resources that are configured with `anonymous` permission.
-                  Any user that the framework cannot authenticate through existing <a href="{{ page.baseurl }}/get-started/authentication/gs-authentication.html">authentication
+                  Any user that the framework cannot authenticate through existing <a href="https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication.html">authentication
                      mechanisms</a> is considered a guest user.
             </li>
          </ul>

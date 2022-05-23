@@ -11,17 +11,17 @@ Building your component involves laying out the file structure, creating the nec
 
 ## Prerequisites {#create-component-basics}
 
-Before you begin creating your new component, make sure that you have a working installation of Magento 2, and the Magento [System Requirements]({{ page.baseurl }}/install-gde/system-requirements.html).
+Before you begin creating your new component, make sure that you have a working installation of Magento 2, and the Magento [System Requirements](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html).
 
 Also, we recommend that you disable caching while setting up the component file structure and adding configuration files.
 
 The following details the component building process:
 
-*  [Create composer.json]({{ page.baseurl }}/extension-dev-guide/build/composer-integration.html)
-*  [Define your configuration files]({{ page.baseurl }}/extension-dev-guide/build/required-configuration-files.html)
-*  [Create your component file structure]({{ page.baseurl }}/extension-dev-guide/build/module-file-structure.html)
-*  [Register your component]({{ page.baseurl }}/extension-dev-guide/build/component-registration.html)
-*  [URN schema validation]({{ page.baseurl }}/extension-dev-guide/build/XSD-XML-validation.html)
-*  [Name your component]({{ page.baseurl }}/extension-dev-guide/build/create_component.html)
-*  [Component load order]({{ page.baseurl }}/extension-dev-guide/build/module-load-order.html)
-*  [Enable your component]({{ page.baseurl }}/extension-dev-guide/build/enable-module.html)
+*  [Create composer.json](composer-integration.md)
+*  [Define your configuration files](required-configuration-files.md)
+*  [Create your component file structure](component-file-structure.md)
+*  [Register your component](component-registration.md)
+*  [URN schema validation](schema-validation.md)
+*  [Name your component](component-name.md)
+*  [Component load order](component-load-order.md)
+*  [Enable your component](component-management.md)

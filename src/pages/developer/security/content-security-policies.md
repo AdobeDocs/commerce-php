@@ -80,7 +80,7 @@ Example `config.xml`:
 ```
 
 You can use the `etc/config.xml` file in the `Magento_Csp` module as a reference.
-[Create your component file structure]({{page.baseurl}}/extension-dev-guide/build/module-file-structure.html)
+[Create your component file structure](../build/component-file-structure.md)
 describes how to create a module.
 
 ## Configure CSPs for your custom code/extension/theme
@@ -120,13 +120,13 @@ adding a `csp_whitelist.xml` to your custom module's `etc` folder.
     <policies>
         <policy id="script-src">
             <values>
-                <value id="devdocs-base" type="host">{{ site.baseurl }}</value>
+                <value id="devdocs-base" type="host">https://developer.adobe.com</value>
                 <value id="magento" type="host">https://magento.com</value>
             </values>
         </policy>
         <policy id="connect-src">
             <values>
-                <value id="devdocs" type="host">{{ site.baseurl }}</value>
+                <value id="devdocs" type="host">https://developer.adobe.com</value>
             </values>
         </policy>
     </policies>

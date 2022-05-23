@@ -14,7 +14,7 @@ Public interfaces for a [module](https://glossary.magento.com/module) are marked
 
 <InlineAlert variant="info" slots="text"/>
 
-Third-party developers should use only these interfaces, that is, interfaces with the `@api` annotation. You can use other interfaces but those may be modified or removed in subsequent Magento releases. For more information, see [Backward compatibility]({{ site.baseurl }}/contributor-guide/backward-compatible-development/).
+Third-party developers should use only these interfaces, that is, interfaces with the `@api` annotation. You can use other interfaces but those may be modified or removed in subsequent Magento releases. For more information, see [Backward compatibility](https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy/).
 
 ### Example of public interface annotation
 

@@ -5,7 +5,7 @@ contributor_name: Goivvy LLC
 contributor_link: https://www.goivvy.com
 ---
 
-This is the list of [event]({{ page.baseurl }}/extension-dev-guide/events-and-observers.html) names ordered alphabetically.
+This is the list of [event](../events-and-observers/index.md) names ordered alphabetically.
 Each event contains a short description and a list of supported arguments.
 
 ### abstract_search_result_load_after

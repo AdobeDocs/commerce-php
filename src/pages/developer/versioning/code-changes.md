@@ -179,6 +179,6 @@ As the framework improves, this list should be reduced and, eventually, eliminat
 {:.ref-header}
 Related topics
 
-*  [Release policy]({{ site.baseurl }}/release/policy/)
-*  [Upcoming releases]({{ site.baseurl }}/release/)
-*  [Backward compatibility policy]({{ site.baseurl }}/contributor-guide/backward-compatible-development/)
+*  [Release policy](https://devdocs.magento.com/release/policy/)
+*  [Upcoming releases](https://devdocs.magento.com/release/)
+*  [Backward compatibility policy](https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy/)

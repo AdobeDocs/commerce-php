@@ -23,7 +23,7 @@ Data interfaces define functions that return information about data entities, re
 Service interfaces include management, repository, and [metadata](https://glossary.magento.com/metadata) interfaces.
 You must define the service interfaces for a service contract in the `Api` subdirectory for a module.
 
-## Data interfaces {#data-interfaces}
+## Data interfaces
 
 Define data interfaces in the `Api/Data` subdirectory for a module.
 
@@ -31,7 +31,7 @@ For example, the data interfaces for the Customer module are in the `/app/code/M
 
 <InlineAlert variant="info" slots="text"/>
 
-The [SimpleDataObjectConverter]({{ site.mage2bloburl }}/{{ page.guide_version }}/lib/internal/Magento/Framework/Api/SimpleDataObjectConverter.php) follows a strict 'camel case' to 'snake case' conversion of data keys (table columns). You should not use `underscores (_)` between alphanumerical characters in column names.
+The [SimpleDataObjectConverter](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Api/SimpleDataObjectConverter.php) follows a strict 'camel case' to 'snake case' conversion of data keys (table columns). You should not use `underscores (_)` between alphanumerical characters in column names.
 For example, use `default_shipping1` instead of `default_shipping_1`, as the Data Interface method `defaultShipping1` will be converted into `default_shipping1`.
 
 ### Data search results interfaces {#search-results-interfaces}
@@ -42,7 +42,7 @@ You must define one interface for each data [entity](https://glossary.magento.co
 `CustomerSearchResultsInterface` returns an array of `CustomerInterface` data entities.
 In `GroupSearchResultsInterface`, the `getItems()` function returns an array of `GroupInterface` data entities.
 
-## Service interfaces {#service-interfaces}
+## Service interfaces
 
 Service interfaces include several interface subtypes:
 
@@ -50,7 +50,7 @@ Service interfaces include several interface subtypes:
 -  Management interfaces
 -  Metadata interfaces
 
-For file names and coding standards, follow the defined [PHP coding standards]({{ page.baseurl }}/coding-standards/code-standard-php.html).
+For file names and coding standards, follow the defined [PHP coding standards](../../../coding-standards/php.md).
 
 Place service interfaces in the top-level `Api` directory for a module.
 
@@ -91,7 +91,7 @@ Metadata interfaces provide methods for retrieving metadata, the interfaces are 
 
 Interface | Description
 --- | ---
-`AttributeMetadataInterface` | Provides customer attribute metadata and defines the constants used as keys of data array and methods. See more [AttributeMetadataInterface]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Customer/Api/Data/AttributeMetadataInterface.php).
+`AttributeMetadataInterface` | Provides customer attribute metadata and defines the constants used as keys of data array and methods. See more [AttributeMetadataInterface](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/Api/Data/AttributeMetadataInterface.php).
 `ProductMetadataInterface` | Provides Magento application product metadata. Defines the `getVersion()`, `getEdition()`, `getName()` methods.
 `CustomerMetadataManagementInterface` | Interface for managing customer attributes metadata. Defines the constant `ENTITY_TYPE_CUSTOMER`.
 `AddressMetadataInterface` | Interface for retrieving information about customer address attributes metadata. Defines the constants `ATTRIBUTE_SET_ID_ADDRESS`, `ENTITY_TYPE_ADDRESS`, `DATA_INTERFACE_NAME`.
@@ -99,5 +99,5 @@ Interface | Description
 {:.ref-header}
 Related topics
 
--  [Service contracts]({{ page.baseurl }}/extension-dev-guide/service-contracts/service-contracts.html)
--  [Configure services as web APIs]({{ page.baseurl }}/extension-dev-guide/service-contracts/service-to-web-service.html)
+-  [Service contracts](index.md)
+-  [Configure services as web APIs](../web-api/services.md)

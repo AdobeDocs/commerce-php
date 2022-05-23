@@ -72,11 +72,11 @@ Related Topics
 
 *  [Module version dependencies][version-dependencies] - Information about how your module can depend on the version of other modules.
 *  [Codebase changes][codebase-changes] - Information on how changes in a module's codebase affect versions.
-*  [Backward compatible development]({{ site.baseurl }}/contributor-guide/backward-compatible-development/index.html) - Information about MAJOR and MINOR changes and how they impact extension developers.
+*  [Backward compatible development](https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy/) - Information about MAJOR and MINOR changes and how they impact extension developers.
 
-[version-dependencies]: {{ page.baseurl }}/extension-dev-guide/versioning/dependencies.html
-[codebase-changes]: {{ page.baseurl }}/extension-dev-guide/versioning/codebase-changes.html
+[version-dependencies]: ../versioning/dependencies.md
+[codebase-changes]: ../versioning/code-changes.md
 [semantic-versioning]: http://semver.org/
 [composer-versioning]: https://getcomposer.org/doc/04-schema.md#version
 [php-version-compare]: http://php.net/version_compare
-[composer-json]: {{ page.baseurl }}/extension-dev-guide/build/composer-integration.html
+[composer-json]: ../build/composer-integration.md

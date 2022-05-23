@@ -28,7 +28,7 @@ The procedure for instantiating a consumer differs, depending on which message q
 
 ### RabbitMQ
 
-This instantiates a consumer that is defined in a [`queue_consumer.xml`]({{page.baseurl}}/extension-dev-guide/message-queues/config-mq.html#queueconsumerxml) file. The consumer (`customer_created_listener`) listens to the queue and receives all new messages. For every message, it invokes `Magento\Some\Class::processMessage($message)`
+This instantiates a consumer that is defined in a [`queue_consumer.xml`](configuration.md#queueconsumerxml) file. The consumer (`customer_created_listener`) listens to the queue and receives all new messages. For every message, it invokes `Magento\Some\Class::processMessage($message)`
 
 ```php
 $this->consumerFactory->get('customer_created_listener')
@@ -90,7 +90,7 @@ The following sample introduces a runtime configuration that allows you to redef
 
 <!-- Link definitions -->
 [RabbitMQ]: http://www.rabbitmq.com
-[Configure message queues]: {{ page.baseurl }}/extension-dev-guide/message-queues/config-mq.html
-[Message Queues Overview]: {{ page.baseurl }}/config-guide/mq/rabbitmq-overview.html
-[Configure message queues]: {{ page.baseurl }}/extension-dev-guide/message-queues/config-mq.html
-[Install RabbitMQ]: {{ page.baseurl }}/install-gde/prereq/install-rabbitmq.html
+[Configure message queues]: configuration.md
+[Message Queues Overview]: https://devdocs.magento.com/guides/v2.4/config-guide/mq/rabbitmq-overview.html
+[Configure message queues]: configuration.md
+[Install RabbitMQ]: https://devdocs.magento.com/guides/v2.4/install-gde/prereq/install-rabbitmq.html

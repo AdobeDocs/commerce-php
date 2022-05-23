@@ -27,16 +27,16 @@ Following are some common module directories:
 
 #### Additional directories
 {:.no_toc}
-Additional folders can be added for configuration and other ancillary functions for items like [plugin-ins]({{ page.baseurl }}/extension-dev-guide/plugins.html), localization, and [layout](https://glossary.magento.com/layout) files.
+Additional folders can be added for configuration and other ancillary functions for items like [plugin-ins](../components/plugins.md), localization, and [layout](https://glossary.magento.com/layout) files.
 
 *  `Api`: contains any PHP classes exposed to the [API](https://glossary.magento.com/api).
-*  `Console`: contains CLI commands. For more info, see [Add CLI commands]({{ page.baseurl }}/extension-dev-guide/cli-cmds/cli-add.html).
+*  `Console`: contains CLI commands. For more info, see [Add CLI commands](../cli-commands/create-new.md).
 *  `Cron`: contains cron job definitions.
 *  `CustomerData`: contains section files.
 *  `Helper`: contains aggregated functionality.
 *  `i18n`: contains localization files.
 *  `Observer`: contains files for executing commands from the listener.
-*  `Plugin`: contains any needed [plug-ins]({{ page.baseurl }}/extension-dev-guide/plugins.html).
+*  `Plugin`: contains any needed [plug-ins](../components/plugins.md).
 *  `UI`: contains data generation files.
 *  `view`: contains view files, including static view files, design templates, email templates, and layout files.
 
@@ -86,20 +86,20 @@ A typical [theme](https://glossary.magento.com/theme) file structure can look li
 Typical theme directories are:
 
 *  `etc`: Contains configuration files such as the `view.xml` file which contains image configurations for all images and thumbnails.
-*  `i18n`: [Translation dictionaries]({{ page.baseurl }}/frontend-dev-guide/translations/xlate.html#m2devgde-xlate-dictionaries), if any.
+*  `i18n`: [Translation dictionaries](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/xlate.html#m2devgde-xlate-dictionaries), if any.
 *  `media`: Theme preview images (screen capture of your theme) can be put in here.
 *  `web`: Optional directory that contains [static files](https://glossary.magento.com/static-files) organized into the following subdirectories:
 
-   *  `css/source`: Contains a theme's `less` configuration files that invoke mixins for global elements from the [Magento UI library]({{ page.baseurl }}/frontend-dev-guide/css-topics/theme-ui-lib.html), and the `theme.less` file that overrides the default variables values.
-   *  `css/source/lib`: Contains view files that override the [UI library]({{ page.baseurl }}/frontend-dev-guide/css-topics/theme-ui-lib.html) files stored in `lib/web/css/source/lib`.
+   *  `css/source`: Contains a theme's `less` configuration files that invoke mixins for global elements from the [Magento UI library](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/css-topics/theme-ui-lib.html), and the `theme.less` file that overrides the default variables values.
+   *  `css/source/lib`: Contains view files that override the [UI library](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/css-topics/theme-ui-lib.html) files stored in `lib/web/css/source/lib`.
    *  `fonts`: The folder to place the different fonts for your theme.
    *  `images`: Static images folder.
    *  `js`: The folder for your JavaScript files.
 
-For more details on the theme folder structure, see [Magento theme structure]({{ page.baseurl }}/frontend-dev-guide/themes/theme-structure.html).
+For more details on the theme folder structure, see [Magento theme structure](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/themes/theme-structure.html).
 
 {% include php-dev/lang-pack-file-struct.md %}
 
 **Next:**
 
-[Register your component]({{ page.baseurl }}/extension-dev-guide/build/component-registration.html)
+[Register your component](component-registration.md)

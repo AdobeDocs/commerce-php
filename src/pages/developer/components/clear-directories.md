@@ -49,7 +49,7 @@ Add or edit a CMS page, cacheable block, or use the Admin to change the configur
 
 ## How to clear the directories {#howdoi-clear-how}
 
-To only clear directories and not perform other actions, log in to the Magento server as the <a href="{{ page.baseurl }}/install-gde/prereq/file-sys-perms-over.html">file system owner</a> and clear directories using a command like the following:
+To only clear directories and not perform other actions, log in to the Magento server as the <a href="https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html">file system owner</a> and clear directories using a command like the following:
 
 ```bash
 rm -r <magento_root>/generated/*/*
@@ -64,8 +64,8 @@ You can also use the following command-line tools clear some directories for you
 | [`magento deploy:mode:set {mode}`][]|Switch between `developer` and `production` mode | `generated/metadata`, `generated/code`, `var/view_preprocessed`|
 | [`magento cache:clean {type}`][]|Clears the cache | `var/cache` and `var/page_cache`|
 
-[`magento setup:upgrade`]: {{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands-db-upgr.html
-[`magento setup:di:compile`]: {{ page.baseurl }}/config-guide/cli/config-cli-subcommands-compiler.html
-[`magento deploy:mode:set {mode}`]: {{ page.baseurl }}/config-guide/cli/config-cli-subcommands-mode.html
-[`magento cache:clean {type}`]: {{ page.baseurl }}/config-guide/cli/config-cli-subcommands-cache.html
-[generated code]: {{ page.baseurl }}/extension-dev-guide/code-generation.html
+[`magento setup:upgrade`]: https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-db-upgr.html
+[`magento setup:di:compile`]: https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-compiler.html
+[`magento deploy:mode:set {mode}`]: https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-mode.html
+[`magento cache:clean {type}`]: https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cache.html
+[generated code]: code-generation.md

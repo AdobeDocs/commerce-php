@@ -7,7 +7,7 @@ menu_order: 1
 menu_node: parent
 ---
 
-Magento uses [Zend_Cache](http://framework.zend.com/manual/1.12/en/zend.cache.html) to interact with the cache storage. However, Magento also has the [Magento\Cache]({{ site.mage2bloburl }}/{{ page.guide_version }}/lib/internal/Magento/Framework/Cache) [library](https://glossary.magento.com/library) for implementing Magento-specific caching. These topics discuss how to configure caching and [cache](https://glossary.magento.com/cache) types.
+Magento uses [Zend_Cache](http://framework.zend.com/manual/1.12/en/zend.cache.html) to interact with the cache storage. However, Magento also has the [Magento\Cache](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache) [library](https://glossary.magento.com/library) for implementing Magento-specific caching. These topics discuss how to configure caching and [cache](https://glossary.magento.com/cache) types.
 
 <InlineAlert variant="info" slots="text"/>
 
@@ -41,9 +41,9 @@ The preceding lists all cache types and shows they are all enabled.
 
 The following topics discuss how to set up caching:
 
-*  [Create a cache type]({{ page.baseurl }}/extension-dev-guide/cache/partial-caching/create-cache-type.html)
-*  [Create or extend configuration types]({{ page.baseurl }}/config-guide/config/config-create.html)
-*  [Associate cache frontends with cache types]({{ page.baseurl }}/config-guide/cache/cache-types.html)
-*  [Low-level cache options]({{ page.baseurl }}/config-guide/cache/cache-options.html)
-*  [Configure and use Varnish]({{ page.baseurl }}/config-guide/varnish/config-varnish.html)
-*  [Configure Redis]({{ page.baseurl }}/config-guide/redis/config-redis.html)
+*  [Create a cache type](cache-type.md)
+*  [Create or extend configuration types](https://devdocs.magento.com/guides/v2.4/config-guide/config/config-create.html)
+*  [Associate cache frontends with cache types](https://devdocs.magento.com/guides/v2.4/config-guide/cache/cache-types.html)
+*  [Low-level cache options](https://devdocs.magento.com/guides/v2.4/config-guide/cache/cache-options.html)
+*  [Configure and use Varnish](https://devdocs.magento.com/guides/v2.4/config-guide/varnish/config-varnish.html)
+*  [Configure Redis](https://devdocs.magento.com/guides/v2.4/config-guide/redis/config-redis.html)

@@ -52,4 +52,4 @@ To disable a component, enter the following at the command line:
 bin/magento module:disable --clear-static-content Component_Name
 ```
 
-For more on enabling and disabling components, see [enable or disable modules]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands-enable.html#instgde-cli-subcommands-enable-disable).
+For more on enabling and disabling components, see [enable or disable modules](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-enable.html#instgde-cli-subcommands-enable-disable).

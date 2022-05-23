@@ -382,13 +382,13 @@ Avoid this situation by not including dependencies in your uninstall event class
 
 *  Magento's [versioning policy]
 
-[versioning policy]: {{ page.baseurl }}/extension-dev-guide/versioning/
+[versioning policy]: ../versioning/index.md
 [schema upgrade]: #schema-upgrade
-[`InstallSchemaInterface`]: {{ site.mage2bloburl }}/{{page.guide_version}}/lib/internal/Magento/Framework/Setup/InstallSchemaInterface.php
-[`UpgradeSchemaInterface`]: {{ site.mage2bloburl }}/{{page.guide_version}}/lib/internal/Magento/Framework/Setup/UpgradeSchemaInterface.php
-[`InstallDataInterface`]: {{ site.mage2bloburl }}/{{page.guide_version}}/lib/internal/Magento/Framework/Setup/InstallDataInterface.php
-[`UpgradeDataInterface`]: {{ site.mage2bloburl }}/{{page.guide_version}}/lib/internal/Magento/Framework/Setup/UpgradeDataInterface.php
-[`ModuleDataSetupInterface`]: {{ site.mage2bloburl }}/{{page.guide_version}}/lib/internal/Magento/Framework/Setup/ModuleDataSetupInterface.php
-[Customer module's DefaultCustomerGroupsAndAttributes.php]: {{ site.mage2bloburl }}/{{page.guide_version}}/app/code/Magento/Customer/Setup/Patch/Data/DefaultCustomerGroupsAndAttributes.php
-[`ModuleContextInterface`]: {{ site.mage2bloburl }}/{{page.guide_version}}/lib/internal/Magento/Framework/Setup/ModuleContextInterface.php
-[`UninstallInterface`]: {{ site.mage2bloburl }}/{{page.guide_version}}/lib/internal/Magento/Framework/Setup/UninstallInterface.php
+[`InstallSchemaInterface`]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/InstallSchemaInterface.php
+[`UpgradeSchemaInterface`]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UpgradeSchemaInterface.php
+[`InstallDataInterface`]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/InstallDataInterface.php
+[`UpgradeDataInterface`]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UpgradeDataInterface.php
+[`ModuleDataSetupInterface`]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/ModuleDataSetupInterface.php
+[Customer module's DefaultCustomerGroupsAndAttributes.php]: https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/Setup/Patch/Data/DefaultCustomerGroupsAndAttributes.php
+[`ModuleContextInterface`]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/ModuleContextInterface.php
+[`UninstallInterface`]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php

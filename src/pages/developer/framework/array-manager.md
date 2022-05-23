@@ -5,8 +5,8 @@ title: Array Manager
 
 ## Overview
 
-The [`Magento\Framework\Stdlib\ArrayManager`]({{ site.mage2bloburl }}/{{ page.guide_version }}/lib/internal/Magento/Framework/Stdlib/ArrayManager.php) library provides the ability to manage deeply nested associative arrays.
-The library is primarily used to handle data from UI components within [DataProviders]({{ page.baseurl }}/ui_comp_guide/concepts/ui_comp_data_source.html) and [Modifiers]({{ page.baseurl }}/ui_comp_guide/concepts/ui_comp_modifier_concept.html), which are actually part of a complicated process of parsing XML files in associative arrays.
+The [`Magento\Framework\Stdlib\ArrayManager`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Stdlib/ArrayManager.php) library provides the ability to manage deeply nested associative arrays.
+The library is primarily used to handle data from UI components within [DataProviders](https://devdocs.magento.com/guides/v2.4/ui_comp_guide/concepts/ui_comp_data_source.html) and [Modifiers](https://devdocs.magento.com/guides/v2.4/ui_comp_guide/concepts/ui_comp_modifier_concept.html), which are actually part of a complicated process of parsing XML files in associative arrays.
 
 ## Usage
 
@@ -26,7 +26,7 @@ The library is primarily used to handle data from UI components within [DataProv
 
 ### Example 1
 
-The following example shows how to add a custom field to the checkout billing address using the [LayoutProcessor implementation]({{ site.mage2bloburl }}/1f9186c3b9a96c5e642fd5d3d31ac5c7e1877d2b/app/code/Magento/Checkout/Block/Checkout/LayoutProcessor.php#L143).
+The following example shows how to add a custom field to the checkout billing address using the [LayoutProcessor implementation](https://github.com/magento/magento2/blob/1f9186c3b9a96c5e642fd5d3d31ac5c7e1877d2b/app/code/Magento/Checkout/Block/Checkout/LayoutProcessor.php#L143).
 
 ```php
 <?php

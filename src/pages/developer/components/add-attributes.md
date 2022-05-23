@@ -118,7 +118,7 @@ public function afterGetList(
 
 <InlineAlert variant="info" slots="text"/>
 
-To add extension attributes to an entity without plugins, use the `extensionActions` argument of `\Magento\Framework\EntityManager\Operation\ExtensionPool`. See [\Magento\Catalog\Model\ProductRepository::getList()]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Catalog/Model/ProductRepository.php) as an example of an implementation.
+To add extension attributes to an entity without plugins, use the `extensionActions` argument of `\Magento\Framework\EntityManager\Operation\ExtensionPool`. See [\Magento\Catalog\Model\ProductRepository::getList()](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/ProductRepository.php) as an example of an implementation.
 
 Likewise, the `afterSave` plugin should manipulate the entity data before returning it:
 

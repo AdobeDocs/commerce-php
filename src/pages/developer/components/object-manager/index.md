@@ -79,12 +79,12 @@ Related topics
 -  [The `di.xml` file][`di.xml`]
 -  [Dependency injection][]
 
-[`ObjectManagerInterface`]: {{ site.mage2bloburl }}/{{ page.guide_version }}/lib/internal/Magento/Framework/ObjectManagerInterface.php
-[`di.xml`]: {{ page.baseurl }}/extension-dev-guide/build/di-xml-file.html
-[dependency injection]: {{ page.baseurl }}/extension-dev-guide/depend-inj.html
-[factory]: {{ page.baseurl }}/extension-dev-guide/factories.html
-[proxy]: {{ page.baseurl }}/extension-dev-guide/proxies.html
-[`Magento/Eav/Model/Entity/Attribute/AbstractAttribute`]: {{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Eav/Model/Entity/Attribute/AbstractAttribute.php
-[Dependency injection]: {{ page.baseurl }}/extension-dev-guide/depend-inj.html
+[`ObjectManagerInterface`]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/ObjectManagerInterface.php
+[`di.xml`]: ../../build/dependency-injection-file.md
+[dependency injection]: ../dependency-injection.md
+[factory]: ../factories.md
+[proxy]: ../proxies.md
+[`Magento/Eav/Model/Entity/Attribute/AbstractAttribute`]: https://github.com/magento/magento2/blob/2.4/app/code/Magento/Eav/Model/Entity/Attribute/AbstractAttribute.php
+[Dependency injection]: ../dependency-injection.md
 
 [usage rules]: #usage-rules

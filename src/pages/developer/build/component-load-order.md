@@ -6,7 +6,7 @@ menu_title: Component load order
 menu_order: 7000
 ---
 
-You may need to specify your component's dependency on other components or files from other components using your component's [composer.json]({{ page.baseurl }}/extension-dev-guide/build/create_component.html#add-composer-json). Further, you can specify a load order in your component's `module.xml` file using the `<sequence>` tag to ensure that needed files from other components are already loaded when your component loads.
+You may need to specify your component's dependency on other components or files from other components using your component's [composer.json](component-name.md#add-composer-json). Further, you can specify a load order in your component's `module.xml` file using the `<sequence>` tag to ensure that needed files from other components are already loaded when your component loads.
 
 `<sequence>` declares the list of components that must be loaded before the current component is loaded. It's used for loading different kind of files: configuration files, view files (including CSS, Less, and template files), or setup classes. Note that `<sequence>` does not affect the loading of regular classes (non-setup classes).
 *Setup* classes are classes in the component that create or update [database schema](https://glossary.magento.com/database-schema) or data.
@@ -17,7 +17,7 @@ You can check your module's load order from the `<magento_root>/app/etc/config.p
 
 <InlineAlert variant="info" slots="text"/>
 
-If you change the component load order using `<sequence>`, you must regenerate the component list in `config.php`; otherwise, the load order does not take effect. Currently, the only way to do this is to enable the component using [`magento module:enable <module-list>`]({{ page.baseurl}}/install-gde/install/cli/install-cli-subcommands-enable.html#instgde-cli-subcommands-enable-disable), where `<module-list>` is the component or components to which you added `<sequence>`.
+If you change the component load order using `<sequence>`, you must regenerate the component list in `config.php`; otherwise, the load order does not take effect. Currently, the only way to do this is to enable the component using [`magento module:enable <module-list>`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-enable.html#instgde-cli-subcommands-enable-disable), where `<module-list>` is the component or components to which you added `<sequence>`.
 
 ### Examples
 
@@ -57,4 +57,4 @@ Take care when using `<sequence>` in multiple components because it's possible t
 {:.ref-header}
 Next
 
-[Enable or disable your component]({{ page.baseurl }}/extension-dev-guide/build/enable-module.html)
+[Enable or disable your component](component-management.md)

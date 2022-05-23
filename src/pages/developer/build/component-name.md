@@ -9,9 +9,9 @@ You give a name to your component in its `composer.json` and `module.xml` files.
 
 Before you continue, make sure you have completed all of the following tasks:
 
-*  Create a [file structure]({{page.baseurl}}/extension-dev-guide/build/module-file-structure.html).
-*  Create the [configuration files]({{page.baseurl}}/extension-dev-guide/build/required-configuration-files.html) you'll need.
-*  [Register]({{page.baseurl}}/extension-dev-guide/build/component-registration.html) your component.
+*  Create a [file structure](component-file-structure.md).
+*  Create the [configuration files](required-configuration-files.md) you'll need.
+*  [Register](component-registration.md) your component.
 
 ## Add the component's `module.xml` file {#add-component-xml}
 
@@ -28,7 +28,7 @@ The smallest working `module.xml` file would look something like this:
 </config>
 ```
 
-The `name` parameter defines the name of your component. It is required for all components. If you do not use [Declarative Schema]({{ page.baseurl }}/extension-dev-guide/declarative-schema/index.html) to help manage the installation and upgrade processes for your component, then you must also add the  `setup_version` parameter to the `module` line. Set the `setup_version` value to your module's [database schema](https://glossary.magento.com/database-schema) version. Omit the `setup_version` parameter if you use [Declarative Schema]({{ page.baseurl }}/extension-dev-guide/declarative-schema/index.html).
+The `name` parameter defines the name of your component. It is required for all components. If you do not use [Declarative Schema](../components/declarative-schema/index.md) to help manage the installation and upgrade processes for your component, then you must also add the  `setup_version` parameter to the `module` line. Set the `setup_version` value to your module's [database schema](https://glossary.magento.com/database-schema) version. Omit the `setup_version` parameter if you use [Declarative Schema](../components/declarative-schema/index.md).
 
 <InlineAlert variant="info" slots="text"/>
 
@@ -38,7 +38,7 @@ Avoid using "Ui" for your custom module name, because the `%Vendor%_Ui` notation
 
 `composer.json` provides a component name and also specifies component dependencies.
 
-Refer to [Module version dependencies]({{ page.baseurl }}/extension-dev-guide/versioning/dependencies.html) to determine versioning requirements.
+Refer to [Module version dependencies](../versioning/dependencies.md) to determine versioning requirements.
 
 ### Example `composer.json` file
 
@@ -89,4 +89,4 @@ Magento does not currently support the [`path`](https://getcomposer.org/doc/05-r
 
 #### Next
 
-[Component load order]({{ page.baseurl }}/extension-dev-guide/build/module-load-order.html)
+[Component load order](component-load-order.md)

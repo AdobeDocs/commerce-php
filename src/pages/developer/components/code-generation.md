@@ -55,9 +55,9 @@ When code changes as discussed in the preceding section, the Object Manager comp
 The code compiler creates the `generated/metadata/global.php` file, which is a PHP serialized map of all constructor definitions mixed with object linking configuration defined in di.xml. The `di.xml` file is the [dependency injection](https://glossary.magento.com/dependency-injection) configuration. There is a global `app/etc/di.xml` file, and there can also be a `di.xml` file for every [module](https://glossary.magento.com/module).
 
 <!-- Link Definitions -->
-[Magento/Customer/Model/Resource/AddressRepository]: {{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Customer/Model/ResourceModel/AddressRepository.php
+[Magento/Customer/Model/Resource/AddressRepository]: https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/Model/ResourceModel/AddressRepository.php
 
-[production mode]: {{ page.baseurl }}/config-guide/bootstrap/magento-modes.html#production-mode
-[Instantiating objects with factories]: {{ page.baseurl }}/extension-dev-guide/factories.html
-[Proxies]: {{ page.baseurl }}/extension-dev-guide/proxies.html
-[code compiler]: {{ page.baseurl }}/config-guide/cli/config-cli-subcommands-compiler.html
+[production mode]: https://devdocs.magento.com/guides/v2.4/config-guide/bootstrap/magento-modes.html#production-mode
+[Instantiating objects with factories]: factories.md
+[Proxies]: proxies.md
+[code compiler]: https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-compiler.html

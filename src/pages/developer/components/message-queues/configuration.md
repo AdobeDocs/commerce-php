@@ -113,13 +113,13 @@ The `onlySpawnWhenMessageAvailable` consumer attribute has higher priority than 
 The `onlySpawnWhenMessageAvailable` and `maxIdleTime` attributes may be combined if a specific consumer needs to run infrequently. The consumer will only spawn when it is needed, and it terminates itself if it is inactive for a certain period.
 It is also possible to combine the global `queue/only_spawn_when_message_available` setting in `app/etc/env.php` with the `queue/consumers-wait-for-messages` setting. That means that the consumer will run only when there is an available message in the queue, and it will be terminated when there are no more messages to process. This combination of settings is recommended to save server resources such as CPU usage.
 
-The [`consumers-wait-for-messages`]({{page.baseurl}}/install-gde/install/cli/install-cli-subcommands-consumers.html) option works similar to `onlySpawnWhenMessageAvailable`. When it is set to `false`, the consumer processes all messages and exits if there are no available messages in the queue.
+The [`consumers-wait-for-messages`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-consumers.html) option works similar to `onlySpawnWhenMessageAvailable`. When it is set to `false`, the consumer processes all messages and exits if there are no available messages in the queue.
 The problem is that every time the cron job `cron_consumers_runner` runs, it spawns a new consumer process, the consumer checks if messages are available, and it terminates itself if there are no messages.
 Meanwhile, the `onlySpawnWhenMessageAvailable` attribute first checks if there are available messages, and it spawns a new consumer process only if there are messages. It means that it does not spawn unneeded processes which take up memory, live for a very short period, and then disappear.
 
 <InlineAlert variant="warning" slots="text"/>
 
-The [`consumers-wait-for-messages`]({{page.baseurl}}/install-gde/install/cli/install-cli-subcommands-consumers.html) option is a global option and cannot be configured separately for each consumer, such as the `onlySpawnWhenMessageAvailable` option.
+The [`consumers-wait-for-messages`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-consumers.html) option is a global option and cannot be configured separately for each consumer, such as the `onlySpawnWhenMessageAvailable` option.
 
 #### Consumer handlers
 
@@ -277,13 +277,13 @@ You cannot enable more than one `publisher` for each `topic`.
 
 ### Updating `queue.xml` {#updatequeuexml}
 
-See [Migrate message queue configuration]({{page.baseurl}}/extension-dev-guide/message-queues/queue-migration.html) for information about upgrading from Magento 2.0 or 2.1.
+See [Migrate message queue configuration](migration.md) for information about upgrading from Magento 2.0 or 2.1.
 
 ### Related Topics
 
-*  [Message Queues Overview]({{page.baseurl}}/config-guide/mq/rabbitmq-overview.html)
-*  [Manage message queues with MySQL]({{page.baseurl}}/config-guide/mq/manage-message-queues.html)
-*  [Install RabbitMQ]({{page.baseurl}}/install-gde/prereq/install-rabbitmq.html)
+*  [Message Queues Overview](https://devdocs.magento.com/guides/v2.4/config-guide/mq/rabbitmq-overview.html)
+*  [Manage message queues with MySQL](https://devdocs.magento.com/guides/v2.4/config-guide/mq/manage-message-queues.html)
+*  [Install RabbitMQ](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/install-rabbitmq.html)
 
 <!-- Link definitions -->
 [MySQL]: https://www.mysql.com/

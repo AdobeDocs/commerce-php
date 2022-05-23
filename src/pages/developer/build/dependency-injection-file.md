@@ -5,7 +5,7 @@ title: The di.xml file
 
 ## Overview
 
-The `di.xml` file configures which [dependencies]({{ page.baseurl }}/extension-dev-guide/depend-inj.html) are injected by the [object manager]({{ page.baseurl }}/extension-dev-guide/object-manager.html). You can also specify [sensitive configuration settings](#ext-di-sens) using `di.xml`.
+The `di.xml` file configures which [dependencies](../components/dependency-injection.md) are injected by the [object manager](../components/object-manager/index.md). You can also specify [sensitive configuration settings](#sensitive-and-system-specific-configuration-settings) using `di.xml`.
 
 ## Areas and application entry points
 
@@ -29,11 +29,11 @@ The areas are:
 *  webapi_soap
 *  crontab
 
-During [bootstrapping]({{ page.baseurl }}/config-guide/bootstrap/magento-bootstrap.html), each application entry point loads the appropriate `di.xml` files for the requested [area]({{ page.baseurl }}/architecture/archi_perspectives/components/modules/mod_and_areas.html).
+During [bootstrapping](https://devdocs.magento.com/guides/v2.4/config-guide/bootstrap/magento-bootstrap.html), each application entry point loads the appropriate `di.xml` files for the requested [area](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_and_areas.html).
 
 **Examples:**
 
-In `index.php`, the [`\Magento\Framework\App\Http`]({{ site.mage2bloburl }}/{{ page.guide_version }}/lib/internal/Magento/Framework/App/Http.php) class loads the area based on the front-name provided in the [URL](https://glossary.magento.com/url).
+In `index.php`, the [`\Magento\Framework\App\Http`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Http.php) class loads the area based on the front-name provided in the [URL](https://glossary.magento.com/url).
 
 ```php
 $areaCode = $this->_areaList->getCodeByFrontName($this->_request->getFrontName());
@@ -41,7 +41,7 @@ $this->_state->setAreaCode($areaCode);
 $this->_objectManager->configure($this->_configLoader->load($areaCode));
 ```
 
-In `static.php`, the [`\Magento\Framework\App\StaticResource`]({{ site.mage2bloburl }}/{{ page.guide_version }}/lib/internal/Magento/Framework/App/StaticResource.php) class also loads the area based on the URL in the request.
+In `static.php`, the [`\Magento\Framework\App\StaticResource`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/StaticResource.php) class also loads the area based on the URL in the request.
 
 ```php
 $path = $this->request->get('resource');
@@ -50,7 +50,7 @@ $this->state->setAreaCode($params['area']);
 $this->objectManager->configure($this->configLoader->load($params['area']));
 ```
 
-In `cron.php`, the [`\Magento\Framework\App\Cron`]({{ site.mage2bloburl }}/{{ page.guide_version }}/lib/internal/Magento/Framework/App/Cron.php) class always loads the `crontab` area.
+In `cron.php`, the [`\Magento\Framework\App\Cron`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Cron.php) class always loads the `crontab` area.
 
 ```php
 $this->_state->setAreaCode(Area::AREA_CRONTAB);
@@ -396,11 +396,11 @@ Any descendant can override the parameters configured for its supertype; that is
 </config>
 ```
 
-In the preceding example, [`Magento\Backend\Block\Context`]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Backend/Block/Context.php) is a descendant of [`Magento\Framework\View\Element\Context`]({{ site.mage2bloburl }}/{{ page.guide_version }}/lib/internal/Magento/Framework/View/Element/Context.php).
+In the preceding example, [`Magento\Backend\Block\Context`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Backend/Block/Context.php) is a descendant of [`Magento\Framework\View\Element\Context`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Element/Context.php).
 
-The first entry configures all instances of `Magento\Framework\View\Element\Context` as well as its children to pass in [`Magento\Framework\Url`]({{ site.mage2bloburl }}/{{ page.guide_version }}/lib/internal/Magento/Framework/Url.php) as `$urlBuilder` in their constructors.
+The first entry configures all instances of `Magento\Framework\View\Element\Context` as well as its children to pass in [`Magento\Framework\Url`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Url.php) as `$urlBuilder` in their constructors.
 
-The second entry overrides this and configures all instances of `Magento\Backend\Block\Context` to use [`Magento\Backend\Model\Url`]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Backend/Model/Url.php) as the `$urlBuilder` instead.
+The second entry overrides this and configures all instances of `Magento\Backend\Block\Context` to use [`Magento\Backend\Model\Url`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Backend/Model/Url.php) as the `$urlBuilder` instead.
 
 ## Object lifestyle configuration
 
@@ -426,9 +426,9 @@ The `shared` property determines the lifestyle of both `argument` and `type` con
 In this example `Magento\Filesystem` is not shared, so all clients will retrieve separate instances of `Magento\Filesystem`.
 Also, every instance of `Magento\Filesystem` will get separate instance of `$adapter`, because it is non-shared too.
 
-## Sensitive and system-specific configuration settings {#ext-di-sens}
+## Sensitive and system-specific configuration settings
 
-For multi-system deployments, such as the [pipeline deployment model]({{ page.baseurl }}/config-guide/deployment/pipeline/), you can specify the following types of configuration settings:
+For multi-system deployments, such as the [pipeline deployment model](https://devdocs.magento.com/guides/v2.4/config-guide/deployment/pipeline/), you can specify the following types of configuration settings:
 
 | shared          | Settings that are shared between systems using `app/etc/config.php` |
 | sensitive       | Settings that are restricted or confidential                        |
@@ -452,17 +452,17 @@ The following code sample is a template for specifying values as sensitive or sy
 
 Do not share sensitive or system-specific settings stored in `app/etc/env.php` between development and production systems.
 
-See [sensitive and environment settings]({{ page.baseurl }}/extension-dev-guide/configuration/sensitive-and-environment-settings.html) for more information and examples.
+See [sensitive and environment settings](../configuration/sensitive-environment-settings.md) for more information and examples.
 
 ### Information related to pipeline deployment
 
-*  [Guidelines for specifying system-specific and sensitive configuration values]({{ page.baseurl }}/extension-dev-guide/configuration/sensitive-and-environment-settings.html)
-*  [Sensitive and system-specific configuration paths reference]({{ page.baseurl }}/config-guide/prod/config-reference-sens.html)
-*  [Magento Enterprise B2B Extension configuration paths reference]({{ page.baseurl }}/config-guide/prod/config-reference-b2b.html)
+*  [Guidelines for specifying system-specific and sensitive configuration values](../configuration/sensitive-environment-settings.md)
+*  [Sensitive and system-specific configuration paths reference](https://devdocs.magento.com/guides/v2.4/config-guide/prod/config-reference-sens.html)
+*  [Magento Enterprise B2B Extension configuration paths reference](https://devdocs.magento.com/guides/v2.4/config-guide/prod/config-reference-b2b.html)
 
 ## Get dependency injection configuration information for a class
 
-Use the [dev:di:info]({{ page.baseurl }}/reference/cli/magento.html#devdiinfo) command to retrieve information about dependency injection configuration for a class. The following example retrieves the dependency injection configuration information for the `Magento\Quote\Model\Quote\Item\ToOrderItem` class:
+Use the [dev:di:info](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#devdiinfo) command to retrieve information about dependency injection configuration for a class. The following example retrieves the dependency injection configuration information for the `Magento\Quote\Model\Quote\Item\ToOrderItem` class:
 
 ```bash
 bin/magento dev:di:info "Magento\Quote\Model\Quote\Item\ToOrderItem"
@@ -506,6 +506,6 @@ Plugins for the Preference:
 {:.ref-header}
 Related topics
 
-*  [ObjectManager]({{ page.baseurl }}/extension-dev-guide/object-manager.html)
-*  [Dependency injection]({{ page.baseurl }}/extension-dev-guide/depend-inj.html)
-*  [Sensitive and environment settings]({{ page.baseurl }}/extension-dev-guide/configuration/sensitive-and-environment-settings.html)
+*  [ObjectManager](../components/object-manager/index.md)
+*  [Dependency injection](../components/dependency-injection.md)
+*  [Sensitive and environment settings](../configuration/sensitive-environment-settings.md)

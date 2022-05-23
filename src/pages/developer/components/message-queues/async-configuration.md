@@ -14,7 +14,7 @@ When using the Magento message queue, four configuration files in your module mu
 *  queue_topology.xml
 *  queue_publisher.xml
 
-More information can be found in [Configure message queues]({{ page.baseurl }}/extension-dev-guide/message-queues/config-mq.html).
+More information can be found in [Configure message queues](configuration.md).
 
 Asynchronous and Bulk APIs are built on top of the usual REST API and use the Magento Message Queue Framework for processing messages. To ease development efforts, the Asynchronous API pre-generates the following configuration files:
 
@@ -25,7 +25,7 @@ and provides the `queue_topology.xml` and `queue_consumer.xml` files within the 
 
 ### communication.xml
 
-Information about the auto-generation of `communication.xml` can be found in [Topics in Asynchronous API]({{ page.baseurl }}/extension-dev-guide/message-queues/async-topics.html)
+Information about the auto-generation of `communication.xml` can be found in [Topics in Asynchronous API](async-topics.md)
 
 ### queue_publisher.xml
 

@@ -21,7 +21,7 @@ Before you begin, make sure you understand the following:
 
 *  All Magento command-line interface (CLI) commands rely on the Magento application and must have access to its context, dependency injections, plug-ins, and so on.
 *  All CLI commands should be implemented in the scope of your [module](https://glossary.magento.com/module) and should depend on the module's status.
-*  Your command can use the Object Manager and Magento dependency injection features; for example, it can use [constructor dependency injection]({{ page.baseurl }}/extension-dev-guide/depend-inj.html#constructor-injection).
+*  Your command can use the Object Manager and Magento dependency injection features; for example, it can use [constructor dependency injection](../components/dependency-injection.md#constructor-injection).
 *  Your command should have an unique `name`, defined in the `configure()` method of the Command class:
 
    ```php
@@ -69,7 +69,7 @@ Following is a summary of the process:
 
 1. Create a Command class (the recommended location is `<your component root dir>/Console/Command`).
 
-   See [`<Magento_Store_module_dir>/Console/Command/StoreListCommand.php`]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Store/Console/Command/StoreListCommand.php) for example.
+   See [`<Magento_Store_module_dir>/Console/Command/StoreListCommand.php`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Store/Console/Command/StoreListCommand.php) for example.
 
    ```php
    <?php
@@ -166,4 +166,4 @@ bin/magento my:first:command --name 'John'
 {:.ref-header}
 Related topic
 
-[Command naming guidelines]({{ page.baseurl }}/extension-dev-guide/cli-cmds/cli-naming-guidelines.html)
+[Command naming guidelines](create-new.md)

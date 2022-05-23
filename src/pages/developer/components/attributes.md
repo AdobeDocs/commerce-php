@@ -5,7 +5,7 @@ title: EAV and extension attributes
 
 There are two types of attributes you can use to extend Magento functionality:
 
-*  Custom and Entity-Attribute-Value (EAV) attributes—Custom attributes are those added on behalf of a merchant. For example, a merchant might need to add attributes to describe products, such as shape or volume. A merchant can add these attributes in the [Admin](https://glossary.magento.com/magento-admin) panel. See the [merchant documentation]({{ site.user_guide_url }}/stores/attributes.html) for information about managing custom attributes.
+*  Custom and Entity-Attribute-Value (EAV) attributes—Custom attributes are those added on behalf of a merchant. For example, a merchant might need to add attributes to describe products, such as shape or volume. A merchant can add these attributes in the [Admin](https://glossary.magento.com/magento-admin) panel. See the [merchant documentation](https://docs.magento.com/user-guide/stores/attributes.html) for information about managing custom attributes.
 
    Custom attributes are a subset of EAV attributes. Objects that use EAV attributes typically store values in several MySQL tables. The `Customer` and `Catalog` modules are the primary models that use EAV attributes. Other modules, such as `ConfigurableProduct`, `GiftMessage`, and `Tax`, use the EAV functionality for `Catalog`.
 
@@ -41,7 +41,7 @@ As of version 2.3.4, Magento caches all system EAV attributes as they are retrie
 
 ### Adding Customer EAV attribute for backend only {#customer-eav-attribute}
 
-Customer EAV attributes are created using a [data patches]({{ page.baseurl }}/extension-dev-guide/declarative-schema/data-patches.html).
+Customer EAV attributes are created using a [data patches](declarative-schema/patches.md).
 
 <InlineAlert variant="warning" slots="text"/>
 
@@ -224,9 +224,9 @@ searchCriteria[filter_groups][0][filters][0]
 
 ### Extension attribute authentication {#ext-aut}
 
-Individual fields that are defined as extension attributes can be restricted, based on existing permissions. This feature allows extension developers to restrict access to data. See [Web API authentication overview]({{ page.baseurl }}/get-started/authentication/gs-authentication.html) for general information about authentication in Magento.
+Individual fields that are defined as extension attributes can be restricted, based on existing permissions. This feature allows extension developers to restrict access to data. See [Web API authentication overview](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication.html) for general information about authentication in Magento.
 
-The following [code sample]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/CatalogInventory/etc/extension_attributes.xml) defines `stock_item` as an extension attribute of the `CatalogInventory` module. `CatalogInventory` is treated as a "third-party extension". Access to the inventory data is restricted because the quantity of in-stock item may be competitive information.
+The following [code sample](https://github.com/magento/magento2/blob/2.4/app/code/Magento/CatalogInventory/etc/extension_attributes.xml) defines `stock_item` as an extension attribute of the `CatalogInventory` module. `CatalogInventory` is treated as a "third-party extension". Access to the inventory data is restricted because the quantity of in-stock item may be competitive information.
 
 ```xml
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Api/etc/extension_attributes.xsd">

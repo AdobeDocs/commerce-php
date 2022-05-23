@@ -48,14 +48,14 @@ See these resources for testing in [PHP](https://glossary.magento.com/php) and v
 
 *  The [Magento Coding Standard] provides a set of rules and sniffs for the [PHP_CodeSniffer] tool
 *  [Technical Deep Dive: How to Pass the Magento Marketplace Extension Quality Program] (video) from Magento Imagine 2017
-*  [Extension Quality Program]({{ site.baseurl }}/marketplace/sellers/extension-quality-program.html) in the Magento User Guide
+*  [Extension Quality Program](https://developer.adobe.com/commerce/marketplace/guides/sellers/extension-quality-program/) in the Magento User Guide
 
-[Magento Testing Overview]: {{ page.baseurl }}/test/testing.html
-[Magento Functional Testing Framework]: {{ site.baseurl }}/mftf/docs/introduction.html
-[register]: {{ page.baseurl }}/extension-dev-guide/build/component-registration.html
-[Package your component]: {{ page.baseurl }}/extension-dev-guide/package/package_module.html
-[Install your component]: {{ page.baseurl }}/install-gde/install/cli/dev_add-update.html
-[Install using Composer]: {{ page.baseurl }}/install-gde/install/sample-data-after-composer.html
+[Magento Testing Overview]: https://devdocs.magento.com/guides/v2.4/test/testing.html
+[Magento Functional Testing Framework]: https://devdocs.magento.com/mftf/docs/introduction.html
+[register]: ../build/component-registration.md
+[Package your component]: ../package/component.md
+[Install your component]: https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/dev_add-update.html
+[Install using Composer]: https://devdocs.magento.com/guides/v2.4/install-gde/install/sample-data-after-composer.html
 [Magento Coding Standard]: https://github.com/magento/magento-coding-standard
 [PHP_CodeSniffer]: https://github.com/squizlabs/PHP_CodeSniffer
 [Technical Deep Dive: How to Pass the Magento Marketplace Extension Quality Program]: https://magento.com/resources/technical-deep-dive-how-pass-magento-marketplace-extension-quality-program

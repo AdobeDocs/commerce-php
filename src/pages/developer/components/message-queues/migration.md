@@ -18,7 +18,7 @@ To upgrade the message queues from Magento 2.1, you must create the following fi
 
 The existing `queue.xml` file is deprecated.
 
-For complete details about these files, see [Configure message queues]({{page.baseurl}}/extension-dev-guide/message-queues/config-mq.html)
+For complete details about these files, see [Configure message queues](configuration.md)
 
 <InlineAlert variant="warning" slots="text"/>
 
@@ -78,7 +78,7 @@ To upgrade from Magento 2.0, you must create the following files in the `<module
 
 The existing `queue.xml` file is deprecated.
 
-For complete details about these files, see [Configure message queues]({{page.baseurl}}/extension-dev-guide/message-queues/config-mq.html)
+For complete details about these files, see [Configure message queues](configuration.md)
 
 #### Create the `queue_consumer.xml` file
 
@@ -127,5 +127,5 @@ The first column in the following table lists the all the parameters in the `que
 {:.ref-header}
 Related topics
 
-*  [Message Queues Overview]({{page.baseurl}}/config-guide/mq/rabbitmq-overview.html)
-*  [Configure message queues]({{page.baseurl}}/extension-dev-guide/message-queues/config-mq.html)
+*  [Message Queues Overview](https://devdocs.magento.com/guides/v2.4/config-guide/mq/rabbitmq-overview.html)
+*  [Configure message queues](configuration.md)

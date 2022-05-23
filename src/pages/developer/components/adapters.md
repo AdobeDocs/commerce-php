@@ -16,7 +16,7 @@ These classes allow you to use functionality from third-party libraries in your 
 You should always use [adapter](https://glossary.magento.com/adapter) classes instead of directly using classes from third-party libraries.
 This reduces the change impact on your code when the [API](https://glossary.magento.com/api) changes in a third-party [library](https://glossary.magento.com/library).
 
-We recommend using adapter classes for [dependency injection]({{ page.baseurl }}/extension-dev-guide/depend-inj.html) to get access to the functionality provided by third-party classes.
+We recommend using adapter classes for [dependency injection](dependency-injection.md) to get access to the functionality provided by third-party classes.
 
 ## How to write
 
@@ -30,17 +30,17 @@ This approach allows you to update or substitute different implementations provi
 
 ### `Magento/Framework/Code/Minifier`
 
-The [minifier]({{ site.mage2bloburl }}/{{ page.guide_version }}/lib/internal/Magento/Framework/Code/Minifier) functionality provided by the `Magento/Framework/Code` library involves the use of third-party libraries for code compression.
+The [minifier](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Code/Minifier) functionality provided by the `Magento/Framework/Code` library involves the use of third-party libraries for code compression.
 
-The [`AdapterInterface`]({{ site.mage2bloburl }}/{{ page.guide_version }}/lib/internal/Magento/Framework/Code/Minifier/AdapterInterface.php) for this class contains a `minify($content)` function that the [`CSSmin`]({{ site.mage2bloburl }}/{{ page.guide_version }}/lib/internal/Magento/Framework/Code/Minifier/Adapter/Css/CSSmin.php) and [`JShrink`]({{ site.mage2bloburl }}/{{ page.guide_version }}/lib/internal/Magento/Framework/Code/Minifier/Adapter/Js/JShrink.php) implementation class define.
+The [`AdapterInterface`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Code/Minifier/AdapterInterface.php) for this class contains a `minify($content)` function that the [`CSSmin`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Code/Minifier/Adapter/Css/CSSmin.php) and [`JShrink`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Code/Minifier/Adapter/Js/JShrink.php) implementation class define.
 
-The [jshrink](https://github.com/tedious/JShrink)(tedivm/jshrink) and [cssmin](https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port)(tubalmartin/cssmin) libraries registered in the [`composer.json`]({{ site.mage2bloburl }}/{{ page.guide_version }}/composer.json) file provide the functionalities for the implementation classes.
+The [jshrink](https://github.com/tedious/JShrink)(tedivm/jshrink) and [cssmin](https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port)(tubalmartin/cssmin) libraries registered in the [`composer.json`](https://github.com/magento/magento2/blob/2.4/composer.json) file provide the functionalities for the implementation classes.
 
 ### `Magento/Framework/Image`
 
-The [`Magento/Framework/Image`]({{ site.mage2bloburl }}/{{ page.guide_version }}/lib/internal/Magento/Framework/Image) library uses adapters to access functionality provided by GD(php-gd2) and ImageMagick(php-imagick) third-party libraries.
+The [`Magento/Framework/Image`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Image) library uses adapters to access functionality provided by GD(php-gd2) and ImageMagick(php-imagick) third-party libraries.
 
-The [`AdapterInterface`]({{ site.mage2bloburl }}/{{ page.guide_version }}/lib/internal/Magento/Framework/Image/Adapter/AdapterInterface.php) class defines the available functionality, and the [`Gd2`]({{ site.mage2bloburl }}/{{ page.guide_version }}/lib/internal/Magento/Framework/Image/Adapter/Gd2.php) and [`ImageMagick`]({{ site.mage2bloburl }}/{{ page.guide_version }}/lib/internal/Magento/Framework/Image/Adapter/ImageMagick.php) adapter classes provides the concrete implementation using the third-party libraries.
+The [`AdapterInterface`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Image/Adapter/AdapterInterface.php) class defines the available functionality, and the [`Gd2`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Image/Adapter/Gd2.php) and [`ImageMagick`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Image/Adapter/ImageMagick.php) adapter classes provides the concrete implementation using the third-party libraries.
 
 ## Example Code
 

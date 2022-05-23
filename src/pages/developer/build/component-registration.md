@@ -5,7 +5,7 @@ title: Register your component
 
 Magento components, including modules, themes, and language packages, must be registered in the Magento system through the Magento `ComponentRegistrar` class.
 
-Each component must have a file called `registration.php` in its root directory. For example, here is the `registration.php` file for Magento's [AdminNotification module]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/AdminNotification/registration.php). Depending on the type of component, registration is performed through `registration.php` by adding to it as follows:
+Each component must have a file called `registration.php` in its root directory. For example, here is the `registration.php` file for Magento's [AdminNotification module](https://github.com/magento/magento2/blob/2.4/app/code/Magento/AdminNotification/registration.php). Depending on the type of component, registration is performed through `registration.php` by adding to it as follows:
 
 ## Register modules {#register-modules}
 
@@ -83,7 +83,7 @@ ComponentRegistrar::register(ComponentRegistrar::LIBRARY, 'magento/framework', _
 
 ## Invoke `registration.php` in `composer.json` with autoload {#register-autoload}
 
-After you create your `registration.php` file and you are creating [your component's composer.json file]({{page.baseurl}}/extension-dev-guide/build/composer-integration.html), invoke your `registration.php` file in the `autoload` section of `composer.json`:
+After you create your `registration.php` file and you are creating [your component's composer.json file](composer-integration.md), invoke your `registration.php` file in the `autoload` section of `composer.json`:
 
 ```json
 {
@@ -106,4 +106,4 @@ ComponentRegistrar::register(ComponentRegistrar::MODULE, 'Magento_AdminNotificat
 {:.ref-header}
 Next step
 
-[URN schema validation]({{ page.baseurl }}/extension-dev-guide/build/XSD-XML-validation.html)
+[URN schema validation](schema-validation.md)
