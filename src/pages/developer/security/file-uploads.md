@@ -4,7 +4,7 @@ title: Working with files
 ---
 
 When working with files, especially user-uploaded files, it is easy to make a mistake and open your store to dangerous
-attacks like path traversal and remote code execution (RCE). The {{site.data.var.ee}} and {{site.data.var.ce}} framework provides abstraction to help you safely work with user files,
+attacks like path traversal and remote code execution (RCE). The Adobe Commerce and Magento Open Source framework provides abstraction to help you safely work with user files,
 but it's your responsibility to use it the right way.
 
 ## When you don't need a file
@@ -15,7 +15,8 @@ SKUs, and delete it without ever moving it from the  temporary folder on the fil
 performance, is to never upload the file in the first place. The file can be handled on the frontend side using JavaScript
 to extract SKUs and quantities and send those to a web API endpoint on the server.
 
-{:.bs-callout-tip}
+<InlineAlert variant="success" slots="text"/>
+
 The best way to avoid security issues with files is to not upload or store them in the first place
 if you don't have to.
 

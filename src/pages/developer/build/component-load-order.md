@@ -15,7 +15,8 @@ If you know that your component's logic depends on something in another componen
 
 You can check your module's load order from the `<magento_root>/app/etc/config.php` file after you've successfully set up Magento. This file is created dynamically at run time during set up.
 
- {:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 If you change the component load order using `<sequence>`, you must regenerate the component list in `config.php`; otherwise, the load order does not take effect. Currently, the only way to do this is to enable the component using [`magento module:enable <module-list>`]({{ page.baseurl}}/install-gde/install/cli/install-cli-subcommands-enable.html#instgde-cli-subcommands-enable-disable), where `<module-list>` is the component or components to which you added `<sequence>`.
 
 ### Examples
@@ -49,7 +50,8 @@ There are no limitations---you can specify any valid component in `<sequence>`.
 
 If you do specify a component in `<sequence>`, make sure that you have also added it to the `require` section in that component's `composer.json` file.
 
-{:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 Take care when using `<sequence>` in multiple components because it's possible to define circular dependencies. If you do, Magento aborts the installation when it detects the circular dependency.
 
 {:.ref-header}

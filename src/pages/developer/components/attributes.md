@@ -36,14 +36,15 @@ In this case, when `getCustomAttributes()` is called, the system returns only cu
 
 The `Customer` module provides a `system` option for its attributes. As a result, the `getCustomAttributes()` method only returns those EAV attributes that are not defined as `system` attributes. If you create custom attributes programmatically, set the `system` option to 'false' if you want to include the attribute in the `custom_attributes` array.
 
-{:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
 As of version 2.3.4, Magento caches all system EAV attributes as they are retrieved. This behavior is defined in each affected module's `di.xml` file as the `attributesForPreload` argument for `<type name="Magento\Eav\Model\Config">`. Developers can cache custom EAV attributes by running the `bin/magento config:set dev/caching/cache_user_defined_attributes 1` command. This can also be done from the Admin while in Develop mode by setting **Stores** > Settings **Configuration** > **Advanced** > **Developer** > **Caching Settings** > **Cache User Defined Attributes** to **Yes**. Caching EAV attributes while retrieving improves performance as it decreases the amount of insert/select requests to the DB, but it increases the cache network size.
 
 ### Adding Customer EAV attribute for backend only {#customer-eav-attribute}
 
 Customer EAV attributes are created using a [data patches]({{ page.baseurl }}/extension-dev-guide/declarative-schema/data-patches.html).
 
-{:.bs-callout-warning}
+<InlineAlert variant="warning" slots="text"/>
+
 Both the `save()` and `getResource()` methods for `Magento\Framework\Model\AbstractModel` have been marked as `@deprecated` since 2.1 and should no longer be used.
 
 ```php
@@ -120,7 +121,8 @@ class AddCustomerExampleAttribute implements DataPatchInterface
 }
 ```
 
-{:.bs-callout-tip}
+<InlineAlert variant="success" slots="text"/>
+
 The scope of the Customer custom attribute is Global only, while other entities support the Global, Website, and StoreView scopes.
 
 ## Extension attributes {#extension}

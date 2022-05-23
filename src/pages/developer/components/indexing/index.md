@@ -59,7 +59,8 @@ The following components are involved in the indexing process:
     </tbody>
 </table>
 
-{:.bs-callout-warning}
+<InlineAlert variant="warning" slots="text"/>
+
 `Magento_Indexer` replaces the Magento 1.x `Magento_Index` module. Use `Magento_Indexer` for all new development.
 
 ### Indexing types
@@ -110,7 +111,8 @@ return [
 In case of a failure during the reindexing of a certain indexer, having this mode enabled will return a more accurate status of the indexer.
 The status can be obtained from the indexer grid in the Admin or through the `bin/magento indexer:status` command in the CLI.
 
-{:.bs-callout-warning}
+<InlineAlert variant="warning" slots="text"/>
+
 The status values in the `indexer_state` or `mview_state` database tables may not be the same as what is observed, because they sometimes do not get updated when an indexer fails.
 
 An additional benefit of this mode is that the Magento application will, internally, also see a more accurate status of the indexers and if an indexer failed, Magento will now see this and the cronjob will pick up the indexer to try it again.
@@ -122,12 +124,14 @@ Reindexing can be performed in two modes:
 
 *  Update on Save - index tables are updated immediately after the dictionary data is changed.
 
-{:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 **Update on Save** indexers must use custom code (plugins, events or any other working approach) in order to trigger reindexing when entities are saved/deleted etc.
 
 *  Update by Schedule - index tables are updated by cron job according to the configured schedule.
 
- {:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 **Update by Schedule** does not support the `customer_grid` indexer. You must either use **Update on Save** or reindex the customer grid manually (`bin/magento indexer:reindex customer_grid`). See the [Help Center article](https://support.magento.com/hc/en-us/articles/360025481892-New-customer-records-are-not-displayed-in-the-Customers-grid-after-importing-them-from-CSV).
 
 To set these options:
@@ -232,7 +236,7 @@ The Magento `Open Source` application implements the following indexers (use [bi
 | Catalog product rule | `catalogrule_product` | [Magento\CatalogRule\Model\Indexer\Product\ProductRuleIndexer]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/CatalogRule/Model/Indexer/Product/ProductRuleIndexer.php) |  |
 | Catalog search | `catalogsearch_fulltext` | [Magento\CatalogSearch\Model\Indexer\Fulltext]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/CatalogSearch/Model/Indexer/Fulltext.php) |  |
 
-{{site.data.var.ee}} also provides the following indexers:
+Adobe Commerce also provides the following indexers:
 
 | Indexer name | Indexer method name | Indexer class | Description |
 | --- | --- | --- | --- |

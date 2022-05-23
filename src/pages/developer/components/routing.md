@@ -199,10 +199,12 @@ class Index implements HttpGetActionInterface
 }
 ```
 
-{:.bs-callout-tip}
+<InlineAlert variant="success" slots="text"/>
+
 Use the [`ActionFactory`] in your router to create an instance of an `Action` class.
 
- {:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 Action class should return a `result object`.
 
 ## Result object
@@ -416,7 +418,8 @@ Defining a new page type:
 </page_types>
 ```
 
-{:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 The `routing_index_index` represents the path for the new route.
 
 ### Result

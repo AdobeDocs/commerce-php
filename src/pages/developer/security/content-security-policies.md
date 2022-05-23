@@ -214,7 +214,8 @@ Add the corresponding policy to a `csp_whitelist.xml` file:
 </csp_whitelist>
 ```
 
-{:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 When _unsafe-inline_ is allowed for `script-src` or `style-src` policies, whitelisted inline scripts/styles hashes
 will not appear in the `Content-Security-Policy` header.
 

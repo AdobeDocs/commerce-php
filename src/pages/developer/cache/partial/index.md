@@ -9,7 +9,8 @@ menu_node: parent
 
 Magento uses [Zend_Cache](http://framework.zend.com/manual/1.12/en/zend.cache.html) to interact with the cache storage. However, Magento also has the [Magento\Cache]({{ site.mage2bloburl }}/{{ page.guide_version }}/lib/internal/Magento/Framework/Cache) [library](https://glossary.magento.com/library) for implementing Magento-specific caching. These topics discuss how to configure caching and [cache](https://glossary.magento.com/cache) types.
 
- {:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 By default, file system caching is enabled; no configuration is necessary to use it. This means the cache is located under `<magento_root>/var`.
 
 To change the cache configuration, edit `<magento_root>/app/etc/env.php`.

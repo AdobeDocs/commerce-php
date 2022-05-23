@@ -22,7 +22,8 @@ Add a `cacheable="false"` attribute to any block in your layout to disable cachi
 
 Magento disables page caching if at least one non-cacheable block is present in the layout.
 
-{:.bs-callout-warning}
+<InlineAlert variant="warning" slots="text"/>
+
 Using `cacheable="false"` inside the `default.xml` file disables caching for all pages on the site.
 
 You can also disable caching with HTTP headers.
@@ -205,7 +206,8 @@ class View extends AbstractProduct implements IdentityInterface
 
 Magento uses cache tags for link creation. The performance of cache storage has a direct dependency on the number of tags per cache record, so try to minimize the number of tags and use them only for entities that are used in production mode. In other words, don't use invalidation for actions related to store setup.
 
-{:.bs-callout-warning}
+<InlineAlert variant="warning" slots="text"/>
+
 Use only HTTP POST or PUT methods to change state (e.g., adding to a shopping cart, adding to a wishlist, etc.) and don't expect to see caching on these methods. Using GET or HEAD methods might trigger caching and prevent updates to private content. For more information about caching, see [RFC-2616 section 13](https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html)
 
 {% include cache/page-cache-checklists.md%}

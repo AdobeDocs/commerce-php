@@ -58,7 +58,7 @@ bin/magento setup:db-schema:upgrade
 bin/magento setup:db-data:upgrade
 ```
 
- {:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
 `db-schema` and `db-data` are examples of compound words.
 
 ## Command options and arguments {#cli-args}

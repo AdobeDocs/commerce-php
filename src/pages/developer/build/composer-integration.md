@@ -11,7 +11,8 @@ Composer reads a `composer.json` file in Magento's root directory to download th
 
 We recommend you include `composer.json` in your component's root directory even if you do not intend to distribute it to other merchants using Magento.
 
- {:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 Magento does not support the [`path`][3] repository.
 
 ## composer.json
@@ -51,7 +52,7 @@ Keep this in mind while customizing, updating, or troubleshooting composer while
 ## Project vs product
 
 In Composer, a "project" package is a template used by the [`composer create-project`][9] to set up the project structure.
-The [installation instructions for system integrators][10] use the {{site.data.var.ce}} and {{site.data.var.ee}} project packages to set up the Magento directory structure.
+The [installation instructions for system integrators][10] use the Magento Open Source and Adobe Commerce project packages to set up the Magento directory structure.
 
 A "product" package is the actual application pointed to by the `composer.json` file after you download and install the project package using `composer create-project`.
 
@@ -73,25 +74,25 @@ Other root `composer.json` files use this file as a template.
 
 ---
 
-### {{site.data.var.ce}} project
+### Magento Open Source project
 **Location:** `composer.json`
 
 **Name:** `magento/project-community-edition`
 
 **Type:** `project`
 
-Magento system integrators use this `composer.json` file to deploy the {{site.data.var.ce}} product and its dependencies.
+Magento system integrators use this `composer.json` file to deploy the Magento Open Source product and its dependencies.
 
 ---
 
-### {{site.data.var.ee}} project
+### Adobe Commerce project
 **Location:** `composer.json`
 
 **Name:** `magento/product-enterprise-edition`
 
 **Type:** `metapackage`
 
-Magento system integrators use this `composer.json` file to deploy the {{site.data.var.ee}} product and its dependencies.
+Magento system integrators use this `composer.json` file to deploy the Adobe Commerce product and its dependencies.
 
 ---
 
@@ -200,7 +201,7 @@ Where:
 *  `module-` for module extensions
 *  `theme-` for theme extensions
 *  `language-` for language extensions
-*  `product-` for [metapackages][8] such as {{site.data.var.ce}} or {{site.data.var.ee}}
+*  `product-` for [metapackages][8] such as Magento Open Source or Adobe Commerce
 
 : `suffix` is a unique identifier for extensions of that type.
 

@@ -28,7 +28,8 @@ Examples of sensitive information include:
 *  E-mail addresses
 *  Any personally identifiable information (e.g., address, phone number, date of birth, government identification number, etc.)
 
-{:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 In keeping with current security and privacy best practices, be sure you are aware of any potential legal and security risks associated with the storage of customers’ full date of birth (month, day, year) along with other personal identifiers, such as full name, before collecting or processing such data.
 
 ### Environment or system-specific values

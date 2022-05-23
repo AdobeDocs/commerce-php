@@ -12,7 +12,8 @@ To satisfy the minimum required elements for creating or customizing your Magent
 
 *  [Declare component dependencies]({{ page.baseurl }}/extension-dev-guide/build/composer-integration.html) in `composer.json`.
 
-   {:.bs-callout-tip}
+   <InlineAlert variant="success" slots="text"/>
+   
    While you can manage dependencies on your own, it is a recommended and strongly encouraged best practice to use the `composer.json` file.
 
 *  [Register]({{ page.baseurl }}/extension-dev-guide/build/component-registration.html) the component using the `registration.php` file.

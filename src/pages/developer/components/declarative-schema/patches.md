@@ -15,7 +15,8 @@ The declarative schema approach removes the version from the `setup_module` tabl
 
 The sequence of installing patches is handled through a dependency-based approach. Patches can either be independent or dependent on other patches. Independent patches can be installed in any sequence. A dependent patch requires a minimal number of patches so that it can be installed successfully.
 
- {:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 Magento prioritizes the declarative schema approach and executes updates from the [db_schema.xml]({{ page.baseurl }}/extension-dev-guide/declarative-schema/db-schema.html) before the data and schema patches.
 
 To define a dependency in a patch, add the method `public static function getDependencies()`

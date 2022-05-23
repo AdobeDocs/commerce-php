@@ -52,7 +52,8 @@ The following example, extracted from the `Catalog/etc/db_schema.xml` file, defi
 
 The `<Module_Vendor>/<Module_Name>/etc/db_schema.xml` file declares a module's database structure.
 
- {:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 If you have enabled [URN highlighting]({{ page.baseurl }}/config-guide/cli/config-cli-subcommands-urn.html), you can use the PhpStorm autocomplete feature after choosing a node's `xsi:type`. This will also allow you to view which attributes are available on each line of your `db_schema.xml` file
 
 ### Top-level node
@@ -192,7 +193,8 @@ Attribute | Description
 `referenceColumn`| A column in the `referenceTable`
 `onDelete` | Foreign key trigger. The value must be `CASCADE`, `SET NULL`, or `NO ACTION`
 
- {:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 To keep entity identifiers as immutable values, the declarative schema does not support `ON UPDATE` action for `constraint`.
 
 Example:
@@ -241,7 +243,8 @@ The following example creates the `declarative_table` table with four columns. T
 </schema>
 ```
 
- {:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 When creating a new table, remember to [generate]({{ page.baseurl}}/extension-dev-guide/declarative-schema/migration-commands.html#create-whitelist) the `db_schema_whitelist.json` file.
 
 ### Drop a table
@@ -263,7 +266,8 @@ In the following example, the `declarative_table` table was completely removed f
 </schema>
 ```
 
-{:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 When dropping a table, do not remove it from the `db_schema_whitelist.json` file, otherwise it will not be dropped.
 
 ### Rename a table
@@ -296,7 +300,8 @@ This declarative process of renaming a table is not fast. If you need to migrate
 </schema>
 ```
 
- {:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 When renaming a table, remember to regenerate the `db_schema_whitelist.json` file so it contains the new name in addition to the old one.
 
 ### Add a column to table
@@ -319,7 +324,8 @@ The following example adds the `date_closed` column.
 </schema>
 ```
 
- {:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 When adding a new column into table, remember to [generate]({{ page.baseurl}}/extension-dev-guide/declarative-schema/migration-commands.html#create-whitelist) the `db_schema_whitelist.json` file.
 
 ### Drop a column from a table
@@ -342,7 +348,8 @@ The following example removes the  `date_closed` column by deleting its `column`
 </schema>
 ```
 
- {:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 It is possible to drop a column only if it exists in the `db_schema_whitelist.json` file.
 
 ### Change the column type
@@ -373,7 +380,8 @@ To rename a column, delete the original column declaration and create a new one.
 onCreate="migrateDataFrom(entity_id)"
 ```
 
- {:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 When renaming a column, remember to regenerate the `db_schema_whitelist.json` file so it contains the new name in addition to the old one.
 
 ### Add an index
@@ -419,7 +427,8 @@ In the following example, the selected `constraint` node defines the characteris
 </schema>
 ```
 
-{:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 Foreign keys can only be added to tables when both tables were created using a declarative schema (`db_schema.xml`).
 
 ### Drop a foreign key
@@ -444,7 +453,8 @@ The following example removes the  `FL_ALLOWED_SEVERITIES` foreign key by deleti
 </schema>
 ```
 
- {:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 It is possible to drop a foreign key only if it exists in the `db_schema_whitelist.json` file.
 
 ### Recreate a foreign key

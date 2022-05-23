@@ -12,7 +12,8 @@ A _public interface_ is a set of code that third-party developers can call, impl
 
 Public interfaces for a [module](https://glossary.magento.com/module) are marked with `@api` annotation.
 
- {:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 Third-party developers should use only these interfaces, that is, interfaces with the `@api` annotation. You can use other interfaces but those may be modified or removed in subsequent Magento releases. For more information, see [Backward compatibility]({{ site.baseurl }}/contributor-guide/backward-compatible-development/).
 
 ### Example of public interface annotation

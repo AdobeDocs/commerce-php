@@ -176,7 +176,8 @@ Indexer name | Tables used
 
 Make sure that these indexers are in "Update By Schedule" mode. If "Update On Save" mode is selected, some data can be lost if you make changes during full reindex.
 
- {:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 The indexer table switching mechanism requires additional database storage.
 
 ### EAV indexer optimization
@@ -186,7 +187,8 @@ As of Magento 2.3, under certain circumstances, you can disable this indexer to 
 
 You cannot disable the Product EAV indexer if you have installed any 3rd-party extensions that rely on the Product EAV indexer.
 
-{:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 To determine whether any 3rd-party extensions are using the Product EAV indexer, check the `catalog_product_index_eav` table for reading/writing activity.
 
 To disable the Product EAV indexer in the Admin, go to **Stores** > Settings > **Configuration** > **Catalog** > **Catalog** > **Catalog Search** and set the value of **Enable EAV Indexer** to No.
@@ -201,11 +203,13 @@ When a customer group with a new, excluded website is saved, the `Product Price`
 
 You cannot exclude websites from a shared catalog on a shared catalog create/edit page. However, you can exclude websites from a customer group that is created from a shared catalog.
 
-{:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 By default, no websites are excluded from a customer group or shared catalog.
 You cannot exclude websites from the `NOT LOGGED IN` customer group.
 
-{:.bs-callout-warning}
+<InlineAlert variant="warning" slots="text"/>
+
 When a website is added to the excluded customer group and a customer who belongs to this group is trying to login to their account on the excluded website, the customer gets the `"This website is excluded from customer's group."` warning.
 Customers are not allowed to login to the website even if [the scope of customer accounts is shared with all websites]({{ site.user_guide_url }}/customers/account-scope.html), because there are no prices in the index table for this user.
 

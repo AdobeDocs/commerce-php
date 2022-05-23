@@ -41,7 +41,8 @@ $filter
 
 This filter will find all urls with the suffix of "magento.com".
 
-{:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 A full list of condition types can be found in the [Rest API Reference]({{ page.baseurl }}/rest/performing-searches.html).
 
 ### Filter Group
@@ -510,5 +511,6 @@ The `di.xml` configuration file excerpt below shows how you can create a virtual
   </type>
 ```
 
-{:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 When building an EAV Model that needs to implement the `Repository::getList` method, use the EAV Filter Processor; otherwise the custom filters will not be added to the collection.

@@ -20,7 +20,8 @@ You can *package* your components as follows:
 
    More information about metapackages can be found in the next section.
 
- {:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 Commerce Marketplace uses the blanket term *product* to refer to a component or a [metapackage](https://glossary.magento.com/metapackage).
 
 ### Metapackage {#gloss-meta}
@@ -33,7 +34,8 @@ For example, you might want to list two metapackages in the Commerce Marketplace
 
 Merchants do not need to understand that, under the covers, some packages are shared.
 
-{:.bs-callout-warning}
+<InlineAlert variant="warning" slots="text"/>
+
 You can upload to Commerce Marketplace as many shared packages as you want but you must specifically give components access to them. Failure to do so means your components won't work properly after they're installed by merchants. For more information, see the [Commerce Marketplace User Guide](http://docs.magento.com/marketplace/user_guide/getting-started.html).
 
 {:.ref-header}

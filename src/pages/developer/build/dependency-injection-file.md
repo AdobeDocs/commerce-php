@@ -261,12 +261,14 @@ Node Format:
 </config>
 ```
 
-{:.bs-callout-warning}
+<InlineAlert variant="warning" slots="text"/>
+
 **Arguments on different stages**
 <br/>
 Configuration arguments are merged when they are declared on the same stage (Initial, Global, or Area-Specifc). If you declare new arguments on a higher stage, like Area-Specific, the arguments declared on the higher stage will replace the existing ones.
 
-{:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 **Merging and Arguments**
 <br/>
 During merging, arguments replace other arguments with the same name if their type is different.
@@ -370,7 +372,8 @@ class Success extends MagentoSuccess
 }
 ```
 
-{:.bs-callout-warning}
+<InlineAlert variant="warning" slots="text"/>
+
 Overriding entire methods is not recommended approach and is noted here as a method of last resort. This approach may cause conflicts in the system and reduces system upgradability. Other extensibility options such as `event observers` and `plugins` are preferable, when possible.
 
 ### Parameter configuration inheritance

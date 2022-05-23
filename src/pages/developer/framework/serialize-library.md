@@ -18,7 +18,8 @@ The main purpose of data serialization is to convert data into a string using `s
 
 The other half of this process uses the `unserialize()` function to reverse the process and convert a serialized string back into string, integer, float, boolean, or array data.
 
-{:.bs-callout-warning}
+<InlineAlert variant="warning" slots="text"/>
+
 For security reasons, `SerializerInterface` implementations, such as the Json and Serialize classes, should not serialize and unserialize objects.
 
 ## Implementations
@@ -43,7 +44,8 @@ The [`Magento\Framework\Serialize\Serializer\Serialize`]({{ site.mage2bloburl }}
 
 The [`Magento\Framework\Serialize\Serializer\FormData`]({{ site.mage2bloburl }}/{{ page.guide_version }}/lib/internal/Magento/Framework/Serialize/Serializer/FormData.php) class unserializes the form data using the [JSON](http://www.json.org/) format. This class does not serialize objects to a form data format.
 
-{:.bs-callout-warning}
+<InlineAlert variant="warning" slots="text"/>
+
 Magento discourages using the Serialize implementation directly because it can lead to security vulnerabilities. Always use the `SerializerInterface` for serializing and unserializing.
 
 ## Usage

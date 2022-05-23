@@ -7,7 +7,7 @@ functional_areas:
   - Setup
 ---
 
-The message queue topology is a {{site.data.var.ce}} feature. It can be included as part of {{site.data.var.ce}} installation, or you can add it to existing modules.
+The message queue topology is a Magento Open Source feature. It can be included as part of Magento Open Source installation, or you can add it to existing modules.
 
 ### Overview
 
@@ -103,7 +103,8 @@ The `queue_consumer.xml` file contains one or more `consumer` elements:
 | sleep                         | Specifies time in seconds to sleep before checking if a new message is available in the queue. Default value is `null` which equals to 1 second.|
 | onlySpawnWhenMessageAvailable | Boolean value (`1` or `0` only) that identifies whether a consumer should be spawned only if there is available message in the related queue. Default value: `null`|
 
-{:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 The `maxIdleTime` and `sleep` attributes will be handled only by consumers that were fired with a defined `maxMessages` parameter. The `onlySpawnWhenMessageAvailable` attribute is only checked and validated by the `\Magento\MessageQueue\Model\Cron\ConsumersRunner` class that runs consumer processes with cron.
 
 It is possible to set `onlySpawnWhenMessageAvailable` globally by setting `queue/only_spawn_when_message_available` equal to `0` or `1` in `app/etc/env.php`. By default, the global value of `only_spawn_when_message_available` for all consumers is `1`.
@@ -116,7 +117,8 @@ The [`consumers-wait-for-messages`]({{page.baseurl}}/install-gde/install/cli/ins
 The problem is that every time the cron job `cron_consumers_runner` runs, it spawns a new consumer process, the consumer checks if messages are available, and it terminates itself if there are no messages.
 Meanwhile, the `onlySpawnWhenMessageAvailable` attribute first checks if there are available messages, and it spawns a new consumer process only if there are messages. It means that it does not spawn unneeded processes which take up memory, live for a very short period, and then disappear.
 
-{:.bs-callout-warning}
+<InlineAlert variant="warning" slots="text"/>
+
 The [`consumers-wait-for-messages`]({{page.baseurl}}/install-gde/install/cli/install-cli-subcommands-consumers.html) option is a global option and cannot be configured separately for each consumer, such as the `onlySpawnWhenMessageAvailable` option.
 
 #### Consumer handlers
@@ -269,7 +271,8 @@ The `connection` element is a subnode of the `publisher` element. There must not
 | exchange             | The name of the exchange to publish to. The default system exchange name is `magento`. |
 | disabled             | Determines whether this queue is disabled. The default value is `false`. |
 
-{:.bs-callout-warning}
+<InlineAlert variant="warning" slots="text"/>
+
 You cannot enable more than one `publisher` for each `topic`.
 
 ### Updating `queue.xml` {#updatequeuexml}

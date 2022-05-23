@@ -6,7 +6,8 @@ edition: ee
 
 Staging functionality enables you to create scheduled campaigns, manage campaigns on dashboard and manipulate each future store object update. Moreover, you can preview a [storefront](https://glossary.magento.com/storefront) during the future campaign.
 
-{:.bs-callout-tip}
+<InlineAlert variant="success" slots="text"/>
+
 Information on how the Staging functionality works and how to use the various features, can be found in the [Content Staging]({{ site.user_guide_url }}/cms/content-staging.html) topic of the _User Guide_.
 
 The functionality is distributed between staging modules. The [Staging module]({{ page.baseurl }}/mrg/module-staging.html) is a framework for the staging functionality, and other staging modules are extensions for the existing modules. You can read about each staging [module](https://glossary.magento.com/module) in a corresponding topic:

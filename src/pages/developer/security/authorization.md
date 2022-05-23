@@ -155,7 +155,7 @@ instead embed it inside the token itself using an encrypted token to protect sen
 When the only client of a self-signed token is the application itself, it is not absolutely necessary to follow
 a certain standard when generating self-signed tokens, but it would be easier and more secure to utilize one, like JWT.
 The Magento framework provides a tool to help with this process. See `Magento\Framework\Jwt\JwtManagerInterface`
-and its usage within {{site.data.var.ce}}.
+and its usage within Magento Open Source.
 
 An example of using `JwtManagerInterface` for the e-mail link case above:
 

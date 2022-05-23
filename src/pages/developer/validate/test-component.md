@@ -13,9 +13,9 @@ See the [Magento Testing Overview].
 For further testing with the Magento functional testing frameworks, see
 [Functional Testing Framework] and [Magento Functional Testing Framework].
 
-## Test using {{site.data.var.ce}} {#test-comm}
+## Test using Magento Open Source {#test-comm}
 
-Test your component by deploying {{site.data.var.ce}} and adding the component to the project's `composer.json`. To install, see [Install using Composer].
+Test your component by deploying Magento Open Source and adding the component to the project's `composer.json`. To install, see [Install using Composer].
 
 ```json
 "require": {

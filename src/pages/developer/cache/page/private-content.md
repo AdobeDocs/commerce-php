@@ -33,7 +33,8 @@ Add the following to your component's [dependency injection](https://glossary.ma
 
 To render private content, create a block and a template to display user-agnostic data; this data is replaced with user-specific data by the [UI component](https://glossary.magento.com/ui-component).
 
-{:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 Do not use the `$_isScopePrivate` property in your blocks. This property is obsolete and will not work properly.
 
 Replace private data in blocks with placeholders (using [Knockout](http://knockoutjs.com/documentation/introduction.html) syntax). The init scope on the root element is `data-bind="scope: 'compareProducts'"`, where you define the scope name (`compareProducts` in this example) in your [layout](https://glossary.magento.com/layout).
@@ -127,7 +128,8 @@ This tells Magento to invalidate all sections. But if you have declared sections
 </config>
 ```
 
-{:.bs-callout-warning}
+<InlineAlert variant="warning" slots="text"/>
+
 Use only HTTP POST or PUT methods to change state (e.g., adding to a shopping cart, adding to a wishlist, etc.) and do not expect to see caching on these methods. Using GET or HEAD methods might trigger caching and prevent updates to private content. For more information about caching, see [RFC-2616 section 13](https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html).
 
 Other examples:
@@ -150,7 +152,8 @@ Versioning works as follows:
 
 1. Any future HTTP POST or PUT request changes the value of `private_content_version` and results in the updated content being cached by the browser.
 
-{:.bs-callout-warning}
+<InlineAlert variant="warning" slots="text"/>
+
 The customer data invalidation mechanism no longer relies on the `private_content_version`.
 
 {% include cache/page-cache-checklists.md%}

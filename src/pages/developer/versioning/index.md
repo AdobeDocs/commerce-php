@@ -5,7 +5,7 @@ redirect_from:
   - /guides/v2.3/architecture/versioning.html
 ---
 
-{{site.data.var.ee}} and {{site.data.var.ce}} application and module releases have their own unique version number.
+Adobe Commerce and Magento Open Source application and module releases have their own unique version number.
 
 ## Application version format
 
@@ -24,7 +24,8 @@ The format follows [Semantic Versioning][semantic-versioning] rules for any `@ap
 *  The MINOR version increments when backward-compatible functionality has been added or if the module's customization points have changed.
 *  The PATCH version increments when backward-compatible bug fixes occur.
 
-{:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 On an exceptional basis, breaking changes or additional patches or hotfixes may be released on a PATCH version to address security or compliance issues and high-impact quality issues.
 
 ### Pre-release versions
@@ -62,7 +63,8 @@ Or it can be used to declare a dependency on a particular version of a component
 }
 ```
 
-{:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 If you installed the application from GitHub without using Composer, the `version` is not included. The Admin displays the version as `Magento ver. dev-<GitHub-branch-name>`. In addition, modules inside the `require` declaration list a version of `*`. For example, `"magento/framework": "*"`.
 
 {:.ref-header}

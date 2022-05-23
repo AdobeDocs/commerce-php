@@ -124,7 +124,8 @@ Note that the `app/code/Magento/CatalogRule/Model/Rule/Condition/Product.php` cl
 
 The `app/code/Magento/Rule/Model/Condition/Product/AbstractProduct.php` abstract class extends from the `app/code/Magento/Rule/Model/Condition/AbstractCondition.php` class.
 
-{:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 The validation class for the catalog price rule must extend the `Magento\Rule\Model\Condition\AbstractCondition` class.
 
 ## Steps to Extend Catalog Rule Conditions
