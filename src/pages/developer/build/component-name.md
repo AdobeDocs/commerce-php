@@ -5,7 +5,7 @@ title: Name your component
 
 You give a name to your component in its `composer.json` and `module.xml` files. These files also contain other required configuration parameters, such as the module's schema version.
 
-## Prerequisites {#prereq}
+## Prerequisites
 
 Before you continue, make sure you have completed all of the following tasks:
 
@@ -13,7 +13,7 @@ Before you continue, make sure you have completed all of the following tasks:
 *  Create the [configuration files](required-configuration-files.md) you'll need.
 *  [Register](component-registration.md) your component.
 
-## Add the component's `module.xml` file {#add-component-xml}
+## Add the component's `module.xml` file
 
 Declare the component itself by adding a `module.xml` file in the `/etc` folder of your component.
 
@@ -34,7 +34,7 @@ The `name` parameter defines the name of your component. It is required for all 
 
 Avoid using "Ui" for your custom module name, because the `%Vendor%_Ui` notation, required when specifying paths, might cause issues.
 
-## Add the component's `composer.json` file {#add-composer-json}
+## Add the component's `composer.json` file
 
 `composer.json` provides a component name and also specifies component dependencies.
 

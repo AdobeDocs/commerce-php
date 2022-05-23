@@ -6,7 +6,7 @@ menu_title: Package a component
 menu_order: 2
 ---
 
-## Overview of packaging {#package-over}
+## Overview of packaging
 
 The Adobe Commerce and Magento Open Source applications use [Composer](https://glossary.magento.com/composer) packages to distribute, install, and upgrade components in an application instance.
 
@@ -16,7 +16,7 @@ To package a component, you must:
 *  Register the component using `registration.php`
 *  Package and publish your component.
 
-## Create a Composer file {#composer}
+## Create a Composer file
 
 The `composer.json` file defines the name, requirements, version, and other basic information about the component. This file must be placed in the root directory of the [module](https://glossary.magento.com/module).
 
@@ -36,7 +36,7 @@ import Docs from '/src/pages/_includes/composer-types.md'
 
 <Docs />
 
-### Using metapackages {#package-metapackage}
+### Using metapackages
 
 Metapackages allow you to group an [extension](https://glossary.magento.com/extension) that consists of multiple packages into a cohesive unit. This works exactly as described in standard [composer.json documentation](https://getcomposer.org/doc/04-schema.md#type). If you have an extension that uses more than one package you must use a [metapackage](https://glossary.magento.com/metapackage) as the *root package*. Otherwise you should not use metapackage. A metapackage that you submit to Commerce Marketplace should be a .zip file containing only the metapackage `composer.json` file.
 
@@ -119,7 +119,7 @@ The following example is a `composer.json` file for a module:
 
 ```
 
-## Package and publish your extension {#packaging}
+## Package and publish your extension
 
 Create a package of your extension by performing a zip operation on the directory with your extension (excluding unnecessary directories). For example:
 
@@ -137,7 +137,7 @@ The application can retrieve your extension package from any valid GitHub [URL](
 
 Third-party repositories are supported.
 
-### Hosting on GitHub and Packagist {#hosting}
+### Hosting on GitHub and Packagist
 
 Prerequisite: Git must be set up on your machine.
 
@@ -150,7 +150,7 @@ Prerequisite: Git must be set up on your machine.
       1. Register an account at [packagist.org](https://packagist.org/).
       1. Click the Submit Package button and paste your GitHub repository link. Packagist automatically gathers the information from the component's `composer.json` file and link it to the GitHub repository, allowing you to reference the package as `vendor/module` without any additional repository information, because this is required solely using GitHub.
 
-### Hosting on a private repository {#private_repos}
+### Hosting on a private repository
 
 <InlineAlert variant="info" slots="text"/>
 
@@ -175,4 +175,3 @@ A private repository can be used for development or private code but installatio
 All packages on the private repository can now be referenced within the `require` field.
 
 Refer to the [official documentation](https://packagist.com/features/private-vcs-packages) for more details on how to configure your project to use Private Packagist.
-<!-- ##Submitting your module to Marketplace -->

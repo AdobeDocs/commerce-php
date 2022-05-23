@@ -18,7 +18,7 @@ We recommend using [Varnish](https://devdocs.magento.com/guides/v2.4/config-guid
 -  [Database](../partial/database-caching.md)
 -  [Redis](https://devdocs.magento.com/guides/v2.4/config-guide/redis/redis-pg-cache.html)
 
-## Cacheable and uncacheable pages {#cache-over-cacheable}
+## Cacheable and uncacheable pages
 
 *Cacheable* and *uncacheable* are terms we use to indicate whether or not a page should be cached at all. (By default, all pages are cacheable.) If any block in a [layout](https://glossary.magento.com/layout) is designated as uncacheable, the entire page is uncacheable.
 

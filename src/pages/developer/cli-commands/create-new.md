@@ -7,7 +7,7 @@ menu_node:
 menu_order: 3
 ---
 
-## Overview of adding CLI commands {#cli-add-over}
+## Overview of adding CLI commands
 
 Adobe Commerce and Magento Open Source enables your component to add commands to our [Symfony-like command-line interface (CLI)](https://symfony.com/doc/current/components/console.html).
 
@@ -76,7 +76,7 @@ Before you begin, make sure you understand the following:
 
    Otherwise the [Symfony](https://github.com/symfony/console/blob/master/Application.php#L470) framework will return an `The command defined in "<Command class>" cannot have an empty name.` error.
 
-## Add CLI commands using dependency injection {#cli-sample}
+## Add CLI commands using dependency injection
 
 The sample modules provide a demonstration of many programming techniques, including adding a CLI command using [dependency injection](https://glossary.magento.com/dependency-injection). Look at the [`sample-module-command`](https://github.com/magento/magento2-samples/tree/master/sample-module-command) for an example. The module's [README.md](https://github.com/magento/magento2-samples/blob/master/sample-module-command/README.md) discusses how to install it.
 

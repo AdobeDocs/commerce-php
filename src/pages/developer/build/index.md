@@ -9,7 +9,7 @@ menu_node: parent
 
 Building your component involves laying out the file structure, creating the necessary configuration files, building out any needed [API](https://glossary.magento.com/api) interfaces and services, and adding any [frontend](https://glossary.magento.com/frontend) parts needed for your component.
 
-## Prerequisites {#create-component-basics}
+## Prerequisites
 
 Before you begin creating your new component, make sure that you have a working installation of Adobe Commerce or Magento Open Source.
 

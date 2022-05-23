@@ -27,7 +27,7 @@ Depending on your needs, you may only need to create and configure `communicatio
 *  In cases where you want to configure the local queue and publish to it for 3rd party systems to consume, you will need the `queue_publisher.xml` and `queue_topology.xml` files.
 *  When you want to configure the local queue and consume messages published by 3rd party system, you will need the `queue_topology.xml` and `queue_consumer.xml` files.
 
-### `communication.xml` {#communicationxml}
+### `communication.xml`
 
 The `<module>/etc/communication.xml` file defines aspects of the message queue system that all communication types have in common. This release supports AMQP and database connections.
 
@@ -71,7 +71,7 @@ type | The class or interface that defines the handler.
 method | The method this handler executes.
 disabled | Determines whether this handler is disabled. The default value is `false`.
 
-### `queue_consumer.xml` {#queueconsumerxml}
+### `queue_consumer.xml`
 
 The `queue_consumer.xml` file contains one or more `consumer` elements:
 
@@ -139,7 +139,7 @@ The application provides these consumers out-of-the-box:
 | `Magento\Framework\MessageQueue\BatchConsumer` | Only if not defined in `queue_consumer.xml` | Yes, if exists |
 | `Magento\AsynchronousOperations\Model\MassConsumer`  | Yes, if exists | Yes, if exists |
 
-### `queue_topology.xml` {#queuetopologyxml}
+### `queue_topology.xml`
 
 The `queue_topology.xml` file defines the message routing rules and declares queues and exchanges. It contains the following elements:
 
@@ -225,7 +225,7 @@ The following illustrates an `arguments` block:
 </arguments>
 ```
 
-### `queue_publisher.xml` {#queuepublisherxml}
+### `queue_publisher.xml`
 
 The `queue_publisher.xml` file defines which connection and exchange to use to publish messages for a specific topic. It contains the following elements:
 
@@ -266,15 +266,9 @@ The `connection` element is a subnode of the `publisher` element. There must not
 
 You cannot enable more than one `publisher` for each `topic`.
 
-### Updating `queue.xml` {#updatequeuexml}
+### Updating `queue.xml`
 
 See [Migrate message queue configuration](migration.md) for information about upgrading from Adobe Commerce and Magento Open Source 2.0 or 2.1.
-
-### Related Topics
-
-*  [Message Queues Overview](https://devdocs.magento.com/guides/v2.4/config-guide/mq/rabbitmq-overview.html)
-*  [Manage message queues with MySQL](https://devdocs.magento.com/guides/v2.4/config-guide/mq/manage-message-queues.html)
-*  [Install RabbitMQ](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/install-rabbitmq.html)
 
 <!-- Link definitions -->
 [MySQL]: https://www.mysql.com/

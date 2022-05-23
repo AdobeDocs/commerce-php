@@ -13,7 +13,7 @@ menu_order: 200
 *  [What directories to clear](#howdoi-clear-what)
 *  [How to clear the directories](#howdoi-clear-how)
 
-## Overview of directory clearing {#howdoi-clear-over}
+## Overview of directory clearing
 
 While you're developing components (modules, themes, and language packages), your rapidly changing environment requires you to periodically clear certain directories and caches. Otherwise, your code runs with exceptions and won't function properly.
 
@@ -32,7 +32,7 @@ Directory | Description
 `var/page_cache` | Cached pages from the full page cache mechanism. This directory is empty if you use a third-party HTTP accelerator such as Varnish.
 `var/view_preprocessed` | Contains minified templates and compiled LESS (meaning LESS, CSS, and HTML).
 
-## What directories to clear {#howdoi-clear-what}
+## What directories to clear
 
 The following table provides guidelines on what you should clear and when.
 
@@ -47,7 +47,7 @@ Change LESS or templates | `var/view_preprocessed`, `var/cache`, `var/page_cache
 Change `*.js` or `*.html` files | `pub/static`
 Add or edit a CMS page, cacheable block, or use the Admin to change the configuration |`var/cache`, `var/page_cache`
 
-## How to clear the directories {#howdoi-clear-how}
+## How to clear the directories
 
 To only clear directories and not perform other actions, log in to the application server as the <a href="https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html">file system owner</a> and clear directories using a command like the following:
 

@@ -273,7 +273,7 @@ class Consumer
 }
 ```
 
-### Configure message queues {#configmq}
+### Configure message queues
 
 The message queue topology must be configured to implement bulk operations. Create or edit the following files in the module's `app/code/<vendor>/<module_name>/etc` directory.
 
@@ -344,9 +344,3 @@ The `queue_topology.xml` file defines the message routing rules and declares que
     </exchange>
 </config>
 ```
-
-#### Related Topics
-
-*  [Message Queues Overview](https://devdocs.magento.com/guides/v2.4/config-guide/mq/rabbitmq-overview.html)
-*  [Bulk Operations](bulk-operations.md)
-*  [Configure message queues](configuration.md)

@@ -14,7 +14,7 @@ Merchants might be reluctant to upgrade Adobe Commerce or Magento Open Source be
 
 To address these issues, Adobe Commerce and Magento Open Source introduced _service contracts_.
 
-## What is a service contract? {#what-is-msc}
+## What is a service contract?
 
 A [service contract](https://glossary.magento.com/service-contract) is a set of [PHP](https://glossary.magento.com/php) interfaces that are defined for a [module](https://glossary.magento.com/module).
 A service contract includes [data interfaces](design-patterns.md#data-interfaces), which preserve data integrity, and [service interfaces](design-patterns.md#service-interfaces), which hide business logic details from service requestors such as controllers, web services, and other modules.
@@ -23,7 +23,7 @@ If developers define data and service interfaces according to a set of [design p
 
 ![Service Contracts](../../../_images/msc.jpg)
 
-## Service contract benefits {#msc-benefits}
+## Service contract benefits
 
 Service contracts enhance the modularity of Magento. They enable Adobe and third-party developers to report system dependencies through `composer.json` files and, consequently, guarantee compatibility across versions of Adobe Commerce and Magento Open Source. This compatibility ensures that merchants can easily upgrade Magento.
 These contracts ensure a well-defined, durable API that other modules and third-party extensions can implement. Also, these contracts make it easy to [configure services as web APIs](../web-api/services.md).
@@ -37,8 +37,3 @@ Eventually, you will be able to use different storage technologies for different
 ## Using the @api tag
 
 Backward compatibility can be indicated by the use of `@api`. For more information, see [Backward compatibility](https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy/).
-
-**Related topics:**
-
--  [Service contract design patterns](design-patterns.md)
--  [Configure services as webAPIs](../web-api/services.md)

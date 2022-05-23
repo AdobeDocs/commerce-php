@@ -14,7 +14,7 @@ Design patterns for service contracts tell you which types of interfaces to defi
 
 Service contract data interfaces are now mutable.
 
-## Interface types and locations {#top-level-msc}
+## Interface types and locations
 
 A [service contract](https://glossary.magento.com/service-contract) must define data interfaces, which preserve data integrity, and service interfaces, which hide business logic from service requestors.
 
@@ -34,7 +34,7 @@ For example, the data interfaces for the Customer module are in the `/app/code/M
 The [SimpleDataObjectConverter](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Api/SimpleDataObjectConverter.php) follows a strict 'camel case' to 'snake case' conversion of data keys (table columns). You should not use `underscores (_)` between alphanumerical characters in column names.
 For example, use `default_shipping1` instead of `default_shipping_1`, as the Data Interface method `defaultShipping1` will be converted into `default_shipping1`.
 
-### Data search results interfaces {#search-results-interfaces}
+### Data search results interfaces
 
 When you pass search criteria to a `getList()` call, a search results interface is returned with the search results.
 
@@ -54,7 +54,7 @@ For file names and coding standards, follow the defined [PHP coding standards](.
 
 Place service interfaces in the top-level `Api` directory for a module.
 
-### Repository interfaces {#repository-interfaces}
+### Repository interfaces
 
 Repository interfaces provide access to persistent data entities.
 
@@ -76,7 +76,7 @@ Method | Description
 
 Each data entity has a corresponding interface. Consequently, the `getById()` function in the corresponding interface, for example, can return the exact type.
 
-### Management interfaces {#management-interfaces}
+### Management interfaces
 
 Management interfaces provide management functions that are not related to repositories. For example:
 
@@ -85,7 +85,7 @@ Interface | Description
 `AccountManagementInterface` | Defines the `createAccount()`, `changePassword()`, `activate()`, and `isEmailAvailable()` functions.
 `AddressManagementInterface` | Defines the `validate()` function that validates an address.
 
-### Metadata interfaces {#metadata-interfaces}
+### Metadata interfaces
 
 Metadata interfaces provide methods for retrieving metadata, the interfaces are not related to repositories. For example:
 
@@ -95,8 +95,3 @@ Interface | Description
 `ProductMetadataInterface` | Provides application product metadata. Defines the `getVersion()`, `getEdition()`, `getName()` methods.
 `CustomerMetadataManagementInterface` | Interface for managing customer attributes metadata. Defines the constant `ENTITY_TYPE_CUSTOMER`.
 `AddressMetadataInterface` | Interface for retrieving information about customer address attributes metadata. Defines the constants `ATTRIBUTE_SET_ID_ADDRESS`, `ENTITY_TYPE_ADDRESS`, `DATA_INTERFACE_NAME`.
-
-**Related topics:**
-
--  [Service contracts](index.md)
--  [Configure services as web APIs](../web-api/services.md)

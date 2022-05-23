@@ -17,18 +17,18 @@ Users can make REST or SOAP calls to access the [web API](https://glossary.magen
 
 To configure a web API, read these topics:
 
--  [Configure a web API](#configure-webapi)
--  [Service Interface Requirements](#service-interface-requirements)
--  [webapi.xml configuration options](#configuration-options)
--  [Sample webapi.xml file](#sample-webapi)
--  [webapi.xsd XML schema file](#validate-webapi)
--  [Forcing Request Parameters](#forced-parameters)
+-  [Configure a web API](#configure-a-web-api)
+-  [Service interface requirements](#service-interface-requirements)
+-  [webapi.xml configuration options](#webapixml-configuration-options)
+-  [Sample webapi.xml file](#sample-webapixml-file)
+-  [webapi.xsd XML schema file](#webapixsd-xml-schema-file)
+-  [Forcing Request Parameters](#forcing-request-parameters)
 
 ## Configure a web API
 
 To configure a web API for a service, you define XML elements and attributes in the `app/code/Magento/<MODULE>/etc/webapi.xml` file, where `<MODULE> is the module name.` For example, the web API for the Customer service is defined in the `app/code/Magento/Customer/etc/webapi.xml` configuration file.
 
-## Service Interface Requirements {#service-interface-requirements}
+## Service interface requirements
 
 After a service class is configured using the `webapi.xml` file, the application dynamically makes the service method available using the web API. Because this is automatically generated, it is important that the service class be formatted a very specific way.
 
@@ -78,7 +78,7 @@ Following are some examples of various types and what they would look like in th
 
 If a service method argument is called `item`, there will be a problem during SOAP processing. All item nodes are removed during SOAP request processing. This is done to unwrap array items that are wrapped by the SOAP server into an `item` element.
 
-## webapi.xml configuration options {#configuration-options}
+## webapi.xml configuration options
 
 To define web API components, set these attributes on these XML elements in the
    `webapi.xml` configuration file, as follows:
@@ -211,7 +211,7 @@ To define web API components, set these attributes on these XML elements in the
    </tr>
 </table>
 
-## Sample webapi.xml file {#sample-webapi}
+## Sample webapi.xml file
 
 This excerpt is from the `webapi.xml` file that defines the Customer service web API:
 
@@ -294,7 +294,7 @@ In this `webapi.xml` example:
    </tr>
 </table>
 
-## webapi.xsd XML schema file {#validate-webapi}
+## webapi.xsd XML schema file
 
 The `webapi.xml` file for your module must specify an XML schema file for validation. Your `webapi.xml` file can specify the default or a customized XML schema file.
 The default `webapi.xsd` XML schema file can be found in the `app/code/Magento/Webapi/etc` directory.
@@ -306,7 +306,7 @@ Attribute name | Required | Description
 `class` | Yes | The responsible class for handling the API request.
 `method` | Yes | The class' method which handles the execution of the API.
 
-## Forcing Request Parameters {#forced-parameters}
+## Forcing request parameters
 
 Parameters in the `webapi.xml` can be forced. This ensures that on specific routes, a specific value is
 always used. For instance, in the example "/V1/customers/me/billingAddress" route above, the `customerId`

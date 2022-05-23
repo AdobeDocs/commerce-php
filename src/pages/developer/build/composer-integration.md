@@ -41,7 +41,7 @@ Here is the example of composer.json file.
   }
  ```
 
-## Composer binary location {#composer-binary}
+## Composer binary location
 
 Adobe Commerce and Magento Open Source use the Composer binary in the `<Application root>/vendor/composer` directory instead of a globally installed [composer](https://glossary.magento.com/composer).
 
@@ -54,7 +54,7 @@ The [installation instructions for system integrators][10] use the Magento Open 
 
 A "product" package is the actual application pointed to by the `composer.json` file after you download and install the project package using `composer create-project`.
 
-## Descriptions of different composer.json files {#composerjson-overview}
+## Descriptions of different composer.json files
 
 The following components and product editions use a `composer.json` file.
 
@@ -73,6 +73,7 @@ Other root `composer.json` files use this file as a template.
 ---
 
 ### Magento Open Source project
+
 **Location:** `composer.json`
 
 **Name:** `magento/project-community-edition`
@@ -84,6 +85,7 @@ System integrators use this `composer.json` file to deploy the Magento Open Sour
 ---
 
 ### Adobe Commerce project
+
 **Location:** `composer.json`
 
 **Name:** `magento/product-enterprise-edition`
@@ -173,7 +175,7 @@ Using the Composer naming convention helps distinguish packages from different v
 All letters in the vendor name must be in lowercase.
 For example, the vendor name format for extensions released by Adobe is `magento`.
 
-#### Commerce Marketplace Extensions
+#### Commerce Marketplace extensions
 
 Commerce Marketplace uses `vendor-name` to match an extension to a vendor during the extension submission process.
 If you plan to submit your extension to the [Commerce Marketplace][7], you *must* use the unique Vendor Name created or assigned to you when you created your marketplace account.
@@ -203,7 +205,7 @@ Where:
 
 : `suffix` is a unique identifier for extensions of that type.
 
-## Versioning {#component-version}
+## Versioning
 
 Components have the following types of versions:
 

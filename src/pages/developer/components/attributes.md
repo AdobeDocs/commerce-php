@@ -11,7 +11,7 @@ There are two types of attributes you can use to extend Adobe Commerce and Magen
 
 *  [Extension attributes](https://glossary.magento.com/extension-attribute). Extension attributes are new in Adobe Commerce and Magento Open Source. They are used to extend functionality and often use more [complex data](https://glossary.magento.com/complex-data) types than custom attributes. These attributes do not appear in the Admin.
 
-## EAV and custom attributes {#custom}
+## EAV and custom attributes
 
 `CustomAttributesDataInterface` defines the methods that are called to get and set custom attributes, including `getCustomAttributes()`.
 
@@ -40,7 +40,7 @@ The `Customer` module provides a `system` option for its attributes. As a result
 
 As of version 2.3.4, Adobe Commerce and Magento Open Source caches all system EAV attributes as they are retrieved. This behavior is defined in each affected module's `di.xml` file as the `attributesForPreload` argument for `<type name="Magento\Eav\Model\Config">`. Developers can cache custom EAV attributes by running the `bin/magento config:set dev/caching/cache_user_defined_attributes 1` command. This can also be done from the Admin while in Develop mode by setting **Stores** > Settings **Configuration** > **Advanced** > **Developer** > **Caching Settings** > **Cache User Defined Attributes** to **Yes**. Caching EAV attributes while retrieving improves performance as it decreases the amount of insert/select requests to the DB, but it increases the cache network size.
 
-### Adding Customer EAV attribute for backend only {#customer-eav-attribute}
+### Adding Customer EAV attribute for backend only
 
 Customer EAV attributes are created using a [data patches](declarative-schema/patches.md).
 
@@ -126,7 +126,7 @@ class AddCustomerExampleAttribute implements DataPatchInterface
 
 The scope of the Customer custom attribute is Global only, while other entities support the Global, Website, and StoreView scopes.
 
-## Extension attributes {#extension}
+## Extension attributes
 
 Use `ExtensibleDataInterface` to implement extension attributes. In your code, you must define `getExtensionAttributes()` and `setExtensionAttributes(*ExtensionInterface param)`.
 
@@ -134,7 +134,7 @@ Use `ExtensibleDataInterface` to implement extension attributes. In your code, y
 
 Most likely, you will want to extend interfaces defined in the `Api/Data` directory of a module.
 
-### Declare extension attributes {#declare}
+### Declare extension attributes
 
 You must create a `<Module>/etc/extension_attributes.xml` file to define a module's extension attributes:
 
@@ -166,7 +166,7 @@ where:
 | join_on_field | The column of the table associated with the interface specified in the `for` keyword that will be used in the join operation. | `store_id` |
 | field | One or more fields present in the interface specified in the `type` keyword.<br />You can specify the `column=""` keyword to define the column in the reference_table to use. The field value specifies the property on the `interface` which should be set. | `<field>firstname</field>`<br />`<field>lastname</field>`<br />`<field>email</field>`<br /><br />`<field column="customer_group_code">code</field>` |
 
-### Searching extension attributes {#search}
+### Searching extension attributes
 
 The system uses a join directive to add external attributes to a collection and to make the collection filterable. The `join` element in the `extension_attributes.xml` file defines which object fields and the database table/column to use as the source of a search.
 
@@ -223,7 +223,7 @@ searchCriteria[filter_groups][0][filters][0]
 &searchCriteria[currentPage]=86
 ```
 
-### Extension attribute authentication {#ext-aut}
+### Extension attribute authentication
 
 Individual fields that are defined as extension attributes can be restricted, based on existing permissions. This feature allows extension developers to restrict access to data. See [Web API authentication overview](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication.html) for general information about authentication in Magento.
 
@@ -298,7 +298,7 @@ However, if an extension similar to the following has been defined, the interfac
 </extension_attributes>
 ```
 
-### Troubleshoot EAV attributes {#troubleshooting}
+### Troubleshoot EAV attributes
 
 If you have issues when using `setup:upgrade`, verify `__construct` uses the method `EavSetupFactory` not `EavSetup`. You should not directly inject `EavSetup` in extension code. Check your custom code and purchased modules and extensions to verify. After changing the methods, you should be able to properly deploy.
 

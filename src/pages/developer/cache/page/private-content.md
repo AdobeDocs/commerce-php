@@ -9,7 +9,7 @@ Use our [customer-data](https://github.com/magento/magento2/blob/2.4/app/code/Ma
 
 This example displays a product comparison on a cacheable page.
 
-## Create a section source {#config-cache-priv-how-source}
+## Create a section source
 
 The section source class is responsible for retrieving data for the section. As a best practice, we recommend that you put your code within the `Vendor/ModuleName/CustomerData` namespace. Your classes must implement the [`Magento\Customer\CustomerData\SectionSourceInterface`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/CustomerData/SectionSourceInterface.php) interface.
 
@@ -29,7 +29,7 @@ Add the following to your component's [dependency injection](https://glossary.ma
 </type>
 ```
 
-## Create a block and template {#config-cache-priv-how-block}
+## Create a block and template
 
 To render private content, create a block and a template to display user-agnostic data; this data is replaced with user-specific data by the [UI component](https://glossary.magento.com/ui-component).
 
@@ -49,7 +49,7 @@ Initialize the component as follows:
 
 [Example](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/view/frontend/templates/product/compare/sidebar.phtml#L50-L52)
 
-## Configure a UI component {#config-cache-priv-how-ui}
+## Configure a UI component
 
 The UI component renders block data on the [storefront](https://glossary.magento.com/storefront). To initialize the UI component, you must trigger the parent initialization method by calling the `_super()` method and defining a property to store customer data. The `customerData.get()` method returns a [Knockout's observable](https://glossary.magento.com/ui-component).
 
@@ -138,7 +138,7 @@ Other examples:
 -  [Checkout](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Checkout/etc/frontend/sections.xml)
 -  [Customer](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/etc/frontend/sections.xml)
 
-## Version private content {#config-priv-vers}
+## Version private content
 
 Private content, which is stored in the browser local storage, uses the `private_content_version` cookie to store the version.
 

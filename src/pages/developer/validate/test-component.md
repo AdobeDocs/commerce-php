@@ -3,16 +3,16 @@ group: php-developer-guide
 title: Test your component
 ---
 
-## Unit and Integration Tests {#test-unit}
+## Unit and integration tests
 
 Run the PHPUnit based Adobe Commerce and Magento Open Source unit and integration tests.
 See the [Testing Overview].
 
-## Functional testing {#test-functional}
+## Functional testing
 
 For further testing with the functional testing frameworks, see [Functional Testing Framework].
 
-## Test using Magento Open Source {#test-comm}
+## Test using Magento Open Source
 
 Test your component by deploying Magento Open Source and adding the component to the project's `composer.json`. To install, see [Install using Composer].
 
@@ -25,7 +25,7 @@ Test your component by deploying Magento Open Source and adding the component to
 
 [Register] your component, including the file location. Verify it works as expected, without compromising functionality.
 
-## Test installing your component {#test-install}
+## Test installing your component
 
 Before you publish your component, test installing it.
 

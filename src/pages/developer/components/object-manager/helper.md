@@ -15,7 +15,7 @@ You can still create your custom mocks, if needed.
 
 Do not use the ObjectManager helper class for classes with a small number of dependencies.
 
-## ObjectManager methods {#help}
+## ObjectManager methods
 
 The ObjectManager public interface methods are:
 
@@ -23,7 +23,7 @@ The ObjectManager public interface methods are:
 -  [getCollectionMock method](#getCollectionMock). Lists mocked constructor arguments.
 -  [getConstructArguments method](#getConstructArguments). Creates collection instances that contain specified elements.
 
-### getObject {#getobject}
+### getObject
 
 Creates mocks for all constructor dependencies and applies any specified custom mocks from `$arguments` array.
 Also, instantiates the required `$className` by using constructor with already existing mocks.
@@ -51,7 +51,7 @@ $scopePool = $objectManagerHelper->getObject('\Magento\App\Config\ScopePool',
      $arguments);
 ```
 
-### getCollectionMock {#getCollectionMock}
+### getCollectionMock
 
 Retrieves a collection instance with mocked getIterator method.
 
@@ -81,7 +81,7 @@ $optionCollection =
           [$options]);
 ```
 
-### getConstructArguments {#getConstructArguments}
+### getConstructArguments
 
 Lists dependency mocks for a specified class.
 

@@ -81,7 +81,7 @@ The following figure shows the logic for partial reindexing.
 
 ![Partial indexing workflow](../../../_images/index_indexers_flow.png)
 
-### Indexer status {#m2devgde-indexing-status}
+### Indexer status
 
 Depending on whether index data is up to date, an indexer status value is one of the following:
 
@@ -118,7 +118,7 @@ The status values in the `indexer_state` or `mview_state` database tables may no
 An additional benefit of this mode is that the application will, internally, also see a more accurate status of the indexers and if an indexer failed, the application will now see this and the cronjob will pick up the indexer to try it again.
 Without this mode, it was necessary to manually reset the indexer when it failed. With this mode enabled, this should no longer be the case if the reindexing doesn't fail again during the next attempt.
 
-### Indexing modes {#m2devgde-indexing-modes}
+### Indexing modes
 
 Reindexing can be performed in two modes:
 
@@ -148,7 +148,7 @@ The following figure shows an example of setting indexers to Update by Schedule:
 
 ![Changing indexer modes](../../../_images/index_index-modes.png)
 
-### Mview {#m2devgde-mview}
+### Mview
 
 The `mview.xml` file is used to track database changes for a certain entity.
 
@@ -219,7 +219,7 @@ You can reindex by:
 *  Using a [cron job](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html), which is preferred because indexing runs every minute.
 *  Using the [`magento indexer:reindex [indexer]`](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#config-cli-subcommands-index-reindex) command, which reindexes selected indexers, or all indexers, one time only.
 
-## Indexers {#m2devgde-indexing-outofbox}
+## Indexers
 
 Magento Open Source implements the following indexers (use [bin/magento indexer:info](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#indexerinfo) to list the indexers):
 

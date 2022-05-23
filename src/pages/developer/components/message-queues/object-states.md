@@ -21,7 +21,7 @@ In addition to changes in the configuration, a new store view or a new website c
 
 If `PoisonPill` determines the copy of the in-memory state needs to be re-instantiated and you have set up a `consumers_runner` cron job, the application will automatically restart all consumers on the next run of the job. If you did not set up the cron job, you will need to manually restart any consumers that were terminated by `PoisonPill`.
 
-### How to use `PoisonPill` interfaces {#how-to-use}
+### How to use `PoisonPill` interfaces
 
 The method `put` of `PoisonPillPutInterface` using in the `Magento\Store\Model\Website`
 

@@ -7,7 +7,7 @@ A *cache type* enables you to specify what is cached and enables merchants to cl
 
 The tag *scope* provides a mechanism for a cache type.
 
-## Cache type configuration {#m2devgde-cache-type-configuration}
+## Cache type configuration
 
 Declare a new cache type in the `<module_dir>/etc/cache.xml` file with the following attributes:
 
@@ -38,7 +38,7 @@ For example:
 
 You may declare multiple cache types.
 
-## Cache type model {#m2devgde-cache-type-model}
+## Cache type model
 
 ```php
 <?php
@@ -86,7 +86,7 @@ You must specify the following parameters:
 *  `%cache_type_id%` defines the unique identifier of a cache type.
 *  `%CACHE_TYPE_TAG%` defines the unique tag to be used in the cache type scoping.
 
-## Store data in a custom cache type {#m2devgde-store-data-cache-type}
+## Store data in a custom cache type
 
 To store serialized data in a custom cache, follow these steps:
 
@@ -118,7 +118,7 @@ To store serialized data in a custom cache, follow these steps:
     );
     ```
 
-## Retrieve data from custom cache type {#m2devgde-retrieve-data-cache-type}
+## Retrieve data from custom cache type
 
 Retrieve data from the cache with:
 
@@ -128,7 +128,7 @@ $cacheKey  = \VendorName\ModuleName\Model\Cache\Type\CacheType::TYPE_IDENTIFIER;
 $data = $this->serializer->unserialize($this->cache->load($cacheKey));
 ```
 
-## Invalidate custom cache type {#m2devgde-invalidate-cache-type}
+## Invalidate custom cache type
 
 To invalidate a custom cache type, follow these steps:
 
@@ -152,7 +152,7 @@ To invalidate a custom cache type, follow these steps:
     $this->typeList->invalidate($cacheKey);
     ```
 
-## Flush custom cache type {#m2devgde-flush-cache-type}
+## Flush custom cache type
 
 The custom cache type can be flushed in the following ways:
 
@@ -168,7 +168,7 @@ $this->typeList->cleanType($cacheKey);
 [tagscope]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Frontend/Decorator/TagScope.php
 [type]: https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/Model/Cache/Type/Notification.php
 
-## Examples {#m2devgde-cache-type-model}
+## Examples
 
 A cache type `translate` is declared in the Magento_Translation module using the `cache.xml` configuration file.
 

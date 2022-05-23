@@ -5,7 +5,7 @@ functional_areas:
   - Search
 ---
 
-## What is a repository? {#m2devgde-repository-intro}
+## What is a repository?
 
 Repositories give service requestors the ability to perform create, read, update, and delete (CRUD) operations on entities or a list of entities.
 A repository is an example of a [service contract](service-contracts/design-patterns.md), and its implementation is part of the domain layer.
@@ -19,7 +19,7 @@ Any field contained in the repository class must also be stateless.
 If your repository needs to provide functionality that requires state, such as for caching,  use the registry pattern.
 A good example that uses this pattern is the [`CustomerRepository`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/Model/ResourceModel/CustomerRepository.php) class.
 
-## Search Criteria {#m2devgde-search-criteria}
+## Search criteria
 
 A Search Criteria is an implementation of the [`SearchCriteriaInterface`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Api/SearchCriteriaInterface.php) class that allows you to build custom requests with different conditions.
 
@@ -45,7 +45,7 @@ This filter will find all urls with the suffix of "magento.com".
 
 A full list of condition types can be found in the [Rest API Reference](https://devdocs.magento.com/guides/v2.4/rest/performing-searches.html).
 
-### Filter Group
+### Filter group
 
 The [`FilterGroup`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Api/Search/FilterGroup.php) class acts like a collection of Filters that apply one or more criteria to a search.
 
@@ -113,7 +113,7 @@ $searchCriteria
     ->setCurrentPage(2); //show the 21st to 40th entity
 ```
 
-## Search Result
+## Search result
 
 The `getList(SearchCriteria $searchCriteria)` method defined in your repository should return a Search Result object.
 This object is an instance of a class that implements the interface [`SearchResultInterface`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Api/SearchResultsInterface.php).
@@ -139,14 +139,14 @@ $searchCriteria = $this->searchCriteriaBuilder->create();
 $productsItems  = $this->productRepository->getList($searchCriteria)->getItems();
 ```
 
-## Search Criteria Unify Processing {#m2devgde-searchcriteria-unify-processing}
+## Search criteria unify processing
 
 A Collection Processor is an implementation of the [`CollectionProcessorInterface`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Api/SearchCriteria/CollectionProcessorInterface.php) interface that unifies the application of custom filters, sorting, and paginating.
 It contains a one method process that applies a Search Criteria object to an abstract database collection.
 
 You can use [virtual typing](dependency-injection.md#dependency-types) in your `di.xml` file to specify the processors used in the Collection Processor.
 
-### Filter Processor
+### Filter processor
 
 The [`FilterProcessor`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Api/SearchCriteria/CollectionProcessor/FilterProcessor.php) class applies Filter Groups and their filters to a collection.
 
@@ -244,7 +244,7 @@ class ProductCategoryFilter implements CustomFilterInterface
 | `customFilters` | An array of filters implementing the [`CustomFilterInterface`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Api/SearchCriteria/CollectionProcessor/FilterProcessor/CustomFilterInterface.php). These filters allow you to apply custom logic to a particular abstract database collection. |
 | `fieldMapping` | Maps field names defined in the search Criteria to the names in an abstract database collection |
 
-### Sorting Processor
+### Sorting processor
 
 The [`SortingProcessor`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Api/SearchCriteria/CollectionProcessor/SortingProcessor.php) class applies the sorting order of a search criteria to an abstract database collection.
 
@@ -270,11 +270,11 @@ Below is an example of how you can configure a Sorting Processor virtual type in
 | `fieldMapping` | Maps field names defined in the search Criteria to the names in an abstract database collection |
 | `defaultOrders`| The ordering applied when there are none defined in a search criteria. |
 
-### Pagination Processor
+### Pagination processor
 
 The [`PaginationProcessor`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Api/SearchCriteria/CollectionProcessor/PaginationProcessor.php) class applies the current page and page size of the search criteria to an abstract database collection.
 
-### Join Processor
+### Join processor
 
 The [`JoinProcessor`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Api/SearchCriteria/CollectionProcessor/JoinProcessor.php) class allows you to join fields from other tables into an abstract database collection.
 To join a table, implement `Magento\Framework\Api\SearchCriteria\CollectionProcessor\JoinProcessor\CustomJoinInterface::apply(AbstractDb $collection)`. Inside the class, use the `$collection->join(…)` method.
@@ -405,7 +405,7 @@ The `Magento\Tax\Model\Api\SearchCriteria\TaxRuleCollectionProcessor`:
 </virtualType>
 ```
 
-## Using Collection Processors in Repositories
+## Using collection processors in repositories
 
 Below is an example of how the [`CustomerRepositoryInterface`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/Model/ResourceModel/CustomerRepository.php) repository class uses a Collection Processor.
 

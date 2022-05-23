@@ -6,7 +6,7 @@ redirect_from:
   -  /guides/v2.3/config-guide/cache/caching-database.html
 ---
 
-## Overview of database caching {#mage-cache-db-over}
+## Overview of database caching
 
 This topic discusses how to use the database for caching. After you complete these tasks, cached objects are stored in the `cache` and `cache_tag` database tables. Nothing is stored `var/cache` or `var/page_cache`.
 
@@ -20,13 +20,13 @@ This topic discusses how to set up database caching and how to verify database c
 Database caching---like file-based caching--- works well in a development environment but we _strongly recommend_ you use [Varnish] in production instead.
 Varnish is designed to accelerate the HTTP protocol.
 
-## Prerequisites {#mage-cache-db-prereq}
+## Prerequisites
 
 Before you continue, if you're using your own frontend cache, make sure you [associate cache frontends with cache types]. If you're using the `default` [frontend](https://glossary.magento.com/frontend) cache, you don't have to do that.
 
 We provide [sample configurations] at the end of this topic.
 
-## Database caching using the `default` cache frontend {#mage-cache-db-di}
+## Database caching using the `default` cache frontend
 
 To enable database caching using the `default` frontend, you must modify the `<magento_root>/app/etc/di.xml` file, which is the global deployment injection configuration for the application.
 
@@ -100,7 +100,7 @@ To modify `di.xml`:
 
 1. Continue with [Verify database caching is working].
 
-## Database caching using a custom cache frontend {#mage-cache-db-env}
+## Database caching using a custom cache frontend
 
 This section discusses how to set up database caching with a custom [cache frontend](https://glossary.magento.com/cache-frontend).
 
@@ -148,7 +148,7 @@ To enable database caching using a custom cache frontend, you must modify `<mage
 1. Save your changes to `env.php` and exit the text editor.
 1. Continue with the next section.
 
-## Verify database caching is working {#mage-cache-db-verify}
+## Verify database caching is working
 
 To verify database caching is working, clear the current cache directories, go to any cacheable page in a web browser, and verify that data is written to the database and not to the file system.
 
@@ -180,7 +180,7 @@ Use the following steps:
 1. Verify both directories are empty; if not, edit `di.xml` again and correct any issues.
 1. Use a database tool such as [phpMyAdmin] to verify there is data in the `cache` and `cache_tag` tables.
 
-   The following figures show examples. The important thing is that there are rows in the tables. *The data in your tables will be different than the following*.
+   The following figures show examples. The important thing is that there are rows in the tables. _The data in your tables will be different than the following_.
 
    `cache` table example.
 
@@ -190,11 +190,11 @@ Use the following steps:
 
    ![Sample contents of the cache tag table with database caching enabled](../../../_images/config-db_cache-tag-table.png)
 
-## Configuration examples {#mage-cache-db-config}
+## Configuration examples
 
 This section contains code sample snippets to refer to when configuring database caching.
 
-### Sample `di.xml` for the default cache frontend {#mage-cache-db-config-default}
+### Sample `di.xml` for the default cache frontend
 
 `di.xml` snippet:
 
@@ -220,7 +220,8 @@ This section contains code sample snippets to refer to when configuring database
 </type>
 ```
 
-### Sample `env.php` for a custom cache frontend {#mage-cache-db-config-custom}
+### Sample `env.php` for a custom cache frontend
+
 `env.php` snippet that enables all cache types with a custom frontend named `magento_cache`:
 
 ```php

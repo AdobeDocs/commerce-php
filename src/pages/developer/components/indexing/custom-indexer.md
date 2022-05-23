@@ -3,7 +3,7 @@ group: php-developer-guide
 title: Adding a custom indexer
 ---
 
-## Adding a custom indexer {#m2devgde-indexing-custom}
+## Adding a custom indexer
 
 This topic discusses how to create a custom indexer. We've recently made a performance improvement that enables you to declare one or more *shared* indexers; if one of the shared indexes is already up-to-date, it doesn't need to be reindexed.
 

@@ -3,7 +3,7 @@ group: php-developer-guide
 title: Glossary of common terms
 ---
 
-### Component {#gloss-component}
+### Component
 
 We refer to what you're coding as *components*. (Composer refers to them as <a href="https://getcomposer.org/doc/05-repositories.md#packages" target="_blank">*packages*</a>; the terms component and package are equivalent.) A [component](https://glossary.magento.com/magento-component) can be classified into the following *types*:
 
@@ -24,7 +24,7 @@ You can *package* your components as follows:
 
 Commerce Marketplace uses the blanket term *product* to refer to a component or a [metapackage](https://glossary.magento.com/metapackage).
 
-### Metapackage {#gloss-meta}
+### Metapackage
 
 Commerce Marketplace requires more than one component to be packaged as a *metapackage*, which consists of only a `composer.json` that specifies individual components and their dependencies. (Commerce Marketplace also refers to a metapackage as an *extension*.)
 

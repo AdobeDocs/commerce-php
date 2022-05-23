@@ -10,13 +10,13 @@ menu_order: 2
 <!-- http://olgakopylova.espritica.com/naming-conventions-for-cli-commands-in-magento-2/
  -->
 
-## Naming guideline overview {#cli-over}
+## Naming guideline overview
 
 As an [extension](https://glossary.magento.com/extension) developer, you can now create and distribute your own commands for Adobe Commerce and Magento Open Source applications. But as for any implementation, it's also important to follow some general conventions to keep your commands consistent with commands from other developers. Being consistent in this way reduces the user's learning curve.
 
 This topic discusses our recommended naming conventions.
 
-## Command name {#cli-name}
+## Command name
 
 A command *name* is a part of the command, which defines behavior of the command on the very high level. In the command it goes right after the command's name.
 For example, in `bin/magento setup:upgrade`, `bin/magento` is the command's name and `setup:upgrade` is the name of the command.
@@ -61,7 +61,7 @@ bin/magento setup:db-data:upgrade
 <InlineAlert variant="info" slots="text"/>
 `db-schema` and `db-data` are examples of compound words.
 
-## Command options and arguments {#cli-args}
+## Command options and arguments
 
 Options and arguments follow the command name and modify the command's behavior.
 
@@ -156,7 +156,7 @@ bin/magento module:disable --force=1 Magento_Catalog
 bin/magento module:disable -f=yes Magento_Catalog
 ```
 
-## Recommendations to avoid naming collisions {#cli-collision}
+## Recommendations to avoid naming collisions
 
 To avoid naming your command the same as another command, we recommend:
 

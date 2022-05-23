@@ -6,7 +6,7 @@ menu_title: Public interfaces & APIs
 menu_order: 3
 ---
 
-## What is a public interface? {#public-interface}
+## What is a public interface?
 
 A _public interface_ is a set of code that third-party developers can call, implement, or build as a [plug-in](https://glossary.magento.com/plug-in). Adobe guarantees that this code will not change in subsequent releases without a major version change.
 
@@ -37,7 +37,7 @@ interface CatalogRuleRepositoryInterface
 ...
 ```
 
-## What is an API? {#api-definition}
+## What is an API?
 
 An application programming interface (API) is a set of interfaces and their implementations that a module provides to other modules.
 
@@ -168,7 +168,7 @@ class CatalogRuleRepository implements CatalogRuleRepositoryInterface
 }
 ```
 
-### API types {#api-types}
+### API types
 
 The following items are considered types of APIs:
 
