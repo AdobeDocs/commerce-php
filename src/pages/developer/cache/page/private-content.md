@@ -77,7 +77,8 @@ The are some exception cases:
 -  Store and website switching, after any of these action customer section `cart` will be updated.
 -  Customer cart lifetime option `section_data_lifetime` which is 60 minutes by default. After scheduled time passes, section `cart` will be updated.
 
-{: .bs-callout-info }
+<InlineAlert variant="info" slots="text"/>
+
 Product information will not be simultaneously updated in customer cart (product name, price, product enabled/disabled). Information will be updated after what comes first: `section_data_lifetime` time passed or an action that the update cart triggered.
 
 The following example adds comments to [app/code/Magento/Catalog/etc/frontend/sections.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/etc/frontend/sections.xml) so you can see what the code is doing.

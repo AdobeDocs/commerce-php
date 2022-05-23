@@ -7,7 +7,7 @@ contributor_link: https://github.com/drpayyne
 
 ## Overview
 
-The [`Magento\Framework\Math\Random`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Math/Random.php){:target="\_blank"} library provides the ability to generate random values and hashes.
+The [`Magento\Framework\Math\Random`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Math/Random.php) library provides the ability to generate random values and hashes.
 
 ## Usage
 
