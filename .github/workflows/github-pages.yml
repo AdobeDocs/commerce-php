@@ -1,7 +1,6 @@
 name: Github Pages
-on:
-  push:
-    branches: [main]
+on: workflow_dispatch
+ 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -23,7 +22,6 @@ jobs:
           REPO_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPO_OWNER: ${{ github.event.repository.owner.login }}
           REPO_NAME: ${{ github.event.repository.name }}
-          REPO_BRANCH: ${{ steps.vars.outputs.BRANCH_SHORT_REF }}
           GOOGLE_OAUTH_CLIENT_ID: ${{ secrets.GOOGLE_OAUTH_CLIENT_ID }}
           GOOGLE_OAUTH_CLIENT_SECRET: ${{ secrets.GOOGLE_OAUTH_CLIENT_SECRET }}
           GOOGLE_DOCS_TOKEN: ${{ secrets.GOOGLE_DOCS_TOKEN }}
