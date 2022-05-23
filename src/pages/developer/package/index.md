@@ -9,5 +9,5 @@ menu_node: parent
 
 Use [Composer](https://getcomposer.org/) to package your [module](https://glossary.magento.com/module).
 
-*  [Using Composer to package a module](package_module.html)
-*  *Distribution on Commerce Marketplace only*. [Upload your package to the Commerce Marketplace](http://docs.magento.com/marketplace/user_guide/getting-started.html)
+*  [Using Composer to package a module](component.md)
+*  *Distribution on Commerce Marketplace only*. [Upload your package to the Commerce Marketplace](https://developer.adobe.com/commerce/marketplace/guides/sellers/)

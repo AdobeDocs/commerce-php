@@ -7,12 +7,6 @@ menu_node:
 menu_order: 200
 ---
 
-#### Contents
-
-*  [Overview of directory clearing](#howdoi-clear-over)
-*  [What directories to clear](#howdoi-clear-what)
-*  [How to clear the directories](#howdoi-clear-how)
-
 ## Overview of directory clearing
 
 While you're developing components (modules, themes, and language packages), your rapidly changing environment requires you to periodically clear certain directories and caches. Otherwise, your code runs with exceptions and won't function properly.

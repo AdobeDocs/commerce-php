@@ -75,7 +75,7 @@ Each index can perform the following types of reindex operations:
 
 *  Partial reindex, which means rebuilding the database tables only for the things that changed (like changing a single product attribute or price)
 
-The type of reindex performed in each particular case depends on the type of changes made in the dictionary or in the system. This dependency is specific for [each indexer](#m2devgde-indexing-outofbox).
+The type of reindex performed in each particular case depends on the type of changes made in the dictionary or in the system. This dependency is specific for [each indexer](#indexers).
 
 The following figure shows the logic for partial reindexing.
 

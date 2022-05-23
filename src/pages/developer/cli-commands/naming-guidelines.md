@@ -136,7 +136,7 @@ Where:
 
 `-f` is a shortcut for a non-value option `--force`
 
-`arg1`, `arg2`, `frontend`, `vendor` and `themename` are arguments (see [Command options and arguments](#cli-args)).
+`arg1`, `arg2`, `frontend`, `vendor` and `themename` are arguments (see [Command options and arguments](#command-options-and-arguments)).
 
 Use options for:
 

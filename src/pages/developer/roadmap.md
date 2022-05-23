@@ -21,5 +21,5 @@ To satisfy the minimum required elements for creating or customizing your applic
    *  Language packages: [`language.xml`](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-i18n.html#config-cli-subcommands-xlate-pack-meta-xml)
 
 *  Distribute your component:
-   *  [Package your component](package/package-component.md) in `.zip` format.
+   *  [Package your component](package/component.md) in `.zip` format.
    *  If you upload the component to Commerce Marketplace, it should be less than 30MB in size.

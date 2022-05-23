@@ -14,9 +14,9 @@ The message queue topology is a Magento Open Source feature. It can be included 
 Configuring the message queue topology involves creating and modifying the following configuration files in the `<module>/etc` directory:
 
 *  [`communication.xml`](#communicationxml) - Defines aspects of the message queue system that all communication types have in common.
-*  [`queue_consumer.xml`](#queueconsumerxml) - Defines the relationship between an existing queue and its consumer.
-*  [`queue_topology.xml`](#queuetopologyxml) - Defines the message routing rules and declares queues and exchanges.
-*  [`queue_publisher.xml`](#queuepublisherxml) - Defines the exchange where a topic is published.
+*  [`queue_consumer.xml`](#queue_consumerxml) - Defines the relationship between an existing queue and its consumer.
+*  [`queue_topology.xml`](#queue_topologyxml) - Defines the message routing rules and declares queues and exchanges.
+*  [`queue_publisher.xml`](#queue_publisherxml) - Defines the exchange where a topic is published.
 
 ### Use Cases
 
