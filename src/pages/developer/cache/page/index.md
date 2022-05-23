@@ -10,7 +10,7 @@ Caching is one of the most effective ways to improve website performance. Genera
 
 Retrieving stored ([cached](https://glossary.magento.com/cache)) content from a previous request for the same client instead of requesting files from your server every time someone visits your site is a more efficient use of network bandwidth.
 
-The Magento page cache library contains a simple PHP reverse proxy that enables full page caching out of the box. A reverse proxy acts as an intermediary between visitors and your application and can reduce the load on your server.
+The Adobe Commerce and Magento Open Source page cache library contains a simple PHP reverse proxy that enables full page caching out of the box. A reverse proxy acts as an intermediary between visitors and your application and can reduce the load on your server.
 
 We recommend using [Varnish](https://devdocs.magento.com/guides/v2.4/config-guide/varnish/config-varnish.html), but you can use Magento's default caching mechanism instead, which stores cache files in any of the following:
 
@@ -40,7 +40,7 @@ Do not configure content pages (i.e., catalog, product, and CMS pages) to be unc
 
 ## Public and private content
 
-Reverse proxies serve "public" or shared content to more than one user. However, most Magento websites generate dynamic and personalized "private" content that should only be served to one user, which presents unique caching challenges. To address these challenges, Magento can distinguish between two types of content:
+Reverse proxies serve "public" or shared content to more than one user. However, most Adobe Commerce and Magebto Open Source websites generate dynamic and personalized "private" content that should only be served to one user, which presents unique caching challenges. To address these challenges, the application can distinguish between two types of content:
 
 -  **[Public](public-content.md)** - Public content is stored server side in your reverse proxy cache storage (e.g., file system, database, Redis, or Varnish) and is available to multiple customers. Examples of public content include header, footer, and category listing.
 

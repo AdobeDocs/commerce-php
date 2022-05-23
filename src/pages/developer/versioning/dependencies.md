@@ -8,7 +8,7 @@ redirect_from:
   - /guides/v2.3/extension-dev-guide/backward-compatibility.html
 ---
 
-Magento platform clients need notifications about breaking changes for their installed extensions and customizations when they upgrade their Magento installation.
+Adobe Commerce and Magento Open Source platform clients need notifications about breaking changes for their installed extensions and customizations when they upgrade to a new version.
 
 To achieve this, all third-party modules must obey the following rules:
 
@@ -19,7 +19,7 @@ To achieve this, all third-party modules must obey the following rules:
 
 ## Service Provider Interfaces
 
-A PHP Interface in Magento can be used several ways by the core product and extension developers.
+A PHP Interface in Adobe Commerce and Magento Open Source can be used several ways by the core product and extension developers.
 
 *  **As an API**. An interface is called by PHP code.
 *  **As a Service Provider Interface (SPI)**. An interface can be implemented, allowing code to provide functionality to the platform.

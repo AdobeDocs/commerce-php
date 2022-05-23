@@ -17,7 +17,7 @@ The sequence of installing patches is handled through a dependency-based approac
 
 <InlineAlert variant="info" slots="text"/>
 
-Magento prioritizes the declarative schema approach and executes updates from the [db_schema.xml](configuration.md) before the data and schema patches.
+Adobe Commerce and Magento Open Source prioritize the declarative schema approach and executes updates from the [db_schema.xml](configuration.md) before the data and schema patches.
 
 To define a dependency in a patch, add the method `public static function getDependencies()`
 to the patch class and return the class names of the patches this patch depends on. The dependency can be in any module.
@@ -113,7 +113,7 @@ class DummyPatch
     public function getAliases()
     {
         /**
-         * This internal Magento method, that means that some patches with time can change their names,
+         * This internal method, that means that some patches with time can change their names,
          * but changing name should not affect installation process, that's why if we will change name of the patch
          * we will add alias here
          */
@@ -124,7 +124,7 @@ class DummyPatch
 
 ## Reverting data patches
 
-Magento does not allow you to revert a particular module data patch. However, you can revert all `composer` installed or `non-composer` installed data patches using the `module:uninstall` command.
+Adobe Commerce and Magento Open Source do not allow you to revert a particular module data patch. However, you can revert all `composer` installed or `non-composer` installed data patches using the `module:uninstall` command.
 
 Run the following command to revert all `composer` installed data patches:
 

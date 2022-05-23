@@ -3,19 +3,19 @@ group: php-developer-guide
 title: Migrate install/upgrade scripts to declarative schema
 ---
 
-Magento provides several commands to help convert your installation and upgrade scripts to declarative schema. These commands also help you test your changes, roll back your changes if anything goes wrong, and help your module maintain backward compatibility.
+Adobe Commerce and Magento Open Source provide several commands to help convert your installation and upgrade scripts to declarative schema. These commands also help you test your changes, roll back your changes if anything goes wrong, and help your module maintain backward compatibility.
 
 <InlineAlert variant="info" slots="text"/>
 
 Once you start with data patches, you cannot continue to use upgrade scripts.
 
-## Convert install/upgrade schema scripts to  db_schema.xml files
+## Convert install/upgrade schema scripts to db_schema.xml files
 
-The **Schema Listener Tool** converts pre-Magento 2.3 migration scripts into declarative schema. To use this tool, you specify an argument when you run the `setup:install` or `setup:upgrade` CLI command. As Magento is installed or upgraded, the system logs all schema changes per module, then persists the changes in a series of `db_schema.xml` files (one per affected module).
+The **Schema Listener Tool** converts pre-Adobe Commerce and Magento Open Source 2.3 migration scripts into declarative schema. To use this tool, you specify an argument when you run the `setup:install` or `setup:upgrade` CLI command. As the application is installed or upgraded, the system logs all schema changes per module, then persists the changes in a series of `db_schema.xml` files (one per affected module).
 
 <InlineAlert variant="info" slots="text"/>
 
-The Schema Listener tool listens for schema changes and attempts to change Magento code, so it should not be run in production mode. It is disabled by default.
+The Schema Listener tool listens for schema changes and attempts to change application code, so it should not be run in production mode. It is disabled by default.
 
 To convert your install or upgrade script, run one of the following commands:
 
@@ -29,11 +29,11 @@ bin/magento setup:upgrade --convert-old-scripts=1
 
 <InlineAlert variant="info" slots="text"/>
 
-In Magento 2.3 Alpha, the `--convert-old-scripts` parameter was named `--convert_old_scripts`.
+In Adobe Commerce and Magento Open Source 2.3 Alpha, the `--convert-old-scripts` parameter was named `--convert_old_scripts`.
 
 ### Troubleshooting
 
-The Schema Listener Tool cannot convert everything that can appear in a pre-Magento 2.3 migration script.
+The Schema Listener Tool cannot convert everything that can appear in a pre-Adobe Commerce and Magento Open Source 2.3 migration script.
 
 *  The tool supports only DDL operations represented in `\Magento\Framework\DB\Adapter\Pdo\Mysql`. As a result, the tool ignores all custom DDL operations.
 *  The tool ignores all raw SQL in your `InstallSchema` or `UpgradeSchema` scripts.
@@ -72,7 +72,7 @@ bin/magento setup:install --dry-run=1
 bin/magento setup:upgrade --dry-run=1
 ```
 
-As a result of specifying the `--dry-run=1` flag, Magento writes a log file at `<Magento_Root>/var/log/dry-run-installation.log`. This file contains all the DDL SQL statements that are generated during installation. You can use these SQL statements for debugging and optimizing performance processes.
+As a result of specifying the `--dry-run=1` flag, the application writes a log file at `<Application_Root>/var/log/dry-run-installation.log`. This file contains all the DDL SQL statements that are generated during installation. You can use these SQL statements for debugging and optimizing performance processes.
 
 ## Safe installation and rollback
 
@@ -80,7 +80,7 @@ The advantage and the main problem of declarative schema is that it can blindly 
 
 To help prevent data loss, you can specify command line options that dump all the data that could be lost as a result of an installation. The dumped data can then be restored manually or automatically. These arguments are optional--you do not have to create a manual dump during a system upgrade. _(Note that this works only with schema.)_
 
-Magento provides options to the `setup:install` and `setup:upgrade` commands that enable safe installations and rollbacks:
+Adobe Commerce and Magento Open Source provide options to the `setup:install` and `setup:upgrade` commands that enable safe installations and rollbacks:
 
 `--safe-mode=1` - Creates a data dump during the installation or upgrade process.
 
@@ -96,9 +96,9 @@ Several types of operations have an effect on data dumps and rollbacks.
    *  Changing column precision
    *  Changing the column type
 
-*  *Opposite to destructive operations (ODO)* - In the case of a failed Magento installation, SQL DDL operations that are the opposite of  destructive operations can be used for rollback. For example, changing the column type from CHAR to INT is a destructive operation. The rollback operation changes the type from INT to CHAR.
+*  *Opposite to destructive operations (ODO)* - In the case of a failed installation, SQL DDL operations that are the opposite of destructive operations can be used for rollback. For example, changing the column type from CHAR to INT is a destructive operation. The rollback operation changes the type from INT to CHAR.
 
-When safe mode is enabled, Magento creates a CSV file each time a destructive operation for a table or column occurs. You can find these files at the following locations:
+When safe mode is enabled, Adobe Commerce and Magento Open Source create a CSV file each time a destructive operation for a table or column occurs. You can find these files at the following locations:
 
 *  `Magento_root/var/declarative_dumps_csv/{column_name_column_type_other_dimensions}.csv`
 *  `Magento_root/var/declarative_dumps_csv/{table_name}.csv`
@@ -113,7 +113,7 @@ Backward compatibility must be maintained. Therefore, declarative schema does no
 
 <InlineAlert variant="warning" slots="text"/>
 
-Whitelists cannot be generated on Magento instances that use a database prefix. The presence of a prefix impacts the names of some DB entities, such as the names of keys, and these names cannot be used in generated whitelists. The whitelist should be generated by the extension developer on a development environment with no prefixes.
+Whitelists cannot be generated on application instances that use a database prefix. The presence of a prefix impacts the names of some DB entities, such as the names of keys, and these names cannot be used in generated whitelists. The whitelist should be generated by the extension developer on a development environment with no prefixes.
 
 The `<module_vendor>/<module_name>/etc/db_schema_whitelist.json` file provides a history of all tables, columns, and keys added with declarative schema. It is required to allow drop operations. It can be generated manually or created automatically with the following command:
 
@@ -127,7 +127,7 @@ bin/magento setup:db-declaration:generate-whitelist [options]
 
 <InlineAlert variant="info" slots="text"/>
 
-In Magento 2.3 Alpha, the `setup:db-declaration:generate-whitelist` command was named `declaration:generate:whitelist`.
+In Adobe Commerce and Magento Open Source 2.3 Alpha, the `setup:db-declaration:generate-whitelist` command was named `declaration:generate:whitelist`.
 
 As a best practice, you should generate a new whitelist file for each release. You must generate the whitelist  in any release that contains changes in the `db_schema.xml` file.
 
@@ -178,4 +178,4 @@ The sample `db_schema_whitelist.json` file above contains system-generated const
 
 <InlineAlert variant="info" slots="text"/>
 
-In Magento 2.3.0, the identifying attribute for constraints and index definitions is `referenceId`. In pre-release versions, the attribute was `name`.
+In Adobe Commerce and Magento Open Source 2.3.0, the identifying attribute for constraints and index definitions is `referenceId`. In pre-release versions, the attribute was `name`.

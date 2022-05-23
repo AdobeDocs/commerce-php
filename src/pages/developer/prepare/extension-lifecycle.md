@@ -20,12 +20,12 @@ Follow these guidelines when developing your executable classes to have them run
 
 ## Schema initialization stages
 
-The schema initialization stages are the first set of processes Magento runs when your module is installed, re-installed, or upgraded.
+The schema initialization stages are the first set of processes that Adobe Commerce and Magento Open Source run when your module is installed, re-installed, or upgraded.
 
 ### Schema installation
 
-Magento executes the schema installation class during your module's initial install.
-If the `schema_version` for your module is found in the `setup_module` table, Magento skips this stage and proceeds to the [schema upgrade] stage.
+The application executes the schema installation class during your module's initial install.
+If the `schema_version` for your module is found in the `setup_module` table, the application skips this stage and proceeds to the [schema upgrade] stage.
 
 | **Class name:** | `InstallSchema`            |
 | **Interface:**  | [`InstallSchemaInterface`] |
@@ -58,7 +58,7 @@ class InstallSchema implements InstallSchemaInterface
 
 ### Schema upgrade
 
-Magento executes your module's schema upgrade class when it detects an earlier installation.
+The applicationexecutes your module's schema upgrade class when it detects an earlier installation.
 The purpose of this class is to update the database structure or apply patches.
 
 | **Class name** | `UpgradeSchema`            |
@@ -92,7 +92,7 @@ class UpgradeSchema implements UpgradeSchemaInterface
 
 ### Recurring schema event
 
-Magento executes your module's recurring schema event class after every schema installation or upgrade stage.
+The applicationexecutes your module's recurring schema event class after every schema installation or upgrade stage.
 This class makes final modifications to the database schema after it has been installed or updated.
 
 | **Class name** | `Recurring`                |
@@ -126,11 +126,11 @@ class Recurring implements InstallSchemaInterface
 
 ## Data initialization
 
-Magento goes through your module's data initialization stages after the schema initialization processes complete.
+The applicationgoes through your module's data initialization stages after the schema initialization processes complete.
 
 ### Data installation
 
-Magento executes the data installation class during your module's initial install unless an existing version entry is found in the database.
+The applicationexecutes the data installation class during your module's initial install unless an existing version entry is found in the database.
 The purpose of this class is to populate the database with initial data.
 
 | **Class name** | `InstallData`            |
@@ -164,7 +164,7 @@ class InstallData implements InstallDataInterface
 
 ### Data upgrade
 
-Magento executes the data upgrade class when it detects an earlier version in the `data_version` field for the module in the `setup_module` table.
+The applicationexecutes the data upgrade class when it detects an earlier version in the `data_version` field for the module in the `setup_module` table.
 The purpose of this class is to fix corrupted data or populate a new data field after a schema change.
 
 | **Class name** | `UpgradeData`            |
@@ -198,7 +198,7 @@ class UpgradeData implements UpgradeDataInterface
 
 ### Recurring data event
 
-Magento executes your module's recurring data event class after every data installation or upgrade stage.
+The applicationexecutes your module's recurring data event class after every data installation or upgrade stage.
 This class makes final modifications to the database store after data has been installed or updated.
 
 | **Class name** | `RecurringData`          |
@@ -334,7 +334,7 @@ class UpgradeData implements UpgradeDataInterface
 
 ## Uninstall event
 
-Magento executes the uninstall event class when your module is uninstalled using the following command:
+The applicationexecutes the uninstall event class when your module is uninstalled using the following command:
 
 ```bash
 bin/magento module:uninstall --remove-data <module_name>

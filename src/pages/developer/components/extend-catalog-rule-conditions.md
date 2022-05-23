@@ -10,7 +10,7 @@ For more information about catalog price rules, refer to [Catalog Rules](https:/
 
 ## Default Conditions
 
-In the `Conditions` tab, Magento has the following product attributes in the `add conditions` section.
+In the `Conditions` tab, Adobe Commerce and Magento Open Source have the following product attributes in the `add conditions` section.
 
 ![Catalog Rule Conditions](../../_images/conditions-section-v2.png)
 

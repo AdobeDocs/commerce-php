@@ -11,12 +11,12 @@ The DateTime library provides utilities to work with date and time formatting. P
 
 |Method|Description|
 |--- |--- |
-| `formatDate` | Format the date to the Magento internal format |
+| `formatDate` | Format the date to the internal format |
 | `isEmptyDate` | Check whether provided date value is empty or null |
 
 ### Example
 
-The following example shows how to format the current date and time into the Magento internal format.
+The following example shows how to format the current date and time into the internal format.
 
 ```php
 <?php

@@ -6,7 +6,7 @@ title: Asynchronous and deferred operations
 Asynchronous operations are not native to PHP but it is still possible to execute heavy
 operations simultaneously, or delay them until they absolutely have to be finished.
 
-To make writing asynchronous code easier, Magento provides the `DeferredInterface` to use with asynchronous operations.
+To make writing asynchronous code easier, Adobe Commerce and Magento Open Source provide the `DeferredInterface` to use with asynchronous operations.
 This allows client code to work with asynchronous operations just as it would with standard operations.
 
 ## DeferredInterface

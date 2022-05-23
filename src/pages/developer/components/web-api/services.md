@@ -7,7 +7,7 @@ functional_areas:
   - Services
 ---
 
-You can configure a Magento or third-party service as a web [API](https://glossary.magento.com/api).
+You can configure an Adobe Commerce, Magento Open Source, or third-party service as a web [API](https://glossary.magento.com/api).
 
 To [configure a web API](#configure-webapi), you define [XML](https://glossary.magento.com/xml) elements and attributes in the `webapi.xml` XML configuration file for the [module](https://glossary.magento.com/module) for the service. The `etc/webapi.xsd` file for your module specifies an XML schema file for validation. The default XML schema validation rules are stored in `app/code/Magento/Webapi/etc/webapi.xsd` or `vendor/magento/module-webapi/etc/webapi.xsd` file.
 
@@ -30,13 +30,13 @@ To configure a web API for a service, you define XML elements and attributes in 
 
 ## Service Interface Requirements {#service-interface-requirements}
 
-After a service class is configured using the `webapi.xml` file, Magento dynamically makes the service method available using the web API. Because this is automatically generated, it is important that the service class be formatted a very specific way.
+After a service class is configured using the `webapi.xml` file, the application dynamically makes the service method available using the web API. Because this is automatically generated, it is important that the service class be formatted a very specific way.
 
-This makes sense when you consider that while a service class possibly expects objects of a specific class type (such a save method) and possibly returns a result that is a class or array of classes, neither SOAP nor REST are guaranteed to have that class defined on the client end or even to have a concept similar to a [PHP](https://glossary.magento.com/php) class. Because of this, Magento uses reflection to automatically create these classes and sets data that you have submitted in JSON or HTTP array syntax onto an instance of the expected PHP class when calling the service method.
+This makes sense when you consider that while a service class possibly expects objects of a specific class type (such a save method) and possibly returns a result that is a class or array of classes, neither SOAP nor REST are guaranteed to have that class defined on the client end or even to have a concept similar to a [PHP](https://glossary.magento.com/php) class. Because of this, the application uses reflection to automatically create these classes and sets data that you have submitted in JSON or HTTP array syntax onto an instance of the expected PHP class when calling the service method.
 
-Conversely, if an object is returned from one of these methods, Magento automatically converts that PHP object into a JSON or SOAP object before sending it over the web API.
+Conversely, if an object is returned from one of these methods, the application automatically converts that PHP object into a JSON or SOAP object before sending it over the web API.
 
-To do this conversion, the Magento application must know information about both the parameters the service method is expecting and the return type of the result the service method delivers. PHP 5.x does not allow for type-hinting for scalar parameters or for return types so in order to convert the array or JSON object to or from the appropriate class type, PHP relies on the PHP doc block. Specifically, the lines containing `@param` and `@return` must follow certain rules for Magento to be able to correctly convert between types.
+To do this conversion, the application must know information about both the parameters the service method is expecting and the return type of the result the service method delivers. PHP 5.x does not allow for type-hinting for scalar parameters or for return types so in order to convert the array or JSON object to or from the appropriate class type, PHP relies on the PHP doc block. Specifically, the lines containing `@param` and `@return` must follow certain rules for the application to be able to correctly convert between types.
 
 For SOAP and REST to work correctly, the following rules must be followed by the service interface's doc block:
 
@@ -121,7 +121,7 @@ To define web API components, set these attributes on these XML elements in the
             </li>
             <li>
                `url`. Required. String.
-                  The URL to the Magento resource. The string must begin with `/V1` (or `/V&lt;integer&gt;`) to indicate the version number. You must prepend any template parameters with a colon. Example: `/V1/products/:sku
+                  The URL to the resource. The string must begin with `/V1` (or `/V&lt;integer&gt;`) to indicate the version number. You must prepend any template parameters with a colon. Example: `/V1/products/:sku
             </li>
             <li>
                `secure`. Optional. Boolean. Indicates that the route is accessible over only HTTPS. Any attempts to access this route over non-secure causes an exception.
@@ -172,8 +172,8 @@ To define web API components, set these attributes on these XML elements in the
          <ul>
             <li>
                `ref`.
-                  Required. Referenced resource. Valid values are `self`, `anonymous`, or a Magento resource, such as `Magento_Customer::group`.
-               <strong>Note</strong>:The Magento web API framework enables guest users to access resources that are configured with `anonymous` permission.
+                  Required. Referenced resource. Valid values are `self`, `anonymous`, or a resource, such as `Magento_Customer::group`.
+               <strong>Note</strong>:The web API framework enables guest users to access resources that are configured with `anonymous` permission.
                   Any user that the framework cannot authenticate through existing <a href="https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication.html">authentication
                      mechanisms</a> is considered a guest user.
             </li>

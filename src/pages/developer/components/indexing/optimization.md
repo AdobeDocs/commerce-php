@@ -7,7 +7,7 @@ redirect_from:
 
 ## Indexer Batching
 
-Magento can increase the memory for processing a large amount of data by using memory engines instead of InnoDB. The algorithm increases the memory value for the `max_heap_table_size` and `tmp_table_size` MySQL parameters.
+Adobe Commerce and Magento Open Source can increase the memory for processing a large amount of data by using memory engines instead of InnoDB. The algorithm increases the memory value for the `max_heap_table_size` and `tmp_table_size` MySQL parameters.
 
 The interface `BatchSizeManagementInterface` provides the ability to set the MEMORY table size for indexer processes according to batch size and index row size.
 
@@ -55,7 +55,7 @@ interface IndexTableRowSizeEstimatorInterface
 
 ### Exceeding allocated memory size
 
-When the allocated memory size for a temporary table will be greater than 20% of `innodb_buffer_pool_size`, the following message is written to the Magento log.
+When the allocated memory size for a temporary table will be greater than 20% of `innodb_buffer_pool_size`, the following message is written to the log.
 
 `Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size.`
 
@@ -108,7 +108,7 @@ The following examples illustrate how to define a custom batch size for configur
 
 ### Setting batch size with environment variables
 
-As of Magento 2.4.3, it is possible to configure the batch size with environment variables, or in `app/etc/env.php`, for the following indexers:
+As of Adobe Commerce and Magento Open Source 2.4.3, it is possible to configure the batch size with environment variables, or in `app/etc/env.php`, for the following indexers:
 
 *  `cataloginventory_stock`
 *  `catalog_category_product`
@@ -161,9 +161,9 @@ Batch size for `cataloginventory_stock`, `catalog_product_price`, `inventory` ca
 
 ## Indexer Table Switching
 
-Magento optimizes certain indexer processes to prevent deadlocks and wait locks caused by read/write collisions on the same table. In these cases, Magento uses separate tables for performing read operations and reindexing. As a result of this table switching process, customers are not impacted when you run a full reindex. For example, when `catalog_product_price` is reindexing, customers won't be slowed down as they navigate on Categories pages, search products, or user layer navigation filters with price filters.
+Adobe Commerce and Magento Open Source optimize certain indexer processes to prevent deadlocks and wait locks caused by read/write collisions on the same table. In these cases, the application uses separate tables for performing read operations and reindexing. As a result of this table switching process, customers are not impacted when you run a full reindex. For example, when `catalog_product_price` is reindexing, customers won't be slowed down as they navigate on Categories pages, search products, or user layer navigation filters with price filters.
 
-Magento uses the following tables to support table switching.
+The application uses the following tables to support table switching.
 
 Indexer name | Tables used
 --- | --- | ---
@@ -183,7 +183,7 @@ The indexer table switching mechanism requires additional database storage.
 ### EAV indexer optimization
 
 The Product EAV indexer reorganizes the EAV product structure to a flat structure.
-As of Magento 2.3, under certain circumstances, you can disable this indexer to improve performance. (Its indexation takes about 5 minutes on a large Magento 2 Commerce performance profile.)
+As of Adobe Commerce and Magento Open Source 2.3, under certain circumstances, you can disable this indexer to improve performance. (Its indexation takes about 5 minutes on a large Commerce performance profile.)
 
 You cannot disable the Product EAV indexer if you have installed any 3rd-party extensions that rely on the Product EAV indexer.
 

@@ -5,13 +5,12 @@ title: Test your component
 
 ## Unit and Integration Tests {#test-unit}
 
-Run the PHPUnit based Magento unit and integration tests.
-See the [Magento Testing Overview].
+Run the PHPUnit based Adobe Commerce and Magento Open Source unit and integration tests.
+See the [Testing Overview].
 
 ## Functional testing {#test-functional}
 
-For further testing with the Magento functional testing frameworks, see
-[Functional Testing Framework] and [Magento Functional Testing Framework].
+For further testing with the functional testing frameworks, see [Functional Testing Framework].
 
 ## Test using Magento Open Source {#test-comm}
 
@@ -24,7 +23,7 @@ Test your component by deploying Magento Open Source and adding the component to
 },
 ```
 
-[Register] your component, including the file location. Verify it works as expected, without compromising Magento functionality.
+[Register] your component, including the file location. Verify it works as expected, without compromising functionality.
 
 ## Test installing your component {#test-install}
 
@@ -44,19 +43,19 @@ Before you publish your component, test installing it.
 
 ## More information
 
-See these resources for testing in [PHP](https://glossary.magento.com/php) and validating Magento components:
+See these resources for testing in [PHP](https://glossary.magento.com/php) and validating components:
 
-*  The [Magento Coding Standard] provides a set of rules and sniffs for the [PHP_CodeSniffer] tool
-*  [Technical Deep Dive: How to Pass the Magento Marketplace Extension Quality Program] (video) from Magento Imagine 2017
-*  [Extension Quality Program](https://developer.adobe.com/commerce/marketplace/guides/sellers/extension-quality-program/) in the Magento User Guide
+*  The [Coding Standard] provides a set of rules and sniffs for the [PHP_CodeSniffer] tool
+*  [Technical Deep Dive: How to Pass the Commerce Marketplace Extension Quality Program] (video) from Magento Imagine 2017
+*  [Extension Quality Program](https://developer.adobe.com/commerce/marketplace/guides/sellers/extension-quality-program/) in the Admin User Guide
 
-[Magento Testing Overview]: https://devdocs.magento.com/guides/v2.4/test/testing.html
-[Magento Functional Testing Framework]: https://devdocs.magento.com/mftf/docs/introduction.html
+[Testing Overview]: https://devdocs.magento.com/guides/v2.4/test/testing.html
+[Functional Testing Framework]: https://devdocs.magento.com/mftf/docs/introduction.html
 [register]: ../build/component-registration.md
 [Package your component]: ../package/component.md
 [Install your component]: https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/dev_add-update.html
 [Install using Composer]: https://devdocs.magento.com/guides/v2.4/install-gde/install/sample-data-after-composer.html
-[Magento Coding Standard]: https://github.com/magento/magento-coding-standard
+[Coding Standard]: https://github.com/magento/magento-coding-standard
 [PHP_CodeSniffer]: https://github.com/squizlabs/PHP_CodeSniffer
-[Technical Deep Dive: How to Pass the Magento Marketplace Extension Quality Program]: https://magento.com/resources/technical-deep-dive-how-pass-magento-marketplace-extension-quality-program
+[Technical Deep Dive: How to Pass the Commerce Marketplace Extension Quality Program]: https://magento.com/resources/technical-deep-dive-how-pass-magento-marketplace-extension-quality-program
 [01 The Module Skeleton Kata]: https://www.youtube.com/watch?v=JvBWJ6Lm9MU)

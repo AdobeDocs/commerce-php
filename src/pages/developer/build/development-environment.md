@@ -12,29 +12,29 @@ A typical software development flow is as follows:
 
 **Local dev machine** > **QA/integration server** > **Preview server** (optional) > **Production server**
 
-Whether you are writing a new Magento 2 [extension](https://glossary.magento.com/extension) or contributing to the [code base](https://github.com/magento/magento2), the first step for any developer is setting up a development environment.
+Whether you are writing a new [extension](https://glossary.magento.com/extension) or contributing to the [code base](https://github.com/magento/magento2), the first step for any developer is setting up a development environment.
 This article will guide you in setting up and optimizing your local development machine.
 
 ## Local development machine
 
-Your local development machine is where you develop and deploy your code to test it against a running Magento application.
+Your local development machine is where you develop and deploy your code to test it against a running Adobe Commerce or Magento Open Source application.
 Its configuration should be as close to a production server as possible.
 
-In your development machine, make sure you are running the Magento application in [developer mode](https://devdocs.magento.com/guides/v2.4/config-guide/bootstrap/magento-modes.html).
+In your development machine, make sure you are running the Adobe Commerce or Magento Open Source application in [developer mode](https://devdocs.magento.com/guides/v2.4/config-guide/bootstrap/magento-modes.html).
 You can enable this mode with the command `bin/magento deploy:mode:set developer`.
 
 ### Installation
 
-The following is a list of the different ways you can install Magento 2 locally:
+The following is a list of the different ways you can install Adobe Commerce or Magento Open Source locally:
 
 *  **Manual installation**\\
-   If you are developing on a local machine that meets the system requirements, you can follow the same steps as [installing Magento](https://devdocs.magento.com/guides/v2.4/install-gde/bk-install-guide.html) on a production server.
+   If you are developing on a local machine that meets the system requirements, you can follow the same steps for [installing](https://devdocs.magento.com/guides/v2.4/install-gde/bk-install-guide.html) on a production server.
 *  **Virtual Machine (VM) installation**\\
-   Installing Magento 2 in a virtual environment allows you to run Magento 2 without the need to install a local [LAMP](https://en.wikipedia.org/wiki/LAMP_(software_bundle)) stack.
+   Installing Adobe Commerce and Magento Open Source in a virtual environment allows you to run it without the need to install a local [LAMP](https://en.wikipedia.org/wiki/LAMP_(software_bundle)) stack.
 
-   You can use a VM tool, such as [VirtualBox](https://www.virtualbox.org/wiki/VirtualBox), together with a virtual environment tool, such as [Vagrant](https://www.vagrantup.com/) or [Docker](https://www.docker.com/), to create reusable and shareable instances of Magento for development.
+   You can use a VM tool, such as [VirtualBox](https://www.virtualbox.org/wiki/VirtualBox), together with a virtual environment tool, such as [Vagrant](https://www.vagrantup.com/) or [Docker](https://www.docker.com/), to create reusable and shareable instances for development.
 
-   A search for ["magento developer box"](https://github.com/search?utf8=%E2%9C%93&q=magento+developer+box) in GitHub provides a list of unofficial virtual machines configured for Magento development.
+   A search for ["magento developer box"](https://github.com/search?utf8=%E2%9C%93&q=magento+developer+box) in GitHub provides a list of unofficial virtual machines configured for development.
 
 ### Optimal Configuration
 

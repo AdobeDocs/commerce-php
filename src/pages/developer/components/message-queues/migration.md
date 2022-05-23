@@ -8,9 +8,9 @@ functional_areas:
   - Setup
 ---
 
-### Migrate from Magento 2.1 to 2.2
+### Migrate from 2.1 to 2.2
 
-To upgrade the message queues from Magento 2.1, you must create the following files in the `<module>/etc` directory for each [module](https://glossary.magento.com/module) that will use the message queue framework.
+To upgrade the message queues for Adobe Commerce or Magento Open Source 2.1, you must create the following files in the `<module>/etc` directory for each [module](https://glossary.magento.com/module) that will use the message queue framework.
 
 *  `queue_consumer.xml` - Defines the relationship between an existing queue and its consumer.
 *  `queue_topology.xml`- Defines the message routing rules and declares queues and exchanges.
@@ -22,11 +22,11 @@ For complete details about these files, see [Configure message queues](configura
 
 <InlineAlert variant="warning" slots="text"/>
 
-The Magento 2.1 `communication.xml` file has not changed for Magento 2.2.
+The Adobe Commerce and Magento Open Source 2.1 `communication.xml` file has not changed for Adobe Commerce and Magento Open Source 2.2.
 
 #### Create the `queue_consumer.xml` file
 
-The first column in the following table lists the all the parameters in the `queue_consumer.xml` file. The second column lists where in the Magento 2.1 `queue.xml` file the equivalent parameters are located.
+The first column in the following table lists the all the parameters in the `queue_consumer.xml` file. The second column lists where in the Adobe Commerce and Magento Open Source 2.1 `queue.xml` file the equivalent parameters are located.
 
 | 2.2 Attribute  | 2.1 queue.xml source |
 | ---------------- | ----------- |
@@ -39,7 +39,7 @@ The first column in the following table lists the all the parameters in the `que
 
 #### Create the `queue_topology.xml` file
 
-The first column in the following table lists the all the parameters in the `queue_topology.xml` file. The second column lists where in the Magento 2.1 `queue.xml` file the equivalent parameters are located.
+The first column in the following table lists the all the parameters in the `queue_topology.xml` file. The second column lists where in the Adobe Commerce and Magento Open Source 2.1 `queue.xml` file the equivalent parameters are located.
 
 | 2.2 Attribute  | 2.1 queue.xml source |
 | ---------------- | -----------|
@@ -58,7 +58,7 @@ The first column in the following table lists the all the parameters in the `que
 
 #### Create the `queue_publisher.xml` file
 
-The first column in the following table lists the all the parameters in the `queue_publisher.xml` file. The second column lists where in the Magento 2.1 `queue.xml` file the equivalent parameters are located.
+The first column in the following table lists the all the parameters in the `queue_publisher.xml` file. The second column lists where in the Adobe Commerce and Magento Open Source 2.1 `queue.xml` file the equivalent parameters are located.
 
 | 2.2 Attribute  | 2.1 queue.xml source |
 | ---------------- | ----------- |
@@ -68,9 +68,9 @@ The first column in the following table lists the all the parameters in the `que
 `<publisher>/<connection>/exchange` | `<broker>exchange`
 `<publisher>/<connection>/disabled` | Not present in 2.1. Omit this parameter to accept the default value.
 
-### Migrate from Magento 2.0 to 2.2
+### Migrate from 2.0 to 2.2
 
-To upgrade from Magento 2.0, you must create the following files in the `<module>/etc` directory for each module that will use the message queue framework.
+To upgrade from Adobe Commerce or Magento Open Source 2.0, you must create the following files in the `<module>/etc` directory for each module that will use the message queue framework.
 
 *  `queue_consumer.xml` - Defines the relationship between an existing queue and its consumer.
 *  `queue_topology.xml`- Defines the message routing rules.
@@ -82,7 +82,7 @@ For complete details about these files, see [Configure message queues](configura
 
 #### Create the `queue_consumer.xml` file
 
-The first column in the following table lists the all the parameters in the `queue_consumer.xml` file. The second column lists where in the Magento 2.0 `queue.xml` file the equivalent parameters are located.
+The first column in the following table lists the all the parameters in the `queue_consumer.xml` file. The second column lists where in the Adobe Commerce and Magento Open Source 2.0 `queue.xml` file the equivalent parameters are located.
 
 2.2 Attribute        | 2.0 queue.xml Source
 ---------------- | -----------
@@ -95,7 +95,7 @@ The first column in the following table lists the all the parameters in the `que
 
 #### Create the `queue_topology.xml` file
 
-The first column in the following table lists the all the parameters in the `queue_topology.xml` file. The second column lists where in the Magento 2.0 `queue.xml` file the equivalent parameters are located.
+The first column in the following table lists the all the parameters in the `queue_topology.xml` file. The second column lists where in the Adobe Commerce and Magento Open Source 2.0 `queue.xml` file the equivalent parameters are located.
 
 | 2.2 Attribute  | 2.0 queue.xml Source |
 | ---------------- | -----------|
@@ -114,7 +114,7 @@ The first column in the following table lists the all the parameters in the `que
 
 #### Create the `queue_publisher.xml` file
 
-The first column in the following table lists the all the parameters in the `queue_publisher.xml` file. The second column lists where in the Magento 2.0 `queue.xml` file the equivalent parameters are located.
+The first column in the following table lists the all the parameters in the `queue_publisher.xml` file. The second column lists where in the Adobe Commerce and Magento Open Source 2.0 `queue.xml` file the equivalent parameters are located.
 
 | 2.2 Attribute  | 2.0 queue.xml Source |
 | ---------------- | ----------- |

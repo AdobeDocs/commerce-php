@@ -5,13 +5,13 @@ title: ObjectManager
 
 ## Overview
 
-Large applications, such as the Magento application, use an object manager to avoid boilerplate code when composing objects during instantiation.
+Large applications, such as the Adobe Commerce and Magento Open Source applications, use an object manager to avoid boilerplate code when composing objects during instantiation.
 
-In the Magento framework, the implementation of the [`ObjectManagerInterface`][] performs the duties of an object manager.
+In Adobe Commerce and Magento Open Source, the implementation of the [`ObjectManagerInterface`][] performs the duties of an object manager.
 
 <InlineAlert variant="warning" slots="text"/>
 
-Magento prohibits the direct use of the `ObjectManager` in your code because it hides the real dependencies of a class.
+The application prohibits the direct use of the `ObjectManager` in your code because it hides the real dependencies of a class.
 See [usage rules][].
 
 ## Responsibilities
@@ -32,7 +32,7 @@ The file also specifies whether the object manager should create an object for e
 
 ## Usage rules
 
-The Magento framework uses the `ObjectManager` to generate and inject the classes declared in your constructor.
+Adobe Commerce and Magento Open Source use the `ObjectManager` to generate and inject the classes declared in your constructor.
 Classes should not ask for the `ObjectManager` itself as a constructor dependency.
 
 You do not call the object manager directly because the framework handles this automatically.
@@ -43,7 +43,7 @@ In most cases, the framework generates these classes automatically during code c
 
 <InlineAlert variant="warning" slots="text"/>
 
-You may notice in the Magento 2 codebase that some core classes still call the `ObjectManager` directly.
+You may notice in the Adobe Commerce and Magento Open Source codebase that some core classes still call the `ObjectManager` directly.
 This code needs porting or exist for backward compatibility purposes.
 They are not tacit endorsements of using the `ObjectManager` directly.
 

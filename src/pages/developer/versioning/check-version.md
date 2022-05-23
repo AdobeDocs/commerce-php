@@ -5,7 +5,7 @@ contributor_name: Atwix
 contributor_link: https://www.atwix.com/
 ---
 
-Use any of the following ways to determine which version of Magento is installed:
+Use any of the following ways to determine which version of Adobe Commerce or Magento Open Source is installed:
 
 -  From the command line
 -  With an HTTP GET request
@@ -14,7 +14,7 @@ Use any of the following ways to determine which version of Magento is installed
 
 ## Command line
 
-The following command returns the Magento version.
+The following command returns the application version.
 
 **Command:**
 
@@ -30,7 +30,7 @@ Magento CLI version 2.3.0
 
 ## HTTP GET request
 
-An HTTP request returns less detailed information about the Magento version.
+An HTTP request returns less detailed information about the application version.
 
 **Request:**
 
@@ -46,13 +46,13 @@ Magento/2.3 (Community)
 
 ## Admin
 
-Login to Magento as a registered Admin user. The Magento version is displayed at the bottom right of the page, above the  **Account Activity** and **Report an Issue** links:
+Log in as a registered Admin user. The application version is displayed at the bottom right of the page, above the  **Account Activity** and **Report an Issue** links:
 
 ![Check the application version](../../_images/version.png)
 
 ## The `composer.lock` file
 
-If Magento was installed using the `composer install` command, you can search the `<Magento_root>/composer.lock` file for `magento/product-community-edition` or `magento/product-enterprise-edition`, depending on which version of Magento is installed.
+If the application was installed using the `composer install` command, you can search the `<Application_root>/composer.lock` file for `magento/product-community-edition` or `magento/product-enterprise-edition`, depending on which version of the application is installed.
 
 ```json
   {

@@ -8,7 +8,7 @@ A plugin, or interceptor, is a class that modifies the behavior of public class 
 
 Extensions that wish to intercept and change the behavior of a *public method* can create a `Plugin` class.
 
-This [interception](https://glossary.magento.com/interception) approach reduces conflicts among extensions that change the behavior of the same class or method. Your `Plugin` class implementation changes the behavior of a class function, but it does not change the class itself. Magento calls these interceptors sequentially according to a configured sort order, so they do not conflict with one another.
+This [interception](https://glossary.magento.com/interception) approach reduces conflicts among extensions that change the behavior of the same class or method. Your `Plugin` class implementation changes the behavior of a class function, but it does not change the class itself. Adobe Commerce and Magento Open Source call these interceptors sequentially according to a configured sort order, so they do not conflict with one another.
 
 ## Limitations
 
@@ -54,7 +54,7 @@ The first argument for the before, after, and around methods is an object that p
 
 ### Plugin method naming convention
 
-It is a Magento best practice to capitalize the first letter of the class method name for which you want to create a plugin before adding `before`, `around` or `after` prefixes to it.
+It is a best practice to capitalize the first letter of the class method name for which you want to create a plugin before adding `before`, `around` or `after` prefixes to it.
 
 For example, to create a plugin for the `setName` method of some class:
 
@@ -94,7 +94,7 @@ Use the following method names for the `_construct` method in the plugin class:
 
 ## Before methods
 
-Magento runs all before methods ahead of the call to an observed method. These methods must have the same name as the observed method with 'before' as the prefix.
+The application runs all before methods ahead of the call to an observed method. These methods must have the same name as the observed method with 'before' as the prefix.
 
 You can use before methods to change the arguments of an observed method by returning a modified argument. If there are any arguments, the method should return an array of those arguments. If the method does not change the argument for the observed method, it should return a `null` value.
 
@@ -122,7 +122,7 @@ class ProductAttributesUpdater
 
 ## After methods
 
-Magento runs all after methods following the completion of the observed method. Magento requires these methods have a return value and they must have the same name as the observed method with 'after' as the prefix.
+The application runs all after methods following the completion of the observed method. The application requires these methods have a return value and they must have the same name as the observed method with 'after' as the prefix.
 
 You can use these methods to change the result of an observed method by modifying the original result and returning it at the end of the method.
 
@@ -148,7 +148,7 @@ class ProductAttributesUpdater
 }
 ```
 
-The after methods have access to all the arguments of their observed methods. When the observed method completes, Magento passes the result and arguments to the next after method that follows. If the observed method does not return a result (`@return void`), then it passes a `null` value to the next after method.
+The after methods have access to all the arguments of their observed methods. When the observed method completes, the application passes the result and arguments to the next after method that follows. If the observed method does not return a result (`@return void`), then it passes a `null` value to the next after method.
 
 Below is an example of an after method that accepts the `null` result and arguments from the observed `login` method for [`Magento\Backend\Model\Auth`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Backend/Model/Auth.php):
 
@@ -226,7 +226,7 @@ If an argument is optional in the observed method, then the after method should 
 
 ## Around methods
 
-Magento runs the code in around methods before and after their observed methods. Using these methods allow you to override an observed method. around methods must have the same name as the observed method with 'around' as the prefix.
+The application runs the code in around methods before and after their observed methods. Using these methods allow you to override an observed method. around methods must have the same name as the observed method with 'around' as the prefix.
 
 <InlineAlert variant="warning" slots="text"/>
 
@@ -234,7 +234,7 @@ Avoid using around method plugins when they are not required because they increa
 The only use case for around method plugins is when the execution of all further plugins and original methods need termination.
 Use after method plugins if you require arguments for replacing or altering function results.
 
-Before the list of the original method's arguments, around methods receive a `callable` that will allow a call to the next method in the chain. When your code executes the `callable`, Magento calls the next plugin or the observed function.
+Before the list of the original method's arguments, around methods receive a `callable` that will allow a call to the next method in the chain. When your code executes the `callable`, the application calls the next plugin or the observed function.
 
 <InlineAlert variant="warning" slots="text"/>
 
@@ -317,7 +317,7 @@ class MyUtilityUpdater
 }
 ```
 
-Note if you miss `= null` and Magento calls the original method with `null`, [PHP](https://glossary.magento.com/php) would throw a fatal error as your plugin does not accept `null`.
+Note if you miss `= null` and the applicationcalls the original method with `null`, [PHP](https://glossary.magento.com/php) would throw a fatal error as your plugin does not accept `null`.
 
 You are responsible for forwarding the arguments from the plugin to the `proceed` callable. If you are not using/modifying the arguments, you could use variadics and argument unpacking to achieve this:
 
@@ -350,21 +350,21 @@ The [`Magento\Framework\Interception\PluginListInterface`](https://github.com/ma
 
 If two or more plugins have the same `sortOrder` value or do not specify it, the [component load order](../build/component-load-order.md) declared in the `sequence` node from `module.xml` and [area](../build/schema-validation.md) will define the merge sequence. Check the component load order in `app/etc/config.php` file.
 
-Magento executes plugins using these rules during each plugin execution in two main flows:
+The applicationexecutes plugins using these rules during each plugin execution in two main flows:
 
 *  Before the execution of the observed method, starting from lowest to highest `sortOrder`.
-   *  Magento executes the current plugin’s `before` method.
+   *  The applicationexecutes the current plugin’s `before` method.
    *  Then the current plugin's `around` method is called.
       *  The first part of the plugin's `around` method is executed.
       *  The `around` method executes the `callable`.
          *  If there is another plugin in the chain, all subsequent plugins are wrapped in an independent sequence loop and the execution starts another flow.
          *  If the current plugin is the last in the chain, the observed method is executed.
       *  The second part of the `around` method is executed.
-   *  Magento moves on to the next plugin.
+   *  The applicationmoves on to the next plugin.
 
 *  Following the execution flow, starting from lowest to highest `sortOrder` in the current sequence plugins loop.
    *  The current plugin's `after` method is executed.
-   *  Magento moves on to the next plugin.
+   *  The applicationmoves on to the next plugin.
 
 As a result of these rules, the execution flow of an observed method is affected not only by the prioritization of the plugins, but also by their implemented methods.
 
@@ -374,7 +374,7 @@ The `around` plugin's method affects the flow of all plugins that are executed a
 
 <InlineAlert variant="success" slots="text"/>
 
-When the `before` and `around` plugin sequence is finished, Magento calls the first plugin `after` method in the sequence loop, and not the `after` method of the current plugin that was being executed by the `around` method.
+When the `before` and `around` plugin sequence is finished, the applicationcalls the first plugin `after` method in the sequence loop, and not the `after` method of the current plugin that was being executed by the `around` method.
 
 ### Examples
 
@@ -458,7 +458,7 @@ The execution will be in this order:
 
 *  `PluginA::beforeDispatch()`
 *  `PluginB::beforeDispatch()`
-*  `PluginB::aroundDispatch()` (Magento calls the first half before `callable`)
+*  `PluginB::aroundDispatch()` (the applicationcalls the first half before `callable`)
 
    *  `PluginC::beforeDispatch()`
 
@@ -466,7 +466,7 @@ The execution will be in this order:
 
    *  `PluginC::afterDispatch()`
 
-*  `PluginB::aroundDispatch()` (Magento calls the second half after `callable`)
+*  `PluginB::aroundDispatch()` (the applicationcalls the second half after `callable`)
 *  `PluginA::afterDispatch()`
 *  `PluginB::afterDispatch()`
 
@@ -528,26 +528,26 @@ Assuming these methods:
 The execution will be in this order:
 
 *  `PluginA::beforeDispatch()`
-*  `PluginA::aroundDispatch()` (Magento calls the first half until `callable`)
+*  `PluginA::aroundDispatch()` (the applicationcalls the first half until `callable`)
 
    *  `PluginB::beforeDispatch()`
    *  `PluginC::beforeDispatch()`
-   *  `PluginC::aroundDispatch()` (Magento calls the first half until `callable`)
+   *  `PluginC::aroundDispatch()` (the applicationcalls the first half until `callable`)
 
       *  `Action::dispatch()`
 
-   *  `PluginC::aroundDispatch()` (Magento calls the second half after `callable`)
+   *  `PluginC::aroundDispatch()` (the applicationcalls the second half after `callable`)
    *  `PluginB::afterDispatch()`
    *  `PluginC::afterDispatch()`
 
-*  `PluginA::aroundDispatch()` (Magento calls the second half after `callable`)
+*  `PluginA::aroundDispatch()` (the applicationcalls the second half after `callable`)
 *  `PluginA::afterDispatch()`
 
 ## Configuration inheritance
 
 Classes and interfaces that are implementations of, or inherit from, classes that have plugins will also inherit plugins from the parent class.
 
-Magento uses plugins defined in the global scope when the system is in a specific area (such as frontend or backend). You can extend or override these global plugin configurations with an area's `di.xml` file.
+The applicationuses plugins defined in the global scope when the system is in a specific area (such as frontend or backend). You can extend or override these global plugin configurations with an area's `di.xml` file.
 
 For example, the developer can disable a global plugin in the [backend](https://glossary.magento.com/backend) area by disabling it in the specific `di.xml` file for the backend area.
 

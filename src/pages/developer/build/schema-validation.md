@@ -6,18 +6,18 @@ menu_title: URN schema validation
 menu_order: 5000
 ---
 
-Each Magento [module](https://glossary.magento.com/module) can contain XSD files for [XML](https://glossary.magento.com/xml) validation.
+Each [module](https://glossary.magento.com/module) can contain XSD files for [XML](https://glossary.magento.com/xml) validation.
 
-Magento uses [Uniform Resource Names](https://en.wikipedia.org/wiki/Uniform_Resource_Name) (URNs) to reference XML schema declarations.
+The application uses [Uniform Resource Names](https://en.wikipedia.org/wiki/Uniform_Resource_Name) (URNs) to reference XML schema declarations.
 
-Magento supported URNs begin with `urn:magento`. Magento supports two XSD reference types:
+The application supported URNs begin with `urn:magento`. The application supports two XSD reference types:
 
 *  Module XSD
 *  Framework XSD
 
 <InlineAlert variant="info" slots="text"/>
 
-You cannot change the XSD for any XML files provided with the Magento application.
+You cannot change the XSD for any XML files provided with the Adobe Commerce and Magento Open Source applications.
 
 ### Module XSD
 

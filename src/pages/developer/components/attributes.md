@@ -3,13 +3,13 @@ group: php-developer-guide
 title: EAV and extension attributes
 ---
 
-There are two types of attributes you can use to extend Magento functionality:
+There are two types of attributes you can use to extend Adobe Commerce and Magento Open Source functionality:
 
 *  Custom and Entity-Attribute-Value (EAV) attributes—Custom attributes are those added on behalf of a merchant. For example, a merchant might need to add attributes to describe products, such as shape or volume. A merchant can add these attributes in the [Admin](https://glossary.magento.com/magento-admin) panel. See the [merchant documentation](https://docs.magento.com/user-guide/stores/attributes.html) for information about managing custom attributes.
 
    Custom attributes are a subset of EAV attributes. Objects that use EAV attributes typically store values in several MySQL tables. The `Customer` and `Catalog` modules are the primary models that use EAV attributes. Other modules, such as `ConfigurableProduct`, `GiftMessage`, and `Tax`, use the EAV functionality for `Catalog`.
 
-*  [Extension attributes](https://glossary.magento.com/extension-attribute). Extension attributes are new in Magento 2. They are used to extend functionality and often use more [complex data](https://glossary.magento.com/complex-data) types than custom attributes. These attributes do not appear in the Admin.
+*  [Extension attributes](https://glossary.magento.com/extension-attribute). Extension attributes are new in Adobe Commerce and Magento Open Source. They are used to extend functionality and often use more [complex data](https://glossary.magento.com/complex-data) types than custom attributes. These attributes do not appear in the Admin.
 
 ## EAV and custom attributes {#custom}
 
@@ -38,7 +38,7 @@ The `Customer` module provides a `system` option for its attributes. As a result
 
 <InlineAlert variant="info" slots="text"/>
 
-As of version 2.3.4, Magento caches all system EAV attributes as they are retrieved. This behavior is defined in each affected module's `di.xml` file as the `attributesForPreload` argument for `<type name="Magento\Eav\Model\Config">`. Developers can cache custom EAV attributes by running the `bin/magento config:set dev/caching/cache_user_defined_attributes 1` command. This can also be done from the Admin while in Develop mode by setting **Stores** > Settings **Configuration** > **Advanced** > **Developer** > **Caching Settings** > **Cache User Defined Attributes** to **Yes**. Caching EAV attributes while retrieving improves performance as it decreases the amount of insert/select requests to the DB, but it increases the cache network size.
+As of version 2.3.4, Adobe Commerce and Magento Open Source caches all system EAV attributes as they are retrieved. This behavior is defined in each affected module's `di.xml` file as the `attributesForPreload` argument for `<type name="Magento\Eav\Model\Config">`. Developers can cache custom EAV attributes by running the `bin/magento config:set dev/caching/cache_user_defined_attributes 1` command. This can also be done from the Admin while in Develop mode by setting **Stores** > Settings **Configuration** > **Advanced** > **Developer** > **Caching Settings** > **Cache User Defined Attributes** to **Yes**. Caching EAV attributes while retrieving improves performance as it decreases the amount of insert/select requests to the DB, but it increases the cache network size.
 
 ### Adding Customer EAV attribute for backend only {#customer-eav-attribute}
 
@@ -132,7 +132,7 @@ Use `ExtensibleDataInterface` to implement extension attributes. In your code, y
 
 `public function getExtensionAttributes();`
 
-Most likely, you will want to extend interfaces defined in the `Api/Data` directory of a Magento module.
+Most likely, you will want to extend interfaces defined in the `Api/Data` directory of a module.
 
 ### Declare extension attributes {#declare}
 

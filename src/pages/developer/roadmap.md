@@ -6,9 +6,9 @@ menu_title: Developer roadmap
 menu_order: 2
 ---
 
-This topic introduces the high-level workflow for a developer who wants to create or customize the Magento application. Developers can also package and distribute their customizations to merchants.
+This topic introduces the high-level workflow for a developer who wants to create or customize the Adobe Commerce or Magento Open Source application. Developers can also package and distribute their customizations to merchants.
 
-To satisfy the minimum required elements for creating or customizing your Magento application:
+To satisfy the minimum required elements for creating or customizing your application:
 
 *  [Declare component dependencies](build/composer-integration.md) in `composer.json`.
 

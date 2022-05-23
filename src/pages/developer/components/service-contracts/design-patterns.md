@@ -92,7 +92,7 @@ Metadata interfaces provide methods for retrieving metadata, the interfaces are 
 Interface | Description
 --- | ---
 `AttributeMetadataInterface` | Provides customer attribute metadata and defines the constants used as keys of data array and methods. See more [AttributeMetadataInterface](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/Api/Data/AttributeMetadataInterface.php).
-`ProductMetadataInterface` | Provides Magento application product metadata. Defines the `getVersion()`, `getEdition()`, `getName()` methods.
+`ProductMetadataInterface` | Provides application product metadata. Defines the `getVersion()`, `getEdition()`, `getName()` methods.
 `CustomerMetadataManagementInterface` | Interface for managing customer attributes metadata. Defines the constant `ENTITY_TYPE_CUSTOMER`.
 `AddressMetadataInterface` | Interface for retrieving information about customer address attributes metadata. Defines the constants `ATTRIBUTE_SET_ID_ADDRESS`, `ENTITY_TYPE_ADDRESS`, `DATA_INTERFACE_NAME`.
 

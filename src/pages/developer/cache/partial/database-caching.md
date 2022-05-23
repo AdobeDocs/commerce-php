@@ -8,7 +8,7 @@ redirect_from:
 
 ## Overview of database caching {#mage-cache-db-over}
 
-This topic discusses how to use the Magento 2 database for caching. After you complete these tasks, cached objects are stored in the `cache` and `cache_tag` Magento 2 database tables. Nothing is stored `var/cache` or `var/page_cache`.
+This topic discusses how to use the database for caching. After you complete these tasks, cached objects are stored in the `cache` and `cache_tag` database tables. Nothing is stored `var/cache` or `var/page_cache`.
 
 This topic discusses how to set up database caching and how to verify database caching is working. We discuss the following options:
 
@@ -28,11 +28,11 @@ We provide [sample configurations] at the end of this topic.
 
 ## Database caching using the `default` cache frontend {#mage-cache-db-di}
 
-To enable database caching using the `default` frontend, you must modify `<magento_root>/app/etc/di.xml`, which is the global deployment injection configuration for the Magento application.
+To enable database caching using the `default` frontend, you must modify the `<magento_root>/app/etc/di.xml` file, which is the global deployment injection configuration for the application.
 
 To modify `di.xml`:
 
-1. Log in to the Magento server as, or switch to, the [file system owner].
+1. Log in to the application server as, or switch to, the [file system owner].
 1. Enter the following commands to make a copy of `di.xml`:
 
    ```bash
@@ -110,7 +110,7 @@ Due to a known issue, a custom cache frontend still results in some objects bein
 
 To enable database caching using a custom cache frontend, you must modify `<magento_root>/app/etc/env.php` as follows:
 
-1. Log in to the Magento server as, or switch to, the [file system owner].
+1. Log in to the application server as, or switch to, the [file system owner].
 1. Enter the following commands to make a copy of `env.php`:
 
    ```bash
@@ -154,7 +154,7 @@ To verify database caching is working, clear the current cache directories, go t
 
 Use the following steps:
 
-1. If you haven't done so already, log in to the Magento server as, or switch to, the [file system owner].
+1. If you haven't done so already, log in to the application server as, or switch to, the [file system owner].
 1. Clear the current cache directories:
 
    ```bash

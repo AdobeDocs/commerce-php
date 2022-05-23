@@ -8,17 +8,17 @@ menu_order: 2
 
 ## Overview of packaging {#package-over}
 
-The Magento application uses [Composer](https://glossary.magento.com/composer) packages to distribute, install, and upgrade components in an application instance.
+The Adobe Commerce and Magento Open Source applications use [Composer](https://glossary.magento.com/composer) packages to distribute, install, and upgrade components in an application instance.
 
 To package a component, you must:
 
-*  Create a Magento Composer file (`composer.json`).
+*  Create a Composer file (`composer.json`).
 *  Register the component using `registration.php`
 *  Package and publish your component.
 
-## Create a Magento Composer file {#composer}
+## Create a Composer file {#composer}
 
-The Magento `composer.json` file defines the name, requirements, version, and other basic information about the component. This file must be placed in the root directory of the [module](https://glossary.magento.com/module).
+The `composer.json` file defines the name, requirements, version, and other basic information about the component. This file must be placed in the root directory of the [module](https://glossary.magento.com/module).
 
 The `composer.json` uses [Composer's generic schema](https://getcomposer.org/doc/04-schema.md), with the following restrictions:
 
@@ -98,7 +98,7 @@ The following example is a `composer.json` file for a module:
 ```json
 {
   "name": "magento/sample-module-newpage",
-  "description": "A Magento 2 module that creates a new page",
+  "description": "A module that creates a new page",
   "type": "magento2-module",
   "version": "1.0.0",
   "license": [
@@ -129,7 +129,7 @@ zip -r vendor-name_package-name-1.0.0.zip package-path/ -x 'package-path/.git/*'
 
 Use alphanumeric characters for the package filename with dashes to separate words. Do not use whitespaces.
 
-Magento can retrieve your extension package from any valid GitHub [URL](https://glossary.magento.com/url).
+The application can retrieve your extension package from any valid GitHub [URL](https://glossary.magento.com/url).
 
 <!-- After you have created the module's `composer.json` file in the root directory of the module, Composer can recognize your package as compatible with its deployment strategy. Such packages can be published to a code repository (GitHub, SVN, etc.), packagist.org, or on your own private package repository. -->
 

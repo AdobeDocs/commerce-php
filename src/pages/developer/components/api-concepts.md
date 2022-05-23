@@ -8,13 +8,13 @@ menu_order: 3
 
 ## What is a public interface? {#public-interface}
 
-A _public interface_ is a set of code that third-party developers can call, implement, or build as a [plug-in](https://glossary.magento.com/plug-in). Magento guarantees that this code will not change in subsequent releases without a major version change.
+A _public interface_ is a set of code that third-party developers can call, implement, or build as a [plug-in](https://glossary.magento.com/plug-in). Adobe guarantees that this code will not change in subsequent releases without a major version change.
 
 Public interfaces for a [module](https://glossary.magento.com/module) are marked with `@api` annotation.
 
 <InlineAlert variant="info" slots="text"/>
 
-Third-party developers should use only these interfaces, that is, interfaces with the `@api` annotation. You can use other interfaces but those may be modified or removed in subsequent Magento releases. For more information, see [Backward compatibility](https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy/).
+Third-party developers should use only these interfaces, that is, interfaces with the `@api` annotation. You can use other interfaces but those may be modified or removed in subsequent Adobe Commerce and Magento Open Source releases. For more information, see [Backward compatibility](https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy/).
 
 ### Example of public interface annotation
 

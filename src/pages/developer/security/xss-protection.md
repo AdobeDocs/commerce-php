@@ -6,7 +6,7 @@ menu_title: XSS prevention strategies
 menu_order: 1100
 ---
 
-[Cross-site scripting][], or XSS, is a security vulnerability that can be found in web applications. This vulnerability allows attackers to inject malicious code/styles into a web page viewed by users. Magento [extension](https://glossary.magento.com/extension) developers should be aware of these vulnerabilities to avoid introducing them in their code.
+[Cross-site scripting][], or XSS, is a security vulnerability that can be found in web applications. This vulnerability allows attackers to inject malicious code/styles into a web page viewed by users. [Extension](https://glossary.magento.com/extension) developers should be aware of these vulnerabilities to avoid introducing them in their code.
 
 There are three main types of XSS vulnerabilities:
 
@@ -154,9 +154,9 @@ settings.<?= $escaper->escapeJs($myProperty) ?> = true;
 
 #### Knockout templates
 
-In knockout templates, you can bind a UI component's property/function as the 'inner HTML' of an element. Such properties may contain dynamic data and must be sanitized within componenets. See [Magento binding syntax][] to learn more about UI component templates.
+In knockout templates, you can bind a UI component's property/function as the 'inner HTML' of an element. Such properties may contain dynamic data and must be sanitized within componenets. See [binding syntax][] to learn more about UI component templates.
 
-In order to notify developers that these properties/function results may contain HTML, Magento requires (with the help of a static test) that you name such properties/functions using "UnsanitizedHtml" suffix.
+In order to notify developers that these properties/function results may contain HTML, the application requires (with the help of a static test) that you name such properties/functions using "UnsanitizedHtml" suffix.
 
 ```html
 <div data-bind="html: propUnsanitizedHtml"></div>
@@ -189,7 +189,7 @@ return $uiData;
 
 ### Static Test
 
-To check your .phtml template for XSS vulnerabilities, use the _Magento2.Security.XssTemplate_ sniff from [Magento Coding Standard][].
+To check your .phtml template for XSS vulnerabilities, use the _Magento2.Security.XssTemplate_ sniff from [Coding Standard][].
 This sniff finds all _echo_ calls in PHTML-templates and determines if the output is properly escaped.
 It covers the following cases:
 
@@ -206,6 +206,6 @@ It covers the following cases:
 [product listing template]: https://github.com/magento/magento2/blob/78bb169ff9721c8d05c35b4c29a4464fd45bccbe/app/code/Magento/Catalog/view/frontend/templates/product/list.phtml#L16
 [Template guide]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/templates/template-overview.html
 [Cross-site scripting]: https://owasp.org/www-community/attacks/xss/
-[Magento binding syntax]: https://devdocs.magento.com/guides/v2.4/ui_comp_guide/concepts/magento-bindings.html
+[binding syntax]: https://devdocs.magento.com/guides/v2.4/ui_comp_guide/concepts/magento-bindings.html
 [UI component data providers]: https://devdocs.magento.com/guides/v2.4/ui_comp_guide/concepts/ui_comp_data_source.html
-[Magento Coding Standard]: https://github.com/magento/magento-coding-standard
+[Coding Standard]: https://github.com/magento/magento-coding-standard

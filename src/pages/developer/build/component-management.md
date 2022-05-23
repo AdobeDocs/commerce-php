@@ -3,7 +3,7 @@ group: php-developer-guide
 title: Enable or disable your component
 ---
 
-After you have built the component and are ready to enable it in your Magento environment, do the following:
+After you have built the component and are ready to enable it in your environment, do the following:
 
 1. Disable the [cache](https://glossary.magento.com/cache) under `System->Cache Management`.
 1. Enter the following in the command line:

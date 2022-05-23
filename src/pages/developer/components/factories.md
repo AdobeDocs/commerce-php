@@ -15,8 +15,8 @@ They create a layer of abstraction between the `ObjectManager` and business code
 
 ## Relationship to `ObjectManager`
 
-The `Magento\Framework\ObjectManager` is the class responsible for instantiating objects in the Magento application.
-Magento prohibits depending on and directly using the `ObjectManager` in your code.
+The `Magento\Framework\ObjectManager` is the class responsible for instantiating objects in the application.
+Adobe Commerce and Magento Open Source prohibit depending on and directly using the `ObjectManager` in your code.
 
 Factories are an [exception](https://glossary.magento.com/exception) to this rule because they require the `ObjectManager` to instantiate specific models.
 
@@ -112,5 +112,5 @@ For example, in the [`CatalogInventory`](https://github.com/magento/magento2/blo
 <preference for="Magento\CatalogInventory\Api\Data\StockItemInterface" type="Magento\CatalogInventory\Model\Stock\Item" />
 ```
 
-It instructs Magento to use the specific [`Item`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/CatalogInventory/Model/Stock/Item.php) class wherever the [`StockItemInterface`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/CatalogInventory/Api/Data/StockItemInterface.php) is used.
-When a class in that [module](https://glossary.magento.com/module) includes the factory `StockItemInterfaceFactory` as a dependency, Magento generates a factory that is capable of creating the specific `Item` objects.
+It instructs the application to use the specific [`Item`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/CatalogInventory/Model/Stock/Item.php) class wherever the [`StockItemInterface`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/CatalogInventory/Api/Data/StockItemInterface.php) is used.
+When a class in that [module](https://glossary.magento.com/module) includes the factory `StockItemInterfaceFactory` as a dependency, the application generates a factory that is capable of creating the specific `Item` objects.

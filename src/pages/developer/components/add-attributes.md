@@ -6,13 +6,13 @@ menu_title: Adding extension attributes to entity
 menu_order: 20
 ---
 
-Third-party developers cannot change the [API](https://glossary.magento.com/api) Data interfaces defined in the Magento Core code.  However, most of these entities have a feature called [extension attributes](https://glossary.magento.com/extension-attribute).  Check the interface for the methods `getExtensionAttributes()` and `setExtensionAttributes()` to determine if they are available for the entity.
+Third-party developers cannot change the [API](https://glossary.magento.com/api) Data interfaces defined in the Adobe Commerce and Magento Open Source code.  However, most of these entities have a feature called [extension attributes](https://glossary.magento.com/extension-attribute).  Check the interface for the methods `getExtensionAttributes()` and `setExtensionAttributes()` to determine if they are available for the entity.
 
 <InlineAlert variant="info" slots="text"/>
 
 We will demonstrate how to add extension attributes to a Product entity, Product Repository and [Web Api](https://glossary.magento.com/web-api) example.
 
-In order to retrieve a product or a list of products from the Magento API, you need to make an API request to the appropriate service (the Product Repository in this case).
+In order to retrieve a product or a list of products from the API, you need to make an API request to the appropriate service (the Product Repository in this case).
 The response to these requests will return objects with the following structure:
 
 ### Product response:

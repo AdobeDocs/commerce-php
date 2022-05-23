@@ -7,7 +7,7 @@ functional_areas:
   - Services
 ---
 
-When using the Magento message queue, four configuration files in your module must be updated:
+When using the message queue, four configuration files in your module must be updated:
 
 *  communication.xml
 *  queue_consumer.xml
@@ -16,7 +16,7 @@ When using the Magento message queue, four configuration files in your module mu
 
 More information can be found in [Configure message queues](configuration.md).
 
-Asynchronous and Bulk APIs are built on top of the usual REST API and use the Magento Message Queue Framework for processing messages. To ease development efforts, the Asynchronous API pre-generates the following configuration files:
+Asynchronous and Bulk APIs are built on top of the usual REST API and use the Message Queue Framework for processing messages. To ease development efforts, the Asynchronous API pre-generates the following configuration files:
 
 *  communication.xml
 *  queue_publisher.xml

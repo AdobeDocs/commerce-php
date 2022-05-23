@@ -7,9 +7,9 @@ functional_areas:
   - Services
 ---
 
-The Magento Queuing system uses 'topic exchange' for managing messages. More information about topics can be found [here](https://www.rabbitmq.com/tutorials/tutorial-five-python.html).
+The message queuing system uses 'topic exchange' for managing messages. More information about topics can be found [here](https://www.rabbitmq.com/tutorials/tutorial-five-python.html).
 
-In Magento, topics are usually defined in a `communication.xml` configuration file. See [Configure message queues](configuration.md#communicationxml)
+Topics are usually defined in a `communication.xml` configuration file. See [Configure message queues](configuration.md#communicationxml)
 
 ### Generating of communication.xml
 
@@ -34,7 +34,7 @@ Sort order is set to 0 by default. This allows developers to change some aspects
 
 `\Magento\Framework\Communication\Config\CompositeReader::read()` collects configuration records from defined readers and merges these records into a single configurataion.
 
-Because the generation of thge topics configuration is based on schema type, the generated `<topic>` XML is returned with `"sync"=true`. The `response` attribut is based on the service response definition. So the `WebapiAsync` module changes those settings to `"sync"=false` and `response` is set to null. These changes will allow Magento to execute topics asynchronously.
+Because the generation of thge topics configuration is based on schema type, the generated `<topic>` XML is returned with `"sync"=true`. The `response` attribut is based on the service response definition. So the `WebapiAsync` module changes those settings to `"sync"=false` and `response` is set to null. These changes will allow the application to execute topics asynchronously.
 
 ### Topics generation
 

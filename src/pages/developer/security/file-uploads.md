@@ -89,7 +89,7 @@ and file extension. You should verify the following:
 
 Notes:
 
-*  Magento uses the `\Magento\Framework\App\Filesystem\DirectoryList::PUB` directory for public files.
+*  The application uses the `\Magento\Framework\App\Filesystem\DirectoryList::PUB` directory for public files.
 *  Uploaded file paths must be validated using the `ReadInterface` and `WriteInterface` instances, similar to the preceding example.
 *  `\Magento\Framework\Filesystem\Io\File` can help extract file extensions from filenames.
 

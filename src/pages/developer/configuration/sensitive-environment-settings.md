@@ -8,13 +8,13 @@ functional_areas:
   - Configuration
 ---
 
-This topic discusses how third-party developers can create Magento components that designate configuration settings as being sensitive, system-specific, or both.
+This topic discusses how third-party developers can create components that designate configuration settings as being sensitive, system-specific, or both.
 
 ## Guidelines
 
 Use the following guidelines to determine which settings to designate as sensitive, system-specific, or both.
 
-Magento stores these settings in `<Magento root dir>/app/etc/env.php`.
+Adobe Commerce and Magento Open Source store these settings in `<Application root dir>/app/etc/env.php`.
 Do not include this file in source control.
 
 ### Sensitive values
@@ -34,7 +34,7 @@ In keeping with current security and privacy best practices, be sure you are awa
 
 ### Environment or system-specific values
 
-_Environment_ or _system-specific_ values are unique to the system where Magento is deployed.
+_Environment_ or _system-specific_ values are unique to the system where the application is deployed.
 
 Examples of environment or system-specific values include:
 

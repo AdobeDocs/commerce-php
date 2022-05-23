@@ -9,7 +9,7 @@ functional_areas:
 
 The request processors pool routes WebApi requests. It is located in the Magento_WebApi module: `Magento\Webapi\Controller\Rest\RequestProcessorPool`
 
-Magento defines the following processors:
+Adobe Commerce and Magento Open Source define the following processors:
 
 Processor name | Class | URL pattern | Description
 --- | --- | --- | ---

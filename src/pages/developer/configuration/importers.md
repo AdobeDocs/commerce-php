@@ -11,11 +11,11 @@ functional_areas:
 A configuration importer provides consistent configurations across multiple systems (such as development, staging, and production).
 This is useful for deployment strategies such as [pipeline deployment](https://devdocs.magento.com/guides/v2.4/config-guide/deployment/pipeline/).
 
-Magento uses configuration importers to import configuration data from the shared configuration file, `config.php`, to the appropriate storage, such as a database.
+Adobe Commerce and Magento Open Source use configuration importers to import configuration data from the shared configuration file, `config.php`, to the appropriate storage, such as a database.
 
 Use the [`magento app:config:import` command](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-config-mgmt-import.html) to import the configuration from the command line.
 
-Currently Magento has the following importers:
+Currently, the application has the following importers:
 
 *  `Magento\Config\Model\Config\Importer`
 *  `Magento\Store\Model\Config\Importer`
@@ -23,7 +23,7 @@ Currently Magento has the following importers:
 
 ## `ImporterInterface`
 
-All Magento importers implement the interface [`Magento\Framework\App\DeploymentConfig\ImporterInterface`][importer-interface] and define the following methods:
+All importers implement the interface [`Magento\Framework\App\DeploymentConfig\ImporterInterface`][importer-interface] and define the following methods:
 
 *  `import(array $data)` - The argument `$data` is the configuration array from `config.php`.
 

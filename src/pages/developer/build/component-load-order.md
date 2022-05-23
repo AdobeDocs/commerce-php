@@ -52,4 +52,4 @@ If you do specify a component in `<sequence>`, make sure that you have also adde
 
 <InlineAlert variant="info" slots="text"/>
 
-Take care when using `<sequence>` in multiple components because it's possible to define circular dependencies. If you do, Magento aborts the installation when it detects the circular dependency.
+Take care when using `<sequence>` in multiple components because it's possible to define circular dependencies. If you do, the application aborts the installation when it detects the circular dependency.

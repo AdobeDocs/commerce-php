@@ -5,7 +5,7 @@ title: Code generation
 
 ## Overview of code generation {#codegen-over}
 
-The Magento application generates code to create non-existent classes. As an example, look at the [Magento/Customer/Model/Resource/AddressRepository] constructor. A snippet follows:
+The Adobe Commerce and Magento Open Source applications generate code to create non-existent classes. As an example, look at the [Magento/Customer/Model/Resource/AddressRepository] constructor. A snippet follows:
 
 ```php
 ...
@@ -14,13 +14,13 @@ public function __construct(
 ...
 ```
 
-The first constructor parameter has a type of `Magento\Customer\Model\AddressFactory`. However, this class does not exist in `\Magento\Customer\Model` in the Magento 2 codebase. The Magento application *generates* this class because its name uses a recognized convention (in this case, because the name ends with `Factory`).
+The first constructor parameter has a type of `Magento\Customer\Model\AddressFactory`. However, this class does not exist in `\Magento\Customer\Model` in the codebase. The application *generates* this class because its name uses a recognized convention (in this case, because the name ends with `Factory`).
 
 Unlike some other languages or libraries, you can look at the generated code on the file system to see what really happens and still debug the code.
 
 ### When is code generated? {#codegen-over-when}
 
-Provided the Magento application is not set for [production mode], code is generated when the Magento application cannot find a class when executing code.
+Provided that the application is not set to [production mode], code is generated when the application cannot find a class when executing code.
 
 In particular,
 
@@ -28,9 +28,9 @@ In particular,
 
 *  You can designate a Proxy to be generated for a type in order to ensure the type is not instantiated until it is needed. See [Proxies] for more information. Proxies are directly referenced within [dependency injection](https://glossary.magento.com/dependency-injection) configuration.
 
-*  Interceptor classes are automatically generated to facilitate Magento's plugin system. An interceptor class extends a type and is returned by the Object Manager to allow multiple plugin classes to inject logic into different methods. Interceptors work behind the scenes and are _not_ directly referenced in application code.
+*  Interceptor classes are automatically generated to facilitate Magento's plugin system. An interceptor class extends a type and is returned by the Object Manager to allow multiple plugin classes to inject logic into different methods. Interceptors work behind the scenes and are *not* directly referenced in application code.
 
-You can also use the [code compiler] to generate code at any time.  In Magento 2, "compiling" your application means performing code generation for any eligible class encountered by the configuration/code scanner, as well as performing a number of different [dependency injection](https://glossary.magento.com/dependency-injection) optimizations.
+You can also use the [code compiler] to generate code at any time. "Compiling" your application means performing code generation for any eligible class encountered by the configuration/code scanner, as well as performing a number of different [dependency injection](https://glossary.magento.com/dependency-injection) optimizations.
 
 ### Why should you regenerate code? {#codegen-over-why}
 
@@ -40,7 +40,7 @@ If the code generator implementation itself is changed, you must regenerate all 
 
 ### Advantages of generating code {#codegen-over-adv}
 
-Code generation is required in Magento 2. Generating code assures you of the following:
+Code generation is required in Adobe Commerce and Magento Open Source. Generating code assures you of the following:
 
 *  The code is correct. You don’t have to worry that the generated code is delegating to the wrong method or forgetting a semicolon, and you don’t have to write tests for the generated code.
 *  Code generation writes the boilerplate code to enable you to write more challenging and interesting code.

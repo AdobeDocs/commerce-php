@@ -3,19 +3,19 @@ group: php-developer-guide
 title: Declarative Schema Overview
 ---
 
-Declarative Schema aims to simplify the Magento installation and upgrade processes. Previously, developers had to write database scripts in PHP for each new version of Magento. Various scripts were required for
+Declarative schema aims to simplify the Adobe Commerce and Magento Open Source installation and upgrade processes. Previously, developers had to write database scripts in PHP for each new version of Magento. Various scripts were required for
 
 *  Installing and upgrading the database schema
 *  Installing and upgrading data
-*  Invoking other operations that are required each time Magento was installed or upgraded
+*  Invoking other operations that are required each time Adobe Commerce or Magento Open Source was installed or upgraded
 
-When a customer upgrades Magento to a version several releases ahead of the installed version, the upgrade script for each intermediate release still executes. Developers were required to fully understand what each install and upgrade script contained. They needed to account for this complexity when creating extensions.
+When a customer upgrades Adobe Commerce or Magento Open Source to a version several releases ahead of the installed version, the upgrade script for each intermediate release still executes. Developers were required to fully understand what each install and upgrade script contained. They needed to account for this complexity when creating extensions.
 
 The new declarative schema approach allows developers to declare the final desired state of the database and has the system adjust to it automatically, without performing redundant operations. Developers are no longer forced to write scripts for each new version. In addition, this approach allows data be deleted when a module is uninstalled.
 
 <InlineAlert variant="info" slots="text"/>
 
-**Implementing declarative schema is not a requirement for Magento 2.3.** However, upgrade scripts will be phased out in favor of declarative schema.
+**Implementing declarative schema is not a requirement for Adobe Commerce and Magento Open Source 2.3.** However, upgrade scripts will be phased out in favor of declarative schema.
 
 To prepare a module for declarative schema, you must
 

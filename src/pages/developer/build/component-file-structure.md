@@ -4,7 +4,7 @@ title: Create your component file structure
 
 # Create your component file structure
 
-In this section, we go over the different file structures for the component types. The Magento application looks for the files that make up a component *including configuration files* in particular places inside the component file structure. Follow the predefined file structures for the component type you are developing to ensure that it works as expected.
+In this section, we go over the different file structures for component types. The Adobe Commerce or Magento Open Source application looks for the files that make up a component *including configuration files* in particular places inside the component file structure. Follow the predefined file structures for the component type you are developing to ensure that it works as expected.
 
 ## Root directory location
 
@@ -14,7 +14,7 @@ import Docs from '/src/pages/_includes/component-root.md'
 
 ## Module file structure
 
-A typical file structure for a Magento 2 [module](https://glossary.magento.com/module) can look like the following:
+A typical file structure for a [module](https://glossary.magento.com/module) can look like the following:
 
 ![Module File Structure](../../_images/pdg-config-file-structure.png)
 
@@ -94,13 +94,13 @@ Typical theme directories are:
 *  `media`: Theme preview images (screen capture of your theme) can be put in here.
 *  `web`: Optional directory that contains [static files](https://glossary.magento.com/static-files) organized into the following subdirectories:
 
-   *  `css/source`: Contains a theme's `less` configuration files that invoke mixins for global elements from the [Magento UI library](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/css-topics/theme-ui-lib.html), and the `theme.less` file that overrides the default variables values.
+   *  `css/source`: Contains a theme's `less` configuration files that invoke mixins for global elements from the [UI library](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/css-topics/theme-ui-lib.html), and the `theme.less` file that overrides the default variables values.
    *  `css/source/lib`: Contains view files that override the [UI library](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/css-topics/theme-ui-lib.html) files stored in `lib/web/css/source/lib`.
    *  `fonts`: The folder to place the different fonts for your theme.
    *  `images`: Static images folder.
    *  `js`: The folder for your JavaScript files.
 
-For more details on the theme folder structure, see [Magento theme structure](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/themes/theme-structure.html).
+For more details on the theme folder structure, see [theme structure](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/themes/theme-structure.html).
 
 ### Language package file structure
 

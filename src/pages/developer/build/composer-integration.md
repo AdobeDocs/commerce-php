@@ -5,7 +5,7 @@ title: The composer.json file
 
 ## Overview
 
-Magento 2 uses [Composer][0], a [PHP](https://glossary.magento.com/php) dependency manager, to package components and product editions.
+Adobe Commerce and Magento Open Source use [Composer][0], a [PHP](https://glossary.magento.com/php) dependency manager, to package components and product editions.
 
 Composer reads a `composer.json` file in Magento's root directory to download third-party dependencies listed in the file.
 
@@ -13,7 +13,7 @@ We recommend you include `composer.json` in your component's root directory even
 
 <InlineAlert variant="info" slots="text"/>
 
-Magento does not support the [`path`][3] repository.
+Adobe Commerce and Magento Open Source do not support the [`path`][3] repository.
 
 ## composer.json
 
@@ -22,7 +22,7 @@ Here is the example of composer.json file.
  ```json
   {
     "name": "mycompany/sample-module-minimal",
-    "description": "A module that creates a page in the Magento admin area",
+    "description": "A module that creates a page in the admin area",
     "type": "magento2-module",
     "version": "1.0.0",
     "license": [
@@ -43,22 +43,22 @@ Here is the example of composer.json file.
 
 ## Composer binary location {#composer-binary}
 
-Magento uses the composer binary in the `<Magento root>/vendor/composer` directory instead of a globally installed [composer](https://glossary.magento.com/composer).
+Adobe Commerce and Magento Open Source use the Composer binary in the `<Application root>/vendor/composer` directory instead of a globally installed [composer](https://glossary.magento.com/composer).
 
-Keep this in mind while customizing, updating, or troubleshooting composer while working with Magento 2.
+Keep this in mind while customizing, updating, or troubleshooting Composer while working with Adobe Commerce and Magento Open Source.
 
 ## Project vs product
 
 In Composer, a "project" package is a template used by the [`composer create-project`][9] to set up the project structure.
-The [installation instructions for system integrators][10] use the Magento Open Source and Adobe Commerce project packages to set up the Magento directory structure.
+The [installation instructions for system integrators][10] use the Magento Open Source and Adobe Commerce project packages to set up the directory structure.
 
 A "product" package is the actual application pointed to by the `composer.json` file after you download and install the project package using `composer create-project`.
 
 ## Descriptions of different composer.json files {#composerjson-overview}
 
-The following Magento components and product editions use a `composer.json` file.
+The following components and product editions use a `composer.json` file.
 
-### Magento Root
+### Root
 
 **Location:** `composer.json`
 
@@ -66,7 +66,7 @@ The following Magento components and product editions use a `composer.json` file
 
 **Type:** `project`
 
-This is Magento's main `composer.json` file which declares dependencies and third-party components.
+This is the main `composer.json` file, which declares dependencies and third-party components.
 
 Other root `composer.json` files use this file as a template.
 
@@ -79,7 +79,7 @@ Other root `composer.json` files use this file as a template.
 
 **Type:** `project`
 
-Magento system integrators use this `composer.json` file to deploy the Magento Open Source product and its dependencies.
+System integrators use this `composer.json` file to deploy the Magento Open Source product and its dependencies.
 
 ---
 
@@ -90,11 +90,11 @@ Magento system integrators use this `composer.json` file to deploy the Magento O
 
 **Type:** `metapackage`
 
-Magento system integrators use this `composer.json` file to deploy the Adobe Commerce product and its dependencies.
+System integrators use this `composer.json` file to deploy the Adobe Commerce product and its dependencies.
 
 ---
 
-### Magento Framework
+### Commerce framework
 
 **Location:** `lib/internal/Magento/Framework/composer.json`
 
@@ -102,7 +102,7 @@ Magento system integrators use this `composer.json` file to deploy the Adobe Com
 
 **Type:** `magento2-library`
 
-The Magento application uses this `composer.json` file for its framework packages.
+The Adobe Commerce and Magento Open Source applications uses this `composer.json` file for its framework packages.
 
 ---
 
@@ -158,7 +158,7 @@ Extensions can be any of the following types:
 *  `magento2-language` for language packages
 *  `magento2-component` for general extensions that do not fit any of the other types
 
-The extension type tells the system where to install the directories and files of each extension in the Magento directory structure.
+The extension type tells the system where to install the directories and files of each extension in the directory structure.
 
 ## Naming conventions
 
@@ -171,7 +171,7 @@ Using the Composer naming convention helps distinguish packages from different v
 ### vendor-name
 
 All letters in the vendor name must be in lowercase.
-For example, the vendor name format for extensions released by Magento Inc is `magento`.
+For example, the vendor name format for extensions released by Adobe is `magento`.
 
 #### Commerce Marketplace Extensions
 
@@ -213,7 +213,7 @@ Components have the following types of versions:
 
 *  Composer version; in other words, the version of each module, theme, language package, third-party package, and dependencies.
 
-Using Magento code as an example, Magento Open Source marketing version 2.0.0 includes component versions such as 100.0.1, 100.0.2, and so on. These versioning strategy prevents collisions between the marketing version and component versions.
+Using Adobe Commerce and Magento Open Source code as an example, marketing version 2.0.0 includes component versions such as 100.0.1, 100.0.2, and so on. These versioning strategy prevents collisions between the marketing version and component versions.
 
 [0]: https://getcomposer.org/
 [2]: https://packagist.org/

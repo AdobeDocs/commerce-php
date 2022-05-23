@@ -11,7 +11,7 @@ The `Magento_AmqpStore` module provides the ability for message queues to proces
 
 ### Processing messages
 
-Magento processes each message that is sent to the Message Queue Framework, adding information about the current store. The following plugin implements this behavior:
+Adobe Commerce and Magento Open Source process each message that is sent to the Message Queue Framework, adding information about the current store. The following plugin implements this behavior:
 
 ```php
 app/code/Magento/AmqpStore/Plugin/Framework/Amqp/Bulk/Exchange.php

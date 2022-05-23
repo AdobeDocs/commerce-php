@@ -68,7 +68,7 @@ All properties are available in the template where the UI component initialized.
 
 ## Invalidate private content
 
-Specify actions that trigger cache invalidation for private content blocks in a `sections.xml` configuration file in the `Vendor/ModuleName/etc/frontend` directory. Magento invalidates the cache on a POST or PUT request.
+Specify actions that trigger cache invalidation for private content blocks in a `sections.xml` configuration file in the `Vendor/ModuleName/etc/frontend` directory. The application invalidates the cache on a POST or PUT request.
 
 Customer sections was designed to cache private data in browser storage. This means that any customer section will not be updated until proper action was made.
 
@@ -118,7 +118,7 @@ There are sections that allow you to declare an 'action' node without specifying
 </config>
 ```
 
-This tells Magento to invalidate all sections. But if you have declared sections for this action in another .xml file, it will override the initial sections and only newly added sections will be invalidated. If you need to reload all sections on some action, use `*` as section name or use an empty action and ensure that they will not be overriden by any other rules:
+This tells The application to invalidate all sections. But if you have declared sections for this action in another .xml file, it will override the initial sections and only newly added sections will be invalidated. If you need to reload all sections on some action, use `*` as section name or use an empty action and ensure that they will not be overriden by any other rules:
 
 ```xml
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -144,9 +144,9 @@ Private content, which is stored in the browser local storage, uses the `private
 
 Versioning works as follows:
 
-1. The user performs some action, such as adding to a cart, that results in an POST or PUT request to the Magento application.
+1. The user performs some action, such as adding to a cart, that results in an POST or PUT request to the Adobe Commerce or Magento Open Source application.
 1. The server generates the `private_content_version` cookie for this user and returns the response to the browser.
-1. [JavaScript](https://glossary.magento.com/javascript) interprets the presence of the `private_content_version` cookie to mean that private content is present on the page, so it sends an AJAX request to the Magento server to get the current private content.
+1. [JavaScript](https://glossary.magento.com/javascript) interprets the presence of the `private_content_version` cookie to mean that private content is present on the page, so it sends an AJAX request to the application server to get the current private content.
 1. The server's reply is cached in the browser's local storage.
 
    Subsequent requests with the same data version are retrieved from local storage.

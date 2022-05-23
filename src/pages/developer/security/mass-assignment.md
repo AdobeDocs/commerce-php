@@ -159,7 +159,7 @@ You can also see that `UserManagerInterface::save()` can be invoked directly by 
 `PUT /V1/users`. We also use the service contract inside the `Save` controller, which handles a page that enables a user to edit personal info.
 
 This approach is better because we do not accept all data coming from client request blindly, but rather only those properties
-strictly defined inside `UserInterface` with getters. For REST APIs, this is ensured by the Magento framework automatically,
+strictly defined inside `UserInterface` with getters. For REST APIs, this is ensured by the application framework automatically,
 and inside the controller, we hydrate the user object retrieved from the DB with `DataObjectHelper`.
 
 However, because our DTO is also implemented by a class that extends `AbstractModel`, it's a de facto active record
@@ -373,6 +373,6 @@ only to admin users by providing extension attributes for `UserFullDataInterface
 
 ### GraphQL
 
-For GraphQL APIs, Magento does not rely on interfaces to generate schema. Instead, we have explicit GraphQL schemas, and there is
+For GraphQL APIs, the application does not rely on interfaces to generate schema. Instead, we have explicit GraphQL schemas, and there is
 no risk of exposing fields accidentally when you update data storage schema. However, if for some reason some fields
 do require additional authorization, you would still need to verify it explicitly.

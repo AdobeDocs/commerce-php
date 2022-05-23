@@ -8,24 +8,24 @@ functional_areas:
   - Services
 ---
 
-Magento is a modular system that enables third-party developers to customize and overwrite core parts of its framework. This flexibility, however, comes at a price. Business logic tends to leak across the layers of the Magento system, which manifests as duplicated and inconsistent code.
+Adobe Commerce and Magento Open Source are modular systems that enable third-party developers to customize and overwrite core parts of the application framework. This flexibility, however, comes at a price. Business logic tends to leak across the layers of the system, which manifests as duplicated and inconsistent code.
 
-Merchants might be reluctant to upgrade Magento because customized extensions that they have purchased might not be compatible with new versions of Magento. Also, Magento and third-party developers can find it difficult to track and report the dependencies that customized extensions have on other extensions.
+Merchants might be reluctant to upgrade Adobe Commerce or Magento Open Source because customized extensions that they have purchased might not be compatible with new versions. Also, Adobe and third-party developers can find it difficult to track and report the dependencies that customized extensions have on other extensions.
 
-To address these issues, the Magento system introduces _service contracts_.
+To address these issues, Adobe Commerce and Magento Open Source introduced _service contracts_.
 
 ## What is a service contract? {#what-is-msc}
 
 A [service contract](https://glossary.magento.com/service-contract) is a set of [PHP](https://glossary.magento.com/php) interfaces that are defined for a [module](https://glossary.magento.com/module).
 A service contract includes [data interfaces](design-patterns.md#data-interfaces), which preserve data integrity, and [service interfaces](design-patterns.md#service-interfaces), which hide business logic details from service requestors such as controllers, web services, and other modules.
 
-If developers define data and service interfaces according to a set of [design patterns](design-patterns.md), the result is a well-defined, durable [API](https://glossary.magento.com/api) that other modules and third-party extensions can implement through Magento models and resource models.
+If developers define data and service interfaces according to a set of [design patterns](design-patterns.md), the result is a well-defined, durable [API](https://glossary.magento.com/api) that other modules and third-party extensions can implement through models and resource models.
 
 ![Service Contracts](../../../_images/msc.jpg)
 
 ## Service contract benefits {#msc-benefits}
 
-Service contracts enhance the modularity of Magento. They enable Magento and third-party developers to report system dependencies through `composer.json` files and, consequently, guarantee compatibility among Magento versions. This compatibility ensures that merchants can easily upgrade Magento.
+Service contracts enhance the modularity of Magento. They enable Adobe and third-party developers to report system dependencies through `composer.json` files and, consequently, guarantee compatibility across versions of Adobe Commerce and Magento Open Source. This compatibility ensures that merchants can easily upgrade Magento.
 These contracts ensure a well-defined, durable API that other modules and third-party extensions can implement. Also, these contracts make it easy to [configure services as web APIs](../web-api/services.md).
 
 Data entities are a side benefit of service contracts.

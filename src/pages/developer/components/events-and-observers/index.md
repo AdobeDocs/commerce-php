@@ -8,11 +8,11 @@ menu_order: 6
 
 ## Overview
 
-Working with events and observers is one of the main ways to extend Magento functionality. The events and observers implementation in Magento 2 is based on the [publish-subscribe pattern](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern). Using events and observers, you can run your custom code in response to a specific Magento [event](https://glossary.magento.com/event) or even a custom event.
+Working with events and observers is one of the main ways to extend Adobe Commerce and Magento Open Source functionality. The events and observers implementation in Adobe Commerce and Magento Open Source are based on the [publish-subscribe pattern](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern). Using events and observers, you can run your custom code in response to a specific [event](https://glossary.magento.com/event) or even a custom event.
 
 ## Events
 
-Events are dispatched by modules when certain actions are triggered. In addition to its own events, Magento allows you to create your own events that can be dispatched in your code. When an event is dispatched, it can pass data to any observers configured to watch that event.
+Events are dispatched by modules when certain actions are triggered. In addition to its own events, the application allows you to create your own events that can be dispatched in your code. When an event is dispatched, it can pass data to any observers configured to watch that event.
 
 ### Dispatching events
 
@@ -92,7 +92,7 @@ Declare the observer in the appropriate area. The `global` area allows the obser
 
 ## Observers
 
-Observers are a certain type of Magento class that can influence general behavior, performance, or change business logic. Observers are executed whenever the event they are configured to watch is dispatched by the event manager.
+Observers are a certain type of class that can influence general behavior, performance, or change business logic. Observers are executed whenever the event they are configured to watch is dispatched by the event manager.
 
 ### Creating an observer
 
@@ -190,7 +190,7 @@ In the preceding example, we assign the observer `MyObserver` to the custom even
 
 Observer names must be unique per event definition. This means that you cannot have two observers with the same name in the same event definition. In the example, both observers have the name `myObserverName`. This is acceptable because each of those observers belong to different event definitions.
 
-If you declare an observer with a name that is already in use within the same event, Magento merges these declaration nodes into a single observer declaration, respecting the module load order as defined in the `app/etc/config.php` file. This is useful when disabling an observer declared in another module.
+If you declare an observer with a name that is already in use within the same event, the application merges these declaration nodes into a single observer declaration, respecting the module load order as defined in the `app/etc/config.php` file. This is useful when disabling an observer declared in another module.
 
 ### Disabling an observer
 

@@ -5,7 +5,7 @@ title: Authorization
 
 ## Configuration based authorization
 
-Through configuration, Magento provides a number of ways to mark a page (controller) or an endpoint as accessible to guests,
+Through configuration, Adobe Commerce and Magento Open Source provide a number of ways to mark a page (controller) or an endpoint as accessible to guests,
 logged in customers, or administrators with roles that allow access to certain resources.
 
 ### Pages (controllers)
@@ -147,14 +147,14 @@ not finished registration to complete the process. Your store needs to send such
 to a sign-up form with fields containing previously entered information. These customers cannot login, and it cannot be
 expected for them to have the same session cookie when they follow the e-mail link. This issue can be solved by
 embedding a self-signed token inside the link that contains the "unfinished sign up data" ID and expiration datetime
-to protect the token from brute force attack. Then when customer follows the link, the Magento store would verify its
+to protect the token from brute force attack. Then when customer follows the link, the store would verify its
 signature or decrypt it, verify that token has not yet expired, and then pre-fill the form with customer data retrieved from
 the database by ID. If the form is not too big, then it would be possible to even avoid storing data in persistent storage, but
 instead embed it inside the token itself using an encrypted token to protect sensitive data.
 
 When the only client of a self-signed token is the application itself, it is not absolutely necessary to follow
 a certain standard when generating self-signed tokens, but it would be easier and more secure to utilize one, like JWT.
-The Magento framework provides a tool to help with this process. See `Magento\Framework\Jwt\JwtManagerInterface`
+The application framework provides a tool to help with this process. See `Magento\Framework\Jwt\JwtManagerInterface`
 and its usage within Magento Open Source.
 
 An example of using `JwtManagerInterface` for the e-mail link case above:

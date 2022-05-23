@@ -6,11 +6,11 @@ title: Define your configuration files
 
 # Define your configuration files
 
-Each Magento 2 [module](https://glossary.magento.com/module) has its own set of configuration files, gathered into the module's `etc` directory.
+Each [module](https://glossary.magento.com/module) has its own set of configuration files, gathered into the module's `etc` directory.
 
 <InlineAlert variant="info" slots="text"/>
 
-Unlike Magento 1, there is no monolithic configuration file in Magento 2.
+Unlike Magento 1, there is no monolithic configuration file in Adobe Commerce and Magento Open Source.
 
 ## Root directory location
 
@@ -20,7 +20,7 @@ import Docs from '/src/pages/_includes/component-root.md'
 
 ## Use /etc for your configuration files
 
-Magento 2 looks for configuration information for each module in that module's `etc` directory. Depending on the needs of your module, you might have the following configuration files at the top level of your module's `etc` directory:
+Adobe Commerce and Magento Open Source look for configuration information for each module in that module's `etc` directory. Depending on the needs of your module, you might have the following configuration files at the top level of your module's `etc` directory:
 
 *  `acl.xml`
 *  `config.xml`
@@ -32,7 +32,7 @@ Magento 2 looks for configuration information for each module in that module's `
 
 Additions you make to those configuration files are applied *globally* to your module.
 
-In addition to those files, a Magento 2 module also has nested configuration directories in the `etc` directory for any required administration html, frontend, API REST, or API SOAP specific configuration. Additions you make to files in these directories override the settings in the global configuration files for the respective functionality only. That is, if you add a `config.xml` file to `etc/frontend`, the settings you make in that file overrides the settings in `etc/config.xml` for [storefront](https://glossary.magento.com/storefront) functionality *only*.
+In addition to those files, a module also has nested configuration directories in the `etc` directory for any required administration html, frontend, API REST, or API SOAP specific configuration. Additions you make to files in these directories override the settings in the global configuration files for the respective functionality only. That is, if you add a `config.xml` file to `etc/frontend`, the settings you make in that file overrides the settings in `etc/config.xml` for [storefront](https://glossary.magento.com/storefront) functionality *only*.
 
 *  `<your module root dir>/etc/adminhtml/`
 *  `<your module root dir>/etc/frontend/`

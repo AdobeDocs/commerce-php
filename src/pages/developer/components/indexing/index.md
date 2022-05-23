@@ -3,11 +3,11 @@ group: php-developer-guide
 title: Indexing overview
 ---
 
-Indexing is how Magento transforms data such as products and categories, to improve the performance of your [storefront](https://glossary.magento.com/storefront). As data changes, the transformed data must be updated or reindexed. Magento has a very sophisticated architecture that stores lots of merchant data (including [catalog](https://glossary.magento.com/catalog) data, prices, users, and stores) in many database tables. To optimize storefront performance, Magento accumulates data into special tables using indexers.
+Indexing is how Adobe Commerce and Magento Open Source transform data such as products and categories, to improve the performance of your [storefront](https://glossary.magento.com/storefront). As data changes, the transformed data must be updated or reindexed. The application has a very sophisticated architecture that stores lots of merchant data (including [catalog](https://glossary.magento.com/catalog) data, prices, users, and stores) in many database tables. To optimize storefront performance, the application accumulates data into special tables using indexers.
 
-For example, if you change the price of an item from $4.99 to $3.99. Magento must reindex the price change to display it on your storefront.
+For example, if you change the price of an item from $4.99 to $3.99. the application must reindex the price change to display it on your storefront.
 
-Without indexing, Magento would have to calculate the price of every product on the fly, taking into account [shopping cart](https://glossary.magento.com/shopping-cart) price rules, bundle pricing, discounts, tier pricing, etc. Loading the price for a product would take a long time, possibly resulting in cart abandonment.
+Without indexing, the application would have to calculate the price of every product on the fly, taking into account [shopping cart](https://glossary.magento.com/shopping-cart) price rules, bundle pricing, discounts, tier pricing, etc. Loading the price for a product would take a long time, possibly resulting in cart abandonment.
 
 ## Indexing terminology
 
@@ -22,11 +22,11 @@ Indexer
 
 ### Create custom indexers
 
-Magento contains several indexers out of the box, but you might want to add your own if your customization requires data searches, which are not optimized by the Magento default indexers.
+Adobe Commerce and Magento Open Source contain several indexers out of the box, but you might want to add your own if your customization requires data searches, which are not optimized by the default indexers.
 
 This topic provides a high level description of how indexing is implemented from a developer's point of view, and practical advice for how to add your own indexer.
 
-## How Magento implements indexing
+## How the application implements indexing
 
 The following components are involved in the indexing process:
 
@@ -93,7 +93,7 @@ Database Status|Admin Status|Description
 The database status can be seen when viewing the SQL table `indexer_state`.
 The admin status can be seen when viewing the indexer grid in Admin or when running the index status from the CLI.
 
-The Magento indexing mechanism uses the status value in reindex triggering process. You can check the status of an indexer in the [Admin](https://glossary.magento.com/admin) panel in **System >** Tools **> Index Management** or manually using the [command line](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#view-indexer-status).
+The indexing mechanism uses the status value in reindex triggering process. You can check the status of an indexer in the [Admin](https://glossary.magento.com/admin) panel in **System >** Tools **> Index Management** or manually using the [command line](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#view-indexer-status).
 
 ### Using application lock mode for reindex processes
 
@@ -115,7 +115,7 @@ The status can be obtained from the indexer grid in the Admin or through the `bi
 
 The status values in the `indexer_state` or `mview_state` database tables may not be the same as what is observed, because they sometimes do not get updated when an indexer fails.
 
-An additional benefit of this mode is that the Magento application will, internally, also see a more accurate status of the indexers and if an indexer failed, Magento will now see this and the cronjob will pick up the indexer to try it again.
+An additional benefit of this mode is that the application will, internally, also see a more accurate status of the indexers and if an indexer failed, the application will now see this and the cronjob will pick up the indexer to try it again.
 Without this mode, it was necessary to manually reset the indexer when it failed. With this mode enabled, this should no longer be the case if the reindexing doesn't fail again during the next attempt.
 
 ### Indexing modes {#m2devgde-indexing-modes}
@@ -219,9 +219,9 @@ You can reindex by:
 *  Using a [cron job](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html), which is preferred because indexing runs every minute.
 *  Using the [`magento indexer:reindex [indexer]`](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#config-cli-subcommands-index-reindex) command, which reindexes selected indexers, or all indexers, one time only.
 
-## Magento indexers {#m2devgde-indexing-outofbox}
+## Indexers {#m2devgde-indexing-outofbox}
 
-The Magento `Open Source` application implements the following indexers (use [bin/magento indexer:info](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#indexerinfo) to list the indexers):
+Magento Open Source implements the following indexers (use [bin/magento indexer:info](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#indexerinfo) to list the indexers):
 
 | Indexer name | Indexer method name | Indexer class | Description |
 | --- | --- | --- | --- |

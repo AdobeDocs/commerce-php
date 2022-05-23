@@ -34,7 +34,7 @@ to use for these challenges, although [CAPTCHA](https://docs.magento.com/user-gu
 is also available. ReCaptcha is less intrusive and can even be completely invisible by end users.
 
 When protecting a functionality with ReCaptcha, it is vital that you cover all interfaces that expose
-it, including the route (controller) and any applicable RESTful and GraphQL endpoints. For example, Magento provides an
+it, including the route (controller) and any applicable RESTful and GraphQL endpoints. For example, the application provides an
 HTML interface and controllers for login. It also provides a RESTful endpoint and a GraphQL mutation for
 creating an authentication token. If only the controller is protected, then attackers will be able to use the RESTful
 or GraphQL endpoint to guess emails and passwords.

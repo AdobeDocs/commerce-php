@@ -94,7 +94,7 @@ The `queue_consumer.xml` file contains one or more `consumer` elements:
 | name (required)               | The name of the consumer.  |
 | queue (required)              | Defines the queue name to send the message to.  |
 | handler                       | Specifies the class and method that processes the message. The value must be specified in the format `<Vendor>\Module\<ServiceName>::<methodName>`.|
-| consumerInstance              | The Magento class name that consumes the message |
+| consumerInstance              | The class name that consumes the message |
 | connection                    | For AMQP connections, the connection name must match the `connection` attribute in the `queue_topology.xml` file. Otherwise, the connection name must be `db`.  |
 | maxMessages                   | Specifies the maximum number of messages to consume.|
 | maxIdleTime                   | Defines the maximum waiting time in seconds for a new message from the queue. If no message was handled within this period of time, the consumer exits. Default value: `null`|
@@ -121,7 +121,7 @@ The [`consumers-wait-for-messages`](https://devdocs.magento.com/guides/v2.4/inst
 
 #### Consumer handlers
 
-A handler is a class and method that processes a message. Magento has two ways to define a handler for messages.
+A handler is a class and method that processes a message. The application has two ways to define a handler for messages.
 
 *  In the `<handler>` element of the module's `communication.xml` file
 *  In the `handler` attribute of the module's `queue_consumer.xml` file
@@ -131,7 +131,7 @@ The following conditions determine how these handlers are processed:
 *  If the consumer in `queue_consumer.xml` does not have a `consumerInstance` defined, then the system uses the default consumer: `Magento\Framework\MessageQueue\Consumer`. In this case, if the `<consumer>` element contains the `handler` attribute, then it will be used, and the `<handler>` element in `communication.xml` will be ignored.
 *  If the consumer in `queue_consumer.xml` has a `consumerInstance` defined, then the specific consumer implementation defines how the `handler` is used.
 
-Magento provides these consumers out-of-the-box:
+The application provides these consumers out-of-the-box:
 
 | Class name        | Handler in `communication.xml` will be executed? | Handler in `queue_consumer.xml` will be executed? |
 | ---------------- | ----------- | ---------- |
@@ -268,7 +268,7 @@ You cannot enable more than one `publisher` for each `topic`.
 
 ### Updating `queue.xml` {#updatequeuexml}
 
-See [Migrate message queue configuration](migration.md) for information about upgrading from Magento 2.0 or 2.1.
+See [Migrate message queue configuration](migration.md) for information about upgrading from Adobe Commerce and Magento Open Source 2.0 or 2.1.
 
 ### Related Topics
 

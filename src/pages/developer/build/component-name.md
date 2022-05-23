@@ -17,7 +17,7 @@ Before you continue, make sure you have completed all of the following tasks:
 
 Declare the component itself by adding a `module.xml` file in the `/etc` folder of your component.
 
-A component declares itself (that is, defines its name and existence) in the `module.xml` file, located in the Magento install directory at `<ComponentName>/etc/`.
+A component declares itself (that is, defines its name and existence) in the `module.xml` file, located in the install directory at `<ComponentName>/etc/`.
 
 The smallest working `module.xml` file would look something like this:
 
@@ -45,7 +45,7 @@ Refer to [Module version dependencies](../versioning/dependencies.md) to determi
 ```json
 {
     "name": "your-name/module-Acme",
-    "description": "Test component for Magento 2",
+    "description": "Test component",
     "require": {
         "php": "~7.3.0||~7.4.0",
         "magento/module-store": "102.1",
@@ -78,15 +78,11 @@ In this example:
 *  `description` is a concise explanation of your component's purpose.
 *  `require` lists any components your component depends on.
 *  `suggest` lists soft dependencies. The component can operate without them, but if the components are active, this component might impact their functionality. `Suggest` does not affect component load order.
-*  `type` determines what the [Magento component](https://glossary.magento.com/magento-component) type. Choose from *magento2-theme*, *magento2-language*, or *magento2-module*.
+*  `type` determines what the [component](https://glossary.magento.com/magento-component) type. Choose from *magento2-theme*, *magento2-language*, or *magento2-module*.
 *  `version` lists the version of the component.
 *  `license` lists applicable licenses that apply to your component.
 *  `autoload` instructs Composer to load the specified files.
 
 <InlineAlert variant="info" slots="text"/>
 
-Magento does not currently support the [`path`](https://getcomposer.org/doc/05-repositories.md#path) repository.
-
-#### Next
-
-[Component load order](component-load-order.md)
+Adobe Commerce and Magento Open Source do not currently support the [`path`](https://getcomposer.org/doc/05-repositories.md#path) repository.

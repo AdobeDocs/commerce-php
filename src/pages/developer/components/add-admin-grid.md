@@ -7,7 +7,7 @@ contributor_link: https://www.goivvy.com
 
 ## Overview
 
-Admin grids are used to represent, filter and sort various data in the Magento backend. They are also used to perform mass actions such as updates and deletes.
+Admin grids are used to represent, filter and sort various data in the Adobe Commerce and Magento Open Source backend. They are also used to perform mass actions such as updates and deletes.
 This tutorial will show you how to create a simple admin grid.
 
 ### 1. Create a backbone module
@@ -654,7 +654,7 @@ class MassDelete extends Action implements HttpPostActionInterface
 
 ## Completed extension
 
-The complete extension can be found on GitHub at [Magento 2 Admin Grid Example Extension](https://github.com/goivvy/admin-grid-tutorial).
+The complete extension can be found on GitHub at [Admin Grid Example Extension](https://github.com/goivvy/admin-grid-tutorial).
 Installation instructions:
 
 1. Clone the repository

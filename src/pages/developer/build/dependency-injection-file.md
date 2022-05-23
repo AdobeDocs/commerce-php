@@ -10,11 +10,11 @@ The `di.xml` file configures which [dependencies](../components/dependency-injec
 ## Areas and application entry points
 
 Each [module](https://glossary.magento.com/module) can have a global and area-specific `di.xml` file.
-Magento reads all the `di.xml` configuration files declared in the system and merges them all together by appending all nodes.
+The application reads all the `di.xml` configuration files declared in the system and merges them all together by appending all nodes.
 
 As a general rule, the area specific `di.xml` files should configure dependencies for the presentation layer, and your module's global `di.xml` file should configure the remaining dependencies.
 
-Magento loads the configuration in the following stages:
+The application loads the configuration in the following stages:
 
 1. Initial (`app/etc/di.xml`)
 1. Global (`<moduleDir>/etc/di.xml`)
@@ -133,7 +133,7 @@ Node Formats:
 : `<argument xsi:type="string">{strValue}</argument>`
 : `<argument xsi:type="string" translate="true">{strValue}</argument>`
 
-Magento interprets any value for this argument node as a string.
+The application interprets any value for this argument node as a string.
 
 ---
 
@@ -143,7 +143,7 @@ Node Format:
 
 : `<argument xsi:type="boolean">{boolValue}</argument>`
 
-Magento converts any value for this argument node into a boolean value.
+The application converts any value for this argument node into a boolean value.
 See table below:
 
 | Input Type | Data     | Boolean Value |
@@ -213,12 +213,12 @@ Node Format:
   </argument>
   ```
 
-  Magento builds an array with elements corresponding to the items and passes it as the argument.
+  The application builds an array with elements corresponding to the items and passes it as the argument.
   The array can contain an infinite number of items, and each array item can be of any object type including an array itself.
 
-  When Magento merges the configuration files for a given scope, array arguments with the same name get merged into a new array.
+  When the application merges the configuration files for a given scope, array arguments with the same name get merged into a new array.
 
-  When Magento loads a new configuration at a later time, either by a more specific scope or through code, then any array definitions in the new configuration will replace the loaded config instead of merging.
+  When the application loads a new configuration at a later time, either by a more specific scope or through code, then any array definitions in the new configuration will replace the loaded config instead of merging.
 
 ---
 
@@ -406,7 +406,7 @@ The second entry overrides this and configures all instances of `Magento\Backend
 
 The lifestyle of an object determines the number of instances that can exist of that object.
 
-You can configure dependencies in Magento to have the following lifestyles:
+You can configure dependencies in Adobe Commerce and Magento Open Source to have the following lifestyles:
 
 *  **Singleton**(default) - One instance of this class exists. The object manager creates it at the first request. Requesting the class again returns the same instance. Disposing or ending the container registered to it releases the instance.
 *  **Transient** - The object manager creates a new instance of the class for every request.
@@ -458,7 +458,7 @@ See [sensitive and environment settings](../configuration/sensitive-environment-
 
 *  [Guidelines for specifying system-specific and sensitive configuration values](../configuration/sensitive-environment-settings.md)
 *  [Sensitive and system-specific configuration paths reference](https://devdocs.magento.com/guides/v2.4/config-guide/prod/config-reference-sens.html)
-*  [Magento Enterprise B2B Extension configuration paths reference](https://devdocs.magento.com/guides/v2.4/config-guide/prod/config-reference-b2b.html)
+*  [Adobe Commerce B2B Extension configuration paths reference](https://devdocs.magento.com/guides/v2.4/config-guide/prod/config-reference-b2b.html)
 
 ## Get dependency injection configuration information for a class
 

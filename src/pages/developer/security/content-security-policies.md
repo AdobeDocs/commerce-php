@@ -17,19 +17,19 @@ See [Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web
 and [Content-Security-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy)
 to learn more about CSP and each individual policy.
 
-## Magento and CSP
+## Application support
 
-As of version 2.3.5, Magento supports CSP headers and provides ways to configure them. (This
-functionality is defined in the Magento_Csp module.) Magento also provides default configurations at
+As of version 2.3.5, Adobe Commerce and Magento Open Source support CSP headers and provides ways to configure them. (This
+functionality is defined in the Magento_Csp module.) The application also provides default configurations at
 the application level and for individual core modules that require extra configuration. Policies can
 be configured for `adminhtml` and `storefront` areas separately to accommodate different use cases.
-Magento also permits configuring unique CSPs for specific pages.
+The application also permits configuring unique CSPs for specific pages.
 
 CSP can work in two modes:
 
-*  `report-only` - In this mode, Magento reports policy violations but does not interfere. This mode is useful for debugging.  By default, CSP violations are written to the browser console, but they can be configured to be reported to an endpoint as an HTTP request to collect logs. There are a number of services that will collect, store, and sort your store's CSP violations reports for you.
+*  `report-only` - In this mode, the application reports policy violations but does not interfere. This mode is useful for debugging.  By default, CSP violations are written to the browser console, but they can be configured to be reported to an endpoint as an HTTP request to collect logs. There are a number of services that will collect, store, and sort your store's CSP violations reports for you.
 
-*  `restrict mode` - In this mode, Magento acts on any policy violations.
+*  `restrict mode` - In this mode, the application acts on any policy violations.
 
 ## Default configuration
 
@@ -37,7 +37,7 @@ By default, CSP is configured in `report-only` mode, which allows merchants and 
 configure policies to work according to their custom code. After the policies have been configured,
 switch the mode to `restrict`.
 
-Once configured, Magento can enforce policies like these:
+Once configured, the application can enforce policies like these:
 
 *  Any resource, such as `.js`, `.css`, `.jpg`, or `.ttf` files, can only be loaded from the store's domain
 *  Iframes can only include pages from the store itself
@@ -85,7 +85,7 @@ describes how to create a module.
 
 ## Configure CSPs for your custom code/extension/theme
 
-Magento provides multiple ways to add whitelisted resources to your custom code, extension, or theme.
+Adobe Commerce and Magento Open Source provide multiple ways to add whitelisted resources to your custom code, extension, or theme.
 Be sure to add resources only in modules that require it. For example, adding a domain to a `default-src`
 policy when you only need to load a `.js` file from it is not recommended. Add the domain to `script-src`
 instead.
@@ -135,7 +135,7 @@ adding a `csp_whitelist.xml` to your custom module's `etc` folder.
 
 ### Whitelist an inline script or style
 
-Stores that have `unsafe-inline` disabled for `style-src` and `script-src` (default for Magento 2.4) inline scripts and styles
+Stores that have `unsafe-inline` disabled for `style-src` and `script-src` (default for Adobe Commerce and Magento Open Source 2.4) inline scripts and styles
 must be whitelisted.
 
 You must use `Magento\Framework\View\Helper\SecureHtmlRenderer`, which is available
@@ -251,7 +251,7 @@ The URL to use for reporting by browsers can be configured in your custom module
 
 ### Page specific Content-Security-Policies
 
-Magento can send unique policies for a specific page. To do so, implement `Magento\Csp\Api\CspAwareActionInterface`
+Adobe Commerce and Magento Open Source can send unique policies for a specific page. To do so, implement `Magento\Csp\Api\CspAwareActionInterface`
 in a controller responsible for the page and define the `modifyCsp` method. It receives existing CSPs
 read from configs and allows you redefine them by returning a new list. See the example below:
 

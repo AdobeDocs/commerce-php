@@ -33,7 +33,7 @@ Here's how the sensitive information will be exposed through various interfaces.
 
 #### REST web API
 
-The Magento framework serializes all properties defined in `CustomerInterface` into JSON and exposes them. If the endpoint
+The application framework serializes all properties defined in `CustomerInterface` into JSON and exposes them. If the endpoint
 is configured to require `Magento_Customer::personal_info`, then admin users without it won't be able to read basic
 customer data. If it is configured to require `Magento_Customer::read_customer`, then admin users without
 `Magento_Customer::personal_info` can see `dob` and `addresses`.
@@ -140,7 +140,7 @@ hashes for passwords to prevent attacks using rainbow tables.
 `\Magento\Framework\Encryption\EncryptorInterface` helps with hashes. Use `getHash()` method to generate a hash with
 or without a salt, depending on the second argument. (Using a salt is recommended.) Subsequently, use `isValidHash()` to
 compare the user-provided value to an existing hash. These methods handle salts, choose a secure algorithm, and
-will work after the Magento encryption key is updated by an admin user.
+will work after the encryption key is updated by an admin user.
 
 ### Encrypted sensitive information
 
@@ -150,6 +150,6 @@ Private information such as addresses are good candidates for encryption, depend
 Encrypting such information involves having an encryption key that is not stored in the same storage as the encrypted
 information.
 
-Magento handles encryption with `\Magento\Framework\Encryption\EncryptorInterface`. The `encrypt()` and `decrypt()`
-methods use the Magento encryption key for encryption and choose the most secure algorithm with decent performance.
+The application handles encryption with `\Magento\Framework\Encryption\EncryptorInterface`. The `encrypt()` and `decrypt()`
+methods use the encryption key for encryption and choose the most secure algorithm with decent performance.
 It also handles old and new encryption keys and emerging best practices to encryption with regards to the algorithm.

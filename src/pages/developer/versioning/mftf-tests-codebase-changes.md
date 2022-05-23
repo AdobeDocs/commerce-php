@@ -5,7 +5,7 @@ title: MFTF test versioning and backward compatibility policy
 
 ## Goals and requirements
 
-1. Release MFTF tests as a separate Magento package on repo.magento.com.
+1. Release MFTF tests as a separate package on repo.magento.com.
 1. Define the versioning strategy for MFTF test packages.
 1. Outline what is considered a backward incompatible change to MFTF tests.
 1. List of what should be implemented.
@@ -56,7 +56,7 @@ It MAY include minor and patch level changes. Patch and minor version MUST be re
 1. Add Semantic Version analyzer to be able automatically define the release type of the MFTF tests package.
 1. Update publication infrastructure to exclude tests from `magento2-module` package type.
 1. Introduce publication functionality for publishing `magento2-test-module` package type.
-1. Create a metapackage with test packages specifically for each Magento edition.
+1. Create a metapackage with test packages specifically for Adobe Commerce and Magento Open Source.
 
 ## Version increase matrix
 

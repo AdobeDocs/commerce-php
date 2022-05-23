@@ -11,7 +11,7 @@ Building your component involves laying out the file structure, creating the nec
 
 ## Prerequisites {#create-component-basics}
 
-Before you begin creating your new component, make sure that you have a working installation of Magento 2, and the Magento [System Requirements](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html).
+Before you begin creating your new component, make sure that you have a working installation of Adobe Commerce or Magento Open Source.
 
 Also, we recommend that you disable caching while setting up the component file structure and adding configuration files.
 

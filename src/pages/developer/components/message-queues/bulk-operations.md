@@ -66,7 +66,7 @@ To send this notification, use `OperationManagementInterface::changeOperationSta
 
 #### Handling Recoverable Exceptions
 
-Magento provides database exception classes to simplify the process of identifying recoverable database errors in client code. In most cases, such errors happen due to some environment issues and can be fixed. The full path to these classes is `Magento\Framework\DB\Adapter\<class_name>`. These exceptions extend generic `\Zend_Db_Adapter_Exception`.
+Adobe Commerce and Magento Open Source provide database exception classes to simplify the process of identifying recoverable database errors in client code. In most cases, such errors happen due to some environment issues and can be fixed. The full path to these classes is `Magento\Framework\DB\Adapter\<class_name>`. These exceptions extend generic `\Zend_Db_Adapter_Exception`.
 
 Exception class | Description of database error(s)
 --- | ---

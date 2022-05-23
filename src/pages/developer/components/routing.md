@@ -4,9 +4,9 @@ title: Routing
 ---
 
 In web applications, such as Magento, routing is the act of providing data from a URL request to the appropriate class for processing.
-Magento routing uses the following flow:
+Adobe Commerce and Magento Open Source routing uses the following flow:
 
-![Request processing in Magento 2](../../_images/magento2-request-processing.png)
+![Request processing](../../_images/magento2-request-processing.png)
 
 ## `FrontController` class
 
@@ -35,12 +35,12 @@ The following tables show the core routers that come with Magento:
 
 | Name      | Sort order | Description                                |
 | --------- | ---------- | ------------------------------------------ |
-| [admin]   | 10         | Matches requests in the Magento admin area |
-| [default] | 100        | The default router for the admin area      |
+| [admin]   | 10         | Matches requests in the Admin area |
+| [default] | 100        | The default router for the Admin area      |
 
 ### Standard router
 
-A Magento [URL](https://glossary.magento.com/url) that uses the standard router has the following format:
+A [URL](https://glossary.magento.com/url) that uses the standard router has the following format:
 
 ```text
 <store-url>/<store-code>/<front-name>/<controller-name>/<action-name>
@@ -48,7 +48,7 @@ A Magento [URL](https://glossary.magento.com/url) that uses the standard router 
 
 Where:
 
-*  `<store-url>` - specifies the base URL for the Magento instance
+*  `<store-url>` - specifies the base URL for the application instance
 *  `<store-code>` - specifies the store context
 *  `<front-name>` - specifies the `frontName` of the [FrontController] to use (for example, [routesxml])
 *  `<controller-name>` - specifies the name of the controller
@@ -58,10 +58,10 @@ The standard router parses this URL format and matches it to the correct control
 
 ### Default router
 
-The [`DefaultRouter`] class, is the last router Magento checks during the routing process.
+The [`DefaultRouter`] class, is the last router that the application checks during the routing process.
 Requests that reach this point often contain invalid URLs that previous routers cannot handle.
 
-Magento uses the default [NoRouteHandler] to process these requests, but
+The application uses the default [NoRouteHandler] to process these requests, but
 you can write your own no-route handler by implementing the [NoRouteHandlerInterface].
 
 ### Custom routers
@@ -152,7 +152,7 @@ Each Action should implement one or more Magento\Framework\App\Action\Http*HTTP 
 *  `\Magento\Framework\App\Action\HttpPostActionInterface`
 *  `\Magento\Framework\App\Action\HttpPutActionInterface`
 
-Magento has a `form key` validation in place for all `POST` non-AJAX requests - if your `Action` doesn't need that validation or you want to modify it you can implement `CsrfAwareActionInterface`.
+The application has a `form key` validation in place for all `POST` non-AJAX requests - if your `Action` doesn't need that validation or you want to modify it you can implement `CsrfAwareActionInterface`.
 
 If you need to forward a request to another action in your class, use the [`Forward::forward(string $action)`] method.
 

@@ -6,7 +6,7 @@ functional_areas:
   - System
 ---
 
-When Magento is launched, the store's configuration is loaded into memory. Magento uses the in-memory configuration for queue message transactions. When the store's configuration is updated in the admin, the copy in memory does not refresh automatically, resulting in an outdated in-memory object state.
+When Adobe Commerce or Magento Open Source is launched, the store's configuration is loaded into memory. The application uses the in-memory configuration for queue message transactions. When the store's configuration is updated in the admin, the copy in memory does not refresh automatically, resulting in an outdated in-memory object state.
 
 To ensure the copy in memory is re-instantiated after an update, use the `PoisonPill` interfaces available in the MessageQueue module.
 There are three type of the `PoisonPill` interfaces:
@@ -19,9 +19,9 @@ Before a new message is processed, the `PoisonPillCompareInterface` compares the
 
 In addition to changes in the configuration, a new store view or a new website can also trigger the `PoisonPill` interface.
 
-If `PoisonPill` determines the copy of the in-memory state needs to be re-instantiated and you have set up a `consumers_runner` cron job, Magento will automatically restart all consumers on the next run of the job. If you did not set up the cron job, you will need to manually restart any consumers that were terminated by `PoisonPill`.
+If `PoisonPill` determines the copy of the in-memory state needs to be re-instantiated and you have set up a `consumers_runner` cron job, the application will automatically restart all consumers on the next run of the job. If you did not set up the cron job, you will need to manually restart any consumers that were terminated by `PoisonPill`.
 
-### How to use `PoisonPill` interfaces in Magento {#how-to-use}
+### How to use `PoisonPill` interfaces {#how-to-use}
 
 The method `put` of `PoisonPillPutInterface` using in the `Magento\Store\Model\Website`
 

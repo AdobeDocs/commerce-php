@@ -7,7 +7,7 @@ menu_order: 1
 menu_node: parent
 ---
 
-Magento 2 is flexible and as a result has varied functionality, so developing a component in Magento takes into account a number of different of the following topics. Please read the information on compatibility &#8212; [Service Contracts](service-contracts/index.md), [Design Patterns](service-contracts/design-patterns.md), and the information on [Dependency Injection](dependency-injection.md), [Routing](routing.md), and [Working With Public Interfaces and APIs](api-concepts.md) closely; they are essential to creating a good Magento 2 component.
+Adobe Commerce and Magento Open Source are flexible and as a result have varied functionality, so developing a component takes into account a number of different topics. Read the information on compatibility &#8212; [Service Contracts](service-contracts/index.md), [Design Patterns](service-contracts/design-patterns.md), and the information on [Dependency Injection](dependency-injection.md), [Routing](routing.md), and [Working With Public Interfaces and APIs](api-concepts.md) closely; they are essential for creating a good component.
 
 *  Compatibility (backward and forward)
    *  [Service contracts](service-contracts/index.md)
