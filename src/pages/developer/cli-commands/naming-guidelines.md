@@ -174,8 +174,3 @@ To avoid naming your command the same as another command, we recommend:
    dev:myname:theme:create
    dev:myname:theme:delete
    ```
-
-{:.ref-header}
-Related topic
-
-[How to add CLI commands](create-new.md)

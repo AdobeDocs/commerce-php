@@ -32,7 +32,6 @@ Depending on your needs, you may only need to create and configure `communicatio
 The `<module>/etc/communication.xml` file defines aspects of the message queue system that all communication types have in common. This release supports AMQP and database connections.
 
 ### Sample `communication.xml` file
-{:.no_toc}
 
 The following sample defines two synchronous topics. The first topic is for RPC calls. The second uses a custom service interface.
 
@@ -49,7 +48,7 @@ The following sample defines two synchronous topics. The first topic is for RPC 
 ```
 
 ### topic element
-{:.no_toc}
+
 Topic configuration is flexible in that you can switch the transport layer for topics at deployment time. These values can be overwritten in the `env.php` file.
 
 The `name` parameter is required. The topic definition must include either a `request` or a `schema`. Use `schema` if you want to implement a custom service interface.  Otherwise, specify `request`. If `request` is specified, then also specify `response` if the topic is synchronous.
@@ -62,7 +61,7 @@ response | Specifies the format of the response. This parameter is required if y
 schema | The interface that describes the structure of the message. The format must be  `<module>\Api\<ServiceName>::<methodName>`.
 
 ### handler element
-{:.no_toc}
+
 The `handler` element specifies the class where the logic for handling messages exists and the method it executes.
 
 Parameter | Description
@@ -73,10 +72,10 @@ method | The method this handler executes.
 disabled | Determines whether this handler is disabled. The default value is `false`.
 
 ### `queue_consumer.xml` {#queueconsumerxml}
+
 The `queue_consumer.xml` file contains one or more `consumer` elements:
 
 #### Example `queue_consumer` file
-{:.no_toc}
 
 ```xml
 <?xml version="1.0"?>
@@ -89,7 +88,6 @@ The `queue_consumer.xml` file contains one or more `consumer` elements:
 ```
 
 #### `consumer` element
-{:.no_toc}
 
 | Attribute                     | Description |
 | ----------------------------- | ----------- |
@@ -151,7 +149,6 @@ The `queue_topology.xml` file defines the message routing rules and declares que
 *  `exchange/binding/arguments` (optional)
 
 #### Example `queue_topology.xml` file
-{:.no_toc}
 
 ```xml
 <?xml version="1.0"?>
@@ -177,7 +174,6 @@ The `queue_topology.xml` file defines the message routing rules and declares que
 ```
 
 #### `exchange` element
-{:.no_toc}
 
 | Attribute      | Description |
 | -------------- | ----------- |
@@ -189,7 +185,6 @@ The `queue_topology.xml` file defines the message routing rules and declares que
  internal | Boolean value. If set to true, the exchange may not be used directly by publishers, but only when bound to other exchanges. The default is `false`.
 
 #### `binding` element
-{:.no_toc}
 
 The `binding` element is a subnode of the `exchange` element.
 
@@ -211,7 +206,6 @@ Example topic names that include wildcards:
 `*.Order.#` | There must be one string before __.Order__. There can be any number of strings (including 0) after that.  | `mytopic.Order`, `mytopic.Order.Create`, `newtopic.Order.delete.success` | `mytopic.Sales.Order.Create`
 
 #### `arguments` element
-{:.no_toc}
 
 The `arguments` element is an optional element that contains one or more `argument` elements. These arguments define key/value pairs that are passed to the broker for processing.
 
@@ -239,7 +233,6 @@ The `queue_publisher.xml` file defines which connection and exchange to use to p
 *  publisher/connection
 
 #### Example `queue_publisher.xml` file
-{:.no_toc}
 
 ```xml
 <?xml version="1.0"?>
@@ -253,7 +246,6 @@ The `queue_publisher.xml` file defines which connection and exchange to use to p
 ```
 
 #### `publisher` element
-{:.no_toc}
 
 | Attribute            | Description |
 | -------------------- | ----------- |
@@ -261,7 +253,6 @@ The `queue_publisher.xml` file defines which connection and exchange to use to p
 | disabled             | Determines whether this queue is disabled. The default value is `false`. |
 
 #### `connection` element
-{:.no_toc}
 
 The `connection` element is a subnode of the `publisher` element. There must not be more than one enabled active connection to a publisher defined at a time. If you omit the `connection` element, the default connection of `amqp` and exchange `magento` will be used.
 

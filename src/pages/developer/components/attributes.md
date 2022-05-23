@@ -305,7 +305,6 @@ If you have issues when using `setup:upgrade`, verify `__construct` uses the met
 
 The following table is a reference for the `Magento\Eav\Setup\EavSetup::addAttribute` method. It contains the available options when creating a product attribute, listing each option's key, description, and the default value (where applicable).
 
-{:.fixed}
 |Key|Description|Default Value|
 |--- |--- |--- |
 |apply_to|Catalog EAV Attribute - defines which product types the attribute can be applied to||

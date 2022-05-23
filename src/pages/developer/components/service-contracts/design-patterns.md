@@ -96,8 +96,7 @@ Interface | Description
 `CustomerMetadataManagementInterface` | Interface for managing customer attributes metadata. Defines the constant `ENTITY_TYPE_CUSTOMER`.
 `AddressMetadataInterface` | Interface for retrieving information about customer address attributes metadata. Defines the constants `ATTRIBUTE_SET_ID_ADDRESS`, `ENTITY_TYPE_ADDRESS`, `DATA_INTERFACE_NAME`.
 
-{:.ref-header}
-Related topics
+**Related topics:**
 
 -  [Service contracts](index.md)
 -  [Configure services as web APIs](../web-api/services.md)

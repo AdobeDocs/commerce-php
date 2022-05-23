@@ -162,8 +162,3 @@ As a result, the new command `my:first:command` that accepts a `--name` paramete
 ```bash
 bin/magento my:first:command --name 'John'
 ```
-
-{:.ref-header}
-Related topic
-
-[Command naming guidelines](create-new.md)

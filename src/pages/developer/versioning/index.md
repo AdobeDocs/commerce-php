@@ -67,8 +67,7 @@ Or it can be used to declare a dependency on a particular version of a component
 
 If you installed the application from GitHub without using Composer, the `version` is not included. The Admin displays the version as `Magento ver. dev-<GitHub-branch-name>`. In addition, modules inside the `require` declaration list a version of `*`. For example, `"magento/framework": "*"`.
 
-{:.ref-header}
-Related Topics
+**Related topics:**
 
 *  [Module version dependencies][version-dependencies] - Information about how your module can depend on the version of other modules.
 *  [Codebase changes][codebase-changes] - Information on how changes in a module's codebase affect versions.

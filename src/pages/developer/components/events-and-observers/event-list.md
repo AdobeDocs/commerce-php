@@ -476,7 +476,6 @@ To add or customize additional element types for catalog product edit attributes
 *  `form` is an object of `\Magento\Framework\Data\Form`
 *  `layout` is an object of `\Magento\Framework\View\LayoutInterface`
 
-{:.procedure}
 There are only three classes that raise this event:
 
 *  `\Magento\Bundle\Block\Adminhtml\Catalog\Product\Edit\Tab\Attributes`

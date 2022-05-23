@@ -73,8 +73,7 @@ $objectManager->configure([
 ]);
 ```
 
-{:.ref-header}
-Related topics
+**Related topics:**
 
 -  [The `di.xml` file][`di.xml`]
 -  [Dependency injection][]

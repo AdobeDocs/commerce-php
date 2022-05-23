@@ -575,8 +575,7 @@ are both valid.
 
 When disabling the plugin, make sure to use the same path format to call and disable the plugin.
 
-{:.ref-header}
-Related topics
+**Related topics:**
 
 *  [Dependency injection](dependency-injection.md)
 *  [Events and observers](events-and-observers/index.md)

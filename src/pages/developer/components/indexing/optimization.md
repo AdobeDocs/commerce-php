@@ -213,8 +213,7 @@ You cannot exclude websites from the `NOT LOGGED IN` customer group.
 When a website is added to the excluded customer group and a customer who belongs to this group is trying to login to their account on the excluded website, the customer gets the `"This website is excluded from customer's group."` warning.
 Customers are not allowed to login to the website even if [the scope of customer accounts is shared with all websites](https://docs.magento.com/user-guide/customers/account-scope.html), because there are no prices in the index table for this user.
 
-{:.ref-header}
-Related topics
+**Related topics:**
 
 *  [Indexing overview](index.md)
 *  [Adding a custom indexer](custom-indexer.md)

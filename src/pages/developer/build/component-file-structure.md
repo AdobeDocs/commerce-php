@@ -15,7 +15,7 @@ A typical file structure for a Magento 2 [module](https://glossary.magento.com/m
 ![Module File Structure](../../_images/pdg-config-file-structure.png)
 
 #### Common directories
-{:.no_toc}
+
 Following are some common module directories:
 
 *  `Block`: contains [PHP](https://glossary.magento.com/php) view classes as part of Model View Controller(MVC) vertical implementation of module logic.
@@ -26,7 +26,7 @@ Following are some common module directories:
 *  `ViewModel`: contains PHP model classes as part of a model-view-viewmodel (MVVM) implementation. It allows developers to offload features and business logic from block classes into separate classes that are easier to maintain, test, and reuse.
 
 #### Additional directories
-{:.no_toc}
+
 Additional folders can be added for configuration and other ancillary functions for items like [plugin-ins](../components/plugins.md), localization, and [layout](https://glossary.magento.com/layout) files.
 
 *  `Api`: contains any PHP classes exposed to the [API](https://glossary.magento.com/api).
@@ -82,7 +82,7 @@ A typical [theme](https://glossary.magento.com/theme) file structure can look li
 ```
 
 #### Common directories
-{:.no_toc}
+
 Typical theme directories are:
 
 *  `etc`: Contains configuration files such as the `view.xml` file which contains image configurations for all images and thumbnails.
@@ -99,7 +99,3 @@ Typical theme directories are:
 For more details on the theme folder structure, see [Magento theme structure](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/themes/theme-structure.html).
 
 {% include php-dev/lang-pack-file-struct.md %}
-
-**Next:**
-
-[Register your component](component-registration.md)

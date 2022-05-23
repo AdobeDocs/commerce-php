@@ -99,8 +99,7 @@ Done.
 
 To set a configuration setting as both sensitive and system-specific, create two entries with the `name` property for `argument` set to `sensitive` for one entry and `environment` for the other.
 
-{:.ref-header}
-Related topics
+**Related topics:**
 
 *  [Configuration importers][config-importers]
 *  [The di.xml file][di-xml]

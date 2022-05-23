@@ -124,8 +124,7 @@ The first column in the following table lists the all the parameters in the `que
 `<publisher>/<connection>/exchange` | `<publisher>/exchange`
 `<publisher>/<connection>/disabled` | Not present in 2.0. Omit this parameter to accept the default value.
 
-{:.ref-header}
-Related topics
+**Related topics:**
 
 *  [Message Queues Overview](https://devdocs.magento.com/guides/v2.4/config-guide/mq/rabbitmq-overview.html)
 *  [Configure message queues](configuration.md)

@@ -124,8 +124,7 @@ Since you cannot specify this data in the constructor signature, Magento cannot 
 
 To get around this limitation, injectable objects can depend on [factories] that produce newable objects.
 
-{:.ref-header}
-Related topics
+**Related topics:**
 
 *  [The `di.xml` file](../build/dependency-injection-file.md)
 *  [ObjectManager](object-manager/index.md)

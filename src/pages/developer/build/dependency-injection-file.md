@@ -503,8 +503,7 @@ Plugins for the Preference:
 +-----------------------------------------------------+---------+--------+
 ```
 
-{:.ref-header}
-Related topics
+**Related topics:**
 
 *  [ObjectManager](../components/object-manager/index.md)
 *  [Dependency injection](../components/dependency-injection.md)
