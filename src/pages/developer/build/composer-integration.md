@@ -19,7 +19,6 @@ Magento does not support the [`path`][3] repository.
 
 Here is the example of composer.json file.
 
-{% collapsible File content for composer.json %}
  ```json
   {
     "name": "mycompany/sample-module-minimal",
@@ -41,7 +40,6 @@ Here is the example of composer.json file.
     }
   }
  ```
-{% endcollapsible %}
 
 ## Composer binary location {#composer-binary}
 
@@ -206,12 +204,16 @@ Where:
 : `suffix` is a unique identifier for extensions of that type.
 
 ## Versioning {#component-version}
-{% include php-dev/component-versioning.md %}
 
----
+Components have the following types of versions:
 
-**Next:**
-[Define your configuration files](required-configuration-files.md)
+*  Marketing version; in other words, the version the merchant interacts with.
+
+   Your initial version might be 1.0.0 or 2.0.0, for example. You should follow [our versioning policy](../versioning/index.md) guidelines when setting your version.
+
+*  Composer version; in other words, the version of each module, theme, language package, third-party package, and dependencies.
+
+Using Magento code as an example, Magento Open Source marketing version 2.0.0 includes component versions such as 100.0.1, 100.0.2, and so on. These versioning strategy prevents collisions between the marketing version and component versions.
 
 [0]: https://getcomposer.org/
 [2]: https://packagist.org/

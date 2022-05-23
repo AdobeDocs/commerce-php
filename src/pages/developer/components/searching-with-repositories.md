@@ -153,8 +153,6 @@ The [`FilterProcessor`](https://github.com/magento/magento2/blob/2.4/lib/interna
 Below is the code that applies filters to a collection.
 The method applies custom filters for some fields, otherwise it applies `$collection->addFieldToFilter($fields, $conditions)`.
 
-{% collapsible Show Code for addFilterGroupToCollection %}
-
 ```php
 /**
  * Add FilterGroup to the collection
@@ -188,8 +186,6 @@ private function addFilterGroupToCollection(
 }
 ```
 
-{% endcollapsible %}
-
 You can configure this class to use a specific custom field mapping and custom filter in the `di.xml` file.
 The example below uses [dependency injection](https://glossary.magento.com/dependency-injection) to create a [virtual type](https://glossary.magento.com/virtual-type) from a Filter Processor that applies the module-specific [`ProductCategoryFilter`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/Api/SearchCriteria/CollectionProcessor/FilterProcessor/ProductCategoryFilter.php) on a particular field mapping.
 
@@ -207,8 +203,6 @@ The example below uses [dependency injection](https://glossary.magento.com/depen
         </arguments>
     </virtualType>
 ```
-
-{% collapsible Show code for ProductCategoryFilter %}
 
 ```php
 namespace Magento\Catalog\Model\Api\SearchCriteria\CollectionProcessor\FilterProcessor;
@@ -244,8 +238,6 @@ class ProductCategoryFilter implements CustomFilterInterface
     }
 }
 ```
-
-{% endcollapsible %}
 
 | Argument | Description |
 | --- | --- |

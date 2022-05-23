@@ -210,4 +210,6 @@ Magento uses cache tags for link creation. The performance of cache storage has 
 
 Use only HTTP POST or PUT methods to change state (e.g., adding to a shopping cart, adding to a wishlist, etc.) and don't expect to see caching on these methods. Using GET or HEAD methods might trigger caching and prevent updates to private content. For more information about caching, see [RFC-2616 section 13](https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html)
 
-{% include cache/page-cache-checklists.md%}
+import Docs from 'src/pages/_includes/page-cache-checklist.md'
+
+<Docs />

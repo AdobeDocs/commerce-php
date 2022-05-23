@@ -4,13 +4,19 @@ subgroup: 03_Build
 title: Define your configuration files
 ---
 
+# Define your configuration files
+
 Each Magento 2 [module](https://glossary.magento.com/module) has its own set of configuration files, gathered into the module's `etc` directory.
 
 <InlineAlert variant="info" slots="text"/>
 
 Unlike Magento 1, there is no monolithic configuration file in Magento 2.
 
-{% include php-dev/component-root-2.3.md %}
+## Root directory location
+
+import Docs from '/src/pages/_includes/component-root.md'
+
+<Docs />
 
 ## Use /etc for your configuration files
 

@@ -5,7 +5,9 @@ title: Component types
 
 Each component type has a different [directory structure][directory-structure] and different contents for [`composer.json`][composer].
 
-{% include php-dev/composer-types.md %}
+import Docs from '/src/pages/_includes/composer-types.md'
+
+<Docs />
 
 [directory-structure]: ../build/component-file-structure.md
 [composer]: ../build/composer-integration.md
