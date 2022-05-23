@@ -239,7 +239,7 @@ module.exports = [
             },
             {
               title: "Create a custom indexer",
-              path: "/developer/components/indexing/custom/",
+              path: "/developer/components/indexing/custom-indexer/",
             },
           ],
         },
