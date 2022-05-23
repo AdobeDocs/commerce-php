@@ -6,7 +6,7 @@ title: Routing
 In web applications, such as Magento, routing is the act of providing data from a URL request to the appropriate class for processing.
 Magento routing uses the following flow:
 
-![Request processing in Magento 2](./images/magento2-request-processing.png)
+![Request processing in Magento 2](../../_images/magento2-request-processing.png)
 
 ## `FrontController` class
 
@@ -399,7 +399,7 @@ class Router implements RouterInterface
 
 As a result, by accessing the `http://site.com/learning` route, the `http://site.com/routing/index/index` route is loaded.
 
-![Routing Result]({{ site.baseurl }}/common/images/routing-result.png)
+![Routing Result](../../_images/routing-result.png)
 
 ## Declaring the new route as Page Type
 
@@ -423,7 +423,7 @@ The `routing_index_index` represents the path for the new route.
 
 As result, the new page is available in the `Specified Page` dropdown widget when creating a page.
 
-![Routing Page Type]({{ site.baseurl }}/common/images/routing-page-type-result.png)
+![Routing Page Type](../../_images/routing-page-type-result.png)
 
 [`FrontController` class]: {{ site.mage2bloburl }}/{{ page.guide_version }}/lib/internal/Magento/Framework/App/FrontController.php
 [FrontController]: #frontcontroller-class

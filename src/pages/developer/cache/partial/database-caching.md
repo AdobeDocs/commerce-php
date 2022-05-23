@@ -183,11 +183,11 @@ Use the following steps:
 
    `cache` table example.
 
-   ![Sample contents of the cache table with database caching enabled]
+   ![Sample contents of the cache table with database caching enabled](../../../_images/config-db_cache-table.png)
 
    `cache_tag` table example.
 
-   ![Sample contents of the cache tag table with database caching enabled]
+   ![Sample contents of the cache tag table with database caching enabled](../../../_images/config-db_cache-tag-table.png)
 
 ## Configuration examples {#mage-cache-db-config}
 
@@ -282,7 +282,3 @@ This section contains code sample snippets to refer to when configuring database
 [Configuration examples]: #mage-cache-db-config
 [enable developer mode]: {{ page.baseurl }}/config-guide/cli/config-cli-subcommands-mode.html#change-to-developer-mode
 [phpMyAdmin]: {{ page.baseurl }}/install-gde/prereq/optional.html#install-optional-phpmyadmin
-
-<!-- Image references -->
-[Sample contents of the cache table with database caching enabled]: {{ site.baseurl }}/common/images/config-db_cache-table.png
-[Sample contents of the cache tag table with database caching enabled]: {{ site.baseurl }}/common/images/config-db_cache-tag-table.png

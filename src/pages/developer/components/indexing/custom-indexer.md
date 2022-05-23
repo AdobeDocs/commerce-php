@@ -168,7 +168,7 @@ These settings start `<VendorName>\Merchandizing\Model\Indexer\Popular::execute`
 
 After this, please refresh the cache and go to **System** > Tools > [**Index Management**](https://docs.magento.com/m2/ce/user_guide/system/index-management.html) through the Admin to verify the custom indexer result.
 
-![Custom indexer modes]({{ site.baseurl }}/common/images/custom-indexer-magento2.jpg){:width="600px"}
+![Custom indexer modes](../../../_images/custom-indexer-magento2.jpg)
 
 Now when an order is placed, the Popular Products indexer calculates the sorting order of the products by popularity and stores this data in the index table, so that it can be used in product displaying logic.
 
@@ -177,6 +177,7 @@ Use the following command to reindex the custom indexer:
 ```bash
 bin/magento indexer:reindex merchandizing_popular
 ```
+
 Use the following command to invalidate the custom indexer:
 
 ```bash

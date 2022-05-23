@@ -21,7 +21,7 @@ A service contract includes [data interfaces]({{ page.baseurl }}/extension-dev-g
 
 If developers define data and service interfaces according to a set of [design patterns]({{ page.baseurl }}/extension-dev-guide/service-contracts/design-patterns.html), the result is a well-defined, durable [API](https://glossary.magento.com/api) that other modules and third-party extensions can implement through Magento models and resource models.
 
-![Service Contracts]({{ site.baseurl }}/common/images/msc.jpg)
+![Service Contracts](../../../_images/msc.jpg)
 
 ## Service contract benefits {#msc-benefits}
 

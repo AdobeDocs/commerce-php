@@ -48,7 +48,7 @@ Magento/2.3 (Community)
 
 Login to Magento as a registered Admin user. The Magento version is displayed at the bottom right of the page, above the  **Account Activity** and **Report an Issue** links:
 
-![Check the Magento version]({{ page.baseurl }}/extension-dev-guide/images/version.png)
+![Check the application version](../../_images/version.png)
 
 ## The `composer.lock` file
 

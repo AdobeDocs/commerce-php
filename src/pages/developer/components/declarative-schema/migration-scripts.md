@@ -102,7 +102,7 @@ When safe mode is enabled, Magento creates a CSV file each time a destructive op
 
 Each CSV file contains a row that defines the column (or other database entity) names as well as rows of values, as shown in the following image:
 
-![Dump Example]({{ page.baseurl }}/extension-dev-guide/declarative-schema/images/dump_example.png)
+![Dump Example](../../../_images/dump_example.png)
 
 ## Create a schema whitelist {#create-whitelist}
 

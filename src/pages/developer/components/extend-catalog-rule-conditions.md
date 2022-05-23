@@ -12,7 +12,7 @@ For more information about catalog price rules, refer to [Catalog Rules]({{ site
 
 In the `Conditions` tab, Magento has the following product attributes in the `add conditions` section.
 
-![Catalog Rule Conditions]({{ site.baseurl }}/common/images/conditions-section-v2.png)
+![Catalog Rule Conditions](../../_images/conditions-section-v2.png)
 
 ## Implementation of Existing Conditions
 

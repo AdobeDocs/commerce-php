@@ -12,7 +12,7 @@ In this section, we go over the different file structures for the component type
 
 A typical file structure for a Magento 2 [module](https://glossary.magento.com/module) can look like the following:
 
-![Module File Structure](../images/pdg-config-file-structure.png){:width="300px"}
+![Module File Structure](../../_images/pdg-config-file-structure.png)
 
 #### Common directories
 {:.no_toc}
