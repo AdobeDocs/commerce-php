@@ -63,11 +63,13 @@ You can do the same for theme and language pack extensions:
 ├── <theme1>
 └── <theme2>
 ```
+
 ```tree
 <extension_repo_root>/
 ├── <language1>
 └── <language2>
 ```
+
 ### One component per repository
 
 If your extension requires only one component, your `<component_root>` directory and your `<repo_root>` directory will be the same to reduce unnecessary hierarchy in the directory structure:

@@ -70,7 +70,7 @@ Using the preceding example, a proxy can be passed into the constructor argument
 
 With the proxy used in place of `SlowLoading`, the `SlowLoading` class will not be instantiated---and therefore, the resource intensive constructor operations not performed---until the `SlowLoading` object is used (that is, if the `getSlowValue` method is called).
 
-Because DI configuration is used to inject a proxy, proxies can be dropped in to replace their corresponding classes - or proxy replacements _removed_ - without touching application code.
+Because DI configuration is used to inject a proxy, proxies can be dropped in to replace their corresponding classes - or proxy replacements *removed* - without touching application code.
 
 As a practical example of a proxy, you can see the [StoreManager](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Store/Model/StoreManager.php) class and then see the generated `StoreManager` proxy class.
 

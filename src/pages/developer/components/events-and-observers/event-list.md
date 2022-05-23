@@ -246,6 +246,7 @@ To perform actions when system cache is cleaned.
    {
    $this->_eventManager->dispatch('adminhtml_cache_refresh_type', ['type' => 'config']);
    ```
+
    *  `type` for cache type cleared
 
 *  `\Magento\PageCache\Model\Cache\Type::clean()`:
@@ -1119,6 +1120,7 @@ To perform actions after admin design section saved or deleted.
 #### Origins
 
 *  `\Magento\Theme\Model\Design\Config\Plugin::afterSave()`:
+
    ```php
     public function afterSave(DesignConfigRepository $subject, DesignConfigInterface $designConfig)
     {
@@ -1128,7 +1130,9 @@ To perform actions after admin design section saved or deleted.
             ['website' => $website, 'store' => $store]
         );
    ```
+
 *  `\Magento\Theme\Model\Design\Config\Plugin::afterDelete()`:
+
    ```php
     public function afterDelete(DesignConfigRepository $subject, DesignConfigInterface $designConfig)
     {
@@ -1182,7 +1186,9 @@ To perform actions after a user is authenticated.
 #### Origins
 
 *  `\Magento\User\Model\User::authenticate()`:
+
    ```php
+
     public function authenticate($username, $password)
     {
     ...
@@ -1191,7 +1197,9 @@ To perform actions after a user is authenticated.
                 ['username' => $username, 'password' => $password, 'user' => $this, 'result' => $result]
             );
    ```
+
 *  `\Magento\User\Model\User::performIdentityCheck()`:
+
    ```php
    public function performIdentityCheck($passwordString)
    {
@@ -1712,6 +1720,7 @@ To perform actions when search results are reset.
 #### Origins
 
 *  `\Magento\CatalogSearch\Model\ResourceModel\Fulltext::resetSearchResults()`:
+
    ```php
     public function resetSearchResults()
     {
@@ -1720,7 +1729,9 @@ To perform actions when search results are reset.
         return $this;
     }
     ```
+
 *  `\Magento\CatalogSearch\Model\ResourceModel\Fulltext::resetSearchResultsByStore()`:
+
    ```php
     public function resetSearchResultsByStore($storeId)
     {
@@ -1885,6 +1896,7 @@ To modify a `select` object before category flat nodes are loaded.
 #### Origins
 
 `\Magento\Catalog\Model\ResourceModel\Category\Flat::_loadNodes()`:
+
 ```php
    protected function _loadNodes($parentNode = null, $recursionLevel = 0, $storeId = 0, $skipMenuFilter = false)
    {
@@ -1908,6 +1920,7 @@ To modify a category before it is saved.
 #### Origins
 
 `\Magento\Catalog\Controller\Adminhtml\Category\Save::execute()`:
+
 ```php
    public function execute()
    {
@@ -1935,6 +1948,7 @@ To add more inactive category IDs.
 
 *  `\Magento\Catalog\Model\ResourceModel\Category\Tree::_initInactiveCategoryIds()`
 *  `\Magento\Catalog\Model\ResourceModel\Category\Flat::_initInactiveCategoryIds()`:
+
    ```php
     protected function _initInactiveCategoryIds()
     {
@@ -1960,6 +1974,7 @@ To perform actions before a category gets deleted.
 #### Origins
 
 `\Magento\Catalog\Controller\Adminhtml\Category\Delete::execute()`:
+
 ```php
    public function execute()
    {
@@ -2121,6 +2136,7 @@ To perform actions before a product attribute(s) gets updated.
 #### Origins
 
 `\Magento\Catalog\Model\Product\Action::updateAttributes()`:
+
 ```php
    public function updateAttributes($productIds, $attrData, $storeId)
    {
@@ -2271,6 +2287,7 @@ To perform actions after a product gets removed from a compare list.
 
 `\Magento\Catalog\Controller\Product\Compare\Remove::execute()`:
 d
+
 ```php
    public function execute()
    {
@@ -2399,13 +2416,16 @@ To alter the way the final product price is generated.
 #### Origins
 
 *  `\Magento\Catalog\Model\Product\Type\Price::getFinalPrice()`:
+
    ```php
     public function getFinalPrice($qty, $product)
     {
     ...
      $this->_eventManager->dispatch('catalog_product_get_final_price', ['product' => $product, 'qty' => $qty]);
    ```
+
 *  `\Magento\Bundle\Pricing\Price\BundleSelectionPrice::getValue()`:
+
    ```php
    public function getValue()
    {
@@ -2415,6 +2435,7 @@ To alter the way the final product price is generated.
                     ['product' => $product, 'qty' => $this->bundleProduct->getQty()]
                 );
    ```
+
 *  `\Magento\Bundle\Model\Product\Price::getSelectionFinalTotalPrice()`:
 
   ```php
@@ -3281,6 +3302,7 @@ To perform actions after an order was placed.
 #### Origins
 
 *  `\Magento\Checkout\Model\Type\Onepage::saveOrder()`:
+
    ```php
     public function saveOrder()
     {
@@ -3293,14 +3315,18 @@ To perform actions after an order was placed.
             ]
         );
    ```
+
 *  `\Magento\Sales\Model\AdminOrder\Create::createOrder()`:
+
    ```php
    public function createOrder()
    {
    ...
    $this->_eventManager->dispatch('checkout_submit_all_after', ['order' => $order, 'quote' => $quote]);
    ```
+
 *  `\Magento\Multishipping\Model\Checkout\Type\Multishipping::createOrders()`:
+
    ```php
    public function createOrders()
    {
@@ -3310,7 +3336,9 @@ To perform actions after an order was placed.
                 ['orders' => $orders, 'quote' => $this->getQuote()]
             );
    ```
+
 *  `\Magento\Quote\Model\QuoteManagement::placeOrder()`:
+
    ```php
    public function placeOrder($cartId, PaymentInterface $paymentMethod = null)
    {
@@ -4221,6 +4249,7 @@ To alter the way an address is formatted.
 #### Origins
 
 *  `\Magento\Sales\Model\Order\Address\Renderer::format()`:
+
    ```php
    public function format(Address $address, $type)
    {
@@ -4228,7 +4257,9 @@ To alter the way an address is formatted.
         $this->eventManager->dispatch('customer_address_format', ['type' => $formatType, 'address' => $address]);
    }
    ```
+
 *  `\Magento\Customer\Model\Address\AbstractAddress::format()`:
+
    ```php
    public function format(Address $address, $type)
    {
@@ -4255,6 +4286,7 @@ To perform actions after a customer has been authenticated.
 #### Origins
 
 *  `\Magento\Customer\Model\Customer::authenticate()`:
+
    ```php
    public function authenticate($login, $password)
    {
@@ -4265,7 +4297,9 @@ To perform actions after a customer has been authenticated.
         );
    }
    ```
+
 *  `\Magento\Customer\Model\AccountManagement::authenticate()`:
+
    ```php
    public function authenticate($username, $password)
    {
@@ -4295,6 +4329,7 @@ To perform actions after a customer has been logged in.
 #### Origins
 
 *  `\Magento\Customer\Model\Session::setCustomerAsLoggedIn()`:
+
    ```php
    public function setCustomerAsLoggedIn($customer)
    {
@@ -4302,7 +4337,9 @@ To perform actions after a customer has been logged in.
      $this->_eventManager->dispatch('customer_data_object_login', ['customer' => $this->getCustomerDataObject()]);
    }
    ```
+
 *  `\Magento\Customer\Model\Session::setCustomerDataAsLoggedIn()`:
+
    ```php
    public function setCustomerDataAsLoggedIn($customer)
    {
@@ -4310,7 +4347,9 @@ To perform actions after a customer has been logged in.
      $this->_eventManager->dispatch('customer_data_object_login', ['customer' => $customer]);
    }
    ```
+
 *  `\Magento\Customer\Model\AccountManagement::authenticate()`:
+
    ```php
    public function authenticate($username, $password)
    {

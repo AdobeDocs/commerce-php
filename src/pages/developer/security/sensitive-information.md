@@ -24,6 +24,7 @@ interface CustomerQueryServiceInterface {
     public function findById(string $id): CustomerInterface;
 }
 ```
+
 The service is really abstract. Most likely, it's actively used in other places where there's a need to get customer
 data by ID. However, the `dob` and `addresses` properties also require the `Magento_Customer::personal_info` permission,
 which is intended for the most trusted admin users only. This creates a problem for the customer read endpoint/page:
@@ -63,6 +64,7 @@ The first step is to make a case-specific service for customer data retrieval by
 ```php
 interface AdminCustomerQueryServiceInterface {}
 ```
+
 The second step is to define operation specific DTOs:
 
 ```php

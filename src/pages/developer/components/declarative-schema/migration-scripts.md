@@ -88,7 +88,7 @@ Adobe Commerce and Magento Open Source provide options to the `setup:install` an
 
 Several types of operations have an effect on data dumps and rollbacks.
 
-*  *Destructive operations (DO)* - SQL DDL operations that cause data deletion or data corruption. The following operations are destructive:
+*  _Destructive operations (DO)_ - SQL DDL operations that cause data deletion or data corruption. The following operations are destructive:
 
    *  Deleting a table
    *  Deleting a column
@@ -96,7 +96,7 @@ Several types of operations have an effect on data dumps and rollbacks.
    *  Changing column precision
    *  Changing the column type
 
-*  *Opposite to destructive operations (ODO)* - In the case of a failed installation, SQL DDL operations that are the opposite of destructive operations can be used for rollback. For example, changing the column type from CHAR to INT is a destructive operation. The rollback operation changes the type from INT to CHAR.
+*  _Opposite to destructive operations (ODO)_ - In the case of a failed installation, SQL DDL operations that are the opposite of destructive operations can be used for rollback. For example, changing the column type from CHAR to INT is a destructive operation. The rollback operation changes the type from INT to CHAR.
 
 When safe mode is enabled, Adobe Commerce and Magento Open Source create a CSV file each time a destructive operation for a table or column occurs. You can find these files at the following locations:
 

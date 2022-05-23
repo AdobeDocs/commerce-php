@@ -8,6 +8,7 @@ attacks like path traversal and remote code execution (RCE). The Adobe Commerce 
 but it's your responsibility to use it the right way.
 
 ## When you don't need a file
+
 There are cases when users can upload files for their own convenience. For example, consider functionality that allows
 a customer to upload a `.csv` file with a list of SKUs and quantities to add products to their cart. You don't need to
 store the file, you only need the contents of the file to add those SKUs to a cart. One option is to read the uploaded file, add
@@ -21,6 +22,7 @@ The best way to avoid security issues with files is to not upload or store them 
 if you don't have to.
 
 ## Files inaccessible by users
+
 Some files, generated or uploaded, need to be stored on the server for further processing or querying, but should not be directly
 accessible through a URL. Below are measures to avoid potential unauthorized access, path traversal, or RCE problems
 from such files:
@@ -73,10 +75,12 @@ class MyClass {
 ```
 
 ## Files that require authorization
+
 You should treat files that require authorization to download the same way as inaccessible files;
 with a controller that performs authorization and then serves the file by outputting its content in response body.
 
 ## Publicly accessible media files
+
 Publicly accessible media files present higher risk and require special care because you must keep the user-provided path
 and file extension. You should verify the following:
 

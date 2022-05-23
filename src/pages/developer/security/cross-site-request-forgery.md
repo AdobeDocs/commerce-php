@@ -14,6 +14,7 @@ server-side and inserted into forms. When receiving a form, the server verifies 
 included in the request.
 
 ## Built-in CSRF protection
+
 There are anti-CSRF measures, like CSRF tokens, built into the framework. Only minimum action is
 required from developers to make these mechanisms work.
 
@@ -30,6 +31,7 @@ you can manually add the CSRF token to a form by getting it from
 the global `FORM_KEY` variable on JS side, or by using `Magento\Framework\Data\Form\FormKey` on backend.
 
 ### Exceptions
+
 There may be some cases when a controller expects POST requests, or any other non-GET HTTP method, but those requests are not supposed to be
 protected from CSRF. For example, a webhook that expect a request from another service. In such cases, you can disable CSRF protection for a controller by implementing the `Magento\Framework\App\CsrfAwareActionInterface interface`.
 By doing so, you can also customize failed CSRF challenge exceptions or modify the validation logic.
