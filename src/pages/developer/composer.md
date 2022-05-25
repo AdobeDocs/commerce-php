@@ -1,6 +1,6 @@
 ---
-title: Introduction to Composer
-description:
+title: Introduction to Composer | Commerce PHP Extensions
+description: Learn how Adobe Commerce and Magento Open Source projects use Composer to manage software depenencies.
 ---
 
 # Introduction to Composer

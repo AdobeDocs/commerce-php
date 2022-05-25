@@ -1,9 +1,11 @@
 ---
-group: php-developer-guide
-title: Private content
+title: Private Content | Commerce PHP Extensions
+description: Learn how to work with private data when implementing a caching in your Adobe Commerce or Magento Open Source extension.
 ---
 
-Since private content is specific to individual users, it is reasonable to handle it on the client (i.e., web browser).
+# Private content
+
+Since private content is specific to individual users, it is reasonable to handle it on the clientå.
 
 Use our [customer-data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/view/frontend/web/js/customer-data.js) JS library to store private data in local storage, invalidate private data using customizable rules, and synchronize data with the backend.
 

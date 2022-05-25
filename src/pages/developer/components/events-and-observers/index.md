@@ -1,12 +1,9 @@
 ---
-group: php-developer-guide
-subgroup: 99_Module Development
-title: Events and observers
-menu_title: Events and observers
-menu_order: 6
+title: Events and Observers | Commerce PHP Extensions
+description: Extend Adobe Commerce and Magento Open Source bu running custom code in response to specific events.
 ---
 
-## Overview
+# Events and observers
 
 Working with events and observers is one of the main ways to extend Adobe Commerce and Magento Open Source functionality. The events and observers implementation in Adobe Commerce and Magento Open Source are based on the [publish-subscribe pattern](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern). Using events and observers, you can run your custom code in response to a specific [event](https://glossary.magento.com/event) or even a custom event.
 

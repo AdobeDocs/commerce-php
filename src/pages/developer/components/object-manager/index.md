@@ -1,18 +1,18 @@
 ---
-group: php-developer-guide
-title: ObjectManager
+title: Object Manager | Commerce PHP Extensions
+description: Optimize your Adobe Commerce an Magento Open Source extension development skills by mastering the ObjectManagerInterface.
 ---
 
-## Overview
+# Object manager
 
 Large applications, such as the Adobe Commerce and Magento Open Source applications, use an object manager to avoid boilerplate code when composing objects during instantiation.
 
-In Adobe Commerce and Magento Open Source, the implementation of the [`ObjectManagerInterface`][] performs the duties of an object manager.
+In Adobe Commerce and Magento Open Source, the implementation of the [`ObjectManagerInterface`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/ObjectManagerInterface.php) performs the duties of an object manager.
 
 <InlineAlert variant="warning" slots="text"/>
 
 The application prohibits the direct use of the `ObjectManager` in your code because it hides the real dependencies of a class.
-See [usage rules][].
+See [usage rules](#usage-rules).
 
 ## Responsibilities
 
@@ -25,7 +25,7 @@ The object manager has the following responsibilities:
 
 ## Configuration
 
-The [`di.xml`][] file configures the object manager and tells it how to handle [dependency injection][].
+The [`di.xml`](../../build/dependency-injection-file.md) file configures the object manager and tells it how to handle [dependency injection](../dependency-injection.md).
 
 This file specifies the preferred implementation class the object manager generates for the interface declared in a class constructor.
 The file also specifies whether the object manager should create an object for every request or treat the object as a singleton.
@@ -36,9 +36,9 @@ Adobe Commerce and Magento Open Source use the `ObjectManager` to generate and i
 Classes should not ask for the `ObjectManager` itself as a constructor dependency.
 
 You do not call the object manager directly because the framework handles this automatically.
-Direct use of the `create` function prevents type validation and type hinting that a [factory][] class provides.
+Direct use of the `create` function prevents type validation and type hinting that a [factory](../factories.md) class provides.
 
-Object creation is also a separate responsibility that should be moved to a dedicated class such as a [factory][] or [proxy][].
+Object creation is also a separate responsibility that should be moved to a dedicated class such as a [factory](../factories.md) or [proxy](../proxies.md).
 In most cases, the framework generates these classes automatically during code compilation.
 
 <InlineAlert variant="warning" slots="text"/>
@@ -52,7 +52,7 @@ They are not tacit endorsements of using the `ObjectManager` directly.
 You can depend on and use the `ObjectManager` class in the following scenarios:
 
 -  You can use the object manager in static magic methods like `__wakeup()`, `__sleep()`, etc.
-   -  An example can be found in the `__wakeup()` method in the [`Magento/Eav/Model/Entity/Attribute/AbstractAttribute`][] class.
+   -  An example can be found in the `__wakeup()` method in the [`Magento/Eav/Model/Entity/Attribute/AbstractAttribute`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Eav/Model/Entity/Attribute/AbstractAttribute.php) class.
 -  You can use the `ObjectManager` to maintain backward compatibility for a constructor.
 -  In a global scope, like in fixtures of integration tests, you can use the object manager.
 -  The object manager can be a dependency in classes used for creating objects such as factories or proxies.
@@ -72,18 +72,3 @@ $objectManager->configure([
     ]
 ]);
 ```
-
-**Related topics:**
-
--  [The `di.xml` file][`di.xml`]
--  [Dependency injection][]
-
-[`ObjectManagerInterface`]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/ObjectManagerInterface.php
-[`di.xml`]: ../../build/dependency-injection-file.md
-[dependency injection]: ../dependency-injection.md
-[factory]: ../factories.md
-[proxy]: ../proxies.md
-[`Magento/Eav/Model/Entity/Attribute/AbstractAttribute`]: https://github.com/magento/magento2/blob/2.4/app/code/Magento/Eav/Model/Entity/Attribute/AbstractAttribute.php
-[Dependency injection]: ../dependency-injection.md
-
-[usage rules]: #usage-rules

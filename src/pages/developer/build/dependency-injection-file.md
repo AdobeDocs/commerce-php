@@ -1,9 +1,9 @@
 ---
-group: php-developer-guide
-title: The di.xml file
+title: Dependency Injection Configuration | Commerce PHP Extensions
+description: Learn how to configure dependency injection in Adobe Commerce and Magento Open Source components using the di.xml file.
 ---
 
-## Overview
+# Dependency injection configuration
 
 The `di.xml` file configures which [dependencies](../components/dependency-injection.md) are injected by the [object manager](../components/object-manager/index.md). You can also specify [sensitive configuration settings](#sensitive-and-system-specific-configuration-settings) using `di.xml`.
 
@@ -264,13 +264,13 @@ Node Format:
 <InlineAlert variant="warning" slots="text"/>
 
 **Arguments on different stages**
-<br/>
+
 Configuration arguments are merged when they are declared on the same stage (Initial, Global, or Area-Specifc). If you declare new arguments on a higher stage, like Area-Specific, the arguments declared on the higher stage will replace the existing ones.
 
 <InlineAlert variant="info" slots="text"/>
 
 **Merging and Arguments**
-<br/>
+
 During merging, arguments replace other arguments with the same name if their type is different.
 If the argument type is the same, then the newer argument replaces the old one.
 
@@ -482,7 +482,6 @@ Constructor Parameters:
 | dataObjectHelper  | Magento\Framework\Api\DataObjectHelper           |                  |
 +-------------------+--------------------------------------------------+------------------+
 
-
 Plugins:
 +-----------------------------------------------------+---------+--------+
 | Plugin                                              | Method  | Type   |
@@ -491,7 +490,6 @@ Plugins:
 | Magento\GiftMessage\Model\Plugin\QuoteItem          | convert | after  |
 | Magento\Bundle\Model\Plugin\QuoteItem               | convert | after  |
 +-----------------------------------------------------+---------+--------+
-
 
 Plugins for the Preference:
 +-----------------------------------------------------+---------+--------+
@@ -502,9 +500,3 @@ Plugins for the Preference:
 | Magento\Bundle\Model\Plugin\QuoteItem               | convert | after  |
 +-----------------------------------------------------+---------+--------+
 ```
-
-**Related topics:**
-
-*  [ObjectManager](../components/object-manager/index.md)
-*  [Dependency injection](../components/dependency-injection.md)
-*  [Sensitive and environment settings](../configuration/sensitive-environment-settings.md)

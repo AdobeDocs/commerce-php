@@ -1,17 +1,17 @@
 ---
-group: php-developer-guide
-title: Topics in Asynchronous API
+title: Topics in Asynchronous API | Commerce PHP Extensions
+description: Learn about how topic exchange works in the Adobe Commerce and Magento Open Source message queue system.
 contributor_name: comwrap GmbH
 contributor_link: https://www.comwrap.com
-functional_areas:
-  - Services
 ---
 
-The message queuing system uses 'topic exchange' for managing messages. More information about topics can be found [here](https://www.rabbitmq.com/tutorials/tutorial-five-python.html).
+# Topics in asynchronous API
+
+The message queue system uses "topic exchange" for managing messages. More information about topics can be found [here](https://www.rabbitmq.com/tutorials/tutorial-five-python.html).
 
 Topics are usually defined in a `communication.xml` configuration file. See [Configure message queues](configuration.md#communicationxml)
 
-### Generating of communication.xml
+## Generating of communication.xml
 
 A `communication.xml` is pre-generated automatically by the `WebapiAsync` module. This module also generates topic names for asynchronous processes. Generated files are processed by the `\Magento\WebapiAsync\Code\Generator\Config\RemoteServiceReader\Communication` class, which implements `\Magento\Framework\Config\ReaderInterface` and is injected into `\Magento\Framework\Communication\Config\CompositeReader` as a constructor argument of the main `di.xml` file.
 
@@ -36,7 +36,7 @@ Sort order is set to 0 by default. This allows developers to change some aspects
 
 Because the generation of thge topics configuration is based on schema type, the generated `<topic>` XML is returned with `"sync"=true`. The `response` attribut is based on the service response definition. So the `WebapiAsync` module changes those settings to `"sync"=false` and `response` is set to null. These changes will allow the application to execute topics asynchronously.
 
-### Topics generation
+## Topics generation
 
 Asynchronous and Bulk APIs are built on top of the standard Rest API. Topics for message processing fo asynchronous and bulk APIs are generated automatically, together with the `communication.xml` schema. This is done by `\Magento\WebapiAsync\Model\Config::getServices()`. The current method is responsible for retrieving all service contracts defined in `webapi.xml` files and generates topic names for the corresponding asynchronous requests.
 

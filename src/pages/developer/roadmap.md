@@ -1,10 +1,9 @@
 ---
-group: php-developer-guide
-subgroup: 01_Introduction
-title: Developer roadmap
-menu_title: Developer roadmap
-menu_order: 2
+title: Developer roadmap | Commerce PHP Extensions
+description: Navigate the steps for developing an Adobe Commerce or Magento Open Source extension.
 ---
+
+# Extension developer roadmap
 
 This topic introduces the high-level workflow for a developer who wants to create or customize the Adobe Commerce or Magento Open Source application. Developers can also package and distribute their customizations to merchants.
 

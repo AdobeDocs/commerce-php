@@ -1,9 +1,9 @@
 ---
-group: php-developer-guide
-title: The composer.json file
+title: Composer integration | Commerce PHP Extensions
+description: Integrate Composer with your Adobe Commerce and Magento Open Source components.
 ---
 
-## Overview
+# Composer integration
 
 Adobe Commerce and Magento Open Source use [Composer][0], a [PHP](https://glossary.magento.com/php) dependency manager, to package components and product editions.
 
@@ -15,9 +15,7 @@ We recommend you include `composer.json` in your component's root directory even
 
 Adobe Commerce and Magento Open Source do not support the [`path`][3] repository.
 
-## composer.json
-
-Here is the example of composer.json file.
+Here is an example of the `composer.json` file.
 
  ```json
   {
@@ -54,7 +52,7 @@ The [installation instructions for system integrators][10] use the Magento Open 
 
 A "product" package is the actual application pointed to by the `composer.json` file after you download and install the project package using `composer create-project`.
 
-## Descriptions of different composer.json files
+## Types of Composer files
 
 The following components and product editions use a `composer.json` file.
 
@@ -138,7 +136,7 @@ The `composer.json` file for a [theme](https://glossary.magento.com/theme) compo
 
 ---
 
-### Language Package
+### Language package
 
 **Location:**
 `app/i18n/<vendor-name>/<language-code>/composer.json`

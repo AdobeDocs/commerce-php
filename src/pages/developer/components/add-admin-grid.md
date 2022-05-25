@@ -1,16 +1,16 @@
 ---
-group: php-developer-guide
-title: Admin Grids
+title: Add an Admin Grid | Commerce PHP Extensions
+description: Use this tutorial to create a working Adobe Commerce and Magento Open Source Admin grid.
 contributor_name: Goivvy LLC
 contributor_link: https://www.goivvy.com
 ---
 
-## Overview
+# Add an Admin grid
 
-Admin grids are used to represent, filter and sort various data in the Adobe Commerce and Magento Open Source backend. They are also used to perform mass actions such as updates and deletes.
-This tutorial will show you how to create a simple admin grid.
+Admin grids are used to represent, filter, and sort various data in the Adobe Commerce and Magento Open Source Admin application. They are also used to perform mass actions such as updates and deletes.
+This tutorial will show you how to create a simple Admin grid.
 
-### 1. Create a backbone module
+## 1. Create a backbone module
 
 Everything starts with a module. `Dev_Grid` will be used as the namespace:
 
@@ -76,7 +76,7 @@ ComponentRegistrar::register(
 </config>
 ```
 
-### 2. Define the Admin Grid
+## 2. Define the Admin grid
 
 The grid displays a list of available categories that start with a letter `b` or `B`.
 This grid has three columns: `ID`, `category path` and `category name`. `ID` and `category path` are from the `catalog_category_entity` table. For the `name` values, joins are used.
@@ -232,7 +232,7 @@ This file consists of several sections:
 *  `listingToolbar` - where mass actions and filters are defined.
 *  `columns` - lists the columns to be displayed.
 
-### 3. Define the DataSource Class
+## 3. Define the data source class
 
 The UI references `Dev\Grid\Ui\DataProvider\Category\ListingDataProvider` as the data source class.
 
@@ -359,7 +359,7 @@ class AddAttributesToUiDataProvider
 This works with both enterprise and community versions by linking on different fields.
 In this case, `LIKE` is case insensitive.
 
-### 4. Data Source Collection
+## 4. Data source collection
 
 The `dataSource` name `dev_grid_category_listing_data_source` links to `Dev\Grid\Ui\DataProvider\Category\Listing\Collection` collection in `app/code/Dev/Grid/etc/di.xml`.
 
@@ -423,7 +423,7 @@ class Category extends BaseCategory
 }
 ```
 
-### 5. Column Actions Class
+## 5. Column actions class
 
 The UI grid file defines a column actions class `Dev\Grid\Ui\Component\Category\Listing\Column\Actions`.
 
@@ -505,7 +505,7 @@ class Actions extends Column
 
 It gets a frontend URL for every category it lists.
 
-### 6. Backend Controllers
+## 6. Backend controllers
 
 The main route defined in `app/code/Dev/Grid/etc/adminhtml/menu.xml` as `dev_grid/index/index` translates to `app/code/Dev/Grid/Controller/Adminhtml/Index/Index.php`:
 

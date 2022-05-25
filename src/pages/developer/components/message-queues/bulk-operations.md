@@ -1,9 +1,9 @@
 ---
-group: php-developer-guide
-title: Bulk Operations
-functional_areas:
-  - Services
+title: Bulk Operations | Commerce PHP Extensions
+description: Improve performance for Admin users by implementing bulk operations for Adobe Commerce and Magento Open Source.
 ---
+
+# Bulk operations
 
 Bulk operations are actions that are performed on a large scale. Example bulk operations tasks include importing or exporting items, changing prices on a mass scale, and assigning products to a warehouse.
 
@@ -24,7 +24,7 @@ Three clients call bulk operation APIs:
 *  A consumer, which handles each specific operation
 *  A client that gets the status of the bulk operation and shows the list of failed operations
 
-### Publish bulk operations
+## Publish bulk operations
 
 The `BulkManagementInterface::scheduleBulk` is responsible for publishing bulk operations. The following table describes its arguments.
 
@@ -58,13 +58,13 @@ The `BulkManagementInterface::scheduleBulk` is responsible for publishing bulk o
 
 See [Create a publisher](bulk-operations-example.md#create-a-publisher) for a detailed example of a [publisher](https://glossary.magento.com/publisher-subscriber-pattern).
 
-### Consume messages
+## Consume messages
 
 When a consumer processes a message, it must notify the system of its status. The status can be OPEN, COMPLETE, RETRIABLY_FAILED, and NOT_RETRIABLY_FAILED.
 
 To send this notification, use `OperationManagementInterface::changeOperationStatus($operationId, $status, $errorCode = null, $message = null, $data = null)`.
 
-#### Handling Recoverable Exceptions
+### Handling recoverable exceptions
 
 Adobe Commerce and Magento Open Source provide database exception classes to simplify the process of identifying recoverable database errors in client code. In most cases, such errors happen due to some environment issues and can be fixed. The full path to these classes is `Magento\Framework\DB\Adapter\<class_name>`. These exceptions extend generic `\Zend_Db_Adapter_Exception`.
 
@@ -91,7 +91,7 @@ try {
 
 See [Create a consumer](bulk-operations-example.md#create-a-consumer) for a detailed example of a consumer.
 
-### Get the status of operations
+## Get the status of operations
 
 Use `getBulkStatus(UuidInterface $bulkId)` to get the status of the overall bulk operation.  Possible values are
 
@@ -101,8 +101,3 @@ Value | Constant
 1 | IN_PROGRESS
 2 | FINISHED_SUCCESSFULLY
 3 | FINISHED_WITH_FAILURE
-
-#### Related Topic
-
-*  [Message Queues Overview](https://devdocs.magento.com/guides/v2.4/config-guide/mq/rabbitmq-overview.html)
-*  [Example bulk operations implementation](bulk-operations-example.md)

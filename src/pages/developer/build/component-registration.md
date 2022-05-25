@@ -1,13 +1,15 @@
 ---
-group: php-developer-guide
-title: Register your component
+title: Register a component | Commerce PHP Extensions
+description: Learn how to register different Adobe Commerce and Magento Open Source component types, including modules, themes, language packages, and libraries.
 ---
+
+# Register a component
 
 Components, including modules, themes, and language packages, must be registered in the system through the `ComponentRegistrar` class.
 
 Each component must have a file called `registration.php` in its root directory. For example, here is the `registration.php` file for Magento's [AdminNotification module](https://github.com/magento/magento2/blob/2.4/app/code/Magento/AdminNotification/registration.php). Depending on the type of component, registration is performed through `registration.php` by adding to it as follows:
 
-## Register modules
+## Modules
 
 Register modules with:
 
@@ -27,7 +29,7 @@ use Magento\Framework\Component\ComponentRegistrar;
 ComponentRegistrar::register(ComponentRegistrar::MODULE, 'Magento_AdminNotification', __DIR__);
 ```
 
-## Register themes
+## Themes
 
 Register themes with:
 
@@ -45,7 +47,7 @@ use Magento\Framework\Component\ComponentRegistrar;
 ComponentRegistrar::register(ComponentRegistrar::THEME, 'frontend/Magento/luma', __DIR__);
 ```
 
-## Register language packages
+## Language packages
 
 Register language packages with:
 
@@ -63,7 +65,7 @@ use Magento\Framework\Component\ComponentRegistrar;
 ComponentRegistrar::register(ComponentRegistrar::LANGUAGE, 'magento_de_de', __DIR__);
 ```
 
-## Register libraries
+## Libraries
 
 Libraries should be registered using
 
@@ -81,7 +83,7 @@ use Magento\Framework\Component\ComponentRegistrar;
 ComponentRegistrar::register(ComponentRegistrar::LIBRARY, 'magento/framework', __DIR__);
 ```
 
-## Invoke `registration.php` in `composer.json` with autoload
+## Integrate with Composer
 
 After you create your `registration.php` file and you are creating [your component's composer.json file](composer-integration.md), invoke your `registration.php` file in the `autoload` section of `composer.json`:
 

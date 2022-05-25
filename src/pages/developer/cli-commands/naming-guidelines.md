@@ -1,22 +1,15 @@
 ---
-group: php-developer-guide
-subgroup: 65_CLI
-title: Command naming guidelines
-menu_title: Command naming guidelines
-menu_node:
-menu_order: 2
+title: Command Naming Guidelines | Commerce PHP Extensions
+description: Follow these guidelines when naming custom CLI commands for Adobe Commerce and Magento Open Source.
 ---
 
-<!-- http://olgakopylova.espritica.com/naming-conventions-for-cli-commands-in-magento-2/
- -->
-
-## Naming guideline overview
+# Command naming guidelines
 
 As an [extension](https://glossary.magento.com/extension) developer, you can now create and distribute your own commands for Adobe Commerce and Magento Open Source applications. But as for any implementation, it's also important to follow some general conventions to keep your commands consistent with commands from other developers. Being consistent in this way reduces the user's learning curve.
 
 This topic discusses our recommended naming conventions.
 
-## Command name
+## Name
 
 A command *name* is a part of the command, which defines behavior of the command on the very high level. In the command it goes right after the command's name.
 For example, in `bin/magento setup:upgrade`, `bin/magento` is the command's name and `setup:upgrade` is the name of the command.
@@ -27,24 +20,26 @@ If you have an aplication installation handy, enter the following to display the
 bin/magento list
 ```
 
-### Format: `group:[subject:]action`
+### Format
 
-### group
+The format for command names is `group:[subject:]action`.
+
+#### group
 
 `group` represents a group of related commands. Commands in a group display in a list, which in turn makes it easier for the user to find the desired command. To find a group name for a command, imagine an subject area where it can be used. The subject area can be any of the following:
 
 *  *Domain* area (for example, `module` for actions with modules, `info` for commands that provide some information)
 *  *Workflow* area (for example, `admin` for commands that can be used by an administrator, `dev` for a developer)
 
-### subject
+#### subject
 
 `subject` is a subject for the action. The subject is optional, but it can be useful for defining sets of commands that work with the same object. If a subject is represented by a compound word, use a dash or hyphen character to separate the words.
 
-### action
+#### action
 
 `action` is an action the command does.
 
-### Examples
+#### Examples
 
 ```terminal
 // general commands: just a group and an action
@@ -61,7 +56,7 @@ bin/magento setup:db-data:upgrade
 <InlineAlert variant="info" slots="text"/>
 `db-schema` and `db-data` are examples of compound words.
 
-## Command options and arguments
+## Options and arguments
 
 Options and arguments follow the command name and modify the command's behavior.
 
@@ -69,13 +64,15 @@ For example, in `bin/magento module:disable --force Magento_Catalog`, the `--for
 
 Options and arguments create different user experiences. As a developer, you can choose which type of input is better for your particular case.
 
-### Command arguments
+### Arguments
 
 Arguments are values passed by the user in a specified order. The argument name is not visible to the user.
 
-#### Format: single word or a compound word separated with a dash or hyphen character
+#### Format
 
-Example:
+The format for command arguments is a single word or a compound word separated with a dash or hyphen character.
+
+#### Examples
 
 ```bash
  bin/magento dev:theme:create frontend vendor themename
@@ -100,7 +97,7 @@ To make it simpler for the user, we recommend the following:
 
 *  Replace arguments with options: options are named, so the user can provide them in any order. This requires additional data validation (by default, all options are optional).
 
-### Command Options
+### Options
 
 Options are name-value pairs. The sequence of entered values doesn't matter.
 
@@ -108,9 +105,11 @@ An option can have a value or no value. An option that does not require a value 
 
 An option can also have a one-letter shortcut as an alternative to its full name. Enable shortcuts for often-used options or if it's easy to determine what the shortcut means. Usually it makes sense to enable shortcuts for options similar to the ones used in widely-used commands (for example, `-f` for `--force`, `-v` for `--verbose`, `-h` for `--help`).
 
-#### Format: single word or a compound word separated with a dash or hyphen character.
+#### Format
 
-For example,
+The format for command options is a single word or a compound word separated with a dash or hyphen character.
+
+#### Examples
 
 ```bash
 bin/magento dev:theme:create --parent=Magento/luma frontend arg1 arg2
@@ -136,7 +135,7 @@ Where:
 
 `-f` is a shortcut for a non-value option `--force`
 
-`arg1`, `arg2`, `frontend`, `vendor` and `themename` are arguments (see [Command options and arguments](#command-options-and-arguments)).
+`arg1`, `arg2`, `frontend`, `vendor` and `themename` are arguments (see [Command options and arguments](#options-and-arguments)).
 
 Use options for:
 
@@ -156,7 +155,7 @@ bin/magento module:disable --force=1 Magento_Catalog
 bin/magento module:disable -f=yes Magento_Catalog
 ```
 
-## Recommendations to avoid naming collisions
+## Recommendations
 
 To avoid naming your command the same as another command, we recommend:
 

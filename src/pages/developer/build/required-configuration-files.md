@@ -1,10 +1,9 @@
 ---
-group: php-developer-guide
-subgroup: 03_Build
-title: Define your configuration files
+title: Required Configuration Files | Commerce PHP Extensions
+description: Create required configuration files for Adobe Commerce and Magento Open Source components.
 ---
 
-# Define your configuration files
+# Required configuration files
 
 Each [module](https://glossary.magento.com/module) has its own set of configuration files, gathered into the module's `etc` directory.
 
@@ -18,7 +17,7 @@ import Docs from '/src/pages/_includes/component-root.md'
 
 <Docs />
 
-## Use /etc for your configuration files
+## Location of configuration files
 
 Adobe Commerce and Magento Open Source look for configuration information for each module in that module's `etc` directory. Depending on the needs of your module, you might have the following configuration files at the top level of your module's `etc` directory:
 
@@ -39,12 +38,12 @@ In addition to those files, a module also has nested configuration directories i
 *  `<your module root dir>/etc/webapi_rest/`
 *  `<your module root dir>/etc/webapi_soap/`
 
-### Configuration files
+### Global vs local
 
 *  Configuration files that are in the top level of that module's `etc` directory are global to that component.
 *  Configuration files placed in subdirectories (`adminhtml`, `frontend`, `webapi_rest`, `webapi_soap`) apply only to those respective functional areas.
 
-### Tailor your configuration files for what your module does
+### Requirements
 
 The exact set of configuration files required for your module depends on what your new module does. The required configuration files depend on how you plan to use the module: will the module be manifested on the storefront UI, or in the [Admin](https://glossary.magento.com/magento-admin) panel, or as a [backend](https://glossary.magento.com/backend) [extension](https://glossary.magento.com/extension) that makes a service call? Or all of the above. For example, if your module performs a function in the Admin, you should add any necessary configuration files for those functions to `etc/adminhtml/`, like:
 
@@ -62,7 +61,3 @@ If the module is a service that may call an API, or does some other work that is
 *  `<your module root dir>/etc/webapi_soap/di.xml`
 
 Keep in mind that you might be able to handle your module's configuration solely with configuration files at the top level of your module's `etc` directory, but the nested directory is a useful way to keep the configuration neatly compartmentalized.
-
-#### Next
-
-[Create your component file structure](component-file-structure.md)

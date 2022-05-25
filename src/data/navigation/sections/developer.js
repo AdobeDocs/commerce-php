@@ -151,7 +151,7 @@ module.exports = [
         },
         {
           title: "Create a new command",
-          path: "/developer/cli-commands/create-new",
+          path: "/developer/cli-commands/custom",
         },
       ],
     },
@@ -178,7 +178,7 @@ module.exports = [
           ],
         },
         {
-          title: "Public interfaces & APIs",
+          title: "Public interfaces and APIs",
           path: "/developer/components/api-concepts/",
         },
         {

@@ -1,12 +1,9 @@
 ---
-group: php-developer-guide
-subgroup: 99_Module Development
-title: Service contracts
-menu_title: Service contracts
-menu_order: 2
-functional_areas:
-  - Services
+title: Service Contracts | Commerce PHP Extensions
+description: Review an introduction to service contracts and how they help Adobe Commerce and Magento Open Source extension developers create stable APIs. 
 ---
+
+# Service contracts
 
 Adobe Commerce and Magento Open Source are modular systems that enable third-party developers to customize and overwrite core parts of the application framework. This flexibility, however, comes at a price. Business logic tends to leak across the layers of the system, which manifests as duplicated and inconsistent code.
 
@@ -23,7 +20,7 @@ If developers define data and service interfaces according to a set of [design p
 
 ![Service Contracts](../../../_images/msc.jpg)
 
-## Service contract benefits
+## Benefits
 
 Service contracts enhance the modularity of Magento. They enable Adobe and third-party developers to report system dependencies through `composer.json` files and, consequently, guarantee compatibility across versions of Adobe Commerce and Magento Open Source. This compatibility ensures that merchants can easily upgrade Magento.
 These contracts ensure a well-defined, durable API that other modules and third-party extensions can implement. Also, these contracts make it easy to [configure services as web APIs](../web-api/services.md).

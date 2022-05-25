@@ -1,9 +1,9 @@
 ---
-group: php-developer-guide
-title: Example bulk operations implementation
-functional_areas:
-  - Services
+title: Example Bulk Operations Implementation | Commerce PHP Extensions
+description: Use this example to create your own bulk operation in Adobe Commerce or Magento Open Source.
 ---
+
+# Example bulk operations implementation
 
 This document describes how bulk operations can be implemented. There are three primary tasks to accomplish this:
 
@@ -11,7 +11,7 @@ This document describes how bulk operations can be implemented. There are three 
 *  Create a consumer that receives and processes messages
 *  Configure the message queues
 
-### Create a publisher
+## Create a publisher
 
 A publisher's duties include scheduling a bulk operation. It must generate a `bulkUuid` for each operation, send each operation to the message queue, and report on the status of each operations.
 
@@ -146,7 +146,7 @@ class ScheduleBulk
 }
 ```
 
-### Create a consumer
+## Create a consumer
 
 A consumer class receives messages from the message queue and changes the status after it is processed. The following example defines a consumer that handles price update bulk operations.
 
@@ -273,7 +273,7 @@ class Consumer
 }
 ```
 
-### Configure message queues
+## Configure message queues
 
 The message queue topology must be configured to implement bulk operations. Create or edit the following files in the module's `app/code/<vendor>/<module_name>/etc` directory.
 
@@ -285,7 +285,7 @@ The message queue topology must be configured to implement bulk operations. Crea
 
 For more information about the `di.xml` file, see [Dependency Injection](../dependency-injection.md). For information the other files, see [Configure message queues](configuration.md).
 
-#### Create `communication.xml`
+### Create `communication.xml`
 
 The `communication.xml` file defines aspects of the message queue system that apply to all topics for the [module](https://glossary.magento.com/module). Create this file with the following contents:
 
@@ -297,7 +297,7 @@ The `communication.xml` file defines aspects of the message queue system that ap
 </config>
 ```
 
-#### Create `di.xml`
+### Create `di.xml`
 
 Add the following type to the module's `di.xml` file.
 
@@ -311,7 +311,7 @@ Add the following type to the module's `di.xml` file.
 </type>
 ```
 
-#### Create `queue_consumer.xml`
+### Create `queue_consumer.xml`
 
 The `queue_consumer.xml` file defines the relationship between a queue and its consumer. Create this file with the following contents:
 
@@ -321,7 +321,7 @@ The `queue_consumer.xml` file defines the relationship between a queue and its c
 </config>
 ```
 
-#### Create `queue_publisher.xml`
+### Create `queue_publisher.xml`
 
 The `queue_publisher.xml` file defines the exchange where a topic is published. Create this file with the following contents:
 
@@ -333,7 +333,7 @@ The `queue_publisher.xml` file defines the exchange where a topic is published. 
 </config>
 ```
 
-#### Create `queue_topology.xml`
+### Create `queue_topology.xml`
 
 The `queue_topology.xml` file defines the message routing rules and declares queues and exchanges. Create this file with the following contents:
 

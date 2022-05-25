@@ -1,12 +1,11 @@
 ---
-group: php-developer-guide
-subgroup: 03_Build
-title: Component load order
-menu_title: Component load order
-menu_order: 7000
+title: Component load order | Commerce PHP Extensions
+description: Configure the order in which other Adobe Commerce and Magento Open source components should load before loading your component.
 ---
 
-You may need to specify your component's dependency on other components or files from other components using your component's [composer.json](component-name.md#add-the-components-composerjson-file). Further, you can specify a load order in your component's `module.xml` file using the `<sequence>` tag to ensure that needed files from other components are already loaded when your component loads.
+# Component load order
+
+You may need to specify your component's dependency on other components or files from other components using your component's [composer.json](component-name.md#add-a-composerjson-file). Further, you can specify a load order in your component's `module.xml` file using the `<sequence>` tag to ensure that needed files from other components are already loaded when your component loads.
 
 `<sequence>` declares the list of components that must be loaded before the current component is loaded. It's used for loading different kind of files: configuration files, view files (including CSS, Less, and template files), or setup classes. Note that `<sequence>` does not affect the loading of regular classes (non-setup classes).
 *Setup* classes are classes in the component that create or update [database schema](https://glossary.magento.com/database-schema) or data.
@@ -19,7 +18,7 @@ You can check your module's load order from the `<magento_root>/app/etc/config.p
 
 If you change the component load order using `<sequence>`, you must regenerate the component list in `config.php`; otherwise, the load order does not take effect. Currently, the only way to do this is to enable the component using [`magento module:enable <module-list>`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-enable.html#instgde-cli-subcommands-enable-disable), where `<module-list>` is the component or components to which you added `<sequence>`.
 
-### Examples
+## Examples
 
 Assume you have a component that needs a configuration file from another component:
 

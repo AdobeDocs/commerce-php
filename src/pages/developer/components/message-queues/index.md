@@ -1,12 +1,13 @@
 ---
-group: php-developer-guide
-title: Message Queues
-
+title: Message Queues | Commerce PHP Extensions
+description: Review an introduction to the message queue system in Adobe Commerce and Magento Open Source.
 ---
+
+# Message queues
 
 Message queues provide an asynchronous communications mechanism in which the sender and the receiver of a message do not contact each other, nor do they need to communicate with the message queue at the same time. When a sender places a message onto a queue, it is stored until the recipient receives them.
 
-In Adobe Commerce, the Message Queue Framework (MQF) is a fully-functional system that allows a [module](https://glossary.magento.com/module) to publish messages to queues. It also creates consumers to receive them asynchronously. The MQF primarily uses [RabbitMQ] as the messaging broker, which provides a scalable platform for sending and receiving messages. It also includes a mechanism for storing undelivered messages. RabbitMQ is based on the Advanced Message Queuing Protocol (AMQP) 0.9.1 specification.
+In Adobe Commerce and Magento Open Source, the Message Queue Framework (MQF) is a fully-functional system that allows a [module](https://glossary.magento.com/module) to publish messages to queues. It also creates consumers to receive them asynchronously. The MQF primarily uses [RabbitMQ](http://www.rabbitmq.com) as the messaging broker, which provides a scalable platform for sending and receiving messages. It also includes a mechanism for storing undelivered messages. RabbitMQ is based on the Advanced Message Queuing Protocol (AMQP) 0.9.1 specification.
 
 A basic message queue system can also be set up without using RabbitMQ. In this system, a MySQL [adapter](https://glossary.magento.com/adapter) stores messages in the database. Three database tables (`queue`, `queue_message`, and `queue_message_status`) manage the message queue workload. Cron jobs ensure the consumers are able to receive messages. This solution is not very scalable. RabbitMQ should be used whenever possible.
 
@@ -81,16 +82,3 @@ The following sample introduces a runtime configuration that allows you to redef
     ],
 ],
 ```
-
-### Related Topics
-
-*  [Message Queues Overview]
-*  [Configure message queues]
-*  [Install RabbitMQ]
-
-<!-- Link definitions -->
-[RabbitMQ]: http://www.rabbitmq.com
-[Configure message queues]: configuration.md
-[Message Queues Overview]: https://devdocs.magento.com/guides/v2.4/config-guide/mq/rabbitmq-overview.html
-[Configure message queues]: configuration.md
-[Install RabbitMQ]: https://devdocs.magento.com/guides/v2.4/install-gde/prereq/install-rabbitmq.html

@@ -1,13 +1,13 @@
 ---
-group: php-developer-guide
-title: WebApi request processors pool
+title: Request Processors Pool | Commerce PHP Extensions
+description: Use the request processors pool to route web API requests in your Adobe Commerce and Magento Open Source extensions.
 contributor_name: Comwrap GmbH
 contributor_link: https://www.comwrap.com
-functional_areas:
-  - Configuration
 ---
 
-The request processors pool routes WebApi requests. It is located in the Magento_WebApi module: `Magento\Webapi\Controller\Rest\RequestProcessorPool`
+# Request processors pool
+
+The request processors pool routes web API requests. It is located in the `Magento_WebApi` module: `Magento\Webapi\Controller\Rest\RequestProcessorPool`
 
 Adobe Commerce and Magento Open Source define the following processors:
 

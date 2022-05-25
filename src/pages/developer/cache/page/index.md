@@ -1,7 +1,9 @@
 ---
-group: php-developer-guide
-title: Page caching
+title: Page Caching | Commerce PHP Extensions
+description: USe page caching to improve the performance of your Adobe Commerce or Magento Open Source storefront.
 ---
+
+# Page caching
 
 Caching is one of the most effective ways to improve website performance. Generally speaking, there are two methods of caching content:
 

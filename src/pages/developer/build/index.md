@@ -1,11 +1,9 @@
 ---
-group: php-developer-guide
-subgroup: 03_Build
-title: Build
-menu_title: Build
-menu_order: 1
-menu_node: parent
+title: Build | Commerce PHP Extensions
+description: Review high-level prerequisites and steps for building Adobe Commerce and Magento Open Source components.
 ---
+
+# Build
 
 Building your component involves laying out the file structure, creating the necessary configuration files, building out any needed [API](https://glossary.magento.com/api) interfaces and services, and adding any [frontend](https://glossary.magento.com/frontend) parts needed for your component.
 

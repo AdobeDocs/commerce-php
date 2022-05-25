@@ -1,7 +1,9 @@
 ---
-group: php-developer-guide
-title: EAV and extension attributes
+title: EAV and Extension Attributes | Commerce PHP Extensions
+description: 
 ---
+
+# EAV and extension attributes
 
 There are two types of attributes you can use to extend Adobe Commerce and Magento Open Source functionality:
 
@@ -11,7 +13,7 @@ There are two types of attributes you can use to extend Adobe Commerce and Magen
 
 *  [Extension attributes](https://glossary.magento.com/extension-attribute). Extension attributes are new in Adobe Commerce and Magento Open Source. They are used to extend functionality and often use more [complex data](https://glossary.magento.com/complex-data) types than custom attributes. These attributes do not appear in the Admin.
 
-## EAV and custom attributes
+## Custom attributes
 
 `CustomAttributesDataInterface` defines the methods that are called to get and set custom attributes, including `getCustomAttributes()`.
 

@@ -1,7 +1,9 @@
 ---
-group: php-developer-guide
-title: Enable or disable your component
+title: Enable or disable a component | Commerce PHP Extensions
+description: Manage Adobe Commerce and Magento Open Source components using the command-line interface.
 ---
+
+# Enable or disable a component
 
 After you have built the component and are ready to enable it in your environment, do the following:
 

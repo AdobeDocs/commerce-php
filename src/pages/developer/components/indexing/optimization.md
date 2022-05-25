@@ -1,11 +1,13 @@
 ---
-group: php-developer-guide
-title: Indexer optimization
-redirect_from:
-  - /guides/v2.4/extension-dev-guide/indexer-batch.html
+title: Indexer Optimization | Commerce PHP Extensions
+description: Learn techniques for optimizing Adobe Commerce and Magento Open Source indexers.
 ---
 
-## Indexer Batching
+# Indexer optimization
+
+Use batching and table switching to optimize the performance of indexers.
+
+## Indexer batching
 
 Adobe Commerce and Magento Open Source can increase the memory for processing a large amount of data by using memory engines instead of InnoDB. The algorithm increases the memory value for the `max_heap_table_size` and `tmp_table_size` MySQL parameters.
 
@@ -159,7 +161,7 @@ Batch size for `catalogsearch_fulltext` can be set using different parameters.
 
 Batch size for `cataloginventory_stock`, `catalog_product_price`, `inventory` can be set up for each product type. If no batch size is set for a specific product type, the `default` value is used. We recommend setting the `default` value for each indexer to allow for different batch sizes per product type.
 
-## Indexer Table Switching
+## Indexer table switching
 
 Adobe Commerce and Magento Open Source optimize certain indexer processes to prevent deadlocks and wait locks caused by read/write collisions on the same table. In these cases, the application uses separate tables for performing read operations and reindexing. As a result of this table switching process, customers are not impacted when you run a full reindex. For example, when `catalog_product_price` is reindexing, customers won't be slowed down as they navigate on Categories pages, search products, or user layer navigation filters with price filters.
 
@@ -212,8 +214,3 @@ You cannot exclude websites from the `NOT LOGGED IN` customer group.
 
 When a website is added to the excluded customer group and a customer who belongs to this group is trying to login to their account on the excluded website, the customer gets the `"This website is excluded from customer's group."` warning.
 Customers are not allowed to login to the website even if [the scope of customer accounts is shared with all websites](https://docs.magento.com/user-guide/customers/account-scope.html), because there are no prices in the index table for this user.
-
-**Related topics:**
-
-*  [Indexing overview](index.md)
-*  [Adding a custom indexer](custom-indexer.md)

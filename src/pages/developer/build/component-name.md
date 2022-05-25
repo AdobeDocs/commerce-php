@@ -1,7 +1,9 @@
 ---
-group: php-developer-guide
-title: Name your component
+title: Name a component | Commerce PHP Extensions
+description: Use these guidelines to name your custom Adobe Commerce or Magento Open Source component.
 ---
+
+# Name a component
 
 You give a name to your component in its `composer.json` and `module.xml` files. These files also contain other required configuration parameters, such as the module's schema version.
 
@@ -13,7 +15,7 @@ Before you continue, make sure you have completed all of the following tasks:
 *  Create the [configuration files](required-configuration-files.md) you'll need.
 *  [Register](component-registration.md) your component.
 
-## Add the component's `module.xml` file
+## Add a `module.xml` file
 
 Declare the component itself by adding a `module.xml` file in the `/etc` folder of your component.
 
@@ -34,13 +36,13 @@ The `name` parameter defines the name of your component. It is required for all 
 
 Avoid using "Ui" for your custom module name, because the `%Vendor%_Ui` notation, required when specifying paths, might cause issues.
 
-## Add the component's `composer.json` file
+## Add a `composer.json` file
 
 `composer.json` provides a component name and also specifies component dependencies.
 
 Refer to [Module version dependencies](../versioning/dependencies.md) to determine versioning requirements.
 
-### Example `composer.json` file
+### Example
 
 ```json
 {

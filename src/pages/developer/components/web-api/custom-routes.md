@@ -1,11 +1,11 @@
 ---
-group: php-developer-guide
-title: Set custom routes
+title: Set Custom Routes | Commerce PHP Extensions
+description: Configure your Adobe Commerce or Magento Open Source extension to use custom routes.
 contributor_name: Comwrap GmbH
 contributor_link: https://www.comwrap.com
-functional_areas:
-  - Configuration
 ---
+
+# Set custom routes
 
 You can configure REST endpoints in your module to use custom routes (aliases) for URLs instead of the default URLs. For example, you can define the alias `createWidget` to represent `POST V1/widgets`. However, you cannot create an alias for a route that contains one or more variables, such as `PUT V1/widgets/:widgetId`.
 

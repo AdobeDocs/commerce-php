@@ -1,7 +1,9 @@
 ---
-group: php-developer-guide
-title: Configure declarative schema
+title: Configure Declarative Schema | Commerce PHP Extensions
+description: Learn how to configure declarative schema for Adobe commerce and Magento Open Source.
 ---
+
+# Configure declarative schema
 
 Before Adobe Commerce and Magento Open Source 2.3, extension developers were required to write code (PHP scripts) to change the database schema. The following types of scripts existed before 2.3:
 

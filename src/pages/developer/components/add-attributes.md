@@ -1,12 +1,11 @@
 ---
-group: php-developer-guide
-subgroup: 99_Module Development
-title: Adding extension attributes to entity
-menu_title: Adding extension attributes to entity
-menu_order: 20
+title: Add Extension Attributes to Entities | Commerce PHP Extensions
+description: Extend the functionality of Adobe Commerce and Magento Open Source using complex data types.
 ---
 
-Third-party developers cannot change the [API](https://glossary.magento.com/api) Data interfaces defined in the Adobe Commerce and Magento Open Source code.  However, most of these entities have a feature called [extension attributes](https://glossary.magento.com/extension-attribute).  Check the interface for the methods `getExtensionAttributes()` and `setExtensionAttributes()` to determine if they are available for the entity.
+# Add extension attributes to entities
+
+Third-party developers cannot change the [API](https://glossary.magento.com/api) data interfaces defined in the Adobe Commerce and Magento Open Source code. However, most of these entities have a feature called [extension attributes](https://glossary.magento.com/extension-attribute). Check the interface for the methods `getExtensionAttributes()` and `setExtensionAttributes()` to determine if they are available for the entity.
 
 <InlineAlert variant="info" slots="text"/>
 
@@ -15,7 +14,7 @@ We will demonstrate how to add extension attributes to a Product entity, Product
 In order to retrieve a product or a list of products from the API, you need to make an API request to the appropriate service (the Product Repository in this case).
 The response to these requests will return objects with the following structure:
 
-### Product response:
+## Product response
 
 ```xml
 <product>
@@ -26,7 +25,7 @@ The response to these requests will return objects with the following structure:
 </product>
 ```
 
-### Product list response:
+## Product list response:
 
 ```xml
 <products>
@@ -212,7 +211,7 @@ Now we need to bind our plugin to `ProductInterface`:
 </config>
 ```
 
-## Extension Attributes Configuration:
+## Configure extension attributes
 
 The file that holds these extension attributes must reside under the `/etc` folder of your module.
 
@@ -296,5 +295,3 @@ In third, array one (in JSON for a change):
   }
 }
 ```
-
-[Sample module on GitHub](https://github.com/magento/magento2-samples/tree/master/sample-external-links)

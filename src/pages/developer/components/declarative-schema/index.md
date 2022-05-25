@@ -1,9 +1,11 @@
 ---
-group: php-developer-guide
-title: Declarative Schema Overview
+title: Declarative Schema | Commerce PHP Extensions
+description: Simplify the installation and upgrade process for Adobe Commerce and Magento Open Source by using declarative schema.
 ---
 
-Declarative schema aims to simplify the Adobe Commerce and Magento Open Source installation and upgrade processes. Previously, developers had to write database scripts in PHP for each new version of Magento. Various scripts were required for
+# Declarative schema
+
+Declarative schema aims to simplify the Adobe Commerce and Magento Open Source installation and upgrade processes. Previously, developers had to write database scripts in PHP for each new version of Adobe Commerce and Magento Open Source. Various scripts were required for
 
 *  Installing and upgrading the database schema
 *  Installing and upgrading data

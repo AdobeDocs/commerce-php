@@ -1,17 +1,11 @@
 ---
-group: php-developer-guide
-subgroup: 65_CLI
-title: How to add CLI commands
-menu_title: How to add CLI commands
-menu_node:
-menu_order: 3
+title: Create a Custom Command | Commerce PHP Extensions
+description: Learn how to create custom CLI commands for Adobe Commerce and Magento Open Source.
 ---
 
-## Overview of adding CLI commands
+# Create a custom command
 
 Adobe Commerce and Magento Open Source enables your component to add commands to our [Symfony-like command-line interface (CLI)](https://symfony.com/doc/current/components/console.html).
-
-### About the Magento CLI
 
 Commerce has one command-line interface that performs both installation and configuration tasks: `<magento_root>/bin/magento`. The new interface performs multiple tasks, including:
 
@@ -30,7 +24,7 @@ Other benefits:
 -  The CLI is extensible so third party developers can "plug in" to it. This has the additional benefit of eliminating users' learning curve.
 -  Commands for disabled modules do not display.
 
-### Prerequisites
+## Prerequisites
 
 Before you begin, make sure you understand the following:
 

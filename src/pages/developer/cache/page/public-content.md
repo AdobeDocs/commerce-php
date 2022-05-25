@@ -1,6 +1,6 @@
 ---
-group: php-developer-guide
-title: Public content
+title: Public Content | Commerce PHP Extensions
+description: Learn how to work with public data when implementing a caching in your Adobe Commerce or Magento Open Source extension.
 ---
 
 By default, all pages in Adobe Commerce and Magento Open Source are cacheable, but you can disable caching if necessary (e.g., payment method return page, debug page, or AJAX data source).

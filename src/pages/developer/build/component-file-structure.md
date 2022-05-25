@@ -1,5 +1,6 @@
 ---
-title: Create your component file structure
+title: Create your component file structure | Commerce PHP Extensions
+description: Get started with component development by understanding the proper file structure. 
 ---
 
 # Create your component file structure
@@ -34,7 +35,7 @@ Following are some common module directories:
 Additional folders can be added for configuration and other ancillary functions for items like [plugin-ins](../components/plugins.md), localization, and [layout](https://glossary.magento.com/layout) files.
 
 *  `Api`: contains any PHP classes exposed to the [API](https://glossary.magento.com/api).
-*  `Console`: contains CLI commands. For more info, see [Add CLI commands](../cli-commands/create-new.md).
+*  `Console`: contains CLI commands. For more info, see [Add CLI commands](../cli-commands/custom.md).
 *  `Cron`: contains cron job definitions.
 *  `CustomerData`: contains section files.
 *  `Helper`: contains aggregated functionality.

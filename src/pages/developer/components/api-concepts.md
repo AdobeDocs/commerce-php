@@ -1,16 +1,17 @@
 ---
-group: php-developer-guide
-subgroup: 99_Module Development
-title: Public interfaces & APIs
-menu_title: Public interfaces & APIs
-menu_order: 3
+title: Public Interfaces and APIs | Commerce PHP Extensions
+description: Learn about Adobe Commerce and Magento Open Source interfaces and APIs.
 ---
 
-## What is a public interface?
+# Public interfaces and APIs
+
+Learn about interaces and APIs.
+
+## What is an interface?
 
 A _public interface_ is a set of code that third-party developers can call, implement, or build as a [plug-in](https://glossary.magento.com/plug-in). Adobe guarantees that this code will not change in subsequent releases without a major version change.
 
-Public interfaces for a [module](https://glossary.magento.com/module) are marked with `@api` annotation.
+Public interfaces for a [module](https://glossary.magento.com/module) are marked with the `@api` annotation.
 
 <InlineAlert variant="info" slots="text"/>
 

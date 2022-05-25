@@ -1,7 +1,9 @@
 ---
-group: php-developer-guide
-title: Asynchronous and deferred operations
+title: Asynchronous and Deferred Operations | Commerce PHP Extensions
+description: Use the DeferredInterface to write code for asyncronous operations in Adobe Commerce and Magento Open Source extensions.
 ---
+
+# Asynchronous and deferred operations
 
 Asynchronous operations are not native to PHP but it is still possible to execute heavy
 operations simultaneously, or delay them until they absolutely have to be finished.
@@ -279,6 +281,6 @@ class EntitiesController
 }
 ```
 
-## Examples in Magento
+## Examples
 
-Please see our asynchronous HTTP client `Magento\Framework\HTTP\AsyncClientInterface` and `Magento\Shipping\Model\Shipping` with various `Magento\Shipping\Model\Carrier\AbstractCarrierOnline` implementations to see how `DeferredInterface` can be used to work with asynchronous code.
+See our asynchronous HTTP client `Magento\Framework\HTTP\AsyncClientInterface` and `Magento\Shipping\Model\Shipping` with various `Magento\Shipping\Model\Carrier\AbstractCarrierOnline` implementations to see how `DeferredInterface` can be used to work with asynchronous code.

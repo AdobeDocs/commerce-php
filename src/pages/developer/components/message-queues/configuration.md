@@ -1,15 +1,11 @@
 ---
-group: php-developer-guide
-title: Configure message queues
-functional_areas:
-  - Configuration
-  - System
-  - Setup
+title: Configure Message Queues | Commerce PHP Extensions
+description: Add message queue functionality to Adobe Commerce and Magento Open Source extensions.
 ---
 
-The message queue topology is a Magento Open Source feature. It can be included as part of Magento Open Source installation, or you can add it to existing modules.
+# Configure message queues
 
-### Overview
+The message queue topology is an Adobe Commerce and Magento Open Source feature. You can also add it to existing modules.
 
 Configuring the message queue topology involves creating and modifying the following configuration files in the `<module>/etc` directory:
 
@@ -18,7 +14,7 @@ Configuring the message queue topology involves creating and modifying the follo
 *  [`queue_topology.xml`](#queue_topologyxml) - Defines the message routing rules and declares queues and exchanges.
 *  [`queue_publisher.xml`](#queue_publisherxml) - Defines the exchange where a topic is published.
 
-### Use Cases
+## Use cases
 
 Depending on your needs, you may only need to create and configure `communication.xml` and one or two of these files.
 
@@ -27,11 +23,11 @@ Depending on your needs, you may only need to create and configure `communicatio
 *  In cases where you want to configure the local queue and publish to it for 3rd party systems to consume, you will need the `queue_publisher.xml` and `queue_topology.xml` files.
 *  When you want to configure the local queue and consume messages published by 3rd party system, you will need the `queue_topology.xml` and `queue_consumer.xml` files.
 
-### `communication.xml`
+## `communication.xml`
 
 The `<module>/etc/communication.xml` file defines aspects of the message queue system that all communication types have in common. This release supports AMQP and database connections.
 
-### Sample `communication.xml` file
+### Example
 
 The following sample defines two synchronous topics. The first topic is for RPC calls. The second uses a custom service interface.
 
@@ -47,7 +43,7 @@ The following sample defines two synchronous topics. The first topic is for RPC 
 </config>
 ```
 
-### topic element
+#### topic element
 
 Topic configuration is flexible in that you can switch the transport layer for topics at deployment time. These values can be overwritten in the `env.php` file.
 
@@ -60,7 +56,7 @@ request | Specifies the data type of the topic.
 response | Specifies the format of the response. This parameter is required if you are defining a synchronous topic. Omit this parameter if you are defining an asynchronous topic.
 schema | The interface that describes the structure of the message. The format must be  `<module>\Api\<ServiceName>::<methodName>`.
 
-### handler element
+#### handler element
 
 The `handler` element specifies the class where the logic for handling messages exists and the method it executes.
 
@@ -71,11 +67,11 @@ type | The class or interface that defines the handler.
 method | The method this handler executes.
 disabled | Determines whether this handler is disabled. The default value is `false`.
 
-### `queue_consumer.xml`
+## `queue_consumer.xml`
 
 The `queue_consumer.xml` file contains one or more `consumer` elements:
 
-#### Example `queue_consumer` file
+### Example
 
 ```xml
 <?xml version="1.0"?>
@@ -119,7 +115,7 @@ Meanwhile, the `onlySpawnWhenMessageAvailable` attribute first checks if there a
 
 The [`consumers-wait-for-messages`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-consumers.html) option is a global option and cannot be configured separately for each consumer, such as the `onlySpawnWhenMessageAvailable` option.
 
-#### Consumer handlers
+#### `handler` element
 
 A handler is a class and method that processes a message. The application has two ways to define a handler for messages.
 
@@ -139,7 +135,7 @@ The application provides these consumers out-of-the-box:
 | `Magento\Framework\MessageQueue\BatchConsumer` | Only if not defined in `queue_consumer.xml` | Yes, if exists |
 | `Magento\AsynchronousOperations\Model\MassConsumer`  | Yes, if exists | Yes, if exists |
 
-### `queue_topology.xml`
+## `queue_topology.xml`
 
 The `queue_topology.xml` file defines the message routing rules and declares queues and exchanges. It contains the following elements:
 
@@ -148,7 +144,7 @@ The `queue_topology.xml` file defines the message routing rules and declares que
 *  `exchange/arguments` (optional)
 *  `exchange/binding/arguments` (optional)
 
-#### Example `queue_topology.xml` file
+### Example
 
 ```xml
 <?xml version="1.0"?>
@@ -225,14 +221,14 @@ The following illustrates an `arguments` block:
 </arguments>
 ```
 
-### `queue_publisher.xml`
+## `queue_publisher.xml`
 
 The `queue_publisher.xml` file defines which connection and exchange to use to publish messages for a specific topic. It contains the following elements:
 
 *  [publisher](https://glossary.magento.com/publisher-subscriber-pattern)
 *  publisher/connection
 
-#### Example `queue_publisher.xml` file
+### Example
 
 ```xml
 <?xml version="1.0"?>
@@ -266,10 +262,6 @@ The `connection` element is a subnode of the `publisher` element. There must not
 
 You cannot enable more than one `publisher` for each `topic`.
 
-### Updating `queue.xml`
+## Updating `queue.xml`
 
 See [Migrate message queue configuration](migration.md) for information about upgrading from Adobe Commerce and Magento Open Source 2.0 or 2.1.
-
-<!-- Link definitions -->
-[MySQL]: https://www.mysql.com/
-[RabbitMQ]: http://www.rabbitmq.com

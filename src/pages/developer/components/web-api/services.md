@@ -1,11 +1,11 @@
 ---
-group: php-developer-guide
-title: Configure services as web APIs
+title: Configure Services as Web APIs | Commerce PHP Extensions
+description: Configure an Adobe Commerce, Magento Open Source or third-party service as a web API.
 contributor_name: Classy Llama
 contributor_link: http://www.classyllama.com/
-functional_areas:
-  - Services
 ---
+
+# Configure services as web APIs
 
 You can configure an Adobe Commerce, Magento Open Source, or third-party service as a web [API](https://glossary.magento.com/api).
 

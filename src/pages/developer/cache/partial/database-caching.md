@@ -1,12 +1,9 @@
 ---
-group: php-developer-guide
-title: Create custom cache engines
-redirect_from:
-  -  /guides/v2.3/config-guide/database/database.html
-  -  /guides/v2.3/config-guide/cache/caching-database.html
+title: Create Custom Cache Engines | Commerce PHP Extensions
+description: Learn how to use database caching for Adobe Commerce and Magento Open Source extensions.
 ---
 
-## Overview of database caching
+# Create custom cache engines
 
 This topic discusses how to use the database for caching. After you complete these tasks, cached objects are stored in the `cache` and `cache_tag` database tables. Nothing is stored `var/cache` or `var/page_cache`.
 

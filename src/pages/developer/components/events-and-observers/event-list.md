@@ -1,9 +1,11 @@
 ---
-group: php-developer-guide
-title: List of events
+title: List of Events | Commerce PHP Extensions
+description: Use this reference to learn about specific Adobe Commerce and Magento Open Source events.
 contributor_name: Goivvy LLC
 contributor_link: https://www.goivvy.com
 ---
+
+# List of events
 
 This is the list of [event](../events-and-observers/index.md) names ordered alphabetically.
 Each event contains a short description and a list of supported arguments.

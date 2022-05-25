@@ -1,10 +1,9 @@
 ---
-group: php-developer-guide
-subgroup: 03_Build
-title: URN schema validation
-menu_title: URN schema validation
-menu_order: 5000
+title: URN Schema Validation | Commerce PHP Extensions
+description: Learn about uniform resource name (URN) schema validation for Adobe Commerce and Magento Open Source components.
 ---
+
+# URN schema validation
 
 Each [module](https://glossary.magento.com/module) can contain XSD files for [XML](https://glossary.magento.com/xml) validation.
 

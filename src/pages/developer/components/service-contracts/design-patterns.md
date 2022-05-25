@@ -1,10 +1,9 @@
 ---
-group: php-developer-guide
-subgroup: 99_Module Development
-title: Service contract design patterns
-menu_title: Service contract design patterns
-menu_order: 4
+title: Service Contract Design Patterns | Commerce PHP Extensions
+description: Follow these recommendations to define Adobe Commerce and Magento Open Source data and service interfaces.
 ---
+
+# Service contract design pattenrs
 
 In the programming community, a _design pattern_ is a recommended way of writing code that includes when to use, or not use, the pattern. Think of a [design pattern](https://glossary.magento.com/design-pattern) as a best practice with conditions.
 
@@ -23,7 +22,7 @@ Data interfaces define functions that return information about data entities, re
 Service interfaces include management, repository, and [metadata](https://glossary.magento.com/metadata) interfaces.
 You must define the service interfaces for a service contract in the `Api` subdirectory for a module.
 
-## Data interfaces
+### Data interfaces
 
 Define data interfaces in the `Api/Data` subdirectory for a module.
 
@@ -34,7 +33,7 @@ For example, the data interfaces for the Customer module are in the `/app/code/M
 The [SimpleDataObjectConverter](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Api/SimpleDataObjectConverter.php) follows a strict 'camel case' to 'snake case' conversion of data keys (table columns). You should not use `underscores (_)` between alphanumerical characters in column names.
 For example, use `default_shipping1` instead of `default_shipping_1`, as the Data Interface method `defaultShipping1` will be converted into `default_shipping1`.
 
-### Data search results interfaces
+### Data search result interfaces
 
 When you pass search criteria to a `getList()` call, a search results interface is returned with the search results.
 
@@ -42,7 +41,7 @@ You must define one interface for each data [entity](https://glossary.magento.co
 `CustomerSearchResultsInterface` returns an array of `CustomerInterface` data entities.
 In `GroupSearchResultsInterface`, the `getItems()` function returns an array of `GroupInterface` data entities.
 
-## Service interfaces
+### Service interfaces
 
 Service interfaces include several interface subtypes:
 

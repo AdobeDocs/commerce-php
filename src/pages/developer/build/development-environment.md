@@ -1,12 +1,9 @@
 ---
-group: php-developer-guide
-title: Optimal Development Environment
-subgroup: 03_Build
-menu_title: Optimal development environment
-menu_order: 1
+title: Optimal Development Environment | Commerce PHP Extensions
+description: Learn about the ideal local development environment for Adobe Commerce and Magento Open Source extension developers.å
 ---
 
-## Overview
+# Optimal development environment
 
 A typical software development flow is as follows:
 
@@ -36,7 +33,7 @@ The following is a list of the different ways you can install Adobe Commerce or 
 
    A search for ["magento developer box"](https://github.com/search?utf8=%E2%9C%93&q=magento+developer+box) in GitHub provides a list of unofficial virtual machines configured for development.
 
-### Optimal Configuration
+### Optimal configuration
 
 The following is a list of optimizations you can make on your local development machine
 
