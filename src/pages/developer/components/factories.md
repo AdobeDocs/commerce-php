@@ -1,14 +1,11 @@
 ---
-group: php-developer-guide
-subgroup: 99_Module Development
-title: Factories
-menu_title: Factories
-menu_order: 6
+title: Factories | Commerce PHP Extensions
+description: Use factories to instantiate non-injectable classes in your Adobe Commerce and Magento Open Source extenions.
 contributor_name: Classy Llama
 contributor_link: http://www.classyllama.com/
 ---
 
-## Overview
+# Factories
 
 Factories are service classes that instantiate non-injectable classes, that is, models that represent a database [entity](https://glossary.magento.com/entity).
 They create a layer of abstraction between the `ObjectManager` and business code.

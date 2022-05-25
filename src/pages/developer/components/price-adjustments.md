@@ -1,11 +1,13 @@
 ---
-group: php-developer-guide
-title: Price Adjustments
+title: Price Adjustments | Commerce PHP Extensions
+description: Adjust product prices on Adobe Commerce and Magento Open Source category or product pages.
 contributor_name: Goivvy LLC
 contributor_link: https://www.goivvy.com
 ---
 
-Price Adjustments adjust the product price as it is displayed on category or product pages.
+# Price adjustments
+
+Price adjustments adjust the product price as it is displayed on category or product pages.
 
 In this example, we will add `1.79` to each product price.
 

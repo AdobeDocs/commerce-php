@@ -1,16 +1,14 @@
 ---
-group: php-developer-guide
-title: Searching with Repositories
-functional_areas:
-  - Search
+title: Searching with Repositories | Commerce PHP Extensions
+description: Learn how to use Adobe Commerce and Magento Open Source repositories to perform search opertions on entities.
 ---
 
-## What is a repository?
+# Searching with repositories
 
 Repositories give service requestors the ability to perform create, read, update, and delete (CRUD) operations on entities or a list of entities.
 A repository is an example of a [service contract](service-contracts/design-patterns.md), and its implementation is part of the domain layer.
 
-### Repository state
+## Repository state
 
 A repository should be stateless after instantiation.
 This means that every method call should not rely on previous calls nor should it affect later method calls.

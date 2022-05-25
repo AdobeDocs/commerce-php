@@ -1,9 +1,11 @@
 ---
-group: php-developer-guide
-title: Routing
+title: Routing | Commerce PHP Extensions
+description: Define how data reaches classes in Adobe Commerce and Magento Open Source extension development.
 ---
 
-In web applications, such as Magento, routing is the act of providing data from a URL request to the appropriate class for processing.
+# Routing
+
+In web applications, such as Adobe Commerce and Magento Open Source, routing is the act of providing data from a URL request to the appropriate class for processing.
 Adobe Commerce and Magento Open Source routing uses the following flow:
 
 ![Request processing](../../_images/magento2-request-processing.png)

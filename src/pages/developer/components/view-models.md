@@ -1,9 +1,11 @@
 ---
-title: View models
+title: View Models | Commerce PHP Extensions
+description: Learn about Adobe Commerce and Magento Open Source view models, including when to use them and how to write them.
 contributor_name: Space 48
 contributor_link: https://www.space48.com/
-group: php-developer-guide
 ---
+
+# View models
 
 A view model is an abstraction of the view exposing public properties and commands. It allows developers to offload features and business logic from block classes into separate classes that are easier to maintain, test, and reuse.
 
@@ -68,7 +70,7 @@ $viewModel = $block->getViewModel();
 <h1><?= $block->escapeHtml($viewModel->getTitle()); ?></h1>
 ```
 
-## Examples of view models
+## Examples
 
 -  [Theme](https://github.com/magento/magento2/blob/2.3.3/app/code/Magento/Theme/view/frontend/layout/default.xml#L43-L45 "view_model definition"). This `view_model` is injected into a template to return the target store redirect url.
 

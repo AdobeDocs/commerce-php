@@ -1,12 +1,11 @@
 ---
-group: php-developer-guide
-subgroup: 99_Module Development
-title: Proxies
-menu_title: Proxies
-menu_order: 7
+title: Proxies | Commerce PHP Extensions
+description: Use proxies to instantiate injectable classes in your Adobe Commerce and Magento Open Source extenions.
 contributor_name: Classy Llama
 contributor_link: http://www.classyllama.com/
 ---
+
+# Proxies
 
 The Adobe Commerce and Magento Open Source [constructor injection pattern](dependency-injection.md#constructor-injection) enables you to flexibly manage your class dependencies. However, constructor injection also means that a chain reaction of object instantiation is often the result when you create an object. (The original object has dependencies that have dependencies, and those objects have dependencies, and so on.)
 
@@ -52,7 +51,7 @@ class FastLoading
 
 Assume that class `SlowLoading` has a non-trivial performance impact when instantiated (perhaps due to a complex database query or a call to a third-party web API). Because of the dependency injection in the constructor of `FastLoading`, this impact is incurred if `FastLoading` is instantiated.  Note, however, that the `SlowLoading` instance is used only in the method `getSlowValue`, meaning that the resource cost is unnecessary if this method is never called on the `FastLoading` object.
 
-### Proxies are generated code
+## Proxies are generated code
 
 The application has a solution for this situation: proxies. [Proxies](http://en.wikipedia.org/wiki/Proxy_pattern) extend other classes to become lazy-loaded versions of them. That is, a real instance of the class a proxy extends is created only after one of the class's methods is actually called. A proxy implements the same interface as the original class and so can be used as a dependency anywhere the original class can.  Unlike its parent, a proxy has only one dependency: the object manager.
 

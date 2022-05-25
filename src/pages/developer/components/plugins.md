@@ -1,8 +1,9 @@
 ---
-group: php-developer-guide
-subgroup: 99_Module Development
-title: Plugins (Interceptors)
+title: Plugins | Commerce PHP Extensions
+description: Modify the behavior of public class functions in Adobe Commerce and Magento Open Source using plugin (or interceptor) classes.
 ---
+
+# Plugins
 
 A plugin, or interceptor, is a class that modifies the behavior of public class functions by intercepting a function call and running code before, after, or around that function call. This allows you to *substitute* or *extend* the behavior of original, public methods for any *class* or *interface*.
 
@@ -574,8 +575,3 @@ and
 are both valid.
 
 When disabling the plugin, make sure to use the same path format to call and disable the plugin.
-
-**Related topics:**
-
-*  [Dependency injection](dependency-injection.md)
-*  [Events and observers](events-and-observers/index.md)

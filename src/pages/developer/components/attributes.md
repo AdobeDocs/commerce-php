@@ -1,6 +1,6 @@
 ---
 title: EAV and Extension Attributes | Commerce PHP Extensions
-description: 
+description: Learn about the main types of attributes you can use to extend Adobe Commerce and Magento Open Source.
 ---
 
 # EAV and extension attributes

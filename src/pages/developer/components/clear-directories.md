@@ -1,13 +1,9 @@
 ---
-group: php-developer-guide
-subgroup: 99_Module Development
-title: Clear directories during development
-menu_title: Clear directories during development
-menu_node:
-menu_order: 200
+title: Directory and Cache Clearing | Commerce PHP Extensions
+description: Ensure that your ADobe Commerce and Magento Open Source code is functioning properly by routinely clearing specific directories and caches. 
 ---
 
-## Overview of directory clearing
+# Directory and cache clearing
 
 While you're developing components (modules, themes, and language packages), your rapidly changing environment requires you to periodically clear certain directories and caches. Otherwise, your code runs with exceptions and won't function properly.
 

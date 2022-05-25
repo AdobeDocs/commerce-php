@@ -1,11 +1,13 @@
 ---
-group: php-developer-guide
-title: Dependency injection
+title: Dependency Injection | Commerce PHP Extensions
+description: Learn how to declare dependencies to external objects when developing Adobe Commerce and Magento Open Source extensions.
 ---
+
+# Dependency injection
 
 Adobe Commerce and Magento Open Source use [Dependency Injection] to replace functionality provided by the `Mage` class in Magento 1.x.
 
-Dependency Injection is a design pattern that allows an object A to declare its dependencies to an external object B that supplies those dependencies.
+Dependency injection is a design pattern that allows an object A to declare its dependencies to an external object B that supplies those dependencies.
 The dependencies declared by A are usually class interfaces and the dependencies B provides are concrete implementations for those interfaces.
 
 This allows for loose coupling of code because object A no longer needs to be concerned with initializing its own dependencies.
@@ -40,9 +42,9 @@ During the class creation process, the object manager uses this information to c
 
 Service classes that do not exist in the codebase, such as [proxies], [factories], and [interceptors] that are declared in code or in a configuration, are generated with the help of the compiler.
 
-## Injection types used in Magento
+## Injection types
 
-The following code sample highlights the two types of dependency injections used in Magento:
+The following code sample highlights the two types of dependency injections used in Adobe Commerce and Magento Open Source:
 
 ```php
 <?php
@@ -123,16 +125,6 @@ For example, you cannot depend on a model object, such as [`Product`], because y
 Since you cannot specify this data in the constructor signature, the application cannot inject this object.
 
 To get around this limitation, injectable objects can depend on [factories] that produce newable objects.
-
-**Related topics:**
-
-*  [The `di.xml` file](../build/dependency-injection-file.md)
-*  [ObjectManager](object-manager/index.md)
-*  [Plugins](plugins.md)
-*  [Routing](routing.md)
-*  [Application initialization and bootstrap](https://devdocs.magento.com/guides/v2.4/config-guide/bootstrap/magento-bootstrap.html)
-*  [Module Dependencies](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_depend.html)
-*  [Programming concepts](api-concepts.md)
 
 [Dependency Injection]: https://en.wikipedia.org/wiki/Dependency_injection
 [dependency inversion principle]: http://www.oodesign.com/dependency-inversion-principle.html

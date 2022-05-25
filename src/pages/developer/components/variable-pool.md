@@ -1,16 +1,18 @@
 ---
-group: php-developer-guide
-title: Variable Pool
+title: Variable Pool | Commerce PHP Extensions
+description: Learn how to use pre-defined values in Adobe Commerce and Magento Open source CMS content.
 ---
 
+# Variable pool
+
 The variable pool contains pre-defined values you can use inside CMS content.
-These values are defined in [`di.xml`] files or created through the Admin interface.
+These values are defined in [`di.xml`](../build/dependency-injection-file.md) files or created through the Admin interface.
 
 ## Configuration variables
 
 Configuration variables are values that are set in the Admin area under the **Stores > Settings > Configuration** section.
 
-The default list of variable paths available to the Variable Insertion Dialog is defined in the `di.xml` file in the [Variable module].
+The default list of variable paths available to the Variable Insertion Dialog is defined in the `di.xml` file in the [variable module](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Variable/etc).
 This list can be extended by adding more entries to the `configPaths` argument for the `Magento\Variable\Model\Source\Variables` class in your module's `di.xml` file.
 
 **Example:** di.xml file for the Variable module
@@ -96,8 +98,4 @@ Custom variables are values created in the Admin area under **System > Other Set
 These variables have a store view scope level and have all the features available to configuration values.
 
 Custom Variable entities can also be created in your module's `DataInstall` or `DataUpgrade` classes.
-See [Module Lifecycle] for more information.
-
-[Variable module]: https://github.com/magento/magento2/tree/2.4/app/code/Magento/Variable/etc
-[Module Lifecycle]: ../prepare/extension-lifecycle.md
-[`di.xml`]: ../build/dependency-injection-file.md
+See [Extension lifecycle](../prepare/extension-lifecycle.md) for more information.

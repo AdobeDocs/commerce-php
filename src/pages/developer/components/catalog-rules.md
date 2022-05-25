@@ -1,20 +1,22 @@
 ---
-title: Extend Catalog Rule Conditions
+title: Extend Catalog Rule Conditions | Commerce PHP Extensions
+description: Learn how Adobe Commerce and Magento Open Source catalog price rules are implemented.
 contributor_name: Ziffity
 contributor_link: https://www.ziffity.com/
-group: php-developer-guide
 ---
+
+# Extend catalog rule conditions
 
 Catalog price rules can be used to offer products to buyers at a discounted price, based on a set of defined conditions. Catalog price rules do not use coupon codes. The discounts are applied to the final product price in the product listing and the product description page even before adding the product to the shopping cart.
 For more information about catalog price rules, refer to [Catalog Rules](https://docs.magento.com/user-guide/marketing/price-rules-catalog.html).
 
-## Default Conditions
+## Default conditions
 
 In the `Conditions` tab, Adobe Commerce and Magento Open Source have the following product attributes in the `add conditions` section.
 
 ![Catalog Rule Conditions](../../_images/conditions-section-v2.png)
 
-## Implementation of Existing Conditions
+## Implementation of existing conditions
 
 In the `app/code/Magento/CatalogRule/etc/di.xml` configuration, the following `type` configuration is defined:
 
@@ -128,7 +130,7 @@ The `app/code/Magento/Rule/Model/Condition/Product/AbstractProduct.php` abstract
 
 The validation class for the catalog price rule must extend the `Magento\Rule\Model\Condition\AbstractCondition` class.
 
-## Steps to Extend Catalog Rule Conditions
+## Steps to extend catalog rule conditions
 
 *  Create the `after` plugin for the `getNewChildSelectOptions` method and add your custom condition to it.
 *  Add the `type` configuration in `<custom_module_dir>/etc/di.xml`.
