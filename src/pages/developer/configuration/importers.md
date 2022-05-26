@@ -1,12 +1,9 @@
 ---
-group: php-developer-guide
-subgroup: Configuration
-title: Configuration importers
-menu_title: Configuration importers
-menu_order: 2000
-functional_areas:
-  - Configuration
+title: Configuration Importers | Commerce PHP Extensions
+description: Standardize your Adobe Commerce and Magento Open Source configuration settings across multiple systems with configuration importers.
 ---
+
+# Configuration importers
 
 A configuration importer provides consistent configurations across multiple systems (such as development, staging, and production).
 This is useful for deployment strategies such as [pipeline deployment](https://devdocs.magento.com/guides/v2.4/config-guide/deployment/pipeline/).

@@ -1,10 +1,9 @@
 ---
-group: php-developer-guide
-subgroup: Security
-title: XSS prevention strategies
-menu_title: XSS prevention strategies
-menu_order: 1100
+title: Cross-Site Scripting (XSS) | Commerce PHP Extensions
+description: Implement cross-site-scripting (XSS) prevention strategies when developing Adobe Commerce and Magento Open Source components.
 ---
+
+# Cross-site scripting (XSS)
 
 [Cross-site scripting][], or XSS, is a security vulnerability that can be found in web applications. This vulnerability allows attackers to inject malicious code/styles into a web page viewed by users. [Extension](https://glossary.magento.com/extension) developers should be aware of these vulnerabilities to avoid introducing them in their code.
 

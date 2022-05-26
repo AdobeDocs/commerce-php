@@ -1,11 +1,11 @@
 ---
-group: php-developer-guide
-title: Working with files
+title: File Uploads | Commerce PHP Extensions
+description: Use the Adobe Commerce and Magento Open Source out-of-the-box abstraction so that your component can safely work with user-uploaded files.
 ---
 
-When working with files, especially user-uploaded files, it is easy to make a mistake and open your store to dangerous
-attacks like path traversal and remote code execution (RCE). The Adobe Commerce and Magento Open Source framework provides abstraction to help you safely work with user files,
-but it's your responsibility to use it the right way.
+# File uploads
+
+When working with files, especially user-uploaded files, it is easy to make a mistake and open your store to dangerous attacks like path traversal and remote code execution (RCE). The Adobe Commerce and Magento Open Source framework provides abstraction to help you safely work with user files, but it's your responsibility to use it the right way.
 
 ## When you don't need a file
 

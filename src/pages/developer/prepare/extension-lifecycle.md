@@ -1,8 +1,9 @@
 ---
-group: php-developer-guide
-title: Extension Lifecycle
-menu_title: Extension lifecycle
+title: Extension Lifecycle | Commerce PHP Extensions
+description: Learn how to create classes that execute code when Adobe Commerce and Magento Open Source components are initialized, upgrades, or uninstalled.
 ---
+
+# Extension lifecycle
 
 This topic describes a module's lifecycle and how to create classes that execute code when your module is initialized, upgraded, or uninstalled.
 These executable classes can perform tasks that set up the database, update data, and clean up data.

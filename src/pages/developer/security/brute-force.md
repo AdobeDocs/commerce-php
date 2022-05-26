@@ -1,18 +1,19 @@
 ---
-group: php-developer-guide
-title: Protecting against brute force attacks
+title: Brute Force Attacks | Commerce PHP Extensions
+description: Identify and protect Adobe Commerce and Magento Open Source component functionality vulnerable to brute force attacks.
 ---
 
-In a brute force attack, the attacker tries to guess a value/secret stored on a server by cycling through
-all possible variations. Attackers may also use dictionaries (rainbow tables) of previously-exposed correct values,
-such as known passwords from other applications or accounts.
+# Brute force attackes
+
+In a brute force attack, the attacker tries to guess a value/secret stored on a server by cycling through all possible variations. Attackers may also use dictionaries (rainbow tables) of previously-exposed correct values, such as known passwords from other applications or accounts.
 
 ## Identifying vulnerable functionality
 
-The first step is to determine where the application can be vulnerable against brute force attacks. The vulnerabilities
-can be divided into human-readable and machine-readble secrets.
+The first step is to determine where the application can be vulnerable against brute force attacks. The vulnerabilities can be divided into human-readable and machine-readble secrets.
 
-Human-readable secrets require a challenge for the user to provide a secret, possibly from memory. Examples include:
+Human-readable secrets require a challenge for the user to provide a secret, possibly from memory. 
+
+Examples include:
 
 *  Login-password pairs
 *  Gift card codes

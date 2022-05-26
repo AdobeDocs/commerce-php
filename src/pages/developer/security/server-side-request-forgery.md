@@ -1,18 +1,15 @@
 ---
-group: php-developer-guide
-title: Server-side Request Forgery
+title: Server-Side Request Forgery (SSRF) | Commerce PHP Extensions
+description: Follow these strategies to prevent server-site request forgery (SSRF) vulnerabilities in Adobe Commerce and Magento Open Source components.
 ---
 
-Server-side Request Forgery (SSRF) is a type of attack in which a server is tricked into sending a request to an
-internally-accessible server. This type of attack is not limited to the HTTP protocol. Depending on the network client
-library the targeted server is using, it could be forced to send requests using other protocols such as TCP or FTP.
-An SSRF attacker could force an application to send a request to FLUSHALL to an internally accessible Redis
-instance, or to load a file from an internal file host instead of a publicly accessible one provided by a user.
+# Server-side request forgery (SSRF)
+
+Server-side Request Forgery (SSRF) is a type of attack in which a server is tricked into sending a request to an internally-accessible server. This type of attack is not limited to the HTTP protocol. Depending on the network client library the targeted server is using, it could be forced to send requests using other protocols such as TCP or FTP. An SSRF attacker could force an application to send a request to FLUSHALL to an internally accessible Redis instance, or to load a file from an internal file host instead of a publicly accessible one provided by a user.
 
 ## Identifying potentially vulnerable functionality
 
-Any functionality that allows a user to provide a URL that will later be requested on the server is vulnerable without
-proper validation.
+Any functionality that allows a user to provide a URL that will later be requested on the server is vulnerable without proper validation.
 
 An example of such functionality would be an ability for a user to specify a URL for their profile image.
 Your application might attempt to download the image to allow the user to crop it so that it can be used as an avatar.

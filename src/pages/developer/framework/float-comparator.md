@@ -1,11 +1,11 @@
 ---
-group: php-developer-guide
-title: Float Comparator
+title: Float Comparator | Commerce PHP Extensions
+description: Use this library in your Adobe Commerce and Magento Open Source components to compare float values with an appropriate epsilon value.
 contributor_name: Adarsh Manickam
 contributor_link: https://github.com/drpayyne
 ---
 
-## Overview
+# Float comparator
 
 The [`Magento\Framework\Math\FloatComparator`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Math/FloatComparator.php) library provides methods to compare float values with an approriate epsilon value (`0.00001`). Floats usually have rounding errors while doing mathematical operations, so the conventional way of comparing two floats using the equality operator (`==`), may not always lead to expected results. For more information, please refer to this [article](https://floating-point-gui.de/errors/comparison/).
 

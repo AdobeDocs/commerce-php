@@ -1,9 +1,11 @@
 ---
-group: php-developer-guide
-title: Check the Commerce version
+title: Check the Commerce Version | Commerce PHP Extensions
+description: Use these options to identify the version of Adobe Commerce or Magento Open Source.
 contributor_name: Atwix
 contributor_link: https://www.atwix.com/
 ---
+
+# Check the Commerce version
 
 Use any of the following ways to determine which version of Adobe Commerce or Magento Open Source is installed:
 
@@ -25,7 +27,7 @@ bin/magento --version
 **Response:**
 
 ```terminal
-Magento CLI version 2.3.0
+Magento CLI version 2.4.0
 ```
 
 ## HTTP GET request
@@ -57,5 +59,5 @@ If the application was installed using the `composer install` command, you can s
 ```json
   {
     "name": "magento/product-community-edition",
-    "version": "2.3.2",
+    "version": "2.4.0",
 ```

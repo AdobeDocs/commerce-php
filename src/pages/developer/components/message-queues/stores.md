@@ -1,15 +1,15 @@
 ---
-group: php-developer-guide
-title: Message queues and stores
+title: Requests for Specific Stores | Commerce PHP Extensions
+description: Use the default message format to identify information about a specific Adobe Commerce or Magento Open Source store.
 contributor_name: Comwrap GmbH
 contributor_link: https://www.comwrap.com
-functional_areas:
-  - Services
 ---
+
+# Requests for specific stores
 
 The `Magento_AmqpStore` module provides the ability for message queues to process asynchronous requests for specific stores.
 
-### Processing messages
+## Processing messages
 
 Adobe Commerce and Magento Open Source process each message that is sent to the Message Queue Framework, adding information about the current store. The following plugin implements this behavior:
 
@@ -71,7 +71,7 @@ public function beforeEnqueue(SubjectExchange $subject, $topic, array $envelopes
 
 In this example, you can see that the plugin checks `application_headers` and adds the `store_id` parameter. If the headers do not exist, then plugin creates them. As a result, each RabbitMQ message receives information about the store that is affected by an asynchronous request.
 
-### Processing by consumer
+## Processing by consumer
 
 [Consumers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-queue.html) pick up messages from the RabbitMQ queue and process them.
 
@@ -117,12 +117,6 @@ public function aroundExecute(SubjectMassConsumerEnvelopeCallback $subject, call
 ```
 
 The plugin checks the message headers and sets the current store value in `storeManager` to the received `store_id` value.
-
-#### Related Topics
-
-*  [Message Queues Overview]
-*  [Configure message queues]
-*  [Install RabbitMQ]
 
 <!-- Link definitions -->
 [RabbitMQ]: http://www.rabbitmq.com

@@ -94,11 +94,11 @@ module.exports = [
       path: "/developer/package/",
       pages: [
         {
-          title: "Paclage a component",
+          title: "Package a component",
           path: "/developer/package/component/",
         },
         {
-          title: "Distribute a package",
+          title: "Distribute a component",
           path: "/developer/package/distribute-component/",
         },
       ],
@@ -150,7 +150,7 @@ module.exports = [
           path: "/developer/cli-commands/naming-guidelines/",
         },
         {
-          title: "Create a new command",
+          title: "Create a custom command",
           path: "/developer/cli-commands/custom",
         },
       ],
@@ -364,7 +364,7 @@ module.exports = [
           path: "/developer/configuration/importers/",
         },
         {
-          title: "Sensitive environment settings",
+          title: "Sensitive and environment-specific settings",
           path: "/developer/configuration/sensitive-environment-settings/",
         },
       ],
@@ -404,34 +404,6 @@ module.exports = [
       path: "/developer/security/",
       pages: [
         {
-          title: "Content security policies",
-          path: "/developer/security/content-security-policies/",
-        },
-        {
-          title: "Non-secure functions",
-          path: "/developer/security/non-secure-functions/",
-        },
-        {
-          title: "Cross-site scripting prevention",
-          path: "/developer/security/cross-site-scripting-prevention/",
-        },
-        {
-          title: "Sensitive information",
-          path: "/developer/security/sensitive-information/",
-        },
-        {
-          title: "Denial of service (DoS) attacks",
-          path: "/developer/security/denial-of-service-attacks/",
-        },
-        {
-          title: "Mass assignment",
-          path: "/developer/security/mass-assignment/",
-        },
-        {
-          title: "Server-side request forgery prevention",
-          path: "/developer/security/server-side-request-forgery/",
-        },
-        {
           title: "Authorization",
           path: "/developer/security/authorization/",
         },
@@ -440,12 +412,40 @@ module.exports = [
           path: "/developer/security/brute-force/",
         },
         {
+          title: "Content security policies",
+          path: "/developer/security/content-security-policies/",
+        },
+        {
           title: "Cross-site request forgery",
           path: "/developer/security/cross-site-request-forgery/",
         },
         {
+          title: "Cross-site scripting",
+          path: "/developer/security/cross-site-scripting/",
+        },
+        {
+          title: "Denial of service (DoS) attacks",
+          path: "/developer/security/denial-of-service-attacks/",
+        },
+        {
           title: "File uploads",
           path: "/developer/security/file-uploads/",
+        },
+        {
+          title: "Mass assignment",
+          path: "/developer/security/mass-assignment/",
+        },
+        {
+          title: "Non-secure functions",
+          path: "/developer/security/non-secure-functions/",
+        },
+        {
+          title: "Sensitive information",
+          path: "/developer/security/sensitive-information/",
+        },
+        {
+          title: "Server-side request forgery prevention",
+          path: "/developer/security/server-side-request-forgery/",
         },
       ],
     },

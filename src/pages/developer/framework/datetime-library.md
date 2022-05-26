@@ -1,9 +1,11 @@
 ---
-group: php-developer-guide
-title: DateTime library
+title: DateTime Library | Commerce PHP Extensions
+description: Use this library in your Adobe Commerce and Magento Open Source components to manipulate date and time formatting.
 contributor_name: Rakesh Jesadiya
 contributor_link: https://github.com/RakeshJesadiya
 ---
+
+# DateTime library
 
 The DateTime library provides utilities to work with date and time formatting. Provided methods in this library are described below.
 

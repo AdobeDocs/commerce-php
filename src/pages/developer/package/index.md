@@ -1,11 +1,9 @@
 ---
-group: php-developer-guide
-subgroup: 05_Package
-title: Package
-menu_title: Package
-menu_order: 1
-menu_node: parent
+title: Package | Commerce PHP Extensions
+description: Review introductory material related to packaging Adobe Commerce and Magento Open Source components.
 ---
+
+# Package
 
 Use [Composer](https://getcomposer.org/) to package your [module](https://glossary.magento.com/module).
 

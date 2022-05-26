@@ -1,14 +1,12 @@
 ---
-group: php-developer-guide
-title: Component types
+title: Component Types | Commerce PHP Extensions
+description: Discover the different Adobe Commerce and Magento Open Source component types.
 ---
 
-Each component type has a different [directory structure][directory-structure] and different contents for [`composer.json`][composer].
+# Component types
+
+Each component type has a different [directory structure](../build/component-file-structure.md) and different contents for [`composer.json`](../build/composer-integration.md).
 
 import Docs from '/src/pages/_includes/composer-types.md'
 
 <Docs />
-
-[directory-structure]: ../build/component-file-structure.md
-[composer]: ../build/composer-integration.md
-[component-file-structure]: ../prepare/component-file-structure.md

@@ -1,7 +1,9 @@
 ---
-group: php-developer-guide
-title: MFTF test versioning and backward compatibility policy
+title: MFTF Test Versioning and Backward Compatibility | Commerce PHP Extensions
+description: Learn about the functional test framework test versioning and backward compatibility policy for Adobe Commerce and Magento Open Source component development.
 ---
+
+# MFTF test versioning and backward compatibility
 
 ## Goals and requirements
 
@@ -10,7 +12,7 @@ title: MFTF test versioning and backward compatibility policy
 1. Outline what is considered a backward incompatible change to MFTF tests.
 1. List of what should be implemented.
 
-## Backwards compatibility definition for MFTF tests
+## Backward compatibility for MFTF tests
 
 When a test undergoes changes, but achieves the same testing results as before and remains compatible with potential test customizations, this is defined as a 'backwards compatible' change.
 

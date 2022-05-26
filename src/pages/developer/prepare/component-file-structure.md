@@ -1,5 +1,6 @@
 ---
-title: About component file structure
+title: About Component File Structure | Commerce PHP Extensions
+description: Review the required files for Adobe Commerce and Magento Open Source components.
 ---
 
 # About component file structure

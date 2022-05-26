@@ -1,7 +1,9 @@
 ---
-group: php-developer-guide
-title: Test your component
+title: Test Your Component | Commerce PHP Extensions
+description: Learn what type of testing you should do when developing an Adobe Commerce or Magento Open Source component. 
 ---
+
+# Test your component
 
 ## Unit and integration tests
 

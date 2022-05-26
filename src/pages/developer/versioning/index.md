@@ -1,9 +1,9 @@
 ---
-group: php-developer-guide
-title: Versioning schema
-redirect_from:
-  - /guides/v2.3/architecture/versioning.html
+title: Versioning Schema | Commerce PHP Extensions
+description: Learn how Adobe Commerce and Magento Open Source component versioning works.
 ---
+
+# Versioning schema
 
 Adobe Commerce and Magento Open Source application and module releases have their own unique version number.
 

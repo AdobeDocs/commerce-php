@@ -1,12 +1,9 @@
 ---
-group: php-developer-guide
-title: Serialize Library
-subgroup: Framework
-menu_title: Serialize Library
-menu_order: 1000
+title: Serialize Library | Commerce PHP Extensions
+description: Use this library in your Adobe Commerce and Magento Open Source components to manage the serialization and unserialization of data.
 ---
 
-## Overview
+# Serialize library
 
 This [library](https://glossary.magento.com/library) provides a secure way of serializing and unserializing strings, integers, floats, booleans, and arrays.
 
@@ -112,7 +109,7 @@ public function loadDataFromCache()
 ...
 ```
 
-## Backward Compatibility Note
+## Backward compatibility note
 
 The `SerializerInterface` interface and its implementations only exist since Adobe Commerce and Magento Open Source version 2.2.
 Because of this, it is not possible to use these classes in code that has to be compatible with Adobe Commerce and Magento Open Source 2.1 or 2.0.

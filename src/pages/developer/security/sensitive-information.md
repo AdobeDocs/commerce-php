@@ -1,11 +1,11 @@
 ---
-group: php-developer-guide
-title: Sensitive Information
+title: Sensitive Information | Commerce PHP Extensions
+description: Prevent Adobe Commerce and Magento Open Source components from exposing sensitive information, like customer passwords, addresses, and dates of birth.
 ---
 
-Sensitive information is information that either requires additional permissions for read/write operations
-or is meant to be accessed only programmatically for various reasons.
-Examples of sensitive information include customer passwords, addresses, date of birth, and the number of orders for a product.
+# Sensitive information
+
+Sensitive information is information that either requires additional permissions for read/write operations or is meant to be accessed only programmatically for various reasons. Examples of sensitive information include customer passwords, addresses, date of birth, and the number of orders for a product.
 
 ## Exposing sensitive information to users without permissions
 

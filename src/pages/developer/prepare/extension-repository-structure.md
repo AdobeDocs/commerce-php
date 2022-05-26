@@ -1,9 +1,9 @@
 ---
-group: php-developer-guide
-title: Extension Repository Structure
+title: Extension Repository Structure | Commerce PHP Extensions
+description: Use these best practices to create and organize your Adobe Commerce or and Magento Open Source component repository structure. 
 ---
 
-## Extension Repository Structure
+# Extension repository structure
 
 For module, theme, and language pack component repositories, we recommend five best practices:
 
@@ -13,7 +13,7 @@ For module, theme, and language pack component repositories, we recommend five b
 *  One component per repository
 *  One functional test suite per module component
 
-### Flatter hierarchy
+## Flatter hierarchy
 
 Your repository structure should no longer include `app/code/<Vendor>/` directories.
 
@@ -32,7 +32,7 @@ Your repository structure should no longer include `app/code/<Vendor>/` director
 └── <Module1>
 ```
 
-### One extension type per repository
+## One extension type per repository
 
 You cannot mix extension types (modules, themes, and language packs) in the same extension repository. Each component type must have its own repository. For example, *you cannot do this*:
 
@@ -44,7 +44,7 @@ You cannot mix extension types (modules, themes, and language packs) in the same
 └── <language1>
 ```
 
-### Multiple components per repository
+## Multiple components per repository
 
 If your extension is complex and requires several components, you can keep those components in the same repository to make the extension easy to package and maintain:
 
@@ -70,7 +70,7 @@ You can do the same for theme and language pack extensions:
 └── <language2>
 ```
 
-### One component per repository
+## One component per repository
 
 If your extension requires only one component, your `<component_root>` directory and your `<repo_root>` directory will be the same to reduce unnecessary hierarchy in the directory structure:
 
@@ -92,7 +92,7 @@ If your extension requires only one component, your `<component_root>` directory
 └── ...
 ```
 
-### Test Suites
+## Test Suites
 
 Function tests can be added to a `Test` directory within each module of your extension.
 

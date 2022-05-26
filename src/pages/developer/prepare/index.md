@@ -1,11 +1,9 @@
 ---
-group: php-developer-guide
-subgroup: 02_Prepare
-title: Prepare (development quick start)
-menu_title: Prepare (development quick start)
-menu_order: 1
-menu_node: parent
+title: Prepare | Commerce PHP Extensions
+description: Navigate preparatory resources available for Adobe Commerce and Magento Open Source component development. 
 ---
+
+# Prepare
 
 Before you start building components, we suggest you use the following checklist:
 

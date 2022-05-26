@@ -1,7 +1,9 @@
 ---
-group: php-developer-guide
-title: Denial-of-Service (DoS) attacks
+title: Denial-of-Service (DoS) Attacks | Commerce PHP Extensions
+description: Identify and protect Adobe Commerce and Magento Open Source component functionality vulnerable to denial of service attacks.
 ---
+
+# Denial of service (DOS) attacks
 
 A __Denial-of-Service (DoS) attack__ attempts to shut down (halt) servers serving an application to make it
 inaccessible to users. It's accomplished by flooding a server with an excess amount of traffic or triggering heavy

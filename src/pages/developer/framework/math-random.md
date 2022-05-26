@@ -1,11 +1,11 @@
 ---
-group: php-developer-guide
-title: Math Random
+title: Math Random | Commerce PHP Extensions
+description: Use this library in your Adobe Commerce and Magento Open Source components to generate random number values and hashes.
 contributor_name: Adarsh Manickam
 contributor_link: https://github.com/drpayyne
 ---
 
-## Overview
+# Math random
 
 The [`Magento\Framework\Math\Random`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Math/Random.php) library provides the ability to generate random values and hashes.
 

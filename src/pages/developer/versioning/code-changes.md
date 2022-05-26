@@ -1,7 +1,9 @@
 ---
-group: php-developer-guide
-title: Codebase changes
+title: Codebase Changes | Commerce PHP Extensions
+description: Differentiate between public and private code changes and identify API, customization points, and deprecations.
 ---
+
+# Code changes
 
 Every release includes a change in the codebase. The scope of the change determines whether the MAJOR, MINOR, or PATCH number increases in the version.
 

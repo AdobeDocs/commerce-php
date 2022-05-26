@@ -1,14 +1,11 @@
 ---
-group: php-developer-guide
-subgroup: Configuration
-title: Sensitive and environment settings
-menu_title: Sensitive and environment settings
-menu_order: 1000
-functional_areas:
-  - Configuration
+title: Sensitive and Environment-Specific Settings | Commerce PHP Extensions
+description: Configure sensitive and environment-specific settings with Adobe Commerce or Magento Open Source components.
 ---
 
-This topic discusses how third-party developers can create components that designate configuration settings as being sensitive, system-specific, or both.
+# Sensitive and environment-specific settings
+
+This topic discusses how third-party developers can create components that designate configuration settings as being sensitive, environment-specific, or both.
 
 ## Guidelines
 
@@ -98,13 +95,6 @@ Done.
 ### Sensitive, system-specific setting
 
 To set a configuration setting as both sensitive and system-specific, create two entries with the `name` property for `argument` set to `sensitive` for one entry and `environment` for the other.
-
-**Related topics:**
-
-*  [Configuration importers][config-importers]
-*  [The di.xml file][di-xml]
-*  [Developer roadmap](../roadmap.md)
-*  [Dependency injection](../components/dependency-injection.md)
 
 [typepool]: https://github.com/magento/magento2/blob/2.4/app/code/Magento/Config/Model/Config/TypePool.php
 [di-xml]: ../build/dependency-injection-file.md

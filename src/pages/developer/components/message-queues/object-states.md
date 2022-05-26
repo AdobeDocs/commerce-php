@@ -1,12 +1,11 @@
 ---
-group: php-developer-guide
-title: Handling outdated in-memory object states
-functional_areas:
-  - Configuration
-  - System
+title: Handling Outdated In-Memory Object States | Commerce PHP Extensions
+description: Re-instantiate Adobe Commerce and Magento Open source memory state using the PoisonPill interface after updating the store configuration in the Admin.
 ---
 
-When Adobe Commerce or Magento Open Source is launched, the store's configuration is loaded into memory. The application uses the in-memory configuration for queue message transactions. When the store's configuration is updated in the admin, the copy in memory does not refresh automatically, resulting in an outdated in-memory object state.
+# Handling outdated in-memory object states
+
+When Adobe Commerce or Magento Open Source is launched, the store's configuration is loaded into memory. The application uses the in-memory configuration for queue message transactions. When the store's configuration is updated in Admin, the copy in memory does not refresh automatically, resulting in an outdated in-memory object state.
 
 To ensure the copy in memory is re-instantiated after an update, use the `PoisonPill` interfaces available in the MessageQueue module.
 There are three type of the `PoisonPill` interfaces:
@@ -21,7 +20,7 @@ In addition to changes in the configuration, a new store view or a new website c
 
 If `PoisonPill` determines the copy of the in-memory state needs to be re-instantiated and you have set up a `consumers_runner` cron job, the application will automatically restart all consumers on the next run of the job. If you did not set up the cron job, you will need to manually restart any consumers that were terminated by `PoisonPill`.
 
-### How to use `PoisonPill` interfaces
+## How to use `PoisonPill` interfaces
 
 The method `put` of `PoisonPillPutInterface` using in the `Magento\Store\Model\Website`
 

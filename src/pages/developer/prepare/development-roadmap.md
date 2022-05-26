@@ -1,7 +1,9 @@
 ---
-group: php-developer-guide
-title: Roadmap for developing and packaging components
+title: Roadmap for Developing and Packaging Components | Commerce PHP Extensions
+description: See an overview of the steps involved in building and distributing Adobe Commerce and Magento Open Source components.
 ---
+
+# Roadmap for developing and packaging components
 
 To develop your component, use the following steps:
 

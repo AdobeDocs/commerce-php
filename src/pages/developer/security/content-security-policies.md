@@ -1,7 +1,9 @@
 ---
-group: php-developer-guide
-title: Content Security Policies
+title: Content Security Policies | Commerce PHP Extensions
+description: Mitigate against cross-site scripting and related attacks in Adobe Commerce and Magento Open Source components with content security policies.
 ---
+
+# Content security policies
 
 Content Security Policies (CSP) are a powerful tool to mitigate against Cross Site Scripting (XSS)
 and related attacks, including card skimmers, session hijacking, clickjacking, and more. Web servers

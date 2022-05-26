@@ -1,12 +1,9 @@
 ---
-group: php-developer-guide
-subgroup: 05_Package
-title: Package a component
-menu_title: Package a component
-menu_order: 2
+title: Package a component | Commerce PHP Extensions
+description: Learn how to package Adobe Commerce and Magento Open Source components using Composer.
 ---
 
-## Overview of packaging
+# Package a component
 
 The Adobe Commerce and Magento Open Source applications use [Composer](https://glossary.magento.com/composer) packages to distribute, install, and upgrade components in an application instance.
 

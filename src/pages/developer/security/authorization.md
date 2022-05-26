@@ -1,12 +1,13 @@
 ---
-group: php-developer-guide
-title: Authorization
+title: Authorization | Commerce PHP Extensions
+description: Control access to Adobe Commerece and Magento Open Source pages using different authorization strategies.
 ---
 
-## Configuration based authorization
+# Authorization
 
-Through configuration, Adobe Commerce and Magento Open Source provide a number of ways to mark a page (controller) or an endpoint as accessible to guests,
-logged in customers, or administrators with roles that allow access to certain resources.
+## Configuration-based authorization
+
+Through configuration, Adobe Commerce and Magento Open Source provide a number of ways to mark a page (controller) or an endpoint as accessible to guests, logged in customers, or administrators with roles that allow access to certain resources.
 
 ### Pages (controllers)
 
@@ -41,7 +42,7 @@ Endpoints can be configured to be accessible by specific users as follows:
   `<resource>Module_Name::resource1</resource>`
   `<resource>Module_Name::resource2</resource>`
 
-### UI Components
+### UI components
 
 To mark UI components as accessible by customers or administrators, place the UI component XML config files
 in the `<Module>/view/**` and `<Module>/view/adminhtml/**` folders, respectively.
@@ -134,7 +135,7 @@ render it, you simply find the data by ID. This particular page will be protecte
 through `/mui/render`, or when the block is used on a different page with a different controller, no ownership authorization will occur,
 and any wishlist data may be retrieved through the ID.
 
-### Temporal authorization
+## Temporal authorization
 
 There are cases where it is either impossible to authorize a user via login/password, or access to a resource must
 be issued temporarily. For instance, when a protected page needs to be accessible from an e-mail link immediately without

@@ -1,11 +1,11 @@
 ---
-group: php-developer-guide
-title: URL Library
+title: URL Library | Commerce PHP Extensions
+description: Use this library in your Adobe Commerce and Magento Ooen Source components to work with URLs.
 contributor_name: Adarsh Manickam
 contributor_link: https://github.com/drpayyne
 ---
 
-## Overview
+# URL library
 
 This URL library provides numerous utilities to work with URLs. Some of the most useful URL utilities are described below.
 

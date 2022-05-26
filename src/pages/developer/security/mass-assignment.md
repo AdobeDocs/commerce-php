@@ -1,15 +1,13 @@
 ---
-group: php-developer-guide
-title: Mass assignment
+title: Mass Assignment | Commerce PHP Extensions
+description: Prevent Adobe Commerce and Magento Open Source components from allowing bad actors to override user-editable properties with arbitrary values in HTTP requests.
 ---
 
-Mass Assignment is a type of attack in which a client inserts or updates data that either should not be available
-to the user, or should require additional authorization.
+# Mass assignment
 
-Example:
+Mass assignment is a type of attack in which a client inserts or updates data that either should not be available to the user, or should require additional authorization.
 
-You have an endpoint or a page where users can edit their own personal information. The user table in your DB
-contains the following columns:
+For example, you have an endpoint or a page where users can edit their personal information. The user table in your database contains the following columns:
 
 *  `id`
 *  `first_name`
@@ -18,8 +16,7 @@ contains the following columns:
 *  `password_hash`
 *  `is_admin`
 
-You want users to be able to edit their first and last names only on a page or through the endpoint, but inside the
-controller/service contract, you have code looking something like this:
+You want users to be able to edit their first and last names only on a page or through the endpoint, but inside the controller/service contract, you have code that looks something like this:
 
 ```php
 $user = $repository->findById($authContext->getUserId());
@@ -27,25 +24,17 @@ $user->setData($request->getPostData());
 $dbConnection->updateTable('users', $user->getData(), ['id' => $user->getId()]);
 ```
 
-When a client only provides `first_name` and `last_name` properties, this code will perform as expected, but it is vulnerable
-to mass assignment attacks.
+When a client only provides `first_name` and `last_name` properties, this code will perform as expected, but it is vulnerable to mass assignment attacks.
 
-The first vulnerability is through the `id` property. Users are meant to be able to edit only their own data, but here
-an attacker can set an `id` in their request. The`$user` object's ID will be overwritten, so when you call
-`$dbConnection->updateTable()`, instead of having the ID from `$authContext`, you will have an arbitrary ID from the HTTP request.
-This will allow an attacker to override data of any user in your system!
+The first vulnerability is through the `id` property. Users are meant to be able to edit only their own data, but here an attacker can set an `id` in their request. The`$user` object's ID will be overwritten, so when you call `$dbConnection->updateTable()`, instead of having the ID from `$authContext`, you will have an arbitrary ID from the HTTP request. This will allow an attacker to override data of any user in your system!
 
-The second possible vulnerability is through the `is_admin` property. Clearly, the property was meant to be writable only by other admins,
-and maybe even by using another page/endpoint. Using the code above, an attacker can set `"is_admin": true`
-inside a request and gain admin access when you save the user record.
+The second possible vulnerability is through the `is_admin` property. Clearly, the property was meant to be writable only by other admins, and maybe even by using another page/endpoint. Using the code above, an attacker can set `"is_admin": true` inside a request and gain admin access when you save the user record.
 
-Given the `users` table structure, and depending on your application's logic, `email` can also be a vulnerable property.
-An attacker might be able to change their email to any other address without confirming it first.
+Given the `users` table structure, and depending on your application's logic, `email` can also be a vulnerable property. An attacker might be able to change their email to any other address without confirming it first.
 
-## Mass Assignment and Magento
+## Mass assignment and the Commerce framework
 
-If you are not careful and, especially, if you use the legacy approach described below, it is easy to make yourself vulnerable to mass
-assignment.
+If you are not careful and, especially, if you use the legacy approach described below, it is easy to make yourself vulnerable to mass assignment.
 
 ### Legacy approach
 

@@ -1,14 +1,11 @@
 ---
-group: php-developer-guide
-title: Migrate message queue configuration
-menu_title: Migrate message queue configuration
-functional_areas:
-  - Configuration
-  - System
-  - Setup
+title: Migrate Configuration | Commerce PHP Extensions
+description: Use these examples to migrate your message queue configuration between 2.x versions of Adobe Commerce and Magento Open Source.
 ---
 
-### Migrate from 2.1 to 2.2
+# Migrate message queue configuration
+
+## Migrate from 2.1 to 2.2
 
 To upgrade the message queues for Adobe Commerce or Magento Open Source 2.1, you must create the following files in the `<module>/etc` directory for each [module](https://glossary.magento.com/module) that will use the message queue framework.
 
@@ -24,7 +21,7 @@ For complete details about these files, see [Configure message queues](configura
 
 The Adobe Commerce and Magento Open Source 2.1 `communication.xml` file has not changed for Adobe Commerce and Magento Open Source 2.2.
 
-#### Create the `queue_consumer.xml` file
+### Create the `queue_consumer.xml` file
 
 The first column in the following table lists the all the parameters in the `queue_consumer.xml` file. The second column lists where in the Adobe Commerce and Magento Open Source 2.1 `queue.xml` file the equivalent parameters are located.
 
@@ -37,7 +34,7 @@ The first column in the following table lists the all the parameters in the `que
 `<consumer>/connection`       | `<broker>/type`
 `<consumer>/maxMessages`     | `<broker>/<queue>/maxMessages`
 
-#### Create the `queue_topology.xml` file
+### Create the `queue_topology.xml` file
 
 The first column in the following table lists the all the parameters in the `queue_topology.xml` file. The second column lists where in the Adobe Commerce and Magento Open Source 2.1 `queue.xml` file the equivalent parameters are located.
 
@@ -56,7 +53,7 @@ The first column in the following table lists the all the parameters in the `que
 `<exchange>/<binding>/disabled` | Not present in 2.1. Omit this parameter to accept the default value.
 `<exchange>/<arguments>` and `<exchange>/<binding>/<arguments>` | Not present in 2.1. Omit this element.
 
-#### Create the `queue_publisher.xml` file
+### Create the `queue_publisher.xml` file
 
 The first column in the following table lists the all the parameters in the `queue_publisher.xml` file. The second column lists where in the Adobe Commerce and Magento Open Source 2.1 `queue.xml` file the equivalent parameters are located.
 
@@ -68,7 +65,7 @@ The first column in the following table lists the all the parameters in the `que
 `<publisher>/<connection>/exchange` | `<broker>exchange`
 `<publisher>/<connection>/disabled` | Not present in 2.1. Omit this parameter to accept the default value.
 
-### Migrate from 2.0 to 2.2
+## Migrate from 2.0 to 2.2
 
 To upgrade from Adobe Commerce or Magento Open Source 2.0, you must create the following files in the `<module>/etc` directory for each module that will use the message queue framework.
 
@@ -80,7 +77,7 @@ The existing `queue.xml` file is deprecated.
 
 For complete details about these files, see [Configure message queues](configuration.md)
 
-#### Create the `queue_consumer.xml` file
+### Create the `queue_consumer.xml` file
 
 The first column in the following table lists the all the parameters in the `queue_consumer.xml` file. The second column lists where in the Adobe Commerce and Magento Open Source 2.0 `queue.xml` file the equivalent parameters are located.
 
@@ -93,7 +90,7 @@ The first column in the following table lists the all the parameters in the `que
 `<consumer>/connection`       |  `<consumer>/connection`
 `<consumer>/maxMessages`     | `<consumer>/max_messages`
 
-#### Create the `queue_topology.xml` file
+### Create the `queue_topology.xml` file
 
 The first column in the following table lists the all the parameters in the `queue_topology.xml` file. The second column lists where in the Adobe Commerce and Magento Open Source 2.0 `queue.xml` file the equivalent parameters are located.
 
@@ -112,7 +109,7 @@ The first column in the following table lists the all the parameters in the `que
 `<exchange>/<binding>/disabled` | Not present in 2.0. Omit this parameter to accept the default value.
 `<arguments>` | Not present in 2.0. Omit this element.
 
-#### Create the `queue_publisher.xml` file
+### Create the `queue_publisher.xml` file
 
 The first column in the following table lists the all the parameters in the `queue_publisher.xml` file. The second column lists where in the Adobe Commerce and Magento Open Source 2.0 `queue.xml` file the equivalent parameters are located.
 
@@ -123,8 +120,3 @@ The first column in the following table lists the all the parameters in the `que
 `<publisher>/<connection>/name` | `<publisher>/connection`
 `<publisher>/<connection>/exchange` | `<publisher>/exchange`
 `<publisher>/<connection>/disabled` | Not present in 2.0. Omit this parameter to accept the default value.
-
-**Related topics:**
-
-*  [Message Queues Overview](https://devdocs.magento.com/guides/v2.4/config-guide/mq/rabbitmq-overview.html)
-*  [Configure message queues](configuration.md)
