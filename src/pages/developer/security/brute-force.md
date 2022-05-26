@@ -11,7 +11,7 @@ In a brute force attack, the attacker tries to guess a value/secret stored on a 
 
 The first step is to determine where the application can be vulnerable against brute force attacks. The vulnerabilities can be divided into human-readable and machine-readble secrets.
 
-Human-readable secrets require a challenge for the user to provide a secret, possibly from memory. 
+Human-readable secrets require a challenge for the user to provide a secret, possibly from memory.
 
 Examples include:
 
