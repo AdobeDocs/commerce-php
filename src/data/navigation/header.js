@@ -8,8 +8,8 @@ module.exports = [
       path: "/architecture/",
     },
     {
-      title: "Developer",
-      path: "/developer/",
+      title: "Development",
+      path: "/development/",
     },
     // {
     //   title: "Best Practices",
