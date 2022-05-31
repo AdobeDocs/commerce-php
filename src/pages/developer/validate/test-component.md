@@ -49,7 +49,7 @@ See these resources for testing in [PHP](https://glossary.magento.com/php) and v
 
 *  The [Coding Standard] provides a set of rules and sniffs for the [PHP_CodeSniffer] tool
 *  [Technical Deep Dive: How to Pass the Commerce Marketplace Extension Quality Program] (video) from Magento Imagine 2017
-*  [Extension Quality Program](https://developer.adobe.com/commerce/marketplace/guides/sellers/extension-quality-program/) in the Admin User Guide
+*  [Extension Quality Program](https://developer.adobe.com/commerce/marketplace/guides/sellers/extension-quality-program/) in the Commerce Marketplace guide
 
 [Testing Overview]: https://devdocs.magento.com/guides/v2.4/test/testing.html
 [Functional Testing Framework]: https://devdocs.magento.com/mftf/docs/introduction.html

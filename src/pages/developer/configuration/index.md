@@ -5,7 +5,7 @@ description: Review best practices for programmatically managing configuration s
 
 # Configuration
 
-This section describes options for programmatically managing configuration settings with ADobe Commerce and Magento Open Source components.
+This section describes options for programmatically managing configuration settings with Adobe Commerce and Magento Open Source components.
 
 Topics include:
 

@@ -11,7 +11,7 @@ In Adobe Commerce and Magento Open Source, the Message Queue Framework (MQF) is 
 
 A basic message queue system can also be set up without using RabbitMQ. In this system, a MySQL [adapter](https://glossary.magento.com/adapter) stores messages in the database. Three database tables (`queue`, `queue_message`, and `queue_message_status`) manage the message queue workload. Cron jobs ensure the consumers are able to receive messages. This solution is not very scalable. RabbitMQ should be used whenever possible.
 
-See [Configure message queues] for information about setting up the message queue system.
+See [Configure message queues](configuration.md) for information about setting up the message queue system.
 
 ## Send a message from the publisher to a queue
 

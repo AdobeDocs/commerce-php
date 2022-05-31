@@ -15,8 +15,7 @@ Each script iteratively adds changes. During the installation process, upgrade s
 
 The main disadvantage of this approach is that the application applies changes blindly. For example, in one version a new database column might be introduced, only to be removed in the next. _Declarative setup_ eliminates this type of unnecessary work.
 
-Declarative setup is based on database structure declarations, and is used in projects such as [Doctrine](http://www.doctrine-project.org/). Schema files declare what the database structure should be,
-and the application determines the differences between the current table structure and what it should be. These differences can be represented with atomic SQL operations.
+Declarative setup is based on database structure declarations, and is used in projects such as [Doctrine](http://www.doctrine-project.org/). Schema files declare what the database structure should be, and the application determines the differences between the current table structure and what it should be. These differences can be represented with atomic SQL operations.
 
 The application prioritizes the declarative schema and executes the declarative install schemas before the [data and schema patches](patches.md).
 
@@ -60,10 +59,12 @@ If you have enabled [URN highlighting](https://devdocs.magento.com/guides/v2.4/c
 
 ### Top-level node
 
-The `schema` node defines the location of the `schema.xsd`  file.
+The `schema` node defines the location of the `schema.xsd` file.
 
-`<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">`
+```xml
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+```
 
 ### `table` node
 
@@ -90,70 +91,72 @@ The `column` subnode defines a column in a table. Each column requires its own d
 A column can have the following attributes:
 
 <table>
-<tr><th>Attribute</th><th>Description</th></tr>
-<tr>
-<td><code>xsi:type</code></td>
-<td><p>Specifies the column type. Must be one of the following:</p>
-<ul>
-<li><code>blob</code>  (includes blob, mediumblob, longblob)</li>
-<li><code>boolean</code></li>
-<li><code>date</code></li>
-<li><code>datetime</code></li>
-<li><code>decimal</code></li>
-<li><code>float</code></li>
-<li><code>int</code> (includes smallint, bigint, tinyint)</li>
-<li><code>json</code></li>
-<li><code>real</code> (includes decimal, float, double, real)</li>
-<li><code>smallint</code></li>
-<li><code>text</code> (includes text, mediumtext, longtext)</li>
-<li><code>timestamp</code></li>
-<li><code>varbinary</code></li>
-<li><code>varchar</code></li>
-</ul></td>
-</tr>
-<tr>
-<td><code>default</code></td>
-<td>Initializes the column with the specified default value. The default value should have the same datatype defined in <code>xsi:type</code>.
-</td>
-</tr>
-<tr>
-<td><code>disabled</code></td>
-<td>Disables or deletes the declared table, column, constraint, or index.
-</td>
-</tr>
-<tr>
-<td><code>identity</code></td>
-<td>Indicates whether a column is auto incremented.
-</td>
-</tr>
-<tr>
-<td><code>length</code></td>
-<td>Specifies the length of a column. Can be used for `char`, `varchar`, and `varbinary` types.</td>
-</tr>
-<tr>
-<td><code>nullable</code></td>
-<td>Indicates whether column can be nullable.</td>
-</tr>
-<tr>
-<td><code>onCreate</code></td>
-<td>This is a DDL trigger that allows you to move data from an existing column to a newly created column. This trigger works only when a column is created.</td>
-</tr>
-<tr>
-<td><code>padding</code></td>
-<td>The size of an integer column.</td>
-</tr>
-<tr>
-<td><code>precision</code></td>
-<td>The number of allowed digits in a real data type.</td>
-</tr>
-<tr>
-<td><code>scale</code></td>
-<td>The number of digits after the decimal in a real data type.</td>
-</tr>
-<tr>
-<td><code>unsigned</code></td>
-<td>For numeric data types, specifies whether the column can contain positive and negative values or only positive values.</td>
-</tr>
+	<tr>
+		<th>Attribute</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>xsi:type</td>
+		<td>
+			<p>Specifies the column type. Must be one of the following:</p>
+			<ul>
+				<li>blob (includes blob, mediumblob, longblob)</li>
+				<li>boolean</li>
+				<li>date</li>
+				<li>datetime</li>
+				<li>decimal</li>
+				<li>float</li>
+				<li>int (includes smallint, bigint, tinyint)</li>
+				<li>json</li>
+				<li>real (includes decimal, float, double, real)</li>
+				<li>smallint</li>
+				<li>text (includes text, mediumtext, longtext)</li>
+				<li>timestamp</li>
+				<li>varbinary</li>
+				<li>varchar</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td>default</td>
+		<td>Initializes the column with the specified default value. The default value should have the same datatype defined in xsi:type.</td>
+	</tr>
+	<tr>
+		<td>disabled</td>
+		<td>Disables or deletes the declared table, column, constraint, or index.</td>
+	</tr>
+	<tr>
+		<td>identity</td>
+		<td>Indicates whether a column is auto incremented.</td>
+	</tr>
+	<tr>
+		<td>length</td>
+		<td>Specifies the length of a column. Can be used for char, varchar, and varbinary types.</td>
+	</tr>
+	<tr>
+		<td>nullable</td>
+		<td>Indicates whether column can be nullable.</td>
+	</tr>
+	<tr>
+		<td>onCreate</td>
+		<td>This is a DDL trigger that allows you to move data from an existing column to a newly created column. This trigger works only when a column is created.</td>
+	</tr>
+	<tr>
+		<td>padding</td>
+		<td>The size of an integer column.</td>
+	</tr>
+	<tr>
+		<td>precision</td>
+		<td>The number of allowed digits in a real data type.</td>
+	</tr>
+	<tr>
+		<td>scale</td>
+		<td>The number of digits after the decimal in a real data type.</td>
+	</tr>
+	<tr>
+		<td>unsigned</td>
+		<td>For numeric data types, specifies whether the column can contain positive and negative values or only positive values.</td>
+	</tr>
 </table>
 
 For more information about each type, refer to the annotations in the corresponding XSD file.

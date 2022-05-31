@@ -1,6 +1,6 @@
 ---
 title: Optimal Development Environment | Commerce PHP Extensions
-description: Learn about the ideal local development environment for Adobe Commerce and Magento Open Source extension developers.å
+description: Learn about the ideal local development environment for Adobe Commerce and Magento Open Source extension developers.
 ---
 
 # Optimal development environment
@@ -24,9 +24,9 @@ You can enable this mode with the command `bin/magento deploy:mode:set developer
 
 The following is a list of the different ways you can install Adobe Commerce or Magento Open Source locally:
 
-*  **Manual installation**\\
+*  **Manual installation:**
    If you are developing on a local machine that meets the system requirements, you can follow the same steps for [installing](https://devdocs.magento.com/guides/v2.4/install-gde/bk-install-guide.html) on a production server.
-*  **Virtual Machine (VM) installation**\\
+*  **Virtual Machine (VM) installation:**
    Installing Adobe Commerce and Magento Open Source in a virtual environment allows you to run it without the need to install a local [LAMP](https://en.wikipedia.org/wiki/LAMP_(software_bundle)) stack.
 
    You can use a VM tool, such as [VirtualBox](https://www.virtualbox.org/wiki/VirtualBox), together with a virtual environment tool, such as [Vagrant](https://www.vagrantup.com/) or [Docker](https://www.docker.com/), to create reusable and shareable instances for development.

@@ -1,6 +1,6 @@
 ---
 title: Extension Repository Structure | Commerce PHP Extensions
-description: Use these best practices to create and organize your Adobe Commerce or and Magento Open Source component repository structure. 
+description: Use these best practices to create and organize your Adobe Commerce or Magento Open Source component repository structure. 
 ---
 
 # Extension repository structure

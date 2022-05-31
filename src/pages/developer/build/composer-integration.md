@@ -7,9 +7,9 @@ description: Integrate Composer with your Adobe Commerce and Magento Open Source
 
 Adobe Commerce and Magento Open Source use [Composer][0], a [PHP](https://glossary.magento.com/php) dependency manager, to package components and product editions.
 
-Composer reads a `composer.json` file in Magento's root directory to download third-party dependencies listed in the file.
+Composer reads a `composer.json` file in the application's root directory to download third-party dependencies listed in the file.
 
-We recommend you include `composer.json` in your component's root directory even if you do not intend to distribute it to other merchants using Magento.
+We recommend you include `composer.json` in your component's root directory even if you do not intend to distribute it externally.
 
 <InlineAlert variant="info" slots="text"/>
 

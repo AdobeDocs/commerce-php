@@ -91,7 +91,7 @@ To define web API components, set these attributes on these XML elements in the
    </tr>
    <tr>
       <td>
-         `&lt;routes&gt;`
+         &lt;routes&gt;
       </td>
       <td>
          Required. Root element that defines the namespace and location of the XML schema file.
@@ -99,63 +99,63 @@ To define web API components, set these attributes on these XML elements in the
       <td>
          <ul>
             <li>
-               `xmlns:xsi`. Required. Defines the namespace for the XML schema instance.
+               xmlns:xsi. Required. Defines the namespace for the XML schema instance.
             </li>
             <li>
-               `xsi:noNamespaceSchemaLocation`. Required. Defines the path and file name of the XML schema file to use to validate the web API.
+               xsi:noNamespaceSchemaLocation. Required. Defines the path and file name of the XML schema file to use to validate the web API.
             </li>
          </ul>
       </td>
    </tr>
    <tr>
       <td>
-         `&lt;route&gt;`
+         &lt;route&gt;
       </td>
       <td>
-         Required. Child element of `&lt;routes&gt;`. Defines the HTTP route for the web API method.
+         Required. Child element of &lt;routes&gt;. Defines the HTTP route for the web API method.
       </td>
       <td>
          <ul>
             <li>
-               `method`. Required. String. HTTP method. Valid values are GET, POST, PUT, and DELETE.
+               method. Required. String. HTTP method. Valid values are GET, POST, PUT, and DELETE.
             </li>
             <li>
-               `url`. Required. String.
-                  The URL to the resource. The string must begin with `/V1` (or `/V&lt;integer&gt;`) to indicate the version number. You must prepend any template parameters with a colon. Example: `/V1/products/:sku
+               url. Required. String.
+                  The URL to the resource. The string must begin with /V1 (or &lt;integer&gt;) to indicate the version number. You must prepend any template parameters with a colon. Example: /V1/products/:sku
             </li>
             <li>
-               `secure`. Optional. Boolean. Indicates that the route is accessible over only HTTPS. Any attempts to access this route over non-secure causes an exception.
+               secure. Optional. Boolean. Indicates that the route is accessible over only HTTPS. Any attempts to access this route over non-secure causes an exception.
             </li>
             <li>
-               <p><code>soapOperation</code>. Optional. String. Specifies the SOAP operation name to use instead of the interface's method name. Use this element to create multiple operations for the same service contract.</p>
+               soapOperation. Optional. String. Specifies the SOAP operation name to use instead of the interface's method name. Use this element to create multiple operations for the same service contract.
             </li>
          </ul>
       </td>
    </tr>
    <tr>
       <td>
-         `&lt;service&gt;`
+         &lt;service&gt;
       </td>
       <td>
-         Required. Child element of `&lt;route&gt;`. Defines the implemented interface and the web API method name.
+         Required. Child element of &lt;route&gt;. Defines the implemented interface and the web API method name.
       </td>
       <td>
          <ul>
             <li>
-               `class`. Required. String. Location and name of implemented interface.
+               class. Required. String. Location and name of implemented interface.
             </li>
             <li>
-               `method`. Required. String. Web API method name.
+               method. Required. String. Web API method name.
             </li>
          </ul>
       </td>
    </tr>
    <tr>
       <td>
-         `&lt;resources&gt;`
+         &lt;resources&gt;
       </td>
       <td>
-         Required. Child element of `&lt;route&gt;`. Container for one or more resource definitions.
+         Required. Child element of &lt;route&gt;. Container for one or more resource definitions.
       </td>
       <td>
          None.
@@ -163,17 +163,17 @@ To define web API components, set these attributes on these XML elements in the
    </tr>
    <tr>
       <td>
-         `&lt;resource&gt;`
+         &lt;resource&gt;
       </td>
       <td>
-         Required. Child element of `&lt;resources&gt;`. Defines a resource to which the caller must have access.
+         Required. Child element of &lt;resources&gt;. Defines a resource to which the caller must have access.
       </td>
       <td>
          <ul>
             <li>
-               `ref`.
-                  Required. Referenced resource. Valid values are `self`, `anonymous`, or a resource, such as `Magento_Customer::group`.
-               <strong>Note</strong>:The web API framework enables guest users to access resources that are configured with `anonymous` permission.
+               ref.
+                  Required. Referenced resource. Valid values are self, anonymous, or a resource, such as Magento_Customer::group.
+               <strong>Note</strong>:The web API framework enables guest users to access resources that are configured with anonymous permission.
                   Any user that the framework cannot authenticate through existing <a href="https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication.html">authentication
                      mechanisms</a> is considered a guest user.
             </li>
@@ -182,10 +182,10 @@ To define web API components, set these attributes on these XML elements in the
    </tr>
    <tr>
       <td>
-         `&lt;data&gt;`
+         &lt;data&gt;
       </td>
       <td>
-         Optional. Child element of `&lt;route&gt;`. Container for one or more parameter definitions.
+         Optional. Child element of &lt;route&gt;. Container for one or more parameter definitions.
       </td>
       <td>
          None.
@@ -193,18 +193,18 @@ To define web API components, set these attributes on these XML elements in the
    </tr>
    <tr>
       <td>
-         `&lt;parameter&gt;`
+         &lt;parameter&gt;
       </td>
       <td>
-         Required if `&lt;data&gt;` is specified. Child element of `&lt;data&gt;`. Defines a parameter.
+         Required if &lt;data&gt; is specified. Child element of &lt;data&gt;. Defines a parameter.
       </td>
       <td>
          <ul>
             <li>
-               `name`. String. Parameter name.
+               name. String. Parameter name.
             </li>
             <li>
-               `force`. Boolean. <a href="#forced-parameters">Forcing Request Parameters</a>
+               force. Boolean. <a href="#forced-parameters">Forcing Request Parameters</a>
             </li>
          </ul>
       </td>
@@ -261,7 +261,7 @@ In this `webapi.xml` example:
       <td>
          The HTTP method and web resource through which to access the route.
          The HTTP method is GET.
-         The resource is `/V1/customerGroups/:id`. Users must substitute a customer ID for the `id` template parameter.
+         The resource is /V1/customerGroups/:id. Users must substitute a customer ID for the id template parameter.
       </td>
    </tr>
    <tr>
@@ -270,8 +270,8 @@ In this `webapi.xml` example:
       </td>
       <td>
          The interface that the route implements and the name of the web API method.
-         The route implements the `Magento\Customer\Api\GroupRepositoryInterface` interface.
-         The web API method name is `getById`.
+         The route implements the Magento\Customer\Api\GroupRepositoryInterface interface.
+         The web API method name is getById.
       </td>
    </tr>
    <tr>
@@ -280,7 +280,7 @@ In this `webapi.xml` example:
       </td>
       <td>
          The resource to which the caller must have access.
-         The caller must have access to `Magento_Customer::group` resource.
+         The caller must have access to Magento_Customer::group resource.
       </td>
    </tr>
    <tr>
@@ -289,7 +289,7 @@ In this `webapi.xml` example:
       </td>
       <td>
          A required parameter.
-         The `id` parameter is required on GET calls to `/V1/customers/me/billingAddress`.
+         The id parameter is required on GET calls to /V1/customers/me/billingAddress.
       </td>
    </tr>
 </table>

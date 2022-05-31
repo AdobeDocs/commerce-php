@@ -115,8 +115,8 @@ The following example creates instances of `Magento\Core\Model\Session` with the
 
 Node Formats:
 
-: `<argument xsi:type="object">{typeName}</argument>`
-: `<argument xsi:type="object" shared="{shared}">{typeName}</argument>`
+`<argument xsi:type="object">{typeName}</argument>`
+`<argument xsi:type="object" shared="{shared}">{typeName}</argument>`
 
 Creates an instance of `typeName` type and passes it in as an argument.
 You can pass any class name, interface name, or virtual type as `typeName`.
@@ -130,8 +130,8 @@ See [object lifestyle configuration](#object-lifestyle-configuration).
 
 Node Formats:
 
-: `<argument xsi:type="string">{strValue}</argument>`
-: `<argument xsi:type="string" translate="true">{strValue}</argument>`
+`<argument xsi:type="string">{strValue}</argument>`
+`<argument xsi:type="string" translate="true">{strValue}</argument>`
 
 The application interprets any value for this argument node as a string.
 
@@ -141,7 +141,7 @@ The application interprets any value for this argument node as a string.
 
 Node Format:
 
-: `<argument xsi:type="boolean">{boolValue}</argument>`
+`<argument xsi:type="boolean">{boolValue}</argument>`
 
 The application converts any value for this argument node into a boolean value.
 See table below:
@@ -165,7 +165,7 @@ See table below:
 
 Node Format:
 
-: `<argument xsi:type="number">{numericValue}</argument>`
+`<argument xsi:type="number">{numericValue}</argument>`
 
 Acceptable values for this type include: integers, floats, or [numeric strings](http://us3.php.net/is_numeric).
 
@@ -175,7 +175,7 @@ Acceptable values for this type include: integers, floats, or [numeric strings](
 
 Node Format:
 
-: `<argument xsi:type="init_parameter">{Constant::NAME}</argument>`
+`<argument xsi:type="init_parameter">{Constant::NAME}</argument>`
 
 This is the global application initialization argument represented by `Constant::NAME`.
 
@@ -185,7 +185,7 @@ This is the global application initialization argument represented by `Constant:
 
 Node Format:
 
-: `<argument xsi:type="const">{Constant::NAME}</argument>`
+`<argument xsi:type="const">{Constant::NAME}</argument>`
 
 This is the constant value represented by `Constant::NAME`.
 
@@ -195,7 +195,7 @@ This is the constant value represented by `Constant::NAME`.
 
 Node Format:
 
-: `<argument xsi:type="null"/>`
+`<argument xsi:type="null"/>`
 
 This indicates a null value.
 
@@ -205,7 +205,7 @@ This indicates a null value.
 
 Node Format:
 
-: The node format is as follows:
+The node format is as follows:
 
   ```xml
   <argument xsi:type="array">
@@ -263,15 +263,11 @@ Node Format:
 
 <InlineAlert variant="warning" slots="text"/>
 
-**Arguments on different stages**
-
-Configuration arguments are merged when they are declared on the same stage (Initial, Global, or Area-Specifc). If you declare new arguments on a higher stage, like Area-Specific, the arguments declared on the higher stage will replace the existing ones.
+**Arguments on different stages**—Configuration arguments are merged when they are declared on the same stage (Initial, Global, or Area-Specifc). If you declare new arguments on a higher stage, like Area-Specific, the arguments declared on the higher stage will replace the existing ones.
 
 <InlineAlert variant="info" slots="text"/>
 
-**Merging and Arguments**
-
-During merging, arguments replace other arguments with the same name if their type is different.
+**Merging and Arguments**—During merging, arguments replace other arguments with the same name if their type is different.
 If the argument type is the same, then the newer argument replaces the old one.
 
 ### Abstraction-implementation mappings
@@ -430,6 +426,8 @@ Also, every instance of `Magento\Filesystem` will get separate instance of `$ada
 
 For multi-system deployments, such as the [pipeline deployment model](https://devdocs.magento.com/guides/v2.4/config-guide/deployment/pipeline/), you can specify the following types of configuration settings:
 
+| | |
+|-----------------|----------------------------|
 | shared          | Settings that are shared between systems using `app/etc/config.php` |
 | sensitive       | Settings that are restricted or confidential                        |
 | system-specific | Settings that are unique to a particular system or environment      |
@@ -446,6 +444,8 @@ The following code sample is a template for specifying values as sensitive or sy
 </type>
 ```
 
+|                  |                                                                                                                                                                |
+|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `VALUE_TYPE`     | Specifies the type of value: either `sensitive` or `environment`.                                                                                              |
 | `CONFIG_PATH`    | A unique, `/`-delimited string that identifies this configuration setting.                                                                                     |
 | `ARGUMENT_VALUE` | A value of `1` indicates the `CONFIG_PATH` value is sensitive or system-specific. The default `0` value indicates it is neither sensitive nor system specific. |

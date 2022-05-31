@@ -1,6 +1,6 @@
 ---
 title: Events and Observers | Commerce PHP Extensions
-description: Extend Adobe Commerce and Magento Open Source bu running custom code in response to specific events.
+description: Extend Adobe Commerce and Magento Open Source by running custom code in response to specific events.
 ---
 
 # Events and observers

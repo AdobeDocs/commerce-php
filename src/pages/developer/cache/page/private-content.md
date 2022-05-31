@@ -5,7 +5,7 @@ description: Learn how to work with private data when implementing a caching in 
 
 # Private content
 
-Since private content is specific to individual users, it is reasonable to handle it on the clientå.
+Since private content is specific to individual users, it is reasonable to handle it on the client.
 
 Use our [customer-data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/view/frontend/web/js/customer-data.js) JS library to store private data in local storage, invalidate private data using customizable rules, and synchronize data with the backend.
 

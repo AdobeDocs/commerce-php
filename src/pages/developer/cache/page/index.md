@@ -1,6 +1,6 @@
 ---
 title: Page Caching | Commerce PHP Extensions
-description: USe page caching to improve the performance of your Adobe Commerce or Magento Open Source storefront.
+description: Use page caching to improve the performance of your Adobe Commerce or Magento Open Source storefront.
 ---
 
 # Page caching
@@ -34,7 +34,7 @@ To create an uncacheable page, mark any block on that page as uncacheable in the
 
 Examples of uncacheable pages include the compare products, cart, [checkout](https://glossary.magento.com/checkout) pages, and so on.
 
-[Example]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Paypal/view/frontend/layout/paypal_payflow_returnurl.xml)
+[Example](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Paypal/view/frontend/layout/paypal_payflow_returnurl.xml)
 
 <InlineAlert variant="warning" slots="text"/>
 

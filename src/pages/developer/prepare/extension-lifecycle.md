@@ -28,6 +28,8 @@ The schema initialization stages are the first set of processes that Adobe Comme
 The application executes the schema installation class during your module's initial install.
 If the `schema_version` for your module is found in the `setup_module` table, the application skips this stage and proceeds to the [schema upgrade] stage.
 
+| | |
+|-----------------|----------------------------|
 | **Class name:** | `InstallSchema`            |
 | **Interface:**  | [`InstallSchemaInterface`] |
 | **Method:**     | `install()`                |
@@ -62,6 +64,8 @@ class InstallSchema implements InstallSchemaInterface
 The applicationexecutes your module's schema upgrade class when it detects an earlier installation.
 The purpose of this class is to update the database structure or apply patches.
 
+| | |
+|-----------------|---------------------------|
 | **Class name** | `UpgradeSchema`            |
 | **Interface**  | [`UpgradeSchemaInterface`] |
 | **Method**     | `upgrade()`                |
@@ -96,6 +100,8 @@ class UpgradeSchema implements UpgradeSchemaInterface
 The applicationexecutes your module's recurring schema event class after every schema installation or upgrade stage.
 This class makes final modifications to the database schema after it has been installed or updated.
 
+| | |
+|-----------------|---------------------------|
 | **Class name** | `Recurring`                |
 | **Interface**  | [`InstallSchemaInterface`] |
 | **Method**     | `install()`                |
@@ -134,6 +140,8 @@ The applicationgoes through your module's data initialization stages after the s
 The applicationexecutes the data installation class during your module's initial install unless an existing version entry is found in the database.
 The purpose of this class is to populate the database with initial data.
 
+| | |
+|-----------------|-------------------------|
 | **Class name** | `InstallData`            |
 | **Interface**  | [`InstallDataInterface`] |
 | **Method**     | `install()`              |
@@ -168,6 +176,8 @@ class InstallData implements InstallDataInterface
 The applicationexecutes the data upgrade class when it detects an earlier version in the `data_version` field for the module in the `setup_module` table.
 The purpose of this class is to fix corrupted data or populate a new data field after a schema change.
 
+| | |
+|-----------------|-------------------------|
 | **Class name** | `UpgradeData`            |
 | **Interface**  | [`UpgradeDataInterface`] |
 | **Method**     | `upgrade()`              |
@@ -202,6 +212,8 @@ class UpgradeData implements UpgradeDataInterface
 The applicationexecutes your module's recurring data event class after every data installation or upgrade stage.
 This class makes final modifications to the database store after data has been installed or updated.
 
+| | |
+|-----------------|-------------------------|
 | **Class name** | `RecurringData`          |
 | **Interface**  | [`InstallDataInterface`] |
 | **Method**     | `install()`              |
@@ -343,6 +355,8 @@ bin/magento module:uninstall --remove-data <module_name>
 
 In this phase, your module should remove all traces of its existence in the database by dropping tables, deleting data, or restoring data.
 
+| | |
+|-----------------|-----------------------|
 | **Class name** | `Uninstall`            |
 | **Interface**  | [`UninstallInterface`] |
 | **Method**     | `uninstall()`          |
@@ -381,7 +395,7 @@ Avoid this situation by not including dependencies in your uninstall event class
 
 **Related Topics:**
 
-*  Magento's [versioning policy]
+*  [Versioning policy]
 
 [versioning policy]: ../versioning/index.md
 [schema upgrade]: #schema-upgrade
