@@ -96,65 +96,65 @@ A column can have the following attributes:
 		<th>Description</th>
 	</tr>
 	<tr>
-		<td>xsi:type</td>
+		<td><inlineCode class="spectrum-Body--sizeS">xsi:type</inlineCode></td>
 		<td>
 			<p>Specifies the column type. Must be one of the following:</p>
 			<ul>
-				<li>blob (includes blob, mediumblob, longblob)</li>
-				<li>boolean</li>
-				<li>date</li>
-				<li>datetime</li>
-				<li>decimal</li>
-				<li>float</li>
-				<li>int (includes smallint, bigint, tinyint)</li>
-				<li>json</li>
-				<li>real (includes decimal, float, double, real)</li>
-				<li>smallint</li>
-				<li>text (includes text, mediumtext, longtext)</li>
-				<li>timestamp</li>
-				<li>varbinary</li>
-				<li>varchar</li>
+				<li><inlineCode class="spectrum-Body--sizeS">blob</inlineCode> (includes blob, mediumblob, longblob)</li>
+				<li><inlineCode class="spectrum-Body--sizeS">boolean</inlineCode></li>
+				<li><inlineCode class="spectrum-Body--sizeS">date</inlineCode></li>
+				<li><inlineCode class="spectrum-Body--sizeS">datetime</inlineCode></li>
+				<li><inlineCode class="spectrum-Body--sizeS">decimal</inlineCode></li>
+				<li><inlineCode class="spectrum-Body--sizeS">float</inlineCode></li>
+				<li><inlineCode class="spectrum-Body--sizeS">int</inlineCode> (includes smallint, bigint, tinyint)</li>
+				<li><inlineCode class="spectrum-Body--sizeS">json</inlineCode></li>
+				<li><inlineCode class="spectrum-Body--sizeS">real</inlineCode> (includes decimal, float, double, real)</li>
+				<li><inlineCode class="spectrum-Body--sizeS">smallint</inlineCode></li>
+				<li><inlineCode class="spectrum-Body--sizeS">text</inlineCode> (includes text, mediumtext, longtext)</li>
+				<li><inlineCode class="spectrum-Body--sizeS">timestamp</inlineCode></li>
+				<li><inlineCode class="spectrum-Body--sizeS">varbinary</inlineCode></li>
+				<li><inlineCode class="spectrum-Body--sizeS">varchar</inlineCode></li>
 			</ul>
 		</td>
 	</tr>
 	<tr>
-		<td>default</td>
+		<td><inlineCode class="spectrum-Body--sizeS">default</inlineCode></td>
 		<td>Initializes the column with the specified default value. The default value should have the same datatype defined in xsi:type.</td>
 	</tr>
 	<tr>
-		<td>disabled</td>
+		<td><inlineCode class="spectrum-Body--sizeS">disabled</inlineCode></td>
 		<td>Disables or deletes the declared table, column, constraint, or index.</td>
 	</tr>
 	<tr>
-		<td>identity</td>
+		<td><inlineCode class="spectrum-Body--sizeS">identity</inlineCode></td>
 		<td>Indicates whether a column is auto incremented.</td>
 	</tr>
 	<tr>
-		<td>length</td>
-		<td>Specifies the length of a column. Can be used for char, varchar, and varbinary types.</td>
+		<td><inlineCode class="spectrum-Body--sizeS">length</inlineCode></td>
+		<td>Specifies the length of a column. Can be used for <inlineCode class="spectrum-Body--sizeS">char</inlineCode>, <inlineCode class="spectrum-Body--sizeS">varchar</inlineCode>, and <inlineCode class="spectrum-Body--sizeS">varbinary types</inlineCode>.</td>
 	</tr>
 	<tr>
-		<td>nullable</td>
+		<td><inlineCode class="spectrum-Body--sizeS">nullable</inlineCode></td>
 		<td>Indicates whether column can be nullable.</td>
 	</tr>
 	<tr>
-		<td>onCreate</td>
+		<td><inlineCode class="spectrum-Body--sizeS">onCreate</inlineCode></td>
 		<td>This is a DDL trigger that allows you to move data from an existing column to a newly created column. This trigger works only when a column is created.</td>
 	</tr>
 	<tr>
-		<td>padding</td>
+		<td><inlineCode class="spectrum-Body--sizeS">padding</inlineCode></td>
 		<td>The size of an integer column.</td>
 	</tr>
 	<tr>
-		<td>precision</td>
+		<td><inlineCode class="spectrum-Body--sizeS">precision</inlineCode></td>
 		<td>The number of allowed digits in a real data type.</td>
 	</tr>
 	<tr>
-		<td>scale</td>
+		<td><inlineCode class="spectrum-Body--sizeS">scale</inlineCode></td>
 		<td>The number of digits after the decimal in a real data type.</td>
 	</tr>
 	<tr>
-		<td>unsigned</td>
+		<td><inlineCode class="spectrum-Body--sizeS">unsigned</inlineCode></td>
 		<td>For numeric data types, specifies whether the column can contain positive and negative values or only positive values.</td>
 	</tr>
 </table>
