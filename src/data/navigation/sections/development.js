@@ -1,473 +1,473 @@
 module.exports = [
     {
       title: "Introduction",
-      path: "/developer/",
+      path: "/development/",
       pages: [
         {
           title: "Developer roadmap",
-          path: "/developer/roadmap/",
+          path: "/development/roadmap/",
         },
         {
           title: "Composer",
-          path: "/developer/composer/"
+          path: "/development/composer/"
         },
         {
           title: "Common terms",
-          path: "/developer/common-terms/"
+          path: "/development/common-terms/"
         },
       ],
     },
     {
       title: "Prepare",
-      path: "/developer/prepare/",
+      path: "/development/prepare/",
       pages: [
         {
           title: "Component types",
-          path: "/developer/prepare/component-types/",
+          path: "/development/prepare/component-types/",
         },
         {
           title: "Component file structure",
-          path: "/developer/prepare/component-file-structure/",
+          path: "/development/prepare/component-file-structure/",
         },
         {
           title: "Extension repository structure",
-          path: "/developer/prepare/extension-repository-structure",
+          path: "/development/prepare/extension-repository-structure",
         },
         {
           title: "Component development roadmap",
-          path: "/developer/prepare/development-roadmap/",
+          path: "/development/prepare/development-roadmap/",
         },
         {
           title: "Extension lifecycle",
-          path: "/developer/prepare/extension-lifecycle/",
+          path: "/development/prepare/extension-lifecycle/",
         },
       ],
     },
     {
       title: "Build",
-      path: "/developer/build/",
+      path: "/development/build/",
       pages: [
         {
           title: "Dependency injection configuration",
-          path: "/developer/build/dependency-injection-file/",
+          path: "/development/build/dependency-injection-file/",
         },
         {
           title: "Optimal development environment",
-          path: "/developer/build/development-environment/",
+          path: "/development/build/development-environment/",
         },
         {
           title: "Composer integration",
-          path: "/developer/build/composer-integration/",
+          path: "/development/build/composer-integration/",
         },
         {
           title: "Required configuration files",
-          path: "/developer/build/required-configuration-files/",
+          path: "/development/build/required-configuration-files/",
         },
         {
           title: "Create component file structure",
-          path: "/developer/build/component-file-structure/",
+          path: "/development/build/component-file-structure/",
         },
         {
           title: "Register a component",
-          path: "/developer/build/component-registration/",
+          path: "/development/build/component-registration/",
         },
         {
           title: "URN schema validation",
-          path: "/developer/build/schema-validation/",
+          path: "/development/build/schema-validation/",
         },
         {
           title: "Name a component",
-          path: "/developer/build/component-name/",
+          path: "/development/build/component-name/",
         },
         {
           title: "Component load order",
-          path: "/developer/build/component-load-order/",
+          path: "/development/build/component-load-order/",
         },
         {
           title: "Enable/disable a component",
-          path: "/developer/build/component-management/",
+          path: "/development/build/component-management/",
         },
       ],
     },
     {
       title: "Package",
-      path: "/developer/package/",
+      path: "/development/package/",
       pages: [
         {
           title: "Package a component",
-          path: "/developer/package/component/",
+          path: "/development/package/component/",
         },
         {
           title: "Distribute a component",
-          path: "/developer/package/distribute-component/",
+          path: "/development/package/distribute-component/",
         },
       ],
     },
     {
       title: "Validate",
-      path: "/developer/validate/",
+      path: "/development/validate/",
       pages: [
         {
           title: "Test a component",
-          path: "/developer/validate/test-component/",
+          path: "/development/validate/test-component/",
         },
       ],
     },
     {
       title: "Partial caching",
-      path: "/developer/cache/partial/",
+      path: "/development/cache/partial/",
       pages: [
         {
           title: "Create custom cache engines",
-          path: "/developer/cache/partial/database-caching/",
+          path: "/development/cache/partial/database-caching/",
         },
         {
           title: "Create a cache type",
-          path: "/developer/cache/partial/cache-type/",
+          path: "/development/cache/partial/cache-type/",
         },
       ],
     },
     {
       title: "Full page caching",
-      path: "/developer/cache/page/",
+      path: "/development/cache/page/",
       pages: [
         {
           title: "Public content",
-          path: "/developer/cache/page/public-content/",
+          path: "/development/cache/page/public-content/",
         },
         {
           title: "Private content",
-          path: "/developer/cache/page/private-content/",
+          path: "/development/cache/page/private-content/",
         },
       ],
     },
     {
       title: "CLI commands",
-      path: "/developer/cli-commands/",
+      path: "/development/cli-commands/",
       pages: [
         {
           title: "Naming guidelines",
-          path: "/developer/cli-commands/naming-guidelines/",
+          path: "/development/cli-commands/naming-guidelines/",
         },
         {
           title: "Create a custom command",
-          path: "/developer/cli-commands/custom",
+          path: "/development/cli-commands/custom",
         },
       ],
     },
     {
       title: "Staging",
-      path: "/developer/staging/",
+      path: "/development/staging/",
     },
     {
       title: "Component development",
-      path: "/developer/components/",
+      path: "/development/components/",
       pages: [
         {
           title: "Asynchronous and deferred operations",
-          path: "/developer/components/async-operations/",
+          path: "/development/components/async-operations/",
         },
         {
           title: "Service contracts",
-          path: "/developer/components/service-contracts/",
+          path: "/development/components/service-contracts/",
           pages: [
             {
               title: "Design patterns",
-              path: "/developer/components/service-contracts/design-patterns/",
+              path: "/development/components/service-contracts/design-patterns/",
             },
           ],
         },
         {
           title: "Public interfaces and APIs",
-          path: "/developer/components/api-concepts/",
+          path: "/development/components/api-concepts/",
         },
         {
           title: "Dependency injection",
-          path: "/developer/components/dependency-injection/",
+          path: "/development/components/dependency-injection/",
         },
         {
           title: "Object manager",
-          path: "/developer/components/object-manager/",
+          path: "/development/components/object-manager/",
           pages: [
             {
               title: "Object manager helper",
-              path: "/developer/components/object-manager/helper/"
+              path: "/development/components/object-manager/helper/"
             },
           ],
         },
         {
           title: "Events and observers",
-          path: "/developer/components/events-and-observers/",
+          path: "/development/components/events-and-observers/",
           pages: [
             {
               title: "List of events",
-              path: "/developer/components/events-and-observers/event-list/"
+              path: "/development/components/events-and-observers/event-list/"
             },
           ],
         },
         {
           title: "Factories",
-          path: "/developer/components/factories/",
+          path: "/development/components/factories/",
         },
         {
           title: "Proxies",
-          path: "/developer/components/proxies/",
+          path: "/development/components/proxies/",
         },
         {
           title: "Code generation",
-          path: "/developer/components/code-generation/",
+          path: "/development/components/code-generation/",
         },
         {
           title: "EAV and extension attributes",
-          path: "/developer/components/attributes/",
+          path: "/development/components/attributes/",
         },
         {
           title: "Plugins (interceptors)",
-          path: "/developer/components/plugins/",
+          path: "/development/components/plugins/",
         },
         {
           title: "Routing",
-          path: "/developer/components/routing/",
+          path: "/development/components/routing/",
         },
         {
           title: "Indexing",
-          path: "/developer/components/indexing/",
+          path: "/development/components/indexing/",
           pages: [
             {
               title: "Indexer optimization",
-              path: "/developer/components/indexing/optimization/",
+              path: "/development/components/indexing/optimization/",
             },
             {
               title: "Create a custom indexer",
-              path: "/developer/components/indexing/custom-indexer/",
+              path: "/development/components/indexing/custom-indexer/",
             },
           ],
         },
         {
           title: "Declarative schema",
-          path: "/developer/components/declarative-schema/",
+          path: "/development/components/declarative-schema/",
           pages: [
             {
               title: "Migration scripts",
-              path: "/developer/components/declarative-schema/migration-scripts/",
+              path: "/development/components/declarative-schema/migration-scripts/",
             },
             {
               title: "Configuration",
-              path: "/developer/components/declarative-schema/configuration/",
+              path: "/development/components/declarative-schema/configuration/",
             },
             {
               title: "Data and schema patches",
-              path: "/developer/components/declarative-schema/patches/",
+              path: "/development/components/declarative-schema/patches/",
             },
           ],
         },
         {
           title: "Web APIs",
-          path: "/developer/components/web-api/",
+          path: "/development/components/web-api/",
           pages: [
             {
               title: "Configure services as web APIs",
-              path: "/developer/components/web-api/services/",
+              path: "/development/components/web-api/services/",
             },
             {
               title: "Set custom routes",
-              path: "/developer/components/web-api/custom-routes/",
+              path: "/development/components/web-api/custom-routes/",
             },
             {
               title: "Request processor pool",
-              path: "/developer/components/web-api/request-processor-pool/",
+              path: "/development/components/web-api/request-processor-pool/",
             },
           ],
         },
         {
           title: "Message queues",
-          path: "/developer/components/message-queues/",
+          path: "/development/components/message-queues/",
           pages: [
             {
               title: "Asynchronous configuration",
-              path: "/developer/components/message-queues/async-configuration/",
+              path: "/development/components/message-queues/async-configuration/",
             },
             {
               title: "Topics in asynchronous API",
-              path: "/developer/components/message-queues/async-topics/",
+              path: "/development/components/message-queues/async-topics/",
             },
             {
               title: "Bulk operations",
-              path: "/developer/components/message-queues/bulk-operations/",
+              path: "/development/components/message-queues/bulk-operations/",
             },
             {
               title: "Example bulk operation implemntation",
-              path: "/developer/components/message-queues/bulk-operations-example/",
+              path: "/development/components/message-queues/bulk-operations-example/",
             },
             {
               title: "Configure message queues",
-              path: "/developer/components/message-queues/configuration/",
+              path: "/development/components/message-queues/configuration/",
             },
             {
               title: "Handling outdated in-memory object states",
-              path: "/developer/components/message-queues/object-states/",
+              path: "/development/components/message-queues/object-states/",
             },
             {
               title: "Requests for specific stores",
-              path: "/developer/components/message-queues/stores/",
+              path: "/development/components/message-queues/stores/",
             },
             {
               title: "Migrate configuration",
-              path: "/developer/components/message-queues/migration/",
+              path: "/development/components/message-queues/migration/",
             },
           ],
         },
         {
           title: "Add extension attributes to entities",
-          path: "/developer/components/add-attributes",
+          path: "/development/components/add-attributes",
         },
         {
           title: "Add an admin grid",
-          path: "/developer/components/add-admin-grid/",
+          path: "/development/components/add-admin-grid/",
         },
         {
           title: "Price adjustments",
-          path: "/developer/components/price-adjustments/",
+          path: "/development/components/price-adjustments/",
         },
         {
           title: "Searching with repositories",
-          path: "/developer/components/searching-with-repositories/",
+          path: "/development/components/searching-with-repositories/",
         },
         {
           title: "Directory and cache clearing",
-          path: "/developer/components/clear-directories/",
+          path: "/development/components/clear-directories/",
         },
         {
           title: "Adapters",
-          path: "/developer/components/adapters/",
+          path: "/development/components/adapters/",
         },
         {
           title: "View models",
-          path: "/developer/components/view-models/",
+          path: "/development/components/view-models/",
         },
         {
           title: "Variable pool",
-          path: "/developer/components/variable-pool/",
+          path: "/development/components/variable-pool/",
         },
         {
           title: "Extend catalog rule conditions",
-          path: "/developer/components/catalog-rules/",
+          path: "/development/components/catalog-rules/",
         },
       ],
     },
     {
       title: "Configuration",
-      path: "/developer/configuration/",
+      path: "/development/configuration/",
       pages: [
         {
           title: "Importers",
-          path: "/developer/configuration/importers/",
+          path: "/development/configuration/importers/",
         },
         {
           title: "Sensitive and environment-specific settings",
-          path: "/developer/configuration/sensitive-environment-settings/",
+          path: "/development/configuration/sensitive-environment-settings/",
         },
       ],
     },
     {
       title: "Framework",
-      path: "/developer/framework/",
+      path: "/development/framework/",
       pages: [
         {
           title: "Array manager",
-          path: "/developer/framework/array-manager/",
+          path: "/development/framework/array-manager/",
         },
         {
           title: "DateTime library",
-          path: "/developer/framework/datetime-library/",
+          path: "/development/framework/datetime-library/",
         },
         {
           title: "Float comparator",
-          path: "/developer/framework/float-comparator/",
+          path: "/development/framework/float-comparator/",
         },
         {
           title: "Serialize library",
-          path: "/developer/framework/serialize-library/",
+          path: "/development/framework/serialize-library/",
         },
         {
           title: "Math random",
-          path: "/developer/framework/math-random/",
+          path: "/development/framework/math-random/",
         },
         {
           title: "URL library",
-          path: "/developer/framework/url-library/",
+          path: "/development/framework/url-library/",
         },
       ],
     },
     {
       title: "Security",
-      path: "/developer/security/",
+      path: "/development/security/",
       pages: [
         {
           title: "Authorization",
-          path: "/developer/security/authorization/",
+          path: "/development/security/authorization/",
         },
         {
           title: "Brute force attacks",
-          path: "/developer/security/brute-force/",
+          path: "/development/security/brute-force/",
         },
         {
           title: "Content security policies",
-          path: "/developer/security/content-security-policies/",
+          path: "/development/security/content-security-policies/",
         },
         {
           title: "Cross-site request forgery",
-          path: "/developer/security/cross-site-request-forgery/",
+          path: "/development/security/cross-site-request-forgery/",
         },
         {
           title: "Cross-site scripting",
-          path: "/developer/security/cross-site-scripting/",
+          path: "/development/security/cross-site-scripting/",
         },
         {
           title: "Denial of service (DoS) attacks",
-          path: "/developer/security/denial-of-service-attacks/",
+          path: "/development/security/denial-of-service-attacks/",
         },
         {
           title: "File uploads",
-          path: "/developer/security/file-uploads/",
+          path: "/development/security/file-uploads/",
         },
         {
           title: "Mass assignment",
-          path: "/developer/security/mass-assignment/",
+          path: "/development/security/mass-assignment/",
         },
         {
           title: "Non-secure functions",
-          path: "/developer/security/non-secure-functions/",
+          path: "/development/security/non-secure-functions/",
         },
         {
           title: "Sensitive information",
-          path: "/developer/security/sensitive-information/",
+          path: "/development/security/sensitive-information/",
         },
         {
           title: "Server-side request forgery prevention",
-          path: "/developer/security/server-side-request-forgery/",
+          path: "/development/security/server-side-request-forgery/",
         },
       ],
     },
     {
       title: "Versioning",
-      path: "/developer/versioning/",
+      path: "/development/versioning/",
       pages: [
         {
           title: "Check the application version",
-          path: "/developer/versioning/check-version/",
+          path: "/development/versioning/check-version/",
         },
         {
           title: "Code changes",
-          path: "/developer/versioning/code-changes/",
+          path: "/development/versioning/code-changes/",
         },
         {
           title: "Dependencies",
-          path: "/developer/versioning/dependencies/",
+          path: "/development/versioning/dependencies/",
         },
         {
           title: "MFTF and backward compatibility",
-          path: "/developer/versioning/tests/",
+          path: "/development/versioning/tests/",
         },
       ],
     },

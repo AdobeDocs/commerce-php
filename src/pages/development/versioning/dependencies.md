@@ -61,50 +61,36 @@ Use this table to set the appropriate version dependency on a module based on ho
 |   | Implement the interface   | MINOR  |
 |   | Re-define the interface preference in `di.xml`| MINOR  |
 |   | Add a plugin to the interface     | MAJOR  |
-| ---- | --- | --- |
 | **PHP Class** (marked with `@api`)  | Inject in a constructor   | MAJOR  |
 |   | Extend from an abstract class     | MAJOR  |
 |   | Add a plugin to the class | MAJOR  |
 |   | Configure class preference in `di.xml`        | MAJOR  |
 |   | Configure constructor argument in `di.xml`    | MAJOR  |
 |   | Use class constant        | MAJOR  |
-| ---- | --- | --- |
 | **PHP Class** (NOT marked with `@api`)          | Inject in a constructor   | PATCH  |
 |   | Extend from an abstract class     | PATCH  |
 |   | Configure class preference in `di.xml`        | PATCH  |
 |   | Configure constructor argument in `di.xml`    | PATCH  |
 |   | Use class constant        | PATCH  |
-| ---- | --- | --- |
 | **JavaScript Interface** (marked with `@api`)   | Inject in a constructor and/or call methods   | MAJOR  |
 |   | Implement the interface   | MINOR  |
-| ---- | --- | --- |
 | **JavaScript class** (marked with `@api`)       | Inject in a constructor   | MAJOR  |
 |   | Extend from a class       | MINOR  |
 |   | Override a method         | MINOR  |
 |   | Subscribe to an event  | MINOR  |
-| ---- | --- | --- |
 | **Virtual Type**   | Configure a virtual type in the `di.xml` file as a class dependency        | MAJOR  |
-| ---- | --- | --- |
 | **URL Paths**      | Link to from custom pages | MAJOR  |
-| ---- | --- | --- |
 | **Console commands and their arguments**        | Called in custom shell scripts    | MAJOR  |
-| ---- | --- | --- |
 | **Less variables and mixins**  | Use in LESS declarations  | MAJOR  |
-| ---- | --- | --- |
 | **Message queue topics and data types**         | Consume a topic/message   | MINOR  |
 |   | Publish an existing topic | MAJOR  |
-| ---- | --- | --- |
 | **Layout handles declared by modules**          | Instance blocks added     | MAJOR  |
 |   | Blocks and containers moved/removed           | MAJOR  |
-| ---- | --- | --- |
 | **Static and dynamic events triggered by a component**      | Subscribing to event      | MAJOR  |
-| ---- | --- | --- |
 | **XML configuration type**     | Provide another configuration to the configuration type        | MAJOR  |
 |   | Extend existing XSD       | MINOR  |
-| ---- | --- | --- |
 | **Structure of System Configuration fields used by module** | Configure module through System Configuration values           | MAJOR  |
 |   | Read system configuration using config path   | MAJOR  |
-| ---- | --- | --- |
 | **Database structure**         | Read/write to a table     | MAJOR  |
 |   | Add a column to a table   | MINOR  |
 |   | Declare a foreign key on a module table       | MAJOR  |

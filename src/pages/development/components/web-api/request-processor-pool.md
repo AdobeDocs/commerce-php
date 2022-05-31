@@ -11,14 +11,49 @@ The request processors pool routes web API requests. It is located in the `Magen
 
 Adobe Commerce and Magento Open Source define the following processors:
 
-Processor name | Class | URL pattern | Description
---- | --- | --- | ---
-`sync` | `Magento\Webapi\Controller\Rest\SynchronousRequestProcessor` | `/^\\/V\\d+/`| Executes the corresponding service contract.
-`syncSchema` | `Magento\Webapi\Controller\Rest\SchemaRequestProcessor` | `schema` | Delivers the schema needed for generating Swagger documentation.
-`async` | `Magento\WebapiAsync\Controller\Rest\AsynchronousRequestProcessor` | `/^\\/async(\\/V.+)/` | Performs an asynchronous API request. It executes `Magento\AsynchronousOperations\Model\MassSchedule::publishMass`, which places a single message in the queue.
-`asyncSchema` | `Magento\WebapiAsync\Controller\Rest\AsynchronousSchemaRequestProcessor` | `async/schema` | Delivers the schema needed for generating Swagger documentation for asynchronous endpoints.
-`asyncBulk` | `Magento\WebapiAsync\Controller\Rest\VirtualType\AsynchronousBulkRequestProcessor` | `/^\\/async\/bulk(\\/V.+)/` | Performs a bulk API request by executing `Magento\AsynchronousOperations\Model\MassSchedule::publishMass`, which places multiple messages in the queue.
-`asyncBulkSchema` | `Magento\WebapiAsync\Controller\Rest\VirtualType\AsynchronousBulkSchemaRequestProcessor` | `async/bulk/schema` | Currently not used. Reserved for future use.
+## Processors
+
+### `sync`
+
+Executes the corresponding service contract.
+
+-  **Class:** `Magento\Webapi\Controller\Rest\SynchronousRequestProcessor`
+-  **URL pattern:** `/^\\/V\\d+/`
+
+### `syncSchema`
+
+Delivers the schema needed for generating Swagger documentation.
+
+-  **Class:** `Magento\Webapi\Controller\Rest\SchemaRequestProcessor`
+-  **URL pattern:** `schema`
+
+### `async`
+
+-  **Class:** `Magento\WebapiAsync\Controller\Rest\AsynchronousRequestProcessor`
+-  **URL pattern:** `/^\\/async(\\/V.+)/`
+
+Performs an asynchronous API request. It executes `Magento\AsynchronousOperations\Model\MassSchedule::publishMass`, which places a single message in the queue.
+
+### `asyncSchema`
+
+Delivers the schema needed for generating Swagger documentation for asynchronous endpoints.
+
+-  **Class:** `Magento\WebapiAsync\Controller\Rest\AsynchronousSchemaRequestProcessor`
+-  **URL pattern:** `async/schema`
+
+### `asyncBulk`
+
+-  **Class:** `Magento\WebapiAsync\Controller\Rest\VirtualType\AsynchronousBulkRequestProcessor`
+-  **URL pattern:** `/^\\/async\/bulk(\\/V.+)/`
+
+Performs a bulk API request by executing `Magento\AsynchronousOperations\Model\MassSchedule::publishMass`, which places multiple messages in the queue.
+
+### `asyncBulkSchema`
+
+Currently not used. Reserved for future use.
+
+-  **Class:** `Magento\WebapiAsync\Controller\Rest\VirtualType\AsynchronousBulkSchemaRequestProcessor`
+-  **URL pattern:** `async/bulk/schema`
 
 <InlineAlert variant="info" slots="text"/>
 

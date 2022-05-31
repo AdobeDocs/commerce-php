@@ -310,7 +310,7 @@ class DefaultCustomerGroupsAndAttributes implements DataPatchInterface, PatchVer
 
 Use the [`ModuleContextInterface`] to get the current module version and execute logic based on the version.
 
-**Example:** [User module's UpgradeData.php]
+**Example:** User module's UpgradeData.php
 
 ```php
 <?php

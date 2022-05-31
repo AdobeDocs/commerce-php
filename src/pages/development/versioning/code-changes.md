@@ -142,8 +142,7 @@ Any change not listed below is considered a PATCH level change.
 | | Obligatory node/attribute added| MAJOR|
 | | Node/attribute removed | MAJOR|
 | | New optional node/attribute added| MINOR|
-| **Structure of System Configuration fields used by module**
-| | Config path added| MINOR|
+| **Structure of System Configuration fields used by module**| Config path added | MINOR|
 | | Config path removed/renamed| MAJOR|
 | **Database structure**| Table removed| MAJOR|
 | | Table added| MINOR|
