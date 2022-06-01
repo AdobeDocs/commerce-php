@@ -5,9 +5,9 @@ description: Learn about the aspirational vision that guides the development of 
 
 # Web API technical vision
 
-Web API is crucial for Magento because of the need to integrate with order management, customer management, and other enterprise management software systems.
+import Docs from '/src/pages/_includes/web-api.md'
 
-There are many headless Magento installations in which a merchant partially uses Magento functionality, while the other pieces of an eCommerce website are provided by other systems.
+<Docs />
 
 See [more details](https://en.wikipedia.org/wiki/Web_API) about the importance of web APIs in modern web applications.
 
