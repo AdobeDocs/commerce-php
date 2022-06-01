@@ -35,11 +35,11 @@ Use these sections to learn about how to develop PHP extensions.
 
 Explore resources that describe the foundational elements of the Adobe Commerce and Magento Open Source framework.
 
-<!-- <DiscoverBlock slots="link, text"/>
+<DiscoverBlock slots="link, text"/>
 
-[Extension Developer](extensions/)
+[Extension Developer](development/)
 
-Lorem ipsum dolor sit amet -->
+Learn about extending or customizing Adobe Commerce and Magento Open Source components. Apply this knowledge to create components that introduce new functionality and distribute them to merchants.
 
 <!-- <DiscoverBlock slots="link, text"/>
 
