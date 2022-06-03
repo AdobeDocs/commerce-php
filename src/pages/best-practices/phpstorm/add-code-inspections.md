@@ -17,6 +17,7 @@ See [Inspections topic](https://jetbrains.design/intellij/text/inspections/) in 
 for naming, writing descriptions, and messages for inspections to avoid basic naming convention issues before code review.
 
 ### To add a new inspection
+
 Adding a new code inspection includes:
 
 1. Declaring an inspection in the plugin configuration file

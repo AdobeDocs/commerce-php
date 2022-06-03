@@ -54,6 +54,7 @@ You should be consistent in your naming conventions for files, folder names, cla
 Not following this practice is a code standards violation and impacts your extension's readability and  maintainability.
 
 ### Composition over inheritance
+
 [Class inheritance](https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)) is the object-oriented programming concept that deals with code reuse and extending the behavior of a base class, which was preferred for Magento 1 development.
 
 [Object composition](https://en.wikipedia.org/wiki/Object_composition) is the programming concept of combining class objects and data types to create a more complex class. The classes and data types are used together to produce a desired functionality.

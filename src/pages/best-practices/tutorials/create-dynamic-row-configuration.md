@@ -242,6 +242,7 @@ Clean the Magento cache with the following command:
 ```bash
 bin/magento cache:clean
 ```
+
 and clean the config with this command:
 
 ```bash
