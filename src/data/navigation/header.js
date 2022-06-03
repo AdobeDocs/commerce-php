@@ -11,10 +11,10 @@ module.exports = [
       title: "Development",
       path: "/development/",
     },
-    // {
-    //   title: "Best Practices",
-    //   path: "/best-practices/",
-    // },
+    {
+      title: "Best Practices",
+      path: "/best-practices/",
+    },
     // {
     //   title: "Module Reference",
     //   path: "/module-reference/",
