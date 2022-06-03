@@ -1,8 +1,6 @@
 ---
-group: extension-best-practices
-title: Best Practices for Extension Developers
-functional_areas:
-  - Standards
+title: Best Practices for Extension Developers | Commerce PHP Extensions
+description: Use this collection of best practices curated by the community and Adobe to avoid commonly reported issues in third-party Adobe Commerce and Magento Open source extensions.
 ---
 
 {:.bs-callout-info}

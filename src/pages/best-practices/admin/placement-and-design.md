@@ -46,7 +46,7 @@ These extensions provide additional [API](https://glossary.magento.com/api) over
 
 All required settings for this connector type should appear in the **Stores** > Settings > **Configuration** section. The actual listings for these extension settings should appear after all of Magento's listed settings. All the setting details and configurations should appear in the section to the right.
 
-![Connector settings placement]({{ site.baseurl }}/common/images/ext-best-practices/connector-settings-placement.png)
+![Connector settings placement](../../_images/best-practices/connector-settings-placement.png)
 
 **Style:**
 
@@ -66,7 +66,7 @@ The settings for these extensions should be displayed under its respective paren
 
 For example, if the extension is for Shipping, then you can place it under **Store** > Settings > **Configuration** > **Sales** > **Shipping Settings**.
 
-![Store Feature Connector placement]({{ site.baseurl }}/common/images/ext-best-practices/store-feature-connector-placement.png)
+![Store Feature Connector placement](../../_images/best-practices/store-feature-connector-placement.png)
 
 ---
 
@@ -80,7 +80,7 @@ If all the settings for an extension can be consolidated into one section, then 
 
 For example, if your extension is related to the "Reports" functionality then its settings should appear as a link under the Report Section in the Primary navigation.
 
-![Connector with additional features placement]({{ site.baseurl }}/common/images/ext-best-practices/additional-feature-placement.png)
+![Connector with additional features placement](../../_images/best-practices/additional-feature-placement.png)
 
 **Style:**
 
@@ -97,7 +97,7 @@ These are extensions which provide additional functionality to Magento that do n
 
 There will be a new, dedicated section designed for such exclusive extensions. When feature-level extensions are installed, those extensions will live under this section. The exact final name of this new section has not been decided (we welcome your feedback), but in the image below it is named Extensions.
 
-![Feature Placement]({{ site.baseurl }}/common/images/ext-best-practices/feature-placement.png){:height="190px" width="350px"}
+![Feature Placement](../../_images/best-practices/feature-placement.png){:height="190px" width="350px"}
 
 {:.bs-callout-info}
   The name and icon for this section is still TBD.

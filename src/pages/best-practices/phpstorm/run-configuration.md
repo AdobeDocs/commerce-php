@@ -16,17 +16,17 @@ The Run Configuration is a Graphical User Interface (GUI) for the {{site.data.va
 {:.bs-callout-warning}
 The {{site.data.var.uct}} is an {{site.data.var.ee}} feature. You need your {{site.data.var.ee}} license key to install it.
 
-![]({{site.baseurl}}/common/images/phpstorm/uct-run-configuration-1-min.gif)
+![](../../_images/best-practices/phpstorm/uct-run-configuration-1-min.gif)
 
 When you create a new run configuration for a specific tool, create it from one of the dedicated configuration templates. Templates implement the startup logic and define the list of parameters and their default values.
 
 The {{site.data.var.uct}} Run Configuration template is located in the PHPStorm plugin menu, under **Run/Debug configurations** > **Add New Configuration** > **Upgrade Compatibility Tool**.
 
-![]({{site.baseurl}}/common/images/phpstorm/uct-run-configuration-template-position.png)
+![](../../_images/best-practices/phpstorm/uct-run-configuration-template-position.png)
 
 These are the main components of the {{site.data.var.uct}} Run Configuration template:
 
-![]({{site.baseurl}}/common/images/phpstorm/uct-run-configuration-template-view.png)
+![](../../_images/best-practices/phpstorm/uct-run-configuration-template-view.png)
 
 *  *{{site.data.var.uct}} (UCT) executable*: Path where the {{site.data.var.uct}} executable script is located. Determined by the `bin/uct` path from the {{site.data.var.uct}} source root directory.
 *  *Project root*: Current PHPStorm plugin root directory.
@@ -45,7 +45,7 @@ After you correctly configure the template, you can run the {{site.data.var.uct}
 
 To run the {{site.data.var.uct}} click `UCT Run`.
 
-![]({{site.baseurl}}/common/images/phpstorm/uct-run-configuration-3-min.gif)
+![](../../_images/best-practices/phpstorm/uct-run-configuration-3-min.gif)
 
 The results are displayed in the console, including handy navigation to the compatibility issues in the code.
 

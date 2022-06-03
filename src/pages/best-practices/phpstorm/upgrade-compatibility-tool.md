@@ -24,35 +24,35 @@ It was developed with an aim to use IntelliJ IDEA in the most effective way. So,
 the code analysis can alternatively be enabled in the [inspections settings](https://www.jetbrains.com/help/idea/code-inspection.html)
 `Preferences -> Editor -> Inspections -> UCT`:
 
-![]({{site.baseurl}}/common/images/phpstorm/built-in-uct/uct-inspections-settings.png)
+![](../../_images/best-practices/phpstorm/built-in-uct/uct-inspections-settings.png)
 
 It allows you to see the problematic code just in real time, without running it intentionally during code writing or file viewing.
 **The result of the real time inspection is most suitable for use during development, to be always compatible with future versions**:
 
-![]({{site.baseurl}}/common/images/phpstorm/built-in-uct/uct-inspections-highlighting.png)
-![]({{site.baseurl}}/common/images/phpstorm/built-in-uct/uct-inspections-highlighting-2.png)
-![]({{site.baseurl}}/common/images/phpstorm/built-in-uct/uct-inspections-highlighting-3.png)
-![]({{site.baseurl}}/common/images/phpstorm/built-in-uct/uct-inspections-highlighting-4.png)
+![](../../_images/best-practices/phpstorm/built-in-uct/uct-inspections-highlighting.png)
+![](../../_images/best-practices/phpstorm/built-in-uct/uct-inspections-highlighting-2.png)
+![](../../_images/best-practices/phpstorm/built-in-uct/uct-inspections-highlighting-3.png)
+![](../../_images/best-practices/phpstorm/built-in-uct/uct-inspections-highlighting-4.png)
 
 The second IntelliJ IDEA tool that we can use for running UCT inspections is called **Inspect Code**. It is available under menu item
 `Code -> Inspect Code`. Also, you can open a context menu under the target directory that allows IntelliJ IDEA to populate the path to analyse for you automatically:
 
-![]({{site.baseurl}}/common/images/phpstorm/built-in-uct/run-inspect-code-from-context-menu.png)
+![](../../_images/best-practices/phpstorm/built-in-uct/run-inspect-code-from-context-menu.png)
 
 By calling the **Inspect Code** action from the context menu, the Inspection Scope will be populated for us automatically.
 The last thing to configure here is **Inspection Profile**.
 By default, there will be the **Project Default** profile with all inspections that are not connected to our goal.
 
-![]({{site.baseurl}}/common/images/phpstorm/built-in-uct/uct-intellij-idea-based-analysis-configuration.png)
+![](../../_images/best-practices/phpstorm/built-in-uct/uct-intellij-idea-based-analysis-configuration.png)
 
 You can create a new profile with the only UCT inspections enabled (for further information [read here](https://www.jetbrains.com/help/idea/customizing-profiles.html)):
 
-![]({{site.baseurl}}/common/images/phpstorm/built-in-uct/uct-inspections-profile.png)
+![](../../_images/best-practices/phpstorm/built-in-uct/uct-inspections-profile.png)
 
 For this inspection type you do not need to have UCT inspections enabled for your project.
 **The result of this inspection is most suitable for code refactoring when eliminating problematic code**:
 
-![]({{site.baseurl}}/common/images/phpstorm/built-in-uct/uct-analysis-through-intellj-idea-inspect-code-action.png)
+![](../../_images/best-practices/phpstorm/built-in-uct/uct-analysis-through-intellj-idea-inspect-code-action.png)
 
 **The most powerful inspection type is the execution of compatibility inspections in a [run tool window](https://www.jetbrains.com/help/idea/run-tool-window.html) with the familiar output as in the original Adobe Commerce [Upgrade Compatibility Tool](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html)**.
 
@@ -68,11 +68,11 @@ All fields, as above, are described in the Upgrade Compatibility Tool Run Config
 in the [official documentation](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/run.html).
 Go to the UCT configuration dialog `Tools -> Configure The Upgrade Compatibility Tool` and configure it as required:
 
-![]({{site.baseurl}}/common/images/phpstorm/built-in-uct/uct-settings.png)
+![](../../_images/best-practices/phpstorm/built-in-uct/uct-settings.png)
 
 After this, you can run this tool at any time you require by using `Tools -> Run The Upgrade Compatibility Tool`:
 
-![]({{site.baseurl}}/common/images/phpstorm/built-in-uct/run-the-built-in-uct-min.gif)
+![](../../_images/best-practices/phpstorm/built-in-uct/run-the-built-in-uct-min.gif)
 
 For this inspection type you do not need to have UCT inspections enabled for your project, but it is easier to see the problems in the file
 after navigating to it.
@@ -82,4 +82,4 @@ after navigating to it.
 in the built-in UCT configuration dialog `Tools -> Configure The Upgrade Compatibility Tool`.
 This is also applicable for the other selected configurations on the screenshot below:
 
-![]({{site.baseurl}}/common/images/phpstorm/built-in-uct/shared-configurations-for-all-inspection-types.png)
+![](../../_images/best-practices/phpstorm/built-in-uct/shared-configurations-for-all-inspection-types.png)
