@@ -174,6 +174,6 @@ and clean the cache with this command:
 bin/magento cache:clean
 ```
 
-[0]:{{ site.mage2bloburl }}/{{ page.guide_version }}/lib/internal/Magento/Framework/DataObject/Copy.php
-[1]:{{ page.baseurl }}/extension-dev-guide/attributes.html
-[2]:{{ page.baseurl }}/extension-dev-guide/depend-inj.html
+[0]:https://github.com/magento/magento2/blob/2.4}/lib/internal/Magento/Framework/DataObject/Copy.php
+[1]:../../development/components/attributes.md
+[2]:../../development/components/dependency-injection.md

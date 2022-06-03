@@ -16,7 +16,7 @@ Magento’s flexible platform lets you place an [extension](https://glossary.mag
 
 We discourage practices that diminish the user experience in the Admin. The following design decisions that have been seen in some extensions create a negative user experience and should be avoided.
 
-### Icons in the Primary Navigation {#icons-in-navigation}
+### Icons in the primary navigation
 
 Icons should not be added to the primary navigation panel in the Admin. If every extension added its own icon to the primary navigation panel, the interface will quickly become cluttered and unusable.
 
@@ -24,7 +24,7 @@ Icons should not be used in any of the navigation submenu panels to bring attent
 
 Your extension's settings and configuration area is an appropriate place to use icons.
 
-For more information about icon design and Magento's icon library, see the article about  [Iconography]({{ page.baseurl }}/design-styleguide/iconography/iconography.html) in the Admin Style Guide book.
+For more information about icon design and Magento's icon library, see the article about  [Iconography](https://devdocs.magento.com/guides/v2.4/design-styleguide/iconography/iconography.html) in the Admin Style Guide book.
 
 ### Advertising in Navigation
 
@@ -97,11 +97,11 @@ These are extensions which provide additional functionality to Magento that do n
 
 There will be a new, dedicated section designed for such exclusive extensions. When feature-level extensions are installed, those extensions will live under this section. The exact final name of this new section has not been decided (we welcome your feedback), but in the image below it is named Extensions.
 
-![Feature Placement](../../_images/best-practices/feature-placement.png){:height="190px" width="350px"}
+![Feature Placement](../../_images/best-practices/feature-placement.png)
 
-{:.bs-callout-info}
-  The name and icon for this section is still TBD.
-  This new section is a future proposal, and we welcome feedback about if and how advertisements should be displayed here.
+<InlineAlert variant="info" slots="text"/>
+
+The name and icon for this section is still TBD. This new section is a future proposal, and we welcome feedback about if and how advertisements should be displayed here.
 
 Since this section is not yet available, you should place your extension in one of the previously mentioned areas where it would be the most appropriate.
 

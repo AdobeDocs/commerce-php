@@ -12,16 +12,16 @@ This page is a compilation of frequently asked questions by the Magento Communit
 
 #### Where should my extension appear in the Admin?
 
-The appropriate place for your [extension](https://glossary.magento.com/extension) to appear in the Admin depends on what it does. For a list of extension types and their proper spot in the Admin, please consult the article: [Admin panel placement and design]({{ page.baseurl }}/ext-best-practices/admin/placement-and-design.html).
+The appropriate place for your [extension](https://glossary.magento.com/extension) to appear in the Admin depends on what it does. For a list of extension types and their proper spot in the Admin, please consult the article: [Admin panel placement and design](placement-and-design.md).
 
 ____
 
 #### What are the rules about using the left-navigation "slide-out panels" in the Admin?
 
-The slide-out panel is designed to accommodate several links. There can be several columns in the slide-out panel to accommodate many extension links. See the details and specifications about [slide-out panels]({{ page.baseurl }}/pattern-library/containers/slideouts-modals-overlays/slideouts-modals-overalys.html).
+The slide-out panel is designed to accommodate several links. There can be several columns in the slide-out panel to accommodate many extension links. See the details and specifications about [slide-out panels](https://devdocs.magento.com/guides/v2.4/pattern-library/containers/slideouts-modals-overlays/slideouts-modals-overalys.html).
 
 ____
 
 #### Are there "rules" about using icons or images that appear beside the name of my extension in the Admin?
 
-You should avoid using icons or images besides the name of your extension in the Admin. More details about icons and images in the Admin panel can be found in the article about [Admin panel placement and design]({{ page.baseurl }}/ext-best-practices/admin/placement-and-design.html#icons-in-navigation).
+You should avoid using icons or images besides the name of your extension in the Admin. More details about icons and images in the Admin panel can be found in the article about [Admin panel placement and design](placement-and-design.md#icons-in-the-primary-navigation).

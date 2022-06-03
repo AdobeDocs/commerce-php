@@ -109,11 +109,12 @@ Add the following to your module's `Controller/Adminhtml/Delete/Index.php` file:
 ```php
 const ADMIN_RESOURCE = 'Vendor_MyModule::delete';
 ```
+
 If the user does not have permission, the action page displays an "Access Denied" message.
 
 ### Content restrictions for admin users
 
-With the ACL it is also possible to [render layout blocks dynamically]({{ page.baseurl }}/frontend-dev-guide/layouts/xml-manage.html#ref_config_block) on the page.
+With the ACL it is also possible to [render layout blocks dynamically](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/xml-manage.html#ref_config_block) on the page.
 
 It is enough to set the block's value for `aclResource` attribute:
 
@@ -174,11 +175,3 @@ We can restrict users from accessing API endpoints by using the ACL rule. By cre
     </route>
 </routes>
 ```
-
-### Related topics
-
-*  [Creating a Magento admin page]({{ page.baseurl }}/ext-best-practices/extension-coding/example-module-adminpage.html)
-
-*  [Authentication]({{ page.baseurl }}/get-started/authentication/gs-authentication.html)
-
-*  [Layout block dynamic visibility using ACL Resource]({{ page.baseurl }}/frontend-dev-guide/layouts/xml-manage.html#ref_config_block)

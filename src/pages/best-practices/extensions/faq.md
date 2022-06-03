@@ -14,16 +14,16 @@ This page is a compilation of frequently asked coding questions by the Magento C
 
 *  [SOLID principles](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) - The essential principles needed to create maintainable and extendable code.
 *  [PHP](http://php.net/) - This is the programming language used for developing Magento 2 code.
-*  [HTML](https://en.wikipedia.org/wiki/HTML), [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets), and [JavaScript](https://www.javascript.com/) - Languages used for [frontend development]({{ page.baseurl }}/frontend-dev-guide/bk-frontend-dev-guide.html).
-*  [Architecture basics overview]({{ page.baseurl }}/architecture/archi_perspectives/ABasics_intro.html) - Developers should be familiar with the architectural concepts used in Magento such as the [Model-View-Controller](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) pattern and the [Command Query Responsibility Segregation](http://martinfowler.com/bliki/CQRS.html) principle.
-*  [Dependency Injection]({{ page.baseurl }}/extension-dev-guide/depend-inj.html) - An important [design pattern](https://glossary.magento.com/design-pattern) used in Magento to handle dependencies across classes and modules.
+*  [HTML](https://en.wikipedia.org/wiki/HTML), [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets), and [JavaScript](https://www.javascript.com/) - Languages used for [frontend development](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html).
+*  [Architecture basics overview](../../architecture/basics/index.md) - Developers should be familiar with the architectural concepts used in Magento such as the [Model-View-Controller](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) pattern and the [Command Query Responsibility Segregation](http://martinfowler.com/bliki/CQRS.html) principle.
+*  [Dependency Injection](../../development/components/dependency-injection.md) - An important [design pattern](https://glossary.magento.com/design-pattern) used in Magento to handle dependencies across classes and modules.
 
-### In Magento 2, how can my extension distinguish between the {{site.data.var.ce}} and the {{site.data.var.ee}}?
+### In Magento 2, how can my extension distinguish between the Magento Open Source and the Adobe Commerce?
 
 The correct edition can be obtained through `\Magento\Framework\App\ProductMetadataInterface::getEdition`.
 
-In {{site.data.var.ce}} that interface maps to the concrete implementation `Magento\Framework\AppInterface\ProductMetadata`.
-However, in {{site.data.var.ee}}, the Commerce [module](https://glossary.magento.com/module) will override that mapping and the interface will be implemented by `\Magento\Enterprise\Model\ProductMetadata`.
+In Magento Open Source that interface maps to the concrete implementation `Magento\Framework\AppInterface\ProductMetadata`.
+However, in Adobe Commerce, the Commerce [module](https://glossary.magento.com/module) will override that mapping and the interface will be implemented by `\Magento\Enterprise\Model\ProductMetadata`.
 
 Just relying on the interface through [dependency injection](https://glossary.magento.com/dependency-injection) will get you the right class, and calling "getEdition" will return the right answer.
 

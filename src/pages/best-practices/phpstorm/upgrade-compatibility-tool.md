@@ -66,6 +66,7 @@ For this inspection type you do not need to have UCT inspections enabled for you
 Before using it, you should configure the built-in UCT in a same way to the CLI Run Configuration.
 All fields, as above, are described in the Upgrade Compatibility Tool Run Configuration section and are more detailed
 in the [official documentation](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/run.html).
+
 Go to the UCT configuration dialog `Tools -> Configure The Upgrade Compatibility Tool` and configure it as required:
 
 ![](../../_images/best-practices/phpstorm/built-in-uct/uct-settings.png)
@@ -77,7 +78,8 @@ After this, you can run this tool at any time you require by using `Tools -> Run
 For this inspection type you do not need to have UCT inspections enabled for your project, but it is easier to see the problems in the file
 after navigating to it.
 
-{:.bs-callout-warning}
+<InlineAlert variant="warning" slots="text"/>
+
 **Keep in mind**, that for all inspection types the target Magento version (coming version) is configured
 in the built-in UCT configuration dialog `Tools -> Configure The Upgrade Compatibility Tool`.
 This is also applicable for the other selected configurations on the screenshot below:

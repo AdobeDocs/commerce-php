@@ -12,8 +12,9 @@ Its implementation code is more simpler, cleaner and readable, in comparision wi
 
 GuzzleHttp uses cURL by default, but it can use any HTTP client that you want other than cURL like PHP's stream wrapper or sockets, in case `curl` isn't installed on your Web Server.
 
-{:.bs-callout-info}
-It's much easier to cover a GuzzleHttp implementation by [Unit Tests]({{ page.baseurl }}/test/unit/writing_testable_code.html), as you're able to mock the HTTP requests.
+<InlineAlert variant="info" slots="text"/>
+
+It's much easier to cover a GuzzleHttp implementation by [Unit Tests](https://devdocs.magento.com/guides/v2.4/test/unit/writing_testable_code.html), as you're able to mock the HTTP requests.
 
 ## Request options
 
@@ -23,7 +24,7 @@ It's much easier to cover a GuzzleHttp implementation by [Unit Tests]({{ page.ba
 | `uri` | The API endpoint that needs to be called | String |
 | `params` | A list of parameters that needs to be passed to the API  | Array |
 
-## Create a Github API integration
+## Create a GitHub API integration
 
 In the following example, we're using the [Github API](https://api.github.com/) as web service, and will fetch some data regarding the Magento 2 Git repository.
 

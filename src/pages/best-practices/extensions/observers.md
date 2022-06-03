@@ -9,7 +9,8 @@ functional_areas:
 ---
 
 ### Overview
-[Observers]({{ page.baseurl }}/extension-dev-guide/events-and-observers.html) are capable of modifying the behavior of a Magento application because they are dynamically injected into the execution flow. Poorly designed and coded observers can cause issues, instabilities, or otherwise break the application.
+
+[Observers](../../development/components/events-and-observers/index.md) are capable of modifying the behavior of a Magento application because they are dynamically injected into the execution flow. Poorly designed and coded observers can cause issues, instabilities, or otherwise break the application.
 
 We encourage you to follow these best practices aimed towards reducing problems when your observer is executed.
 
@@ -37,7 +38,8 @@ Make your observer as specific as it needs to be. Declare your observer in the a
 | `webapi_rest` | `<module-dir>/etc/webapi_rest/events.xml` | Observer will be executed in the `webapi_rest` area only. |
 | `webapi_soap` | `<module-dir>/etc/webapi_soap/events.xml` | Observer will be executed in the `webapi_soap` area only. |
 
-{:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 It is `NOT RECOMMENDED` to register everything in the `global` area, as the bootstrapping process will become much heavier. For example, the application must run and process additional checks for your observer.
 
 #### Avoid cyclical event loops
@@ -47,7 +49,3 @@ Cyclical event loops occur when your observer calls the method of an object that
 #### Do not rely on invocation order
 
 Your observer should not make assumptions about the order in which it will be invoked nor should it rely on the execution of another observer. Observers listening to the same event may be invoked in any order when that event is dispatched.
-
-### Recommended Reading
-
-*  [Events and Observers]({{ page.baseurl }}/extension-dev-guide/events-and-observers.html)

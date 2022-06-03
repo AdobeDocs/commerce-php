@@ -5,7 +5,7 @@ title: Modify Media Library folder permissions
 
 The media gallery gives admins the ability to upload image files in specific folders. The Storage class for images in the CMS module manages image file uploads, file retrievals, and directory creation.
 
-Due to code changes, how you extend your media gallery depends on your version of {{site.data.var.ee}} or {{site.data.var.ce}}:
+Due to code changes, how you extend your media gallery depends on your version of Adobe Commerce or Magento Open Source:
 
 Once you've listed both product names, you can call the product `Commerce`.
 
@@ -134,5 +134,5 @@ The following configuration overrides the default directory restriction for the 
 </type>
 ```
 
-[`di.xml`]: {{page.baseurl}}/extension-dev-guide/build/di-xml-file.html
-[Storage class]: {{ site.mage2bloburl }}/{{page.guide_version}}/app/code/Magento/Cms/Model/Wysiwyg/Images/Storage.php
+[`di.xml`]: ../../development/build/dependency-injection-file.md
+[Storage class]: https://github.com/magento/magento2/blob/2.4/app/code/Magento/Cms/Model/Wysiwyg/Images/Storage.php

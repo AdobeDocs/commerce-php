@@ -7,7 +7,7 @@ functional_areas:
 
 The coding best practices presented in this section should be known and understood by you, the developer, when creating or maintaining your extensions. This ensures that the [extension](https://glossary.magento.com/extension) you develop behaves and functions correctly within the Magento application architecture. This guide is not only meant to educate you about coding best practices, but to also highlight some pitfalls we have seen other extension developers fall into so that you may avoid them.
 
-For in depth content about creating extensions, see the [PHP Developer Guide]({{ page.baseurl }}/extension-dev-guide/bk-extension-dev-guide.html).
+For in depth content about creating extensions, see the [PHP Developer Guide](../../development/index.md).
 
 You should follow common programming best practices to reduce bugs and improve the quality and maintainability of your extensions.
 
@@ -17,7 +17,7 @@ The following list of best practices addresses commonly reported issues in third
 
 Coding standards are a set of guidelines that describe how code should be written. These standards define coding practices that determine the style of the code. Whether you are a solo developer or part of a team, following a set of coding standards will help make your code consistent and maintainable.
 
-[Magento's Coding Standards]({{ page.baseurl }}/coding-standards/bk-coding-standards.html) are based on the following:
+[Magento's Coding Standards](../../coding-standards/index.md) are based on the following:
 
 *  [Zend Coding standards](http://framework.zend.com/manual/1.12/en/coding-standard.html)
 *  [PSR2](http://www.php-fig.org/psr/psr-2/)
@@ -62,15 +62,16 @@ For Magento 2 [extension](https://glossary.magento.com/extension) development, w
 
 ### Using around plugins
 
-Avoid using [around method plugins]({{ page.baseurl }}/extension-dev-guide/plugins.html) when they are not required because they increase stack traces and affect performance. The only use case for around method plugins is when you need to terminate the execution of all further plugins and original methods.
+Avoid using [around method plugins](../../development/components/plugins.md) when they are not required because they increase stack traces and affect performance. The only use case for around method plugins is when you need to terminate the execution of all further plugins and original methods.
 
-{:.bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 Access to method parameters was the primary justification for using **around** method plugins instead of **after** method plugins.
 <br/><br/>
-Since 2.2, [after method plugins]({{ page.baseurl }}/extension-dev-guide/plugins.html#after-methods) give you access to method parameters. Use **after** method plugins if you need to replace or modify function results using arguments.
+Since 2.2, [after method plugins](../../development/components/plugins.md#after-methods) give you access to method parameters. Use **after** method plugins if you need to replace or modify function results using arguments.
 
 ### Test your code
 
-Write testable code and follow the [Magento Testing Guide]({{ page.baseurl }}/test/testing.html) to create tests for your code.
+Write testable code and follow the [Magento Testing Guide](https://devdocs.magento.com/guides/v2.4/test/testing.html) to create tests for your code.
 
 Tests help describe what your code does under different conditions and define its functionality. Make sure your tests cover a variety of conditions to prevent the introduction of bugs when you add new code.
