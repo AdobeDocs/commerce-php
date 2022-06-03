@@ -45,7 +45,7 @@ This tutorial uses the following framework [API](https://glossary.magento.com/ap
 
 *  `\Magento\Framework\Module\Manager` - This class checks the status of a module.
 
-## Step 1: Create the basic upgrade script {#step-1}
+## Step 1: Create the basic upgrade script
 
 The upgrade script is what runs during the upgrade step of your extension's [lifecycle][1].
 Create the `UpgradeData.php` file in the `Setup` directory inside your extension's root directory.
@@ -130,7 +130,7 @@ class UpgradeData implements UpgradeDataInterface
 }
 ```
 
-## Step 2: Check that the module exists {#step-2}
+## Step 2: Check that the module exists
 
 Any module can replace another module.
 If your extension stores data in the tables of another module or it serializes or unserializes data stored in core modules, make sure the module exists and is active before executing the upgrade logic.
@@ -145,13 +145,13 @@ if ($this->moduleManager->isEnabled('Magento_Sales')) {
 }
 ```
 
-## Step 3: Write the conversion logic {#step-3}
+## Step 3: Write the conversion logic
 
 The [conversion](https://glossary.magento.com/conversion) logic in your script depends on how your extension stores the serialized data.
 
 If your extension stores serialized data in different ways, you will need to use different conversion methods.
 
-### Step 3a: Convert data in a column for all rows {#step-3a}
+### Step 3a: Convert data in a column for all rows
 
 Use a `FieldDataConverterFactory` to create a `FieldDataConverter` instance with the appropriate data converter.
 
@@ -168,7 +168,7 @@ $fieldDataConverter->convert(
 );
 ```
 
-### Step 3b: Convert data in specific rows for a field {#step-3b}
+### Step 3b: Convert data in specific rows for a field
 
 | option_id | code           | value                         |
 | --- | --- | --- |
@@ -271,7 +271,7 @@ foreach ($iterator as $selectByRange) {
 }
 ```
 
-### Step 3c: Convert nested serialized data {#step-3c}
+### Step 3c: Convert nested serialized data
 
 If your module uses nested serialized data in the database, create a custom data converter to hold the logic for converting the data.
 
@@ -387,7 +387,7 @@ $fieldDataConverter->convert(
 );
 ```
 
-### Step 3d: Convert data in a multi-database setup {#step-3d}
+### Step 3d: Convert data in a multi-database setup
 
 Adobe Commerce supports storing Quote, Sales, and Inventory data in separate databases.
 Use the specific connections for each of these modules to update your extension's stored data for the entities of these modules.
