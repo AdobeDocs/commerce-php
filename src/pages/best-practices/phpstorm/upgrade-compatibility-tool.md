@@ -80,7 +80,7 @@ after navigating to it.
 
 <InlineAlert variant="warning" slots="text"/>
 
-**Keep in mind**, that for all inspection types the target Magento version (coming version) is configured
+**Keep in mind**, that for all inspection types the target version (coming version) is configured
 in the built-in UCT configuration dialog `Tools -> Configure The Upgrade Compatibility Tool`.
 This is also applicable for the other selected configurations on the screenshot below:
 

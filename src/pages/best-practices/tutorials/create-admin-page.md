@@ -7,7 +7,7 @@ functional_areas:
 
 ## Overview
 
-This tutorial gives instructions for the creation of a [module](https://glossary.magento.com/module) that displays a simple page in the [Magento admin](https://glossary.magento.com/magento-admin).
+This tutorial gives instructions for the creation of a [module](https://glossary.magento.com/module) that displays a simple page in the [Admin](https://glossary.magento.com/magento-admin).
 
 For the purposes of this tutorial 'MyCompany' is the name of the company associated with a module named `ExampleAdminNewPage`.
 
@@ -15,7 +15,7 @@ For the purposes of this tutorial 'MyCompany' is the name of the company associa
 
 Start by creating the working directory for all the module files.
 
-In your Magento development environment under the `app/code` directory, run the following command:
+In your development environment under the `app/code` directory, run the following command:
 
 ```bash
 mkdir -p MyCompany/ExampleAdminNewPage
@@ -25,7 +25,7 @@ This command creates the `MyCompany` company directory and the `ExampleAdminNewP
 
 ## Initial boilerplate files
 
-These initial boilerplate files are the bare essential files needed for any Magento module.
+These initial boilerplate files are the bare essential files needed for any module.
 
 ### `composer.json`
 
@@ -35,7 +35,7 @@ For more information see: [`composer.json`](../../development/build/composer-int
  ```json
   {
     "name": "mycompany/sample-module-minimal",
-    "description": "A module that creates a page in the Magento admin area",
+    "description": "A module that creates a page in the Admin area",
     "type": "magento2-module",
     "version": "1.0.0",
     "license": [
@@ -56,7 +56,7 @@ For more information see: [`composer.json`](../../development/build/composer-int
 
 ### `registration.php`
 
-In the module's root directory, create the file `registration.php`. This file registers the module `MyCompany_ExampleAdminNewPage` with Magento.
+In the module's root directory, create the file `registration.php`. This file registers the module `MyCompany_ExampleAdminNewPage` with the application.
 
 For more information see: [registering your component](../../development/build/component-registration.md).
 
@@ -115,7 +115,7 @@ For more information on this topic, see: [routing](../../development/components/
 
 ### `etc/adminhtml/menu.xml`
 
-Under the created `etc` directory, create a new directory called `adminhtml`. Under that directory, create the file `menu.xml`. This [XML](https://glossary.magento.com/xml) file adds new menu items to the Magento [admin](https://glossary.magento.com/admin).
+Under the created `etc` directory, create a new directory called `adminhtml`. Under that directory, create the file `menu.xml`. This [XML](https://glossary.magento.com/xml) file adds new menu items to the [Admin](https://glossary.magento.com/admin).
 
 The `menu.xml` file provided below adds two items in the Content section of the left navigation:
 
@@ -128,7 +128,7 @@ The following parts make up the generated page request link to the **Hello World
 
 *  `exampleadminnewpage` - This is the `frontName`. Because its purpose is to help route requests to the correct module, we give it the same name as the module, but this is not required.
 *  `helloworld` - This specifies the name of the controller to use.
-*  `index` - In the XML file, since the action for the controller is not specified, Magento uses the default value `index`.
+*  `index` - In the XML file, since the action for the controller is not specified, the application uses the default value `index`.
 
 [//]: # (Stop list rendering before collapsible, see: https://github.com/magento/devdocs/issues/2655)
 
@@ -144,7 +144,7 @@ The following parts make up the generated page request link to the **Hello World
 
 ### `etc/adminhtml/routes.xml`
 
-Under `etc/adminhtml` create the file `routes.xml`. The contents of this  XML file tells Magento to route requests that use the `frontName` `exampleadminnewpage` to this module.
+Under `etc/adminhtml` create the file `routes.xml`. The contents of this  XML file tells the application to route requests that use the `frontName` `exampleadminnewpage` to this module.
 
 ```xml
 <?xml version="1.0"?>
@@ -231,7 +231,7 @@ class Index extends Action implements HttpGetActionInterface
 
 ## Page view
 
-Now that Magento knows how to handle requests for the **Hello World** page, we need view files that define the look of the page.
+Now that the application knows how to handle requests for the **Hello World** page, we need view files that define the look of the page.
 
 Create the necessary directories for the files by running the following commands from the module's root directory:
 
@@ -240,7 +240,7 @@ mkdir -p view/adminhtml/layout
 mkdir -p view/adminhtml/templates
 ```
 
-These files belong in the `view/adminhtml` directory because the Magento admin area use these files during page generation.
+These files belong in the `view/adminhtml` directory because the Admin area use these files during page generation.
 
 ### `view/adminhtml/layout/exampleadminnewpage_helloworld_index.xml`
 
@@ -305,7 +305,7 @@ Now that the module is code-complete, run the following commands to install it:
 
 1. `bin/magento module:status` - This command shows a list of enabled/disabled modules.
 1. `bin/magento module:enable MyCompany_ExampleAdminNewPage` - If necessary, run this to enable the disabled module.
-1. `bin/magento setup:upgrade` - This command will properly register the module with Magento.
+1. `bin/magento setup:upgrade` - This command will properly register the module.
 1. `bin/magento setup:di:compile` - This command compiles classes used in dependency injections.
 1. `bin/magento setup:static-content:deploy` - (Production mode only) This command deploys static view files. If you are in developer mode, refer to [Clean static files cache](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/cache_for_frontdevs.html#clean_static_cache) to refresh the static view files.
 1. `bin/magento cache:clean` - This command cleans the cache.

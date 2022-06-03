@@ -460,7 +460,7 @@ class ProductRepository implements ProductRepositoryInterface
 
 ### Test the GET endpoint
 
-The example uses Magento sample data for `product_id: 1` and the endpoint ```http://local.magentoee.com/rest/V1/rest_dev/getProduct/1```.
+The example uses sample data for `product_id: 1` and the endpoint ```http://local.magentoee.com/rest/V1/rest_dev/getProduct/1```.
 
 **Request:**
 

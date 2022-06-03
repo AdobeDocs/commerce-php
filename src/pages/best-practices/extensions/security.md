@@ -12,13 +12,13 @@ You should make sure that your [extension](https://glossary.magento.com/extensio
 
 ## Avoid using low-level functionality
 
-  The Magento application is made up of a variety of components that work together to perform different business functions. We discourage the use of low-level functionality such as the [PHP](https://glossary.magento.com/php) `curl_*` functions and encourage the use of high-level components such as [`\Magento\Framework\HTTP\Adapter\Curl`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/HTTP/Adapter/Curl.php). The use of low-level functionality can make Magento behave in unexpected ways that effectively disable built-in protection mechanisms, introduce exploitable inconsistencies, or otherwise expose the application to attack.
+  The Adobe Commerce and Magento Open Source applications are made up of a variety of components that work together to perform different business functions. We discourage the use of low-level functionality such as the [PHP](https://glossary.magento.com/php) `curl_*` functions and encourage the use of high-level components such as [`\Magento\Framework\HTTP\Adapter\Curl`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/HTTP/Adapter/Curl.php). The use of low-level functionality can make the applications behave in unexpected ways that effectively disable built-in protection mechanisms, introduce exploitable inconsistencies, or otherwise expose the application to attack.
 
-For a list of discouraged low-level functions, review the [`Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php`](https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php) file and the [Magento Coding Standard](https://github.com/magento/magento-coding-standard).
+For a list of discouraged low-level functions, review the [`Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php`](https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php) file and the [Coding Standard](https://github.com/magento/-coding-standard).
 
 ## Use wrappers instead of superglobal variables
 
-Make sure that your Magento application does not directly use any PHP superglobals such as:
+Make sure that your application does not directly use any PHP superglobals such as:
 
   ```php
   $GLOBALS, $_SERVER, $_GET, $_POST, $_FILES, $_COOKIE, $_SESSION, $_REQUEST, $_ENV
@@ -40,15 +40,15 @@ Raw SQL queries can lead to potential security vulnerabilities and database port
 
 <InlineAlert variant="warning" slots="text"/>
 
-Building and executing custom queries with the Magento data adapter does not automatically make them secure. Always use sanitization methods on dynamic data in your queries.
+Building and executing custom queries with the data adapter does not automatically make them secure. Always use sanitization methods on dynamic data in your queries.
 
 ## Use Primary Key
 
 A Primary Key is required for any DB cluster to run effectively. Without a Primary Key, you _will_ see performance issues during table replication.
 
-## Use Magento API for filesystem operations
+## Use API for filesystem operations
 
-With the introduction of Remote Storage compatibility, there is no guarantee that files are present in the local filesystem. Because PHP filesystem operations do not support remote storage solutions such as AWS S3, you should always use the Magento Filesystem API to work with the filesystem.
+With the introduction of Remote Storage compatibility, there is no guarantee that files are present in the local filesystem. Because PHP filesystem operations do not support remote storage solutions such as AWS S3, you should always use the Filesystem API to work with the filesystem.
 
 For example, the PHP native function [file_get_contents()](https://www.php.net/manual/en/function.file-get-contents.php) does not allow passing any credentials to authenticate to a remote storage. This functionality might be broken if the source file is located in remote storage.
 

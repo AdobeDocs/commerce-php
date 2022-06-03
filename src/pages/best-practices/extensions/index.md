@@ -5,7 +5,7 @@ functional_areas:
   - Standards
 ---
 
-The coding best practices presented in this section should be known and understood by you, the developer, when creating or maintaining your extensions. This ensures that the [extension](https://glossary.magento.com/extension) you develop behaves and functions correctly within the Magento application architecture. This guide is not only meant to educate you about coding best practices, but to also highlight some pitfalls we have seen other extension developers fall into so that you may avoid them.
+The coding best practices presented in this section should be known and understood by you, the developer, when creating or maintaining your extensions. This ensures that the [extension](https://glossary.magento.com/extension) you develop behaves and functions correctly within the application architecture. This guide is not only meant to educate you about coding best practices, but to also highlight some pitfalls we have seen other extension developers fall into so that you may avoid them.
 
 For in depth content about creating extensions, see the [PHP Developer Guide](../../development/index.md).
 
@@ -17,7 +17,7 @@ The following list of best practices addresses commonly reported issues in third
 
 Coding standards are a set of guidelines that describe how code should be written. These standards define coding practices that determine the style of the code. Whether you are a solo developer or part of a team, following a set of coding standards will help make your code consistent and maintainable.
 
-[Magento's Coding Standards](../../coding-standards/index.md) are based on the following:
+[Coding Standards](../../coding-standards/index.md) are based on the following:
 
 *  [Zend Coding standards](http://framework.zend.com/manual/1.12/en/coding-standard.html)
 *  [PSR2](http://www.php-fig.org/psr/psr-2/)
@@ -59,7 +59,7 @@ Not following this practice is a code standards violation and impacts your exten
 
 [Object composition](https://en.wikipedia.org/wiki/Object_composition) is the programming concept of combining class objects and data types to create a more complex class. The classes and data types are used together to produce a desired functionality.
 
-For Magento 2 [extension](https://glossary.magento.com/extension) development, we encourage the use of object composition over class inheritance. Using composition over inheritance makes your extension easier to maintain when class changes occur and update when new features need to be implemented.
+For Mag[extension](https://glossary.magento.com/extension) development, we encourage the use of object composition over class inheritance. Using composition over inheritance makes your extension easier to maintain when class changes occur and update when new features need to be implemented.
 
 ### Using around plugins
 
@@ -73,6 +73,6 @@ Since 2.2, [after method plugins](../../development/components/plugins.md#after-
 
 ### Test your code
 
-Write testable code and follow the [Magento Testing Guide](https://devdocs.magento.com/guides/v2.4/test/testing.html) to create tests for your code.
+Write testable code and follow the [Testing Guide](https://devdocs.magento.com/guides/v2.4/test/testing.html) to create tests for your code.
 
 Tests help describe what your code does under different conditions and define its functionality. Make sure your tests cover a variety of conditions to prevent the introduction of bugs when you add new code.

@@ -10,7 +10,7 @@ functional_areas:
 
 ## Overview
 
-Magento’s flexible platform lets you place an [extension](https://glossary.magento.com/extension) anywhere in the [Admin](https://glossary.magento.com/admin) panel. However, it can be difficult finding the right place for your extension and how it should look, so we’ve prepared the following guidelines to help.
+The flixeible Adobe Commerce and Magento Open Source framework lets you place an [extension](https://glossary.magento.com/extension) anywhere in the [Admin](https://glossary.magento.com/admin) panel. However, it can be difficult finding the right place for your extension and how it should look, so we’ve prepared the following guidelines to help.
 
 ## Things to Avoid
 
@@ -24,11 +24,11 @@ Icons should not be used in any of the navigation submenu panels to bring attent
 
 Your extension's settings and configuration area is an appropriate place to use icons.
 
-For more information about icon design and Magento's icon library, see the article about  [Iconography](https://devdocs.magento.com/guides/v2.4/design-styleguide/iconography/iconography.html) in the Admin Style Guide book.
+For more information about icon design and the application's icon library, see the article about  [Iconography](https://devdocs.magento.com/guides/v2.4/design-styleguide/iconography/iconography.html) in the Admin Style Guide book.
 
 ### Advertising in Navigation
 
-It is not appropriate to use the [Admin](https://glossary.magento.com/magento-admin) navigation for marketing or to [cross-sell](https://glossary.magento.com/cross-sell) extensions after your extensions has been installed in Magento. A [new section](#feature-extensions) is under proposal that will possibly be more suitable for marketing and advertising content.
+It is not appropriate to use the [Admin](https://glossary.magento.com/magento-admin) navigation for marketing or to [cross-sell](https://glossary.magento.com/cross-sell) extensions after your extension has been installed. A [new section](#feature-extensions) is under proposal that will possibly be more suitable for marketing and advertising content.
 
 Do not use the name of your company or marketing jargon as part of an extension name or the extension name itself in the Admin. You should create a unique feature name that users will understand because people usually search for extensions by feature or function keywords, not by a company or brand name.
 
@@ -40,17 +40,17 @@ From the list of extension types below, determine the type of extension you have
 
 ### Standard Connector
 
-These extensions provide additional [API](https://glossary.magento.com/api) over Magento's existing API and is responsible for providing settings between Magento and another system.
+These extensions provide additional [APIs](https://glossary.magento.com/api) and are responsible for providing settings between the application and another system.
 
 **Placement:**
 
-All required settings for this connector type should appear in the **Stores** > Settings > **Configuration** section. The actual listings for these extension settings should appear after all of Magento's listed settings. All the setting details and configurations should appear in the section to the right.
+All required settings for this connector type should appear in the **Stores** > Settings > **Configuration** section. The actual listings for these extension settings should appear after all of the application's listed settings. All the setting details and configurations should appear in the section to the right.
 
 ![Connector settings placement](../../_images/best-practices/connector-settings-placement.png)
 
 **Style:**
 
-*  The style of the listing for your settings should match the look of Magento's listed settings.
+*  The style of the listing for your settings should match the look of the application's listed settings.
 *  Icons or images should not be used in the navigation listing for your settings.
 
 ---
@@ -91,7 +91,7 @@ For example, if your extension is related to the "Reports" functionality then it
 
 ### Feature Extensions
 
-These are extensions which provide additional functionality to Magento that do not already exist as a feature. These extensions usually demand an additional primary navigation item.
+These are extensions which provide additional functionality that do not already exist as a feature. These extensions usually demand an additional primary navigation item.
 
 **Placement:**
 
@@ -109,7 +109,7 @@ Since this section is not yet available, you should place your extension in one 
 
 ### Integrated Extensions
 
-These are add-ons to existing Magento feature and might appear as a nested feature.
+These are add-ons to existing features and might appear as a nested feature.
 
 **Placement:**
 

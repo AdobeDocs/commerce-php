@@ -10,7 +10,7 @@ menu_order: 1000
 
 The following tutorial lists the steps needed to create an upgrade script that converts the data stored in the database from the default [PHP](https://glossary.magento.com/php) serialized format to JSON format.
 
-Use this tutorial to create an upgrade script to update your [extension](https://glossary.magento.com/extension) to work with Magento 2.2 and above.
+Use this tutorial to create an upgrade script to update your [extension](https://glossary.magento.com/extension) to work with Adobe Commerce and Magento Open Source 2.2 and above.
 
 ## Before you begin
 
@@ -21,7 +21,7 @@ Your extension *must* convert data in the following cases:
 1. The extension stores serialized data provided by a core [module](https://glossary.magento.com/module) that now uses the JSON format.
 1. The extension uses the automatic serializing mechanism provided by the Magento framework (i.e. the extension declares `\Magento\Framework\Model\ResourceModel\Db\AbstractDb::$_serializableFields`).
 
-Your extension will continue working in Magento 2.2 and above in the following cases, but we recommend you switch to using the JSON format for security reasons:
+Your extension will continue working in Adobe Commerce and Magento Open Source 2.2 and above in the following cases, but we recommend you switch to using the JSON format for security reasons:
 
 1. The extension stores its own serialized data.
 1. The extension is responsible for serializing and unserializing data stored in core tables.
@@ -132,7 +132,7 @@ class UpgradeData implements UpgradeDataInterface
 
 ## Step 2: Check that the module exists {#step-2}
 
-Any module can replace another module in Magento.
+Any module can replace another module.
 If your extension stores data in the tables of another module or it serializes or unserializes data stored in core modules, make sure the module exists and is active before executing the upgrade logic.
 
 Use the `\Magento\Framework\Module\Manager` class to check the status of the module your extension depends on.

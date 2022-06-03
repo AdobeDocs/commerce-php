@@ -5,7 +5,7 @@ contributor_name: Atwix
 contributor_link: https://www.atwix.com/
 ---
 
-Widgets provide powerful features in Magento 2, that are used to add dynamic or static content to store's pages.
+Widgets provide powerful features that are used to add dynamic or static content to store's pages.
 Here are the widgets that are available by default:
 
 -  CMS Page Link
@@ -159,7 +159,7 @@ And finally, create the template that will be used for showing the widget's data
 
 ### Step 6. Clean Cache
 
-Clean the Magento cache with the following command:
+Clean the cache with the following command:
 
 ```bash
 bin/magento cache:clean

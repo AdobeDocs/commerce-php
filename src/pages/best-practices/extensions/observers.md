@@ -10,7 +10,7 @@ functional_areas:
 
 ### Overview
 
-[Observers](../../development/components/events-and-observers/index.md) are capable of modifying the behavior of a Magento application because they are dynamically injected into the execution flow. Poorly designed and coded observers can cause issues, instabilities, or otherwise break the application.
+[Observers](../../development/components/events-and-observers/index.md) are capable of modifying the behavior of the Adobe Commerce and Magento Open Source applications because they are dynamically injected into the execution flow. Poorly designed and coded observers can cause issues, instabilities, or otherwise break the application.
 
 We encourage you to follow these best practices aimed towards reducing problems when your observer is executed.
 

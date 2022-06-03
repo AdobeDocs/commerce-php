@@ -8,7 +8,7 @@ functional_areas:
   - Standards
 ---
 
-This tutorial shows you how to add a new dynamic rows system configuration in the [Magento admin](https://glossary.magento.com/magento-admin), by extending the [Magento/Config/Block/System/Config/Form/Field/FieldArray/AbstractFieldArray][0] class.
+This tutorial shows you how to add a new dynamic rows system configuration in the [Admin](https://glossary.magento.com/magento-admin), by extending the [Magento/Config/Block/System/Config/Form/Field/FieldArray/AbstractFieldArray][0] class.
 
 ## Step 1: Add a new system field
 
@@ -237,7 +237,7 @@ To verify the default values for the configuration are correct, do the following
 
 ## Step 5: Clean cache
 
-Clean the Magento cache with the following command:
+Clean the cache with the following command:
 
 ```bash
 bin/magento cache:clean

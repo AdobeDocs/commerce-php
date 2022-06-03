@@ -7,7 +7,7 @@ functional_areas:
   - Standards
 ---
 
-The [storefront](https://glossary.magento.com/storefront) theme is the front facing interface for a Magento application that can be customized through a [theme extension](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/themes/theme-overview.html). We suggest adopting the following best practices to avoid common problems we have seen other developers make while making a [theme](https://glossary.magento.com/theme) [extension](https://glossary.magento.com/extension).
+The [storefront](https://glossary.magento.com/storefront) theme is the front facing interface for the application that can be customized through a [theme extension](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/themes/theme-overview.html). We suggest adopting the following best practices to avoid common problems we have seen other developers make while making a [theme](https://glossary.magento.com/theme) [extension](https://glossary.magento.com/extension).
 
 ### Clear your cache periodically
 
@@ -29,4 +29,4 @@ When developing your theme extension, you should check how it looks using differ
 
 ### Inherit and customize
 
-There is a lot of work in building a theme extension for Magento from scratch. This is why we recommend you inherit and customize an existing theme. Magento comes with both Blank and Luma themes after initial install. You can leverage the work already done to make those two themes responsive by setting one of them as your theme's parent.
+There is a lot of work in building a theme extension from scratch. This is why we recommend you inherit and customize an existing theme. The application comes with both Blank and Luma themes after initial install. You can leverage the work already done to make those two themes responsive by setting one of them as your theme's parent.
