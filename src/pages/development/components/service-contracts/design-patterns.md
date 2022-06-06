@@ -3,7 +3,7 @@ title: Service Contract Design Patterns | Commerce PHP Extensions
 description: Follow these recommendations to define Adobe Commerce and Magento Open Source data and service interfaces.
 ---
 
-# Service contract design pattenrs
+# Service contract design patterns
 
 In the programming community, a _design pattern_ is a recommended way of writing code that includes when to use, or not use, the pattern. Think of a [design pattern](https://glossary.magento.com/design-pattern) as a best practice with conditions.
 
