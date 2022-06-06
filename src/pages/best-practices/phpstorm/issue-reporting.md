@@ -1,9 +1,9 @@
 ---
-group: extension-best-practices
-title: Issue reporting
-functional_areas:
-  - Standards
+title: Issue Reporting | Commerce PHP Extensions
+description: Learn how to report issues about the Adobe Commerce and Magento Open Source PHPStorm plugin.
 ---
+
+# Issue reporting
 
 There is now an extension point for the errorHandler to integrate the plugin with the IDE's dialog to report fatal errors.
 

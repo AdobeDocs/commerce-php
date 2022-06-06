@@ -3,6 +3,8 @@ title: Best Practices for Extension Developers | Commerce PHP Extensions
 description: Use this collection of best practices curated by the community and Adobe to avoid commonly reported issues in third-party Adobe Commerce and Magento Open source extensions.
 ---
 
+# Best practices for extension developers
+
 <InlineAlert variant="info" slots="text"/>
 
 This Best Practices guide is a living document, meant to be improved and revised as the software and our recommendations change. This guide combines best practices our community requested with guidelines that our User Experience (UX), Engineering, and Product teams create.

@@ -1,11 +1,9 @@
 ---
-group: extension-best-practices
-title: Creating an admin page
-functional_areas:
-  - Standards
+title: Create an Admin Page | Commerce PHP Extensions
+description: Follow this tutorial to create a module that displays a custom page in the Adobe Commerce and Magento Open Source Admin application.
 ---
 
-## Overview
+# Create an Admin page
 
 This tutorial gives instructions for the creation of a [module](https://glossary.magento.com/module) that displays a simple page in the [Admin](https://glossary.magento.com/magento-admin).
 

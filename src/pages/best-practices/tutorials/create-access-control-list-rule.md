@@ -1,9 +1,11 @@
 ---
-group: extension-best-practices
-title: Creating an Access Control List (ACL) rule
+title: Creating an Access Control List (ACL) rule | Commerce PHP Extensions
+description: Follow this tutorial to programmatically restrict access to custom Adobe Commerce and Magento Open Source resources.
 contributor_name: Ziffity
 contributor_link: https://www.Ziffity.com/
 ---
+
+# Create an access control list (ACL) rule
 
 Access Control List (ACL) rules allow an admin to limit the permissions of users. For example, you can use ACL rules to authorize the users to access menus, controllers, API endpoints and conditionally render [layout](https://glossary.magento.com/layout) [blocks](https://glossary.magento.com/block).
 

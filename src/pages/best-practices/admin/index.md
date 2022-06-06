@@ -1,9 +1,9 @@
 ---
-group: extension-best-practices
-title: Admin
-functional_areas:
-  - Standards
+title: Admin | Commerce PHP Extensions
+description: Learn how third-party extensions impact the Adobe Commerce and Magento Open Source Admin application.
 ---
+
+# Admin
 
 This section of the Best Practices Guide discusses the Admin, the UI panel used by administrators. It is where system and [storefront](https://glossary.magento.com/storefront) parameters can be modified and configured. Third-party extensions installed by the system [admin](https://glossary.magento.com/admin) or merchant are also found in this area, along with any of their configuration settings.
 

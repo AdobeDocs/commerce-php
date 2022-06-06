@@ -1,13 +1,13 @@
 ---
-group: extension-best-practices
-title: Code generation
-functional_areas:
-  - Standards
+title: Code Generation | Commerce PHP Extensions
+description: Learn about code generation in the Adobe Commerce and Magento Open Source PHPStorm plugin.
 ---
+
+# Code generation
 
 The PHPStorm plugin enables features and functionality to help you create custom extensions.
 
-### XML file header
+## XML file header
 
 The **XML file header** template is located in the PHPStorm plugin menu, under **Preferences** > **Editor** > **File and Code Templates**.
 
@@ -15,21 +15,21 @@ You can configure the **XML file header** that appears in all generated XML file
 
 ![](../../_images/best-practices/phpstorm/xml-file-header.png)
 
-#### Usage
+### Usage
 
 All generated XML files will include the **XML file header**:
 
 ![](../../_images/best-practices/phpstorm/xml-file-header-in-file.png)
 
-### Web API declaration generation
+## Web API declaration generation
 
 ![](../../_images/best-practices/phpstorm/web-api-declaration-2-min.gif)
 
-### Web API interface for service (PHP class) generation
+## Web API interface for service (PHP class) generation
 
 ![](../../_images/best-practices/phpstorm/declare-web-api-interface-min.gif)
 
-### Web API generation for the Magento Entity Creator
+## Web API generation for the Magento Entity Creator
 
 From now on, the Entity Creator feature also includes the Web API generation.
 

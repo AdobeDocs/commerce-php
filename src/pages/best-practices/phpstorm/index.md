@@ -1,9 +1,9 @@
 ---
-group: extension-best-practices
-title: PHPStorm plugin
-functional_areas:
-  - Standards
+title: PHPStorm Plugin | Commerce PHP Extensions
+description: Review an introduction to the PHPStorm plugin that the Magento Open Source community developed to improve the Adobe Commerce developer experience.
 ---
+
+# PHPStorm plugin
 
 The PHPStorm plugin is a tool created by the community to optimize routine coding operations and improve the Adobe Commerce development experience. The plugin is compatible with the IntelliJ IDEA Ultimate and PhpStorm IDEs. The functionality includes Adobe Commerce specific code generation shortcuts, code inspections, autocomplete functionality for configuration files, MFTF tests, and RequireJS.
 

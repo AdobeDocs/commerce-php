@@ -1,9 +1,11 @@
 ---
-group: extension-best-practices
-title: Creating an integration with an external API
+title: Create an Integration with an External API | Commerce PHP Extensions
+description: Follow this tutorial to integrate an external API with an Adobe Commerce or Magento Open Source extension.
 contributor_name: Atwix
 contributor_link: https://www.atwix.com/
 ---
+
+# Create an integration with an external API
 
 This tutorial shows you how to create an integration with an external API using [GuzzleHttp](http://docs.guzzlephp.org/en/stable/quickstart.html) library, that is included in the package.
 

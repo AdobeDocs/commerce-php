@@ -1,9 +1,9 @@
 ---
-group: extension-best-practices
-title: Run the Upgrade Compatibility Tool
-functional_areas:
-  - Standards
+title: Run the Upgrade Compatibility Tool | Commerce PHP Extensions
+description: Set up a run configuration to integrate the Adobe Commerce and Magento Open Source PHPStorm plugin with the Upgrade Compatibility Tool.
 ---
+
+# Run the Upgrade Compatibility Tool
 
 Run Configurations are used to run internal and external processes from within IntelliJ Platform-based products.
 

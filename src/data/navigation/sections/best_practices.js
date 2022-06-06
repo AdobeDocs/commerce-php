@@ -60,7 +60,7 @@ module.exports = [
           path: "/best-practices/phpstorm/code-inspection/",
         },
         {
-          title: "Adding code inspections",
+          title: "Add code inspections",
           path: "/best-practices/phpstorm/add-code-inspections/",
         },
         {
@@ -98,7 +98,7 @@ module.exports = [
           path: "/best-practices/tutorials/convert-serialized-data/",
         },
         {
-          title: "Modify image library folder permissions",
+          title: "Modify media library folder permissions",
           path: "/best-practices/tutorials/modify-image-library-permissions/",
         },
         {

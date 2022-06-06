@@ -1,12 +1,9 @@
 ---
-group: extension-best-practices
-subgroup: 02_Extension-Coding
-title: Creating a dynamic row system config
-menu_title: Creating a dynamic row system config
-menu_order: 1010
-functional_areas:
-  - Standards
+title: Create a Dynamic Row System Configuration | Commerce PHP Extensions
+description: Follow this tutorial to add a new dynamic row system configuration in the Adobe Commerce and Magento Open Source Admin application.
 ---
+
+# Create a dynamic row system configuration
 
 This tutorial shows you how to add a new dynamic rows system configuration in the [Admin](https://glossary.magento.com/magento-admin), by extending the [Magento/Config/Block/System/Config/Form/Field/FieldArray/AbstractFieldArray][0] class.
 

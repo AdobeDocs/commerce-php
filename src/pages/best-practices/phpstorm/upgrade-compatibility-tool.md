@@ -1,9 +1,9 @@
 ---
-group: extension-best-practices
-title: The built-in Upgrade Compatibility Tool (MVP)
-functional_areas:
-- Standards
+title: Built-in Upgrade Compatibility Tool | Commerce PHP Extensions
+description: Learn how to use the Upgrade Compatibility Tool with the Adobe Commerce and Magento Open Source PHPStorm plugin.
 ---
+
+# Built-in Upgrade Compatibility Tool
 
 The built-in Upgrade Compatibility Tool aims to achieve the same issues coverage as original Adobe Commerce [Upgrade Compatibility Tool](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html).
 There are three types of inspections covered by this MVP version:

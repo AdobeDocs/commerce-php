@@ -1,9 +1,11 @@
 ---
-group: extension-best-practices
-title: Custom import entity
+title: Create a Custom Import Entity | Commerce PHP Extensions
+description: Follow this tutorial to import data into a custom Adobe Commerce or Magento Open Source module's database table.
 contributor_name: Atwix
 contributor_link: https://www.atwix.com/
 ---
+
+# Create a custom import entity
 
 This tutorial shows you how to extend the [Magento/ImportExport/Model/Import/Entity/AbstractEntity][0] class to import data into your custom module's table.
 The current import entities can be found in **System** > **Import**:

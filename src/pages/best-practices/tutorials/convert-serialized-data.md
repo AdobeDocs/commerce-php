@@ -1,12 +1,9 @@
 ---
-group: extension-best-practices
-subgroup: Tutorials
-title: Serialized to JSON data upgrade
-menu_title: Serialized to JSON data upgrade
-menu_order: 1000
+title: Convert Serialized Data to JSON | Commerce PHP Extensions
+description: Follow this tutorial to convert database data from the defaul PHP serialized format to JSON.
 ---
 
-## Overview
+# Convert serliazed data to JSON
 
 The following tutorial lists the steps needed to create an upgrade script that converts the data stored in the database from the default [PHP](https://glossary.magento.com/php) serialized format to JSON format.
 

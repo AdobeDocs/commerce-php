@@ -1,9 +1,9 @@
 ---
-group: extension-best-practices
-title: Installation
-functional_areas:
-  - Standards
+title: Install | Commerce PHP Extensions
+description: Learn how to install the Adobe Commerce and Magento Open Source PHPStorm plugin.
 ---
+
+# Install
 
 To install the Magento PHPStorm plugin:
 
@@ -22,10 +22,10 @@ After the installation, it is necessary to enable the integration with Magento:
 
 You also need to provide:
 
-*  Magento installation path
-*  Adobe Commerce version (i.e., `2.4.1`)
+*  Adobe Commerce or Magento Open Source installation path
+*  Adobe Commerce or Magento Open Source version (for example, `2.4.4`)
 *  Default license name for new modules (by default, `Proprietary`)
 
 ![](../../_images/best-practices/phpstorm/enable-magento-integration.png)
 
-See the video tutorial [Using the Upgrade Compatibility Tool on PHP Storm](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/uct-phpstorm.html?lang=en) page for more information about the Magento PHPStorm plugin.
+See the video tutorial [Using the Upgrade Compatibility Tool on PHP Storm](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/uct-phpstorm.html?lang=en) page for more information about the PHPStorm plugin.

@@ -1,14 +1,9 @@
 ---
-group: extension-best-practices
-subgroup: 01_Admin
-title: Admin Panel Placement and Design
-menu_title: Admin Panel Placement and Design
-menu_order: 1
-functional_areas:
-  - Standards
+title: Admin Panel Placement and Design | Commerce PHP Extensions
+description: Review best practices for designing and placing your extension in the Adobe Commerce and Magento Open Source Admin application.
 ---
 
-## Overview
+# Admin panel placement and design
 
 The flixeible Adobe Commerce and Magento Open Source framework lets you place an [extension](https://glossary.magento.com/extension) anywhere in the [Admin](https://glossary.magento.com/admin) panel. However, it can be difficult finding the right place for your extension and how it should look, so we’ve prepared the following guidelines to help.
 

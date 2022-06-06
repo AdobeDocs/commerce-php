@@ -1,9 +1,9 @@
 ---
-group: extension-best-practices
-title: Adding code inspections
-functional_areas:
-  - Standards
+title: Add Code Inspections | Commerce PHP Extensions
+description: Learn how to add code inspections with the Adobe Commerce and Magento Open Source PHPStorm plugin.
 ---
+
+# Add code inspections
 
 The IntelliJ Platform provides tools designed for static code analysis called code inspections, which help you maintain and clean up code without actually executing it.
 Read more in the [official documentation](https://plugins.jetbrains.com/docs/intellij/code-inspections.html).
@@ -16,7 +16,7 @@ Use a filter to find only the plugin inspections: `Magento 2`.
 See [Inspections topic](https://jetbrains.design/intellij/text/inspections/) in the IntelliJ Platform UI Guidelines
 for naming, writing descriptions, and messages for inspections to avoid basic naming convention issues before code review.
 
-### To add a new inspection
+## To add a new inspection
 
 Adding a new code inspection includes:
 
@@ -28,7 +28,7 @@ Adding a new code inspection includes:
 1. Implementing a quick fix class to correct syntax problems by altering the PSI tree as needed
 1. Implementing an inspection preferences panel to display information about the inspection
 
-### Declaring an inspection in the plugin configuration file
+## Declaring an inspection in the plugin configuration file
 
 You must declare all plugin inspections in the `<extensions defaultExtensionNs="com.intellij">` XML node of the plugin configuration file.
 
@@ -63,7 +63,7 @@ Add a new bundle message with key `inspection.displayName.InvalidDiTypeInspectio
 inspection.displayName.InvalidDiTypeInspection=Invalid type configuration in the `etc/di.xml` file
 ```
 
-### Implementing a local inspection class to inspect code in the IntelliJ Platform-based IDE editor
+## Implementing a local inspection class to inspect code in the IntelliJ Platform-based IDE editor
 
 The base class for all local inspections is `com.intellij.codeInspection.LocalInspectionTool`.
 
@@ -102,7 +102,7 @@ public class InvalidDependencyInjectionTypeInspection extends XmlSuppressableIns
 }
 ```
 
-### Creating a visitor to traverse the PSI tree of the file being edited and inspecting for problematic syntax
+## Creating a visitor to traverse the PSI tree of the file being edited and inspecting for problematic syntax
 
 All visitors should extend `com.intellij.psi.PsiElementVisitor`.
 
@@ -163,7 +163,7 @@ You should report problems with the tag element similar to Intellij Idea inspect
 
 So, there is a full example: [InvalidDependencyInjectionTypeInspection]
 
-### Writing HTML descriptions
+## Writing HTML descriptions
 
 This section shows you how to display an HTML description of the inspection in the inspection preferences panel.
 
@@ -175,7 +175,7 @@ All inspection implementation classes have highlighted class names if they don't
 
 Use [Inspections topic](https://jetbrains.design/intellij/text/inspections/) to write better descriptions for inspections using naming conventions.
 
-### Create a unit test for the inspection
+## Create a unit test for the inspection
 
 You must deliver each inspection with the unit test for it. The root folder for all inspections unit tests is `./tests/com/magento/idea/magento2plugin/inspections`. As base classes for your tests you should use predefined implementations based on languages.
 

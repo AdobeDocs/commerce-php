@@ -1,9 +1,11 @@
 ---
-group: extension-best-practices
-title: Custom widget
+title: Create a Custom Widget | Commerce PHP Extensions
+description: Follow this tutorial to create a custom widget in your Adobe Commerce or Magento Open Source extension.
 contributor_name: Atwix
 contributor_link: https://www.atwix.com/
 ---
+
+# Create a custom widget
 
 Widgets provide powerful features that are used to add dynamic or static content to store's pages.
 Here are the widgets that are available by default:

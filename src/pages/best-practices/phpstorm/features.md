@@ -1,9 +1,9 @@
 ---
-group: extension-best-practices
-title: New features
-functional_areas:
-  - Standards
+title: Features | Commerce PHP Extensions
+description: Learn about the features provided by the Adobe Commerce and Magento Open Source PHPStorm plugin.
 ---
+
+# Features
 
 The following sections describe best practices for using the PHPStorm plugin.
 
