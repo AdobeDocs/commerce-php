@@ -5,6 +5,10 @@ description: Learn how to create classes that execute code when Adobe Commerce a
 
 # Extension lifecycle
 
+<InlineAlert variant="info" slots="text"/>
+
+The recommendations laid out below are to be phased out in the future in favor of [declarative schema](https://developer.adobe.com/commerce/php/development/components/declarative-schema/#declarative-schema) development approaches.
+
 This topic describes a module's lifecycle and how to create classes that execute code when your module is initialized, upgraded, or uninstalled.
 These executable classes can perform tasks that set up the database, update data, and clean up data.
 
