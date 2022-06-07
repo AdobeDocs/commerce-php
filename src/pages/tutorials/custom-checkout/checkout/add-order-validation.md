@@ -15,7 +15,7 @@ To add custom validations before the order placement action, you must do the fol
 
 ## Step 1: Create the validator
 
-For the sake of compatibility, upgradability and easy maintenance, do not edit the default Magento code, add your customizations in a separate module. For your checkout customization to be applied correctly, your custom module should [depend](../../../development/build/composer-integration.md) on the `Magento_Checkout` module. Do not use `Ui` for your custom module name, because `%Vendor%_Ui` notation, required when specifying paths, might cause issues.
+For the sake of compatibility, upgradability and easy maintenance, do not edit the default application code, add your customizations in a separate module. For your checkout customization to be applied correctly, your custom module should [depend](../../../development/build/composer-integration.md) on the `Magento_Checkout` module. Do not use `Ui` for your custom module name, because `%Vendor%_Ui` notation, required when specifying paths, might cause issues.
 
 In your custom module directory, create a `.js` file implementing the validator. It should be located under `<your_module_dir>/view/frontend/web/js/model` directory.
 

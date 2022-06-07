@@ -7,9 +7,9 @@ description:
 
 This topic describes how a developer can add custom input masks.
 
-When a shopper specifies the country and ZIP code in the shipping address during [checkout](https://glossary.magento.com/checkout) or in the shopping cart, Magento checks if the format of the entered code is valid for the specified country. This validation is implemented using the input masks for the ZIP code field. In Magento, these input masks are regular expressions which define which format is allowed.
+When a shopper specifies the country and ZIP code in the shipping address during [checkout](https://glossary.magento.com/checkout) or in the shopping cart, the application checks if the format of the entered code is valid for the specified country. This validation is implemented using the input masks for the ZIP code field. In Adobe Commerce and Magento Open Source, these input masks are regular expressions which define which format is allowed.
 
-In Magento the input masks for the **ZIP code** field are specified in the `<Magento_Directory_module_dir>/etc/zip_codes.xml`. Input masks are specified per country, and are entered in the form of regular expressions.
+In Adobe Commerce and Magento Open Source the input masks for the **ZIP code** field are specified in the `<Magento_Directory_module_dir>/etc/zip_codes.xml`. Input masks are specified per country, and are entered in the form of regular expressions.
 The syntax of defined by the [zip_code.xsd](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Directory/etc/zip_codes.xsd) scheme.
 
 The following table defines the `zip` node attributes:
@@ -41,7 +41,7 @@ You can define several zip `code` patterns for the same country, by passing a li
     </codes>
 ```
 
-For the sake of compatibility, upgradability, and easy maintenance, do not edit the default Magento code. Add your customizations in a separate, custom module. For your ZIP code input mask customization to be applied correctly, your custom module should depend on the `Magento_Directory` module. Do not use `Ui` for your custom module name, because `%Vendor%_Ui` notation, required when specifying paths, might cause issues.
+For the sake of compatibility, upgradability, and easy maintenance, do not edit the default application code. Add your customizations in a separate, custom module. For your ZIP code input mask customization to be applied correctly, your custom module should depend on the `Magento_Directory` module. Do not use `Ui` for your custom module name, because `%Vendor%_Ui` notation, required when specifying paths, might cause issues.
 
 To add custom ZIP code input masks or change the default ones, create a new `zip_codes.xml` in the `<your_module_dir>/etc` directory.
 

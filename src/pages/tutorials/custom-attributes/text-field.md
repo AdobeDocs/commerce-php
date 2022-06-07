@@ -9,13 +9,13 @@ contributor_link: https://github.com/drpayyne
 
 This tutorial describes how a developer can create a custom text field attribute for the Customer entity using code. This will reflect in both the [Customer Grid](https://docs.magento.com/user-guide/customers/customer-account-manage.html) and the [Customer Form](https://docs.magento.com/user-guide/customers/customer-account-update.html) in the Admin.
 
-This Customer attribute will be used to save and view the customer's ID in an external system, as an example. It will be created as an EAV attribute in a data patch. The EAV model allows a developer to add custom functionality to the Magento entities without modifying the core databases and schemas. Data patches are run just once, so this code will create the custom attribute and will never run again, which could cause issues.
+This Customer attribute will be used to save and view the customer's ID in an external system, as an example. It will be created as an EAV attribute in a data patch. The EAV model allows a developer to add custom functionality to the entities without modifying the core databases and schemas. Data patches are run just once, so this code will create the custom attribute and will never run again, which could cause issues.
 
 ## Code
 
 ### Create the data patch class
 
-Create a data patch class called `ExternalId` under the `\ExampleCorp\Customer\Setup\Patch\Data` namespace. This makes Magento execute the data patch automatically when `bin/magento setup:upgrade` is run. All data patches must implement the `\Magento\Framework\Setup\Patch\DataPatchInterface` interface.
+Create a data patch class called `ExternalId` under the `\ExampleCorp\Customer\Setup\Patch\Data` namespace. This makes the application execute the data patch automatically when `bin/magento setup:upgrade` is run. All data patches must implement the `\Magento\Framework\Setup\Patch\DataPatchInterface` interface.
 
 ```php
 <?php
@@ -48,7 +48,7 @@ class ExternalId implements DataPatchInterface
 The dependencies to the data patch are injected using constructor DI and are listed below:
 
 -  `\Magento\Framework\Setup\ModuleDataSetupInterface` for initializing and ending the setup.
--  `\Magento\Customer\Setup\CustomerSetupFactory` for creating a model of `\Magento\Customer\Setup\CustomerSetup` which is required to add the custom attribute to Magento.
+-  `\Magento\Customer\Setup\CustomerSetupFactory` for creating a model of `\Magento\Customer\Setup\CustomerSetup` which is required to add the custom attribute.
 -  `\Magento\Customer\Model\ResourceModel\Attribute` aliased as `AttributeResource` for saving the attribute after adding custom data to it.
 -  `\Psr\Log\LoggerInterface` for logging exceptions thrown during the execution.
 
@@ -93,7 +93,7 @@ There are five steps in developing a data patch. All the steps below are written
 
 1. Add the text field customer attribute with the required settings.
 
-    The third parameter for `addAttribute` is an array of settings required to configure the attribute. Passing an empty array uses all the default values for each possible setting. To keep the code to a minimum, just declare the settings needing to be overridden and the rest of the settings will be used from the Magento defaults. The settings overrides can be done as described below.
+    The third parameter for `addAttribute` is an array of settings required to configure the attribute. Passing an empty array uses all the default values for each possible setting. To keep the code to a minimum, just declare the settings needing to be overridden and the rest of the settings will be used from the defaults. The settings overrides can be done as described below.
 
     For creating a simple text field, it is not necessary to override the settings for `backend` (database field type) and `input` (frontend HTML input type), as they default to `varchar` and `text` respectively.
 
@@ -131,7 +131,7 @@ There are five steps in developing a data patch. All the steps below are written
 
 1. Add attribute to an attribute set and group.
 
-    There is only one attribute set and group for the customer entity. The default attribute set ID is a constant defined the `CustomerMetadataInterface` interface and setting the attribute group ID to null makes Magento use the default attribute group ID for the customer entity.
+    There is only one attribute set and group for the customer entity. The default attribute set ID is a constant defined the `CustomerMetadataInterface` interface and setting the attribute group ID to null makes the application use the default attribute group ID for the customer entity.
 
     ```php
     $this->customerSetup->addAttributeToSet(
@@ -186,7 +186,7 @@ public function getAliases(): array
 
 ### Execute the data patch
 
-Run `bin/magento setup:upgrade` from the Magento root to execute the newly added data patch.
+Run `bin/magento setup:upgrade` from the project root to execute the newly added data patch.
 
 -  The attribute is created in the customer form under the _Account Information_ section.
 

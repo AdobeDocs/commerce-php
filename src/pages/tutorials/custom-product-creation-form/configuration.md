@@ -72,7 +72,7 @@ To delete an existing field, or field set, in your `product_form.xml` use the fo
 ...
 ```
 
-For reference, view the product form configuration files of the Magento modules:
+For reference, view the product form configuration files of the application modules:
 
 *  `<Magento_Catalog_module_dir>/view/adminhtml/ui_component/product_form.xml`
 *  `<Magento_CatalogInventory_module_dir>/view/adminhtml/ui_component/product_form.xml`

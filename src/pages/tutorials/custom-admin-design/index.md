@@ -19,7 +19,7 @@ The location of your customizations appears here:
 
 ## Prerequisites
 
--  Magento installed
+-  Adobe Commerce or Magento Open Source installed
 -  Credentials or access to Admin
 
 ## Steps
@@ -28,7 +28,7 @@ The location of your customizations appears here:
 
 The following walk-through uses version 2.1.0 and later.
 
-On a default Magento installation, when you navigate to **CONTENT > Design > Configuration** in Admin, the first page that opens displays a grid with the available configuration scopes and assigned themes. It looks like following:
+On a default Adobe Commerce or Magento Open Source installation, when you navigate to **CONTENT > Design > Configuration** in Admin, the first page that opens displays a grid with the available configuration scopes and assigned themes. It looks like following:
 
 ![Design Configuration](../../_images/tutorials/design_conf1.png)
 
@@ -70,7 +70,7 @@ To customize the grid view, take the following steps:
 
 Your `design_config_listing.xml` file is merged with the same files from the other modules, so there is no need to copy their contents. You only need to define changes. Even if you want to customize the existing entities, you only need to mention those options for which the values are customized.
 
-For reference, view the grid configuration files of the Magento modules:
+For reference, view the grid configuration files of the modules:
 
 -  `<Magento_Backend_module_dir>/view/adminhtml/ui_component/design_config_listing.xml`
 -  `<Magento_Theme_module_dir>/view/adminhtml/ui_component/design_config_listing.xml`
@@ -162,7 +162,7 @@ To delete an existing field, or field set, in your `design_config_form.xml` file
 ...
 ```
 
-For reference, view the form configuration files of these Magento modules:
+For reference, view the form configuration files of these modules:
 
 -  `<Magento_Backend_module_dir>/view/adminhtml/ui_component/design_config_form.xml`
 -  `<Magento_Catalog_module_dir>/view/adminhtml/ui_component/design_config_form.xml`
@@ -224,7 +224,7 @@ Example of a field declaration:
 </type>
 ```
 
-For more examples and reference, view the `di.xml` files of these Magento modules:
+For more examples and reference, view the `di.xml` files of these modules:
 
 -  `<Magento_Backend_module_dir>/etc/di.xml`
 -  `<Magento_Catalog_module_dir>/etc/di.xml`

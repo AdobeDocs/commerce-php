@@ -113,7 +113,7 @@ The `sortOrder` parameter defines the order of invocation for your `modifyData()
 
 To access product model within your modifier, it's recommended to use an instance of `Magento\Catalog\Model\Locator\LocatorInterface`.
 
-For reference, view the modifier classes in the Magento modules, for example:
+For reference, view the modifier classes in the modules, for example:
 
 -  [`Magento/Catalog/Ui/DataProvider/Product/Form/Modifier/AdvancedPricing`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Ui/DataProvider/Product/Form/Modifier/AdvancedPricing.php)
 -  [`Magento/Catalog/Ui/DataProvider/Product/Form/Modifier/AttributeSet`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Ui/DataProvider/Product/Form/Modifier/AttributeSet.php)

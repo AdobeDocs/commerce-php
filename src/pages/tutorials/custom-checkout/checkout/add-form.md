@@ -11,7 +11,7 @@ This topic describes how to add a custom input form (implemented as a UI compone
 
 Most of the elements, including the default forms on the Checkout page are implemented as UI components. And we recommend your custom form to be a UI component, extending the default [Magento_Ui/js/form/form](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Ui/view/base/web/js/form/form.js) component.
 
-Magento provides the ability to add a custom form to any of the checkout steps: Shipping Information, Review and Payment Information, or custom. In order to add a custom form that is a UI component, take the following steps:
+The application provides the ability to add a custom form to any of the checkout steps: Shipping Information, Review and Payment Information, or custom. In order to add a custom form that is a UI component, take the following steps:
 
 1. [Create the JS implementation of the form UI component](#step-1-create-the-js-implementation-of-the-form-ui-component).
 1. [Create the knockout.js HTML template for rendering the form](#step-2-create-the-html-template).
@@ -19,9 +19,9 @@ Magento provides the ability to add a custom form to any of the checkout steps: 
 
 ## Prerequisites
 
-[Set Magento to developer mode](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-mode.html) while you perform all customizations and debugging.
+[Change to developer mode](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-mode.html) while you perform all customizations and debugging.
 
-For the sake of compatibility, upgradability, and easy maintenance, do not edit the default Magento code. Instead, add your customizations in a separate module. For your checkout customization to be applied correctly, your custom module should [depend](../../../development/build/composer-integration.md) on the `Magento_Checkout` module.
+For the sake of compatibility, upgradability, and easy maintenance, do not edit the default application code. Instead, add your customizations in a separate module. For your checkout customization to be applied correctly, your custom module should [depend](../../../development/build/composer-integration.md) on the `Magento_Checkout` module.
 
 Do not use `Ui` for your custom module name, because `%Vendor%_Ui` notation, required when specifying paths, might cause issues.
 

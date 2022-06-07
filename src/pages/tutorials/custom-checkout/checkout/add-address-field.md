@@ -116,7 +116,7 @@ To see an example of a mixing that modifies one of these components, see the [pl
 
 ## Step 3: Load your mixin
 
-Tell Magento to load your mixin for the corresponding JS component by adding the `requirejs-config.js` to the `<YourModule_dir>/view/frontend/` directory.
+Tell the application to load your mixin for the corresponding JS component by adding the `requirejs-config.js` to the `<YourModule_dir>/view/frontend/` directory.
 
 The following code sample shows an example utilizing the sample mixin added earlier:
 
@@ -152,7 +152,7 @@ Clear the `generated/code` directory when you run the `setup:di:compile` command
 
 ## Step 5: Access the value of the custom field on server side
 
-If you completed all the steps described in the previous sections, Magento will generate the interface that includes your custom attribute and you can access your field value.
+If you completed all the steps described in the previous sections, the application generates the interface that includes your custom attribute and you can access your field value.
 
 You can set/get these attributes values by creating an instance of the  `Magento/Quote/Api/Data/AddressInterface.php` interface.
 

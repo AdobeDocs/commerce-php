@@ -7,12 +7,12 @@ description:
 
 This topic describes how to implement a custom shipping address renderer.
 
-Out of the box, Magento [checkout](https://glossary.magento.com/checkout) consists of two steps:
+Out of the box, [checkout](https://glossary.magento.com/checkout) consists of two steps:
 
 -  Shipping Information
 -  Review and Payment Information
 
-On the Shipping Information checkout step Magento renders all addresses previously saved by a shopper. The shopper can then select the one to be used for shipping by clicking it. The default address renderers cover the majority of use cases, but Magento provides way to register custom address renderer for a new address type.
+On the Shipping Information checkout step, the application renders all addresses previously saved by a shopper. The shopper can then select the one to be used for shipping by clicking it. The default address renderers cover the majority of use cases, but the application provides a way to register custom address renderer for a new address type.
 
 To implement shipping address rendering in checkout, you need to take the following steps:
 
@@ -28,7 +28,7 @@ To implement shipping address rendering in checkout, you need to take the follow
 
 Your shipping address renderer must be implemented as a [JavaScript](https://glossary.magento.com/javascript) [UI component](https://glossary.magento.com/ui-component). That is, it must be a RequireJS module, and must return a factory function, that takes a configurable object.
 
-For the sake of compatibility, upgradability and easy maintenance, do not edit the default Magento code. Instead add your customizations in a separate module. For your checkout customization to be applied correctly, your custom module must depend on the `Magento_Checkout` module. Module dependencies are specified in the [module's `composer.json`](../../../development/build/composer-integration.md). Do not use `Ui` for your custom module name, because `%Vendor%_Ui` notation, required when specifying paths, might cause issues.
+For the sake of compatibility, upgradability and easy maintenance, do not edit the default application code. Instead add your customizations in a separate module. For your checkout customization to be applied correctly, your custom module must depend on the `Magento_Checkout` module. Module dependencies are specified in the [module's `composer.json`](../../../development/build/composer-integration.md). Do not use `Ui` for your custom module name, because `%Vendor%_Ui` notation, required when specifying paths, might cause issues.
 
 In your custom module directory, create the component's `.js` file (shipping address renderer). It must be located under the `<your_module_dir>/view/frontend/web/js/view/` directory.
 

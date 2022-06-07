@@ -7,12 +7,12 @@ description:
 
 This topic describes how to create the [frontend](https://glossary.magento.com/frontend) part of the component, implementing a checkout step, and how to add it to the checkout flow.
 
-The default Magento [Checkout](https://glossary.magento.com/checkout) consists of two steps:
+The default [Checkout](https://glossary.magento.com/checkout) consists of two steps:
 
 -  Shipping Information
 -  Review and Payments Information
 
-You can add a custom checkout step, it should be implemented as a [UI component](https://glossary.magento.com/ui-component). For the sake of compatibility, upgradability and easy maintenance, do not edit the default Magento code, add your customizations in a separate [module](https://glossary.magento.com/module).
+You can add a custom checkout step, it should be implemented as a [UI component](https://glossary.magento.com/ui-component). For the sake of compatibility, upgradability and easy maintenance, do not edit the default application code, add your customizations in a separate [module](https://glossary.magento.com/module).
 
 1. [Create the view part of the checkout step component](#step-1-create-the-view-part-of-the-checkout-step-component).
 1. [Add your step to the Checkout page layout](#step-2-add-your-step-to-the-checkout-page-layout).

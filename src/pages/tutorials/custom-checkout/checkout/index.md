@@ -5,7 +5,7 @@ description:
 
 # Customize checkout
 
-Magento [checkout](https://glossary.magento.com/checkout) is implemented using the [UI components](https://devdocs.magento.com/guides/v2.4/ui_comp_guide/bk-ui_comps.html).
+[Checkout](https://glossary.magento.com/checkout) is implemented using the [UI components](https://devdocs.magento.com/guides/v2.4/ui_comp_guide/bk-ui_comps.html).
 Out of the box, the checkout consists of two steps:
 
 -  Shipping Information
@@ -17,7 +17,7 @@ The only [exception](https://glossary.magento.com/exception) is checkout of virt
 
 <InlineAlert variant="info" slots="text"/>
 
-For the sake of compatibility, upgradability, and easy maintenance, do not edit the default Magento code. Add your customizations in a custom [module](https://glossary.magento.com/module).
+For the sake of compatibility, upgradability, and easy maintenance, do not edit the default application code. Add your customizations in a custom [module](https://glossary.magento.com/module).
 
 ## List of available customizations
 

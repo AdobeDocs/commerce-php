@@ -5,7 +5,7 @@ description:
 
 # Customize the view of a checkout step
 
-This topic contains the basic information about how to customize the view of an existing [checkout](https://glossary.magento.com/checkout) step. In the Magento application, checkout is implemented using UI components. You can customize each step by [changing the JavaScript implementation or template](#change-the-components-js-implementation-and-template) for a component, [adding](#add-the-new-component-to-the-checkout-page-layout), [disabling](#disable-a-component), or [removing](#remove-a-component) a component.
+This topic contains the basic information about how to customize the view of an existing [checkout](https://glossary.magento.com/checkout) step. In the Adobe Commerce and Magento Open Source application, checkout is implemented using UI components. You can customize each step by [changing the JavaScript implementation or template](#change-the-components-js-implementation-and-template) for a component, [adding](#add-the-new-component-to-the-checkout-page-layout), [disabling](#disable-a-component), or [removing](#remove-a-component) a component.
 
 ## Change the component's .js implementation and template
 
