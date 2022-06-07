@@ -18,22 +18,22 @@ You can add a custom checkout step, it should be implemented as a [UI component]
 1. [Add your step to the Checkout page layout](#checkout).
 1. [Create mixins for payment and shipping steps (optional)](#create-mixin).
 
-## Step 1: Create the view part of the checkout step component {#create-view}
+## Step 1: Create the view part of the checkout step component
 
 To create the view part of the new checkout step:
 
-1. Add a module directory (not covered in this topic). See [Build your module]({{ page.baseurl }}/extension-dev-guide/build/build.html) for details). All custom files must be stored there. For your checkout customization to be applied correctly, your custom module should depend on the `Magento_Checkout` module. Do not use `Ui` for your custom module name, because `%Vendor%_Ui` notation, required when specifying paths, might cause issues.
+1. Add a module directory (not covered in this topic). See [Build your module](../../../development/build/index.md) for details). All custom files must be stored there. For your checkout customization to be applied correctly, your custom module should depend on the `Magento_Checkout` module. Do not use `Ui` for your custom module name, because `%Vendor%_Ui` notation, required when specifying paths, might cause issues.
 1. [Create the `.js` file implementing the view model](#component).
 1. [Create a `.html` template for the component](#html-template).
 
-### Add the JavaScript file implementing the new step {#component}
+### Add the JavaScript file implementing the new step
 
 A new checkout step must be implemented as UI component. That is, its [JavaScript](https://glossary.magento.com/javascript) implementation must be a JavaScript module.
 
 The file must be stored under the `<your_module_dir>/view/frontend/web/js/view` directory.
 
 <InlineAlert variant="info" slots="text"/>
-`<your_module_dir>` notation stands for the path to your module directory from the root directory. Usually it will be one of the following: `app/code/<YourVendor>/<YourModule>` or `vendor/<yourvendor>/module-<module>-<name>`. For more details see [Conventional notations for paths to modules and themes]({{ page.baseurl }}/frontend-dev-guide/conventions.html)
+`<your_module_dir>` notation stands for the path to your module directory from the root directory. Usually it will be one of the following: `app/code/<YourVendor>/<YourModule>` or `vendor/<yourvendor>/module-<module>-<name>`. For more details see [Conventional notations for paths to modules and themes](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/conventions.html)
 
 A sample `my-step-view.js` with comments follows:
 
@@ -109,7 +109,7 @@ define([
 });
 ```
 
-### Add the .html template {#html-template}
+### Add the .html template
 
 In the module directory, add the `.html` template for the component. It must be located under the `<your_module_dir>/view/frontend/web/template` directory.
 
@@ -136,11 +136,11 @@ A sample `mystep.html` follows:
 </li>
 ```
 
-## Step 2: Add your step to the Checkout page layout {#checkout}
+## Step 2: Add your step to the Checkout page layout
 
 For the new step to be displayed on the page, you need to declare it in the Checkout page layout, which is defined in `checkout_index_index.xml`.
 
-So you need to add an [extending]({{ page.baseurl }}/frontend-dev-guide/layouts/layout-extend.html) `checkout_index_index.xml` layout file in the following location: `<your_module_dir>/view/frontend/layout/checkout_index_index.xml`
+So you need to add an [extending](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/layout-extend.html) `checkout_index_index.xml` layout file in the following location: `<your_module_dir>/view/frontend/layout/checkout_index_index.xml`
 
 A sample `checkout_index_index.xml` follows:
 
@@ -178,7 +178,7 @@ A sample `checkout_index_index.xml` follows:
 </page>
 ```
 
-## Step 3: Create mixins for payment and shipping steps (optional) {#create-mixin}
+## Step 3: Create mixins for payment and shipping steps (optional)
 
 If your new step is the first step, you have to create mixins for the payment and shipping steps. Otherwise, two steps will be activated on the loading of the checkout.
 
@@ -228,4 +228,4 @@ Create a mixin as follows:
 
 <InlineAlert variant="info" slots="text"/>
 
-For your changes to be applied, you might need to [clean layout cache]({{ page.baseurl }}/config-guide/cli/config-cli-subcommands-cache.html ) and [static view file cache]({{ page.baseurl }}/frontend-dev-guide/cache_for_frontdevs.html#clean_static_cache). For more info on mixins, see [JS Mixins]({{ page.baseurl }}/javascript-dev-guide/javascript/js_mixins.html).
+For your changes to be applied, you might need to [clean layout cache](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cache.html ) and [static view file cache](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/cache_for_frontdevs.html#clean_static_cache). For more info on mixins, see [JS Mixins](https://devdocs.magento.com/guides/v2.4/javascript-dev-guide/javascript/js_mixins.html).

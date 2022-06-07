@@ -5,7 +5,7 @@ description:
 
 # Customize checkout
 
-Magento [checkout](https://glossary.magento.com/checkout) is implemented using the [UI components]({{ page.baseurl }}/ui_comp_guide/bk-ui_comps.html).
+Magento [checkout](https://glossary.magento.com/checkout) is implemented using the [UI components](https://devdocs.magento.com/guides/v2.4/ui_comp_guide/bk-ui_comps.html).
 Out of the box, the checkout consists of two steps:
 
 -  Shipping Information
@@ -23,15 +23,15 @@ For the sake of compatibility, upgradability, and easy maintenance, do not edit 
 
 You can customize the default checkout in multiple ways. This tutorial includes the following customizations:
 
--  [Add a new checkout step]({{ page.baseurl }}/howdoi/checkout/checkout_new_step.html)
--  [Customize the view of an existing step]({{ page.baseurl }}/howdoi/checkout/checkout_customize.html)
--  [Add a custom payment method to checkout]({{ page.baseurl }}/howdoi/checkout/checkout_payment.html)
--  [Add custom validations before order placement]({{ page.baseurl }}/howdoi/checkout/checkout_order.html)
--  [Add custom shipping carrier]({{ page.baseurl }}/howdoi/checkout/checkout-add-custom-carrier.html)
--  [Add custom shipping carrier validations]({{ page.baseurl }}/howdoi/checkout/checkout_carrier.html)
--  [Add custom input mask for ZIP code]({{ page.baseurl }}/howdoi/checkout/checkout_zip.html)
--  [Add a custom template for a form field on Checkout page]({{ page.baseurl }}/howdoi/checkout/checkout_edit_form.html)
--  [Add a new input form to checkout]({{ page.baseurl }}/howdoi/checkout/checkout_form.html)
--  [Add a new field in address form]({{ page.baseurl }}/howdoi/checkout/checkout_new_field.html)
--  [Add custom shipping address renderer]({{ page.baseurl }}/howdoi/checkout/checkout_address.html)
--  [Add a custom field for an offline payment method]({{ page.baseurl }}/howdoi/checkout/checkout_payment_new_field.html)
+-  [Add a new checkout step](add-new-step.md)
+-  [Customize the view of an existing step](customize-view.md)
+-  [Add a custom payment method to checkout](add-payment-method.md)
+-  [Add custom validations before order placement](add-order-validation.md)
+-  [Add custom shipping carrier](add-shipping-carrier.md)
+-  [Add custom shipping carrier validations](add-carrier-validation.md)
+-  [Add custom input mask for ZIP code](add-input-mask.md)
+-  [Add a custom template for a form field on Checkout page](add-template.md)
+-  [Add a new input form to checkout](add-form.md)
+-  [Add a new field in address form](add-address-field.md)
+-  [Add custom shipping address renderer](add-address-renderer.md)
+-  [Add a custom field for an offline payment method](add-payment-field.md)

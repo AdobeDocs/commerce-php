@@ -13,7 +13,7 @@ Let's consider a case where you need to add a collapsible text field with descri
 1. [Create a new template for the shipping method list](#method-list).
 1. [Override the shipping step configuration](#shipping).
 
-## Step 1: Create new template for shipping method item {#method-item}
+## Step 1: Create new template for shipping method item
 
 In your custom module directory, create a new file: `<your_module_dir>/view/frontend/web/template/custom-method-item-template.html`. In this file, add the following code.
 
@@ -72,7 +72,7 @@ It is copied from the `<Magento_Checkout_module_dir>/view/frontend/web/template/
 </tbody>
 ```
 
-## Step 2: Create new template for shipping methods list {#method-list}
+## Step 2: Create new template for shipping methods list
 
 In your custom module directory, create a new file: `<your_module_dir>/view/frontend/web/template/custom-method-list-template.html`. In this file, add the following code. It uses the code from the `app/code/Magento/Checkout/view/frontend/web/template/shipping-address/shipping-method-list.html` template, with the following modifications:
 
@@ -94,7 +94,7 @@ In your custom module directory, create a new file: `<your_module_dir>/view/fron
 </div>
 ```
 
-## Step 3: Override shipping step configuration {#shipping}
+## Step 3: Override shipping step configuration
 
 In your custom module directory, create a new file: `<your_module_dir>/view/frontend/layout/checkout_index_index.xml`. In this file, add the following code.
 

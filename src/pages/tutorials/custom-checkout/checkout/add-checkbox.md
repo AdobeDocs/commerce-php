@@ -15,7 +15,7 @@ To implement such a checkbox, take the following steps:
 1. [Declare the plugin in your module's `di.xml`](#declare-plugin).
 1. [Create a JS component for the checkbox with custom logic](#create-jscomponent).
 
-## Step 1: Create a plugin for the `LayoutProcessor`'s process method {#create-plugin}
+## Step 1: Create a plugin for the `LayoutProcessor`'s process method
 
 In your custom module directory, create the following new file: `<your_module_dir>/Block/Checkout/SomeProcessor.php`. In this file, add the following code sample. This is a plugin that adds a checkbox, makes the street labels trackable, and assigns dependencies to the checkbox.
 
@@ -123,9 +123,9 @@ class SomeProcessor
 }
 ```
 
-For more information on creating plugins, see [Plugins (Interceptors)]({{ page.baseurl }}/extension-dev-guide/plugins.html).
+For more information on creating plugins, see [Plugins (Interceptors)](../../../development/components/plugins.md).
 
-## Step 2: Declare plugin in di.xml {#declare-plugin}
+## Step 2: Declare plugin in di.xml
 
 In `<your_module_dir>/etc/frontend/di.xml`, declare the plugin you created on the previous step. The plugin name is arbitrary, in our example it's `ProcessAddressConfiguration`:
 
@@ -138,7 +138,7 @@ In `<your_module_dir>/etc/frontend/di.xml`, declare the plugin you created on th
 </config>
 ```
 
-## Step 3: Create a JS component for the checkbox {#create-jscomponent}
+## Step 3: Create a JS component for the checkbox
 
 In your custom module directory, create the following new file: `<your_module_dir>/view/frontend/web/js/single-checkbox.js`. In this file, add the following code. This is  a JS component that extends `Magento_Ui/js/form/element/single-checkbox.js`. The `onCheckedChanged` method calls the methods that update street labels, change the city and country values, and disable these fields:
 

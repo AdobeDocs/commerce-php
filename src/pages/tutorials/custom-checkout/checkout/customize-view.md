@@ -7,7 +7,7 @@ description:
 
 This topic contains the basic information about how to customize the view of an existing [checkout](https://glossary.magento.com/checkout) step. In the Magento application, checkout is implemented using UI components. You can customize each step by [changing the JavaScript implementation or template](#change-component) for a component, [adding](#add), [disabling](#disable), or [removing](#remove) a component.
 
-## Change the component's .js implementation and template {#change-component}
+## Change the component's .js implementation and template
 
 To change the `.js` implementation and template used for components rendering, you need to declare the new files in the checkout page [layout](https://glossary.magento.com/layout). To do this, take the following steps:
 
@@ -78,9 +78,9 @@ The Magento_Shipping module adds a component rendered as a link to the Shipping 
 
 ```
 
-## Add the new component to the checkout page layout {#add}
+## Add the new component to the checkout page layout
 
-Any [UI component](https://glossary.magento.com/ui-component) is added in the `checkout_index_index.xml` similar to the way a [checkout step component is added]({{ page.baseurl }}/howdoi/checkout/checkout_new_step.html#checkout).
+Any [UI component](https://glossary.magento.com/ui-component) is added in the `checkout_index_index.xml` similar to the way a [checkout step component is added](add-new-step.md#step-2-add-your-step-to-the-checkout-page-layout).
 
 Make sure that you declare a component so that it is rendered correctly by the parent component. If a parent component is a general UI component (referenced by the `uiComponent` alias), its child components are rendered without any conditions. But if a parent component is an extension of a general UI components, then children rendering might be restricted in certain way. For example a component can render only children from a certain `displayArea`.
 
@@ -136,7 +136,7 @@ Remember to [disable](#disable) or [remove](#remove) the component from its orig
 
 ![Discount Component](../../../_images/tutorials/discount_component.png)
 
-## Disable a component {#disable}
+## Disable a component
 
 To disable the component in your `checkout_index_index.xml` use the following instructions:
 
@@ -148,7 +148,7 @@ To disable the component in your `checkout_index_index.xml` use the following in
 </item>
 ```
 
-## Remove a component {#remove}
+## Remove a component
 
 To keep a component from being rendered, create a layout processor. A layout processor consists of a class, implementing
 the `\Magento\Checkout\Block\Checkout\LayoutProcessorInterface` interface, and thus a `LayoutProcessorInterface::process($jsLayout)` method.

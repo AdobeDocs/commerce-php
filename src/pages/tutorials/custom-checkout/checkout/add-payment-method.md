@@ -19,9 +19,9 @@ To implement a payment method rendering in checkout, you need to take the follow
 1. [Create a template for the payment method renderer.](#template)
 1. [Declare the new payment in the checkout page layout.](#layout)
 
-## Step 1: Create the .js component file {#create}
+## Step 1: Create the .js component file
 
-Your payment method renderer must be implemented as a [UI component](https://glossary.magento.com/ui-component). For the sake of compatibility, upgradability and easy maintenance, do not edit the default Magento code, add your customizations in a separate module. For your checkout customization to be applied correctly, your custom module should depend on the `Magento_Checkout` module. Module dependencies are specified in the [module's `composer.json`]({{ page.baseurl }}/extension-dev-guide/build/composer-integration.html).
+Your payment method renderer must be implemented as a [UI component](https://glossary.magento.com/ui-component). For the sake of compatibility, upgradability and easy maintenance, do not edit the default Magento code, add your customizations in a separate module. For your checkout customization to be applied correctly, your custom module should depend on the `Magento_Checkout` module. Module dependencies are specified in the [module's `composer.json`](../../../development/build/composer-integration.md).
 
 Do not use `Ui` for your custom module name, because `%Vendor%_Ui` notation, required when specifying paths, might cause issues.
 
@@ -97,7 +97,7 @@ define(
 );
 ```
 
-If your payment method requires credit cards information, you might use the Magento renderer implementing a credit card form: [`<Magento_Payment_module_dir>/view/frontend/web/js/view/payment/cc-form.js`]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Payment/view/frontend/web/js/view/payment/cc-form.js). It also extends the default payment renderer, but has the following own methods:
+If your payment method requires credit cards information, you might use the Magento renderer implementing a credit card form: [`<Magento_Payment_module_dir>/view/frontend/web/js/view/payment/cc-form.js`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/view/frontend/web/js/view/payment/cc-form.js). It also extends the default payment renderer, but has the following own methods:
 
 <table>
    <tr>
@@ -146,12 +146,12 @@ If your payment method requires credit cards information, you might use the Mage
    </tr>
 </table>
 
-### Access the system config data {#system-config-data}
+### Access the system config data
 
 Your payment method might need to get data that cannot be defined in [layout](https://glossary.magento.com/layout) configuration, JS components or templates directly, for example, data from the Magento system config.
 This configuration is stored in the `window.checkoutConfig` variable that is defined in root checkout template.
 
-In order to get access to the system configuration, your payment method or a group of payment methods has to implement the [`\Magento\Checkout\Model\ConfigProviderInterface`]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Checkout/Model/ConfigProviderInterface.php) interface, and the class implementing it must be injected to the composite config provider via DI [frontend](https://glossary.magento.com/frontend) configuration. The following code samples illustrate this.
+In order to get access to the system configuration, your payment method or a group of payment methods has to implement the [`\Magento\Checkout\Model\ConfigProviderInterface`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Checkout/Model/ConfigProviderInterface.php) interface, and the class implementing it must be injected to the composite config provider via DI [frontend](https://glossary.magento.com/frontend) configuration. The following code samples illustrate this.
 
 This is a sample `.php` file implementing `\Magento\Checkout\Model\ConfigProviderInterface`:
 
@@ -185,11 +185,11 @@ Here is the associated sample DI configuration file of a custom module `<your_mo
 </type>
 ```
 
-### Add other payment-related features {#payment-features}
+### Add other payment-related features
 
 You can also add payment-related features (like reward points, gift registry, an so on) to the Review and Payment Information checkout step. They must be implemented as UI components as well, and can be displayed before or after the list of payment methods. This is configured in the [checkout page layout file correspondingly](#layout).
 
-## Step 2: Create the .js component that registers the renderer {#register}
+## Step 2: Create the .js component that registers the renderer
 
 In your custom module directory create the `.js` UI component that registers the payment method renderer in the renderers list. It must be located under the `<your_module_dir>/view/frontend/web/js/view/` directory. For example in the Magento modules, the payment methods renderers are stored in the `<Magento_module_dir>/view/frontend/web/js/view/payment/` directory.
 
@@ -221,13 +221,13 @@ define(
 
 If your [module](https://glossary.magento.com/module) adds several payment methods, you can register all payment methods renderers in one file.
 
-## Step 3: Create the template for the payment method component {#template}
+## Step 3: Create the template for the payment method component
 
 In your custom module directory create a new `<your_module_dir>/view/frontend/web/template/<your_template>.html` file. The template can use [Knockout JS](http://knockoutjs.com/) syntax. You can find a sample `.html` template in any module implementing payment methods, for example the Paypal module.
 
-The template for rendering the Paypal Express payment method in checkout is [`<Magento_Paypal_module_dir>/frontend/web/template/payment/paypal-express.html`]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Paypal/view/frontend/web/template/payment/paypal-express.html).
+The template for rendering the Paypal Express payment method in checkout is [`<Magento_Paypal_module_dir>/frontend/web/template/payment/paypal-express.html`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Paypal/view/frontend/web/template/payment/paypal-express.html).
 
-## Step 4: Declare the payment method in layout {#layout}
+## Step 4: Declare the payment method in layout
 
 In your custom module directory, create a new `<your_module_dir>/view/frontend/layout/checkout_index_index.xml` file. In this file, add the following:
 
@@ -303,7 +303,7 @@ In your custom module directory, create a new `<your_module_dir>/view/frontend/l
 </page>
 ```
 
-## Step 5:Run CLI Commands {#compile-code-deploy-contents-and-clean-the-cache}
+## Step 5:Run CLI Commands
 
 These steps are required in production mode only, not while in development mode.
 
@@ -325,4 +325,4 @@ These steps are required in production mode only, not while in development mode.
    bin/magento cache:clean
    ```
 
-For an illustration of `checkout_index_index.xml` where a new payment method is declared, view [app/code/Magento/Paypal/view/frontend/layout/checkout_index_index.xml]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Paypal/view/frontend/layout/checkout_index_index.xml)
+For an illustration of `checkout_index_index.xml` where a new payment method is declared, view [app/code/Magento/Paypal/view/frontend/layout/checkout_index_index.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Paypal/view/frontend/layout/checkout_index_index.xml)

@@ -15,9 +15,9 @@ To add your custom field to the checkout address form and access its value on th
 1. [Add the field to address model](#field).
 1. [Access the value of the custom field on server side](#access).
 
-## Step 1: Add the field to layout {#add}
+## Step 1: Add the field to layout
 
-Both shipping address and billing address forms are [generated dynamically]({{ page.baseurl }}/howdoi/checkout/checkout_form.html#dynamic_form). To modify their layouts, create a [plugin]({{ page.baseurl }}/extension-dev-guide/plugins.html) for the `\Magento\Checkout\Block\Checkout\LayoutProcessor::process` method and declare it in the `di.xml` file in your module.
+Both shipping address and billing address forms are [generated dynamically](../checkout/add-form.md#dynamically-defined-forms). To modify their layouts, create a [plugin](../../../development/components/plugins.md) for the `\Magento\Checkout\Block\Checkout\LayoutProcessor::process` method and declare it in the `di.xml` file in your module.
 
 The following code snippet enumerates sample logic for adding a field named `Custom Attribute` to the shipping address form:
 
@@ -56,7 +56,7 @@ Via the previous example, the field is added to the `customAttributes` property 
 
 The `customAttributes` property was designed to contain custom EAV address attributes and is related to the `\Magento\Quote\Model\Quote\Address\CustomAttributeListInterface::getAttributes` method. The sample code above will automatically handle local storage persistence on the [frontend](https://glossary.magento.com/frontend).
 
-Optionally, instead of adding a plugin, you can use a [dependency injection (DI)]({{ page.baseurl }}/extension-dev-guide/depend-inj.html). To use a DI, add the `LayoutProcessor`, which adds the custom field to the address form class, to the `<your_module_dir>/Block/Checkout/` directory. The class must implement the `\Magento\Checkout\Block\Checkout\LayoutProcessorInterface` interface. Use the code sample above as an example of the `\Magento\Checkout\Block\Checkout\LayoutProcessorInterface::process()` method implementation.
+Optionally, instead of adding a plugin, you can use a [dependency injection (DI)](../../../development/components/dependency-injection.md). To use a DI, add the `LayoutProcessor`, which adds the custom field to the address form class, to the `<your_module_dir>/Block/Checkout/` directory. The class must implement the `\Magento\Checkout\Block\Checkout\LayoutProcessorInterface` interface. Use the code sample above as an example of the `\Magento\Checkout\Block\Checkout\LayoutProcessorInterface::process()` method implementation.
 
 To add your `LayoutProcessor` class the corresponding pool of processors, specify the following (where `%unique_name%` and `%path\to\your\LayoutProcessor%` must be replaced by your real values) in the `<your_module_dir>/etc/frontend/di.xml` file:
 
@@ -70,7 +70,7 @@ To add your `LayoutProcessor` class the corresponding pool of processors, specif
 </type>
 ```
 
-## Step 2: Add a JS mixin to modify data submission {#mixin}
+## Step 2: Add a JS mixin to modify data submission
 
 Add a JS [mixin](https://glossary.magento.com/mixin), to the [server side](https://glossary.magento.com/server-side), to change the behavior of the component responsible for the data submission.
 
@@ -112,9 +112,9 @@ define([
 
 When adding a field to the billing address form, you must modify the behavior of the `Magento_Checkout/js/action/place-order` or `Magento_Checkout/js/action/set-payment-information` component, depending on when do you need the custom field valued to be passed to the server side.
 
-To see an example of a mixing that modifies one of these components, see the [place-order-mixin.js]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/CheckoutAgreements/view/frontend/web/js/model/place-order-mixin.js) in the Magento_CheckoutAgreements [module](https://glossary.magento.com/module).
+To see an example of a mixing that modifies one of these components, see the [place-order-mixin.js](https://github.com/magento/magento2/blob/2.4/app/code/Magento/CheckoutAgreements/view/frontend/web/js/model/place-order-mixin.js) in the Magento_CheckoutAgreements [module](https://glossary.magento.com/module).
 
-## Step 3: Load your mixin {#load_mixin}
+## Step 3: Load your mixin
 
 Tell Magento to load your mixin for the corresponding JS component by adding the `requirejs-config.js` to the `<YourModule_dir>/view/frontend/` directory.
 
@@ -132,7 +132,7 @@ var config = {
 };
 ```
 
-## Step 4: Add field to address model {#field}
+## Step 4: Add field to address model
 
 To add the field to the address model on the server side, add the `extension_attributes.xml` file in the `<YourModule_dir>/etc/` directory.
 
@@ -150,7 +150,7 @@ The following code is an example of an `extension_attributes.xml` file:
 
 Clear the `generated/code` directory when you run the `setup:di:compile` command. New getter and setter methods will be added in `generated/code/Magento/Quote/Api/Data/AddressExtension.php` file.
 
-## Step 5: Access the value of the custom field on server side {#access}
+## Step 5: Access the value of the custom field on server side
 
 If you completed all the steps described in the previous sections, Magento will generate the interface that includes your custom attribute and you can access your field value.
 

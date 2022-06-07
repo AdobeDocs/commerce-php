@@ -16,7 +16,7 @@ To add a new shipping carrier to the Magento checkout:
 1. [Create the carrier model](#carrier-model)
 1. [Enable the module](#enable-module)
 
-## Step 1: Create a new module {#create-module}
+## Step 1: Create a new module
 
 The example module for use here is `Vendor_CustomShipping`.
 
@@ -87,7 +87,7 @@ ComponentRegistrar::register(
 </config>
 ```
 
-## Step 2: Add the module configuration {#create-configuration}
+## Step 2: Add the module configuration
 
 To add a module configuration use the following source code snippets.
 
@@ -172,7 +172,7 @@ The `config.xml` file specifies default values for custom shipping module option
 </config>
 ```
 
-## Step 3: Create the carrier model {#carrier-model}
+## Step 3: Create the carrier model
 
 In this example, the `Vendor\CustomShipping\Model\Carrier\Customshipping` class is a skeleton of a carrier model. You can extend it to fit your needs.
 
@@ -280,7 +280,7 @@ class Customshipping extends AbstractCarrier implements CarrierInterface
 }
 ```
 
-## Step 4: Enable the module {#enable-module}
+## Step 4: Enable the module
 
 Run the commands below to register `Vendor_CustomShipping` module:
 

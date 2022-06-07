@@ -18,13 +18,13 @@ To add new shipping carrier validations to the Magento checkout, do the followin
 
 During checkout, when a customer fills the shipping address form, shipping carrier validations trigger the shipping rates request. That is why adding shipping carrier validations for your custom shipping method is mandatory.
 
-## Step 1: Create validation rules {#rules}
+## Step 1: Create validation rules
 
 Shipping carrier validation rules declare which fields of the shipping address are required for the corresponding shipping method to be available. The validation itself is performed by the [validator](#validator).
 
 During checkout, if the shipping address fields declared in the rules are filled, the further validation of fields' values is carried on the [server side](https://glossary.magento.com/server-side). For example, whether a carrier is available for the specified country.
 
-For the sake of compatibility, upgradability, and easy maintenance, do not edit the default Magento code, add your customization in a separate module. For your checkout customization to be applied correctly, your custom module should [depend]({{ page.baseurl }}/extension-dev-guide/build/composer-integration.html) on the `Magento_Checkout` module.
+For the sake of compatibility, upgradability, and easy maintenance, do not edit the default Magento code, add your customization in a separate module. For your checkout customization to be applied correctly, your custom module should [depend](../../../development/build/composer-integration.md) on the `Magento_Checkout` module.
 
 Do not use `Ui` for your custom module name, because `%Vendor%_Ui` notation, required when specifying paths, might cause issues.
 
@@ -62,7 +62,7 @@ define(
 
 Triggering the shipping rates request correlates directly with the fields you specify in the validation rules: the request is triggered once all these fields are populated and pass the validation.
 
-## Step 2: Create validator {#validator}
+## Step 2: Create validator
 
 Create the validator `.js` script that checks if the fields defined by the validation rules are filled. The script must be located in the `<your_module_dir>/view/frontend/web/js/model` directory.
 
@@ -99,7 +99,7 @@ define(
 
 You can use this sample for your validator, but you need to specify your validation rules script instead of `./shipping-rates-validation-rules` in the list of used modules.
 
-## Step 3: Register validator and rules in the validators pool {#register}
+## Step 3: Register validator and rules in the validators pool
 
 Your custom validator must be added to the pool of validators. To do this, in the `<your_module_dir>/view/frontend/web/js/view` directory create a new `<your-validation>.js` file with the following content (having replaced the `<your_validator>` and `<your_validation_rules>` with your values):
 
@@ -127,7 +127,7 @@ define(
 );
 ```
 
-## Step 4: Add the validation to the checkout layout {#layout}
+## Step 4: Add the validation to the checkout layout
 
 The last step is specifying the script you created on the previous step in the checkout page [layout](https://glossary.magento.com/layout).
 
@@ -175,7 +175,7 @@ You must add `<your-validation-name>` like `%carrier%-rates-validation` - where 
 </page>
 ```
 
-## Step 5: Deploy static content and clear the cache {#deploy-and-clean}
+## Step 5: Deploy static content and clear the cache
 
 1. Deploy static content:
 

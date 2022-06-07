@@ -5,7 +5,7 @@ description:
 
 # Customize using a modifier class
 
-[Modifier classes]({{ page.baseurl }}/ui_comp_guide/concepts/ui_comp_modifier_concept.html) should be used when static declaration is not applicable. For example, in cases when additional data should be loaded from database. Also, modifier is a place where you add validations to display only certain fields for certain product types.
+[Modifier classes](https://devdocs.magento.com/guides/v2.4/ui_comp_guide/concepts/ui_comp_modifier_concept.html) should be used when static declaration is not applicable. For example, in cases when additional data should be loaded from database. Also, modifier is a place where you add validations to display only certain fields for certain product types.
 
 In the run time, the form structure set in the modifier is merged with the configuration that comes from the `product_form.xml` configuration.
 
@@ -16,7 +16,7 @@ To add your custom modifier, you need to do the following:
 1. [Add the modifier code.](#modifier)
 1. [Add it to the modifiers' pool in `di.xml`](#pool)
 
-## Add your modifier {#modifier}
+## Add your modifier
 
 In your custom module directory, add the modifier class that implements the `Magento\UI\DataProvider\Modifier\ModifierInterface` interface or extends the `Magento\Catalog\Ui\DataProvider\Product\Form\Modifier\AbstractModifier`class. In your modifier, the `modifyData()` and the `modifyMeta()` methods must be implemented.
 
@@ -88,7 +88,7 @@ class Example extends AbstractModifier
 
 You can create nested structures of elements by adding them to the `children` key of any element.
 
-## Add modifier to the pool {#pool}
+## Add modifier to the pool
 
 In `<your_module_dir>/etc/adminhtml/di.xml` define your modifier as a dependency for `Magento\Catalog\Ui\DataProvider\Product\Form\Modifier\Pool`.
 
@@ -115,9 +115,9 @@ To access product model within your modifier, it's recommended to use an instanc
 
 For reference, view the modifier classes in the Magento modules, for example:
 
--  [`Magento/Catalog/Ui/DataProvider/Product/Form/Modifier/AdvancedPricing`]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Catalog/Ui/DataProvider/Product/Form/Modifier/AdvancedPricing.php)
--  [`Magento/Catalog/Ui/DataProvider/Product/Form/Modifier/AttributeSet`]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Catalog/Ui/DataProvider/Product/Form/Modifier/AttributeSet.php)
--  [`Magento/Catalog/Ui/DataProvider/Product/Form/Modifier/Eav`]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Catalog/Ui/DataProvider/Product/Form/Modifier/Eav.php)
--  [`Magento/ConfigurableProduct/Ui/DataProvider/Product/Form/Modifier/Data/AssociatedProducts`]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/ConfigurableProduct/Ui/DataProvider/Product/Form/Modifier/Data/AssociatedProducts.php)
+-  [`Magento/Catalog/Ui/DataProvider/Product/Form/Modifier/AdvancedPricing`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Ui/DataProvider/Product/Form/Modifier/AdvancedPricing.php)
+-  [`Magento/Catalog/Ui/DataProvider/Product/Form/Modifier/AttributeSet`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Ui/DataProvider/Product/Form/Modifier/AttributeSet.php)
+-  [`Magento/Catalog/Ui/DataProvider/Product/Form/Modifier/Eav`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Ui/DataProvider/Product/Form/Modifier/Eav.php)
+-  [`Magento/ConfigurableProduct/Ui/DataProvider/Product/Form/Modifier/Data/AssociatedProducts`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/ConfigurableProduct/Ui/DataProvider/Product/Form/Modifier/Data/AssociatedProducts.php)
 
 For reference about setting conditions for displaying certain elements for certain product types, view `<Magento_Catalog_module_dir>/Ui/DataProvider/Product/Form/Modifier/Eav.php#L476`.
