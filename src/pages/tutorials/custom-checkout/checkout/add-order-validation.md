@@ -9,9 +9,9 @@ This topic describes how to add custom validations to be performed before the or
 
 To add custom validations before the order placement action, you must do the following:
 
-1. [Create the validator](#validator).
-1. [Add validator to the validators pool](#pool).
-1. [Declare the validation in the checkout layout](#layout).
+1. [Create the validator](#step-1-create-the-validator).
+1. [Add validator to the validators pool](#step-2-add-validator-to-the-validators-pool).
+1. [Declare the validation in the checkout layout](#step-3-declare-the-validation-in-the-checkout-layout).
 
 ## Step 1: Create the validator
 

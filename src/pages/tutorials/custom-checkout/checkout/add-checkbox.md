@@ -11,9 +11,9 @@ Let's consider a case where you need to add a checkbox whose state (selected or 
 
 To implement such a checkbox, take the following steps:
 
-1. [Create a plugin for the process method](#create-plugin) of the `<Magento_Checkout_module_dir>/Block/Checkout/LayoutProcessor.php` class.
-1. [Declare the plugin in your module's `di.xml`](#declare-plugin).
-1. [Create a JS component for the checkbox with custom logic](#create-jscomponent).
+1. [Create a plugin for the process method](#step-1-create-a-plugin-for-the-layoutprocessors-process-method) of the `<Magento_Checkout_module_dir>/Block/Checkout/LayoutProcessor.php` class.
+1. [Declare the plugin in your module's `di.xml`](#step-2-declare-plugin-in-dixml).
+1. [Create a JS component for the checkbox with custom logic](#step-3-create-a-js-component-for-the-checkbox).
 
 ## Step 1: Create a plugin for the `LayoutProcessor`'s process method
 

@@ -33,6 +33,7 @@ The following table defines the `code` node attributes:
 `active` | No | Defines if this zip pattern is active or not.
 
 You can define several zip `code` patterns for the same country, by passing a list of `codes`.
+
 ```xml
     <codes>
         <code id="pattern_1" active="true" example="12345">^[0-9]{5}$</code>

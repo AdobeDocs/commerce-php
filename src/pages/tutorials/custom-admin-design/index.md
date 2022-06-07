@@ -223,6 +223,7 @@ Example of a field declaration:
     </arguments>
 </type>
 ```
+
 For more examples and reference, view the `di.xml` files of these Magento modules:
 
 -  `<Magento_Backend_module_dir>/etc/di.xml`

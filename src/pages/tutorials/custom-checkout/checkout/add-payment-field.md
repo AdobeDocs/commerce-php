@@ -17,13 +17,13 @@ The `Purchase Order` payment method must be enabled in the storefront for this t
 
 You must perform following steps to add a custom field to an offline payment method:
 
-1. [Create a new module](#create-module).
-1. [Add a `db_schema.xml` file](#add-db-schema).
-1. [Add a `requirejs` file to the module](#add-require-js).
-1. [Override the vendor files](#override-vendor-files).
-1. [Add an Observer](#add-observer).
-1. [Compile and deploy the module](#compile-deploy).
-1. [Verify that the module works](#verify-implementation).
+1. [Create a new module](#step-1-create-a-new-module).
+1. [Add a `db_schema.xml` file](#step-2-add-a-db_schemaxml-file).
+1. [Add a `requirejs` file to the module](#step-3-add-a-requirejs-file-to-the-module).
+1. [Override the vendor files](#step-4-override-the-vendor-files).
+1. [Add an Observer](#step-5-add-an-observer).
+1. [Compile and deploy the module](#step-6-compile-and-deploy-the-module).
+1. [Verify that the module works](#step-7-verify-that-the-module-works).
 
 Let’s go through each step.
 
@@ -67,9 +67,9 @@ Create the `app/code/Learning/CustomField/view/frontend/requirejs-config.js` fil
 
 We must override the behavior of the following files to display the custom field:
 
--  [Magento_OfflinePayments/view/frontend/web/js/view/payment/offline-payments.js](#offline-payment)
--  [Magento_OfflinePayments/view/frontend/web/js/view/payment/method-renderer/purchaseorder-method.js](#purchaseorder-method)
--  [Magento_OfflinePayments/view/frontend/web/template/payment/purchaseorder-form.html](#purchaseorder-form)
+-  [Magento_OfflinePayments/view/frontend/web/js/view/payment/offline-payments.js](#override-the-offline-paymentsjs)
+-  [Magento_OfflinePayments/view/frontend/web/js/view/payment/method-renderer/purchaseorder-method.js](#override-the-purchaseorder-methodjs)
+-  [Magento_OfflinePayments/view/frontend/web/template/payment/purchaseorder-form.html](#override-the-purchaseorder-formhtml)
 
 ### Override the `offline-payments.js`
 

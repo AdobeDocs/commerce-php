@@ -9,9 +9,9 @@ This topic describes how to customize list of shipping methods displayed on the 
 
 Let's consider a case where you need to add a collapsible text field with description for each shipping method in this list. To achieve this, you need to take the following steps:
 
-1. [Create a new template for the shipping method item](#method-item).
-1. [Create a new template for the shipping method list](#method-list).
-1. [Override the shipping step configuration](#shipping).
+1. [Create a new template for the shipping method item](#step-1-create-new-template-for-shipping-method-item).
+1. [Create a new template for the shipping method list](#step-2-create-new-template-for-shipping-methods-list).
+1. [Override the shipping step configuration](#step-3-override-shipping-step-configuration).
 
 ## Step 1: Create new template for shipping method item
 

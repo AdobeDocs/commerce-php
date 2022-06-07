@@ -13,8 +13,8 @@ The `Magento\Catalog\Ui\DataProvider\Product\Form\ProductDataProvider` data prov
 
 To add your custom modifier, you need to do the following:
 
-1. [Add the modifier code.](#modifier)
-1. [Add it to the modifiers' pool in `di.xml`](#pool)
+1. [Add the modifier code](#add-your-modifier)
+1. [Add it to the modifiers' pool in `di.xml`](#add-modifier-to-the-pool)
 
 ## Add your modifier
 

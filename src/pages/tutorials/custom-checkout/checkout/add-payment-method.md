@@ -14,10 +14,10 @@ On the Review and Payment Information step the enabled payment methods are rende
 
 To implement a payment method rendering in checkout, you need to take the following steps:
 
-1. [Create the `.js` file implementing the component (payment method renderer).](#create)
-1. [Create the `.js` component registering the payment method renderer.](#register)
-1. [Create a template for the payment method renderer.](#template)
-1. [Declare the new payment in the checkout page layout.](#layout)
+1. [Create the `.js` file implementing the component (payment method renderer).](#step-1-create-the-js-component-file)
+1. [Create the `.js` component registering the payment method renderer.](#step-2-create-the-js-component-that-registers-the-renderer)
+1. [Create a template for the payment method renderer.](#step-3-create-the-template-for-the-payment-method-component)
+1. [Declare the new payment in the checkout page layout.](#step-4-declare-the-payment-method-in-layout)
 
 ## Step 1: Create the .js component file
 
@@ -187,7 +187,7 @@ Here is the associated sample DI configuration file of a custom module `<your_mo
 
 ### Add other payment-related features
 
-You can also add payment-related features (like reward points, gift registry, an so on) to the Review and Payment Information checkout step. They must be implemented as UI components as well, and can be displayed before or after the list of payment methods. This is configured in the [checkout page layout file correspondingly](#layout).
+You can also add payment-related features (like reward points, gift registry, an so on) to the Review and Payment Information checkout step. They must be implemented as UI components as well, and can be displayed before or after the list of payment methods. This is configured in the [checkout page layout file correspondingly](#step-4-declare-the-payment-method-in-layout).
 
 ## Step 2: Create the .js component that registers the renderer
 

@@ -14,17 +14,17 @@ The default Magento [Checkout](https://glossary.magento.com/checkout) consists o
 
 You can add a custom checkout step, it should be implemented as a [UI component](https://glossary.magento.com/ui-component). For the sake of compatibility, upgradability and easy maintenance, do not edit the default Magento code, add your customizations in a separate [module](https://glossary.magento.com/module).
 
-1. [Create the view part of the checkout step component](#create-view).
-1. [Add your step to the Checkout page layout](#checkout).
-1. [Create mixins for payment and shipping steps (optional)](#create-mixin).
+1. [Create the view part of the checkout step component](#step-1-create-the-view-part-of-the-checkout-step-component).
+1. [Add your step to the Checkout page layout](#step-2-add-your-step-to-the-checkout-page-layout).
+1. [Create mixins for payment and shipping steps (optional)](#step-3-create-mixins-for-payment-and-shipping-steps-optional).
 
 ## Step 1: Create the view part of the checkout step component
 
 To create the view part of the new checkout step:
 
 1. Add a module directory (not covered in this topic). See [Build your module](../../../development/build/index.md) for details). All custom files must be stored there. For your checkout customization to be applied correctly, your custom module should depend on the `Magento_Checkout` module. Do not use `Ui` for your custom module name, because `%Vendor%_Ui` notation, required when specifying paths, might cause issues.
-1. [Create the `.js` file implementing the view model](#component).
-1. [Create a `.html` template for the component](#html-template).
+1. [Create the `.js` file implementing the view model](#add-the-javascript-file-implementing-the-new-step).
+1. [Create a `.html` template for the component](#add-the-html-template).
 
 ### Add the JavaScript file implementing the new step
 

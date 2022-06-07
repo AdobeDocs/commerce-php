@@ -5,7 +5,7 @@ description:
 
 # Customize the view of a checkout step
 
-This topic contains the basic information about how to customize the view of an existing [checkout](https://glossary.magento.com/checkout) step. In the Magento application, checkout is implemented using UI components. You can customize each step by [changing the JavaScript implementation or template](#change-component) for a component, [adding](#add), [disabling](#disable), or [removing](#remove) a component.
+This topic contains the basic information about how to customize the view of an existing [checkout](https://glossary.magento.com/checkout) step. In the Magento application, checkout is implemented using UI components. You can customize each step by [changing the JavaScript implementation or template](#change-the-components-js-implementation-and-template) for a component, [adding](#add-the-new-component-to-the-checkout-page-layout), [disabling](#disable-a-component), or [removing](#remove-a-component) a component.
 
 ## Change the component's .js implementation and template
 
@@ -130,7 +130,7 @@ The following example shows how to move the discount component to the order summ
 
 <InlineAlert variant="info" slots="text"/>
 
-Remember to [disable](#disable) or [remove](#remove) the component from its original location, or they will conflict with each other.
+Remember to [disable](#disable-a-component) or [remove](#remove-a-component) the component from its original location, or they will conflict with each other.
 
 ### Order Summary Result
 

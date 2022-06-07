@@ -13,9 +13,9 @@ Most of the elements, including the default forms on the Checkout page are imple
 
 Magento provides the ability to add a custom form to any of the checkout steps: Shipping Information, Review and Payment Information, or custom. In order to add a custom form that is a UI component, take the following steps:
 
-1. [Create the JS implementation of the form UI component](#component).
-1. [Create the knockout.js HTML template for rendering the form](#template).
-1. [Declare the form in the checkout page layout](#layout).
+1. [Create the JS implementation of the form UI component](#step-1-create-the-js-implementation-of-the-form-ui-component).
+1. [Create the knockout.js HTML template for rendering the form](#step-2-create-the-html-template).
+1. [Declare the form in the checkout page layout](#step-3-declare-the-form-in-the-checkout-page-layout).
 
 ## Prerequisites
 
@@ -159,7 +159,7 @@ If you modify your custom `.html` template after it was applied on the store pag
 
 ### Static forms
 
-The term static refers to the forms where all the fields are already known/predefined and do not depend on any settings in the [Admin](https://glossary.magento.com/admin). Compare to [dynamic forms](#dynamic_form).
+The term static refers to the forms where all the fields are already known/predefined and do not depend on any settings in the [Admin](https://glossary.magento.com/admin). Compare to [dynamic forms](#dynamically-defined-forms).
 
 The fields of static forms are not generated dynamically, so they can be defined in a layout.
 

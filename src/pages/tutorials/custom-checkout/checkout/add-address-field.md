@@ -9,11 +9,11 @@ You can add new fields to default [checkout](https://glossary.magento.com/checko
 
 To add your custom field to the checkout address form and access its value on the client side:
 
-1. [Add the field to layout](#add).
-1. [Add a JS mixin to modify data submission](#mixin).
-1. [Load your mixin](#load_mixin).
-1. [Add the field to address model](#field).
-1. [Access the value of the custom field on server side](#access).
+1. [Add the field to layout](#step-1-add-the-field-to-layout).
+1. [Add a JS mixin to modify data submission](#step-2-add-a-js-mixin-to-modify-data-submission).
+1. [Load your mixin](#step-3-load-your-mixin).
+1. [Add the field to address model](#step-4-add-field-to-address-model).
+1. [Access the value of the custom field on server side](#step-5-access-the-value-of-the-custom-field-on-server-side).
 
 ## Step 1: Add the field to layout
 
