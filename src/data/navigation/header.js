@@ -15,10 +15,10 @@ module.exports = [
     //   title: "Best Practices",
     //   path: "/best-practices/",
     // },
-    // {
-    //   title: "Module Reference",
-    //   path: "/module-reference/",
-    // },
+    {
+      title: "Module Reference",
+      path: "/module-reference/",
+    },
     {
       title: "Coding Standards",
       path: "/coding-standards/",
