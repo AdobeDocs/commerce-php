@@ -1,6 +1,6 @@
 ---
 title: Add a Custom Payment Method to Checkout | Commerce PHP Extensions
-description:
+description: Follow this tutorial to create a custom payment method in the Adobe Commerce and Magento Open Source checkout experience.
 ---
 
 # Add a custom payment method to checkout

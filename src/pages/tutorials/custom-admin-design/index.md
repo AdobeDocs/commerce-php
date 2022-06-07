@@ -1,6 +1,6 @@
 ---
 title: Customize the Design | Commerce PHP Extensions
-description:
+description: Follow this tutorial to customize the design of the Adobe Commerce and Magento Open Source Admin.
 ---
 
 # Customize the design

@@ -1,6 +1,6 @@
 ---
 title: Custom Attributes | Commerce PHP Extensions
-description:
+description: Follow this tutorial to configure custom Adobe Commerce and Magento Open Source product attributes.
 contributor_name: Adarsh Manickam
 contributor_link: https://github.com/drpayyne
 ---

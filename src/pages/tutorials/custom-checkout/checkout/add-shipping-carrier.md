@@ -1,6 +1,6 @@
 ---
 title: Add a Custom Shipping Carrier | Commerce PHP Extensions
-description:
+description: Follow this tutorial to create a custom shipping carrier in the Adobe Commerce and Magento Open Source checkout experience.
 contributor_name: Atwix
 contributor_link: https://www.atwix.com/
 ---

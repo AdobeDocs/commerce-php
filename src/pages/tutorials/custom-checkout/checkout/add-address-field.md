@@ -1,6 +1,6 @@
 ---
 title: Add a New Field in the Address Form | Commerce PHP Extensions
-description:
+description: Follow this tutorial to add a new field to the address form in the Adobe Commerce and Magento Open Source checkout experience.
 ---
 
 # Add a new field in the address form

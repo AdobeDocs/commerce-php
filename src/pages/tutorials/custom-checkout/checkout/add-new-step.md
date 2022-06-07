@@ -1,6 +1,6 @@
 ---
 title: Add a New Checkout Step | Commerce PHP Extensions
-description:
+description: Follow this tutorial to create a new step in the Adobe Commerce and Magento Open Source checkout experience.
 ---
 
 # Add a new checkout step

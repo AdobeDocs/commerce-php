@@ -1,6 +1,6 @@
 ---
 title: Add a Custom Template for a Form Field | Commerce PHP Extensions
-description:
+description: Follow this tutorial to create a custom template for a form field in the Adobe Commerce and Magento Open Source checkout experience.
 ---
 
 # Add a custom template for a form field

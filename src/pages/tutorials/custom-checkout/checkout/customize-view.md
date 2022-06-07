@@ -1,6 +1,6 @@
 ---
 title: Customize the View of a Checkout Step | Commerce PHP Extensions
-description:
+description: Follow this tutorial to customize the view of a step in the Adobe Commerce and Magento Open Source checkout experience.
 ---
 
 # Customize the view of a checkout step

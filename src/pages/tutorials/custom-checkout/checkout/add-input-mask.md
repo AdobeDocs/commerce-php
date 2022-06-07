@@ -1,6 +1,6 @@
 ---
 title: Add Custom Input Mask for ZIP Code | Commerce PHP Extensions
-description:
+description: Follow this tutorial to create a custom input mask to validate address ZIP codes in the Adobe Commerce and Magento Open Source checkout experience.
 ---
 
 # Add custom input mask for ZIP code

@@ -1,6 +1,6 @@
 ---
 title: Add Custom Fields that Influence Other Checkout Fields | Commerce PHP Extensions
-description:
+description: Follow this tutorial to create a custom field that effects other fields in the Adobe Commerce and Magento Open Source checkout experience.
 ---
 
 # Add custom fields that incluence other checkout fields
