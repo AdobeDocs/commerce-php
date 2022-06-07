@@ -23,4 +23,8 @@ module.exports = [
       title: "Coding Standards",
       path: "/coding-standards/",
     },
+    {
+      title: "Tutorials",
+      path: "/tutorials/",
+    },
   ];
