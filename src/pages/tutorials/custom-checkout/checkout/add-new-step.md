@@ -33,6 +33,7 @@ A new checkout step must be implemented as UI component. That is, its [JavaScrip
 The file must be stored under the `<your_module_dir>/view/frontend/web/js/view` directory.
 
 <InlineAlert variant="info" slots="text"/>
+
 `<your_module_dir>` notation stands for the path to your module directory from the root directory. Usually it will be one of the following: `app/code/<YourVendor>/<YourModule>` or `vendor/<yourvendor>/module-<module>-<name>`. For more details see [Conventional notations for paths to modules and themes](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/conventions.html)
 
 A sample `my-step-view.js` with comments follows:
