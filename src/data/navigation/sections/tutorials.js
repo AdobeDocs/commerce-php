@@ -18,27 +18,19 @@ module.exports = [
       path: "/tutorials/custom-product-creation-form/",
       pages: [
         {
-          title: "Initial tasks",
-          path: "/tutorials/custom-product-creation-form/",
-        },
-        {
            title: "Customize form configuration",
            path: "/tutorials/custom-product-creation-form/configuration/",
         },
         {
             title: "Customize using a modifier class",
-            path: "/tutorials/custom-product-creation-form/modfifier-class/",
+            path: "/tutorials/custom-product-creation-form/modifier-class/",
          },
       ],
     },
     {
       title: "Customize checkout",
-      path: "/tutorials/custom-checkout",
+      path: "/tutorials/custom-checkout/",
       pages: [
-        {
-          title: "Initial tasks",
-          path: "/tutorials/custom-checkout/",
-        },
         {
           title: "Add a new checkout step",
           path: "/tutorials/custom-checkout/add-new-step/",

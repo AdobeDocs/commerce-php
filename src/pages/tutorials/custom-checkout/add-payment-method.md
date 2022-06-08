@@ -21,7 +21,7 @@ To implement a payment method rendering in checkout, you need to take the follow
 
 ## Step 1: Create the .js component file
 
-Your payment method renderer must be implemented as a [UI component](https://glossary.magento.com/ui-component). For the sake of compatibility, upgradability and easy maintenance, do not edit the default application code, add your customizations in a separate module. For your checkout customization to be applied correctly, your custom module should depend on the `Magento_Checkout` module. Module dependencies are specified in the [module's `composer.json`](../../../development/build/composer-integration.md).
+Your payment method renderer must be implemented as a [UI component](https://glossary.magento.com/ui-component). For the sake of compatibility, upgradability and easy maintenance, do not edit the default application code, add your customizations in a separate module. For your checkout customization to be applied correctly, your custom module should depend on the `Magento_Checkout` module. Module dependencies are specified in the [module's `composer.json`](../../development/build/composer-integration.md).
 
 Do not use `Ui` for your custom module name, because `%Vendor%_Ui` notation, required when specifying paths, might cause issues.
 
@@ -29,54 +29,18 @@ In your custom module directory create the component's `.js` file (payment metho
 
 Usually, your component will extend the default payment method component (default payment method renderer) implemented in the `<Magento_Checkout_module_dir>/view/frontend/web/js/view/payment/default.js` file. The following table contains the list of the `default` component's methods.
 
-<table>
-   <tbody>
-      <tr>
-         <th>Method</th>
-         <th>Description</th>
-      </tr>
-      <tr class="even">
-         <td><code>getCode():string</code></td>
-         <td>Returns the code of the payment method</td>
-      </tr>
-      <tr class="odd">
-         <td><code>getData():object</code></td>
-         <td>Returns an object with the payment data to be sent to the server on selecting a payment method and/or an extension (on pressing Continue button). It must contain data according to <code>\Magento\Quote\Api\Data\PaymentInterface</code>. All the payment information except the method code and purchase order number is passed in the <code>additional_data</code> field.</td>
-      </tr>
-      <tr class="even">
-         <td><code>placeOrder():bool</code></td>
-         <td>Places an order if all validations passed.</td>
-      </tr>
-      <tr class="odd">
-         <td><code>selectPaymentMethod():bool</code></td>
-         <td>Adds information about the payment method selected by the user to the Quote JS object.</td>
-      </tr>
-      <tr class="even">
-         <td><code>isChecked():string</code></td>
-         <td>Returns the code of the selected payment method.</td>
-      </tr>
-      <tr class="odd">
-         <td><code>isRadioButtonVisible():bool</code></td>
-         <td> Returns <code>true</code> if only one payment method is available.</td>
-      </tr>
-      <tr class="even">
-         <td><code>getTitle():string</code></td>
-         <td>Returns the payment method title.</td>
-      </tr>
-      <tr class="odd">
-         <td><code>validate():bool</code></td>
-         <td>Used in the <code>placeOrder()</code> method. So you can override validate() in your module, and this validation will be performed in the scope of <code>placeOrder()</code>.</td>
-      </tr>
-      <tr class="odd">
-         <td><code>getBillingAddressFormName():string</code></td>
-         <td>Gets the unique billing address name.</td>
-      </tr>
-      <tr class="even">
-         <td><code>disposeSubscriptions()</code></td>
-         <td>Terminates the object's subscription.</td>
-      </tr>
-   </tbody>
-</table>
+|Method|Description|
+|--- |--- |
+|`getCode():string`|Returns the code of the payment method|
+|`getData():object`|Returns an object with the payment data to be sent to the server on selecting a payment method and/or an extension (on pressing Continue button). It must contain data according to \Magento\Quote\Api\Data\PaymentInterface. All the payment information except the method code and purchase order number is passed in the additional_data field.|
+|`placeOrder():bool`|Places an order if all validations passed.|
+|`selectPaymentMethod():bool`|Adds information about the payment method selected by the user to the Quote JS object.|
+|`isChecked():string`|Returns the code of the selected payment method.|
+|`isRadioButtonVisible():bool`|Returns true if only one payment method is available.|
+|`getTitle():string`|Returns the payment method title.|
+|`validate():bool`|Used in the placeOrder() method. So you can override validate() in your module, and this validation will be performed in the scope of placeOrder().|
+|`getBillingAddressFormName():string`|Gets the unique billing address name.|
+|`disposeSubscriptions()`|Terminates the object's subscription.|
 
 The general view of the payment method renderer is the following:
 
@@ -99,52 +63,18 @@ define(
 
 If your payment method requires credit cards information, you might use the application renderer implementing a credit card form: [`<Magento_Payment_module_dir>/view/frontend/web/js/view/payment/cc-form.js`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/view/frontend/web/js/view/payment/cc-form.js). It also extends the default payment renderer, but has the following own methods:
 
-<table>
-   <tr>
-      <th>Method</th>
-      <th>Description</th>
-   </tr>
-         <tr class="even">
-          <td><code>getData():object</code></td>
-          <td> Returns an object with the payment data to be sent to the server on selecting a payment method and/or an extension (on pressing Continue button). It must contain data according to <code>\Magento\Quote\Api\Data\PaymentInterface</code>. All the payment information except the method code and purchase order number is passed in the <code>additional_data</code> field. Adds credit card data (type, issue date, number, CVV).</td>
-     </tr>
-   <tr class="odd">
-      <td><code>getCcAvailableTypes():array</code></td>
-      <td>Returns the list of available credit card types.</td>
-   </tr>
-   <tr class="even">
-      <td><code>getIcons():bool</code></td>
-      <td>Returns links to the images for available credit card types.</td>
-   </tr>
-   <tr class="odd">
-      <td><code>getCcMonths():object</code></td>
-      <td>Retrieves the month of the credit card expiration date.</td>
-   </tr>
-   <tr class="even">
-      <td><code>getCcYears():object</code></td>
-      <td>Retrieves the year of the credit card expiration date.</td>
-   </tr>
-   <tr class="odd">
-      <td><code>hasVerification():bool</code></td>
-      <td>A flag that shows if the credit card CVV number is required for this payment. </td>
-   </tr>
-   <tr class="even">
-      <td><code>hasSsCardType():bool</code></td>
-      <td>Returns <code>true</code> if the Solo and Switch (Maestro) card types are available.</td>
-   </tr>
-   <tr class="odd">
-      <td><code>getCvvImageUrl():string</code></td>
-      <td>Retrieves the CVV tooltip image URL.</td>
-   </tr>
-   <tr class="odd">
-      <td><code>getCvvImageHtml():string</code></td>
-      <td>Retrieves the CVV tooltip image HTML.</td>
-   </tr>
-   <tr class="even">
-      <td><code>getSsStartYears():object</code></td>
-      <td>Solo or Switch (Maestro) card start year.</td>
-   </tr>
-</table>
+|Method|Description|
+|--- |--- |
+|`getData():object`|Returns an object with the payment data to be sent to the server on selecting a payment method and/or an extension (on pressing Continue button). It must contain data according to \Magento\Quote\Api\Data\PaymentInterface. All the payment information except the method code and purchase order number is passed in the additional_data field. Adds credit card data (type, issue date, number, CVV).|
+|`getCcAvailableTypes():array`|Returns the list of available credit card types.|
+|`getIcons():bool`|Returns links to the images for available credit card types.|
+|`getCcMonths():object`|Retrieves the month of the credit card expiration date.|
+|`getCcYears():object`|Retrieves the year of the credit card expiration date.|
+|`hasVerification():bool`|A flag that shows if the credit card CVV number is required for this payment.|
+|`hasSsCardType():bool`|Returns true if the Solo and Switch (Maestro) card types are available.|
+|`getCvvImageUrl():string`|Retrieves the CVV tooltip image URL.|
+|`getCvvImageHtml():string`|Retrieves the CVV tooltip image HTML.|
+|`getSsStartYears():object`|Solo or Switch (Maestro) card start year.|
 
 ### Access the system config data
 

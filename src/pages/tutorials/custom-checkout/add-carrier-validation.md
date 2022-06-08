@@ -24,7 +24,7 @@ Shipping carrier validation rules declare which fields of the shipping address a
 
 During checkout, if the shipping address fields declared in the rules are filled, the further validation of fields' values is carried on the [server side](https://glossary.magento.com/server-side). For example, whether a carrier is available for the specified country.
 
-For the sake of compatibility, upgradability, and easy maintenance, do not edit the default application code, add your customization in a separate module. For your checkout customization to be applied correctly, your custom module should [depend](../../../development/build/composer-integration.md) on the `Magento_Checkout` module.
+For the sake of compatibility, upgradability, and easy maintenance, do not edit the default application code, add your customization in a separate module. For your checkout customization to be applied correctly, your custom module should [depend](../../development/build/composer-integration.md) on the `Magento_Checkout` module.
 
 Do not use `Ui` for your custom module name, because `%Vendor%_Ui` notation, required when specifying paths, might cause issues.
 

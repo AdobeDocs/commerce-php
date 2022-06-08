@@ -19,7 +19,7 @@ To change the template of the form field, do the following:
 
 [Change to developer mode](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-mode.html) when performing all customizations and debugging.
 
-For the sake of compatibility, upgradability, and easy maintenance, do not edit the default application code. Instead, add your customizations in a separate [module](https://glossary.magento.com/module). For your checkout customization to be applied correctly, your custom module should [depend](../../../development/build/composer-integration.md) on the Magento_Checkout module.
+For the sake of compatibility, upgradability, and easy maintenance, do not edit the default application code. Instead, add your customizations in a separate [module](https://glossary.magento.com/module). For your checkout customization to be applied correctly, your custom module should [depend](../../development/build/composer-integration.md) on the Magento_Checkout module.
 
 Do not use `Ui` for your custom module name, because `%Vendor%_Ui` notation, required when specifying paths, might cause issues.
 

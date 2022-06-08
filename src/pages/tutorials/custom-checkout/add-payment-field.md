@@ -33,7 +33,7 @@ Let’s go through each step.
 
 ## Step 2 Add a `db_schema.xml` file
 
-Add the `paymentpocomment` column in the `quote_payment` and `sales_order_payment` tables using the [declarative schema](../../../development/components/declarative-schema/configuration.md) method.
+Add the `paymentpocomment` column in the `quote_payment` and `sales_order_payment` tables using the [declarative schema](../../development/components/declarative-schema/configuration.md) method.
 
 Create the `app/code/Learning/CustomField/etc/db_schema.xml` and define the declarative schema as follows:
 
@@ -345,7 +345,7 @@ Use the following steps to verify your changes work as expected.
 
 1. Verify that the **Purchase Order Comment** field is visible.
 
-   ![Custom field in checkout page](../../../_images/tutorials/custom_field_payment.png)
+   ![Custom field in checkout page](../../_images/tutorials/custom_field_payment.png)
 
 1. Fill the purchase order comment field in the checkout and place an order.
 

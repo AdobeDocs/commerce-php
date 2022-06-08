@@ -7,7 +7,7 @@ description: Follow this tutorial to create a new input form in the Adobe Commer
 
 This topic describes how to add a custom input form (implemented as a UI component) to the [Checkout](https://glossary.magento.com/checkout) page.
 
-![The input form with four fields](../../../_images/tutorials/how_checkout_form.png)
+![The input form with four fields](../../_images/tutorials/how_checkout_form.png)
 
 Most of the elements, including the default forms on the Checkout page are implemented as UI components. And we recommend your custom form to be a UI component, extending the default [Magento_Ui/js/form/form](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Ui/view/base/web/js/form/form.js) component.
 
@@ -21,7 +21,7 @@ The application provides the ability to add a custom form to any of the checkout
 
 [Change to developer mode](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-mode.html) while you perform all customizations and debugging.
 
-For the sake of compatibility, upgradability, and easy maintenance, do not edit the default application code. Instead, add your customizations in a separate module. For your checkout customization to be applied correctly, your custom module should [depend](../../../development/build/composer-integration.md) on the `Magento_Checkout` module.
+For the sake of compatibility, upgradability, and easy maintenance, do not edit the default application code. Instead, add your customizations in a separate module. For your checkout customization to be applied correctly, your custom module should [depend](../../development/build/composer-integration.md) on the `Magento_Checkout` module.
 
 Do not use `Ui` for your custom module name, because `%Vendor%_Ui` notation, required when specifying paths, might cause issues.
 
@@ -260,7 +260,7 @@ The following code sample shows the configuration of the `custom-checkout-form-c
 
 Dynamically defined, or dynamic, forms are the forms where the set or type of fields can change. For example, the fields displayed on the checkout form depend on the Admin settings: depending on the **Admin > Stores > Settings > Configuration > Customers > Customer Configuration > Name and Address Options**.
 
-For such forms, you must implement a [plugin](../../../development/components/plugins.md) for the `\Magento\Checkout\Block\Checkout\LayoutProcessor::process` method.
+For such forms, you must implement a [plugin](../../development/components/plugins.md) for the `\Magento\Checkout\Block\Checkout\LayoutProcessor::process` method.
 A plugin can add custom fields definitions to layout at runtime. The format of the field definition is the same as for fields defined in layout.
 
 For example:

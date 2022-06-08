@@ -123,7 +123,7 @@ class SomeProcessor
 }
 ```
 
-For more information on creating plugins, see [Plugins (Interceptors)](../../../development/components/plugins.md).
+For more information on creating plugins, see [Plugins (Interceptors)](../../development/components/plugins.md).
 
 ## Step 2: Declare plugin in di.xml
 

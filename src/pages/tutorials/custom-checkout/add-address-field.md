@@ -17,7 +17,7 @@ To add your custom field to the checkout address form and access its value on th
 
 ## Step 1: Add the field to layout
 
-Both shipping address and billing address forms are [generated dynamically](../checkout/add-form.md#dynamically-defined-forms). To modify their layouts, create a [plugin](../../../development/components/plugins.md) for the `\Magento\Checkout\Block\Checkout\LayoutProcessor::process` method and declare it in the `di.xml` file in your module.
+Both shipping address and billing address forms are [generated dynamically](add-form.md#dynamically-defined-forms). To modify their layouts, create a [plugin](../../development/components/plugins.md) for the `\Magento\Checkout\Block\Checkout\LayoutProcessor::process` method and declare it in the `di.xml` file in your module.
 
 The following code snippet enumerates sample logic for adding a field named `Custom Attribute` to the shipping address form:
 
@@ -56,7 +56,7 @@ Via the previous example, the field is added to the `customAttributes` property 
 
 The `customAttributes` property was designed to contain custom EAV address attributes and is related to the `\Magento\Quote\Model\Quote\Address\CustomAttributeListInterface::getAttributes` method. The sample code above will automatically handle local storage persistence on the [frontend](https://glossary.magento.com/frontend).
 
-Optionally, instead of adding a plugin, you can use a [dependency injection (DI)](../../../development/components/dependency-injection.md). To use a DI, add the `LayoutProcessor`, which adds the custom field to the address form class, to the `<your_module_dir>/Block/Checkout/` directory. The class must implement the `\Magento\Checkout\Block\Checkout\LayoutProcessorInterface` interface. Use the code sample above as an example of the `\Magento\Checkout\Block\Checkout\LayoutProcessorInterface::process()` method implementation.
+Optionally, instead of adding a plugin, you can use a [dependency injection (DI)](../../development/components/dependency-injection.md). To use a DI, add the `LayoutProcessor`, which adds the custom field to the address form class, to the `<your_module_dir>/Block/Checkout/` directory. The class must implement the `\Magento\Checkout\Block\Checkout\LayoutProcessorInterface` interface. Use the code sample above as an example of the `\Magento\Checkout\Block\Checkout\LayoutProcessorInterface::process()` method implementation.
 
 To add your `LayoutProcessor` class the corresponding pool of processors, specify the following (where `%unique_name%` and `%path\to\your\LayoutProcessor%` must be replaced by your real values) in the `<your_module_dir>/etc/frontend/di.xml` file:
 
