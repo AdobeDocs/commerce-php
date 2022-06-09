@@ -67,9 +67,7 @@ Avoid using [around method plugins](../../development/components/plugins.md) whe
 
 <InlineAlert variant="info" slots="text"/>
 
-Access to method parameters was the primary justification for using **around** method plugins instead of **after** method plugins.
-<br/><br/>
-Since 2.2, [after method plugins](../../development/components/plugins.md#after-methods) give you access to method parameters. Use **after** method plugins if you need to replace or modify function results using arguments.
+Access to method parameters was the primary justification for using **around** method plugins instead of **after** method plugins. Since 2.2, [after method plugins](../../development/components/plugins.md#after-methods) give you access to method parameters. Use **after** method plugins if you need to replace or modify function results using arguments.
 
 ### Test your code
 
