@@ -28,7 +28,7 @@ These initial boilerplate files are the bare essential files needed for any modu
 ### `composer.json`
 
 In the module's root directory, create the file `composer.json`. This file gives [composer](https://glossary.magento.com/composer) the ability to install this module and its dependencies.
-For more information see: [`composer.json`](../../development/build/composer-integration.md).
+For more information see: [`composer.json`](../development/build/composer-integration.md).
 
  ```json
   {
@@ -56,7 +56,7 @@ For more information see: [`composer.json`](../../development/build/composer-int
 
 In the module's root directory, create the file `registration.php`. This file registers the module `MyCompany_ExampleAdminNewPage` with the application.
 
-For more information see: [registering your component](../../development/build/component-registration.md).
+For more information see: [registering your component](../development/build/component-registration.md).
 
 ```php
 <?php
@@ -78,7 +78,7 @@ ComponentRegistrar::register(
 
 In the module's root directory, create a new directory called `etc`. Under that directory, create the file `module.xml`. This file specifies the name and setup version of this module.
 
-For more information see: [naming your component](../../development/build/component-name.md).
+For more information see: [naming your component](../development/build/component-name.md).
 
 ```xml
 <?xml version="1.0"?>
@@ -88,7 +88,7 @@ For more information see: [naming your component](../../development/build/compon
 </config>
 ```
 
-If your module does not implement [Declarative Schema](../../development/components/declarative-schema/index.md), define the `setup_version` attribute in the module element.
+If your module does not implement [Declarative Schema](../development/components/declarative-schema/index.md), define the `setup_version` attribute in the module element.
 
 ```xml
 <module name="MyCompany_ExampleAdminNewPage" setup_version="1.0.0">
@@ -109,7 +109,7 @@ In the example below, `MyCompany_ExampleAdminNewPage` will be loaded after the `
 
 Before we can view the module's page, we need a way to navigate to it. These files create a link to the page in the left navigation and indicates how to resolve requests for that page.
 
-For more information on this topic, see: [routing](../../development/components/routing.md).
+For more information on this topic, see: [routing](../development/components/routing.md).
 
 ### `etc/adminhtml/menu.xml`
 

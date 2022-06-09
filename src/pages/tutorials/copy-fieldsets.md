@@ -170,5 +170,5 @@ bin/magento cache:clean
 ```
 
 [0]:https://github.com/magento/magento2/blob/2.4}/lib/internal/Magento/Framework/DataObject/Copy.php
-[1]:../../development/components/attributes.md
-[2]:../../development/components/dependency-injection.md
+[1]:../development/components/attributes.md
+[2]:../development/components/dependency-injection.md
