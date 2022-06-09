@@ -5,31 +5,31 @@ module.exports = [
     },
     {
       title: "Create an Admin page",
-      path: "/best-practices/tutorials/create-admin-page/",
+      path: "/tutorials/create-admin-page/",
     },
     {
       title: "Create an access control list (ACL) rule",
-      path: "/best-practices/tutorials/create-access-control-list-rule/",
+      path: "/tutorials/create-access-control-list-rule/",
     },
     {
       title: "Create a custom import entity",
-      path: "/best-practices/tutorials/create-custom-import-entity/",
+      path: "/tutorials/create-custom-import-entity/",
     },
     {
       title: "Create a custom REST API",
-      path: "/best-practices/tutorials/create-custom-rest-api/",
+      path: "/tutorials/create-custom-rest-api/",
     },
     {
       title: "Create a custom widget",
-      path: "/best-practices/tutorials/create-custom-widget/",
+      path: "/tutorials/create-custom-widget/",
     },
     {
       title: "Create a dynamic row system configuration",
-      path: "/best-practices/tutorials/create-dynamic-row-configuration/",
+      path: "/tutorials/create-dynamic-row-configuration/",
     },
     {
       title: "Create an integration with an external API",
-      path: "/best-practices/tutorials/create-api-integration/",
+      path: "/tutorials/create-api-integration/",
     },
     {
       title: "Create custom attributes",
@@ -123,14 +123,14 @@ module.exports = [
     },
     {
       title: "Convert serialized to JSON",
-      path: "/best-practices/tutorials/convert-serialized-data/",
+      path: "/tutorials/convert-serialized-data/",
     },
     {
       title: "Copy fieldsets",
-      path: "/best-practices/tutorials/copy-fieldsets/",
+      path: "/tutorials/copy-fieldsets/",
     },
     {
       title: "Modify media library folder permissions",
-      path: "/best-practices/tutorials/modify-image-library-permissions/",
+      path: "/tutorials/modify-image-library-permissions/",
     },
   ];
