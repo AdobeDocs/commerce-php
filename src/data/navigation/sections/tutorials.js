@@ -4,6 +4,34 @@ module.exports = [
       path: "/tutorials/",
     },
     {
+      title: "Create an Admin page",
+      path: "/best-practices/tutorials/create-admin-page/",
+    },
+    {
+      title: "Create an access control list (ACL) rule",
+      path: "/best-practices/tutorials/create-access-control-list-rule/",
+    },
+    {
+      title: "Create a custom import entity",
+      path: "/best-practices/tutorials/create-custom-import-entity/",
+    },
+    {
+      title: "Create a custom REST API",
+      path: "/best-practices/tutorials/create-custom-rest-api/",
+    },
+    {
+      title: "Create a custom widget",
+      path: "/best-practices/tutorials/create-custom-widget/",
+    },
+    {
+      title: "Create a dynamic row system configuration",
+      path: "/best-practices/tutorials/create-dynamic-row-configuration/",
+    },
+    {
+      title: "Create an integration with an external API",
+      path: "/best-practices/tutorials/create-api-integration/",
+    },
+    {
       title: "Create custom attributes",
       path: "/tutorials/custom-attributes/",
       pages: [
@@ -12,6 +40,10 @@ module.exports = [
           path: "/tutorials/custom-attributes/text-field/",
         },
       ],
+    },
+    {
+      title: "Customize the Admin design",
+      path: "/tutorials/custom-admin-design/",
     },
     {
       title: "Customize the product creation form",
@@ -90,7 +122,15 @@ module.exports = [
       ],
     },
     {
-      title: "Customize the Admin design",
-      path: "/tutorials/custom-admin-design/",
+      title: "Convert serialized to JSON",
+      path: "/best-practices/tutorials/convert-serialized-data/",
+    },
+    {
+      title: "Copy fieldsets",
+      path: "/best-practices/tutorials/copy-fieldsets/",
+    },
+    {
+      title: "Modify media library folder permissions",
+      path: "/best-practices/tutorials/modify-image-library-permissions/",
     },
   ];
