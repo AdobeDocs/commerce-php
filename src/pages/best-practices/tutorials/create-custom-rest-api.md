@@ -466,7 +466,7 @@ The example uses sample data for `product_id: 1` and the endpoint ```http://loca
 
 **Request:**
 
-`GET <domain>rest/V1/<store_code>/rest_dev/getProduct/<product_id>`
+`GET <domain>/rest/V1/<store_code>/rest_dev/getProduct/<product_id>`
 
 **Response:**
 

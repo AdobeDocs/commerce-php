@@ -107,7 +107,7 @@ In the example below, `MyCompany_ExampleAdminNewPage` will be loaded after the `
 
 ## Routing and navigation
 
-Before we can view the module's page, we need a way to navigate to it. These files create a link to the page in the left navigation and tells Magento how to resolve requests for that page.
+Before we can view the module's page, we need a way to navigate to it. These files create a link to the page in the left navigation and indicates how to resolve requests for that page.
 
 For more information on this topic, see: [routing](../../development/components/routing.md).
 
@@ -242,7 +242,7 @@ These files belong in the `view/adminhtml` directory because the Admin area use 
 
 ### `view/adminhtml/layout/exampleadminnewpage_helloworld_index.xml`
 
-This file defines the [layout](https://glossary.magento.com/layout) and structure of the index page for the HelloWorld controller. It sets the title to "Greetings" and instructs Magento to use the `helloworld.phtml` template as the content in a `Magento\Backend\Block\Template` block class.
+This file defines the [layout](https://glossary.magento.com/layout) and structure of the index page for the HelloWorld controller. It sets the title to "Greetings" and assigns the `helloworld.phtml` template as the content in a `Magento\Backend\Block\Template` block class.
 
 The name of this file uses the following pattern: *routeId*\_*controller*\_*action*.xml
 

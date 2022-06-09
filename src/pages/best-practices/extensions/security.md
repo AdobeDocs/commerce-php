@@ -63,9 +63,9 @@ It is tempting to add indexes to every column, however, they are regenerated dur
 
 Only on rare occasions would it be necessary to use a global [event](https://glossary.magento.com/event). You should use [frontend](https://glossary.magento.com/frontend) or [adminhtml](https://glossary.magento.com/adminhtml) to narrow the scope instead.
 
-## Use Magento data collections
+## Use data collections
 
-Execution of a SQL query is one of the most resource-taxing operations. Running SQL queries in a loop often results in a performance bottleneck. To load the EAV model, several heavy queries are required to execute. As the number of executed queries is multiplied with the number of categories, the result is extremely inefficient and slow code. Instead of loading models in a loop, Magento data collections can help to load a set of models in a very efficient manner.
+Execution of a SQL query is one of the most resource-taxing operations. Running SQL queries in a loop often results in a performance bottleneck. To load the EAV model, several heavy queries are required to execute. As the number of executed queries is multiplied with the number of categories, the result is extremely inefficient and slow code. Instead of loading models in a loop, data collections can help to load a set of models in a very efficient manner.
 
 ## Validate input and properly encode or escape output
 

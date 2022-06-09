@@ -79,7 +79,7 @@ For example, if your extension is related to the "Reports" functionality then it
 
 **Style:**
 
-*  The styles of the links in the admin should follow the same styles of the default Magento Navigation Links.
+*  The styles of the links in the admin should follow the same styles of the default navigation links.
 *  Do not introduce custom icons in the navigation submenus.
 
 ---

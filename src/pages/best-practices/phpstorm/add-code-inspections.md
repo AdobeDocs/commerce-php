@@ -213,7 +213,7 @@ The root folder for your test data is: `./testData/inspections`. The internal fo
 To add data for your new test case use the next rule: create directory inside tested language folder that has the same name as your testing class **without suffix Test** (for the example above it is folder with the name: `TypeConfigurationTagTypesInspection`).
 For each testing method create folder in it that has a name the same as method name **without test prefix** in the camel case format (for the example above it is folder with the name: `nameAttributeValueTypeDoesNotExists` inside the `TypeConfigurationTagTypesInspection` folder).
 
-Magento 2 SandBox that used for the tests is in the `./testData/project/magento2` folder.
+The sandbox for the tests is in the `./testData/project/magento2` folder.
 
 [InspectionBundleMessagesFile]: https://github.com/magento/magento2-phpstorm-plugin/blob/4.0.0-develop/resources/magento2/inspection.properties
 [PluginInspection]: https://github.com/magento/magento2-phpstorm-plugin/blob/4.0.0-develop/src/com/magento/idea/magento2plugin/inspections/php/PluginInspection.java

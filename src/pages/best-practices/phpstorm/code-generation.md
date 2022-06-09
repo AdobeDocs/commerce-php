@@ -29,7 +29,7 @@ All generated XML files will include the **XML file header**:
 
 ![](../../_images/best-practices/phpstorm/declare-web-api-interface-min.gif)
 
-## Web API generation for the Magento Entity Creator
+## Web API generation for the Entity Creator
 
 From now on, the Entity Creator feature also includes the Web API generation.
 
