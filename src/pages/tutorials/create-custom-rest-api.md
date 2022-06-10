@@ -5,7 +5,7 @@ contributor_name: Nitish Ranjan
 contributor_link: https://github.com/nitish-ranjan05
 ---
 
-# Create a cusotm REST API
+# Create a custom REST API
 
 Although {{site.data.var.ee}} and {{site.data.var.ce}} provide numerous REST endpoints, you might need to create your own to manage custom data within your extension. This tutorial describes how you can create such a custom REST [API](https://glossary.magento.com/api).
 

@@ -25,7 +25,7 @@ This command creates the `MyCompany` company directory and the `ExampleAdminNewP
 
 These initial boilerplate files are the bare essential files needed for any module.
 
-### `composer.json`
+### `composer.json` file
 
 In the module's root directory, create the file `composer.json`. This file gives [composer](https://glossary.magento.com/composer) the ability to install this module and its dependencies.
 For more information see: [`composer.json`](../development/build/composer-integration.md).
@@ -52,7 +52,7 @@ For more information see: [`composer.json`](../development/build/composer-integr
   }
  ```
 
-### `registration.php`
+### `registration.php` file
 
 In the module's root directory, create the file `registration.php`. This file registers the module `MyCompany_ExampleAdminNewPage` with the application.
 
@@ -74,7 +74,7 @@ ComponentRegistrar::register(
 );
 ```
 
-### `etc/module.xml`
+### `etc/module.xml` file
 
 In the module's root directory, create a new directory called `etc`. Under that directory, create the file `module.xml`. This file specifies the name and setup version of this module.
 
@@ -111,7 +111,7 @@ Before we can view the module's page, we need a way to navigate to it. These fil
 
 For more information on this topic, see: [routing](../development/components/routing.md).
 
-### `etc/adminhtml/menu.xml`
+### `etc/adminhtml/menu.xml` file
 
 Under the created `etc` directory, create a new directory called `adminhtml`. Under that directory, create the file `menu.xml`. This [XML](https://glossary.magento.com/xml) file adds new menu items to the [Admin](https://glossary.magento.com/admin).
 
@@ -140,7 +140,7 @@ The following parts make up the generated page request link to the **Hello World
 </config>
 ```
 
-### `etc/adminhtml/routes.xml`
+### `etc/adminhtml/routes.xml` file
 
 Under `etc/adminhtml` create the file `routes.xml`. The contents of this  XML file tells the application to route requests that use the `frontName` `exampleadminnewpage` to this module.
 
@@ -159,7 +159,7 @@ Under `etc/adminhtml` create the file `routes.xml`. The contents of this  XML fi
 
 Now that we have a link to the **Hello World** page, we need to create the file needed to handle that request.
 
-### `Controller/Adminhtml/HelloWorld/Index.php`
+### `Controller/Adminhtml/HelloWorld/Index.php` file
 
 In the module's root directory, run the following command:
 
@@ -240,7 +240,7 @@ mkdir -p view/adminhtml/templates
 
 These files belong in the `view/adminhtml` directory because the Admin area use these files during page generation.
 
-### `view/adminhtml/layout/exampleadminnewpage_helloworld_index.xml`
+### `view/adminhtml/layout/exampleadminnewpage_helloworld_index.xml` file
 
 This file defines the [layout](https://glossary.magento.com/layout) and structure of the index page for the HelloWorld controller. It sets the title to "Greetings" and assigns the `helloworld.phtml` template as the content in a `Magento\Backend\Block\Template` block class.
 
@@ -262,7 +262,7 @@ The name of this file uses the following pattern: *routeId*\_*controller*\_*acti
 </page>
 ```
 
-### `view/adminhtml/templates/helloworld.phtml`
+### `view/adminhtml/templates/helloworld.phtml` file
 
 This template file contains the actual page content for the **Hello World** page.
 
