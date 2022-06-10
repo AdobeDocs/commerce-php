@@ -53,7 +53,7 @@ The Commerce framework has well-defined upgrade and versioning strategies that c
 
 Adobe or third-party services can be configured as a web [API](https://glossary.magento.com/api) (REST or SOAP) with some simple [XML](https://glossary.magento.com/xml). You can use these services to integrate your installation into third-party applications, such as CRM (Customer Relationship Management), ERP (Enterprise Resource Planning) back office systems, and [CMS](https://glossary.magento.com/cms) (Content Management Systems).
 
-See [Getting Started with web APIs](https://devdocs.magento.com/guides/v2.4/get-started/bk-get-started-api.html) for more information.
+See [Getting Started with web APIs](https://developer.adobe.com/commerce/webapi/get-started/) for more information.
 
 ### Flexible attribute types
 

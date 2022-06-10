@@ -15,7 +15,7 @@ If you feel that the application can be improved with your core code changes, pl
 
 ## Learn the architecture
 
-To create the optimum module, you should get to know the application architecture. Start off by familiarizing yourself with the [Admin Pattern Library](https://devdocs.magento.com/guides/v2.4/pattern-library/bk-pattern.html), the core [components](../../development/index.md), and our [service contracts](../../development/components/service-contracts/index.md) and [APIs](https://devdocs.magento.com/guides/v2.4/get-started/bk-get-started-api.html).
+To create the optimum module, you should get to know the application architecture. Start off by familiarizing yourself with the [Admin Pattern Library](https://devdocs.magento.com/guides/v2.4/pattern-library/bk-pattern.html), the core [components](../../development/index.md), and our [service contracts](../../development/components/service-contracts/index.md) and [APIs](https://developer.adobe.com/commerce/webapi/get-started/).
 
 ## Check your extension configurations
 
