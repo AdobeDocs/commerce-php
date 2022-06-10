@@ -32,14 +32,8 @@ module.exports = [
       path: "/tutorials/create-api-integration/",
     },
     {
-      title: "Create custom attributes",
-      path: "/tutorials/custom-attributes/",
-      pages: [
-        {
-          title: "Add a text field attribute",
-          path: "/tutorials/custom-attributes/text-field/",
-        },
-      ],
+      title: "Create a text field attribute",
+      path: "/tutorials/custom-text-field-attribute/",
     },
     {
       title: "Customize the Admin design",
