@@ -41,11 +41,11 @@ Explore resources that describe the foundational elements of the Adobe Commerce 
 
 Learn about extending or customizing Adobe Commerce and Magento Open Source components. Apply this knowledge to create components that introduce new functionality and distribute them to merchants.
 
-<!-- <DiscoverBlock slots="link, text"/>
+<DiscoverBlock slots="link, text"/>
 
 [Best Practices](best-practices/)
 
-Lorem ipsum dolor sit amet -->
+Use this collection of best practices curated by the community as well as the Adobe User Experience (UX), Product Management, and Engineering teams to avoid commonly reported issues in third-party Adobe Commerce and Magento Open source extensions.
 
 <!-- <DiscoverBlock slots="link, text"/>
 
