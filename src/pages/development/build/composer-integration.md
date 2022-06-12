@@ -13,7 +13,7 @@ We recommend you include `composer.json` in your component's root directory even
 
 <InlineAlert variant="info" slots="text"/>
 
-Adobe Commerce and Magento Open Source do not support the [`path`][3] repository.
+Adobe Commerce and Magento Open Source do not support the [`path`][3] repository pointing to a folder outside of the application's root directory.
 
 Here is an example of the `composer.json` file.
 
