@@ -190,11 +190,11 @@ Run `bin/magento setup:upgrade` from the project root to execute the newly added
 
 -  The attribute is created in the customer form under the _Account Information_ section.
 
-![Custom attribute in the customer form](../_images/tutorials/customer-text-form.png)
+   ![Custom attribute in the customer form](../../_images/tutorials/customer-text-form.png)
 
 -  The attribute is displayed in the customer grid.
 
-![Custom attribute in the customer grid](../_images/tutorials/customer-text-grid.png)
+   ![Custom attribute in the customer grid](../../_images/tutorials/customer-text-grid.png)
 
 ### Code reference
 

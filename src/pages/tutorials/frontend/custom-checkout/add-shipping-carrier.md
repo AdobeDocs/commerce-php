@@ -296,8 +296,8 @@ bin/magento setup:upgrade
 
 The backend settings for the custom shipping carrier appear as shown below.
 
-![Custom shipping carrier backend settings](../../_images/tutorials/checkout-add-custom-carrier-01.png)
+![Custom shipping carrier backend settings](../../../_images/tutorials/checkout-add-custom-carrier-01.png)
 
 The custom shipping carrier will appear on checkout as shown below.
 
-![Custom shipping carrier on checkout](../../_images/tutorials/checkout-add-custom-carrier-02.png)
+![Custom shipping carrier on checkout](../../../_images/tutorials/checkout-add-custom-carrier-02.png)

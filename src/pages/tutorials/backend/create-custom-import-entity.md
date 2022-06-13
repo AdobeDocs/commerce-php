@@ -418,7 +418,7 @@ public function __construct(
 
 The validation rules will be checking for a required **name** and a greater than 0 **duration**.
 
-![Validating Data](../_images/tutorials/import-validation.png)
+![Validating Data](../../_images/tutorials/import-validation.png)
 
 ## Step 3. Providing the sample file
 
@@ -459,6 +459,6 @@ Next, register the sample file for our entity.
 
 As result, the new Entity Type and the sample CSV are available:
 
-![Import Entity](../_images/tutorials/import-entity.png)
+![Import Entity](../../_images/tutorials/import-entity.png)
 
 [0]: https://github.com/magento/magento2/blob/2.4}/app/code/Magento/ImportExport/Model/Import/Entity/AbstractEntity.php
