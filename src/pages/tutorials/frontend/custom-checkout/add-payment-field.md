@@ -33,7 +33,7 @@ Let’s go through each step.
 
 ## Step 2 Add a `db_schema.xml` file
 
-Add the `paymentpocomment` column in the `quote_payment` and `sales_order_payment` tables using the [declarative schema](../../development/components/declarative-schema/configuration.md) method.
+Add the `paymentpocomment` column in the `quote_payment` and `sales_order_payment` tables using the [declarative schema](../../../development/components/declarative-schema/configuration.md) method.
 
 Create the `app/code/Learning/CustomField/etc/db_schema.xml` and define the declarative schema as follows:
 

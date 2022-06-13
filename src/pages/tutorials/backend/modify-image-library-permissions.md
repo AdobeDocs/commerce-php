@@ -136,5 +136,5 @@ The following configuration overrides the default directory restriction for the 
 </type>
 ```
 
-[`di.xml`]: ../development/build/dependency-injection-file.md
+[`di.xml`]: ../../development/build/dependency-injection-file.md
 [Storage class]: https://github.com/magento/magento2/blob/2.4/app/code/Magento/Cms/Model/Wysiwyg/Images/Storage.php

@@ -22,7 +22,7 @@ You can add a custom checkout step, it should be implemented as a [UI component]
 
 To create the view part of the new checkout step:
 
-1. Add a module directory (not covered in this topic). See [Build your module](../../development/build/index.md) for details). All custom files must be stored there. For your checkout customization to be applied correctly, your custom module should depend on the `Magento_Checkout` module. Do not use `Ui` for your custom module name, because `%Vendor%_Ui` notation, required when specifying paths, might cause issues.
+1. Add a module directory (not covered in this topic). See [Build your module](../../../development/build/index.md) for details). All custom files must be stored there. For your checkout customization to be applied correctly, your custom module should depend on the `Magento_Checkout` module. Do not use `Ui` for your custom module name, because `%Vendor%_Ui` notation, required when specifying paths, might cause issues.
 1. [Create the `.js` file implementing the view model](#add-the-javascript-file-implementing-the-new-step).
 1. [Create a `.html` template for the component](#add-the-html-template).
 

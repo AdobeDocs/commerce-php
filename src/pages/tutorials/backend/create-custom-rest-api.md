@@ -15,7 +15,7 @@ In this tutorial, we will create two custom endpoints to read or modify the prod
 
 We will use `Dev_RestApi` as the namespace for this tutorial.
 
-Create the `module.xml` and `registration.php` files to get started. [About component file structure](../development/prepare/component-file-structure.md) provides additional information.
+Create the `module.xml` and `registration.php` files to get started. [About component file structure](../../development/prepare/component-file-structure.md) provides additional information.
 
 **`app/code/Dev/RestApi/etc/module.xml`**:
 
@@ -70,7 +70,7 @@ Create the required ACL entries in `app/code/Dev/RestApi/etc/acl.xml`:
 
 ## Step 3. Define custom endpoints
 
-To define endpoints, we need to [configure a web API](../development/components/web-api/services.md) service as described in `app/code/Dev/RestApi/etc/webapi.xml`:
+To define endpoints, we need to [configure a web API](../../development/components/web-api/services.md) service as described in `app/code/Dev/RestApi/etc/webapi.xml`:
 
 ```xml
 <?xml version="1.0"?>
