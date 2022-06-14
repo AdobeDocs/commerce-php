@@ -59,6 +59,12 @@ Lorem ipsum dolor sit amet -->
 
 Review Adobe Commerce and Magento Open Source coding standards for different languages, including PHP, JavaScript, LESS, and jQuery.
 
+<DiscoverBlock slots="link, text"/>
+
+[Tutorials](tutorials/)
+
+Follow step-by-step tutorials to customize default Adobe Commerce and Magento Open Source features, including checkout, attributes, and the product creation form.
+
 <DiscoverBlock width="100%" slots="heading, link, text"/>
 
 ## Contributing to this documentation
