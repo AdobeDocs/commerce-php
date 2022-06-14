@@ -12,16 +12,12 @@ module.exports = [
           path: "/tutorials/admin/create-admin-page/",
         },
         {
-          title: "Create a dynamic row system configuration",
-          path: "/tutorials/admin/create-dynamic-row-configuration/",
-        },
-        {
-          title: "Create a text field attribute",
-          path: "/tutorials/admin/custom-text-field-attribute/",
-        },
-        {
           title: "Customize the Admin design",
           path: "/tutorials/admin/custom-admin-design/",
+        },
+        {
+          title: "Create a dynamic row system configuration",
+          path: "/tutorials/admin/create-dynamic-row-configuration/",
         },
         {
           title: "Customize the product creation form",
@@ -36,6 +32,10 @@ module.exports = [
               path: "/tutorials/admin/custom-product-creation-form/modifier-class/",
             },
           ],
+        },
+        {
+          title: "Create a text field attribute",
+          path: "/tutorials/admin/custom-text-field-attribute/",
         },
       ],
     },
@@ -116,20 +116,20 @@ module.exports = [
       path: "/tutorials/backend/",
       pages: [
         {
-          title: "Create an access control list (ACL) rule",
-          path: "/tutorials/backend/create-access-control-list-rule/",
-        },
-        {
-          title: "Create a custom import entity",
-          path: "/tutorials/backend/create-custom-import-entity/",
+          title: "Create an integration with an external API",
+          path: "/tutorials/backend/create-api-integration/",
         },
         {
           title: "Create a custom REST API",
           path: "/tutorials/backend/create-custom-rest-api/",
         },
         {
-          title: "Create an integration with an external API",
-          path: "/tutorials/backend/create-api-integration/",
+          title: "Create an access control list (ACL) rule",
+          path: "/tutorials/backend/create-access-control-list-rule/",
+        },
+        {
+          title: "Create a custom import entity",
+          path: "/tutorials/backend/create-custom-import-entity/",
         },
         {
           title: "Convert serialized to JSON",
