@@ -129,7 +129,7 @@ module.exports = [
         },
         {
           title: "Create an integration with an external API",
-          path: "/tutorials/backend/reate-api-integration/",
+          path: "/tutorials/backend/create-api-integration/",
         },
         {
           title: "Convert serialized to JSON",
