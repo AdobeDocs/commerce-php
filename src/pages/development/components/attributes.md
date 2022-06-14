@@ -227,7 +227,7 @@ searchCriteria[filter_groups][0][filters][0]
 
 ### Extension attribute authentication
 
-Individual fields that are defined as extension attributes can be restricted, based on existing permissions. This feature allows extension developers to restrict access to data. See [Web API authentication overview](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication.html) for general information about authentication in Magento.
+Individual fields that are defined as extension attributes can be restricted, based on existing permissions. This feature allows extension developers to restrict access to data. See [Web API authentication overview](https://developer.adobe.com/commerce/webapi/get-started/authentication/) for general information about authentication in Magento.
 
 The following [code sample](https://github.com/magento/magento2/blob/2.4/app/code/Magento/CatalogInventory/etc/extension_attributes.xml) defines `stock_item` as an extension attribute of the `CatalogInventory` module. `CatalogInventory` is treated as a "third-party extension". Access to the inventory data is restricted because the quantity of in-stock item may be competitive information.
 
