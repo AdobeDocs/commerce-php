@@ -39,15 +39,19 @@ jobs:
           DEFAULT_BRANCH: main
           VALIDATE_GITHUB_ACTIONS: true
           VALIDATE_GITLEAKS: true
+          VALIDATE_YAML: true
 
           # The Markdown rules are defined at
           # .github/linters/.markdown-lint.yml
-
           # Documentation on rules:
           # https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md
           VALIDATE_MARKDOWN: true
-          VALIDATE_YAML: true
-      
+
+          # To disable linting of the Module reference guide, uncomment
+          # the following FILTER_REGEX_EXCLUDE configuration
+          # FILTER_REGEX_EXCLUDE: src/pages/module-reference/module-*
+          FILTER_REGEX_EXCLUDE: src/pages/module-reference/module-*
+
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
 
