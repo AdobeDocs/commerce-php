@@ -351,21 +351,21 @@ The [`Magento\Framework\Interception\PluginListInterface`](https://github.com/ma
 
 If two or more plugins have the same `sortOrder` value or do not specify it, the [component load order](../build/component-load-order.md) declared in the `sequence` node from `module.xml` and [area](../build/schema-validation.md) will define the merge sequence. Check the component load order in `app/etc/config.php` file.
 
-The applicationexecutes plugins using these rules during each plugin execution in two main flows:
+The application executes plugins using these rules during each plugin execution in two main flows:
 
 *  Before the execution of the observed method, starting from lowest to highest `sortOrder`.
-   *  The applicationexecutes the current plugin’s `before` method.
+   *  The application executes the current plugin’s `before` method.
    *  Then the current plugin's `around` method is called.
       *  The first part of the plugin's `around` method is executed.
       *  The `around` method executes the `callable`.
          *  If there is another plugin in the chain, all subsequent plugins are wrapped in an independent sequence loop and the execution starts another flow.
          *  If the current plugin is the last in the chain, the observed method is executed.
       *  The second part of the `around` method is executed.
-   *  The applicationmoves on to the next plugin.
+   *  The application moves on to the next plugin.
 
 *  Following the execution flow, starting from lowest to highest `sortOrder` in the current sequence plugins loop.
    *  The current plugin's `after` method is executed.
-   *  The applicationmoves on to the next plugin.
+   *  The application moves on to the next plugin.
 
 As a result of these rules, the execution flow of an observed method is affected not only by the prioritization of the plugins, but also by their implemented methods.
 
@@ -375,7 +375,7 @@ The `around` plugin's method affects the flow of all plugins that are executed a
 
 <InlineAlert variant="success" slots="text"/>
 
-When the `before` and `around` plugin sequence is finished, the applicationcalls the first plugin `after` method in the sequence loop, and not the `after` method of the current plugin that was being executed by the `around` method.
+When the `before` and `around` plugin sequence is finished, the application calls the first plugin `after` method in the sequence loop, and not the `after` method of the current plugin that was being executed by the `around` method.
 
 ### Examples
 
@@ -459,7 +459,7 @@ The execution will be in this order:
 
 *  `PluginA::beforeDispatch()`
 *  `PluginB::beforeDispatch()`
-*  `PluginB::aroundDispatch()` (the applicationcalls the first half before `callable`)
+*  `PluginB::aroundDispatch()` (the application calls the first half before `callable`)
 
    *  `PluginC::beforeDispatch()`
 
@@ -529,26 +529,26 @@ Assuming these methods:
 The execution will be in this order:
 
 *  `PluginA::beforeDispatch()`
-*  `PluginA::aroundDispatch()` (the applicationcalls the first half until `callable`)
+*  `PluginA::aroundDispatch()` (the application calls the first half until `callable`)
 
    *  `PluginB::beforeDispatch()`
    *  `PluginC::beforeDispatch()`
-   *  `PluginC::aroundDispatch()` (the applicationcalls the first half until `callable`)
+   *  `PluginC::aroundDispatch()` (the application calls the first half until `callable`)
 
       *  `Action::dispatch()`
 
-   *  `PluginC::aroundDispatch()` (the applicationcalls the second half after `callable`)
+   *  `PluginC::aroundDispatch()` (the application calls the second half after `callable`)
    *  `PluginB::afterDispatch()`
    *  `PluginC::afterDispatch()`
 
-*  `PluginA::aroundDispatch()` (the applicationcalls the second half after `callable`)
+*  `PluginA::aroundDispatch()` (the application calls the second half after `callable`)
 *  `PluginA::afterDispatch()`
 
 ## Configuration inheritance
 
 Classes and interfaces that are implementations of, or inherit from, classes that have plugins will also inherit plugins from the parent class.
 
-The applicationuses plugins defined in the global scope when the system is in a specific area (such as frontend or backend). You can extend or override these global plugin configurations with an area's `di.xml` file.
+The application uses plugins defined in the global scope when the system is in a specific area (such as frontend or backend). You can extend or override these global plugin configurations with an area's `di.xml` file.
 
 For example, the developer can disable a global plugin in the [backend](https://glossary.magento.com/backend) area by disabling it in the specific `di.xml` file for the backend area.
 
