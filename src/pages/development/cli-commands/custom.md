@@ -33,40 +33,41 @@ Before you begin, make sure you understand the following:
 -  Your command can use the Object Manager and dependency injection features; for example, it can use [constructor dependency injection](../components/dependency-injection.md#constructor-injection).
 -  Your command should have an unique `name`, defined in the `configure()` method of the Command class:
 
-   ```php
-   protected function configure()
-   {
-      $this->setName('my:first:command');
-      $this->setDescription('This is my first console command.');
+    ```php
+    protected function configure(): void
+    {
+        $this->setName('my:first:command');
+        $this->setDescription('This is my first console command.');
 
-      parent::configure();
-   }
-   ...
-   ```
+        parent::configure();
+    }
+    ...
+    ```
 
    or in the `di.xml` file:
 
-   ```xml
-   <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-      ...
-      <type name="Magento\CommandExample\Console\Command\SomeCommand">
-         <arguments>
-            <!-- configure the command name via constructor $name argument -->
-            <argument name="name" xsi:type="string">my:first:command</argument>
-         </arguments>
-      </type>
-      ...
-   </config>
-   ```
+    ```xml
+    <?xml version="1.0"?>
+    <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+        ...
+        <type name="Magento\CommandExample\Console\Command\SomeCommand">
+            <arguments>
+                <!-- configure the command name via constructor $name argument -->
+                <argument name="name" xsi:type="string">my:first:command</argument>
+            </arguments>
+        </type>
+        ...
+    </config>
+    ```
 
-   or in the `__construct` method (declaration is similar to `di.xml`):
+    or in the `__construct` method (declaration is similar to `di.xml`):
 
-   ```php
-   public function __construct()
-   {
-       parent::__construct('my:first:command');
-   }
-   ```
+    ```php
+    public function __construct()
+    {
+        parent::__construct('my:first:command');
+    }
+    ```
 
    Otherwise the [Symfony](https://github.com/symfony/console/blob/master/Application.php#L470) framework will return an `The command defined in "<Command class>" cannot have an empty name.` error.
 
@@ -80,89 +81,103 @@ Following is a summary of the process:
 
    See [`<Magento_Store_module_dir>/Console/Command/StoreListCommand.php`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Store/Console/Command/StoreListCommand.php) for example.
 
-   ```php
-   <?php
-       namespace Magento\CommandExample\Console\Command;
+    ```php
+    <?php
+   
+    declare(strict_types=1);
+   
+    namespace Magento\CommandExample\Console\Command;
 
-       use Symfony\Component\Console\Command\Command;
-       use Symfony\Component\Console\Input\InputInterface;
-       use Symfony\Component\Console\Input\InputOption;
-       use Symfony\Component\Console\Output\OutputInterface;
+    use Magento\Framework\Exception\LocalizedException;
+    use Symfony\Component\Console\Command\Command;
+    use Symfony\Component\Console\Input\InputInterface;
+    use Symfony\Component\Console\Input\InputOption;
+    use Symfony\Component\Console\Output\OutputInterface;
 
-       /**
-        * Class SomeCommand
-        */
-       class SomeCommand extends Command
-       {
-           const NAME = 'name';
+    class SomeCommand extends Command
+    {
+        private const NAME = 'name';
 
-           /**
-            * @inheritDoc
-            */
-           protected function configure()
-           {
-               $this->setName('my:first:command');
-               $this->setDescription('This is my first console command.');
-               $this->addOption(
-                   self::NAME,
-                   null,
-                   InputOption::VALUE_REQUIRED,
-                   'Name'
-               );
+        protected function configure(): void
+        {
+            $this->setName('my:first:command');
+            $this->setDescription('This is my first console command.');
+            $this->addOption(
+                self::NAME,
+                null,
+                InputOption::VALUE_REQUIRED,
+                'Name'
+            );
 
-               parent::configure();
-           }
+            parent::configure();
+        }
 
-           /**
-            * Execute the command
-            *
-            * @param InputInterface $input
-            * @param OutputInterface $output
-            *
-            * @return null|int
-            */
-           protected function execute(InputInterface $input, OutputInterface $output)
-           {
-               if ($name = $input->getOption(self::NAME)) {
-                   $output->writeln('<info>Provided name is `' . $name . '`</info>');
-               }
+        /**
+         * Execute the command
+         *
+         * @param InputInterface $input
+         * @param OutputInterface $output
+         *
+         * @return int
+         */
+         protected function execute(InputInterface $input, OutputInterface $output): int
+         {
+             $exitCode = 0;
+             
+             if ($name = $input->getOption(self::NAME)) {
+                 $output->writeln('<info>Provided name is `' . $name . '`</info>');
+             }
 
-               $output->writeln('<info>Success Message.</info>');
-               $output->writeln('<error>An error encountered.</error>');
-               $output->writeln('<comment>Some Comment.</comment>');
-           }
-       }
-   ```
+             $output->writeln('<info>Success message.</info>');
+             $output->writeln('<comment>Some comment.</comment>');
 
-   Style the output text by using `<error>`, `<info>`, or `<comment>` tags. See [Symfony](https://symfony.com/doc/current/console/coloring.html) documentation for more information about styling.
+             try {
+                 if (rand(0, 1)) {
+                    throw new LocalizedException(__('An error occurred.'));
+                 }
+             } catch (LocalizedException $e) {
+                 $output->writeln(sprintf(
+                     '<error>%s</error>',
+                     $e->getMessage()
+                 );
+                 $exitCode = 1;
+             }
+             
+             return $exitCode;
+         }
+    }
+    ```
+
+    Style the output text by using `<error>`, `<info>`, or `<comment>` tags. See [Symfony](https://symfony.com/doc/current/console/coloring.html) documentation for more information about styling.
 
 1. Declare your Command class in `Magento\Framework\Console\CommandListInterface` and configure the command name using dependency injection (`<your component root dir>/etc/di.xml`):
 
-   ```xml
-   <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-       ...
-       <type name="Magento\Framework\Console\CommandListInterface">
-           <arguments>
-               <argument name="commands" xsi:type="array">
-                   <item name="commandexample_somecommand" xsi:type="object">Magento\CommandExample\Console\Command\SomeCommand</item>
-               </argument>
-           </arguments>
-       </type>
-       ...
-   </config>
-   ```
+    ```xml
+    <?xml version="1.0"?>
+    <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+        ...
+        <type name="Magento\Framework\Console\CommandListInterface">
+            <arguments>
+                <argument name="commands" xsi:type="array">
+                    <item name="commandexample_somecommand" xsi:type="object">Magento\CommandExample\Console\Command\SomeCommand</item>
+                </argument>
+            </arguments>
+        </type>
+        ...
+    </config>
+    ```
 
 1. Clean the [cache](https://glossary.magento.com/cache):
 
-   ```bash
-   bin/magento cache:clean
-   ```
+    ```bash
+    bin/magento cache:clean
+    ```
 
 1. Regenerate the code:
 
-   ```bash
-   bin/magento setup:di:compile
-   ```
+    ```bash
+    bin/magento setup:di:compile
+    ```
 
 ### Result
 
