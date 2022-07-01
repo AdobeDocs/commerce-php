@@ -179,8 +179,8 @@ nav li._active { ... }
 [data-action="delete"] { ... }
 form input[name="password"] { ... }
 section[role="main"] { ... }
-[role="menu] [role="menuitem"] { ... }
-[role="menu] [role="menuitem"].active { ... }
+[role="menu"] [role="menuitem"] { ... }
+[role="menu"] [role="menuitem"].active { ... }
 ```
 
 ### Hard-coded CSS styles
@@ -200,7 +200,7 @@ Exception: CSS attributes where values must be calculated beyond the css-topics/
    options: {
       hOffset: 0,
       myCustomElement: '[data-container="my-custom-element"]',
- hiddenClass: '_hidden'
+      hiddenClass: '_hidden'
   }
 ...
    this.element.toggleClass(this.options.hiddenClass);
