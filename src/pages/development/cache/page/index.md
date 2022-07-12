@@ -42,7 +42,7 @@ Do not configure content pages (i.e., catalog, product, and CMS pages) to be unc
 
 ## Public and private content
 
-Reverse proxies serve "public" or shared content to more than one user. However, most Adobe Commerce and Magebto Open Source websites generate dynamic and personalized "private" content that should only be served to one user, which presents unique caching challenges. To address these challenges, the application can distinguish between two types of content:
+Reverse proxies serve "public" or shared content to more than one user. However, most Adobe Commerce and Magento Open Source websites generate dynamic and personalized "private" content that should only be served to one user, which presents unique caching challenges. To address these challenges, the application can distinguish between two types of content:
 
 -  **[Public](public-content.md)** - Public content is stored server side in your reverse proxy cache storage (e.g., file system, database, Redis, or Varnish) and is available to multiple customers. Examples of public content include header, footer, and category listing.
 
