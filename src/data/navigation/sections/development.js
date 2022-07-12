@@ -277,6 +277,10 @@ module.exports = [
               title: "Request processor pool",
               path: "/development/components/web-api/request-processor-pool/",
             },
+            {
+              title: "Inventory Management API reference",
+              path: "/development/components/web-api/inventory-management/",
+            },
           ],
         },
         {
