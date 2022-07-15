@@ -277,6 +277,10 @@ module.exports = [
               title: "Request processor pool",
               path: "/development/components/web-api/request-processor-pool/",
             },
+            {
+              title: "Inventory Management API reference",
+              path: "/development/components/web-api/inventory-management/",
+            },
           ],
         },
         {
@@ -384,6 +388,20 @@ module.exports = [
         {
           title: "Float comparator",
           path: "/development/framework/float-comparator/",
+        },
+        { 
+          title: "Inventory Management",
+          path: "/development/framework/inventory-management/",
+          pages: [
+            {
+              title: "Reservations",
+              path: "/development/framework/inventory-management/reservations/",
+            },
+            {
+              title: "Source selection algorithms",
+              path: "/development/framework/inventory-management/source-selection-algorithms/",
+            },
+          ],
         },
         {
           title: "Serialize library",

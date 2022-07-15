@@ -72,6 +72,10 @@ module.exports = [
         path: "/architecture/modules/dependencies/",
       },
       {
+        title: "Inventory Management",
+        path: "/architecture/modules/inventory-management/"
+      },
+      {
         title: "Third-party libraries",
         path: "/architecture/modules/libraries/",
       },
