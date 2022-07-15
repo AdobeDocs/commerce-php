@@ -1,6 +1,6 @@
 ---
 title: Inventory Management | Commerce PHP Extensions
-description: Learn about the architecture of the ADobe commerce and Magento Open Source Inventory Management module.
+description: Learn about the architecture of the Adobe Commerce and Magento Open Source Inventory Management module.
 ---
 
 # Inventory Management
