@@ -23,7 +23,7 @@ The `Customer`, `Catalog` and `Order` resource models use EAV attributes.
 
 ## XML Declarative schema
 
-With Adobe Commerce and Magento Opem Source 2.3, we introduced Declarative XML Schemas.
+With Adobe Commerce and Magento Open Source 2.3, we introduced Declarative XML Schemas.
 These are XML files that are used to specify the final state of the database.
 These files replace PHP update scripts that were required when upgrading a module.
 These files allow you to skip the progressive upgrade scripts and jump right to the final state of the database.
