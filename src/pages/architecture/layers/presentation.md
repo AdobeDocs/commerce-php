@@ -43,7 +43,7 @@ The Progressive Web App (PWA) Studio project is a set of developer tools that al
 PWA is a way to present a storefront using a set of React JavaScript components.
 Using the Commerce framework as a headless backend, you can use PWA components to create mobile friendly frontend.
 
-You can read more about how PWA works with the Commerce framework in the [PWA Studio docs][https://developer.adobe.com/commerce/pwa-studio/].
+You can read more about how PWA works with the Commerce framework in the [PWA Studio docs](https://developer.adobe.com/commerce/pwa-studio/).
 
 ## View model
 
