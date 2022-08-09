@@ -55,12 +55,17 @@ The asynchronous/bulk API has one defined consumer which processes all asynchron
               consumerInstance="Magento\AsynchronousOperations\Model\MassConsumer"/>
 ```
 
-## queue_topology.xml
+### queue_topology.xml
 
 The message queue topology configuration links all auto-generated topic names with prefix `async.` to the `magento` exchange and defines the queue named `async.operations.all` as the destination for all messages.
 
 ```xml
-<exchange name="magento" type="topic" connection="amqp">
-    <binding id="async.operations.all" topic="async.#" destinationType="queue" destination="async.operations.all"/>
+<exchange name="magento" connection="amqp">
+    <binding id="async.operations.all" topic="async.#" destination="async.operations.all"/>
 </exchange>
 ```
+
+<InlineAlert variant="info" slots="text"/>
+
+Message queues connection is defined dynamically based on deployment configuration in `env.php`. If AMQP is configured in deployment configuration of the queue, AMQP connection is used. Otherwise, db connection is used.
+As a result, if AMQP is configured in deployment configuration of the queue, connection declaration can be omitted in [message queue configuration files](configuration.html): `queue_customer.xml`, `queue_publisher.xml`, `queue_topology.xml`.
