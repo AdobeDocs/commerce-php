@@ -5,6 +5,11 @@ module.exports = [
     },
     
     {
+      title: "AdminAdobeIms",
+      path: "/module-reference/module-admin-adobe-ims/"
+    },
+    
+    {
       title: "AdminAnalytics",
       path: "/module-reference/module-admin-analytics/"
     },
@@ -112,11 +117,6 @@ module.exports = [
     {
       title: "Amqp",
       path: "/module-reference/module-amqp/"
-    },
-    
-    {
-      title: "AmqpStore",
-      path: "/module-reference/module-amqp-store/"
     },
     
     {
@@ -377,6 +377,11 @@ module.exports = [
     {
       title: "CatalogStagingPageBuilder",
       path: "/module-reference/module-catalog-staging-page-builder/"
+    },
+    
+    {
+      title: "CatalogUrlRewrite",
+      path: "/module-reference/module-catalog-url-rewrite/"
     },
     
     {
@@ -845,6 +850,11 @@ module.exports = [
     },
     
     {
+      title: "GoogleGtag",
+      path: "/module-reference/module-google-gtag/"
+    },
+    
+    {
       title: "GoogleOptimizer",
       path: "/module-reference/module-google-optimizer/"
     },
@@ -872,6 +882,11 @@ module.exports = [
     {
       title: "GroupedCatalogInventory",
       path: "/module-reference/module-grouped-catalog-inventory/"
+    },
+    
+    {
+      title: "GroupedImportExport",
+      path: "/module-reference/module-grouped-import-export/"
     },
     
     {
@@ -1795,8 +1810,23 @@ module.exports = [
     },
     
     {
+      title: "ReCaptchaGiftCard",
+      path: "/module-reference/module-re-captcha-gift-card/"
+    },
+    
+    {
+      title: "ReCaptchaInvitation",
+      path: "/module-reference/module-re-captcha-invitation/"
+    },
+    
+    {
       title: "ReCaptchaMigration",
       path: "/module-reference/module-re-captcha-migration/"
+    },
+    
+    {
+      title: "ReCaptchaMultipleWishlist",
+      path: "/module-reference/module-re-captcha-multiple-wishlist/"
     },
     
     {
