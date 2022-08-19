@@ -455,7 +455,18 @@ class ProductRepository implements ProductRepositoryInterface
 }
 ```
 
-## Step 6. Test your custom endpoint
+## Step 6. Create your di.xml
+`app/code/Dev/RestApi/etc/di.xml`:
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Dev\RestApi\Api\ProductRepositoryInterface" type="Dev\RestApi\Model\Api\ProductRepository"/>
+    <preference for="Dev\RestApi\Api\ResponseItemInterface" type="Dev\RestApi\Model\Api\ResponseItem"/>
+    <preference for="Dev\RestApi\Api\RequestItemInterface" type="Dev\RestApi\Model\Api\RequestItem"/>
+</config>
+```
+
+## Step 7. Test your custom endpoint
 
 *  You can use any REST client to send calls. [Postman](https://www.getpostman.com/) is recommended.
 *  Obtain an admin authorization token. All calls in this tutorial require administrator privileges. See [Generate the admin token](https://devdocs.magento.com/guides/v2.4/rest/tutorials/prerequisite-tasks/create-admin-token.html) for more information.
