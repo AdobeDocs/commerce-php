@@ -19,7 +19,7 @@ Icons should not be used in any of the navigation submenu panels to bring attent
 
 Your extension's settings and configuration area is an appropriate place to use icons.
 
-For more information about icon design and the application's icon library, see the article about  [Iconography](https://devdocs.magento.com/guides/v2.4/design-styleguide/iconography/iconography.html) in the Admin Style Guide book.
+For more information about icon design and the application's icon library, see the article about  [Iconography](https://developer.adobe.com/commerce/admin-developer/style-guide/design/iconography/) in the Admin Style Guide book.
 
 ### Advertising in Navigation
 

@@ -130,7 +130,7 @@ To get around this limitation, injectable objects can depend on [factories] that
 [dependency inversion principle]: http://www.oodesign.com/dependency-inversion-principle.html
 [`di.xml`]: ../build/dependency-injection-file.md
 [`ObjectManager`]: object-manager/index.md
-[code compiler tool]: https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-compiler.html
+[code compiler tool]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/code-compiler.html
 [proxies]: proxies.md
 [proxy]: proxies.md
 [factories]: factories.md

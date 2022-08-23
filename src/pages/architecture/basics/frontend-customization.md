@@ -15,11 +15,11 @@ Adobe provides several tools to help you significantly jumpstart the storefront 
 
 *  [Blank theme](https://glossary.magento.com/theme)
 
-*  [UI components](https://devdocs.magento.com/guides/v2.4/ui_comp_guide/bk-ui_comps.html)
+*  [UI components](https://developer.adobe.com/commerce/frontend-core/ui-components/)
 
-*  [Admin pattern library](https://devdocs.magento.com/guides/v2.4/pattern-library/bk-pattern.html)
+*  [Admin pattern library](https://developer.adobe.com/commerce/admin-developer/pattern-library/)
 
-See the [Frontend Developer Guide](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html) for information on creating your themes.
+See the [Frontend Developer Guide](https://developer.adobe.com/commerce/frontend-core/guide/) for information on creating your themes.
 
 ### Blank theme
 
@@ -34,11 +34,11 @@ Using standard coding and styling tools can help:
 
 This component [library](https://glossary.magento.com/library) contains standard reusable components for form features, such as fields and buttons, and navigation elements. The UI library is a set of generic web components and Commerce-specific patterns, which simplifies the process of theme creation and customization.
 
-See [Overview of UI components](https://devdocs.magento.com/guides/v2.4/ui_comp_guide/bk-ui_comps.html) for details about this library.
+See [Overview of UI components](https://developer.adobe.com/commerce/frontend-core/ui-components/) for details about this library.
 
 ### Admin pattern library
 
-A *pattern library* is a collection of user interface (UI) design patterns that can be re-used in locations throughout your product installation. The [Admin Pattern Library](https://devdocs.magento.com/guides/v2.4/pattern-library/bk-pattern.html) defines examples of components that administrators working with the storefront can use.
+A *pattern library* is a collection of user interface (UI) design patterns that can be re-used in locations throughout your product installation. The [Admin Pattern Library](https://developer.adobe.com/commerce/admin-developer/pattern-library/) defines examples of components that administrators working with the storefront can use.
 
 Form elements included in the [Admin](https://glossary.magento.com/magento-admin) pattern library include:
 
@@ -52,7 +52,7 @@ Users of the default storefront encounter examples of these form elements throug
 
 The [Admin](https://glossary.magento.com/admin) Pattern library is built on the Less preprocessor and implemented as a [module](https://glossary.magento.com/module). You can download a free, current version of this module from [Commerce Marketplace](https://marketplace.magento.com/).
 
-See [Admin Pattern Library](https://devdocs.magento.com/guides/v2.4/pattern-library/bk-pattern.html) for more information on using this library.
+See [Admin Pattern Library](https://developer.adobe.com/commerce/admin-developer/pattern-library/) for more information on using this library.
 
 ## Storefront customization levels
 

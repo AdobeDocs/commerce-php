@@ -16,7 +16,7 @@ GuzzleHttp uses cURL by default, but it can use any HTTP client that you want ot
 
 <InlineAlert variant="info" slots="text"/>
 
-It's much easier to cover a GuzzleHttp implementation by [Unit Tests](https://devdocs.magento.com/guides/v2.4/test/unit/writing_testable_code.html), as you're able to mock the HTTP requests.
+It's much easier to cover a GuzzleHttp implementation by [Unit Tests](https://developer.adobe.com/commerce/testing/guide/unit/writing-testable-code/), as you're able to mock the HTTP requests.
 
 ## Request options
 

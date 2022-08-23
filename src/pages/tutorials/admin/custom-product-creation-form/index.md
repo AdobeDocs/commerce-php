@@ -5,13 +5,13 @@ description: Follow this tutorial to customize the Adobe Commerce and Magento Op
 
 # Customize the product creation form
 
-This tutorial describes how developers can customize the product creation form used on the product creation and product edit pages in [Admin](https://glossary.magento.com/admin). The product creation form is implemented using the [form UI component](https://devdocs.magento.com/guides/v2.4/ui_comp_guide/components/ui-form.html).
+This tutorial describes how developers can customize the product creation form used on the product creation and product edit pages in [Admin](https://glossary.magento.com/admin). The product creation form is implemented using the [form UI component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/form/).
 
 Product attributes and attribute sets available in the form, can be customized and added under **STORES** > **Attributes** in the Admin. But you can also customize the form view and behavior in code. The following sections describe what files define the form and how they can be customized in your [module](https://glossary.magento.com/module).
 
 ## Prerequisites
 
-[Change to developer mode](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-mode.html) while you perform all customizations and debugging.
+[Change to developer mode](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/set-mode.html) while you perform all customizations and debugging.
 
 For the sake of compatibility, upgradability, and easy maintenance, do not edit the default application code. Instead, add your customizations in a separate module.
 

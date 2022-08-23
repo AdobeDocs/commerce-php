@@ -716,7 +716,7 @@ Component name must meaningful. It can contain the `primary`, `secondary`, `tert
 
 ### Location
 
-[Theme](https://glossary.magento.com/theme) mixins (except extends) should be located in the `web/css/source` directory. For more details, refer to [Include CSS](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/css-topics/css-themes.html).
+[Theme](https://glossary.magento.com/theme) mixins (except extends) should be located in the `web/css/source` directory. For more details, refer to [Include CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/themes/).
 
 ### Naming
 

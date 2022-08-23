@@ -24,7 +24,7 @@ Extension developers can interact with the Magento_GoogleAdwords module. For mor
 This module introduces the following layouts in the `view/frontend/layout` directory:
 - `checkout_onepage_success`
 
-For more information about a layout in Magento 2, see the [Layout documentation](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/layout-overview.html).
+For more information about a layout in Magento 2, see the [Layout documentation](https://developer.adobe.com/commerce/frontend-core/guide/layouts/).
 
 ## Additional information
 

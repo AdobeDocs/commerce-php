@@ -73,7 +73,7 @@ Each index can perform the following types of reindex operations:
 
    Full reindexing can be caused by a variety of things, including creating a new web store or new customer group.
 
-   You can optionally fully reindex at any time using the [command line](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html).
+   You can optionally fully reindex at any time using the [command line](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html).
 
 *  Partial reindex, which means rebuilding the database tables only for the things that changed (like changing a single product attribute or price)
 
@@ -95,7 +95,7 @@ Database Status|Admin Status|Description
 The database status can be seen when viewing the SQL table `indexer_state`.
 The admin status can be seen when viewing the indexer grid in Admin or when running the index status from the CLI.
 
-The indexing mechanism uses the status value in reindex triggering process. You can check the status of an indexer in the [Admin](https://glossary.magento.com/admin) panel in **System >** Tools **> Index Management** or manually using the [command line](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#view-indexer-status).
+The indexing mechanism uses the status value in reindex triggering process. You can check the status of an indexer in the [Admin](https://glossary.magento.com/admin) panel in **System >** Tools **> Index Management** or manually using the [command line](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#view-indexer-status).
 
 ### Using application lock mode for reindex processes
 
@@ -144,7 +144,7 @@ To set these options:
 1. From the **Actions** list, click the indexing mode.
 1. Click **Submit**.
 
-You can also reindex from the [command line](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers)
+You can also reindex from the [command line](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers)
 
 The following figure shows an example of setting indexers to Update by Schedule:
 
@@ -218,8 +218,8 @@ it defines IDs to be re-indexed from the change log by last applied `version_id`
 
 You can reindex by:
 
-*  Using a [cron job](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html), which is preferred because indexing runs every minute.
-*  Using the [`magento indexer:reindex [indexer]`](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#config-cli-subcommands-index-reindex) command, which reindexes selected indexers, or all indexers, one time only.
+*  Using a [cron job](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html), which is preferred because indexing runs every minute.
+*  Using the [`magento indexer:reindex [indexer]`](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#config-cli-subcommands-index-reindex) command, which reindexes selected indexers, or all indexers, one time only.
 
 ## Indexers
 

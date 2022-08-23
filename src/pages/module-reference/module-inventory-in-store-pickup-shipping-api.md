@@ -8,7 +8,7 @@ description: README.md contents of the module from the source code
 The `InventoryInStorePickupShippingApi` module provides service contracts for "In-Store Pickup Delivery Method" implementation of In-Store Pickup functionality.
 
 This module is part of the new inventory infrastructure. The
-[Inventory Management overview](https://devdocs.magento.com/guides/v2.4/inventory/index.html)
+[Inventory Management overview](https://developer.adobe.com/commerce/webapi/rest/inventory/)
 describes the MSI (Multi-Source Inventory) project in more detail.
 
 ## Installation details

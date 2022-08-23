@@ -23,5 +23,5 @@ More information about ElasticSearch are at articles:
 
 - [Configuring Catalog Search](https://docs.magento.com/user-guide/catalog/search-configuration.html).
 - [Installation Guide/Elasticsearch](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html).
-- [Configure and maintain Elasticsearch](https://devdocs.magento.com/guides/v2.4/config-guide/elasticsearch/es-overview.html).
+- [Configure and maintain Elasticsearch](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/search/overview-search.html).
 - Magento Commerce Cloud - [set up Elasticsearch service](https://devdocs.magento.com/cloud/project/services-elastic.html).

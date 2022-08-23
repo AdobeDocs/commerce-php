@@ -13,4 +13,4 @@ This is an important section to read, because what [extension](https://glossary.
 
 Remember that most merchants have multiple extensions installed, and most of these extensions are exposed through the Admin. In order to prevent a cluttered Admin, please follow the guidelines, and communicate with Adobe and the community when you have questions.
 
-For additional information on design topics for the Admin, read the [Admin Pattern Library](https://devdocs.magento.com/guides/v2.4/pattern-library/bk-pattern.html) and the [Admin Style Guide](https://devdocs.magento.com/guides/v2.4/design-styleguide/bk-styleguide.html).
+For additional information on design topics for the Admin, read the [Admin Pattern Library](https://developer.adobe.com/commerce/admin-developer/pattern-library/) and the [Admin Style Guide](https://developer.adobe.com/commerce/admin-developer/style-guide/).

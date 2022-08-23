@@ -40,8 +40,8 @@ The preceding lists all cache types and shows they are all enabled.
 The following topics discuss how to set up caching:
 
 *  [Create a cache type](cache-type.md)
-*  [Create or extend configuration types](https://devdocs.magento.com/guides/v2.4/config-guide/config/config-create.html)
-*  [Associate cache frontends with cache types](https://devdocs.magento.com/guides/v2.4/config-guide/cache/cache-types.html)
-*  [Low-level cache options](https://devdocs.magento.com/guides/v2.4/config-guide/cache/cache-options.html)
-*  [Configure and use Varnish](https://devdocs.magento.com/guides/v2.4/config-guide/varnish/config-varnish.html)
-*  [Configure Redis](https://devdocs.magento.com/guides/v2.4/config-guide/redis/config-redis.html)
+*  [Create or extend configuration types](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/config-create-types.html)
+*  [Associate cache frontends with cache types](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/cache-types.html)
+*  [Low-level cache options](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/cache-options.html)
+*  [Configure and use Varnish](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/varnish/config-varnish.html)
+*  [Configure Redis](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/config-redis.html)

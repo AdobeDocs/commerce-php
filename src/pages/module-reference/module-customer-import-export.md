@@ -24,7 +24,7 @@ This module introduces the following layouts in the `view/adminhtml/layout` dire
 - `customer_import_export_index_exportxml`
 - `customer_index_grid_block`
 
-For more information about a layout in Magento 2, see the [Layout documentation](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/layout-overview.html).
+For more information about a layout in Magento 2, see the [Layout documentation](https://developer.adobe.com/commerce/frontend-core/guide/layouts/).
 
 ## Additional information
 

@@ -17,7 +17,7 @@ This article will guide you in setting up and optimizing your local development 
 Your local development machine is where you develop and deploy your code to test it against a running Adobe Commerce or Magento Open Source application.
 Its configuration should be as close to a production server as possible.
 
-In your development machine, make sure you are running the Adobe Commerce or Magento Open Source application in [developer mode](https://devdocs.magento.com/guides/v2.4/config-guide/bootstrap/magento-modes.html).
+In your development machine, make sure you are running the Adobe Commerce or Magento Open Source application in [developer mode](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html).
 You can enable this mode with the command `bin/magento deploy:mode:set developer`.
 
 ### Installation
@@ -45,7 +45,7 @@ The following is a list of optimizations you can make on your local development 
    You can increase the memory available to PHP to get an increase in performance with Xdebug on.
 *  If you need sample data, you can install it using [composer](https://devdocs.magento.com/guides/v2.4/install-gde/install/web/install-web-sample-data-composer.html) or by [cloning repositories](https://devdocs.magento.com/guides/v2.4/install-gde/install/web/install-web-sample-data-clone.html).
 *  To speed up frontend development, [turn off merging of CSS and JavaScript](https://docs.magento.com/user-guide/system/file-optimization.html).
-*  Make sure [caching](https://devdocs.magento.com/guides/v2.4/config-guide/cache.html) is turned on (this is the default behavior).
+*  Make sure [caching](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/caching-overview.html) is turned on (this is the default behavior).
    Generally, only page [cache](https://glossary.magento.com/cache) and block cache should be turned off for development and turned back on when testing.
 *  [Opcache timestamp validation](http://php.net/manual/en/opcache.configuration.php#ini.opcache.validate-timestamps) should always be on for development.
    Development is impossible with opcache on and revalidation off because any PHP modification would require a cache reset.
