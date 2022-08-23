@@ -37,7 +37,7 @@ Explore resources that describe the foundational elements of the Adobe Commerce 
 
 <DiscoverBlock slots="link, text"/>
 
-[Extension Developer](development/)
+[Extension Development](development/)
 
 Learn about extending or customizing Adobe Commerce and Magento Open Source components. Apply this knowledge to create components that introduce new functionality and distribute them to merchants.
 
