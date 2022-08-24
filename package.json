@@ -18,16 +18,17 @@
   "scripts": {
     "start": "gatsby build && gatsby serve",
     "start:prefix": "gatsby build --prefix-paths && gatsby serve --prefix-paths",
-    "dev": "gatsby develop",
+    "dev": "gatsby develop --open",
     "dev:https": "gatsby develop --https --host localhost.corp.adobe.com --port 9000",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test:links": "remark src/pages --quiet --frail" 
+    "test:links": "remark src/pages --quiet --frail"
   },
   "remarkConfig": {
     "plugins": [
       "remark-validate-links"
     ]
-  }
+  },
+  "packageManager": "yarn@3.2.2"
 }
