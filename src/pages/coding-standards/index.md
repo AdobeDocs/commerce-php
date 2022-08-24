@@ -20,7 +20,8 @@ To execute the inspection from the command line run the following command from t
 vendor/bin/phpcs --standard=Magento2 <path to inspect>
 ```
 
-To include Magento Coding Standard as part of PHPStorm inspections, the follow the steps:
+To include Magento Coding Standard as part of PHPStorm inspections follow the steps:
+
 - Open PHPStorm preferences
 - Navigate to "Editor" | "Inspections"
 - Select "PHP" | "Quality Tools" | "PHP_CodeSniffer validation"
@@ -34,6 +35,7 @@ Magento coding standard is created and maintained by all the Magento community! 
 ## Review the standards
 
 Standard details and guides:
+
 -  [Code demarcation standard](code-demarcation.md)
 -  [PHP coding standard](php.md)
 -  [JavaScript coding standard](js.md)
