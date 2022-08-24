@@ -19,7 +19,7 @@ The Magento_GiftCardRequisitionList module has a dependency on the Magento_Requi
 
 ## Structure
 
-[Learn about a typical file structure for a Magento 2 module](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/module-file-structure.html).
+[Learn about a typical file structure for a Magento 2 module](https://developer.adobe.com/commerce/php/development/build/component-file-structure/).
 
 ## Additional information
 

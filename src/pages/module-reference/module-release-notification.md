@@ -17,14 +17,15 @@ For information about a module installation in Magento 2, see [Enable or disable
 
 ## Extensibility
 
-Extension developers can interact with the Magento_ReleaseNotification module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html).
+Extension developers can interact with the Magento_ReleaseNotification module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
 
-[The Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html) enables you to override the functionality of the Magento_ReleaseNotification module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_ReleaseNotification module.
 
 ### UI components
 
 You can extend release notification updates using the configuration files located in the `view/adminhtml/ui_component` directory:
-- `release_notification`
+
+* `release_notification`
 
 For information about a UI component in Magento 2, see [Overview of UI components](http://devdocs.magento.com/guides/v2.4/ui_comp_guide/bk-ui_comps.html).
 
@@ -78,4 +79,4 @@ A clickable link to internal or external content in any text field will be creat
 
 #### Link Format Example:
 
-The text: `https://devdocs.magento.com/ [Magento DevDocs].` will appear as [Magento DevDocs](https://devdocs.magento.com/).
+The text: `https://developer.adobe.com/ [Commerce DevDocs].` will appear as [Commerce DevDocs](https://developer.adobe.com/commerce/).

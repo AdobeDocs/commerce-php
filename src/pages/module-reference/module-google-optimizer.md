@@ -35,7 +35,7 @@ This module introduces the following layouts in the `view/frontend/layout` and `
     - `catalog_product_view`
     - `cms_page_view`
 
-For more information about a layout in Magento 2, see the [Layout documentation](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/layout-overview.html).
+For more information about a layout in Magento 2, see the [Layout documentation](https://developer.adobe.com/commerce/frontend-core/guide/layouts/).
 
 ### UI components
 

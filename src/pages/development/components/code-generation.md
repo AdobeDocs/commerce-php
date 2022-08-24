@@ -20,7 +20,7 @@ Unlike some other languages or libraries, you can look at the generated code on 
 
 ## When is code generated?
 
-Provided that the application is not set to [production mode](https://devdocs.magento.com/guides/v2.4/config-guide/bootstrap/magento-modes.html#production-mode), code is generated when the application cannot find a class when executing code.
+Provided that the application is not set to [production mode](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode), code is generated when the application cannot find a class when executing code.
 
 In particular,
 
@@ -30,7 +30,7 @@ In particular,
 
 *  Interceptor classes are automatically generated to facilitate Magento's plugin system. An interceptor class extends a type and is returned by the Object Manager to allow multiple plugin classes to inject logic into different methods. Interceptors work behind the scenes and are *not* directly referenced in application code.
 
-You can also use the [code compiler](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-compiler.html) to generate code at any time. "Compiling" your application means performing code generation for any eligible class encountered by the configuration/code scanner, as well as performing a number of different [dependency injection](https://glossary.magento.com/dependency-injection) optimizations.
+You can also use the [code compiler](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/code-compiler.html) to generate code at any time. "Compiling" your application means performing code generation for any eligible class encountered by the configuration/code scanner, as well as performing a number of different [dependency injection](https://glossary.magento.com/dependency-injection) optimizations.
 
 ## Why should you regenerate code?
 

@@ -11,7 +11,7 @@ This page is a compilation of frequently asked coding questions by the Magento O
 
 *  [SOLID principles](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) - The essential principles needed to create maintainable and extendable code.
 *  [PHP](http://php.net/) - This is the programming language used for developing application code.
-*  [HTML](https://en.wikipedia.org/wiki/HTML), [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets), and [JavaScript](https://www.javascript.com/) - Languages used for [frontend development](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html).
+*  [HTML](https://en.wikipedia.org/wiki/HTML), [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets), and [JavaScript](https://www.javascript.com/) - Languages used for [frontend development](https://developer.adobe.com/commerce/frontend-core/guide/).
 *  [Architecture basics overview](../../architecture/basics/index.md) - Developers should be familiar with the architectural concepts, such as the [Model-View-Controller](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) pattern and the [Command Query Responsibility Segregation](http://martinfowler.com/bliki/CQRS.html) principle.
 *  [Dependency Injection](../../development/components/dependency-injection.md) - An important [design pattern](https://glossary.magento.com/design-pattern) used to handle dependencies across classes and modules.
 

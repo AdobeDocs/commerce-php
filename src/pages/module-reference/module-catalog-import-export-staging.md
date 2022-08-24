@@ -22,7 +22,7 @@ You can find the list of modules that have dependencies on Magento_CatalogImport
 
 The Magento_CatalogImportExportStaging module does not provide any specific extension points. You can extend it using the Magento extension mechanism.
 
-For more information about Magento extension mechanism, see [Magento plug-ins](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html) and [Magento dependency injection](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html).
+For more information about Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/) and [Magento dependency injection](https://developer.adobe.com/commerce/php/development/components/dependency-injection/).
 
 ## Additional information
 

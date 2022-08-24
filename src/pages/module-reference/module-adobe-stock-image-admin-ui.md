@@ -9,9 +9,9 @@ The Magento_AdobeStockImageAdminUi module is responsible for the admin panel use
 
 ## Extensibility
 
-Extension developers can interact with the Magento_AdobeStockImageAdminUi module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/plugins.html).
+Extension developers can interact with the Magento_AdobeStockImageAdminUi module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
 
-[The Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/depend-inj.html) enables you to override the functionality of the Magento_AdobeStockImageAdminUi module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_AdobeStockImageAdminUi module.
 
 ### Layouts
 
@@ -19,13 +19,13 @@ This module interacts with the following layouts and layout handles in the `view
 
 - `cms_wysiwyg_images_index`
 
-For more information about layouts in Magento 2, see the [Layout documentation](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/layouts/layout-overview.html).
+For more information about layouts in Magento 2, see the [Layout documentation](https://developer.adobe.com/commerce/frontend-core/guide/layouts/).
 
 ### UI components
 
 You can extend admin notifications using the `view/adminhtml/ui_component/adobe_stock_images_listing.xml` configuration file.
 
-For information about UI components in Magento 2, see [Overview of UI components](https://devdocs.magento.com/guides/v2.3/ui_comp_guide/bk-ui_comps.html).
+For information about UI components in Magento 2, see [Overview of UI components](https://developer.adobe.com/commerce/frontend-core/ui-components/).
 
 ## Additional information
 

@@ -55,7 +55,7 @@ The `<Module_Vendor>/<Module_Name>/etc/db_schema.xml` file declares a module's d
 
 <InlineAlert variant="info" slots="text"/>
 
-If you have enabled [URN highlighting](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-urn.html), you can use the PhpStorm autocomplete feature after choosing a node's `xsi:type`. This will also allow you to view which attributes are available on each line of your `db_schema.xml` file
+If you have enabled [URN highlighting](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/urn-highlighter.html), you can use the PhpStorm autocomplete feature after choosing a node's `xsi:type`. This will also allow you to view which attributes are available on each line of your `db_schema.xml` file
 
 ### Top-level node
 
@@ -506,4 +506,4 @@ When a module is disabled in `app/etc/config.php`, its database schema configura
 Please note that the `db_schema_whitelist.json` file of disabled modules is still read during upgrades of installs, so the declarative schema system can perform the necessary operations.
 Practically, this means that if you disable a module which uses declarative schema and run `bin/magento setup:upgrade`, _its database tables will be dropped_ (see more details and discussion at  https://github.com/magento/magento2/issues/24926). Please consider using `setup:upgrade --safe-mode=1` in order to create a database backup after disabling a module and then eventually `setup:upgrade --data-restore=1` if you enable the module back and wish to restore from that backup.
 
-[How to generate urns?]:https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-urn.html
+[How to generate urns?]:https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/urn-highlighter.html

@@ -6,7 +6,7 @@ description: Manage deeply nested associative arrays in your Adobe Commerce and 
 # Array manager
 
 The [`Magento\Framework\Stdlib\ArrayManager`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Stdlib/ArrayManager.php) library provides the ability to manage deeply nested associative arrays.
-The library is primarily used to handle data from UI components within [DataProviders](https://devdocs.magento.com/guides/v2.4/ui_comp_guide/concepts/ui_comp_data_source.html) and [Modifiers](https://devdocs.magento.com/guides/v2.4/ui_comp_guide/concepts/ui_comp_modifier_concept.html), which are actually part of a complicated process of parsing XML files in associative arrays.
+The library is primarily used to handle data from UI components within [DataProviders](https://developer.adobe.com/commerce/frontend-core/ui-components/concepts/data-source/) and [Modifiers](https://developer.adobe.com/commerce/frontend-core/ui-components/concepts/modifier/), which are actually part of a complicated process of parsing XML files in associative arrays.
 
 ## Usage
 

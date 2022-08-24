@@ -34,7 +34,7 @@ The file must be stored under the `<your_module_dir>/view/frontend/web/js/view` 
 
 <InlineAlert variant="info" slots="text"/>
 
-`<your_module_dir>` notation stands for the path to your module directory from the root directory. Usually it will be one of the following: `app/code/<YourVendor>/<YourModule>` or `vendor/<yourvendor>/module-<module>-<name>`. For more details see [Conventional notations for paths to modules and themes](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/conventions.html)
+`<your_module_dir>` notation stands for the path to your module directory from the root directory. Usually it will be one of the following: `app/code/<YourVendor>/<YourModule>` or `vendor/<yourvendor>/module-<module>-<name>`. For more details see [Conventional notations for paths to modules and themes](https://developer.adobe.com/commerce/frontend-core/guide/conventions/)
 
 A sample `my-step-view.js` with comments follows:
 
@@ -141,7 +141,7 @@ A sample `mystep.html` follows:
 
 For the new step to be displayed on the page, you need to declare it in the Checkout page layout, which is defined in `checkout_index_index.xml`.
 
-So you need to add an [extending](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/layout-extend.html) `checkout_index_index.xml` layout file in the following location: `<your_module_dir>/view/frontend/layout/checkout_index_index.xml`
+So you need to add an [extending](https://developer.adobe.com/commerce/frontend-core/guide/layouts/extend/) `checkout_index_index.xml` layout file in the following location: `<your_module_dir>/view/frontend/layout/checkout_index_index.xml`
 
 A sample `checkout_index_index.xml` follows:
 
@@ -229,4 +229,4 @@ Create a mixin as follows:
 
 <InlineAlert variant="info" slots="text"/>
 
-For your changes to be applied, you might need to [clean layout cache](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cache.html ) and [static view file cache](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/cache_for_frontdevs.html#clean_static_cache). For more info on mixins, see [JS Mixins](https://devdocs.magento.com/guides/v2.4/javascript-dev-guide/javascript/js_mixins.html).
+For your changes to be applied, you might need to [clean layout cache](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-cache.html) and [static view file cache](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache). For more info on mixins, see [JS Mixins](https://developer.adobe.com/commerce/frontend-core/javascript/mixins/).

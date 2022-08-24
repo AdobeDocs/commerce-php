@@ -9,6 +9,6 @@ The Magento_PaypalPurchaseOrder module provides support for PayPal payment metho
 
 ## Extensibility
 
-Extension developers can interact with the Magento_PaypalPurchaseOrder module using plugins. For more information about the Magento extension mechanism, see [Magento plug-ins](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html).
+Extension developers can interact with the Magento_PaypalPurchaseOrder module using plugins. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
 
-[The Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html) enables you to override the functionality of the Magento_PaypalPurchaseOrder module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_PaypalPurchaseOrder module.

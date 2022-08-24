@@ -5,7 +5,7 @@ description: Follow this tutorial to customize Adobe Commerce or Magento Open So
 
 # Customize using a modifier class
 
-[Modifier classes](https://devdocs.magento.com/guides/v2.4/ui_comp_guide/concepts/ui_comp_modifier_concept.html) should be used when static declaration is not applicable. For example, in cases when additional data should be loaded from database. Also, modifier is a place where you add validations to display only certain fields for certain product types.
+[Modifier classes](https://developer.adobe.com/commerce/frontend-core/ui-components/concepts/modifier/) should be used when static declaration is not applicable. For example, in cases when additional data should be loaded from database. Also, modifier is a place where you add validations to display only certain fields for certain product types.
 
 In the run time, the form structure set in the modifier is merged with the configuration that comes from the `product_form.xml` configuration.
 

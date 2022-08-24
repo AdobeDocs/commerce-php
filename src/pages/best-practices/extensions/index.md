@@ -71,6 +71,6 @@ Access to method parameters was the primary justification for using **around** m
 
 ### Test your code
 
-Write testable code and follow the [Testing Guide](https://devdocs.magento.com/guides/v2.4/test/testing.html) to create tests for your code.
+Write testable code and follow the [Testing Guide](https://developer.adobe.com/commerce/testing/guide/) to create tests for your code.
 
 Tests help describe what your code does under different conditions and define its functionality. Make sure your tests cover a variety of conditions to prevent the introduction of bugs when you add new code.

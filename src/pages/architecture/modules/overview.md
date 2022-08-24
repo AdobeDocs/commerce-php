@@ -19,9 +19,9 @@ The purpose of a module is to provide specific product features by implementing 
 
 A module is a directory that contains the PHP and [XML](https://glossary.magento.com/xml) files (blocks, controllers, helpers, models) that are related to a specific business feature, such as Shipping. Specifically, a module is composed of the following software components:
 
--  [Themes](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/themes/theme-overview.html)
+-  [Themes](https://developer.adobe.com/commerce/frontend-core/guide/themes/)
 -  [Libraries](libraries.md)
--  [Language packs](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/xlate.html#m2devgde-xlate-languagepack)
+-  [Language packs](https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages)
 
 ## Module locations
 
@@ -56,6 +56,6 @@ We refer to a component's root directory as the top-level directory in which you
 
 Developers, administrators, and anyone building an Adobe Commerce or Magento Open Source website will want to review all relevant topics surrounding their particular goals and use cases.
 
-See [PHP Developer Guide](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/bk-extension-dev-guide.html) for specific instructions on extending modules.
+See [PHP Developer Guide](https://developer.adobe.com/commerce/php/development/) for specific instructions on extending modules.
 
-See [Frontend Developer Guide](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html) for information on implementing themes and other components.
+See [Frontend Developer Guide](https://developer.adobe.com/commerce/frontend-core/guide/) for information on implementing themes and other components.

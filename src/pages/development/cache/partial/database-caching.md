@@ -273,11 +273,11 @@ This section contains code sample snippets to refer to when configuring database
 ```
 
 <!-- Link references -->
-[Varnish]: https://devdocs.magento.com/guides/v2.4/config-guide/varnish/config-varnish.html
-[associate cache frontends with cache types]: https://devdocs.magento.com/guides/v2.4/config-guide/cache/cache-types.html
+[Varnish]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/varnish/config-varnish.html
+[associate cache frontends with cache types]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/cache-types.html
 [sample configurations]: #configuration-examples
 [file system owner]: https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html
 [Verify database caching is working]: #verify-database-caching-is-working
 [Configuration examples]: #configuration-examples
-[enable developer mode]: https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-mode.html#change-to-developer-mode
+[enable developer mode]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/set-mode.html#change-to-developer-mode
 [phpMyAdmin]: https://devdocs.magento.com/guides/v2.4/install-gde/prereq/optional.html#install-optional-phpmyadmin

@@ -116,7 +116,7 @@ If the user does not have permission, the action page displays an "Access Denied
 
 ### Content restrictions for admin users
 
-With the ACL it is also possible to [render layout blocks dynamically](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/xml-manage.html#ref_config_block) on the page.
+With the ACL it is also possible to [render layout blocks dynamically](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-manage/#making-the-block-visibility-dynamic) on the page.
 
 It is enough to set the block's value for `aclResource` attribute:
 
