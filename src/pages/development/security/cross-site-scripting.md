@@ -203,8 +203,8 @@ It covers the following cases:
 
 <!-- Link Definitions -->
 [product listing template]: https://github.com/magento/magento2/blob/78bb169ff9721c8d05c35b4c29a4464fd45bccbe/app/code/Magento/Catalog/view/frontend/templates/product/list.phtml#L16
-[Template guide]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/templates/template-overview.html
+[Template guide]: https://developer.adobe.com/commerce/frontend-core/guide/templates/
 [Cross-site scripting]: https://owasp.org/www-community/attacks/xss/
-[binding syntax]: https://devdocs.magento.com/guides/v2.4/ui_comp_guide/concepts/magento-bindings.html
-[UI component data providers]: https://devdocs.magento.com/guides/v2.4/ui_comp_guide/concepts/ui_comp_data_source.html
+[binding syntax]: https://developer.adobe.com/commerce/frontend-core/ui-components/concepts/binding-syntax/
+[UI component data providers]: https://developer.adobe.com/commerce/frontend-core/ui-components/concepts/data-source/
 [Coding Standard]: https://github.com/magento/magento-coding-standard

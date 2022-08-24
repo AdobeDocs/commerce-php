@@ -16,7 +16,7 @@ The Adobe Commerce and Magento Open Source framework (Commerce framework) and co
 -  Installers
 -  Integrators
 
-More detailed information about building online stores, using APIs, installing, configuring, and extending the platform is included in other sections of the [developer guide](https://devdocs.magento.com).
+More detailed information about building online stores, using APIs, installing, configuring, and extending the platform is included in other sections of the [developer guide](https://developer.adobe.com/commerce/).
 
 <TextBlock slots="image, heading, text, links" width="50%" />
 

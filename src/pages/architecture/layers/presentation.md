@@ -27,7 +27,7 @@ Themes organize both the visual aspect of your storefront and certain aspects of
 
 Each [theme](https://glossary.magento.com/theme) resides in a unique directory and contains custom page layouts, templates, skins, and language files that work together to create a distinct user experience.
 
-For an extensive introduction to theme elements and an overview of how to extend and override the default themes, see the [Frontend Developer Guide](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html).
+For an extensive introduction to theme elements and an overview of how to extend and override the default themes, see the [Frontend Developer Guide](https://developer.adobe.com/commerce/frontend-core/guide/).
 
 ## GraphQL
 

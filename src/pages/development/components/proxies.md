@@ -9,7 +9,7 @@ contributor_link: http://www.classyllama.com/
 
 The Adobe Commerce and Magento Open Source [constructor injection pattern](dependency-injection.md#constructor-injection) enables you to flexibly manage your class dependencies. However, constructor injection also means that a chain reaction of object instantiation is often the result when you create an object. (The original object has dependencies that have dependencies, and those objects have dependencies, and so on.)
 
-If a class's constructor is particularly resource-intensive, this can lead to unnecessary performance impact when another class depends on it, if the expensive object does not end up being needed during a particular request. (You can display a *dependency graph* of such objects by enabling [profiling](https://devdocs.magento.com/guides/v2.4/config-guide/bootstrap/mage-profiler.html).)
+If a class's constructor is particularly resource-intensive, this can lead to unnecessary performance impact when another class depends on it, if the expensive object does not end up being needed during a particular request. (You can display a *dependency graph* of such objects by enabling [profiling](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/mage-profiler.html).)
 
 As an example, consider the following two classes:
 

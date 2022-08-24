@@ -30,9 +30,9 @@ For information about a module installation in Magento 2, see [Enable or disable
 
 ## Extensibility
 
-Extension developers can interact with the Magento_Integration module. For more information about the Magento extension mechanism, see [Magento plugins](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html).
+Extension developers can interact with the Magento_Integration module. For more information about the Magento extension mechanism, see [Magento plugins](https://developer.adobe.com/commerce/php/development/components/plugins/).
 
-[The Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html) enables you to override the functionality of the Magento_Integration module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_Integration module.
 
 ### Events
 
@@ -56,7 +56,7 @@ This module introduces the following layout handles in the `view/adminhtml/layou
 - `adminhtml_integration_tokensdialog`
 - `adminhtml_integration_tokensexchange`
 
-For more information about a layout in Magento 2, see the [Layout documentation](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/layout-overview.html).
+For more information about a layout in Magento 2, see the [Layout documentation](https://developer.adobe.com/commerce/frontend-core/guide/layouts/).
 
 ### Public APIs
 
@@ -100,11 +100,13 @@ For information about a public API in Magento 2, see [Public interfaces & APIs](
 ### Cron options
 
 Cron group configuration can be set at `etc/crontab.xml`:
+
 - `outdated_authentication_failures_cleanup` - clearing log of outdated token request authentication failures
 - `expired_tokens_cleanups` - delete expired customer and admin tokens
 
 [Learn how to configure and run cron in Magento.](http://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html).
 
 More information can get at articles:
+
 - [Learn more about an Integration](https://docs.magento.com/user-guide/system/integrations.html)
-- [Lear how to create an Integration](https://devdocs.magento.com/guides/v2.4/get-started/create-integration.html)
+- [Lear how to create an Integration](https://developer.adobe.com/commerce/webapi/get-started/create-integration/)

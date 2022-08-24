@@ -29,7 +29,7 @@ The areas are:
 *  webapi_soap
 *  crontab
 
-During [bootstrapping](https://devdocs.magento.com/guides/v2.4/config-guide/bootstrap/magento-bootstrap.html), each application entry point loads the appropriate `di.xml` files for the requested [area](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_and_areas.html).
+During [bootstrapping](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/initialization.html), each application entry point loads the appropriate `di.xml` files for the requested [area](https://developer.adobe.com/commerce/php/architecture/modules/areas/).
 
 **Examples:**
 
@@ -424,7 +424,7 @@ Also, every instance of `Magento\Filesystem` will get separate instance of `$ada
 
 ## Sensitive and system-specific configuration settings
 
-For multi-system deployments, such as the [pipeline deployment model](https://devdocs.magento.com/guides/v2.4/config-guide/deployment/pipeline/), you can specify the following types of configuration settings:
+For multi-system deployments, such as the [pipeline deployment model](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/overview.html), you can specify the following types of configuration settings:
 
 | | |
 |-----------------|----------------------------|
@@ -457,8 +457,8 @@ See [sensitive and environment settings](../configuration/sensitive-environment-
 ### Information related to pipeline deployment
 
 *  [Guidelines for specifying system-specific and sensitive configuration values](../configuration/sensitive-environment-settings.md)
-*  [Sensitive and system-specific configuration paths reference](https://devdocs.magento.com/guides/v2.4/config-guide/prod/config-reference-sens.html)
-*  [Adobe Commerce B2B Extension configuration paths reference](https://devdocs.magento.com/guides/v2.4/config-guide/prod/config-reference-b2b.html)
+*  [Sensitive and system-specific configuration paths reference](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/paths/config-reference-sens.html)
+*  [Adobe Commerce B2B Extension configuration paths reference](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/paths/config-reference-b2b.html)
 
 ## Get dependency injection configuration information for a class
 

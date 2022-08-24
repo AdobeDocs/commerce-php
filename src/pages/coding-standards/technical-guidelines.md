@@ -821,7 +821,7 @@ You need to read configuration from different sources (like database or filesyst
 
 ## 13. Command line interface (CLI)
 
-13.1. [CLI command naming guidelines](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/cli-cmds/cli-naming-guidelines.html) MUST be followed.
+13.1. [CLI command naming guidelines](https://developer.adobe.com/commerce/php/development/cli-commands/naming-guidelines/) MUST be followed.
 
 13.2. A CLI command MUST be created for any functionality intended to be used by a system integrator/system administrator/developer (for example: change indexer mode, generate a configuration file, etc.).
 
@@ -890,7 +890,7 @@ class SampleEventObserverThatModifiesInputs implements ObserverInterface
 
 15.3.1. Sanitize input; escape output.
 
-15.3.2. Follow [XSS prevention strategies guidelines](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/xss-protection.html) for escaping output.
+15.3.2. Follow [XSS prevention strategies guidelines](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/) for escaping output.
 
 15.3.3. Incoming data should be casted to the expected type. String data should be validated/sanitized.
 

@@ -19,10 +19,10 @@ The Magento_ConfigurableRequisitionList module has a dependency on the Magento_R
 
 ## Structure
 
-[Learn about a typical file structure for a Magento 2 module](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/module-file-structure.html).
+[Learn about a typical file structure for a Magento 2 module](https://developer.adobe.com/commerce/php/development/build/component-file-structure/).
 
 ### Layouts
 
 You can extend and override layouts in the `Magento\ConfigurableRequisitionList\view\frontend\layout` directories.
 
-For more information about layouts, see the [Layout documentation](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/layout-overview.html).
+For more information about layouts, see the [Layout documentation](https://developer.adobe.com/commerce/frontend-core/guide/layouts/).

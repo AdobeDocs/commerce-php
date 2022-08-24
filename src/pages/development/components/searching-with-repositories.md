@@ -41,7 +41,7 @@ This filter will find all urls with the suffix of "magento.com".
 
 <InlineAlert variant="info" slots="text"/>
 
-A full list of condition types can be found in the [Rest API Reference](https://devdocs.magento.com/guides/v2.4/rest/performing-searches.html).
+A full list of condition types can be found in the [Rest API Reference](https://developer.adobe.com/commerce/webapi/rest/use-rest/performing-searches/).
 
 ### Filter group
 

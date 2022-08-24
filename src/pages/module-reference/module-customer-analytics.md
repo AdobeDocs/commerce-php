@@ -19,5 +19,6 @@ For information about a module installation in Magento 2, see [Enable or disable
 ## Additional data
 
 More information can get at articles:
+
 - [Advanced Reporting](https://devdocs.magento.com/guides/v2.4/advanced-reporting/overview.html)
 - [Data collection for advanced reporting](https://devdocs.magento.com/guides/v2.4/advanced-reporting/data-collection.html)

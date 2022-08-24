@@ -17,7 +17,7 @@ Adobe has strengthened the hashing algorithms (SHA-256) used in password managem
 
 ### Improved prevention of cross-site scripting (XSS) attacks by making escaped data the default
 
-The Commerce framework has adopted conventions that regulate the escaping of data in output. These conventions include the ability to escape  output for [HTML](https://glossary.magento.com/html) pages (HTML, JSON, and JavaScript) and email. Where possible, escaping is transparent to client code. See [Security measures against XSS attacks](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/xss-protection.html) in the [Frontend](https://glossary.magento.com/frontend) Developer Guide.
+The Commerce framework has adopted conventions that regulate the escaping of data in output. These conventions include the ability to escape  output for [HTML](https://glossary.magento.com/html) pages (HTML, JSON, and JavaScript) and email. Where possible, escaping is transparent to client code. See [Security measures against XSS attacks](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/) in the [Frontend](https://glossary.magento.com/frontend) Developer Guide.
 
 ### More flexible file system ownership and permissions
 
@@ -27,11 +27,11 @@ To provide you with a simple way to restrict access to the file system in produc
 
 For an overview, see [Overview of ownership and permissions](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
 
-For details about ownership and permissions in development and production, see [ownership and permissions in development and production](https://devdocs.magento.com/guides/v2.4/config-guide/prod/prod_file-sys-perms.html).
+For details about ownership and permissions in development and production, see [ownership and permissions in development and production](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/file-system-permissions.html).
 
 ### Improved prevention of clickjacking exploits
 
-The Commerce framework safeguards your store from clickjacking attacks by using an X-Frame-Options HTTP request header. For more information, see [X-Frame-Options header](https://devdocs.magento.com/guides/v2.4/config-guide/secy/secy-xframe.html).
+The Commerce framework safeguards your store from clickjacking attacks by using an X-Frame-Options HTTP request header. For more information, see [X-Frame-Options header](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/security/xframe-options.html).
 
 ### Use of non-default Admin URL
 

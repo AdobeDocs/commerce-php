@@ -23,21 +23,21 @@ When the module is uninstalled, the other [ProductType]SharedCatalog modules won
 
 ## Structure
 
-[Learn about a typical file structure for a Magento 2 module](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/module-file-structure.html).
+[Learn about a typical file structure for a Magento 2 module](https://developer.adobe.com/commerce/php/development/build/component-file-structure/).
 
 ## Extensibility
 
-Shared catalogs are using message queues to save prices. For more information about queues, see [Message Queues](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/message-queues/message-queues.html).
+Shared catalogs are using message queues to save prices. For more information about queues, see [Message Queues](https://developer.adobe.com/commerce/php/development/components/message-queues/).
 
-Extension developers can interact with the Magento_SharedCatalog module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html).
+Extension developers can interact with the Magento_SharedCatalog module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
 
-[The Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html) enables you to override the functionality of the Magento_SharedCatalog module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_SharedCatalog module.
 
 ### Layouts
 
 You can extend and override layouts in the `Magento\SharedCatalog\view\adminhtml\layout` directory.
 
-For more information about layouts, see the [Layout documentation](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/layout-overview.html).
+For more information about layouts, see the [Layout documentation](https://developer.adobe.com/commerce/frontend-core/guide/layouts/).
 
 ### UI components
 
@@ -47,5 +47,5 @@ The `Magento\SharedCatalog\view\adminhtml\ui_component` directory contains exten
 
 * Listings: Company, product, shared catalog company, shared catalog, shared catalog product pricing, shared catalog product listing.
 
-For more information, see [UI Listing/Grid Component](https://devdocs.magento.com/guides/v2.4/ui_comp_guide/components/ui-listing-grid.html) and [UI Form Component](https://devdocs.magento.com/guides/v2.4/ui_comp_guide/components/ui-form.html).
+For more information, see [UI Listing/Grid Component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/listing-grid/) and [UI Form Component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/form/).
 

@@ -21,4 +21,4 @@ You can find the list of modules that have dependencies on the Magento_RmaStagin
 
 ## Extension points
 
-Extension points enable extension developers to interact with the Magento_RmaStaging module. [The Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html) enables you to override the functionality of the Magento_RmaStaging module.
+Extension points enable extension developers to interact with the Magento_RmaStaging module. [The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_RmaStaging module.

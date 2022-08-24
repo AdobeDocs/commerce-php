@@ -205,4 +205,4 @@ Below is an example of how to disable the previously created observer.
 
 ## Recommended Reading
 
-*  [Observers best practices](https://devdocs.magento.com/guides/v2.4/ext-best-practices/extension-coding/observers-bp.html)
+*  [Observers best practices](https://developer.adobe.com/commerce/php/best-practices/extensions/observers/)

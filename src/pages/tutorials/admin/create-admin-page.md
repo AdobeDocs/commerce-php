@@ -305,7 +305,7 @@ Now that the module is code-complete, run the following commands to install it:
 1. `bin/magento module:enable MyCompany_ExampleAdminNewPage` - If necessary, run this to enable the disabled module.
 1. `bin/magento setup:upgrade` - This command will properly register the module.
 1. `bin/magento setup:di:compile` - This command compiles classes used in dependency injections.
-1. `bin/magento setup:static-content:deploy` - (Production mode only) This command deploys static view files. If you are in developer mode, refer to [Clean static files cache](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/cache_for_frontdevs.html#clean_static_cache) to refresh the static view files.
+1. `bin/magento setup:static-content:deploy` - (Production mode only) This command deploys static view files. If you are in developer mode, refer to [Clean static files cache](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache) to refresh the static view files.
 1. `bin/magento cache:clean` - This command cleans the cache.
 
 Once the module installation has completed, the link to the **Hello World** page should appear in the **Greetings** section under **Content** in the left navigation in the admin area. Clicking this link will take you to a page that looks like the one pictured below.

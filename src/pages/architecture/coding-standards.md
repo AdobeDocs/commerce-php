@@ -5,4 +5,4 @@ description: Review these technical guidelines before you contribute code to Ado
 
 # Coding standards
 
-See [Coding Standards](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html).
+See [Coding Standards](https://developer.adobe.com/commerce/php/coding-standards/).

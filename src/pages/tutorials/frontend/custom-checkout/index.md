@@ -5,7 +5,7 @@ description: Review a list of tutorials focused on customizing the Adobe Commerc
 
 # Customize checkout
 
-[Checkout](https://glossary.magento.com/checkout) is implemented using the [UI components](https://devdocs.magento.com/guides/v2.4/ui_comp_guide/bk-ui_comps.html).
+[Checkout](https://glossary.magento.com/checkout) is implemented using the [UI components](https://developer.adobe.com/commerce/frontend-core/ui-components/).
 Out of the box, the checkout consists of two steps:
 
 -  Shipping Information
