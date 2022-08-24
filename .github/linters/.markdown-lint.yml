@@ -1,10 +1,19 @@
 ---
 ###########################
+###########################
 ## Markdown Linter rules ##
+###########################
 ###########################
 
 # Linter rules doc:
 # - https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md
+#
+# Note:
+# To comment out a single error:
+#   <!-- markdownlint-disable -->
+#   any violations you want
+#   <!-- markdownlint-restore -->
+#
 
 # Default state for all rules
 default: false
