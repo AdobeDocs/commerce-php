@@ -67,7 +67,6 @@ Follow step-by-step tutorials to customize default Adobe Commerce and Magento Op
 
 <DiscoverBlock width="100%" slots="heading, link, text"/>
 
-
 ## Contributing to this documentation
 
 We encourage you to participate in our open documentation initiative. If you have suggestions, corrections, additions, or deletions for this documentation, check out the source on [GitHub](https://github.com/adobedocs/commerce-php), and open a pull request.
