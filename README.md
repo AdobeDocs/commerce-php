@@ -48,9 +48,10 @@ To build this site locally and contribute changes, follow these steps:
    yarn dev
    ```
 
-## Contributor resources
+## Using enhanced markdown features
 
-For the documentation contributor or developer, please read these sections on how to:
+To learn about all the enhanced markdown features you can use, see the [Adobe I/O Theme README](https://github.com/adobe/aio-theme#adobe-io-theme).
+Highlights include:
 
 - [Arrange the structure content of your docs](https://github.com/adobe/aio-theme#content-structure)
 - [Linking to pages](https://github.com/adobe/aio-theme#links)
@@ -59,5 +60,3 @@ For the documentation contributor or developer, please read these sections on ho
 - [Setting Side Navigation](https://github.com/adobe/aio-theme#side-navigation)
 - [Using content blocks](https://github.com/adobe/aio-theme#jsx-blocks)
 - [Notes on using Markdown](https://github.com/adobe/aio-theme#writing-enhanced-markdown)
-
-For more in-depth [instructions](https://github.com/adobe/aio-theme#getting-started).
