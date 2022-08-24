@@ -51,7 +51,7 @@ Use this collection of best practices curated by the community as well as the Ad
 
 [Module Reference](module-reference/)
 
-Get module names and descriptions for PHP modules specific to Magento Open Source, Adobe Commerce, and B2B for Adobe Commerce
+Get module names and descriptions for PHP modules specific to Magento Open Source, Adobe Commerce, and B2B for Adobe Commerce.
 
 <DiscoverBlock slots="link, text"/>
 
