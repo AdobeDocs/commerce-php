@@ -47,11 +47,11 @@ Learn about extending or customizing Adobe Commerce and Magento Open Source comp
 
 Use this collection of best practices curated by the community as well as the Adobe User Experience (UX), Product Management, and Engineering teams to avoid commonly reported issues in third-party Adobe Commerce and Magento Open source extensions.
 
-<!-- <DiscoverBlock slots="link, text"/>
+<DiscoverBlock slots="link, text"/>
 
 [Module Reference](module-reference/)
 
-Lorem ipsum dolor sit amet -->
+Get module names and descriptions for PHP modules specific to Magento Open Source, Adobe Commerce, and B2B for Adobe Commerce.
 
 <DiscoverBlock slots="link, text"/>
 
