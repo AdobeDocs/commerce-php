@@ -1,6 +1,6 @@
 ---
 title: Error Code Mapping
-description: Determine payment gateway error code routing.
+description: Learn how to determine payment gateway error code routing.
 ---
 
 # Error Code Mapping

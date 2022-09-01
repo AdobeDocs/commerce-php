@@ -1,6 +1,6 @@
 ---
 title: Response Handler
-description: Process payment provider responses
+description: Learn how to process payment provider responses.
 ---
 
 # Response Handler

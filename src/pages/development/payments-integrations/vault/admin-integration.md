@@ -1,6 +1,6 @@
 ---
 title: Vault implementation for Admin
-description: Configure the fault to work with Adobe Commerce
+description: Learn how to configure the fault to work with Adobe Commerce.
 ---
 
 # Vault implementation for Admin

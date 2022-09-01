@@ -1,6 +1,6 @@
 ---
 title: Adding vault integration
-description: Overview of adding vault as a payment method so customers can use previously saved credit card information
+description: This is an overview of adding vault as a payment method so customers can use previously saved credit card information.
 ---
 
 # Adding vault integration

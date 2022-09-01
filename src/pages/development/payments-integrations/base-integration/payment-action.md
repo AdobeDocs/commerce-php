@@ -1,6 +1,6 @@
 ---
 title: Add a payment action
-description: Create a payment action and configure the command for that payment action
+description: Learn how to create a payment action and configure the command for that payment action.
 ---
 
 # Add a payment action

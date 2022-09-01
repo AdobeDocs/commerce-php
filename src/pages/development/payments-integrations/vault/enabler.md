@@ -1,6 +1,6 @@
 ---
 title: Enable vault
-description: Add vault enabler and modify payment controls
+description: Learn how to add vault enabler and modify payment controls.
 ---
 
 # Enable vault

@@ -1,6 +1,6 @@
 ---
 title: Response Validator
-description: Verify gateway response for formatting, security, and execution.
+description: Learn how to verify gateway response for formatting, security, and execution.
 ---
 
 # Response Validator

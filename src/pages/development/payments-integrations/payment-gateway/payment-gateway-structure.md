@@ -1,6 +1,6 @@
 ---
 title: Payment provider gateway structure
-description: Structural overview of the basic components of the Adobe Commerce payment provider gateway
+description: This is a structural overview of the basic components of the Adobe Commerce payment provider gateway.
 ---
 
 # Payment provider gateway structure

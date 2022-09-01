@@ -1,6 +1,6 @@
 ---
 title: Vault DI configuration
-description: Configure vault payment method and create payment actions
+description: Learn how to configure vault payment method and create payment actions.
 ---
 
 # Vault DI configuration

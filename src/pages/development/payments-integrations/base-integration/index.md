@@ -1,6 +1,6 @@
 ---
 title: Adding a new payment integration (payment method)
-description: Overview of how to add integrations to handle transactions with other payment providers
+description: This is an overview of how to add integrations to handle transactions with other payment providers.
 ---
 
 # Adding a new payment integration (payment method)
@@ -35,21 +35,6 @@ Your payment method might be available from either [storefront](https://glossary
 
 ## Terms Used
 
-<table>
-<tr>
-<th>
-Term
-</th>
-<th>
-Description
-</th>
-</tr>
-<tr>
-<td>
-Payment additional information
-</td>
-<td>
-Array of data where you can store any payment-related information
-</td>
-</tr>
-</table>
+| Term        | Description |
+| ----------- | ----------- |
+| Payment additional information| Array of data where you can store any payment-related information|

@@ -1,6 +1,6 @@
 ---
 title: Commerce payment provider gateway
-description: Overview of how to create and handle transactions based on order details
+description: This is an overview of how to create and handle transactions based on order details.
 ---
 
 # Commerce payment provider gateway
@@ -45,46 +45,8 @@ The topics of this chapter are conceptual and describe the components of the Com
 
 #### Terms used
 
-<table>
-<tr>
-<th>
-Term
-</th>
-<th>
-Description
-</th>
-</tr>
-<tr>
-<td>
-<i>Commerce sales management</i>
-</td>
-<td>
-Commerce interfaces that provide the ability to create orders, invoices, and shipments.
-</td>
-</tr>
-<tr>
-<td>
-<i>Payment service provider, payment provider, payment processor</i>
-</td>
-<td>
- Online service for accepting electronic payments, like PayPal, Authorize.Net and so on.
-</td>
-</tr>
-<tr>
-<td>
-<i>Payload</i>
-</td>
-<td>
-Data used for a transaction. Might include the following:
-
-<ul>
-<li> payment details </li>
-<li> order items </li>
-<li> shipping, billing addresses </li>
-<li> customer details </li>
-<li> taxes </li>
-<li> merchant's payment provider <a href="https://glossary.magento.com/api" target="_blank">API</a> credentials </li>
-</ul>
-</td>
-</tr>
-</table>
+| Term        | Description |
+| ----------- | ----------- |
+| Commerce sales management | Commerce interfaces that provide the ability to create orders, invoices, and shipments. |
+| Payment service provider, payment provider, payment processor |  Online service for accepting electronic payments, like PayPal, Authorize.Net and so on. |
+| Payload | Data used for a transaction. Might include the following: <ul><li>Payment details</li><li>Order items</li><li>Shipping, billing addresses</li><li>Customer details</li><li>Taxes</li><li>Merchant's payment provider API credentials</li></ul>|

@@ -1,6 +1,6 @@
 ---
 title: Add vault to module dependencies
-description: Add dependencies necessary for using the vault
+description: Learn how to add dependencies necessary for using the vault.
 ---
 
 # Add vault to module dependencies

@@ -1,6 +1,6 @@
 ---
 title: Display the stored information
-description: Display stored tokens in the customer account and allow customers to remove tokens
+description: Learn how to display stored tokens in the customer account and allow customers to remove tokens.
 ---
 
 # Display the stored information

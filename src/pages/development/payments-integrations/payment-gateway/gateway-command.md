@@ -1,6 +1,6 @@
 ---
 title: Gateway Command
-description: How provider responses are sent, received, and processed
+description: Learn how provider responses are sent, received, and processed.
 ---
 
 # Gateway Command

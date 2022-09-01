@@ -1,6 +1,6 @@
 ---
 title: Payment method module configuration
-description: Create a custom payment integration module
+description: Learn how to create a custom payment integration module.
 ---
 
 # Payment method module configuration

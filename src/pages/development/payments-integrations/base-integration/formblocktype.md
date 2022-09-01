@@ -1,6 +1,6 @@
 ---
 title: Payment info rendering in Admin checkout
-description: Create a custom formBlockType to modify payment information form rendering
+description: Create a custom formBlockType to modify payment information form rendering.
 ---
 
 # Payment info rendering in Admin checkout

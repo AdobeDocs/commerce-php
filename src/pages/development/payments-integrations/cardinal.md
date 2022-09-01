@@ -1,6 +1,6 @@
 ---
 title: CardinalCommerce 3-D Secure
-description: Integrate Adobe Commerce payment modules with CardinalCommerce, a subsidiary of Visa
+description: Learn how to integrate Adobe Commerce payment modules with CardinalCommerce, a subsidiary of Visa.
 ---
 
 # CardinalCommerce 3-D Secure

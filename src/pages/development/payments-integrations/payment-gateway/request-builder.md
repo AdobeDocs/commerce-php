@@ -1,6 +1,6 @@
 ---
 title: Request Builder
-description: Implement complex building strategies using builder composites
+description: Learn how to implement complex building strategies using builder composites.
 ---
 
 # Request Builder

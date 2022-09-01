@@ -1,6 +1,6 @@
 ---
 title: Token UI component provider
-description: Create custom vault payment UI components that display stored tokens
+description: Learn how to create custom vault payment UI components that display stored tokens.
 ---
 
 # Token UI component provider

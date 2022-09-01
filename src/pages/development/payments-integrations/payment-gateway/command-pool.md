@@ -1,6 +1,6 @@
 ---
 title: Gateway Command Pool
-description: Select the set of gateway commands available for integration with a payment provider
+description: Select the set of gateway commands available for integration with a payment provider.
 ---
 
 # Gateway Command Pool

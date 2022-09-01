@@ -1,6 +1,6 @@
 ---
 title: Get payment information from frontend to backend
-description: How to retrieve the payment details form
+description: Learn how to retrieve the payment details form.
 ---
 
 # Get payment information from frontend to backend

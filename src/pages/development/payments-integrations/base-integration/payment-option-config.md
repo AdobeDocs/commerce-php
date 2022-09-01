@@ -1,32 +1,32 @@
 ---
 title: Payment method configuration
-description: Configure payment method options
+description: Learn how to configure the payment method options.
 ---
 
 # Payment method configuration
 
 In the `config.xml` file in your `%Vendor_Module%/etc` directory, configure the options of your [payment method](https://glossary.magento.com/payment-method). The following table contains the default options available for any payment method.
 
-| Option                 | Description                                                                                                                                                                                                                    | Value type                            |
-|------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
-| `active`               | is payment active by default                                                                                                                                                                                                   | Boolean                               |
-| `debug`                | enables debug mode by default, for example log for request/response                                                                                                                                                            | Boolean                               |
-| `debugReplaceKeys`     | request/response fields that are masked in log                                                                                                                                                                                 | comma separated list                 |
-| `can_authorize`        | whether payment method supports authorization                                                                                                 | Boolean                               |
-| `can_capture`          | whether payment method supports the capture operation                                                                                                                                                                          | Boolean                               |
-| `can_void`             | whether payment method supports the void operation                                                                                                                                                                             | Boolean                               |
-| `can_use_checkout`     | whether payment method is available in storefront  checkout | Boolean                               |
-| `can_use_internal`     | whether payment method is available in Admin  order creation                                                                                  | Boolean                               |
-| `currency`             | supported currency                                                                                                                                                                                                             |                                       |
-| `is_gateway`           | is an integration with gateway                                                                                                                                                                                                 | Boolean                               |
-| `merchant_gateway_key` | encrypted merchant credential                                                                                                                                                                                                  | string                                |
-| `model`                | [payment method facade](facade-configuration.md) used for integration with Sales and Checkout modules                                                                 | string                                |
-| `order_status`         | default [order status](https://glossary.magento.com/order-status)                                                                                                                         |                                       |
-| `paymentInfoKeys`      | transaction request/response fields displayed on payment information block (can be any fields from payment additional information)                                                                                             | list of comma separated values        |
-| `privateInfoKeys`      | `privateInfoKeys` fields which should not be displayed in customer payment information block (can be any fields from payment additional information)                                                                           |                                       |
-| `payment_action`       | default action of payment for the payment method (authorize, sale)                                                                                                                                                             | `authorize`,`authorize_capture`       |
-| `sort_order`           | payment method order position on checkout/system configuration pages                                                                                                                                                           | integer                               |
-| `title`                | default title for a payment method                                                                                                                                                                                             | string                                |
+| Option | Description | Value type |
+|------------------------|-----------------------------------------------------------------|-------------------------|
+| `active` | is payment active by default | Boolean |
+| `debug` | enables debug mode by default, for example log for request/response | Boolean                               |
+| `debugReplaceKeys` | request/response fields that are masked in log | comma separated list |
+| `can_authorize` | whether payment method supports authorization | Boolean |
+| `can_capture` | whether payment method supports the capture operation | Boolean |
+| `can_void` | whether payment method supports the void operation | Boolean |
+| `can_use_checkout` | whether payment method is available in storefront  checkout | Boolean |
+| `can_use_internal` | whether payment method is available in Admin  order creation | Boolean |
+| `currency` | supported currency | |
+| `is_gateway` | is an integration with gateway | Boolean |
+| `merchant_gateway_key` | encrypted merchant credential | string |
+| `model` | [payment method facade](facade-configuration.md) used for integration with Sales and Checkout modules | string |
+| `order_status` | default [order status](https://glossary.magento.com/order-status) | |
+| `paymentInfoKeys` | transaction request/response fields displayed on payment information block (can be any fields from payment additional information) | list of comma separated values |
+| `privateInfoKeys` | `privateInfoKeys` fields which should not be displayed in customer payment information block (can be any fields from payment additional information) | |
+| `payment_action` | default action of payment for the payment method (authorize, sale) | `authorize`,`authorize_capture` |
+| `sort_order` | payment method order position on checkout/system configuration pages | integer |
+| `title` | default title for a payment method | string |
 
 Additionally to the default option, a payment method configuration can contain any other custom options.
 

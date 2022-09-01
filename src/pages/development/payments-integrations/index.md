@@ -1,6 +1,6 @@
 ---
 title: Payments Integrations
-description: Overview of how to integrate your stores with payment service providers, allowing you to create and handle transactions based on order details
+description: This is an overview of how to integrate your stores with payment service providers, allowing you to create and handle transactions based on order details.
 ---
 
 # Payments Integrations

@@ -1,6 +1,6 @@
 ---
 title: Gateway Client
-description: Transfer the payload to the payment provider and get a response
+description: Learn how to transfer the payload to the payment provider and get a response.
 ---
 
 # Gateway Client

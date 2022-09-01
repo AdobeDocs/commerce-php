@@ -1,6 +1,6 @@
 ---
 title: Payment Token
-description: An overview of how payment tokens store data received from the payment provider
+description: This is an overview of how payment tokens store data received from the payment provider.
 ---
 
 # Payment Token

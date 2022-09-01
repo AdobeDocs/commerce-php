@@ -1,6 +1,6 @@
 ---
 title: Vault payment configuration
-description: The parameters necessary to create vault payment
+description: Learn about the parameters necessary to create vault payment.
 ---
 
 # Vault payment configuration
