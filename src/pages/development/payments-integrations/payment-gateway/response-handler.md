@@ -5,7 +5,9 @@ description: Process payment provider responses
 
 # Response Handler
 
-Response Handler is a component of the Adobe Commerce payment provider gateway, that processes payment provider responses. Typically, the response requires one of the following actions:
+Response Handler is a component of the Adobe Commerce payment provider gateway, that processes payment provider responses.
+
+Typically, the response requires one of the following actions:
 
 -  Modify the [order status](https://glossary.magento.com/order-status)
 
