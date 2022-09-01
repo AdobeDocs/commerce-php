@@ -29,7 +29,7 @@ Extension developers can interact with the Magento_CompanyCredit module. For mor
 
 [The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_CompanyCredit module.
 
-[Payment method configuration](https://devdocs.magento.com/guides/v2.4/payments-integrations/base-integration/payment-option-config.html) will allow you additional configuration to extend module functionality.
+[Payment method configuration](../development/payments-integrations/base-integration/payment-option-config.md) will allow you additional configuration to extend module functionality.
 
 ### Layouts
 
