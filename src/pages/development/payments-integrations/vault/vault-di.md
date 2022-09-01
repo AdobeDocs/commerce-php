@@ -48,7 +48,7 @@ Following is an example from Braintree configuration:
 
 For payment actions, you need to create gateway commands for vault, and update the payment provider [command pool](../payment-gateway/command-pool.md).
 
-All available commands you can find in the [VaultPaymentInterface](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Vault/Model/VaultPaymentInterface.php)
+You can find all available commands in the [VaultPaymentInterface](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Vault/Model/VaultPaymentInterface.php).
 
 Example: a gateway command for the authorize action is added for the Braintree vault
 

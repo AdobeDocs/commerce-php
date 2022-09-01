@@ -71,4 +71,4 @@ class PayPalDetailsHandler implements HandlerInterface
 }
 ```
 
-(The code sample is from Magento Open Source v2.1. Although the payment provider gateway was added in v2.0, the particular default implementation using the gateway were added in v2.1)
+(The code sample is from Magento Open Source v2.1. Although the payment provider gateway was added in v2.0, the particular default implementation using the gateway were added in v2.1).
