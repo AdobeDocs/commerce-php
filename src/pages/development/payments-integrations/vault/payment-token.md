@@ -5,9 +5,7 @@ description: An overview of how payment tokens store data received from the paym
 
 # Payment Token
 
-Adobe Commerce does not store any private credit card details. It only stores the data received from the payment provider: payment processor token and credit card details without sensitive data.
-
-This information is stored in Payment Token.
+Adobe Commerce does not store any private credit card details. Commerce only stores the Payment Token, which is comprised of the following data received from the payment provider: the payment processor token and credit card details without sensitive data.
 
 The basic interface for Payment Token is [PaymentTokenInterface](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Vault/Api/Data/PaymentTokenInterface.php).
 
