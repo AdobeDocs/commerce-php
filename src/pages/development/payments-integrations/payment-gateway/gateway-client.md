@@ -17,9 +17,9 @@ A gateway client receives a called [`Transfer`](#transfer-factory) object. The c
 
 The following gateway client implementations can be used out-of-the-box:
 
-*  [\Magento\Payment\Gateway\Http\Client\Zend](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Payment/Gateway/Http/Client/Zend.php)
+-  [\Magento\Payment\Gateway\Http\Client\Zend](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Payment/Gateway/Http/Client/Zend.php)
 
-*  [\Magento\Payment\Gateway\Http\Client\Soap](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Payment/Gateway/Http/Client/Soap.php)
+-  [\Magento\Payment\Gateway\Http\Client\Soap](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Payment/Gateway/Http/Client/Soap.php)
 
 ## Example
 

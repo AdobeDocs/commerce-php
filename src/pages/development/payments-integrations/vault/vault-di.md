@@ -99,7 +99,7 @@ Command manager must be added to the command manager pool. This pool is availabl
 
 There are two ways to add command manager to the pool:
 
-*  Add to default `CommandManagerPool` implementation. Example:
+-  Add to default `CommandManagerPool` implementation. Example:
 
 ```xml
 <type name="Magento\Payment\Gateway\Command\CommandManagerPool">
@@ -111,7 +111,7 @@ There are two ways to add command manager to the pool:
 </type>
 ```
 
-*  Create custom command manager pool. Example:
+-  Create custom command manager pool. Example:
 
 ```xml
 <virtualType name="BraintreeCcVaultCommandManagerPool" type="Magento\Payment\Gateway\Command\CommandManagerPool">

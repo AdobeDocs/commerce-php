@@ -40,14 +40,14 @@ In the following example the `BraintreeAuthorizeCommand` gateway command is adde
 
 A gateway command must be configured with the following arguments:
 
-*  `requestBuilder`: [request builder](request-builder.md), builds an array of provider-specific arguments using the order information.
+-  `requestBuilder`: [request builder](request-builder.md), builds an array of provider-specific arguments using the order information.
 
-*  `transferFactory`: [transfer factory](gateway-client.md#transfer-factory), creates transfer object from request data, which will be used by Gateway Client to process requests.
+-  `transferFactory`: [transfer factory](gateway-client.md#transfer-factory), creates transfer object from request data, which will be used by Gateway Client to process requests.
 
-*  `client`: [gateway client](gateway-client.md), takes the provider-specific arguments and performs a low-level call to the provider.
+-  `client`: [gateway client](gateway-client.md), takes the provider-specific arguments and performs a low-level call to the provider.
 
 Optional arguments :
 
-*  `handler`: [response handler](response-handler.md), changes the order and payment status depending on the payment provider response.
+-  `handler`: [response handler](response-handler.md), changes the order and payment status depending on the payment provider response.
 
-*  `validator`: [response validator](response-validator.md), validates the provider response.
+-  `validator`: [response validator](response-validator.md), validates the provider response.

@@ -360,6 +360,130 @@ module.exports = [
       ],
     },
     {
+      title: "Payment Provider Gateway",
+      path: "/development/payments-integrations/payment-gateway/",
+      pages: [
+        {
+          title: "Introduction",
+          path: "/development/payments-integrations",
+        },
+        {
+          title: "Commerce payment provider gateway",
+          path: "/development/payments-integrations/payment-gateway/",
+          pages: [
+            {
+              title: "Payment provider gateway structure",
+              path: "/development/payments-integrations/payment-gateway/payment-gateway-structure/",
+            },
+            {
+              title: "Gateway command",
+              path: "/development/payments-integrations/payment-gateway/gateway-command/",
+            },
+            {
+              title: "Gateway command pool",
+              path: "/development/payments-integrations/payment-gateway/command-pool/",
+            },
+            {
+              title: "Request Builder",
+              path: "/development/payments-integrations/payment-gateway/request-builder/",
+            },
+            {
+              title: "Gateway client",
+              path: "/development/payments-integrations/payment-gateway/gateway-client/",
+            },
+            {
+              title: "Response Validator",
+              path: "/development/payments-integrations/payment-gateway/response-validator/",
+            },
+            {
+              title: "Response handler",
+              path: "/development/payments-integrations/payment-gateway/response-handler/",
+            },
+            {
+              title: "Error code mapping",
+              path: "/development/payments-integrations/payment-gateway/error-code-mapper/",
+            },
+          ],
+        },
+        {
+          title: "Adding a new payment integration (payment method)",
+          path: "/development/payments-integrations/base-integration/",
+          pages: [
+            {
+              title: "Payment method module configuration",
+              path: "/development/payments-integrations/base-integration/module-configuration/",
+            },
+            {
+              title: "Payment method configuration",
+              path: "/development/payments-integrations/base-integration/payment-option-config/",
+            },
+            {
+              title: "Payment method facade",
+              path: "/development/payments-integrations/base-integration/facade-configuration/",
+            },
+            {
+              title: "Payment info rendering in Admin checkout",
+              path: "/development/payments-integrations/base-integration/formblocktype/",
+            },
+            {
+              title: "Add a payment action",
+              path: "/development/payments-integrations/base-integration/payment-action/",
+            },
+            {
+              title: "Get payment information from frontend to backend",
+              path: "/development/payments-integrations/base-integration/get-payment-info/",
+            },
+            {
+              title: "Configure payment method by area",
+              path: "/development/payments-integrations/base-integration/admin-integration/",
+            },
+          ],
+        },
+        {
+          title: "Adding vault integration",
+          path: "/development/payments-integrations/vault/",
+          pages: [
+            {
+              title: "Add vault to module dependencies",
+              path: "/development/payments-integrations/vault/module-configuration/",
+            },
+            {
+              title: "Vault payment configuration",
+              path: "/development/payments-integrations/vault/vault-payment-configuration/",
+            },
+            {
+              title: "Vault DI configuration",
+              path: "/development/payments-integrations/vault/vault-di/",
+            },
+            {
+              title: "Enable vault",
+              path: "/development/payments-integrations/vault/enabler/",
+            },
+            {
+              title: "Payment token",
+              path: "/development/payments-integrations/vault/payment-token/",
+            },
+            {
+              title: "Token UI component provider",
+              path: "/development/payments-integrations/vault/token-ui-component-provider/",
+            },
+            {
+              title: "Display the stored information",
+              path: "/development/payments-integrations/vault/customer-stored-payments/",
+            },
+            {
+              title: "Vault implementation for Admin",
+              path: "/development/payments-integrations/vault/admin-integration/",
+            },
+          ],
+        },
+        {
+          title: "CardinalCommerce 3-D Secure",
+          path: "/development/payments-integrations/cardinal/",
+        },
+      ],
+    },
+    {
       title: "Configuration",
       path: "/development/configuration/",
       pages: [

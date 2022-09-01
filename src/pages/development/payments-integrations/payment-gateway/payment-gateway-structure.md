@@ -15,14 +15,14 @@ The interaction between the [payment gateway](https://glossary.magento.com/payme
 
 Each component from this scheme is described in the corresponding topic:
 
-*  [Gateway Command](gateway-command.md)
+-  [Gateway Command](gateway-command.md)
 
-*  [Gateway Command Pool](command-pool.md)
+-  [Gateway Command Pool](command-pool.md)
 
-*  [Request Builder](request-builder.md)
+-  [Request Builder](request-builder.md)
 
-*  [Gateway Client](gateway-client.md)
+-  [Gateway Client](gateway-client.md)
 
-*  [Response Validator](response-validator.md)
+-  [Response Validator](response-validator.md)
 
-*  [Response Handler](response-handler.md)
+-  [Response Handler](response-handler.md)

@@ -11,8 +11,8 @@ This guide describes how the Commerce payment provider gateway is implemented an
 
 The chapters of this guide are:
 
-*  [Commerce payment provider gateway](payment-gateway/)
+-  [Commerce payment provider gateway](payment-gateway/)
 
-*  [How to add a custom payment method using Commerce payment provider gateway](base-integration/)
+-  [How to add a custom payment method using Commerce payment provider gateway](base-integration/)
 
-*  [How to add vault for the custom payment method](vault/)
+-  [How to add vault for the custom payment method](vault/)

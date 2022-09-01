@@ -15,33 +15,33 @@ The following diagram shows a simplified interaction flow between Adobe Commerce
 
 Commerce payment provider supports the following payment operations:
 
-*  authorize: process [authorization](https://glossary.magento.com/authorization) transaction; funds are blocked on customer account, but not withdrawn
+-  authorize: process [authorization](https://glossary.magento.com/authorization) transaction; funds are blocked on customer account, but not withdrawn
 
-*  sale: process authorization transaction and capture automatically, funds are withdrawn
+-  sale: process authorization transaction and capture automatically, funds are withdrawn
 
-*  capture: withdraw previously authorized amount
+-  capture: withdraw previously authorized amount
 
-*  refund: return previously withdrawn customer funds
+-  refund: return previously withdrawn customer funds
 
-*  void: cancel transfer of funds from customer account
+-  void: cancel transfer of funds from customer account
 
 ### What's in this chapter
 
 The topics of this chapter are conceptual and describe the components of the Commerce payment provider gateway:
 
-*  [Payment provider gateway structure](payment-gateway-structure.md)
+-  [Payment provider gateway structure](payment-gateway-structure.md)
 
-*  [Gateway Command](gateway-command.md)
+-  [Gateway Command](gateway-command.md)
 
-*  [Gateway Command Pool](command-pool.md)
+-  [Gateway Command Pool](command-pool.md)
 
-*  [Request Builder](request-builder.md)
+-  [Request Builder](request-builder.md)
 
-*  [Gateway Client](gateway-client.md)
+-  [Gateway Client](gateway-client.md)
 
-*  [Response Validator](response-validator.md)
+-  [Response Validator](response-validator.md)
 
-*  [Response Handler](response-handler.md)
+-  [Response Handler](response-handler.md)
 
 #### Terms used
 

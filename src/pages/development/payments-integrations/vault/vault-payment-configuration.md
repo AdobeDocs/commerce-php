@@ -7,9 +7,9 @@ description: The parameters necessary to create vault payment
 
 You need to configure the main parameters of the vault implementation in the `config.xml` file of your [payment method](https://glossary.magento.com/payment-method) module:
 
-*  `model` - instance of the vault payment implementation, [configured in `di.xml`](vault-di.md).
+-  `model` - instance of the vault payment implementation, [configured in `di.xml`](vault-di.md).
 
-*  `title` - vault payment method title; can be overwritten in the store configuration.
+-  `title` - vault payment method title; can be overwritten in the store configuration.
 
 These parameters are specified in the section defined by the unique vault implementation code. They are the minimum required to create vault payment. All other payment settings are inherited from the payment provider integration.
 
