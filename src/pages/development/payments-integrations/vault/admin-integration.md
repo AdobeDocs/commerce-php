@@ -3,6 +3,10 @@ title: Vault implementation for Admin
 description: Learn how to configure the fault to work with Adobe Commerce.
 ---
 
+import Docs from '/src/pages/_includes/braintree-note.md'
+
+<Docs />
+
 # Vault implementation for Admin
 
 To be able to use vault in [Admin](https://glossary.magento.com/admin) order creation, you need to take at least the following steps:

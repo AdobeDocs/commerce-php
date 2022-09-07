@@ -3,6 +3,10 @@ title: Enable vault
 description: Learn how to add vault enabler and modify payment controls.
 ---
 
+import Docs from '/src/pages/_includes/braintree-note.md'
+
+<Docs />
+
 # Enable vault
 
 Store customers must have the ability to enable and disable credit cards details storing.

@@ -3,6 +3,10 @@ title: Payment method module configuration
 description: Learn how to create a custom payment integration module.
 ---
 
+import Docs from '/src/pages/_includes/braintree-note.md'
+
+<Docs />
+
 # Payment method module configuration
 
 For the sake of compatibility, upgradability and easy maintenance, do not edit the default Adobe Commerce code; add your customizations in a separate [module](https://glossary.magento.com/module).

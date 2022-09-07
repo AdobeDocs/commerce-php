@@ -3,6 +3,10 @@ title: Gateway Command Pool
 description: Select the set of gateway commands available for integration with a payment provider.
 ---
 
+import Docs from '/src/pages/_includes/braintree-note.md'
+
+<Docs />
+
 # Gateway Command Pool
 
 All [gateway commands](/gateway-command.md) implemented for a particular payment provider, should be added to a command pool for this provider. A command pool is a set of gateway commands available for integration with a particular payment provider. The pool is added to the configuration of the payment provider using [dependency injection](../../components/dependency-injection.md).

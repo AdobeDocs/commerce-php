@@ -3,6 +3,10 @@ title: Configure payment method by area
 description: Learn how to define payment method availability.
 ---
 
+import Docs from '/src/pages/_includes/braintree-note.md'
+
+<Docs />
+
 # Configure payment method by area
 
 You can determine if the payment method is available for the [storefront](https://glossary.magento.com/storefront) and [checkout](https://glossary.magento.com/checkout) in the [payment method configuration in `config.xml`](payment-option-config.md):

@@ -3,6 +3,10 @@ title: Payment info rendering in Admin checkout
 description: Create a custom formBlockType to modify payment information form rendering.
 ---
 
+import Docs from '/src/pages/_includes/braintree-note.md'
+
+<Docs />
+
 # Payment info rendering in Admin checkout
 
 The payment information form rendering in [Admin](https://glossary.magento.com/admin) order creation is defined by the block class, its template and [layout](https://glossary.magento.com/layout).

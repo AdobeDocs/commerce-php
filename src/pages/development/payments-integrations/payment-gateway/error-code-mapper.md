@@ -3,6 +3,10 @@ title: Error Code Mapping
 description: Learn how to determine payment gateway error code routing.
 ---
 
+import Docs from '/src/pages/_includes/braintree-note.md'
+
+<Docs />
+
 # Error Code Mapping
 
 A payment gateway has error codes or messages that need to be transformed to user-friendly messages. When an error occurs, Adobe Commerce delivers the message to the appropriate audience so that the customer or merchant can resolve any problems. You can set up each payment integration to map the native error codes and messages into sets of text strings. As a result, you can ensure that only the proper audience (merchants only, customers only, or all) sees each error message. By default, the standard error message (`An error occurred on the server. Please try to place the order again.`) displays if a payment operation fails and a specific mapped message cannot be found.

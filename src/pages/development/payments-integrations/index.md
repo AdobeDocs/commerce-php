@@ -3,6 +3,10 @@ title: Payments Integrations
 description: This is an overview of how to integrate your stores with payment service providers, allowing you to create and handle transactions based on order details.
 ---
 
+import Docs from '/src/pages/_includes/braintree-note.md'
+
+<Docs />
+
 # Payments Integrations
 
 Adobe Commerce payment provider gateway is a mechanism that allows you to integrate your stores with payment service providers. As a result, you can create and handle transactions based on order details.
