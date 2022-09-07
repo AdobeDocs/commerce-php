@@ -65,7 +65,7 @@ class InstallSchema implements InstallSchemaInterface
 
 ### Schema upgrade
 
-The applicationexecutes your module's schema upgrade class when it detects an earlier installation.
+The application executes your module's schema upgrade class when it detects an earlier installation.
 The purpose of this class is to update the database structure or apply patches.
 
 | | |
@@ -101,7 +101,7 @@ class UpgradeSchema implements UpgradeSchemaInterface
 
 ### Recurring schema event
 
-The applicationexecutes your module's recurring schema event class after every schema installation or upgrade stage.
+The application executes your module's recurring schema event class after every schema installation or upgrade stage.
 This class makes final modifications to the database schema after it has been installed or updated.
 
 | | |
@@ -137,11 +137,11 @@ class Recurring implements InstallSchemaInterface
 
 ## Data initialization
 
-The applicationgoes through your module's data initialization stages after the schema initialization processes complete.
+The application goes through your module's data initialization stages after the schema initialization processes complete.
 
 ### Data installation
 
-The applicationexecutes the data installation class during your module's initial install unless an existing version entry is found in the database.
+The application executes the data installation class during your module's initial install unless an existing version entry is found in the database.
 The purpose of this class is to populate the database with initial data.
 
 | | |
@@ -177,7 +177,7 @@ class InstallData implements InstallDataInterface
 
 ### Data upgrade
 
-The applicationexecutes the data upgrade class when it detects an earlier version in the `data_version` field for the module in the `setup_module` table.
+The application executes the data upgrade class when it detects an earlier version in the `data_version` field for the module in the `setup_module` table.
 The purpose of this class is to fix corrupted data or populate a new data field after a schema change.
 
 | | |
@@ -213,7 +213,7 @@ class UpgradeData implements UpgradeDataInterface
 
 ### Recurring data event
 
-The applicationexecutes your module's recurring data event class after every data installation or upgrade stage.
+The application executes your module's recurring data event class after every data installation or upgrade stage.
 This class makes final modifications to the database store after data has been installed or updated.
 
 | | |
@@ -351,7 +351,7 @@ class UpgradeData implements UpgradeDataInterface
 
 ## Uninstall event
 
-The applicationexecutes the uninstall event class when your module is uninstalled using the following command:
+The application executes the uninstall event class when your module is uninstalled using the following command:
 
 ```bash
 bin/magento module:uninstall --remove-data <module_name>
