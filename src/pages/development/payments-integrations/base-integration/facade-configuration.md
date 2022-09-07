@@ -3,6 +3,10 @@ title: Payment method facade
 description: Learn how to process payment actions between Adobe Commerce Sales Management and the payment processor.
 ---
 
+import Docs from '/src/pages/_includes/braintree-note.md'
+
+<Docs />
+
 # Payment method facade
 
 Payment facade is an instance of [Payment Adapter](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Payment/Model/Method/Adapter.php) configured with virtual types. It allows you to process payment actions between Adobe Commerce Sales Management and the payment processor.

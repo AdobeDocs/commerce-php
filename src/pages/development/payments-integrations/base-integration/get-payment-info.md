@@ -3,6 +3,10 @@ title: Get payment information from frontend to backend
 description: Learn how to retrieve the payment details form.
 ---
 
+import Docs from '/src/pages/_includes/braintree-note.md'
+
+<Docs />
+
 # Get payment information from frontend to backend
 
 To implement transaction [authorization](https://glossary.magento.com/authorization) our payment should receive some payment details from the payment form, like credit card details, and send received details to payment processor.

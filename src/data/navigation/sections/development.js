@@ -361,12 +361,8 @@ module.exports = [
     },
     {
       title: "Payment Provider Gateway",
-      path: "/development/payments-integrations/payment-gateway/",
+      path: "/development/payments-integrations/",
       pages: [
-        {
-          title: "Introduction",
-          path: "/development/payments-integrations",
-        },
         {
           title: "Commerce payment provider gateway",
           path: "/development/payments-integrations/payment-gateway/",

@@ -3,6 +3,10 @@ title: Adding vault integration
 description: This is an overview of adding vault as a payment method so customers can use previously saved credit card information.
 ---
 
+import Docs from '/src/pages/_includes/braintree-note.md'
+
+<Docs />
+
 # Adding vault integration
 
 Vault as a [payment method](https://glossary.magento.com/payment-method) provides store customers with ability to use the previously saved credit card information for [checkout](https://glossary.magento.com/checkout). This information is stored safely on the side of trusted payments gateways (Braintree, PayPal). Not storing the sensitive credit card information is one of the [PCI compliance](https://www.pcisecuritystandards.org/) requirements.

@@ -3,6 +3,10 @@ title: Gateway Client
 description: Learn how to transfer the payload to the payment provider and get a response.
 ---
 
+import Docs from '/src/pages/_includes/braintree-note.md'
+
+<Docs />
+
 # Gateway Client
 
 Gateway Client is a component of the Adobe Commerce [payment gateway](https://glossary.magento.com/payment-gateway) that transfers the payload to the payment provider and gets the response.

@@ -3,6 +3,10 @@ title: Add vault to module dependencies
 description: Learn how to add dependencies necessary for using the vault.
 ---
 
+import Docs from '/src/pages/_includes/braintree-note.md'
+
+<Docs />
+
 # Add vault to module dependencies
 
 You need to add dependencies on the Magento_Vault module in the payment method's `composer.json` and `module.xml` files.

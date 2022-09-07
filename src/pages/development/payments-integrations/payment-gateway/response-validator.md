@@ -3,6 +3,10 @@ title: Response Validator
 description: Learn how to verify gateway response for formatting, security, and execution.
 ---
 
+import Docs from '/src/pages/_includes/braintree-note.md'
+
+<Docs />
+
 # Response Validator
 
 Response Validator is a component of the Adobe Commerce payment provider gateway that performs gateway response verification. This may include low level data formatting, security verification, and even execution of some business logic required by the store configuration.

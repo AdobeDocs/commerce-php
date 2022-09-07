@@ -3,6 +3,10 @@ title: Vault DI configuration
 description: Learn how to configure vault payment method and create payment actions.
 ---
 
+import Docs from '/src/pages/_includes/braintree-note.md'
+
+<Docs />
+
 # Vault DI configuration
 
 This section describes how to configure vault [payment method](https://glossary.magento.com/payment-method) and create payment actions, like authorize, and sale (authorize & capture).

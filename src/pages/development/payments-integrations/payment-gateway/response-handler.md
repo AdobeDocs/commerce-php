@@ -3,6 +3,10 @@ title: Response Handler
 description: Learn how to process payment provider responses.
 ---
 
+import Docs from '/src/pages/_includes/braintree-note.md'
+
+<Docs />
+
 # Response Handler
 
 Response Handler is a component of the Adobe Commerce payment provider gateway, that processes payment provider responses.
