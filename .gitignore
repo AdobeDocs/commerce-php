@@ -1,3 +1,4 @@
+
 # OS and IDE generated files #
 ##############################
 .DS_Store
@@ -39,3 +40,7 @@ lerna-debug.log
 .actrc
 .secrets
 local-test.yml
+
+# yalc
+.yalc
+yalc.lock
