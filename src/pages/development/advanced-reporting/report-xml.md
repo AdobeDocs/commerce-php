@@ -46,7 +46,7 @@ Configuration of an XML.
 |Attribute|Description|Use|
 |--- |--- |--- |
 |`name`|Name of report configuration. You can use it for merging purposes or as a reference.|Required|
-|`connection`|Name of connection to the database, when a Magento store has more than one database.|Optional|
+|`connection`|Name of connection to the database, when a store has more than one database.|Optional|
 |`iterator`|Full class name or an interface name of a statement iterator. To use a custom iterator, add an `iterator` attribute which contains an iterator class or an interface name. This iterator can get statement iterator in the constructor method and wrap or change the current values with the custom data.|Optional|
 
 All data of the `reports.xml` file from the `<report>` node that has the same attribute `name` will be merged.

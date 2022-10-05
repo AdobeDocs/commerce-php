@@ -9,8 +9,8 @@ Advanced reporting functionality is implemented in the following Commerce module
 
 [Analytics](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/README.md) implements the following:
 
-*  Enabling subscription to Commerce Reporting and automatic re-subscription
-*  Changing the base URL without changing the Commerce Reporting account
+*  Enabling subscription to Adobe Commerce Reporting and automatic re-subscription
+*  Changing the base URL without changing the Adobe Commerce Reporting account
 *  Declaring the configuration schemas for [report data collection](data-collection.md)
 *  Collecting the Commerce instance data as reports for Commerce Reporting
 *  Introducing API that provides the collected data
