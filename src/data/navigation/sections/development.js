@@ -151,13 +151,31 @@ module.exports = [
         },
         {
           title: "Create a custom command",
-          path: "/development/cli-commands/custom",
+          path: "/development/cli-commands/custom/",
         },
       ],
     },
     {
       title: "Staging",
       path: "/development/staging/",
+    },
+    {
+      title: "Advanced reporting",
+      path: "/development/advanced-reporting/",
+      pages: [
+        {
+          title: "Modules",
+          path: "/development/advanced-reporting/modules/",
+        },
+        {
+          title: "Data collection",
+          path: "/development/advanced-reporting/data-collection/",
+        },
+        {
+          title: "Report XML",
+          path: "/development/advanced-reporting/report-xml/",
+        },
+      ],
     },
     {
       title: "Component development",
