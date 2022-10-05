@@ -1,8 +1,6 @@
 ---
-group: advanced-reporting
-title: Data collection for advanced reporting
-functional_areas:
-    - Reports
+title: Data collection for advanced reporting | Commerce PHP Extensions
+description: Learn about the data that the advanced reporting modules collect for Adobe Commerce and Magento Open Source.
 ---
 
 An {{site.data.var.ee}} or {{site.data.var.ce}} instance collects data that the Commerce Reporting service uses to build the advanced reports. All the data are stored in an encrypted archive file which is securely transferred to Commerce Reporting. Data collection is declared in a configuration file `etc/analytics.xml`. It declares:
