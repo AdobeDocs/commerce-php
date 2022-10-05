@@ -3,19 +3,16 @@ title: Report XML for advanced reporting | Commerce PHP Extensions
 description: Learn about the markup language that you can use to build advanced reports for Adobe Commerce and Magento Open Source.
 ---
 
-**Report XML** is a markup language created to build advanced reports.
-The language declares SQL queries using declarations in XML.
+**Report XML** is a markup language created to build advanced reports. The language declares SQL queries using declarations in XML.
 
-You can retrieve data for integration with advanced reporting service using a report name.
-A report name is the same as the `name` attribute in the `<report>` node as described below.
+You can retrieve data for integration with advanced reporting service using a report name. A report name is the same as the `name` attribute in the `<report>` node as described below.
 
 ## Report columns
 
-Report XML does not support the asterisk statement.
-All columns must be declared:
+Report XML does not support the asterisk statement. All columns must be declared:
 
-*  for the main table — inside the `<source>` node
-*  for join tables — inside the `<link-source>` node
+*  For the main table — inside the `<source>` node
+*  For join tables — inside the `<link-source>` node
 
 Columns are added using the `<attribute>` node.
 
@@ -29,12 +26,9 @@ All report files are located in the `etc` directory of a module:
 
 The following is a visualized XML Schema for `reports.xml`:
 
-{% include_relative img/reports_xsd.svg %}
+![Reports schema](../../_images/reports_xsd.svg)
 
-Report files can be located in any module that depends on the `Analytics` module (e.g. the `SalesAnalytics` module created for the reports related to *Sales*).
-Each report is declared in the `<report>` node.
-
-A `report` node is rendered into an SQL query.
+Report files can be located in any module that depends on the `Analytics` module (for example, the `SalesAnalytics` module created for the reports related to *Sales*). Each report is declared in the `<report>` node. A `report` node is rendered into an SQL query.
 
 ### `<config>`
 
@@ -64,15 +58,13 @@ The data sources that correspond to table names in a database.
 |`name`|Table name|Required|
 |`alias`|Table alias|Optional|
 
-The main table is specified with the `<source>` tag.
-After rendering, it is represented in an SQL query as the `FROM` statement.
+The main table is specified with the `<source>` tag. After rendering, it is represented in an SQL query as the `FROM` statement.
 
 A report can be filtered using `<filter>` declared inside the `<source>` node.
 
 ### `<link-source>`
 
-In the `source` node, you can also add a data source with the `<link-source>` tag.
-After rendering it is represented as the `JOIN` statement in an SQL query.
+In the `source` node, you can also add a data source with the `<link-source>` tag. After rendering it is represented as the `JOIN` statement in an SQL query.
 
 The `<link-source>` node contains the following attributes:
 
@@ -82,13 +74,9 @@ The `<link-source>` node contains the following attributes:
 |`alias`|Table alias|Optional|
 |`link-type`|Join type|Optional|
 
-The name must be the same as the table name in database.
-The `alias` attribute can be used in the same way as an alias in the SQL.
-The `link-type` attribute specifies the type of join in SQL query and can be either `INNER` or `LEFT`.
+The name must be the same as the table name in database. The `alias` attribute can be used in the same way as an alias in the SQL. The `link-type` attribute specifies the type of join in SQL query and can be either `INNER` or `LEFT`.
 
-Join conditions are described in the `<link-source>` node using the `<using>` tag.
-After rendering it is represented as the `ON` statement in an SQL query.
-`<using>` works in the same way as the filter, described below in this document.
+Join conditions are described in the `<link-source>` node using the `<using>` tag. After rendering it is represented as the `ON` statement in an SQL query. The `<using>` node works in the same way as the filter, described below in this document.
 
 ### `<attribute>`
 
@@ -102,9 +90,7 @@ After rendering it is represented as the `ON` statement in an SQL query.
 
 ### `<filter>`
 
-A report can be filtered using `<filter>` declared inside the parent node.
-The node can have nested filters and `<conditions>`.
-Filters use an attribute `glue` that helps to filter records that are based on more than one condition.
+A report can be filtered using `<filter>` declared inside the parent node. The node can have nested filters and `<conditions>`. Filters use an attribute `glue` that helps to filter records that are based on more than one condition.
 
 |Attribute|Description|Values|Use|
 |--- |--- |--- |
@@ -147,5 +133,3 @@ The `<conditions>` node contains the following attributes:
 Comparison operator is used to compare columns with the value or columns that can be specified inside the `<conditions>` XML node.
 
 You can find all the supported comparison operators in `\Magento\Analytics\ReportXml\DB\ConditionResolver::$conditionMap`.
-
-<!-- LINK DEFINITIONS -->

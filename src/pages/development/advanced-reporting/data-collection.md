@@ -3,7 +3,7 @@ title: Data collection for advanced reporting | Commerce PHP Extensions
 description: Learn about the data that the advanced reporting modules collect for Adobe Commerce and Magento Open Source.
 ---
 
-An {{site.data.var.ee}} or {{site.data.var.ce}} instance collects data that the Commerce Reporting service uses to build the advanced reports. All the data are stored in an encrypted archive file which is securely transferred to Commerce Reporting. Data collection is declared in a configuration file `etc/analytics.xml`. It declares:
+An Adobe Commerce or Magento Open Source instance collects data that the Commerce Reporting service uses to build the advanced reports. All the data are stored in an encrypted archive file which is securely transferred to Commerce Reporting. Data collection is declared in a configuration file `etc/analytics.xml`. It declares:
 
 -  Which report files must be included into the archive file.
 -  Which provider classes must collect data for each report file.
@@ -11,7 +11,8 @@ An {{site.data.var.ee}} or {{site.data.var.ce}} instance collects data that the 
 
 You do not need to have a Commerce Reporting account to use Advanced Reporting.
 
-{:.bs-callout-warning}
+<InlineAlert variant="warning" slots="text"/>
+
 This topic serves to provide better understanding of how data collection works. Any changes in configuration files will cause issues, because the Commerce Reporting service does not expect any changes of configuration in the current version.
 
 ## Example
@@ -67,7 +68,7 @@ Configuration of data collection can be extended or changed in any module adding
 
 The `etc/analytics.xsd` schema declares the structure of the `etc/analytics.xml` file.
 
-{% include_relative img/analytics_xsd.svg %}
+![Analytics schema](../../_images/analytics_xsd.svg)
 
 ### `<config>`
 
@@ -80,8 +81,7 @@ Configuration of an XML.
 
 ### `<file>`
 
-A report file (`.csv` by default) with collected data to be added to the archive file.
-The `\Magento\Analytics\Model\ReportWriter` class is responsible for a decision about a data file extension (`.csv`, `.json`, etc.).
+A report file (`.csv` by default) with collected data to be added to the archive file. The `\Magento\Analytics\Model\ReportWriter` class is responsible for a decision about a data file extension (`.csv`, `.json`, etc.).
 
 | Attribute | Description                  | Example value | Use      |
 | --------- | ---------------------------- | ------------- | -------- |
@@ -136,8 +136,7 @@ The node must contain a `<reportProvider>` node, or a `<customProvider>` node, o
 
 ### `<reportProvider>`
 
-A class that provides data for a report file.
-It can contain parameters.
+A class that provides data for a report file. It can contain parameters.
 
 | Attribute | Description                             | Example value                                  | Use      |
 | --------- | --------------------------------------- | ---------------------------------------------- | -------- |
@@ -159,8 +158,7 @@ Currently there is only one report provider available that is `Magento\Analytics
 
 ### `<parameters>`
 
-Parameters used by `<reportProvider>`.
-Currently there is only one parameter is available. It is declared in `<name>`.
+Parameters used by `<reportProvider>`. Currently there is only one parameter is available. It is declared in `<name>`.
 
 ```xml
 ...
@@ -177,8 +175,7 @@ If `reportProvider class="Magento\Analytics\ReportXml\ReportProvider"`, then `<n
 
 ### `<customProvider>`
 
-A class that provides data for a report file.
-It cannot contain any parameters.
+A class that provides data for a report file. It cannot contain any parameters.
 
 | Attribute | Description                             | Example value                                          | Use      |
 | --------- | --------------------------------------- | ------------------------------------------------------ | -------- |
@@ -193,12 +190,3 @@ It cannot contain any parameters.
     </providers>
 ...
 ```
-
-{:.ref-header}
-Related topics
-
- [Modules providing advanced reporting][modules]
-
-<!-- LINK DEFINITIONS -->
-
-[modules]: modules.html
