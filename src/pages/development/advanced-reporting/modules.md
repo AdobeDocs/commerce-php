@@ -3,6 +3,8 @@ title: Modules for advanced reporting | Commerce PHP Extensions
 description: Learn about the PHP modules that Adobe Commerce and Magento Open Source use for provide advanced reporting functionality.
 ---
 
+# Modules for advanced reporting
+
 Advanced reporting functionality is implemented in the following Commerce modules.
 
 [Analytics](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/README.md) implements the following:

@@ -3,6 +3,8 @@ title: Report XML for advanced reporting | Commerce PHP Extensions
 description: Learn about the markup language that you can use to build advanced reports for Adobe Commerce and Magento Open Source.
 ---
 
+# Report XML for advanced reporting
+
 **Report XML** is a markup language created to build advanced reports. The language declares SQL queries using declarations in XML.
 
 You can retrieve data for integration with advanced reporting service using a report name. A report name is the same as the `name` attribute in the `<report>` node as described below.
