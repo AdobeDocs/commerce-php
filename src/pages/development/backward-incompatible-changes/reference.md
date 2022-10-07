@@ -29,88 +29,88 @@ Patch releases are primarily focused on delivering security and quality enhancem
 
 ### Magento Open Source
 
-import Docs from '/src/pages/_includes/backward-incompatible-changes/open-source/2.4.4-2.4.5.md'
+import Docs20 from '/src/pages/_includes/backward-incompatible-changes/open-source/2.4.4-2.4.5.md'
 
 ### Adobe Commerce
 
-import Docs from '/src/pages/_includes/backward-incompatible-changes/commerce/2.4.4-2.4.5.md'
+import Docs19 from '/src/pages/_includes/backward-incompatible-changes/commerce/2.4.4-2.4.5.md'
 
 ### B2B for Adobe Commerce
 
-import Docs from '/src/pages/_includes/backward-incompatible-changes/b2b/2.4.4-2.4.5.md'
+import Docs18 from '/src/pages/_includes/backward-incompatible-changes/b2b/2.4.4-2.4.5.md'
 
 ## 2.4.3 - 2.4.4
 
 ### Magento Open Source
 
-import Docs from '/src/pages/_includes/backward-incompatible-changes/open-source/2.4.3-2.4.4.md'
+import Docs17 from '/src/pages/_includes/backward-incompatible-changes/open-source/2.4.3-2.4.4.md'
 
 ### Adobe Commerce
 
-import Docs from '/src/pages/_includes/backward-incompatible-changes/commerce/2.4.3-2.4.4.md'
+import Docs16 from '/src/pages/_includes/backward-incompatible-changes/commerce/2.4.3-2.4.4.md'
 
 ### B2B for Adobe Commerce
 
-import Docs from '/src/pages/_includes/backward-incompatible-changes/b2b/2.4.3-2.4.4.md'
+import Docs15 from '/src/pages/_includes/backward-incompatible-changes/b2b/2.4.3-2.4.4.md'
 
 ## 2.4.3 - 2.4.3-p1
 
 ### Magento Open Source
 
-import Docs from '/src/pages/_includes/backward-incompatible-changes/open-source/2.4.3-2.4.3-p1.md'
+import Docs14 from '/src/pages/_includes/backward-incompatible-changes/open-source/2.4.3-2.4.3-p1.md'
 
 ### Adobe Commerce
 
-import Docs from '/src/pages/_includes/backward-incompatible-changes/commerce/2.4.3-2.4.3-p1.md'
+import Docs13 from '/src/pages/_includes/backward-incompatible-changes/commerce/2.4.3-2.4.3-p1.md'
 
 ### B2B for Adobe Commerce
 
-import Docs from '/src/pages/_includes/backward-incompatible-changes/commerce/2.4.3-2.4.3-p1.md'
+import Docs12 from '/src/pages/_includes/backward-incompatible-changes/commerce/2.4.3-2.4.3-p1.md'
 
 ## 2.4.2 - 2.4.3
 
 ### Magento Open Source
 
-import Docs from '/src/pages/_includes/backward-incompatible-changes/open-source/2.4.2-2.4.3.md'
+import Docs11 from '/src/pages/_includes/backward-incompatible-changes/open-source/2.4.2-2.4.3.md'
 
 ### Adobe Commerce
 
-import Docs from '/src/pages/_includes/backward-incompatible-changes/commerce/2.4.2-2.4.3.md'
+import Docs10 from '/src/pages/_includes/backward-incompatible-changes/commerce/2.4.2-2.4.3.md'
 
 ### B2B for Adobe Commerce
 
-import Docs from '/src/pages/_includes/backward-incompatible-changes/b2b/2.4.2-2.4.3.md'
+import Docs9 from '/src/pages/_includes/backward-incompatible-changes/b2b/2.4.2-2.4.3.md'
 
 ## 2.4.1 - 2.4.2
 
 ### Magento Open Source
 
-import Docs from '/src/pages/_includes/backward-incompatible-changes/open-source/2.4.1-2.4.2.md'
+import Docs8 from '/src/pages/_includes/backward-incompatible-changes/open-source/2.4.1-2.4.2.md'
 
 ### Adobe Commerce
 
-import Docs from '/src/pages/_includes/backward-incompatible-changes/commerce/2.4.1-2.4.2.md'
+import Docs7 from '/src/pages/_includes/backward-incompatible-changes/commerce/2.4.1-2.4.2.md'
 
 ### B2B for Adobe Commerce
 
-import Docs from '/src/pages/_includes/backward-incompatible-changes/b2b/2.4.1-2.4.2.md'
+import Docs6 from '/src/pages/_includes/backward-incompatible-changes/b2b/2.4.1-2.4.2.md'
 
 ## 2.4.0 - 2.4.1
 
 ### Magento Open Source
 
-import Docs from '/src/pages/_includes/backward-incompatible-changes/open-source/2.4.0-2.4.1.md'
+import Docs5 from '/src/pages/_includes/backward-incompatible-changes/open-source/2.4.0-2.4.1.md'
 
 ### Adobe Commerce
 
-import Docs from '/src/pages/_includes/backward-incompatible-changes/commerce/2.4.0-2.4.1.md'
+import Docs4 from '/src/pages/_includes/backward-incompatible-changes/commerce/2.4.0-2.4.1.md'
 
 ### B2B for Adobe Commerce
 
-import Docs from '/src/pages/_includes/backward-incompatible-changes/b2b/2.4.0-2.4.1.md'
+import Docs3 from '/src/pages/_includes/backward-incompatible-changes/b2b/2.4.0-2.4.1.md'
 
 ## 2.3.0 - 2.4.0
 
-import Docs from '/src/pages/_includes/backward-incompatible-changes/open-source/2.3.0-2.4.0.md'
+import Docs2 from '/src/pages/_includes/backward-incompatible-changes/open-source/2.3.0-2.4.0.md'
 
-import Docs from '/src/pages/_includes/backward-incompatible-changes/commerce/2.3.0-2.4.0.md'
+import Docs1 from '/src/pages/_includes/backward-incompatible-changes/commerce/2.3.0-2.4.0.md'
