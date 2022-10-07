@@ -11,7 +11,7 @@ A view model is an abstraction of the view exposing public properties and comman
 
 ## When to use view models
 
-Use this approach anytime you need to inject functionality into template files and your code does not need to be backwards compatible with Magento.
+Use this approach anytime you need to inject functionality into template files and your code does not need to be backwards compatible.
 
 <InlineAlert variant="info" slots="text"/>
 

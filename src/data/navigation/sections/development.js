@@ -9,11 +9,25 @@ module.exports = [
         },
         {
           title: "Composer",
-          path: "/development/composer/"
+          path: "/development/composer/",
         },
         {
           title: "Common terms",
-          path: "/development/common-terms/"
+          path: "/development/common-terms/",
+        },
+        {
+          title: "Backward-incompatible changes",
+          path: "/development/backward-incompatible-changes/",
+          pages: [
+            {
+              title: "Highlights",
+              path: "/development/backward-incompatible-changes/highlights/",
+            },
+            {
+              title: "Reference",
+              path: "/development/backward-incompatible-changes/reference/",
+            },
+          ],
         },
       ],
     },
