@@ -31,13 +31,19 @@ Patch releases are primarily focused on delivering security and quality enhancem
 
 import Docs20 from '/src/pages/_includes/backward-incompatible-changes/open-source/2.4.4-2.4.5.md'
 
+<Docs20 />
+
 ### Adobe Commerce
 
 import Docs19 from '/src/pages/_includes/backward-incompatible-changes/commerce/2.4.4-2.4.5.md'
 
+<Docs19 />
+
 ### B2B for Adobe Commerce
 
 import Docs18 from '/src/pages/_includes/backward-incompatible-changes/b2b/2.4.4-2.4.5.md'
+
+<Docs18 />
 
 ## 2.4.3 - 2.4.4
 
@@ -45,13 +51,19 @@ import Docs18 from '/src/pages/_includes/backward-incompatible-changes/b2b/2.4.4
 
 import Docs17 from '/src/pages/_includes/backward-incompatible-changes/open-source/2.4.3-2.4.4.md'
 
+<Docs17 />
+
 ### Adobe Commerce
 
 import Docs16 from '/src/pages/_includes/backward-incompatible-changes/commerce/2.4.3-2.4.4.md'
 
+<Docs16 />
+
 ### B2B for Adobe Commerce
 
 import Docs15 from '/src/pages/_includes/backward-incompatible-changes/b2b/2.4.3-2.4.4.md'
+
+<Docs15 />
 
 ## 2.4.3 - 2.4.3-p1
 
@@ -59,13 +71,19 @@ import Docs15 from '/src/pages/_includes/backward-incompatible-changes/b2b/2.4.3
 
 import Docs14 from '/src/pages/_includes/backward-incompatible-changes/open-source/2.4.3-2.4.3-p1.md'
 
+<Docs14 />
+
 ### Adobe Commerce
 
 import Docs13 from '/src/pages/_includes/backward-incompatible-changes/commerce/2.4.3-2.4.3-p1.md'
 
+<Docs13 />
+
 ### B2B for Adobe Commerce
 
 import Docs12 from '/src/pages/_includes/backward-incompatible-changes/commerce/2.4.3-2.4.3-p1.md'
+
+<Docs12 />
 
 ## 2.4.2 - 2.4.3
 
@@ -73,13 +91,19 @@ import Docs12 from '/src/pages/_includes/backward-incompatible-changes/commerce/
 
 import Docs11 from '/src/pages/_includes/backward-incompatible-changes/open-source/2.4.2-2.4.3.md'
 
+<Docs11 />
+
 ### Adobe Commerce
 
 import Docs10 from '/src/pages/_includes/backward-incompatible-changes/commerce/2.4.2-2.4.3.md'
 
+<Docs10 />
+
 ### B2B for Adobe Commerce
 
 import Docs9 from '/src/pages/_includes/backward-incompatible-changes/b2b/2.4.2-2.4.3.md'
+
+<Docs9 />
 
 ## 2.4.1 - 2.4.2
 
@@ -87,13 +111,19 @@ import Docs9 from '/src/pages/_includes/backward-incompatible-changes/b2b/2.4.2-
 
 import Docs8 from '/src/pages/_includes/backward-incompatible-changes/open-source/2.4.1-2.4.2.md'
 
+<Docs8 />
+
 ### Adobe Commerce
 
 import Docs7 from '/src/pages/_includes/backward-incompatible-changes/commerce/2.4.1-2.4.2.md'
 
+<Docs7 />
+
 ### B2B for Adobe Commerce
 
 import Docs6 from '/src/pages/_includes/backward-incompatible-changes/b2b/2.4.1-2.4.2.md'
+
+<Docs6 />
 
 ## 2.4.0 - 2.4.1
 
@@ -101,16 +131,30 @@ import Docs6 from '/src/pages/_includes/backward-incompatible-changes/b2b/2.4.1-
 
 import Docs5 from '/src/pages/_includes/backward-incompatible-changes/open-source/2.4.0-2.4.1.md'
 
+<Docs5 />
+
 ### Adobe Commerce
 
 import Docs4 from '/src/pages/_includes/backward-incompatible-changes/commerce/2.4.0-2.4.1.md'
+
+<Docs4 />
 
 ### B2B for Adobe Commerce
 
 import Docs3 from '/src/pages/_includes/backward-incompatible-changes/b2b/2.4.0-2.4.1.md'
 
+<Docs3 />
+
 ## 2.3.0 - 2.4.0
+
+### Magento Open Source
 
 import Docs2 from '/src/pages/_includes/backward-incompatible-changes/open-source/2.3.0-2.4.0.md'
 
+<Docs2 />
+
+### Adobe Commerce
+
 import Docs1 from '/src/pages/_includes/backward-incompatible-changes/commerce/2.3.0-2.4.0.md'
+
+<Docs1 />
