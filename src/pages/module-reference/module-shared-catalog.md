@@ -15,9 +15,9 @@ The module provides web APIs and can be integrated with third-party solutions to
 
 ## Installation details
 
-The module heavily depends on the Magento_Company module, which must be installed and enabled the first. Category permissions must be enabled for shared catalogs to work properly. Price configuration for a shared catalog requires the start of a message queue consumer `sharedCatalogUpdatePrice`.
+The module heavily depends on the Magento_Company module, which must be installed and enabled first. Category permissions must be enabled for shared catalogs to work properly. Price configuration for a shared catalog requires the start of a message queue consumer `sharedCatalogUpdatePrice`.
 
-The module does not create any backward incompatible changes. Can be deactivated and uninstalled at any time.
+The module does not create any backward incompatible changes. It can be deactivated and uninstalled at any time.
 
 When the module is uninstalled, the other [ProductType]SharedCatalog modules won't work.
 
