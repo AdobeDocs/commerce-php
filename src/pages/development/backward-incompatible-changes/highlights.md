@@ -13,13 +13,19 @@ The `grunt-contrib-jasmine.js` library has been updated. The `toBeFalsy()` funct
 
 A new Backend Theme was added to support AEP Integration `Magento/spectrum`. As a result static file generation not work correctly after upgrading to Adobe Commerce 2.4.5.
 
-Make sure that you add the new theme to `manifest.yml`.  
+Make sure you add the new theme to `.magento.env.yaml` when using the [SCD_MATRIX](https://devdocs.magento.com/cloud/env/variables-deploy.html#scd_matrix/) feature or custom static content deploy command.  
 
-```yml
-build_themes:
-  - theme: "Magento/spectrum"
-    locales:
-      - "en_US"
+```diff
+stage:
+  deploy:
+    SCD_MATRIX:
+      "magento/backend":
+        language:
+          - en_US
+          
++     "magento/spectrum":
++       language:
++         - en_US    
 ```
 
 ## 2.4.4
