@@ -11,9 +11,11 @@ This page highlights backward-incompatible changes between Adobe Commerce and Ma
 
 The `grunt-contrib-jasmine.js` library has been updated. The `toBeFalsy()` function does not work correctly with undefined values. Use the `toBeUndefined()` function instead to check results. <!--- AC-2840-->
 
-A new Backend Theme was added to support AEP Integration `Magento/spectrum`. As a result static file generation not work correctly after upgrading to Adobe Commerce 2.4.5.
+### Static content deployment
 
-Make sure you add the new theme to `.magento.env.yaml` when using the [SCD_MATRIX](https://devdocs.magento.com/cloud/env/variables-deploy.html#scd_matrix/) feature or custom static content deploy command.  
+A new backend theme (`magento/spectrum`) was added to support integration with Adobe Experience Platform. As a result, static file generation does not work correctly after upgrading to Adobe Commerce 2.4.5 on cloud infrastructure.
+
+Make sure that you add the new theme to the `.magento.env.yaml` file when using the [`SCD_MATRIX`](https://devdocs.magento.com/cloud/env/variables-deploy.html#scd_matrix/) feature or custom static content deploy command.  
 
 ```diff
 stage:
