@@ -11,6 +11,17 @@ This page highlights backward-incompatible changes between Adobe Commerce and Ma
 
 The `grunt-contrib-jasmine.js` library has been updated. The `toBeFalsy()` function does not work correctly with undefined values. Use the `toBeUndefined()` function instead to check results. <!--- AC-2840-->
 
+A new Backend Theme was added to support AEP Integration `Magento/spectrum`. As a result static file generation not work correctly after upgrading to Adobe Commerce 2.4.5.
+
+Make sure that you add the new theme to `manifest.yml`.  
+
+```yml
+build_themes:
+  - theme: "Magento/spectrum"
+    locales:
+      - "en_US"
+```
+
 ## 2.4.4
 
 ### Removal of deprecated email variable usage
