@@ -13,7 +13,7 @@ The `grunt-contrib-jasmine.js` library has been updated. The `toBeFalsy()` funct
 
 ### Static content deployment
 
-A new backend theme (`magento/spectrum`) was added to support integration with Adobe Experience Platform. As a result, static file generation does not work correctly after upgrading to Adobe Commerce 2.4.5 on cloud infrastructure.
+A new backend theme (`magento/spectrum`) was added to support integration with Adobe Experience Platform. As a result, static file generation does not work correctly after upgrading to Adobe Commerce 2.4.5 on cloud infrastructure if you use the [`SCD_MATRIX`](https://devdocs.magento.com/cloud/env/variables-deploy.html#scd_matrix) deployment strategy.
 
 If you use the `SCD_MATRIX` configuration, you must add the new `magento/spectrum` theme to your `.magento.env.yaml` file or your custom static content deploy command.  
 
