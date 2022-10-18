@@ -5,7 +5,7 @@ description: README.md contents of the module from the source code
 
 ## Overview
 
-The Magento_SharedCatalog modules defines the visibility of products as well as product prices in the catalog and in B2B quotes for different company accounts. 
+The Magento_SharedCatalog modules defines the visibility of products as well as product prices in the catalog and in B2B quotes for different company accounts.
 
 The module allows a merchant to create multiple shared catalogs, link them to one or more company accounts, and set different product prices. Shared catalogs also control the visibility of products and categories for a company in the storefront. The shared catalog type (public or custom) defines the scope of products and prices available for guest users vs logged-in users. The system can have only one public and any number of custom shared catalogs.
 
@@ -15,9 +15,9 @@ The module provides web APIs and can be integrated with third-party solutions to
 
 ## Installation details
 
-The module heavily depends on the Magento_Company module, which must be installed and enabled the first. Category permissions must be enabled for shared catalogs to work properly. Price configuration for a shared catalog requires the start of a message queue consumer `sharedCatalogUpdatePrice`.
+The module heavily depends on the Magento_Company module, which must be installed and enabled first. Category permissions must be enabled for shared catalogs to work properly. Price configuration for a shared catalog requires the start of a message queue consumer `sharedCatalogUpdatePrice`.
 
-The module does not create any backward incompatible changes. Can be deactivated and uninstalled at any time.
+The module does not create any backward incompatible changes. It can be deactivated and uninstalled at any time.
 
 When the module is uninstalled, the other [ProductType]SharedCatalog modules won't work.
 
@@ -48,4 +48,3 @@ The `Magento\SharedCatalog\view\adminhtml\ui_component` directory contains exten
 * Listings: Company, product, shared catalog company, shared catalog, shared catalog product pricing, shared catalog product listing.
 
 For more information, see [UI Listing/Grid Component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/listing-grid/) and [UI Form Component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/form/).
-
