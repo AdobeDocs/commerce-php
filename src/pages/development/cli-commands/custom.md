@@ -139,7 +139,7 @@ Following is a summary of the process:
                  $output->writeln(sprintf(
                      '<error>%s</error>',
                      $e->getMessage()
-                 );
+                 ));
                  $exitCode = 1;
              }
              
