@@ -28,7 +28,7 @@ Any request data can be manipulated by attackers and can contain malicious value
 
 To combat this, developers must validate any value coming in from requests.
 
-It is better to validate/sanitize values as close as possible to the view context because only then you can be sure of the restrictions you have to impose on dynamic values and you are not risking security requirements for buisness requirements.
+It is better to validate/sanitize values as close as possible to the view context because only then you can be sure of the restrictions you have to impose on dynamic values and you are not risking security requirements for business requirements.
 
 There is no reason, from a business standpoint, to disallow `<` `>` symbols in your users' "About me" section. By escaping control symbols when rendering HTML, allowing these characters would not be problematic. "About me" data may be delivered via RESTful API, where `{}` could cause issues. If sanitized earlier, the user data would be damaged and contain HTML control symbols (`< >`).
 
