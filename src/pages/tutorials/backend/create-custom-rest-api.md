@@ -100,7 +100,7 @@ Where:
 
 ## Step 4. Create di.xml
 
-Create di.xml in `app/code/Dev/RestApi/etc/di.xml` to configure interfaces
+Create a `di.xml` file in `app/code/Dev/RestApi/etc/di.xml` to configure interfaces.
 
 ```xml
 <?xml version="1.0" ?>
