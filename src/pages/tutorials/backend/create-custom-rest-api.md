@@ -468,6 +468,8 @@ class ProductRepository implements ProductRepositoryInterface
 }
 ```
 
+After manipulating .xml files mentioned in this topic, and/ or updating constructors or introducing new classes, it is required to execute `bin/magento setup:upgrade` (https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/database-upgrade.html) or `bin/magento setup:di:compile` (https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/code-compiler.html) from the directory where Magento Open Source is installed in order to generate the code for the introduced changes.
+
 ## Step 7. Test your custom endpoint
 
 *  You can use any REST client to send calls. [Postman](https://www.getpostman.com/) is recommended.
