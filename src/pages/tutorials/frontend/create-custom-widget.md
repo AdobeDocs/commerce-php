@@ -153,7 +153,7 @@ And finally, create the template that will be used for showing the widget's data
 
 ```php
 <?php
-/** @var \Magento\Framework\View\TemplateEngine\Php $this */
+/** @var \Magento\Framework\View\TemplateEngineInterface $this */
 /** @var \ExampleCorp\Learning\Block\Widget\Test $block */
 /** @var \Magento\Csp\Api\InlineUtilInterface\Proxy $csp */
 /** @var \Magento\Framework\Escaper $escaper */
