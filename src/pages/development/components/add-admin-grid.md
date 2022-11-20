@@ -23,14 +23,14 @@ Here are the required files to get started:
 `app/code/Dev/Grid/etc/module.xml`:
 
 ```xml
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
- <module name="Dev_Grid">
-  <sequence>
-   <module name="Magento_Backend"/>
-   <module name="Magento_Ui"/>
-  </sequence>
- </module>
+  <module name="Dev_Grid">
+    <sequence>
+      <module name="Magento_Backend" />
+      <module name="Magento_Ui" />
+    </sequence>
+  </module>
 </config>
 ```
 
@@ -55,24 +55,24 @@ ComponentRegistrar::register(
 `app/code/Dev/Grid/etc/adminhtml/routes.xml`:
 
 ```xml
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
-    <router id="admin">
-        <route id="dev_grid" frontName="dev_grid">
-            <module name="Dev_Grid" before="Magento_Backend" />
-        </route>
-    </router>
+  <router id="admin">
+    <route id="dev_grid" frontName="dev_grid">
+      <module name="Dev_Grid" before="Magento_Backend" />
+    </route>
+  </router>
 </config>
 ```
 
 `app/code/Dev/Grid/etc/adminhtml/menu.xml`:
 
 ```xml
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
-    <menu>
-        <add id="Dev_Grid::home" title="Category Listing" module="Dev_Grid" sortOrder="1000" parent="Magento_Catalog::catalog_categories" resource="Magento_Catalog::categories" action="dev_grid/index/index"/>
-    </menu>
+  <menu>
+    <add id="Dev_Grid::home" title="Category Listing" module="Dev_Grid" sortOrder="1000" parent="Magento_Catalog::catalog_categories" resource="Magento_Catalog::categories" action="dev_grid/index/index" />
+  </menu>
 </config>
 ```
 
@@ -83,13 +83,13 @@ This grid has three columns: `ID`, `category path` and `category name`. `ID` and
 The page layout file is `app/code/Dev/Grid/view/adminhtml/layout/dev_grid_index_index.xml`:
 
 ```xml
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
-    <body>
-        <referenceContainer name="content">
-            <uiComponent name="dev_grid_category_listing"/>
-        </referenceContainer>
-    </body>
+  <body>
+    <referenceContainer name="content">
+      <uiComponent name="dev_grid_category_listing" />
+    </referenceContainer>
+  </body>
 </page>
 ```
 
@@ -99,110 +99,110 @@ The UI component `dev_grid_category_listing` must be defined separately in a fil
 <?xml version="1.0" encoding="UTF-8"?>
 <listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
   <argument name="data" xsi:type="array">
-     <item name="js_config" xsi:type="array">
-        <item name="provider" xsi:type="string">dev_grid_category_listing.dev_grid_category_listing_data_source</item>
-        <item name="deps" xsi:type="string">dev_grid_category_listing.dev_grid_category_listing_data_source</item>
-     </item>
-     <item name="spinner" xsi:type="string">dev_grid_category_columns</item>
-     <item name="buttons" xsi:type="array">
-        <item name="add" xsi:type="array">
-           <item name="name" xsi:type="string">add</item>
-           <item name="label" xsi:type="string">View Category Tree</item>
-           <item name="class" xsi:type="string">primary</item>
-           <item name="url" xsi:type="string">catalog/category/index</item>
-        </item>
-     </item>
+    <item name="js_config" xsi:type="array">
+      <item name="provider" xsi:type="string">dev_grid_category_listing.dev_grid_category_listing_data_source</item>
+      <item name="deps" xsi:type="string">dev_grid_category_listing.dev_grid_category_listing_data_source</item>
+    </item>
+    <item name="spinner" xsi:type="string">dev_grid_category_columns</item>
+    <item name="buttons" xsi:type="array">
+      <item name="add" xsi:type="array">
+        <item name="name" xsi:type="string">add</item>
+        <item name="label" xsi:type="string">View Category Tree</item>
+        <item name="class" xsi:type="string">primary</item>
+        <item name="url" xsi:type="string">catalog/category/index</item>
+      </item>
+    </item>
   </argument>
   <dataSource name="dev_grid_category_listing_data_source">
-   <argument name="dataProvider" xsi:type="configurableObject">
-       <argument name="class" xsi:type="string">Dev\Grid\Ui\DataProvider\Category\ListingDataProvider</argument>
-       <argument name="name" xsi:type="string">dev_grid_category_listing_data_source</argument>
-       <argument name="primaryFieldName" xsi:type="string">entity_id</argument>
-       <argument name="requestFieldName" xsi:type="string">entity_id</argument>
-       <argument name="data" xsi:type="array">
-         <item name="config" xsi:type="array">
-           <item name="update_url" xsi:type="url" path="mui/index/render"/>
-           <item name="storageConfig" xsi:type="array">
-             <item name="indexField" xsi:type="string">entity_id</item>
-           </item>
-         </item>
-       </argument>
-   </argument>
-   <argument name="data" xsi:type="array">
-     <item name="js_config" xsi:type="array">
+    <argument name="dataProvider" xsi:type="configurableObject">
+      <argument name="class" xsi:type="string">Dev\Grid\Ui\DataProvider\Category\ListingDataProvider</argument>
+      <argument name="name" xsi:type="string">dev_grid_category_listing_data_source</argument>
+      <argument name="primaryFieldName" xsi:type="string">entity_id</argument>
+      <argument name="requestFieldName" xsi:type="string">entity_id</argument>
+      <argument name="data" xsi:type="array">
+        <item name="config" xsi:type="array">
+          <item name="update_url" xsi:type="url" path="mui/index/render" />
+          <item name="storageConfig" xsi:type="array">
+            <item name="indexField" xsi:type="string">entity_id</item>
+          </item>
+        </item>
+      </argument>
+    </argument>
+    <argument name="data" xsi:type="array">
+      <item name="js_config" xsi:type="array">
         <item name="component" xsi:type="string">Magento_Ui/js/grid/provider</item>
-     </item>
-   </argument>
+      </item>
+    </argument>
   </dataSource>
   <listingToolbar name="listing_top">
-    <bookmark name="bookmarks"/>
-    <columnsControls name="columns_controls"/>
+    <bookmark name="bookmarks" />
+    <columnsControls name="columns_controls" />
     <massaction name="listing_massaction">
       <argument name="data" xsi:type="array">
         <item name="data" xsi:type="array">
-           <item name="selectProvider" xsi:type="string">dev_grid_category_listing.dev_grid_category_listing.dev_grid_category_columns.ids</item>
-           <item name="displayArea" xsi:type="string">bottom</item>
-           <item name="component" xsi:type="string">Magento_Ui/js/grid/tree-massactions</item>
-           <item name="indexField" xsi:type="string">entity_id</item>
+          <item name="selectProvider" xsi:type="string">dev_grid_category_listing.dev_grid_category_listing.dev_grid_category_columns.ids</item>
+          <item name="displayArea" xsi:type="string">bottom</item>
+          <item name="component" xsi:type="string">Magento_Ui/js/grid/tree-massactions</item>
+          <item name="indexField" xsi:type="string">entity_id</item>
         </item>
       </argument>
       <action name="delete">
-         <argument name="data" xsi:type="array">
-           <item name="config" xsi:type="array">
-               <item name="type" xsi:type="string">delete</item>
-               <item name="label" xsi:type="string" translate="true">Delete</item>
-               <item name="url" xsi:type="url" path="dev_grid/category/massDelete"/>
-               <item name="confirm" xsi:type="array">
-                  <item name="title" xsi:type="string" translate="true">Delete items</item>
-                  <item name="message" xsi:type="string" translate="true">Are you sure you want to delete selected items?</item>
-               </item>
-           </item>
-         </argument>
+        <argument name="data" xsi:type="array">
+          <item name="config" xsi:type="array">
+            <item name="type" xsi:type="string">delete</item>
+            <item name="label" xsi:type="string" translate="true">Delete</item>
+            <item name="url" xsi:type="url" path="dev_grid/category/massDelete" />
+            <item name="confirm" xsi:type="array">
+              <item name="title" xsi:type="string" translate="true">Delete items</item>
+              <item name="message" xsi:type="string" translate="true">Are you sure you want to delete selected items?</item>
+            </item>
+          </item>
+        </argument>
       </action>
     </massaction>
     <filters name="listing_filters">
-            <argument name="data" xsi:type="array">
-                <item name="config" xsi:type="array">
-                    <item name="templates" xsi:type="array">
-                        <item name="filters" xsi:type="array">
-                            <item name="select" xsi:type="array">
-                                <item name="component" xsi:type="string">Magento_Ui/js/form/element/ui-select</item>
-                                <item name="template" xsi:type="string">ui/grid/filters/elements/ui-select</item>
-                            </item>
-                        </item>
-                    </item>
-                </item>
-            </argument>
+      <argument name="data" xsi:type="array">
+        <item name="config" xsi:type="array">
+          <item name="templates" xsi:type="array">
+            <item name="filters" xsi:type="array">
+              <item name="select" xsi:type="array">
+                <item name="component" xsi:type="string">Magento_Ui/js/form/element/ui-select</item>
+                <item name="template" xsi:type="string">ui/grid/filters/elements/ui-select</item>
+              </item>
+            </item>
+          </item>
+        </item>
+      </argument>
     </filters>
-    <paging name="listing_paging"/>
+    <paging name="listing_paging" />
   </listingToolbar>
   <columns name="dev_grid_category_columns">
     <selectionsColumn name="ids">
-       <argument name="data" xsi:type="array">
-           <item name="config" xsi:type="array">
-              <item name="indexField" xsi:type="string">entity_id</item>
-           </item>
-       </argument>
+      <argument name="data" xsi:type="array">
+        <item name="config" xsi:type="array">
+          <item name="indexField" xsi:type="string">entity_id</item>
+        </item>
+      </argument>
     </selectionsColumn>
     <column name="entity_id">
       <settings>
-         <filter>textRange</filter>
-         <label translate="true">ID</label>
-         <resizeDefaultWidth>25</resizeDefaultWidth>
+        <filter>textRange</filter>
+        <label translate="true">ID</label>
+        <resizeDefaultWidth>25</resizeDefaultWidth>
       </settings>
     </column>
     <column name="path">
       <settings>
-         <filter>text</filter>
-         <bodyTmpl>ui/grid/cells/text</bodyTmpl>
-         <label translate="true">Path</label>
-     </settings>
+        <filter>text</filter>
+        <bodyTmpl>ui/grid/cells/text</bodyTmpl>
+        <label translate="true">Path</label>
+      </settings>
     </column>
     <column name="name">
       <settings>
-         <filter>text</filter>
-         <bodyTmpl>ui/grid/cells/text</bodyTmpl>
-         <label translate="true">Name</label>
+        <filter>text</filter>
+        <bodyTmpl>ui/grid/cells/text</bodyTmpl>
+        <label translate="true">Name</label>
       </settings>
     </column>
     <column name="created_at" class="Magento\Ui\Component\Listing\Columns\Date" component="Magento_Ui/js/grid/columns/date">
@@ -213,14 +213,14 @@ The UI component `dev_grid_category_listing` must be defined separately in a fil
       </settings>
     </column>
     <actionsColumn name="actions" class="Dev\Grid\Ui\Component\Category\Listing\Column\Actions" sortOrder="200">
-       <argument name="data" xsi:type="array">
-          <item name="config" xsi:type="array">
-              <item name="resizeEnabled" xsi:type="boolean">false</item>
-              <item name="resizeDefaultWidth" xsi:type="string">107</item>
-              <item name="indexField" xsi:type="string">entity_id</item>
-          </item>
-       </argument>
-       <argument name="viewUrl" xsi:type="string">catalog/category/view</argument>
+      <argument name="data" xsi:type="array">
+        <item name="config" xsi:type="array">
+          <item name="resizeEnabled" xsi:type="boolean">false</item>
+          <item name="resizeDefaultWidth" xsi:type="string">107</item>
+          <item name="indexField" xsi:type="string">entity_id</item>
+        </item>
+      </argument>
+      <argument name="viewUrl" xsi:type="string">catalog/category/view</argument>
     </actionsColumn>
   </columns>
 </listing>
@@ -260,24 +260,24 @@ The plugin then gets a `name` attribute:
 `app/code/Dev/Grid/etc/di.xml`:
 
 ```xml
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
- <type name="Dev\Grid\Ui\DataProvider\Category\ListingDataProvider">
-   <plugin name="dev_grid_attributes" type="Dev\Grid\Plugin\AddAttributesToUiDataProvider"/>
- </type>
- <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
-  <arguments>
-   <argument name="collections" xsi:type="array">
-     <item name="dev_grid_category_listing_data_source" xsi:type="string">DevGridCategoryCollection</item>
-   </argument>
-  </arguments>
- </type>
- <virtualType name="DevGridCategoryCollection" type="Dev\Grid\Ui\DataProvider\Category\Listing\Collection">
-   <arguments>
-     <argument name="mainTable" xsi:type="string">catalog_category_entity</argument>
-     <argument name="resourceModel" xsi:type="string">Dev\Grid\Model\ResourceModel\Category</argument>
-   </arguments>
- </virtualType>
+  <type name="Dev\Grid\Ui\DataProvider\Category\ListingDataProvider">
+    <plugin name="dev_grid_attributes" type="Dev\Grid\Plugin\AddAttributesToUiDataProvider" />
+  </type>
+  <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+    <arguments>
+      <argument name="collections" xsi:type="array">
+        <item name="dev_grid_category_listing_data_source" xsi:type="string">DevGridCategoryCollection</item>
+      </argument>
+    </arguments>
+  </type>
+  <virtualType name="DevGridCategoryCollection" type="Dev\Grid\Ui\DataProvider\Category\Listing\Collection">
+    <arguments>
+      <argument name="mainTable" xsi:type="string">catalog_category_entity</argument>
+      <argument name="resourceModel" xsi:type="string">Dev\Grid\Model\ResourceModel\Category</argument>
+    </arguments>
+  </virtualType>
 </config>
 ```
 
@@ -366,12 +366,12 @@ The `dataSource` name `dev_grid_category_listing_data_source` links to `Dev\Grid
 `di.xml` also sets the main table and resource model:
 
 ```xml
- <virtualType name="DevGridCategoryCollection" type="Dev\Grid\Ui\DataProvider\Category\Listing\Collection">
-   <arguments>
-     <argument name="mainTable" xsi:type="string">catalog_category_entity</argument>
-     <argument name="resourceModel" xsi:type="string">Dev\Grid\Model\ResourceModel\Category</argument>
-   </arguments>
- </virtualType>
+<virtualType name="DevGridCategoryCollection" type="Dev\Grid\Ui\DataProvider\Category\Listing\Collection">
+  <arguments>
+    <argument name="mainTable" xsi:type="string">catalog_category_entity</argument>
+    <argument name="resourceModel" xsi:type="string">Dev\Grid\Model\ResourceModel\Category</argument>
+  </arguments>
+</virtualType>
 ```
 
 The collection class translates to `app/code/Dev/Grid/Ui/DataProvider/Category/Listing/Collection.php`:
