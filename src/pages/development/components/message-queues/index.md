@@ -69,6 +69,7 @@ The following sample introduces a runtime configuration that allows you to redef
                     ],
                     'db' => [
                         'name' => 'db',
+                        'exchange' => 'magento',
                         'disabled' => true
                     ]
                 ]

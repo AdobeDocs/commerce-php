@@ -3,6 +3,10 @@ title: Token UI component provider
 description: Learn how to create custom vault payment UI components that display stored tokens.
 ---
 
+import Docs from '/src/pages/_includes/braintree-note.md'
+
+<Docs />
+
 # Token UI component provider
 
 This topic describes how to create custom vault payments UI components that are used to display stored tokens on [checkout](https://glossary.magento.com/checkout) page and order placing using vault.

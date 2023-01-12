@@ -11,7 +11,7 @@ A view model is an abstraction of the view exposing public properties and comman
 
 ## When to use view models
 
-Use this approach anytime you need to inject functionality into template files and your code does not need to be backwards compatible with Magento.
+Use this approach anytime you need to inject functionality into template files and your code does not need to be backwards compatible.
 
 <InlineAlert variant="info" slots="text"/>
 
@@ -72,7 +72,7 @@ $viewModel = $block->getViewModel();
 
 ## Examples
 
--  [Theme](https://github.com/magento/magento2/blob/2.3.3/app/code/Magento/Theme/view/frontend/layout/default.xml#L43-L45 "view_model definition"). This `view_model` is injected into a template to return the target store redirect url.
+[Theme](https://github.com/magento/magento2/blob/2.3.3/app/code/Magento/Theme/view/frontend/layout/default.xml#L43-L45 "view_model definition"). This `view_model` is injected into a template to return the target store redirect url.
 
 The following is an example of view model usage within the `Magento/Catalog/view/frontend/layout/catalog_product_view.xml` layout file.
 

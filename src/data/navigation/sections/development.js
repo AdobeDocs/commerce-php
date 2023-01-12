@@ -9,11 +9,25 @@ module.exports = [
         },
         {
           title: "Composer",
-          path: "/development/composer/"
+          path: "/development/composer/",
         },
         {
           title: "Common terms",
-          path: "/development/common-terms/"
+          path: "/development/common-terms/",
+        },
+        {
+          title: "Backward-incompatible changes",
+          path: "/development/backward-incompatible-changes/",
+          pages: [
+            {
+              title: "Highlights",
+              path: "/development/backward-incompatible-changes/highlights/",
+            },
+            {
+              title: "Reference",
+              path: "/development/backward-incompatible-changes/reference/",
+            },
+          ],
         },
       ],
     },
@@ -151,13 +165,31 @@ module.exports = [
         },
         {
           title: "Create a custom command",
-          path: "/development/cli-commands/custom",
+          path: "/development/cli-commands/custom/",
         },
       ],
     },
     {
       title: "Staging",
       path: "/development/staging/",
+    },
+    {
+      title: "Advanced reporting",
+      path: "/development/advanced-reporting/",
+      pages: [
+        {
+          title: "Modules",
+          path: "/development/advanced-reporting/modules/",
+        },
+        {
+          title: "Data collection",
+          path: "/development/advanced-reporting/data-collection/",
+        },
+        {
+          title: "Report XML",
+          path: "/development/advanced-reporting/report-xml/",
+        },
+      ],
     },
     {
       title: "Component development",
@@ -361,12 +393,8 @@ module.exports = [
     },
     {
       title: "Payment Provider Gateway",
-      path: "/development/payments-integrations/payment-gateway/",
+      path: "/development/payments-integrations/",
       pages: [
-        {
-          title: "Introduction",
-          path: "/development/payments-integrations",
-        },
         {
           title: "Commerce payment provider gateway",
           path: "/development/payments-integrations/payment-gateway/",

@@ -3,6 +3,10 @@ title: Payment Token
 description: This is an overview of how payment tokens store data received from the payment provider.
 ---
 
+import Docs from '/src/pages/_includes/braintree-note.md'
+
+<Docs />
+
 # Payment Token
 
 Adobe Commerce does not store any private credit card details. Commerce only stores the Payment Token, which is comprised of the following data received from the payment provider: the payment processor token and credit card details without sensitive data.

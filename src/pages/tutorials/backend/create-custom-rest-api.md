@@ -98,7 +98,20 @@ Where:
 *  `service` describes the interface and the method to be called when the endpoint is reached.
 *  `resource` sets the ACL resource that is required to access the endpoint. If you want to make it public (no authentication), use: `<resource ref="anonymous" />`
 
-## Step 4. Create interfaces
+## Step 4. Create di.xml
+
+Create a `di.xml` file in `app/code/Dev/RestApi/etc/di.xml` to configure interfaces.
+
+```xml
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Dev\RestApi\Api\ProductRepositoryInterface" type="Dev\RestApi\Model\Api\ProductRepository"/>
+    <preference for="Dev\RestApi\Api\RequestItemInterface" type="Dev\RestApi\Model\Api\RequestItem"/>
+    <preference for="Dev\RestApi\Api\ResponseItemInterface" type="Dev\RestApi\Model\Api\ResponseItem"/>
+</config>
+```
+
+## Step 5. Create interfaces
 
 In this example, we created the interfaces for the request in `app/code/Dev/RestApi/Api/RequestItemInterface.php`.
 
@@ -205,7 +218,7 @@ interface ProductRepositoryInterface
 }
 ```
 
-## Step 5. Create models
+## Step 6. Create models
 
 Models create classes that implement interfaces and process data.
 
@@ -455,7 +468,9 @@ class ProductRepository implements ProductRepositoryInterface
 }
 ```
 
-## Step 6. Test your custom endpoint
+After manipulating .xml files mentioned in this topic, updating constructors, or introducing new classes, you must run [`bin/magento setup:upgrade`](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/database-upgrade.html) or [`bin/magento setup:di:compile`](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/code-compiler.html) from the directory where Adobe Commerce or Magento Open Source is installed to generate the code for the introduced changes.
+
+## Step 7. Test your custom endpoint
 
 *  You can use any REST client to send calls. [Postman](https://www.getpostman.com/) is recommended.
 *  Obtain an admin authorization token. All calls in this tutorial require administrator privileges. See [Generate the admin token](https://developer.adobe.com/commerce/webapi/rest/tutorials/prerequisite-tasks/) for more information.

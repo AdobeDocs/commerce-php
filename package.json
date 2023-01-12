@@ -6,10 +6,10 @@
     "url": "https://github.com/AdobeDocs/commerce-php"
   },
   "dependencies": {
-    "@adobe/gatsby-theme-aio": "^4.2.3",
-    "gatsby": "^4.13.0",
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0"
+    "@adobe/gatsby-theme-aio": "4.6.6",
+    "gatsby": "4.22.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "remark-cli": "^10.0.1",
@@ -30,5 +30,5 @@
       "remark-validate-links"
     ]
   },
-  "packageManager": "yarn@3.2.2"
+  "packageManager": "yarn@3.2.4"
 }

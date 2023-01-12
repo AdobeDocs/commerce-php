@@ -252,4 +252,4 @@ The result is a new dynamic system row field in the Admin panel. If you have set
 
 ![Dynamic Rows System Config](../../_images/tutorials/dynamic-rows-config-result.png)
 
-[0]: https://github.com/magento/magento2/blob/2.4}/app/code/Magento/Config/Block/System/Config/Form/Field/FieldArray/AbstractFieldArray.php
+[0]: https://github.com/magento/magento2/blob/2.4/app/code/Magento/Config/Block/System/Config/Form/Field/FieldArray/AbstractFieldArray.php

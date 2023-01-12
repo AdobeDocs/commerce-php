@@ -3,6 +3,10 @@ title: Add a payment action
 description: Learn how to create a payment action and configure the command for that payment action.
 ---
 
+import Docs from '/src/pages/_includes/braintree-note.md'
+
+<Docs />
+
 # Add a payment action
 
 For each payment action available for the payment method, you must implement the following:
