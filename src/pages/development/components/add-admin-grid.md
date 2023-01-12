@@ -440,7 +440,7 @@ namespace Dev\Grid\Ui\Component\Category\Listing\Column;
 
 use Magento\Framework\View\Element\UiComponentFactory;
 use Magento\Framework\View\Element\UiComponent\ContextInterface;
-use Magento\Framework\Url;
+use Magento\Framework\UrlInterface;
 use Magento\Ui\Component\Listing\Columns\Column;
 
 class Actions extends Column
@@ -460,7 +460,7 @@ class Actions extends Column
      *
      * @param ContextInterface $context
      * @param UiComponentFactory $uiComponentFactory
-     * @param Url $urlBuilder
+     * @param UrlInterface $urlBuilder
      * @param string $viewUrl
      * @param array $components
      * @param array $data
@@ -468,7 +468,7 @@ class Actions extends Column
     public function __construct(
         ContextInterface $context,
         UiComponentFactory $uiComponentFactory,
-        Url $urlBuilder,
+        UrlInterface $urlBuilder,
         $viewUrl = '',
         array $components = [],
         array $data = []
