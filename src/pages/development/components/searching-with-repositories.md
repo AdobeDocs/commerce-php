@@ -118,7 +118,7 @@ This object is an instance of a class that implements the interface [`SearchResu
 
 Search Result objects hold the Search Criteria object and the retrieved entities along with information about the total count of found entities regardless of any limitations set in the criteria.
 
-The search engine determines the maximum number of results that a query can return. For Elasticsearch, the default value of 10000 is defined in the module's `etc/di.xml` file.
+The search engine determines the maximum number of results that a query can return. For Elasticsearch or OpenSearch, the default value of 10000 is defined in the module's `etc/di.xml` file.
 
 The example below uses **getList** with the [`ProductRepositoryInterface`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Api/ProductRepositoryInterface.php).
 We use the [`FilterBuilder`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Api/FilterBuilder.php) and the [`SearchCriteriaBuilder`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Api/SearchCriteriaBuilder.php) to avoid shared instances.
