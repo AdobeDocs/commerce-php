@@ -8,7 +8,7 @@ description: README.md contents of the module from the source code
 The `InventoryConfigurableProductFrontendUi` adds info about salable quantity for configurable variations in product page.
 
 This module is a part of the new inventory infrastructure. The
-[Inventory Management overview](https://developer.adobe.com/commerce/webapi/rest/inventory/)
+[Inventory Management overview](https://devdocs.magento.com/guides/v2.4/inventory/index.html)
 describes the MSI (Multi-Source Inventory) project in more detail.
 
 ## Installation details
