@@ -19,9 +19,9 @@ For information about a typical file structure of a module in Magento 2, see [Mo
 
 ## Extensibility
 
-Extension developers can interact with the Magento_InstantPurchase module. For more information about the Magento extension mechanism, see [Magento plugins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_InstantPurchase module. For more information about the Magento extension mechanism, see [Magento plugins](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_InstantPurchase module.
+[The Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html) enables you to override the functionality of the Magento_InstantPurchase module.
 
 ### Public APIs
 
@@ -39,13 +39,13 @@ Extension developers can interact with the Magento_InstantPurchase module. For m
 
 - `\Magento\InstantPurchase\Model\ShippingMethodChoose\ShippingMethodChooserInterface`
     - choose shipping method for customer address if available
-
+    
 - `\Magento\InstantPurchase\Model\InstantPurchaseInterface`
     - detects instant purchase options for a customer in a store
-
+    
 - `\Magento\InstantPurchase\PaymentMethodIntegration\AvailabilityCheckerInterface`
     - checks if payment method may be used for instant purchase
-
+    
 - `\Magento\InstantPurchase\PaymentMethodIntegration\PaymentAdditionalInformationProviderInterface`
     - provides additional information part specific for payment method
 
@@ -64,7 +64,7 @@ All payments created for instant purchase also have `'instant-purchase' => true`
 
 ### Payment method integration
 
-Instant purchase support may be implemented for any payment method with [vault support](../development/payments-integrations/vault/index.md).
+Instant purchase support may be implemented for any payment method with [vault support](https://devdocs.magento.com/guides/v2.4/payments-integrations/vault/vault-intro.html).
 Basic implementation provided in `Magento\InstantPurchase\PaymentMethodIntegration` should be enough in most cases. It is not enabled by default to avoid issues on production sites and authors of vault payment method should verify correct work for instant purchase manually.
 To enable basic implementation just add single option to configuration of payemnt method in `config.xml`:
 
