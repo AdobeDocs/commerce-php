@@ -14,32 +14,32 @@ For information about a module installation in Magento 2, see [Enable or disable
 
 ## Structure
 
-For information about a typical file structure of a module, see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure/#module-file-structure).
-
-## Extensibility
+For information about a typical file structure of a module in Magento 2,
+ see [Module file structure](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/module-file-structure.html#module-file-structure).
+ 
+ ## Extensibility
 
 Developers can interact with the module and change behaviour using type configuration feature.
 
-Namely, we can change `paymentSpecification` for `Magento\Multishipping\Block\Checkout\Billing` and `Magento\Multishipping\Model\Checkout\Type\Multishipping` classes.
-As result, we will get changed behaviour, new logic or something what our business need.
+Namely, we can change `paymentSpecification` for `Magento\Multishipping\Block\Checkout\Billing` and `Magento\Multishipping\Model\Checkout\Type\Multishipping` classes. 
+As result, we will get changed behaviour, new logic or something what our business need. 
 
 For example:
-
-```xml
+```
 <type name="Magento\Multishipping\Model\Checkout\Type\Multishipping">
      <arguments>
          <argument name="paymentSpecification" xsi:type="object">multishippingPaymentSpecification</argument>
      </arguments>
 </type>
 ```
+Yo can check this configuration and find more examples in the `etc/frontend/di.xml` file.
+ 
+More information about [type configuration](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/di-xml-file.html).
 
-You can check this configuration and find more examples in the `etc/frontend/di.xml` file.
 
-More information about [type configuration](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/).
+Extension developers can interact with the Magento_Multishipping module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html).
 
-Extension developers can interact with the Magento_Multishipping module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
-
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_Msrp module.
+[The Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html) enables you to override the functionality of the Magento_Msrp module.
 
 ### Events
 
@@ -114,7 +114,7 @@ Module introduces the following resources:
 
 - `Magento_Multishipping::config_multishipping` - Multishipping Settings Section
 
-More information about [Access Control List rule](https://developer.adobe.com/commerce/php/tutorials/backend/create-access-control-list-rule/).
+More information about [Access Control List rule](https://devdocs.magento.com/guides/v2.4/ext-best-practices/tutorials/create-access-control-list-rule.html).
 
 ### Page Types
 
@@ -138,6 +138,7 @@ Module introduces the new pages:
 - `checkout_cart_multishipping_shipping` - Multishipping Checkout Shipping Information Step
 - `checkout_cart_multishipping_success` - Multishipping Checkout Success
 
-More information about [layout types](https://developer.adobe.com/commerce/frontend-core/guide/layouts/types/).
+More information about [layout types](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/layout-types.html).
 
-For information about significant changes in patch releases, see [2.4.x Release information](http://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html).
+
+For information about significant changes in patch releases, see [2.3.x Release information](http://devdocs.magento.com/guides/v2.3/release-notes/bk-release-notes.html).
