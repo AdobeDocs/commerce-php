@@ -22,6 +22,7 @@ For development purposes this package can be added to Magento `composer.json` as
 ```
 
 And in the `require` section:
+
 ```json
 "magento/module-adobe-commerce-events-client": "*"
 ```
@@ -29,6 +30,7 @@ And in the `require` section:
 ### Admin panel configuration
 
 After adding this package to Magento, the following changes should be made in the admin panel (navigate to Stores > Settings > Configuration > Adobe Services > Adobe I/O Events > Commerce events):
+
 - Set `Enabled` to `Yes`
 - Enter a `Merchant ID`
 - Enter a `Environment ID`
@@ -36,6 +38,7 @@ After adding this package to Magento, the following changes should be made in th
 ## CLI commands defined by module
 
 This module defines the following CLI commands:
+
 - events:subscribe
 - events:unsubscribe
 - events:list

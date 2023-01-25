@@ -9,7 +9,7 @@ The _AsyncOrder_ module enables asynchronous order placement, which marks the or
 
 AsyncOrder values:
 
--  `0` — (_Default value_) Disable the AsyncOrder module and use the standard synchronous order placement. 
+-  `0` — (_Default value_) Disable the AsyncOrder module and use the standard synchronous order placement.
 -  `1` — Enable the AsyncOrder module for asynchronous order placement.
 
 To enable AsyncOrder, set the `checkout/async` variable in the `env.php` file. For example:

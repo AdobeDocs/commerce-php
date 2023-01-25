@@ -3,7 +3,7 @@ title: Elasticsearch8
 description: README.md contents of the module from the source code
 ---
 
-#Magento_Elasticsearch8 module
+# Magento_Elasticsearch8 module
 
 Magento_Elasticsearch8 module allows using ElasticSearch engine 8.x version for the product searching capabilities.
 

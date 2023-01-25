@@ -93,7 +93,7 @@ For more information about a layout, see the [Layout documentation](https://devd
 
 ### UI components
 
-You can extend a customer form and widgets using the configuration files located in the directories 
+You can extend a customer form and widgets using the configuration files located in the directories
 
 - `view/adminhtml/ui_component`:
     - `product_attribute_add_form`

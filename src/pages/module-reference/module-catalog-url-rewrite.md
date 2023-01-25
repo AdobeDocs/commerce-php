@@ -5,7 +5,7 @@ description: README.md contents of the module from the source code
 
 # Magento_CatalogUrlRewrite module
 
-This module generate url rewrite fields for catalog and product. 
+This module generate url rewrite fields for catalog and product.
 
 ## Extensibility
 

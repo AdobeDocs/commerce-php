@@ -4,21 +4,21 @@ description: README.md contents of the module from the source code
 ---
 
 # Magento_PurchaseOrderRule
-​
+
 ## Overview
-​
+
 The PurchaseOrderRule module contains functionality for creating and enforcing approval rules for purchase orders. Companies in a B2B environment can use these rules to enforce purchasing guidelines and limits.
 ​
 With this module installed, you may create rules such as:
-​
+
 -  Purchase orders over $X require approvals from a manager.
 -  Purchase orders containing more than $Y unique products require approval.
 -  Purchase orders with shipping charges greater than $Z require approval.
-​
+
 ## Installation details
-​
-The PurchaseOrderRule module has dependencies on the following modules:
-​
+
+The PurchaseOrderRule module has dependencies on the following modules:​
+
 -  Magento_Company
 -  Magento_Customer
 -  Magento_Directory
@@ -31,13 +31,12 @@ The PurchaseOrderRule module has dependencies on the following modules:
 -  Magento_Theme
 -  Magento_Ui
 ​
-
 which must be installed and enabled first. This module does not create any backward incompatible changes. It can be uninstalled or deactivated at any time.
-​
+
 ## Structure
-​
+
 [Learn about a typical file structure for a Magento 2 module](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/module-file-structure.html).
-​
+
 ## Extensibility
 
 ​Extension developers can interact with the Magento_PurchaseOrderRule module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html).
@@ -52,11 +51,11 @@ This module introduces the following layouts and layout handles in the `view/fro
 - `purchaseorderrule_edit_index`
 - `purchaseorderrule_form`
 - `purchaseorderrule_index_index`
-​
+
 ### UI components
-​
+
 You can extend the purchase order rule listings using the `purchase_order_rule_listing.xml` and `require_my_approval_purchaseorder_listing.xml` configuration files.
 
 ## Additional information
-​
+
 Check the [B2B release notes](https://devdocs.magento.com/guides/v2.4/release-notes/b2b-release-notes.html) for more information on new changes.

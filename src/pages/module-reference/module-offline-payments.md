@@ -5,8 +5,9 @@ description: README.md contents of the module from the source code
 
 # Magento_OfflinePayments module
 
-This module implements the payment methods which do not require interaction with a payment gateway (so called offline methods). 
+This module implements the payment methods which do not require interaction with a payment gateway (so called offline methods).
 These methods are the following:
+
 - Bank transfer
 - Cash on delivery
 - Check / Money Order
@@ -15,6 +16,7 @@ These methods are the following:
 ## Installation
 
 Before installing this module, note that the Magento_OfflinePayments is dependent on the following modules:
+
 - `Magento_Store`
 - `Magento_Catalog`
 
@@ -31,6 +33,7 @@ A lot of functionality in the module is on JavaScript, use [mixins](https://devd
 ### Layouts
 
 This module introduces the following layouts in the `view/frontend/layout` directory:
+
 - `checkout_index_index`
 - `multishipping_checkout_billing`
 

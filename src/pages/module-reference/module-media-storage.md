@@ -41,5 +41,6 @@ Extension developers can interact with the Magento_MediaStorage module. For more
 [Learn how to manage Message Queues](https://devdocs.magento.com/guides/v2.4/config-guide/mq/manage-message-queues.html).
 
 More information can get at articles:
+
 - [Learn how to configure Media Storage Database](https://docs.magento.com/user-guide/system/media-storage-database.html).
 - [Learn how to Resize catalog images](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/themes/theme-images.html#resize-catalog-images)
