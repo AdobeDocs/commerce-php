@@ -20,14 +20,16 @@ Extension developers can interact with the Magento_CustomerImportExport module. 
 ### Layouts
 
 This module introduces the following layouts in the `view/adminhtml/layout` directory:
+
 - `customer_import_export_index_exportcsv`
 - `customer_import_export_index_exportxml`
 - `customer_index_grid_block`
 
-For more information about a layout in Magento 2, see the [Layout documentation](https://developer.adobe.com/commerce/frontend-core/guide/layouts/).
+For more information about a layout in Magento 2, see the [Layout documentation](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/layout-overview.html).
 
 ## Additional information
 
 You can get more information about import/export processes in magento at the articles:
+
 - [Import](https://docs.magento.com/user-guide/system/data-import.html)
 - [Export](https://docs.magento.com/user-guide/system/data-export.html)

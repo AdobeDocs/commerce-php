@@ -14,12 +14,14 @@ checkbox during first login.
 ## Installation
 
 Before installing this module, note that the Magento_Persistent is dependent on the following modules:
+
 - `Magento_Checkout`
 - `Magento_PageCache`
 
 The Magento_Persistent module creates the `persistent_session` table in the database.
 
 This module modifies the following tables in the database:
+
 - `quote` - adds column `is_persistent`
 
 All database schema changes made by this module are rolled back when the module gets disabled and setup:upgrade command is run.
@@ -28,11 +30,11 @@ For information about a module installation in Magento 2, see [Enable or disable
 
 ## Extensibility
 
-Extension developers can interact with the Magento_Persistent module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_Persistent module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_Persistent module.
+[The Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html) enables you to override the functionality of the Magento_Persistent module.
 
-A lot of functionality in the module is on JavaScript, use [mixins](https://developer.adobe.com/commerce/frontend-core/javascript/mixins/) to extend it.
+A lot of functionality in the module is on JavaScript, use [mixins](https://devdocs.magento.com/guides/v2.4/javascript-dev-guide/javascript/js_mixins.html) to extend it.
 
 ### Events
 
@@ -50,17 +52,19 @@ For information about an event in Magento 2, see [Events and observers](http://d
 
 ### Layouts
 
-For more information about a layout in Magento 2, see the [Layout documentation](https://developer.adobe.com/commerce/frontend-core/guide/layouts/).
+For more information about a layout in Magento 2, see the [Layout documentation](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/layout-overview.html).
 
 ## Additional information
 
 More information can get at articles:
+
 - [Persistent Shopping Cart](https://docs.magento.com/user-guide/configuration/customers/persistent-shopping-cart.html)
 - [Persistent Cart](https://docs.magento.com/user-guide/sales/cart-persistent.html)
 
 ### Cron options
 
 Cron group configuration can be set at `etc/crontab.xml`:
+
 - `persistent_clear_expired` - clear expired persistent sessions
 
 [Learn how to configure and run cron in Magento.](http://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html).

@@ -4,6 +4,7 @@ description: README.md contents of the module from the source code
 ---
 
 # Overview
+
 ## Purpose of module
 
 Magento\SalesArchive module responsible for creating logical partitions for storing previews of orders, invoices, credit memos, shipments.
