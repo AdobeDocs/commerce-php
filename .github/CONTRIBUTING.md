@@ -45,3 +45,17 @@ feel free to reach out to existing committers to have a conversation about that.
 ## Security Issues
 
 Security issues shouldn't be reported on this issue tracker. Instead, [file an issue to our security experts](https://helpx.adobe.com/security/alertus.html).
+
+## Site preview from a fork
+
+You can build and deploy changes from your branch to a test website using GitHub Pages.
+You must enable Actions in your forked repo settings and configure Pages to deploy from the **root** folder of the **gh-pages** branch.
+
+To build and deploy your branch:
+
+1. Click the **Actions** tab in your forked repo.
+1. In the left navigation menu, click the **GitHub Pages** workflow.
+1. In the upper-right of the page, click **Run workflow**.
+   - Select the branch you want to preview as a website.
+   - Click **Run workflow**.
+When the workflow run is finished, **Github Pages** will be marked with a green check mark. To identify the URL of the generated website, click **GitHub Pages** > **build-and-deploy** > **GH Pages URL**.
