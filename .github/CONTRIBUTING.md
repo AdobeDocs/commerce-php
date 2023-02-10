@@ -51,7 +51,7 @@ Security issues shouldn't be reported on this issue tracker. Instead, [file an i
 You can generate the website to view your changes using GitHub Pages.
 In your fork's Settings, make sure Actions are enabled and Pages are configured to deploy from the **root** folder of the **gh-pages** branch.
 
-1. Open the Actions tab
+1. Click the **Actions** tab in your forked repo.
 1. Choose GitHub Pages (side navigation menu on the left)
 1. In the field `This workflow has a workflow_dispatch event trigger.`
    - Open drop-down menu `Run workflow`
