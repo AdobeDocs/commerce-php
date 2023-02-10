@@ -45,3 +45,18 @@ feel free to reach out to existing committers to have a conversation about that.
 ## Security Issues
 
 Security issues shouldn't be reported on this issue tracker. Instead, [file an issue to our security experts](https://helpx.adobe.com/security/alertus.html).
+
+## Site preview from a fork
+
+You can generate the website to view your changes using GitHub Pages.
+In your fork's Settings, make sure Actions are enabled and Pages are configured to deploy from the **root** folder of the **gh-pages** branch.
+
+1. Open the Actions tab
+1. Choose GitHub Pages (side navigation menu on the left)
+1. In the field `This workflow has a workflow_dispatch event trigger.`
+   - Open drop-down menu `Run workflow`
+   - Select the branch you want to preview as a website
+   - **Run workflow**
+   - A new run of **Github Pages** will appear in the table of the workflow runs
+1. When the workflow run is finished, **Github Pages** will be marked with a green check mark.
+1. For the URL of the generated website, navigate to the finished workflow's run **GitHub Pages** > **build-and-deploy** > **GH Pages URL**
