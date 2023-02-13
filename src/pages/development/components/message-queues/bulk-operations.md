@@ -51,7 +51,7 @@ The `BulkManagementInterface::scheduleBulk` is responsible for publishing bulk o
 				<ul>
 					<li>entity_id - Your <a href="https://glossary.magento.com/entity">entity</a> ID</li>
 					<li>entity_link - Link to your entity</li>
-					<li>meta_info - String that describes your entity. For example, "SKU: Simple_Product"</li>
+					<li>meta_information - String that describes your entity. For example, "SKU: Simple_Product"</li>
 				</ul>
 				<p>This data is required to display the results of operations couldn't be executed for any non-recoverable reason. These results are displayed in the failed operations grid.</p>
 				<p>You also can add any data needed to execute operations. For example, if you are conducting a mass price update, you can add price data.</p>
