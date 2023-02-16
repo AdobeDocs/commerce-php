@@ -1,6 +1,19 @@
 ---
 name: Indexing
-on: workflow_dispatch
+on:
+  schedule:
+    - cron: '0 20 * * SAT'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Type of indexing. "index" to push to Algolia, "console" for dry run.'
+        required: true
+        default: 'index'
+        type: choice
+        options:
+          - console
+          - index
+    
 jobs:
   build-and-index:
     runs-on: ubuntu-latest
@@ -21,7 +34,7 @@ jobs:
           GATSBY_ALGOLIA_APPLICATION_ID: ${{ secrets.AIO_ALGOLIA_APPLICATION_ID }}
           GATSBY_ALGOLIA_SEARCH_API_KEY: ${{ secrets.AIO_ALGOLIA_SEARCH_API_KEY }}
           ALGOLIA_WRITE_API_KEY: ${{ secrets.AIO_ALGOLIA_WRITE_API_KEY }}
-          ALGOLIA_INDEXATION_MODE: console
+          ALGOLIA_INDEXATION_MODE: ${{ github.event.inputs.mode || 'index' }}
           GATSBY_ALGOLIA_INDEX_NAME: ${{ secrets.ALGOLIA_INDEX_NAME || github.event.repository.name }}
           GATSBY_FEDS_PRIVACY_ID: ${{ secrets.AIO_FEDS_PRIVACY_ID }}
           GATSBY_SITE_DOMAIN_URL: https://developer.adobe.com
