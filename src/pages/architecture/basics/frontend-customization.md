@@ -50,7 +50,7 @@ Form elements included in the [Admin](https://glossary.magento.com/magento-admin
 
 Users of the default storefront encounter examples of these form elements throughout the product. These patterns provide a valuable language of software components (and indirectly, user experiences) for [extension](https://glossary.magento.com/extension) developers and administrators.
 
-The [Admin](https://glossary.magento.com/admin) Pattern library is built on the Less preprocessor and implemented as a [module](https://glossary.magento.com/module). You can download a free, current version of this module from [Commerce Marketplace](https://marketplace.magento.com/).
+The [Admin Pattern library](https://glossary.magento.com/admin) is built on the Less preprocessor and implemented as a [module](https://glossary.magento.com/module). You can download a free, current version of this module from [Commerce Marketplace](https://marketplace.magento.com/).
 
 See [Admin Pattern Library](https://developer.adobe.com/commerce/admin-developer/pattern-library/) for more information on using this library.
 

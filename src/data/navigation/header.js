@@ -1,6 +1,6 @@
 module.exports = [
     {
-      title: "Commerce PHP Extensions",
+      title: "PHP Extensions",
       path: "/",
     },
     {
