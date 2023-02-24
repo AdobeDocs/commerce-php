@@ -157,7 +157,6 @@ And finally, create the template that will be used for showing the widget's data
 /** @var \ExampleCorp\Learning\Block\Widget\Test $block */
 /** @var \Magento\Csp\Api\InlineUtilInterface $csp */
 /** @var \Magento\Framework\Escaper $escaper */
-/** @var \Magento\Framework\Locale\LocaleFormatter $localeFormatter */
 /** @var \Magento\Framework\View\Helper\SecureHtmlRenderer $secureRenderer */
 ?>
 <h3><?= $escaper->escapeHtml($block->getData('title')) ?></h3>
