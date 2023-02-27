@@ -18,6 +18,8 @@ jobs:
   build-and-index:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+
       - name: Setup Node v16 for Yarn v3
         uses: actions/setup-node@v3
         with:
@@ -27,19 +29,21 @@ jobs:
         run: corepack enable
 
       - name: Install Yarn v3
-        uses: borales/actions-yarn@v3
+        uses: borales/actions-yarn@v4
         with:
           cmd: set version stable
 
       - name: Install dependencies
-        uses: borales/actions-yarn@v3
-        env:
-          YARN_ENABLE_IMMUTABLE_INSTALLS: false
+        uses: borales/actions-yarn@v4
         with:
           cmd: install
+        env:
+          YARN_ENABLE_IMMUTABLE_INSTALLS: false
 
       - name: Build site
-        uses: borales/actions-yarn@v3
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: build
         env:
           PREFIX_PATHS: true # equivalent to --prefix-paths flag for 'gatsby build'
           REPO_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -53,5 +57,3 @@ jobs:
           GATSBY_ALGOLIA_INDEX_NAME: ${{ secrets.ALGOLIA_INDEX_NAME || github.event.repository.name }}
           GATSBY_FEDS_PRIVACY_ID: ${{ secrets.AIO_FEDS_PRIVACY_ID }}
           GATSBY_SITE_DOMAIN_URL: https://developer.adobe.com
-        with:
-          cmd: build
