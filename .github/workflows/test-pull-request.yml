@@ -4,7 +4,7 @@
 ## Pull request testing ##
 ###########################
 ###########################
-name: Test Pull Request
+name: Latest Pull Request
 
 # Documentation:
 # - Workflow: https://help.github.com/en/articles/workflow-syntax-for-github-actions
