@@ -227,7 +227,7 @@ If an argument is optional in the observed method, then the after method should 
 
 ## Around methods
 
-The application runs the code in around methods before and after their observed methods. Using these methods allow you to override an observed method. around methods must have the same name as the observed method with 'around' as the prefix.
+The application runs the code in around methods before and after their observed methods. Using these methods allow you to override an observed method. Around methods must have the same name as the observed method with 'around' as the prefix.
 
 <InlineAlert variant="warning" slots="text"/>
 

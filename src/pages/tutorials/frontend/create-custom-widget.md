@@ -153,10 +153,14 @@ And finally, create the template that will be used for showing the widget's data
 
 ```php
 <?php
-/** \ExampleCorp\Learning\Block\Widget\Test $block */
+/** @var \Magento\Framework\View\TemplateEngineInterface $this */
+/** @var \ExampleCorp\Learning\Block\Widget\Test $block */
+/** @var \Magento\Csp\Api\InlineUtilInterface $csp */
+/** @var \Magento\Framework\Escaper $escaper */
+/** @var \Magento\Framework\View\Helper\SecureHtmlRenderer $secureRenderer */
 ?>
-<h3><?= $block->escapeHtml($block->getData('title')) ?></h3>
-<h3><?= $block->escapeHtml(__('Size:')) ?> <?= $block->escapeHtml($block->getData('size')) ?></h3>
+<h3><?= $escaper->escapeHtml($block->getData('title')) ?></h3>
+<h3><?= $escaper->escapeHtml(__('Size:')) ?> <?= $escaper->escapeHtml($block->getData('size')) ?></h3>
 ```
 
 ### Step 6. Clean Cache
