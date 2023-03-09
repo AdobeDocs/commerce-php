@@ -15,9 +15,7 @@ name: Latest Pull Request
 ######################################################
 # Start the job on a pull request to the main branch #
 ######################################################
-on:
-  pull_request:
-    branches: [main]
+on: pull_request
 
 ###############
 # Set the Job #
@@ -40,6 +38,7 @@ jobs:
           # Full git history is needed to get a proper list of changed files
           # within `super-linter`
           fetch-depth: 0
+      - run: cat ".github/super-linter.env" >> "$GITHUB_ENV"
 
       ################################
       # Run Linters against code base #
@@ -49,26 +48,17 @@ jobs:
         # Use full version number to avoid cases when a next
         # released version is buggy
         # About slim image: https://github.com/github/super-linter#slim-image
-        uses: github/super-linter/slim@v4.9.4
+        uses: github/super-linter/slim@v4.10.1
         env:
-          VALIDATE_ALL_CODEBASE: false
-          DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DEFAULT_BRANCH: main
+          VALIDATE_ALL_CODEBASE: false
           VALIDATE_GITHUB_ACTIONS: true
-          VALIDATE_GITLEAKS: true
-          #
-          # The Markdown rules are defined at
-          # .github/linters/.markdown-lint.yml
-          #
-          # Documentation on rules:
-          # https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md
-          VALIDATE_MARKDOWN: true
-          VALIDATE_YAML: true
 
       - name: Setup Node v16 for Yarn v3
         uses: actions/setup-node@v3
         with:
-          node-version: '16.15.0' # Current LTS version
+          node-version: '16.15.1' # Current LTS version
 
       - name: Enable Corepack for Yarn v3
         run: corepack enable
@@ -95,3 +85,6 @@ jobs:
         uses: borales/actions-yarn@v3
         with:
           cmd: build
+        env:
+          NODE_OPTIONS: "--max_old_space_size=4096"
+  

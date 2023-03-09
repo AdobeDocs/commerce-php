@@ -6,8 +6,8 @@
     "url": "https://github.com/AdobeDocs/commerce-php"
   },
   "dependencies": {
-    "@adobe/gatsby-theme-aio": "4.6.6",
-    "gatsby": "4.22.0",
+    "@adobe/gatsby-theme-aio": "4.8.3",
+    "gatsby": "4.25.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
@@ -23,7 +23,8 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test:links": "remark src/pages --quiet --frail"
+    "test:links": "remark src/pages --quiet --frail",
+    "lint": "docker run --rm -e RUN_LOCAL=true --env-file .github/super-linter.env -v \"$PWD\":/tmp/lint github/super-linter:slim-v4.10.1"
   },
   "remarkConfig": {
     "plugins": [
