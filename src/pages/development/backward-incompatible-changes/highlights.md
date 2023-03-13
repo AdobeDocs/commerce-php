@@ -7,7 +7,7 @@ description: Learn about major changes in Adobe Commerce and Magento Open Source
 
 This page highlights backward-incompatible changes between Adobe Commerce and Magento Open Source releases that have a major impact and require detailed explanation and special instructions to ensure third-party modules continue working. High-level reference information for all backward-incompatible changes in each release are documented in [Backward incompatible changes reference](reference.md).
 
-## 2.4.6-beta
+## 2.4.6
 
 The following major backward-incompatible changes were introduced in the 2.4.6 Adobe Commerce and Magento Open Source releases:
 
