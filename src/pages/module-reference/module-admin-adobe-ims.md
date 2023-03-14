@@ -205,7 +205,7 @@ In Admin Adobe Ims module was defined path where certificate has to be downloade
 By default, in config.xml, these value for production.
 For testing reasons, developers can override this value, for example in env.php file like this:
 
-```
+```php
 'system' => [
         'default' => [
             'adobe_ims' => [

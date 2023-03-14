@@ -5,7 +5,7 @@ description: README.md contents of the module from the source code
 
 # Magento_Msrp module
 
-The **Magento_Msrp** module is responsible for Manufacturer’s Suggested Retail Price functionality.
+The **Magento_Msrp** module is responsible for Manufacturer's Suggested Retail Price functionality.
 A current module provides base functional for msrp pricing rendering, configuration and calculation.
 
 ## Installation
@@ -47,17 +47,17 @@ For information about a typical file structure of a module in Magento 2,
 
  For example:
 
- ```
-    <type name="Magento\Msrp\Pricing\MsrpPriceCalculator">
-        <arguments>
-            <argument name="msrpPriceCalculators" xsi:type="array">
-                <item name="configurable" xsi:type="array">
-                    <item name="productType" xsi:type="const">Magento\ConfigurableProduct\Model\Product\Type\Configurable::TYPE_CODE</item>
-                    <item name="priceCalculator" xsi:type="object">Magento\MsrpConfigurableProduct\Pricing\MsrpPriceCalculator</item>
-                </item>
-            </argument>
-       </arguments>
-   </type>
+ ```xml
+<type name="Magento\Msrp\Pricing\MsrpPriceCalculator">
+    <arguments>
+        <argument name="msrpPriceCalculators" xsi:type="array">
+            <item name="configurable" xsi:type="array">
+                <item name="productType" xsi:type="const">Magento\ConfigurableProduct\Model\Product\Type\Configurable::TYPE_CODE</item>
+                <item name="priceCalculator" xsi:type="object">Magento\MsrpConfigurableProduct\Pricing\MsrpPriceCalculator</item>
+            </item>
+        </argument>
+    </arguments>
+</type>
 ```
 
  More information about [type configuration](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/di-xml-file.html).

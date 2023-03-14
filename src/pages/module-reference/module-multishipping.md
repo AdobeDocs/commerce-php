@@ -22,11 +22,11 @@ For information about a typical file structure of a module in Magento 2,
 Developers can interact with the module and change behaviour using type configuration feature.
 
 Namely, we can change `paymentSpecification` for `Magento\Multishipping\Block\Checkout\Billing` and `Magento\Multishipping\Model\Checkout\Type\Multishipping` classes.
-As result, we will get changed behaviour, new logic or something what our business need.
+As result, we will get changed behavior, new logic or something what our business need.
 
 For example:
 
-```
+```xml
 <type name="Magento\Multishipping\Model\Checkout\Type\Multishipping">
      <arguments>
          <argument name="paymentSpecification" xsi:type="object">multishippingPaymentSpecification</argument>
@@ -141,4 +141,4 @@ Module introduces the new pages:
 
 More information about [layout types](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/layout-types.html).
 
-For information about significant changes in patch releases, see [2.3.x Release information](http://devdocs.magento.com/guides/v2.3/release-notes/bk-release-notes.html).
+For information about significant changes in patch releases, see [Release information](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).

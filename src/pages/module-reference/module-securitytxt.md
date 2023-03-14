@@ -19,7 +19,7 @@ The Magento_Securitytxt module provides the following functionality:
 
 A valid security.txt file could look like the following example:
 
-```
+```txt
 Contact: mailto:security@example.com
 Contact: tel:+1-201-555-0123
 Encryption: https://example.com/pgp.asc
