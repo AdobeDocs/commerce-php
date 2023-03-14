@@ -43,26 +43,26 @@ For information about a typical file structure of a module in Magento 2,
 
 ## Extensibility
 
-Developers can pass custom `msrpPriceCalculators` for `Magento\Msrp\Pricing\MsrpPriceCalculator` using type configuration using  `di.xml`.
+ Developers can pass custom `msrpPriceCalculators` for `Magento\Msrp\Pricing\MsrpPriceCalculator` using type configuration using  `di.xml`.
 
-For example:
+ For example:
 
-```xml
-    <type name="Magento\Msrp\Pricing\MsrpPriceCalculator">
-        <arguments>
-            <argument name="msrpPriceCalculators" xsi:type="array">
-                <item name="configurable" xsi:type="array">
-                    <item name="productType" xsi:type="const">Magento\ConfigurableProduct\Model\Product\Type\Configurable::TYPE_CODE</item>
-                    <item name="priceCalculator" xsi:type="object">Magento\MsrpConfigurableProduct\Pricing\MsrpPriceCalculator</item>
-                </item>
-            </argument>
-       </arguments>
-   </type>
+ ```xml
+<type name="Magento\Msrp\Pricing\MsrpPriceCalculator">
+    <arguments>
+        <argument name="msrpPriceCalculators" xsi:type="array">
+            <item name="configurable" xsi:type="array">
+                <item name="productType" xsi:type="const">Magento\ConfigurableProduct\Model\Product\Type\Configurable::TYPE_CODE</item>
+                <item name="priceCalculator" xsi:type="object">Magento\MsrpConfigurableProduct\Pricing\MsrpPriceCalculator</item>
+            </item>
+        </argument>
+    </arguments>
+</type>
 ```
 
-More information about [type configuration](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/di-xml-file.html).
+ More information about [type configuration](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/di-xml-file.html).
 
-Extension developers can interact with the Magento_Msrp module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html).
+ Extension developers can interact with the Magento_Msrp module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html).
 
 [The Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html) enables you to override the functionality of the Magento_Msrp module.
 
@@ -119,7 +119,7 @@ This module introduces the following layouts and layout handles:
 
 Module provides product admin form modifier:
 
-`Magento\Msrp\Ui\DataProvider\Product\Form\Modifier\Msrp` - removes `msrp_display_actual_price_type` field from the form if config disabled else adds `validate-zero-or-greater` validation to the field.
+`Magento\Msrp\Ui\DataProvider\Product\Form\Modifier\Msrp` - removes `msrp_display_actual_price_type` field from the form if config disabled else adds `validate-zero-or-greater` validation to the fild.
 
 ## Additional information
 

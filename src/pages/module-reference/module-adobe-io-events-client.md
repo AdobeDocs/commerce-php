@@ -25,9 +25,9 @@ This is a two-step process:
     - Enter a unique ID  in the `Adobe Commerce Instance ID` field
 4. Run the following command to create an event provider
 
-   ```bash
-   bin/magento events:create-event-provider --label "<unique_provider_label>" --description "<provider description>"
-   ```
+```bash
+bin/magento events:create-event-provider --label "<unique_provider_label>" --description "<provider description>"
+````
 
 5. Enter the Event Provider ID output by the command in the `Adobe I/O Event Provider ID` field
 

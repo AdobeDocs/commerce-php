@@ -244,7 +244,7 @@ By clicking on this button a popup opens with the AdobeIms Login, where the curr
 After successfully validate his identity, we are redirecting to the `Magento/AdminAdobeIms/Controller/Adminhtml/OAuth/ImsReauthCallback.php` Controller and update the `ims_verified` field.
 
 When the form will be submitted, we verify the identity with the `Magento/AdminAdobeIms/Plugin/ReplaceVerifyIdentityWithImsPlugin.php` Plugin.
-Here the existence of the `AdobeAccessToken` and `AdobeReAuthToken` will be checked.
+Here the existens of the `AdobeAccessToken` and `AdobeReAuthToken` will be checked.
 The reauth_token will be used to call the AdobeIms validateToken Endpoint.
 
 When this call is successful, the form will be submitted, otherwise we update the Message of the thrown `AuthenticationException` to return a matching error message, done by the `Magento/AdminAdobeIms/Plugin/PerformIdentityCheckMessagePlugin.php` Plugin.

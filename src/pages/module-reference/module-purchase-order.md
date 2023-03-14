@@ -6,13 +6,19 @@ description: README.md contents of the module from the source code
 
 # Magento_PurchaseOrder
 
+​
+
 ## Overview
 
-The PurchaseOrder module contains functionality for creating purchase orders in a B2B environment. When enabled, all orders created within the company will be created as purchase orders.  This allows B2B users to enforce purchasing rules and workflows within a Magento store.
+​
+The PurchaseOrder module contains functionality for creating purchase orders in a B2B environment. When enabled, all orders created within the company will be created as purchase orders.  This allows B2B users to enforce purchasing rules and worflows within a Magento store.
+​
 
 ## Installation details
 
+​
 The PurchaseOrder module has dependencies on the following modules:
+​
 
 -  Module_Authorization
 -  Module_Catalog
@@ -30,12 +36,16 @@ The PurchaseOrder module has dependencies on the following modules:
 -  Module_Tax
 -  Module_Theme
 -  Module_Ui
+
 ​
 which must be installed and enabled first. This module does not create any backward incompatible changes. It can be uninstalled or deactivated at any time.
+​
 
 ## Structure
 
+​
 [Learn about a typical file structure for a Magento 2 module](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/module-file-structure.html).
+​
 
 ## Extensibility
 
@@ -54,8 +64,10 @@ which must be installed and enabled first. This module does not create any backw
 
 ### UI components
 
+​
 You can extend the purchase order listings using the `company_purchaseorder_listing.xml` and `my_purchaseorder_listing.xml` configuration files.
 
 ## Additional information
 
+​
 Check the [B2B release notes](https://devdocs.magento.com/guides/v2.4/release-notes/b2b-release-notes.html) for more information on new changes.
