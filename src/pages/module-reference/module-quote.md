@@ -12,6 +12,7 @@ This module provides customer cart management functionality.
 The Magento_Quote module is one of the base Magento 2 modules. You cannot disable or uninstall this module.
 
 The Magento_Quote module creates the following table in the database:
+
 - `quote`
 - `quote_address`
 - `quote_item`
@@ -25,13 +26,14 @@ For information about a module installation in Magento 2, see [Enable or disable
 
 ## Extensibility
 
-Extension developers can interact with the Magento_Quote module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_Quote module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_Quote module.
+[The Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html) enables you to override the functionality of the Magento_Quote module.
 
 ### Events
 
 The module dispatches the following events:
+
 - `sales_quote_address_collection_load_after` event in the `\Magento\Quote\Model\ResourceModel\Quote\Address\Collection::_afterLoad` method. Parameters:
     - `quote_address_collection` is a `$this` object (`Magento\Quote\Model\ResourceModel\Quote\Address\Collection` class)
 
@@ -113,7 +115,7 @@ The module dispatches the following events:
 - `sales_quote_item_collection_products_after_load` event in the `\Magento\Quote\Model\QuoteManagement::_assignProducts` method. Parameters:
     - `collection` is a product collection object (`\Magento\Catalog\Model\ResourceModel\Product\Collection` class)
 
-For information about an event in Magento 2, see [Events and observers](http://devdocs.magento.com/guides/v2.4/extension-dev-guide/events-and-observers.html#events).   
+For information about an event in Magento 2, see [Events and observers](http://devdocs.magento.com/guides/v2.4/extension-dev-guide/events-and-observers.html#events).
 
 ### Public APIs
 
@@ -174,7 +176,7 @@ For information about an event in Magento 2, see [Events and observers](http://d
 
 - `\Magento\Quote\Api\ChangeQuoteControlInterface`
     - checks if user is allowed to change the quote
-    
+
 #### Guest
 
 - `\Magento\Quote\Api\GuestBillingAddressManagementInterface`
@@ -185,7 +187,7 @@ For information about an event in Magento 2, see [Events and observers](http://d
     - gets lists items that are assigned to a specified quote
     - add/update the specified cart guest item
     - removes the specified item from the specified quote
-    
+
 - `\Magento\Quote\Api\GuestCouponManagementInterface`
     - gets coupon for a specified quote by quote ID
     - adds a coupon by code to a specified quote
@@ -210,7 +212,7 @@ For information about an event in Magento 2, see [Events and observers](http://d
 
 - `\Magento\Quote\Api\GuestCartRepositoryInterface`
     - gets quote by quote ID for guest user
-    
+
 - `\Magento\Quote\Api\GuestCartTotalManagementInterface`
     - sets shipping/billing methods and additional data for a quote and collect totals for guest
 
@@ -242,7 +244,7 @@ For information about an event in Magento 2, see [Events and observers](http://d
     - returns information for the quote for a specified customer
     - assigns a specified customer to a specified shopping quote
     - places an order for a specified quote
-    
+
 - `\Magento\Quote\Api\CartRepositoryInterface`
     - gets quote by quote ID
     - gets list carts that match specified search criteria
@@ -257,7 +259,7 @@ For information about an event in Magento 2, see [Events and observers](http://d
 
 - `\Magento\Quote\Api\CartTotalRepositoryInterface`
     - gets quote totals by quote ID
-    
+
 - `\Magento\Quote\Api\CouponManagementInterface`
     - gets coupon for a specified quote by quote ID
     - adds a coupon by code to a specified quote
@@ -283,20 +285,19 @@ For information about an event in Magento 2, see [Events and observers](http://d
 - `\Magento\Quote\Model\ShippingMethodManagementInterface`
     - sets the carrier and shipping methods codes for a specified quote
     - gets the selected shipping method for a specified quote
-    
+
 #### Model
-    
+
 - `\Magento\Quote\Model\Quote\Address\FreeShippingInterface`
     - checks if is a free shipping
 
 - `\Magento\Quote\Model\Quote\Address\RateCollectorInterface`
     - retrieves all methods for supplied shipping data
-    
+
 - `\Magento\Quote\Model\MaskedQuoteIdToQuoteIdInterface`
     - converts masked quote ID to the quote ID (entity ID)
 
 - `\Magento\Quote\Model\QuoteIdToMaskedQuoteIdInterface`
     - converts quote ID to the masked quote ID
-    
-For information about a public API in Magento 2, see [Public interfaces & APIs](http://devdocs.magento.com/guides/v2.4/extension-dev-guide/api-concepts.html).
 
+For information about a public API in Magento 2, see [Public interfaces & APIs](http://devdocs.magento.com/guides/v2.4/extension-dev-guide/api-concepts.html).

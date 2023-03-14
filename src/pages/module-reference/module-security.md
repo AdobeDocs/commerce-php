@@ -7,6 +7,7 @@ description: README.md contents of the module from the source code
 
 **Security** management module
 _Main features:_
+
 1. Added support for simultaneous admin user logins with ability to enable/disable the feature, review and disconnect the list of current logged in sessions
 2. Added password complexity configuration
 3. Enhanced security to prevent account takeover for sessions opened on public computers and similar:

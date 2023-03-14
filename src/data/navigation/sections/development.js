@@ -332,7 +332,7 @@ module.exports = [
               path: "/development/components/message-queues/bulk-operations/",
             },
             {
-              title: "Example bulk operation implemntation",
+              title: "Example bulk operation implementation",
               path: "/development/components/message-queues/bulk-operations-example/",
             },
             {
