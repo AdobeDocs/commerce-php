@@ -1,6 +1,6 @@
 ---
-title: NegotiableQuoteGraphQl
+title: QuickCheckoutAdminPanel
 description: README.md contents of the module from the source code
 ---
 
-# Negotiable Quote GraphQL #
+The Magento_QuickCheckoutAdminPanel module.

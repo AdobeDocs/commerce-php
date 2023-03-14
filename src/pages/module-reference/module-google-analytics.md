@@ -26,7 +26,6 @@ A lot of functionality in the module is on JavaScript, use [mixins](https://devd
 ### Layouts
 
 This module introduces the following layouts in the `view/frontend/layout` directory:
-
 - `default`
 
 For more information about a layout in Magento 2, see the [Layout documentation](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/layout-overview.html).

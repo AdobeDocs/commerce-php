@@ -41,7 +41,6 @@ A lot of functionality in the module is on JavaScript, use [mixins](https://devd
 ### Events
 
 The module dispatches the following events:
-
 - `gift_options_prepare_items` event in the `\Magento\GiftMessage\Block\Message\Inline::getItems` method. Parameters:
     - `items` is a entityItems (`array` type)
 
@@ -53,7 +52,6 @@ For information about an event in Magento 2, see [Events and observers](http://d
 ### Layout
 
 This module introduces the following layouts in the `view/frontend/layout` and `view/adminhtml/layout` directories:
-
 - `view/adminhtml/layout`:
     - `sales_order_create_index`
     - `sales_order_create_load_block_data`
@@ -77,11 +75,11 @@ For more information about a layout in Magento 2, see the [Layout documentation]
 - `\Magento\GiftMessage\Api\CartRepositoryInterface`
     - get the gift message by cart ID for specified shopping cart
     - set the gift message for an entire shopping cart
-
+    
 - `\Magento\GiftMessage\Api\GuestCartRepositoryInterface`
     - get the gift message by cart ID for specified shopping cart
     - set the gift message for an entire shopping cart
-
+    
 #### Cart Item
 
 - `\Magento\GiftMessage\Api\GuestItemRepositoryInterface`
@@ -91,7 +89,7 @@ For more information about a layout in Magento 2, see the [Layout documentation]
 - `\Magento\GiftMessage\Api\ItemRepositoryInterface`
     - get the gift message for a specified item in a specified shopping cart
     - set the gift message for a specified item in a specified shopping cart
-
+    
 #### Order
 
 - `\Magento\GiftMessage\Api\OrderItemRepositoryInterface`
@@ -103,7 +101,7 @@ For more information about a layout in Magento 2, see the [Layout documentation]
 - `\Magento\GiftMessage\Api\OrderItemRepositoryInterface`
     - get the gift message for a specified item in a specified order
     - set the gift message for a specified item in a specified order
-
+    
 For information about a public API in Magento 2, see [Public interfaces & APIs](http://devdocs.magento.com/guides/v2.4/extension-dev-guide/api-concepts.html).
 
 ## Additional information

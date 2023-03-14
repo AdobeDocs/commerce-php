@@ -21,6 +21,5 @@ Extension developers can interact with the Magento_GroupedImportExport module. F
 ## Additional information
 
 You can get more information about import/export processes in magento at the articles:
-
 - [Import](https://docs.magento.com/user-guide/system/data-import.html)
 - [Export](https://docs.magento.com/user-guide/system/data-export.html)

@@ -740,11 +740,6 @@ module.exports = [
     },
     
     {
-      title: "Elasticsearch8",
-      path: "/module-reference/module-elasticsearch-8/"
-    },
-    
-    {
       title: "ElasticsearchCatalogPermissions",
       path: "/module-reference/module-elasticsearch-catalog-permissions/"
     },
@@ -1782,6 +1777,16 @@ module.exports = [
     {
       title: "PurchaseOrderRuleGraphQl",
       path: "/module-reference/module-purchase-order-rule-graph-ql/"
+    },
+    
+    {
+      title: "QuickCheckout",
+      path: "/module-reference/module-quick-checkout/"
+    },
+    
+    {
+      title: "QuickCheckoutAdminPanel",
+      path: "/module-reference/module-quick-checkout-admin-panel/"
     },
     
     {

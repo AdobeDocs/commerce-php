@@ -13,7 +13,6 @@ Provider and custom Events Metadata.
 # Usage
 
 This is a two-step process:
-
 1. We will create an Event Provider, this is required once per Adobe Commerce instance
 2. We will update the Events Metadata, this should happen during the deployment phase
 
@@ -24,15 +23,12 @@ This is a two-step process:
     - Populate the `Service Account Private Key` and `Adobe I/O Workspace Configuration` fields
     - Enter a unique ID  in the `Adobe Commerce Instance ID` field
 4. Run the following command to create an event provider
-
-   ```bash
-   bin/magento events:create-event-provider --label "<unique_provider_label>" --description "<provider description>"
-   ```
-
+```bash
+bin/magento events:create-event-provider --label "<unique_provider_label>" --description "<provider description>"
+````
 5. Enter the Event Provider ID output by the command in the `Adobe I/O Event Provider ID` field
 
 # Update Events Metadata
-
 Events Metadata in the following format can optionally be stored in `app/etc/event-types.json`:
 
 ```json
@@ -53,7 +49,6 @@ Events Metadata in the following format can optionally be stored in `app/etc/eve
 ```
 
 To update the metadata using the `app/etc/event-types.json` file, add the following step to your `ece-tool` or deployment script:
-
 ```bash
 bin/magento events:sync-events-metadata
 ```

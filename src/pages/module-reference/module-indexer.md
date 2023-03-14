@@ -7,7 +7,6 @@ description: README.md contents of the module from the source code
 
 This module provides Magento Indexing functionality.
 It allows to:
-
  - read indexers configuration
  - represent indexers in admin
  - regenerate indexes by cron schedule
@@ -25,7 +24,6 @@ This module is dependent on the following modules:
 - `Magento_AdminNotification`
 
 The Magento_Indexer module creates the following tables in the database:
-
 - `indexer_state`
 - `mview_state`
 
@@ -52,7 +50,7 @@ The module dispatches the following events:
 - `clean_cache_by_tags` event in the `\Magento\Indexer\Model\Indexer\CacheCleaner::cleanCache` method. Parameters:
     - `object` is a `cacheContext` object (`Magento\Framework\Indexer\CacheContext` class)
 
-#### Plugin
+#### Plugin 
 
 - `clean_cache_after_reindex` event in the `\Magento\Indexer\Model\Processor\CleanCache::afterUpdateMview` method. Parameters:
     - `object` is a `context` object (`Magento\Framework\Indexer\CacheContext` class)
@@ -65,7 +63,6 @@ For information about an event in Magento 2, see [Events and observers](https://
 ### Layouts
 
 This module introduces the following layout handles in the `view/adminhtml/layout` directory:
-
 - `indexer_indexer_list`
 - `indexer_indexer_list_grid`
 
@@ -83,7 +80,6 @@ There are 2 modes of the Indexers:
 ### Console commands
 
 Magento_Indexers provides console commands:
-
 - `bin/magento indexer:info` - view a list of all indexers
 - `bin/magento indexer:status [indexer]` - view index status
 - `bin/magento indexer:reindex [indexer]` - run reindex
@@ -96,7 +92,6 @@ Magento_Indexers provides console commands:
 ### Cron options
 
 Cron group configuration can be set at `etc/crontab.xml`:
-
 - `indexer_reindex_all_invalid` - regenerate indexes for all invalid indexers
 - `indexer_update_all_views` - update indexer views
 - `indexer_clean_all_changelogs` - clean indexer view changelogs
@@ -104,7 +99,6 @@ Cron group configuration can be set at `etc/crontab.xml`:
 [Learn how to configure and run cron in Magento.](http://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html).
 
 More information can get at articles:
-
 - [Learn more about indexing](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/indexing.html)
 - [Learn more about Indexer optimization](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/indexer-batch.html)
 - [Learn more how to add custom indexer](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/indexing-custom.html)

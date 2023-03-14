@@ -6,7 +6,7 @@ description: README.md contents of the module from the source code
 # Magento_GraphQl module
 
 This module provides the framework for the application to expose GraphQL compliant web services. It exposes an area for
-GraphQL services and resolves request data based on the generated schema. It also maps this response to a JSON object
+GraphQL services and resolves request data based on the generated schema. It also maps this response to a JSON object 
 for the client to read.
 
 ## Installation
@@ -14,12 +14,10 @@ for the client to read.
 The Magento_GraphQl module is one of the base Magento 2 modules. You cannot disable or uninstall this module.
 
 This module is dependent on the following modules:
-
 - `Magento_Authorization`
 - `Magento_Eav`
 
 The following modules depend on this module:
-
 - `Magento_BundleGraphQl`
 - `Magento_CatalogGraphQl`
 - `Magento_CmsGraphQl`

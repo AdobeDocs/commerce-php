@@ -3,7 +3,7 @@ title: Elasticsearch7
 description: README.md contents of the module from the source code
 ---
 
-# Magento_Elasticsearch7 module
+#Magento_Elasticsearch7 module
 
 Magento_Elasticsearch7 module allows using ElasticSearch engine 7.x version for the product searching capabilities.
 

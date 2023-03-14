@@ -39,7 +39,7 @@ Extension developers can interact with the Magento_MediaGalleryApi module. For m
 
 - `\Magento\MediaGalleryApi\Api\GetAssetsByIdsInterface`:
     - get media gallery assets by id attribute
-
+    
 - `\Magento\MediaGalleryApi\Api\GetAssetsByPathsInterface`:
     - get media gallery assets by paths in media storage
 
