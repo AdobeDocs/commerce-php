@@ -24,9 +24,9 @@ For information about a typical file structure of a module in Magento 2, see [Mo
 
 ## Extensibility
 
-Extension developers can interact with the Magento_MediaStorage module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_MediaStorage module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_MediaStorage module.
+[The Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html) enables you to override the functionality of the Magento_MediaStorage module.
 
 ## Additional information
 
@@ -38,9 +38,9 @@ Extension developers can interact with the Magento_MediaStorage module. For more
 
 - `media.storage.catalog.image.resize` - creates resized product images
 
-[Learn how to manage Message Queues](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues.html).
+[Learn how to manage Message Queues](https://devdocs.magento.com/guides/v2.4/config-guide/mq/manage-message-queues.html).
 
 More information can get at articles:
 
 - [Learn how to configure Media Storage Database](https://docs.magento.com/user-guide/system/media-storage-database.html).
-- [Learn how to Resize catalog images](https://developer.adobe.com/commerce/frontend-core/guide/themes/configure/#resize-catalog-images)
+- [Learn how to Resize catalog images](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/themes/theme-images.html#resize-catalog-images)

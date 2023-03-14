@@ -6,7 +6,7 @@ description: README.md contents of the module from the source code
 # Magento_GraphQlCache module
 
 This module provides the ability to cache GraphQL queries.
-This module allows Magento built-in cache or Varnish as the application for serving the Full Page Cache to the front end. 
+This module allows Magento built-in cache or Varnish as the application for serving the Full Page Cache to the front end.
 
 ## Installation
 
@@ -19,9 +19,9 @@ For information about a module installation in Magento 2, see [Enable or disable
 
 ## Extensibility
 
-Extension developers can interact with the Magento_GraphQlCache module. For more information about the Magento extension mechanism, see [Magento plugins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_GraphQlCache module. For more information about the Magento extension mechanism, see [Magento plugins](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_GraphQlCache module.
+[The Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html) enables you to override the functionality of the Magento_GraphQlCache module.
 
 ## Additional information
 

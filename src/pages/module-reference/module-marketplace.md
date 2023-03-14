@@ -20,7 +20,8 @@ Extension developers can interact with the Magento_Marketplace module. For more 
 ### Layouts
 
 This module introduces the following layouts in the `view/adminhtml/layout` directory:
+
 - `marketplace_index_index`
 - `marketplace_partners_index`
 
-For more information about a layout in Magento 2, see the [Layout documentation](https://developer.adobe.com/commerce/frontend-core/guide/layouts/).
+For more information about a layout in Magento 2, see the [Layout documentation](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/layout-overview.html).
