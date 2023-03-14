@@ -3,8 +3,9 @@ title: Catalog
 description: README.md contents of the module from the source code
 ---
 
-#Magento_Catalog
+# Magento_Catalog
 Magento_Catalog module functionality is represented by the following sub-systems:
+
  - Products Management. It includes CRUD operation of product, product media, product attributes, etc...
  - Category Management. It includes CRUD operation of category, category attributes
 
@@ -17,6 +18,7 @@ Catalog module provides API filtering that allows to limit product selection wit
   (https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/module-file-structure.html).
 
 ## Observer
+
 This module observes the following events:
    `etc/events.xml`
 	   `magento_catalog_api_data_productinterface_save_before` event in
@@ -61,7 +63,7 @@ This module observes the following events:
 	   `Magento\Catalog\Observer\ImageResizeAfterProductSave` file.
 	   `catalog_category_prepare_save` event in
 	   `Magento\Catalog\Observer\CategoryDesignAuthorization` file.
-   
+
     `/etc/frontend/events.xml`
 	   `customer_login` event in
 	   `Magento\Catalog\Observer\Compare\BindCustomerLoginObserver` file.
