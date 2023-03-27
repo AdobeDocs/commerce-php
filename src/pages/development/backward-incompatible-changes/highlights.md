@@ -19,6 +19,12 @@ The following major backward-incompatible changes were introduced in the 2.4.6 A
 *  Zend_HTTP replaced with laminas-http
 *  Zend_Validate replaced with laminas-validator
 
+### New default value for automatic redirects
+
+To improve performance, the default value for `generate_category_product_rewrites` in the [`app/code/Magento/CatalogURLRewrite/etc/config.xml`](https://github.com/magento/magento2/blob/2.4-develop/app/code/Magento/CatalogUrlRewrite/etc/config.xml#L12) file was changed from `1` to `0`. This change disables [automatic redirects](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/url-rewrites/url-redirect-product-automatic.html) by default.
+
+The new default does not change existing records in the `catalog_url_rewrite_product_category` and `url_rewrite` database tables when upgrading to 2.4.6, but no new rewrites are added. However, manually changing this configuration setting after upgrading to 2.4.6 permanently deletes all rewrites with no ability to restore them. This may cause unresolved "category/product" type URL conflicts that you must resolve by updating URL keys manually.
+
 ### New system configuration for limiting products in grid
 
 <!-- AC-6425 -->
