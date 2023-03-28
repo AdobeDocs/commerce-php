@@ -11,12 +11,14 @@ This page highlights backward-incompatible changes between Adobe Commerce and Ma
 
 The following major backward-incompatible changes were introduced in the 2.4.6 Adobe Commerce and Magento Open Source releases:
 
+*  New default value for automatic redirects
 *  New system configuration for customer segments
 *  New system configuration for limiting products in grid
 *  New system configuration for OpenSearch module
 *  Symfony dependencies upgraded to latest LTS version
 *  Zend_Filter replaced with laminas-filter
 *  Zend_HTTP replaced with laminas-http
+*  Zend_Json replaced with laminas-json
 *  Zend_Validate replaced with laminas-validator
 
 ### New default value for automatic redirects
