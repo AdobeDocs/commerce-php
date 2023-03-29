@@ -11,13 +11,25 @@ This page highlights backward-incompatible changes between Adobe Commerce and Ma
 
 The following major backward-incompatible changes were introduced in the 2.4.6 Adobe Commerce and Magento Open Source releases:
 
+*  New default value for automatic redirects
 *  New system configuration for customer segments
 *  New system configuration for limiting products in grid
 *  New system configuration for OpenSearch module
 *  Symfony dependencies upgraded to latest LTS version
 *  Zend_Filter replaced with laminas-filter
 *  Zend_HTTP replaced with laminas-http
+*  Zend_Json replaced with laminas-json
 *  Zend_Validate replaced with laminas-validator
+
+### New default value for automatic redirects
+
+To improve performance, the default value for `generate_category_product_rewrites` in the [`app/code/Magento/CatalogURLRewrite/etc/config.xml`](https://github.com/magento/magento2/blob/2.4-develop/app/code/Magento/CatalogUrlRewrite/etc/config.xml#L12) file was changed from `1` to `0`. This change disables [automatic category/product URL rewrites](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/url-rewrites/url-redirect-product-automatic.html#skip-rewrite), but only if you have not changed the previous default setting prior to upgrading to 2.4.6.
+
+The new default does not change existing records in the `catalog_url_rewrite_product_category` and `url_rewrite` database tables when upgrading to 2.4.6, but no new rewrites are added. You can enable the **Generate "category/product" URL Rewrites** setting if you want to continue using it after upgrading.
+
+<InlineAlert variant="warning" slots="text" />
+
+Manually changing this setting (for example, using the `bin/magento config:set catalog/seo/generate_category_product_rewrites 1` command) permanently deletes all rewrites with no ability to restore them. This may cause unresolved category/product type URL conflicts that you must resolve by manually updating URL keys.
 
 ### New system configuration for limiting products in grid
 
