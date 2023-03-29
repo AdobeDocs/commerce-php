@@ -29,7 +29,7 @@ The new default does not change existing records in the `catalog_url_rewrite_pro
 
 <InlineAlert variant="warning" slots="text" />
 
-Manually changing this setting (for example, using the `bin/magento config:set catalog/seo/generate_category_product_rewrites` command) permanently deletes all rewrites with no ability to restore them. This may cause unresolved category/product type URL conflicts that you must resolve by manually updating URL keys.
+Manually changing this setting (for example, using the `bin/magento config:set catalog/seo/generate_category_product_rewrites 1` command) permanently deletes all rewrites with no ability to restore them. This may cause unresolved category/product type URL conflicts that you must resolve by manually updating URL keys.
 
 ### New system configuration for limiting products in grid
 
