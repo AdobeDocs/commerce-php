@@ -1,62 +1,43 @@
-# Commerce PHP Documentation
+# Adobe Commerce Developer Documentation
 
-This site uses Yarn 3 to manage package dependencies.
-If you do not have Yarn 3 installed, follow these instructions:
+Welcome! This site contains the latest Adobe Commerce and Magento Open Source developer documentation for ongoing releases of both products. For additional information, see our [Contribution Guide](https://developer.adobe.com/commerce/contributor/).
 
-1. Install [Node.js LTS](https://nodejs.org/en/download/). At the time of writing, the latest LTS version is `v16.15.1`.
-2. Install Yarn 3 by running the following command:
+## Contributors
 
-   ```bash
-   corepack enable
-   ```
+Our goal is to provide the Adobe Commerce and Magento Open Source communities with comprehensive and quality technical documentation. We believe that to accomplish that goal we need experts from the community to share their knowledge with us and each other. We are thankful to all of our contributors for improving the documentation.
 
-Corepack is a binary shipped with all Node.js releases starting from 16.10.
+![Commerce contributors](https://raw.githubusercontent.com/wiki/magento/magento2/images/dev_docs_contributors.png)
 
-3. Update Yarn to the latest version by running the following command:
+## Local development
 
-   ```bash
-   yarn set version stable
-   ```
+This is a [Gatsby](https://www.gatsbyjs.com/) project that uses the [Adobe I/O Theme](https://github.com/adobe/aio-theme).
 
-4. Make sure you are now using version 3.2.2 of Yarn:.
+To build the site locally:
 
-   ```bash
-   yarn --version
-   ```
-
-That's it. For more information on Yarn 3 usage, see [Yarn usage](https://yarnpkg.com/getting-started/usage).
-
-## How to build the documentation
-
-To build this site locally and contribute changes, follow these steps:
-
-1. Fork the repo into your own account, then clone it to a local directory.
-
-   ```bash
-   git clone git@github.com:AdobeDocs/commerce-php.git
-   ```
-
-2. In the repo's root, run this command to install dependencies:
+1. Clone this repo.
+1. Install project dependencies.
 
    ```bash
    yarn install
    ```
 
-3. Run this command to build the site locally and auto-launch your browser:
+1. Launch the project in development mode.
 
    ```bash
    yarn dev
    ```
 
-## Using enhanced markdown features
+## Resources
 
-To learn about all the enhanced markdown features you can use, see the [Adobe I/O Theme README](https://github.com/adobe/aio-theme#adobe-io-theme).
-Highlights include:
+See the following resources to learn more about using the theme:
 
-- [Arrange the structure content of your docs](https://github.com/adobe/aio-theme#content-structure)
+- [Arranging content structure](https://github.com/adobe/aio-theme#content-structure)
 - [Linking to pages](https://github.com/adobe/aio-theme#links)
-- [Using assets](https://github.com/adobe/aio-theme-aio#assets)
-- [Setting Global Navigation](https://github.com/adobe/aio-theme#global-navigation)
-- [Setting Side Navigation](https://github.com/adobe/aio-theme#side-navigation)
+- [Using assets](https://github.com/adobe/aio-theme#assets)
+- [Configuring global navigation](https://github.com/adobe/aio-theme#global-navigation)
+- [Configuring side navigation](https://github.com/adobe/aio-theme#side-navigation)
 - [Using content blocks](https://github.com/adobe/aio-theme#jsx-blocks)
-- [Notes on using Markdown](https://github.com/adobe/aio-theme#writing-enhanced-markdown)
+- [Writing enhanced Markdown](https://github.com/adobe/aio-theme#writing-enhanced-markdown)
+- [Deploying the site](https://github.com/adobe/aio-theme#deploy-to-azure-storage-static-websites) _(Adobe employees only)_
+
+If you have questions, open an issue and ask us. We look forward to hearing from you!
