@@ -5,7 +5,7 @@ description: Follow this tutorial to create programmatic validations for custom 
 
 # Add custom shipping carrier validations
 
-This topic describes how to add shipping address validations for a custom [shipping carrier](https://glossary.magento.com/shipping-carrier) to the [checkout](https://glossary.magento.com/checkout). This is an essential part of the bigger task of adding a custom shipping method to your store.
+This topic describes how to add shipping address validations for a custom shipping carrier to the checkout. This is an essential part of the bigger task of adding a custom shipping method to your store.
 
 To add new shipping carrier validations to the checkout, do the following:
 
@@ -22,7 +22,7 @@ During checkout, when a customer fills the shipping address form, shipping carri
 
 Shipping carrier validation rules declare which fields of the shipping address are required for the corresponding shipping method to be available. The validation itself is performed by the [validator](#step-2-create-validator).
 
-During checkout, if the shipping address fields declared in the rules are filled, the further validation of fields' values is carried on the [server side](https://glossary.magento.com/server-side). For example, whether a carrier is available for the specified country.
+During checkout, if the shipping address fields declared in the rules are filled, the further validation of fields' values is carried on the server side. For example, whether a carrier is available for the specified country.
 
 For the sake of compatibility, upgradability, and easy maintenance, do not edit the default application code, add your customization in a separate module. For your checkout customization to be applied correctly, your custom module should [depend](../../../development/build/composer-integration.md) on the `Magento_Checkout` module.
 
@@ -129,7 +129,7 @@ define(
 
 ## Step 4: Add the validation to the checkout layout
 
-The last step is specifying the script you created on the previous step in the checkout page [layout](https://glossary.magento.com/layout).
+The last step is specifying the script you created on the previous step in the checkout page layout.
 
 In your custom module directory, create a new `<your_module_dir>/view/frontend/layout/checkout_index_index.xml` file.
 

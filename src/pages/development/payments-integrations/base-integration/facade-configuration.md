@@ -11,7 +11,7 @@ import Docs from '/src/pages/_includes/braintree-note.md'
 
 Payment facade is an instance of [Payment Adapter](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Payment/Model/Method/Adapter.php) configured with virtual types. It allows you to process payment actions between Adobe Commerce Sales Management and the payment processor.
 
-Add the [dependency injection (DI)](../../components/dependency-injection.md) configuration for [payment method](https://glossary.magento.com/payment-method) facade in your `%Vendor_Module%/etc/di.xml`.
+Add the [dependency injection (DI)](../../components/dependency-injection.md) configuration for payment method facade in your `%Vendor_Module%/etc/di.xml`.
 
 The following sample is an illustration of this configuration ([app/code/Magento/Braintree/etc/di.xml](https://github.com/magento/magento2/tree/2.3/app/code/Magento/Braintree/etc/di.xml)):
 

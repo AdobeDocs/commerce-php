@@ -5,13 +5,13 @@ description: Follow this tutorial to customize the view of a step in the Adobe C
 
 # Customize the view of a checkout step
 
-This topic contains the basic information about how to customize the view of an existing [checkout](https://glossary.magento.com/checkout) step. In the Adobe Commerce and Magento Open Source application, checkout is implemented using UI components. You can customize each step by [changing the JavaScript implementation or template](#change-the-components-js-implementation-and-template) for a component, [adding](#add-the-new-component-to-the-checkout-page-layout), [disabling](#disable-a-component), or [removing](#remove-a-component) a component.
+This topic contains the basic information about how to customize the view of an existing checkout step. In the Adobe Commerce and Magento Open Source application, checkout is implemented using UI components. You can customize each step by [changing the JavaScript implementation or template](#change-the-components-js-implementation-and-template) for a component, [adding](#add-the-new-component-to-the-checkout-page-layout), [disabling](#disable-a-component), or [removing](#remove-a-component) a component.
 
 ## Change the component's .js implementation and template
 
-To change the `.js` implementation and template used for components rendering, you need to declare the new files in the checkout page [layout](https://glossary.magento.com/layout). To do this, take the following steps:
+To change the `.js` implementation and template used for components rendering, you need to declare the new files in the checkout page layout. To do this, take the following steps:
 
-1. In your custom module directory, create the following new file: `<your_module_dir>/view/frontend/layout/checkout_index_index.xml`. (For your checkout customization to be applied correctly, your custom [module](https://glossary.magento.com/module) should depend on the Magento_Checkout module.)
+1. In your custom module directory, create the following new file: `<your_module_dir>/view/frontend/layout/checkout_index_index.xml`. (For your checkout customization to be applied correctly, your custom module should depend on the Magento_Checkout module.)
 1. In this file, add the following:
 
     ```xml
@@ -80,7 +80,7 @@ The Magento_Shipping module adds a component rendered as a link to the Shipping 
 
 ## Add the new component to the checkout page layout
 
-Any [UI component](https://glossary.magento.com/ui-component) is added in the `checkout_index_index.xml` similar to the way a [checkout step component is added](add-new-step.md#step-2-add-your-step-to-the-checkout-page-layout).
+Any UI component is added in the `checkout_index_index.xml` similar to the way a [checkout step component is added](add-new-step.md#step-2-add-your-step-to-the-checkout-page-layout).
 
 Make sure that you declare a component so that it is rendered correctly by the parent component. If a parent component is a general UI component (referenced by the `uiComponent` alias), its child components are rendered without any conditions. But if a parent component is an extension of a general UI components, then children rendering might be restricted in certain way. For example a component can render only children from a certain `displayArea`.
 

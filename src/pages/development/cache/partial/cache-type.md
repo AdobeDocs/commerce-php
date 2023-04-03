@@ -3,7 +3,7 @@ title: Create a cache type | Commerce PHP Extensions
 description: Learn about cache types and configurations for Adobe Commerce and Magento Open Source extensions.
 ---
 
-A *cache type* enables you to specify what is cached and enables merchants to clear that [cache type](https://glossary.magento.com/cache-type) using the [Cache](https://glossary.magento.com/cache) Management page in the [Admin](https://glossary.magento.com/magento-admin).
+A *cache type* enables you to specify what is cached and enables merchants to clear that cache type using the Cache Management page in the Admin.
 
 The tag *scope* provides a mechanism for a cache type.
 
@@ -82,7 +82,7 @@ class CacheType extends TagScope
 
 You must specify the following parameters:
 
-*  `VendorName\ModuleName` defines the name of a [module](https://glossary.magento.com/module) that uses a cache type. A module can use several cache types and a cache type can be used in several modules.
+*  `VendorName\ModuleName` defines the name of a module that uses a cache type. A module can use several cache types and a cache type can be used in several modules.
 *  `%cache_type_id%` defines the unique identifier of a cache type.
 *  `%CACHE_TYPE_TAG%` defines the unique tag to be used in the cache type scoping.
 

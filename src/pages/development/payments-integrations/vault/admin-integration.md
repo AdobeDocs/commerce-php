@@ -9,13 +9,13 @@ import Docs from '/src/pages/_includes/braintree-note.md'
 
 # Vault implementation for Admin
 
-To be able to use vault in [Admin](https://glossary.magento.com/admin) order creation, you need to take at least the following steps:
+To be able to use vault in Admin order creation, you need to take at least the following steps:
 
 1. Create a token component provider and specify it in the `<your_module_dir>/etc/di.xml`.
 
 1. Create a custom vault JS component and specify it in the component provider.
 
-1. Create a `.phtml` template, specify it in the component provider and the corresponding [layout](https://glossary.magento.com/layout) file.
+1. Create a `.phtml` template, specify it in the component provider and the corresponding layout file.
 
 There are more details about these steps in the following sections.
 
@@ -107,7 +107,7 @@ Create a `.phtml` template for displaying token details and specify it in the [c
 For reference, view the Adobe Commerce default Vault template for Admin: [app/code/Magento/Vault/view/adminhtml/templates/form/vault.phtml](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Vault/view/adminhtml/templates/form/vault.phtml).
 
 In the billing form block for Admin layout (`%module_dir%/view/adminhtml/layout/sales_order_create_index.xml`)
-specify the [payment method](https://glossary.magento.com/payment-method) code and path to the template.
+specify the payment method code and path to the template.
 
 Following is an example of such layout:
 
@@ -124,7 +124,7 @@ Following is an example of such layout:
 </page>
 ```
 
-According to this configuration the Magento_Vault [module](https://glossary.magento.com/module) will render vault payments and all depending JS components will be created.
+According to this configuration the Magento_Vault module will render vault payments and all depending JS components will be created.
 
 ## Specific vault configuration for Admin
 

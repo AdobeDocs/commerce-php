@@ -5,7 +5,7 @@ description: Review high-level prerequisites and steps for building Adobe Commer
 
 # Build
 
-Building your component involves laying out the file structure, creating the necessary configuration files, building out any needed [API](https://glossary.magento.com/api) interfaces and services, and adding any [frontend](https://glossary.magento.com/frontend) parts needed for your component.
+Building your component involves laying out the file structure, creating the necessary configuration files, building out any needed API interfaces and services, and adding any frontend parts needed for your component.
 
 ## Prerequisites
 

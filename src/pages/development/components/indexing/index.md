@@ -5,11 +5,11 @@ description: Transform data to improve the performance of your Adobe Commerce or
 
 # Indexing
 
-Indexing is how Adobe Commerce and Magento Open Source transform data such as products and categories, to improve the performance of your [storefront](https://glossary.magento.com/storefront). As data changes, the transformed data must be updated or reindexed. The application has a very sophisticated architecture that stores lots of merchant data (including [catalog](https://glossary.magento.com/catalog) data, prices, users, and stores) in many database tables. To optimize storefront performance, the application accumulates data into special tables using indexers.
+Indexing is how Adobe Commerce and Magento Open Source transform data such as products and categories, to improve the performance of your storefront. As data changes, the transformed data must be updated or reindexed. The application has a very sophisticated architecture that stores lots of merchant data (including catalog data, prices, users, and stores) in many database tables. To optimize storefront performance, the application accumulates data into special tables using indexers.
 
 For example, if you change the price of an item from $4.99 to $3.99. the application must reindex the price change to display it on your storefront.
 
-Without indexing, the application would have to calculate the price of every product on the fly, taking into account [shopping cart](https://glossary.magento.com/shopping-cart) price rules, bundle pricing, discounts, tier pricing, etc. Loading the price for a product would take a long time, possibly resulting in cart abandonment.
+Without indexing, the application would have to calculate the price of every product on the fly, taking into account shopping cart price rules, bundle pricing, discounts, tier pricing, etc. Loading the price for a product would take a long time, possibly resulting in cart abandonment.
 
 ## Indexing terminology
 
@@ -95,7 +95,7 @@ Database Status|Admin Status|Description
 The database status can be seen when viewing the SQL table `indexer_state`.
 The admin status can be seen when viewing the indexer grid in Admin or when running the index status from the CLI.
 
-The indexing mechanism uses the status value in reindex triggering process. You can check the status of an indexer in the [Admin](https://glossary.magento.com/admin) panel in **System >** Tools **> Index Management** or manually using the [command line](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#view-indexer-status).
+The indexing mechanism uses the status value in reindex triggering process. You can check the status of an indexer in the Admin panel in **System >** Tools **> Index Management** or manually using the [command line](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#view-indexer-status).
 
 ### Using application lock mode for reindex processes
 
@@ -138,7 +138,7 @@ Reindexing can be performed in two modes:
 
 To set these options:
 
-1. Log in to the [Admin](https://glossary.magento.com/magento-admin).
+1. Log in to the Admin.
 1. Click **System >** Tools **> Index Management**.
 1. Select the checkbox next to each type of indexer to change.
 1. From the **Actions** list, click the indexing mode.

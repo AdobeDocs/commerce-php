@@ -9,7 +9,7 @@ import Docs from '/src/pages/_includes/braintree-note.md'
 
 # Payment method configuration
 
-In the `config.xml` file in your `%Vendor_Module%/etc` directory, configure the options of your [payment method](https://glossary.magento.com/payment-method). The following table contains the default options available for any payment method.
+In the `config.xml` file in your `%Vendor_Module%/etc` directory, configure the options of your payment method. The following table contains the default options available for any payment method.
 
 | Option | Description | Value type |
 |------------------------|-----------------------------------------------------------------|-------------------------|
@@ -25,7 +25,7 @@ In the `config.xml` file in your `%Vendor_Module%/etc` directory, configure the 
 | `is_gateway` | is an integration with gateway | Boolean |
 | `merchant_gateway_key` | encrypted merchant credential | string |
 | `model` | [payment method facade](facade-configuration.md) used for integration with Sales and Checkout modules | string |
-| `order_status` | default [order status](https://glossary.magento.com/order-status) | |
+| `order_status` | default order status | |
 | `paymentInfoKeys` | transaction request/response fields displayed on payment information block (can be any fields from payment additional information) | list of comma separated values |
 | `privateInfoKeys` | `privateInfoKeys` fields which should not be displayed in customer payment information block (can be any fields from payment additional information) | |
 | `payment_action` | default action of payment for the payment method (authorize, sale) | `authorize`,`authorize_capture` |

@@ -5,7 +5,7 @@ description: Learn about the different caching technologies that are available t
 
 # Partial caching
 
-Adobe Commerce and Magento Open Source use [Zend_Cache](http://framework.zend.com/manual/1.12/en/zend.cache.html) to interact with the cache storage. However, the applications also have the [Magento\Cache](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache) [library](https://glossary.magento.com/library) for implementing Magento-specific caching. These topics discuss how to configure caching and [cache](https://glossary.magento.com/cache) types.
+Adobe Commerce and Magento Open Source use [Zend_Cache](http://framework.zend.com/manual/1.12/en/zend.cache.html) to interact with the cache storage. However, the applications also have the [Magento\Cache](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache) library for implementing Magento-specific caching. These topics discuss how to configure caching and cache types.
 
 <InlineAlert variant="info" slots="text"/>
 

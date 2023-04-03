@@ -7,17 +7,17 @@ description: Learn about the main types of attributes you can use to extend Adob
 
 There are two types of attributes you can use to extend Adobe Commerce and Magento Open Source functionality:
 
-*  Custom and Entity-Attribute-Value (EAV) attributes—Custom attributes are those added on behalf of a merchant. For example, a merchant might need to add attributes to describe products, such as shape or volume. A merchant can add these attributes in the [Admin](https://glossary.magento.com/magento-admin) panel. See the [merchant documentation](https://docs.magento.com/user-guide/stores/attributes.html) for information about managing custom attributes.
+*  Custom and Entity-Attribute-Value (EAV) attributes—Custom attributes are those added on behalf of a merchant. For example, a merchant might need to add attributes to describe products, such as shape or volume. A merchant can add these attributes in the Admin panel. See the [merchant documentation](https://docs.magento.com/user-guide/stores/attributes.html) for information about managing custom attributes.
 
    Custom attributes are a subset of EAV attributes. Objects that use EAV attributes typically store values in several MySQL tables. The `Customer` and `Catalog` modules are the primary models that use EAV attributes. Other modules, such as `ConfigurableProduct`, `GiftMessage`, and `Tax`, use the EAV functionality for `Catalog`.
 
-*  [Extension attributes](https://glossary.magento.com/extension-attribute). Extension attributes are new in Adobe Commerce and Magento Open Source. They are used to extend functionality and often use more [complex data](https://glossary.magento.com/complex-data) types than custom attributes. These attributes do not appear in the Admin.
+*  Extension attributes. Extension attributes are new in Adobe Commerce and Magento Open Source. They are used to extend functionality and often use more complex data types than custom attributes. These attributes do not appear in the Admin.
 
 ## Custom attributes
 
 `CustomAttributesDataInterface` defines the methods that are called to get and set custom attributes, including `getCustomAttributes()`.
 
-A [module](https://glossary.magento.com/module) has a set of built-in attributes that are always available. The `Catalog` module has several attributes that are defined as EAV attributes, but are treated as built-in attributes. These attributes include:
+A module has a set of built-in attributes that are always available. The `Catalog` module has several attributes that are defined as EAV attributes, but are treated as built-in attributes. These attributes include:
 
 *  attribute_set_id
 *  created_at
@@ -25,7 +25,7 @@ A [module](https://glossary.magento.com/module) has a set of built-in attributes
 *  media_gallery
 *  name
 *  price
-*  [sku](https://glossary.magento.com/sku)
+*  sku
 *  status
 *  store_id
 *  tier_price

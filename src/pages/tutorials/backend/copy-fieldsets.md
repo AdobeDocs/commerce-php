@@ -5,7 +5,7 @@ description: Follow this tutorial to copy custom data from a quote object to an 
 
 # Copy fieldsets
 
-In this tutorial, you will learn to copy custom data from a [quote](https://glossary.magento.com/quote) object to an order object using the [Magento/Framework/DataObject/Copy][0] class.
+In this tutorial, you will learn to copy custom data from a quote object to an order object using the [Magento/Framework/DataObject/Copy][0] class.
 
 ## Step 1: Define your attributes
 

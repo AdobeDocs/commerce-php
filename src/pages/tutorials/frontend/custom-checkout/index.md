@@ -5,7 +5,7 @@ description: Review a list of tutorials focused on customizing the Adobe Commerc
 
 # Customize checkout
 
-[Checkout](https://glossary.magento.com/checkout) is implemented using the [UI components](https://developer.adobe.com/commerce/frontend-core/ui-components/).
+Checkout is implemented using the [UI components](https://developer.adobe.com/commerce/frontend-core/ui-components/).
 Out of the box, the checkout consists of two steps:
 
 -  Shipping Information
@@ -13,11 +13,11 @@ Out of the box, the checkout consists of two steps:
 
 The checkout totals and the corresponding side-bar are only displayed after the first step is completed.
 
-The only [exception](https://glossary.magento.com/exception) is checkout of virtual and/or downloadable products: if there are only these  types of products in the shopping cart, checkout is automatically transformed to one-step procedure, because shipping information is not required.
+The only exception is checkout of virtual and/or downloadable products: if there are only these  types of products in the shopping cart, checkout is automatically transformed to one-step procedure, because shipping information is not required.
 
 <InlineAlert variant="info" slots="text"/>
 
-For the sake of compatibility, upgradability, and easy maintenance, do not edit the default application code. Add your customizations in a custom [module](https://glossary.magento.com/module).
+For the sake of compatibility, upgradability, and easy maintenance, do not edit the default application code. Add your customizations in a custom module.
 
 ## List of available customizations
 

@@ -13,7 +13,7 @@ The following diagram shows the basic components of the Adobe Commerce payment p
 
 ![Payment Gateway Structure](../../../_images/pg_structure.png)
 
-The interaction between the [payment gateway](https://glossary.magento.com/payment-gateway) components looks like following:
+The interaction between the payment gateway components looks like following:
 
 ![Payment Gateway Structure](../../../_images/pg_internal_flow.png)
 

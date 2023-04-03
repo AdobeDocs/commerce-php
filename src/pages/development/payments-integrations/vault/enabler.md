@@ -11,7 +11,7 @@ import Docs from '/src/pages/_includes/braintree-note.md'
 
 Store customers must have the ability to enable and disable credit cards details storing.
 
-Adobe Commerce out-of-the-box provides mechanisms for adding this ability, but you still need to add modifications in your [payment method](https://glossary.magento.com/payment-method) implementation.
+Adobe Commerce out-of-the-box provides mechanisms for adding this ability, but you still need to add modifications in your payment method implementation.
 
 These modifications are the following:
 
@@ -55,9 +55,9 @@ Example ([Magento/Braintree/view/frontend/web/template/payment/form.html](https:
 
 ## Modifying the payment component
 
-The payment component must process the state of the vault-enabling control and update payment `additional_data` before it is sent to the [backend](https://glossary.magento.com/backend).
+The payment component must process the state of the vault-enabling control and update payment `additional_data` before it is sent to the backend.
 
-Commerce has a default vault enabler [UI component](https://glossary.magento.com/ui-component) (`Magento_Vault/js/view/payment/vault-enabler`). In the payment component, you just need to call its `visitAdditionalData` to update the `additional_data` property. The rest is done by the [`\Magento\Vault\Observer\VaultEnableAssigner`](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Vault/Observer/VaultEnableAssigner.php) observer.
+Commerce has a default vault enabler UI component (`Magento_Vault/js/view/payment/vault-enabler`). In the payment component, you just need to call its `visitAdditionalData` to update the `additional_data` property. The rest is done by the [`\Magento\Vault\Observer\VaultEnableAssigner`](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Vault/Observer/VaultEnableAssigner.php) observer.
 
 Example: [the Braintree payment UI component](https://github.com/magento/magento2/tree/2.3/app/code/Magento/Braintree/view/frontend/web/js/view/payment/method-renderer/cc-form.js)
 

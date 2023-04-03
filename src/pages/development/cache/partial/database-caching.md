@@ -10,7 +10,7 @@ This topic discusses how to use the database for caching. After you complete the
 This topic discusses how to set up database caching and how to verify database caching is working. We discuss the following options:
 
 *  Using the `default` cache frontend, in which case you modify `di.xml` only.
-*  Using a custom [cache](https://glossary.magento.com/cache) frontend, in which case you modify `env.php` only.
+*  Using a custom cache frontend, in which case you modify `env.php` only.
 
 <InlineAlert variant="warning" slots="text"/>
 
@@ -19,7 +19,7 @@ Varnish is designed to accelerate the HTTP protocol.
 
 ## Prerequisites
 
-Before you continue, if you're using your own frontend cache, make sure you [associate cache frontends with cache types]. If you're using the `default` [frontend](https://glossary.magento.com/frontend) cache, you don't have to do that.
+Before you continue, if you're using your own frontend cache, make sure you [associate cache frontends with cache types]. If you're using the `default` frontend cache, you don't have to do that.
 
 We provide [sample configurations] at the end of this topic.
 
@@ -99,7 +99,7 @@ To modify `di.xml`:
 
 ## Database caching using a custom cache frontend
 
-This section discusses how to set up database caching with a custom [cache frontend](https://glossary.magento.com/cache-frontend).
+This section discusses how to set up database caching with a custom cache frontend.
 
 <InlineAlert variant="info" slots="text"/>
 
@@ -158,7 +158,7 @@ Use the following steps:
    rm -rf <magento_root>/var/cache/* <magento_root>/var/page_cache/* <magento_root>/generated/metadata/* <magento_root>/generated/code/*
    ```
 
-1. In a web browser, go to any cacheable page (such as the [storefront](https://glossary.magento.com/storefront) front door page).
+1. In a web browser, go to any cacheable page (such as the storefront front door page).
 
    If exceptions display, verify `di.xml` syntax and try again. (To see exceptions in the browser, you must [enable developer mode].)
 

@@ -5,7 +5,7 @@ description: Extend Adobe Commerce and Magento Open Source by running custom cod
 
 # Events and observers
 
-Working with events and observers is one of the main ways to extend Adobe Commerce and Magento Open Source functionality. The events and observers implementation in Adobe Commerce and Magento Open Source are based on the [publish-subscribe pattern](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern). Using events and observers, you can run your custom code in response to a specific [event](https://glossary.magento.com/event) or even a custom event.
+Working with events and observers is one of the main ways to extend Adobe Commerce and Magento Open Source functionality. The events and observers implementation in Adobe Commerce and Magento Open Source are based on the [publish-subscribe pattern](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern). Using events and observers, you can run your custom code in response to a specific event or even a custom event.
 
 ## Events
 
@@ -158,7 +158,7 @@ class AnotherObserver implements ObserverInterface
 
 Observers can be configured to watch certain events in the `events.xml` file.
 
-The `observer` [xml](https://glossary.magento.com/xml) element has the following properties:
+The `observer` xml element has the following properties:
 
 *  `name` (required) - The name of the observer for the event definition.
 *  `instance` (required) - The fully qualified class name of the observer.

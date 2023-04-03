@@ -9,7 +9,7 @@ In addition to understanding fundamental programming designs/concepts, you are e
 
 ## Avoid modification of the Core
 
-The core code is the default code that comes with the application. You should never edit the core code because code changes occur between version upgrades and any changes you make will get overwritten. Try achieving your desired behavior with plugins, overriding interface preferences, and [event](https://glossary.magento.com/event) observers.
+The core code is the default code that comes with the application. You should never edit the core code because code changes occur between version upgrades and any changes you make will get overwritten. Try achieving your desired behavior with plugins, overriding interface preferences, and event observers.
 
 If you feel that the application can be improved with your core code changes, please consider [contributing via Git](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
 
@@ -19,7 +19,7 @@ To create the optimum module, you should get to know the application architectur
 
 ## Check your extension configurations
 
-Make sure your [extension](https://glossary.magento.com/extension) is configured correctly in each of your extension's configuration files. Invalid or unexpected values will cause your extension to behave incorrectly.
+Make sure your extension is configured correctly in each of your extension's configuration files. Invalid or unexpected values will cause your extension to behave incorrectly.
 
 ## Know and leverage the application framework
 
@@ -29,7 +29,7 @@ For example:
 
 -  Instead of creating custom validators from scratch, implement the [`\Magento\Framework\Validator\ValidatorInterface`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Validator/ValidatorInterface.php).
 -  Instantiating a database connection can be expensive and unnecessary. The application provides resource models for performing SQL commands. (See [Persistence Layer](../../architecture/layers/persistence.md))
--  Consider using framework conventions instead of low-level or [PHP](https://glossary.magento.com/php) functionality.
+-  Consider using framework conventions instead of low-level or PHP functionality.
 -  Use the  [`Magento\Framework\Data\Collection`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Data/Collection.php) class to retrieve a collection of filtered objects instead of directly querying the database.
 
 ## Use dependency injection
@@ -43,9 +43,9 @@ Make sure your extension adheres to the MVC Pattern, and that it does not violat
 Some important things to check in your extensions:
 
 -  Make sure your Business Logic, Configuration, and SQL are implemented in the correct places.
--  Make sure that CSS, JavaScript, HTML, and [XML](https://glossary.magento.com/xml) code are all in the appropriate files (i.e. they should not be inline).
+-  Make sure that CSS, JavaScript, HTML, and XML code are all in the appropriate files (i.e. they should not be inline).
 -  Use appropriate logic in a Block, Helper, Template, Controller, or Model.
--  Ensure correct [module](https://glossary.magento.com/module) design.
+-  Ensure correct module design.
 
 ## Use the PHP_CodeSniffer tool
 

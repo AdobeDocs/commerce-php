@@ -13,17 +13,17 @@ This page is a compilation of frequently asked coding questions by the Magento O
 *  [PHP](http://php.net/) - This is the programming language used for developing application code.
 *  [HTML](https://en.wikipedia.org/wiki/HTML), [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets), and [JavaScript](https://www.javascript.com/) - Languages used for [frontend development](https://developer.adobe.com/commerce/frontend-core/guide/).
 *  [Architecture basics overview](../../architecture/basics/index.md) - Developers should be familiar with the architectural concepts, such as the [Model-View-Controller](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) pattern and the [Command Query Responsibility Segregation](http://martinfowler.com/bliki/CQRS.html) principle.
-*  [Dependency Injection](../../development/components/dependency-injection.md) - An important [design pattern](https://glossary.magento.com/design-pattern) used to handle dependencies across classes and modules.
+*  [Dependency Injection](../../development/components/dependency-injection.md) - An important design pattern used to handle dependencies across classes and modules.
 
 ## How can my extension distinguish between the Magento Open Source and the Adobe Commerce?
 
 The correct edition can be obtained through `\Magento\Framework\App\ProductMetadataInterface::getEdition`.
 
 In Magento Open Source that interface maps to the concrete implementation `Magento\Framework\AppInterface\ProductMetadata`.
-However, in Adobe Commerce, the Commerce [module](https://glossary.magento.com/module) will override that mapping and the interface will be implemented by `\Magento\Enterprise\Model\ProductMetadata`.
+However, in Adobe Commerce, the Commerce module will override that mapping and the interface will be implemented by `\Magento\Enterprise\Model\ProductMetadata`.
 
-Just relying on the interface through [dependency injection](https://glossary.magento.com/dependency-injection) will get you the right class, and calling "getEdition" will return the right answer.
+Just relying on the interface through dependency injection will get you the right class, and calling "getEdition" will return the right answer.
 
 ## How do I configure my module so that it appears in a specific place on the Admin?
 
-Use the `<Module Directory>/etc/adminhtml/menu.xml` file to configure from where on the [Admin](https://glossary.magento.com/admin) your [extension](https://glossary.magento.com/extension) is accessible.
+Use the `<Module Directory>/etc/adminhtml/menu.xml` file to configure from where on the Admin your extension is accessible.

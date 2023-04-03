@@ -9,7 +9,7 @@ import Docs from '/src/pages/_includes/braintree-note.md'
 
 # Vault payment configuration
 
-You need to configure the main parameters of the vault implementation in the `config.xml` file of your [payment method](https://glossary.magento.com/payment-method) module:
+You need to configure the main parameters of the vault implementation in the `config.xml` file of your payment method module:
 
 -  `model` - instance of the vault payment implementation, [configured in `di.xml`](vault-di.md).
 

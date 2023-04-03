@@ -5,11 +5,11 @@ description: Review answers to frequently asked questions about integrating exte
 
 # Admin FAQ
 
-This page is a compilation of frequently asked questions by the Magento Open Source Community about extensions integrating with the [Admin](https://glossary.magento.com/admin).
+This page is a compilation of frequently asked questions by the Magento Open Source Community about extensions integrating with the Admin.
 
 ## Where should my extension appear in the Admin?
 
-The appropriate place for your [extension](https://glossary.magento.com/extension) to appear in the Admin depends on what it does. For a list of extension types and their proper spot in the Admin, please consult the article: [Admin panel placement and design](placement-and-design.md).
+The appropriate place for your extension to appear in the Admin depends on what it does. For a list of extension types and their proper spot in the Admin, please consult the article: [Admin panel placement and design](placement-and-design.md).
 
 ____
 

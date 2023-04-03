@@ -31,7 +31,7 @@ Test your component by deploying Magento Open Source and adding the component to
 
 Before you publish your component, test installing it.
 
-1. [Package your component] in a GitHub repository that is accessible by the machine on which you run the [Admin](https://glossary.magento.com/magento-admin).
+1. [Package your component] in a GitHub repository that is accessible by the machine on which you run the Admin.
 1. On that machine, create a static route from `https://repo.magento.com` to your GitHub repository.
 
     To create a static route, add a line similar to the following to your `hosts` file:
@@ -45,7 +45,7 @@ Before you publish your component, test installing it.
 
 ## More information
 
-See these resources for testing in [PHP](https://glossary.magento.com/php) and validating components:
+See these resources for testing in PHP and validating components:
 
 *  The [Coding Standard] provides a set of rules and sniffs for the [PHP_CodeSniffer] tool
 *  [Technical Deep Dive: How to Pass the Commerce Marketplace Extension Quality Program] (video) from Magento Imagine 2017

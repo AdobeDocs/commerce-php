@@ -9,7 +9,7 @@ A typical software development flow is as follows:
 
 **Local dev machine** > **QA/integration server** > **Preview server** (optional) > **Production server**
 
-Whether you are writing a new [extension](https://glossary.magento.com/extension) or contributing to the [code base](https://github.com/magento/magento2), the first step for any developer is setting up a development environment.
+Whether you are writing a new extension or contributing to the [code base](https://github.com/magento/magento2), the first step for any developer is setting up a development environment.
 This article will guide you in setting up and optimizing your local development machine.
 
 ## Local development machine
@@ -37,7 +37,7 @@ The following is a list of the different ways you can install Adobe Commerce or 
 
 The following is a list of optimizations you can make on your local development machine
 
-*  We recommend installing and using the latest supported version of [PHP](https://glossary.magento.com/php) 7 to increase performance.
+*  We recommend installing and using the latest supported version of PHP 7 to increase performance.
 *  Replace your MySQL database with [Percona](https://www.percona.com/software/mysql-database/percona-server).
 *  Make sure you install and enable [PHP OPcache](http://php.net/manual/en/intro.opcache.php).
 *  Xdebug is off by default. Enable this feature only when you need it because it requires a lot of memory and degrades performance.
@@ -46,6 +46,6 @@ The following is a list of optimizations you can make on your local development 
 *  If you need sample data, you can install it using [composer](https://devdocs.magento.com/guides/v2.4/install-gde/install/web/install-web-sample-data-composer.html) or by [cloning repositories](https://devdocs.magento.com/guides/v2.4/install-gde/install/web/install-web-sample-data-clone.html).
 *  To speed up frontend development, [turn off merging of CSS and JavaScript](https://docs.magento.com/user-guide/system/file-optimization.html).
 *  Make sure [caching](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/caching-overview.html) is turned on (this is the default behavior).
-   Generally, only page [cache](https://glossary.magento.com/cache) and block cache should be turned off for development and turned back on when testing.
+   Generally, only page cache and block cache should be turned off for development and turned back on when testing.
 *  [Opcache timestamp validation](http://php.net/manual/en/opcache.configuration.php#ini.opcache.validate-timestamps) should always be on for development.
    Development is impossible with opcache on and revalidation off because any PHP modification would require a cache reset.

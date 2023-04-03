@@ -18,7 +18,7 @@ To implement your own indexer, add the following code in your module:
 Your custom indexer class should implement [\Magento\Framework\Indexer\ActionInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Indexer/ActionInterface.php), and the indexer should be able to perform three types of operations:
 
 *  Row reindex: processing a single entry from a dictionary; responsibility of `executeRow($id)`
-*  List reindex: processing a set of dictionary entries; responsibility of `executeList($ids)`, where `$ids` is an array of [entity](https://glossary.magento.com/entity) IDs
+*  List reindex: processing a set of dictionary entries; responsibility of `executeList($ids)`, where `$ids` is an array of entity IDs
 *  Full reindex: processing all entities from a specific dictionary; responsibility of `executeFull()`
 
 ### Indexer configuration
@@ -75,7 +75,7 @@ For example:
 </config>
 ```
 
-All indexers related to a [module](https://glossary.magento.com/module) should be declared in one file.
+All indexers related to a module should be declared in one file.
 
 ### MView configuration
 

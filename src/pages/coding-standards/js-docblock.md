@@ -5,7 +5,7 @@ description: Review standards for adding inline documentation to JavaScript code
 
 # JavaScript DocBlock standard
 
-To add [JavaScript](https://glossary.magento.com/javascript) code inline documentation, follow these guidelines. Some parts of the code may not comply with this standard, but we are working to gradually improve this. Following these standard is optional for third-party developers, but will help to create consistent, clean, and easy to read inline documentation.
+To add JavaScript code inline documentation, follow these guidelines. Some parts of the code may not comply with this standard, but we are working to gradually improve this. Following these standard is optional for third-party developers, but will help to create consistent, clean, and easy to read inline documentation.
 This standard are a subset of [Google JavaScript Style Guide](https://google.github.io/styleguide/javascriptguide.xml) regulations.
 
 Use [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt) to interpret the "must," "must not," "required," "shall," "shall not," "should," "should not," "recommended," "may," and "optional" keywords.
@@ -36,7 +36,7 @@ Example:
 */
 ```
 
-Many tools extract [metadata](https://glossary.magento.com/metadata) from JSDoc comments to validate and optimize the code.
+Many tools extract metadata from JSDoc comments to validate and optimize the code.
 
 ### JSDoc indentation
 
@@ -227,7 +227,7 @@ Type names must be enclosed in curly braces. If the type is omitted, the compile
  * @param {string|number|null} term An itemName,
  *     or itemId, or null to search everything.
  */
-[namespace](https://glossary.magento.com/namespace).Storage.prototype.query = function(groupNum, term) {
+namespace.Storage.prototype.query = function(groupNum, term) {
    // ...
 };
 ```
@@ -250,7 +250,7 @@ namespace.Storage.prototype.getLastId = function() {
 
 #### @this
 
-The type of the object in whose context a particular method is called. Required when the this [keyword](https://glossary.magento.com/keyword) is referenced from a function that is not a prototype method.
+The type of the object in whose context a particular method is called. Required when the this keyword is referenced from a function that is not a prototype method.
 
 ```javascript
 pinto.chat.RosterWidget.extern('getRosterElement',
