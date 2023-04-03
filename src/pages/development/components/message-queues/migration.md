@@ -7,7 +7,7 @@ description: Use these examples to migrate your message queue configuration betw
 
 ## Migrate from 2.1 to 2.2
 
-To upgrade the message queues for Adobe Commerce or Magento Open Source 2.1, you must create the following files in the `<module>/etc` directory for each [module](https://glossary.magento.com/module) that will use the message queue framework.
+To upgrade the message queues for Adobe Commerce or Magento Open Source 2.1, you must create the following files in the `<module>/etc` directory for each module that will use the message queue framework.
 
 *  `queue_consumer.xml` - Defines the relationship between an existing queue and its consumer.
 *  `queue_topology.xml`- Defines the message routing rules and declares queues and exchanges.
@@ -71,7 +71,7 @@ To upgrade from Adobe Commerce or Magento Open Source 2.0, you must create the f
 
 *  `queue_consumer.xml` - Defines the relationship between an existing queue and its consumer.
 *  `queue_topology.xml`- Defines the message routing rules.
-*  `queue_publisher.xml` - Defines the relationship between a topic and its [publisher](https://glossary.magento.com/publisher-subscriber-pattern).
+*  `queue_publisher.xml` - Defines the relationship between a topic and its publisher.
 
 The existing `queue.xml` file is deprecated.
 

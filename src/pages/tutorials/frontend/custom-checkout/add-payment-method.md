@@ -5,12 +5,12 @@ description: Follow this tutorial to create a custom payment method in the Adobe
 
 # Add a custom payment method to checkout
 
-Out of the box, [checkout](https://glossary.magento.com/checkout) consists of two steps:
+Out of the box, checkout consists of two steps:
 
 -  Shipping Information
 -  Review and Payment Information
 
-On the Review and Payment Information step the enabled payment methods are rendered. This topic describes how to add your custom [payment method](https://glossary.magento.com/payment-method) to this list.
+On the Review and Payment Information step the enabled payment methods are rendered. This topic describes how to add your custom payment method to this list.
 
 To implement a payment method rendering in checkout, you need to take the following steps:
 
@@ -21,7 +21,7 @@ To implement a payment method rendering in checkout, you need to take the follow
 
 ## Step 1: Create the .js component file
 
-Your payment method renderer must be implemented as a [UI component](https://glossary.magento.com/ui-component). For the sake of compatibility, upgradability and easy maintenance, do not edit the default application code, add your customizations in a separate module. For your checkout customization to be applied correctly, your custom module should depend on the `Magento_Checkout` module. Module dependencies are specified in the [module's `composer.json`](../../../development/build/composer-integration.md).
+Your payment method renderer must be implemented as a UI component. For the sake of compatibility, upgradability and easy maintenance, do not edit the default application code, add your customizations in a separate module. For your checkout customization to be applied correctly, your custom module should depend on the `Magento_Checkout` module. Module dependencies are specified in the [module's `composer.json`](../../../development/build/composer-integration.md).
 
 Do not use `Ui` for your custom module name, because `%Vendor%_Ui` notation, required when specifying paths, might cause issues.
 
@@ -78,10 +78,10 @@ If your payment method requires credit cards information, you might use the appl
 
 ### Access the system config data
 
-Your payment method might need to get data that cannot be defined in [layout](https://glossary.magento.com/layout) configuration, JS components or templates directly, for example, data from the application system config.
+Your payment method might need to get data that cannot be defined in layout configuration, JS components or templates directly, for example, data from the application system config.
 This configuration is stored in the `window.checkoutConfig` variable that is defined in root checkout template.
 
-In order to get access to the system configuration, your payment method or a group of payment methods has to implement the [`\Magento\Checkout\Model\ConfigProviderInterface`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Checkout/Model/ConfigProviderInterface.php) interface, and the class implementing it must be injected to the composite config provider via DI [frontend](https://glossary.magento.com/frontend) configuration. The following code samples illustrate this.
+In order to get access to the system configuration, your payment method or a group of payment methods has to implement the [`\Magento\Checkout\Model\ConfigProviderInterface`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Checkout/Model/ConfigProviderInterface.php) interface, and the class implementing it must be injected to the composite config provider via DI frontend configuration. The following code samples illustrate this.
 
 This is a sample `.php` file implementing `\Magento\Checkout\Model\ConfigProviderInterface`:
 
@@ -149,7 +149,7 @@ define(
 );
 ```
 
-If your [module](https://glossary.magento.com/module) adds several payment methods, you can register all payment methods renderers in one file.
+If your module adds several payment methods, you can register all payment methods renderers in one file.
 
 ## Step 3: Create the template for the payment method component
 

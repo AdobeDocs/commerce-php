@@ -10,7 +10,7 @@ Every release includes a change in the codebase. The scope of the change determi
 ## Public vs private code changes
 
 A module's codebase consists of public and private code.
-Public code includes Public [API](https://glossary.magento.com/api)(indicated by the `@api` docblock tag) and Public Customization Points.
+Public code includes Public API(indicated by the `@api` docblock tag) and Public Customization Points.
 All other code is considered private.
 
 Changes in public code always trigger MINOR or MAJOR version increases.

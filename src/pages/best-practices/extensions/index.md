@@ -5,7 +5,7 @@ description: Review coding best practices for Adobe Commerce and Magento Open So
 
 # Extension coding
 
-The coding best practices presented in this section should be known and understood by you, the developer, when creating or maintaining your extensions. This ensures that the [extension](https://glossary.magento.com/extension) you develop behaves and functions correctly within the application architecture. This guide is not only meant to educate you about coding best practices, but to also highlight some pitfalls we have seen other extension developers fall into so that you may avoid them.
+The coding best practices presented in this section should be known and understood by you, the developer, when creating or maintaining your extensions. This ensures that the extension you develop behaves and functions correctly within the application architecture. This guide is not only meant to educate you about coding best practices, but to also highlight some pitfalls we have seen other extension developers fall into so that you may avoid them.
 
 For in depth content about creating extensions, see the [PHP Developer Guide](../../development/index.md).
 
@@ -59,7 +59,7 @@ Not following this practice is a code standards violation and impacts your exten
 
 [Object composition](https://en.wikipedia.org/wiki/Object_composition) is the programming concept of combining class objects and data types to create a more complex class. The classes and data types are used together to produce a desired functionality.
 
-For Magento 2 [extension](https://glossary.magento.com/extension) development, we encourage the use of object composition over class inheritance. Using composition over inheritance makes your extension easier to maintain when class changes occur and update when new features need to be implemented.
+For Magento 2 extension development, we encourage the use of object composition over class inheritance. Using composition over inheritance makes your extension easier to maintain when class changes occur and update when new features need to be implemented.
 
 ### Using around plugins
 

@@ -7,7 +7,7 @@ description: Manage Adobe Commerce and Magento Open Source components using the 
 
 After you have built the component and are ready to enable it in your environment, do the following:
 
-1. Disable the [cache](https://glossary.magento.com/cache) under `System->Cache Management`.
+1. Disable the cache under `System->Cache Management`.
 1. Enter the following in the command line:
 
    ```bash

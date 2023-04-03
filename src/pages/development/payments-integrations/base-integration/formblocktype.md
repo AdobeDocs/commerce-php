@@ -9,12 +9,12 @@ import Docs from '/src/pages/_includes/braintree-note.md'
 
 # Payment info rendering in Admin checkout
 
-The payment information form rendering in [Admin](https://glossary.magento.com/admin) order creation is defined by the block class, its template and [layout](https://glossary.magento.com/layout).
+The payment information form rendering in Admin order creation is defined by the block class, its template and layout.
 
 `formBlockType` is one of the arguments you must [configure for the payment method facade](facade-configuration.md).
 
 This block is used to display payment form on billing form in Admin panel. In
-most cases it is enough to use the `\Magento\Payment\Block\Form\Cc`. All payments details are displayed according to specified keys in `paymentInfoKeys` option in [module](https://glossary.magento.com/module) configuration.
+most cases it is enough to use the `\Magento\Payment\Block\Form\Cc`. All payments details are displayed according to specified keys in `paymentInfoKeys` option in module configuration.
 
 ## Example of custom formBlockType: Braintree payment method implementation
 

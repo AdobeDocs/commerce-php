@@ -7,7 +7,7 @@ description: Use this example to create your own bulk operation in Adobe Commerc
 
 This document describes how bulk operations can be implemented. There are three primary tasks to accomplish this:
 
-*  Create a [publisher](https://glossary.magento.com/publisher-subscriber-pattern) that sends messages to the message queue
+*  Create a publisher that sends messages to the message queue
 *  Create a consumer that receives and processes messages
 *  Configure the message queues
 
@@ -287,7 +287,7 @@ For more information about the `di.xml` file, see [Dependency Injection](../depe
 
 ### Create `communication.xml`
 
-The `communication.xml` file defines aspects of the message queue system that apply to all topics for the [module](https://glossary.magento.com/module). Create this file with the following contents:
+The `communication.xml` file defines aspects of the message queue system that apply to all topics for the module. Create this file with the following contents:
 
 ```xml
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Communication/etc/communication.xsd">

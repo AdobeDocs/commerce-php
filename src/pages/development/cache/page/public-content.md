@@ -76,7 +76,7 @@ class DynamicController extends Action
 
 ## Configure page variations
 
-Most caching servers and proxies use a [URL](https://glossary.magento.com/url) as a key for cache records. However, Adobe Commerce and Magento Open Source URLs are not unique *enough* to allow caching by URL only. Cookie and session data in the URL can also lead to undesirable side effects,  including:
+Most caching servers and proxies use a URL as a key for cache records. However, Adobe Commerce and Magento Open Source URLs are not unique *enough* to allow caching by URL only. Cookie and session data in the URL can also lead to undesirable side effects,  including:
 
 -  Collisions in cache storage
 -  Unwanted information leaks (e.g., French language website partially visible on an English language website, prices for customer group visible in public, etc.)
@@ -148,11 +148,11 @@ sub vcl_hash {
 
 ## Invalidate public content
 
-You can clear cached content immediately after a entity changes. The application uses `IdentityInterface` to link entities in the application with cached content and to know what cache to clear when an [entity](https://glossary.magento.com/entity) changes.
+You can clear cached content immediately after a entity changes. The application uses `IdentityInterface` to link entities in the application with cached content and to know what cache to clear when an entity changes.
 
 This section shows you how to tell the application what cache to clear when you change an entity.
 
-First, your entity [module](https://glossary.magento.com/module) must implement [`Magento/Framework/DataObject/IdentityInterface`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/DataObject/IdentityInterface.php) as follows:
+First, your entity module must implement [`Magento/Framework/DataObject/IdentityInterface`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/DataObject/IdentityInterface.php) as follows:
 
 ```php
 <?php

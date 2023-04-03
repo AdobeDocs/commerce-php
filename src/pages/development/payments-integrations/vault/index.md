@@ -9,7 +9,7 @@ import Docs from '/src/pages/_includes/braintree-note.md'
 
 # Adding vault integration
 
-Vault as a [payment method](https://glossary.magento.com/payment-method) provides store customers with ability to use the previously saved credit card information for [checkout](https://glossary.magento.com/checkout). This information is stored safely on the side of trusted payments gateways (Braintree, PayPal). Not storing the sensitive credit card information is one of the [PCI compliance](https://www.pcisecuritystandards.org/) requirements.
+Vault as a payment method provides store customers with ability to use the previously saved credit card information for checkout. This information is stored safely on the side of trusted payments gateways (Braintree, PayPal). Not storing the sensitive credit card information is one of the [PCI compliance](https://www.pcisecuritystandards.org/) requirements.
 
 The [Commerce Vault](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Vault) is implemented using the Adobe Commerce [payment gateway](../payment-gateway/index.md). It is used in the out-of-the-box vault implementation for the Braintree payment method. Third party developers can use it to add vault to their custom payment provider integration.
 
@@ -24,7 +24,7 @@ The main difference is that when vault is used, it defines what command is requi
 ## Adding vault: general steps
 
 Commerce vault implementation provides that vault is available as a separate payment method during order creation (storefront or admin). But technically it is tightly related to the corresponding payment provider integration.
-You do not need to create a new [module](https://glossary.magento.com/module) for vault implementation. All required configuration and entities are added to the module of the payment provider integration.
+You do not need to create a new module for vault implementation. All required configuration and entities are added to the module of the payment provider integration.
 
 The topics of this chapter describe how to add the vault functionality to a payment method (the payment method must be implemented using Commerce payment gateway):
 

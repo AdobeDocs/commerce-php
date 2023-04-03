@@ -426,7 +426,7 @@ You need to read configuration from different sources (like database or filesyst
 
 3.1. There SHOULD be no circular dependencies between objects.
 
-3.2. The `app/etc/di.xml` file MUST contain only framework-level [Dependency Injection](https://glossary.magento.com/dependency-injection) (DI) settings.
+3.2. The `app/etc/di.xml` file MUST contain only framework-level Dependency Injection (DI) settings.
 
 3.3. All modular DI settings (except for Presentation layer configuration) SHOULD be stored in `<module_dir>/etc/di.xml`.
 
@@ -436,7 +436,7 @@ You need to read configuration from different sources (like database or filesyst
 
 4.1. Around-plugins SHOULD only be used when behavior of an original method is supposed to be substituted in certain scenarios.
 
-4.2. Plugins SHOULD NOT be used within own [module](https://glossary.magento.com/module).
+4.2. Plugins SHOULD NOT be used within own module.
 
 4.3. Plugins SHOULD NOT be added to data objects.
 
@@ -456,7 +456,7 @@ You need to read configuration from different sources (like database or filesyst
 
 5.2. Exceptions MUST NOT be handled in the same function where they are thrown.
 
-5.3. If a function A calls function B, and function B might throw an exception, this [exception](https://glossary.magento.com/exception) MUST be either processed by function A or declared by the @throws annotation in the documentation block of function A.
+5.3. If a function A calls function B, and function B might throw an exception, this exception MUST be either processed by function A or declared by the @throws annotation in the documentation block of function A.
 
 5.4. Exceptions MUST NOT handle message output. It is the processing code that decides how to process an exception.
 
@@ -468,7 +468,7 @@ You need to read configuration from different sources (like database or filesyst
 
 5.8. All direct communications with third-party libraries MUST be wrapped with a try/catch statement.
 
-5.9. `\Exception` SHOULD be caught only in the code that calls third-party libraries, in addition to catching specific exceptions thrown by the [library](https://glossary.magento.com/library).
+5.9. `\Exception` SHOULD be caught only in the code that calls third-party libraries, in addition to catching specific exceptions thrown by the library.
 
 5.10. `\Exception` SHOULD NOT be thrown in Front Controller and Action Controllers.
 
@@ -510,7 +510,7 @@ You need to read configuration from different sources (like database or filesyst
 
 *  __Command__ for Actions
 
-*  __Query__ for [Layout](https://glossary.magento.com/layout) and its elements (Blocks and UI Components)
+*  __Query__ for Layout and its elements (Blocks and UI Components)
 
 6.2.2. Request, Response, Session, Store Manager and Cookie objects MUST be used only in the Presentation layer.
 
@@ -628,9 +628,9 @@ You need to read configuration from different sources (like database or filesyst
 
 *  application codebase
 
-*  [XML](https://glossary.magento.com/xml) configuration
+*  XML configuration
 
-*  generated code and [static files](https://glossary.magento.com/static-files)
+*  generated code and static files
 
 *  database structure
 
@@ -638,11 +638,11 @@ You need to read configuration from different sources (like database or filesyst
 
 *  configuration scopes (stores/store groups/websites)
 
-*  [CMS](https://glossary.magento.com/cms) entities
+*  CMS entities
 
 7.3. Environment Configuration includes information about application services connection.
 
-7.4. Data includes the business [entity](https://glossary.magento.com/entity) data.
+7.4. Data includes the business entity data.
 
 7.5. Code and Environment Configuration MUST not be stored in Data Storage.
 
@@ -664,7 +664,7 @@ You need to read configuration from different sources (like database or filesyst
 
 8.5. Only the `@api` code of any module can be referenced by other modules.
 
-8.6. A module MUST NOT contain references to [theme](https://glossary.magento.com/theme) resources.
+8.6. A module MUST NOT contain references to theme resources.
 
 8.7. A component MUST NOT rely either on dependencies of dependencies or on dependencies of the project it is included in (e.g., Adobe Commerce or Magento Open Source application). All component dependencies MUST be stated explicitly.
 
@@ -672,15 +672,15 @@ You need to read configuration from different sources (like database or filesyst
 
 9.1. All Client-Server calls must follow the [HTTP protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol).
 
-9.2. All customer-agnostic data (Products, Categories, CMS Pages) MUST be rendered on a server and cached in a public [cache](https://glossary.magento.com/cache) server (Varnish).
+9.2. All customer-agnostic data (Products, Categories, CMS Pages) MUST be rendered on a server and cached in a public cache server (Varnish).
 
-9.3. All customer-specific data MUST be rendered on the browser side using a [JavaScript](https://glossary.magento.com/javascript) (JS) application.
+9.3. All customer-specific data MUST be rendered on the browser side using a JavaScript (JS) application.
 
-9.4. [HTML](https://glossary.magento.com/html) [markup](https://glossary.magento.com/markup) generated on server MUST NOT contain user-specific data.
+9.4. HTML markup generated on server MUST NOT contain user-specific data.
 
 9.5. HTML markup generated on server MUST NOT contain session-specific data (e.g. a form element with a CSRF token).
 
-9.6. A JS application MAY receive customer-specific data using the CustomerData JS [API](https://glossary.magento.com/api).
+9.6. A JS application MAY receive customer-specific data using the CustomerData JS API.
 
 9.7. All state-modifying requests from a browser SHOULD be performed with AJAX requests.
 
@@ -694,7 +694,7 @@ You need to read configuration from different sources (like database or filesyst
 
 ## 10. JavaScript (JS) application
 
-10.1. The [UI Component](https://glossary.magento.com/ui-component) framework MUST be used to build frontend applications.
+10.1. The UI Component framework MUST be used to build frontend applications.
 
 10.2. Only private content SHOULD be rendered in browser.
 
@@ -817,7 +817,7 @@ You need to read configuration from different sources (like database or filesyst
 
 12.1. Both REST and SOAP APIs MUST be exposed.
 
-12.2. All [Web API](https://glossary.magento.com/web-api) GET endpoints MUST return lists of entities.
+12.2. All Web API GET endpoints MUST return lists of entities.
 
 ## 13. Command line interface (CLI)
 
@@ -831,7 +831,7 @@ You need to read configuration from different sources (like database or filesyst
 
 ## 14. Events
 
-14.1. All values (including objects) passed to an [event](https://glossary.magento.com/event) MUST NOT be modified in the event observer. Instead, plugins SHOULD BE used for modifying the input or output of a function.
+14.1. All values (including objects) passed to an event MUST NOT be modified in the event observer. Instead, plugins SHOULD BE used for modifying the input or output of a function.
 
 Example:
 

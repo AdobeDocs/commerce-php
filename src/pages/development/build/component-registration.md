@@ -17,7 +17,7 @@ Register modules with:
 ComponentRegistrar::register(ComponentRegistrar::MODULE, '<VendorName_ModuleName>', __DIR__);
 ```
 
-Here `<VendorName>` is the name of the company providing the [module](https://glossary.magento.com/module) and `<ModuleName>` is the name of the module.
+Here `<VendorName>` is the name of the company providing the module and `<ModuleName>` is the name of the module.
 
 Avoid using "Ui" for your custom module name because the <code>%Vendor%_Ui</code> notation, required when specifying paths, might cause issues.
 
@@ -37,7 +37,7 @@ Register themes with:
 ComponentRegistrar::register(ComponentRegistrar::THEME, '<area>/<vendor>/<theme name>', __DIR__);
 ```
 
-Here `<area>` is the functional area of the module (frontend, controller, and so on.), `<vendor>` is the name of the company providing the theme, and `<theme name>` is the name of the [theme](https://glossary.magento.com/theme).
+Here `<area>` is the functional area of the module (frontend, controller, and so on.), `<vendor>` is the name of the company providing the theme, and `<theme name>` is the name of the theme.
 
 ### Example
 

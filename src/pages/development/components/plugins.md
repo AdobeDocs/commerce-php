@@ -9,7 +9,7 @@ A plugin, or interceptor, is a class that modifies the behavior of public class 
 
 Extensions that wish to intercept and change the behavior of a *public method* can create a `Plugin` class.
 
-This [interception](https://glossary.magento.com/interception) approach reduces conflicts among extensions that change the behavior of the same class or method. Your `Plugin` class implementation changes the behavior of a class function, but it does not change the class itself. Adobe Commerce and Magento Open Source call these interceptors sequentially according to a configured sort order, so they do not conflict with one another.
+This interception approach reduces conflicts among extensions that change the behavior of the same class or method. Your `Plugin` class implementation changes the behavior of a class function, but it does not change the class itself. Adobe Commerce and Magento Open Source call these interceptors sequentially according to a configured sort order, so they do not conflict with one another.
 
 ## Limitations
 
@@ -26,7 +26,7 @@ Plugins can not be used on following:
 
 ## Declaring a plugin
 
-The `di.xml` file in your [module](https://glossary.magento.com/module) declares a plugin for a class object:
+The `di.xml` file in your module declares a plugin for a class object:
 
 ```xml
 <config>
@@ -318,7 +318,7 @@ class MyUtilityUpdater
 }
 ```
 
-Note if you miss `= null` and the applicationcalls the original method with `null`, [PHP](https://glossary.magento.com/php) would throw a fatal error as your plugin does not accept `null`.
+Note if you miss `= null` and the applicationcalls the original method with `null`, PHP would throw a fatal error as your plugin does not accept `null`.
 
 You are responsible for forwarding the arguments from the plugin to the `proceed` callable. If you are not using/modifying the arguments, you could use variadics and argument unpacking to achieve this:
 
@@ -550,7 +550,7 @@ Classes and interfaces that are implementations of, or inherit from, classes tha
 
 The application uses plugins defined in the global scope when the system is in a specific area (such as frontend or backend). You can extend or override these global plugin configurations with an area's `di.xml` file.
 
-For example, the developer can disable a global plugin in the [backend](https://glossary.magento.com/backend) area by disabling it in the specific `di.xml` file for the backend area.
+For example, the developer can disable a global plugin in the backend area by disabling it in the specific `di.xml` file for the backend area.
 
 ### Disabling plugins
 

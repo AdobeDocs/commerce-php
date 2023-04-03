@@ -9,7 +9,7 @@ import Docs from '/src/pages/_includes/braintree-note.md'
 
 # Gateway Client
 
-Gateway Client is a component of the Adobe Commerce [payment gateway](https://glossary.magento.com/payment-gateway) that transfers the payload to the payment provider and gets the response.
+Gateway Client is a component of the Adobe Commerce payment gateway that transfers the payload to the payment provider and gets the response.
 
 ## Basic interface
 
@@ -61,7 +61,7 @@ The similar example of factory might looks like this:
 
 In this example transfer factory simply sets request data using Transfer Builder and returns the created object.
 
-Following is an example of a more complicated behavior. Here transfer factory sets all required data to process requests using [API](https://glossary.magento.com/api) credentials and all data is sent in JSON format.
+Following is an example of a more complicated behavior. Here transfer factory sets all required data to process requests using API credentials and all data is sent in JSON format.
 
 ```php
 public function create(array $request)

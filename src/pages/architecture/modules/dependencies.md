@@ -7,7 +7,7 @@ description: Learn about the two types of module dependencies in the Commerce fr
 
 A *software dependency* identifies  one software component's reliance on another for proper functioning. A core principle of the Adobe Commerce and Magento Open Source framework (Commerce framework) architecture is the **minimization of software dependencies**. Instead of being closely interrelated with other modules, modules are optimally designed to be *loosely coupled*. Loosely coupled modules require little or no knowledge of other modules to perform their tasks.
 
-Each [module](https://glossary.magento.com/module) is responsible for a unique feature. In practice, this means that:
+Each module is responsible for a unique feature. In practice, this means that:
 
 *  Several modules cannot be responsible for one feature.
 
@@ -19,7 +19,7 @@ Each [module](https://glossary.magento.com/module) is responsible for a unique f
 
 ## Dependency types
 
-There are two types of [module](https://glossary.magento.com/module) dependencies: hard and soft.
+There are two types of module dependencies: hard and soft.
 
 ### Hard dependencies
 
@@ -54,7 +54,7 @@ A module with a *soft dependency* on another module can function properly withou
 
 *  Directly check another module's availability.
 *  Extend another module's configuration.
-*  Extend another module's [layout](https://glossary.magento.com/layout).
+*  Extend another module's layout.
 
 The `suggest` section of `app/code/<Vendor>/<Module>/composer.json` file contains soft dependency definitions for the module. For example:
 
@@ -97,9 +97,9 @@ Although the Commerce framework architecture favors loosely coupled software com
 
 *  other modules
 
-*  [PHP](https://glossary.magento.com/php) extensions
+*  PHP extensions
 
-*  libraries (either Commerce framework [library](https://glossary.magento.com/library) or third party libraries)
+*  libraries (either Commerce framework library or third party libraries)
 
 <InlineAlert variant="info" slots="text"/>
 
@@ -129,7 +129,7 @@ In this case, using interfaces is preferable to using classes. You can build dep
 
 A module belonging to the application layer cannot be used in the Commerce framework.
 
-You can build dependencies between classes in the application layer, but these classes must belong to the same module. Dependencies between the modules of the application layer should be built only by the [service contract](https://glossary.magento.com/service-contract) or the service provider interface (SPI).
+You can build dependencies between classes in the application layer, but these classes must belong to the same module. Dependencies between the modules of the application layer should be built only by the service contract or the service provider interface (SPI).
 
 ## Managing module dependencies
 

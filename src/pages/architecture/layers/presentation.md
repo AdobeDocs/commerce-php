@@ -7,7 +7,7 @@ description: Learn about the architectural presentation layer of the Commerce fr
 
 When you interact with the The Adobe Commerce and Magento Open Source framework (Commerce framework) web interface, you are interacting with *presentation layer* code. The presentation layer is the top layer of the four layers (presentation, service, domain, and persistence layers) described by the Commerce framework architecture.
 
-The presentation layer contains both view elements **(layouts, blocks, templates)** and **controllers**, which process commands to and from the user interface. Presentation code controls web user interaction with the product and its appearance. You can extensively customize the user interface by using HTML, CSS, and [PHTML](https://glossary.magento.com/phtml) files to modify elements of the presentation layer. Basically, the presentation layer represents the customization of HTML, CSS, JavaScript, UI, PHTML files, and block files.
+The presentation layer contains both view elements **(layouts, blocks, templates)** and **controllers**, which process commands to and from the user interface. Presentation code controls web user interaction with the product and its appearance. You can extensively customize the user interface by using HTML, CSS, and PHTML files to modify elements of the presentation layer. Basically, the presentation layer represents the customization of HTML, CSS, JavaScript, UI, PHTML files, and block files.
 
 ## Who uses the Presentation layer?
 
@@ -15,9 +15,9 @@ The Commerce framework uses *areas* to efficiently make web service calls, loadi
 
 *  **Web users** interact with the storefront, where they can see the view model of data displayed by the Commerce framework and interact with product UI elements to request data for view and manipulation. These users work within the `frontend` area.
 
-*  **System administrators** customizing a [storefront](https://glossary.magento.com/storefront) can indirectly manipulate the presentation layer by, for example, adding themes or widgets to the frontend.
+*  **System administrators** customizing a storefront can indirectly manipulate the presentation layer by, for example, adding themes or widgets to the frontend.
 
-*  **Web [API](https://glossary.magento.com/api) calls** can be made through HTTP just like browser requests, and can be made via AJAX calls from the user interface.
+*  **Web API calls** can be made through HTTP just like browser requests, and can be made via AJAX calls from the user interface.
 
 ## Presentation layer components
 
@@ -25,7 +25,7 @@ One helpful way of understanding the presentation layer component is by examinin
 
 Themes organize both the visual aspect of your storefront and certain aspects of product behavior.
 
-Each [theme](https://glossary.magento.com/theme) resides in a unique directory and contains custom page layouts, templates, skins, and language files that work together to create a distinct user experience.
+Each theme resides in a unique directory and contains custom page layouts, templates, skins, and language files that work together to create a distinct user experience.
 
 For an extensive introduction to theme elements and an overview of how to extend and override the default themes, see the [Frontend Developer Guide](https://developer.adobe.com/commerce/frontend-core/guide/).
 
@@ -47,11 +47,11 @@ You can read more about how PWA works with the Commerce framework in the [PWA St
 
 ## View model
 
-The Commerce framework generates the [HTML](https://glossary.magento.com/html) for a page to display to a user from a tree of view elements.
+The Commerce framework generates the HTML for a page to display to a user from a tree of view elements.
 
 View elements fall into two main categories: blocks and containers.
 
-*  **Blocks** can generate [dynamic content](https://glossary.magento.com/dynamic-content) and can contain named child view elements that are similar to arguments being passed in. (The `as` attribute holds the child view element names for the parent block to reference them)
+*  **Blocks** can generate dynamic content and can contain named child view elements that are similar to arguments being passed in. (The `as` attribute holds the child view element names for the parent block to reference them)
 
 *  **Containers** collect an ordered group of children view elements.
 
@@ -63,11 +63,11 @@ Blocks can generate their content using static HTML, Knockout JS scripts, and PH
 
 Presentation code typically calls service contracts, particularly for a storefront.
 However, presentation code is occasionally dependent on a specific implementation that requires the presentation code to directly call the domain layer.
-For example, the [Admin](https://glossary.magento.com/admin) UI screens are often tightly linked to a specific implementation and are not generic across implementations.
+For example, the Admin UI screens are often tightly linked to a specific implementation and are not generic across implementations.
 
 The View layer calls code from the Model to get information about the state of the application (for example, the price of a product). Typically, the way it accesses the Model is through service contracts.
 
 ## Presentation layer flow
 
 Web users interact with components of the presentation layer to select actions that initiate calls to the underlying layers.
-Presentation layer components make calls to the service layer, which in turn sends requests to the [domain](https://glossary.magento.com/domain) layer.
+Presentation layer components make calls to the service layer, which in turn sends requests to the domain layer.

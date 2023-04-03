@@ -82,7 +82,7 @@ class CardRenderer extends AbstractCardRenderer
 
 ## Layout and template
 
-Next, you need to create the [layout](https://glossary.magento.com/layout) to be used for displaying token details. In this layout, specify the previously created token renderer.
+Next, you need to create the layout to be used for displaying token details. In this layout, specify the previously created token renderer.
 
 Example ([vault_cards_listaction.xml](https://github.com/magento/magento2/tree/2.3/app/code/Magento/Braintree/view/frontend/layout/vault_cards_listaction.xml)):
 
@@ -98,4 +98,4 @@ Example ([vault_cards_listaction.xml](https://github.com/magento/magento2/tree/2
 </page>
 ```
 
-In this example the default `credit_card.phtml` vault template is used. But you can create and specify a custom template. Add the template in the [payment method](https://glossary.magento.com/payment-method) [module](https://glossary.magento.com/module).
+In this example the default `credit_card.phtml` vault template is used. But you can create and specify a custom template. Add the template in the payment method module.

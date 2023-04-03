@@ -9,7 +9,7 @@ Using functions that are known to be exploitable or non-secure can lead to remot
 
 ## PHP functions to avoid
 
-The following is a list of [PHP](https://glossary.magento.com/php) functions that are known to be vulnerable and exploitable.
+The following is a list of PHP functions that are known to be vulnerable and exploitable.
 Avoid using these functions in your code.
 
 *  [`eval`](http://php.net/manual/en/function.eval.php) - Using `eval` is considered bad practice because of its ability to [execute arbitrary PHP code](https://cheatsheetseries.owasp.org/cheatsheets/Injection_Prevention_Cheat_Sheet.html).

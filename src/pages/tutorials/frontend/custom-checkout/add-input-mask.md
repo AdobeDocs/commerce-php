@@ -7,7 +7,7 @@ description: Follow this tutorial to create a custom input mask to validate addr
 
 This topic describes how a developer can add custom input masks.
 
-When a shopper specifies the country and ZIP code in the shipping address during [checkout](https://glossary.magento.com/checkout) or in the shopping cart, the application checks if the format of the entered code is valid for the specified country. This validation is implemented using the input masks for the ZIP code field. In Adobe Commerce and Magento Open Source, these input masks are regular expressions which define which format is allowed.
+When a shopper specifies the country and ZIP code in the shipping address during checkout or in the shopping cart, the application checks if the format of the entered code is valid for the specified country. This validation is implemented using the input masks for the ZIP code field. In Adobe Commerce and Magento Open Source, these input masks are regular expressions which define which format is allowed.
 
 In Adobe Commerce and Magento Open Source the input masks for the **ZIP code** field are specified in the `<Magento_Directory_module_dir>/etc/zip_codes.xml`. Input masks are specified per country, and are entered in the form of regular expressions.
 The syntax of defined by the [zip_code.xsd](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Directory/etc/zip_codes.xsd) scheme.

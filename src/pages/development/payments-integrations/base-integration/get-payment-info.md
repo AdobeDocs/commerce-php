@@ -9,7 +9,7 @@ import Docs from '/src/pages/_includes/braintree-note.md'
 
 # Get payment information from frontend to backend
 
-To implement transaction [authorization](https://glossary.magento.com/authorization) our payment should receive some payment details from the payment form, like credit card details, and send received details to payment processor.
+To implement transaction authorization our payment should receive some payment details from the payment form, like credit card details, and send received details to payment processor.
 
 Depending on your payment integration, payment details might include credit card details, tokenized cards, payment nonce, and similar information.
 
@@ -60,10 +60,10 @@ You should remove any sensitive data (like credit card details) from payment add
 
 ## Getting payment information from frontend to backend
 
-In most cases, customers fill all required information (credit card, expiration date, billing address, etc) on [checkout](https://glossary.magento.com/checkout) payment form.
-So our [payment method](https://glossary.magento.com/payment-method) implementation should provide the ability to display and process payment form on checkout step.
+In most cases, customers fill all required information (credit card, expiration date, billing address, etc) on checkout payment form.
+So our payment method implementation should provide the ability to display and process payment form on checkout step.
 
-We can send to [backend](https://glossary.magento.com/backend) any specific data, just need to override `getData()` method in
+We can send to backend any specific data, just need to override `getData()` method in
 [payment UI component](https://github.com/magento/magento2/tree/2.3/app/code/Magento/Braintree/view/frontend/web/js/view/payment/method-renderer/cc-form.js):
 
 ```javascript
@@ -106,7 +106,7 @@ define(
 ```
 
 The `getData()` method returns data what we need and depending on payment integration the returned data can be more
-complicated. we need last step to retrieve data from [storefront](https://glossary.magento.com/storefront) in the backend. Adobe Commerce provides some
+complicated. we need last step to retrieve data from storefront in the backend. Adobe Commerce provides some
 mechanisms called [Observers](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/events-and-observers.html).
 
 ### Read additional data
@@ -166,7 +166,7 @@ And this observer should be added to list of events (`Module_Name/etc/events.xml
 </config>
 ```
 
-This [event](https://glossary.magento.com/event) will be triggered in [Adapter::assignData()](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Payment/Model/Method/Adapter.php) method call:
+This event will be triggered in [Adapter::assignData()](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Payment/Model/Method/Adapter.php) method call:
 
 ```php
 public function assignData(\Magento\Framework\DataObject $data)

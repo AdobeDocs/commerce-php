@@ -42,7 +42,7 @@ The following tables show the core routers that come with Magento:
 
 ### Standard router
 
-A [URL](https://glossary.magento.com/url) that uses the standard router has the following format:
+A URL that uses the standard router has the following format:
 
 ```text
 <store-url>/<store-code>/<front-name>/<controller-name>/<action-name>

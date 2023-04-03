@@ -29,7 +29,7 @@ Other benefits:
 Before you begin, make sure you understand the following:
 
 -  All Magento command-line interface (CLI) commands rely on the application and must have access to its context, dependency injections, plug-ins, and so on.
--  All CLI commands should be implemented in the scope of your [module](https://glossary.magento.com/module) and should depend on the module's status.
+-  All CLI commands should be implemented in the scope of your module and should depend on the module's status.
 -  Your command can use the Object Manager and dependency injection features; for example, it can use [constructor dependency injection](../components/dependency-injection.md#constructor-injection).
 -  Your command should have an unique `name`, defined in the `configure()` method of the Command class:
 
@@ -73,7 +73,7 @@ Before you begin, make sure you understand the following:
 
 ## Add CLI commands using dependency injection
 
-The sample modules provide a demonstration of many programming techniques, including adding a CLI command using [dependency injection](https://glossary.magento.com/dependency-injection). Look at the [`sample-module-command`](https://github.com/magento/magento2-samples/tree/master/sample-module-command) for an example. The module's [README.md](https://github.com/magento/magento2-samples/blob/master/sample-module-command/README.md) discusses how to install it.
+The sample modules provide a demonstration of many programming techniques, including adding a CLI command using dependency injection. Look at the [`sample-module-command`](https://github.com/magento/magento2-samples/tree/master/sample-module-command) for an example. The module's [README.md](https://github.com/magento/magento2-samples/blob/master/sample-module-command/README.md) discusses how to install it.
 
 Following is a summary of the process:
 
@@ -167,7 +167,7 @@ Following is a summary of the process:
     </config>
     ```
 
-1. Clean the [cache](https://glossary.magento.com/cache):
+1. Clean the cache:
 
     ```bash
     bin/magento cache:clean

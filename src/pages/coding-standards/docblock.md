@@ -145,7 +145,7 @@ interface MetadataObjectInterface
 }
 ```
 
-**Template for [XML](https://glossary.magento.com/xml) Files:**
+**Template for XML Files:**
 
 ```xml
 <?xml version="1.0"?>
@@ -280,7 +280,7 @@ If possible, add use cases which suggests where developers can or cannot use the
 ### Short name form
 
 It is encouraged to use the short form of the name to encourage readability and consistency with the type hint.
-The only [exception](https://glossary.magento.com/exception) is in the `Service/DTO` classes due to tooling requirements.
+The only exception is in the `Service/DTO` classes due to tooling requirements.
 
 **Example of a Method DocBlock:**
 
@@ -657,7 +657,7 @@ class LimitedMutableClass implements MutableInterface
 The `@api` tag indicates the code is part of the public API and is subject to the [Backward Compatibility Policy](https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy/).
 
 The `@api` tag can be applied to a constant, a method, or to the entire class/interface.
-If the `@api` tag is applied at the file level, then all methods within the file are part of the public [API](https://glossary.magento.com/api).
+If the `@api` tag is applied at the file level, then all methods within the file are part of the public API.
 You do not need to annotate each method individually.
 
 See [Semantic Versioning 2.0.0](http://semver.org/) for information about changing and updating code while maintaining backward compatibility.

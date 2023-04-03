@@ -9,7 +9,7 @@ import Docs from '/src/pages/_includes/braintree-note.md'
 
 # Token UI component provider
 
-This topic describes how to create custom vault payments UI components that are used to display stored tokens on [checkout](https://glossary.magento.com/checkout) page and order placing using vault.
+This topic describes how to create custom vault payments UI components that are used to display stored tokens on checkout page and order placing using vault.
 
 ## Token component provider
 
@@ -31,7 +31,7 @@ interface TokenUiComponentProviderInterface
 }
 ```
 
-The basic implementation of the token [UI component](https://glossary.magento.com/ui-component) provider can be like following:
+The basic implementation of the token UI component provider can be like following:
 
 ```php
 class TokenUiComponentProvider implements TokenUiComponentProviderInterface
@@ -60,7 +60,7 @@ class TokenUiComponentProvider implements TokenUiComponentProviderInterface
 }
 ```
 
-This implementation allows to retrieve all available payment token details and specify the JS component for [storefront](https://glossary.magento.com/storefront).
+This implementation allows to retrieve all available payment token details and specify the JS component for storefront.
 
 Having created the component provider, you need to add it to the list of available vault config providers in `di.xml` - the DI configuration file.
 
