@@ -20,7 +20,7 @@ To add your custom modifier, you need to do the following:
 
 In your custom module directory, add the modifier class that implements the `Magento\UI\DataProvider\Modifier\ModifierInterface` interface or extends the `Magento\Catalog\Ui\DataProvider\Product\Form\Modifier\AbstractModifier`class. In your modifier, the `modifyData()` and the `modifyMeta()` methods must be implemented.
 
-In the modifier class, you can add UI elements using the same structure as in the [XML](https://glossary.magento.com/xml) configuration.
+In the modifier class, you can add UI elements using the same structure as in the XML configuration.
 
 For example:
 

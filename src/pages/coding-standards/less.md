@@ -5,7 +5,7 @@ description: Review standards for writing LESS and CSS code for Adobe Commerce a
 
 # LESS coding standard
 
-This standard defines internal requirements for code formatting and style for teams that develop LESS and [CSS](https://glossary.magento.com/css) code.
+This standard defines internal requirements for code formatting and style for teams that develop LESS and CSS code.
 
 Some parts of the code might not comply with this coding standard yet, but we are working to gradually improve this.
 
@@ -634,7 +634,7 @@ color: #ff0000;
 
 #### Local variables
 
-If variables are local and used only in a [module](https://glossary.magento.com/module) scope, they should be located in the module file, in the beginning of the general comment.
+If variables are local and used only in a module scope, they should be located in the module file, in the beginning of the general comment.
 
 **Example:** `_module.less`:
 
@@ -716,11 +716,11 @@ Component name must meaningful. It can contain the `primary`, `secondary`, `tert
 
 ### Location
 
-[Theme](https://glossary.magento.com/theme) mixins (except extends) should be located in the `web/css/source` directory. For more details, refer to [Include CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/themes/).
+Theme mixins (except extends) should be located in the `web/css/source` directory. For more details, refer to [Include CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/themes/).
 
 ### Naming
 
-For [mixin](https://glossary.magento.com/mixin) naming apply the class naming rules.
+For mixin naming apply the class naming rules.
 
 For mixins grouping use the double underscore "__" prefix.
 
@@ -827,7 +827,7 @@ Extend names should start with the `.abs-` prefix.
 
 ## `@import` directive
 
-Always add the file [extension](https://glossary.magento.com/extension) of the imported resource.
+Always add the file extension of the imported resource.
 
 **Correct**:
 

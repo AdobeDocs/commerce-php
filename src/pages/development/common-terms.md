@@ -7,11 +7,11 @@ description: Review common terms that are used to describe technical aspects of 
 
 ## Component
 
-We refer to what you're coding as *components*. (Composer refers to them as <a href="https://getcomposer.org/doc/05-repositories.md#packages" target="_blank">*packages*</a>; the terms component and package are equivalent.) A [component](https://glossary.magento.com/magento-component) can be classified into the following *types*:
+We refer to what you're coding as *components*. (Composer refers to them as <a href="https://getcomposer.org/doc/05-repositories.md#packages" target="_blank">*packages*</a>; the terms component and package are equivalent.) A component can be classified into the following *types*:
 
-*  [Module](https://glossary.magento.com/module) (extend application capabilities)
-*  [Theme](https://glossary.magento.com/theme) (change the look and feel of your [storefront](https://glossary.magento.com/storefront) and Admin)
-*  [Language package](https://glossary.magento.com/language-package) (localize the storefront and Admin)
+*  Module (extend application capabilities)
+*  Theme (change the look and feel of your storefront and Admin)
+*  Language package (localize the storefront and Admin)
 
 You can *package* your components as follows:
 
@@ -24,7 +24,7 @@ You can *package* your components as follows:
 
 <InlineAlert variant="info" slots="text"/>
 
-Commerce Marketplace uses the blanket term *product* to refer to a component or a [metapackage](https://glossary.magento.com/metapackage).
+Commerce Marketplace uses the blanket term *product* to refer to a component or a metapackage.
 
 ## Metapackage
 

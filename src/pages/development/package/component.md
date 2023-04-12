@@ -5,7 +5,7 @@ description: Learn how to package Adobe Commerce and Magento Open Source compone
 
 # Package a component
 
-The Adobe Commerce and Magento Open Source applications use [Composer](https://glossary.magento.com/composer) packages to distribute, install, and upgrade components in an application instance.
+The Adobe Commerce and Magento Open Source applications use Composer packages to distribute, install, and upgrade components in an application instance.
 
 To package a component, you must:
 
@@ -15,7 +15,7 @@ To package a component, you must:
 
 ## Create a Composer file
 
-The `composer.json` file defines the name, requirements, version, and other basic information about the component. This file must be placed in the root directory of the [module](https://glossary.magento.com/module).
+The `composer.json` file defines the name, requirements, version, and other basic information about the component. This file must be placed in the root directory of the module.
 
 The `composer.json` uses [Composer's generic schema](https://getcomposer.org/doc/04-schema.md), with the following restrictions:
 
@@ -35,7 +35,7 @@ import Docs from '/src/pages/_includes/composer-types.md'
 
 ### Using metapackages
 
-Metapackages allow you to group an [extension](https://glossary.magento.com/extension) that consists of multiple packages into a cohesive unit. This works exactly as described in standard [composer.json documentation](https://getcomposer.org/doc/04-schema.md#type). If you have an extension that uses more than one package you must use a [metapackage](https://glossary.magento.com/metapackage) as the *root package*. Otherwise you should not use metapackage. A metapackage that you submit to Commerce Marketplace should be a .zip file containing only the metapackage `composer.json` file.
+Metapackages allow you to group an extension that consists of multiple packages into a cohesive unit. This works exactly as described in standard [composer.json documentation](https://getcomposer.org/doc/04-schema.md#type). If you have an extension that uses more than one package you must use a metapackage as the *root package*. Otherwise you should not use metapackage. A metapackage that you submit to Commerce Marketplace should be a .zip file containing only the metapackage `composer.json` file.
 
 <InlineAlert variant="info" slots="text"/>
 
@@ -126,7 +126,7 @@ zip -r vendor-name_package-name-1.0.0.zip package-path/ -x 'package-path/.git/*'
 
 Use alphanumeric characters for the package filename with dashes to separate words. Do not use whitespaces.
 
-The application can retrieve your extension package from any valid GitHub [URL](https://glossary.magento.com/url).
+The application can retrieve your extension package from any valid GitHub URL.
 
 <!-- After you have created the module's `composer.json` file in the root directory of the module, Composer can recognize your package as compatible with its deployment strategy. Such packages can be published to a code repository (GitHub, SVN, etc.), packagist.org, or on your own private package repository. -->
 

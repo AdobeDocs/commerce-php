@@ -10,6 +10,11 @@ module.exports = [
     },
     
     {
+      title: "AdminAdobeImsTwoFactorAuth",
+      path: "/module-reference/module-admin-adobe-ims-two-factor-auth/"
+    },
+    
+    {
       title: "AdminAnalytics",
       path: "/module-reference/module-admin-analytics/"
     },
@@ -35,6 +40,16 @@ module.exports = [
     },
     
     {
+      title: "AdobeCommerceEventsClient",
+      path: "/module-reference/module-adobe-commerce-events-client/"
+    },
+    
+    {
+      title: "AdobeCommerceEventsGenerator",
+      path: "/module-reference/module-adobe-commerce-events-generator/"
+    },
+    
+    {
       title: "AdobeIms",
       path: "/module-reference/module-adobe-ims/"
     },
@@ -42,6 +57,11 @@ module.exports = [
     {
       title: "AdobeImsApi",
       path: "/module-reference/module-adobe-ims-api/"
+    },
+    
+    {
+      title: "AdobeIoEventsClient",
+      path: "/module-reference/module-adobe-io-events-client/"
     },
     
     {
@@ -207,6 +227,11 @@ module.exports = [
     {
       title: "BannerPageBuilderAnalytics",
       path: "/module-reference/module-banner-page-builder-analytics/"
+    },
+    
+    {
+      title: "BannerStaging",
+      path: "/module-reference/module-banner-staging/"
     },
     
     {
@@ -710,11 +735,6 @@ module.exports = [
     },
     
     {
-      title: "Elasticsearch6",
-      path: "/module-reference/module-elasticsearch-6/"
-    },
-    
-    {
       title: "Elasticsearch7",
       path: "/module-reference/module-elasticsearch-7/"
     },
@@ -912,6 +932,16 @@ module.exports = [
     {
       title: "GroupedSharedCatalog",
       path: "/module-reference/module-grouped-shared-catalog/"
+    },
+    
+    {
+      title: "ImportCsv",
+      path: "/module-reference/module-import-csv/"
+    },
+    
+    {
+      title: "ImportCsvApi",
+      path: "/module-reference/module-import-csv-api/"
     },
     
     {
@@ -1242,6 +1272,11 @@ module.exports = [
     {
       title: "InventorySalesApi",
       path: "/module-reference/module-inventory-sales-api/"
+    },
+    
+    {
+      title: "InventorySalesAsyncOrder",
+      path: "/module-reference/module-inventory-sales-async-order/"
     },
     
     {
@@ -1615,6 +1650,11 @@ module.exports = [
     },
     
     {
+      title: "OpenSearch",
+      path: "/module-reference/module-open-search/"
+    },
+    
+    {
       title: "OrderHistorySearch",
       path: "/module-reference/module-order-history-search/"
     },
@@ -1725,8 +1765,28 @@ module.exports = [
     },
     
     {
+      title: "PurchaseOrderGraphQl",
+      path: "/module-reference/module-purchase-order-graph-ql/"
+    },
+    
+    {
       title: "PurchaseOrderRule",
       path: "/module-reference/module-purchase-order-rule/"
+    },
+    
+    {
+      title: "PurchaseOrderRuleGraphQl",
+      path: "/module-reference/module-purchase-order-rule-graph-ql/"
+    },
+    
+    {
+      title: "QuickCheckout",
+      path: "/module-reference/module-quick-checkout/"
+    },
+    
+    {
+      title: "QuickCheckoutAdminPanel",
+      path: "/module-reference/module-quick-checkout-admin-panel/"
     },
     
     {

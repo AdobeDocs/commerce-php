@@ -5,13 +5,13 @@ description: Review best practices for customizing the Adobe Commerce and Magent
 
 # Storefront UI best practices
 
-The [storefront](https://glossary.magento.com/storefront) theme is the front facing interface for the application that can be customized through a [theme extension](https://developer.adobe.com/commerce/frontend-core/guide/themes/). We suggest adopting the following best practices to avoid common problems we have seen other developers make while making a [theme](https://glossary.magento.com/theme) [extension](https://glossary.magento.com/extension).
+The storefront theme is the front facing interface for the application that can be customized through a [theme extension](https://developer.adobe.com/commerce/frontend-core/guide/themes/). We suggest adopting the following best practices to avoid common problems we have seen other developers make while making a theme extension.
 
 ## Clear your cache periodically
 
-Forgetting to clear or disable caching can cause a lot of development headache. Visual spot checks on rendered content are unreliable when the content being displayed is retrieved from the [cache](https://glossary.magento.com/cache). We recommend clearing your cache before doing visual checks for your theme to make sure the content displayed is correct.
+Forgetting to clear or disable caching can cause a lot of development headache. Visual spot checks on rendered content are unreliable when the content being displayed is retrieved from the cache. We recommend clearing your cache before doing visual checks for your theme to make sure the content displayed is correct.
 
-You can manage your cache in the [Admin](https://glossary.magento.com/admin) section under **System** > Tools > **Cache Management**.
+You can manage your cache in the Admin section under **System** > Tools > **Cache Management**.
 
 **Recommended Reading:**
 

@@ -6,13 +6,13 @@ edition: ee
 
 # Staging
 
-Staging functionality enables you to create scheduled campaigns, manage campaigns on dashboard and manipulate each future store object update. Moreover, you can preview a [storefront](https://glossary.magento.com/storefront) during the future campaign.
+Staging functionality enables you to create scheduled campaigns, manage campaigns on dashboard and manipulate each future store object update. Moreover, you can preview a storefront during the future campaign.
 
 <InlineAlert variant="success" slots="text"/>
 
 Information on how the Staging functionality works and how to use the various features, can be found in the [Content Staging](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html) topic of the _User Guide_.
 
-The functionality is distributed between staging modules. The [Staging module](https://developer.adobe.com/commerce/php/module-reference/module-staging/) is a framework for the staging functionality, and other staging modules are extensions for the existing modules. You can read about each staging [module](https://glossary.magento.com/module) in a corresponding topic:
+The functionality is distributed between staging modules. The [Staging module](https://developer.adobe.com/commerce/php/module-reference/module-staging/) is a framework for the staging functionality, and other staging modules are extensions for the existing modules. You can read about each staging module in a corresponding topic:
 
 -  [BundleStaging module](https://developer.adobe.com/commerce/php/module-reference/module-bundle-staging/)
 -  [CatalogImportExportStaging module](https://developer.adobe.com/commerce/php/module-reference/module-catalog-import-export-staging/)

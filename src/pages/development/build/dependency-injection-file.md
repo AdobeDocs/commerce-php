@@ -9,7 +9,7 @@ The `di.xml` file configures which [dependencies](../components/dependency-injec
 
 ## Areas and application entry points
 
-Each [module](https://glossary.magento.com/module) can have a global and area-specific `di.xml` file.
+Each module can have a global and area-specific `di.xml` file.
 The application reads all the `di.xml` configuration files declared in the system and merges them all together by appending all nodes.
 
 As a general rule, the area specific `di.xml` files should configure dependencies for the presentation layer, and your module's global `di.xml` file should configure the remaining dependencies.
@@ -33,7 +33,7 @@ During [bootstrapping](https://experienceleague.adobe.com/docs/commerce-operatio
 
 **Examples:**
 
-In `index.php`, the [`\Magento\Framework\App\Http`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Http.php) class loads the area based on the front-name provided in the [URL](https://glossary.magento.com/url).
+In `index.php`, the [`\Magento\Framework\App\Http`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Http.php) class loads the area based on the front-name provided in the URL.
 
 ```php
 $areaCode = $this->_areaList->getCodeByFrontName($this->_request->getFrontName());
@@ -86,7 +86,7 @@ The preceding example declares the following types:
 
 ### Virtual types
 
-A [virtual type](https://glossary.magento.com/virtual-type) allows you to change the arguments of a specific injectable dependency and change the behavior of a particular class.
+A virtual type allows you to change the arguments of a specific injectable dependency and change the behavior of a particular class.
 This allows you to use a customized class without affecting other classes that have a dependency on the original.
 
 The example creates a virtual type for `Magento\Core\Model\Config` and specifies `system` as the constructor argument for `type`.
@@ -95,7 +95,7 @@ The example creates a virtual type for `Magento\Core\Model\Config` and specifies
 
 You can configure the class constructor arguments in your `di.xml` in the argument node.
 The object manager injects these arguments into the class during creation.
-The name of the argument configured in the [XML](https://glossary.magento.com/xml) file must correspond to the name of the parameter in the constructor in the configured class.
+The name of the argument configured in the XML file must correspond to the name of the parameter in the constructor in the configured class.
 
 The following example creates instances of `Magento\Core\Model\Session` with the class constructor argument `$sessionName` set to a value of `adminhtml`:
 
@@ -293,7 +293,7 @@ This mapping is in `app/etc/di.xml`, so the object manager injects the `Magento\
 </config>
 ```
 
-This mapping is in `app/code/Magento/Backend/etc/adminhtml/di.xml`, so the object manager injects the `Magento\Backend\Model\UrlInterface` implementation class wherever there is a request for the `Magento\Framework\UrlInterface` in the [admin](https://glossary.magento.com/admin) area.
+This mapping is in `app/code/Magento/Backend/etc/adminhtml/di.xml`, so the object manager injects the `Magento\Backend\Model\UrlInterface` implementation class wherever there is a request for the `Magento\Framework\UrlInterface` in the admin area.
 
 ### Override a method using 'preference' nodes
 

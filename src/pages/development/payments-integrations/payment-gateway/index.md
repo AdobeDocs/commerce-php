@@ -19,7 +19,7 @@ The following diagram shows a simplified interaction flow between Adobe Commerce
 
 Commerce payment provider supports the following payment operations:
 
--  authorize: process [authorization](https://glossary.magento.com/authorization) transaction; funds are blocked on customer account, but not withdrawn
+-  authorize: process authorization transaction; funds are blocked on customer account, but not withdrawn
 
 -  sale: process authorization transaction and capture automatically, funds are withdrawn
 

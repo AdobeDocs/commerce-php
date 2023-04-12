@@ -3,7 +3,7 @@ title: ImportExport
 description: README.md contents of the module from the source code
 ---
 
-# Magento_ImportExport module 
+# Magento_ImportExport module
 
 This module provides a framework and basic functionality for importing/exporting various entities in Magento.
 It can be disabled and in such case all dependent import/export functionality (products, customers, orders etc.) will be disabled in Magento.
@@ -11,6 +11,7 @@ It can be disabled and in such case all dependent import/export functionality (p
 ## Installation
 
 The Magento_ImportExport module creates the following tables in the database:
+
 - `importexport_importdata`
 - `import_history`
 
@@ -26,9 +27,9 @@ For information about a typical file structure of a module in Magento 2, see [Mo
 
 ## Extensibility
 
-Extension developers can interact with the Magento_ImportExport module. For more information about the Magento extension mechanism, see [Magento plugins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_ImportExport module. For more information about the Magento extension mechanism, see [Magento plugins](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_ImportExport module.
+[The Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html) enables you to override the functionality of the Magento_ImportExport module.
 
 ### Layouts
 
@@ -49,7 +50,7 @@ For more information about a layout in Magento 2, see the [Layout documentation]
 
 You can extend an export updates using the configuration files located in the `view/adminhtml/ui_component` directory:
 
-- `export_grid` 
+- `export_grid`
 
 For information about a UI component in Magento 2, see [Overview of UI components](http://devdocs.magento.com/guides/v2.4/ui_comp_guide/bk-ui_comps.html).
 
@@ -72,7 +73,7 @@ For information about a public API in Magento 2, see [Public interfaces & APIs](
 
 - `exportProcessor` - consumer to run export process
 
-[Learn how to manage Message Queues](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues.html).
+[Learn how to manage Message Queues](https://devdocs.magento.com/guides/v2.4/config-guide/mq/manage-message-queues.html).
 
 #### Create custom import entity
 
@@ -86,6 +87,6 @@ For information about a public API in Magento 2, see [Public interfaces & APIs](
 
 You can get more information about import/export processes in magento at the articles:
 
-- [Create custom import entity](https://developer.adobe.com/commerce/php/tutorials/backend/create-custom-import-entity/)
+- [Create custom import entity](https://devdocs.magento.com/guides/v2.4/ext-best-practices/tutorials/custom-import-entity.html)
 - [Import](https://docs.magento.com/user-guide/system/data-import.html)
 - [Export](https://docs.magento.com/user-guide/system/data-export.html)

@@ -9,6 +9,6 @@ The Magento_PaypalNegotiableQuote module provides support for PayPal payment met
 
 ## Extensibility
 
-Extension developers can interact with the Magento_PaypalNegotiableQuote module using plugins. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_PaypalNegotiableQuote module using plugins. For more information about the Magento extension mechanism, see [Magento plug-ins](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_PaypalNegotiableQuote module.
+[The Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html) enables you to override the functionality of the Magento_PaypalNegotiableQuote module.

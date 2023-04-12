@@ -7,19 +7,19 @@ description: Review standards for developing jQuery widgets for Adobe Commerce a
 
 All Adobe Commerce and Magento Open Source jQuery UI widgets and interactions are built on a simple, reusable base---the [jQuery UI Widget Factory](http://jqueryui.com/widget/).
 
-The factory provides a flexible base for building complex, stateful plug-ins with a consistent [API](https://glossary.magento.com/api).
-It is designed not only for plug-ins that are part of [jQuery](https://glossary.magento.com/jquery) UI, but for general usage by developers who want to create object-oriented components without reinventing common infrastructure.
+The factory provides a flexible base for building complex, stateful plug-ins with a consistent API.
+It is designed not only for plug-ins that are part of jQuery UI, but for general usage by developers who want to create object-oriented components without reinventing common infrastructure.
 
 For more information, see the [jQuery Widget API documentation](http://api.jqueryui.com/jQuery.widget/).
 
-This standard is mandatory for core developers and recommended for third-party [extension](https://glossary.magento.com/extension) developers.
+This standard is mandatory for core developers and recommended for third-party extension developers.
 Some parts of the code might not comply with the standard, but we are working to gradually improve this.
 
 Use [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt) to interpret the "must," "must not," "required," "shall," "shall not," "should," "should not," "recommended," "may," and "optional" keywords.
 
 ## Naming conventions
 
-*  [Widget](https://glossary.magento.com/widget) names must consist of one or more non-abbreviated English word and in camelcase format.
+*  Widget names must consist of one or more non-abbreviated English word and in camelcase format.
 
    ```javascript
    (function($) {
@@ -43,11 +43,11 @@ Use [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt) to interpret the "must," "mu
 
 ## Instantiation and resources
 
-*  Additional [JavaScript](https://glossary.magento.com/javascript) files used as a resources must be dynamically loaded using the `$.mage.components()` method and must not be included in the `<head>` block.
+*  Additional JavaScript files used as a resources must be dynamically loaded using the `$.mage.components()` method and must not be included in the `<head>` block.
 *  Use the `$.mage.components()` method to load additional JavaScript resource files not included in the `<head>` block.
 *  You must use `$.mage.extend()` to extend an existing set of widget resources.
 *  You must instantiate widgets using the `data-mage-init` attribute.
-  You can use the `.mage()` [plug-in](https://glossary.magento.com/plug-in) to instantiate widgets that use callback methods.
+  You can use the `.mage()` plug-in to instantiate widgets that use callback methods.
 
    Benefits:
 
@@ -169,7 +169,7 @@ When a component is initialized, it is also important to send parameters to it, 
 
 *  Widgets should comply with the [single responsibility principle](https://en.wikipedia.org/wiki/Single_responsibility_principle).
 
-   Widgets should not have responsibilities not related to the [entity](https://glossary.magento.com/entity) described by the widget.
+   Widgets should not have responsibilities not related to the entity described by the widget.
 
    ```javascript
    // Widget "dialog" that is responsible
@@ -329,11 +329,11 @@ When a component is initialized, it is also important to send parameters to it, 
 
    Common tasks for this include:
 
-   *  Removing or adding any [CSS](https://glossary.magento.com/css) classes the widget added/removed to the element.
+   *  Removing or adding any CSS classes the widget added/removed to the element.
    *  Detaching any elements the widget added to the DOM.
    *  Destroying any widgets that the widget applied to other elements.
 
-*  Bind [event](https://glossary.magento.com/event) handlers using the `_bind()` method to make it easy to find what events the widget reacts on.
+*  Bind event handlers using the `_bind()` method to make it easy to find what events the widget reacts on.
 *  Bind events using the `on()` method.
 
    Benefits:

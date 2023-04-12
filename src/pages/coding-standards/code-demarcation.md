@@ -7,16 +7,16 @@ description: Review code demarcation standards for Adobe Commerce and Magento Op
 
 Core developers must follow the code demarcation standard.
 
-This standard is recommended for third-party [extension](https://glossary.magento.com/extension) developers.
+This standard is recommended for third-party extension developers.
 
 Some parts of code might not comply with the standard, but we are working to gradually improve this.
 
 The standard was developed in the scope of our efforts to ensure the following:
 
 -  Decouple visual (CSS) layer from the functional (JavaScript) layer.
--  Decouple functional (JavaScript) layer from the [markup](https://glossary.magento.com/markup) (HTML).
--  Reinstate emphasis on using of [jQuery](https://glossary.magento.com/jquery) templates.
--  Reinstate emphasis on decoupling HTML, [CSS](https://glossary.magento.com/css) and JS from [PHP](https://glossary.magento.com/php) classes.
+-  Decouple functional (JavaScript) layer from the markup (HTML).
+-  Reinstate emphasis on using of jQuery templates.
+-  Reinstate emphasis on decoupling HTML, CSS and JS from PHP classes.
 
 Use [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt) to interpret the "MUST," "MUST NOT," "REQUIRED," "SHALL," "SHALL NOT," "SHOULD," "SHOULD NOT," "RECOMMENDED," "MAY," and "OPTIONAL" keywords.
 
@@ -59,7 +59,7 @@ Semantic representation may rely on ID attribute
 -  Forces engineers to think about reusable page components instead of unique singleton components.
 -  Reduces long-term maintenance efforts.
 
-**Acceptable [PHTML](https://glossary.magento.com/phtml) template:**
+**Acceptable PHTML template:**
 
 The following acceptable example is terse and uses an Accessible Rich Internet Applications (ARIA) approach.
 
@@ -151,10 +151,10 @@ You must use semantic HTML markup only, and must not use presentation markup
 
 Visual representation must rely only on HTML `class` attributes, CSS pseudo-classes and pseudo-elements, HTML tags, and form element's type attribute and form elements state attributes (example: `disabled`, `checked`).
 
-As the first option, you are required to use [HTML](https://glossary.magento.com/html) class attributes. In case this option is not applicable then it is recommended to use HTML tags and form element's type attribute.
+As the first option, you are required to use HTML class attributes. In case this option is not applicable then it is recommended to use HTML tags and form element's type attribute.
 
 -  Enforces clean, strict separation between visual and business logic layers.
--  Allows [frontend](https://glossary.magento.com/frontend) and [backend](https://glossary.magento.com/backend) teams to work independently.
+-  Allows frontend and backend teams to work independently.
 -  Allows changing look and feel without affecting business functionality, and vice versa.
 -  Enables frontend teams to clean up old styles quickly and easily when refactoring.
 
@@ -193,7 +193,7 @@ Exception: CSS attributes where values must be calculated beyond the css-topics/
 -  Improves style extensibility.
 -  Reduces long-term maintenance efforts by containing CSS styles in a single place.'
 
-**Acceptable [JavaScript](https://glossary.magento.com/javascript) [widget](https://glossary.magento.com/widget) file:**
+**Acceptable JavaScript widget file:**
 
 ```js
 ...

@@ -9,7 +9,7 @@ import Docs from '/src/pages/_includes/braintree-note.md'
 
 # Request Builder
 
-Request Builder is a component of the Adobe Commerce [payment gateway](https://glossary.magento.com/payment-gateway) responsible for building a request from several parts. It allows implementing complex, yet atomic and testable, building strategies. Each builder can have simple logic or contain builder composites.
+Request Builder is a component of the Adobe Commerce payment gateway responsible for building a request from several parts. It allows implementing complex, yet atomic and testable, building strategies. Each builder can have simple logic or contain builder composites.
 
 ## Basic interface
 

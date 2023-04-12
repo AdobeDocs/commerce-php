@@ -5,7 +5,7 @@ description: Learn how Adobe Commerce and Magento Open Source projects use Compo
 
 # Introduction to Composer
 
-We use [Composer](https://getcomposer.org/) to manage components and their dependencies. Using Composer to get the Adobe Commerce and Magento Open Source software [metapackage](https://glossary.magento.com/metapackage) provides the following advantages:
+We use [Composer](https://getcomposer.org/) to manage components and their dependencies. Using Composer to get the Adobe Commerce and Magento Open Source software metapackage provides the following advantages:
 
 -  Reuse third-party libraries without bundling them with source code
 -  Reduce extension conflicts and compatibility issues by using a component-based architecture with robust dependency management
@@ -19,7 +19,7 @@ You can also [download](https://magento.com/tech-resources/download) an archive 
 
 ## Links to code
 
-The key to developing any [component](https://glossary.magento.com/magento-component) is its [`composer.json`](https://getcomposer.org/doc/04-schema.md) file, which specifies version and dependency information for a component, among other things. You can look at the code, such as:
+The key to developing any component is its [`composer.json`](https://getcomposer.org/doc/04-schema.md) file, which specifies version and dependency information for a component, among other things. You can look at the code, such as:
 
 -  Metapackage, look at `<magento_root>/composer.json`.
 -  [Customer module](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/composer.json)

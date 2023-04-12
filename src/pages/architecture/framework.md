@@ -5,10 +5,10 @@ description: Learn how the Commerce framework controls the way application compo
 
 # Commerce framework
 
-The Adobe Commerce and Magento Open Source framework (Commerce framework) controls how application components interact, including request flow, routing, indexing, caching, and [exception](https://glossary.magento.com/exception) handling. It provides services that reduce the effort of creating modules that contain business logic, contributing to the goal of both making Commerce code more modular as well as decreasing dependencies.
+The Adobe Commerce and Magento Open Source framework (Commerce framework) controls how application components interact, including request flow, routing, indexing, caching, and exception handling. It provides services that reduce the effort of creating modules that contain business logic, contributing to the goal of both making Commerce code more modular as well as decreasing dependencies.
 
-This primarily [PHP](https://glossary.magento.com/php) software component is organized into logical groups called *libraries*, which all modules can call.  Most of the framework code sits under the domain layer or encloses the presentation, service, and domain layers. The framework contains no business logic.
-(Although the Commerce framework does not contain resource models, it does contain a [library](https://glossary.magento.com/library) of code to help implement a resource model.)
+This primarily PHP software component is organized into logical groups called *libraries*, which all modules can call.  Most of the framework code sits under the domain layer or encloses the presentation, service, and domain layers. The framework contains no business logic.
+(Although the Commerce framework does not contain resource models, it does contain a library of code to help implement a resource model.)
 
 <InlineAlert variant="success" slots="text"/>
 
@@ -42,19 +42,19 @@ lib/
     ../web
 ```
 
-*  `/vendor/magento/framework`  contains only PHP code. These are libraries of code plus the application entry point that routes requests to modules (that in turn call the Framework libraries). For example,  libraries in the Framework help implement a resource model (base classes and interfaces to inherit from) but not the resource models themselves. Certain libraries also support [CSS](https://glossary.magento.com/css) rendering.
+*  `/vendor/magento/framework`  contains only PHP code. These are libraries of code plus the application entry point that routes requests to modules (that in turn call the Framework libraries). For example,  libraries in the Framework help implement a resource model (base classes and interfaces to inherit from) but not the resource models themselves. Certain libraries also support CSS rendering.
 
-*  `/lib/internal` contains some non-PHP as well as PHP components. Non-PHP framework libraries includes [JavaScript](https://glossary.magento.com/javascript) and LESS/CSS.
+*  `/lib/internal` contains some non-PHP as well as PHP components. Non-PHP framework libraries includes JavaScript and LESS/CSS.
 
 *  `/lib/web` contains JavaScript and CSS/LESS files. These files reside  under `web` and not `internal` because they are accessible from a web browser, while the PHP code under `internal` is not. (Any code that a web browser must access should be under `web`, while everything else under `internal`.)
 
 <InlineAlert variant="success" slots="text"/>
 
-The `vendor/magento/framework` directory maps to the `Magento\Framework` [namespace](https://glossary.magento.com/namespace).
+The `vendor/magento/framework` directory maps to the `Magento\Framework` namespace.
 
 ## Framework highlights
 
-The Commerce framework (`lib/internal/Magento/Framework/`) provides a robust range of functionality. If you are an [extension](https://glossary.magento.com/extension) developer, you may be interested in this subset of Framework namespaces.
+The Commerce framework (`lib/internal/Magento/Framework/`) provides a robust range of functionality. If you are an extension developer, you may be interested in this subset of Framework namespaces.
 
 |Namespace|Purpose|
 |--- |--- |

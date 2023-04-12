@@ -10,7 +10,7 @@ Caching is one of the most effective ways to improve website performance. Genera
 -  Client-side (browser)
 -  Server-side
 
-Retrieving stored ([cached](https://glossary.magento.com/cache)) content from a previous request for the same client instead of requesting files from your server every time someone visits your site is a more efficient use of network bandwidth.
+Retrieving stored (cached) content from a previous request for the same client instead of requesting files from your server every time someone visits your site is a more efficient use of network bandwidth.
 
 The Adobe Commerce and Magento Open Source page cache library contains a simple PHP reverse proxy that enables full page caching out of the box. A reverse proxy acts as an intermediary between visitors and your application and can reduce the load on your server.
 
@@ -22,7 +22,7 @@ We recommend using [Varnish](https://experienceleague.adobe.com/docs/commerce-op
 
 ## Cacheable and uncacheable pages
 
-*Cacheable* and *uncacheable* are terms we use to indicate whether or not a page should be cached at all. (By default, all pages are cacheable.) If any block in a [layout](https://glossary.magento.com/layout) is designated as uncacheable, the entire page is uncacheable.
+*Cacheable* and *uncacheable* are terms we use to indicate whether or not a page should be cached at all. (By default, all pages are cacheable.) If any block in a layout is designated as uncacheable, the entire page is uncacheable.
 
 To create an uncacheable page, mark any block on that page as uncacheable in the layout using `cacheable="false"`.
 
@@ -32,7 +32,7 @@ To create an uncacheable page, mark any block on that page as uncacheable in the
 </block>
 ```
 
-Examples of uncacheable pages include the compare products, cart, [checkout](https://glossary.magento.com/checkout) pages, and so on.
+Examples of uncacheable pages include the compare products, cart, checkout pages, and so on.
 
 [Example](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Paypal/view/frontend/layout/paypal_payflow_returnurl.xml)
 

@@ -9,7 +9,7 @@ import Docs from '/src/pages/_includes/braintree-note.md'
 
 # Payment method module configuration
 
-For the sake of compatibility, upgradability and easy maintenance, do not edit the default Adobe Commerce code; add your customizations in a separate [module](https://glossary.magento.com/module).
+For the sake of compatibility, upgradability and easy maintenance, do not edit the default Adobe Commerce code; add your customizations in a separate module.
 
 <InlineAlert variant="info" slots="text"/>
 
@@ -23,7 +23,7 @@ Your custom payment integration module must have at least the following dependen
 
 -  Magento_Payment module: to use the Commerce payment provider gateway infrastructure
 
--  Magento_Checkout module: to be able to add the new [payment method](https://glossary.magento.com/payment-method) to [checkout](https://glossary.magento.com/checkout). If you do not plan to use it on the [storefront](https://glossary.magento.com/storefront) checkout, this dependency is not required.
+-  Magento_Checkout module: to be able to add the new payment method to checkout. If you do not plan to use it on the storefront checkout, this dependency is not required.
 
 Specify these dependencies in your `composer.json` and `module.xml` files.
 

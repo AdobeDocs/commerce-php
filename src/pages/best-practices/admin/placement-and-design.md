@@ -5,7 +5,7 @@ description: Review best practices for designing and placing your extension in t
 
 # Admin panel placement and design
 
-The flixeible Adobe Commerce and Magento Open Source framework lets you place an [extension](https://glossary.magento.com/extension) anywhere in the [Admin](https://glossary.magento.com/admin) panel. However, it can be difficult finding the right place for your extension and how it should look, so we’ve prepared the following guidelines to help.
+The flixeible Adobe Commerce and Magento Open Source framework lets you place an extension anywhere in the Admin panel. However, it can be difficult finding the right place for your extension and how it should look, so we’ve prepared the following guidelines to help.
 
 ## Things to Avoid
 
@@ -23,7 +23,7 @@ For more information about icon design and the application's icon library, see t
 
 ### Advertising in Navigation
 
-It is not appropriate to use the [Admin](https://glossary.magento.com/magento-admin) navigation for marketing or to [cross-sell](https://glossary.magento.com/cross-sell) extensions after your extension has been installed. A [new section](#feature-extensions) is under proposal that will possibly be more suitable for marketing and advertising content.
+It is not appropriate to use the Admin navigation for marketing or to cross-sell extensions after your extension has been installed. A [new section](#feature-extensions) is under proposal that will possibly be more suitable for marketing and advertising content.
 
 Do not use the name of your company or marketing jargon as part of an extension name or the extension name itself in the Admin. You should create a unique feature name that users will understand because people usually search for extensions by feature or function keywords, not by a company or brand name.
 
@@ -35,7 +35,7 @@ From the list of extension types below, determine the type of extension you have
 
 ### Standard Connector
 
-These extensions provide additional [APIs](https://glossary.magento.com/api) and are responsible for providing settings between the application and another system.
+These extensions provide additional APIs and are responsible for providing settings between the application and another system.
 
 **Placement:**
 

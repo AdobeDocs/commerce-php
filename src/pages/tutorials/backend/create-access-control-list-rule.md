@@ -7,7 +7,7 @@ contributor_link: https://www.Ziffity.com/
 
 # Create an access control list (ACL) rule
 
-Access Control List (ACL) rules allow an admin to limit the permissions of users. For example, you can use ACL rules to authorize the users to access menus, controllers, API endpoints and conditionally render [layout](https://glossary.magento.com/layout) [blocks](https://glossary.magento.com/block).
+Access Control List (ACL) rules allow an admin to limit the permissions of users. For example, you can use ACL rules to authorize the users to access menus, controllers, API endpoints and conditionally render layout blocks.
 
 In this tutorial, we are creating four custom resources (Custom Menu, Create, Delete, View), then creating a role that has access to these resources, and taking steps to restrict access by four entities (Admin users, controllers, web APIs and layout block).
 

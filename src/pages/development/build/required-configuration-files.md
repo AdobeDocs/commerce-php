@@ -5,7 +5,7 @@ description: Create required configuration files for Adobe Commerce and Magento 
 
 # Required configuration files
 
-Each [module](https://glossary.magento.com/module) has its own set of configuration files, gathered into the module's `etc` directory.
+Each module has its own set of configuration files, gathered into the module's `etc` directory.
 
 <InlineAlert variant="info" slots="text"/>
 
@@ -31,7 +31,7 @@ Adobe Commerce and Magento Open Source look for configuration information for ea
 
 Additions you make to those configuration files are applied *globally* to your module.
 
-In addition to those files, a module also has nested configuration directories in the `etc` directory for any required administration html, frontend, API REST, or API SOAP specific configuration. Additions you make to files in these directories override the settings in the global configuration files for the respective functionality only. That is, if you add a `config.xml` file to `etc/frontend`, the settings you make in that file overrides the settings in `etc/config.xml` for [storefront](https://glossary.magento.com/storefront) functionality *only*.
+In addition to those files, a module also has nested configuration directories in the `etc` directory for any required administration html, frontend, API REST, or API SOAP specific configuration. Additions you make to files in these directories override the settings in the global configuration files for the respective functionality only. That is, if you add a `config.xml` file to `etc/frontend`, the settings you make in that file overrides the settings in `etc/config.xml` for storefront functionality *only*.
 
 *  `<your module root dir>/etc/adminhtml/`
 *  `<your module root dir>/etc/frontend/`
@@ -45,7 +45,7 @@ In addition to those files, a module also has nested configuration directories i
 
 ### Requirements
 
-The exact set of configuration files required for your module depends on what your new module does. The required configuration files depend on how you plan to use the module: will the module be manifested on the storefront UI, or in the [Admin](https://glossary.magento.com/magento-admin) panel, or as a [backend](https://glossary.magento.com/backend) [extension](https://glossary.magento.com/extension) that makes a service call? Or all of the above. For example, if your module performs a function in the Admin, you should add any necessary configuration files for those functions to `etc/adminhtml/`, like:
+The exact set of configuration files required for your module depends on what your new module does. The required configuration files depend on how you plan to use the module: will the module be manifested on the storefront UI, or in the Admin panel, or as a backend extension that makes a service call? Or all of the above. For example, if your module performs a function in the Admin, you should add any necessary configuration files for those functions to `etc/adminhtml/`, like:
 
 *  `<your module root dir>/etc/adminhtml/di.xml`
 *  `<your module root dir>/etc/adminhtml/routes.xml`

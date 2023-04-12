@@ -118,7 +118,7 @@ This object is an instance of a class that implements the interface [`SearchResu
 
 Search Result objects hold the Search Criteria object and the retrieved entities along with information about the total count of found entities regardless of any limitations set in the criteria.
 
-The search engine determines the maximum number of results that a query can return. For Elasticsearch, the default value of 10000 is defined in the module's `etc/di.xml` file.
+The search engine determines the maximum number of results that a query can return. For Elasticsearch or OpenSearch, the default value of 10000 is defined in the module's `etc/di.xml` file.
 
 The example below uses **getList** with the [`ProductRepositoryInterface`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Api/ProductRepositoryInterface.php).
 We use the [`FilterBuilder`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Api/FilterBuilder.php) and the [`SearchCriteriaBuilder`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Api/SearchCriteriaBuilder.php) to avoid shared instances.
@@ -185,7 +185,7 @@ private function addFilterGroupToCollection(
 ```
 
 You can configure this class to use a specific custom field mapping and custom filter in the `di.xml` file.
-The example below uses [dependency injection](https://glossary.magento.com/dependency-injection) to create a [virtual type](https://glossary.magento.com/virtual-type) from a Filter Processor that applies the module-specific [`ProductCategoryFilter`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/Api/SearchCriteria/CollectionProcessor/FilterProcessor/ProductCategoryFilter.php) on a particular field mapping.
+The example below uses dependency injection to create a virtual type from a Filter Processor that applies the module-specific [`ProductCategoryFilter`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/Api/SearchCriteria/CollectionProcessor/FilterProcessor/ProductCategoryFilter.php) on a particular field mapping.
 
 ```xml
     <virtualType name="Magento\Customer\Model\Api\SearchCriteria\CollectionProcessor\GroupFilterProcessor" type="Magento\Framework\Api\SearchCriteria\CollectionProcessor\FilterProcessor">

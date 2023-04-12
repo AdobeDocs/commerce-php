@@ -5,7 +5,7 @@ description: Review best practices for writing secure code for Adobe Commerce an
 
 # Security
 
-Using [PHP](https://glossary.magento.com/php) features that are known to be exploitable or non-secure can lead to remote code execution or weak cryptography.
+Using PHP features that are known to be exploitable or non-secure can lead to remote code execution or weak cryptography.
 As a developer, you should avoid using features that introduce vulnerabilities in your code.
 
 ## PHP functions to avoid

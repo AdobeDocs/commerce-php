@@ -5,7 +5,7 @@ description: Follow these recommendations to define Adobe Commerce and Magento O
 
 # Service contract design patterns
 
-In the programming community, a _design pattern_ is a recommended way of writing code that includes when to use, or not use, the pattern. Think of a [design pattern](https://glossary.magento.com/design-pattern) as a best practice with conditions.
+In the programming community, a _design pattern_ is a recommended way of writing code that includes when to use, or not use, the pattern. Think of a design pattern as a best practice with conditions.
 
 Design patterns for service contracts tell you which types of interfaces to define, and how and where to define and implement those interfaces.
 
@@ -15,11 +15,11 @@ Service contract data interfaces are now mutable.
 
 ## Interface types and locations
 
-A [service contract](https://glossary.magento.com/service-contract) must define data interfaces, which preserve data integrity, and service interfaces, which hide business logic from service requestors.
+A service contract must define data interfaces, which preserve data integrity, and service interfaces, which hide business logic from service requestors.
 
-Data interfaces define functions that return information about data entities, return search results, and set validation rules and return validation results. You must define the data interfaces for a service contract in the `Api/Data` subdirectory for a [module](https://glossary.magento.com/module).
+Data interfaces define functions that return information about data entities, return search results, and set validation rules and return validation results. You must define the data interfaces for a service contract in the `Api/Data` subdirectory for a module.
 
-Service interfaces include management, repository, and [metadata](https://glossary.magento.com/metadata) interfaces.
+Service interfaces include management, repository, and metadata interfaces.
 You must define the service interfaces for a service contract in the `Api` subdirectory for a module.
 
 ### Data interfaces
@@ -37,7 +37,7 @@ For example, use `default_shipping1` instead of `default_shipping_1`, as the Dat
 
 When you pass search criteria to a `getList()` call, a search results interface is returned with the search results.
 
-You must define one interface for each data [entity](https://glossary.magento.com/entity) for type hinting purposes. That is, the `getItems()` function in the
+You must define one interface for each data entity for type hinting purposes. That is, the `getItems()` function in the
 `CustomerSearchResultsInterface` returns an array of `CustomerInterface` data entities.
 In `GroupSearchResultsInterface`, the `getItems()` function returns an array of `GroupInterface` data entities.
 

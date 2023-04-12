@@ -11,6 +11,7 @@ to generate quote (cart) information endpoints. Also provides endpoints for modi
 ## Installation
 
 Before installing this module, note that the Magento_QuoteGraphQl is dependent on the following modules:
+
 - `Magento_CatalogGraphQl`
 
 This module does not introduce any database schema modifications or new data.
@@ -19,9 +20,9 @@ For information about a module installation in Magento 2, see [Enable or disable
 
 ## Extensibility
 
-Extension developers can interact with the Magento_QuoteDownloadableLinks module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_QuoteDownloadableLinks module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_QuoteDownloadableLinks module.
+[The Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html) enables you to override the functionality of the Magento_QuoteDownloadableLinks module.
 
 ## Additional information
 

@@ -19,7 +19,7 @@ The public method `getSectionData` must return an array with data for a private 
 
 [Example](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/CustomerData/CompareProducts.php#L61-L70)
 
-Add the following to your component's [dependency injection](https://glossary.magento.com/dependency-injection) configuration (`di.xml`):
+Add the following to your component's dependency injection configuration (`di.xml`):
 
 ```xml
 <type name="Magento\Customer\CustomerData\SectionPoolInterface">
@@ -33,13 +33,13 @@ Add the following to your component's [dependency injection](https://glossary.ma
 
 ## Create a block and template
 
-To render private content, create a block and a template to display user-agnostic data; this data is replaced with user-specific data by the [UI component](https://glossary.magento.com/ui-component).
+To render private content, create a block and a template to display user-agnostic data; this data is replaced with user-specific data by the UI component.
 
 <InlineAlert variant="info" slots="text"/>
 
 Do not use the `$_isScopePrivate` property in your blocks. This property is obsolete and will not work properly.
 
-Replace private data in blocks with placeholders (using [Knockout](http://knockoutjs.com/documentation/introduction.html) syntax). The init scope on the root element is `data-bind="scope: 'compareProducts'"`, where you define the scope name (`compareProducts` in this example) in your [layout](https://glossary.magento.com/layout).
+Replace private data in blocks with placeholders (using [Knockout](http://knockoutjs.com/documentation/introduction.html) syntax). The init scope on the root element is `data-bind="scope: 'compareProducts'"`, where you define the scope name (`compareProducts` in this example) in your layout.
 
 Initialize the component as follows:
 
@@ -53,7 +53,7 @@ Initialize the component as follows:
 
 ## Configure a UI component
 
-The UI component renders block data on the [storefront](https://glossary.magento.com/storefront). To initialize the UI component, you must trigger the parent initialization method by calling the `_super()` method and defining a property to store customer data. The `customerData.get()` method returns a [Knockout's observable](https://glossary.magento.com/ui-component).
+The UI component renders block data on the storefront. To initialize the UI component, you must trigger the parent initialization method by calling the `_super()` method and defining a property to store customer data. The `customerData.get()` method returns a Knockout's observable.
 
 ```javascript
 initialize: function () {
@@ -148,7 +148,7 @@ Versioning works as follows:
 
 1. The user performs some action, such as adding to a cart, that results in an POST or PUT request to the Adobe Commerce or Magento Open Source application.
 1. The server generates the `private_content_version` cookie for this user and returns the response to the browser.
-1. [JavaScript](https://glossary.magento.com/javascript) interprets the presence of the `private_content_version` cookie to mean that private content is present on the page, so it sends an AJAX request to the application server to get the current private content.
+1. JavaScript interprets the presence of the `private_content_version` cookie to mean that private content is present on the page, so it sends an AJAX request to the application server to get the current private content.
 1. The server's reply is cached in the browser's local storage.
 
    Subsequent requests with the same data version are retrieved from local storage.

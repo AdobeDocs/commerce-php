@@ -15,11 +15,13 @@ model for request and access token management.
 The Magento_Integration module is one of the base Magento 2 modules. You cannot disable or uninstall this module.
 
 This module is dependent on the following modules:
+
 - `Magento_Store`
 - `Magento_User`
 - `Magento_Security`
 
 The Magento_Integration module creates the following tables in the database:
+
 - `oauth_consumer`
 - `oauth_token`
 - `oauth_nonce`
@@ -30,15 +32,16 @@ For information about a module installation in Magento 2, see [Enable or disable
 
 ## Extensibility
 
-Extension developers can interact with the Magento_Integration module. For more information about the Magento extension mechanism, see [Magento plugins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_Integration module. For more information about the Magento extension mechanism, see [Magento plugins](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_Integration module.
+[The Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html) enables you to override the functionality of the Magento_Integration module.
 
 ### Events
 
 The module dispatches the following events:
 
 #### Model
+
 - `customer_login` event in the `\Magento\Integration\Model\CustomerTokenService::createCustomerAccessToken` method. Parameters:
     - `customer` is an object (`\Magento\Customer\Api\Data\CustomerInterface` class)
 
@@ -47,6 +50,7 @@ For information about an event in Magento 2, see [Events and observers](http://d
 ### Layouts
 
 This module introduces the following layout handles in the `view/adminhtml/layout` directory:
+
 - `adminhtml_integration_edit`
 - `adminhtml_integration_grid`
 - `adminhtml_integration_grid_block`
@@ -56,7 +60,7 @@ This module introduces the following layout handles in the `view/adminhtml/layou
 - `adminhtml_integration_tokensdialog`
 - `adminhtml_integration_tokensexchange`
 
-For more information about a layout in Magento 2, see the [Layout documentation](https://developer.adobe.com/commerce/frontend-core/guide/layouts/).
+For more information about a layout in Magento 2, see the [Layout documentation](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/layout-overview.html).
 
 ### Public APIs
 
@@ -87,7 +91,7 @@ For more information about a layout in Magento 2, see the [Layout documentation]
     - create a new consumer account
     - create access token for provided consumer
     - retrieve access token assigned to the consumer
-    - load consumer by its ID 
+    - load consumer by its ID
     - load consumer by its key
     - execute post to integration (consumer) HTTP Post URL. Generate and return oauth_verifier
     - delete the consumer data associated with the integration including its token and nonce
@@ -109,4 +113,4 @@ Cron group configuration can be set at `etc/crontab.xml`:
 More information can get at articles:
 
 - [Learn more about an Integration](https://docs.magento.com/user-guide/system/integrations.html)
-- [Lear how to create an Integration](https://developer.adobe.com/commerce/webapi/get-started/create-integration/)
+- [Lear how to create an Integration](https://devdocs.magento.com/guides/v2.4/get-started/create-integration.html)

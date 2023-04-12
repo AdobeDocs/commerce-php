@@ -5,7 +5,7 @@ description: Use the object manager helper class to save time unit testing Adobe
 
 # Object manager helper
 
-Block and model class constructors declare many dependencies. Adobe Commerce and Magento Open Source use constructor [dependency injection](https://glossary.magento.com/dependency-injection).
+Block and model class constructors declare many dependencies. Adobe Commerce and Magento Open Source use constructor dependency injection.
 To unit test such classes, you must manually create mocks for all constructor parameters before you can instantiate the class objects. If the number of dependencies is ten or greater, this task is time-consuming.
 
 Use the `\Magento\Framework\TestFramework\Unit\Helper\ObjectManager` helper class to simplify this task. Its methods automatically create mocks for all required dependencies. You can then instantiate a testing object by passing these mocks to a class constructor.

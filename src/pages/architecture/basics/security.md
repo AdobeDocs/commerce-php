@@ -17,7 +17,7 @@ Adobe has strengthened the hashing algorithms (SHA-256) used in password managem
 
 ### Improved prevention of cross-site scripting (XSS) attacks by making escaped data the default
 
-The Commerce framework has adopted conventions that regulate the escaping of data in output. These conventions include the ability to escape  output for [HTML](https://glossary.magento.com/html) pages (HTML, JSON, and JavaScript) and email. Where possible, escaping is transparent to client code. See [Security measures against XSS attacks](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/) in the [Frontend](https://glossary.magento.com/frontend) Developer Guide.
+The Commerce framework has adopted conventions that regulate the escaping of data in output. These conventions include the ability to escape  output for HTML pages (HTML, JSON, and JavaScript) and email. Where possible, escaping is transparent to client code. See [Security measures against XSS attacks](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/) in the Frontend Developer Guide.
 
 ### More flexible file system ownership and permissions
 
@@ -35,4 +35,4 @@ The Commerce framework safeguards your store from clickjacking attacks by using 
 
 ### Use of non-default Admin URL
 
-A simple [Admin](https://glossary.magento.com/magento-admin) [URL](https://glossary.magento.com/url) (like `admin` or `backend`) makes it easy to target attacks on specific locations using automated password guessing. To prevent against this type of attack, the Commerce framework by default creates a random Admin URI when you install the product. The CLI command `php bin/magento info:adminuri` is provided so that you can  see the URI if you forget it. You can also use the CLI to change this URI.  Although the use of a non-default admin URL will not secure the site, its use will help prevent large-scale automated attacks. See [Display or change the Admin URI](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-adminurl.html) in Configuration Guide for more information.
+A simple Admin URL (like `admin` or `backend`) makes it easy to target attacks on specific locations using automated password guessing. To prevent against this type of attack, the Commerce framework by default creates a random Admin URI when you install the product. The CLI command `php bin/magento info:adminuri` is provided so that you can  see the URI if you forget it. You can also use the CLI to change this URI.  Although the use of a non-default admin URL will not secure the site, its use will help prevent large-scale automated attacks. See [Display or change the Admin URI](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-adminurl.html) in Configuration Guide for more information.

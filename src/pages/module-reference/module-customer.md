@@ -5,8 +5,8 @@ description: README.md contents of the module from the source code
 
 # Magento_Customer module
 
-This module serves to handle the customer data (Customer, Customer Address and Customer Group entities) both in the admin panel and the storefront. 
-For customer passwords, the module implements upgrading hashes. 
+This module serves to handle the customer data (Customer, Customer Address and Customer Group entities) both in the admin panel and the storefront.
+For customer passwords, the module implements upgrading hashes.
 
 ## Installation
 
@@ -17,6 +17,7 @@ This module is dependent on the following modules:
 - `Magento_Directory`
 
 The following modules depend on this module:
+
 - `Magento_Captcha`
 - `Magento_Catalog`
 - `Magento_CatalogCustomerGraphQl`
@@ -36,6 +37,7 @@ The following modules depend on this module:
 - `Magento_WishlistGraphQl`
 
 The Magento_Customer module creates the following tables in the database:
+
 - `customer_entity`
 - `customer_entity_datetime`
 - `customer_entity_decimal`
@@ -59,28 +61,30 @@ For information about a module installation in Magento 2, see [Enable or disable
 
 ## Extensibility
 
-Extension developers can interact with the Magento_Customer module. For more information about the Magento extension mechanism, see [Magento plugins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_Customer module. For more information about the Magento extension mechanism, see [Magento plugins](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_Customer module.
+[The Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html) enables you to override the functionality of the Magento_Customer module.
 
-A lot of functionality in the module is on JavaScript, use [mixins](https://developer.adobe.com/commerce/frontend-core/javascript/mixins/) to extend it.
+A lot of functionality in the module is on JavaScript, use [mixins](https://devdocs.magento.com/guides/v2.4/javascript-dev-guide/javascript/js_mixins.html) to extend it.
 
 ### Events
 
 The module dispatches the following events:
 
 #### Block
+
 - `adminhtml_block_html_before` event in the `\Magento\Customer\Block\Adminhtml\Edit\Tab\Carts::_toHtml` method. Parameters:
     - `block` is a `$this` object (`Magento\Customer\Block\Adminhtml\Edit\Tab\Carts` class)
-    
+
 #### Controller
+
 - `customer_register_success` event in the `\Magento\Customer\Controller\Account\CreatePost::execute` method. Parameters:
     - `account_controller` is a `$this` object (`\Magento\Customer\Controller\Account\CreatePost` class)
     - `customer` is a customer object (`\Magento\Customer\Model\Data\Customer` class)
-    
+
 - `customer_account_edited` event in the `\Magento\Customer\Controller\Account\EditPost::dispatchSuccessEvent` method. Parameters:
     - `email` is a customer email (`string` type)
-    
+
 - `adminhtml_customer_prepare_save` event in the `\Magento\Customer\Controller\Adminhtml\Index\Save::execute` method. Parameters:
     - `customer` is a customer object to be saved (`\Magento\Customer\Model\Data\Customer` class)
     - `request` is a request object with the `\Magento\Framework\App\RequestInterface` interface.
@@ -90,6 +94,7 @@ The module dispatches the following events:
     - `request` is a request object with the `\Magento\Framework\App\RequestInterface` interface.
   
 #### Model
+
 - `customer_customer_authenticated` event in the `\Magento\Customer\Model\AccountManagement::authenticate` method. Parameters:
     - `model` is a customer object (`\Magento\Customer\Model\Customer` class)
     - `password` is a customer password (`string` type)
@@ -139,6 +144,7 @@ For information about an event in Magento 2, see [Events and observers](http://d
 ### Layouts
 
 This module introduces the following layouts in the `view/frontend/layout` and `view/adminhtml/layout` directories:
+
 - `view/adminhtml/layout`:
     - `customer_address_edit`
     - `customer_group_index`
@@ -151,7 +157,7 @@ This module introduces the following layouts in the `view/frontend/layout` and `
     - `customer_index_viewcart`
     - `customer_index_viewwishlist`
     - `customer_online_index`
-    
+
 - `view/frontend/layout`:
     - `customer_account`
     - `customer_account_confirmation`
@@ -165,7 +171,7 @@ This module introduces the following layouts in the `view/frontend/layout` and `
     - `customer_address_index`
     - `default`
 
-For more information about a layout in Magento 2, see the [Layout documentation](https://developer.adobe.com/commerce/frontend-core/guide/layouts/).
+For more information about a layout in Magento 2, see the [Layout documentation](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/layout-overview.html).
 
 ### Public APIs
 
@@ -207,25 +213,25 @@ For more information about a layout in Magento 2, see the [Layout documentation]
 #### Metadata
 
 - `\Magento\Customer\Api\MetadataInterface`:
-    - retrieve all attributes filtered by form code 
+    - retrieve all attributes filtered by form code
     - retrieve attribute metadata by attribute code
     - get all attribute metadata
     - get custom attributes metadata for the given data interface
-    
+
 - `\Magento\Customer\Api\MetadataManagementInterface`:
     - check whether attribute is searchable in admin grid and it is allowed
     - check whether attribute is filterable in admin grid and it is allowed
-    
+
 #### Customer address
 
 - `\Magento\Customer\Api\AddressMetadataInterface`:
     - retrieve information about customer address attributes metadata
     - extends `Magento\Customer\MetadataInterface`
-    
+
 - `\Magento\Customer\Api\AddressMetadataManagementInterface`:
     - manage customer address attributes metadata
     - extends `Magento\Customer\Api\MetadataManagementInterface`
-    
+
 - `\Magento\Customer\Api\AddressRepositoryInterface`:
     - save customer address
     - get customer address by address ID
@@ -242,7 +248,7 @@ For more information about a layout in Magento 2, see the [Layout documentation]
 
 - `\Magento\Customer\Model\Address\CustomAttributeListInterface`
     - retrieve list of customer addresses custom attributes
-    
+
 #### Customer
 
 - `\Magento\Customer\Api\AccountManagementInterface`:
@@ -265,21 +271,21 @@ For more information about a layout in Magento 2, see the [Layout documentation]
     - retrieve default billing address for the given customer ID
     - retrieve default shipping address for the given customer ID
     - get hashed password
-    
+
 - `\Magento\Customer\Api\CustomerManagementInterface`:
     - provide the number of customer count
-    
+
 - `\Magento\Customer\Api\CustomerMetadataInterface`:
     - retrieve information about customer attributes metadata
     - extends `Magento\Customer\MetadataInterface`
-    
+
 - `\Magento\Customer\Api\CustomerMetadataManagementInterface`:
     - manage customer attributes metadata
     - extends `Magento\Customer\Api\MetadataManagementInterface`
-    
+
 - `\Magento\Customer\Api\CustomerNameGenerationInterface`:
     - concatenate all customer name parts into full customer name
-    
+
 - `\Magento\Customer\Api\CustomerRepositoryInterface`:
     - create or update a customer
     - get customer by customer EMAIL
@@ -299,19 +305,19 @@ For more information about a layout in Magento 2, see the [Layout documentation]
     - send email with new customer password
     - send email with reset password confirmation link
     - send email with new account related information
-    
+
 #### Customer group
 
 - `\Magento\Customer\Api\CustomerGroupConfigInterface`:
     - set system default customer group
-    
+
 - `\Magento\Customer\Api\GroupManagementInterface`:
     - check if customer group can be deleted
     - get default customer group
     - get customer group representing customers not logged in
     - get all customer groups except group representing customers not logged in
     - get customer group representing all customers
-    
+
 - `\Magento\Customer\Api\GroupRepositoryInterface`:
     - save customer group
     - get customer group by group ID
@@ -324,12 +330,13 @@ For more information about a layout in Magento 2, see the [Layout documentation]
 
 - `\Magento\Customer\Model\Customer\Source\GroupSourceLoggedInOnlyInterface`
     - get customer group attribute source
-    
+
 For information about a public API in Magento 2, see [Public interfaces & APIs](http://devdocs.magento.com/guides/v2.4/extension-dev-guide/api-concepts.html).
 
 ### UI components
 
 You can extend customer and customer address updates using the configuration files located in the `view/adminhtml/ui_component` and `view/base/ui_component` directories:
+
 - `view/adminhtml/ui_component`:
     - `customer_address_form`
     - `customer_address_listing`
@@ -339,26 +346,29 @@ You can extend customer and customer address updates using the configuration fil
 
 - `view/base/ui_component`:
     - `customer_form`
-    
+
 For information about a UI component in Magento 2, see [Overview of UI components](http://devdocs.magento.com/guides/v2.4/ui_comp_guide/bk-ui_comps.html).
 
 ## Additional information
 
 More information can get at articles:
+
 - [Customer Configurations](https://docs.magento.com/user-guide/configuration/customers/customer-configuration.html)
 - [Customer Attributes](https://docs.magento.com/user-guide/stores/attributes-customer.html)
 - [Customer Address Attributes](https://docs.magento.com/user-guide/stores/attributes-customer-address.html)
-- [EAV And Extension Attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
+- [EAV And Extension Attributes](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/attributes.html)
 - [2.4.x Release information](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html)
 
 ### Console commands
 
 Magento_Customer provides console commands:
+
 - `bin/magento customer:hash:upgrade` - upgrades a customer password hash to the latest hash algorithm
 
 ### Cron options
 
 Cron group configuration can be set at `etc/crontab.xml`:
+
 - `visitor_clean` - clean visitor's outdated records
 
 [Learn how to configure and run cron in Magento.](http://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html).
@@ -366,6 +376,7 @@ Cron group configuration can be set at `etc/crontab.xml`:
 ### Indexers
 
 This module introduces the following indexers:
+
 - `customer_grid` - customer grid indexer
 
-[Learn how to manage the indexers](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html).
+[Learn how to manage the indexers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html).

@@ -13,10 +13,10 @@ To address these issues, Adobe Commerce and Magento Open Source introduced _serv
 
 ## What is a service contract?
 
-A [service contract](https://glossary.magento.com/service-contract) is a set of [PHP](https://glossary.magento.com/php) interfaces that are defined for a [module](https://glossary.magento.com/module).
+A service contract is a set of PHP interfaces that are defined for a module.
 A service contract includes [data interfaces](design-patterns.md#data-interfaces), which preserve data integrity, and [service interfaces](design-patterns.md#service-interfaces), which hide business logic details from service requestors such as controllers, web services, and other modules.
 
-If developers define data and service interfaces according to a set of [design patterns](design-patterns.md), the result is a well-defined, durable [API](https://glossary.magento.com/api) that other modules and third-party extensions can implement through models and resource models.
+If developers define data and service interfaces according to a set of [design patterns](design-patterns.md), the result is a well-defined, durable API that other modules and third-party extensions can implement through models and resource models.
 
 ![Service Contracts](../../../_images/msc.jpg)
 
@@ -27,8 +27,8 @@ These contracts ensure a well-defined, durable API that other modules and third-
 
 Data entities are a side benefit of service contracts.
 The database tables that normally support these entities can be complicated.
-For example, some attributes might be stored in an EAV table, so a set of MySQL database tables might define a single data [entity](https://glossary.magento.com/entity).
-Data entities in a service contract reveal a simpler data model than the data model in an underlying relational [database schema](https://glossary.magento.com/database-schema).
+For example, some attributes might be stored in an EAV table, so a set of MySQL database tables might define a single data entity.
+Data entities in a service contract reveal a simpler data model than the data model in an underlying relational database schema.
 Eventually, you will be able to use different storage technologies for different data collections. For example, you could use a NoSQL database to replace product tables.
 
 ## Using the @api tag

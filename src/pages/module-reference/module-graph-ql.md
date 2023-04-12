@@ -6,7 +6,7 @@ description: README.md contents of the module from the source code
 # Magento_GraphQl module
 
 This module provides the framework for the application to expose GraphQL compliant web services. It exposes an area for
-GraphQL services and resolves request data based on the generated schema. It also maps this response to a JSON object 
+GraphQL services and resolves request data based on the generated schema. It also maps this response to a JSON object
 for the client to read.
 
 ## Installation
@@ -14,10 +14,12 @@ for the client to read.
 The Magento_GraphQl module is one of the base Magento 2 modules. You cannot disable or uninstall this module.
 
 This module is dependent on the following modules:
+
 - `Magento_Authorization`
 - `Magento_Eav`
 
 The following modules depend on this module:
+
 - `Magento_BundleGraphQl`
 - `Magento_CatalogGraphQl`
 - `Magento_CmsGraphQl`
@@ -34,9 +36,9 @@ For information about a module installation in Magento 2, see [Enable or disable
 
 ## Extensibility
 
-Extension developers can interact with the Magento_GraphQl module. For more information about the Magento extension mechanism, see [Magento plugins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_GraphQl module. For more information about the Magento extension mechanism, see [Magento plugins](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_GraphQl module.
+[The Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html) enables you to override the functionality of the Magento_GraphQl module.
 
 ## Additional information
 

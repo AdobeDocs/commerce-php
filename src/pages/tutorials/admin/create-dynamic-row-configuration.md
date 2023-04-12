@@ -5,7 +5,7 @@ description: Follow this tutorial to add a new dynamic row system configuration 
 
 # Create a dynamic row system configuration
 
-This tutorial shows you how to add a new dynamic rows system configuration in the [Admin](https://glossary.magento.com/magento-admin), by extending the [Magento/Config/Block/System/Config/Form/Field/FieldArray/AbstractFieldArray][0] class.
+This tutorial shows you how to add a new dynamic rows system configuration in the Admin, by extending the [Magento/Config/Block/System/Config/Form/Field/FieldArray/AbstractFieldArray][0] class.
 
 ## Step 1: Add a new system field
 

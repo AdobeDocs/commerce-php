@@ -50,7 +50,7 @@ To customize the product creation form, take the following steps:
 
 ## Add new elements
 
-By default, the new elements (fields, field sets, modals, grids) which you add in the form configuration file, are displayed on the form whatever product is created; that is, for all [product types](https://glossary.magento.com/product-types).
+By default, the new elements (fields, field sets, modals, grids) which you add in the form configuration file, are displayed on the form whatever product is created; that is, for all product types.
 
 In the [modifier class described further](modifier-class.md), you can set the conditions for displaying certain elements for certain product types.
 
