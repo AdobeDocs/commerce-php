@@ -3,7 +3,7 @@ title: Convert Serialized Data to JSON | Commerce PHP Extensions
 description: Follow this tutorial to convert database data from the defaul PHP serialized format to JSON.
 ---
 
-# Convert serliazed data to JSON
+# Convert serialized data to JSON
 
 The following tutorial lists the steps needed to create an upgrade script that converts the data stored in the database from the default PHP serialized format to JSON format.
 
