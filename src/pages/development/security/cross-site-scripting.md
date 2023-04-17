@@ -57,14 +57,14 @@ When using the `\Magento\Framework\Escaper` or `$escaper`:
 **The following code sample illustrates XSS-safe output in templates:**
 
 ```php
-<?php echo $block->getTitleHtml() ?>
-<?php echo $block->getHtmlTitle() ?>
-<?php echo $escaper->escapeHtml($block->getTitle()) ?>
-<?php echo (int)$block->getId() ?>
-<?php echo count($var); ?>
-<?php echo 'some text' ?>
-<?php echo "some text" ?>
-<a href="<?php echo $escaper->escapeUrl($block->getUrl()) ?>"><?php echo $block->getAnchorTextHtml() ?></a>
+<?= $block->getTitleHtml() ?>
+<?= $block->getHtmlTitle() ?>
+<?= $escaper->escapeHtml($block->getTitle()) ?>
+<?= (int)$block->getId() ?>
+<?= count($var); ?>
+<?= 'some text' ?>
+<?= "some text" ?>
+<a href="<?= $escaper->escapeUrl($block->getUrl()) ?>"><?= $block->getAnchorTextHtml() ?></a>
 ```
 
 **When to use Escaper methods:**
@@ -98,10 +98,10 @@ If a tag is allowed, the following attributes will not be escaped: `id`, `class`
 `embed`, `iframe`, `video`, `source`, `object`, `audio`, `script` and `img` tags are not allowed, regardless of the content of this array.
 
 ```php
- <span class="label"><?php echo $escaper->escapeHtml($block->getLabel()) ?></span>
+ <span class="label"><?= $escaper->escapeHtml($block->getLabel()) ?></span>
   // Escaping translation
   <div id='my-element'>
-      <?php echo $escaper->escapeHtml(__('Only registered users can write reviews. Please <a href="%1">Sign in</a> or <a href="%2">create an account</a>', $block->getLoginUrl(), $block->getCreateAccountUrl()), ['a']) ?>
+      <?= $escaper->escapeHtml(__('Only registered users can write reviews. Please <a href="%1">Sign in</a> or <a href="%2">create an account</a>', $block->getLoginUrl(), $block->getCreateAccountUrl()), ['a']) ?>
   </div>
 ```
 
