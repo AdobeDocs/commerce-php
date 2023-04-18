@@ -76,7 +76,7 @@ You can get the singleton instance of a factory for a specific model using [depe
 The following example shows a class getting the `BlockFactory` instance through the constructor:
 
 ```php
-function __construct ( \Magento\Cms\Model\BlockFactory $blockFactory) {
+public function __construct ( \Magento\Cms\Model\BlockFactory $blockFactory) {
     $this->blockFactory = $blockFactory;
 }
 ```
