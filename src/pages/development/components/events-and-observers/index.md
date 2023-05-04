@@ -124,7 +124,7 @@ class MyObserver implements ObserverInterface
 }
 ```
 
-One of the more powerful feature of observers is that they are able to use parameters passed into the event when it was dispatched. Below is an example of an observer obtaining data passed in when the event was dispatched.
+One of the more powerful features of observers is that they are able to use parameters passed into the event when it was dispatched. Below is an example of an observer obtaining data passed in when the event was dispatched.
 
 ```php
 <?php
@@ -191,7 +191,7 @@ If you declare an observer with a name that is already in use within the same ev
 
 ### Disabling an observer
 
-Existing observers can be disabled, if you do not want to have them running. It is a good practice to disable the obsever if you want to change its logic rather than override it.
+Existing observers can be disabled, if you do not want to have them running. It is a good practice to disable the observer if you want to change its logic rather than override it.
 Below is an example of how to disable the previously created observer.
 
 ```xml
