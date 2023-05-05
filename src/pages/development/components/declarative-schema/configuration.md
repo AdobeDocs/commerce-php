@@ -24,7 +24,7 @@ The following example, extracted from the `Catalog/etc/db_schema.xml` file, defi
 ```xml
 <table name="catalog_product_entity_datetime" resource="default" engine="innodb"
            comment="Catalog Product Datetime Attribute Backend Table">
-    <column xsi:type="int" name="value_id" unsigned="false" nullable="false" identity="true" comment="Value ID"/>
+    <column xsi:type="int" name="value_id" unsigned="true" nullable="false" identity="true" comment="Value ID"/>
     <column xsi:type="smallint" name="attribute_id" unsigned="true" nullable="false" identity="false" default="0" comment="Attribute ID"/>
     <column xsi:type="smallint" name="store_id" unsigned="true" nullable="false" identity="false" default="0" comment="Store ID"/>
     <column xsi:type="int" name="entity_id" unsigned="true" nullable="false" identity="false" default="0" comment="Entity ID"/>
