@@ -406,7 +406,7 @@ class Dynamic extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
 }
 ```
 
-## Create a custom product type of type dynamicarray
+## Create a custom product attribute of type dynamicarray
 
 ***`app/code/Goivvy/Attribute/Setup/InstallData.php`***:
 
