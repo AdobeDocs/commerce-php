@@ -11,13 +11,13 @@ This page highlights backward-incompatible changes between Adobe Commerce and Ma
 
 The following major backward-incompatible changes were introduced in the 2.4.7-beta1 Adobe Commerce and Magento Open Source releases:
 
-* New public method in Config/Type/System
+* New public method in `Config/Type/System`
 * New configuration for payment information rate limiting
 * Default behavior for isEmailAvailable API
 
-### New public method in Config/Type/System
+### New public method in `Config/Type/System`
 
-The `bin/magento cache:clean config` CLI command, and it's Admin UI equivalent, now pre-warm the config cache (when config cache is enabled) in order to reduce the lock time after cleaning the config cache. This reduces the downtime for large configurations that take significant time to generate the config cache.
+The `bin/magento cache:clean config` CLI command, and its Admin UI equivalent, now pre-warm the config cache (when config cache is enabled) in order to reduce the lock time after cleaning the config cache. This reduces the downtime for large configurations that take significant time to generate the config cache.
 
 We've also changed the configuration save so that it no longer cleans the `config_scopes` cache (when config cache is enabled). Config saving also pre-warms the config cache now, which also reduces the lock time for large configurations. Cleaning the config cache after saving configuration changes is still recommended.
 
@@ -37,7 +37,7 @@ The following module is affected by this change:
 
 * [Magento_Quote](https://developer.adobe.com/commerce/php/module-reference/module-quote/)
 
-### isEmailAvailable API
+### `isEmailAvailable` API
 
 The default behavior of the [`isEmailAvailable`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/is-email-available/) GraphQL query and ([`V1/customers/isEmailAvailable`](https://adobe-commerce.redoc.ly/2.4.6-admin/tag/customersisEmailAvailable/#operation/PostV1CustomersIsEmailAvailable)) REST endpoint has changed. By default, the API now always returns `false`. Merchants can enable the original behavior, which is to return `true` if the email does not exist in the database and `false` if it exists.
 
