@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - ds_test
 jobs:
   set-state:
     runs-on: ubuntu-latest
