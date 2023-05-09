@@ -7,7 +7,7 @@ contributor_link: https://www.goivvy.com/
 
 # Create a custom product attribute input type
 
-This tutorial shows you how to add a custom product attribute input type. 
+This tutorial shows you how to add a custom product attribute input type.
 
 We will create an extension that adds a `Dynamic Array` attribute input type and a product attribute `Product Tags` of that type.
 
@@ -462,4 +462,3 @@ class InstallData implements InstallDataInterface
 ```
 
 You can find a working copy of the extension on a [GitHub page](https://github.com/goivvy/new-attribute-type).
-
