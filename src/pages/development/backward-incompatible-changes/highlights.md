@@ -11,9 +11,9 @@ This page highlights backward-incompatible changes between Adobe Commerce and Ma
 
 The following major backward-incompatible changes were introduced in the 2.4.7-beta1 Adobe Commerce and Magento Open Source releases:
 
-* <!--AC-8148-->New public method in Config/Type/System
-* <!--AC-7894-->New configuration for payment information rate limiting
-* <!--AC-6695-->Default behavior for isEmailAvailable API
+* New public method in Config/Type/System
+* New configuration for payment information rate limiting
+* Default behavior for isEmailAvailable API
 
 ### New public method in Config/Type/System
 
@@ -28,6 +28,10 @@ The following module is affected by this change:
 * [Magento_Config](https://developer.adobe.com/commerce/php/module-reference/module-config/)
 
 ### New configuration for payment information rate limiting
+
+New native application rate-limiting features have been added with initial out-of-the-box support for rate limiting of payment API's. Disabled by default.
+
+No action for merchants or partners is necessary.
 
 The following module is affected by this change:
 
