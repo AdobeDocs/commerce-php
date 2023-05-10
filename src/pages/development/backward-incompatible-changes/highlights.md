@@ -11,9 +11,25 @@ This page highlights backward-incompatible changes between Adobe Commerce and Ma
 
 The following major backward-incompatible changes were introduced in the 2.4.7-beta1 Adobe Commerce and Magento Open Source releases:
 
+* New interface and method for Application Server module
 * New public method in `Config/Type/System`
 * New configuration for payment information rate limiting
 * Default behavior for isEmailAvailable API
+
+### New interface and method for Application Server module
+
+State management has been enabled for all GraphQL APIs (excluding B2B and service-related processes). The 2.4.7-beta1 release introduces a new PHP application server that is implemented on a Swoole PHP extension. This application server enables Adobe Commerce to maintain state between Commerce GraphQL API requests and eliminates the need for request bootstrapping. By sharing state among processes, API requests become significantly more efficient, and API response times potentially decrease by 50 to 60 milliseconds.
+
+The `ResetAfterRequestInterface` interface and `_resetState()` method were added to enable the PHP application server. The `__debugInfo()` method was also added to fix issues with `var_dump` calls.
+
+No action for merchants or extension developers is necessary.
+
+The following modules are affected by this change:
+
+* [Magento_Authorization](https://developer.adobe.com/commerce/php/module-reference/module-authorization/)
+* [Magento_Config](https://developer.adobe.com/commerce/php/module-reference/module-config/)
+* [Magento_Customer](https://developer.adobe.com/commerce/php/module-reference/module-customer/)
+* [Magento_ResourceConnections](https://developer.adobe.com/commerce/php/module-reference/module-resource-connections/)
 
 ### New public method in `Config/Type/System`
 
@@ -21,7 +37,7 @@ The `bin/magento cache:clean config` CLI command, and its Admin UI equivalent, n
 
 We've also changed the configuration save so that it no longer cleans the `config_scopes` cache (when config cache is enabled). Config saving also pre-warms the config cache now, which also reduces the lock time for large configurations. Cleaning the config cache after saving configuration changes is still recommended.
 
-No action for merchants or partners is necessary because the general functionality is the same. Only the order of generating the config cache, serializing, and encrypting (before lock instead of after) was changed.
+No action for merchants or extension developers is necessary because the general functionality is the same. Only the order of generating the config cache, serializing, and encrypting (before lock instead of after) was changed.
 
 The following module is affected by this change:
 
@@ -31,7 +47,7 @@ The following module is affected by this change:
 
 New native application rate-limiting features have been added with initial out-of-the-box support for rate limiting of payment API's. Disabled by default.
 
-No action for merchants or partners is necessary.
+No action for merchants or extension developers is necessary.
 
 The following module is affected by this change:
 
