@@ -29,7 +29,7 @@ To build the site locally:
 
 ## Resources
 
-See the following resources to learn more about using the theme:
+See the following resources to learn more about using the theme::
 
 - [Arranging content structure](https://github.com/adobe/aio-theme#content-structure)
 - [Linking to pages](https://github.com/adobe/aio-theme#links)
