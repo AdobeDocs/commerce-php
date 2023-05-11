@@ -11,14 +11,14 @@ This page highlights backward-incompatible changes between Adobe Commerce and Ma
 
 The following major backward-incompatible changes were introduced in the 2.4.7-beta1 Adobe Commerce and Magento Open Source releases:
 
-* New interface and method for Application Server module
+* New interface and method for ApplicationServer module
 * New public method in `Config/Type/System`
 * New configuration for payment information rate limiting
 * Default behavior for isEmailAvailable API
 
-### New interface and method for Application Server module
+### New interface and method for ApplicationServer module
 
-State management has been enabled for all GraphQL APIs (excluding B2B and service-related processes). The 2.4.7-beta1 release introduces a new PHP application server that is implemented on a Swoole PHP extension. This application server enables Adobe Commerce to maintain state between Commerce GraphQL API requests and eliminates the need for request bootstrapping. By sharing application state among processes, API requests become significantly more efficient, and API response times potentially decrease by 50 to 60 milliseconds.
+State management has been enabled for all GraphQL APIs (excluding B2B and service-related processes). The 2.4.7-beta1 release introduces a new PHP application server that is implemented on a Swoole PHP extension. The [ApplicationServer](https://developer.adobe.com/commerce/php/module-reference/module-application-server/) module enables Adobe Commerce to maintain state between Commerce GraphQL API requests and eliminates the need for request bootstrapping. By sharing application state among processes, API requests become significantly more efficient, and API response times potentially decrease by 50 to 60 milliseconds.
 
 The `ResetAfterRequestInterface` interface and `_resetState()` method were added to enable the PHP application server. The `__debugInfo()` method was also added to fix issues with `var_dump` calls.
 
