@@ -5,7 +5,7 @@ description: Review best practices for designing and placing your extension in t
 
 # Admin panel placement and design
 
-The flixeible Adobe Commerce and Magento Open Source framework lets you place an extension anywhere in the Admin panel. However, it can be difficult finding the right place for your extension and how it should look, so we’ve prepared the following guidelines to help.
+The flexible Adobe Commerce and Magento Open Source framework lets you place an extension anywhere in the Admin panel. However, it can be difficult finding the right place for your extension and how it should look, so we've prepared the following guidelines to help.
 
 ## Things to Avoid
 
