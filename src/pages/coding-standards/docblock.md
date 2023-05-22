@@ -521,7 +521,7 @@ For example:
 
 #### @return tag
 
-In general, method return type signatures should be prefered over `@return` type annotations.
+In general, method return type signatures should be preferred over `@return` type annotations.
 If that is not possible due to ambiguous return types or backward compatibility constraints, the `@return` type annotation must be used.
 If there is no explicit return statement in a method or function or a return statement without a value, a `void` return type must be declared in the method signature. For example:
 
@@ -749,7 +749,7 @@ Specifically, this is possible when a PHP file is composed from multiple file in
 
 ### @method tag
 
-The `@method` allows a class to know which ‘magic’ methods are callable.
+The `@method` allows a class to know which 'magic' methods are callable.
 
 Syntax:
 

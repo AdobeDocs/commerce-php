@@ -14,7 +14,7 @@ This topic discusses our recommended naming conventions.
 A command *name* is a part of the command, which defines behavior of the command on the very high level. In the command it goes right after the command's name.
 For example, in `bin/magento setup:upgrade`, `bin/magento` is the command's name and `setup:upgrade` is the name of the command.
 
-If you have an aplication installation handy, enter the following to display the current list of commands:
+If you have an application installation handy, enter the following to display the current list of commands:
 
 ```bash
 bin/magento list

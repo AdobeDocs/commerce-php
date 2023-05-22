@@ -1,6 +1,6 @@
 ---
 title: Backward-incompatible changes highlights | Commerce PHP Extensions
-description: Learn about major changes in Adobe Commerce and Magento Open Source releases that require detaile dexplanation and special instructions to ensure your custom extension continues working.
+description: Learn about major changes in Adobe Commerce and Magento Open Source releases that require detailed explanation and special instructions to ensure your custom extension continues working.
 ---
 
 # Backward-incompatible changes highlights

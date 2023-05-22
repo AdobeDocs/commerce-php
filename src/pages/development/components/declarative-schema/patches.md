@@ -90,7 +90,7 @@ class DummyPatch
         /**
          * This is dependency to another patch. Dependency should be applied first
          * One patch can have few dependencies
-         * Patches do not have versions, so if in old approach with Install/Ugrade data scripts you used
+         * Patches do not have versions, so if in old approach with Install/Upgrade data scripts you used
          * versions, right now you need to point from patch with higher version to patch with lower version
          * But please, note, that some of your patches can be independent and can be installed in any sequence
          * So use dependencies only if this important for you
