@@ -35,7 +35,7 @@ It allows you to see the problematic code just in real time, without running it 
 ![](../../_images/best-practices/phpstorm/built-in-uct/uct-inspections-highlighting-4.png)
 
 The second IntelliJ IDEA tool that we can use for running UCT inspections is called **Inspect Code**. It is available under menu item
-`Code -> Inspect Code`. Also, you can open a context menu under the target directory that allows IntelliJ IDEA to populate the path to analyse for you automatically:
+`Code -> Inspect Code`. Also, you can open a context menu under the target directory that allows IntelliJ IDEA to populate the path to analyze for you automatically:
 
 ![](../../_images/best-practices/phpstorm/built-in-uct/run-inspect-code-from-context-menu.png)
 

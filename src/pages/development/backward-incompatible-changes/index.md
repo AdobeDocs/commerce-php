@@ -7,4 +7,4 @@ description: Learn about PHP API, class, database, interface, layout, and XSD ch
 
 Adobe Commerce and Magento Open Source releases may contain backward-incompatible changes (BICs).
 
-To review minor backward-incompatible changes by release version, see [reference](reference.md). To review major backward-incompatible changes and detailed workaroud instructions, see [highlights](highlights.md). Not all releases introduce major BICs.
+To review minor backward-incompatible changes by release version, see [reference](reference.md). To review major backward-incompatible changes and detailed workaround instructions, see [highlights](highlights.md). Not all releases introduce major BICs.

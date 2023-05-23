@@ -19,7 +19,7 @@ Use [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt) to interpret the "must," "mu
 
 ## Naming conventions
 
-*  Widget names must consist of one or more non-abbreviated English word and in camelcase format.
+*  Widget names must consist of one or more non-abbreviated English word and in camel case format.
 
    ```javascript
    (function($) {
