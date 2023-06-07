@@ -13,6 +13,7 @@ jobs:
         run: |
           yarn build
         env:
+          NODE_OPTIONS: "--max_old_space_size=4096"
           PREFIX_PATHS: true # works like --prefix-paths flag for 'gatsby build'
           PATH_PREFIX: ${{ github.event.repository.name }}
           ADOBE_LAUNCH_SRC: ${{ secrets.AIO_ADOBE_LAUNCH_SRC }}
