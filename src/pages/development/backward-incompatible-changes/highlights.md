@@ -7,6 +7,56 @@ description: Learn about major changes in Adobe Commerce and Magento Open Source
 
 This page highlights backward-incompatible changes between Adobe Commerce and Magento Open Source releases that have a major impact and require detailed explanation and special instructions to ensure third-party modules continue working. High-level reference information for all backward-incompatible changes in each release are documented in [Backward incompatible changes reference](reference.md).
 
+## 2.4.7-beta1
+
+The following major backward-incompatible changes were introduced in the 2.4.7-beta1 Adobe Commerce and Magento Open Source releases:
+
+* New interface and method for ApplicationServer module
+* New public method in `Config/Type/System`
+* New configuration for payment information rate limiting
+* Default behavior for isEmailAvailable API
+
+### New interface and method for ApplicationServer module
+
+State management has been enabled for all GraphQL APIs (excluding B2B and service-related processes). The 2.4.7-beta1 release introduces a new PHP application server that is implemented on a Swoole PHP extension. The [ApplicationServer](https://developer.adobe.com/commerce/php/module-reference/module-application-server/) module enables Adobe Commerce to maintain state between Commerce GraphQL API requests and eliminates the need for request bootstrapping. By sharing application state among processes, API requests become significantly more efficient, and API response times potentially decrease by 50 to 60 milliseconds.
+
+The `ResetAfterRequestInterface` interface and `_resetState()` method were added to enable the PHP application server. The `__debugInfo()` method was also added to fix issues with `var_dump` calls.
+
+No action for merchants or extension developers is necessary.
+
+The following modules are affected by this change:
+
+* [Magento_Authorization](https://developer.adobe.com/commerce/php/module-reference/module-authorization/)
+* [Magento_Config](https://developer.adobe.com/commerce/php/module-reference/module-config/)
+* [Magento_Customer](https://developer.adobe.com/commerce/php/module-reference/module-customer/)
+* [Magento_ResourceConnections](https://developer.adobe.com/commerce/php/module-reference/module-resource-connections/)
+
+### New public method in `Config/Type/System`
+
+The `bin/magento cache:clean config` CLI command, and its Admin UI equivalent, now pre-warm the config cache (when config cache is enabled) in order to reduce the lock time after cleaning the config cache. This reduces the downtime for large configurations that take significant time to generate the config cache.
+
+We've also changed the configuration save so that it no longer cleans the `config_scopes` cache (when config cache is enabled). Config saving also pre-warms the config cache now, which also reduces the lock time for large configurations. Cleaning the config cache after saving configuration changes is still recommended.
+
+No action for merchants or extension developers is necessary because the general functionality is the same. Only the order of generating the config cache, serializing, and encrypting (before lock instead of after) was changed.
+
+The following module is affected by this change:
+
+* [Magento_Config](https://developer.adobe.com/commerce/php/module-reference/module-config/)
+
+### New configuration for payment information rate limiting
+
+New native application rate-limiting features have been added with initial out-of-the-box support for rate limiting of payment API's. Disabled by default.
+
+No action for merchants or extension developers is necessary.
+
+The following module is affected by this change:
+
+* [Magento_Quote](https://developer.adobe.com/commerce/php/module-reference/module-quote/)
+
+### `isEmailAvailable` API
+
+The default behavior of the [`isEmailAvailable`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/is-email-available/) GraphQL query and ([`V1/customers/isEmailAvailable`](https://adobe-commerce.redoc.ly/2.4.6-admin/tag/customersisEmailAvailable/#operation/PostV1CustomersIsEmailAvailable)) REST endpoint has changed. By default, the API now always returns `false`. Merchants can enable the original behavior, which is to return `true` if the email does not exist in the database and `false` if it exists.
+
 ## 2.4.6
 
 The following major backward-incompatible changes were introduced in the 2.4.6 Adobe Commerce and Magento Open Source releases:
