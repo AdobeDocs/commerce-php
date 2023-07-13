@@ -32,34 +32,10 @@ This topic provides a high level description of how indexing is implemented from
 
 The following components are involved in the indexing process:
 
-<table>
-    <tbody>
-        <tr>
-            <th>Component</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/magento/magento2/blob/2.4/app/code/Magento/Indexer" target="_blank">Magento_Indexer</a></td>
-            <td>Implements:
-                <ul>
-                    <li>indexer declaration</li>
-                    <li>indexer running</li>
-                    <li>indexer running mode configuration</li>
-                    <li>indexer status</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Mview" target="_blank">Magento\Framework\Mview</a></td>
-            <td>
-                <ul>
-                    <li>Allows tracking database changes for a certain <a href="https://glossary.magento.com/entity" target="_blank">entity</a> (product, <a href="https://glossary.magento.com/category" target="_blank">category</a>, etc.) and running change handler.</li>
-                    <li>Emulates the <a href="http://en.wikipedia.org/wiki/Materialized_view" target="_blank">materialized view</a> technology for MySQL using triggers and separate materialization process (provides executing <a href="https://glossary.magento.com/php" target="_blank">PHP</a> code instead of SQL queries, which allows materializing multiple queries).</li>
-                </ul>
-            </td>
-        </tr>
-    </tbody>
-</table>
+| Component                                                                                                    | Description                                                                                                                                                                                                                                                                                                                       |
+|--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Magento_Indexer](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Indexer)                     | Implements the following<ul><li>indexer declaration</li><li>indexer running</li><li>indexer running mode configuration</li><li>indexer status</li></ul>                                                                                                                                                                           |
+| [Magento/Framework/Mview](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Mview) | Allows tracking database changes for a certain entity (product, category, etc.) and running change handler.<br /><br />Emulates the materialized view technology for MySQL using triggers and separate materialization process (provides executing PHP code instead of SQL queries, which allows materializing multiple queries). |
 
 <InlineAlert variant="warning" slots="text"/>
 
