@@ -666,7 +666,7 @@ Indicates that the variable can take on any type.
 {*}
 ```
 
-#### The UNKOWN type
+#### The UNKNOWN type
 
 Indicates that the variable can take on any type, and the compiler should not type-check any uses of it.
 

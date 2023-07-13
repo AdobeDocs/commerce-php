@@ -120,7 +120,7 @@ There are sections that allow you to declare an 'action' node without specifying
 </config>
 ```
 
-This tells The application to invalidate all sections. But if you have declared sections for this action in another .xml file, it will override the initial sections and only newly added sections will be invalidated. If you need to reload all sections on some action, use `*` as section name or use an empty action and ensure that they will not be overriden by any other rules:
+This tells The application to invalidate all sections. But if you have declared sections for this action in another .xml file, it will override the initial sections and only newly added sections will be invalidated. If you need to reload all sections on some action, use `*` as section name or use an empty action and ensure that they will not be overridden by any other rules:
 
 ```xml
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

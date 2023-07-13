@@ -11,7 +11,7 @@ Run Configurations are used to run internal and external processes from within I
 
 See the [Run/Debug configurations topic](https://www.jetbrains.com/help/idea/run-debug-configuration.html) in the IntelliJ IDEA to understand the concept of a run configuration.
 
-The Run Configuration is a Graphical User Interface (GUI) for the Upgrade Compatibility Tool. This allows the Upgrade Compatibility Tool instance to be configured using Composer. We recommend that you install the Upgrade Compatibility Tool in the current project. However, if the Upgrade Compatibility Tool is located outside the current project, a message displays providing an optoin to download and install it in the current project.
+The Run Configuration is a Graphical User Interface (GUI) for the Upgrade Compatibility Tool. This allows the Upgrade Compatibility Tool instance to be configured using Composer. We recommend that you install the Upgrade Compatibility Tool in the current project. However, if the Upgrade Compatibility Tool is located outside the current project, a message displays providing an option to download and install it in the current project.
 
 <InlineAlert variant="warning" slots="text"/>
 
@@ -31,7 +31,7 @@ These are the main components of the Upgrade Compatibility Tool Run Configuratio
 
 *  *Upgrade Compatibility Tool (UCT) executable*: Path where the Upgrade Compatibility Tool executable script is located. Determined by the `bin/uct` path from the Upgrade Compatibility Tool source root directory.
 *  *Project root*: Current PHPStorm plugin root directory.
-*  *Path*: Path to analize. Restricts the search to a specific folder. This is an optional field.
+*  *Path*: Path to analyze. Restricts the search to a specific folder. This is an optional field.
 *  *Coming version*: The Adobe Commerce targeted version.
 *  *Min issue level*: The minimum issue level to show in the report. Default is [WARNING]. This is an optional field.
 *  *Ignore current version compatibility issues*: use this option when you do not want to include known critical issues, errors and warnings in your Upgrade Compatibility Tool report. This is an optional field.

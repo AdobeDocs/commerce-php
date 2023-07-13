@@ -25,7 +25,7 @@ We provide [sample configurations] at the end of this topic.
 
 ## Database caching using the `default` cache frontend
 
-To enable database caching using the `default` frontend, you must modify the `<magento_root>/app/etc/di.xml` file, which is the global deployment injection configuration for the application.
+To enable database caching using the `default` frontend, you must modify the `<magento_root>/app/etc/di.xml` file, which is the global dependency injection configuration for the application.
 
 To modify `di.xml`:
 

@@ -32,34 +32,10 @@ This topic provides a high level description of how indexing is implemented from
 
 The following components are involved in the indexing process:
 
-<table>
-    <tbody>
-        <tr>
-            <th>Component</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/magento/magento2/blob/2.4/app/code/Magento/Indexer" target="_blank">Magento_Indexer</a></td>
-            <td>Implements:
-                <ul>
-                    <li>indexer declaration</li>
-                    <li>indexer running</li>
-                    <li>indexer running mode configuration</li>
-                    <li>indexer status</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Mview" target="_blank">Magento\Framework\Mview</a></td>
-            <td>
-                <ul>
-                    <li>Allows tracking database changes for a certain <a href="https://glossary.magento.com/entity" target="_blank">entity</a> (product, <a href="https://glossary.magento.com/category" target="_blank">category</a>, etc.) and running change handler.</li>
-                    <li>Emulates the <a href="http://en.wikipedia.org/wiki/Materialized_view" target="_blank">materialized view</a> technology for MySQL using triggers and separate materialization process (provides executing <a href="https://glossary.magento.com/php" target="_blank">PHP</a> code instead of SQL queries, which allows materializing multiple queries).</li>
-                </ul>
-            </td>
-        </tr>
-    </tbody>
-</table>
+| Component                                                                                                    | Description                                                                                                                                                                                                                                                                                                                       |
+|--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Magento_Indexer](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Indexer)                     | Implements the following<ul><li>indexer declaration</li><li>indexer running</li><li>indexer running mode configuration</li><li>indexer status</li></ul>                                                                                                                                                                           |
+| [Magento/Framework/Mview](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Mview) | Allows tracking database changes for a certain entity (product, category, etc.) and running change handler.<br /><br />Emulates the materialized view technology for MySQL using triggers and separate materialization process (provides executing PHP code instead of SQL queries, which allows materializing multiple queries). |
 
 <InlineAlert variant="warning" slots="text"/>
 
@@ -169,9 +145,9 @@ For example part of `Magento/Catalog/etc/mview.xml` is tracking category to prod
 
 Explanation of nodes:
 
-*  The `view` node defines an indexer. The `id` attribute is a name of the indexer table, the `class` attribute is indexer executor, the `group` attribute defines the indexer group.
+*  The `view` node defines an indexer. The `id` attribute is a name of the indexer table, the `class` attribute is the indexer executor, the `group` attribute defines the indexer group.
 *  The `subscriptions` node is a list of tables for tracking changes.
-*  The `table` node defines the certain table to observe and track changes. The attribute `name` is a name of an observable table, the attribute `entity_column` is an identifier column of entity to be re-indexed. So, in case of `catalog_category_product`, whenever one or more categories is saved, updated or deleted in `catalog_category_entity` the `execute` method of `Magento\Catalog\Model\Indexer\Category\Product` will be called with argument `ids` containing ids of entities from column defined under `entity_column` attribute. If indexer type is set to "Update on Save" the method is called right away after the operation. If it set to "Update by Schedule" the mechanism creates a record in the change log table using MYSQL triggers.
+*  The `table` node defines the certain table to observe and track changes. The attribute `name` is the name of an observable table, the attribute `entity_column` is an identifier column of the entity to be re-indexed. So, in the case of `catalog_category_product`, whenever one or more categories are saved, updated or deleted in `catalog_category_entity`, the `execute` method of `Magento\Catalog\Model\Indexer\Category\Product` will be called with the argument `ids` containing ids of entities from the column defined under the `entity_column` attribute. If the indexer type is set to "Update on Save", the method is called right away after the operation. If it is set to "Update by Schedule" the mechanism creates a record in the change log table using MYSQL triggers.
 
 A change log table is created according to the naming rule - INDEXER_TABLE_NAME + '_cl', in case of `catalog_category_product` it will be `catalog_category_product_cl`.
 The table contains the `version_id` auto-increment column and `entity_id` column that contains identifiers of entities to be re-indexed.
