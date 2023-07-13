@@ -20,6 +20,10 @@ module.exports = [
       path: "/module-reference/",
     },
     {
+      title: "Module Reference (Beta)",
+      path: "/module-reference-beta/",
+    },
+    {
       title: "Coding Standards",
       path: "/coding-standards/",
     },
