@@ -385,7 +385,7 @@ As a result, email or newsletter templates that worked in previous versions may 
 
 Version 2.4.3-p1 introduced a configuration option for Media Gallery content that denotes which folders can contain Media gallery files.
 
-The new configuration path `system/media_storage_configuration/media_storage/allowed_resource/media_gallery_image_folders` is used to define the "Media Gallery Allowed" folders in 'config.xml'.
+The new configuration path `system/media_storage_configuration/allowed_resources/media_gallery_image_folders` is used to define the "Media Gallery Allowed" folders in 'config.xml'.
 
 The initial values are the `wysiwyg` and `catalog/category` folders.
 
