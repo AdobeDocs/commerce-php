@@ -15,6 +15,7 @@ The following major backward-incompatible changes were introduced in the 2.4.7-b
 * New public method in `Config/Type/System`
 * New configuration for payment information rate limiting
 * Default behavior for isEmailAvailable API
+* New SKU validation in inventory source items API
 
 ### New interface and method for ApplicationServer module
 
@@ -56,6 +57,9 @@ The following module is affected by this change:
 ### `isEmailAvailable` API
 
 The default behavior of the [`isEmailAvailable`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/is-email-available/) GraphQL query and ([`V1/customers/isEmailAvailable`](https://adobe-commerce.redoc.ly/2.4.6-admin/tag/customersisEmailAvailable/#operation/PostV1CustomersIsEmailAvailable)) REST endpoint has changed. By default, the API now always returns `false`. Merchants can enable the original behavior, which is to return `true` if the email does not exist in the database and `false` if it exists.
+
+### SKU validation inventory source items API
+Payload containing SKU will now be validated for leading or trailing spaces in `rest/V1/inventory/source-items` API.
 
 ## 2.4.6
 
