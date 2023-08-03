@@ -14,7 +14,8 @@ The following major backward-incompatible changes were introduced in the 2.4.7-b
 * New SKU validation in inventory source items API
 
 ### Sku validation in inventory source items API
-Payload containing SKU will now be validated for leading or trailing spaces in `rest/V1/inventory/source-items` API.
+
+Payload containing SKU will now be validated for leading and trailing spaces in the `rest/V1/inventory/source-items` API.
 
 ## 2.4.7-beta1
 
