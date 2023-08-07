@@ -7,6 +7,16 @@ description: Learn about major changes in Adobe Commerce and Magento Open Source
 
 This page highlights backward-incompatible changes between Adobe Commerce and Magento Open Source releases that have a major impact and require detailed explanation and special instructions to ensure third-party modules continue working. High-level reference information for all backward-incompatible changes in each release are documented in [Backward incompatible changes reference](reference.md).
 
+## 2.4.7-beta2
+
+The following major backward-incompatible changes were introduced in the 2.4.7-beta2 Adobe Commerce and Magento Open Source releases:
+
+* New SKU validation in inventory source items API
+
+### Sku validation in inventory source items API
+
+Payload containing SKU will now be validated for leading and trailing spaces in the `rest/V1/inventory/source-items` API.
+
 ## 2.4.7-beta1
 
 The following major backward-incompatible changes were introduced in the 2.4.7-beta1 Adobe Commerce and Magento Open Source releases:
