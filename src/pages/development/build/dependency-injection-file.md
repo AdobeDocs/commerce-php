@@ -370,7 +370,7 @@ class Success extends MagentoSuccess
 
 <InlineAlert variant="warning" slots="text"/>
 
-Overriding entire methods is not recommended approach and is noted here as a method of last report. This approach may cause conflicts in the system and reduces system upgradability. Other extensibility options such as `event observers` and `plugins` are preferable, when possible.
+Advising against the practice, it's suggested that completely replacing whole methods should only be considered as a final option. This approach may cause conflicts in the system and reduces system upgradability. Other extensibility options such as `event observers` and `plugins` are preferable, when possible.
 
 ### Parameter configuration inheritance
 
