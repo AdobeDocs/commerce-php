@@ -13,6 +13,8 @@
   },
   "devDependencies": {
     "remark-cli": "^10.0.1",
+    "remark-frontmatter": "4.0.1",
+    "remark-lint-frontmatter-schema": "^3.15.2",
     "remark-validate-links": "^11.0.2"
   },
   "scripts": {
@@ -25,11 +27,6 @@
     "clean": "gatsby clean",
     "test:links": "remark src/pages --quiet --frail",
     "lint": "docker run --rm -e RUN_LOCAL=true --env-file .github/super-linter.env -v \"$PWD\":/tmp/lint github/super-linter:slim-v4.10.1"
-  },
-  "remarkConfig": {
-    "plugins": [
-      "remark-validate-links"
-    ]
   },
   "packageManager": "yarn@3.2.4"
 }
