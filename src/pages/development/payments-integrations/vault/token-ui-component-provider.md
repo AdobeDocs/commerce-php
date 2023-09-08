@@ -3,7 +3,7 @@ title: Token UI component provider
 description: Learn how to create custom vault payment UI components that display stored tokens.
 ---
 
-import Docs from '/src/pages/_includes/braintree-note.md'
+import Docs from '/src/_includes/braintree-note.md'
 
 <Docs />
 

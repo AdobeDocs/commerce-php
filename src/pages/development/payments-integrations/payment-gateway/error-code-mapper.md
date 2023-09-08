@@ -3,7 +3,7 @@ title: Error Code Mapping
 description: Learn how to determine payment gateway error code routing.
 ---
 
-import Docs from '/src/pages/_includes/braintree-note.md'
+import Docs from '/src/_includes/braintree-note.md'
 
 <Docs />
 

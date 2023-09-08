@@ -3,7 +3,7 @@ title: Adding vault integration
 description: This is an overview of adding vault as a payment method so customers can use previously saved credit card information.
 ---
 
-import Docs from '/src/pages/_includes/braintree-note.md'
+import Docs from '/src/_includes/braintree-note.md'
 
 <Docs />
 

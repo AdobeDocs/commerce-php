@@ -5,6 +5,6 @@ description: Configure services as web APIs, set custom routes, and route web AP
 
 # Web APIs
 
-import Docs from '/src/pages/_includes/web-api.md'
+import Docs from '/src/_includes/web-api.md'
 
 <Docs />

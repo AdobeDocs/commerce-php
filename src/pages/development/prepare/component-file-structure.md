@@ -11,7 +11,7 @@ In addition, you can choose the component root directory to start development. T
 
 ## Root directory location
 
-import Docs from '/src/pages/_includes/component-root.md'
+import Docs from '/src/_includes/component-root.md'
 
 <Docs />
 

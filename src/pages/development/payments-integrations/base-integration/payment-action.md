@@ -3,7 +3,7 @@ title: Add a payment action
 description: Learn how to create a payment action and configure the command for that payment action.
 ---
 
-import Docs from '/src/pages/_includes/braintree-note.md'
+import Docs from '/src/_includes/braintree-note.md'
 
 <Docs />
 

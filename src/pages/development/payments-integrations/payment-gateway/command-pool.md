@@ -3,7 +3,7 @@ title: Gateway Command Pool
 description: Select the set of gateway commands available for integration with a payment provider.
 ---
 
-import Docs from '/src/pages/_includes/braintree-note.md'
+import Docs from '/src/_includes/braintree-note.md'
 
 <Docs />
 

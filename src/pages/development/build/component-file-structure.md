@@ -9,7 +9,7 @@ In this section, we go over the different file structures for component types. T
 
 ## Root directory location
 
-import Docs from '/src/pages/_includes/component-root.md'
+import Docs from '/src/_includes/component-root.md'
 
 <Docs />
 

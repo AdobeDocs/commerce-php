@@ -3,7 +3,7 @@ title: Request Builder
 description: Learn how to implement complex building strategies using builder composites.
 ---
 
-import Docs from '/src/pages/_includes/braintree-note.md'
+import Docs from '/src/_includes/braintree-note.md'
 
 <Docs />
 

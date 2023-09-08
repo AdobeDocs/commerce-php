@@ -3,7 +3,7 @@ title: Adding a new payment integration (payment method)
 description: This is an overview of how to add integrations to handle transactions with other payment providers.
 ---
 
-import Docs from '/src/pages/_includes/braintree-note.md'
+import Docs from '/src/_includes/braintree-note.md'
 
 <Docs />
 

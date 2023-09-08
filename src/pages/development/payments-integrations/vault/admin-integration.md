@@ -3,7 +3,7 @@ title: Vault implementation for Admin
 description: Learn how to configure the fault to work with Adobe Commerce.
 ---
 
-import Docs from '/src/pages/_includes/braintree-note.md'
+import Docs from '/src/_includes/braintree-note.md'
 
 <Docs />
 

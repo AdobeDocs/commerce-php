@@ -5,7 +5,7 @@ description: Learn about the aspirational vision that guides the development of 
 
 # Web API technical vision
 
-import Docs from '/src/pages/_includes/web-api.md'
+import Docs from '/src/_includes/web-api.md'
 
 <Docs />
 

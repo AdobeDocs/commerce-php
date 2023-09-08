@@ -3,7 +3,7 @@ title: Payment method configuration
 description: Learn how to configure the payment method options.
 ---
 
-import Docs from '/src/pages/_includes/braintree-note.md'
+import Docs from '/src/_includes/braintree-note.md'
 
 <Docs />
 
