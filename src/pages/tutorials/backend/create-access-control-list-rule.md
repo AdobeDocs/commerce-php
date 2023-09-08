@@ -1,5 +1,5 @@
 ---
-title: Creating an Access Control List (ACL) rule | Commerce PHP Extensions
+title: Create Access Control List rules | Commerce PHP Extensions
 description: Follow this tutorial to programmatically restrict access to custom Adobe Commerce and Magento Open Source resources.
 contributor_name: Ziffity
 contributor_link: https://www.Ziffity.com/

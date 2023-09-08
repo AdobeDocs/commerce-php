@@ -1,5 +1,5 @@
 ---
-title: Modify Media Library Folder Permissions | Commerce PHP Extensions
+title: Modify media library permissions | Commerce PHP Extensions
 description: Follow this tutorial to customize medial gallery permissions for your Adobe Commerce or Magento Open Source extension.
 --- 
 

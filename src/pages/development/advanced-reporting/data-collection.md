@@ -1,5 +1,5 @@
 ---
-title: Data collection for advanced reporting | Commerce PHP Extensions
+title: Data collection | Commerce PHP Extensions
 description: Learn about the data that the advanced reporting modules collect for Adobe Commerce and Magento Open Source.
 ---
 

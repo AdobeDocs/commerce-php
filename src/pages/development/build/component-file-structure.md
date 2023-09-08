@@ -1,5 +1,5 @@
 ---
-title: Create your component file structure | Commerce PHP Extensions
+title: Component file structure | Commerce PHP Extensions
 description: Get started with component development by understanding the proper file structure. 
 ---
 

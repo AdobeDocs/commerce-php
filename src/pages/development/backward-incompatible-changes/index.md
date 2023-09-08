@@ -1,6 +1,6 @@
 ---
 title: Backward-incompatible changes | Commerce PHP Extensions
-description: Learn about PHP API, class, database, interface, layout, and XSD changes in each Adobe Commerce or Magento Open Source release that may require you to update your extension.
+description: Learn about PHP API, class, database, interface, layout, and XSD changes in Adobe Commerce or Magento Open Source releases.
 ---
 
 # Backward-incompatible changes

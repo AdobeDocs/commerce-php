@@ -1,5 +1,5 @@
 ---
-title: Sensitive and Environment-Specific Settings | Commerce PHP Extensions
+title: Sensitive settings | Commerce PHP Extensions
 description: Configure sensitive and environment-specific settings with Adobe Commerce or Magento Open Source components.
 ---
 
@@ -27,7 +27,7 @@ Examples of sensitive information include:
 
 <InlineAlert variant="info" slots="text"/>
 
-In keeping with current security and privacy best practices, be sure you are aware of any potential legal and security risks associated with the storage of customers’ full date of birth (month, day, year) along with other personal identifiers, such as full name, before collecting or processing such data.
+In keeping with current security and privacy best practices, be sure you are aware of any potential legal and security risks associated with the storage of customers' full date of birth (month, day, year) along with other personal identifiers, such as full name, before collecting or processing such data.
 
 ### Environment or system-specific values
 

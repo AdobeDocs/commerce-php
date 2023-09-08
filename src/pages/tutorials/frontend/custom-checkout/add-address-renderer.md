@@ -1,5 +1,5 @@
 ---
-title: Add a Custom Shipping Address Renderer | Commerce PHP Extensions
+title: Add shipping address renderer | Commerce PHP Extensions
 description: Follow this tutorial to create a custom shipping address renderer in the Adobe Commerce and Magento Open Source checkout experience.
 ---
 

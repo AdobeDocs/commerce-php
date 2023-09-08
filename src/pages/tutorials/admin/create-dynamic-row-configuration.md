@@ -1,5 +1,5 @@
 ---
-title: Create a Dynamic Row System Configuration | Commerce PHP Extensions
+title: Create dynamic row configuration | Commerce PHP Extensions
 description: Follow this tutorial to add a new dynamic row system configuration in the Adobe Commerce and Magento Open Source Admin application.
 ---
 

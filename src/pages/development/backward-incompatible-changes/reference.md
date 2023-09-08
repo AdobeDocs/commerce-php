@@ -1,5 +1,5 @@
 ---
-title: Backward-incompatible changes reference | Commerce PHP Extensions
+title: Backward-incompatible changes | Commerce PHP Extensions
 description: Learn about minor changes in Adobe Commerce and Magento Open Source releases that may require you to update your extension.
 ---
 
