@@ -1,6 +1,8 @@
 ---
 title: Service Contract Design Patterns | Commerce PHP Extensions
 description: Follow these recommendations to define Adobe Commerce and Magento Open Source data and service interfaces.
+keywords:
+  - Extensions
 ---
 
 # Service contract design patterns

@@ -1,6 +1,10 @@
 ---
 title: Payment provider gateway structure
 description: This is a structural overview of the basic components of the Adobe Commerce payment provider gateway.
+keywords:
+  - Extensions
+  - Integration
+  - Payments
 ---
 
 import Docs from '/src/_includes/braintree-note.md'

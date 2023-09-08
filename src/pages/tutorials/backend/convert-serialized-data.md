@@ -1,6 +1,8 @@
 ---
 title: Convert Serialized Data to JSON | Commerce PHP Extensions
 description: Follow this tutorial to convert database data from the defaul PHP serialized format to JSON.
+keywords:
+  - Extensions
 ---
 
 # Convert serialized data to JSON
@@ -54,7 +56,7 @@ Example upgrade script content:
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -280,7 +282,7 @@ Since you cannot assume the format of the data when initially converted, the fol
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 

@@ -3,6 +3,9 @@ title: Add field for offline payments | Commerce PHP Extensions
 description: Follow this tutorial to create a custom field for an offline payment method in the Adobe Commerce and Magento Open Source checkout experience.
 contributor_name: Ziffity
 contributor_link: https://www.ziffity.com/
+keywords:
+  - Checkout
+  - Extensions
 ---
 
 # Add a custom field for an offline payment method

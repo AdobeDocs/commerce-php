@@ -1,6 +1,8 @@
 ---
 title: Develope and package components | Commerce PHP Extensions
 description: See an overview of the steps involved in building and distributing Adobe Commerce and Magento Open Source components.
+keywords:
+  - Extensions
 ---
 
 # Roadmap for developing and packaging components

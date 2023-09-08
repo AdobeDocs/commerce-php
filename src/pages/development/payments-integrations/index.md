@@ -1,6 +1,10 @@
 ---
 title: Payments Integrations
 description: This is an overview of how to integrate your stores with payment service providers, allowing you to create and handle transactions based on order details.
+keywords:
+  - Extensions
+  - Integration
+  - Payments
 ---
 
 import Docs from '/src/_includes/braintree-note.md'

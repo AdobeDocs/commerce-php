@@ -1,6 +1,8 @@
 ---
 title: Indexing | Commerce PHP Extensions
 description: Transform data to improve the performance of your Adobe Commerce or Magento Open Source store.
+keywords:
+  - Extensions
 ---
 
 # Indexing

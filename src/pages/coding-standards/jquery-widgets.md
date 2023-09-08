@@ -1,6 +1,8 @@
 ---
 title: jQuery Widget Coding Standard | Commerce PHP Extensions
 description: Review standards for developing jQuery widgets for Adobe Commerce and Magento Open Source projects.
+keywords:
+  - Extensions
 ---
 
 # jQuery widget coding standard

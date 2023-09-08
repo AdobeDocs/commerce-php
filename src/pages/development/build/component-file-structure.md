@@ -1,6 +1,8 @@
 ---
 title: Component file structure | Commerce PHP Extensions
 description: Get started with component development by understanding the proper file structure. 
+keywords:
+  - Extensions
 ---
 
 # Create your component file structure

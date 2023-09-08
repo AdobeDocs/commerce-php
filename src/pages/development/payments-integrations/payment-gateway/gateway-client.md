@@ -1,6 +1,10 @@
 ---
 title: Gateway Client
 description: Learn how to transfer the payload to the payment provider and get a response.
+keywords:
+  - Extensions
+  - Integration
+  - Payments
 ---
 
 import Docs from '/src/_includes/braintree-note.md'

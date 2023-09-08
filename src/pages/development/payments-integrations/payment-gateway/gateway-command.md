@@ -1,6 +1,10 @@
 ---
 title: Gateway Command
 description: Learn how provider responses are sent, received, and processed.
+keywords:
+  - Extensions
+  - Integration
+  - Payments
 ---
 
 import Docs from '/src/_includes/braintree-note.md'

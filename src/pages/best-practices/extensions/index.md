@@ -1,6 +1,8 @@
 ---
 title: Extension Coding | Commerce PHP Extensions
 description: Review coding best practices for Adobe Commerce and Magento Open Source extensions.
+keywords:
+  - Extensions
 ---
 
 # Extension coding

@@ -1,6 +1,8 @@
 ---
 title: Component load order | Commerce PHP Extensions
 description: Configure the order in which other Adobe Commerce and Magento Open source components should load before loading your component.
+keywords:
+  - Extensions
 ---
 
 # Component load order

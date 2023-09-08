@@ -1,6 +1,10 @@
 ---
 title: Get payment information from frontend to backend
 description: Learn how to retrieve the payment details form.
+keywords:
+  - Extensions
+  - Integration
+  - Payments
 ---
 
 import Docs from '/src/_includes/braintree-note.md'

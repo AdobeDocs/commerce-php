@@ -3,6 +3,8 @@ title: Set Custom Routes | Commerce PHP Extensions
 description: Configure your Adobe Commerce or Magento Open Source extension to use custom routes.
 contributor_name: Comwrap GmbH
 contributor_link: https://www.comwrap.com
+keywords:
+  - Extensions
 ---
 
 # Set custom routes

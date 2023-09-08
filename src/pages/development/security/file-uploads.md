@@ -1,6 +1,9 @@
 ---
 title: File Uploads | Commerce PHP Extensions
 description: Use the Adobe Commerce and Magento Open Source out-of-the-box abstraction so that your component can safely work with user-uploaded files.
+keywords:
+  - Extensions
+  - Security
 ---
 
 # File uploads

@@ -1,6 +1,10 @@
 ---
 title: Payment info rendering in Admin checkout
 description: Create a custom formBlockType to modify payment information form rendering.
+keywords:
+  - Extensions
+  - Integration
+  - Payments
 ---
 
 import Docs from '/src/_includes/braintree-note.md'

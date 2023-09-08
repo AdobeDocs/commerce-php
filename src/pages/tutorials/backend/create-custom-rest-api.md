@@ -3,6 +3,9 @@ title: Create a Custom REST API | Commerce PHP Extensions
 description: Follow this tutorial to manage custom data in your Adobe Commerce or Magento Open Source extension through custom REST API endpoints.
 contributor_name: Nitish Ranjan
 contributor_link: https://github.com/nitish-ranjan05
+keywords:
+  - Extensions
+  - REST
 ---
 
 # Create a custom REST API

@@ -1,6 +1,10 @@
 ---
 title: Response Handler
 description: Learn how to process payment provider responses.
+keywords:
+  - Extensions
+  - Integration
+  - Payments
 ---
 
 import Docs from '/src/_includes/braintree-note.md'

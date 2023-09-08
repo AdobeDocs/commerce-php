@@ -1,6 +1,8 @@
 ---
 title: Name a component | Commerce PHP Extensions
 description: Use these guidelines to name your custom Adobe Commerce or Magento Open Source component.
+keywords:
+  - Extensions
 ---
 
 # Name a component

@@ -1,6 +1,9 @@
 ---
 title: Cross-Site Scripting (XSS) | Commerce PHP Extensions
 description: Implement cross-site-scripting (XSS) prevention strategies when developing Adobe Commerce and Magento Open Source components.
+keywords:
+  - Extensions
+  - Security
 ---
 
 # Cross-site scripting (XSS)

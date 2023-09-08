@@ -3,6 +3,8 @@ title: Price Adjustments | Commerce PHP Extensions
 description: Adjust product prices on Adobe Commerce and Magento Open Source category or product pages.
 contributor_name: Goivvy LLC
 contributor_link: https://www.goivvy.com
+keywords:
+  - Extensions
 ---
 
 # Price adjustments

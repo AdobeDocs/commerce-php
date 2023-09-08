@@ -1,6 +1,10 @@
 ---
 title: Request Builder
 description: Learn how to implement complex building strategies using builder composites.
+keywords:
+  - Extensions
+  - Integration
+  - Payments
 ---
 
 import Docs from '/src/_includes/braintree-note.md'

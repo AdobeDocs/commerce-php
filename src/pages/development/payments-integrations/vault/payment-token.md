@@ -1,6 +1,10 @@
 ---
 title: Payment Token
 description: This is an overview of how payment tokens store data received from the payment provider.
+keywords:
+  - Extensions
+  - Integration
+  - Payments
 ---
 
 import Docs from '/src/_includes/braintree-note.md'

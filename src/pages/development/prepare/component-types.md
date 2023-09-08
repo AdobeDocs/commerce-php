@@ -1,6 +1,8 @@
 ---
 title: Component Types | Commerce PHP Extensions
 description: Discover the different Adobe Commerce and Magento Open Source component types.
+keywords:
+  - Extensions
 ---
 
 # Component types

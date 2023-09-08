@@ -1,6 +1,10 @@
 ---
 title: Vault DI configuration
 description: Learn how to configure vault payment method and create payment actions.
+keywords:
+  - Extensions
+  - Integration
+  - Payments
 ---
 
 import Docs from '/src/_includes/braintree-note.md'

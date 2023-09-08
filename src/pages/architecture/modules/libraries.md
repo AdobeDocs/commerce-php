@@ -1,6 +1,8 @@
 ---
 title: Third-Party Libraries | Commerce PHP Extensions
 description: Learn how the Commerce framework uses third-party libraries.
+keywords:
+  - Extensions
 ---
 
 # Third-Party Libraries

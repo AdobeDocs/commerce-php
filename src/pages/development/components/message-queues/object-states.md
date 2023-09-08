@@ -1,6 +1,8 @@
 ---
 title: Handle in-memory object states | Commerce PHP Extensions
 description: Re-instantiate Adobe Commerce and Magento Open Source memory state using the PoisonPill interface after updating the store configuration in the Admin.
+keywords:
+  - Extensions
 ---
 
 # Handling outdated in-memory object states

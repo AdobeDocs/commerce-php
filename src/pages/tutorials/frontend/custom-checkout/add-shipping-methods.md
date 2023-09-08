@@ -1,6 +1,9 @@
 ---
 title: Customize list of shipping methods | Commerce PHP Extensions
 description: Follow this tutorial to customize the list of available shipping methods in the Adobe Commerce and Magento Open Source checkout experience.
+keywords:
+  - Checkout
+  - Extensions
 ---
 
 # Customize the list of shipping methods

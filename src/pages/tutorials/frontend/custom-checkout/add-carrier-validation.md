@@ -1,6 +1,9 @@
 ---
 title: Add shipping carrier validation | Commerce PHP Extensions
 description: Follow this tutorial to create programmatic validations for custom shipping carriers in the Adobe Commerce and Magento Open Source checkout experience.
+keywords:
+  - Checkout
+  - Extensions
 ---
 
 # Add custom shipping carrier validations

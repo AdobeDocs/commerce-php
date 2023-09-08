@@ -1,6 +1,9 @@
 ---
 title: Private Content | Commerce PHP Extensions
 description: Learn how to work with private data when implementing a caching in your Adobe Commerce or Magento Open Source extension.
+keywords:
+  - Cache
+  - Extensions
 ---
 
 # Private content
@@ -89,7 +92,7 @@ The following example adds comments to [app/code/Magento/Catalog/etc/frontend/se
 <?xml version="1.0"?>
 <!--
 /**
- * Copyright © 2016 Magento. All rights reserved.
+ * Copyright &copy; 2016 Magento. All rights reserved.
  * See COPYING.txt for license details.
  */
 -->

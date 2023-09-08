@@ -1,6 +1,9 @@
 ---
 title: Sensitive settings | Commerce PHP Extensions
 description: Configure sensitive and environment-specific settings with Adobe Commerce or Magento Open Source components.
+keywords:
+  - Configuration
+  - Extensions
 ---
 
 # Sensitive and environment-specific settings

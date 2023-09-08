@@ -1,6 +1,8 @@
 ---
 title: Bulk operations implementation | Commerce PHP Extensions
 description: Use this example to create your own bulk operation in Adobe Commerce or Magento Open Source.
+keywords:
+  - Extensions
 ---
 
 # Example bulk operations implementation

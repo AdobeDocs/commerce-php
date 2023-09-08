@@ -1,6 +1,8 @@
 ---
 title: Architectural Basics | Commerce PHP Extensions
 description: Review fundamental architectural principles of object-oriented, PHP-based applications.
+keywords:
+  - Extensions
 ---
 
 # Architectural basics

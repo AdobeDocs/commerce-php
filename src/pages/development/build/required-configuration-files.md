@@ -1,6 +1,8 @@
 ---
 title: Required Configuration Files | Commerce PHP Extensions
 description: Create required configuration files for Adobe Commerce and Magento Open Source components.
+keywords:
+  - Extensions
 ---
 
 # Required configuration files

@@ -1,6 +1,10 @@
 ---
 title: Display the stored information
 description: Learn how to display stored tokens in the customer account and allow customers to remove tokens.
+keywords:
+  - Extensions
+  - Integration
+  - Payments
 ---
 
 import Docs from '/src/_includes/braintree-note.md'

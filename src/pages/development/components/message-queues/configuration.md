@@ -1,6 +1,9 @@
 ---
 title: Configure Message Queues | Commerce PHP Extensions
 description: Add message queue functionality to Adobe Commerce and Magento Open Source extensions.
+keywords:
+  - Configuration
+  - Extensions
 ---
 
 # Configure message queues

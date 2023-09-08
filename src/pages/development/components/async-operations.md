@@ -1,6 +1,8 @@
 ---
 title: Asynchronous operations | Commerce PHP Extensions
 description: Use the DeferredInterface to write code for asynchronous operations in Adobe Commerce and Magento Open Source extensions.
+keywords:
+  - Extensions
 ---
 
 # Asynchronous and deferred operations

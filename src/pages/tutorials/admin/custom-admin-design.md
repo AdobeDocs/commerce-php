@@ -1,6 +1,8 @@
 ---
 title: Customize the Design | Commerce PHP Extensions
 description: Follow this tutorial to customize the design of the Adobe Commerce and Magento Open Source Admin.
+keywords:
+  - Extensions
 ---
 
 # Customize the design
@@ -75,7 +77,7 @@ For reference, view the grid configuration files of the modules:
 -  `<Magento_Backend_module_dir>/view/adminhtml/ui_component/design_config_listing.xml`
 -  `<Magento_Theme_module_dir>/view/adminhtml/ui_component/design_config_listing.xml`
 
-If you add a certain field as an additional grid column, you must also set the field’s `use_in_grid` property in the [field’s meta data](#add-fields-metadata) in the `di.xml` file.
+If you add a certain field as an additional grid column, you must also set the field's `use_in_grid` property in the [field's meta data](#add-fields-metadata) in the `di.xml` file.
 
 ## Customize the design options
 
@@ -170,7 +172,7 @@ For reference, view the form configuration files of these modules:
 -  `<Magento_Swatches_module_dir>/view/adminhtml/ui_component/design_config_form.xml`
 -  `<Magento_Theme_module_dir>/view/adminhtml/ui_component/design_config_form.xml`
 
-### Add fields’ metadata
+### Add fields' metadata
 
 If in the design configuration form you add new fields, `<your_module_dir>/etc/di.xml`, you must specify their parent field sets and the path in the database. You can also declare the backend model used for processing the field values. If you do not specify any model, the default `Magento\Framework\App\Config\Value` model is used.
 

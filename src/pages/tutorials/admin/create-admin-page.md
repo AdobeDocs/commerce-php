@@ -1,6 +1,8 @@
 ---
 title: Create an Admin Page | Commerce PHP Extensions
 description: Follow this tutorial to create a module that displays a custom page in the Adobe Commerce and Magento Open Source Admin application.
+keywords:
+  - Extensions
 ---
 
 # Create an Admin page
@@ -61,7 +63,7 @@ For more information see: [registering your component](../../development/build/c
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -172,7 +174,7 @@ Inside `Controller/Adminhtml/HelloWorld` directory, create the file `Index.php`.
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 

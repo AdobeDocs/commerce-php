@@ -1,6 +1,8 @@
 ---
 title: Add extension attributes | Commerce PHP Extensions
 description: Extend the functionality of Adobe Commerce and Magento Open Source using complex data types.
+keywords:
+  - Extensions
 ---
 
 # Add extension attributes to entities

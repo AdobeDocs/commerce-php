@@ -1,6 +1,8 @@
 ---
 title: Routing | Commerce PHP Extensions
 description: Define how data reaches classes in Adobe Commerce and Magento Open Source extension development.
+keywords:
+  - Extensions
 ---
 
 # Routing

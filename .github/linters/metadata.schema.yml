@@ -13,6 +13,7 @@ properties:
         - API Mesh
         - App Builder
         - B2B
+        - Backend Development
         - Cache
         - Checkout
         - Cloud
@@ -20,6 +21,7 @@ properties:
         - Cron
         - Events
         - Extensibility
+        - Extensions
         - GraphQL
         - Integration
         - Inventory

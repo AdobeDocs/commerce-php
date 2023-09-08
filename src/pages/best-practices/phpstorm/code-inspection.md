@@ -1,6 +1,8 @@
 ---
 title: Code Inspection | Commerce PHP Extensions
 description: Learn about code inspections in the Adobe Commerce and Magento Open Source PHPStorm plugin.
+keywords:
+  - Extensions
 ---
 
 # Code inspection

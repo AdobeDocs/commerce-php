@@ -3,6 +3,9 @@ title: Integrate with an external API | Commerce PHP Extensions
 description: Follow this tutorial to integrate an external API with an Adobe Commerce or Magento Open Source extension.
 contributor_name: Atwix
 contributor_link: https://www.atwix.com/
+keywords:
+  - Extensions
+  - Integration
 ---
 
 # Create an integration with an external API

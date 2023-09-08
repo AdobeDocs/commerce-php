@@ -3,6 +3,8 @@ title: Requests for Specific Stores | Commerce PHP Extensions
 description: Use the default message format to identify information about a specific Adobe Commerce or Magento Open Source store.
 contributor_name: Comwrap GmbH
 contributor_link: https://www.comwrap.com
+keywords:
+  - Extensions
 ---
 
 # Requests for specific stores

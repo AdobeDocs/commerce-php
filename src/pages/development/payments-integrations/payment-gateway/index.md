@@ -1,6 +1,10 @@
 ---
 title: Commerce payment provider gateway
 description: This is an overview of how to create and handle transactions based on order details.
+keywords:
+  - Extensions
+  - Integration
+  - Payments
 ---
 
 import Docs from '/src/_includes/braintree-note.md'

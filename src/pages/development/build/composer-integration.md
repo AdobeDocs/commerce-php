@@ -1,6 +1,8 @@
 ---
 title: Composer integration | Commerce PHP Extensions
 description: Integrate Composer with your Adobe Commerce and Magento Open Source components.
+keywords:
+  - Extensions
 ---
 
 # Composer integration

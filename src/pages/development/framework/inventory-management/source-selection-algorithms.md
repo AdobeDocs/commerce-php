@@ -1,6 +1,9 @@
 ---
 title: Source Selection Algorithms | Commerce PHP Extensions
 description: Learn about the Source Selection Algorithm systems that run in the background to keep your salable quantities updated.
+keywords:
+  - Extensions
+  - Inventory
 ---
 
 # Source selection algorithms

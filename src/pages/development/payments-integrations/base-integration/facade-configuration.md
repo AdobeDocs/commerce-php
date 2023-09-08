@@ -1,6 +1,11 @@
 ---
 title: Payment method facade
 description: Learn how to process payment actions between Adobe Commerce Sales Management and the payment processor.
+keywords:
+  - Configuration
+  - Extensions
+  - Integration
+  - Payments
 ---
 
 import Docs from '/src/_includes/braintree-note.md'

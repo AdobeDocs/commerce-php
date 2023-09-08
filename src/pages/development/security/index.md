@@ -1,6 +1,9 @@
 ---
 title: Security | Commerce PHP Extensions
 description: Review introductory material about security considerations for Adobe Commerce and Magento Open Source component development.
+keywords:
+  - Extensions
+  - Security
 ---
 
 # Security

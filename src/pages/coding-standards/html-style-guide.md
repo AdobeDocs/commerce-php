@@ -1,6 +1,8 @@
 ---
 title: HTML Style Guide | Commerce PHP Extensions
 description: Review the standards for writing HTML, LESS, and CSS code for Adobe Commerce and Magento Open Source projects.
+keywords:
+  - Extensions
 ---
 
 # HTML style guide

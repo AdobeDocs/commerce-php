@@ -1,6 +1,8 @@
 ---
 title: Extensions | Commerce PHP Extensions
 description: Learn about different types of Adobe Commerce and Magento Open Source components.
+keywords:
+  - Extensions
 ---
 
 # Introduction

@@ -1,6 +1,9 @@
 ---
 title: Add validation before order | Commerce PHP Extensions
 description: Follow this tutorial to create programmatic validations that check orders before they are placed in the checkout experience.
+keywords:
+  - Checkout
+  - Extensions
 ---
 
 # Add custom validations before order placement

@@ -1,6 +1,8 @@
 ---
 title: Package a component | Commerce PHP Extensions
 description: Learn how to package Adobe Commerce and Magento Open Source components using Composer.
+keywords:
+  - Extensions
 ---
 
 # Package a component

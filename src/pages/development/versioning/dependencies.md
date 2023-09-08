@@ -1,6 +1,8 @@
 ---
 title: Module Version Dependencies | Commerce PHP Extensions
 description: Learn about Adobe Commerce and Magento Open Source service provider interfaces and module dependencies.
+keywords:
+  - Extensions
 ---
 
 # Module version dependencies

@@ -1,6 +1,9 @@
 ---
 title: Run the Upgrade Compatibility Tool | Commerce PHP Extensions
 description: Set up a run configuration to integrate the Adobe Commerce and Magento Open Source PHPStorm plugin with the Upgrade Compatibility Tool.
+keywords:
+  - Extensions
+  - Upgrade
 ---
 
 # Run the Upgrade Compatibility Tool

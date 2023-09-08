@@ -1,6 +1,9 @@
 ---
 title: Sensitive Information | Commerce PHP Extensions
 description: Prevent Adobe Commerce and Magento Open Source components from exposing sensitive information, like customer passwords, addresses, and dates of birth.
+keywords:
+  - Extensions
+  - Security
 ---
 
 # Sensitive information
