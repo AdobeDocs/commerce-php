@@ -1,6 +1,8 @@
 ---
 title: Required Configuration Files | Commerce PHP Extensions
 description: Create required configuration files for Adobe Commerce and Magento Open Source components.
+keywords:
+  - Extensions
 ---
 
 # Required configuration files
@@ -13,7 +15,7 @@ Unlike Magento 1, there is no monolithic configuration file in Adobe Commerce an
 
 ## Root directory location
 
-import Docs from '/src/pages/_includes/component-root.md'
+import Docs from '/src/_includes/component-root.md'
 
 <Docs />
 

@@ -1,6 +1,9 @@
 ---
-title: Built-in Upgrade Compatibility Tool | Commerce PHP Extensions
+title: Upgrade Compatibility Tool | Commerce PHP Extensions
 description: Learn how to use the Upgrade Compatibility Tool with the Adobe Commerce and Magento Open Source PHPStorm plugin.
+keywords:
+  - Extensions
+  - Upgrade
 ---
 
 # Built-in Upgrade Compatibility Tool

@@ -1,6 +1,8 @@
 ---
 title: Service Layer | Commerce PHP Extensions
 description: Learn about the architectural service layer of the Commerce framework.
+keywords:
+  - Extensions
 ---
 
 # Service layer

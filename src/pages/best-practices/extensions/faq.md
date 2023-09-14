@@ -1,6 +1,8 @@
 ---
 title: Coding FAQ | Commerce PHP Extensions
 description: Review answers to frequently asked questions about coding Adobe Commerce and Magento Open Source extensions.
+keywords:
+  - Extensions
 ---
 
 # Coding FAQ

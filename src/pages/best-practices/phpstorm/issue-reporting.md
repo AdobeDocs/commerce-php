@@ -1,6 +1,8 @@
 ---
 title: Issue Reporting | Commerce PHP Extensions
 description: Learn how to report issues about the Adobe Commerce and Magento Open Source PHPStorm plugin.
+keywords:
+  - Extensions
 ---
 
 # Issue reporting

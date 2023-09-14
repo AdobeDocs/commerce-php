@@ -1,6 +1,8 @@
 ---
 title: Working with the Architecture | Commerce PHP Extensions
 description: Review best practices for working with the Adobe Commerce and Magento Open Source architecture.
+keywords:
+  - Extensions
 ---
 
 # Working with the architecture

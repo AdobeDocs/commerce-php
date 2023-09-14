@@ -1,6 +1,10 @@
 ---
-title: Security, Performance, and Data Handling | Commerce PHP Extensions
+title: Security and performance | Commerce PHP Extensions
 description: Review security and performance best practices for coding Adobe Commerce and Magento Open Source extensions.
+keywords:
+  - Extensions
+  - Performance
+  - Security
 ---
 
 # Security, performance, and data handling

@@ -1,6 +1,8 @@
 ---
 title: About Component File Structure | Commerce PHP Extensions
 description: Review the required files for Adobe Commerce and Magento Open Source components.
+keywords:
+  - Extensions
 ---
 
 # About component file structure
@@ -11,7 +13,7 @@ In addition, you can choose the component root directory to start development. T
 
 ## Root directory location
 
-import Docs from '/src/pages/_includes/component-root.md'
+import Docs from '/src/_includes/component-root.md'
 
 <Docs />
 

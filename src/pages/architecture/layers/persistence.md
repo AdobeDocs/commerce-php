@@ -1,6 +1,8 @@
 ---
 title: Persistence Layer | Commerce PHP Extensions
 description: Learn about the architectural persistence layer of the Commerce framework.
+keywords:
+  - Extensions
 ---
 
 # Persistence layer

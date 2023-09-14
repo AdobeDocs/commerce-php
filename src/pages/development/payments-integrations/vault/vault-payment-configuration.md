@@ -1,9 +1,14 @@
 ---
 title: Vault payment configuration
 description: Learn about the parameters necessary to create vault payment.
+keywords:
+  - Configuration
+  - Extensions
+  - Integration
+  - Payments
 ---
 
-import Docs from '/src/pages/_includes/braintree-note.md'
+import Docs from '/src/_includes/braintree-note.md'
 
 <Docs />
 

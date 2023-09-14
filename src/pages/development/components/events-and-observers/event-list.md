@@ -3,6 +3,8 @@ title: List of Events | Commerce PHP Extensions
 description: Use this reference to learn about specific Adobe Commerce and Magento Open Source events.
 contributor_name: Goivvy LLC
 contributor_link: https://www.goivvy.com
+keywords:
+  - Extensions
 ---
 
 # List of events

@@ -1,6 +1,8 @@
 ---
 title: Advanced reporting | Commerce PHP Extensions
 description: Learn how Adobe Commerce and Magento Open Source use the Analytics module to collect and send data to Adobe Commerce Reporting.
+keywords:
+  - Extensions
 ---
 
 # Advanced reporting

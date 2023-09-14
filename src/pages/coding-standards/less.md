@@ -1,6 +1,8 @@
 ---
 title: Less Coding Standard | Commerce PHP Extensions
 description: Review standards for writing LESS and CSS code for Adobe Commerce and Magento Open Source projects.
+keywords:
+  - Extensions
 ---
 
 # LESS coding standard

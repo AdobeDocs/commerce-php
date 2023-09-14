@@ -1,9 +1,13 @@
 ---
 title: Configure payment method by area
 description: Learn how to define payment method availability.
+keywords:
+  - Extensions
+  - Integration
+  - Payments
 ---
 
-import Docs from '/src/pages/_includes/braintree-note.md'
+import Docs from '/src/_includes/braintree-note.md'
 
 <Docs />
 

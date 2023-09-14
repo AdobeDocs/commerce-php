@@ -1,6 +1,8 @@
 ---
 title: Admin FAQ | Commerce PHP Extensions
 description: Review answers to frequently asked questions about integrating extensions with the Adobe Commerce and Magento Open Source Admin application.
+keywords:
+  - Extensions
 ---
 
 # Admin FAQ

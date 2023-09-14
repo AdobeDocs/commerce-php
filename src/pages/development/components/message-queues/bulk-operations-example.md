@@ -1,6 +1,8 @@
 ---
-title: Example Bulk Operations Implementation | Commerce PHP Extensions
+title: Bulk operations implementation | Commerce PHP Extensions
 description: Use this example to create your own bulk operation in Adobe Commerce or Magento Open Source.
+keywords:
+  - Extensions
 ---
 
 # Example bulk operations implementation
@@ -20,7 +22,7 @@ The following code sample shows how these duties can be completed.
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -153,7 +155,7 @@ A consumer class receives messages from the message queue and changes the status
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 

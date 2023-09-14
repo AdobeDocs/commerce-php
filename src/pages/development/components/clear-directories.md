@@ -1,6 +1,8 @@
 ---
 title: Directory and Cache Clearing | Commerce PHP Extensions
-description: Ensure that your Adobe Commerce and Magento Open Source code is functioning properly by routinely clearing specific directories and caches. 
+description: Ensure that your Adobe Commerce and Magento Open Source code is functioning properly by routinely clearing specific directories and caches.
+keywords:
+  - Extensions
 ---
 
 # Directory and cache clearing

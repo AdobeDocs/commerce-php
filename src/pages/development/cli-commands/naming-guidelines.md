@@ -1,6 +1,8 @@
 ---
 title: Command Naming Guidelines | Commerce PHP Extensions
 description: Follow these guidelines when naming custom CLI commands for Adobe Commerce and Magento Open Source.
+keywords:
+  - Extensions
 ---
 
 # Command naming guidelines

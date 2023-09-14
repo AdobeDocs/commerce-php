@@ -1,6 +1,8 @@
 ---
 title: Optimal Development Environment | Commerce PHP Extensions
 description: Learn about the ideal local development environment for Adobe Commerce and Magento Open Source extension developers.
+keywords:
+  - Extensions
 ---
 
 # Optimal development environment

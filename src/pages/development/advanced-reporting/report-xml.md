@@ -1,6 +1,8 @@
 ---
 title: Report XML for advanced reporting | Commerce PHP Extensions
 description: Learn about the markup language that you can use to build advanced reports for Adobe Commerce and Magento Open Source.
+keywords:
+  - Extensions
 ---
 
 # Report XML for advanced reporting

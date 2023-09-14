@@ -1,6 +1,8 @@
 ---
 title: Module Relationships | Commerce PHP Extensions
 description: Learn about the different types of relationships thay modules have with each other.
+keywords:
+  - Extensions
 ---
 
 # Module relationships

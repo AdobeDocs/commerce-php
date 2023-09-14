@@ -1,6 +1,8 @@
 ---
 title: Contributing | Commerce PHP Extensions
 description: Share your feedback about Adobe Commerce and Magento Open Source coding standards and suggest improvements.
+keywords:
+  - Extensions
 ---
 
 # Contributing

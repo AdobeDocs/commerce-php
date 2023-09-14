@@ -1,6 +1,8 @@
 ---
 title: Commerce PHP Extensions
 description: Review resources for developing PHP-based extensions for Adobe Commerce and Magento Open Source.
+keywords:
+  - Extensions
 ---
 
 <Hero slots="image, heading, text"/>

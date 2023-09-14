@@ -1,6 +1,8 @@
 ---
 title: Enable or disable a component | Commerce PHP Extensions
 description: Manage Adobe Commerce and Magento Open Source components using the command-line interface.
+keywords:
+  - Extensions
 ---
 
 # Enable or disable a component

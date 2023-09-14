@@ -1,6 +1,8 @@
 ---
 title: Adapters | Commerce PHP Extensions
 description: Learn about Adobe Commerce and Magento Open Source adapter classes, when to use them, and how to write them.
+keywords:
+  - Extensions
 ---
 
 # Adapters

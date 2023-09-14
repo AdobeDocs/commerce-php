@@ -1,6 +1,9 @@
 ---
 title: Create Custom Cache Engines | Commerce PHP Extensions
 description: Learn how to use database caching for Adobe Commerce and Magento Open Source extensions.
+keywords:
+  - Cache
+  - Extensions
 ---
 
 # Create custom cache engines

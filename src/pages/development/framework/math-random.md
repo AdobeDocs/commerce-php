@@ -3,6 +3,8 @@ title: Math Random | Commerce PHP Extensions
 description: Use this library in your Adobe Commerce and Magento Open Source components to generate random number values and hashes.
 contributor_name: Adarsh Manickam
 contributor_link: https://github.com/drpayyne
+keywords:
+  - Extensions
 ---
 
 # Math random

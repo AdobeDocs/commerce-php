@@ -1,6 +1,8 @@
 ---
 title: Dependency Injection Configuration | Commerce PHP Extensions
 description: Learn how to configure dependency injection in Adobe Commerce and Magento Open Source components using the di.xml file.
+keywords:
+  - Extensions
 ---
 
 # Dependency injection configuration
@@ -312,7 +314,7 @@ The example below overrides the `isVisible` method from the `Magento\Checkout\Bl
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 

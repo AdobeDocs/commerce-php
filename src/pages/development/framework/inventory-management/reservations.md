@@ -1,6 +1,9 @@
 ---
 title: Reservations | Commerce PHP Extensions
 description: Learn about the Reservations systems that run in the background to keep your salable quantities updated.
+keywords:
+  - Extensions
+  - Inventory
 ---
 
 # Reservations

@@ -1,6 +1,9 @@
 ---
 title: Migrate Configuration | Commerce PHP Extensions
 description: Use these examples to migrate your message queue configuration between 2.x versions of Adobe Commerce and Magento Open Source.
+keywords:
+  - Configuration
+  - Extensions
 ---
 
 # Migrate message queue configuration

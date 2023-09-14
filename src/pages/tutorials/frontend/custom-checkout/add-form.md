@@ -1,6 +1,9 @@
 ---
 title: Add a New Input Form to Checkout | Commerce PHP Extensions
 description: Follow this tutorial to create a new input form in the Adobe Commerce and Magento Open Source checkout experience.
+keywords:
+  - Checkout
+  - Extensions
 ---
 
 # Add a new input form to checkout

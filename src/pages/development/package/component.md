@@ -1,6 +1,8 @@
 ---
 title: Package a component | Commerce PHP Extensions
 description: Learn how to package Adobe Commerce and Magento Open Source components using Composer.
+keywords:
+  - Extensions
 ---
 
 # Package a component
@@ -29,7 +31,7 @@ Element | Description
 
 The Commerce Marketplace does not support the Composer `source` and `dist` properties. All extensions distributed via the Marketplace are installed from the Commerce package repository. If your `composer.json` contains `source` or `dist` properties, it will cause failures in the EQP automation.
 
-import Docs from '/src/pages/_includes/composer-types.md'
+import Docs from '/src/_includes/composer-types.md'
 
 <Docs />
 

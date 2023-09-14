@@ -1,6 +1,8 @@
 ---
 title: Modules and Areas | Commerce PHP Extensions
 description: Learn what an "area" is in the context of Commerce framework modules.
+keywords:
+  - Extensions
 ---
 
 # Modules and areas

@@ -1,6 +1,8 @@
 ---
 title: Indexer Optimization | Commerce PHP Extensions
 description: Learn techniques for optimizing Adobe Commerce and Magento Open Source indexers.
+keywords:
+  - Extensions
 ---
 
 # Indexer optimization

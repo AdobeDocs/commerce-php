@@ -1,9 +1,14 @@
 ---
 title: Payment method module configuration
 description: Learn how to create a custom payment integration module.
+keywords:
+  - Configuration
+  - Extensions
+  - Integration
+  - Payments
 ---
 
-import Docs from '/src/pages/_includes/braintree-note.md'
+import Docs from '/src/_includes/braintree-note.md'
 
 <Docs />
 

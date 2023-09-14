@@ -1,6 +1,8 @@
 ---
 title: Validate | Commerce PHP Extensions
 description: Review introductory resources for validating Adobe Commerce and Magento Open Source components.
+keywords:
+  - Extensions
 ---
 
 # Validate

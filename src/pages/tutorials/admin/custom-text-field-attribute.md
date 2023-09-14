@@ -3,6 +3,8 @@ title: Add a Custom Text Field Attribute | Commerce PHP Extensions
 description: Follow this tutorial to create a custom text field attribute for Adobe Commerce or Magento Open Source.
 contributor_name: Adarsh Manickam
 contributor_link: https://github.com/drpayyne
+keywords:
+  - Extensions
 ---
 
 # Add a custom text field attribute

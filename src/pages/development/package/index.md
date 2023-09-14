@@ -1,6 +1,8 @@
 ---
 title: Package | Commerce PHP Extensions
 description: Review introductory material related to packaging Adobe Commerce and Magento Open Source components.
+keywords:
+  - Extensions
 ---
 
 # Package

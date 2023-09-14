@@ -1,6 +1,8 @@
 ---
-title: Create your component file structure | Commerce PHP Extensions
+title: Component file structure | Commerce PHP Extensions
 description: Get started with component development by understanding the proper file structure. 
+keywords:
+  - Extensions
 ---
 
 # Create your component file structure
@@ -9,7 +11,7 @@ In this section, we go over the different file structures for component types. T
 
 ## Root directory location
 
-import Docs from '/src/pages/_includes/component-root.md'
+import Docs from '/src/_includes/component-root.md'
 
 <Docs />
 

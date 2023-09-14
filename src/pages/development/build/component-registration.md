@@ -1,6 +1,8 @@
 ---
 title: Register a component | Commerce PHP Extensions
 description: Learn how to register different Adobe Commerce and Magento Open Source component types, including modules, themes, language packages, and libraries.
+keywords:
+  - Extensions
 ---
 
 # Register a component

@@ -1,6 +1,8 @@
 ---
 title: Codebase Changes | Commerce PHP Extensions
 description: Differentiate between public and private code changes and identify API, customization points, and deprecations.
+keywords:
+  - Extensions
 ---
 
 # Code changes

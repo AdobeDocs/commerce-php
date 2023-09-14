@@ -1,6 +1,8 @@
 ---
 title: Array Manager | Commerce PHP Extensions
 description: Manage deeply nested associative arrays in your Adobe Commerce and Magento Open Source components.
+keywords:
+  - Extensions
 ---
 
 # Array manager

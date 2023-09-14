@@ -1,6 +1,9 @@
 ---
 title: Inventory Management | Commerce PHP Extensions
 description: Learn about the Source Selection Algorithm and Reservations systems that run in the background to keep your salable quantities updated.
+keywords:
+  - Extensions
+  - Inventory
 ---
 
 # Inventory Management

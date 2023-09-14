@@ -1,6 +1,8 @@
 ---
 title: Create a Custom Indexer | Commerce PHP Extensions
 description: Learn how to create custom indexers for Adobe Commerce and Magento Open Source.
+keywords:
+  - Extensions
 ---
 
 # Create a custom indexer

@@ -1,6 +1,8 @@
 ---
 title: EAV and Extension Attributes | Commerce PHP Extensions
 description: Learn about the main types of attributes you can use to extend Adobe Commerce and Magento Open Source.
+keywords:
+  - Extensions
 ---
 
 # EAV and extension attributes
@@ -53,7 +55,7 @@ Both the `save()` and `getResource()` methods for `Magento\Framework\Model\Abstr
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -184,7 +186,7 @@ In the following example, an attribute named `stock_item` of type `Magento\Catal
 </extension_attributes>
 ```
 
-When `getList()` is called, it returns a list of `ProductInterface`s. When it does this, the code populates the `stock_item` with a joined operation in which the `StockItemInterface`’s `qty` property comes from the `cataloginventory_stock_item` table where the `Product`'s `entity_Id` is joined with the `cataloginventory_stock_item.product_id` column.
+When `getList()` is called, it returns a list of `ProductInterface`s. When it does this, the code populates the `stock_item` with a joined operation in which the `StockItemInterface`'s `qty` property comes from the `cataloginventory_stock_item` table where the `Product`'s `entity_Id` is joined with the `cataloginventory_stock_item.product_id` column.
 
 When you add search extension attributes, you must consider that this can cause ambiguity in the selection of fields in the resulting SQL query when using REST APIs.
 In these cases, the REST call must explicitly specify both the table name and field to use for selecting.

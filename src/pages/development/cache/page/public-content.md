@@ -1,6 +1,9 @@
 ---
 title: Public Content | Commerce PHP Extensions
 description: Learn how to work with public data when implementing a caching in your Adobe Commerce or Magento Open Source extension.
+keywords:
+  - Cache
+  - Extensions
 ---
 
 # Public content
@@ -40,7 +43,7 @@ You can use the Admin to define caching policies or you can define them programm
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -98,7 +101,7 @@ For example, let's declare a context variable that shows a drinks catalog and ad
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -157,7 +160,7 @@ First, your entity module must implement [`Magento/Framework/DataObject/Identity
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -186,7 +189,7 @@ Second, the block object must also implement `Magento/Framework/DataObject/Ident
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -212,6 +215,6 @@ Adobe Commerce and Magento Open Source use cache tags for link creation. The per
 
 Use only HTTP POST or PUT methods to change state (e.g., adding to a shopping cart, adding to a wishlist, etc.) and don't expect to see caching on these methods. Using GET or HEAD methods might trigger caching and prevent updates to private content. For more information about caching, see [RFC-2616 section 13](https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html)
 
-import Docs from '/src/pages/_includes/page-cache-checklist.md'
+import Docs from '/src/_includes/page-cache-checklist.md'
 
 <Docs />

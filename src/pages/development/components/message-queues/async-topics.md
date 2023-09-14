@@ -3,6 +3,8 @@ title: Topics in Asynchronous API | Commerce PHP Extensions
 description: Learn about how topic exchange works in the Adobe Commerce and Magento Open Source message queue system.
 contributor_name: comwrap GmbH
 contributor_link: https://www.comwrap.com
+keywords:
+  - Extensions
 ---
 
 # Topics in asynchronous API
