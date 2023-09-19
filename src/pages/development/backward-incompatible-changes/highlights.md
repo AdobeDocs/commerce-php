@@ -42,11 +42,11 @@ The following module is affected by this change:
 
 ### Elasticsearch 7 deprecation
 
-This change removes the Magento_Elasticsearch module (for Elasticsearch 5) and adds support for Elasticsearch 8. The Magento_Elasticsearch7 module is being deprecated because Elasticsearch 7 reached end-of-life in August 2023. However, it is still the default option for 2.4.7-beta2.
+This change removes the `Magento_Elasticsearch` module (for Elasticsearch 5) and adds support for Elasticsearch 8. The `Magento_Elasticsearch7` module is being deprecated because Elasticsearch 7 reached end-of-life in August 2023. However, it is still the default option for 2.4.7-beta2.
 
-The Magento_Elasticsearch8 module is not currently supported because of backward-incompatible changes in ES7 and ES8. It is available as a Composer metapackage only in 2.4.7-beta2 until the Magento_Elasticsearch7 module is removed from the codebase.
+The `Magento_Elasticsearch8` module is not currently supported because of backward-incompatible changes in ES7 and ES8. It is available as a Composer metapackage only in 2.4.7-beta2 until the `Magento_Elasticsearch7` module is removed from the codebase.
 
-You can use the Magento_Elasticsearch7 module or install the Magento_Elasticsearch8 module in 2.4.7-beta2.
+You can use the `Magento_Elasticsearch7` module or install the Magento_Elasticsearch8 module in 2.4.7-beta2.
 
 The following modules are affected by this change:
 
@@ -74,7 +74,7 @@ This change improves the security and performance of how the framework resolves 
 
 The `{BASE-URL}/page_cache/block/esi HTTP` endpoint supports unrestricted, dynamically loaded content fragments from Commerce layout handles and block structures.
 
-The new **Handles params size** system configuration setting limits the `handles` parameter for th endpoint to `100` by default. You can change the default in the Admin by going to **Stores** > _Settings_ > **Configuration** > **Advanced** > **System** > **Full Page Cache**.
+The new **Handles params size** system configuration setting limits the `handles` parameter for the endpoint to `100` by default. You can change the default in the Admin by going to **Stores** > _Settings_ > **Configuration** > **Advanced** > **System** > **Full Page Cache**.
 
 No action is necessary unless you need to modify the default value for the endpoint.
 
