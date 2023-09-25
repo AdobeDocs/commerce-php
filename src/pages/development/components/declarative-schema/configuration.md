@@ -78,7 +78,8 @@ Attribute | Description
 `name` | The name of the table
 `engine` | SQL engine. This value must be `innodb` or `memory`.
 `resource` | The database shard on which to install the table. This value must be `default`, `checkout`, or `sales`.
-`comment` | Table comment
+`comment` | Table comment.
+`onCreate` | This is a DML trigger that allows you to move data from an existing table to a newly created table. This trigger works only when a table is created.
 
 A `table` node can contain three types of subnodes:
 
