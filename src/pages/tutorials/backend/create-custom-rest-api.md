@@ -10,7 +10,7 @@ keywords:
 
 # Create a custom REST API
 
-Although CE and EE provide numerous REST endpoints, you might need to create your own to manage custom data within your extension. This tutorial describes how you can create such a custom REST API.
+Although Adobe Commerce and Magento Open Source provide numerous REST endpoints, you might need to create your own to manage custom data within your extension. This tutorial describes how you can create such a custom REST API.
 
 In this tutorial, we will create two custom endpoints to read or modify the product information. `GET /V1/rest_dev/getProduct/{productId}` returns details about a specified product, and `PUT /V1/rest_dev/setDescription` modifies product description data.
 
