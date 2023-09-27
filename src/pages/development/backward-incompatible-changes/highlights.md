@@ -59,8 +59,7 @@ The following module is affected by this change:
 
 The default behavior of the [`isEmailAvailable`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/is-email-available/) GraphQL query and ([`V1/customers/isEmailAvailable`](https://adobe-commerce.redoc.ly/2.4.6-admin/tag/customersisEmailAvailable/#operation/PostV1CustomersIsEmailAvailable)) REST endpoint has changed. By default, the API now always returns `true`.
 The new default behaviour also affects the checkout workflow for guests that do not realize they already have an account. Previously, by default, when a guest supplied an email address that matched an existing customer account, they were prompted to sign in. Now, they are no longer prompted to sign in.
-By setting the "Enable Guest Checkout Login" configuration option located at "Config > Sales > Checkout" to "Yes", merchants can enable the original behavior, which is to return `true` if the email does not exist in the database and `false` if it exists, and prompting guest users to sign in during the checkout if their email already belongs to a registered customer account. Setting this option to yes, however, comes at the cost of exposing information to unauthenticated users.
-
+Merchants can restore the original default behavior of the `isEmailAvailable` API and checkout flow by setting the **Stores > Configuration > Sales > Checkout > Enable Guest Checkout Login field** to **Yes**. However, doing this can expose customer information to unauthenticated users.
 ## 2.4.6
 
 The following major backward-incompatible changes were introduced in the 2.4.6 Adobe Commerce and Magento Open Source releases:
