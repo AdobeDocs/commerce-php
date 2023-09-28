@@ -1,6 +1,8 @@
 ---
 title: Framework | Commerce PHP Extensions
 description: Review introductory material about the Adobe Commerce and Magento Open Source framework.
+keywords:
+  - Extensions
 ---
 
 # Framework

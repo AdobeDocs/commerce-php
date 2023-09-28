@@ -1,6 +1,10 @@
 ---
-title: Security, Performance, and Data Handling | Commerce PHP Extensions
+title: Security and performance | Commerce PHP Extensions
 description: Review security and performance best practices for coding Adobe Commerce and Magento Open Source extensions.
+keywords:
+  - Extensions
+  - Performance
+  - Security
 ---
 
 # Security, performance, and data handling
@@ -11,7 +15,7 @@ You should make sure that your extension handles data with care in order to prev
 
   The Adobe Commerce and Magento Open Source applications are made up of a variety of components that work together to perform different business functions. We discourage the use of low-level functionality such as the PHP `curl_*` functions and encourage the use of high-level components such as [`\Magento\Framework\HTTP\Adapter\Curl`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/HTTP/Adapter/Curl.php). The use of low-level functionality can make the applications behave in unexpected ways that effectively disable built-in protection mechanisms, introduce exploitable inconsistencies, or otherwise expose the application to attack.
 
-For a list of discouraged low-level functions, review the [`Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php`](https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php) file and the [Coding Standard](https://github.com/magento/-coding-standard).
+For a list of discouraged low-level functions, review the [`Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php`](https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php) file and the [Coding Standard](https://github.com/magento/magento-coding-standard).
 
 ## Use wrappers instead of superglobal variables
 

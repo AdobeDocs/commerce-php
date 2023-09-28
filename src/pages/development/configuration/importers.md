@@ -1,6 +1,9 @@
 ---
 title: Configuration Importers | Commerce PHP Extensions
 description: Standardize your Adobe Commerce and Magento Open Source configuration settings across multiple systems with configuration importers.
+keywords:
+  - Configuration
+  - Extensions
 ---
 
 # Configuration importers

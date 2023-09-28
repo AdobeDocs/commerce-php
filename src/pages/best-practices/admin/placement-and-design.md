@@ -1,6 +1,8 @@
 ---
 title: Admin Panel Placement and Design | Commerce PHP Extensions
 description: Review best practices for designing and placing your extension in the Adobe Commerce and Magento Open Source Admin application.
+keywords:
+  - Extensions
 ---
 
 # Admin panel placement and design

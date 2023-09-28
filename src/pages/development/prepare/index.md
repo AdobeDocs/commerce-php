@@ -1,6 +1,8 @@
 ---
 title: Prepare | Commerce PHP Extensions
-description: Navigate preparatory resources available for Adobe Commerce and Magento Open Source component development. 
+description: Navigate preparatory resources available for Adobe Commerce and Magento Open Source component development.
+keywords:
+  - Extensions
 ---
 
 # Prepare

@@ -1,6 +1,8 @@
 ---
 title: Commerce framework | Commerce PHP Extensions
 description: Learn how the Commerce framework controls the way application components interact.
+keywords:
+  - Extensions
 ---
 
 # Commerce framework

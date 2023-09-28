@@ -1,6 +1,9 @@
 ---
 title: Content Security Policies | Commerce PHP Extensions
 description: Mitigate against cross-site scripting and related attacks in Adobe Commerce and Magento Open Source components with content security policies.
+keywords:
+  - Extensions
+  - Security
 ---
 
 # Content security policies

@@ -1,6 +1,8 @@
 ---
 title: Create a Custom Command | Commerce PHP Extensions
 description: Learn how to create custom CLI commands for Adobe Commerce and Magento Open Source.
+keywords:
+  - Extensions
 ---
 
 # Create a custom command

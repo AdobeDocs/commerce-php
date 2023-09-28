@@ -1,9 +1,13 @@
 ---
 title: Enable vault
 description: Learn how to add vault enabler and modify payment controls.
+keywords:
+  - Extensions
+  - Integration
+  - Payments
 ---
 
-import Docs from '/src/pages/_includes/braintree-note.md'
+import Docs from '/src/_includes/braintree-note.md'
 
 <Docs />
 

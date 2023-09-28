@@ -1,6 +1,8 @@
 ---
 title: Extensibility and Modularity | Commerce PHP Extensions
 description: Learn about how extensibility has been designed to maximize your ability to customize and enhance the Commerce framework.
+keywords:
+  - Extensions
 ---
 
 # Extensibility and modularity

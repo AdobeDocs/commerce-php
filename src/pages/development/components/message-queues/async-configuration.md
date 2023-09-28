@@ -3,6 +3,8 @@ title: Asynchronous Configuration | Commerce PHP Extensions
 description: Learn about the important configuration files that you must configure in your Adobe commerce and Magento Open Source extensions.
 contributor_name: comwrap GmbH
 contributor_link: https://www.comwrap.com
+keywords:
+  - Extensions
 ---
 
 # Asynchronous configuration

@@ -1,6 +1,8 @@
 ---
 title: Object Manager Helper | Commerce PHP Extensions
 description: Use the object manager helper class to save time unit testing Adobe Commerce and Magento Open Source extensions.
+keywords:
+  - Extensions
 ---
 
 # Object manager helper

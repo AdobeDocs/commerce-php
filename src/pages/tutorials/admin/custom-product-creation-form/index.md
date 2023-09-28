@@ -1,6 +1,8 @@
 ---
-title: Customize the Product Creation Form | Commerce PHP Extensions
+title: Customize product creation form | Commerce PHP Extensions
 description: Follow this tutorial to customize the Adobe Commerce and Magento Open Source product creation form.
+keywords:
+  - Extensions
 ---
 
 # Customize the product creation form

@@ -3,6 +3,8 @@ title: Check the Commerce Version | Commerce PHP Extensions
 description: Use these options to identify the version of Adobe Commerce or Magento Open Source.
 contributor_name: Atwix
 contributor_link: https://www.atwix.com/
+keywords:
+  - Extensions
 ---
 
 # Check the Commerce version

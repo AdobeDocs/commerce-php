@@ -1,6 +1,9 @@
 ---
 title: Mass Assignment | Commerce PHP Extensions
 description: Prevent Adobe Commerce and Magento Open Source components from allowing bad actors to override user-editable properties with arbitrary values in HTTP requests.
+keywords:
+  - Extensions
+  - Security
 ---
 
 # Mass assignment

@@ -3,6 +3,8 @@ title: Create a Custom Import Entity | Commerce PHP Extensions
 description: Follow this tutorial to import data into a custom Adobe Commerce or Magento Open Source module's database table.
 contributor_name: Atwix
 contributor_link: https://www.atwix.com/
+keywords:
+  - Extensions
 ---
 
 # Create a custom import entity

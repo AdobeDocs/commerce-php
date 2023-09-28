@@ -1,11 +1,13 @@
 ---
 title: Web API Technical Vision | Commerce PHP Extensions
-description: Learn about the aspirational vision that guides the development of the Commerce framework web API. 
+description: Learn about the aspirational vision that guides the development of the Commerce framework web API.
+keywords:
+  - Extensions
 ---
 
 # Web API technical vision
 
-import Docs from '/src/pages/_includes/web-api.md'
+import Docs from '/src/_includes/web-api.md'
 
 <Docs />
 

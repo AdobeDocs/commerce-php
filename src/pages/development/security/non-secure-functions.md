@@ -1,6 +1,9 @@
 ---
 title: Non-Secure Functions | Commerce PHP Extensions
-description: Avoid using PHP functions in Adobe Commerce and Magento Open Source components that are known to be vulnerable and exploitable. 
+description: Avoid using PHP functions in Adobe Commerce and Magento Open Source components that are known to be vulnerable and exploitable.
+keywords:
+  - Extensions
+  - Security
 ---
 
 # Non-secure functions

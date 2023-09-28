@@ -1,6 +1,8 @@
 ---
 title: Versioning Schema | Commerce PHP Extensions
 description: Learn how Adobe Commerce and Magento Open Source component versioning works.
+keywords:
+  - Extensions
 ---
 
 # Versioning schema

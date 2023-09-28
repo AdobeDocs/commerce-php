@@ -1,6 +1,9 @@
 ---
 title: Create Custom Cache Engines | Commerce PHP Extensions
 description: Learn how to use database caching for Adobe Commerce and Magento Open Source extensions.
+keywords:
+  - Cache
+  - Extensions
 ---
 
 # Create custom cache engines
@@ -25,7 +28,7 @@ We provide [sample configurations] at the end of this topic.
 
 ## Database caching using the `default` cache frontend
 
-To enable database caching using the `default` frontend, you must modify the `<magento_root>/app/etc/di.xml` file, which is the global deployment injection configuration for the application.
+To enable database caching using the `default` frontend, you must modify the `<magento_root>/app/etc/di.xml` file, which is the global dependency injection configuration for the application.
 
 To modify `di.xml`:
 

@@ -1,6 +1,9 @@
 ---
 title: Inventory Management API Reference | Commerce PHP Extensions
 description: Manage Adobe Commerce and Magento Open Source invtory with the Inventory Management modules.
+keywords:
+  - Extensions
+  - Inventory
 ---
 
 # Inventory Management API reference

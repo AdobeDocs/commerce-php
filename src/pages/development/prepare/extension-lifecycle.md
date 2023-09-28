@@ -1,6 +1,8 @@
 ---
 title: Extension Lifecycle | Commerce PHP Extensions
 description: Learn how to create classes that execute code when Adobe Commerce and Magento Open Source components are initialized, upgrades, or uninstalled.
+keywords:
+  - Extensions
 ---
 
 # Extension lifecycle
@@ -43,7 +45,7 @@ If the `schema_version` for your module is found in the `setup_module` table, th
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -79,7 +81,7 @@ The purpose of this class is to update the database structure or apply patches.
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -115,7 +117,7 @@ This class makes final modifications to the database schema after it has been in
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -155,7 +157,7 @@ The purpose of this class is to populate the database with initial data.
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -191,7 +193,7 @@ The purpose of this class is to fix corrupted data or populate a new data field 
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -227,7 +229,7 @@ This class makes final modifications to the database store after data has been i
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -257,7 +259,7 @@ If your installation or upgrade logic spans multiple classes, pass this resource
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -319,7 +321,7 @@ Use the [`ModuleContextInterface`] to get the current module version and execute
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -370,7 +372,7 @@ In this phase, your module should remove all traces of its existence in the data
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 

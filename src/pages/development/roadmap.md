@@ -1,6 +1,8 @@
 ---
 title: Developer roadmap | Commerce PHP Extensions
 description: Navigate the steps for developing an Adobe Commerce or Magento Open Source extension.
+keywords:
+  - Extensions
 ---
 
 # Extension developer roadmap

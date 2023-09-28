@@ -1,6 +1,8 @@
 ---
 title: Storefront UI Best Practices | Commerce PHP Extensions
 description: Review best practices for customizing the Adobe Commerce and Magento Open Source storefront user interface with extensions.
+keywords:
+  - Extensions
 ---
 
 # Storefront UI best practices

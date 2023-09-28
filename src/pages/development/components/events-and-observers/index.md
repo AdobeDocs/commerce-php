@@ -1,6 +1,8 @@
 ---
 title: Events and Observers | Commerce PHP Extensions
 description: Extend Adobe Commerce and Magento Open Source by running custom code in response to specific events.
+keywords:
+  - Extensions
 ---
 
 # Events and observers
@@ -22,7 +24,7 @@ The following example shows you how to dispatch an event with and without an arr
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -100,7 +102,7 @@ Below is an example of the basic observer class structure:
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -129,7 +131,7 @@ One of the more powerful features of observers is that they are able to use para
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 

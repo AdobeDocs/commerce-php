@@ -1,6 +1,8 @@
 ---
 title: Architectural Diagram | Commerce PHP Extensions
 description: Visualize the architectural layers of Adobe Commerce and Magento Open Source with this diagram.
+keywords:
+  - Extensions
 ---
 
 # Architectural diagram

@@ -1,6 +1,9 @@
 ---
 title: Security | Commerce PHP Extensions
 description: Learn how the Adobe Secure Product Lifecycle has influenced the development of the Commerce framework.
+keywords:
+  - Extensions
+  - Security
 ---
 
 # Security

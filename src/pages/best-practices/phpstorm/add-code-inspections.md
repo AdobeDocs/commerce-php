@@ -1,6 +1,8 @@
 ---
 title: Add Code Inspections | Commerce PHP Extensions
 description: Learn how to add code inspections with the Adobe Commerce and Magento Open Source PHPStorm plugin.
+keywords:
+  - Extensions
 ---
 
 # Add code inspections
@@ -78,7 +80,7 @@ Implement `InvalidDependencyInjectionTypeInspection` inspection that extends `Xm
 
 ```java
 /*
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 

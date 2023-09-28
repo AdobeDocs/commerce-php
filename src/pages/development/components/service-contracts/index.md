@@ -1,6 +1,8 @@
 ---
 title: Service Contracts | Commerce PHP Extensions
-description: Review an introduction to service contracts and how they help Adobe Commerce and Magento Open Source extension developers create stable APIs. 
+description: Review an introduction to service contracts and how they help Adobe Commerce and Magento Open Source extension developers create stable APIs.
+keywords:
+  - Extensions
 ---
 
 # Service contracts

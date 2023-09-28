@@ -1,6 +1,8 @@
 ---
 title: Module Dependencies | Commerce PHP Extensions
 description: Learn about the two types of module dependencies in the Commerce framework; hard and soft.
+keywords:
+  - Extensions
 ---
 
 # Module dependencies

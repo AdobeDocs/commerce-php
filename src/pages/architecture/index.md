@@ -1,6 +1,8 @@
 ---
 title: Architecture Guide | Commerce PHP Extensions
 description: Explore resources that describe the foundational elements of the Adobe Commerce and Magento Open Source framework.
+keywords:
+  - Extensions
 ---
 
 # Architecture Guide

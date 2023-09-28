@@ -1,6 +1,9 @@
 ---
 title: Server-Side Request Forgery (SSRF) | Commerce PHP Extensions
 description: Follow these strategies to prevent server-site request forgery (SSRF) vulnerabilities in Adobe Commerce and Magento Open Source components.
+keywords:
+  - Extensions
+  - Security
 ---
 
 # Server-side request forgery (SSRF)

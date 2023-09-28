@@ -1,6 +1,9 @@
 ---
 title: Denial-of-Service (DoS) Attacks | Commerce PHP Extensions
 description: Identify and protect Adobe Commerce and Magento Open Source component functionality vulnerable to denial of service attacks.
+keywords:
+  - Extensions
+  - Security
 ---
 
 # Denial of service (DOS) attacks

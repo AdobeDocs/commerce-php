@@ -1,6 +1,9 @@
 ---
 title: Create a cache type | Commerce PHP Extensions
 description: Learn about cache types and configurations for Adobe Commerce and Magento Open Source extensions.
+keywords:
+  - Cache
+  - Extensions
 ---
 
 A *cache type* enables you to specify what is cached and enables merchants to clear that cache type using the Cache Management page in the Admin.
@@ -43,7 +46,7 @@ You may declare multiple cache types.
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -186,7 +189,7 @@ Translate cache type model class is defined in `Magento\Framework\App\Cache\Type
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 

@@ -1,6 +1,10 @@
 ---
 title: CardinalCommerce 3-D Secure
 description: Learn how to integrate Adobe Commerce payment modules with CardinalCommerce, a subsidiary of Visa.
+keywords:
+  - Extensions
+  - Integration
+  - Payments
 ---
 
 # CardinalCommerce 3-D Secure
@@ -19,7 +23,7 @@ The following diagram shows a simplified 3-D Secure verification flow using Card
 
 The *Magento_CardinalCommerce* [module][] allows you to:
 
--  Start `Cardinal Consumer Authentication` for enabling card network programs including Verified by Visa®, MasterCard SecureCode® and Identity Check®, American Express SafeKey®, Discover ProtectBuy® and Diners International® and JCB J-Secure®.
+-  Start `Cardinal Consumer Authentication` for enabling card network programs including Verified by Visa&reg;, MasterCard SecureCode&reg; and Identity Check&reg;, American Express SafeKey&reg;, Discover ProtectBuy&reg; and Diners International&reg; and JCB J-Secure&reg;.
 
 -  Handle specific return values for `Cardinal Consumer Authentication` on backend and storefront
 

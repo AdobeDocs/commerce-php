@@ -1,6 +1,8 @@
 ---
 title: Optimal Development Environment | Commerce PHP Extensions
 description: Learn about the ideal local development environment for Adobe Commerce and Magento Open Source extension developers.
+keywords:
+  - Extensions
 ---
 
 # Optimal development environment
@@ -37,7 +39,7 @@ The following is a list of the different ways you can install Adobe Commerce or 
 
 The following is a list of optimizations you can make on your local development machine
 
-*  We recommend installing and using the latest supported version of PHP 7 to increase performance.
+*  We recommend installing and using the latest supported version of PHP 8 to increase performance.
 *  Replace your MySQL database with [Percona](https://www.percona.com/software/mysql-database/percona-server).
 *  Make sure you install and enable [PHP OPcache](http://php.net/manual/en/intro.opcache.php).
 *  Xdebug is off by default. Enable this feature only when you need it because it requires a lot of memory and degrades performance.

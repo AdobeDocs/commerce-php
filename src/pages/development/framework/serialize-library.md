@@ -1,6 +1,8 @@
 ---
 title: Serialize Library | Commerce PHP Extensions
 description: Use this library in your Adobe Commerce and Magento Open Source components to manage the serialization and unserialization of data.
+keywords:
+  - Extensions
 ---
 
 # Serialize library

@@ -1,6 +1,8 @@
 ---
 title: Add CLI Commands | Commerce PHP Extensions
 description: Review an introduction to custom command-line interface (CLI) commands for Adobe Commerce and Magento Open Source.
+keywords:
+  - Extensions
 ---
 
 # Add CLI commands
