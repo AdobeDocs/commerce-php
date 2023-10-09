@@ -7,7 +7,7 @@ description: README.md contents of the module from the source code
 
 This module defines the following CLI command:
 
-```shell
+```
 bin/magento events:generate:module
 ```
 

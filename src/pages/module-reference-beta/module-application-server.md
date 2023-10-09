@@ -23,16 +23,15 @@ Example of the installation command:
 
 Configure Web Server to route all GraphQL requests to Application Server.
 
-Here is an example configuration for Nginx:
+Here is an example configuration for Nginx: 
 
-```nginx
+```
 location /graphql {
     proxy_set_header Host $http_host;
     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
     proxy_pass http://127.0.0.1:9501/graphql;
 }
 ```
-
 ## How to run Application Server
 
 To launch the Application Server, execute the following CLI command: `bin/magento server:run`. This will start HTTP service on 9501 port for GraphQl area
