@@ -13,7 +13,7 @@ Adobe Commerce developers can use the following event-driven technologies to cre
 
 *  [Adobe I/O Events for Adobe Commerce](https://developer.adobe.com/commerce/extensibility/events/) allows you to send events asynchronously to applications built with [Adobe App Builder](https://developer.adobe.com/app-builder/docs/getting_started/first_app/). This feature is available on Adobe Commerce 2.4.5 and higher.
 
-*  [Adobe Commerce Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/) enables you to synchronously send webhook calls to an external server for immediate processing. Webhooks are triggered by events and cancel the action that initiated the event if the external call does not succeed. This feature is available as of Adobe Commerce 2.4.7-beta2, you can use events to trigger webhooks to execute on an external server.
+*  [Adobe Commerce Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/) enables you to synchronously send webhook calls to an external server for immediate processing. Webhooks are triggered by events and cancel the action that initiated the event if the external call does not succeed. This feature is available as of Adobe Commerce 2.4.7-beta2.
 
 ## Events
 
