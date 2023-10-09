@@ -200,7 +200,7 @@ it means that with default values is not possible to use tokens that older than 
 
 ### IMS access token verification.
 
-To verify token a public key is required. For more info https://wiki.corp.adobe.com/display/ims/IMS+public+key+retrieval
+To verify token a public key is required.
 In Admin Adobe Ims module was defined path where certificate has to be downloaded from.
 By default, in config.xml, these value for production.
 For testing reasons, developers can override this value, for example in env.php file like this:
