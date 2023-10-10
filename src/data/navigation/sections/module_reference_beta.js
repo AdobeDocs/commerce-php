@@ -155,6 +155,11 @@ module.exports = [
     },
     
     {
+      title: "ApplicationServerNewRelic",
+      path: "/module-reference-beta/module-application-server-new-relic/"
+    },
+    
+    {
       title: "AsyncConfig",
       path: "/module-reference-beta/module-async-config/"
     },
@@ -520,6 +525,11 @@ module.exports = [
     },
     
     {
+      title: "CommerceBackendUix",
+      path: "/module-reference-beta/module-commerce-backend-uix/"
+    },
+    
+    {
       title: "Company",
       path: "/module-reference-beta/module-company/"
     },
@@ -687,6 +697,11 @@ module.exports = [
     {
       title: "CustomerSegment",
       path: "/module-reference-beta/module-customer-segment/"
+    },
+    
+    {
+      title: "CustomerSegmentGraphQl",
+      path: "/module-reference-beta/module-customer-segment-graph-ql/"
     },
     
     {
@@ -930,6 +945,11 @@ module.exports = [
     },
     
     {
+      title: "GraphQlResolverCache",
+      path: "/module-reference-beta/module-graph-ql-resolver-cache/"
+    },
+    
+    {
       title: "GraphQlServer",
       path: "/module-reference-beta/module-graph-ql-server/"
     },
@@ -982,6 +1002,16 @@ module.exports = [
     {
       title: "ImportExport",
       path: "/module-reference-beta/module-import-export/"
+    },
+    
+    {
+      title: "ImportJson",
+      path: "/module-reference-beta/module-import-json/"
+    },
+    
+    {
+      title: "ImportJsonApi",
+      path: "/module-reference-beta/module-import-json-api/"
     },
     
     {
@@ -1690,6 +1720,16 @@ module.exports = [
     },
     
     {
+      title: "OrderCancellation",
+      path: "/module-reference-beta/module-order-cancellation/"
+    },
+    
+    {
+      title: "OrderCancellationGraphQl",
+      path: "/module-reference-beta/module-order-cancellation-graph-ql/"
+    },
+    
+    {
       title: "OrderHistorySearch",
       path: "/module-reference-beta/module-order-history-search/"
     },
@@ -1837,16 +1877,6 @@ module.exports = [
     {
       title: "QueryXml",
       path: "/module-reference-beta/module-query-xml/"
-    },
-    
-    {
-      title: "QuickCheckout",
-      path: "/module-reference-beta/module-quick-checkout/"
-    },
-    
-    {
-      title: "QuickCheckoutAdminPanel",
-      path: "/module-reference-beta/module-quick-checkout-admin-panel/"
     },
     
     {
