@@ -78,7 +78,7 @@ jobs:
       - name: Check internal links
         uses: borales/actions-yarn@v3
         with:
-          cmd: test:links
+          cmd: test
 
       - name: Build site
         if: ${{ success() }}
