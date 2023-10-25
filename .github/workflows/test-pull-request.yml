@@ -61,7 +61,6 @@ jobs:
           DEFAULT_BRANCH: main
           VALIDATE_ALL_CODEBASE: false
           VALIDATE_GITHUB_ACTIONS: true
-          FILTER_REGEX_EXCLUDE: .git/*
 
       - name: Setup Node v16 for Yarn v3
         uses: actions/setup-node@v3
