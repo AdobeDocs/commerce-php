@@ -37,25 +37,31 @@ Following are some common module directories:
 The directory structure for the ORM follows the MVC pattern:
 
 ```tree
-├── Model: Each file is responsible for defining the behavior, properties, and interactions related to a specific entity.
-│   ├── ResourceModel: contains files that handle the interaction with the database or data storage backend for the corresponding models. These classes abstract the database operations and provide a convenient interface for CRUD (Create, Read, Update, Delete) operations on the associated entities.
-│     └──  ModelName/Collection: contains files that define collections of entities. Collections provide a way to work with sets of data or multiple instances of a model simultaneously. These classes offer methods for querying, filtering, and manipulating groups of records from the database.
+├── Model
+│   ├── ResourceModel
+│     └──  ModelName/Collection
 ```
+
+Model directories include:
+
+* `Model`: Each file is responsible for defining the behavior, properties, and interactions related to a specific entity.
+* `ResourceModel`: contains files that handle the interaction with the database or data storage backend for the corresponding models. These classes abstract the database operations and provide a convenient interface for CRUD (Create, Read, Update, Delete) operations on the associated entities.
+* `ModelName/Collection`: contains files that define collections of entities. Collections provide a way to work with sets of data or multiple instances of a model simultaneously. These classes offer methods for querying, filtering, and manipulating groups of records from the database.
 
 ### Additional directories
 
 Additional folders can be added for configuration and other ancillary functions for items like [plugin-ins](../components/plugins.md), localization, and layout files.
 
-*  `Api`: contains any PHP classes exposed to the API.
-*  `Console`: contains CLI commands. For more info, see [Add CLI commands](../cli-commands/custom.md).
-*  `Cron`: contains cron job definitions.
-*  `CustomerData`: contains section files.
-*  `Helper`: contains aggregated functionality.
-*  `i18n`: contains localization files.
-*  `Observer`: contains files for executing commands from the listener.
-*  `Plugin`: contains any needed [plug-ins](../components/plugins.md).
-*  `UI`: contains data generation files.
-*  `view`: contains view files, including static view files, design templates, email templates, and layout files.
+* `Api`: contains any PHP classes exposed to the API.
+* `Console`: contains CLI commands. For more info, see [Add CLI commands](../cli-commands/custom.md).
+* `Cron`: contains cron job definitions.
+* `CustomerData`: contains section files.
+* `Helper`: contains aggregated functionality.
+* `i18n`: contains localization files.
+* `Observer`: contains files for executing commands from the listener.
+* `Plugin`: contains any needed [plug-ins](../components/plugins.md).
+* `UI`: contains data generation files.
+* `view`: contains view files, including static view files, design templates, email templates, and layout files.
 
 ## Theme file structure
 
@@ -107,11 +113,11 @@ Typical theme directories are:
 *  `media`: Theme preview images (screen capture of your theme) can be put in here.
 *  `web`: Optional directory that contains static files organized into the following subdirectories:
 
-  *  `css/source`: Contains a theme's `less` configuration files that invoke mixins for global elements from the [UI library](https://developer.adobe.com/commerce/frontend-core/guide/css/ui-library/), and the `theme.less` file that overrides the default variables values.
-  *  `css/source/lib`: Contains view files that override the [UI library](https://developer.adobe.com/commerce/frontend-core/guide/css/ui-library/) files stored in `lib/web/css/source/lib`.
-  *  `fonts`: The folder to place the different fonts for your theme.
-  *  `images`: Static images folder.
-  *  `js`: The folder for your JavaScript files.
+   *  `css/source`: Contains a theme's `less` configuration files that invoke mixins for global elements from the [UI library](https://developer.adobe.com/commerce/frontend-core/guide/css/ui-library/), and the `theme.less` file that overrides the default variables values.
+   *  `css/source/lib`: Contains view files that override the [UI library](https://developer.adobe.com/commerce/frontend-core/guide/css/ui-library/) files stored in `lib/web/css/source/lib`.
+   *  `fonts`: The folder to place the different fonts for your theme.
+   *  `images`: Static images folder.
+   *  `js`: The folder for your JavaScript files.
 
 For more details on the theme folder structure, see [theme structure](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/).
 
