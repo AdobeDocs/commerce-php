@@ -25,27 +25,43 @@ A typical file structure for a module can look like the following:
 
 Following are some common module directories:
 
-*  `Block`: contains PHP view classes as part of Model View Controller(MVC) vertical implementation of module logic.
-*  `Controller`: contains PHP controller classes as part of MVC vertical implementation of module logic.
-*  `etc`: contains configuration files; in particular, `module.xml`, which is required.
-*  `Model`: contains PHP model classes as part of MVC vertical implementation of module logic.
-*  `Setup`: contains classes for module database structure and data setup which are invoked when installing or upgrading.
-*  `ViewModel`: contains PHP model classes as part of a model-view-viewmodel (MVVM) implementation. It allows developers to offload features and business logic from block classes into separate classes that are easier to maintain, test, and reuse.
+* `Block`: contains PHP view classes as part of Model View Controller(MVC) vertical implementation of module logic.
+* `Controller`: contains PHP controller classes as part of MVC vertical implementation of module logic.
+* `etc`: contains configuration files; in particular, `module.xml`, which is required.
+* `Model/ResourceModel/Colletions`: contains PHP model classes as part of MVC vertical implementation of module logic.
+* `Setup`: contains classes for module database structure and data setup which are invoked when installing or upgrading.
+* `ViewModel`: contains PHP model classes as part of a model-view-viewmodel (MVVM) implementation. It allows developers to offload features and business logic from block classes into separate classes that are easier to maintain, test, and reuse.
+
+### Model file structure
+
+The directory structure for the ORM follows the MVC pattern:
+
+```tree
+├── Model
+│   ├── ResourceModel
+│     └──  ModelName/Collection
+```
+
+Model directories include:
+
+* `Model`: Each file is responsible for defining the behavior, properties, and interactions related to a specific entity.
+* `ResourceModel`: contains files that handle the interaction with the database or data storage backend for the corresponding models. These classes abstract the database operations and provide a convenient interface for CRUD (Create, Read, Update, Delete) operations on the associated entities.
+* `ModelName/Collection`: contains files that define collections of entities. Collections provide a way to work with sets of data or multiple instances of a model simultaneously. These classes offer methods for querying, filtering, and manipulating groups of records from the database.
 
 ### Additional directories
 
 Additional folders can be added for configuration and other ancillary functions for items like [plugin-ins](../components/plugins.md), localization, and layout files.
 
-*  `Api`: contains any PHP classes exposed to the API.
-*  `Console`: contains CLI commands. For more info, see [Add CLI commands](../cli-commands/custom.md).
-*  `Cron`: contains cron job definitions.
-*  `CustomerData`: contains section files.
-*  `Helper`: contains aggregated functionality.
-*  `i18n`: contains localization files.
-*  `Observer`: contains files for executing commands from the listener.
-*  `Plugin`: contains any needed [plug-ins](../components/plugins.md).
-*  `UI`: contains data generation files.
-*  `view`: contains view files, including static view files, design templates, email templates, and layout files.
+* `Api`: contains any PHP classes exposed to the API.
+* `Console`: contains CLI commands. For more info, see [Add CLI commands](../cli-commands/custom.md).
+* `Cron`: contains cron job definitions.
+* `CustomerData`: contains section files.
+* `Helper`: contains aggregated functionality.
+* `i18n`: contains localization files.
+* `Observer`: contains files for executing commands from the listener.
+* `Plugin`: contains any needed [plug-ins](../components/plugins.md).
+* `UI`: contains data generation files.
+* `view`: contains view files, including static view files, design templates, email templates, and layout files.
 
 ## Theme file structure
 
