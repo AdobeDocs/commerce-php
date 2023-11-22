@@ -33,7 +33,7 @@ The following is a list of the different ways you can install Adobe Commerce or 
 
    You can use a VM tool, such as [VirtualBox](https://www.virtualbox.org/wiki/VirtualBox), together with a virtual environment tool, such as [Vagrant](https://www.vagrantup.com/) or [Docker](https://www.docker.com/), to create reusable and shareable instances for development.
 
-   A search for ["magento developer box"](https://github.com/search?utf8=%E2%9C%93&q=magento+developer+box&type=repositories) in GitHub provides a list of unofficial virtual machines configured for development.
+   A search for "magento developer box" in GitHub provides a list of unofficial virtual machines configured for development.
 
 ### Optimal configuration
 
