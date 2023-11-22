@@ -37,7 +37,7 @@ We recommend using the InnoDB storage engine because other storage engines are n
 
 ## Avoid raw SQL queries
 
-Raw SQL queries can lead to potential security vulnerabilities and database portability issues. Use data adapter capabilities ([`Magento\Framework\DB\Adapter\Pdo\Mysql`](https://github.com/magento/magento2/blob/2.4}/lib/internal/Magento/Framework/DB/Adapter/Pdo/Mysql.php) by default) to build and execute queries and move all data access code to a resource model. Use prepared statements to make sure that queries are safe to execute.
+Raw SQL queries can lead to potential security vulnerabilities and database portability issues. Use data adapter capabilities ([`Magento\Framework\DB\Adapter\Pdo\Mysql`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/DB/Adapter/Pdo/Mysql.php) by default) to build and execute queries and move all data access code to a resource model. Use prepared statements to make sure that queries are safe to execute.
 
 <InlineAlert variant="warning" slots="text"/>
 
@@ -111,12 +111,12 @@ public function getCustomerCart()
 
 Make sure that your observer or plugin is declared in the proper area:
 
--  [`adminhtml`](https://github.com/magento/magento2/blob/2.4}/app/code/Magento/Backend/etc/di.xml)
--  [`crontab`](https://github.com/magento/magento2/blob/2.4}/app/code/Magento/Cron/etc/di.xml)
--  [`frontend`](https://github.com/magento/magento2/blob/2.4}/app/code/Magento/Store/etc/di.xml)
--  [`graphql`](https://github.com/magento/magento2/blob/2.4}/app/code/Magento/GraphQl/etc/di.xml)
--  [`webapi_rest`](https://github.com/magento/magento2/blob/2.4}/app/code/Magento/Webapi/etc/di.xml)
--  [`webapi_soap`](https://github.com/magento/magento2/blob/2.4}/app/code/Magento/Webapi/etc/di.xml)
+-  [`adminhtml`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Backend/etc/di.xml)
+-  [`crontab`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Cron/etc/di.xml)
+-  [`frontend`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Store/etc/di.xml)
+-  [`graphql`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/GraphQl/etc/di.xml)
+-  [`webapi_rest`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Webapi/etc/di.xml)
+-  [`webapi_soap`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Webapi/etc/di.xml)
 
 The plugins and observers should be declared in the `<module-dir>/etc/<area>/` directory.
 

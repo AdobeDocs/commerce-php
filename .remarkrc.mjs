@@ -23,8 +23,12 @@ const remarkConfig = {
 			remarkLintNoDeadUrls,
 			{
 				skipUrlPatterns: [
-					"https://www.php.net"
-				]
+					"https://www.php.net",
+					"https://cardinalcommerce.com/",
+					"https://www.cyberciti.biz"
+
+				],
+				skipOffline: "true"
 			}
 		],
 	],
