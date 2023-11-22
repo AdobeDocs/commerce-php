@@ -169,7 +169,7 @@ In the module's root directory, run the following command:
 mkdir -p Controller/Adminhtml/HelloWorld
 ```
 
-Inside `Controller/Adminhtml/HelloWorld` directory, create the file `Index.php`. This file is the class assigned to the default Index action for the `HelloWorld` controller. Since the admin area serves this page, the file belongs in the `Adminhtml` directory, and the class itself extends [`\Magento\Backend\App\Action`](https://github.com/magento/magento2/blob/2.4}/app/code/Magento/Backend/App/Action.php).
+Inside `Controller/Adminhtml/HelloWorld` directory, create the file `Index.php`. This file is the class assigned to the default Index action for the `HelloWorld` controller. Since the admin area serves this page, the file belongs in the `Adminhtml` directory, and the class itself extends [`\Magento\Backend\App\Action`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Backend/App/Action.php).
 
 ```php
 <?php

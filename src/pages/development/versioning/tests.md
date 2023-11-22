@@ -142,4 +142,4 @@ It MAY include minor and patch level changes. Patch and minor version MUST be re
 
 ---------------------------
 
- ⃰ - `<action>` refers to any of the available [MFTF Actions](https://github.com/magento/magento2-functional-testing-framework/blob/develop/docs/test/actions.md).
+ ⃰ - `<action>` refers to any of the available [MFTF Actions](https://github.com/magento/magento2-functional-testing-framework/blob/2.x-develop/docs/test/actions.md).
