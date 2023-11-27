@@ -82,7 +82,7 @@ jobs:
         with:
           cmd: install
 
-      - name: Check internal links
+      - name: Check links
         uses: borales/actions-yarn@v3
         with:
           cmd: test
