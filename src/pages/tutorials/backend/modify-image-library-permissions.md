@@ -37,21 +37,21 @@ In this tutorial, you will learn how to extend "Media Gallery Allowed" folders u
 1. Add a new "Media Gallery Allowed" folder:
 
    ```xml
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
-    <default>   
-      <system>
-        <media_storage_configuration>
-           <allowed_resources>
-              <media_gallery_image_folders>
-                 <!-- new "Media Gallery Allowed" folders -->
-                 <my_image_folder>custom_folder_name</my_image_folder>
-                 <my_catalog_image_folder>catalog/custom_folder_name</my_catalog_image_folder>
-              </media_gallery_image_folders>
-           </allowed_resources>
-        </media_storage_configuration>
-      </system>
-    </default>
-</config>
+   <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+     <default>   
+       <system>
+         <media_storage_configuration>
+            <allowed_resources>
+               <media_gallery_image_folders>
+                  <!-- new "Media Gallery Allowed" folders -->
+                  <my_image_folder>custom_folder_name</my_image_folder>
+                  <my_catalog_image_folder>catalog/custom_folder_name</my_catalog_image_folder>
+               </media_gallery_image_folders>
+            </allowed_resources>
+         </media_storage_configuration>
+       </system>
+     </default>
+   </config>
    ```
 
 ## Commerce versions 2.4.0 - 2.4.3
