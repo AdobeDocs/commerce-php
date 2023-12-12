@@ -69,13 +69,13 @@
         - name: Checkout
           uses: actions/checkout@v4
         
-        - name: free disk space
-          run: |
-            sudo swapoff -a
-            sudo rm -f /swapfile
-            sudo apt clean
-            docker rmi "$(docker image ls -aq)"
-            df -h
+        # - name: free disk space
+        #   run: |
+        #     sudo swapoff -a
+        #     sudo rm -f /swapfile
+        #     sudo apt clean
+        #     docker rmi "$(docker image ls -aq)"
+        #     df -h
   
         - name: Setup Node v16
           uses: actions/setup-node@v3
