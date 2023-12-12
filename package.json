@@ -20,15 +20,15 @@
     "remark-validate-links": "^11.0.2"
   },
   "scripts": {
-    "start": "gatsby build && gatsby serve",
-    "start:prefix": "gatsby build --prefix-paths && gatsby serve --prefix-paths",
-    "dev": "gatsby develop --open",
-    "dev:https": "gatsby develop --https --host localhost.corp.adobe.com --port 9000",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
+    "start": "NODE_OPTIONS='--max-old-space-size=8192' gatsby build && gatsby serve",
+    "start:prefix": "NODE_OPTIONS='--max-old-space-size=8192' gatsby build --prefix-paths && gatsby serve --prefix-paths",
+    "dev": "NODE_OPTIONS='--max-old-space-size=8192' gatsby develop",
+    "dev:https": "NODE_OPTIONS='--max-old-space-size=8192' gatsby develop --https --host localhost.corp.adobe.com --port 9000",
+    "build": "NODE_OPTIONS='--max-old-space-size=8192' gatsby build",
+    "serve": "NODE_OPTIONS='--max-old-space-size=8192' gatsby serve",
     "clean": "gatsby clean",
     "test": "remark src/pages --quiet --frail",
-    "lint": "docker run --rm -e RUN_LOCAL=true --env-file .github/super-linter.env -v \"$PWD\":/tmp/lint github/super-linter:slim-v5"
+    "lint": "docker run --rm -e RUN_LOCAL=true --env-file .github/super-linter.env -v \"$PWD\":/tmp/lint github/super-linter:slim-v4.10.1"
   },
   "packageManager": "yarn@3.2.4"
 }
