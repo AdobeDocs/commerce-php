@@ -61,20 +61,6 @@ jobs:
           DEFAULT_BRANCH: main
           VALIDATE_ALL_CODEBASE: false
           VALIDATE_GITHUB_ACTIONS: true
-      - name: Setup Node v16
-        uses: actions/setup-node@v3
-        with:
-          node-version-file: '.nvmrc'
-          cache: 'yarn'
-          cache-dependency-path: 'yarn.lock'
-
-      - name: Enable Corepack for Yarn
-        run: corepack enable
-
-      - name: Install Dependencies
-        run: yarn install
-        env:
-          YARN_ENABLE_IMMUTABLE_INSTALLS: false
 
       - name: Setup Node v16
         uses: actions/setup-node@v3
@@ -90,7 +76,14 @@ jobs:
         run: yarn install
         env:
           YARN_ENABLE_IMMUTABLE_INSTALLS: false
-  
+
+      - name: Enable Corepack for Yarn
+        run: corepack enable
+
+      - name: Install Dependencies
+        run: yarn install
+        env:
+          YARN_ENABLE_IMMUTABLE_INSTALLS: false
 
       - name: Check links
         run: yarn test
