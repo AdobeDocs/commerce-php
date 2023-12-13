@@ -77,14 +77,6 @@ jobs:
         env:
           YARN_ENABLE_IMMUTABLE_INSTALLS: false
 
-      - name: Enable Corepack for Yarn
-        run: corepack enable
-
-      - name: Install Dependencies
-        run: yarn install
-        env:
-          YARN_ENABLE_IMMUTABLE_INSTALLS: false
-
       - name: Check links
         run: yarn test
 
