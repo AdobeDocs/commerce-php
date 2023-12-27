@@ -128,9 +128,9 @@ class Adjustment implements AdjustmentInterface
 }
 ```
 
-The `ADJUSTMENT_CODE` constant is a unique code for the adjustment which it gets added to the `Magento\Framework\Pricing\Adjustment\Collection` collection.
+The `ADJUSTMENT_CODE` constant is a unique code for the adjustment which is added to the `Magento\Framework\Pricing\Adjustment\Collection` collection.
 
-The adjustment logic is defined in `extractAdjustment` and `applyAdjustment` functions.
+The adjustment logic is defined in the `extractAdjustment` and `applyAdjustment` functions.
 
 Price adjustments affect storefront product prices.
 
@@ -138,7 +138,7 @@ Price adjustments **will not** affect quote item prices, so when a product is ad
 
 ## Add price adjustments for quote items
 
-To adjustments prices for quote items, a custom quote total is added:
+To add price adjustments for quote items, a custom quote total is added:
 
 Add the following to `VENDOR/MODULE/etc/sales.xml`:
 
@@ -240,7 +240,7 @@ class Surcharge extends \Magento\Quote\Model\Quote\Address\Total\AbstractTotal
 
        return [
            'code' => $this->getCode(),
-           'title' => __('Custom Total'),
+           'title' => __('Custom Surcharge Total'),
            'value' => $amount
        ];
    }
@@ -255,7 +255,7 @@ class Surcharge extends \Magento\Quote\Model\Quote\Address\Total\AbstractTotal
 }
 ```
 
-The `COLLECTOR_TYPE_CODE` constant is a unique name of the custom total. It can be accessed with `Magento\Quote\Model\Quote\Address\Total::getTotalAmount`, and set with `Magento\Quote\Model\Quote\Address\Total::setTotalAmount`.
+The `COLLECTOR_TYPE_CODE` constant is a unique name of the custom total. The custom total can be retrieved with `Magento\Quote\Model\Quote\Address\Total::getTotalAmount`, and set with `Magento\Quote\Model\Quote\Address\Total::setTotalAmount`.
 
 ### Display price-adjusted totals on the cart page
 
@@ -277,6 +277,7 @@ First, add the new total:
                             <item name="children" xsi:type="array">
                                 <item name="custom-surcharge" xsi:type="array">
                                     <item name="component" xsi:type="string">VENDOR_MODULE/js/view/cart/totals/surcharge</item>
+                                    <item name="sortOrder" xsi:type="string">25</item>
                                     <item name="config" xsi:type="array">
                                         <item name="title" xsi:type="string" translate="true">Custom Surcharge</item>
                                     </item>
@@ -298,8 +299,10 @@ Then, define a new component: `VENDOR_MODULE/js/view/cart/totals/surcharge`:
 ```javascript
 define([
     'Magento_Checkout/js/view/summary/abstract-total',
-    'Magento_Checkout/js/model/quote'
-], function (Component, quote) {
+    'Magento_Checkout/js/model/quote',
+    'Magento_Checkout/js/model/totals',
+    'mage/translate'
+], function (Component, quote, totals, $t) {
     'use strict';
 
     return Component.extend({
@@ -325,19 +328,25 @@ define([
                 return null;
             }
 
-            return 'Custom Surcharge';
+            return $t('Custom Surcharge');
         },
 
         /**
          * @return {Number}
          */
         getPureValue: function () {
-            var price = 0;
-            for (var i=0; i < window.checkoutConfig.quoteItemData.length; i++) {
-              price += window.checkoutConfig.quoteItemData[i].qty * 1.79;
+            let amount = 0,
+                customSurchargeTotal;
+
+            if (this.totals()) {
+                customSurchargeTotal = totals.getSegment('custom-surcharge');
+
+                if (customSurchargeTotal) {
+                    amount = customSurchargeTotal.value;
+                }
             }
 
-            return price;
+            return amount;
         },
 
         /**
@@ -351,6 +360,8 @@ define([
 ```
 
 Then create the template `VENDOR_MODULE/summary/surcharge`:
+
+`VENDOR/MODULE/view/frontend/web/template/summary/surcharge.html`:
 
 ```html
 <!-- ko if: isDisplayed() -->
@@ -387,8 +398,9 @@ To display the price-adjusted total on the checkout page, add it to the `totals`
                                             <item name="children" xsi:type="array">
                                                 <item name="totals" xsi:type="array">
                                                     <item name="children" xsi:type="array">
-                                                        <item name="discount" xsi:type="array">
+                                                        <item name="custom-surcharge" xsi:type="array">
                                                             <item name="component" xsi:type="string">VENDOR_MODULE/js/view/cart/totals/surcharge</item>
+                                                            <item name="sortOrder" xsi:type="string">25</item>
                                                             <item name="config" xsi:type="array">
                                                                 <item name="title" xsi:type="string" translate="true">Custom Surcharge</item>
                                                             </item>
