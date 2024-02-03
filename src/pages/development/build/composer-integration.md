@@ -90,7 +90,7 @@ System integrators use this `composer.json` file to deploy the Magento Open Sour
 
 **Name:** `magento/product-enterprise-edition`
 
-**Type:** `metapackage`
+**Type:** `project`
 
 System integrators use this `composer.json` file to deploy the Adobe Commerce product and its dependencies.
 
