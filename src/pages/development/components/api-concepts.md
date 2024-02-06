@@ -7,7 +7,7 @@ keywords:
 
 # Public interfaces and APIs
 
-Learn about interaces and APIs.
+Learn about interfaces and APIs.
 
 ## What is an interface?
 
