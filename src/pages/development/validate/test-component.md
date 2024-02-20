@@ -1,6 +1,8 @@
 ---
 title: Test Your Component | Commerce PHP Extensions
-description: Learn what type of testing you should do when developing an Adobe Commerce or Magento Open Source component. 
+description: Learn what type of testing you should do when developing an Adobe Commerce or Magento Open Source component.
+keywords:
+  - Extensions
 ---
 
 # Test your component

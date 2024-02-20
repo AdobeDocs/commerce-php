@@ -1,6 +1,8 @@
 ---
 title: Plugins | Commerce PHP Extensions
 description: Modify the behavior of public class functions in Adobe Commerce and Magento Open Source using plugin (or interceptor) classes.
+keywords:
+  - Extensions
 ---
 
 # Plugins
@@ -104,7 +106,7 @@ Below is an example of a before method modifying the `$name` argument before pas
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -132,7 +134,7 @@ Below is an example of an after method modifying the return value `$result` of a
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -156,7 +158,7 @@ Below is an example of an after method that accepts the `null` result and argume
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -195,7 +197,7 @@ The following example is a class with an after method for [`\Magento\Catalog\Mod
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -246,7 +248,7 @@ Below is an example of an around method adding behavior before and after an obse
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -281,7 +283,7 @@ For example, the following code defines a parameter of type `SomeType`, which is
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -301,7 +303,7 @@ You should wrap this method with a plugin:
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -325,7 +327,7 @@ You are responsible for forwarding the arguments from the plugin to the `proceed
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -354,7 +356,7 @@ If two or more plugins have the same `sortOrder` value or do not specify it, the
 The application executes plugins using these rules during each plugin execution in two main flows:
 
 *  Before the execution of the observed method, starting from lowest to highest `sortOrder`.
-   *  The application executes the current plugin’s `before` method.
+   *  The application executes the current plugin's `before` method.
    *  Then the current plugin's `around` method is called.
       *  The first part of the plugin's `around` method is executed.
       *  The `around` method executes the `callable`.
@@ -432,7 +434,7 @@ With these methods:
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -487,7 +489,7 @@ Using these methods:
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 

@@ -1,11 +1,13 @@
 ---
 title: Public Interfaces and APIs | Commerce PHP Extensions
 description: Learn about Adobe Commerce and Magento Open Source interfaces and APIs.
+keywords:
+  - Extensions
 ---
 
 # Public interfaces and APIs
 
-Learn about interaces and APIs.
+Learn about interfaces and APIs.
 
 ## What is an interface?
 
@@ -22,7 +24,7 @@ Third-party developers should use only these interfaces, that is, interfaces wit
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -51,7 +53,7 @@ The ``Magento\CatalogRule\Api\CatalogRuleRepositoryInterface`` interface
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -118,7 +120,7 @@ The ``Magento\CatalogRule\Model\CatalogRuleRepository`` implements the default m
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 

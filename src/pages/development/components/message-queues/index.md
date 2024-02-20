@@ -1,6 +1,8 @@
 ---
 title: Message Queues | Commerce PHP Extensions
 description: Review an introduction to the message queue system in Adobe Commerce and Magento Open Source.
+keywords:
+  - Extensions
 ---
 
 # Message queues

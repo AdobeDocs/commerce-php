@@ -1,9 +1,14 @@
 ---
 title: Add vault to module dependencies
 description: Learn how to add dependencies necessary for using the vault.
+keywords:
+  - Configuration
+  - Extensions
+  - Integration
+  - Payments
 ---
 
-import Docs from '/src/pages/_includes/braintree-note.md'
+import Docs from '/src/_includes/braintree-note.md'
 
 <Docs />
 

@@ -1,11 +1,141 @@
 ---
-title: Backward-incompatible changes highlights | Commerce PHP Extensions
-description: Learn about major changes in Adobe Commerce and Magento Open Source releases that require detaile dexplanation and special instructions to ensure your custom extension continues working.
+title: Backward-incompatible changes | Commerce PHP Extensions
+description: Learn about major changes in Adobe Commerce and Magento Open Source releases that require action to ensure your custom extension continues working.
+keywords:
+  - Extensions
 ---
 
 # Backward-incompatible changes highlights
 
 This page highlights backward-incompatible changes between Adobe Commerce and Magento Open Source releases that have a major impact and require detailed explanation and special instructions to ensure third-party modules continue working. High-level reference information for all backward-incompatible changes in each release are documented in [Backward incompatible changes reference](reference.md).
+
+## 2.4.7-beta2
+
+The following major backward-incompatible changes were introduced in the 2.4.7-beta2 Adobe Commerce and Magento Open Source releases:
+
+* Commerce FedEx SOAP API integration
+* Commerce UPS SOAP API integration
+* Elasticsearch 7 deprecation
+* New method for encryption key generation
+* New SKU validation in inventory source items API
+* New full-page caching system configuration
+
+### Commerce FedEx SOAP API integration
+
+The Commerce FedEx SOAP API integration has been migrated to the new FedEx REST API. The FedEx Web Services for Tracking API was retired on May 15, 2024. All previous FedEx SOAP APIs have been removed from the Adobe Commerce and Magento Open Source 2.4.7 code base.
+
+This change affects custom code and extensions that use the SOAP APIs. You must update your code to use the REST APIs.
+
+You must generate REST credentials (Account Number, API Key, and Secret Key) from the FedEx developer portal and add those credentials to the Admin by going to **Stores** > **Configuration** > **Sales** > **Shipping/Delivery Methods** > **FedEx**.
+
+The following module is affected by this change:
+
+* [Magento_Fedex](https://developer.adobe.com/commerce/php/module-reference/module-fedex/)
+
+### Commerce UPS SOAP API integration
+
+The Commerce UPS SOAP API integration has been migrated to the new UPS REST API to support updates that UPS is making to their [API security model](https://developer.ups.com/oauth-developer-guide). UPS is implementing an OAuth 2.0 security model (bearer tokens) for all APIs. All previous Commerce UPS SOAP APIs have been removed from the Adobe Commerce and Magento Open Source 2.4.7 code base.
+
+You must generate REST credentials (Account Number, API Key, and Secret Key) from the UPS developer portal and update those credentials to the Admin by going to **Stores** > **Configuration** > **Sales** > **Shipping/Delivery Methods** > **UPS**.
+
+The following module is affected by this change:
+
+* [Magento_Ups](https://developer.adobe.com/commerce/php/module-reference/module-ups/)
+
+### Elasticsearch 7 deprecation
+
+This change removes the `Magento_Elasticsearch` module (for Elasticsearch 5) and adds support for Elasticsearch 8. The `Magento_Elasticsearch7` module is being deprecated because Elasticsearch 7 reached end-of-life in August 2023. However, it is still the default option for 2.4.7-beta2.
+
+The `Magento_Elasticsearch8` module is not currently supported because of backward-incompatible changes in ES7 and ES8. It is available as a Composer metapackage only in 2.4.7-beta2 until the `Magento_Elasticsearch7` module is removed from the codebase.
+
+You can use the `Magento_Elasticsearch7` module or install the Magento_Elasticsearch8 module in 2.4.7-beta2.
+
+The following modules are affected by this change:
+
+* [Magento_Elasticsearch](https://developer.adobe.com/commerce/php/module-reference/module-elasticsearch/)
+* [Magento_ElasticsearchCatalogPermissions](https://developer.adobe.com/commerce/php/module-reference/module-elasticsearch-catalog-permissions/)
+* [Magento_Elasticsearch7](https://developer.adobe.com/commerce/php/module-reference/module-elasticsearch-7/)
+* [Magento_OpenSearch](https://developer.adobe.com/commerce/php/module-reference/module-open-search/)
+
+### New method for encyption key generation
+
+This change improves the security of encrypted user data. You must [reset the encryption key](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/encryption-key.html) and set the **Auto-generate** option to `Yes`. After resetting the encryption key, all credit card data and cache files are re-encrypted with the new key.
+
+The following files are affected by this change:
+
+* [`lib/internal/Magento/Framework/Config/ConfigOptionsListConstants.php`](https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Config/ConfigOptionsListConstants.php)—A new method was added to increase the entropy of encryption keys generated by the framework for stored credit card and cache data.
+* [`lib/internal/Magento/Framework/Math/Random.php`](https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Math/Random.php)—A new constant was added to prefix base64-encoded encryption keys for use in `env.php` files.
+
+### New SKU validation in inventory source items API
+
+Payload containing SKU will now be validated for leading and trailing spaces in the `rest/V1/inventory/source-items` API.
+
+### New full-page caching system configuration
+
+This change improves the security and performance of how the framework resolves [Varnish Edge Side Includes (ESI)](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/use-varnish-esi.html) for [full-page caching](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/configure-varnish-commerce.html).
+
+The `{BASE-URL}/page_cache/block/esi HTTP` endpoint supports unrestricted, dynamically loaded content fragments from Commerce layout handles and block structures.
+
+The new **Handles params size** system configuration setting limits the `handles` parameter for the endpoint to `100` by default. You can change the default in the Admin by going to **Stores** > _Settings_ > **Configuration** > **Advanced** > **System** > **Full Page Cache**.
+
+No action is necessary unless you need to modify the default value for the endpoint.
+
+The following module is affected by this change:
+
+* [Magento_PageCache](https://developer.adobe.com/commerce/php/module-reference/module-page-cache/)
+
+## 2.4.7-beta1
+
+The following major backward-incompatible changes were introduced in the 2.4.7-beta1 Adobe Commerce and Magento Open Source releases:
+
+* New interface and method for ApplicationServer module
+* New public method in `Config/Type/System`
+* New configuration for payment information rate limiting
+* Default behavior for isEmailAvailable API
+
+### New interface and method for ApplicationServer module
+
+State management has been enabled for all GraphQL APIs (excluding B2B and service-related processes). The 2.4.7-beta1 release introduces a new PHP application server that is implemented on a Swoole PHP extension. The [ApplicationServer](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/performance-best-practices/application-server.html) module enables Adobe Commerce to maintain state between Commerce GraphQL API requests and eliminates the need for request bootstrapping. By sharing application state among processes, API requests become significantly more efficient, and API response times potentially decrease by 50 to 60 milliseconds.
+
+The `ResetAfterRequestInterface` interface and `_resetState()` method were added to enable the PHP application server. The `__debugInfo()` method was also added to fix issues with `var_dump` calls.
+
+No action for merchants or extension developers is necessary.
+
+The following modules are affected by this change:
+
+* [Magento_Authorization](https://developer.adobe.com/commerce/php/module-reference/module-authorization/)
+* [Magento_Config](https://developer.adobe.com/commerce/php/module-reference/module-config/)
+* [Magento_Customer](https://developer.adobe.com/commerce/php/module-reference/module-customer/)
+* [Magento_ResourceConnections](https://developer.adobe.com/commerce/php/module-reference/module-resource-connections/)
+
+### New public method in `Config/Type/System`
+
+The `bin/magento cache:clean config` CLI command, and its Admin UI equivalent, now pre-warm the config cache (when config cache is enabled) in order to reduce the lock time after cleaning the config cache. This reduces the downtime for large configurations that take significant time to generate the config cache.
+
+We've also changed the configuration save so that it no longer cleans the `config_scopes` cache (when config cache is enabled). Config saving also pre-warms the config cache now, which also reduces the lock time for large configurations. Cleaning the config cache after saving configuration changes is still recommended.
+
+No action for merchants or extension developers is necessary because the general functionality is the same. Only the order of generating the config cache, serializing, and encrypting (before lock instead of after) was changed.
+
+The following module is affected by this change:
+
+* [Magento_Config](https://developer.adobe.com/commerce/php/module-reference/module-config/)
+
+### New configuration for payment information rate limiting
+
+New native application rate-limiting features have been added with initial out-of-the-box support for rate limiting of payment API's. Disabled by default.
+
+No action for merchants or extension developers is necessary.
+
+The following module is affected by this change:
+
+* [Magento_Quote](https://developer.adobe.com/commerce/php/module-reference/module-quote/)
+
+### `isEmailAvailable` API
+
+The default behavior of the [`isEmailAvailable`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/is-email-available/) GraphQL query and ([`V1/customers/isEmailAvailable`](https://adobe-commerce.redoc.ly/2.4.6-admin/tag/customersisEmailAvailable/#operation/PostV1CustomersIsEmailAvailable)) REST endpoint has changed. By default, the API now always returns `true`.
+The new default behaviour also affects the checkout workflow for guests that do not realize they already have an account. Previously, by default, when a guest supplied an email address that matched an existing customer account, they were prompted to sign in. Now, they are no longer prompted to sign in.
+
+Merchants can restore the original default behavior of the `isEmailAvailable` API and checkout flow by setting the **Stores > Configuration > Sales > Checkout > Enable Guest Checkout Login field** to **Yes**. However, doing this can expose customer information to unauthenticated users.
 
 ## 2.4.6
 
@@ -335,7 +465,7 @@ As a result, email or newsletter templates that worked in previous versions may 
 
 Version 2.4.3-p1 introduced a configuration option for Media Gallery content that denotes which folders can contain Media gallery files.
 
-The new configuration path `system/media_storage_configuration/media_storage/allowed_resource/media_gallery_image_folders` is used to define the "Media Gallery Allowed" folders in 'config.xml'.
+The new configuration path `system/media_storage_configuration/allowed_resources/media_gallery_image_folders` is used to define the "Media Gallery Allowed" folders in 'config.xml'.
 
 The initial values are the `wysiwyg` and `catalog/category` folders.
 

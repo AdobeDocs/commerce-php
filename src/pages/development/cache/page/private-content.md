@@ -1,6 +1,9 @@
 ---
 title: Private Content | Commerce PHP Extensions
 description: Learn how to work with private data when implementing a caching in your Adobe Commerce or Magento Open Source extension.
+keywords:
+  - Cache
+  - Extensions
 ---
 
 # Private content
@@ -89,7 +92,7 @@ The following example adds comments to [app/code/Magento/Catalog/etc/frontend/se
 <?xml version="1.0"?>
 <!--
 /**
- * Copyright © 2016 Magento. All rights reserved.
+ * Copyright &copy; 2016 Magento. All rights reserved.
  * See COPYING.txt for license details.
  */
 -->
@@ -120,7 +123,7 @@ There are sections that allow you to declare an 'action' node without specifying
 </config>
 ```
 
-This tells The application to invalidate all sections. But if you have declared sections for this action in another .xml file, it will override the initial sections and only newly added sections will be invalidated. If you need to reload all sections on some action, use `*` as section name or use an empty action and ensure that they will not be overriden by any other rules:
+This tells The application to invalidate all sections. But if you have declared sections for this action in another .xml file, it will override the initial sections and only newly added sections will be invalidated. If you need to reload all sections on some action, use `*` as section name or use an empty action and ensure that they will not be overridden by any other rules:
 
 ```xml
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -159,6 +162,6 @@ Versioning works as follows:
 
 The customer data invalidation mechanism no longer relies on the `private_content_version`.
 
-import Docs from '/src/pages/_includes/page-cache-checklist.md'
+import PageChecklist from '/src/_includes/page-cache-checklist.md'
 
-<Docs />
+<PageChecklist />

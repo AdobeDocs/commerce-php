@@ -1,6 +1,8 @@
 ---
 title: Frontend Customization | Commerce PHP Extensions
 description: Discover tools designed to help you customize your Adobe Commerce or Magento Open Source storefront.
+keywords:
+  - Extensions
 ---
 
 # Frontend customization

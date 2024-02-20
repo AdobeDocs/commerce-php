@@ -1,8 +1,11 @@
 ---
-title: Create an Integration with an External API | Commerce PHP Extensions
+title: Integrate with an external API | Commerce PHP Extensions
 description: Follow this tutorial to integrate an external API with an Adobe Commerce or Magento Open Source extension.
 contributor_name: Atwix
 contributor_link: https://www.atwix.com/
+keywords:
+  - Extensions
+  - Integration
 ---
 
 # Create an integration with an external API
@@ -145,7 +148,7 @@ As a result, you get all the available information about the `magento/magento2` 
   "full_name": "magento/magento2",
   "private": false,
   "html_url": "https://github.com/magento/magento2",
-  "description": "All Submissions you make to Magento Inc. (\"Magento\") through GitHub are subject to the following terms and conditions: (1) You grant Magento a perpetual, worldwide, non-exclusive, no charge, royalty free, irrevocable license under your applicable copyrights and patents to reproduce, prepare derivative works of, display, publically perform, sublicense and distribute any feedback, ideas, code, or other information (“Submission\") you submit through GitHub. (2) Your Submission is an original work of authorship and you are the owner or are legally entitled to grant the license stated above. (3) You agree to the Contributor License Agreement found here:  https://github.com/magento/magento2/blob/master/CONTRIBUTOR_LICENSE_AGREEMENT.html",
+  "description": "All Submissions you make to Magento Inc. (\"Magento\") through GitHub are subject to the following terms and conditions: (1) You grant Magento a perpetual, worldwide, non-exclusive, no charge, royalty free, irrevocable license under your applicable copyrights and patents to reproduce, prepare derivative works of, display, publically perform, sublicense and distribute any feedback, ideas, code, or other information ("Submission\") you submit through GitHub. (2) Your Submission is an original work of authorship and you are the owner or are legally entitled to grant the license stated above. (3) You agree to the Contributor License Agreement found here:  https://github.com/magento/magento2/blob/master/CONTRIBUTOR_LICENSE_AGREEMENT.html",
   "fork": false,
   "url": "https://api.github.com/repos/magento/magento2",
   "homepage": "http://www.magento.com",

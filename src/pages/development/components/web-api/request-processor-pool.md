@@ -3,6 +3,8 @@ title: Request Processors Pool | Commerce PHP Extensions
 description: Use the request processors pool to route web API requests in your Adobe Commerce and Magento Open Source extensions.
 contributor_name: Comwrap GmbH
 contributor_link: https://www.comwrap.com
+keywords:
+  - Extensions
 ---
 
 # Request processors pool
@@ -89,7 +91,7 @@ A custom processor must implement the `Magento\Webapi\Controller\Rest\RequestPro
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 declare(strict_types=1);

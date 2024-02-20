@@ -1,6 +1,9 @@
 ---
 title: Brute Force Attacks | Commerce PHP Extensions
 description: Identify and protect Adobe Commerce and Magento Open Source component functionality vulnerable to brute force attacks.
+keywords:
+  - Extensions
+  - Security
 ---
 
 # Brute force attackes

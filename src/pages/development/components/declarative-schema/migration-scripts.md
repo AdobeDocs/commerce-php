@@ -1,6 +1,8 @@
 ---
-title: Migrate Install/Upgrade Scripts to Declarative Schema | Commerce PHP Extensions
+title: Migrate to declarative schema | Commerce PHP Extensions
 description: Learn how to migrate your existing Adobe Commerce and Magento Open Source installation and upgrade scripts to declarative schema.
+keywords:
+  - Extensions
 ---
 
 # Migrate install/upgrade scripts to declarative schema

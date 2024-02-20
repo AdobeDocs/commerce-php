@@ -1,6 +1,8 @@
 ---
 title: Domain Layer | Commerce PHP Extensions
 description: Learn about the architectural domain layer of the Commerce framework.
+keywords:
+  - Extensions
 ---
 
 # Domain layer

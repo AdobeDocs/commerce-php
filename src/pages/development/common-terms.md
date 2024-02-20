@@ -1,6 +1,8 @@
 ---
 title: Glossary of common terms | Commerce PHP Extensions
 description: Review common terms that are used to describe technical aspects of Adobe Commerce and Magento Open Source extension development.
+keywords:
+  - Extensions
 ---
 
 # Glossary of terms

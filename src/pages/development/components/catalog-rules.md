@@ -3,6 +3,8 @@ title: Extend Catalog Rule Conditions | Commerce PHP Extensions
 description: Learn how Adobe Commerce and Magento Open Source catalog price rules are implemented.
 contributor_name: Ziffity
 contributor_link: https://www.ziffity.com/
+keywords:
+  - Extensions
 ---
 
 # Extend catalog rule conditions
@@ -83,7 +85,7 @@ Below is the definition of the `validate` method:
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 

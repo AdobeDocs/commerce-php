@@ -1,6 +1,8 @@
 ---
-title: MFTF Test Versioning and Backward Compatibility | Commerce PHP Extensions
+title: Test versioning | Commerce PHP Extensions
 description: Learn about the functional test framework test versioning and backward compatibility policy for Adobe Commerce and Magento Open Source component development.
+keywords:
+  - Extensions
 ---
 
 # MFTF test versioning and backward compatibility
@@ -140,4 +142,4 @@ It MAY include minor and patch level changes. Patch and minor version MUST be re
 
 ---------------------------
 
- ⃰ - `<action>` refers to any of the available [MFTF Actions](https://github.com/magento/magento2-functional-testing-framework/blob/develop/docs/test/actions.md).
+ ⃰ - `<action>` refers to any of the available [MFTF Actions](https://github.com/magento/magento2-functional-testing-framework/blob/2.x-develop/docs/test/actions.md).

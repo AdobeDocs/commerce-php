@@ -1,6 +1,8 @@
 ---
 title: DocBlock Standard | Commerce PHP Extensions
 description: Review standards for adding inline documentation to PHP code in Adobe Commerce and Magento Open Source projects.
+keywords:
+  - Extensions
 ---
 
 # DocBlock standard
@@ -128,7 +130,7 @@ Use the following templates for the license notice and copyright blocks:
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -151,7 +153,7 @@ interface MetadataObjectInterface
 <?xml version="1.0"?>
 <!--
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 -->
@@ -161,7 +163,7 @@ interface MetadataObjectInterface
 
 ```javascript
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 ```
@@ -205,7 +207,7 @@ There are two solutions possible:
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -231,7 +233,7 @@ class Bootstrap
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -316,7 +318,7 @@ Class attributes must have a type declaration using `@var` tag.
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -521,7 +523,7 @@ For example:
 
 #### @return tag
 
-In general, method return type signatures should be prefered over `@return` type annotations.
+In general, method return type signatures should be preferred over `@return` type annotations.
 If that is not possible due to ambiguous return types or backward compatibility constraints, the `@return` type annotation must be used.
 If there is no explicit return statement in a method or function or a return statement without a value, a `void` return type must be declared in the method signature. For example:
 
@@ -595,7 +597,7 @@ In general, such method overrides are a [code smell](https://en.wikipedia.org/wi
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -623,7 +625,7 @@ interface MutableInterface
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -749,7 +751,7 @@ Specifically, this is possible when a PHP file is composed from multiple file in
 
 ### @method tag
 
-The `@method` allows a class to know which ‘magic’ methods are callable.
+The `@method` allows a class to know which 'magic' methods are callable.
 
 Syntax:
 
@@ -762,7 +764,7 @@ See [PHP documentation](https://manual.phpdoc.org/HTMLSmartyConverter/PHP/phpDoc
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 

@@ -3,6 +3,8 @@ title: View Models | Commerce PHP Extensions
 description: Learn about Adobe Commerce and Magento Open Source view models, including when to use them and how to write them.
 contributor_name: Space 48
 contributor_link: https://www.space48.com/
+keywords:
+  - Extensions
 ---
 
 # View models

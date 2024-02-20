@@ -3,6 +3,8 @@ title: Proxies | Commerce PHP Extensions
 description: Use proxies to instantiate injectable classes in your Adobe Commerce and Magento Open Source extenions.
 contributor_name: Classy Llama
 contributor_link: http://www.classyllama.com/
+keywords:
+  - Extensions
 ---
 
 # Proxies

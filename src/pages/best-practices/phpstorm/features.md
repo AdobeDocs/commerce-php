@@ -1,6 +1,8 @@
 ---
 title: Features | Commerce PHP Extensions
 description: Learn about the features provided by the Adobe Commerce and Magento Open Source PHPStorm plugin.
+keywords:
+  - Extensions
 ---
 
 # Features

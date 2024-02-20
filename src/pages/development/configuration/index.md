@@ -1,6 +1,9 @@
 ---
 title: Configuration | Commerce PHP Extensions
 description: Review best practices for programmatically managing configuration settings with Adobe Commerce and Magento Open Source extensions.
+keywords:
+  - Configuration
+  - Extensions
 ---
 
 # Configuration

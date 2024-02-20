@@ -1,6 +1,8 @@
 ---
 title: Dependency Injection Configuration | Commerce PHP Extensions
 description: Learn how to configure dependency injection in Adobe Commerce and Magento Open Source components using the di.xml file.
+keywords:
+  - Extensions
 ---
 
 # Dependency injection configuration
@@ -167,7 +169,7 @@ Node Format:
 
 `<argument xsi:type="number">{numericValue}</argument>`
 
-Acceptable values for this type include: integers, floats, or [numeric strings](http://us3.php.net/is_numeric).
+Acceptable values for this type include: integers, floats, or [numeric strings](https://www.php.net/is_numeric).
 
 ---
 
@@ -312,7 +314,7 @@ The example below overrides the `isVisible` method from the `Magento\Checkout\Bl
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -370,7 +372,7 @@ class Success extends MagentoSuccess
 
 <InlineAlert variant="warning" slots="text"/>
 
-Overriding entire methods is not recommended approach and is noted here as a method of last resort. This approach may cause conflicts in the system and reduces system upgradability. Other extensibility options such as `event observers` and `plugins` are preferable, when possible.
+Overriding a method is not recommended because it can cause conflicts in the system and increase the complexity to upgrade. Consider other extensibility options, such as `event observers` and `plugins`, when possible.
 
 ### Parameter configuration inheritance
 

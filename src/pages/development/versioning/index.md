@@ -1,6 +1,8 @@
 ---
 title: Versioning Schema | Commerce PHP Extensions
 description: Learn how Adobe Commerce and Magento Open Source component versioning works.
+keywords:
+  - Extensions
 ---
 
 # Versioning schema
@@ -79,5 +81,5 @@ If you installed the application from GitHub without using Composer, the `versio
 [codebase-changes]: ../versioning/code-changes.md
 [semantic-versioning]: http://semver.org/
 [composer-versioning]: https://getcomposer.org/doc/04-schema.md#version
-[php-version-compare]: http://php.net/version_compare
+[php-version-compare]: https://www.php.net/version_compare
 [composer-json]: ../build/composer-integration.md

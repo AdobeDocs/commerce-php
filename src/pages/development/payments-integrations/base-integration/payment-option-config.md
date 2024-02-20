@@ -1,9 +1,14 @@
 ---
 title: Payment method configuration
 description: Learn how to configure the payment method options.
+keywords:
+  - Configuration
+  - Extensions
+  - Integration
+  - Payments
 ---
 
-import Docs from '/src/pages/_includes/braintree-note.md'
+import Docs from '/src/_includes/braintree-note.md'
 
 <Docs />
 

@@ -1,11 +1,19 @@
 ---
 title: Events and Observers | Commerce PHP Extensions
 description: Extend Adobe Commerce and Magento Open Source by running custom code in response to specific events.
+keywords:
+  - Extensions
 ---
 
 # Events and observers
 
 Working with events and observers is one of the main ways to extend Adobe Commerce and Magento Open Source functionality. The events and observers implementation in Adobe Commerce and Magento Open Source are based on the [publish-subscribe pattern](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern). Using events and observers, you can run your custom code in response to a specific event or even a custom event.
+
+Adobe Commerce developers can use the following event-driven technologies to create the next generation of apps and extensions:
+
+*  [Adobe I/O Events for Adobe Commerce](https://developer.adobe.com/commerce/extensibility/events/) allows you to send events asynchronously to applications built with [Adobe App Builder](https://developer.adobe.com/app-builder/docs/getting_started/first_app/). This feature is available on Adobe Commerce 2.4.4 and higher.
+
+*  [Adobe Commerce Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/) enables you to synchronously send webhook calls to an external server for immediate processing. Webhooks are triggered by events and cancel the action that initiated the event if the external call does not succeed. This feature is available as of Adobe Commerce 2.4.4 and higher.
 
 ## Events
 
@@ -22,7 +30,7 @@ The following example shows you how to dispatch an event with and without an arr
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -100,7 +108,7 @@ Below is an example of the basic observer class structure:
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -129,7 +137,7 @@ One of the more powerful features of observers is that they are able to use para
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 

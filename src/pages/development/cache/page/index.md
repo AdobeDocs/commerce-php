@@ -1,6 +1,9 @@
 ---
 title: Page Caching | Commerce PHP Extensions
 description: Use page caching to improve the performance of your Adobe Commerce or Magento Open Source storefront.
+keywords:
+  - Cache
+  - Extensions
 ---
 
 # Page caching

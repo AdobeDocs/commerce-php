@@ -1,6 +1,8 @@
 ---
 title: Customize Using a Modifier Class | Commerce PHP Extensions
 description: Follow this tutorial to customize Adobe Commerce or Magento Open Source using a modifier class.
+keywords:
+  - Extensions
 ---
 
 # Customize using a modifier class

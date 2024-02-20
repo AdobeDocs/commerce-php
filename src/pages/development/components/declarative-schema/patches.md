@@ -1,6 +1,8 @@
 ---
 title: Develop Data and Schema Patches | Commerce PHP Extensions
 description: Create patches to implement custom data and schema modification instructions for Adobe Commerce and Magento Open Source.
+keywords:
+  - Extensions
 ---
 
 # Develop data and schema patches
@@ -38,7 +40,7 @@ The following code sample defines a data patch class that has a dependency.
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -90,7 +92,7 @@ class DummyPatch
         /**
          * This is dependency to another patch. Dependency should be applied first
          * One patch can have few dependencies
-         * Patches do not have versions, so if in old approach with Install/Ugrade data scripts you used
+         * Patches do not have versions, so if in old approach with Install/Upgrade data scripts you used
          * versions, right now you need to point from patch with higher version to patch with lower version
          * But please, note, that some of your patches can be independent and can be installed in any sequence
          * So use dependencies only if this important for you

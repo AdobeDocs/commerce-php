@@ -1,11 +1,17 @@
 ---
 title: Advanced reporting | Commerce PHP Extensions
 description: Learn how Adobe Commerce and Magento Open Source use the Analytics module to collect and send data to Adobe Commerce Reporting.
+keywords:
+  - Extensions
 ---
 
 # Advanced reporting
 
 [Advanced reporting functionality](https://experienceleague.adobe.com/docs/commerce-admin/start/reporting/business-intelligence.html#advanced-reporting) is free to Adobe Commerce and Magento Open Source customers and is provided through an integration with [Adobe Commerce Reporting](https://business.adobe.com/products/magento/business-intelligence.html). The [Analytics](../../module-reference/module-analytics.md) module collects and sends data to Adobe Commerce Reporting. However, you do not need to have an Adobe Commerce Reporting account to use the Analytics module.
+
+<InlineAlert variant="info" slots="text" />
+
+If you encounter problems with Advanced Reporting, try the [troubleshooter](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/magento-advanced-reporting-troubleshooter.html) in the *Adobe Commerce Knowledge Base*.
 
 ## Prerequisites
 

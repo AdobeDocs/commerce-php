@@ -1,6 +1,8 @@
 ---
-title: Add Extension Attributes to Entities | Commerce PHP Extensions
+title: Add extension attributes | Commerce PHP Extensions
 description: Extend the functionality of Adobe Commerce and Magento Open Source using complex data types.
+keywords:
+  - Extensions
 ---
 
 # Add extension attributes to entities
@@ -56,7 +58,7 @@ Non-scalar attributes can be represented by Data Object.
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -89,7 +91,7 @@ Function `afterGetList` is similar to `afterGet`:
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -124,7 +126,7 @@ Likewise, the `afterSave` plugin should manipulate the entity data before return
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -157,7 +159,7 @@ Let's assume the product entity doesn't have any implementation of extension att
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 

@@ -1,6 +1,8 @@
 ---
 title: URN Schema Validation | Commerce PHP Extensions
 description: Learn about uniform resource name (URN) schema validation for Adobe Commerce and Magento Open Source components.
+keywords:
+  - Extensions
 ---
 
 # URN schema validation

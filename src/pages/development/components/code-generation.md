@@ -1,6 +1,8 @@
 ---
 title: Code Generation | Commerce PHP Extensions
 description: Learn about Adobe Commerce and Magento Open Source code generation.
+keywords:
+  - Extensions
 ---
 
 # Code generation
@@ -42,7 +44,7 @@ If the code generator implementation itself is changed, you must regenerate all 
 
 Code generation is required in Adobe Commerce and Magento Open Source. Generating code assures you of the following:
 
-*  The code is correct. You don’t have to worry that the generated code is delegating to the wrong method or forgetting a semicolon, and you don’t have to write tests for the generated code.
+*  The code is correct. You don't have to worry that the generated code is delegating to the wrong method or forgetting a semicolon, and you don't have to write tests for the generated code.
 *  Code generation writes the boilerplate code to enable you to write more challenging and interesting code.
 *  Consistent implementation.
 

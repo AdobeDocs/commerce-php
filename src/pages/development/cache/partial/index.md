@@ -1,6 +1,9 @@
 ---
 title: Partial caching | Commerce PHP Extensions
 description: Learn about the different caching technologies that are available to Adobe Commerce and Magento Open Source extension developers.
+keywords:
+  - Cache
+  - Extensions
 ---
 
 # Partial caching

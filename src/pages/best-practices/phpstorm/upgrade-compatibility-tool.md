@@ -1,6 +1,9 @@
 ---
-title: Built-in Upgrade Compatibility Tool | Commerce PHP Extensions
+title: Upgrade Compatibility Tool | Commerce PHP Extensions
 description: Learn how to use the Upgrade Compatibility Tool with the Adobe Commerce and Magento Open Source PHPStorm plugin.
+keywords:
+  - Extensions
+  - Upgrade
 ---
 
 # Built-in Upgrade Compatibility Tool
@@ -35,7 +38,7 @@ It allows you to see the problematic code just in real time, without running it 
 ![](../../_images/best-practices/phpstorm/built-in-uct/uct-inspections-highlighting-4.png)
 
 The second IntelliJ IDEA tool that we can use for running UCT inspections is called **Inspect Code**. It is available under menu item
-`Code -> Inspect Code`. Also, you can open a context menu under the target directory that allows IntelliJ IDEA to populate the path to analyse for you automatically:
+`Code -> Inspect Code`. Also, you can open a context menu under the target directory that allows IntelliJ IDEA to populate the path to analyze for you automatically:
 
 ![](../../_images/best-practices/phpstorm/built-in-uct/run-inspect-code-from-context-menu.png)
 
@@ -65,7 +68,7 @@ For this inspection type you do not need to have UCT inspections enabled for you
 
 Before using it, you should configure the built-in UCT in a same way to the CLI Run Configuration.
 All fields, as above, are described in the Upgrade Compatibility Tool Run Configuration section and are more detailed
-in the [official documentation](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/run.html).
+in the [official documentation](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/run.html).
 
 Go to the UCT configuration dialog `Tools -> Configure The Upgrade Compatibility Tool` and configure it as required:
 

@@ -1,6 +1,8 @@
 ---
 title: Code Generation | Commerce PHP Extensions
 description: Learn about code generation in the Adobe Commerce and Magento Open Source PHPStorm plugin.
+keywords:
+  - Extensions
 ---
 
 # Code generation

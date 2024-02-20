@@ -1,6 +1,8 @@
 ---
 title: Install | Commerce PHP Extensions
 description: Learn how to install the Adobe Commerce and Magento Open Source PHPStorm plugin.
+keywords:
+  - Extensions
 ---
 
 # Install

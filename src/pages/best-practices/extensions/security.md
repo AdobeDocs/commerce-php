@@ -1,6 +1,10 @@
 ---
-title: Security, Performance, and Data Handling | Commerce PHP Extensions
+title: Security and performance | Commerce PHP Extensions
 description: Review security and performance best practices for coding Adobe Commerce and Magento Open Source extensions.
+keywords:
+  - Extensions
+  - Performance
+  - Security
 ---
 
 # Security, performance, and data handling
@@ -11,7 +15,7 @@ You should make sure that your extension handles data with care in order to prev
 
   The Adobe Commerce and Magento Open Source applications are made up of a variety of components that work together to perform different business functions. We discourage the use of low-level functionality such as the PHP `curl_*` functions and encourage the use of high-level components such as [`\Magento\Framework\HTTP\Adapter\Curl`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/HTTP/Adapter/Curl.php). The use of low-level functionality can make the applications behave in unexpected ways that effectively disable built-in protection mechanisms, introduce exploitable inconsistencies, or otherwise expose the application to attack.
 
-For a list of discouraged low-level functions, review the [`Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php`](https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php) file and the [Coding Standard](https://github.com/magento/-coding-standard).
+For a list of discouraged low-level functions, review the [`Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php`](https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php) file and the [Coding Standard](https://github.com/magento/magento-coding-standard).
 
 ## Use wrappers instead of superglobal variables
 
@@ -33,7 +37,7 @@ We recommend using the InnoDB storage engine because other storage engines are n
 
 ## Avoid raw SQL queries
 
-Raw SQL queries can lead to potential security vulnerabilities and database portability issues. Use data adapter capabilities ([`Magento\Framework\DB\Adapter\Pdo\Mysql`](https://github.com/magento/magento2/blob/2.4}/lib/internal/Magento/Framework/DB/Adapter/Pdo/Mysql.php) by default) to build and execute queries and move all data access code to a resource model. Use prepared statements to make sure that queries are safe to execute.
+Raw SQL queries can lead to potential security vulnerabilities and database portability issues. Use data adapter capabilities ([`Magento\Framework\DB\Adapter\Pdo\Mysql`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/DB/Adapter/Pdo/Mysql.php) by default) to build and execute queries and move all data access code to a resource model. Use prepared statements to make sure that queries are safe to execute.
 
 <InlineAlert variant="warning" slots="text"/>
 
@@ -107,12 +111,12 @@ public function getCustomerCart()
 
 Make sure that your observer or plugin is declared in the proper area:
 
--  [`adminhtml`](https://github.com/magento/magento2/blob/2.4}/app/code/Magento/Backend/etc/di.xml)
--  [`crontab`](https://github.com/magento/magento2/blob/2.4}/app/code/Magento/Cron/etc/di.xml)
--  [`frontend`](https://github.com/magento/magento2/blob/2.4}/app/code/Magento/Store/etc/di.xml)
--  [`graphql`](https://github.com/magento/magento2/blob/2.4}/app/code/Magento/GraphQl/etc/di.xml)
--  [`webapi_rest`](https://github.com/magento/magento2/blob/2.4}/app/code/Magento/Webapi/etc/di.xml)
--  [`webapi_soap`](https://github.com/magento/magento2/blob/2.4}/app/code/Magento/Webapi/etc/di.xml)
+-  [`adminhtml`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Backend/etc/di.xml)
+-  [`crontab`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Cron/etc/di.xml)
+-  [`frontend`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Store/etc/di.xml)
+-  [`graphql`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/GraphQl/etc/di.xml)
+-  [`webapi_rest`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Webapi/etc/di.xml)
+-  [`webapi_soap`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Webapi/etc/di.xml)
 
 The plugins and observers should be declared in the `<module-dir>/etc/<area>/` directory.
 

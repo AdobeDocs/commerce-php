@@ -3,6 +3,8 @@ title: Factories | Commerce PHP Extensions
 description: Use factories to instantiate non-injectable classes in your Adobe Commerce and Magento Open Source extenions.
 contributor_name: Classy Llama
 contributor_link: http://www.classyllama.com/
+keywords:
+  - Extensions
 ---
 
 # Factories
@@ -22,7 +24,7 @@ The following example illustrates the relationship between a simple factory and 
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright &copy; Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 

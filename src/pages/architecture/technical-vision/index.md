@@ -1,6 +1,8 @@
 ---
-title: Technical Vision | Commerce PHP Extensions\
+title: Technical Vision | Commerce PHP Extensions
 description: Review resources that describe the aspirational vision that guides development of the Commerce framework.
+keywords:
+  - Extensions
 ---
 
 # Technical vision

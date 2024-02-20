@@ -1,6 +1,8 @@
 ---
 title: Module Overview | Commerce PHP Extensions
 description: Learn about the critical role that modules play in the Commerce framework.
+keywords:
+  - Extensions
 ---
 
 # Module overview
