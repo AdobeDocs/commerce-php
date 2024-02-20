@@ -246,7 +246,7 @@ When a component is initialized, it is also important to send parameters to it, 
    });
    ```
 
-*  You must use [DOM event bubbling](http://stackoverflow.com/questions/4616694/what-is-event-bubbling-and-capturing) to perform one-way communication between a child widget and its parent widget.
+*  You must use [DOM event bubbling](https://stackoverflow.com/questions/4616694/what-is-event-bubbling-and-capturing) to perform one-way communication between a child widget and its parent widget.
 
 *  Widgets must comply with the [Law of Demeter](http://en.wikipedia.org/wiki/Law_of_Demeter) principle.
 

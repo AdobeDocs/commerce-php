@@ -1,6 +1,6 @@
 ---
 title: Create a Custom Product Attribute Input Type | Commerce PHP Extensions
-description: Follow this tutorial to create a custom product attribute input type with an Adobe Commerce or Magento Open Source extension.
+description: Learn to create a custom product attribute input type with an extension.
 contributor_name: Goivvy LLC
 contributor_link: https://www.goivvy.com/
 ---

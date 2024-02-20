@@ -20,7 +20,7 @@ Avoid using these functions in your code.
 *  [`serialize`](https://www.php.net/manual/en/function.serialize.php)/[`unserialize`](https://www.php.net/manual/en/function.unserialize.php) - Attackers can create an exploit for these functions by passing a string with a serialized arbitrary object to the `unserialize` function to [run arbitrary code](https://www.owasp.org/index.php/PHP_Object_Injection).
 *  [`md5`](https://www.php.net/manual/en/function.md5.php) - The algorithm for this function is known to have [cryptographic weaknesses](https://www.owasp.org/index.php/Guide_to_Cryptography#Hashes).
    You should never use this function for hashing passwords or any other sensitive data.
-*  [`srand`](https://www.php.net/manual/en/function.srand.php) - Using a predetermined number to seed the random number generator results in a [predictable sequence of numbers](http://programmers.stackexchange.com/questions/76229/predicting-the-output-of-phps-rand).
+*  [`srand`](https://www.php.net/manual/en/function.srand.php) - Using a predetermined number to seed the random number generator results in a [predictable sequence of numbers](https://programmers.stackexchange.com/questions/76229/predicting-the-output-of-phps-rand).
 *  [`mt_srand`](https://www.php.net/manual/en/function.mt-rand.php) - This function is a pseudo-random number generator (PRNG) and is [not cryptographically secure](http://phpsecurity.readthedocs.io/en/latest/Insufficient-Entropy-For-Random-Values.html).
 
 ## Standard PHP library classes to avoid
