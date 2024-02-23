@@ -9,6 +9,17 @@ keywords:
 
 This page highlights backward-incompatible changes between Adobe Commerce and Magento Open Source releases that have a major impact and require detailed explanation and special instructions to ensure third-party modules continue working. High-level reference information for all backward-incompatible changes in each release are documented in [Backward incompatible changes reference](reference.md).
 
+## 2.4.7-beta3
+
+The following major backward-incompatible changes were introduced in the 2.4.7-beta3 Adobe Commerce and Magento Open Source releases:
+
+* New method to generate random byte strings
+* New system configuration for limiting coupon generation
+* New system configuration to mitigate vulnerable endpoint risk
+* New system configuration for payment information rate limiting
+* PHP Application Server
+* Resolved compatibility issues with Symfony
+
 ## 2.4.7-beta2
 
 The following major backward-incompatible changes were introduced in the 2.4.7-beta2 Adobe Commerce and Magento Open Source releases:
