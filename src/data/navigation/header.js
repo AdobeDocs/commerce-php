@@ -17,11 +17,16 @@ module.exports = [
     },
     {
       title: "Module Reference",
-      path: "/module-reference/",
-    },
-    {
-      title: "Module Reference (Beta)",
-      path: "/module-reference-beta/",
+      menu: [
+        {
+          title: "v2.4.6",
+          path: "/module-reference/",
+        },
+        {
+          title: "v2.4.7-beta",
+          path: "/module-reference-beta/",
+        },
+      ]
     },
     {
       title: "Coding Standards",

@@ -33,7 +33,7 @@ Learn more about using rule sets with PHP CodeSniffer [ruleset](http://pear.php.
 
 ### Literal Namespace Rule
 
-For class name resolution, use the [`::class`](http://php.net/manual/en/language.oop5.basic.php#language.oop5.basic.class.class) keyword instead of a string literal for every class name reference outside of that class.
+For class name resolution, use the [`::class`](https://www.php.net/manual/en/language.oop5.basic.php#language.oop5.basic.class.class) keyword instead of a string literal for every class name reference outside of that class.
 This includes references to:
 
 *  Fully qualified class name
