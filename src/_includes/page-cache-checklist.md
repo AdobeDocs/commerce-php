@@ -10,7 +10,7 @@
 
 -  Model and block level should identify themselves for invalidation support
 
--  Declare a custom [context variable](../development/cache/page/public-content.md#configure-page-variations) if you plan to show different public content with the same URL
+-  Declare a custom [context variable](/src/pages/development/cache/page/public-content.md#configure-page-variations) if you plan to show different public content with the same URL
 
 ## Non-cacheable page checklist
 

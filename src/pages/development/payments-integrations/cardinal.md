@@ -33,7 +33,7 @@ CardinalCommerce maintains a [list of compatible payment gateways][].
 
 ### CardinalCommerce configuration for payment method
 
-You need to add configuration parameter that will enable `Cardinal Consumer Authentication` in the `config.xml` and `system.xml` files  of your [payment method][] module:
+You need to add configuration parameter that will enable `Cardinal Consumer Authentication` in the `config.xml` and `system.xml` files  of your payment method module:
 
 -  `enabled_{payment_method_code}` - enables CCA for custom payment method.
 
@@ -297,12 +297,11 @@ In our example, the `ECIFlag` and `CAVV` values were included in the transaction
 Then you can expect to see an additional field with a cardholder authentication verification response code in the response from your payment gateway. This code lets you know whether the information got back to the issuer. If the issuer recognizes this data as matching whatever they recorded earlier in the transaction when the cardholder was authenticating, they will respond with a successful code in this field.
 
 <!-- Link Definitions -->
-[CardinalCommerce]: https://www.cardinalcommerce.com/
+[CardinalCommerce]: https://cardinalcommerce.com/
 [Cardinal Consumer Authentication]: https://cardinaldocs.atlassian.net/wiki/spaces/CC/pages/196642/Consumer+Authentication#ConsumerAuthentication-CardinalConsumerAuthentication
 [Cardinal Cruise Standard]: https://cardinaldocs.atlassian.net/wiki/spaces/CC/pages/7929857/Cardinal+Cruise+Standard
-[list of compatible payment gateways]: https://www.cardinalcommerce.com/partners/gateways
-[module]: https://glossary.magento.com/module
-[payment method]: https://glossary.magento.com/payment-method
+[list of compatible payment gateways]: https://cardinalcommerce.com/partners/
+[module]: https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/glossary.html#module
 [app\code\AuthorizenetCardinal\Model\Checkout\ConfigProvider.php]: https://github.com/magento/magento2/tree/2.3/app/code/Magento/AuthorizenetCardinal/Model/Checkout/ConfigProvider.php
 [JWT]: https://en.wikipedia.org/wiki/JSON_Web_Token
 [API Reference]: https://cardinaldocs.atlassian.net/wiki/spaces/CC/pages/98315/Response+Objects

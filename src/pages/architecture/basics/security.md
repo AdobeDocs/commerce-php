@@ -26,9 +26,9 @@ The Commerce framework has adopted conventions that regulate the escaping of dat
 
 Starting in version 2.0.6, the Commerce framework no longer explicitly sets file system permissions. Instead, we recommend that certain files and directories be writable in a development environment and read-only in a production environment.
 
-To provide you with a simple way to restrict access to the file system in production, we provide the flexibility for you to further restrict those permissions using a [umask](http://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html).
+To provide you with a simple way to restrict access to the file system in production, we provide the flexibility for you to further restrict those permissions using a [umask](https://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html).
 
-For an overview, see [Overview of ownership and permissions](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+For an overview, see [Overview of ownership and permissions](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/overview.html).
 
 For details about ownership and permissions in development and production, see [ownership and permissions in development and production](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/file-system-permissions.html).
 

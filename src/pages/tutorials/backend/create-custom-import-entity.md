@@ -463,4 +463,4 @@ As result, the new Entity Type and the sample CSV are available:
 
 ![Import Entity](../../_images/tutorials/import-entity.png)
 
-[0]: https://github.com/magento/magento2/blob/2.4}/app/code/Magento/ImportExport/Model/Import/Entity/AbstractEntity.php
+[0]: https://github.com/magento/magento2/blob/2.4/app/code/Magento/ImportExport/Model/Import/Entity/AbstractEntity.php

@@ -68,7 +68,7 @@ For this inspection type you do not need to have UCT inspections enabled for you
 
 Before using it, you should configure the built-in UCT in a same way to the CLI Run Configuration.
 All fields, as above, are described in the Upgrade Compatibility Tool Run Configuration section and are more detailed
-in the [official documentation](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/run.html).
+in the [official documentation](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/run.html).
 
 Go to the UCT configuration dialog `Tools -> Configure The Upgrade Compatibility Tool` and configure it as required:
 
