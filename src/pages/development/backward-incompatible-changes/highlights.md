@@ -27,7 +27,7 @@ The following module is affected by this change:
 
 ### New system configuration for limiting coupon generation
 
-Added a new setting for coupon quantities to generate. This property will have a default value of `250,000`, which is also a maximum value and can be updated to any number depending on the requirement (less than or equal to `250,000`). Users can disable this option by it setting it to `0` in the Admin by going to **Stores** > **Settings** > **Configuration** > **Customers** > **Promotions** > **Code Quantity Limit**.
+Added a new setting for the number of coupons to generate. This property has a default value of `250,000`, which is also the maximum value. Merchants can disable this feature by it setting it to `0`  in the Admin by going to  **Stores** > **Settings** > **Configuration** > **Customers** > **Promotions** > **Code Quantity Limit**.
 
 The following module is affected by this change:
 
@@ -35,15 +35,15 @@ The following module is affected by this change:
 
 ### New method and an optional parameter for multicoupons
 
-The following changes were introduced to implement the multicoupon functionalityin the [SalesRule](https://developer.adobe.com/commerce/php/module-reference/module-sales-rule/) module:
+The following changes were introduced to implement the multicoupon functionality in the [SalesRule](https://developer.adobe.com/commerce/php/module-reference/module-sales-rule/) module:
 
-* Optional parameter added to  Magento\SalesRule\Model\ResourceModel\Rule\Collection::setValidationFilter
-* New method introduced: Magento\SalesRule\Model\Validator::initFromQuote
+* Optional parameter added to  `Magento\SalesRule\Model\ResourceModel\Rule\Collection::setValidationFilter`
+* New method introduced: `Magento\SalesRule\Model\Validator::initFromQuote`
 
-All changes have been done in a way to minimize any impact to extensions and customizations, however, there are risks of conflict if an extension or customization extends the following:
+All changes have been done in a way to minimize any impact to extensions and customizations. However, there are risks of conflict if an extension or customization extends the following:
 
-* `Magento\SalesRule\Model\ResourceModel\Rule\Collection::setValidationFilter` and adds a parameter to this method (highly unlikely)
-* `Magento\SalesRule\Model\Validator` and introduces a method with the same name `initFromQuote` (highly unlikely).
+* `Magento\SalesRule\Model\ResourceModel\Rule\Collection::setValidationFilter` and adds a parameter to this method.
+* `Magento\SalesRule\Model\Validator` and introduces a method with the same name `initFromQuote`.
 
 The following module is affected by this change:
 
