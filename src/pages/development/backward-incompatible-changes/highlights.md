@@ -13,12 +13,41 @@ This page highlights backward-incompatible changes between Adobe Commerce and Ma
 
 The following major backward-incompatible changes were introduced in the 2.4.7-beta3 Adobe Commerce and Magento Open Source releases:
 
-* New method to generate random byte strings
+* Fixes to resolve compatibility issues with Symfony
 * New system configuration for limiting coupon generation
-* New system configuration to mitigate vulnerable endpoint risk
-* New system configuration for payment information rate limiting
-* PHP Application Server
-* Resolved compatibility issues with Symfony
+* New method and an optional parameter for multicoupons
+
+### Fixes to resolve compatibility issues with Symfony
+
+The latest Symfony 6.4 LTS is not supported, so changes were made to keep Symfony LTS 5.4 in 2.4.7-beta3. No impact to extension developers is expected.
+
+The following module is affected by this change:
+
+*  Magento_Framework
+
+### New system configuration for limiting coupon generation
+
+Added a new setting for coupon quantities to generate. This property will have a default value of `250,000`, which is also a maximum value and can be updated to any number depending on the requirement (less than or equal to `250,000`). Users can disable this option by it setting it to `0` in the Admin by going to **Stores** > **Settings** > **Configuration** > **Customers** > **Promotions** > **Code Quantity Limit**.
+
+The following module is affected by this change:
+
+* [Magento_SalesRule](https://developer.adobe.com/commerce/php/module-reference/module-sales-rule/)
+
+### New method and an optional parameter for multicoupons
+
+The following changes were introduced to implement the multicoupon functionalityin the [SalesRule](https://developer.adobe.com/commerce/php/module-reference/module-sales-rule/) module:
+
+* Optional parameter added to  Magento\SalesRule\Model\ResourceModel\Rule\Collection::setValidationFilter
+* New method introduced: Magento\SalesRule\Model\Validator::initFromQuote
+
+All changes have been done in a way to minimize any impact to extensions and customizations, however, there are risks of conflict if an extension or customization extends the following:
+
+* `Magento\SalesRule\Model\ResourceModel\Rule\Collection::setValidationFilter` and adds a parameter to this method (highly unlikely)
+* `Magento\SalesRule\Model\Validator` and introduces a method with the same name `initFromQuote` (highly unlikely).
+
+The following module is affected by this change:
+
+* [Magento_SalesRule](https://developer.adobe.com/commerce/php/module-reference/module-sales-rule/)
 
 ## 2.4.7-beta2
 
