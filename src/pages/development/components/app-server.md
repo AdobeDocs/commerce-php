@@ -146,7 +146,7 @@ Example with the `Magento\Catalog\Model\Product\Image\Cache` class.
  protected $data = [];
 ```
 
-We can see that the `$data` property is used as a 
+We can see that the `$data` property is used as a
 
 ```php
    protected function getData()
