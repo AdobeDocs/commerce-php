@@ -21,10 +21,6 @@ The following major backward-incompatible changes were introduced in the 2.4.7-b
 
 The latest Symfony 6.4 LTS is not supported, so changes were made to keep Symfony LTS 5.4 in 2.4.7-beta3. Extension developers must define strict typing for return values in classes that use the changed interface: `Magento\Framework\Console\Cli::getDefaultCommands`.
 
-The following module is affected by this change:
-
-*  Magento_Framework
-
 ### New system configuration for limiting coupon generation
 
 Added a new setting for the number of coupons to generate. This property has a default value of `250,000`, which is also the maximum value. Merchants can disable this feature by it setting it to `0`  in the Admin by going to  **Stores** > **Settings** > **Configuration** > **Customers** > **Promotions** > **Code Quantity Limit**.
