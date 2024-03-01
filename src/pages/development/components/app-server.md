@@ -12,7 +12,7 @@ Available in [2.4.7-beta](https://experienceleague.adobe.com/docs/commerce-opera
 
 # Application Server for GraphQL APIs
 
-The [Application Server for GraphQL APIs](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/performance-best-practices/application-server.html) enables Adobe Commerce to maintain state among GraphQL API requests. The Application Server, which is built on the Open Swoole extension, operates as a process with worker threads that handle request processing. By preserving a bootstrapped application state among GraphQL API requests, the Application Server enhances request handling and overall product performance. API requests become significantly more efficient.
+The [Application Server for GraphQL APIs](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/performance-best-practices/application-server.html) enables Adobe Commerce to maintain state among GraphQL API requests. The Application Server, which is built on the Open Swoole extension, operates as a process with worker threads that handle request processing. By preserving a bootstrapped application state among GraphQL API requests, the Application Server enhances request handling and overall product performance. As a result, GraphQL request response time can be reduced up to 30%.
 
 The Application Server is supported on [Cloud Starter](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-architecture.html) deployments only. It is not available for Cloud Pro projects during Beta. It is not available for deployments of the Magento Open Source code base.
 
