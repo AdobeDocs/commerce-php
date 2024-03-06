@@ -12,7 +12,7 @@ Available in [2.4.7-beta](https://experienceleague.adobe.com/docs/commerce-opera
 
 # Application Server for GraphQL APIs
 
-The [Application Server for GraphQL APIs](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/performance-best-practices/application-server.html) enables Adobe Commerce to maintain state among GraphQL API requests. The Application Server, which is built on the Open Swoole extension, operates as a process with worker threads that handle request processing. By preserving a bootstrapped application state among GraphQL API requests, the Application Server enhances request handling and overall product performance. As a result, GraphQL request response time can be reduced up to 30%.
+The [Application Server for GraphQL APIs](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/performance-best-practices/application-server.html) enables Adobe Commerce to maintain state among GraphQL API requests. The Application Server, which is built on the Open Swoole extension, operates as a process with worker threads that handle request processing. By preserving a bootstrapped application state among GraphQL API requests, the Application Server enhances request handling and overall product performance. As a result, GraphQL request response time can be reduced by up to 30%.
 
 The Application Server is supported on [Cloud Starter](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-architecture.html) deployments only. It is not available for Cloud Pro projects during Beta. It is not available for deployments of the Magento Open Source code base.
 
@@ -20,7 +20,7 @@ The Application Server is supported on [Cloud Starter](https://experienceleague.
 
 Ensuring compatibility between your extension and the Application Server can be challenging without the right information.
 
-This page provides all of the details that you need to make sure that your code is compatible with with the Application Server, including recommendations and testing instructions. Key concepts include:
+This page provides all the details that you need to make sure that your code is compatible with the Application Server, including recommendations and testing instructions. Key concepts include:
 
 - Resource management
 - Memory and resource leaks
@@ -49,13 +49,13 @@ Traditional debugging tools and techniques designed for synchronous PHP scripts 
 
 1. [Not following technical guidelines](../../coding-standards/technical-guidelines.md)
 
-  - 2.9. Service classes (ones that provide behavior but not data, like EventManager) SHOULD NOT have a mutable state. To make extensions codebase compliant with technical guidelines mutable state should be removed from Service classes. Sometime it could be a property cache introduced for better performance when dealing with data-intensive operations, such as database queries, API calls, or complex calculations, that do not need to be executed repeatedly within the same request. However it brings issues with Application Server as property cache would be used in a consequent requests and it should be reseted after each request.
+  - 2.9. Service classes (ones that provide behavior but not data, like EventManager) SHOULD NOT have a mutable state. To make extensions codebase compliant with technical guidelines mutable states should be removed from Service classes. For example, a property cache introduced for better performance when dealing with data-intensive operations, such as database queries, API calls, or complex calculations, that does not need to be executed repeatedly within the same request. However, this can cause issues with the Application Server, since the property cache would be used in consequent requests and it should be reset after each request.
 
   - 2.14. Temporal coupling MUST be avoided. Changed state at one point in time can inadvertently affect the behavior of subsequent operations, requiring a specific order of execution for the application to function correctly. This coupling makes the code harder to understand and maintain, as the correct operation of the system becomes dependent on the sequence in which state-modifying actions are performed.
 
-1. Superglobals and native PHP functions usage for header, session, cookie.
+1. Superglobals and native PHP functions usage for header, session, and cookie.
 
-  Usage of PHP Superglobals, like `$_GET`, `$_POST`, and `$_SESSION`, and native PHP functions for header, session, and cookie instead of utilizing interfaces and service contracts through dependency injection.
+  We recommend using PHP Superglobals, like `$_GET`, `$_POST`, and `$_SESSION`, and native PHP functions for header, session, and cookie, instead of utilizing interfaces and service contracts through dependency injection.
   
 ## Integration testing
 
@@ -63,18 +63,18 @@ This section describes integration tests that you can use when developing your e
 
 ### GraphQlStateTests
 
-This test finds state in shared objects that should not be reused for multiple requests. It currently runs against 67 different GraphQL requests, which could be extended.
+This test finds the state in shared objects that should not be reused for multiple requests. It currently runs against 67 different GraphQL requests, which could be extended.
   
 GraphQlStateTest is a test that looks for state changes in service objects created by ObjectManager. It does this by running a GraphQL query twice, and comparing the state of the service objects before and after the second query.
 
 There are two files used to filter and skip classes that are safe to be reused in a stateful application:
 
 - `dev/tests/integration/testsuite/Magento/GraphQl/_files/state-skip-list.php`—Skips the comparison of objects by their class name or virtual name (as defined in the `di.xml` file).
-- `dev/tests/integration/testsuite/Magento/GraphQl/_files/state-filter-list.php`—Filters out that properties that should be compared.
+- `dev/tests/integration/testsuite/Magento/GraphQl/_files/state-filter-list.php`—Filters out the properties that should be compared.
 
 <InlineAlert variant="info" slots="text" />
 
-There are similar files in the `magento/magento2ee` GitHub repository for classes that are specific to `magento2ee`. Other repositories can use their own files in a similar way.
+There are similar files in the `magento/magento2ee` GitHub repository for classes that are specific to `magento2ee`. Similarly, other repositories can use their own files.
 
 In the `state-filter-list.php` file, there are three different types of filtering:
   
@@ -84,7 +84,7 @@ In the `state-filter-list.php` file, there are three different types of filterin
 
 If you are working on a failure and it does not look like it is safe to add to the skip or filter list, then consider if you can refactor the class in a [backwards-compatible](https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy/) way to use Factories of the service classes that have mutable state. If it is the class itself that has mutable state, then try to rewrite it in a way to avoid mutable state. If the mutable state is required for performance reasons, then implement `ResetAfterRequestInterface` and use `_resetState()` to reset the object back to its initial constructed state.
 
-If the class is failing because of a `Typed property $x must not be accessed before initialization` error, then the problem is because the property is not initialized by the constructor. This is a form of temporal coupling, because the object cannot be used after it is initially constructed. This happens even if the property is private because the Collector that gets the data from the properties using PHP's reflection feature. In this case, one of the best things to do is to refactor the class to avoid temporal coupling, and also to avoid mutable state. If that does not work, the property can change its type to a nullable type and be initialized to null. Or if the property is an array, it may be okay to initialize the property as an empty array.
+If the class is failing because of a `Typed property $x must not be accessed before initialization` error, then the property is not initialized by the constructor. This is a form of temporal coupling, because the object cannot be used after it is initially constructed. This happens even if the property is private because the Collector gets the data from the properties using PHP's reflection feature. In this case, refactor the class to avoid temporal coupling, and also to avoid mutable state. If that does not work, the property can change its type to a nullable type and be initialized to null. If the property is an array, it may be okay to initialize the property as an empty array.
 
 Command to run test:
 
@@ -94,9 +94,9 @@ vendor/bin/phpunit -c $(pwd)/dev/tests/integration/phpunit.xml dev/tests/integra
 
 ### ResetAfterRequestTest
 
-Finds all classes that implement `ResetAfterRequestInterface` and verifies that the `_resetState()` method returns the state of the object to the same state as it was right after being constructed by ObjectManager. It does this by creating a service object with ObjectManager, cloning that object, then calling `_resetState()` and comparing it. It does not call any methods in between object instantiation and `_resetState()`, so it does not confirm resetting any mutable state. It does find problems where a bug or typo in `_resetState()` may set the state to something different than what it was originally.
+`ResetAfterRequestTest` finds all classes that implement `ResetAfterRequestInterface` and verifies that the `_resetState()` method returns the state of the object to the same state as it was after being constructed by ObjectManager. It does this by creating a service object with ObjectManager, cloning that object, then calling `_resetState()` and comparing it. It does not call any methods in between object instantiation and `_resetState()`, so it does not confirm resetting any mutable state. If it finds bugs or typos in `_resetState()`, it may set the state to something different than the original state.
 
-If this test fails, then you should check to see if you have changed a class in a way where the object after construction has different values in properties than after the `_resetState()` method is called. If the class that you are working on does not have `_resetState()` method itself, then check the class hierarchy for a superclass that is implementing it.
+If this test fails, then you should check to see if you have changed a class in a way where the object has different values in properties after construction comparted to after the `_resetState()` method is called. If the class that you are working on does not have the `_resetState()` method itself, then check the class hierarchy for a superclass that is implementing it.
 
 If the class is failing because of a `Typed property $x must not be accessed before initialization` error, see the discussion about this problem in the [GraphQlStateTest](#graphqlstatetests) section.
 
@@ -116,7 +116,7 @@ To set up local testing and debugging:
    pecl install swoole
    ```
 
-1. Route all GraphQL requests to the Application Server (nginx example):
+1. Route all GraphQL requests to the application server (nginx example):
 
    ```php
    location /graphql {
@@ -127,17 +127,17 @@ To set up local testing and debugging:
    }
    ```
 
-1. Run the Application Server with the CLI command:
+1. Run the application server with the CLI command:
 
    ```bash
    bin/magento server:run
    ```
 
-1. Execute GraphQL mutations against Application Server and debug with xDebug if needed.
+1. Execute GraphQL mutations against the application server and debug with xDebug if needed.
 
 ## Example of mutable state in code
 
-Example with the `Magento\Catalog\Model\Product\Image\Cache` class.
+Example with the `Magento\Catalog\Model\Product\Image\Cache` class:
 
 ```php
 /**
@@ -146,7 +146,7 @@ Example with the `Magento\Catalog\Model\Product\Image\Cache` class.
  protected $data = [];
 ```
 
-We can see that the `$data` property is used as a
+Review the following example to see how the `$data` property is used:
 
 ```php
    protected function getData()
@@ -175,9 +175,9 @@ There are several challenges you may face for refactoring the code with mutable 
 - Performance efficiency
 - Lack of time
 
-In the example with the [`Magento\Catalog\Model\Product\Image\Cache`](#example-of-mutable-state-in-code) class, we can see performance benefits of reusing the `$data` property in context of a single request, but we should reset the state after the request.
+In the example with the [`Magento\Catalog\Model\Product\Image\Cache`](#example-of-mutable-state-in-code) class, we can see performance benefits of reusing the `$data` property in the context of a single request, but we should reset the state after the request.
 
-For this purpose we should implement the following:
+For this purpose, we should implement the following:
 
 ```php
 class Cache implements ResetAfterRequestInterface
