@@ -55,7 +55,7 @@ Traditional debugging tools and techniques designed for synchronous PHP scripts 
 
 1. Superglobals and native PHP functions usage for header, session, and cookie.
 
-  We recommend using PHP Superglobals, like `$_GET`, `$_POST`, and `$_SESSION`, and native PHP functions for header, session, and cookie, instead of utilizing interfaces and service contracts through dependency injection.
+1. Usage of PHP Superglobals, like `$_GET`, `$_POST`, and `$_SESSION`, and native PHP functions for header, session, and cookie, instead of utilizing interfaces and service contracts through dependency injection.
   
 ## Integration testing
 
