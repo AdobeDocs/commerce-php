@@ -196,6 +196,10 @@ module.exports = [
       path: "/development/components/",
       pages: [
         {
+          title: "Application Server compatibility",
+          path: "/development/components/app-server/",
+        },
+        {
           title: "Asynchronous and deferred operations",
           path: "/development/components/async-operations/",
         },
