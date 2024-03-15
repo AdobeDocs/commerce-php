@@ -9,6 +9,44 @@ keywords:
 
 This page highlights backward-incompatible changes between Adobe Commerce and Magento Open Source releases that have a major impact and require detailed explanation and special instructions to ensure third-party modules continue working. High-level reference information for all backward-incompatible changes in each release are documented in [Backward incompatible changes reference](reference.md).
 
+## 2.4.7-beta3
+
+The following major backward-incompatible changes were introduced in the 2.4.7-beta3 Adobe Commerce and Magento Open Source releases:
+
+* Fixes to resolve compatibility issues with Symfony
+* New system configuration for limiting coupon generation
+* New method and an optional parameter for multicoupons
+
+### Fixes to resolve compatibility issues with Symfony
+
+The return type was changed for the [`Magento\Framework\Console\Cli::getDefaultCommands`](https://eat.magento.com/ui/phpFqn?searchKey=TWFnZW50b1xGcmFtZXdvcmtcQ29uc29sZVxDbGk6OmdldERlZmF1bHRDb21tYW5kcw==) interface to provide compatibility with the latest Symfony 6.4 LTS version.
+
+Extension developers must define strict typing for return values in classes that use the changed interface: `Magento\Framework\Console\Cli::getDefaultCommands`.
+
+### New system configuration for limiting coupon generation
+
+Added a new setting for the number of coupons to generate. This property has a default value of `250,000`, which is also the maximum value. Merchants can disable this feature by it setting it to `0`  in the Admin by going to  **Stores** > **Settings** > **Configuration** > **Customers** > **Promotions** > **Code Quantity Limit**.
+
+The following module is affected by this change:
+
+* [Magento_SalesRule](https://developer.adobe.com/commerce/php/module-reference/module-sales-rule/)
+
+### New method and an optional parameter for multicoupons
+
+The following changes were introduced to implement the multicoupon functionality in the [SalesRule](https://developer.adobe.com/commerce/php/module-reference/module-sales-rule/) module:
+
+* Optional parameter added to  `Magento\SalesRule\Model\ResourceModel\Rule\Collection::setValidationFilter`
+* New method introduced: `Magento\SalesRule\Model\Validator::initFromQuote`
+
+All changes have been done in a way to minimize any impact to extensions and customizations. However, there are risks of conflict if an extension or customization extends the following:
+
+* `Magento\SalesRule\Model\ResourceModel\Rule\Collection::setValidationFilter` and adds a parameter to this method.
+* `Magento\SalesRule\Model\Validator` and introduces a method with the same name `initFromQuote`.
+
+The following module is affected by this change:
+
+* [Magento_SalesRule](https://developer.adobe.com/commerce/php/module-reference/module-sales-rule/)
+
 ## 2.4.7-beta2
 
 The following major backward-incompatible changes were introduced in the 2.4.7-beta2 Adobe Commerce and Magento Open Source releases:
