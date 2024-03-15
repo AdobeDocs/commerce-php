@@ -168,7 +168,7 @@ class Surcharge extends \Magento\Quote\Model\Quote\Address\Total\AbstractTotal
    const COLLECTOR_TYPE_CODE = 'custom-surcharge';
 
    /**
-    * Custom constructor.
+    * Surcharge constructor.
     */
    public function __construct()
    {
@@ -176,7 +176,7 @@ class Surcharge extends \Magento\Quote\Model\Quote\Address\Total\AbstractTotal
    }
 
    /**
-    * Collect address discount amount
+    * Collect totals including custom surcharge.
     *
     * @param Quote $quote
     * @param ShippingAssignmentInterface $shippingAssignment
@@ -250,7 +250,7 @@ class Surcharge extends \Magento\Quote\Model\Quote\Address\Total\AbstractTotal
     */
    public function getLabel()
    {
-       return __('Custom Surchange');
+       return __('Custom Surcharge');
    }
 }
 ```
@@ -424,3 +424,101 @@ To display the price-adjusted total on the checkout page, add it to the `totals`
 The `VENDOR_MODULE/js/view/cart/totals/surcharge` component was defined earlier in the article.
 
 If all has gone smoothly, when run, you should see the adjusted price reflected in the shopping cart.
+
+### Display price adjustment in order totals in the admin UI
+
+To display the price adjustment as a separate row in the order totals on the order detail page within the admin UI, add it to the `order_totals` block.
+
+`VENDOR/MODULE/view/adminhtml/layout/sales_order_view.xml`:
+
+```xml
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="order_totals">
+            <block class="VENDOR\MODULE\Block\Adminhtml\Sales\Order\Totals" name="custom_surcharge_total">
+                <action method="setBeforeCondition">
+                    <argument name="condition" xsi:type="string">tax</argument>
+                </action>
+            </block>
+        </referenceBlock>
+    </body>
+</page>
+```
+You can adjust the value for `condition` in the `setBeforeCondition` action to change before which row the adjustment is added.
+
+The `order_totals` block triggers the `initTotals()` method for each child block.
+
+Next we need to define our block.
+
+`VENDOR/MODULE/Block/Adminhtml/Sales/Order/Totals`:
+
+```php
+namespace VENDOR\MODULE\Block\Adminhtml\Sales\Order;
+
+use Magento\Framework\DataObject;
+use Magento\Framework\View\Element\Template;
+use Magento\Framework\View\Element\Template\Context;
+use Magento\Sales\Model\Order;
+use VENDOR\MODULE\Pricing\Adjustment;
+use VENDOR\MODULE\Model\Quote\Surcharge;
+
+class Totals extends Template
+{
+
+    /**
+     * @var Surcharge
+     */
+    private Surcharge $surcharge;
+
+    /**
+     * @param Context $context
+     * @param array $data
+     */
+    public function __construct(
+        Context $context,
+        Adjustment $adjustment,
+        Surcharge $surcharge,
+        array $data = []
+    ) {
+        parent::__construct($context, $data);
+        $this->surcharge = $surcharge;
+    }
+
+    /**
+     * @return $this
+     */
+    public function initTotals()
+    {
+        $adjustmentValue = 0;
+        $items = $this->getParentBlock()->getSource()->getAllItems();
+
+        foreach ($items as $item) {
+            $adjustmentValue += $item->getQtyOrdered() * Adjustment::ADJUSTMENT_VALUE;
+        }
+        
+        if ($adjustmentValue) {
+            $totals = $this->getParentBlock()->getTotals();
+            $total = new DataObject(
+                [
+                    'code' => Surcharge::COLLECTOR_TYPE_CODE,
+                    'label' => $this->surcharge->getLabel(),
+                    'value' => $adjustmentValue,
+                    'base_value' => $adjustmentValue
+                ]
+            );
+
+            if (isset($totals['grand_total_incl'])) {
+                $this->getParentBlock()->addTotalBefore($total, 'grand_total');
+            } else {
+                $this->getParentBlock()->addTotalBefore($total, $this->getBeforeCondition());
+            }
+        }
+        
+        return $this;
+    }
+}
+
+```
+
+If all went well you should now see a new row as part of the order totals in the admin UI whenever your price adjustment is applied.
