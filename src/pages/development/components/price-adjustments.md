@@ -473,11 +473,11 @@ class Totals extends Template
 
     /**
      * @param Context $context
+     * @param Surcharge $surcharge
      * @param array $data
      */
     public function __construct(
         Context $context,
-        Adjustment $adjustment,
         Surcharge $surcharge,
         array $data = []
     ) {
