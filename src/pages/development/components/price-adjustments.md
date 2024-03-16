@@ -445,6 +445,7 @@ To display the price adjustment as a separate row in the order totals on the ord
     </body>
 </page>
 ```
+
 You can adjust the value for `condition` in the `setBeforeCondition` action to change before which row the adjustment is added.
 
 The `order_totals` block triggers the `initTotals()` method for each child block.
