@@ -19,7 +19,9 @@ The following major backward-incompatible changes were introduced in the 2.4.7-b
 
 ### Fixes to resolve compatibility issues with Symfony
 
-The latest Symfony 6.4 LTS is not supported, so changes were made to keep Symfony LTS 5.4 in 2.4.7-beta3. Extension developers must define strict typing for return values in classes that use the changed interface: `Magento\Framework\Console\Cli::getDefaultCommands`.
+The return type was changed for the [`Magento\Framework\Console\Cli::getDefaultCommands`](https://eat.magento.com/ui/phpFqn?searchKey=TWFnZW50b1xGcmFtZXdvcmtcQ29uc29sZVxDbGk6OmdldERlZmF1bHRDb21tYW5kcw==) interface to provide compatibility with the latest Symfony 6.4 LTS version.
+
+Extension developers must define strict typing for return values in classes that use the changed interface: `Magento\Framework\Console\Cli::getDefaultCommands`.
 
 ### New system configuration for limiting coupon generation
 
