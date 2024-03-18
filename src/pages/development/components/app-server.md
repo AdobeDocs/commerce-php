@@ -53,9 +53,7 @@ Traditional debugging tools and techniques designed for synchronous PHP scripts 
 
   - 2.14. Temporal coupling MUST be avoided. Changed state at one point in time can inadvertently affect the behavior of subsequent operations, requiring a specific order of execution for the application to function correctly. This coupling makes the code harder to understand and maintain, as the correct operation of the system becomes dependent on the sequence in which state-modifying actions are performed.
 
-1. Superglobals and native PHP functions usage for header, session, and cookie.
-
-1. Usage of PHP Superglobals, like `$_GET`, `$_POST`, and `$_SESSION`, and native PHP functions for header, session, and cookie, instead of utilizing interfaces and service contracts through dependency injection.
+1. Usage of superglobals, like `$_GET`, `$_POST`, and `$_SESSION`, and native PHP functions for header, session, and cookie, instead of utilizing interfaces through dependency injection.
   
 ## Integration testing
 
