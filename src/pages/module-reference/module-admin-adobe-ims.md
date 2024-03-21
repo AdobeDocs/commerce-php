@@ -97,18 +97,18 @@ The redirect from Adobe IMS is done to \Magento\AdminAdobeIms\Controller\Adminht
 The access code comes from Adobe, the token response is got on the basis of the access code,
 client id (api key) and client secret (private key).
 The token response access token is used for getting user profile information.
-If this is successful, the admin user will be logged in and the access tokens is added to session as well as token_last_check_time value.
+If this is successful, the admin user will be logged in and the access tokens is added to session as well as last_check_time value.
 
 # ACCESS_TOKEN saving in session and validation
 
 When AdminAdobeIms module is enabled, we check each 10 minutes if ACCESS_TOKEN is still valid.
 For this when admin user login and when session is started, we add 2 extra variables to the session:
-token_last_check_time is current time
+last_check_time is current time
 adobe_access_token is ACCESS_TOKEN that we receive during authorization
 
-There is a plugin \Magento\AdminAdobeIms\Plugin\BackendAuthSessionPlugin where we check if token_last_check_time was updated 10 min ago.
+There is a plugin \Magento\AdminAdobeIms\Plugin\BackendAuthSessionPlugin where we check if last_check_time was updated 10 min ago.
 If yes, then we make call to IMS to validate access_token.
-If token is valid, value token_last_check_time will be updated to current time and session prolong.
+If token is valid, value last_check_time will be updated to current time and session prolong.
 If token is not valid, session will be destroyed.
 
 # Admin Backend Logout
