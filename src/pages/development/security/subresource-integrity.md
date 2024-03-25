@@ -12,7 +12,7 @@ See [Subresource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/S
 
 In order to adhere to PCI 4.0 requirements regarding verifying the integrity of scripts on payment pages, Adobe Commerce and Magento Open Source 2.4.7 and later include support for Subresource Integrity by providing integrity hashes for all javascript assets residing in the local filesystem. (This
 functionality is defined in the Magento_Csp module.)
-Please note that currently there is no SRI support for custom remote javascript resources.
+Although, there is no SRI support for custom remote javascript resources currently, merchants can enable SRI support for remote resources by adding integrity and crossorigin attributes on a case by case basis.
 
 ## Default Configuration
 
