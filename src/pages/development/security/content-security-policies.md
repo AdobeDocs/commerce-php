@@ -37,10 +37,11 @@ CSP can work in two modes:
 *  `restrict mode` - In this mode, the application acts on any policy violations.
 
 ## Default configuration
+Beginning version 2.4.7, CSP will be configured in `restrict-mode` by default for payment pages in the storefront and admin areas and in `report-only` mode for all other pages.
+The corresponding CSP header will not contain the `unsafe-inline` keyword inside the `script-src` directive for payment pages.
+Also, only whitelisted inline scripts will be allowed.
 
-By default, CSP is configured in `report-only` mode, which allows merchants and developers to
-configure policies to work according to their custom code. After the policies have been configured,
-switch the mode to `restrict`.
+Prior to version 2.4.7, CSP was configured in `report-only` mode for all pages.
 
 Once configured, the application can enforce policies like these:
 
@@ -234,7 +235,18 @@ For reference, see `Magento\Csp\etc\config.xml`.
 ### Report-Uri configuration
 
 Regardless of `restrict` or `report-only` mode, CSP violations may be reported to an endpoint for collection.
-The URL to use for reporting by browsers can be configured in your custom module's `config.xml` file:
+
+1. On the _Admin_ sidebar, go to **Stores** > _Settings_ > **Configuration**.
+
+   If you have a multi-site installation, set the Store View control in the upper-left corner to the website where the configuration applies.
+
+2. In the left panel under _Security_, choose **Content Security Policy**
+
+![](../../_images/security/csp-report-uri.png)
+
+The create order page in the admin and the checkout page in the storefront can be configured to have their own URI. However, if these fields are left blank then the default URI for the admin and storefront areas will be used for reporting.
+
+The URL to use for reporting by browsers can also be configured programmatically in your custom module's `config.xml` file:
 
 ```xml
 <?xml version="1.0"?>
