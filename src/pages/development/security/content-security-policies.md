@@ -144,7 +144,7 @@ adding a `csp_whitelist.xml` to your custom module's `etc` folder.
 Beginning version 2.4.7, Magento Open Source and Adobe Commerce supports Content Security Policy (CSP) nonce. 
 This enhancement introduces a CSP nonce provider, which facilitates the generation of unique nonce strings for each request. 
 These nonce strings are then attached to the CSP header.
-You can utilize  `Magento\Csp\Helper\CspNonceProvider::generateNonce()` in your class to obtain a nonce string like:
+You can utilize the `generateNonce` function in  `Magento\Csp\Helper\CspNonceProvider` in to obtain a nonce string like:
 
 ```php
 use Magento\Csp\Helper\CspNonceProvider;
