@@ -153,17 +153,17 @@ class MyClass
 {
 
     /**
+     * @var CspNonceProvider
+     */
+    private $cspNonceProvider;
+
+    /**
      * @param CspNonceProvider $cspNonceProvider
      */
     public function __construct(CspNonceProvider $cspNonceProvider)
     {
         $this->cspNonceProvider = $cspNonceProvider
     }
-
-    /**
-     * @var CspNonceProvider
-     */
-    private $cspNonceProvider;
 
     /**
      * Get CSP Nonce
