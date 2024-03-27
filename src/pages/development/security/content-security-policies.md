@@ -139,6 +139,44 @@ adding a `csp_whitelist.xml` to your custom module's `etc` folder.
 </csp_whitelist>
 ```
 
+### Using CSP nonce provider to allow inline script
+
+Beginning version 2.4.7, Magento Open Source and Adobe Commerce supports Content Security Policy (CSP) nonce. 
+This enhancement introduces a CSP nonce provider, which facilitates the generation of unique nonce strings for each request. 
+These nonce strings are then attached to the CSP header.
+You can utilize  `Magento\Csp\Helper\CspNonceProvider::generateNonce()` in your class to obtain a nonce string like:
+
+```php
+use Magento\Csp\Helper\CspNonceProvider;
+
+class MyClass
+{
+
+    /**
+     * @param CspNonceProvider $cspNonceProvider
+     */
+    public function __construct(CspNonceProvider $cspNonceProvider)
+    {
+        $this->cspNonceProvider = $cspNonceProvider
+    }
+
+    /**
+     * @var CspNonceProvider
+     */
+    private $cspNonceProvider;
+
+    /**
+     * Get CSP Nonce
+     *
+     * @return String
+     */
+    public function getNonce(): string
+    {
+        return $this->cspNonceProvider->generateNonce();
+    }
+}
+```
+
 ### Whitelist an inline script or style
 
 Stores that have `unsafe-inline` disabled for `style-src` and `script-src` (default for Adobe Commerce and Magento Open Source 2.4) inline scripts and styles
@@ -268,7 +306,33 @@ The URL to use for reporting by browsers can also be configured programmatically
 
 ### Page specific Content-Security-Policies
 
-Adobe Commerce and Magento Open Source can send unique policies for a specific page. To do so, implement `Magento\Csp\Api\CspAwareActionInterface`
+Adobe Commerce and Magento Open Source can send unique policies for a specific page.
+For example, to configure policies for the checkout page in the storefront, add the following in your custom module's `config.xml`
+
+```xml
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+       <csp>
+          <mode>
+             <storefront_checkout_index_index>
+                <report_only>0</report_only>
+             </storefront_checkout_index_index>
+          </mode>
+          <policies>
+             <storefront_checkout_index_index>
+                <scripts>
+                   <inline>0</inline>
+                   <event_handlers>1</event_handlers>
+                </scripts>
+             </storefront_checkout_index_index>
+          </policies>
+       </csp>
+    </default>
+</config>
+```
+
+Alternatively, you can implement `Magento\Csp\Api\CspAwareActionInterface`
 in a controller responsible for the page and define the `modifyCsp` method. It receives existing CSPs
 read from configs and allows you redefine them by returning a new list. See the example below:
 
@@ -301,3 +365,11 @@ class Mypage extends \Magento\Framework\App\Action\Action implements \Magento\Cs
 
 You do not need to define other policy options in contexts like _unsafe-inline_. The same
 policy options read from config will be merged later.
+
+### Troubleshooting
+
+Users might sometimes see browser errors due to certain scripts being blocked because of CSP
+
+`Refused to execute inline script because it violates the following Content Security Policy directive: "script-src`
+
+To fix this issue, you must [whitelist](https://developer.adobe.com/commerce/php/development/security/content-security-policies/#whitelist-an-inline-script-or-style) the blocked scripts using the `SecureHtmlRenderer` class or use the [CSPNonceProvider](https://developer.adobe.com/development/security/content-security-policies/#using-csp-nonce-provider-to-allow-inline-script) class to allow scripts to be executed.
