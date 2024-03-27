@@ -17,6 +17,7 @@ functionality is defined in the Magento_Csp module.)
 
 The default SRI feature is implemented only on the payment pages for the admin and storefront areas. However, merchants can extend the default configuration to other pages.
 For example, to enable SRI on the customer account page in the storefront, create the file `<module-dir>/view/frontend/layout/customer_account_index.xml` with the following content
+
 ```xml
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
@@ -47,9 +48,11 @@ Caches can be purged in the following ways:
 * Programmatically, by using the `deleteAll` function in the [SubresourceIntegrityRepository](https://github.com/magento-commerce/magento2ce/blob/2.4-develop/app/code/Magento/Csp/Model/SubresourceIntegrityRepository.php) class.
 
 * Using the CLI
+
 ```bash
 bin/magento cache:flush
 ```
+
 * Through the Admin UI via **System** > **Tools** > **Cache Management**. **Flush Cache Storage**
 
 <InlineAlert slots="text" />
@@ -61,6 +64,7 @@ bin/magento setup:static-content:deploy
 ```
 
 ### Subresource Integrity for Remote Resources
+
 Although, there is no SRI support for custom remote javascript resources currently, merchants can generate the integrity hash for remote resources using the following example.
 
 ```php

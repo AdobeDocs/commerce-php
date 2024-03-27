@@ -37,6 +37,7 @@ CSP can work in two modes:
 *  `restrict mode` - In this mode, the application acts on any policy violations.
 
 ## Default configuration
+
 Beginning version 2.4.7, CSP will be configured in `restrict-mode` by default for payment pages in the storefront and admin areas and in `report-only` mode for all other pages.
 The corresponding CSP header will not contain the `unsafe-inline` keyword inside the `script-src` directive for payment pages.
 Also, only whitelisted inline scripts will be allowed.
