@@ -141,7 +141,7 @@ adding a `csp_whitelist.xml` to your custom module's `etc` folder.
 
 ### Using CSP nonce provider to allow inline script
 
-Beginning version 2.4.7, Magento Open Source and Adobe Commerce supports Content Security Policy (CSP) nonce. 
+Beginning version 2.4.7, Magento Open Source and Adobe Commerce support Content Security Policy (CSP) nonce. 
 This enhancement introduces a CSP nonce provider, which facilitates the generation of unique nonce strings for each request. 
 These nonce strings are then attached to the CSP header.
 You can utilize the `generateNonce` function in `Magento\Csp\Helper\CspNonceProvider` to obtain a nonce string.
@@ -368,7 +368,7 @@ policy options read from config will be merged later.
 
 ### Troubleshooting
 
-Users might sometimes see browser errors due to certain scripts being blocked because of CSP
+Users might sometimes see browser errors due to certain scripts being blocked because of CSP:
 
 `Refused to execute inline script because it violates the following Content Security Policy directive: "script-src`
 
