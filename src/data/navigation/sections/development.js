@@ -621,6 +621,10 @@ module.exports = [
           title: "Server-side request forgery prevention",
           path: "/development/security/server-side-request-forgery/",
         },
+        {
+          title: "Subresource Integrity",
+          path: "/development/security/subresource-integrity/",
+        },
       ],
     },
     {
