@@ -8,7 +8,7 @@ edition: ee
 
 <InlineAlert variant="info" slots="text" />
 
-Available in [2.4.7-beta](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html) only.
+Available in [2.4.7](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html) only.
 
 # Application Server for GraphQL APIs
 
