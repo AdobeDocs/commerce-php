@@ -30,7 +30,7 @@ The following major backward-incompatible changes were introduced in the 2.4.7 A
 
 ### New block class for subresource integrity verification
 
-A new block class was added (`Magento\Csp\Block\Sri\Hashes`) marked with the `@api` annotation to support [subresource integrity](../security/subresource-integrity.md) verification. This ensures that all scripts executed on the payment pages have an integrity attribute so that no unauthorized scripts can run. You must add integrity attributes to all custom and remote JavaScript resources.
+A new block class was added (`Magento\Csp\Block\Sri\Hashes`) marked with the `@api` annotation to support [subresource integrity](../security/subresource-integrity.md) verification. This ensures that all scripts executed on payment pages and the Admin have an integrity attribute so that no unauthorized scripts can run. You must add integrity attributes to all custom and remote JavaScript resources.
 
 The following module is affected by this change:
 
