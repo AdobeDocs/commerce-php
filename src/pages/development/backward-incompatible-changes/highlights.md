@@ -7,7 +7,7 @@ keywords:
 
 # Backward-incompatible changes highlights
 
-This page highlights backward-incompatible changes between Adobe Commerce and Magento Open Source releases that have a major impact and require detailed explanation and special instructions to ensure third-party modules continue working. High-level reference information for all backward-incompatible changes in each release are documented in [Backward-incompatible changes reference](reference.md).
+This page highlights backward-incompatible changes between Adobe Commerce and Magento Open Source releases that have a major impact and require detailed explanation and special instructions to ensure third-party modules continue working. High-level reference information for all backward-incompatible changes in each release is documented in [Backward-incompatible changes reference](reference.md).
 
 ## 2.4.7
 
@@ -53,7 +53,7 @@ The following module is affected by this change:
 ### Default behavior for `isEmailAvailable` API
 
 The default behavior of the [`isEmailAvailable`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/is-email-available/) GraphQL query and ([`V1/customers/isEmailAvailable`](https://adobe-commerce.redoc.ly/2.4.6-admin/tag/customersisEmailAvailable/#operation/PostV1CustomersIsEmailAvailable)) REST endpoint has changed. By default, the API now always returns `true`.
-The new default behaviour also affects the checkout workflow for guests that do not realize they already have an account. Previously, by default, when a guest supplied an email address that matched an existing customer account, they were prompted to sign in. Now, they are no longer prompted to sign in.
+The new default behavior also affects the checkout workflow for guests that do not realize they already have an account. Previously, by default, when a guest supplied an email address that matched an existing customer account, they were prompted to sign in. Now, they are no longer prompted to sign in.
 
 Merchants can restore the original default behavior of the `isEmailAvailable` API and checkout flow by setting the **Stores > Configuration > Sales > Checkout > Enable Guest Checkout Login field** to **Yes**. However, doing this can expose customer information to unauthenticated users.
 
@@ -117,7 +117,7 @@ The following module is affected by this change:
 
 * [Magento_SalesRule](https://developer.adobe.com/commerce/php/module-reference/module-sales-rule/)
 
-### New method for encyption key generation
+### New method for encryption key generation
 
 This change improves the security of encrypted user data. You must [reset the encryption key](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/encryption-key.html) and set the **Auto-generate** option to `Yes`. After resetting the encryption key, all credit card data and cache files are re-encrypted with the new key.
 
@@ -158,7 +158,7 @@ The following module is affected by this change:
 
 ### New system configuration for limiting coupon generation
 
-Added a new setting for the number of coupons to generate. This property has a default value of `250,000`, which is also the maximum value. Merchants can disable this feature by it setting it to `0`  in the Admin by going to  **Stores** > **Settings** > **Configuration** > **Customers** > **Promotions** > **Code Quantity Limit**.
+Added a new setting for the number of coupons to generate. This property has a default value of `250,000`, which is also the maximum value. Merchants can disable this feature by setting it to `0`  in the Admin by going to  **Stores** > **Settings** > **Configuration** > **Customers** > **Promotions** > **Code Quantity Limit**.
 
 The following module is affected by this change:
 
@@ -166,7 +166,7 @@ The following module is affected by this change:
 
 ### New system configuration for payment information rate limiting
 
-New native application rate-limiting features have been added with initial out-of-the-box support for rate limiting of payment API's. Disabled by default.
+New native application rate-limiting features have been added with initial out-of-the-box support for rate limiting of payment APIs. Disabled by default.
 
 No action for merchants or extension developers is necessary.
 
