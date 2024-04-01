@@ -7,15 +7,25 @@ keywords:
 
 # Backward-incompatible changes highlights
 
-This page highlights backward-incompatible changes between Adobe Commerce and Magento Open Source releases that have a major impact and require detailed explanation and special instructions to ensure third-party modules continue working. High-level reference information for all backward-incompatible changes in each release are documented in [Backward incompatible changes reference](reference.md).
+This page highlights backward-incompatible changes between Adobe Commerce and Magento Open Source releases that have a major impact and require detailed explanation and special instructions to ensure third-party modules continue working. High-level reference information for all backward-incompatible changes in each release are documented in [Backward-incompatible changes reference](reference.md).
 
-## 2.4.7-beta3
+## 2.4.7
 
-The following major backward-incompatible changes were introduced in the 2.4.7-beta3 Adobe Commerce and Magento Open Source releases:
+The following major backward-incompatible changes were introduced in the 2.4.7 Adobe Commerce and Magento Open Source releases:
 
 * Fixes to resolve compatibility issues with Symfony
 * New system configuration for limiting coupon generation
 * New method and an optional parameter for multicoupons
+* Commerce FedEx SOAP API integration
+* Commerce UPS SOAP API integration
+* Elasticsearch 7 deprecation
+* New method for encryption key generation
+* New SKU validation in inventory source items API
+* New full-page caching system configuration
+* New interface and method for ApplicationServer module
+* New public method in `Config/Type/System`
+* New configuration for payment information rate limiting
+* Default behavior for isEmailAvailable API
 
 ### Fixes to resolve compatibility issues with Symfony
 
@@ -46,17 +56,6 @@ All changes have been done in a way to minimize any impact to extensions and cus
 The following module is affected by this change:
 
 * [Magento_SalesRule](https://developer.adobe.com/commerce/php/module-reference/module-sales-rule/)
-
-## 2.4.7-beta2
-
-The following major backward-incompatible changes were introduced in the 2.4.7-beta2 Adobe Commerce and Magento Open Source releases:
-
-* Commerce FedEx SOAP API integration
-* Commerce UPS SOAP API integration
-* Elasticsearch 7 deprecation
-* New method for encryption key generation
-* New SKU validation in inventory source items API
-* New full-page caching system configuration
 
 ### Commerce FedEx SOAP API integration
 
@@ -122,18 +121,9 @@ The following module is affected by this change:
 
 * [Magento_PageCache](https://developer.adobe.com/commerce/php/module-reference/module-page-cache/)
 
-## 2.4.7-beta1
-
-The following major backward-incompatible changes were introduced in the 2.4.7-beta1 Adobe Commerce and Magento Open Source releases:
-
-* New interface and method for ApplicationServer module
-* New public method in `Config/Type/System`
-* New configuration for payment information rate limiting
-* Default behavior for isEmailAvailable API
-
 ### New interface and method for ApplicationServer module
 
-State management has been enabled for all GraphQL APIs (excluding B2B and service-related processes). The 2.4.7-beta1 release introduces a new PHP application server that is implemented on a Swoole PHP extension. The [ApplicationServer](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/performance-best-practices/application-server.html) module enables Adobe Commerce to maintain state between Commerce GraphQL API requests and eliminates the need for request bootstrapping. By sharing application state among processes, API requests become significantly more efficient, and API response times potentially decrease by 50 to 60 milliseconds.
+State management has been enabled for all GraphQL APIs (excluding B2B and service-related processes). The 2.4.7 release introduces a new PHP application server that is implemented on a Swoole PHP extension. The [ApplicationServer](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/concepts/application-server) module enables Adobe Commerce to maintain state between Commerce GraphQL API requests and eliminates the need for request bootstrapping. By sharing application state among processes, API requests become significantly more efficient, and API response times potentially decrease by 50 to 60 milliseconds.
 
 The `ResetAfterRequestInterface` interface and `_resetState()` method were added to enable the PHP application server. The `__debugInfo()` method was also added to fix issues with `var_dump` calls.
 
