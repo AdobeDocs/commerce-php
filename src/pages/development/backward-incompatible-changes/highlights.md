@@ -13,6 +13,7 @@ This page highlights backward-incompatible changes between Adobe Commerce and Ma
 
 The following major backward-incompatible changes were introduced in the 2.4.7 Adobe Commerce and Magento Open Source releases:
 
+* New block class for subresource integrity verification
 * Fixes to resolve compatibility issues with Symfony
 * New system configuration for limiting coupon generation
 * New method and an optional parameter for multicoupons
@@ -26,6 +27,14 @@ The following major backward-incompatible changes were introduced in the 2.4.7 A
 * New public method in `Config/Type/System`
 * New configuration for payment information rate limiting
 * Default behavior for isEmailAvailable API
+
+### New block class for subresource integrity verification
+
+A new block class was added (`Magento\Csp\Block\Sri\Hashes`) marked with the `@api` annotation to support [subresource integrity](../security/subresource-integrity.md) verification. This ensures that all scripts executed on the payment pages have an integrity attribute so that no unauthorized scripts can run. You must add integrity attributes to all custom and remote JavaScript resources.
+
+The following module is affected by this change:
+
+* [Magento_Csp](https://developer.adobe.com/commerce/php/module-reference/module-csp/)
 
 ### Fixes to resolve compatibility issues with Symfony
 
