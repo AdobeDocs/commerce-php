@@ -59,11 +59,11 @@ Merchants can restore the original default behavior of the `isEmailAvailable` AP
 
 ### Elasticsearch 7 deprecation
 
-This change removes the `Magento_Elasticsearch` module (for Elasticsearch 5) and adds support for Elasticsearch 8. The `Magento_Elasticsearch7` module is being deprecated because Elasticsearch 7 reached end-of-life in August 2023. However, it is still the default option for 2.4.7-beta2.
+This change removes the `Magento_Elasticsearch` module (for Elasticsearch 5) and adds support for Elasticsearch 8. The `Magento_Elasticsearch7` module is being deprecated because Elasticsearch 7 reached end-of-life in August 2023. However, it is still the default option for 2.4.7.
 
-The `Magento_Elasticsearch8` module is not currently supported because of backward-incompatible changes in ES7 and ES8. It is available as a Composer metapackage only in 2.4.7-beta2 until the `Magento_Elasticsearch7` module is removed from the codebase.
+The `Magento_Elasticsearch8` module is not currently supported because of backward-incompatible changes in ES7 and ES8. It is available as a Composer metapackage only in 2.4.7 until the `Magento_Elasticsearch7` module is removed from the codebase.
 
-You can use the `Magento_Elasticsearch7` module or install the Magento_Elasticsearch8 module in 2.4.7-beta2.
+You can use the `Magento_Elasticsearch7` module or install the Magento_Elasticsearch8 module in 2.4.7.
 
 The following modules are affected by this change:
 
