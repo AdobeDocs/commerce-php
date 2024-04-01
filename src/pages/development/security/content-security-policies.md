@@ -38,9 +38,8 @@ CSP can work in two modes:
 
 ## Default configuration
 
-Beginning version 2.4.7, CSP will be configured in `restrict-mode` by default for payment pages in the storefront and admin areas and in `report-only` mode for all other pages.
-The corresponding CSP header will not contain the `unsafe-inline` keyword inside the `script-src` directive for payment pages.
-Also, only whitelisted inline scripts will be allowed.
+In Adobe Commerce and Magento Open Source version 2.4.7 and later, CSP is configured in `restrict-mode` by default for payment pages in the storefront and admin areas, and in `report-only` mode for all other pages.
+The corresponding CSP header does not contain the `unsafe-inline` keyword inside the `script-src` directive for payment pages. Also, only whitelisted inline scripts are allowed.
 
 Prior to version 2.4.7, CSP was configured in `report-only` mode for all pages.
 
@@ -142,10 +141,8 @@ adding a `csp_whitelist.xml` to your custom module's `etc` folder.
 
 ### Using CSP nonce provider to allow inline scripts
 
-Beginning version 2.4.7, Magento Open Source and Adobe Commerce support Content Security Policy (CSP) nonce. 
-This enhancement introduces a CSP nonce provider, which facilitates the generation of unique nonce strings for each request. 
-These nonce strings are then attached to the CSP header.
-You can utilize the `generateNonce` function in `Magento\Csp\Helper\CspNonceProvider` to obtain a nonce string.
+Adobe Commerce and Magento Open Source 2.4.7 and later include a Content Security Policy (CSP) nonce provider to facilitate the generation of unique nonce strings for each request.  These nonce strings are then attached to the CSP header.
+You can use the `generateNonce` function in `Magento\Csp\Helper\CspNonceProvider` to obtain a nonce string.
 
 ```php
 use Magento\Csp\Helper\CspNonceProvider;
@@ -283,9 +280,9 @@ Regardless of `restrict` or `report-only` mode, CSP violations may be reported t
 
 ![](../../_images/security/csp-report-uri.png)
 
-The create order page in the admin and the checkout page in the storefront can be configured to have their own URI. However, if these fields are left blank then the default URI for the admin and storefront areas will be used for reporting.
+The create order page in the Admin and the checkout page in the storefront can be configured to have their own URI. However, if these fields are left blank then the default URI for the admin and storefront areas is used for reporting.
 
-The URL to use for reporting by browsers can also be configured programmatically in your custom module's `config.xml` file:
+The URL to use for reporting by browsers can also be configured programmatically in the `config.xml` for your custom module:
 
 ```xml
 <?xml version="1.0"?>
@@ -308,7 +305,7 @@ The URL to use for reporting by browsers can also be configured programmatically
 ### Page specific Content-Security-Policies
 
 Adobe Commerce and Magento Open Source can send unique policies for a specific page.
-For example, to configure policies for the checkout page in the storefront, add the following in your custom module's `config.xml`
+For example, to configure policies for the checkout page in the storefront, add the following to the `config.xml` file for your custom module:
 
 ```xml
 <?xml version="1.0"?>

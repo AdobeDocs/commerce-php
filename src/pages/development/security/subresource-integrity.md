@@ -10,7 +10,7 @@ See [Subresource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/S
 
 ## Application Support
 
-In order to adhere to PCI 4.0 requirements regarding verifying the integrity of scripts on payment pages, Adobe Commerce and Magento Open Source 2.4.7 and later include support for Subresource Integrity by providing integrity hashes for all javascript assets residing in the local filesystem. (This
+To comply with PCI 4.0 requirements for verification of script integrity on payment pages, Adobe Commerce and Magento Open Source 2.4.7 and later include support for Subresource Integrity by providing integrity hashes for all javascript assets residing in the local filesystem. (This
 functionality is defined in the Magento_Csp module.)
 
 ## Default Configuration
@@ -33,15 +33,15 @@ For example, to enable SRI on the customer account page in the storefront, creat
 
 ## Subresource Integrity Hash Generation
 
-The Subresource Integrity hash generation process starts after [static content](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment) for every package area is deployed.
-The [postprocessor](https://github.com/magento-commerce/magento2ce/tree/2.4-develop/app/code/Magento/Csp/Model/Deploy/Package/Processor/PostProcessor) class processes all javascript files by package and generates integrity hashes.
-The postprocessor class invokes the [SubresourceIntegrityCollector](https://github.com/magento-commerce/magento2ce/blob/2.4-develop/app/code/Magento/Csp/Model/SubresourceIntegrityCollector.php) class to collect integrity hashes to save in cache once all packages are deployed.
+The Subresource Integrity hash generation process begins once [static content](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment) for each package area has been deployed.
+The [postprocessor](https://github.com/magento-commerce/magento2ce/tree/2.4-develop/app/code/Magento/Csp/Model/Deploy/Package/Processor/PostProcessor) class then systematically processes all javascript files within each package and generates integrity hashes.
+The postprocessor class triggers the [SubresourceIntegrityCollector](https://github.com/magento-commerce/magento2ce/blob/2.4-develop/app/code/Magento/Csp/Model/SubresourceIntegrityCollector.php) class to collect the hashes which are cached for storage after all packages are deployed.
 All integrity hashes are stored in cache via the [SubresourceIntegrityRepository](https://github.com/magento-commerce/magento2ce/blob/2.4-develop/app/code/Magento/Csp/Model/SubresourceIntegrityRepository.php) class.
 
 ## Subresource Integrity Caching
 
 Subresource Integrity hashes are stored and organized in cache by the deployed package area - frontend, base or admin.
-Hash value for a specific file can be retrieved from the cache using the `getByPath` function in the [SubresourceIntegrityRepository](https://github.com/magento-commerce/magento2ce/blob/2.4-develop/app/code/Magento/Csp/Model/SubresourceIntegrityRepository.php) class.
+The hash value for a specific file can be retrieved from the cache using the `getByPath` function in the [SubresourceIntegrityRepository](https://github.com/magento-commerce/magento2ce/blob/2.4-develop/app/code/Magento/Csp/Model/SubresourceIntegrityRepository.php) class.
 
 Caches can be purged in the following ways:
 
@@ -57,7 +57,7 @@ bin/magento cache:flush
 
 <InlineAlert slots="text" />
 
-SRI caches must be regenerated using static content deploy command below after cache has been purged.
+After the cache has been purged, SRI caches must be regenerated using the static content deploy command.
 
 ```bash
 bin/magento setup:static-content:deploy
@@ -74,4 +74,4 @@ $integrity = "sha256" . "-{$hash}";
 
 <InlineAlert slots="text" />
 
-For subresource-integrity verification of a resource served from an origin other than the document in which it's embedded, the [crossorigin](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/crossorigin) attribute must also be provided along with the integrity attribute.
+For subresource-integrity verification of a resource served from an origin other than the document where it is embedded, the [crossorigin](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/crossorigin) attribute must be provided along with the integrity attribute.
