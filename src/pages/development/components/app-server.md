@@ -8,13 +8,13 @@ edition: ee
 
 <InlineAlert variant="info" slots="text" />
 
-Available in [2.4.7](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html) only.
+Available in [2.4.7](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-7) only.
 
 # Application Server for GraphQL APIs
 
-The [Application Server for GraphQL APIs](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/performance-best-practices/application-server.html) enables Adobe Commerce to maintain state among GraphQL API requests. The Application Server, which is built on the Open Swoole extension, operates as a process with worker threads that handle request processing. By preserving a bootstrapped application state among GraphQL API requests, the Application Server enhances request handling and overall product performance. As a result, GraphQL request response time can be reduced by up to 30%.
+The [Application Server for GraphQL APIs](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/concepts/application-server) enables Adobe Commerce to maintain state among GraphQL API requests. The Application Server, which is built on the Open Swoole extension, operates as a process with worker threads that handle request processing. By preserving a bootstrapped application state among GraphQL API requests, the Application Server enhances request handling and overall product performance. As a result, GraphQL request response time can be reduced by up to 30%.
 
-The Application Server is supported on [Cloud Starter](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-architecture.html) deployments only. It is not available for Cloud Pro projects during Beta. It is not available for deployments of the Magento Open Source code base.
+The Application Server is supported on [Cloud Starter](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture) deployments only. It is not available for Cloud Pro projects during Beta. It is not available for deployments of the Magento Open Source code base.
 
 ## Challenges to consider
 
