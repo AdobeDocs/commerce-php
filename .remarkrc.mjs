@@ -27,7 +27,8 @@ const remarkConfig = {
 				skipUrlPatterns: [
 					"https://www.php.net",
 					"https://cardinalcommerce.com/",
-					"https://www.cyberciti.biz"
+					"https://www.cyberciti.biz",
+					"https://eat.magento.com/ui/phpFqn?searchKey=TWFnZW50b1xGcmFtZXdvcmtcQ29uc29sZVxDbGk6OmdldERlZmF1bHRDb21tYW5kcw=="
 
 				],
 				skipOffline: "true"
