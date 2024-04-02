@@ -29,7 +29,6 @@ const remarkConfig = {
 					"https://cardinalcommerce.com/",
 					"https://www.cyberciti.biz",
 					"https://eat.magento.com"
-
 				],
 				skipOffline: "true"
 			}
