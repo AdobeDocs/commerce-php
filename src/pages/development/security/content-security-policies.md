@@ -142,7 +142,8 @@ adding a `csp_whitelist.xml` to your custom module's `etc` folder.
 ### Using CSP nonce provider to allow inline scripts
 
 Adobe Commerce and Magento Open Source 2.4.7 and later include a Content Security Policy (CSP) nonce provider to facilitate the generation of unique nonce strings for each request.  These nonce strings are then attached to the CSP header.
-You can use the `generateNonce` function in `Magento\Csp\Helper\CspNonceProvider` to obtain a nonce string.
+
+Use the `generateNonce` function in `Magento\Csp\Helper\CspNonceProvider` to obtain a nonce string.
 
 ```php
 use Magento\Csp\Helper\CspNonceProvider;
@@ -276,11 +277,11 @@ Regardless of `restrict` or `report-only` mode, CSP violations may be reported t
 
    If you have a multi-site installation, set the Store View control in the upper-left corner to the website where the configuration applies.
 
-2. In the left panel under _Security_, choose **Content Security Policy**
+2. In the left panel under _Security_, choose **Content Security Policy**.
 
 ![](../../_images/security/csp-report-uri.png)
 
-The create order page in the Admin and the checkout page in the storefront can be configured to have their own URI. However, if these fields are left blank then the default URI for the admin and storefront areas is used for reporting.
+The Create Order page in the Admin and the Checkout page in the storefront can be configured to have their own URI. However, if these fields are left blank, the default URI for the admin and storefront areas is used for reporting.
 
 The URL to use for reporting by browsers can also be configured programmatically in the `config.xml` for your custom module:
 
@@ -305,7 +306,7 @@ The URL to use for reporting by browsers can also be configured programmatically
 ### Page specific Content-Security-Policies
 
 Adobe Commerce and Magento Open Source can send unique policies for a specific page.
-For example, to configure policies for the checkout page in the storefront, add the following to the `config.xml` file for your custom module:
+For example, to configure policies for the Checkout page in the storefront, add the following to the `config.xml` file for your custom module:
 
 ```xml
 <?xml version="1.0"?>
@@ -370,4 +371,4 @@ Users might sometimes see browser errors due to certain scripts being blocked be
 
 `Refused to execute inline script because it violates the following Content Security Policy directive: "script-src`
 
-To fix this issue, you must [whitelist](https://developer.adobe.com/commerce/php/development/security/content-security-policies/#whitelist-an-inline-script-or-style) the blocked scripts using the `SecureHtmlRenderer` class or use the [CSPNonceProvider](https://developer.adobe.com/development/security/content-security-policies/#using-csp-nonce-provider-to-allow-inline-script) class to allow scripts to be executed.
+To fix this issue, [whitelist](https://developer.adobe.com/commerce/php/development/security/content-security-policies/#whitelist-an-inline-script-or-style) the blocked scripts using the `SecureHtmlRenderer` class or use the [CSPNonceProvider](https://developer.adobe.com/development/security/content-security-policies/#using-csp-nonce-provider-to-allow-inline-script) class to allow scripts to be executed.
