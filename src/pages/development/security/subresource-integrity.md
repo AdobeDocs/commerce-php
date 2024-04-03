@@ -40,7 +40,7 @@ All integrity hashes are stored in cache via the [SubresourceIntegrityRepository
 ## Subresource Integrity Caching
 
 Subresource Integrity hashes are stored and organized in cache by the deployed package area - frontend, base or admin.
-The hash value for a specific file can be retrieved from the cache using the `getByPath` function in the [SubresourceIntegrityRepository](https://github.com/magento-commerce/magento2ce/blob/2.4-develop/app/code/Magento/Csp/Model/SubresourceIntegrityRepository.php) class.
+The hash value for a specific file can be retrieved from the cache using the `getByPath` function in the [SubresourceIntegrityRepository](https://github.com/magento/magento2/blob/2.4-develop/app/code/Magento/Csp/Model/SubresourceIntegrityRepository.php) class.
 
 Caches can be purged in the following ways:
 
