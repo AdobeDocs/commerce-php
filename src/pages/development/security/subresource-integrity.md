@@ -33,9 +33,9 @@ The default SRI feature is implemented only on the payment pages for the admin a
 ## Subresource Integrity Hash Generation
 
 The Subresource Integrity hash generation process begins once [static content](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment) for each package area has been deployed.
-The [postprocessor](https://github.com/magento-commerce/magento2ce/tree/2.4-develop/app/code/Magento/Csp/Model/Deploy/Package/Processor/PostProcessor) class then systematically processes all javascript files within each package and generates integrity hashes.
-The postprocessor class triggers the [SubresourceIntegrityCollector](https://github.com/magento-commerce/magento2ce/blob/2.4-develop/app/code/Magento/Csp/Model/SubresourceIntegrityCollector.php) class to collect the hashes which are cached for storage after all packages are deployed.
-All integrity hashes are stored in cache via the [SubresourceIntegrityRepository](https://github.com/magento-commerce/magento2ce/blob/2.4-develop/app/code/Magento/Csp/Model/SubresourceIntegrityRepository.php) class.
+The [postprocessor](https://github.com/magento/magento2/tree/2.4-develop/app/code/Magento/Csp/Model/Deploy/Package/Processor/PostProcessor) class then systematically processes all javascript files within each package and generates integrity hashes.
+The postprocessor class triggers the [SubresourceIntegrityCollector](https://github.com/magento/magento2/blob/2.4-develop/app/code/Magento/Csp/Model/SubresourceIntegrityCollector.php) class to collect the hashes which are cached for storage after all packages are deployed.
+All integrity hashes are stored in cache via the [SubresourceIntegrityRepository](https://github.com/magento/magento2/blob/2.4-develop/app/code/Magento/Csp/Model/SubresourceIntegrityRepository.php) class.
 
 ## Subresource Integrity Caching
 
@@ -44,7 +44,7 @@ The hash value for a specific file can be retrieved from the cache using the `ge
 
 Caches can be purged in the following ways:
 
-* Programmatically, by using the `deleteAll` function in the [SubresourceIntegrityRepository](https://github.com/magento-commerce/magento2ce/blob/2.4-develop/app/code/Magento/Csp/Model/SubresourceIntegrityRepository.php) class.
+* Programmatically, by using the `deleteAll` function in the [SubresourceIntegrityRepository](https://github.com/magento/magento2/blob/2.4-develop/app/code/Magento/Csp/Model/SubresourceIntegrityRepository.php) class.
 
 * Using the CLI
 
