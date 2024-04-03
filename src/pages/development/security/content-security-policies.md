@@ -371,4 +371,4 @@ Users might sometimes see browser errors due to certain scripts being blocked be
 
 `Refused to execute inline script because it violates the following Content Security Policy directive: "script-src`
 
-To fix this issue, [whitelist](https://developer.adobe.com/commerce/php/development/security/content-security-policies/#whitelist-an-inline-script-or-style) the blocked scripts using the `SecureHtmlRenderer` class or use the [CSPNonceProvider](https://developer.adobe.com/development/security/content-security-policies/#using-csp-nonce-provider-to-allow-inline-scripts) class to allow scripts to be executed.
+To fix this issue, [whitelist](#whitelist-an-inline-script-or-style) the blocked scripts using the `SecureHtmlRenderer` class or use the [CSPNonceProvider](#using-csp-nonce-provider-to-allow-inline-scripts) class to allow scripts to be executed.
