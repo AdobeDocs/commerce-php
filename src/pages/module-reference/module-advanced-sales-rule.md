@@ -1,6 +1,6 @@
 ---
 title: AdvancedSalesRule
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 AdvancedSalesRule module enhances the performance of sale rule processing.

@@ -1,6 +1,6 @@
 ---
 title: WebapiSecurity
-description: README.md contents of the module from the source code
+description: WebapiSecurity module provides option to loosen security on some webapi resources.
 ---
 
 # Magento_WebapiSecurity module
@@ -17,4 +17,4 @@ Before installing this module, note that the Magento_WebapiSecurity is dependent
 
 - `Magento_Webapi`
 
-For information about enabling or disabling a module, see [Enable or disable modules](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-enable.html).
+For information about enabling or disabling a module, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).

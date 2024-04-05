@@ -1,6 +1,6 @@
 ---
 title: ScalableCheckout
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 Magento\ScalableCheckout module provides ability for system extension (Checkout can be configured to work with separate DataBase).

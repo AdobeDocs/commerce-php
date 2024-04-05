@@ -1,23 +1,22 @@
 ---
 title: AdminAdobeIms
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 # Magento_Admin_Adobe_Ims module
 
 The Magento_Admin_Adobe_Ims module contains integration with Adobe IMS for backend authentication.
 
-For information about module installation in Magento 2, see [Enable or disable modules](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-enable.html).
+For information about module installation, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
 
-# CLI command usage:
+## CLI command usage
 
-## bin/magento admin:adobe-ims:enable
+### bin/magento admin:adobe-ims:enable
 
 Enables the AdminAdobeIMS Module. \
 Required values are `Organization ID`, `Client ID`, `Client Secret` and `2FA enabled`
 
 ### Argument Validation
-
 On enabling the AdminAdobeIMS Module, the input arguments will be validated. \
 The pattern for the validation are configured in the di.xml
 
@@ -32,22 +31,22 @@ The pattern for the validation are configured in the di.xml
 </type>
 ```
 
-We check if the arguments are not empty, as they are all required.
+We check if the arguments are not empty, as they are all required. 
 
 For the Organization ID, Client ID and Client Secret, we check if they contain only alphanumeric characters. \
 Additionally for the Organization ID, we check if it matches 24 characters and optional has the suffix `@AdobeOrg`. But we only store the ID and ignore the suffix.
 Also make sure 2FA is enabled for the Organization in Adobe Admin Console.
 
-## bin/magento admin:adobe-ims:disable
+### bin/magento admin:adobe-ims:disable
 
 Disables the AdminAdobeIMS Module.
 When disabling, the `Organization ID`, `Client ID` and `Client Secret` values will be deleted from the config.
 
-## bin/magento admin:adobe-ims:status
+### bin/magento admin:adobe-ims:status
 
 Shows if the AdminAdobeIMS Module is enabled or disabled
 
-## bin/magento admin:adobe-ims:info
+### bin/magento admin:adobe-ims:info
 
 Example of getting data if Admin Adobe Ims module is enabled:\
 Client ID: 1234567890a \
@@ -56,7 +55,7 @@ Client Secret configured
 
 If Admin Adobe Ims module is disabled, cli command will show message "Module is disabled"
 
-# Admin Login design
+## Admin Login design
 
 The admin login design changes when the AdminAdobeIms module is enabled and configured correctly via the CLI command.
 We have added the customer layout handle `adobe_ims_login` to deal with all the design changes.
@@ -72,7 +71,7 @@ The layout file `view/adminhtml/layout/adobe_ims_login.xml` adds:
 We have included the minified css and the used svgs from Spectrum CSS with our module, but you can also use npm to install the latest versions.
 To rebuild the minified css run the command `./node_modules/.bin/postcss -o dist/index.min.css index.css` after npm install from inside the web directory.
 
-# AdminAdobeIMS Callback
+## AdminAdobeIMS Callback
 
 For the AdobeIMS Login we provide a redirect_uri on the request. After a successful Login in AdobeIMS, we get redirected to provided redirect_uri.
 
@@ -81,7 +80,7 @@ We then check if the assigned organization is valid and if the user does exist i
 
 If there went something wrong during the authorization, the user gets redirected to the admin login page and an error message is shown.
 
-# Organization ID Validation
+## Organization ID Validation
 
 During the authorization we check if the configured `Organization ID` provided on the enabling CLI command is assigned to the user.
 
@@ -89,7 +88,7 @@ In the profile response from Adobe IMS must be a `roles` array. There we have al
 
 We compare if the configured organization ID does exist in this array and also the structure of the organization ID is valid.
 
-# Admin Backend Login
+## Admin Backend Login
 
 Login with the help Adobe IMS Service is implemented. The redirect to Adobe IMS Service is performed-
 The redirect from Adobe IMS is done to \Magento\AdminAdobeIms\Controller\Adminhtml\OAuth\ImsCallback controller.
@@ -99,7 +98,7 @@ client id (api key) and client secret (private key).
 The token response access token is used for getting user profile information.
 If this is successful, the admin user will be logged in and the access tokens is added to session as well as token_last_check_time value.
 
-# ACCESS_TOKEN saving in session and validation
+## ACCESS_TOKEN saving in session and validation
 
 When AdminAdobeIms module is enabled, we check each 10 minutes if ACCESS_TOKEN is still valid.
 For this when admin user login and when session is started, we add 2 extra variables to the session:
@@ -111,14 +110,14 @@ If yes, then we make call to IMS to validate access_token.
 If token is valid, value token_last_check_time will be updated to current time and session prolong.
 If token is not valid, session will be destroyed.
 
-# Admin Backend Logout
+## Admin Backend Logout
 
 The logout from Adobe IMS Service is performed when Magento Admin User is logged out.
 It's triggered by the event `controller_action_predispatch_adminhtml_auth_logout`
 
 We do external LogOut by call to IMS. Session revoke is standard Magento behavior
 
-# Admin Created Email
+## Admin Created Email
 
 We created an Observer for the `admin_user_save_after` event. \
 There we check if the customer object is newly created or not. \
@@ -129,7 +128,7 @@ They are called `admin_adobe_ims_email_header_template` and `admin_adobe_ims_ema
 
 The notification mail will be sent inside our `AdminNotificationService` where we can add and modify the template variables.
 
-# Error Handling
+## Error Handling
 
 For the AdminAdobeIms Module we have two specific error messages and one general error message which are shown on the Admin Login page when an error occured.
 
@@ -151,7 +150,7 @@ Errors are logged into the `/var/log/admin_adobe_ims.log` file.
 Logging can be enabled or disabled in the config on changing the value for `adobe_ims\integration\logging_enabled` or in the Magento Admin Configuration under `Advanced > Developer > Debug`. \
 There you can switch the toggle for `Enable Logging for Admin Adobe IMS Module`
 
-# Password usage in Admin UI
+## Password usage in Admin UI
 
 When the AdobeAdminIMS Module is enabled, we do not need any password fields in the Magento admin backend anymore.
 
@@ -174,7 +173,7 @@ This can be found in the `\Magento\AdminAdobeIms\Plugin\DisableForcedPasswordCha
 When the AdminAdobeIMS Module is disabled, the user can not be log in when using an empty password.
 Instead, the forgot password function must be used to reset the password.
 
-# WEB API authentication using IMS ACCESS_TOKEN
+## WEB API authentication using IMS ACCESS_TOKEN
 
 When Admin Adobe IMS is enabled, Adobe Commerce admin users will stop having credentials (username and password).
 These admin user credentials are needed for getting token that can be used to make requests to admin web APIs.
@@ -198,7 +197,7 @@ Magento has setting: Stores > Settings > Configuration > Services > OAuth > Acce
 Both of values are checked in function isTokenExpired \Magento\AdminAdobeIms\Model\TokenReader.
 it means that with default values is not possible to use tokens that older than 4h.
 
-### IMS access token verification.
+### IMS access token verification
 
 To verify token a public key is required.
 In Admin Adobe Ims module was defined path where certificate has to be downloaded from.
@@ -225,7 +224,7 @@ Examples, how developers can test functionality:
 curl -X GET "{domain}/rest/V1/customers/2" -H "Authorization: Bearer AddAdobeImsAccessToken"
 curl -X GET "{domain}/rest/V1/products/24-MB01" -H "Authorization: Bearer AddAdobeImsAccessToken"
 
-### Two-factor authentication.
+### Two-factor authentication
 
 During CLI enablement of the module, the admin user is asked, whether 2FA is enabled for Organization in Adobe Admin Console.
 If the answer is yes, Magento TFA module (if it's present in the code base), should be disable.
@@ -233,7 +232,7 @@ If the answer is yes, Magento TFA module (if it's present in the code base), sho
 For this purpose the additional config value was added, this config value is read by Magento_TwoFactorAuth module.
 If the config value is not there, the Magento_TwoFactorAuth functionality works by default.
 
-# Updated Current User Identity Verification
+## Updated Current User Identity Verification
 
 The AdobeAdminIms Module updates the handling of the current user identity verification.
 
@@ -244,7 +243,7 @@ By clicking on this button a popup opens with the AdobeIms Login, where the curr
 After successfully validate his identity, we are redirecting to the `Magento/AdminAdobeIms/Controller/Adminhtml/OAuth/ImsReauthCallback.php` Controller and update the `ims_verified` field.
 
 When the form will be submitted, we verify the identity with the `Magento/AdminAdobeIms/Plugin/ReplaceVerifyIdentityWithImsPlugin.php` Plugin.
-Here the existens of the `AdobeAccessToken` and `AdobeReAuthToken` will be checked.
+Here the existence of the `AdobeAccessToken` and `AdobeReAuthToken` will be checked.
 The reauth_token will be used to call the AdobeIms validateToken Endpoint.
 
 When this call is successful, the form will be submitted, otherwise we update the Message of the thrown `AuthenticationException` to return a matching error message, done by the `Magento/AdminAdobeIms/Plugin/PerformIdentityCheckMessagePlugin.php` Plugin.

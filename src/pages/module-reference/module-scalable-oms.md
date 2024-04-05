@@ -1,6 +1,6 @@
 ---
 title: ScalableOms
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 Magento\ScalableOms (Order Management System) module provides ability for system extension

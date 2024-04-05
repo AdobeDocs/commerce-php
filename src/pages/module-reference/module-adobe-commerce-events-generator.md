@@ -1,6 +1,6 @@
 ---
 title: AdobeCommerceEventsGenerator
-description: README.md contents of the module from the source code
+description: Module for generating plugins based on subscribed events
 ---
 
 # Adobe Commerce module generator for events emitting

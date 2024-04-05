@@ -1,6 +1,6 @@
 ---
 title: GiftRegistry
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 Magento\GiftRegistry module that allows to create sets of gifts specified for specific holiday(Birthday, Wedding, etc).

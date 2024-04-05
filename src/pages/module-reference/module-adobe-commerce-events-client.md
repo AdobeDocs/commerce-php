@@ -1,11 +1,13 @@
 ---
 title: AdobeCommerceEventsClient
-description: README.md contents of the module from the source code
+description: Adobe Commerce I/O event client
 ---
+
+# Magento_AdobeCommerceEventsClient
 
 `Magento_AdobeCommerceEventsClient` provides the ability to manage subscriptions to commerce events and supports the publishing of event data for subscribed events to a specified service.
 
-### Local development
+## Local development
 
 For development purposes this package can be added to Magento `composer.json` as a local dependency:
 
@@ -27,7 +29,7 @@ And in the `require` section:
 "magento/module-adobe-commerce-events-client": "*"
 ```
 
-### Admin panel configuration
+## Admin panel configuration
 
 After adding this package to Magento, the following changes should be made in the admin panel (navigate to Stores > Settings > Configuration > Adobe Services > Adobe I/O Events > Commerce events):
 
@@ -46,4 +48,4 @@ This module defines the following CLI commands:
 - events:info
 - events:metadata:populate
 
-Please see [documentation](https://developer.adobe.com/commerce/events/get-started/commands/) for details on using these commands.
+For details on using these commands, refer to [Event management commands](https://developer.adobe.com/commerce/events/get-started/commands/) .

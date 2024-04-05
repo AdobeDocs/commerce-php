@@ -1,6 +1,6 @@
 ---
 title: CustomerBalance
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 The Magento_CustomerBalance module enables customers to have a non-monetary balance in store credits associated to their accounts.

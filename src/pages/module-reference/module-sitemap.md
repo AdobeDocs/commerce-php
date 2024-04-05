@@ -1,6 +1,6 @@
 ---
 title: Sitemap
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 The Sitemap module allows managing the Magento application sitemap and

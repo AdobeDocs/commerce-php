@@ -1,6 +1,6 @@
 ---
 title: QuoteGiftCardOptions
-description: README.md contents of the module from the source code
+description: Magento module provides data provider for creating buy request for gift card products
 ---
 
 # QuoteGiftCardOptions

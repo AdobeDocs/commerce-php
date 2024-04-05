@@ -1,6 +1,6 @@
 ---
 title: Securitytxt
-description: README.md contents of the module from the source code
+description: Security.txt file for Magento 2 websites
 ---
 
 # Security.txt

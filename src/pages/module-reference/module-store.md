@@ -1,6 +1,6 @@
 ---
 title: Store
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 The Store module provides one of the basic and major features of a content management system for e-commerce web

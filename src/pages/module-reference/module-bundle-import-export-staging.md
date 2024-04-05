@@ -1,6 +1,6 @@
 ---
 title: BundleImportExportStaging
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 # Magento_BundleImportExportStaging module
@@ -23,4 +23,4 @@ The Magento_BundleImportExportStaging module does not provide any specific exten
 
 ## Additional information
 
-For more Magento 2 developer documentation, see [Magento 2 Developer Documentation](https://devdocs.magento.com).
+For more Magento 2 developer documentation, see [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs/).

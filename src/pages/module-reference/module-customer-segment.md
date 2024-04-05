@@ -1,6 +1,6 @@
 ---
 title: CustomerSegment
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 The Magento_CustomerSegment module enables customer segmentation, allowing the creation of customer groups based on characteristics like shopping cart content, orders history, address, and so on.

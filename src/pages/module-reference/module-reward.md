@@ -1,6 +1,6 @@
 ---
 title: Reward
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 Magento\Reward module allows an online merchant to implement unique programs designed to enhance user experience and increase

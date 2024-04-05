@@ -1,6 +1,6 @@
 ---
 title: Bundle
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 Magento_Bundle module introduces new product type in the Magento application named Bundle Product.

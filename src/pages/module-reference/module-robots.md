@@ -1,6 +1,6 @@
 ---
 title: Robots
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 The Robots module provides the following functionalities:

@@ -1,6 +1,6 @@
 ---
 title: ReCaptchaGiftCard
-description: README.md contents of the module from the source code
+description: Google reCAPTCHA integration for Magento2 Gift Cards
 ---
 
 # Magento reCAPTCHA

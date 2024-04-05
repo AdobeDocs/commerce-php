@@ -1,6 +1,6 @@
 ---
 title: PaypalCaptcha
-description: README.md contents of the module from the source code
+description: Provides CAPTCHA validation for PayPal Payflow Pro
 ---
 
 The PayPal Captcha module provides a possibility to enable Captcha validation on Payflow Pro payment form.

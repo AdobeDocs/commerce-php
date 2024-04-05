@@ -1,6 +1,6 @@
 ---
 title: InventoryGroupedProduct
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 # InventoryGroupedProduct module
@@ -8,7 +8,7 @@ description: README.md contents of the module from the source code
 The `InventoryGroupedProduct` module integrates inventory management business logic into Magento's grouped product logic.
 
 This module is part of the new inventory infrastructure. The
-[Inventory Management overview](https://devdocs.magento.com/guides/v2.4/inventory/index.html)
+[Inventory Management overview](https://developer.adobe.com/commerce/webapi/rest/inventory/index.html)
 describes the MSI (Multi-Source Inventory) project in more detail.
 
 ## Installation details

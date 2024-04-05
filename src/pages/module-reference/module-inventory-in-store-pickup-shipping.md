@@ -1,6 +1,6 @@
 ---
 title: InventoryInStorePickupShipping
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 # InventoryInStorePickupShipping module
@@ -8,7 +8,7 @@ description: README.md contents of the module from the source code
 The `InventoryInStorePickupShipping` module provides business logic for In-Store Pickup functionality on Checkout.
 
 This module is part of the new inventory infrastructure. The
-[Inventory Management overview](https://devdocs.magento.com/guides/v2.4/inventory/index.html)
+[Inventory Management overview](https://developer.adobe.com/commerce/webapi/rest/inventory/index.html)
 describes the MSI (Multi-Source Inventory) project in more detail.
 
 ## Installation details

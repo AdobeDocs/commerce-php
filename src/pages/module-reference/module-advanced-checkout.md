@@ -1,6 +1,6 @@
 ---
 title: AdvancedCheckout
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 Magento\AdvanceCheckout extends Magento_Checkout with following functions: adding product to cart by entering SKU on

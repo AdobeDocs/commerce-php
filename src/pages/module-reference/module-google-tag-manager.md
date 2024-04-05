@@ -1,6 +1,6 @@
 ---
 title: GoogleTagManager
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 Magento_GoogleTagManager is a module for integration with Google Tag Manager service.

@@ -1,6 +1,6 @@
 ---
 title: ResourceConnections
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 Magento\ResourceConnections module adds a mechanism to segregate database connections between master and slave

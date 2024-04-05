@@ -1,6 +1,6 @@
 ---
 title: ReCaptchaMigration
-description: README.md contents of the module from the source code
+description: Google reCAPTCHA config migration for Magento2
 ---
 
 # Magento reCAPTCHA

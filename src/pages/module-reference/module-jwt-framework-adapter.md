@@ -1,6 +1,6 @@
 ---
 title: JwtFrameworkAdapter
-description: README.md contents of the module from the source code
+description: JWT Manager implementation based on jwt-framework
 ---
 
 Provides Magento\Framework\Jwt\JwtManagerInterface implementation based on jwt-framework.

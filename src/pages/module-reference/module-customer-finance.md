@@ -1,6 +1,6 @@
 ---
 title: CustomerFinance
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 The Magento\CustomerFinance module handles the import and export of the store credit and reward customer data.
