@@ -14,7 +14,7 @@ Available in [2.4.7](https://experienceleague.adobe.com/en/docs/commerce-operati
 
 The [GraphQL Application Server](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/concepts/application-server) enables Adobe Commerce to maintain state among GraphQL API requests. GraphQL Application Server, which is built on the Open Swoole extension, operates as a process with worker threads that handle request processing. By preserving a bootstrapped application state among GraphQL API requests, GraphQL Application Server enhances request handling and overall product performance. As a result, GraphQL request response time can be reduced by up to 30%.
 
-GraphQL Application Server is available for Adobe Commerce only. It is not available for Magento Open Source. You must [submit an Adobe Commerce Support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) ticket to enable GraphQL Application Server on Pro projects.
+GraphQL Application Server is available for Adobe Commerce only. It is not available for Magento Open Source. You must [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) to enable GraphQL Application Server on Pro projects.
 
 ## Challenges to consider
 
