@@ -1,11 +1,11 @@
 ---
 title: LoginAsCustomerLog
-description: 
+description: This module provides log for Login as Customer functionality.
 ---
 
 # Magento_LoginAsCustomerLog module
 
-This module provides log for Login as Customer functionality
+This module provides log for Login as Customer functionality.
 
 ## Installation
 

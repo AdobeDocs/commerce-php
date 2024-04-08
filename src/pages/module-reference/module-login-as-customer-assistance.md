@@ -1,6 +1,6 @@
 ---
 title: LoginAsCustomerAssistance
-description: 
+description: This module provides possibility to enable/disable LoginAsCustomer functionality per Customer.
 ---
 
 # Magento_LoginAsCustomerAssistance module

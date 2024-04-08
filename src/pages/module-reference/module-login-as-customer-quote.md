@@ -1,6 +1,6 @@
 ---
 title: LoginAsCustomerQuote
-description: 
+description: This module is responsible for communication between Magento_LoginAsCustomer and shopping cart state.
 ---
 
 # Magento_LoginAsCustomerQuote module

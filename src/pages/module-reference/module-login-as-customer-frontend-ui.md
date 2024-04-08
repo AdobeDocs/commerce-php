@@ -1,6 +1,6 @@
 ---
 title: LoginAsCustomerFrontendUi
-description: 
+description: This module provides UI for Storefront for Login As Customer functionality.
 ---
 
 # Magento_LoginAsCustomerFrontendUi module
