@@ -9,7 +9,7 @@ keywords:
 
 # Topics in asynchronous API
 
-The message queue system uses "topic exchange" for managing messages. More information about topics can be found [here](https://www.rabbitmq.com/tutorials/tutorial-five-python.html).
+The message queue system uses "topic exchange" for managing messages. More information about topics can be found [here](https://www.rabbitmq.com/tutorials/tutorial-five-php).
 
 Topics are usually defined in a `communication.xml` configuration file. See [Configure message queues](configuration.md#communicationxml)
 
