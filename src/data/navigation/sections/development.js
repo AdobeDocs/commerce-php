@@ -196,7 +196,7 @@ module.exports = [
       path: "/development/components/",
       pages: [
         {
-          title: "Application Server compatibility",
+          title: "GraphQL Application Server compatibility",
           path: "/development/components/app-server/",
         },
         {
