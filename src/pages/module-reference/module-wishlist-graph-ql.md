@@ -43,5 +43,5 @@ For more information about the Magento_WishlistGraphQl queries and mutations see
 ### Mutations
 
 - [`addProductsToWishlist`](https://developer.adobe.com/commerce/webapi/graphql/schema/wishlist/mutations/add-products/)
-- [`removeProductsFromWishlist`](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/remove-products-from-wishlist/)
-- [`updateProductsInWishlist`](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/update-products-in-wishlist/)
+- [`removeProductsFromWishlist`](https://developer.adobe.com/commerce/webapi/graphql/schema/wishlist/mutations/remove-products/)
+- [`updateProductsInWishlist`](https://developer.adobe.com/commerce/webapi/graphql/schema/wishlist/mutations/update-products/)
