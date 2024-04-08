@@ -1,8 +1,8 @@
 ---
 title: CatalogAnalytics
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 # Magento_CatalogAnalytics module
 
-The Magento_CatalogAnalytics module configures data definitions for a data collection related to the Catalog module entities to be used in [Advanced Reporting](https://devdocs.magento.com/guides/v2.4/advanced-reporting/modules.html).
+The Magento_CatalogAnalytics module configures data definitions for a data collection related to the Catalog module entities to be used in [Advanced Reporting](https://developer.adobe.com/commerce/php/development/advanced-reporting/modules/).

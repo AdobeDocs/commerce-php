@@ -1,6 +1,6 @@
 ---
 title: ReCaptchaCheckoutSalesRule
-description: README.md contents of the module from the source code
+description: Google ReCaptcha integration for Magento2 coupons
 ---
 
 Magento reCAPTCHA

@@ -1,6 +1,6 @@
 ---
 title: InventoryGraphQl
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 # InventoryGraphQl module
@@ -9,7 +9,7 @@ The `InventoryGraphQl` provides type information for the GraphQl module
                        to generate inventory stock fields for product information endpoints.
 
 This module is part of the new inventory infrastructure. The
-[Inventory Management overview](https://devdocs.magento.com/guides/v2.4/inventory/index.html)
+[Inventory Management overview](https://developer.adobe.com/commerce/webapi/rest/inventory/index.html)
 describes the MSI (Multi-Source Inventory) project in more detail.
 
 ## Installation details

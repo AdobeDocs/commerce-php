@@ -1,6 +1,6 @@
 ---
 title: PageBuilder
-description: README.md contents of the module from the source code
+description: Page Builder module
 ---
 
 # Magento_PageBuilder module

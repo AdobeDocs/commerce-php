@@ -1,6 +1,6 @@
 ---
 title: Shipping
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 The Magento_Shipping module provides the abstract models and interfaces for a shipping carrier integration, including the web interface for the Shipment entity.

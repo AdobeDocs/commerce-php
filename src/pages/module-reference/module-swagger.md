@@ -1,6 +1,6 @@
 ---
 title: Swagger
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 The Magento_Swagger module provides access to a page generated using the swagger-ui package. The swagger-ui can be viewed

@@ -1,6 +1,6 @@
 ---
 title: LoginAsCustomerLogging
-description: README.md contents of the module from the source code
+description: Log logged in as customer admin actions.
 ---
 
 # Magento_LoginAsCustomerLogging module

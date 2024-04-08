@@ -1,6 +1,6 @@
 ---
 title: PromotionPermissions
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 Magento\PromotionPermission module provides the possibility to an admin user to manage access of promotions and product

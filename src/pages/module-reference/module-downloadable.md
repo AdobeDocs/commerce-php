@@ -1,6 +1,6 @@
 ---
 title: Downloadable
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 Magento_Downloadable module introduces new product type in the Magento application called Downloadable Product.

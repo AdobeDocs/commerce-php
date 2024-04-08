@@ -1,6 +1,6 @@
 ---
 title: CacheInvalidate
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 The CacheInvalidate module is used to invalidate the Varnish cache if it is configured.

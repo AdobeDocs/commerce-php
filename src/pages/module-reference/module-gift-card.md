@@ -1,6 +1,6 @@
 ---
 title: GiftCard
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 Magento_GiftCard module introduces new product type in the Magento application called GiftCard Product.

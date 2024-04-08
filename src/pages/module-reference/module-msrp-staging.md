@@ -1,6 +1,6 @@
 ---
 title: MsrpStaging
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 # Magento_MsrpStaging module
@@ -20,4 +20,4 @@ You can find the list of modules that have dependencies on the Magento_MsrpStagi
 
 ## Extension points
 
-[The Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html) enables you to override the functionality of the Magento_MsrpStaging module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_MsrpStaging module.

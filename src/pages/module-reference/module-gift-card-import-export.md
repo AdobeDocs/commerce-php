@@ -1,6 +1,6 @@
 ---
 title: GiftCardImportExport
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 Magento_GiftCardImportExport module introduces import and export form GiftCard Product.

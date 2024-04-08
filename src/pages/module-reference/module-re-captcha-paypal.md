@@ -1,6 +1,6 @@
 ---
 title: ReCaptchaPaypal
-description: README.md contents of the module from the source code
+description: Google reCaptcha integration for Magento2 PayPal PayflowPro payment form
 ---
 
 # Magento reCAPTCHA

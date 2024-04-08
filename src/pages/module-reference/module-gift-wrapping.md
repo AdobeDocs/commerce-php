@@ -1,6 +1,6 @@
 ---
 title: GiftWrapping
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 Magento\GiftWrapping module  provides functionality that allows customer to add gift wrapping to the items purchased

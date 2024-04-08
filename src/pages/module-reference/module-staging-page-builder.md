@@ -1,6 +1,6 @@
 ---
 title: StagingPageBuilder
-description: README.md contents of the module from the source code
+description: Staging Page Builder module
 ---
 
 # Magento_StagingPageBuilder module
