@@ -54,7 +54,7 @@ You can get more information about [GraphQl In Magento 2](https://developer.adob
   [Learn more about removeCouponFromCart mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/remove-coupon/).
 
 - `updateCartItems` mutation - allows you to modify items in the specified cart.
-  [Learn more about updateCartItems mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/update-cart-items/).
+  [Learn more about updateCartItems mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/update-items/).
 
 - `removeItemFromCart` mutation - deletes the entire quantity of a specified item from the cart.
   [Learn more about removeItemFromCart mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/remove-item/).
@@ -78,7 +78,7 @@ You can get more information about [GraphQl In Magento 2](https://developer.adob
   [Learn more about setPaymentMethodAndPlaceOrder mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/set-payment-place-order/).
 
 - `mergeCarts` mutation - transfers the contents of a guest cart into the cart of a logged-in customer.
-  [Learn more about mergeCarts mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/merge-carts/).
+  [Learn more about mergeCarts mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/merge/).
 
 - `placeOrder` mutation - converts the cart into an order and returns an order ID.
   [Learn more about placeOrder mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/place-order/).
