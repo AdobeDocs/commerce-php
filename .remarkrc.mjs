@@ -28,7 +28,8 @@ const remarkConfig = {
 					"https://www.php.net",
 					"https://cardinalcommerce.com/",
 					"https://www.cyberciti.biz",
-					"https://eat.magento.com"
+					"https://eat.magento.com",
+					"https://developer.ups.com"
 				],
 				skipOffline: "true"
 			}
