@@ -23,3 +23,4 @@ Topics in this section include:
 -  [**Non-secure functions**](non-secure-functions.md)—Avoid using PHP functions in components that are known to be vulnerable and exploitable.
 -  [**Sensitive information**](sensitive-information.md)—Prevent components from exposing sensitive information, like customer passwords, addresses, and dates of birth
 -  [**Server-side request forgery**](server-side-request-forgery.md)—Follow these strategies to prevent server-site request forgery (CSRF) vulnerabilities in components.
+-  [**Subresource integrity**](subresource-integrity.md)— Security feature that enables browsers to verify the resources that they fetch.

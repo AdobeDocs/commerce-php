@@ -1,6 +1,6 @@
 ---
 title: Logging
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 The Logging module is used for logging actions done in the backend by administrators. Information such as time of action, type of action and administrator who performed the action is recorded.

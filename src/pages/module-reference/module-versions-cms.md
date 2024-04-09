@@ -1,6 +1,6 @@
 ---
 title: VersionsCms
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 The Versions CMS module adds a hierarchy feature for CMS pages.

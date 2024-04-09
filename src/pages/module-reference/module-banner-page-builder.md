@@ -1,6 +1,6 @@
 ---
 title: BannerPageBuilder
-description: README.md contents of the module from the source code
+description: Banner Page Builder module
 ---
 
 # Magento_BannerPageBuilder module

@@ -196,7 +196,7 @@ module.exports = [
       path: "/development/components/",
       pages: [
         {
-          title: "Application Server compatibility",
+          title: "GraphQL Application Server compatibility",
           path: "/development/components/app-server/",
         },
         {
@@ -620,6 +620,10 @@ module.exports = [
         {
           title: "Server-side request forgery prevention",
           path: "/development/security/server-side-request-forgery/",
+        },
+        {
+          title: "Subresource Integrity",
+          path: "/development/security/subresource-integrity/",
         },
       ],
     },

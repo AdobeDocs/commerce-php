@@ -1,6 +1,6 @@
 ---
 title: PageBuilderAdminAnalytics
-description: README.md contents of the module from the source code
+description: Page Builder Admin Analytics module
 ---
 
 # Magento_PageBuilderAdminAnalytics module

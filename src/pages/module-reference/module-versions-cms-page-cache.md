@@ -1,8 +1,8 @@
 ---
 title: VersionsCmsPageCache
-description: README.md contents of the module from the source code
+description: This module provides adaptation to PageCache functionality.
 ---
 
 # VersionsCmsPageCache module
 
-The Magento_VersionsCmsPageCache module provides adaptation to PageCache functionality
+The Magento_VersionsCmsPageCache module provides adaptation to PageCache functionality.

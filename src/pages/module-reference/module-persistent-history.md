@@ -1,6 +1,6 @@
 ---
 title: PersistentHistory
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 Magento\PersistentHistory module extends functionality of Magento\Persistent by providing ability to keep track of

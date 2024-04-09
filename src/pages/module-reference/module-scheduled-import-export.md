@@ -1,6 +1,6 @@
 ---
 title: ScheduledImportExport
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 Magento_ScheduledImportExport functionality allows to simplify routine of importing and/or exporting data in the store by automating this process.

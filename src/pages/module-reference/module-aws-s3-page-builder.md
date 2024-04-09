@@ -1,6 +1,6 @@
 ---
 title: AwsS3PageBuilder
-description: README.md contents of the module from the source code
+description: Aws S3 Page Builder module
 ---
 
 # Magento_AwsS3PageBuilder module

@@ -1,6 +1,6 @@
 ---
 title: SalesInventory
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 Magento_SalesInventory module allows retrieve and update stock attributes related to Magento_Sales, such as status and quantity.

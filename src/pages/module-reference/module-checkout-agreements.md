@@ -1,6 +1,6 @@
 ---
 title: CheckoutAgreements
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 Magento\CheckoutAgreements module provides the ability add web store agreement that customers must accept before purchasing

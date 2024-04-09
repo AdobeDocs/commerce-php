@@ -1,6 +1,6 @@
 ---
 title: SalesRuleStaging
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 # Magento_SalesRuleStaging module
@@ -34,10 +34,10 @@ You can find the list of modules that have dependencies with the Magento_SalesRu
 
 Extension points enable extension developers to interact with the Magento_SalesRuleStaging. However, the Magento_SalesRuleStaging module does not provide any specific extension points.
 
-For more information about Magento extension mechanism, see [Magento plug-ins](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html).
+For more information about Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
 
-[Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html) enables you to override the functionality of the Magento_SalesRuleStaging module.
+[Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_SalesRuleStaging module.
 
 ## Additional information
 
-For more Magento 2 developer documentation, see [Magento 2 Developer Documentation](https://devdocs.magento.com).
+For more Magento 2 developer documentation, see [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs/).

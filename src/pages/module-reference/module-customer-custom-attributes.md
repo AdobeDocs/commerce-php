@@ -1,6 +1,6 @@
 ---
 title: CustomerCustomAttributes
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 The Magento_CustomerCustomAttributes module handles user-defined customer and customer address attributes.

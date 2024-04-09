@@ -1,6 +1,6 @@
 ---
 title: OrderHistorySearch
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 # Magento_OrderHistorySearch

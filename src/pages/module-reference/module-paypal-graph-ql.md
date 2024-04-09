@@ -1,6 +1,6 @@
 ---
 title: PaypalGraphQl
-description: README.md contents of the module from the source code
+description: GraphQl support for Paypal
 ---
 
 # PaypalGraphQl

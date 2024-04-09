@@ -1,6 +1,6 @@
 ---
 title: PageCache
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 The PageCache module provides functionality of caching full pages content in Magento application. An administrator may switch between built-in caching and Varnish caching. Built-in caching is default and ready to use without the need of any external tools.

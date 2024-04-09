@@ -1,6 +1,6 @@
 ---
 title: ReleaseNotification
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 # Magento_ReleaseNotification module
@@ -13,13 +13,13 @@ The Magento_ReleaseNotification module creates the `release_notification_viewer_
 
 All database schema changes made by this module are rolled back when the module gets disabled and setup:upgrade command is run.
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-enable.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
 
 ## Extensibility
 
-Extension developers can interact with the Magento_ReleaseNotification module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html).
+Extension developers can interact with the Magento_ReleaseNotification module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
 
-[The Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html) enables you to override the functionality of the Magento_ReleaseNotification module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_ReleaseNotification module.
 
 ### UI components
 
@@ -27,7 +27,7 @@ You can extend release notification updates using the configuration files locate
 
 - `release_notification`
 
-For information about a UI component in Magento 2, see [Overview of UI components](http://devdocs.magento.com/guides/v2.4/ui_comp_guide/bk-ui_comps.html).
+For information about a UI component in Magento 2, see [Overview of UI components](https://developer.adobe.com/commerce/frontend-core/ui-components/).
 
 ## Additional information
 
@@ -79,4 +79,4 @@ A clickable link to internal or external content in any text field will be creat
 
 #### Link Format Example:
 
-The text: `https://devdocs.magento.com/ [Magento DevDocs].` will appear as [Magento DevDocs](https://devdocs.magento.com/).
+The text: `https://developer.adobe.com/commerce/docs/ [Adobe Commerce Developer Documentation].` will appear as [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs/).

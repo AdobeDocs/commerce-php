@@ -1,6 +1,6 @@
 ---
 title: Reports
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 Magento_Reports module provides ability to collect various reports such as:

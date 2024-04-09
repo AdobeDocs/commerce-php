@@ -1,6 +1,6 @@
 ---
 title: ReCaptchaInvitation
-description: README.md contents of the module from the source code
+description: Google reCAPTCHA for Invitation Module
 ---
 
 # Magento reCAPTCHA

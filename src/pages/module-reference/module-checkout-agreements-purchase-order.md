@@ -1,6 +1,6 @@
 ---
 title: CheckoutAgreementsPurchaseOrder
-description: README.md contents of the module from the source code
+description: B2B Purchase order and checkout agreements linking module
 ---
 
 # CheckoutAgreementsPurchaseOrder

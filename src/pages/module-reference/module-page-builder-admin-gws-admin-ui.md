@@ -1,6 +1,6 @@
 ---
 title: PageBuilderAdminGwsAdminUi
-description: README.md contents of the module from the source code
+description: Page Builder AdminGWS Admin UI module
 ---
 
 # Magento_PageBuilderAdminGwsAdminUi module

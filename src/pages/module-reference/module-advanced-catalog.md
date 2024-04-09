@@ -1,6 +1,6 @@
 ---
 title: AdvancedCatalog
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 Magento\AdvancedCatalog module introduces list of optimizations to allow higher concurrency on product management

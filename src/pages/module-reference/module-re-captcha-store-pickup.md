@@ -1,6 +1,6 @@
 ---
 title: ReCaptchaStorePickup
-description: README.md contents of the module from the source code
+description: Google reCaptcha integration for Magento2 Inventory Store Pickup shipping form
 ---
 
 # Magento reCAPTCHA

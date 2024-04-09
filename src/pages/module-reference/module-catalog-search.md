@@ -1,6 +1,6 @@
 ---
 title: CatalogSearch
-description: README.md contents of the module from the source code
+description: Catalog search
 ---
 
 Magento_CatalogSearch module is an extension of Magento_Catalog module that allows to use search engine for product searching capabilities.

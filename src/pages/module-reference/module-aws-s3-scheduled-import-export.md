@@ -1,6 +1,6 @@
 ---
 title: AwsS3ScheduledImportExport
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 # Magento_AwsS3ScheduledImportExport module

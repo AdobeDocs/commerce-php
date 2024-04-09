@@ -1,6 +1,6 @@
 ---
 title: BundleImportExport
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 Magento_BundleImportExport module implements Bundle products import/export functionality.

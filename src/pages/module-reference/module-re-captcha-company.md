@@ -1,6 +1,6 @@
 ---
 title: ReCaptchaCompany
-description: README.md contents of the module from the source code
+description: Google reCAPTCHA integration for Magento2
 ---
 
 Please refer to: https://github.com/magento/security-package-b2b

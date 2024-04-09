@@ -1,6 +1,6 @@
 ---
 title: VisualMerchandiser
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 Create and merchandise categories quickly and easily with Visual Merchandiser for Magento.

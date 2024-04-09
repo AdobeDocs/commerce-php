@@ -1,6 +1,6 @@
 ---
 title: WishlistGiftCard
-description: README.md contents of the module from the source code
+description: Magento module provides the data provider for creating buy request for gift card products
 ---
 
 # WishlistGiftCard
