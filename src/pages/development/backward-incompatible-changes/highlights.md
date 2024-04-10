@@ -177,7 +177,7 @@ The following module is affected by this change:
 
 ### New system configuration validation for Two Factor Authentication `otp_window` value
 
-The `spomky-labs/otphp` library was updated which introduced a new validation requirement for supplying custom `otp_window` values. This configuration setting controls the grace period (in number of seconds) that is allowed for an expired one-time-password (OTP) to be used before it is denied. Previously, the library allowed any number of seconds to be specified. Now the value cannot be higher than the lifetime of a single OTP (usually 30 seconds).  This change means that the configuration value must be changed if it is set to 30 or higher.
+The `spomky-labs/otphp` library was updated which introduced a new validation requirement for supplying custom `otp_window` values. This configuration setting controls the grace period (in number of seconds) that is allowed for an expired one-time-password (OTP) to be used before it is denied. Previously, the library allowed any number of seconds to be specified. Now, the value cannot be higher than the lifetime of a single OTP (usually 30 seconds). This change means that the configuration value must be changed if it is set to 30 or higher.
 
 If your Commerce application is affected by this change, admin users might see the following message when they log in:  `There was an internal error trying to verify your code`. You can confirm the cause of the error by checking the `system.log` file in `var/log` for an entry `main.ERROR: The leeway must be lower than the TOTP period`.
 
