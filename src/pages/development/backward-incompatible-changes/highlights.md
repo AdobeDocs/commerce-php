@@ -179,9 +179,9 @@ The following module is affected by this change:
 
 The `spomky-labs/otphp` library was updated which introduced a new validation requirement for supplying custom `otp_window` values. This configuration setting controls the grace period (in number of seconds) that is allowed for an expired one-time-password (OTP) to be used before it is denied. Previously, the library allowed any number of seconds to be specified. Now, the value cannot be higher than the lifetime of a single OTP (usually 30 seconds). This change means that the configuration value must be changed if it is set to 30 or higher.
 
-If your Commerce application is affected by this change, admin users might see the following message when they log in:  `There was an internal error trying to verify your code`. You can confirm the cause of the error by checking the `system.log` file in `var/log` for an entry `main.ERROR: The leeway must be lower than the TOTP period`.
+If your Commerce application is affected by this change, admin users might see the following message when they log in: `There was an internal error trying to verify your code`. You can confirm the cause of the error by checking the `system.log` file in `var/log` for an entry `main.ERROR: The leeway must be lower than the TOTP period`.
 
-To fix this issue, change the value of the configuration path `twofactorauth/google/otp_window` to be shorter than the TOTP period which is usually 30 seconds. For example, you can reset it to the default value of `1` with the command `bin/magento twofactorauth/google/otp_window 1`. You might need to flush the cache to apply the updated configuration. 
+To fix this issue, change the value of the configuration path `twofactorauth/google/otp_window` to be shorter than the TOTP period which is usually 30 seconds. For example, you can reset it to the default value of `1` with the command `bin/magento twofactorauth/google/otp_window 1`. You might need to flush the cache to apply the updated configuration.
 
 ## 2.4.6
 
