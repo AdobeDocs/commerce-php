@@ -27,6 +27,7 @@ The following major backward-incompatible changes were introduced in the 2.4.7 A
 * New system configuration for full-page caching
 * New system configuration for limiting coupon generation
 * New system configuration for payment information rate limiting
+* New system configuration validation for Two Factor Authentication `otp_window` value
 
 ### API integration: FedEx SOAP
 
@@ -173,6 +174,14 @@ No action for merchants or extension developers is necessary.
 The following module is affected by this change:
 
 * [Magento_Quote](https://developer.adobe.com/commerce/php/module-reference/module-quote/)
+
+### New system configuration validation for Two Factor Authentication `otp_window` value
+
+The updated`spomky-labs/otphp` library introduced a new validation requirement for supplying custom `otp_window` values. This configuration setting controls how long (in seconds) the system accepts an administrator's one-time-password (OTP) after it has expired. Previously, the library allowed any number of seconds to be specified. Now, the value cannot be higher than the lifetime of a single OTP (usually 30 seconds). You must update this value if it is currently set to 30 or higher.
+
+If your Commerce application is affected by this change, admin users might see the following message when they log in: `There was an internal error trying to verify your code`. You can confirm the cause of the error by checking the `system.log` file in `var/log` for an entry `main.ERROR: The leeway must be lower than the TOTP period`.
+
+To fix this issue, change the value of the configuration path `twofactorauth/google/otp_window` to be shorter than the TOTP period, which is usually 30 seconds. For example, you can reset it to 29 seconds using the `bin/magento config:set twofactorauth/google/otp_window 29` command. You might need to flush the cache to apply the updated configuration.
 
 ## 2.4.6
 
