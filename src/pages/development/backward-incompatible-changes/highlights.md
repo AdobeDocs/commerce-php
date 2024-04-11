@@ -181,7 +181,7 @@ The `spomky-labs/otphp` library was updated which introduced a new validation re
 
 If your Commerce application is affected by this change, admin users might see the following message when they log in: `There was an internal error trying to verify your code`. You can confirm the cause of the error by checking the `system.log` file in `var/log` for an entry `main.ERROR: The leeway must be lower than the TOTP period`.
 
-To fix this issue, change the value of the configuration path `twofactorauth/google/otp_window` to be shorter than the TOTP period which is usually 30 seconds. For example, you can reset it to the default value of `1` with the command `bin/magento twofactorauth/google/otp_window 1`. You might need to flush the cache to apply the updated configuration.
+To fix this issue, change the value of the configuration path `twofactorauth/google/otp_window` to be shorter than the TOTP period which is usually 30 seconds. For example, you can reset it to the default value of `1` with the command `bin/magento config:set twofactorauth/google/otp_window 1`. You might need to flush the cache to apply the updated configuration.
 
 ## 2.4.6
 
