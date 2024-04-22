@@ -522,7 +522,10 @@ You need to read configuration from different sources (like database or filesyst
 
 6.2.5 Blocks MUST NOT assume that a specific, or any, controller has been invoked for current request.
 
-6.2.6 Templates MUST NOT instantiate objects. All objects MUST be passed from the block.
+6.2.6 Templates MUST NOT instantiate objects. All objects MUST be passed from the Block object.
+This way, the template remains stateless and its sole responsibility is to display the data it receives from the Block object.
+This approach promotes a clear separation of concerns, improves testability, and makes the code more modular and easier to maintain.
+It also ensures that the template does not have unexpected side effects, as it is not responsible for creating objects or managing their lifecycle.
 
 ### 6.3. Data Access (Persistence) layer
 
