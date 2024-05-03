@@ -13,7 +13,7 @@ For general New Relic PHP configuration information, see https://docs.newrelic.c
 To configure this module, edit app/etc/env.php
 Add these lines.
 
-```php
+```
 'application' => [
     'performance_monitor' => [
         'newrelic_output_enable' => 1,
@@ -21,7 +21,6 @@ Add these lines.
     ]
 ]
 ```
-
 Use 0 or 1 as the value to enable or disable.
 `newrelic_output_enable` defaults to 1, and `newrelic_output_verbose` defaults to 0.
 

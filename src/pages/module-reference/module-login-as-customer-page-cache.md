@@ -1,6 +1,6 @@
 ---
 title: LoginAsCustomerPageCache
-description: This module provides adaptation to PageCache functionality for Login as Customer functionality.
+description: 
 ---
 
 # Magento_LoginAsCustomerPageCache module

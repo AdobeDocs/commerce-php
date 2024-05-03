@@ -10,7 +10,7 @@ Monitors the Performance of the Application
 To configure, edit app/etc/env.php
 Add these lines.
 
-```php
+```
 'application' => [
     'performance_monitor' => [
         'logger_output_enable' => 1,
@@ -26,8 +26,7 @@ The option `logger_output_enable` enables outputting performance metrics to the 
 The option `logger_output_verbose` adds additional metrics.
 
 Example output in log file without verbose:
-
-```log
+```
 [2023-10-04T20:48:23.727037+00:00] report.ERROR: "Profile information": {
         "applicationClass":     "Magento\ApplicationServer\App\Application\Interceptor",
         "applicationServer":    "1",
@@ -42,8 +41,7 @@ Example output in log file without verbose:
 ```
 
 Example output in log file with verbose:
-
-```log
+```
 [2023-10-04T20:55:31.174304+00:00] report.ERROR: "Profile information": {
         "applicationClass":     "Magento\ApplicationServer\App\Application\Interceptor",
         "applicationServer":    "1",

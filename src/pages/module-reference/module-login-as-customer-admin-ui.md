@@ -1,6 +1,6 @@
 ---
 title: LoginAsCustomerAdminUi
-description: This module provides UI for Admin Panel for Login As Customer functionality.
+description: 
 ---
 
 # Magento_LoginAsCustomerAdminUi module

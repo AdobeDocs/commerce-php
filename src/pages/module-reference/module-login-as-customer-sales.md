@@ -1,6 +1,6 @@
 ---
 title: LoginAsCustomerSales
-description: This module is responsible for communication between Magento_LoginAsCustomer and order placement.
+description: 
 ---
 
 # Magento_LoginAsCustomerSales module
