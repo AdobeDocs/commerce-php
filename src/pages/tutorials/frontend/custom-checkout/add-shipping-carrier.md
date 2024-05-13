@@ -200,9 +200,9 @@ use Psr\Log\LoggerInterface;
 
 class Customshipping extends AbstractCarrier implements CarrierInterface
 {
-    protected string $_code = 'customshipping';
+    protected $_code = 'customshipping';
 
-    protected bool $_isFixed = true;
+    protected $_isFixed = true;
 
     private ResultFactory $rateResultFactory;
 
