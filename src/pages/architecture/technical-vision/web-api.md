@@ -43,7 +43,7 @@ See the [GraphQL documentation](https://devdocs.magento.com/guides/v2.4/graphql/
 ### Add a custom authentication mechanism
 
 1. Provide a custom implementation of `\Magento\Authorization\Model\UserContextInterface` that verifies a user's identity using a  custom authentication mechanism.
-1. Declare custom user context in the composite user context for the target area(s) (`webapi_rest`, `webapi_soap`, `webapi_graphql`) :
+1. Declare custom user context in the composite user context for the target area(s) (`webapi_rest`, `webapi_soap`, `graphql`) :
 
 ```xml
 <type name="Magento\Authorization\Model\CompositeUserContext">
