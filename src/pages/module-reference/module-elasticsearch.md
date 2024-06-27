@@ -36,3 +36,6 @@ More information about ElasticSearch are at articles:
 - [Installation Guide/Elasticsearch](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/search-engine/overview.html).
 - [Configure and maintain Elasticsearch](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/search/overview-search.html).
 - Magento Commerce Cloud - [set up Elasticsearch service](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch.html).
+
+<InlineAlert slots="text" />
+The version of this module is 101.0.7.

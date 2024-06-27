@@ -20,3 +20,6 @@ This module is installed as part of Magento Open Source. It cannot be deleted or
 All public interfaces related to this module are located in the `InventorySourceDeductionApi` and
 `InventorySourceSelectionApi` modules.
 Use the interfaces defined in those modules to extend this module.
+
+<InlineAlert slots="text" />
+The version of this module is 1.2.4.

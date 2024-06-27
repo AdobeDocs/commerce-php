@@ -42,3 +42,6 @@ For more information about a layout in Magento 2, see the [Layout documentation]
 ## Additional information
 
 [Learn how to configure Offline Payment Methods](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#offline-payment-methods).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.5.

@@ -35,3 +35,6 @@ For more information about a layout in Magento 2, see the [Layout documentation]
 ## Additional information
 
 [Learn how to configure Google Analytics](https://experienceleague.adobe.com/docs/commerce-admin/marketing/google-tools/google-analytics.html).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.2.

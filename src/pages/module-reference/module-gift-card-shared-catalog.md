@@ -44,3 +44,6 @@ For more information, see [UI Listing/Grid Component](https://developer.adobe.co
 ## Additional information
 
 You can track [backward incompatible changes made in a Magento B2b mainline after the Magento 2.2 release](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.0.

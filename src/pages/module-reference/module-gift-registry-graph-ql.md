@@ -7,3 +7,6 @@ description: N/A
 
 **GiftCardGraphQl** provides type and resolver information for the GraphQl module
 to generate giftcard product information.
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.3.

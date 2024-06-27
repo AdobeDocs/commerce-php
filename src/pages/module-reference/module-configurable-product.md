@@ -47,3 +47,6 @@ For example, adding these lines of code to the theme view.xml file will set the 
     <var name="gallery_switch_strategy">replace</var>
 </vars>
 ```
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.7.

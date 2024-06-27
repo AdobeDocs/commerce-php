@@ -44,7 +44,7 @@ The Magento_NewRelicReporting provides console commands:
 
 - `bin/magento newrelic:create:deploy-marker <message> <change_log> [<user>]` - check the deploy queue for entries and create an appropriate deploy marker
 
-[Learn more about command's parameters](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#newreliccreatedeploy-marker).
+[Learn more about command's parameters](https://experienceleague.adobe.com/docs/commerce-operations/reference/magento-open-source.html#newreliccreatedeploy-marker).
 
 ### Cron options
 
@@ -53,3 +53,6 @@ Cron group configuration can be set at `etc/crontab.xml`:
 - `magento_newrelicreporting_cron` - runs collecting all new relic reports
 
 [Learn how to configure and run cron in Magento.](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.5.

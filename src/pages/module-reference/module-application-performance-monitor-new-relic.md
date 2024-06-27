@@ -13,7 +13,7 @@ For general New Relic PHP configuration information, see https://docs.newrelic.c
 To configure this module, edit app/etc/env.php
 Add these lines.
 
-```php
+```
 'application' => [
     'performance_monitor' => [
         'newrelic_output_enable' => 1,
@@ -21,7 +21,6 @@ Add these lines.
     ]
 ]
 ```
-
 Use 0 or 1 as the value to enable or disable.
 `newrelic_output_enable` defaults to 1, and `newrelic_output_verbose` defaults to 0.
 
@@ -29,3 +28,6 @@ The option `newrelic_output_enable` enables outputting performance metrics to Ne
 The option `newrelic_output_verbose` adds additional metrics
 
 See README.md in ApplicationPerformanceMonitor for details about what metrics are in each.
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.0.
