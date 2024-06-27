@@ -248,3 +248,6 @@ Here the existence of the `AdobeAccessToken` and `AdobeReAuthToken` will be chec
 The reauth_token will be used to call the AdobeIms validateToken Endpoint.
 
 When this call is successful, the form will be submitted, otherwise we update the Message of the thrown `AuthenticationException` to return a matching error message, done by the `Magento/AdminAdobeIms/Plugin/PerformIdentityCheckMessagePlugin.php` Plugin.
+
+<InlineAlert slots="text" />
+The version of this module is 100.5.1.

@@ -28,3 +28,6 @@ The Magento_BundleRequisitionList module does not create any backward incompatib
 You can extend and override layouts in the `Magento\BundleRequisitionList\view\frontend\layout` directories.
 
 For more information about layouts, see the [Layout documentation](https://developer.adobe.com/commerce/frontend-core/guide/layouts/).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.0.

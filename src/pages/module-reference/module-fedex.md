@@ -33,3 +33,6 @@ You can get more information about delivery method in magento at the articles:
 - [FedEx Configuration Settings](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/delivery/shipping-carriers/fedex.html)
 - [Delivery Methods Configuration](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/delivery-methods.html)
 - [Add custom shipping carrier](https://developer.adobe.com/commerce/php/tutorials/frontend/custom-checkout/add-shipping-carrier/)
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.5.

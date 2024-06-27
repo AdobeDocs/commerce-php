@@ -44,3 +44,6 @@ More information can get at articles:
 
 - [Learn how to configure Media Storage Database](https://experienceleague.adobe.com/docs/commerce-admin/content-design/media/storage/media-storage-database.html).
 - [Learn how to Resize catalog images](https://developer.adobe.com/commerce/frontend-core/guide/themes/configure/#resize-catalog-images)
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.6.

@@ -36,3 +36,6 @@ location /graphql {
 ## How to run Application Server
 
 To launch the Application Server, execute the following CLI command: `bin/magento server:run`. This will start HTTP service on 9501 port for GraphQl area
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.0.

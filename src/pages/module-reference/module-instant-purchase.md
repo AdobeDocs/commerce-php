@@ -106,3 +106,6 @@ You can track [backward incompatible changes in patch releases](https://develope
 ***
 
 This module was initially developed by the [Creatuity Corp.](https://creatuity.com/) and [Magento Community Engineering Team](mailto:engcom@magento.com).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.6.

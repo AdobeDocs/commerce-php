@@ -19,3 +19,6 @@ is provided by a 3rd-party system or if you run a headless version of Magento.
 ## Extensibility
 
 The `InventoryConfigurableProductFrontendUi` module contains several extension points.
+
+<InlineAlert slots="text" />
+The version of this module is 1.0.5.

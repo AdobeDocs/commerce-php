@@ -62,3 +62,6 @@ More information can be found in:
 
 - [Learn more about Layered Navigation](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html)
 - [Learn how to Configuring Layered Navigation](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#configure-layered-navigation)
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.7.

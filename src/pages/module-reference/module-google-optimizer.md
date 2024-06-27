@@ -59,3 +59,6 @@ This functionality can be switched on and off on the configuration page (`Stores
 Also this functionality depends on Google Analytics module and configuration options.
 
 [Learn how to configure Google Content Experiments](https://experienceleague.adobe.com/docs/commerce-admin/marketing/google-tools/google-content-experiments.html).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.6.

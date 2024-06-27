@@ -44,3 +44,6 @@ For more information about layouts in Magento 2, see the [Layout documentation](
 You can extend admin notifications using the `view/adminhtml/ui_component/notification_area.xml` configuration file.
 
 For information about UI components in Magento 2, see [Overview of UI components](https://developer.adobe.com/commerce/frontend-core/ui-components/).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.6.

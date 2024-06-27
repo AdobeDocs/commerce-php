@@ -10,3 +10,6 @@ Google reCAPTCHA ensures that a human being, rather than a computer (or â€œbotâ€
 This module provides the reCAPTCHA implementation for the V3 Invisible variation.
 
 For more information please visit the [Magento document for reCAPTCHA](https://docs.magento.com/user-guide/stores/security-google-recaptcha.html).
+
+<InlineAlert slots="text" />
+The version of this module is 2.0.4.

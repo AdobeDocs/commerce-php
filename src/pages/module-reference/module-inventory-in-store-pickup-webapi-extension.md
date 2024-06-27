@@ -21,3 +21,6 @@ Please check links for more details:
 ## Installation details
 
 This module is installed as part of Magento Open Source.
+
+<InlineAlert slots="text" />
+The version of this module is 1.1.3.

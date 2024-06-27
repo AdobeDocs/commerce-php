@@ -14,3 +14,6 @@ describes the MSI (Multi-Source Inventory) project in more detail.
 ## Installation details
 
 This module is installed as part of Magento Open Source. It cannot be deleted or disabled.
+
+<InlineAlert slots="text" />
+The version of this module is 1.2.4.

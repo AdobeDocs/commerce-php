@@ -31,3 +31,6 @@ You can get more information about [GraphQl In Magento 2](https://developer.adob
 - `customerDownloadableProducts` query - retrieve the list of purchased downloadable products for the logged-in customer
 
 [Learn more about customerDownloadableProducts query](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/downloadable-products/).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.3.

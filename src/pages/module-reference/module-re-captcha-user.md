@@ -26,3 +26,6 @@ Can disable Google reCAPTCHA for Admin panel Reset Password page from command-li
 `php bin/magento security:recaptcha:disable-for-user-forgot-password`
 
 This will disable Google reCAPTCHA for Admin panel Reset Password page form.
+
+<InlineAlert slots="text" />
+The version of this module is 1.1.4.

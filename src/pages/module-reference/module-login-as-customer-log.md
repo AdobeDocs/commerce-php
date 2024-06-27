@@ -1,11 +1,11 @@
 ---
 title: LoginAsCustomerLog
-description: This module provides log for Login as Customer functionality.
+description: LoginAsCustomerLog
 ---
 
 # Magento_LoginAsCustomerLog module
 
-This module provides log for Login as Customer functionality.
+This module provides log for Login as Customer functionality
 
 ## Installation
 
@@ -51,3 +51,6 @@ For information about a public API in Magento 2, see [Public interfaces & APIs](
 This module is a part of Login As Customer feature.
 
 [Learn more about Login As Customer feature](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer.html).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.5.

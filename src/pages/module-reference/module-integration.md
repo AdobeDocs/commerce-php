@@ -114,3 +114,6 @@ More information can get at articles:
 
 - [Learn more about an Integration](https://experienceleague.adobe.com/docs/commerce-admin/systems/integrations.html)
 - [Lear how to create an Integration](https://developer.adobe.com/commerce/webapi/get-started/create-integration/)
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.7.

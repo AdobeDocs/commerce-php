@@ -22,3 +22,6 @@ You can find the list of modules that have dependencies on the Magento_GoogleOpt
 ## Extension points
 
 [The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_GoogleOptimizerStaging module.
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.4.

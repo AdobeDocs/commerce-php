@@ -10,3 +10,6 @@ This module allows to cancel an order and specify the order cancellation reason.
 This functionality is enabled / disabled by a feature flag that is set at storeView level.
 
 After the cancellation, the customer receive an email confirming it and this cancellation is reflected in the customer's order history.
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.0.

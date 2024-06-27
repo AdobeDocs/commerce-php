@@ -90,3 +90,6 @@ You can get more information about import/export processes in magento at the art
 - [Create custom import entity](https://developer.adobe.com/commerce/php/tutorials/backend/create-custom-import-entity/)
 - [Import](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/import/data-import.html)
 - [Export](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-export.html)
+
+<InlineAlert slots="text" />
+The version of this module is 101.0.7.

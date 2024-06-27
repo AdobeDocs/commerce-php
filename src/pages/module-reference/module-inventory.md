@@ -26,3 +26,6 @@ by a 3rd-party module, the module cannot be deleted or disabled.
 Magento does not recommend using or referring to classes and other entities in the `Inventory` module. All public
 interfaces and extension points related to this module are located in the `InventoryApi` module.
 Use the interfaces and extension points defined in `InventoryApi` to extend this module.
+
+<InlineAlert slots="text" />
+The version of this module is 1.2.5.

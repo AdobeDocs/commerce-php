@@ -85,3 +85,6 @@ You can get more information about [GraphQl In Magento 2](https://developer.adob
 
 - `addProductsToCart` mutation - adds any type of product to the shopping cart.
   [Learn more about addProductsToCart mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/add-products/).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.7.

@@ -25,3 +25,6 @@ This module introduces the following layouts in the `view/adminhtml/layout` dire
 - `marketplace_partners_index`
 
 For more information about a layout in Magento 2, see the [Layout documentation](https://developer.adobe.com/commerce/frontend-core/guide/layouts/).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.5.

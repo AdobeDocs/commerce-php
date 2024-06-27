@@ -27,3 +27,6 @@ Public APIs are defined in the `Api` directory.
 ### REST endpoints
 
 The `etc/webapi.xml` file defines endpoints for assigning, unassigning, and transferring sources in bulk.
+
+<InlineAlert slots="text" />
+The version of this module is 1.3.5.

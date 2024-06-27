@@ -25,3 +25,6 @@ This module is a part of Login As Customer feature.
 [Learn more about Login As Customer feature](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer.html).
 
 You can get more information about [GraphQl In Magento 2](https://developer.adobe.com/commerce/webapi/graphql/).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.4.

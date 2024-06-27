@@ -23,3 +23,6 @@ can use to provide custom inventory reservation functionality.
 ### Public APIs
 
 Public APIs are defined in the `Model` directory.
+
+<InlineAlert slots="text" />
+The version of this module is 1.2.3.

@@ -16,3 +16,6 @@ Extension developers can interact with the Magento_AdobeStockClient module. For 
 ## Additional information
 
 For information about significant changes in patch releases, see [2.3.x Release information](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
+
+<InlineAlert slots="text" />
+The version of this module is 1.3.4.
