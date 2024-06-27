@@ -25,7 +25,7 @@ Configure Web Server to route all GraphQL requests to Application Server.
 
 Here is an example configuration for Nginx:
 
-```
+```nginx
 location /graphql {
     proxy_set_header Host $http_host;
     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
