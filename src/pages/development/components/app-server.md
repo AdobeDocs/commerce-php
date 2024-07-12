@@ -180,6 +180,7 @@ For this purpose, we should implement the following:
 ```php
 class Cache implements ResetAfterRequestInterface
 ```
+New in 2.4.8: ResetAfterRequestInterface doesn't have to be added to the class. The `_resetState()` method will be found by reflection and called as if it was implementing ResetAfterRequestInterface.  This feature was added to allow modules to be backwards compatible with previous versions < 2.4.7 which don't have this interface.
 
 Add the implementation of the `_resetState()` method with overriding `$data` property to its initial state - empty array:
 
@@ -192,3 +193,33 @@ public function _resetState(): void
     $this->data = [];
 }
 ```
+
+
+New in 2.4.8: An optional alternative to adding a _resetState method to a class has been added. Instead of adding _resetState to a class, a reset.json file may be added to a modules etc directory.  The reset.json file will define which properties of a class will be reset, and what they will be reset to after a request.
+
+This feature was added to allow modules to be backwards compatible with previous versions < 2.4.7 which don't have the ResetAfterRequestInterface interface and also for classes where new public functions cannot be added.  It also makes it possible to add reset behaviour to classes for modules that aren't under your control.
+
+Here's an example. A class `Magento\Reward\Model\Total\Quote\Reward` inherits from `Magento\Quote\Model\Quote\Address\Total\AbstractTotal`.  A reset.json file could be added to both of their modules.
+
+```
+"Magento\\Quote\\Model\\Quote\\Address\\Total\\AbstractTotal": {
+  "_code": null,
+  "_address": null,
+  "_canAddAmountToAddress": true,
+  "_canSetAddressAmount": true,
+  "_itemRowTotalKey": null,
+  "total": null
+}
+```
+
+and
+
+```
+{
+  "Magento\\Reward\\Model\\Total\\Quote\\Reward": {
+    "_code": "_code"
+  }
+}
+```
+
+Both of these reset.json definitions will be used for a Reward object, and they will be called in proper order of inheritance so that subclasses can have specializations to their reset values that get called after the base class.
