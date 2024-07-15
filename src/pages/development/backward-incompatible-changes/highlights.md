@@ -7,7 +7,7 @@ keywords:
 
 # Backward-incompatible changes highlights
 
-This page highlights backward-incompatible changes between Adobe Commerce and Magento Open Source releases that have a major impact and require detailed explanation and special instructions to ensure third-party modules continue working. High-level reference information for all backward-incompatible changes in each release is documented in [Backward-incompatible changes reference](reference.md).
+This page highlights backward-incompatible changes between Adobe Commerce and Magento Open Source releases that have a major impact and require detailed explanation and special instructions to ensure third-party modules continue working. High-level reference information for all backward-incompatible changes in each release is documented in the [reference](reference.md) section.
 
 ## 2.4.7
 
