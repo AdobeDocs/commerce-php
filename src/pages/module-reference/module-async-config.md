@@ -26,3 +26,6 @@ Alternatively, you can set the variable using the command-line interface:
 ```bash
 bin/magento setup:config:set --config-async 1
 ```
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.0.
