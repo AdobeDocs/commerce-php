@@ -37,3 +37,6 @@ You can get more information about [GraphQl In Magento 2](https://developer.adob
 
 [Learn more about customer query](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/customer/).
 [Learn more about isEmailAvailable query](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/is-email-available).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.7.

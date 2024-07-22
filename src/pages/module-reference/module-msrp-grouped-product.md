@@ -42,3 +42,6 @@ Module adds attribute `msrp` to select for the `Magento\Catalog\Model\ResourceMo
 in `Magento\MsrpGroupedProduct\Plugin\Model\Product\Type\Grouped` plugin.
 
 For information about significant changes in patch releases, see [2.4.x Release information](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.4.

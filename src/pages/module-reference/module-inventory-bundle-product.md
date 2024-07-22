@@ -18,3 +18,6 @@ This module is installed as part of Magento Open Source. It cannot be deleted or
 ## Extension points and service contracts
 
 There are no extension points or service contracts for this module.
+
+<InlineAlert slots="text" />
+The version of this module is 1.2.4.

@@ -136,3 +136,6 @@ The Magento_Msrp provides extension attributes for `Magento\Catalog\Api\Data\Pro
 
 - attribute code: `msrp`
 - attribute type: `Magento\Msrp\Api\Data\ProductRender\MsrpPriceInfoInterface`
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.6.

@@ -53,3 +53,6 @@ This module extends following ui components located in the `view/adminhtml/ui_co
  * `cms_block_listing.xml`
  * `cms_page_form.xml`
  * `cms_page_listing.xml`
+
+<InlineAlert slots="text" />
+The version of this module is 104.0.7.
