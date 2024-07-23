@@ -25,14 +25,14 @@ const remarkConfig = {
 			remarkLintNoDeadUrls,
 			{
 				skipUrlPatterns: [
-					"https://www.php.net",
-					"https://cardinalcommerce.com/",
-					"https://www.cyberciti.biz",
-					"https://eat.magento.com",
-					"https://developer.ups.com/oauth-developer-guide",
-					"https://business.adobe.com/products/magento/business-intelligence.html",
-					"https://business.adobe.com/products/magento/business-intelligence.html",
-					"https://www.adobe.com/trust/security/product-security.html"
+					// "https://www.php.net",
+					// "https://cardinalcommerce.com/",
+					// "https://www.cyberciti.biz",
+					// "https://eat.magento.com",
+					// "https://developer.ups.com/oauth-developer-guide",
+					// "https://business.adobe.com/products/magento/business-intelligence.html",
+					// "https://business.adobe.com/products/magento/business-intelligence.html",
+					// "https://www.adobe.com/trust/security/product-security.html"
 				],
 				skipOffline: "true"
 			}
