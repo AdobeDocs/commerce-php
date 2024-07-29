@@ -257,6 +257,10 @@ Add the corresponding policy to a `csp_whitelist.xml` file:
 </csp_whitelist>
 ```
 
+<InlineAlert variant="warning" slots="text"/>
+
+Script or style tags added through the admin panel (_Scripts and Style Sheets_ section from [Content Design](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/design/page-setup#html-head) area for example) should be whitelisted as well.
+
 <InlineAlert variant="info" slots="text"/>
 
 When _unsafe-inline_ is allowed for `script-src` or `style-src` policies, whitelisted inline scripts/styles hashes
