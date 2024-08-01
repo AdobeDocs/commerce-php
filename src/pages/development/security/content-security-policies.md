@@ -259,7 +259,7 @@ Add the corresponding policy to a `csp_whitelist.xml` file:
 
 <InlineAlert variant="warning" slots="text"/>
 
-You must whitelist `script` and `style` tags that you add in the Admin. For example, the **Scripts and Style Sheets** field in the [HTML Head ](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/design/page-setup#html-head) section).
+You must whitelist `script` and `style` tags that you add in the Admin. For example, the **Scripts and Style Sheets** field in the [HTML Head](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/design/page-setup#html-head) section).
 
 <InlineAlert variant="info" slots="text"/>
 
