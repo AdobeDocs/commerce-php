@@ -26,3 +26,6 @@ Alternatively, you can set the variable using the command-line interface:
 ```bash
 bin/magento setup:config:set --deferred-total-calculating 1
 ```
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.2.

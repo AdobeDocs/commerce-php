@@ -29,3 +29,6 @@ The option `newrelic_output_enable` enables outputting performance metrics to Ne
 The option `newrelic_output_verbose` adds additional metrics
 
 See README.md in ApplicationPerformanceMonitor for details about what metrics are in each.
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.0.

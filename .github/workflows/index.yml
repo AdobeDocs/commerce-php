@@ -1,8 +1,6 @@
 ---
 name: Indexing
 on:
-  schedule:
-    - cron: '42 20 1 * *'
   workflow_dispatch:
     inputs:
       mode:
@@ -21,7 +19,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node v16
         uses: actions/setup-node@v3
         with:
           node-version-file: '.nvmrc'

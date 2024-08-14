@@ -27,3 +27,6 @@ Public APIs are defined in the `Api` and `Api/Data` directories.
 ### REST endpoints
 
 The `etc/webapi.xml` file defines endpoints for managing sources, stocks, stock source links, and source items.
+
+<InlineAlert slots="text" />
+The version of this module is 1.2.5.

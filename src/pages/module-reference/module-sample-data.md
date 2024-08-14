@@ -81,3 +81,6 @@ The deleted sample data entities will be restored. Those entities, which were ch
 ## Documentation
 
 You can find the more detailed description of sample data manipulation procedures at <https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/sample-data/overview.html>.
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.5.

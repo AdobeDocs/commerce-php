@@ -20,3 +20,6 @@ This module is installed as part of Magento Open Source. Unless a custom impleme
 
 All public interfaces related to this module are located in the `InventoryLowQuantityNotificationApi` module.
 Use the interfaces defined in `InventoryLowQuantityNotificationApi` to extend this module.
+
+<InlineAlert slots="text" />
+The version of this module is 1.2.4.

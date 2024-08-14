@@ -80,3 +80,6 @@ A clickable link to internal or external content in any text field will be creat
 #### Link Format Example:
 
 The text: `https://developer.adobe.com/commerce/docs/ [Adobe Commerce Developer Documentation].` will appear as [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs/).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.5.

@@ -43,3 +43,6 @@ More information about email templates are at articles:
 - [Email templates list](https://experienceleague.adobe.com/docs/commerce-admin/systems/communications/email-templates.html#email-template-list)
 - [Customize email templates](https://developer.adobe.com/commerce/frontend-core/guide/templates/email/)
 - [Migrating custom email templates](https://developer.adobe.com/commerce/frontend-core/guide/templates/email-migration/#nested-arrays)
+
+<InlineAlert slots="text" />
+The version of this module is 101.1.7.

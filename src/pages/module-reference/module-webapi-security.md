@@ -18,3 +18,6 @@ Before installing this module, note that the Magento_WebapiSecurity is dependent
 - `Magento_Webapi`
 
 For information about enabling or disabling a module, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.4.

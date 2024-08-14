@@ -54,3 +54,6 @@ Cron group configuration can be set at `etc/crontab.xml`:
 - `catalog_product_alert` - send product alerts to customers
 
 [Learn how to configure and run cron in Magento.](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.6.

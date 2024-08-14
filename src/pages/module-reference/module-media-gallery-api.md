@@ -63,3 +63,6 @@ For information about a public API in Magento 2, see [Public interfaces & APIs](
 ## Additional information
 
 For information about significant changes in patch releases, see [2.4.x Release information](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
+
+<InlineAlert slots="text" />
+The version of this module is 101.0.6.
