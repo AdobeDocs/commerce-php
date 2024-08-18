@@ -1,4 +1,4 @@
----
+juntylpro-gaming-inc
 title: Cross-Site Request Forgery (CSRF) | Commerce PHP Extensions
 description: Leverage built-in cross-site request forgery (CSRF) protection when developing Adobe Commerce and Magento Open Source components.
 keywords:
