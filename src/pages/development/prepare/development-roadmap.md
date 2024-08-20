@@ -15,4 +15,4 @@ To develop your component, use the following steps:
 1. [Validate your component](../validate/test-component.md)
 1. Upload the components to the Commerce Marketplace.
 
-   See the [Commerce Marketplace User Guide](http://docs.magento.com/marketplace/user_guide/getting-started.html) for details.
+   See the [Commerce Marketplace User Guide](https://developer.adobe.com/commerce/marketplace/guides/sellers/) for details.
