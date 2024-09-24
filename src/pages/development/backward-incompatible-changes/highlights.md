@@ -9,6 +9,80 @@ keywords:
 
 This page highlights backward-incompatible changes between Adobe Commerce and Magento Open Source releases that have a major impact and require detailed explanation and special instructions to ensure third-party modules continue working. High-level reference information for all backward-incompatible changes in each release is documented in the [reference](reference.md) section.
 
+## 2.4.8-beta
+
+The following major backward-incompatible changes were introduced in the 2.4.8-beta Adobe Commerce and Magento Open Source releases:
+
+* Upgraded `monolog/monolog` dependency
+* Updated default value for 2FA OTP window
+* New 2FA system parameter
+* New unique EAV key
+
+### Upgraded monolog/monolog dependency
+
+The `monolog/monolog` third-party dependency was updated to the latest stable version (3.x) to enhance platform stability and performance.<!--AC-12689-->
+
+**Action Required:**
+
+This change affects custom code and extensions that use or overwrite the `protected function write(array $record): void` method for exception logging. The argument type needs to be updated to `LogRecord $record` instead of `array $record`. For example:
+
+```php
+protected function write(LogRecord $record): void
+```
+
+### Updated default value for 2FA OTP window
+
+The `spomky-labs/otphp` library has changed the way that the one-time password (OTP) window is calculated for two factor authentication (2FA). Previously, it used a "window" multiplier, but now it uses a "leeway" value in seconds. This change ensures that the configuration is up to date with the latest library behavior.<!--AC-12129-->
+
+Merchants and customers using the Google Authenticator 2FA provider must reset the configuration value for the OTP window. The command has changed from `bin/magento config:set twofactorauth/google/otp_window VALUE` to `bin/magento config:set twofactorauth/google/leeway VALUE`. This change aligns with the updated `spomky-labs/otphp` library, which uses a default expiration period of 30 seconds.
+
+To set the new default value:
+
+```bash
+bin/magento config:set twofactorauth/google/leeway 29
+```
+
+The following module is affected by this change:
+
+* [Magento_TwoFactorAuth](https://developer.adobe.com/commerce/php/module-reference/module-two-factor-auth/)
+
+### New 2FA system parameters
+
+New system parameters have been added to enable rate limiting on two-factor authentication (2FA) one-time password (OTP) validation:<!--AC-11945-->
+
+```php
+...    
+    /**
+     * Config path for the 2FA Attempts
+     */
+    private const XML_PATH_2FA_RETRY_ATTEMPTS = 'twofactorauth/general/twofactorauth_retry';
+
+    /**
+     * Config path for the 2FA Attempts
+     */
+    private const XML_PATH_2FA_LOCK_EXPIRE = 'twofactorauth/general/auth_lock_expire';
+...
+```
+
+These paramters correspond to the following system configuration options in the Admin:
+
+  * **Retry attempt limit for Two-Factor Authentication**
+  * **Two-Factor Authentication lockout time (seconds)**
+
+  Adobe advises setting a threshold for 2FA OTP validation to limit the number of retry attempts to mitigate brute-force attacks. See [Security > 2FA](https://experienceleague.adobe.com/en/docs/commerce-admin/config/security/2fa) in the _Configuration Reference Guide_ for more information.
+
+The following module is affected by this change:
+
+* [Magento_TwoFactorAuth](https://developer.adobe.com/commerce/php/module-reference/module-two-factor-auth/)
+
+### New unique EAV key
+
+Added a unique key on the column pair (`option_id`, `store_id`) on the `eav_attribute_option_value` table.<!--AC-6984-->
+
+The following module is affected by this change:
+
+* [Magento_EAV](https://developer.adobe.com/commerce/php/module-reference/module-eav/)
+
 ## 2.4.7
 
 The following major backward-incompatible changes were introduced in the 2.4.7 Adobe Commerce and Magento Open Source releases:
@@ -177,7 +251,7 @@ The following module is affected by this change:
 
 ### New system configuration validation for Two Factor Authentication `otp_window` value
 
-The updated`spomky-labs/otphp` library introduced a new validation requirement for supplying custom `otp_window` values. This configuration setting controls how long (in seconds) the system accepts an administrator's one-time-password (OTP) after it has expired. Previously, the library allowed any number of seconds to be specified. Now, the value cannot be higher than the lifetime of a single OTP (usually 30 seconds). You must update this value if it is currently set to 30 or higher.
+The updated `spomky-labs/otphp` library introduced a new validation requirement for supplying custom `otp_window` values. This configuration setting controls how long (in seconds) the system accepts an administrator's one-time-password (OTP) after it has expired. Previously, the library allowed any number of seconds to be specified. Now, the value cannot be higher than the lifetime of a single OTP (usually 30 seconds). You must update this value if it is currently set to 30 or higher.
 
 If your Commerce application is affected by this change, admin users might see the following message when they log in: `There was an internal error trying to verify your code`. You can confirm the cause of the error by checking the `system.log` file in `var/log` for an entry `main.ERROR: The leeway must be lower than the TOTP period`.
 
