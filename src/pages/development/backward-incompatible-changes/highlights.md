@@ -13,14 +13,14 @@ This page highlights backward-incompatible changes between Adobe Commerce and Ma
 
 The following major backward-incompatible changes were introduced in the 2.4.8-beta Adobe Commerce and Magento Open Source releases:
 
-* <!--AC-12689-->Upgraded `monolog/monolog` dependency
-* <!--AC-12129-->Updated default value for 2FA OTP window
-* <!--AC-11945-->New 2FA system parameter
-* <!--AC-6984-->New unique EAV key
+* Upgraded `monolog/monolog` dependency
+* Updated default value for 2FA OTP window
+* New 2FA system parameter
+* New unique EAV key
 
 ### Upgraded monolog/monolog dependency
 
-The `monolog/monolog` third-party dependency was updated to the latest stable version (3.x) to enhance platform stability and performance.
+The `monolog/monolog` third-party dependency was updated to the latest stable version (3.x) to enhance platform stability and performance.<!--AC-12689-->
 
 **Action Required:**
 
@@ -32,7 +32,7 @@ protected function write(LogRecord $record): void
 
 ### Updated deafult value for 2FA OTP window
 
-The `spomky-labs/otphp` library has changed the way that the one-time password (OTP) window is calculated for two factor authentication (2FA). Previously, it used a "window" multiplier, but now it uses a "leeway" value in seconds. This change ensures that the configuration is up to date with the latest library behavior.
+The `spomky-labs/otphp` library has changed the way that the one-time password (OTP) window is calculated for two factor authentication (2FA). Previously, it used a "window" multiplier, but now it uses a "leeway" value in seconds. This change ensures that the configuration is up to date with the latest library behavior.<!--AC-12129-->
 
 Merchants and customers using the Google Authenticator 2FA provider must reset the configuration value for the OTP window. The command has changed from `bin/magento config:set twofactorauth/google/otp_window VALUE` to `bin/magento config:set twofactorauth/google/leeway VALUE`. This change aligns with the updated `spomky-labs/otphp` library, which uses a default expiration period of 30 seconds.
 
@@ -48,7 +48,7 @@ The following module is affected by this change:
 
 ### New 2FA system parameters
 
-New system parameters have been added to enable rate limiting on two-factor authentication (2FA) one-time password (OTP) validation:
+New system parameters have been added to enable rate limiting on two-factor authentication (2FA) one-time password (OTP) validation:<!--AC-11945-->
 
 ```php
 ...    
@@ -77,7 +77,7 @@ The following module is affected by this change:
 
 ### New unique EAV key
 
-Added a unique key on the column pair (`option_id`, `store_id`) on the `eav_attribute_option_value` table.
+Added a unique key on the column pair (`option_id`, `store_id`) on the `eav_attribute_option_value` table.<!--AC-6984-->
 
 The following module is affected by this change:
 
