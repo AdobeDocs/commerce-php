@@ -30,7 +30,7 @@ This change affects custom code and extensions that use or overwrite the `protec
 protected function write(LogRecord $record): void
 ```
 
-### Updated deafult value for 2FA OTP window
+### Updated default value for 2FA OTP window
 
 The `spomky-labs/otphp` library has changed the way that the one-time password (OTP) window is calculated for two factor authentication (2FA). Previously, it used a "window" multiplier, but now it uses a "leeway" value in seconds. This change ensures that the configuration is up to date with the latest library behavior.<!--AC-12129-->
 
