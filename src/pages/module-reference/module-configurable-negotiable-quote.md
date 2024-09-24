@@ -26,3 +26,6 @@ The Magento_ConfigurableNegotiableQuote module has a dependency on the Magento_N
 Extension developers can interact with the Magento_ConfigurableNegotiableQuote module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
 
 [The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_ConfigurableNegotiableQuote module.
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.0.

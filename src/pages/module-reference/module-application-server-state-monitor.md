@@ -10,3 +10,6 @@ The ApplicationServerStateMonitor module provides possibility to debug state in 
 To enable it, add the `--state-monitor` parameter to `bin/magento server:run`.
 
 This should only be used for debugging because it has significant performance impact.
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.0.

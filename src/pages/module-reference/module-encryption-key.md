@@ -24,3 +24,6 @@ This module introduces the following layouts and layout handles in the `view/adm
 For information about significant changes in patch releases, see [Release information](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
 
 Some more information you can get at [Encryption Key](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/encryption-key.html) article.
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.5.

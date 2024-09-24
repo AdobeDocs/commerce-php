@@ -22,3 +22,6 @@ Extension developers can interact with the Magento_AdminAdobeImsTwoFactorAuth mo
 ## Additional information
 
 For information about significant changes in patch releases, see [Release information](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
+
+<InlineAlert slots="text" />
+The version of this module is 1.0.1.

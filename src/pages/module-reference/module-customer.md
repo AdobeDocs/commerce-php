@@ -380,3 +380,6 @@ This module introduces the following indexers:
 - `customer_grid` - customer grid indexer
 
 [Learn how to manage the indexers](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html).
+
+<InlineAlert slots="text" />
+The version of this module is 103.0.7.

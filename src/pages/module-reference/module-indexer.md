@@ -110,3 +110,6 @@ More information can get at articles:
 - [Learn more how to add custom indexer](https://developer.adobe.com/commerce/php/development/components/indexing/custom-indexer/)
 - [Learn how to manage indexers](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
 - [Learn more about Index Management](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html)
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.7.

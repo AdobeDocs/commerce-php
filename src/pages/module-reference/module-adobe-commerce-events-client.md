@@ -48,4 +48,7 @@ This module defines the following CLI commands:
 - events:info
 - events:metadata:populate
 
-For details on using these commands, refer to [Event management commands](https://developer.adobe.com/commerce/events/get-started/commands/) .
+For details on using these commands, refer to [Event management commands](https://developer.adobe.com/commerce/extensibility/events/commands/) .
+
+<InlineAlert slots="text" />
+The version of this module is 1.7.0.

@@ -27,3 +27,6 @@ For more information about Magento extension mechanism, see [Magento plug-ins](h
 ## Additional information
 
 For more Magento 2 developer documentation, see [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs/).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.4.
