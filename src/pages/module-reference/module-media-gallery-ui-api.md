@@ -15,7 +15,7 @@ For information about module installation in Magento 2, see [Enable or disable m
 
 For information about significant changes in patch releases, see [2.4.x Release information](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
 
-[Learn more about New Media Gallery](https://experienceleague.adobe.com/docs/commerce-admin/content-design/media/gallery/media-gallery.html).
+[Learn more about New Media Gallery](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/gallery/media-gallery).
 
 <InlineAlert slots="text" />
 The version of this module is 100.4.5.
