@@ -217,7 +217,7 @@ Here's an example. A class `Magento\Reward\Model\Total\Quote\Reward` inherits fr
 
 and
 
-```
+```json
 {
   "Magento\\Reward\\Model\\Total\\Quote\\Reward": {
     "_code": "_code"
