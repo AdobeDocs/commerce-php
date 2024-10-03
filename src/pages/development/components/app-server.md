@@ -180,6 +180,7 @@ For this purpose, we should implement the following:
 ```php
 class Cache implements ResetAfterRequestInterface
 ```
+
 In the `2.4.8-beta`, you do not have to add `ResetAfterRequestInterface` to the class. The `_resetState()` method is found by reflection and called by implementing `ResetAfterRequestInterface`.  This feature allows modules to be backwards compatible with previous versions before `2.4.7` that do not have this interface.
 
 Add the implementation of the `_resetState()` method with overriding `$data` property to its initial state - empty array:
