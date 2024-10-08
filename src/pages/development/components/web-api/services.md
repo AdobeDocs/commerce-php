@@ -204,7 +204,7 @@ To define web API components, set these attributes on these XML elements in the
                <inlineCode class="spectrum-Body--sizeS">name</inlineCode>. String. Parameter name.
             </li>
             <li>
-               <inlineCode class="spectrum-Body--sizeS">force</inlineCode>. Boolean. <a href="#forced-parameters">Forcing Request Parameters</a>
+               <inlineCode class="spectrum-Body--sizeS">force</inlineCode>. Boolean. <a href="#forcing-request-parameters">Forcing Request Parameters</a>
             </li>
          </ul>
       </td>
