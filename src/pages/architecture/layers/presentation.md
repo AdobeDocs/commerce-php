@@ -37,7 +37,7 @@ GraphQL is a data query language developed internally by Facebook in 2012 before
 
 GraphQL allows you to define the structure of the data that you need, and the server returns only the data you request. Each GraphQL-capable module contains a declarative schema that defines the syntax for queries that the module supports, as well as the attributes that can be returned. If you run a REST call such as GET /V1/products/:sku on a simple product, the system might fetch more than 100 lines of data. If all you need is the current price, the call has returned significantly more information than you need. With GraphQL, a query against the same SKU could return just the price.
 
-More information can be found in the [GraphQL Developer Guide](https://devdocs.magento.com/guides/v2.4/graphql/).
+More information can be found in the [GraphQL Developer Guide](https://developer.adobe.com/commerce/webapi/graphql/).
 
 ## Progressive Web Apps
 

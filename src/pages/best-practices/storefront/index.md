@@ -17,7 +17,7 @@ You can manage your cache in the Admin section under **System** > Tools > **Cach
 
 **Recommended Reading:**
 
-*  [Clear directories during development](https://developer.adobe.com/commerce/php/development/components/clear-directories/)
+*  [Clear directories during development](/development/components/clear-directories/)
 
 ## Consider different resolutions/devices
 

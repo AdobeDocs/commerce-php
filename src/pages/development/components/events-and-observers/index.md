@@ -213,4 +213,4 @@ Below is an example of how to disable the previously created observer.
 
 ## Recommended Reading
 
-*  [Observers best practices](https://developer.adobe.com/commerce/php/best-practices/extensions/observers/)
+*  [Observers best practices](/best-practices/extensions/observers/)

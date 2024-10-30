@@ -18,7 +18,7 @@ If you encounter problems with Advanced Reporting, try the [troubleshooter](http
 1. The website must run on a public web server.
 1. The domain must have a valid security (SSL) certificate.
 1. Adobe Commerce or Magento Open Source must have been installed or upgraded successfully without error.
-1. In the Adobe Commerce or Magento Open Source configuration, the [Base URL (Secure) setting](https://docs.magento.com/user-guide/stores/store-urls.html) for the store view must point to the secure URL. For example `https://yourdomain.com`.
+1. In the Adobe Commerce or Magento Open Source configuration, the [Base URL (Secure) setting](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls) for the store view must point to the secure URL. For example `https://yourdomain.com`.
 1. In the Adobe Commerce or Magento Open Source configuration, **Use Secure URLs on Storefront**, **and Use Secure URLs in Admin** must be set to **Yes**.
 1. Make sure that the [crontab](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) is created and cron jobs are running on the installed server.
 
