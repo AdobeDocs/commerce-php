@@ -111,7 +111,7 @@ define(
 
 The `getData()` method returns data what we need and depending on payment integration the returned data can be more
 complicated. we need last step to retrieve data from storefront in the backend. Adobe Commerce provides some
-mechanisms called [Observers](https://developer.adobe.com/commerce/php/development/components/events-and-observers/).
+mechanisms called [Observers](/development/components/events-and-observers/).
 
 ### Read additional data
 

@@ -20,7 +20,7 @@ Adobe has strengthened the hashing algorithms (SHA-256) used in password managem
 
 ### Improved prevention of cross-site scripting (XSS) attacks by making escaped data the default
 
-The Commerce framework has adopted conventions that regulate the escaping of data in output. These conventions include the ability to escape  output for HTML pages (HTML, JSON, and JavaScript) and email. Where possible, escaping is transparent to client code. See [Security measures against XSS attacks](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/) in the Frontend Developer Guide.
+The Commerce framework has adopted conventions that regulate the escaping of data in output. These conventions include the ability to escape  output for HTML pages (HTML, JSON, and JavaScript) and email. Where possible, escaping is transparent to client code. See [Security measures against XSS attacks](/development/security/cross-site-scripting/) in the Frontend Developer Guide.
 
 ### More flexible file system ownership and permissions
 

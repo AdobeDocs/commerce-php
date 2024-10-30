@@ -13,7 +13,7 @@ The PHP Developer Guide contains information for developers who want to know mor
 
 The Adobe Commerce and Magento Open Source applications are made up of *Modules*, *Themes*, and *Language Packages*:
 
-*  [**Modules**](https://developer.adobe.com/commerce/php/architecture/modules/overview/) interact with other parts of the application to accomplish a particular business function or provide a feature. A module can contain a user interface for displaying information or interacting with the user. It can also contain application interfaces that another module or code chunk might call.
+*  [**Modules**](/architecture/modules/overview/) interact with other parts of the application to accomplish a particular business function or provide a feature. A module can contain a user interface for displaying information or interacting with the user. It can also contain application interfaces that another module or code chunk might call.
 
 *  [**Themes**](https://developer.adobe.com/commerce/frontend-core/guide/themes/) provide a personalized touch for each Adobe Commerce or Magento Open Source installation by changing the look and feel of the storefront or Admin. Two themes are already available within the default code structure: Blank theme and Luma theme. Refer to these default themes when creating custom themes.
 

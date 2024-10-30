@@ -33,7 +33,7 @@ The concept of the *module* is the heart of extension development, and modular d
 
 If a module is self-contained, then you can modify or replace it without affecting other areas of the code. This *loose coupling* of software components reduces the ripple effects throughout your code base of changing code.
 
- See the [PHP Developer Guide](https://developer.adobe.com/commerce/php/development/) for detailed instructions on how to create modules.
+ See the [PHP Developer Guide](/development/) for detailed instructions on how to create modules.
 
 ### Rich product ecosystem
 
@@ -75,17 +75,17 @@ Attribute types fall into three general categories:
 
 *  **Extension attributes** often use more complex data types than custom attributes. These attributes do not appear in the storefront. Extension attributes are introduced by modules.
 
-See [PHP Developer Guide](https://developer.adobe.com/commerce/php/development/) for information about using attributes.
+See [PHP Developer Guide](/development/) for information about using attributes.
 
 ### Service contracts, dependency injection, and dependency inversion
 
 *Service contracts* provide a new way to access public API endpoints. These PHP interfaces offer robust, stable extension points to which clients can connect.  Service contracts define the endpoints that function as a module's public API. Defining these endpoints is an essential part of adding a module.
 
-Service contracts are discussed throughout the documentation set. See [Service layer](../layers/service.md) for a high-level introduction. See [PHP Developer Guide](https://developer.adobe.com/commerce/php/development/) for a more detailed discussion of service contracts and dependency injection.
+Service contracts are discussed throughout the documentation set. See [Service layer](../layers/service.md) for a high-level introduction. See [PHP Developer Guide](/development/) for a more detailed discussion of service contracts and dependency injection.
 
 The Commerce framework implements *dependency injection* along with service contracts. Dependency injection provides a mechanism for changing a module's behavior without altering the client or understanding nitty-gritty details of implementation. Both dependency injection and its related concept *dependency inversion* support the Commerce framework's fundamental architectural principles of modularity and ease-of-extensibility. They strongly encourage basic coding practices that support the loose coupling of software modules.
 
-See [PHP Developer Guide](https://developer.adobe.com/commerce/php/development/) for information on both dependency injection and service contracts.
+See [PHP Developer Guide](/development/) for information on both dependency injection and service contracts.
 
 ### Plug-ins
 
@@ -93,4 +93,4 @@ Plug-ins, like modules, are a mechanism for adding features to the core Commerce
 
 Plug-ins are also called *interceptors*. Applications use the plug-in pattern to change method behavior without modifying the actual class. Plug-ins can typically intercept method processing before or after the method runs, or only when the method throws an exception.
 
-See [Plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/) in [PHP Developer Guide](https://developer.adobe.com/commerce/php/development/) for information on declaring and prioritizing plug-ins.
+See [Plug-ins](/development/components/plugins/) in [PHP Developer Guide](/development/) for information on declaring and prioritizing plug-ins.

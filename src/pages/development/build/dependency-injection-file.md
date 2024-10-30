@@ -31,7 +31,7 @@ The areas are:
 *  webapi_soap
 *  crontab
 
-During [bootstrapping](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/initialization.html), each application entry point loads the appropriate `di.xml` files for the requested [area](https://developer.adobe.com/commerce/php/architecture/modules/areas/).
+During [bootstrapping](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/initialization.html), each application entry point loads the appropriate `di.xml` files for the requested [area](/architecture/modules/areas/).
 
 **Examples:**
 

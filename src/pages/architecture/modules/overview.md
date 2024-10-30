@@ -58,6 +58,6 @@ We refer to a component's root directory as the top-level directory in which you
 
 Developers, administrators, and anyone building an Adobe Commerce or Magento Open Source website will want to review all relevant topics surrounding their particular goals and use cases.
 
-See [PHP Developer Guide](https://developer.adobe.com/commerce/php/development/) for specific instructions on extending modules.
+See [PHP Developer Guide](/development/) for specific instructions on extending modules.
 
 See [Frontend Developer Guide](https://developer.adobe.com/commerce/frontend-core/guide/) for information on implementing themes and other components.
