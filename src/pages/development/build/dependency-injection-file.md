@@ -464,7 +464,7 @@ See [sensitive and environment settings](../configuration/sensitive-environment-
 
 ## Get dependency injection configuration information for a class
 
-Use the [dev:di:info](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#devdiinfo) command to retrieve information about dependency injection configuration for a class. The following example retrieves the dependency injection configuration information for the `Magento\Quote\Model\Quote\Item\ToOrderItem` class:
+Use the [dev:di:info](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#devdiinfo) command to retrieve information about dependency injection configuration for a class. The following example retrieves the dependency injection configuration information for the `Magento\Quote\Model\Quote\Item\ToOrderItem` class:
 
 ```bash
 bin/magento dev:di:info "Magento\Quote\Model\Quote\Item\ToOrderItem"

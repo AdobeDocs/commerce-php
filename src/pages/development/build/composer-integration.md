@@ -226,4 +226,4 @@ Using Adobe Commerce and Magento Open Source code as an example, marketing versi
 [7]: https://marketplace.magento.com
 [8]: ../package/component.md#metapackage-example
 [9]: https://getcomposer.org/doc/03-cli.md#create-project
-[10]: https://devdocs.magento.com/guides/v2.4/install-gde/composer.html
+[10]: https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer

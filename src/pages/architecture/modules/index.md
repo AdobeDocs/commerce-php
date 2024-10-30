@@ -41,7 +41,7 @@ The wider Adobe Commerce and Magento Open Source ecosystem provides an extensive
 
 ### Open-source software to create and manage extensions
 
-The Commerce framework is built on open-source technologies, created for the development community. For example, it uses Composer to manage dependencies. See [Technology Stack](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) for a complete list of technologies used.
+The Commerce framework is built on open-source technologies, created for the development community. For example, it uses Composer to manage dependencies. See [Technology Stack](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) for a complete list of technologies used.
 
 ### Coding standards
 

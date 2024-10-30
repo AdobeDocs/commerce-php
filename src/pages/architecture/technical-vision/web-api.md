@@ -38,7 +38,7 @@ Any [service contract](https://developer.adobe.com/commerce/php/development/comp
 
 If the target module is called `MyModule`, then create the resolvers and configuration files in a new module called `MyModuleGraphQl`.
 
-See the [GraphQL documentation](https://devdocs.magento.com/guides/v2.4/graphql/index.html) for more information.
+See the [GraphQL documentation](https://developer.adobe.com/commerce/webapi/graphql/index.html) for more information.
 
 ### Add a custom authentication mechanism
 
