@@ -40,7 +40,7 @@ The following is a list of the different ways you can install Adobe Commerce or 
 The following is a list of optimizations you can make on your local development machine
 
 *  We recommend installing and using the latest supported version of PHP 8 to increase performance.
-*  Replace your MySQL database with [Percona](https://www.percona.com/software/mysql-database/percona-server).
+*  Replace your MySQL database with [Percona](https://docs.percona.com/percona-server/8.0/index.html).
 *  Make sure you install and enable [PHP OPcache](https://www.php.net/manual/en/intro.opcache.php).
 *  Xdebug is off by default. Enable this feature only when you need it because it requires a lot of memory and degrades performance.
    The `xdebug.max_nesting_level` configuration needs to be set to 200 or greater for Magento.
