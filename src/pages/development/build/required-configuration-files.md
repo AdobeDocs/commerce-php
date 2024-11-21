@@ -37,13 +37,14 @@ In addition to those files, a module also has nested configuration directories i
 
 *  `<your module root dir>/etc/adminhtml/`
 *  `<your module root dir>/etc/frontend/`
+*  `<your module root dir>/etc/graphql/`
 *  `<your module root dir>/etc/webapi_rest/`
 *  `<your module root dir>/etc/webapi_soap/`
 
 ### Global vs local
 
 *  Configuration files that are in the top level of that module's `etc` directory are global to that component.
-*  Configuration files placed in subdirectories (`adminhtml`, `frontend`, `webapi_rest`, `webapi_soap`) apply only to those respective functional areas.
+*  Configuration files placed in subdirectories (`adminhtml`, `frontend`, `graphql`, `webapi_rest`, `webapi_soap`) apply only to those respective functional areas.
 
 ### Requirements
 
@@ -57,9 +58,10 @@ Similarly, if your module changes the UI, you should add the needed configuratio
 *  `<your module root dir>/etc/frontend/di.xml`
 *  `<your module root dir>/etc/frontend/page_types.xml`
 
-If the module is a service that may call an API, or does some other work that is not manifested in the UI you should add any needed configuration files in the REST and/or SOAP webapi configuration directories, like this:
+If the module is a service that may call an API, or does some other work that is not manifested in the UI you should add any needed configuration files in the GraphQL, REST and/or SOAP webapi configuration directories, like this:
 
 *  `<your module root dir>/etc/webapi_rest/di.xml`
 *  `<your module root dir>/etc/webapi_soap/di.xml`
+*  `<your module root dir>/etc/graphql/di.xml`
 
 Keep in mind that you might be able to handle your module's configuration solely with configuration files at the top level of your module's `etc` directory, but the nested directory is a useful way to keep the configuration neatly compartmentalized.
