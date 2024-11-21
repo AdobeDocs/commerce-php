@@ -45,8 +45,8 @@ If the `schema_version` for your module is found in the `setup_module` table, th
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright Adobe
+ * All rights reserved.
  */
 
 namespace VendorName\ModuleName\Setup;
@@ -81,8 +81,8 @@ The purpose of this class is to update the database structure or apply patches.
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright Adobe
+ * All rights reserved.
  */
 
 namespace VendorName\ModuleName\Setup;
@@ -117,8 +117,8 @@ This class makes final modifications to the database schema after it has been in
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright Adobe
+ * All rights reserved.
  */
 
 namespace VendorName\ModuleName\Setup;
@@ -157,8 +157,8 @@ The purpose of this class is to populate the database with initial data.
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright Adobe
+ * All rights reserved.
  */
 
 namespace VendorName\ModuleName\Setup;
@@ -193,8 +193,8 @@ The purpose of this class is to fix corrupted data or populate a new data field 
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright Adobe
+ * All rights reserved.
  */
 
 namespace VendorName\ModuleName\Setup;
@@ -229,8 +229,8 @@ This class makes final modifications to the database store after data has been i
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright Adobe
+ * All rights reserved.
  */
 
 namespace VendorName\ModuleName\Setup;
@@ -259,8 +259,8 @@ If your installation or upgrade logic spans multiple classes, pass this resource
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright Adobe
+ * All rights reserved.
  */
 
 class DefaultCustomerGroupsAndAttributes implements DataPatchInterface, PatchVersionInterface
@@ -321,8 +321,8 @@ Use the [`ModuleContextInterface`] to get the current module version and execute
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright Adobe
+ * All rights reserved.
  */
 
 namespace Magento\User\Setup;
@@ -372,8 +372,8 @@ In this phase, your module should remove all traces of its existence in the data
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright Adobe
+ * All rights reserved.
  */
 
 namespace VendorName\ModuleName\Setup;

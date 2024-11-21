@@ -93,7 +93,6 @@ The following example adds comments to [app/code/Magento/Catalog/etc/frontend/se
 <!--
 /**
  * Copyright &copy; 2016 Magento. All rights reserved.
- * See COPYING.txt for license details.
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

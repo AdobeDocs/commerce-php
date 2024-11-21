@@ -63,8 +63,8 @@ For more information see: [registering your component](../../development/build/c
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright Adobe
+ * All rights reserved.
  */
 
 use Magento\Framework\Component\ComponentRegistrar;
@@ -174,8 +174,8 @@ Inside `Controller/Adminhtml/HelloWorld` directory, create the file `Index.php`.
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright Adobe
+ * All rights reserved.
  */
 
 namespace MyCompany\ExampleAdminNewPage\Controller\Adminhtml\HelloWorld;
