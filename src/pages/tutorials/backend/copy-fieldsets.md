@@ -101,7 +101,7 @@ The following code snippets highlight the code pieces needed to copy a fieldset 
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 

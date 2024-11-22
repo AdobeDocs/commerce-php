@@ -43,7 +43,7 @@ You can use the Admin to define caching policies or you can define them programm
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -101,7 +101,7 @@ For example, let's declare a context variable that shows a drinks catalog and ad
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -160,7 +160,7 @@ First, your entity module must implement [`Magento/Framework/DataObject/Identity
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -189,7 +189,7 @@ Second, the block object must also implement `Magento/Framework/DataObject/Ident
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 

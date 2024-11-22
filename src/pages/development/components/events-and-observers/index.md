@@ -30,7 +30,7 @@ The following example shows you how to dispatch an event with and without an arr
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -108,7 +108,7 @@ Below is an example of the basic observer class structure:
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -137,7 +137,7 @@ One of the more powerful features of observers is that they are able to use para
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 

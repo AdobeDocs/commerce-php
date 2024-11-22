@@ -314,7 +314,7 @@ The example below overrides the `isVisible` method from the `Magento\Checkout\Bl
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 

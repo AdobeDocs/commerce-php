@@ -56,7 +56,7 @@ Example upgrade script content:
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -282,7 +282,7 @@ Since you cannot assume the format of the data when initially converted, the fol
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 

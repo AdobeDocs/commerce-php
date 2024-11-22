@@ -41,7 +41,7 @@ Here are the required files to get started:
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -243,7 +243,7 @@ The corresponding file is `app/code/Dev/Grid/Ui/DataProvider/Category/ListingDat
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -288,7 +288,7 @@ The plugin then gets a `name` attribute:
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -381,7 +381,7 @@ The collection class translates to `app/code/Dev/Grid/Ui/DataProvider/Category/L
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -412,7 +412,7 @@ The resource model class translates to `app/code/Dev/Grid/Model/ResourceModel/Ca
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -434,7 +434,7 @@ The UI grid file defines a column actions class `Dev\Grid\Ui\Component\Category\
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -514,7 +514,7 @@ The main route defined in `app/code/Dev/Grid/etc/adminhtml/menu.xml` as `dev_gri
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -569,7 +569,7 @@ The Ui grid file defines the custom route `dev_grid/category/massDelete` (mass d
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 

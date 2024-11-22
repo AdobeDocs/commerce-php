@@ -63,7 +63,7 @@ For more information see: [registering your component](../../development/build/c
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -174,7 +174,7 @@ Inside `Controller/Adminhtml/HelloWorld` directory, create the file `Index.php`.
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 

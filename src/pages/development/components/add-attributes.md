@@ -58,7 +58,7 @@ Non-scalar attributes can be represented by Data Object.
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -91,7 +91,7 @@ Function `afterGetList` is similar to `afterGet`:
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -126,7 +126,7 @@ Likewise, the `afterSave` plugin should manipulate the entity data before return
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -159,7 +159,7 @@ Let's assume the product entity doesn't have any implementation of extension att
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 

@@ -40,7 +40,7 @@ The following code sample defines a data patch class that has a dependency.
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 

@@ -24,7 +24,7 @@ The following example illustrates the relationship between a simple factory and 
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 

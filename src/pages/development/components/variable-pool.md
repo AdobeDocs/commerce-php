@@ -23,7 +23,7 @@ This list can be extended by adding more entries to the `configPaths` argument f
 <?xml version="1.0"?>
 <!--
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 -->
