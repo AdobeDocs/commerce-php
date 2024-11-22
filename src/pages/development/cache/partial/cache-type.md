@@ -46,8 +46,8 @@ You may declare multiple cache types.
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright Adobe
+ * All rights reserved.
  */
 
 namespace VendorName\ModuleName\Model\Cache\Type;
@@ -189,8 +189,8 @@ Translate cache type model class is defined in `Magento\Framework\App\Cache\Type
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright Adobe
+ * All rights reserved.
  */
 
 namespace Magento\Framework\App\Cache\Type;

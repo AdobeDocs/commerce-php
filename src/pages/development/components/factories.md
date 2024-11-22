@@ -24,8 +24,8 @@ The following example illustrates the relationship between a simple factory and 
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright Adobe
+ * All rights reserved.
  */
 
 namespace Magento\Framework\App\Config;

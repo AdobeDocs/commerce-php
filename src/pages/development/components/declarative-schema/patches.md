@@ -40,8 +40,8 @@ The following code sample defines a data patch class that has a dependency.
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright Adobe
+ * All rights reserved.
  */
 
 namespace Magento\DummyModule\Setup\Patch\Data;

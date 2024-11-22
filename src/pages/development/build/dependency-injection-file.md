@@ -314,8 +314,8 @@ The example below overrides the `isVisible` method from the `Magento\Checkout\Bl
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright Adobe
+ * All rights reserved.
  */
 
 namespace ExampleCorp\OverrideExample\Block\Onepage;

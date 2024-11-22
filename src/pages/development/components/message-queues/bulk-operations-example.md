@@ -22,8 +22,8 @@ The following code sample shows how these duties can be completed.
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright Adobe
+ * All rights reserved.
  */
 
 use Magento\AsynchronousOperations\Api\Data\OperationInterface;
@@ -155,8 +155,8 @@ A consumer class receives messages from the message queue and changes the status
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright Adobe
+ * All rights reserved.
  */
 
 namespace Magento\SharedCatalog\Model\ResourceModel\ProductItem\Price;
