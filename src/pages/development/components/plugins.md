@@ -106,7 +106,7 @@ Below is an example of a before method modifying the `$name` argument before pas
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -134,7 +134,7 @@ Below is an example of an after method modifying the return value `$result` of a
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -158,7 +158,7 @@ Below is an example of an after method that accepts the `null` result and argume
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -197,7 +197,7 @@ The following example is a class with an after method for [`\Magento\Catalog\Mod
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -248,7 +248,7 @@ Below is an example of an around method adding behavior before and after an obse
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -283,7 +283,7 @@ For example, the following code defines a parameter of type `SomeType`, which is
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -303,7 +303,7 @@ You should wrap this method with a plugin:
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -327,7 +327,7 @@ You are responsible for forwarding the arguments from the plugin to the `proceed
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -434,7 +434,7 @@ With these methods:
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -489,7 +489,7 @@ Using these methods:
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 

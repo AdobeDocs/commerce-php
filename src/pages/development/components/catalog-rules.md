@@ -85,7 +85,7 @@ Below is the definition of the `validate` method:
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 

@@ -55,7 +55,7 @@ Both the `save()` and `getResource()` methods for `Magento\Framework\Model\Abstr
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 

@@ -130,7 +130,7 @@ Use the following templates for the license notice and copyright blocks:
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -153,7 +153,7 @@ interface MetadataObjectInterface
 <?xml version="1.0"?>
 <!--
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 -->
@@ -163,7 +163,7 @@ interface MetadataObjectInterface
 
 ```javascript
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 ```
@@ -207,7 +207,7 @@ There are two solutions possible:
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -233,7 +233,7 @@ class Bootstrap
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -318,7 +318,7 @@ Class attributes must have a type declaration using `@var` tag.
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -597,7 +597,7 @@ In general, such method overrides are a [code smell](https://en.wikipedia.org/wi
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -625,7 +625,7 @@ interface MutableInterface
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -764,7 +764,7 @@ See [PHP documentation](https://manual.phpdoc.org/HTMLSmartyConverter/PHP/phpDoc
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 

@@ -46,7 +46,7 @@ You may declare multiple cache types.
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -189,7 +189,7 @@ Translate cache type model class is defined in `Magento\Framework\App\Cache\Type
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 

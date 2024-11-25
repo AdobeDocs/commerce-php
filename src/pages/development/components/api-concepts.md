@@ -24,7 +24,7 @@ Third-party developers should use only these interfaces, that is, interfaces wit
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -53,7 +53,7 @@ The ``Magento\CatalogRule\Api\CatalogRuleRepositoryInterface`` interface
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -120,7 +120,7 @@ The ``Magento\CatalogRule\Model\CatalogRuleRepository`` implements the default m
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 

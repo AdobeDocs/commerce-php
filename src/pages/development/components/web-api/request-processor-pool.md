@@ -91,7 +91,7 @@ A custom processor must implement the `Magento\Webapi\Controller\Rest\RequestPro
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 declare(strict_types=1);

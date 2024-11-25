@@ -51,7 +51,7 @@ The following code sample highlights the two types of dependency injections used
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 

@@ -22,7 +22,7 @@ The following code sample shows how these duties can be completed.
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -155,7 +155,7 @@ A consumer class receives messages from the message queue and changes the status
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 

@@ -80,7 +80,7 @@ Implement `InvalidDependencyInjectionTypeInspection` inspection that extends `Xm
 
 ```java
 /*
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 

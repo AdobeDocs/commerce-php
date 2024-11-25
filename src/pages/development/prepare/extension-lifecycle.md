@@ -45,7 +45,7 @@ If the `schema_version` for your module is found in the `setup_module` table, th
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -81,7 +81,7 @@ The purpose of this class is to update the database structure or apply patches.
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -117,7 +117,7 @@ This class makes final modifications to the database schema after it has been in
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -157,7 +157,7 @@ The purpose of this class is to populate the database with initial data.
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -193,7 +193,7 @@ The purpose of this class is to fix corrupted data or populate a new data field 
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -229,7 +229,7 @@ This class makes final modifications to the database store after data has been i
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -259,7 +259,7 @@ If your installation or upgrade logic spans multiple classes, pass this resource
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -321,7 +321,7 @@ Use the [`ModuleContextInterface`] to get the current module version and execute
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
@@ -372,7 +372,7 @@ In this phase, your module should remove all traces of its existence in the data
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All rights reserved.
  */
 
