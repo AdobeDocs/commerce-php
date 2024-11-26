@@ -51,7 +51,7 @@ The `BulkManagementInterface::scheduleBulk` is responsible for publishing bulk o
                 <li>status - The default operation status <inlineCode class="spectrum-Body--sizeS">OperationInterface::STATUS_TYPE_OPEN</inlineCode></li>
                 <li>serialized_data - An array of serialized data with the following required keys:</li>
                 <ul>
-                    <li>entity_id - Your <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/operational-playbook/glossary#entity">entity</a> ID</li>
+                    <li>entity_id - Your <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#entity">entity</a> ID</li>
                     <li>entity_link - Link to your entity</li>
                     <li>meta_information - String that describes your entity. For example, "SKU: Simple_Product"</li>
                 </ul>
