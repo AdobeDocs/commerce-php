@@ -27,8 +27,7 @@
     "build": "NODE_OPTIONS='--max-old-space-size=8192' gatsby build",
     "serve": "NODE_OPTIONS='--max-old-space-size=8192' gatsby serve",
     "clean": "gatsby clean",
-    "test": "remark src/pages --quiet --frail",
-    "lint": "docker run --rm -e RUN_LOCAL=true --env-file .github/super-linter.env -v \"$PWD\":/tmp/lint github/super-linter:slim-v5"
+    "test": "remark src/pages --quiet --frail"
   },
   "packageManager": "yarn@3.2.4"
 }
