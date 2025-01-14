@@ -17,7 +17,7 @@ The following major backward-incompatible changes were introduced in the 2.4.8-b
 * Updated Braintree blocks
 * Updated default collation for MySQL
 * Updated 2FA Duo web SDK
-* New recaptcha system configuration for wishlists
+* reCAPTCHA for wishlists
 
 ### Upgraded PHP dependency
 
@@ -64,7 +64,7 @@ The following module is affected by this change:
 
 * [Magento_TwoFactor Auth](https://developer.adobe.com/commerce/php/module-reference/module-two-factor-auth/)
 
-### New recaptcha system configuration for wishlists
+### reCaptcha for wishlists
 
 The `Magento_Wishlist` module includes a form for sharing wish lists by email, which is available in both Adobe Commerce and Magento Open Source. This update enables reCAPTCHA for this form.
 
