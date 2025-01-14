@@ -11,7 +11,7 @@ This page highlights backward-incompatible changes between Adobe Commerce and Ma
 
 ## 2.4.8-beta2
 
-The following major backward-incompatible changes were introduced in the 2.4.8-beta1 Adobe Commerce and Magento Open Source releases:
+The following major backward-incompatible changes were introduced in the 2.4.8-beta2 Adobe Commerce and Magento Open Source releases:
 
 * Upgraded PHP dependency
 * Updated Braintree blocks
