@@ -25,7 +25,7 @@ After upgrading to PHP 8.4, many Adobe Commerce modules and extensions encounter
 
 PHP 8.4 introduces several new features and improvements, but it also brings breaking changes that may cause issues for modules, extensions, and custom code developed for earlier PHP versions. These changes can impact core functionality, third-party integrations, and may result in errors or unexpected behavior within your Adobe Commerce store.
 
-If custom modules or code are in use, they may need to be modified to comply with PHP 8.4 changes. Review and update the custom code to resolve any deprecated functions or features.
+If custom modules or code are in use, they may need to be modified to comply with [PHP 8.4 changes](https://php.watch/versions/8.4/implicitly-marking-parameter-type-nullable-deprecated). Review and update the custom code to resolve any deprecated functions or features.
 
 ### Updated Braintree blocks
 
