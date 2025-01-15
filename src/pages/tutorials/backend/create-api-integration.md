@@ -31,7 +31,7 @@ It's much easier to cover a GuzzleHttp implementation by [Unit Tests](https://de
 
 ## Create a GitHub API integration
 
-In the following example, we're using the Github API (`https://api.github.com/` as a web service and will fetch some data from the `magento/magento2` repository.
+In the following example, we're using the Github API `https://api.github.com/` as a web service and will fetch some data from the `magento/magento2` repository.
 
 ```php
 <?php

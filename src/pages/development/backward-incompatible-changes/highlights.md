@@ -21,11 +21,11 @@ The following major backward-incompatible changes were introduced in the 2.4.8-b
 
 ### Upgraded PHP dependency
 
-After upgrading to PHP 8.4, many Adobe Commerce modules and extensions encountered breaking changes. To ensure compatibility with PHP 8.4, these issues needed to be addressed. Consequently, a significant number of modules and extensions within Adobe Commerce have been affected.
+After upgrading to PHP 8.4, some Adobe Commerce modules and extensions encountered breaking changes. To ensure compatibility with PHP 8.4, these issues needed to be addressed. Consequently, several modules and extensions within Adobe Commerce have been affected.
 
-PHP 8.4 introduces several new features and improvements, but it also brings breaking changes that may cause issues for modules, extensions, and custom code developed for earlier PHP versions. These changes can impact core functionality, third-party integrations, and may result in errors or unexpected behavior within your Adobe Commerce store.
+PHP 8.4 introduces several new features and improvements, but it also brings breaking changes that can cause issues for modules, extensions, and custom code developed for earlier PHP versions. These changes can impact core functionality, third-party integrations, and can result in errors or unexpected behavior within your Adobe Commerce store.
 
-If custom modules or code are in use, they may need to be modified to comply with [PHP 8.4 changes](https://php.watch/versions/8.4/implicitly-marking-parameter-type-nullable-deprecated). Review and update the custom code to resolve any deprecated functions or features.
+If custom code or modules are in use, they could need to be modified to comply with [PHP 8.4 changes](https://php.watch/versions/8.4/implicitly-marking-parameter-type-nullable-deprecated). Review and update the custom code to resolve any deprecated functions or features.
 
 ### Updated Braintree blocks
 
@@ -50,7 +50,7 @@ The following module is affected by this change:
 
 The system now defaults to using `utf8mb4` collation for MySQL, ensuring compatibility with MySQL 8 and future-proofing against the deprecation of `utf8mb3`. Previously, the system defaulted to using the `utf8mb3` collation, which is deprecated in MySQL 8.
 
-No features are affected by this change. This change introduces support for BMP and supplementary characters and requires a maximum of four bytes per multibyte character.
+No features are affected by this change. This change introduces support for Basic Multilingual Plane (BMP) and supplementary characters and requires a maximum of four bytes per multibyte character.
 
 ### Updated 2FA Duo web SDK
 
@@ -66,11 +66,11 @@ The following module is affected by this change:
 
 ### reCaptcha for wishlists
 
-The `Magento_Wishlist` module includes a form for sharing wish lists by email, which is available in both Adobe Commerce and Magento Open Source. This update enables reCAPTCHA for this form.
+The `Magento_Wishlist` module includes a form for sharing wishlists by email, which is available in both Adobe Commerce and Magento Open Source. This update enables reCAPTCHA for this form.
 
 Previously, reCAPTCHA was included in the Adobe Commerce security package. This update moves the `ReCaptchaMultiwishlist` module from the Adobe Commerce security package to the Magento Open Source security package and renames it to `ReCaptchaWishlist`. As a result, reCAPTCHA is now available for the wishlist sharing form in Magento Open Source as well.
 
-The system configurations remain unchanged but are now part of the Magento Open Source security package. The configuration path is **Stores** > **Configuration** > **Security** > **Google reCAPTCHA Storefront** > **Storefront** > **Enable for Wishlist Sharing**.
+The system configurations remain unchanged, but are now part of the Magento Open Source security package. The configuration path is **Stores** > **Configuration** > **Security** > **Google reCAPTCHA Storefront** > **Storefront** > **Enable for Wishlist Sharing**.
 
 The following modules are affected by this change:
 
