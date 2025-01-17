@@ -316,7 +316,7 @@ class Edit extends Action
 
 2.13. Static methods SHOULD NOT be used.
 
-2.14. Temporal coupling MUST be avoided
+2.14. Temporal coupling MUST be avoided.
 
 Example #1:
 
