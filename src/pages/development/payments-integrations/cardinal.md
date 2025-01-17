@@ -301,7 +301,7 @@ Then you can expect to see an additional field with a cardholder authentication 
 [Cardinal Consumer Authentication]: https://cardinaldocs.atlassian.net/wiki/spaces/CC/pages/196642/Consumer+Authentication#ConsumerAuthentication-CardinalConsumerAuthentication
 [Cardinal Cruise Standard]: https://cardinaldocs.atlassian.net/wiki/spaces/CC/pages/7929857/Cardinal+Cruise+Standard
 [list of compatible payment gateways]: https://cardinalcommerce.com/partners/
-[module]: https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/glossary.html#module
+[module]: https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#module
 [app\code\AuthorizenetCardinal\Model\Checkout\ConfigProvider.php]: https://github.com/magento/magento2/tree/2.3/app/code/Magento/AuthorizenetCardinal/Model/Checkout/ConfigProvider.php
 [JWT]: https://en.wikipedia.org/wiki/JSON_Web_Token
 [API Reference]: https://cardinaldocs.atlassian.net/wiki/spaces/CC/pages/98315/Response+Objects
