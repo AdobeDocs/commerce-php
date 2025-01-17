@@ -41,7 +41,7 @@ Add or edit a CMS page, cacheable block, or use the Admin to change the configur
 
 ## How to clear the directories
 
-To only clear directories and not perform other actions, log in to the application server as the <a href="https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html">file system owner</a> and clear directories using a command like the following:
+To only clear directories and not perform other actions, log in to the application server as the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/overview">file system owner</a> and clear directories using a command like the following:
 
 ```bash
 rm -r <magento_root>/generated/*/*
@@ -56,7 +56,7 @@ You can also use the following command-line tools clear some directories for you
 | [`magento deploy:mode:set {mode}`][]|Switch between `developer` and `production` mode | `generated/metadata`, `generated/code`, `var/view_preprocessed`|
 | [`magento cache:clean {type}`][]|Clears the cache | `var/cache` and `var/page_cache`|
 
-[`magento setup:upgrade`]: https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-db-upgr.html
+[`magento setup:upgrade`]: https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/database-upgrade
 [`magento setup:di:compile`]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/code-compiler.html
 [`magento deploy:mode:set {mode}`]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/set-mode.html
 [`magento cache:clean {type}`]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-cache.html

@@ -30,8 +30,8 @@ The following example shows you how to dispatch an event with and without an arr
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 namespace MyCompany\MyModule;
@@ -108,8 +108,8 @@ Below is an example of the basic observer class structure:
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 namespace MyCompany\MyModule\Observer;
@@ -137,8 +137,8 @@ One of the more powerful features of observers is that they are able to use para
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 namespace MyCompany\MyModule\Observer;
@@ -213,4 +213,4 @@ Below is an example of how to disable the previously created observer.
 
 ## Recommended Reading
 
-*  [Observers best practices](https://developer.adobe.com/commerce/php/best-practices/extensions/observers/)
+*  [Observers best practices](/best-practices/extensions/observers/)

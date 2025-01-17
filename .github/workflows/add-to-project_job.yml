@@ -5,6 +5,7 @@ on:
 
 jobs:
   add-to-project:
+    if: github.event.repository.fork == false
     runs-on: ubuntu-latest
 
     steps:
