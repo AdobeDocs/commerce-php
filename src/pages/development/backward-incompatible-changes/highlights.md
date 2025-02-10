@@ -813,7 +813,7 @@ changed.MAJOR: Magento\InventoryIndexer\Indexer\SourceItem\SourceItemIndexer::__
 
 ### JSON field support
 
-MySQL 5.7 supports the native JSON data type: [https://dev.mysql.com/doc/refman/5.7/en/json.html](https://dev.mysql.com/doc/refman/5.7/en/json.html). Version 2.4.0 now supports using JSON fields with a declarative schema.
+MySQL 5.7 supports the native JSON data type: <https://dev.mysql.com/doc/refman/5.7/en/json.html>. Version 2.4.0 now supports using JSON fields with a declarative schema.
 
 ### Laminas
 

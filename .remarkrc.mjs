@@ -31,7 +31,8 @@ const remarkConfig = {
 					"https://eat.magento.com",
 					"https://developer.ups.com/oauth-developer-guide",
 					"https://business.adobe.com",
-					"https://www.adobe.com/trust/security/product-security.html"
+					"https://www.adobe.com/trust/security/product-security.html",
+					"https://dev.mysql.com/doc/"
 				],
 				skipOffline: "true"
 			}
