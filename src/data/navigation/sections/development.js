@@ -598,6 +598,10 @@ module.exports = [
           path: "/development/security/cross-site-scripting/",
         },
         {
+          title: "Data re-encryption",
+          path: "/development/security/data-encryption/",
+        },
+        {
           title: "Denial of service (DoS) attacks",
           path: "/development/security/denial-of-service-attacks/",
         },

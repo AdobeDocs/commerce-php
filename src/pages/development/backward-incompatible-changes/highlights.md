@@ -9,9 +9,77 @@ keywords:
 
 This page highlights backward-incompatible changes between Adobe Commerce and Magento Open Source releases that have a major impact and require detailed explanation and special instructions to ensure third-party modules continue working. High-level reference information for all backward-incompatible changes in each release is documented in the [reference](reference.md) section.
 
-## 2.4.8-beta
+## 2.4.8-beta2
 
-The following major backward-incompatible changes were introduced in the 2.4.8-beta Adobe Commerce and Magento Open Source releases:
+The following major backward-incompatible changes were introduced in the 2.4.8-beta2 Adobe Commerce and Magento Open Source releases:
+
+* Upgraded PHP dependency
+* Updated Braintree blocks
+* Updated default collation for MySQL
+* Updated 2FA Duo web SDK
+* reCAPTCHA for wishlists
+
+### Upgraded PHP dependency
+
+After upgrading to PHP 8.4, some Adobe Commerce modules and extensions encountered breaking changes. To ensure compatibility with PHP 8.4, these issues needed to be addressed. Consequently, several modules and extensions within Adobe Commerce have been affected.
+
+PHP 8.4 introduces several new features and improvements, but it also brings breaking changes that can cause issues for modules, extensions, and custom code developed for earlier PHP versions. These changes can impact core functionality, third-party integrations, and can result in errors or unexpected behavior within your Adobe Commerce store.
+
+If custom code or modules are in use, they could need to be modified to comply with [PHP 8.4 changes](https://php.watch/versions/8.4/implicitly-marking-parameter-type-nullable-deprecated). Review and update the custom code to resolve any deprecated functions or features.
+
+### Updated Braintree blocks
+
+Several blocks in the Braintree module were refactored to simplify maintenance of the presentation layer.
+
+**Action Required:**
+
+This change affects custom code and extensions that use the following Braintree blocks:
+
+* `app/code/PayPal/Braintree/Block/PayPal/Button.php`
+* `app/code/PayPal/Braintree/Block/PayPal/ProductPage.php`
+* `app/code/PayPal/Braintree/Block/Customer/CardRenderer.php`
+* `app/code/PayPal/Braintree/Block/Credit/Calculator/Cart.php`
+* `app/code/PayPal/Braintree/Block/Credit/Calculator/Product/View.php`
+* `app/code/PayPal/Braintree/Block/Credit/Calculator/Adminhtml/Virtual/Form.php`
+
+The following module is affected by this change:
+
+* paypal/module-braintree-core
+
+### Updated default collation for MySQL
+
+The system now defaults to using `utf8mb4` collation for MySQL, ensuring compatibility with MySQL 8 and future-proofing against the deprecation of `utf8mb3`. Previously, the system defaulted to using the `utf8mb3` collation, which is deprecated in MySQL 8.
+
+No features are affected by this change. This change introduces support for Basic Multilingual Plane (BMP) and supplementary characters and requires a maximum of four bytes per multibyte character.
+
+### Updated 2FA Duo web SDK
+
+This change updates the Duo two-factor authentication implementation in Adobe Commerce to use the latest SDK (Web SDK v4). This upgrade enables merchants to seamlessly transition to using Duo Universal Prompt.
+
+**Action Required:**
+
+Merchants must update their configuration in the Admin settings to include a Client ID and Secret.
+
+The following module is affected by this change:
+
+* [Magento_TwoFactor Auth](https://developer.adobe.com/commerce/php/module-reference/module-two-factor-auth/)
+
+### reCaptcha for wishlists
+
+The `Magento_Wishlist` module includes a form for sharing wishlists by email, which is available in both Adobe Commerce and Magento Open Source. This update enables reCAPTCHA for this form.
+
+Previously, reCAPTCHA was included in the Adobe Commerce security package. This update moves the `ReCaptchaMultiwishlist` module from the Adobe Commerce security package to the Magento Open Source security package and renames it to `ReCaptchaWishlist`. As a result, reCAPTCHA is now available for the wishlist sharing form in Magento Open Source as well.
+
+The system configurations remain unchanged, but are now part of the Magento Open Source security package. The configuration path is **Stores** > **Configuration** > **Security** > **Google reCAPTCHA Storefront** > **Storefront** > **Enable for Wishlist Sharing**.
+
+The following modules are affected by this change:
+
+* Magento_RecaptchaWishlist
+* Magento_RecaptchaMultipleWishlist
+
+## 2.4.8-beta1
+
+The following major backward-incompatible changes were introduced in the 2.4.8-beta1 Adobe Commerce and Magento Open Source releases:
 
 * Upgraded `monolog/monolog` dependency
 * Updated default value for 2FA OTP window
@@ -745,7 +813,7 @@ changed.MAJOR: Magento\InventoryIndexer\Indexer\SourceItem\SourceItemIndexer::__
 
 ### JSON field support
 
-MySQL 5.7 supports the native JSON data type: [https://dev.mysql.com/doc/refman/5.7/en/json.html](https://dev.mysql.com/doc/refman/5.7/en/json.html). Version 2.4.0 now supports using JSON fields with a declarative schema.
+MySQL 5.7 supports the native JSON data type: <https://dev.mysql.com/doc/refman/5.7/en/json.html>. Version 2.4.0 now supports using JSON fields with a declarative schema.
 
 ### Laminas
 
