@@ -6,11 +6,7 @@ keywords:
   - Security
 ---
 
-import BetaNote from '/src/_includes/notes/beta.md'
-
 # Data re-encryption
-
-<BetaNote />
 
 Adobe Commerce and Magento Open Source provide functionality to re-encrypt certain encrypted system configuration, payment fields, and custom fields. These operations may be necessary after [rotating an encryption key](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key).
 
