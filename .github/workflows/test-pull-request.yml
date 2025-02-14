@@ -60,10 +60,9 @@
           # Use full version number to avoid cases when a next
           # released version is buggy
           # About slim image: https://github.com/github/super-linter#slim-image
-          uses: super-linter/super-linter/slim@v7.2.0
+          uses: super-linter/super-linter/slim@v7.2.1
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            DEFAULT_BRANCH: main
 
     test:
       runs-on: ubuntu-latest
