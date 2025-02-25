@@ -9,4 +9,4 @@
   
   jobs:
     validate:
-      uses: AdobeDocs/commerce-testing/.github/workflows/validate-pr_job.yml@ds_pr-test-wf
+      uses: AdobeDocs/commerce-php/.github/workflows/validate-pr_job.yml@ds_pr-test-wf
