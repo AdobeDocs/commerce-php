@@ -17,4 +17,4 @@ defaults:
 
 jobs:
   call-workflow-deploy-to-pages:
-    uses: AdobeDocs/commerce-php/.github/workflows/deploy-to-pages_job.yml@main
+    uses: ./.github/workflows/deploy-to-pages_job.yml
