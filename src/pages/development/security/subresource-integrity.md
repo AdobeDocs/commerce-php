@@ -41,7 +41,7 @@ All integrity hashes are stored in the filesystem via the [Storage](https://gith
 
 <InlineAlert slots="text" />
 Adobe Commerce and Magento Open Source 2.4.8 and later no longer use a cache to store SRI hashes. The implementation has been refactored to store the hashes in the local filesystem instead. This ensures that SRI hashes are still intact and not effected by purging of caches.
-Subresource Integrity hashes are stored in json files in the `pub/static` directory by the deployed package area - frontend, base or admin.
+Subresource Integrity hashes are stored in JSON files in the `pub/static` directory by the deployed package area (frontend, base or admin).
 For e.g, SRI hashes for the `adminhtml/Magento/backend/en_US/requirejs/require.js` file will be located in the `pub/static/adminhtml/sri-hashes.json` file.
 
 ### Subresource Integrity for Remote Resources
