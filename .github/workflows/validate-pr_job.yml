@@ -1,0 +1,53 @@
+---
+name: Reusable workflow to validate a pull request
+
+on: workflow_call
+
+permissions:
+  contents: read
+  statuses: write
+
+jobs:
+  lint-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Load super-linter configuration
+        run: cat .github/super-linter.env >> "$GITHUB_ENV"
+
+      - name: Lint Code Base
+        uses: super-linter/super-linter/slim@v7.2.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  remark-test:
+    runs-on: ubuntu-latest
+    needs: lint-test
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Setup Node and Install Dependencies Action
+        uses: commerce-docs/devsite-install-action@main
+        with:
+          node-version-file: '.nvmrc'
+          cache-dependency-path: 'yarn.lock'
+
+      - name: Check links
+        run: yarn test
+
+  build-test:
+    runs-on: ubuntu-latest
+    needs: remark-test
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Setup Node and Install Dependencies Action
+        uses: commerce-docs/devsite-install-action@main
+        with:
+          node-version-file: '.nvmrc'
+          cache-dependency-path: 'yarn.lock'
+
+      - name: Build site
+        run: yarn build
