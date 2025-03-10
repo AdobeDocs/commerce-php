@@ -34,33 +34,15 @@ The default SRI feature is implemented only on the payment pages for the admin a
 
 The Subresource Integrity hash generation process begins once [static content](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment) for each package area has been deployed.
 The [postprocessor](https://github.com/magento/magento2/tree/2.4-develop/app/code/Magento/Csp/Model/Deploy/Package/Processor/PostProcessor) class then systematically processes all javascript files within each package and generates integrity hashes.
-The postprocessor class triggers the [SubresourceIntegrityCollector](https://github.com/magento/magento2/blob/2.4-develop/app/code/Magento/Csp/Model/SubresourceIntegrityCollector.php) class to collect the hashes which are cached for storage after all packages are deployed.
-All integrity hashes are stored in cache via the [SubresourceIntegrityRepository](https://github.com/magento/magento2/blob/2.4-develop/app/code/Magento/Csp/Model/SubresourceIntegrityRepository.php) class.
+The postprocessor class triggers the [SubresourceIntegrityCollector](https://github.com/magento/magento2/blob/2.4-develop/app/code/Magento/Csp/Model/SubresourceIntegrityCollector.php) class to collect the hashes which are stored in the filesystem after all packages are deployed.
+All integrity hashes are stored in the filesystem via the [Storage](https://github.com/magento/magento2/blob/2.4-develop/app/code/Magento/Csp/Model/SubresourceIntegrity/Storage/File.php) class.
 
-## Subresource Integrity Caching
-
-Subresource Integrity hashes are stored and organized in cache by the deployed package area - frontend, base or admin.
-The hash value for a specific file can be retrieved from the cache using the `getByPath` function in the [SubresourceIntegrityRepository](https://github.com/magento/magento2/blob/2.4-develop/app/code/Magento/Csp/Model/SubresourceIntegrityRepository.php) class.
-
-Caches can be purged in the following ways:
-
-* Programmatically, by using the `deleteAll` function in the [SubresourceIntegrityRepository](https://github.com/magento/magento2/blob/2.4-develop/app/code/Magento/Csp/Model/SubresourceIntegrityRepository.php) class.
-
-* Using the CLI
-
-```bash
-bin/magento cache:flush
-```
-
-* Through the Admin UI via **System** > **Tools** > **Cache Management**. **Flush Cache Storage**
+## Subresource Integrity Storage
 
 <InlineAlert slots="text" />
-
-After the cache has been purged, SRI caches must be regenerated using the static content deploy command.
-
-```bash
-bin/magento setup:static-content:deploy
-```
+Adobe Commerce and Magento Open Source 2.4.8 and later no longer use a cache to store SRI hashes. The implementation has been refactored to store the hashes in the local filesystem instead. This ensures that SRI hashes are still intact and not effected by purging of caches.
+Subresource Integrity hashes are stored in json files in the `pub/static` directory by the deployed package area - frontend, base or admin.
+For e.g, SRI hashes for the `adminhtml/Magento/backend/en_US/requirejs/require.js` file will be located in the `pub/static/adminhtml/sri-hashes.json` file.
 
 ### Subresource Integrity for Remote Resources
 
