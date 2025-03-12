@@ -3,26 +3,50 @@ name: Reusable workflow to validate a pull request
 
 on: workflow_call
 
-permissions:
-  contents: read
-  statuses: write
-
 jobs:
   lint-test:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: Load super-linter configuration
-        run: cat .github/super-linter.env >> "$GITHUB_ENV"
+    - name: Checkout Code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
 
-      - name: Lint Code Base
-        uses: super-linter/super-linter/slim@v7.2.1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Setup reviewdog
+      uses: reviewdog/action-setup@v1.3.0
+      with:
+        reviewdog_version: v0.20.3
+
+    - name: Load super-linter configuration
+      shell: bash
+      run: cat .github/super-linter.env >> "$GITHUB_ENV"
+
+    - name: Lint Code Base with super-linter and reviewdog
+      uses: super-linter/super-linter/slim@v7.3.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Report linting results with reviewdog
+      shell: bash
+      run: |
+        TMPFILE=$(mktemp)
+        git diff > "${TMPFILE}"
+        if [ ! -s "${TMPFILE}" ]; then
+          echo "No changes detected, skipping reviewdog."
+          exit 0
+        fi
+        git stash --include-untracked
+        reviewdog                        \
+          -f=diff                        \
+          -f.diff.strip=1                \
+          -name="markdownlint-fix"       \
+          -reporter="github-pr-review"   \
+          -filter-mode="diff_context"    \
+          -fail-level=error < "${TMPFILE}"
+        git stash drop || true
+      env:
+        REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   remark-test:
     runs-on: ubuntu-latest
