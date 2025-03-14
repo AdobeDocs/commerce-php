@@ -25,7 +25,7 @@ jobs:
     - name: Lint Code Base with super-linter and reviewdog
       uses: super-linter/super-linter/slim@v7.3.0
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ github.token }}
 
     - name: Report linting results with reviewdog
       shell: bash
@@ -46,7 +46,7 @@ jobs:
           -fail-level=error < "${TMPFILE}"
         git stash drop || true
       env:
-        REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        REVIEWDOG_GITHUB_API_TOKEN: ${{ github.token }}
 
   remark-test:
     runs-on: ubuntu-latest
