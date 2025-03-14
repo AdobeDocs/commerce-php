@@ -1,13 +1,12 @@
----
-  name: Validate pull request
-  
-  on: pull_request
+name: Validate pull request
 
-  permissions:
-    contents: read
-    statuses: write
-    pull-requests: write
-  
-  jobs:
-    testing:
-      uses: ./.github/workflows/validate-pr_job.yml
+on: pull_request_target
+
+permissions:
+  contents: read
+  statuses: write
+  pull-requests: write
+
+jobs:
+  testing:
+    uses: ./.github/workflows/validate-pr_job.yml
