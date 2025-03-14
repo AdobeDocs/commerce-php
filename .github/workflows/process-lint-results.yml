@@ -3,6 +3,7 @@ name: Process Lint Results
 on:
   workflow_run:
     workflows: ["Validate pull request"]
+    types: [completed]
 
 permissions:
   contents: read
@@ -11,12 +12,11 @@ permissions:
 jobs:
   process:
     runs-on: ubuntu-latest
-    if: >
-      github.event.workflow_run.conclusion == 'failure' &&
-      github.event.workflow_run.event == 'pull_request'
+    if: github.event.workflow_run.conclusion == 'failure'
 
     steps:
       - name: Download artifact
+        id: download
         uses: actions/github-script@v7
         with:
           script: |
@@ -34,7 +34,7 @@ jobs:
             );
             if (!matchArtifact) {
               console.log(`No artifact found with name: ${expectedArtifactName}`);
-              return;
+              return false;
             }
             const download = await github.rest.actions.downloadArtifact({
               owner: context.repo.owner,
@@ -44,14 +44,16 @@ jobs:
             });
             const fs = require('fs');
             fs.writeFileSync('${{github.workspace}}/lint-results.zip', Buffer.from(download.data));
+            return true;
 
       - name: Setup reviewdog
+        if: steps.download.outputs.result == 'true'
         uses: reviewdog/action-setup@v1.3.0
         with:
           reviewdog_version: v0.20.3
 
       - name: Process results
-        if: success()
+        if: steps.download.outputs.result == 'true'
         run: |
           unzip lint-results.zip
           if [ ! -f "diff.txt" ]; then
