@@ -1,0 +1,73 @@
+name: Process Lint Results
+
+on:
+  workflow_run:
+    workflows: ["Validate pull request"]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    if: >
+      github.event.workflow_run.conclusion == 'failure' &&
+      github.event.workflow_run.event == 'pull_request'
+
+    steps:
+      - name: Download artifact
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const runId = context.payload.workflow_run.id;
+            const runAttempt = context.payload.workflow_run.run_attempt;
+            const expectedArtifactName = `lint-results-${runId}-${runAttempt}`;
+            
+            const artifacts = await github.rest.actions.listWorkflowRunArtifacts({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              run_id: runId
+            });
+            const matchArtifact = artifacts.data.artifacts.find(
+              (artifact) => artifact.name === expectedArtifactName
+            );
+            if (!matchArtifact) {
+              console.log(`No artifact found with name: ${expectedArtifactName}`);
+              return;
+            }
+            const download = await github.rest.actions.downloadArtifact({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              artifact_id: matchArtifact.id,
+              archive_format: 'zip'
+            });
+            const fs = require('fs');
+            fs.writeFileSync('${{github.workspace}}/lint-results.zip', Buffer.from(download.data));
+
+      - name: Setup reviewdog
+        uses: reviewdog/action-setup@v1.3.0
+        with:
+          reviewdog_version: v0.20.3
+
+      - name: Process results
+        if: success()
+        run: |
+          unzip lint-results.zip
+          if [ ! -f "diff.txt" ]; then
+            echo "No diff file found. Skipping."
+            exit 0
+          fi
+          if [ ! -s "diff.txt" ]; then
+            echo "Diff file is empty. Skipping."
+            exit 0
+          fi
+          reviewdog \
+            -f=diff \
+            -f.diff.strip=1 \
+            -name="markdownlint-fix" \
+            -reporter="github-pr-review" \
+            -filter-mode="diff_context" \
+            -fail-level=error < diff.txt
+        env:
+          REVIEWDOG_GITHUB_API_TOKEN: ${{ github.token }} 
