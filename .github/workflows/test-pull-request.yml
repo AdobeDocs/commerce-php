@@ -9,4 +9,3 @@ permissions:
 jobs:
   testing:
     uses: ./.github/workflows/validate-pr_job.yml
-    secrets: inherit
