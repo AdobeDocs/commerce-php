@@ -3,13 +3,6 @@ name: Reusable workflow to validate a pull request
 
 on: workflow_call
 
-permissions:
-  contents: read
-  statuses: write
-  pull-requests: write
-  checks: write
-  actions: read
-
 jobs:
   lint-test:
     runs-on: ubuntu-latest
