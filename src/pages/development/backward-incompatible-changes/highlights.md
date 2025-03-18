@@ -39,7 +39,7 @@ No action is required for merchants or partners. This is a security enhancement 
 
 The following module is affected by this change:
 
-* [magento/module-sales](https://developer.adobe.com/commerce/php/module-reference/module-sales/)
+* [Magento_Sales](/module-reference/module-sales/)
 
 ### New 2FA system parameters
 
