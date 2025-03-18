@@ -26,7 +26,7 @@ The following major backward-incompatible changes were introduced in the 2.4.8 A
 
 ### Enhanced security for sales entity comments
 
-This change improves security by restricting comment editing permissions for sales entity comments (invoices, shipments, and credit memos) to only the admin user who created them. Previously, any user could edit comments through the REST API.
+This change improves security by restricting comment editing permissions for sales entity comments (invoices, shipments, and credit memos) to only the admin user who created them.
 
 **Impact:**
 
