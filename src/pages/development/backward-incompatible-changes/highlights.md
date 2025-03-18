@@ -35,6 +35,7 @@ This change improves security by restricting comment editing permissions for sal
 * Affects sales invoice, shipment, and credit memo entity comment features
 
 **Action Required:**
+
 No action is required for merchants or partners. This is a security enhancement that automatically applies to all installations.
 
 The following module is affected by this change:
