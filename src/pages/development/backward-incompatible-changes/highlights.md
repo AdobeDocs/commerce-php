@@ -45,20 +45,20 @@ The following module is affected by this change:
 
 ### MySQL 8.4 foreign key restrictions
 
-MySQL 8.4 introduces stricter foreign key validation by default. The `restrict_fk_on_non_standard_key` setting is now ON by default, which restricts the use of non-unique or partial keys as foreign keys. This change affects merchants upgrading from MySQL 8.0 to MySQL 8.4.
+MySQL 8.4 introduces stricter foreign key validation by default. The `restrict_fk_on_non_standard_key` setting is now **On** by default, which restricts the use of non-unique or partial keys as foreign keys. This change affects merchants upgrading from MySQL 8.0 to MySQL 8.4.
 
 **Impact:**
 
-* The use of non-unique or partial keys as foreign keys is now restricted by default
-* This may affect existing database structures that use non-standard foreign key configurations
-* Merchants must explicitly configure this setting to maintain compatibility
+* The use of non-unique or partial keys as foreign keys is now restricted by default.
+* This can affect existing database structures that use non-standard foreign key configurations.
+* Merchants must explicitly configure this setting to maintain compatibility.
 
 **Action Required:**
 
 Merchants upgrading from MySQL 8.0 to MySQL 8.4 must either:
 
-1. Set the `restrict_fk_on_non_standard_key` parameter to OFF in their MySQL configuration
-2. Use the `--skip-restrict-fk-on-non-standard-key` server option when starting MySQL
+1. Set the `restrict_fk_on_non_standard_key` parameter to **Off** in the MySQL configuration.
+1. Use the `--skip-restrict-fk-on-non-standard-key` server option when starting MySQL.
 
 See the [MySQL documentation](https://dev.mysql.com/doc/refman/8.4/en/server-system-variables.html#sysvar_restrict_fk_on_non_standard_key) and _[Adobe Commerce Upgrade Guide](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/prerequisites#mysql)_ for more details.
 
