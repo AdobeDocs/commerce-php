@@ -9,110 +9,58 @@ keywords:
 
 This page highlights backward-incompatible changes between Adobe Commerce and Magento Open Source releases that have a major impact and require detailed explanation and special instructions to ensure third-party modules continue working. High-level reference information for all backward-incompatible changes in each release is documented in the [reference](reference.md) section.
 
-## 2.4.8-beta2
+## 2.4.8
 
-The following major backward-incompatible changes were introduced in the 2.4.8-beta2 Adobe Commerce and Magento Open Source releases:
+The following major backward-incompatible changes were introduced in the 2.4.8 Adobe Commerce and Magento Open Source releases:
 
-* Upgraded PHP dependency
-* Updated Braintree blocks
-* Updated default collation for MySQL
-* Updated 2FA Duo web SDK
-* reCAPTCHA for wishlists
-
-### Upgraded PHP dependency
-
-After upgrading to PHP 8.4, some Adobe Commerce modules and extensions encountered breaking changes. To ensure compatibility with PHP 8.4, these issues needed to be addressed. Consequently, several modules and extensions within Adobe Commerce have been affected.
-
-PHP 8.4 introduces several new features and improvements, but it also brings breaking changes that can cause issues for modules, extensions, and custom code developed for earlier PHP versions. These changes can impact core functionality, third-party integrations, and can result in errors or unexpected behavior within your Adobe Commerce store.
-
-If custom code or modules are in use, they could need to be modified to comply with [PHP 8.4 changes](https://php.watch/versions/8.4/implicitly-marking-parameter-type-nullable-deprecated). Review and update the custom code to resolve any deprecated functions or features.
-
-### Updated Braintree blocks
-
-Several blocks in the Braintree module were refactored to simplify maintenance of the presentation layer.
-
-**Action Required:**
-
-This change affects custom code and extensions that use the following Braintree blocks:
-
-* `app/code/PayPal/Braintree/Block/PayPal/Button.php`
-* `app/code/PayPal/Braintree/Block/PayPal/ProductPage.php`
-* `app/code/PayPal/Braintree/Block/Customer/CardRenderer.php`
-* `app/code/PayPal/Braintree/Block/Credit/Calculator/Cart.php`
-* `app/code/PayPal/Braintree/Block/Credit/Calculator/Product/View.php`
-* `app/code/PayPal/Braintree/Block/Credit/Calculator/Adminhtml/Virtual/Form.php`
-
-The following module is affected by this change:
-
-* paypal/module-braintree-core
-
-### Updated default collation for MySQL
-
-The system now defaults to using `utf8mb4` collation for MySQL, ensuring compatibility with MySQL 8 and future-proofing against the deprecation of `utf8mb3`. Previously, the system defaulted to using the `utf8mb3` collation, which is deprecated in MySQL 8.
-
-No features are affected by this change. This change introduces support for Basic Multilingual Plane (BMP) and supplementary characters and requires a maximum of four bytes per multibyte character.
-
-### Updated 2FA Duo web SDK
-
-This change updates the Duo two-factor authentication implementation in Adobe Commerce to use the latest SDK (Web SDK v4). This upgrade enables merchants to seamlessly transition to using Duo Universal Prompt.
-
-**Action Required:**
-
-Merchants must update their configuration in the Admin settings to include a Client ID and Secret.
-
-The following module is affected by this change:
-
-* [Magento_TwoFactor Auth](https://developer.adobe.com/commerce/php/module-reference/module-two-factor-auth/)
-
-### reCaptcha for wishlists
-
-The `Magento_Wishlist` module includes a form for sharing wishlists by email, which is available in both Adobe Commerce and Magento Open Source. This update enables reCAPTCHA for this form.
-
-Previously, reCAPTCHA was included in the Adobe Commerce security package. This update moves the `ReCaptchaMultiwishlist` module from the Adobe Commerce security package to the Magento Open Source security package and renames it to `ReCaptchaWishlist`. As a result, reCAPTCHA is now available for the wishlist sharing form in Magento Open Source as well.
-
-The system configurations remain unchanged, but are now part of the Magento Open Source security package. The configuration path is **Stores** > **Configuration** > **Security** > **Google reCAPTCHA Storefront** > **Storefront** > **Enable for Wishlist Sharing**.
-
-The following modules are affected by this change:
-
-* Magento_RecaptchaWishlist
-* Magento_RecaptchaMultipleWishlist
-
-## 2.4.8-beta1
-
-The following major backward-incompatible changes were introduced in the 2.4.8-beta1 Adobe Commerce and Magento Open Source releases:
-
-* Upgraded `monolog/monolog` dependency
-* Updated default value for 2FA OTP window
+* Enhanced security for sales entity comments
+* MySQL 8.4 foreign key restrictions
 * New 2FA system parameter
 * New unique EAV key
+* reCAPTCHA for wishlists
+* Updated 2FA Duo web SDK
+* Updated Braintree blocks
+* Updated default collation for MySQL
+* Updated default value for 2FA OTP window
+* Upgraded `monolog/monolog` dependency
+* Upgraded PHP dependency
 
-### Upgraded monolog/monolog dependency
+### Enhanced security for sales entity comments
 
-The `monolog/monolog` third-party dependency was updated to the latest stable version (3.x) to enhance platform stability and performance.<!--AC-12689-->
+This change improves security by restricting comment editing permissions for sales entity comments (invoices, shipments, and credit memos) to only the admin user who created them.
+
+**Impact:**
+
+* Only the admin user who created a comment can edit it
+* Comments cannot be edited through the REST API by unauthorized users
+* Affects sales invoice, shipment, and credit memo entity comment features
 
 **Action Required:**
 
-This change affects custom code and extensions that use or overwrite the `protected function write(array $record): void` method for exception logging. The argument type needs to be updated to `LogRecord $record` instead of `array $record`. For example:
-
-```php
-protected function write(LogRecord $record): void
-```
-
-### Updated default value for 2FA OTP window
-
-The `spomky-labs/otphp` library has changed the way that the one-time password (OTP) window is calculated for two factor authentication (2FA). Previously, it used a "window" multiplier, but now it uses a "leeway" value in seconds. This change ensures that the configuration is up to date with the latest library behavior.<!--AC-12129-->
-
-Merchants and customers using the Google Authenticator 2FA provider must reset the configuration value for the OTP window. The command has changed from `bin/magento config:set twofactorauth/google/otp_window VALUE` to `bin/magento config:set twofactorauth/google/leeway VALUE`. This change aligns with the updated `spomky-labs/otphp` library, which uses a default expiration period of 30 seconds.
-
-To set the new default value:
-
-```bash
-bin/magento config:set twofactorauth/google/leeway 29
-```
+No action is required for merchants or partners. This is a security enhancement that automatically applies to all installations.
 
 The following module is affected by this change:
 
-* [Magento_TwoFactorAuth](/module-reference/module-two-factor-auth/)
+* [Magento_Sales](/module-reference/module-sales/)
+
+### MySQL 8.4 foreign key restrictions
+
+MySQL 8.4 introduces stricter foreign key validation by default. The `restrict_fk_on_non_standard_key` setting is now **On** by default, which restricts the use of non-unique or partial keys as foreign keys. This change affects merchants upgrading from MySQL 8.0 to MySQL 8.4.
+
+**Impact:**
+
+* The use of non-unique or partial keys as foreign keys is now restricted by default.
+* This can affect existing database structures that use non-standard foreign key configurations.
+* Merchants must explicitly configure this setting to maintain compatibility.
+
+**Action Required:**
+
+Merchants upgrading from MySQL 8.0 to MySQL 8.4 must either:
+
+1. Set the `restrict_fk_on_non_standard_key` parameter to **Off** in the MySQL configuration.
+1. Use the `--skip-restrict-fk-on-non-standard-key` server option when starting MySQL.
+
+See the [MySQL documentation](https://dev.mysql.com/doc/refman/8.4/en/server-system-variables.html#sysvar_restrict_fk_on_non_standard_key) and _[Adobe Commerce Upgrade Guide](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/prerequisites#mysql)_ for more details.
 
 ### New 2FA system parameters
 
@@ -150,6 +98,92 @@ Added a unique key on the column pair (`option_id`, `store_id`) on the `eav_attr
 The following module is affected by this change:
 
 * [Magento_EAV](/module-reference/module-eav/)
+
+### reCaptcha for wishlists
+
+The `Magento_Wishlist` module includes a form for sharing wishlists by email, which is available in both Adobe Commerce and Magento Open Source. This update enables reCAPTCHA for this form.
+
+Previously, reCAPTCHA was included in the Adobe Commerce security package. This update moves the `ReCaptchaMultiwishlist` module from the Adobe Commerce security package to the Magento Open Source security package and renames it to `ReCaptchaWishlist`. As a result, reCAPTCHA is now available for the wishlist sharing form in Magento Open Source as well.
+
+The system configurations remain unchanged, but are now part of the Magento Open Source security package. The configuration path is **Stores** > **Configuration** > **Security** > **Google reCAPTCHA Storefront** > **Storefront** > **Enable for Wishlist Sharing**.
+
+The following modules are affected by this change:
+
+* Magento_RecaptchaWishlist
+* Magento_RecaptchaMultipleWishlist
+
+### Updated 2FA Duo web SDK
+
+This change updates the Duo two-factor authentication implementation in Adobe Commerce to use the latest SDK (Web SDK v4). This upgrade enables merchants to seamlessly transition to using Duo Universal Prompt.
+
+**Action Required:**
+
+Merchants must update their configuration in the Admin settings to include a Client ID and Secret.
+
+The following module is affected by this change:
+
+* [Magento_TwoFactor Auth](https://developer.adobe.com/commerce/php/module-reference/module-two-factor-auth/)
+
+### Updated Braintree blocks
+
+Several blocks in the Braintree module were refactored to simplify maintenance of the presentation layer.
+
+**Action Required:**
+
+This change affects custom code and extensions that use the following Braintree blocks:
+
+* `app/code/PayPal/Braintree/Block/PayPal/Button.php`
+* `app/code/PayPal/Braintree/Block/PayPal/ProductPage.php`
+* `app/code/PayPal/Braintree/Block/Customer/CardRenderer.php`
+* `app/code/PayPal/Braintree/Block/Credit/Calculator/Cart.php`
+* `app/code/PayPal/Braintree/Block/Credit/Calculator/Product/View.php`
+* `app/code/PayPal/Braintree/Block/Credit/Calculator/Adminhtml/Virtual/Form.php`
+
+The following module is affected by this change:
+
+* paypal/module-braintree-core
+
+### Updated default collation for MySQL
+
+The system now defaults to using `utf8mb4` collation for MySQL, ensuring compatibility with MySQL 8 and future-proofing against the deprecation of `utf8mb3`. Previously, the system defaulted to using the `utf8mb3` collation, which is deprecated in MySQL 8.
+
+No features are affected by this change. This change introduces support for Basic Multilingual Plane (BMP) and supplementary characters and requires a maximum of four bytes per multibyte character.
+
+### Updated default value for 2FA OTP window
+
+The `spomky-labs/otphp` library has changed the way that the one-time password (OTP) window is calculated for two factor authentication (2FA). Previously, it used a "window" multiplier, but now it uses a "leeway" value in seconds. This change ensures that the configuration is up to date with the latest library behavior.<!--AC-12129-->
+
+Merchants and customers using the Google Authenticator 2FA provider must reset the configuration value for the OTP window. The command has changed from `bin/magento config:set twofactorauth/google/otp_window VALUE` to `bin/magento config:set twofactorauth/google/leeway VALUE`. This change aligns with the updated `spomky-labs/otphp` library, which uses a default expiration period of 30 seconds.
+
+To set the new default value:
+
+```bash
+bin/magento config:set twofactorauth/google/leeway 29
+```
+
+The following module is affected by this change:
+
+* [Magento_TwoFactorAuth](/module-reference/module-two-factor-auth/)
+
+### Upgraded monolog/monolog dependency
+
+The `monolog/monolog` third-party dependency was updated to the latest stable version (3.x) to enhance platform stability and performance.<!--AC-12689-->
+
+**Action Required:**
+
+This change affects custom code and extensions that use or overwrite the `protected function write(array $record): void` method for exception logging. The argument type needs to be updated to `LogRecord $record` instead of `array $record`. For example:
+
+```php
+protected function write(LogRecord $record): void
+```
+
+### Upgraded PHP dependency
+
+After upgrading to PHP 8.4, some Adobe Commerce modules and extensions encountered breaking changes. To ensure compatibility with PHP 8.4, these issues needed to be addressed. Consequently, several modules and extensions within Adobe Commerce have been affected.
+
+PHP 8.4 introduces several new features and improvements, but it also brings breaking changes that can cause issues for modules, extensions, and custom code developed for earlier PHP versions. These changes can impact core functionality, third-party integrations, and can result in errors or unexpected behavior within your Adobe Commerce store.
+
+If custom code or modules are in use, they could need to be modified to comply with [PHP 8.4 changes](https://php.watch/versions/8.4/implicitly-marking-parameter-type-nullable-deprecated). Review and update the custom code to resolve any deprecated functions or features.
 
 ## 2.4.7
 
@@ -556,7 +590,7 @@ As a result, email or newsletter templates that worked in previous versions may 
 
 2.4.4 and its support for PHP 8.1 requires changes in how translation packages are named. Language package filenames must now follow the naming conventions enforced by PHP 8.1. Consequently, lowercase letters are no longer permitted in the second part of the locale name.
 
-The `nl_di` translation package has been renamed to `nl_DI`. **Merchants using this translation pack must update their configuration (path: `general/locale/code`) from `nl_di` to `nl_DI` to use  Adobe Commerce 2.4.4**.
+The `nl_di` translation package has been renamed to `nl_DI`. **Merchants using this translation pack must update their configuration (path: `general/locale/code`) from `nl_di` to `nl_DI` to use  Adobe Commerce 2.4.4**.
 
 ### Inventory check on cart load
 
@@ -671,10 +705,9 @@ Copy any Media Gallery files to `pub/media/wysiwyg` or one of the specified "Med
 
 ### Cookie message is displayed when new page loads
 
-Stores with a pre-existing custom theme and for which cookies are enabled now display this message: **The store will not work correctly in the case when cookies are disabled**. This issue is caused by a backward-incompatible change in how Commerce handles cookie status messages. [GitHub-9095](https://github.com/magento/devdocs/issues/9095)
+Stores with a pre-existing custom theme and for which cookies are enabled now display this message: **The store will not work correctly in the case when cookies are disabled**. This issue is caused by a backward-incompatible change in how Commerce handles cookie status messages. [GitHub-9095](https://github.com/magento/devdocs/issues/9095)
 
-**Workaround**: Add the `cookie-status-message` class to the
-`custom_theme_path/Magento_Theme/web/css/source/_module.less` file for custom themes.
+**Workaround**: Add the `cookie-status-message` class to the `custom_theme_path/Magento_Theme/web/css/source/_module.less` file for custom themes.
 
 ```javascript
 
