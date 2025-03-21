@@ -125,4 +125,4 @@ The plugin checks the message headers and sets the current store value in `store
 [Configure message queues]: configuration.md
 [Message Queues Overview]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html
 [Configure message queues]: configuration.md
-[Install RabbitMQ]: https://devdocs.magento.com/guides/v2.4/install-gde/prereq/install-rabbitmq.html
+[Install RabbitMQ]: https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/rabbitmq

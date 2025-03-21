@@ -7,7 +7,149 @@ keywords:
 
 # Backward-incompatible changes highlights
 
-This page highlights backward-incompatible changes between Adobe Commerce and Magento Open Source releases that have a major impact and require detailed explanation and special instructions to ensure third-party modules continue working. High-level reference information for all backward-incompatible changes in each release is documented in [Backward-incompatible changes reference](reference.md).
+This page highlights backward-incompatible changes between Adobe Commerce and Magento Open Source releases that have a major impact and require detailed explanation and special instructions to ensure third-party modules continue working. High-level reference information for all backward-incompatible changes in each release is documented in the [reference](reference.md) section.
+
+## 2.4.8-beta2
+
+The following major backward-incompatible changes were introduced in the 2.4.8-beta2 Adobe Commerce and Magento Open Source releases:
+
+* Upgraded PHP dependency
+* Updated Braintree blocks
+* Updated default collation for MySQL
+* Updated 2FA Duo web SDK
+* reCAPTCHA for wishlists
+
+### Upgraded PHP dependency
+
+After upgrading to PHP 8.4, some Adobe Commerce modules and extensions encountered breaking changes. To ensure compatibility with PHP 8.4, these issues needed to be addressed. Consequently, several modules and extensions within Adobe Commerce have been affected.
+
+PHP 8.4 introduces several new features and improvements, but it also brings breaking changes that can cause issues for modules, extensions, and custom code developed for earlier PHP versions. These changes can impact core functionality, third-party integrations, and can result in errors or unexpected behavior within your Adobe Commerce store.
+
+If custom code or modules are in use, they could need to be modified to comply with [PHP 8.4 changes](https://php.watch/versions/8.4/implicitly-marking-parameter-type-nullable-deprecated). Review and update the custom code to resolve any deprecated functions or features.
+
+### Updated Braintree blocks
+
+Several blocks in the Braintree module were refactored to simplify maintenance of the presentation layer.
+
+**Action Required:**
+
+This change affects custom code and extensions that use the following Braintree blocks:
+
+* `app/code/PayPal/Braintree/Block/PayPal/Button.php`
+* `app/code/PayPal/Braintree/Block/PayPal/ProductPage.php`
+* `app/code/PayPal/Braintree/Block/Customer/CardRenderer.php`
+* `app/code/PayPal/Braintree/Block/Credit/Calculator/Cart.php`
+* `app/code/PayPal/Braintree/Block/Credit/Calculator/Product/View.php`
+* `app/code/PayPal/Braintree/Block/Credit/Calculator/Adminhtml/Virtual/Form.php`
+
+The following module is affected by this change:
+
+* paypal/module-braintree-core
+
+### Updated default collation for MySQL
+
+The system now defaults to using `utf8mb4` collation for MySQL, ensuring compatibility with MySQL 8 and future-proofing against the deprecation of `utf8mb3`. Previously, the system defaulted to using the `utf8mb3` collation, which is deprecated in MySQL 8.
+
+No features are affected by this change. This change introduces support for Basic Multilingual Plane (BMP) and supplementary characters and requires a maximum of four bytes per multibyte character.
+
+### Updated 2FA Duo web SDK
+
+This change updates the Duo two-factor authentication implementation in Adobe Commerce to use the latest SDK (Web SDK v4). This upgrade enables merchants to seamlessly transition to using Duo Universal Prompt.
+
+**Action Required:**
+
+Merchants must update their configuration in the Admin settings to include a Client ID and Secret.
+
+The following module is affected by this change:
+
+* [Magento_TwoFactor Auth](https://developer.adobe.com/commerce/php/module-reference/module-two-factor-auth/)
+
+### reCaptcha for wishlists
+
+The `Magento_Wishlist` module includes a form for sharing wishlists by email, which is available in both Adobe Commerce and Magento Open Source. This update enables reCAPTCHA for this form.
+
+Previously, reCAPTCHA was included in the Adobe Commerce security package. This update moves the `ReCaptchaMultiwishlist` module from the Adobe Commerce security package to the Magento Open Source security package and renames it to `ReCaptchaWishlist`. As a result, reCAPTCHA is now available for the wishlist sharing form in Magento Open Source as well.
+
+The system configurations remain unchanged, but are now part of the Magento Open Source security package. The configuration path is **Stores** > **Configuration** > **Security** > **Google reCAPTCHA Storefront** > **Storefront** > **Enable for Wishlist Sharing**.
+
+The following modules are affected by this change:
+
+* Magento_RecaptchaWishlist
+* Magento_RecaptchaMultipleWishlist
+
+## 2.4.8-beta1
+
+The following major backward-incompatible changes were introduced in the 2.4.8-beta1 Adobe Commerce and Magento Open Source releases:
+
+* Upgraded `monolog/monolog` dependency
+* Updated default value for 2FA OTP window
+* New 2FA system parameter
+* New unique EAV key
+
+### Upgraded monolog/monolog dependency
+
+The `monolog/monolog` third-party dependency was updated to the latest stable version (3.x) to enhance platform stability and performance.<!--AC-12689-->
+
+**Action Required:**
+
+This change affects custom code and extensions that use or overwrite the `protected function write(array $record): void` method for exception logging. The argument type needs to be updated to `LogRecord $record` instead of `array $record`. For example:
+
+```php
+protected function write(LogRecord $record): void
+```
+
+### Updated default value for 2FA OTP window
+
+The `spomky-labs/otphp` library has changed the way that the one-time password (OTP) window is calculated for two factor authentication (2FA). Previously, it used a "window" multiplier, but now it uses a "leeway" value in seconds. This change ensures that the configuration is up to date with the latest library behavior.<!--AC-12129-->
+
+Merchants and customers using the Google Authenticator 2FA provider must reset the configuration value for the OTP window. The command has changed from `bin/magento config:set twofactorauth/google/otp_window VALUE` to `bin/magento config:set twofactorauth/google/leeway VALUE`. This change aligns with the updated `spomky-labs/otphp` library, which uses a default expiration period of 30 seconds.
+
+To set the new default value:
+
+```bash
+bin/magento config:set twofactorauth/google/leeway 29
+```
+
+The following module is affected by this change:
+
+* [Magento_TwoFactorAuth](/module-reference/module-two-factor-auth/)
+
+### New 2FA system parameters
+
+New system parameters have been added to enable rate limiting on two-factor authentication (2FA) one-time password (OTP) validation:<!--AC-11945-->
+
+```php
+...    
+    /**
+     * Config path for the 2FA Attempts
+     */
+    private const XML_PATH_2FA_RETRY_ATTEMPTS = 'twofactorauth/general/twofactorauth_retry';
+
+    /**
+     * Config path for the 2FA Attempts
+     */
+    private const XML_PATH_2FA_LOCK_EXPIRE = 'twofactorauth/general/auth_lock_expire';
+...
+```
+
+These paramters correspond to the following system configuration options in the Admin:
+
+  * **Retry attempt limit for Two-Factor Authentication**
+  * **Two-Factor Authentication lockout time (seconds)**
+
+  Adobe advises setting a threshold for 2FA OTP validation to limit the number of retry attempts to mitigate brute-force attacks. See [Security > 2FA](https://experienceleague.adobe.com/en/docs/commerce-admin/config/security/2fa) in the _Configuration Reference Guide_ for more information.
+
+The following module is affected by this change:
+
+* [Magento_TwoFactorAuth](/module-reference/module-two-factor-auth/)
+
+### New unique EAV key
+
+Added a unique key on the column pair (`option_id`, `store_id`) on the `eav_attribute_option_value` table.<!--AC-6984-->
+
+The following module is affected by this change:
+
+* [Magento_EAV](/module-reference/module-eav/)
 
 ## 2.4.7
 
@@ -39,7 +181,7 @@ You must generate REST credentials (Account Number, API Key, and Secret Key) fro
 
 The following module is affected by this change:
 
-* [Magento_Fedex](https://developer.adobe.com/commerce/php/module-reference/module-fedex/)
+* [Magento_Fedex](/module-reference/module-fedex/)
 
 ### API integration: UPS SOAP
 
@@ -49,7 +191,7 @@ You must generate REST credentials (Account Number, API Key, and Secret Key) fro
 
 The following module is affected by this change:
 
-* [Magento_Ups](https://developer.adobe.com/commerce/php/module-reference/module-ups/)
+* [Magento_Ups](/module-reference/module-ups/)
 
 ### Default behavior for `isEmailAvailable` API
 
@@ -68,10 +210,10 @@ You can use the `Magento_Elasticsearch7` module or install the Magento_Elasticse
 
 The following modules are affected by this change:
 
-* [Magento_Elasticsearch](https://developer.adobe.com/commerce/php/module-reference/module-elasticsearch/)
-* [Magento_ElasticsearchCatalogPermissions](https://developer.adobe.com/commerce/php/module-reference/module-elasticsearch-catalog-permissions/)
-* [Magento_Elasticsearch7](https://developer.adobe.com/commerce/php/module-reference/module-elasticsearch-7/)
-* [Magento_OpenSearch](https://developer.adobe.com/commerce/php/module-reference/module-open-search/)
+* [Magento_Elasticsearch](/module-reference/module-elasticsearch/)
+* [Magento_ElasticsearchCatalogPermissions](/module-reference/module-elasticsearch-catalog-permissions/)
+* [Magento_Elasticsearch7](/module-reference/module-elasticsearch-7/)
+* [Magento_OpenSearch](/module-reference/module-open-search/)
 
 ### Fixes to resolve compatibility issues with Symfony
 
@@ -85,7 +227,7 @@ A new block class was added (`Magento\Csp\Block\Sri\Hashes`) marked with the `@a
 
 The following module is affected by this change:
 
-* [Magento_Csp](https://developer.adobe.com/commerce/php/module-reference/module-csp/)
+* [Magento_Csp](/module-reference/module-csp/)
 
 ### New interface and method for ApplicationServer module
 
@@ -97,14 +239,14 @@ No action for merchants or extension developers is necessary.
 
 The following modules are affected by this change:
 
-* [Magento_Authorization](https://developer.adobe.com/commerce/php/module-reference/module-authorization/)
-* [Magento_Config](https://developer.adobe.com/commerce/php/module-reference/module-config/)
-* [Magento_Customer](https://developer.adobe.com/commerce/php/module-reference/module-customer/)
-* [Magento_ResourceConnections](https://developer.adobe.com/commerce/php/module-reference/module-resource-connections/)
+* [Magento_Authorization](/module-reference/module-authorization/)
+* [Magento_Config](/module-reference/module-config/)
+* [Magento_Customer](/module-reference/module-customer/)
+* [Magento_ResourceConnections](/module-reference/module-resource-connections/)
 
 ### New method and an optional parameter for multicoupons
 
-The following changes were introduced to implement the multicoupon functionality in the [SalesRule](https://developer.adobe.com/commerce/php/module-reference/module-sales-rule/) module:
+The following changes were introduced to implement the multicoupon functionality in the [SalesRule](/module-reference/module-sales-rule/) module:
 
 * Optional parameter added to  `Magento\SalesRule\Model\ResourceModel\Rule\Collection::setValidationFilter`
 * New method introduced: `Magento\SalesRule\Model\Validator::initFromQuote`
@@ -116,7 +258,7 @@ All changes have been done in a way to minimize any impact to extensions and cus
 
 The following module is affected by this change:
 
-* [Magento_SalesRule](https://developer.adobe.com/commerce/php/module-reference/module-sales-rule/)
+* [Magento_SalesRule](/module-reference/module-sales-rule/)
 
 ### New method for encryption key generation
 
@@ -137,7 +279,7 @@ No action for merchants or extension developers is necessary because the general
 
 The following module is affected by this change:
 
-* [Magento_Config](https://developer.adobe.com/commerce/php/module-reference/module-config/)
+* [Magento_Config](/module-reference/module-config/)
 
 ### New SKU validation in inventory source items API
 
@@ -155,7 +297,7 @@ No action is necessary unless you need to modify the default value for the endpo
 
 The following module is affected by this change:
 
-* [Magento_PageCache](https://developer.adobe.com/commerce/php/module-reference/module-page-cache/)
+* [Magento_PageCache](/module-reference/module-page-cache/)
 
 ### New system configuration for limiting coupon generation
 
@@ -163,7 +305,7 @@ Added a new setting for the number of coupons to generate. This property has a d
 
 The following module is affected by this change:
 
-* [Magento_SalesRule](https://developer.adobe.com/commerce/php/module-reference/module-sales-rule/)
+* [Magento_SalesRule](/module-reference/module-sales-rule/)
 
 ### New system configuration for payment information rate limiting
 
@@ -173,11 +315,11 @@ No action for merchants or extension developers is necessary.
 
 The following module is affected by this change:
 
-* [Magento_Quote](https://developer.adobe.com/commerce/php/module-reference/module-quote/)
+* [Magento_Quote](/module-reference/module-quote/)
 
 ### New system configuration validation for Two Factor Authentication `otp_window` value
 
-The updated`spomky-labs/otphp` library introduced a new validation requirement for supplying custom `otp_window` values. This configuration setting controls how long (in seconds) the system accepts an administrator's one-time-password (OTP) after it has expired. Previously, the library allowed any number of seconds to be specified. Now, the value cannot be higher than the lifetime of a single OTP (usually 30 seconds). You must update this value if it is currently set to 30 or higher.
+The updated `spomky-labs/otphp` library introduced a new validation requirement for supplying custom `otp_window` values. This configuration setting controls how long (in seconds) the system accepts an administrator's one-time-password (OTP) after it has expired. Previously, the library allowed any number of seconds to be specified. Now, the value cannot be higher than the lifetime of a single OTP (usually 30 seconds). You must update this value if it is currently set to 30 or higher.
 
 If your Commerce application is affected by this change, admin users might see the following message when they log in: `There was an internal error trying to verify your code`. You can confirm the cause of the error by checking the `system.log` file in `var/log` for an entry `main.ERROR: The leeway must be lower than the TOTP period`.
 
@@ -217,7 +359,7 @@ The product grid limitation only affects product collections that are used by UI
 
 The following module is affected by this change:
 
-*  [Magento_Backend](https://developer.adobe.com/commerce/php/module-reference/module-backend/)
+*  [Magento_Backend](/module-reference/module-backend/)
 
 ### New system configuration for OpenSearch module
 
@@ -236,20 +378,20 @@ If these changes impact you, you must update all tests and custom code that rely
 
 The following modules are affected by this change:
 
-*  [Magento_VisualMerchandiser](https://developer.adobe.com/commerce/php/module-reference/module-visual-merchandiser/)
-*  [Magento_GiftCard](https://developer.adobe.com/commerce/php/module-reference/module-gift-card/)
-*  [Magento_Elasticsearch](https://developer.adobe.com/commerce/php/module-reference/module-elasticsearch/)
-*  [Magento_Elasticsearch7](https://developer.adobe.com/commerce/php/module-reference/module-elasticsearch-7/)
-*  [Magento_Search](https://developer.adobe.com/commerce/php/module-reference/module-search/)
-*  [Magento_LayeredNavigation](https://developer.adobe.com/commerce/php/module-reference/module-layered-navigation/)
-*  [Magento_GroupedProduct](https://developer.adobe.com/commerce/php/module-reference/module-grouped-product/)
-*  [Magento_Downloadable](https://developer.adobe.com/commerce/php/module-reference/module-downloadable/)
-*  [Magento_Customer](https://developer.adobe.com/commerce/php/module-reference/module-customer/)
-*  [Magento_ConfigurableProduct](https://developer.adobe.com/commerce/php/module-reference/module-configurable-product/)
-*  [Magento_CatalogSearch](https://developer.adobe.com/commerce/php/module-reference/module-catalog-search/)
-*  [Magento_Catalog](https://developer.adobe.com/commerce/php/module-reference/module-catalog/)
-*  [Magento_Bundle](https://developer.adobe.com/commerce/php/module-reference/module-bundle/)
-*  [Magento_Config](https://developer.adobe.com/commerce/php/module-reference/module-config/)
+*  [Magento_VisualMerchandiser](/module-reference/module-visual-merchandiser/)
+*  [Magento_GiftCard](/module-reference/module-gift-card/)
+*  [Magento_Elasticsearch](/module-reference/module-elasticsearch/)
+*  [Magento_Elasticsearch7](/module-reference/module-elasticsearch-7/)
+*  [Magento_Search](/module-reference/module-search/)
+*  [Magento_LayeredNavigation](/module-reference/module-layered-navigation/)
+*  [Magento_GroupedProduct](/module-reference/module-grouped-product/)
+*  [Magento_Downloadable](/module-reference/module-downloadable/)
+*  [Magento_Customer](/module-reference/module-customer/)
+*  [Magento_ConfigurableProduct](/module-reference/module-configurable-product/)
+*  [Magento_CatalogSearch](/module-reference/module-catalog-search/)
+*  [Magento_Catalog](/module-reference/module-catalog/)
+*  [Magento_Bundle](/module-reference/module-bundle/)
+*  [Magento_Config](/module-reference/module-config/)
 *  Magento_FunctionalTestModuleInventoryAdminUi
 *  Magento_OpenSearch
 
@@ -268,7 +410,7 @@ You can enable or disable this setting at any time. No additional actions are ne
 
 The following module is affected by this change:
 
-*  [Magento_CustomerSegment](https://developer.adobe.com/commerce/php/module-reference/module-customer-segment/)
+*  [Magento_CustomerSegment](/module-reference/module-customer-segment/)
 
 ### Symfony dependencies upgraded to latest LTS version
 
@@ -282,7 +424,7 @@ If you override or extend the `Magento\Backend\Console\Command\AbstractCacheType
 
 The following module is affected by this change:
 
-*  [Magento_Backend](https://developer.adobe.com/commerce/php/module-reference/module-backend/)
+*  [Magento_Backend](/module-reference/module-backend/)
 
 ### Zend_Filter replaced with laminas-filter
 
@@ -290,7 +432,7 @@ The following module is affected by this change:
 
 This change replaces the outdated `Zend_Filter` library with the actively supported `laminas-filter` library. The following modules are affected by this change:
 
-*  [Magento_GoogleAdwords](https://developer.adobe.com/commerce/php/module-reference/module-google-adwords/) (backend)
+*  [Magento_GoogleAdwords](/module-reference/module-google-adwords/) (backend)
 *  Magento_Framework (translation and validation functionality)
 
 #### Interface changes
@@ -321,7 +463,7 @@ The following interface changes are a result of replacing interfaces from the `Z
 
 This change replaces the outdated `Zend_HTTP` library with the actively supported `laminas-http` library. The following modules are affected by this change:
 
-*  [Magento_Payment](https://developer.adobe.com/commerce/php/module-reference/module-payment/)
+*  [Magento_Payment](/module-reference/module-payment/)
 *  Magento_Framework
 
 | Level | Target/Location                                                                                                     | Code/Reason                                    |
@@ -338,9 +480,9 @@ This change replaces the outdated `Zend_HTTP` library with the actively supporte
 
 This change replaces the outdated `Zend_Validate` library with the actively supported `laminas-validator` library. The following modules are affected by this change:
 
-*  [Magento_Store](https://developer.adobe.com/commerce/php/module-reference/module-store/) (validations during the creation of a new store)
-*  [Magento_User](https://developer.adobe.com/commerce/php/module-reference/module-user/)
-*  [Magento_GoogleAdwords](https://developer.adobe.com/commerce/php/module-reference/module-google-adwords/) (backend)
+*  [Magento_Store](/module-reference/module-store/) (validations during the creation of a new store)
+*  [Magento_User](/module-reference/module-user/)
+*  [Magento_GoogleAdwords](/module-reference/module-google-adwords/) (backend)
 *  Magento_Framework (translation and validation functionality)
 
 #### Interface changes
@@ -385,7 +527,7 @@ The `grunt-contrib-jasmine.js` library has been updated. The `toBeFalsy()` funct
 
 ### Static content deployment
 
-A new backend theme (`magento/spectrum`) was added to support integration with Adobe Experience Platform. As a result, static file generation does not work correctly after upgrading to Adobe Commerce 2.4.5 on cloud infrastructure if you use the [`SCD_MATRIX`](https://devdocs.magento.com/cloud/env/variables-deploy.html#scd_matrix) deployment strategy.
+A new backend theme (`magento/spectrum`) was added to support integration with Adobe Experience Platform. As a result, static file generation does not work correctly after upgrading to Adobe Commerce 2.4.5 on cloud infrastructure if you use the [`SCD_MATRIX`](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#scd_matrix) deployment strategy.
 
 If you use the `SCD_MATRIX` configuration, you must add the new `magento/spectrum` theme to your `.magento.env.yaml` file or your custom static content deploy command.  
 
@@ -671,7 +813,7 @@ changed.MAJOR: Magento\InventoryIndexer\Indexer\SourceItem\SourceItemIndexer::__
 
 ### JSON field support
 
-MySQL 5.7 supports the native JSON data type: [https://dev.mysql.com/doc/refman/5.7/en/json.html](https://dev.mysql.com/doc/refman/5.7/en/json.html). Version 2.4.0 now supports using JSON fields with a declarative schema.
+MySQL 5.7 supports the native JSON data type: <https://dev.mysql.com/doc/refman/5.7/en/json.html>. Version 2.4.0 now supports using JSON fields with a declarative schema.
 
 ### Laminas
 

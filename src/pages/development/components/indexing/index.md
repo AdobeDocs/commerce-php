@@ -202,7 +202,7 @@ You can reindex by:
 
 ## Indexers
 
-Magento Open Source implements the following indexers (use [bin/magento indexer:info](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#indexerinfo) to list the indexers):
+Magento Open Source implements the following indexers (use [bin/magento indexer:info](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#indexerinfo) to list the indexers):
 
 | Indexer method name         | Indexer class                                                                                                                                                                          | Description                                                                                                                                                                                                                                                                      |
 |-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -54,8 +54,8 @@ __Not recommended:__
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 class Config
@@ -79,8 +79,8 @@ __Recommended:__
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 class Config
@@ -144,8 +144,8 @@ __Not recommended:__
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 class Config
@@ -165,8 +165,8 @@ __Recommended:__
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 class Config
@@ -241,8 +241,8 @@ __Not recommended:__
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 class AbstractController extends Action
@@ -282,8 +282,8 @@ __Recommended:__
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 class Edit extends Action
@@ -316,7 +316,7 @@ class Edit extends Action
 
 2.13. Static methods SHOULD NOT be used.
 
-2.14. [Temporal coupling](http://blog.ploeh.dk/2011/05/24/DesignSmellTemporalCoupling/) MUST be avoided
+2.14. Temporal coupling MUST be avoided.
 
 Example #1:
 
@@ -354,8 +354,8 @@ __Not recommended:__
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 class Edit extends Action
@@ -383,8 +383,8 @@ __Recommended:__
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 class Edit extends Action
@@ -548,7 +548,7 @@ You need to read configuration from different sources (like database or filesyst
 
 6.4.2.1. Methods that have similar names MUST serve similar purposes across different services, but they still MAY have different signatures.
 
-6.4.2.2. Service contracts SHOULD NOT be used for read scenarios on the storefront. Instead, GraphQL SHOULD be used for storefront scenarios. Check out [web API technical vision](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api/) for more details.
+6.4.2.2. Service contracts SHOULD NOT be used for read scenarios on the storefront. Instead, GraphQL SHOULD be used for storefront scenarios. Check out [web API technical vision](/architecture/technical-vision/web-api/) for more details.
 
 6.4.2.3. Each service interface SHOULD declare a single public method. An interface name SHOULD reflect the task or action to be performed. For example, `Magento\InventoryApi\Api\StockSourceLinksDeleteInterface::execute(array $links)`. The only exception is a Repository API, which MAY be added for convenience and MUST be limited to singular CRUD operations and `getList($searchCriteria)`.
 
@@ -771,7 +771,7 @@ You need to read configuration from different sources (like database or filesyst
 
 #### 11.3.3. Elements
 
-11.3.3.1. All element selectors MUST follow these [best practices](https://devdocs.magento.com/mftf/docs/best-practices.html).
+11.3.3.1. All element selectors MUST follow these [best practices](https://developer.adobe.com/commerce/testing/functional-testing-framework/test-writing/best-practices/).
 
 11.3.3.2. The element `name` MUST be unique within the `<section>`.
 
@@ -825,7 +825,7 @@ You need to read configuration from different sources (like database or filesyst
 
 ## 13. Command line interface (CLI)
 
-13.1. [CLI command naming guidelines](https://developer.adobe.com/commerce/php/development/cli-commands/naming-guidelines/) MUST be followed.
+13.1. [CLI command naming guidelines](/development/cli-commands/naming-guidelines/) MUST be followed.
 
 13.2. A CLI command MUST be created for any functionality intended to be used by a system integrator/system administrator/developer (for example: change indexer mode, generate a configuration file, etc.).
 
@@ -894,7 +894,7 @@ class SampleEventObserverThatModifiesInputs implements ObserverInterface
 
 15.3.1. Sanitize input; escape output.
 
-15.3.2. Follow [XSS prevention strategies guidelines](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/) for escaping output.
+15.3.2. Follow [XSS prevention strategies guidelines](/development/security/cross-site-scripting/) for escaping output.
 
 15.3.3. Incoming data should be casted to the expected type. String data should be validated/sanitized.
 

@@ -164,7 +164,7 @@ A column can have the following attributes:
 
 For more information about each type, refer to the annotations in the corresponding XSD file.
 
-*  [Composer](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html) or [GitHub](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/dev_install.html) installation: `<Application_root_directory/lib/internal/Magento/Framework/Setup/Declaration/Schema/etc`
+*  [Composer](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer) or [GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) installation: `<Application_root_directory/lib/internal/Magento/Framework/Setup/Declaration/Schema/etc`
 
 Example:
 
