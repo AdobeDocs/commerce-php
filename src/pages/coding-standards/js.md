@@ -361,4 +361,27 @@ var foo = 'bar',
 
 There is a set of custom Eslint rules to ensure code compatibility with the latest versions of third-party libraries.
 
-These custom rules are included using the `rulePaths` setting in the [Eslint Grunt configuration](https://github.com/magento/magento2/blob/2.4/dev/tools/grunt/configs/eslint.json).
+In previous version of eslint these custom rules were included using the `rulePaths` setting in the [Eslint Grunt configuration](https://github.com/magento/magento2/blob/2.4/dev/tools/grunt/configs/eslint.json).
+
+However, since ESLint 9 has deprecated `rulePaths`, the configuration has been updated accordingly.
+
+This document outlines the necessary changes to implement custom Eslint rules.
+
+```json
+{
+  "file": {
+    "options": {
+      "overrideConfigFile": "vendor/magento/magento-coding-standard/eslint/eslint.config.mjs",
+      "useEslintrc": false
+    }
+  },
+  "test": {
+    "options": {
+      "overrideConfigFile": "vendor/magento/magento-coding-standard/eslint/eslint.config.mjs",
+      "outputFile": "dev/tests/static/eslint-error-report.xml",
+      "format": "junit",
+      "quiet": true
+    }
+  }
+}
+```
