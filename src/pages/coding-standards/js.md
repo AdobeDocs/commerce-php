@@ -385,3 +385,12 @@ This document outlines the necessary changes to implement custom Eslint rules.
   }
 }
 ```
+### Applying custom rules
+
+To add or modify custom rules, update `eslint.config.mjs` in the `magento-coding-standard` repository.
+With latest version, configuration has changed from eslint to flat config. We use this https://eslint.org/docs/latest/use/configure/migration-guide as a 
+reference to migrate the eslint.
+
+This reference doc provides the command and other information in detail. such as to convert old `.eslintrc` file with new config
+run below command
+`npx  @eslint/migrate-config .eslintrc`
