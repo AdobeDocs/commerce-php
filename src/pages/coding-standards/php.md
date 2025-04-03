@@ -11,7 +11,7 @@ The core development team uses the [Magento Coding Standard](https://github.com/
 
 The Magento Coding Standard provides a set of rules that covers the following:
 
-*  [PSR-1](http://www.php-fig.org/psr/psr-1/) and [PSR-2](http://www.php-fig.org/psr/psr-2/) compliance
+*  [PSR-1](http://www.php-fig.org/psr/psr-1/) and [PSR-12](http://www.php-fig.org/psr/psr-12/) compliance
 *  The use of insecure functions
 *  Unescaped output
 *  The use of deprecated PHP functions
