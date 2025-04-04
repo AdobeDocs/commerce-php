@@ -32,4 +32,4 @@ For more information about a layout in Magento 2, see the [Layout documentation]
 [Learn how to configure Google AdWords](https://experienceleague.adobe.com/docs/commerce-admin/marketing/google-tools/google-adwords.html).
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.4.
+The version of this module is 100.4.5.

@@ -8,4 +8,4 @@ The Magento_Swagger module provides access to a page generated using the swagger
 and displays it in a user-friendly, navigable format.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.6.
+The version of this module is 100.4.7.

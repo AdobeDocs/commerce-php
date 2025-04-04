@@ -27,4 +27,4 @@ The Magento_SalesSequence module does not have any specific system requirements.
 The Magento_SalesSequence module is installed automatically (using the native Magento install mechanism) without any additional actions.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.4.
+The version of this module is 100.4.5.

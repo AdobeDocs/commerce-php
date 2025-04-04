@@ -303,4 +303,4 @@ For information about an event in Magento 2, see [Events and observers](https://
 For information about a public API in Magento 2, see [Public interfaces & APIs](https://developer.adobe.com/commerce/php/development/components/api-concepts/).
 
 <InlineAlert slots="text" />
-The version of this module is 101.2.7.
+The version of this module is 101.2.8.

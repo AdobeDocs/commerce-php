@@ -55,4 +55,4 @@ The following example disables the PageBuilder editor for the content field.
 **Note:** Disabling the editor this way overrides the value of `is_pagebuilder_enabled` for the specified field.
 
 <InlineAlert slots="text" />
-The version of this module is 2.2.5.
+The version of this module is 2.2.6.

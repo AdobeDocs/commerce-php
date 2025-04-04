@@ -14,4 +14,4 @@ The Magento_Swat module does not affect the storefront.
 For more information about this module, see [Site-Wide Analysis Tool](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/access.html)
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.5.
+The version of this module is 100.4.6.

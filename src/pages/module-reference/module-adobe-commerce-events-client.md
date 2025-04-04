@@ -51,4 +51,4 @@ This module defines the following CLI commands:
 For details on using these commands, refer to [Event management commands](https://developer.adobe.com/commerce/extensibility/events/commands/) .
 
 <InlineAlert slots="text" />
-The version of this module is 1.7.0.
+The version of this module is 1.11.1.

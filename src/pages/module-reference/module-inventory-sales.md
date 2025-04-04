@@ -22,4 +22,4 @@ All public interfaces related to this module are located in the `InventorySalesA
 Use the interfaces defined in `InventorySalesApi` to extend this module.
 
 <InlineAlert slots="text" />
-The version of this module is 1.3.2.
+The version of this module is 1.3.3.

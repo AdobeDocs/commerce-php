@@ -8,4 +8,4 @@ prices in the Admin Panel. An admin user can set the following access rights for
 read, without any permissions.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.4.
+The version of this module is 100.4.5.

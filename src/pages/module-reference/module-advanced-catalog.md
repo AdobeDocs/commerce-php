@@ -8,4 +8,4 @@ operations with immediate update of product data on frontend and plays as an ext
 Magento\Catalog module.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.4.
+The version of this module is 100.4.5.
