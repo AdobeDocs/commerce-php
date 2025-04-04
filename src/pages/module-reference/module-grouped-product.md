@@ -103,4 +103,4 @@ For information about a public API in Magento 2, see [Public interfaces & APIs](
 For more information about creating grouped product, see [Creating Grouped Product](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-grouped.html).
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.7.
+The version of this module is 100.4.8.

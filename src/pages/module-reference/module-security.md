@@ -19,4 +19,4 @@ _Main features:_
 4. Fixed: the password is not being reset until the new password is submitted via the form available by a one time link sent to the email address
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.7.
+The version of this module is 100.4.8.

@@ -10,4 +10,4 @@ to generate Vault (stored payment information) information endpoints. This modul
 provides mutations for modifying a payment token.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.3.
+The version of this module is 100.4.4.

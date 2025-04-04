@@ -8,4 +8,4 @@ frontend, uploading list of SKUs to add products to cart on frontend and ability
 cart.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.7.
+The version of this module is 100.4.8.

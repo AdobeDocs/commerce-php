@@ -92,4 +92,4 @@ You can get more information about import/export processes in magento at the art
 - [Export](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-export.html)
 
 <InlineAlert slots="text" />
-The version of this module is 101.0.7.
+The version of this module is 101.0.8.

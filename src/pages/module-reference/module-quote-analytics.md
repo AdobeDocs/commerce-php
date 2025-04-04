@@ -26,4 +26,4 @@ More information can get at articles:
 - [Data collection for advanced reporting](https://developer.adobe.com/commerce/php/development/advanced-reporting/data-collection/)
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.6.
+The version of this module is 100.4.7.
