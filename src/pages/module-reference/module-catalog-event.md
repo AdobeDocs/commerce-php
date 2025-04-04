@@ -7,4 +7,4 @@ Magento_CatalogEvent module is designed for creating campaigns that encourage cu
 There are three types of the catalog events: upcoming, open, closed.
 
 <InlineAlert slots="text" />
-The version of this module is 101.1.6.
+The version of this module is 101.1.7.

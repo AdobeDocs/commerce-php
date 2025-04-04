@@ -7,4 +7,4 @@ Cron is a module that enables scheduling of jobs. Other modules can add cron job
 This module also allows administrators to tune cron options in Magento Admin.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.7.
+The version of this module is 100.4.8.

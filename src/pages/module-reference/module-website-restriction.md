@@ -11,4 +11,4 @@ You might want to restrict site access to only logged in customers if the site i
 a private sale for registered customers.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.6.
+The version of this module is 100.4.7.

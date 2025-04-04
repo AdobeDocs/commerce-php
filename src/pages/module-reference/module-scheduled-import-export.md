@@ -7,4 +7,4 @@ Magento_ScheduledImportExport functionality allows to simplify routine of import
 Admin user can create a rule for importing or exporting new data (which could be Products, Customers and Customer Addresses) and specify date and time of the operation.
 
 <InlineAlert slots="text" />
-The version of this module is 101.2.7.
+The version of this module is 101.2.8.

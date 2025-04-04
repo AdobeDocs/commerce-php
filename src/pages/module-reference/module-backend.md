@@ -115,4 +115,4 @@ For information about UI components in Magento 2, see [Overview of UI components
 For information about significant changes in patch releases, see [Release information](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
 
 <InlineAlert slots="text" />
-The version of this module is 102.0.7.
+The version of this module is 102.0.8.

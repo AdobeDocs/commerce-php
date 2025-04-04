@@ -20,4 +20,4 @@ The Magento\RequireJs module does not have any specific system requirements.
 The Magento\RequireJs module is installed automatically (using the native Magento Setup). No additional actions required.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.3.
+The version of this module is 100.4.4.

@@ -112,4 +112,4 @@ More information can get at articles:
 - [Learn more about Index Management](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html)
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.7.
+The version of this module is 100.4.8.

@@ -38,4 +38,4 @@ More information about ElasticSearch are at articles:
 - Magento Commerce Cloud - [set up Elasticsearch service](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch.html).
 
 <InlineAlert slots="text" />
-The version of this module is 101.0.7.
+The version of this module is 101.0.8.

@@ -33,4 +33,4 @@ You can get more information about [GraphQl In Magento 2](https://developer.adob
 [Learn more about customerDownloadableProducts query](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/downloadable-products/).
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.3.
+The version of this module is 100.4.4.

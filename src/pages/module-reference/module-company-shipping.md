@@ -40,4 +40,4 @@ The following directory contains extensible UI components:
 For more information, see [UI Form Component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/form/).
 
 <InlineAlert slots="text" />
-The version of this module is 1.4.0.
+The version of this module is 1.5.1.

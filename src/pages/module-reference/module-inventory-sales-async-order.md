@@ -16,4 +16,4 @@ It gives ability to use "Use deferred Stock update" config option with async ord
 | 1           | 0                         | Reservation is created before initial async order is placed. Reservation is rolled back if async order is rejected. |
 
 <InlineAlert slots="text" />
-The version of this module is 100.2.1.
+The version of this module is 100.2.2.

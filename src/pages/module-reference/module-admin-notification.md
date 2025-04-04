@@ -46,4 +46,4 @@ You can extend admin notifications using the `view/adminhtml/ui_component/notifi
 For information about UI components in Magento 2, see [Overview of UI components](https://developer.adobe.com/commerce/frontend-core/ui-components/).
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.6.
+The version of this module is 100.4.7.

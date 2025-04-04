@@ -32,4 +32,4 @@ cron group configuration can be set in `etc/crontab.xml`.
 - `mysqlmq_clean_messages` - clean up old messages from database
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.5.
+The version of this module is 100.4.6.

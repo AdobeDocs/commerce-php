@@ -11,4 +11,4 @@ address set by default during checkout. Customer can manage his gift registries 
 shared or stay private. Every gift registry has system attributes and can have custom attributes.
 
 <InlineAlert slots="text" />
-The version of this module is 101.2.7.
+The version of this module is 101.2.8.
