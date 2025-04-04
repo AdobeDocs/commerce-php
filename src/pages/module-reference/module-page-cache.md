@@ -9,4 +9,4 @@ Blocks can be set as private blocks by setting the property '_isScopePrivate' to
 Blocks can also be set as non-cacheable by setting the 'cacheable' attribute in layout XML files. For example `<block class="Block\Class" name="blockname" cacheable="false" />`. Pages containing such blocks are not cached.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.7.
+The version of this module is 100.4.8.

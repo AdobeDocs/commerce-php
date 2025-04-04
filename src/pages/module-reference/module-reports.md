@@ -11,4 +11,4 @@ Magento_Reports module provides ability to collect various reports such as:
  - shopping cart reports (products in cart, abandoned carts)
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.7.
+The version of this module is 100.4.8.

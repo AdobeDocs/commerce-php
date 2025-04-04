@@ -18,4 +18,4 @@ Extension developers can interact with the Magento_AdobeImsApi module. For more 
 For information about significant changes in patch releases, see [Release information](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
 
 <InlineAlert slots="text" />
-The version of this module is 2.2.1.
+The version of this module is 2.2.2.

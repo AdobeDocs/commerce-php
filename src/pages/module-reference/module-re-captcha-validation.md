@@ -9,7 +9,7 @@ Google reCAPTCHA ensures that a human being, rather than a computer (or â€œbotâ€
 
 This module provides the base implementation for reCAPTCHA.
 
-For more information please visit the [Magento document for reCAPTCHA](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-google-recaptcha).
+For more information please visit the [reCAPTCHA documentation](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-google-recaptcha).
 
 <InlineAlert slots="text" />
-The version of this module is 1.1.3.
+The version of this module is 1.1.4.

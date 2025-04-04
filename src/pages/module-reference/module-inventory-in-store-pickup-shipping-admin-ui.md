@@ -29,4 +29,4 @@ You can extend and override layouts defined in the `view/adminhtml/layout` direc
 The `view/adminhtml/ui_component` directory contains extensible UI components.
 
 <InlineAlert slots="text" />
-The version of this module is 1.1.3.
+The version of this module is 1.1.4.

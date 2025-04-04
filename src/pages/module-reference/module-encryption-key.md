@@ -26,4 +26,4 @@ For information about significant changes in patch releases, see [Release inform
 Some more information you can get at [Encryption Key](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/encryption-key.html) article.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.5.
+The version of this module is 100.4.6.

@@ -8,4 +8,4 @@ description: Page Builder Admin Analytics module
 The Magento_PageBuilderAdminAnalytics module tracks Page Builder information through AdminAnalytics.
 
 <InlineAlert slots="text" />
-The version of this module is 1.1.4.
+The version of this module is 1.1.5.

@@ -9,4 +9,4 @@ and are linked to a specific website. All store related configurations (currency
 storage maintenance are covered under this module.
 
 <InlineAlert slots="text" />
-The version of this module is 101.1.7.
+The version of this module is 101.1.8.

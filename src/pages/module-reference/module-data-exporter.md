@@ -10,4 +10,4 @@ description: Magento 2 Data Exporter module exports necessary data to Magento cl
 *Magento_DataExporter* module
 
 <InlineAlert slots="text" />
-The version of this module is 103.3.4.
+The version of this module is 103.4.0.

@@ -29,4 +29,4 @@ Public APIs are defined in the `Api` and `Api/Data` directories.
 The `etc/webapi.xml` file defines endpoints for setting the SSA and retrieving a list of valid SSAs.
 
 <InlineAlert slots="text" />
-The version of this module is 1.4.4.
+The version of this module is 1.4.5.

@@ -22,4 +22,4 @@ All public interfaces related to this module are located in the `InventoryInStor
 Use the interfaces defined in `InventoryInStorePickupApi` to extend this module.
 
 <InlineAlert slots="text" />
-The version of this module is 1.1.5.
+The version of this module is 1.1.6.

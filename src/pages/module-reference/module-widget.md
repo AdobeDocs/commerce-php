@@ -46,4 +46,4 @@ This module introduces the following layouts and layout handles in the directori
 For more information about a layout, see the [Layout documentation](https://developer.adobe.com/commerce/frontend-core/guide/layouts/).
 
 <InlineAlert slots="text" />
-The version of this module is 101.2.7.
+The version of this module is 101.2.8.

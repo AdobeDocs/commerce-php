@@ -7,4 +7,4 @@ The Banner module allows creating and managing dynamic blocks and widgets in Mag
 The Dynamic Block content can be specified by Store View.
 
 <InlineAlert slots="text" />
-The version of this module is 101.2.7.
+The version of this module is 101.2.8.

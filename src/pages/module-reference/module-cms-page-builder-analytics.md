@@ -8,4 +8,4 @@ description: CMS Page Builder Analytics module
 The Magento_CmsPageBuilderAnalytics module configures data definitions for a data collection related to the PageBuilder module entities to be used in [Advanced Reporting](https://developer.adobe.com/commerce/php/development/advanced-reporting/modules/).
 
 <InlineAlert slots="text" />
-The version of this module is 1.6.4.
+The version of this module is 1.6.5.

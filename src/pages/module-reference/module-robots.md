@@ -9,4 +9,4 @@ The Robots module provides the following functionalities:
 * allows obtaining the content of the `robots.txt` file depending on the settings of the current website.
 
 <InlineAlert slots="text" />
-The version of this module is 101.1.3.
+The version of this module is 101.1.4.

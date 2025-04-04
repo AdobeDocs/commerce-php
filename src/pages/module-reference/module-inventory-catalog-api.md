@@ -29,4 +29,4 @@ Public APIs are defined in the `Api` directory.
 The `etc/webapi.xml` file defines endpoints for assigning, unassigning, and transferring sources in bulk.
 
 <InlineAlert slots="text" />
-The version of this module is 1.3.5.
+The version of this module is 1.3.6.

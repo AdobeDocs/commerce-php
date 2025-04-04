@@ -8,4 +8,4 @@ description: Commerce Services identity GraphQL server
 The **ServicesIdGraphQlServer** module provides an admin backend GraphQL server for the Commerce Services Connector on-boarding experience.
 
 <InlineAlert slots="text" />
-The version of this module is 1.1.4.
+The version of this module is 1.1.6.

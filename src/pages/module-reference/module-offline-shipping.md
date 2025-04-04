@@ -71,4 +71,4 @@ You can get more information about offline shipping methods in magento at the ar
 - [How to configure Store Pickup](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery.html)
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.6.
+The version of this module is 100.4.7.

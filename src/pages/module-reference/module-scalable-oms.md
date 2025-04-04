@@ -11,4 +11,4 @@ Extraction of Sales tables to separate database will guarantee better scalabilit
 and will allow main server to be optimized for read operations which will reduce latency.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.5.
+The version of this module is 100.4.6.

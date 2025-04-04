@@ -30,4 +30,4 @@ bin/magento setup:config:set --checkout-async 1
 Before disabling the AsyncOrder module, you must verify that all asynchronous order processes are complete.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.3.
+The version of this module is 100.4.4.

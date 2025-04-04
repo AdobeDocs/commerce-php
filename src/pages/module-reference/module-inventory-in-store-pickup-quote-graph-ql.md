@@ -17,4 +17,4 @@ This module is installed as part of Magento Open Source. Unless a custom impleme
 is provided by a 3rd-party module, the module cannot be deleted or disabled.
 
 <InlineAlert slots="text" />
-The version of this module is 1.1.3.
+The version of this module is 1.1.4.

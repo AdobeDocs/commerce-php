@@ -21,4 +21,4 @@ All public interfaces related to this module are located in the `InventoryDistan
 Use the interfaces defined in `InventoryDistanceBasedSourceSelectionApi` to extend this module.
 
 <InlineAlert slots="text" />
-The version of this module is 1.2.4.
+The version of this module is 1.2.5.

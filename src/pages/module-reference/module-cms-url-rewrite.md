@@ -11,4 +11,4 @@ The module adds and removes URL rewrite rules as CMS pages are added or removed 
 The rules can be edited by an admin user as any other URL rewrite rule.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.6.
+The version of this module is 100.4.7.

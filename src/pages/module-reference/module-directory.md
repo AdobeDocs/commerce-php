@@ -9,4 +9,4 @@ description: N/A
 like the country code and currency rates. Also, enables conversion of prices to a specified currency format.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.7.
+The version of this module is 100.4.8.
