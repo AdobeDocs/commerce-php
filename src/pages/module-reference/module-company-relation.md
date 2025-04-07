@@ -9,7 +9,7 @@ The Magento_CompanyRelation module allows a merchant to create a dependent compa
 
 ## Installation details
 
-This module does not create any backward incompatible changes. 
+This module does not create any backward incompatible changes.
 
 ## Structure
 

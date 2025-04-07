@@ -9,7 +9,7 @@ The Magento_CompanyRelationSharedCatalog module allows a merchant to assign/unas
 
 ## Installation details
 
-This module does not create any backward incompatible changes. 
+This module does not create any backward incompatible changes.
 
 ## Structure
 
