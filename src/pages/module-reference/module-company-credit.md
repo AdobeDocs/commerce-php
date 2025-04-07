@@ -47,4 +47,4 @@ The following directories contain extensible UI components:
 For more information, see [UI Listing/Grid Component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/listing-grid/) and [UI Form Component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/form/)
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.0.
+The version of this module is 100.5.2.

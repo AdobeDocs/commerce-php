@@ -79,4 +79,4 @@ This module observes the following events:
    `Magento\Catalog\Observer\FlushCategoryPagesCache`
 
 <InlineAlert slots="text" />
-The version of this module is 104.0.7.
+The version of this module is 104.0.8.

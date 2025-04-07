@@ -10,4 +10,4 @@ The Magento Admin provides all access to your store, orders, and customer data. 
 For more information please view the Magento documentation for [a general guide on 2fa](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication) as well as a [a more technical guide](https://developer.adobe.com/commerce/testing/functional-testing-framework/two-factor-authentication/).
 
 <InlineAlert slots="text" />
-The version of this module is 1.1.6.
+The version of this module is 1.1.7.

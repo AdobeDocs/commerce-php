@@ -40,4 +40,4 @@ To verify the security.txt file's signature:
 `gpg --verify security.txt.sig security.txt`
 
 <InlineAlert slots="text" />
-The version of this module is 1.1.3.
+The version of this module is 1.1.4.

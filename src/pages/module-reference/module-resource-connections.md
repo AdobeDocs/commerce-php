@@ -52,4 +52,4 @@ Config structure retains backward compatibility if module is turned off.
 WARNING: 'indexer' connection is not designed to have slave configuration.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.4.
+The version of this module is 100.4.5.

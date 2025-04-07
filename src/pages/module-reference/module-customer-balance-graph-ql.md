@@ -9,4 +9,4 @@ The **CustomerBalanceGraphQl** provides type and resolver information for enabli
 Store credit can be used by customers for shopping in the store and by the store administrator for making refunds.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.4.
+The version of this module is 100.4.5.

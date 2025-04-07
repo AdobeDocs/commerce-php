@@ -36,7 +36,7 @@ Extension developers can interact with the Magento_NewRelicReporting module. For
 
 ## Additional information
 
-[Learn more about New Relic Reporting](https://experienceleague.adobe.com/docs/commerce-admin/start/reporting/new-relic-reporting.html).
+[Learn more about New Relic Reporting](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/new-relic-reporting).
 
 ### Console commands
 
@@ -55,4 +55,4 @@ Cron group configuration can be set at `etc/crontab.xml`:
 [Learn how to configure and run cron in Magento.](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html).
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.5.
+The version of this module is 100.4.6.
