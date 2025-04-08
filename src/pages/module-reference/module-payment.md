@@ -7,4 +7,4 @@ The Magento_Payment module provides the abstraction level for all payment method
 For example, Magento\Payment\Model\Method\AbstractMethod is an abstract model which should be extended by particular payment methods.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.7.
+The version of this module is 100.4.8.

@@ -21,4 +21,4 @@ Supports all defined currencies in the system.
 ***CurrencySymbol\Controller\Adminhtml\System\Currencysymbol\Save.php*** creates custom currency symbols.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.5.
+The version of this module is 100.4.6.

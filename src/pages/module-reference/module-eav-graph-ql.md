@@ -20,4 +20,4 @@ You can get more information at articles:
 - [2.4.x Release information](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html)
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.4.
+The version of this module is 100.4.5.

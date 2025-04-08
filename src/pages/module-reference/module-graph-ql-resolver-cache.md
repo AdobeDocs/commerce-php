@@ -26,4 +26,4 @@ Extension developers can interact with the Magento_GraphQlResolverCache module. 
 - [Learn more about GraphQl In Magento 2](https://developer.adobe.com/commerce/webapi/graphql/).
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.0.
+The version of this module is 100.4.1.

@@ -9,4 +9,4 @@ The **ServicesId** module is used when Magento needs to communicate with cloud 
 It provides the necessary identification information about the Magento instance to the service.
 
 <InlineAlert slots="text" />
-The version of this module is 3.2.5.
+The version of this module is 3.2.7.

@@ -24,4 +24,4 @@ There are no extension points or service contracts for this module.
 The `files/sample/stock_sources.csv` file is a template for importing inventory into the system.
 
 <InlineAlert slots="text" />
-The version of this module is 1.2.5.
+The version of this module is 1.2.6.

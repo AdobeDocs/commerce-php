@@ -22,4 +22,4 @@ All public interfaces related to this module are located in the `InventorySource
 Use the interfaces defined in `InventorySourceSelectionApi` to extend this module.
 
 <InlineAlert slots="text" />
-The version of this module is 1.2.3.
+The version of this module is 1.2.4.

@@ -20,4 +20,4 @@ This module is installed as part of Magento Open Source. You can remove it if yo
 There are no extension points or service contracts for this module.
 
 <InlineAlert slots="text" />
-The version of this module is 1.2.4.
+The version of this module is 1.2.5.

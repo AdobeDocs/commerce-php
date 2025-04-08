@@ -24,4 +24,4 @@ Extension developers can interact with the Magento_QuoteDownloadableLinks module
 You can get more information about [GraphQl In Magento 2](https://developer.adobe.com/commerce/webapi/graphql/).
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.4.
+The version of this module is 100.4.5.

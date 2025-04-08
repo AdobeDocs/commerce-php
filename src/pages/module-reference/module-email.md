@@ -45,4 +45,4 @@ More information about email templates are at articles:
 - [Migrating custom email templates](https://developer.adobe.com/commerce/frontend-core/guide/templates/email-migration/#nested-arrays)
 
 <InlineAlert slots="text" />
-The version of this module is 101.1.7.
+The version of this module is 101.1.8.

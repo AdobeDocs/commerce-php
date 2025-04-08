@@ -35,4 +35,4 @@ You can get more information about delivery method in magento at the articles:
 - [Add custom shipping carrier](https://developer.adobe.com/commerce/php/tutorials/frontend/custom-checkout/add-shipping-carrier/)
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.5.
+The version of this module is 100.4.6.

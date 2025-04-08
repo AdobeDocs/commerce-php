@@ -46,4 +46,4 @@ More information can get at articles:
 - [Learn how to Resize catalog images](https://developer.adobe.com/commerce/frontend-core/guide/themes/configure/#resize-catalog-images)
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.6.
+The version of this module is 100.4.7.

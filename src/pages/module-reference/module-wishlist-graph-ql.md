@@ -47,4 +47,4 @@ For more information about the Magento_WishlistGraphQl queries and mutations see
 - [`updateProductsInWishlist`](https://developer.adobe.com/commerce/webapi/graphql/schema/wishlist/mutations/update-products/)
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.7.
+The version of this module is 100.4.8.

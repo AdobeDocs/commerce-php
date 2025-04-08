@@ -181,7 +181,7 @@ For this purpose, we should implement the following:
 class Cache implements ResetAfterRequestInterface
 ```
 
-In the `2.4.8-beta`, you do not have to add `ResetAfterRequestInterface` to the class. The `_resetState()` method is found by reflection and called by implementing `ResetAfterRequestInterface`.  This feature allows modules to be backwards compatible with previous versions before `2.4.7` that do not have this interface.
+In version 2.4.8, you do not have to add `ResetAfterRequestInterface` to the class. The `_resetState()` method is found by reflection and called by implementing `ResetAfterRequestInterface`. This feature allows modules to be backwards compatible with previous versions before 2.4.7 that do not have this interface.
 
 Add the implementation of the `_resetState()` method with overriding `$data` property to its initial state - empty array:
 
@@ -197,9 +197,9 @@ public function _resetState(): void
 
 <InlineAlert variant="info" slots="text"/>
 
-The following section only applies to Adobe Commerce `2.4.8-beta`:
+The following section only applies to Adobe Commerce 2.4.8:
 
-The `2.4.8-beta` includes an alternative to the `a _resetState` method. Instead of adding `_resetState` to a class, you can add a `reset.json` file to a module's `etc` directory.  The `reset.json` file defines which class properties are reset, and what they reset to after a request.
+Version 2.4.8 includes an alternative to the `a _resetState` method. Instead of adding `_resetState` to a class, you can add a `reset.json` file to a module's `etc` directory. The `reset.json` file defines which class properties are reset, and what they reset to, after a request.
 
 This feature allows modules to be backwards compatible with previous versions `2.4.7` and earlier, which do not have the `ResetAfterRequestInterface` interface. This feature is also compatible with classes that do not allow adding new public functions. You can also add reset behavior to classes for modules that you do not control.
 
