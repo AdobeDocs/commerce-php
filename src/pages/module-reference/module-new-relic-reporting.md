@@ -36,7 +36,7 @@ Extension developers can interact with the Magento_NewRelicReporting module. For
 
 ## Additional information
 
-[Learn more about New Relic Reporting](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/new-relic-reporting).
+[Learn more about New Relic Reporting](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#newreliccreatedeploy-marker).
 
 ### Console commands
 
@@ -44,7 +44,7 @@ The Magento_NewRelicReporting provides console commands:
 
 - `bin/magento newrelic:create:deploy-marker <message> <change_log> [<user>]` - check the deploy queue for entries and create an appropriate deploy marker
 
-[Learn more about command's parameters](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#newreliccreatedeploy-marker).
+[Learn more about command's parameters](https://experienceleague.adobe.com/docs/commerce-operations/reference/magento-open-source.html#newreliccreatedeploy-marker).
 
 ### Cron options
 
