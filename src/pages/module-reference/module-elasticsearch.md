@@ -15,7 +15,7 @@ The module implements Magento_Search library interfaces.
 
 The Magento_Elasticsearch module is one of the base Magento 2 modules. You cannot disable or uninstall this module.
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Structure
 
@@ -28,14 +28,14 @@ For information about a typical file structure of a module in Magento 2, see [Mo
 
 ## Additional information
 
-For information about significant changes in patch releases, see [2.4.x Release information](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
+For information about significant changes in patch releases, see [2.4.x Release information](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
 More information about ElasticSearch are at articles:
 
-- [Configuring Catalog Search](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html).
-- [Installation Guide/Elasticsearch](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/search-engine/overview.html).
-- [Configure and maintain Elasticsearch](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/search/overview-search.html).
-- Magento Commerce Cloud - [set up Elasticsearch service](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch.html).
+- [Configuring Catalog Search](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-configuration).
+- [Installation Guide/Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/search-engine/overview).
+- [Configure and maintain Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search).
+- Magento Commerce Cloud - [set up Elasticsearch service](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/elasticsearch).
 
 <InlineAlert slots="text" />
 The version of this module is 101.0.8.

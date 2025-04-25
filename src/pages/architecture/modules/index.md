@@ -37,7 +37,7 @@ If a module is self-contained, then you can modify or replace it without affecti
 
 ### Rich product ecosystem
 
-The wider Adobe Commerce and Magento Open Source ecosystem provides an extensive community and rich third-party marketplace for extensions. Visit [Commerce Marketplace](https://marketplace.magento.com/) for an overview of the many modules and themes available for download and to buy modules and theme packages, which offer more possibilities for extending your storefront.
+The wider Adobe Commerce and Magento Open Source ecosystem provides an extensive community and rich third-party marketplace for extensions. Visit [Commerce Marketplace](https://commercemarketplace.adobe.com/) for an overview of the many modules and themes available for download and to buy modules and theme packages, which offer more possibilities for extending your storefront.
 
 ### Open-source software to create and manage extensions
 

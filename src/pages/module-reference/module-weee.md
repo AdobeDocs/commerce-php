@@ -31,7 +31,7 @@ Before installing this module, note that the Magento_Weee is dependent on the fo
 - Magento_Store
 - Magento_Tax
 
-Refer to [how to enable or disable modules in Magento 2](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+Refer to [how to enable or disable modules in Magento 2](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Structure
 

@@ -296,7 +296,7 @@ The following module is affected by this change:
 
 ### New method for encryption key generation
 
-This change improves the security of encrypted user data. You must [reset the encryption key](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/encryption-key.html) and set the **Auto-generate** option to `Yes`. After resetting the encryption key, all credit card data and cache files are re-encrypted with the new key.
+This change improves the security of encrypted user data. You must [reset the encryption key](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) and set the **Auto-generate** option to `Yes`. After resetting the encryption key, all credit card data and cache files are re-encrypted with the new key.
 
 The following files are affected by this change:
 
@@ -321,7 +321,7 @@ Payload containing SKU will now be validated for leading and trailing spaces in 
 
 ### New system configuration full-page caching
 
-This change improves the security and performance of how the framework resolves [Varnish Edge Side Includes (ESI)](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/use-varnish-esi.html) for [full-page caching](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/configure-varnish-commerce.html).
+This change improves the security and performance of how the framework resolves [Varnish Edge Side Includes (ESI)](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/use-varnish-esi) for [full-page caching](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/configure-varnish-commerce).
 
 The `{BASE-URL}/page_cache/block/esi HTTP` endpoint supports unrestricted, dynamically loaded content fragments from Commerce layout handles and block structures.
 
@@ -375,7 +375,7 @@ The following major backward-incompatible changes were introduced in the 2.4.6 A
 
 ### New default value for automatic redirects
 
-To improve performance, the default value for `generate_category_product_rewrites` in the [`app/code/Magento/CatalogURLRewrite/etc/config.xml`](https://github.com/magento/magento2/blob/2.4-develop/app/code/Magento/CatalogUrlRewrite/etc/config.xml#L12) file was changed from `1` to `0`. This change disables [automatic category/product URL rewrites](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/url-rewrites/url-redirect-product-automatic.html#skip-rewrite), but only if you have not changed the previous default setting prior to upgrading to 2.4.6.
+To improve performance, the default value for `generate_category_product_rewrites` in the [`app/code/Magento/CatalogURLRewrite/etc/config.xml`](https://github.com/magento/magento2/blob/2.4-develop/app/code/Magento/CatalogUrlRewrite/etc/config.xml#L12) file was changed from `1` to `0`. This change disables [automatic category/product URL rewrites](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-redirect-product-automatic#skip-rewrite), but only if you have not changed the previous default setting prior to upgrading to 2.4.6.
 
 The new default does not change existing records in the `catalog_url_rewrite_product_category` and `url_rewrite` database tables when upgrading to 2.4.6, but no new rewrites are added. You can enable the **Generate "category/product" URL Rewrites** setting if you want to continue using it after upgrading.
 
@@ -387,7 +387,7 @@ Manually changing this setting (for example, using the `bin/magento config:set c
 
 <!-- AC-6425 -->
 
-To improve product grid performance for large catalogs, a new system configuration setting (disabled by default) was added to limit the number of products in the grid: **Stores > Settings > Configuration > Advanced > Admin > Admin Grids > Limit Number of Products in Grid**. See [Limit number of products in grid](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html#limit-number-of-products-in-grid).
+To improve product grid performance for large catalogs, a new system configuration setting (disabled by default) was added to limit the number of products in the grid: **Stores > Settings > Configuration > Advanced > Admin > Admin Grids > Limit Number of Products in Grid**. See [Limit number of products in grid](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#limit-number-of-products-in-grid).
 
 The product grid limitation only affects product collections that are used by UI components. As a result, not all product grids are affected by this limitation. Only those that are using the `Magento\Catalog\Ui\DataProvider\Product\ProductCollection` class.
 
@@ -399,7 +399,7 @@ The following module is affected by this change:
 
 <!-- AC-6339 -->
 
-In Adobe Commerce and Magento Open Source 2.4.4 and 2.4.3-p2, all system configuration fields labeled **Elasticsearch** also apply to OpenSearch. When support for Elasticsearch 8.x was introduced in 2.4.6, new labels were created to distinguish between Elasticsearch and OpenSearch configurations. See [Search engine configuration](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/search/configure-search-engine.html).
+In Adobe Commerce and Magento Open Source 2.4.4 and 2.4.3-p2, all system configuration fields labeled **Elasticsearch** also apply to OpenSearch. When support for Elasticsearch 8.x was introduced in 2.4.6, new labels were created to distinguish between Elasticsearch and OpenSearch configurations. See [Search engine configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/configure-search-engine).
 
 To simplify current and future support for Elasticsearch and OpenSearch, we refactored redundant virtual types for the Elasticsearch modules and renamed the [functional test](https://developer.adobe.com/commerce/testing/functional-testing-framework/) action group `SearchEngineElasticsearch` to `SearchEngine`.
 
@@ -433,7 +433,7 @@ The following modules are affected by this change:
 
 <!-- AC-6832 -->
 
-A new system configuration setting was added to avoid performance degradation when you have a large number of customer segments. See [customer segments validation](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html#customer-segments-validation).
+A new system configuration setting was added to avoid performance degradation when you have a large number of customer segments. See [customer segments validation](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#customer-segments-validation).
 
 You can enable or disable this setting at any time. No additional actions are necessary, except cleaning the cache.
 
@@ -561,7 +561,7 @@ The `grunt-contrib-jasmine.js` library has been updated. The `toBeFalsy()` funct
 
 ### Static content deployment
 
-A new backend theme (`magento/spectrum`) was added to support integration with Adobe Experience Platform. As a result, static file generation does not work correctly after upgrading to Adobe Commerce 2.4.5 on cloud infrastructure if you use the [`SCD_MATRIX`](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#scd_matrix) deployment strategy.
+A new backend theme (`magento/spectrum`) was added to support integration with Adobe Experience Platform. As a result, static file generation does not work correctly after upgrading to Adobe Commerce 2.4.5 on cloud infrastructure if you use the [`SCD_MATRIX`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#scd_matrix) deployment strategy.
 
 If you use the `SCD_MATRIX` configuration, you must add the new `magento/spectrum` theme to your `.magento.env.yaml` file or your custom static content deploy command.  
 
@@ -584,7 +584,7 @@ stage:
 
 Email variable usage was deprecated back in 2.3.4 as part of a security risk mitigation in favor of a more strict variable syntax. This legacy behavior has been fully removed in this release as a continuation of that security risk mitigation.
 
-As a result, email or newsletter templates that worked in previous versions may not work correctly after upgrading to Adobe Commerce 2.4.4 or Magento Open Source 2.4.4. Affected templates include admin overrides, themes, child themes, and templates from custom modules or third-party extensions. Your deployment may still be affected even after using the [Upgrade compatibility tool](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=en) to fix deprecated usages. See [Migrating custom email templates](https://developer.adobe.com/commerce/frontend-core/guide/templates/email-migration/) for information about potential effects and guidelines for migrating affected templates.
+As a result, email or newsletter templates that worked in previous versions may not work correctly after upgrading to Adobe Commerce 2.4.4 or Magento Open Source 2.4.4. Affected templates include admin overrides, themes, child themes, and templates from custom modules or third-party extensions. Your deployment may still be affected even after using the [Upgrade compatibility tool](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview) to fix deprecated usages. See [Migrating custom email templates](https://developer.adobe.com/commerce/frontend-core/guide/templates/email-migration/) for information about potential effects and guidelines for migrating affected templates.
 
 ### Changes to naming conventions for language package filenames
 
@@ -679,7 +679,7 @@ If these changes impact you, you must update all tests that rely on the refactor
 
 Email variable usage was deprecated back in 2.3.4 as part of a security risk mitigation in favor of a more strict variable syntax. This legacy behavior has been fully removed in this release as a continuation of that security risk mitigation.
 
-As a result, email or newsletter templates that worked in previous versions may not work correctly after upgrading to Adobe Commerce 2.4.3-p2 or Magento Open Source 2.4.3-p2. Affected templates include admin overrides, themes, child themes, and templates from custom modules or third-party extensions. Your deployment may still be affected even after using the [Upgrade compatibility tool](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html) to fix deprecated usages. See [Migrating custom email templates](https://developer.adobe.com/commerce/frontend-core/guide/templates/email-migration/) for information about potential effects and guidelines for migrating affected templates.
+As a result, email or newsletter templates that worked in previous versions may not work correctly after upgrading to Adobe Commerce 2.4.3-p2 or Magento Open Source 2.4.3-p2. Affected templates include admin overrides, themes, child themes, and templates from custom modules or third-party extensions. Your deployment may still be affected even after using the [Upgrade compatibility tool](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview) to fix deprecated usages. See [Migrating custom email templates](https://developer.adobe.com/commerce/frontend-core/guide/templates/email-migration/) for information about potential effects and guidelines for migrating affected templates.
 
 ## 2.4.3-p1
 
@@ -768,9 +768,9 @@ This feature introduces the following database changes:
 
 ### Elasticsearch
 
-MySQL is no longer used for search. You must use [Elasticsearch](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/search-engine/overview.html).
+MySQL is no longer used for search. You must use [Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/search-engine/overview).
 
-You must [install and configure](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/search-engine/overview.html) Elasticsearch 7.6.x before upgrading to 2.4.0. New installations require a connection to Elasticsearch to complete.
+You must [install and configure](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/search-engine/overview) Elasticsearch 7.6.x before upgrading to 2.4.0. New installations require a connection to Elasticsearch to complete.
 
 <InlineAlert variant="warning" slots="text"/>
 

@@ -73,7 +73,7 @@ And the `system.xml` file of the AuthorizenetAcceptjs payment method:
 
 You can pass this parameter on storefront via checkout config using `\Magento\Checkout\Model\ConfigProviderInterface`
 
-See [app\code\AuthorizenetCardinal\Model\Checkout\ConfigProvider.php](https://github.com/magento/magento2/tree/2.3/app/code/Magento/AuthorizenetCardinal/Model/Checkout/ConfigProvider.php) as an example.
+See [app\code\AuthorizenetCardinal\Model\Checkout\ConfigProvider.php](https://github.com/magento/magento2/blob/2.3/app/code/Magento/AuthorizenetCardinal/Model/Checkout/ConfigProvider.php) as an example.
 
 ```php
 namespace Magento\AuthorizenetCardinal\Model\Checkout;
@@ -136,7 +136,7 @@ class ConfigProvider implements ConfigProviderInterface
 
 CCA is initiated by the merchant, typically when the customer clicks `Place Order` button. Instead of getting a card authorization, you should use the `Magento_CardinalCommerce/view/frontend/web/js/cardinal-client` JS component and initiate the CCA process before authorization.
 
-In the following example mixin, [app/code/Magento/AuthorizenetCardinal/view/frontend/web/js/authorizenet-accept-mixin.js](https://github.com/magento/magento2/tree/2.3/app/code/Magento/AuthorizenetCardinal/view/frontend/web/js/authorizenet-accept-mixin.js) is used to intercept the `placeOrder` method of the AuthorizenetAcceptjs payment method JS component and start consumer authentication:
+In the following example mixin, [app/code/Magento/AuthorizenetCardinal/view/frontend/web/js/authorizenet-accept-mixin.js](https://github.com/magento/magento2/blob/2.3/app/code/Magento/AuthorizenetCardinal/view/frontend/web/js/authorizenet-accept-mixin.js) is used to intercept the `placeOrder` method of the AuthorizenetAcceptjs payment method JS component and start consumer authentication:
 
 ```js
 define([
@@ -299,6 +299,6 @@ Then you can expect to see an additional field with a cardholder authentication 
 <!-- Link Definitions -->
 [CardinalCommerce]: https://cardinalcommerce.com/
 [module]: https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#module
-[app\code\AuthorizenetCardinal\Model\Checkout\ConfigProvider.php]: https://github.com/magento/magento2/tree/2.3/app/code/Magento/AuthorizenetCardinal/Model/Checkout/ConfigProvider.php
+[app\code\AuthorizenetCardinal\Model\Checkout\ConfigProvider.php]: https://github.com/magento/magento2/blob/2.3/app/code/Magento/AuthorizenetCardinal/Model/Checkout/ConfigProvider.php
 [JWT]: https://en.wikipedia.org/wiki/JSON_Web_Token
-[\Magento\AuthorizenetCardinal\Gateway\Request\Authorize3DSecureBuilder]: https://github.com/magento/magento2/tree/2.3/app/code/Magento/AuthorizenetCardinal/Gateway/Request/Authorize3DSecureBuilder.php
+[\Magento\AuthorizenetCardinal\Gateway\Request\Authorize3DSecureBuilder]: https://github.com/magento/magento2/blob/2.3/app/code/Magento/AuthorizenetCardinal/Gateway/Request/Authorize3DSecureBuilder.php

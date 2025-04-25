@@ -19,11 +19,11 @@ Module creates the following tables:
 - `queue_message` - Queue messages
 - `queue_message_status` - Relation table to keep associations between queues and messages
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Additional information
 
-For information about significant changes in patch releases, see [2.3.x Release information](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
+For information about significant changes in patch releases, see [2.3.x Release information](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
 ### cron options
 

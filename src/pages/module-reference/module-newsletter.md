@@ -29,7 +29,7 @@ This module creates the following tables in the database:
 - `newsletter_queue_store_link`
 - `newsletter_problem`
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Extensibility
 
@@ -81,7 +81,7 @@ For information about a UI component in Magento 2, see [Overview of UI component
 
 ## Additional information
 
-[Learn more about newsletter](https://experienceleague.adobe.com/docs/commerce-admin/marketing/communications/newsletters/newsletters.html).
+[Learn more about newsletter](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/communications/newsletters/newsletters).
 
 ### Cron options
 
@@ -89,7 +89,7 @@ Cron group configuration can be set at `etc/crontab.xml`:
 
 - `newsletter_send_all` - schedules newsletter sending
 
-[Learn how to configure and run cron in Magento.](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html).
+[Learn how to configure and run cron in Magento.](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs).
 
 <InlineAlert slots="text" />
 The version of this module is 100.4.8.

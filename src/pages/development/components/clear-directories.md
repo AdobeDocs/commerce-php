@@ -57,7 +57,7 @@ You can also use the following command-line tools clear some directories for you
 | [`magento cache:clean {type}`][]|Clears the cache | `var/cache` and `var/page_cache`|
 
 [`magento setup:upgrade`]: https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/database-upgrade
-[`magento setup:di:compile`]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/code-compiler.html
-[`magento deploy:mode:set {mode}`]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/set-mode.html
-[`magento cache:clean {type}`]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-cache.html
+[`magento setup:di:compile`]: https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/code-compiler
+[`magento deploy:mode:set {mode}`]: https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode
+[`magento cache:clean {type}`]: https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-cache
 [generated code]: code-generation.md
