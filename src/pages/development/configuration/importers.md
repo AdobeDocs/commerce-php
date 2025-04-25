@@ -9,11 +9,11 @@ keywords:
 # Configuration importers
 
 A configuration importer provides consistent configurations across multiple systems (such as development, staging, and production).
-This is useful for deployment strategies such as [pipeline deployment](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/overview.html).
+This is useful for deployment strategies such as [pipeline deployment](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/deployment/overview).
 
 Adobe Commerce and Magento Open Source use configuration importers to import configuration data from the shared configuration file, `config.php`, to the appropriate storage, such as a database.
 
-Use the [`magento app:config:import` command](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configuration-management/import-configuration.html) to import the configuration from the command line.
+Use the [`magento app:config:import` command](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/import-configuration) to import the configuration from the command line.
 
 Currently, the application has the following importers:
 
@@ -68,7 +68,7 @@ An array cannot be imported by more than one importer.
 ## More information
 
 *  [Sensitive and system-specific settings](sensitive-environment-settings.md)
-*  [config.php reference](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/config-reference-configphp.html)
-*  [env.php reference](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/config-reference-envphp.html)
+*  [config.php reference](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp)
+*  [env.php reference](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-envphp)
 
 [importer-interface]:https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/DeploymentConfig/ImporterInterface.php

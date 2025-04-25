@@ -30,4 +30,4 @@ You also need to provide:
 
 ![](../../_images/best-practices/phpstorm/enable-magento-integration.png)
 
-See the video tutorial [Using the Upgrade Compatibility Tool on PHP Storm](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/uct-phpstorm.html?lang=en) page for more information about the PHPStorm plugin.
+See the video tutorial [Using the Upgrade Compatibility Tool on PHP Storm](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/upgrade/uct-phpstorm) page for more information about the PHPStorm plugin.

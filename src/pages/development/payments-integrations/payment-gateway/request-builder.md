@@ -17,7 +17,7 @@ Request Builder is a component of the Adobe Commerce payment gateway responsible
 
 ## Basic interface
 
-The basic interface for a request builder is [`\Magento\Payment\Gateway\Request\BuilderInterface`](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Payment/Gateway/Request/BuilderInterface.php).
+The basic interface for a request builder is [`\Magento\Payment\Gateway\Request\BuilderInterface`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/Gateway/Request/BuilderInterface.php).
 
 ## Builder composite
 
@@ -31,7 +31,7 @@ The concatenation strategy is defined in the `BuilderComposite::merge()` method.
 
 Builder composites are added using [dependency injection](../../components/dependency-injection.md) in `di.xml`. A builder composite might comprise simple builders as well as other builder composites.
 
-Example of adding composite builders for the Braintree payment provider ([`app/code/Magento/Braintree/etc/di.xml`](https://github.com/magento/magento2/tree/2.3/app/code/Magento/Braintree/etc/di.xml)):
+Example of adding composite builders for the Braintree payment provider ([`app/code/Magento/Braintree/etc/di.xml`](https://github.com/magento/magento2/blob/2.3/app/code/Magento/Braintree/etc/di.xml)):
 
 ```xml
 ...

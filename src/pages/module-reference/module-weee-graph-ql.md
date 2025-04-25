@@ -18,7 +18,7 @@ Before installing this module, note that the Magento_WeeeGraphQl is dependent on
 - `Magento_Tax`
 - `Magento_Weee`
 
-For information about enabling or disabling a module, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about enabling or disabling a module, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Extensibility
 

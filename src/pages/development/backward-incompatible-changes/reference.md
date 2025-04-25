@@ -25,7 +25,7 @@ To view changes in functional tests, refer to [Backward incompatible changes in 
 
 <InlineAlert variant="info" slots="text"/>
 
-Patch releases are primarily focused on delivering security and quality enhancements on a regular basis to help you keep your sites performing at their peak. On an exceptional basis, breaking changes or additional patches or hotfixes may be released to address security or compliance issues and high-impact quality issues. On the module level, these are mostly PATCH-level changes; sometimes MINOR-level changes. See [Release policy](https://experienceleague.adobe.com/docs/commerce-operations/release/policy.html).
+Patch releases are primarily focused on delivering security and quality enhancements on a regular basis to help you keep your sites performing at their peak. On an exceptional basis, breaking changes or additional patches or hotfixes may be released to address security or compliance issues and high-impact quality issues. On the module level, these are mostly PATCH-level changes; sometimes MINOR-level changes. See [Release policy](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/versioning-policy).
 
 ## 2.4.7 - 2.4.8
 
@@ -108,4 +108,4 @@ import Docs17 from '/src/_includes/backward-incompatible-changes/open-source/2.4
 <Docs17 />
 
 <!-- Links -->
-[B2B extension]: https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/reference/backward-incompatible-changes#reference
+[B2B extension]: https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/reference/backward-incompatible-changes

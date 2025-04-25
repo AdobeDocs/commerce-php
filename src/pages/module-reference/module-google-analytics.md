@@ -13,7 +13,7 @@ Before installing this module, note that the Magento_GoogleAnalytics is dependen
 
 Before disabling or uninstalling this module, note that the Magento_GoogleOptimizer module depends on this module
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Extensibility
 
@@ -33,7 +33,7 @@ For more information about a layout in Magento 2, see the [Layout documentation]
 
 ## Additional information
 
-[Learn how to configure Google Analytics](https://experienceleague.adobe.com/docs/commerce-admin/marketing/google-tools/google-analytics.html).
+[Learn how to configure Google Analytics](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/google-tools/google-analytics).
 
 <InlineAlert slots="text" />
 The version of this module is 100.4.4.

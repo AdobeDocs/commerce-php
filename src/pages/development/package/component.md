@@ -155,7 +155,7 @@ Prerequisite: Git must be set up on your machine.
 
 A private repository can be used for development or private code but installation must be done with a command line interface (you can install a package that specifies a private repository only with a command line installation).
 
-1. Set up your own Composer packaging repository using a system such as [Satis](https://getcomposer.org/doc/articles/handling-private-packages-with-satis.md) or [Private Packagist](https://packagist.com/).
+1. Set up your own Composer packaging repository using a system such as [Satis](https://getcomposer.org/doc/articles/handling-private-packages.md) or [Private Packagist](https://packagist.com/).
 1. Create the package in a way similar to the described above.
 1. Submit/register the package on your own repository. For example, it can be hosted as a reference to a code repository or submitted as a zip-archive.
 1. To use the private packaging repository in a project, add the following to your `composer.json` file:

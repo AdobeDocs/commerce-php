@@ -18,7 +18,7 @@ The Magento_ProductVideo module creates the `catalog_product_entity_media_galler
 
 All database schema changes made by this module are rolled back when the module gets disabled and setup:upgrade command is run.
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Extensibility
 
@@ -51,7 +51,7 @@ For information about a UI component in Magento 2, see [Overview of UI component
 
 More information can get at articles:
 
-- [Learn how to add Product Video](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/digital-assets/product-video.html)
+- [Learn how to add Product Video](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-video)
 - [Learn how to configure Product Video](https://developer.adobe.com/commerce/frontend-core/guide/themes/product-video/)
 
 <InlineAlert slots="text" />

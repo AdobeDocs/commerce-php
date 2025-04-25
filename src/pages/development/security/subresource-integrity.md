@@ -55,4 +55,4 @@ $integrity = "sha256" . "-{$hash}";
 
 <InlineAlert slots="text" />
 
-For subresource-integrity verification of a resource served from an origin other than the document where it is embedded, the [crossorigin](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/crossorigin) attribute must be provided along with the integrity attribute.
+For subresource-integrity verification of a resource served from an origin other than the document where it is embedded, the [crossorigin](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/crossorigin) attribute must be provided along with the integrity attribute.

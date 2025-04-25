@@ -232,4 +232,4 @@ Create a mixin as follows:
 
 <InlineAlert variant="info" slots="text"/>
 
-For your changes to be applied, you might need to [clean layout cache](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-cache.html) and [static view file cache](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache). For more info on mixins, see [JS Mixins](https://developer.adobe.com/commerce/frontend-core/javascript/mixins/).
+For your changes to be applied, you might need to [clean layout cache](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-cache) and [static view file cache](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache). For more info on mixins, see [JS Mixins](https://developer.adobe.com/commerce/frontend-core/javascript/mixins/).
