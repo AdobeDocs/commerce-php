@@ -17,11 +17,11 @@ Retrieving stored (cached) content from a previous request for the same client i
 
 The Adobe Commerce and Magento Open Source page cache library contains a simple PHP reverse proxy that enables full page caching out of the box. A reverse proxy acts as an intermediary between visitors and your application and can reduce the load on your server.
 
-We recommend using [Varnish](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/varnish/config-varnish.html), but you can use Magento's default caching mechanism instead, which stores cache files in any of the following:
+We recommend using [Varnish](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/varnish/config-varnish), but you can use Magento's default caching mechanism instead, which stores cache files in any of the following:
 
 -  File system (You don't need to do anything to use file-based caching.)
 -  [Database](../partial/database-caching.md)
--  [Redis](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache.html)
+-  [Redis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache)
 
 ## Cacheable and uncacheable pages
 

@@ -13,7 +13,7 @@ These guidelines came from many years of hard work, experience, and discussions.
 
 ## Text conventions
 
-Use [RFC2119](https://tools.ietf.org/html/rfc2119) to interpret keywords like:
+Use [RFC2119](https://datatracker.ietf.org/doc/html/rfc2119) to interpret keywords like:
 
 *  MUST and MUST NOT
 
@@ -616,7 +616,7 @@ You need to read configuration from different sources (like database or filesyst
 
 6.4.4.13. A service contract MUST NOT rely on the execution context (application area). The service implementation MUST NOT depend on the application state.
 
-6.4.4.14. A service contract SHOULD be an [idempotent method](https://tools.ietf.org/html/rfc7231#section-4.2.2).
+6.4.4.14. A service contract SHOULD be an [idempotent method](https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.2).
 
 ## 7. Configuration
 
@@ -910,7 +910,7 @@ class SampleEventObserverThatModifiesInputs implements ObserverInterface
 
 15.5.2. A segmented application architecture that provides effective, secure separation between components or tenants, with segmentation, containerization, or cloud security groups (ACLs).
 
-15.5.3. Sending security directives to clients, e.g. [Security Headers](https://www.owasp.org/index.php/OWASP_Secure_Headers_Project).
+15.5.3. Sending security directives to clients, e.g. [Security Headers](https://owasp.org/www-project-secure-headers/).
 
 15.6. Sensitive Data Exposure protection.
 
@@ -950,7 +950,7 @@ class SampleEventObserverThatModifiesInputs implements ObserverInterface
 
 ## 16. Cron
 
-16.1. Cron job SHOULD be an [idempotent method](https://tools.ietf.org/html/rfc7231#section-4.2.2).
+16.1. Cron job SHOULD be an [idempotent method](https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.2).
 
 ## 17. Services
 

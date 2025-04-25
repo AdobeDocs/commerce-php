@@ -41,7 +41,7 @@ These are the main components of the Upgrade Compatibility Tool Run Configuratio
 *  *Message*: Message that appears if the Upgrade Compatibility Tool cannot be located for the current PHPStorm plugin project.
 *  *Link*: Link to install the Upgrade Compatibility Tool for the current PHPStorm plugin project.
 
-See [run the tool](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/run.html) for more information on these specific options of the Upgrade Compatibility Tool.
+See [run the tool](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/run) for more information on these specific options of the Upgrade Compatibility Tool.
 
 After you correctly configure the template, you can run the Upgrade Compatibility Tool with a single click in your Run Configuration GUI.
 

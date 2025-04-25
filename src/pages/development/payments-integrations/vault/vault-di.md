@@ -17,7 +17,7 @@ This section describes how to configure vault payment method and create payment 
 
 ## Add vault payment facade
 
-To add a payment facade for the vault payment, create a [virtual type](../../build/dependency-injection-file.md#virtual-types). In the most cases, it will extend [`Magento\Vault\Model\Method\Vault`](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Vault/Model/Method/Vault.php) that is the default implementation of [`Magento\Vault\Model\VaultPaymentInterface`](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Vault/Model/VaultPaymentInterface.php):
+To add a payment facade for the vault payment, create a [virtual type](../../build/dependency-injection-file.md#virtual-types). In the most cases, it will extend [`Magento\Vault\Model\Method\Vault`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Vault/Model/Method/Vault.php) that is the default implementation of [`Magento\Vault\Model\VaultPaymentInterface`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Vault/Model/VaultPaymentInterface.php):
 
 Example of the vault payment facade configuration for Braintree:
 
@@ -56,7 +56,7 @@ Following is an example from Braintree configuration:
 
 For payment actions, you need to create gateway commands for vault, and update the payment provider [command pool](../payment-gateway/command-pool.md).
 
-You can find all available commands in the [VaultPaymentInterface](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Vault/Model/VaultPaymentInterface.php).
+You can find all available commands in the [VaultPaymentInterface](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Vault/Model/VaultPaymentInterface.php).
 
 Example: a gateway command for the authorize action is added for the Braintree vault
 

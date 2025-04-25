@@ -129,10 +129,10 @@ Since you cannot specify this data in the constructor signature, the application
 To get around this limitation, injectable objects can depend on [factories] that produce newable objects.
 
 [Dependency Injection]: https://en.wikipedia.org/wiki/Dependency_injection
-[dependency inversion principle]: http://www.oodesign.com/dependency-inversion-principle.html
+[dependency inversion principle]: https://www.oodesign.com/dependency-inversion-principle
 [`di.xml`]: ../build/dependency-injection-file.md
 [`ObjectManager`]: object-manager/index.md
-[code compiler tool]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/code-compiler.html
+[code compiler tool]: https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/code-compiler
 [proxies]: proxies.md
 [proxy]: proxies.md
 [factories]: factories.md

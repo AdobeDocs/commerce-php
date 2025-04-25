@@ -17,7 +17,7 @@ Gateway Client is a component of the Adobe Commerce payment gateway that transfe
 
 ## Basic interface
 
-The basic interface for a gateway client is [`Magento\Payment\Gateway\Http\ClientInterface`](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Payment/Gateway/Http/ClientInterface.php).
+The basic interface for a gateway client is [`Magento\Payment\Gateway\Http\ClientInterface`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/Gateway/Http/ClientInterface.php).
 
 A gateway client receives a called [`Transfer`](#transfer-factory) object. The client may be configured with response converter using [dependency injection](../../components/dependency-injection.md).
 
@@ -25,9 +25,9 @@ A gateway client receives a called [`Transfer`](#transfer-factory) object. The c
 
 The following gateway client implementations can be used out-of-the-box:
 
--  [\Magento\Payment\Gateway\Http\Client\Zend](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Payment/Gateway/Http/Client/Zend.php)
+-  [\Magento\Payment\Gateway\Http\Client\Zend](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/Gateway/Http/Client/Zend.php)
 
--  [\Magento\Payment\Gateway\Http\Client\Soap](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Payment/Gateway/Http/Client/Soap.php)
+-  [\Magento\Payment\Gateway\Http\Client\Soap](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/Gateway/Http/Client/Soap.php)
 
 ## Example
 
@@ -48,9 +48,9 @@ Following is the illustration of how a Zend client can be added in `di.xml`:
 
 Transfer Factory allows to create transfer object with all data from [request builders](request-builder.md). This object is then used by Gateway Client to process requests to payment processor.
 
-Transfer Factory uses [Transfer Builder](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Payment/Gateway/Http/TransferBuilder.php) to set required request parameters.
+Transfer Factory uses [Transfer Builder](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/Gateway/Http/TransferBuilder.php) to set required request parameters.
 
-The basic Transfer Factory interface is [Magento\Payment\Gateway\Http\TransferFactoryInterface](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Payment/Gateway/Http/TransferFactoryInterface.php).
+The basic Transfer Factory interface is [Magento\Payment\Gateway\Http\TransferFactoryInterface](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/Gateway/Http/TransferFactoryInterface.php).
 
 The similar example of factory might looks like this:
 

@@ -115,8 +115,8 @@ Make sure that your observer or plugin is declared in the proper area:
 -  [`crontab`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Cron/etc/di.xml)
 -  [`frontend`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Store/etc/di.xml)
 -  [`graphql`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/GraphQl/etc/di.xml)
--  [`webapi_rest`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Webapi/etc/di.xml)
--  [`webapi_soap`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Webapi/etc/di.xml)
+-  [`webapi_rest`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Webapi/etc/webapi_rest/di.xml)
+-  [`webapi_soap`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Webapi/etc/webapi_soap/di.xml)
 
 The plugins and observers should be declared in the `<module-dir>/etc/<area>/` directory.
 

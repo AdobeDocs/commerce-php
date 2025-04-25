@@ -10,7 +10,7 @@ This module is designed to extend existing functionality of Magento_CatalogImpor
 
 ## Installation
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Extensibility
 
@@ -22,8 +22,8 @@ Extension developers can interact with the Magento_GroupedImportExport module. F
 
 You can get more information about import/export processes in magento at the articles:
 
-- [Import](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/import/data-import.html)
-- [Export](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-export.html)
+- [Import](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import)
+- [Export](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-export)
 
 <InlineAlert slots="text" />
 The version of this module is 100.4.6.

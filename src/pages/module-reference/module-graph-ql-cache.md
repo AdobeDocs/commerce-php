@@ -15,7 +15,7 @@ Before installing this module, note that the Magento_GraphQlCache module is depe
 - `Magento_PageCache`
 - `Magento_GraphQl`
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Extensibility
 

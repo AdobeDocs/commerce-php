@@ -68,7 +68,7 @@ The following interfaces and classes have been deprecated. They cannot be mapped
 
 ## Inventory Management API
 
-The following services reside under the [`Magento/InventoryApi/Api`](https://github.com/magento/inventory/blob/1.2.4/InventoryApi/Api) namespace, replacing deprecated services and APIs.
+The following services reside under the [`Magento/InventoryApi/Api`](https://github.com/magento/inventory/tree/1.2.4/InventoryApi/Api) namespace, replacing deprecated services and APIs.
 
 Service | Description | Deprecated API
 --- | --- | ---
@@ -95,7 +95,7 @@ Service | Description
 
 ## Inventory Sales API
 
-The following services reside under the [`Magento/InventorySalesApi/Api`](https://github.com/magento/inventory/blob/1.2.4/InventorySalesApi/Api) namespace, replacing deprecated services and APIs.
+The following services reside under the [`Magento/InventorySalesApi/Api`](https://github.com/magento/inventory/tree/1.2.4/InventorySalesApi/Api namespace, replacing deprecated services and APIs.
 
 Service | Description                                                                                                                                 | Deprecated API
 --- |---------------------------------------------------------------------------------------------------------------------------------------------| ---
@@ -109,7 +109,7 @@ Service | Description                                                           
 
 ## Inventory Configuration API
 
-The following services reside under the [`Magento/InventoryConfigurationApi/Api`](https://github.com/magento/inventory/blob/1.2.4/InventoryConfigurationApi/Api) namespace, replacing deprecated services and APIs.
+The following services reside under the [`Magento/InventoryConfigurationApi/Api`](https://github.com/magento/inventory/tree/1.2.4/InventoryConfigurationApi/Api) namespace, replacing deprecated services and APIs.
 
 Service | Description | Deprecated API
 --- | --- | ---
@@ -118,7 +118,7 @@ Service | Description | Deprecated API
 
 ## Inventory Source Selection Algorithm (SSA) API
 
-The following services reside under the [`Magento/InventorySourceSelectionApi/Api`](https://github.com/magento/inventory/blob/1.2.4/InventorySourceSelectionApi/Api) namespace.
+The following services reside under the [`Magento/InventorySourceSelectionApi/Api`](https://github.com/magento/inventory/tree/1.2.4/InventorySourceSelectionApi/Api) namespace.
 
 Service | Description
 --- | ---
@@ -128,7 +128,7 @@ Service | Description
 
 ## Inventory Export Aggregated Stock Data API
 
-The following services reside under the [`Magento/InventoryExportStockApi/Api`](https://github.com/magento/inventory/blob/1.2.4/InventoryExportStockApi/Api) namespace.
+The following services reside under the [`Magento/InventoryExportStockApi/Api`](https://github.com/magento/inventory/tree/1.2.4/InventoryExportStockApi/Api) namespace.
 
 Service | Description
 --- | ---

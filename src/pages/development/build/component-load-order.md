@@ -18,7 +18,7 @@ You can check your module's load order from the `<magento_root>/app/etc/config.p
 
 <InlineAlert variant="info" slots="text"/>
 
-If you change the component load order using `<sequence>`, you must regenerate the component list in `config.php`; otherwise, the load order does not take effect. Currently, the only way to do this is to enable the component using [`magento module:enable <module-list>`](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules#instgde-cli-subcommands-enable-disable), where `<module-list>` is the component or components to which you added `<sequence>`.
+If you change the component load order using `<sequence>`, you must regenerate the component list in `config.php`; otherwise, the load order does not take effect. Currently, the only way to do this is to enable the component using [`magento module:enable <module-list>`](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules#module-enable-disable), where `<module-list>` is the component or components to which you added `<sequence>`.
 
 ## Examples
 

@@ -7,7 +7,7 @@ keywords:
 
 # Add CLI commands
 
-Your module can optionally use the Symfony-based [command-line interface (CLI)](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/config-cli.html) to provide commands for users to interact with. To use the CLI, see the following topics:
+Your module can optionally use the Symfony-based [command-line interface (CLI)](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) to provide commands for users to interact with. To use the CLI, see the following topics:
 
 *  [Command naming guidelines](naming-guidelines.md)
 *  [Create a new command](custom.md)
