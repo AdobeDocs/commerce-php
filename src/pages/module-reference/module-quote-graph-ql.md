@@ -16,7 +16,7 @@ Before installing this module, note that the Magento_QuoteGraphQl is dependent o
 
 This module does not introduce any database schema modifications or new data.
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Extensibility
 
@@ -54,7 +54,7 @@ You can get more information about [GraphQl In Magento 2](https://developer.adob
   [Learn more about removeCouponFromCart mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/remove-coupon/).
 
 - `updateCartItems` mutation - allows you to modify items in the specified cart.
-  [Learn more about updateCartItems mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/update-items/).
+  [Learn more about updateCartItems mutation]((https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/update-items/).
 
 - `removeItemFromCart` mutation - deletes the entire quantity of a specified item from the cart.
   [Learn more about removeItemFromCart mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/remove-item/).
@@ -87,4 +87,4 @@ You can get more information about [GraphQl In Magento 2](https://developer.adob
   [Learn more about addProductsToCart mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/add-products/).
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.7.
+The version of this module is 100.4.8.

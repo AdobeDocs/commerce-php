@@ -8,4 +8,4 @@ description: N/A
 The `ImportCsv` module provides possibility to upload CSV files as source type
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.1.
+The version of this module is 100.4.2.

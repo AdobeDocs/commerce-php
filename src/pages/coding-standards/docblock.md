@@ -13,7 +13,7 @@ Some parts of the code might not comply with this standard, but we are working t
 
 Following these standards is optional for third-party developers, but doing so helps to create consistent, clean, and easy to read inline documentation.
 
-Use [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt) to interpret the "MUST," "MUST NOT," "REQUIRED," "SHALL," "SHALL NOT," "SHOULD," "SHOULD NOT," "RECOMMENDED," "MAY," and "OPTIONAL keywords."
+Use [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt) to interpret the "MUST," "MUST NOT," "REQUIRED," "SHALL," "SHALL NOT," "SHOULD," "SHOULD NOT," "RECOMMENDED," "MAY," and "OPTIONAL keywords."
 
 ## Scope of the standard
 
@@ -21,7 +21,7 @@ The goal of this standard is to unify usage of code DocBlocks for all files, not
 
 The following is assumed by default:
 
-*  Formatting according to the [phpDocumentor](https://docs.phpdoc.org/latest/guide/references/phpdoc/basic-syntax.html#basic-syntax) standard
+*  Formatting according to the [phpDocumentor](https://docs.phpdoc.org/guide/getting-started/what-is-a-docblock.html#what-is-a-docblock) standard.
 *  Requirements apply for all files regardless of programming language, but a DocBlock standard for the particular language may override it.
 
 ## General principles
@@ -130,8 +130,8 @@ Use the following templates for the license notice and copyright blocks:
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 namespace Magento\Framework\Api;
@@ -153,8 +153,8 @@ interface MetadataObjectInterface
 <?xml version="1.0"?>
 <!--
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 -->
 ```
@@ -163,14 +163,14 @@ interface MetadataObjectInterface
 
 ```javascript
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 ```
 
 ## Code structural elements
 
-A structural element is defined in [phpDocumentor](http://phpdoc.org/) as part of the imperative source code, such as PHP or JavaScript, or procedural SQL.
+A structural element is defined in [phpDocumentor](https://phpdoc.org/) as part of the imperative source code, such as PHP or JavaScript, or procedural SQL.
 For example:
 
 *  namespace
@@ -207,8 +207,8 @@ There are two solutions possible:
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 /**
@@ -233,8 +233,8 @@ class Bootstrap
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 namespace Magento\Framework\Profiler\Adapter;
@@ -318,8 +318,8 @@ Class attributes must have a type declaration using `@var` tag.
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 namespace Magento;
@@ -597,8 +597,8 @@ In general, such method overrides are a [code smell](https://en.wikipedia.org/wi
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 /**
@@ -625,8 +625,8 @@ interface MutableInterface
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 /**
@@ -662,7 +662,7 @@ The `@api` tag can be applied to a constant, a method, or to the entire class/in
 If the `@api` tag is applied at the file level, then all methods within the file are part of the public API.
 You do not need to annotate each method individually.
 
-See [Semantic Versioning 2.0.0](http://semver.org/) for information about changing and updating code while maintaining backward compatibility.
+See [Semantic Versioning 2.0.0](https://semver.org/) for information about changing and updating code while maintaining backward compatibility.
 
 ### @deprecated tag
 
@@ -764,8 +764,8 @@ See [PHP documentation](https://manual.phpdoc.org/HTMLSmartyConverter/PHP/phpDoc
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 namespace Magento\Catalog\Model\Product;

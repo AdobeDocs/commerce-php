@@ -16,7 +16,7 @@ The Magento_AdminNotification module creates the following tables in the databas
 
 Before disabling or uninstalling this module, note that the Magento_Indexer module depends on this module.
 
-For information about module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Extensibility
 
@@ -46,4 +46,4 @@ You can extend admin notifications using the `view/adminhtml/ui_component/notifi
 For information about UI components in Magento 2, see [Overview of UI components](https://developer.adobe.com/commerce/frontend-core/ui-components/).
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.6.
+The version of this module is 100.4.7.

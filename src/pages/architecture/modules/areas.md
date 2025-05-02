@@ -62,7 +62,7 @@ After the area name, the URI segment specifies the *frontname*. When an HTTP req
 The `frontName` is a value defined in the module. Using `catalog/product/view` as an example:
 
 *  `catalog` is the [frontName](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/etc/frontend/routes.xml#L10) in the module area's `routes.xml` file
-*  `product` is in the [controller folder](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Controller/Product)
+*  `product` is in the [controller folder](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Catalog/Controller/Product)
 *  `view` is the [controller class](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Controller/Product/View.php)
 
 For deeper directory structures, the controller folders are separated with an underscore (`_`). For example:

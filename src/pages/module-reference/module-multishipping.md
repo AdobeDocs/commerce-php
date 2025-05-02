@@ -10,7 +10,7 @@ using different carriers. The module provides alternative to standard checkout f
 
 ## Installation
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Structure
 
@@ -141,7 +141,7 @@ Module introduces the new pages:
 
 More information about [layout types](https://developer.adobe.com/commerce/frontend-core/guide/layouts/types/).
 
-For information about significant changes in patch releases, see [2.3.x Release information](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
+For information about significant changes in patch releases, see [2.3.x Release information](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.7.
+The version of this module is 100.4.8.

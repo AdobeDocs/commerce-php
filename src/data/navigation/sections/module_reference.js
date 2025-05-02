@@ -45,6 +45,11 @@ module.exports = [
     },
     
     {
+      title: "AdminUiSdkCustomFees",
+      path: "/module-reference/module-admin-ui-sdk-custom-fees/"
+    },
+    
+    {
       title: "AdobeCommerceEventsClient",
       path: "/module-reference/module-adobe-commerce-events-client/"
     },
@@ -580,6 +585,11 @@ module.exports = [
     },
     
     {
+      title: "CompanyAsynchronousOperations",
+      path: "/module-reference/module-company-asynchronous-operations/"
+    },
+    
+    {
       title: "CompanyCredit",
       path: "/module-reference/module-company-credit/"
     },
@@ -590,13 +600,48 @@ module.exports = [
     },
     
     {
+      title: "CompanyCustomerImportExport",
+      path: "/module-reference/module-company-customer-import-export/"
+    },
+    
+    {
       title: "CompanyGraphQl",
       path: "/module-reference/module-company-graph-ql/"
     },
     
     {
+      title: "CompanyNegotiableQuote",
+      path: "/module-reference/module-company-negotiable-quote/"
+    },
+    
+    {
+      title: "CompanyNegotiableQuoteTemplate",
+      path: "/module-reference/module-company-negotiable-quote-template/"
+    },
+    
+    {
       title: "CompanyPayment",
       path: "/module-reference/module-company-payment/"
+    },
+    
+    {
+      title: "CompanyQuote",
+      path: "/module-reference/module-company-quote/"
+    },
+    
+    {
+      title: "CompanyQuoteGraphQl",
+      path: "/module-reference/module-company-quote-graph-ql/"
+    },
+    
+    {
+      title: "CompanyRelation",
+      path: "/module-reference/module-company-relation/"
+    },
+    
+    {
+      title: "CompanyRelationSharedCatalog",
+      path: "/module-reference/module-company-relation-shared-catalog/"
     },
     
     {
@@ -795,6 +840,11 @@ module.exports = [
     },
     
     {
+      title: "DownloadableCompany",
+      path: "/module-reference/module-downloadable-company/"
+    },
+    
+    {
       title: "DownloadableGraphQl",
       path: "/module-reference/module-downloadable-graph-ql/"
     },
@@ -830,8 +880,8 @@ module.exports = [
     },
     
     {
-      title: "Elasticsearch7",
-      path: "/module-reference/module-elasticsearch-7/"
+      title: "Elasticsearch8",
+      path: "/module-reference/module-elasticsearch-8/"
     },
     
     {
@@ -1152,6 +1202,11 @@ module.exports = [
     {
       title: "InventoryCatalogFrontendUi",
       path: "/module-reference/module-inventory-catalog-frontend-ui/"
+    },
+    
+    {
+      title: "InventoryCatalogRule",
+      path: "/module-reference/module-inventory-catalog-rule/"
     },
     
     {
@@ -1750,13 +1805,48 @@ module.exports = [
     },
     
     {
+      title: "NegotiableQuoteDuplicate",
+      path: "/module-reference/module-negotiable-quote-duplicate/"
+    },
+    
+    {
+      title: "NegotiableQuoteDuplicateGraphQl",
+      path: "/module-reference/module-negotiable-quote-duplicate-graph-ql/"
+    },
+    
+    {
       title: "NegotiableQuoteGraphQl",
       path: "/module-reference/module-negotiable-quote-graph-ql/"
     },
     
     {
+      title: "NegotiableQuoteRequisitionList",
+      path: "/module-reference/module-negotiable-quote-requisition-list/"
+    },
+    
+    {
+      title: "NegotiableQuoteRequisitionListGraphQl",
+      path: "/module-reference/module-negotiable-quote-requisition-list-graph-ql/"
+    },
+    
+    {
       title: "NegotiableQuoteSharedCatalog",
       path: "/module-reference/module-negotiable-quote-shared-catalog/"
+    },
+    
+    {
+      title: "NegotiableQuoteTemplate",
+      path: "/module-reference/module-negotiable-quote-template/"
+    },
+    
+    {
+      title: "NegotiableQuoteTemplateGraphQl",
+      path: "/module-reference/module-negotiable-quote-template-graph-ql/"
+    },
+    
+    {
+      title: "NegotiableQuoteTemplateSharedCatalog",
+      path: "/module-reference/module-negotiable-quote-template-shared-catalog/"
     },
     
     {
@@ -1832,6 +1922,11 @@ module.exports = [
     {
       title: "PageBuilderAnalytics",
       path: "/module-reference/module-page-builder-analytics/"
+    },
+    
+    {
+      title: "PageBuilderImageAttribute",
+      path: "/module-reference/module-page-builder-image-attribute/"
     },
     
     {
@@ -2085,6 +2180,11 @@ module.exports = [
     },
     
     {
+      title: "ReCaptchaResendConfirmationEmail",
+      path: "/module-reference/module-re-captcha-resend-confirmation-email/"
+    },
+    
+    {
       title: "ReCaptchaReview",
       path: "/module-reference/module-re-captcha-review/"
     },
@@ -2152,6 +2252,11 @@ module.exports = [
     {
       title: "ReCaptchaWebapiUi",
       path: "/module-reference/module-re-captcha-webapi-ui/"
+    },
+    
+    {
+      title: "ReCaptchaWishlist",
+      path: "/module-reference/module-re-captcha-wishlist/"
     },
     
     {
@@ -2617,6 +2722,11 @@ module.exports = [
     {
       title: "WebapiAsync",
       path: "/module-reference/module-webapi-async/"
+    },
+    
+    {
+      title: "WebapiRestGws",
+      path: "/module-reference/module-webapi-rest-gws/"
     },
     
     {

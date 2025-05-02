@@ -52,7 +52,7 @@ Form elements included in the Admin pattern library include:
 
 Users of the default storefront encounter examples of these form elements throughout the product. These patterns provide a valuable language of software components (and indirectly, user experiences) for extension developers and administrators.
 
-The Admin Pattern library is built on the Less preprocessor and implemented as a module. You can download a free, current version of this module from [Commerce Marketplace](https://marketplace.magento.com/).
+The Admin Pattern library is built on the Less preprocessor and implemented as a module. You can download a free, current version of this module from [Commerce Marketplace](https://commercemarketplace.adobe.com/).
 
 See [Admin Pattern Library](https://developer.adobe.com/commerce/admin-developer/pattern-library/) for more information on using this library.
 

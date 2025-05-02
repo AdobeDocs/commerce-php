@@ -11,4 +11,4 @@ It provides mechanisms to add, edit, store and retrieve the configuration data f
 Modules can add items to be configured on the system configuration page by creating system.xml files in their etc/adminhtml directories. These system.xml files get merged to populate the forms in the config page.
 
 <InlineAlert slots="text" />
-The version of this module is 101.2.7.
+The version of this module is 101.2.8.

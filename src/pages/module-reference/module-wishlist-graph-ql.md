@@ -24,7 +24,7 @@ Before installing this module, note that the Magento_WishlistGraphQl is dependen
 - Magento_Sales
 - Magento_Store
 
-For information about enabling or disabling a module, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about enabling or disabling a module, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Extensibility
 
@@ -47,4 +47,4 @@ For more information about the Magento_WishlistGraphQl queries and mutations see
 - [`updateProductsInWishlist`](https://developer.adobe.com/commerce/webapi/graphql/schema/wishlist/mutations/update-products/)
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.7.
+The version of this module is 100.4.8.

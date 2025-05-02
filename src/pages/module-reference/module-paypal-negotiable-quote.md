@@ -14,4 +14,4 @@ Extension developers can interact with the Magento_PaypalNegotiableQuote module 
 [The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_PaypalNegotiableQuote module.
 
 <InlineAlert slots="text" />
-The version of this module is 1.4.1.
+The version of this module is 1.5.1.

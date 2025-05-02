@@ -5,11 +5,11 @@ description: Google reCAPTCHA config migration for Magento2
 
 # Magento reCAPTCHA
 
-Google reCAPTCHA ensures that a human being, rather than a computer (or “bot”), is interacting with your website. Unlike the standard Magento CAPTCHA, Google reCAPTCHA provides enhanced security with a selection of different display options and methods. Additional website traffic information is available in the dashboard of your Google reCAPTCHA account.
+Google reCAPTCHA ensures that a human being, rather than a computer (or "bot"), is interacting with your website. Unlike the standard Magento CAPTCHA, Google reCAPTCHA provides enhanced security with a selection of different display options and methods. Additional website traffic information is available in the dashboard of your Google reCAPTCHA account.
 
 This module helps migrate data from the old reCAPTCHA implementation to the new one.
 
-For more information please visit the [Magento document for reCAPTCHA](https://docs.magento.com/user-guide/stores/security-google-recaptcha.html).
+For more information please visit the [reCAPTCHA documentation](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-google-recaptcha).
 
 <InlineAlert slots="text" />
-The version of this module is 1.1.4.
+The version of this module is 1.1.5.

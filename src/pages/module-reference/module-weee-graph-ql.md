@@ -18,7 +18,7 @@ Before installing this module, note that the Magento_WeeeGraphQl is dependent on
 - `Magento_Tax`
 - `Magento_Weee`
 
-For information about enabling or disabling a module, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about enabling or disabling a module, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Extensibility
 
@@ -27,4 +27,4 @@ Extension developers can interact with the Magento_WeeeGraphQl module. For more 
 [The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_WeeeGraphQl module.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.4.
+The version of this module is 100.4.5.

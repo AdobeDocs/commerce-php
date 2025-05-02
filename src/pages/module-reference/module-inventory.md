@@ -28,4 +28,4 @@ interfaces and extension points related to this module are located in the `Inven
 Use the interfaces and extension points defined in `InventoryApi` to extend this module.
 
 <InlineAlert slots="text" />
-The version of this module is 1.2.5.
+The version of this module is 1.2.6.

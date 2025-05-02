@@ -22,4 +22,4 @@ The `InventoryInStorePickupSalesApi` module contains extension points and APIs t
 can use to provide customization of In-Store Pickup functionality
 
 <InlineAlert slots="text" />
-The version of this module is 1.1.3.
+The version of this module is 1.1.4.

@@ -24,4 +24,4 @@ Extension points enable extension developers to interact with the Magento_WeeeSt
 [The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_WeeeStaging module.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.4.
+The version of this module is 100.4.5.

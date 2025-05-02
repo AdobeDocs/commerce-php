@@ -12,4 +12,4 @@ This module is part of the new inventory infrastructure. The
 describes the MSI (Multi-Source Inventory) project in more detail.
 
 <InlineAlert slots="text" />
-The version of this module is 1.2.4.
+The version of this module is 1.2.5.

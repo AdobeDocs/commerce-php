@@ -16,7 +16,7 @@ Before installing this module, note that the Magento_GoogleOptimizer is dependen
 - `Magento_Cms`
 - `Magento_Ui`
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Extensibility
 
@@ -58,7 +58,7 @@ This allows to save different codes for products and categories on different sto
 This functionality can be switched on and off on the configuration page (`Stores -> Configuration -> General -> Google Api -> Google Analytics`).
 Also this functionality depends on Google Analytics module and configuration options.
 
-[Learn how to configure Google Content Experiments](https://experienceleague.adobe.com/docs/commerce-admin/marketing/google-tools/google-content-experiments.html).
+[Learn how to configure Google Content Experiments](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/google-tools/google-content-experiments).
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.6.
+The version of this module is 100.4.7.

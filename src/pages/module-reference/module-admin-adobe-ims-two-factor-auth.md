@@ -11,7 +11,7 @@ The Magento_AdminAdobeImsTwoFactorAuth module is responsible to check whether Ad
 
 Before disabling or uninstalling this module, note that the `Magento_AdminAdobeIms` and `Magento_TwoFactorAuth` modules depends on this module.
 
-For information about module installation, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about module installation, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Extensibility
 
@@ -21,7 +21,7 @@ Extension developers can interact with the Magento_AdminAdobeImsTwoFactorAuth mo
 
 ## Additional information
 
-For information about significant changes in patch releases, see [Release information](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
+For information about significant changes in patch releases, see [Release information](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
 <InlineAlert slots="text" />
-The version of this module is 1.0.1.
+The version of this module is 1.0.2.

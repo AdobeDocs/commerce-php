@@ -16,7 +16,7 @@ Before installing this module, note that the Magento_GroupedProductGraphQl is de
 - `Magento_GraphQl`
 - `Magento_CatalogGraphQlr`
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Extensibility
 
@@ -29,4 +29,4 @@ Extension developers can interact with the Magento_GroupedProductGraphQll module
 You can get more information about [GraphQl In Magento 2](https://developer.adobe.com/commerce/webapi/graphql/).
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.7.
+The version of this module is 100.4.8.

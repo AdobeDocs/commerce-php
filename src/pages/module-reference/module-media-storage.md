@@ -14,7 +14,7 @@ Before installing this module, note that the Magento_MediaStorage is dependent o
 - `Magento_Catalog`
 - `Magento_Theme`
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Structure
 
@@ -38,12 +38,12 @@ Extension developers can interact with the Magento_MediaStorage module. For more
 
 - `media.storage.catalog.image.resize` - creates resized product images
 
-[Learn how to manage Message Queues](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues.html).
+[Learn how to manage Message Queues](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues).
 
 More information can get at articles:
 
-- [Learn how to configure Media Storage Database](https://experienceleague.adobe.com/docs/commerce-admin/content-design/media/storage/media-storage-database.html).
+- [Learn how to configure Media Storage Database](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/media-storage-database).
 - [Learn how to Resize catalog images](https://developer.adobe.com/commerce/frontend-core/guide/themes/configure/#resize-catalog-images)
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.6.
+The version of this module is 100.4.7.

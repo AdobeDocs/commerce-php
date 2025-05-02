@@ -17,4 +17,4 @@ Extension developers can interact with the Magento_Csp module. For more informat
 A lot of functionality in the module is on JavaScript, use [mixins](https://developer.adobe.com/commerce/frontend-core/javascript/mixins/) to extend it.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.6.
+The version of this module is 100.4.7.

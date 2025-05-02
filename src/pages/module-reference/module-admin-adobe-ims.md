@@ -7,7 +7,7 @@ description: N/A
 
 The Magento_Admin_Adobe_Ims module contains integration with Adobe IMS for backend authentication.
 
-For information about module installation, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about module installation, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## CLI command usage
 
@@ -250,4 +250,4 @@ The reauth_token will be used to call the AdobeIms validateToken Endpoint.
 When this call is successful, the form will be submitted, otherwise we update the Message of the thrown `AuthenticationException` to return a matching error message, done by the `Magento/AdminAdobeIms/Plugin/PerformIdentityCheckMessagePlugin.php` Plugin.
 
 <InlineAlert slots="text" />
-The version of this module is 100.5.1.
+The version of this module is 100.5.3.

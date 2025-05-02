@@ -3,7 +3,7 @@ title: GraphQL Application Server | Commerce PHP Extensions
 description: Learn about GraphQL Application Server architecture and how to ensure compatibility with custom extensions.
 keywords:
   - Extensions
-edition: ee
+edition: pass
 ---
 
 <InlineAlert variant="info" slots="text" />
@@ -181,6 +181,8 @@ For this purpose, we should implement the following:
 class Cache implements ResetAfterRequestInterface
 ```
 
+In version 2.4.8, you do not have to add `ResetAfterRequestInterface` to the class. The `_resetState()` method is found by reflection and called by implementing `ResetAfterRequestInterface`. This feature allows modules to be backwards compatible with previous versions before 2.4.7 that do not have this interface.
+
 Add the implementation of the `_resetState()` method with overriding `$data` property to its initial state - empty array:
 
 ```php
@@ -192,3 +194,36 @@ public function _resetState(): void
     $this->data = [];
 }
 ```
+
+<InlineAlert variant="info" slots="text"/>
+
+The following section only applies to Adobe Commerce 2.4.8:
+
+Version 2.4.8 includes an alternative to the `a _resetState` method. Instead of adding `_resetState` to a class, you can add a `reset.json` file to a module's `etc` directory. The `reset.json` file defines which class properties are reset, and what they reset to, after a request.
+
+This feature allows modules to be backwards compatible with previous versions `2.4.7` and earlier, which do not have the `ResetAfterRequestInterface` interface. This feature is also compatible with classes that do not allow adding new public functions. You can also add reset behavior to classes for modules that you do not control.
+
+Here's an example. A class `Magento\Reward\Model\Total\Quote\Reward` inherits from `Magento\Quote\Model\Quote\Address\Total\AbstractTotal`.  A `reset.json` file could be added to both modules:
+
+```json
+"Magento\\Quote\\Model\\Quote\\Address\\Total\\AbstractTotal": {
+  "_code": null,
+  "_address": null,
+  "_canAddAmountToAddress": true,
+  "_canSetAddressAmount": true,
+  "_itemRowTotalKey": null,
+  "total": null
+}
+```
+
+and
+
+```json
+{
+  "Magento\\Reward\\Model\\Total\\Quote\\Reward": {
+    "_code": "_code"
+  }
+}
+```
+
+Both `reset.json` definitions are used for a Reward object. They are called in proper order of inheritance, so subclasses can have specializations to their reset values that get called after the base class.

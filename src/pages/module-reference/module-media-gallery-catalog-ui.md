@@ -9,7 +9,7 @@ The Magento_MediaGalleryCatalogUi module that implement category grid for media 
 
 ## Installation details
 
-For information about module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Extensibility
 
@@ -42,7 +42,7 @@ For information about a UI component in Magento 2, see [Overview of UI component
 
 ## Additional information
 
-For information about significant changes in patch releases, see [2.4.x Release information](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
+For information about significant changes in patch releases, see [2.4.x Release information](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.4.
+The version of this module is 100.4.5.

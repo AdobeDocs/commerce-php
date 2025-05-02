@@ -10,7 +10,7 @@ Provides implementation of msrp price calculation for Grouped Product.
 
 ## Installation
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html)
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules)
 
 ## Structure
 
@@ -41,7 +41,7 @@ For information about a UI component in Magento 2, see [Overview of UI component
 Module adds attribute `msrp` to select for the `Magento\Catalog\Model\ResourceModel\Product\Link\Product\Collection`
 in `Magento\MsrpGroupedProduct\Plugin\Model\Product\Type\Grouped` plugin.
 
-For information about significant changes in patch releases, see [2.4.x Release information](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
+For information about significant changes in patch releases, see [2.4.x Release information](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.4.
+The version of this module is 100.4.5.

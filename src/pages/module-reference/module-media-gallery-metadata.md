@@ -9,7 +9,7 @@ The purpose of this module is to provide an ability to extract the metadata from
 
 ## Installation details
 
-For information about module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Extensibility
 
@@ -18,4 +18,4 @@ Extension developers can interact with the Magento_MediaGalleryMetadata module. 
 [The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_MediaGalleryMetadata module.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.5.
+The version of this module is 100.4.6.

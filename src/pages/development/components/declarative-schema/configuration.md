@@ -17,7 +17,7 @@ Each script iteratively adds changes. During the installation process, upgrade s
 
 The main disadvantage of this approach is that the application applies changes blindly. For example, in one version a new database column might be introduced, only to be removed in the next. _Declarative setup_ eliminates this type of unnecessary work.
 
-Declarative setup is based on database structure declarations, and is used in projects such as [Doctrine](http://www.doctrine-project.org/). Schema files declare what the database structure should be, and the application determines the differences between the current table structure and what it should be. These differences can be represented with atomic SQL operations.
+Declarative setup is based on database structure declarations, and is used in projects such as [Doctrine](https://www.doctrine-project.org/). Schema files declare what the database structure should be, and the application determines the differences between the current table structure and what it should be. These differences can be represented with atomic SQL operations.
 
 The application prioritizes the declarative schema and executes the declarative install schemas before the [data and schema patches](patches.md).
 
@@ -57,7 +57,7 @@ The `<Module_Vendor>/<Module_Name>/etc/db_schema.xml` file declares a module's d
 
 <InlineAlert variant="info" slots="text"/>
 
-If you have enabled [URN highlighting](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/urn-highlighter.html), you can use the PhpStorm autocomplete feature after choosing a node's `xsi:type`. This will also allow you to view which attributes are available on each line of your `db_schema.xml` file
+If you have enabled [URN highlighting](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/urn-highlighter), you can use the PhpStorm autocomplete feature after choosing a node's `xsi:type`. This will also allow you to view which attributes are available on each line of your `db_schema.xml` file
 
 ### Top-level node
 
@@ -164,7 +164,7 @@ A column can have the following attributes:
 
 For more information about each type, refer to the annotations in the corresponding XSD file.
 
-*  [Composer](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html) or [GitHub](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/dev_install.html) installation: `<Application_root_directory/lib/internal/Magento/Framework/Setup/Declaration/Schema/etc`
+*  [Composer](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer) or [GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) installation: `<Application_root_directory/lib/internal/Magento/Framework/Setup/Declaration/Schema/etc`
 
 Example:
 
@@ -509,4 +509,4 @@ When a module is disabled in `app/etc/config.php`, its database schema configura
 Please note that the `db_schema_whitelist.json` file of disabled modules is still read during upgrades of installs, so the declarative schema system can perform the necessary operations.
 Practically, this means that if you disable a module which uses declarative schema and run `bin/magento setup:upgrade`, _its database tables will be dropped_ (see more details and discussion at  https://github.com/magento/magento2/issues/24926). Please consider using `setup:upgrade --safe-mode=1` in order to create a database backup after disabling a module and then eventually `setup:upgrade --data-restore=1` if you enable the module back and wish to restore from that backup.
 
-[How to generate urns?]:https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/urn-highlighter.html
+[How to generate urns?]:https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/urn-highlighter

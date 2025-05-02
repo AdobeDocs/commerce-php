@@ -69,7 +69,7 @@ You can extend the purchase order listings using the `company_purchaseorder_list
 ## Additional information
 
 ​
-Check the [B2B release notes](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html) for more information on new changes.
+Check the [B2B release notes](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes) for more information on new changes.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.1.
+The version of this module is 100.5.2.

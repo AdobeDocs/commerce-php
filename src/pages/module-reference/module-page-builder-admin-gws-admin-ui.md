@@ -8,4 +8,4 @@ description: Page Builder AdminGWS Admin UI module
 The Magento_PageBuilderAdminGwsAdminUi contains Adobe Commerce dependent functionality and tests
 
 <InlineAlert slots="text" />
-The version of this module is 1.7.3.
+The version of this module is 1.7.4.
