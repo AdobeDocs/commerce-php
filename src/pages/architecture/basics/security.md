@@ -28,13 +28,13 @@ Starting in version 2.0.6, the Commerce framework no longer explicitly sets file
 
 To provide you with a simple way to restrict access to the file system in production, we provide the flexibility for you to further restrict those permissions using a [umask](https://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html).
 
-For an overview, see [Overview of ownership and permissions](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/overview.html).
+For an overview, see [Overview of ownership and permissions](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/overview).
 
-For details about ownership and permissions in development and production, see [ownership and permissions in development and production](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/file-system-permissions.html).
+For details about ownership and permissions in development and production, see [ownership and permissions in development and production](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/deployment/file-system-permissions).
 
 ### Improved prevention of clickjacking exploits
 
-The Commerce framework safeguards your store from clickjacking attacks by using an X-Frame-Options HTTP request header. For more information, see [X-Frame-Options header](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/security/xframe-options.html).
+The Commerce framework safeguards your store from clickjacking attacks by using an X-Frame-Options HTTP request header. For more information, see [X-Frame-Options header](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/security/xframe-options).
 
 ### Use of non-default Admin URL
 

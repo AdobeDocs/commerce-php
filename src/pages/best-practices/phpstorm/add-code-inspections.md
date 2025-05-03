@@ -15,7 +15,7 @@ Use a filter to find only the plugin inspections: `Magento 2`.
 
 ![Image of the Magento 2 Group Inspections](../../_images/best-practices/phpstorm/Intellij-idea-plugin-editor-local-inspections.png)
 
-See [Inspections topic](https://jetbrains.design/intellij/text/inspections/) in the IntelliJ Platform UI Guidelines
+See [Inspections topic](https://plugins.jetbrains.com/docs/intellij/inspections.html) in the IntelliJ Platform UI Guidelines
 for naming, writing descriptions, and messages for inspections to avoid basic naming convention issues before code review.
 
 ## To add a new inspection
@@ -175,7 +175,7 @@ local inspection declaration. Or you can just use Intellij Idea automation to do
 All inspection implementation classes have highlighted class names if they don't have description files. Here's a quick fix to create it:
 ![Create Inspection Description File Quick Fix](../../_images/best-practices/phpstorm/Intellij-idea-plugin-create-inspection-description-quick-fix.png)
 
-Use [Inspections topic](https://jetbrains.design/intellij/text/inspections/) to write better descriptions for inspections using naming conventions.
+Use [Inspections topic](https://plugins.jetbrains.com/docs/intellij/inspections.html) to write better descriptions for inspections using naming conventions.
 
 ## Create a unit test for the inspection
 

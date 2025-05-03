@@ -12,7 +12,7 @@ Adobe Commerce and Magento Open Source use _reservations_ to calculate and keep 
 
 <InlineAlert variant="info" slots="text" />
 
-See [Source Algorithms and Reservations](https://experienceleague.adobe.com/docs/commerce-admin/inventory/basics/selection-reservations.html) in the _Admin User Guide_.
+See [Source Algorithms and Reservations](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/basics/selection-reservations) in the _Admin User Guide_.
 
 ## Interfaces and services
 

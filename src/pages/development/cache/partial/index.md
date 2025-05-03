@@ -8,7 +8,7 @@ keywords:
 
 # Partial caching
 
-Adobe Commerce and Magento Open Source use [Zend_Cache](http://framework.zend.com/manual/1.12/en/zend.cache.html) to interact with the cache storage. However, the applications also have the [Magento\Cache](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache) library for implementing Magento-specific caching. These topics discuss how to configure caching and cache types.
+Adobe Commerce and Magento Open Source use [Zend_Cache](https://framework.zend.com/manual/1.12/en/zend.cache.html) to interact with the cache storage. However, the applications also have the [Magento\Cache](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache) library for implementing Magento-specific caching. These topics discuss how to configure caching and cache types.
 
 <InlineAlert variant="info" slots="text"/>
 
@@ -43,8 +43,8 @@ The preceding lists all cache types and shows they are all enabled.
 The following topics discuss how to set up caching:
 
 *  [Create a cache type](cache-type.md)
-*  [Create or extend configuration types](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/config-create-types.html)
-*  [Associate cache frontends with cache types](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/cache-types.html)
-*  [Low-level cache options](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/cache-options.html)
-*  [Configure and use Varnish](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/varnish/config-varnish.html)
-*  [Configure Redis](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/config-redis.html)
+*  [Create or extend configuration types](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-create-types)
+*  [Associate cache frontends with cache types](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/cache-types)
+*  [Low-level cache options](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/cache-options)
+*  [Configure and use Varnish](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/varnish/config-varnish)
+*  [Configure Redis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/config-redis)

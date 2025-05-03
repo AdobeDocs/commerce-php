@@ -42,7 +42,7 @@ To render private content, create a block and a template to display user-agnosti
 
 Do not use the `$_isScopePrivate` property in your blocks. This property is obsolete and will not work properly.
 
-Replace private data in blocks with placeholders (using [Knockout](http://knockoutjs.com/documentation/introduction.html) syntax). The init scope on the root element is `data-bind="scope: 'compareProducts'"`, where you define the scope name (`compareProducts` in this example) in your layout.
+Replace private data in blocks with placeholders (using [Knockout](https://knockoutjs.com/documentation/introduction.html) syntax). The init scope on the root element is `data-bind="scope: 'compareProducts'"`, where you define the scope name (`compareProducts` in this example) in your layout.
 
 Initialize the component as follows:
 

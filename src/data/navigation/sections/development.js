@@ -20,12 +20,12 @@ module.exports = [
           path: "/development/backward-incompatible-changes/",
           pages: [
             {
-              title: "Highlights",
-              path: "/development/backward-incompatible-changes/highlights/",
+              title: "Commerce reference",
+              path: "/development/backward-incompatible-changes/reference/",
             },
             {
-              title: "Reference",
-              path: "/development/backward-incompatible-changes/reference/",
+              title: "Magento reference",
+              path: "/development/backward-incompatible-changes/magento-reference/",
             },
           ],
         },
