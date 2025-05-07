@@ -361,11 +361,11 @@ var foo = 'bar',
 
 There is a set of custom Eslint rules to ensure code compatibility with the latest versions of third-party libraries.
 
-In previous version of eslint these custom rules were included using the `rulePaths` setting in the [Eslint Grunt configuration](https://github.com/magento/magento2/blob/2.4/dev/tools/grunt/configs/eslint.json).
+In previous versions of ESLint, these custom rules were included using the `rulePaths` setting in the [ESLint Grunt configuration](https://github.com/magento/magento2/blob/2.4/dev/tools/grunt/configs/eslint.json).
 
-However, since ESLint 9 has deprecated `rulePaths`, the configuration has been updated accordingly.
+However, since ESLint 9 has deprecated `rulePaths`, you must update the configuration accordingly.
 
-This document outlines the necessary changes to implement custom Eslint rules.
+The following example shows the necessary changes to implement custom Eslint rules `dev/tools/grunt/configs/eslint.json` .
 
 ```json
 {
@@ -385,12 +385,10 @@ This document outlines the necessary changes to implement custom Eslint rules.
   }
 }
 ```
+
 ### Applying custom rules
 
 To add or modify custom rules, update `eslint.config.mjs` in the `magento-coding-standard` repository.
-With latest version, configuration has changed from eslint to flat config. We use this https://eslint.org/docs/latest/use/configure/migration-guide as a 
-reference to migrate the eslint.
+In the latest version of ESLint, the configuration has transitioned from using the legacy `.eslintrc` settings to the new flat configuration.
+Refer to the [migration guide](https://eslint.org/docs/latest/use/configure/migration-guide) in the ESlint documentation for detailed instructions on migrating to the new format.
 
-This reference doc provides the command and other information in detail. such as to convert old `.eslintrc` file with new config
-run below command
-`npx  @eslint/migrate-config .eslintrc`
