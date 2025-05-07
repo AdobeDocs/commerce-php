@@ -3,7 +3,7 @@ title: GraphQL Application Server | Commerce PHP Extensions
 description: Learn about GraphQL Application Server architecture and how to ensure compatibility with custom extensions.
 keywords:
   - Extensions
-edition: ee
+edition: pass
 ---
 
 <InlineAlert variant="info" slots="text" />

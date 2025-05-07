@@ -27,7 +27,7 @@ The response handler only modifies the order state, based on the payment gateway
 
 ## Interface
 
-Basic interface for a response handler is [`Magento\Payment\Gateway\Response\HandlerInterface`](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Payment/Gateway/Response/HandlerInterface.php)
+Basic interface for a response handler is [`Magento\Payment\Gateway\Response\HandlerInterface`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/Gateway/Response/HandlerInterface.php)
 
 ### Useful implementations
 
@@ -35,7 +35,7 @@ Basic interface for a response handler is [`Magento\Payment\Gateway\Response\Han
 
 ### Example
 
-Example of a simple response handler ([`app/code/Magento/Braintree/Gateway/Response/PayPalDetailsHandler.php`](https://github.com/magento/magento2/tree/2.3/app/code/Magento/Braintree/Gateway/Response/PayPalDetailsHandler.php)):
+Example of a simple response handler ([`app/code/Magento/Braintree/Gateway/Response/PayPalDetailsHandler.php`](https://github.com/magento/magento2/blob/2.3/app/code/Magento/Braintree/Gateway/Response/PayPalDetailsHandler.php)):
 
 ```php
 class PayPalDetailsHandler implements HandlerInterface

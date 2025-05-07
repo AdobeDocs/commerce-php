@@ -25,7 +25,7 @@ There are more details about these steps in the following sections.
 
 ## Component provider
 
-[Similar to the storefront vault implementation](token-ui-component-provider.md#token-component-provider), create a token component provider and specify it in the `di.xml`. The component provider must implement the [`TokenUiComponentProviderInterface`](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Vault/Model/Ui/TokenUiComponentProviderInterface.php) interface.
+[Similar to the storefront vault implementation](token-ui-component-provider.md#token-component-provider), create a token component provider and specify it in the `di.xml`. The component provider must implement the [`TokenUiComponentProviderInterface`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Vault/Model/Ui/TokenUiComponentProviderInterface.php) interface.
 
 Following is an example of a component provider for Admin:
 
@@ -108,7 +108,7 @@ This component will set public hash to a hidden input, when a user sets payment 
 
 Create a `.phtml` template for displaying token details and specify it in the [component provider](#component-provider).
 
-For reference, view the Adobe Commerce default Vault template for Admin: [app/code/Magento/Vault/view/adminhtml/templates/form/vault.phtml](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Vault/view/adminhtml/templates/form/vault.phtml).
+For reference, view the Adobe Commerce default Vault template for Admin: [app/code/Magento/Vault/view/adminhtml/templates/form/vault.phtml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Vault/view/adminhtml/templates/form/vault.phtml).
 
 In the billing form block for Admin layout (`%module_dir%/view/adminhtml/layout/sales_order_create_index.xml`)
 specify the payment method code and path to the template.

@@ -21,4 +21,4 @@ The Adobe Commerce and Magento Open Source applications are made up of *Modules*
 
 <InlineAlert variant="info" slots="text"/>
 
-You must follow a [PSR-4 compliant](http://www.php-fig.org/psr/psr-4/) structure when building a module.
+You must follow a [PSR-4 compliant](https://www.php-fig.org/psr/psr-4/) structure when building a module.

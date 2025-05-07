@@ -23,7 +23,7 @@ All database schema changes made by this module are rolled back when the module 
 
 The Magento_ProductAlert module contains the recurring script. Script's modifications don't need to be manually reverted upon uninstallation.
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Extensibility
 
@@ -44,8 +44,8 @@ For more information about a layout in Magento 2, see the [Layout documentation]
 
 More information can get at articles:
 
-- [Product Alerts](https://experienceleague.adobe.com/docs/commerce-admin/inventory/configuration/product-alerts/alert-setup.html)
-- [Product Alert Run Settings](https://experienceleague.adobe.com/docs/commerce-admin/inventory/configuration/product-alerts/alert-setup.html)
+- [Product Alerts](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/product-alerts/alert-setup)
+- [Product Alert Run Settings](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/product-alerts/alert-setup)
 
 ### Cron options
 
@@ -53,7 +53,7 @@ Cron group configuration can be set at `etc/crontab.xml`:
 
 - `catalog_product_alert` - send product alerts to customers
 
-[Learn how to configure and run cron in Magento.](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html).
+[Learn how to configure and run cron in Magento.](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs).
 
 <InlineAlert slots="text" />
 The version of this module is 100.4.7.

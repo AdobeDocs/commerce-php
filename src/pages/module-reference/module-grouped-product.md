@@ -28,7 +28,7 @@ Before disabling or uninstalling this module, note that the following modules de
 - `Magento_GroupedProductGraphQl`
 - `Magento_MsrpGroupedProduct`
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Structure
 
@@ -100,7 +100,7 @@ For information about a public API in Magento 2, see [Public interfaces & APIs](
 
 ## Additional information
 
-For more information about creating grouped product, see [Creating Grouped Product](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-grouped.html).
+For more information about creating grouped product, see [Creating Grouped Product](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/types/product-create-grouped).
 
 <InlineAlert slots="text" />
 The version of this module is 100.4.8.

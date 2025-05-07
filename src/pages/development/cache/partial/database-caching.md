@@ -276,11 +276,11 @@ This section contains code sample snippets to refer to when configuring database
 ```
 
 <!-- Link references -->
-[Varnish]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/varnish/config-varnish.html
-[associate cache frontends with cache types]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/cache-types.html
+[Varnish]: https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/varnish/config-varnish
+[associate cache frontends with cache types]: https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/cache-types
 [sample configurations]: #configuration-examples
 [file system owner]: https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/overview
 [Verify database caching is working]: #verify-database-caching-is-working
 [Configuration examples]: #configuration-examples
-[enable developer mode]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/set-mode.html#change-to-developer-mode
+[enable developer mode]: https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode#change-to-developer-mode
 [phpMyAdmin]: https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin

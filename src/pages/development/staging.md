@@ -1,7 +1,7 @@
 ---
 title: Staging | Commerce PHP Extensions
 description: Learn how to manage campaigns in Adobe Commerce and Magento Open Source using the staging module.
-edition: ee
+edition: paas
 keywords:
   - Extensions
 ---
@@ -12,7 +12,7 @@ Staging functionality enables you to create scheduled campaigns, manage campaign
 
 <InlineAlert variant="success" slots="text"/>
 
-Information on how the Staging functionality works and how to use the various features, can be found in the [Content Staging](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html) topic of the _User Guide_.
+Information on how the Staging functionality works and how to use the various features, can be found in the [Content Staging](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging) topic of the _User Guide_.
 
 The functionality is distributed between staging modules. The [Staging module](/module-reference/module-staging/) is a framework for the staging functionality, and other staging modules are extensions for the existing modules. You can read about each staging module in a corresponding topic:
 

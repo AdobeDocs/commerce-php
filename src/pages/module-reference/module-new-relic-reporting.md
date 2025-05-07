@@ -26,7 +26,7 @@ This module creates the following tables in the database:
 - `reporting_users`
 - `reporting_system_updates`
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Extensibility
 
@@ -52,7 +52,7 @@ Cron group configuration can be set at `etc/crontab.xml`:
 
 - `magento_newrelicreporting_cron` - runs collecting all new relic reports
 
-[Learn how to configure and run cron in Magento.](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html).
+[Learn how to configure and run cron in Magento.](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs).
 
 <InlineAlert slots="text" />
 The version of this module is 100.4.6.

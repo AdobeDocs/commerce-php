@@ -28,7 +28,7 @@ The Magento_Integration module creates the following tables in the database:
 - `integration`
 - `oauth_token_request_log`
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Extensibility
 
@@ -108,11 +108,11 @@ Cron group configuration can be set at `etc/crontab.xml`:
 - `outdated_authentication_failures_cleanup` - clearing log of outdated token request authentication failures
 - `expired_tokens_cleanups` - delete expired customer and admin tokens
 
-[Learn how to configure and run cron in Magento.](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html).
+[Learn how to configure and run cron in Magento.](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs).
 
 More information can get at articles:
 
-- [Learn more about an Integration](https://experienceleague.adobe.com/docs/commerce-admin/systems/integrations.html)
+- [Learn more about an Integration](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/integrations)
 - [Lear how to create an Integration](https://developer.adobe.com/commerce/webapi/get-started/create-integration/)
 
 <InlineAlert slots="text" />

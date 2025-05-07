@@ -16,11 +16,11 @@ As a developer, you should avoid using features that introduce vulnerabilities i
 The following is a list of PHP functions that are known to be vulnerable and exploitable.
 Avoid using these functions in your code.
 
-*  [`eval`](https://www.php.net/manual/en/function.eval.php) - Using `eval` is considered bad practice because of its ability to [execute arbitrary PHP code](https://www.owasp.org/index.php/PHP_Security_Cheat_Sheet#Code_Injection).
-*  [`serialize`](https://www.php.net/manual/en/function.serialize.php)/[`unserialize`](https://www.php.net/manual/en/function.unserialize.php) - Attackers can create an exploit for these functions by passing a string with a serialized arbitrary object to the `unserialize` function to [run arbitrary code](https://www.owasp.org/index.php/PHP_Object_Injection).
-*  [`md5`](https://www.php.net/manual/en/function.md5.php) - The algorithm for this function is known to have [cryptographic weaknesses](https://www.owasp.org/index.php/Guide_to_Cryptography#Hashes).
+*  [`eval`](https://www.php.net/manual/en/function.eval.php) - Using `eval` is considered bad practice because of its ability to [execute arbitrary PHP code](https://cheatsheetseries.owasp.org/cheatsheets/PHP_Configuration_Cheat_Sheet.html#Code_Injection).
+*  [`serialize`](https://www.php.net/manual/en/function.serialize.php)/[`unserialize`](https://www.php.net/manual/en/function.unserialize.php) - Attackers can create an exploit for these functions by passing a string with a serialized arbitrary object to the `unserialize` function to [run arbitrary code](https://owasp.org/www-community/vulnerabilities/PHP_Object_Injection).
+*  [`md5`](https://www.php.net/manual/en/function.md5.php) - The algorithm for this function is known to have [cryptographic weaknesses](https://wiki.owasp.org/index.php/Guide_to_Cryptography#Hashes).
    You should never use this function for hashing passwords or any other sensitive data.
-*  [`srand`](https://www.php.net/manual/en/function.srand.php) - Using a predetermined number to seed the random number generator results in a [predictable sequence of numbers](https://programmers.stackexchange.com/questions/76229/predicting-the-output-of-phps-rand).
+*  [`srand`](https://www.php.net/manual/en/function.srand.php) - Using a predetermined number to seed the random number generator results in a [predictable sequence of numbers](https://softwareengineering.stackexchange.com/questions/76229/predicting-the-output-of-phps-rand).
 *  [`mt_srand`](https://www.php.net/manual/en/function.mt-rand.php) - This function is a pseudo-random number generator (PRNG) and is [not cryptographically secure](https://phpsecurity.readthedocs.io/en/latest/Insufficient-Entropy-For-Random-Values.html).
 
 ## Standard PHP library classes to avoid
