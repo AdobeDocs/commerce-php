@@ -391,4 +391,3 @@ The following example shows the necessary changes to implement custom Eslint rul
 To add or modify custom rules, update the `eslint.config.mjs` file in the `magento-coding-standard` repository.
 In the latest version of ESLint, the configuration has transitioned from using the legacy `.eslintrc` settings to the new flat configuration.
 Refer to the [migration guide](https://eslint.org/docs/latest/use/configure/migration-guide) in the ESlint documentation for detailed instructions on migrating to the new format.
-
