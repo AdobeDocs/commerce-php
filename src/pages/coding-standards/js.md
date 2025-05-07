@@ -365,7 +365,7 @@ In previous versions of ESLint, these custom rules were included using the `rule
 
 However, since ESLint 9 has deprecated `rulePaths`, you must update the configuration accordingly.
 
-The following example shows the necessary changes to implement custom Eslint rules `dev/tools/grunt/configs/eslint.json` .
+The following example shows the necessary changes to implement custom Eslint rules in the `dev/tools/grunt/configs/eslint.json` file.
 
 ```json
 {
@@ -388,7 +388,7 @@ The following example shows the necessary changes to implement custom Eslint rul
 
 ### Applying custom rules
 
-To add or modify custom rules, update `eslint.config.mjs` in the `magento-coding-standard` repository.
+To add or modify custom rules, update the `eslint.config.mjs` file in the `magento-coding-standard` repository.
 In the latest version of ESLint, the configuration has transitioned from using the legacy `.eslintrc` settings to the new flat configuration.
 Refer to the [migration guide](https://eslint.org/docs/latest/use/configure/migration-guide) in the ESlint documentation for detailed instructions on migrating to the new format.
 
