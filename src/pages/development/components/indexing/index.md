@@ -59,7 +59,7 @@ The type of reindex performed in each particular case depends on the type of cha
 
 The following figure shows the logic for partial reindexing.
 
-![Partial indexing workflow](../../../_images/index_indexers_flow.png)
+![Partial indexing workflow](../../../_images/index_indexers_flow.svg)
 
 ### Indexer status
 
