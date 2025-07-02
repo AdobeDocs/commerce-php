@@ -1,6 +1,6 @@
 ---
 title: EncryptionKey
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 # Magento_EncryptionKey module
@@ -9,9 +9,9 @@ The Magento_EncryptionKey module provides an advanced encryption model to protec
 
 ## Extensibility
 
-Extension developers can interact with the Magento_EncryptionKey module. For more information about the Magento extension mechanism, see [Magento plugins](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html).
+Extension developers can interact with the Magento_EncryptionKey module. For more information about the Magento extension mechanism, see [Magento plugins](https://developer.adobe.com/commerce/php/development/components/plugins/).
 
-[The Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html) enables you to override the functionality of the Magento_EncryptionKey module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_EncryptionKey module.
 
 ### Layouts
 
@@ -21,6 +21,9 @@ This module introduces the following layouts and layout handles in the `view/adm
 
 ## Additional information
 
-For information about significant changes in patch releases, see [2.4.x Release information](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html).
+For information about significant changes in patch releases, see [Release information](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
-Some more information you can get at [Encryption Key](https://docs.magento.com/user-guide/system/encryption-key.html) article.
+Some more information you can get at [Encryption Key](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) article.
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.6.

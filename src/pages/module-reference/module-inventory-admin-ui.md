@@ -1,6 +1,6 @@
 ---
 title: InventoryAdminUi
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 # InventoryAdminUi module
@@ -8,7 +8,7 @@ description: README.md contents of the module from the source code
 The `InventoryAdminUi` module extends the Magento Admin UI to add Inventory Management functionality.
 
 This module is part of the new inventory infrastructure. The
-[Inventory Management overview](https://devdocs.magento.com/guides/v2.4/inventory/index.html)
+[Inventory Management overview](https://developer.adobe.com/commerce/webapi/rest/inventory/index.html)
 describes the MSI (Multi-Source Inventory) project in more detail.
 
 ## Installation details
@@ -27,3 +27,6 @@ You can extend and override layouts defined in the `view/adminhtml/layout`  dire
 ### UI Components
 
 The `view/adminhtml/ui_component` directory contains extensible UI components.
+
+<InlineAlert slots="text" />
+The version of this module is 1.2.6.

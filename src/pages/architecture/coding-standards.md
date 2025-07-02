@@ -7,4 +7,4 @@ keywords:
 
 # Coding standards
 
-See [Coding Standards](https://developer.adobe.com/commerce/php/coding-standards/).
+See [Coding Standards](/coding-standards/).

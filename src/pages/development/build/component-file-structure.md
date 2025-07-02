@@ -109,7 +109,7 @@ A typical theme file structure can look like the following:
 Typical theme directories are:
 
 *  `etc`: Contains configuration files such as the `view.xml` file which contains image configurations for all images and thumbnails.
-*  `i18n`: [Translation dictionaries](https://developer.adobe.com/commerce/frontend-core/guide/translations/#m2devgde-xlate-dictionaries), if any.
+*  `i18n`: [Translation dictionaries](https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries), if any.
 *  `media`: Theme preview images (screen capture of your theme) can be put in here.
 *  `web`: Optional directory that contains static files organized into the following subdirectories:
 
@@ -146,6 +146,6 @@ A typical directory structure for three language packages follows:
 │   └── registration.php
 ```
 
-The only required directory for a language package is the top-level directory. Although not required, we recommend that the directory name match the [ISO](http://www.iso.org/iso/home/standards/language_codes.htm) code to identify the locale.
+The only required directory for a language package is the top-level directory. Although not required, we recommend that the directory name match the [ISO](https://www.iso.org/iso-639-language-code) code to identify the locale.
 
-For more information about language packages, see [Translation dictionaries and language packages](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/localization.html).
+For more information about language packages, see [Translation dictionaries and language packages](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/localization).

@@ -1,6 +1,6 @@
 ---
 title: CatalogUrlRewriteStaging
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 # Magento_CatalogUrlRewriteStaging
@@ -18,3 +18,6 @@ You can find the list of modules that have dependencies on the Magento_CatalogUr
 ## Extension points
 
 Extensions points for the Magento_CatalogUrlRewriteStaging module are not available.
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.7.

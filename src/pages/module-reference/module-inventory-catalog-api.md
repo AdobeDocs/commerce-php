@@ -1,6 +1,6 @@
 ---
 title: InventoryCatalogApi
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 # InventoryCatalogApi module
@@ -8,7 +8,7 @@ description: README.md contents of the module from the source code
 The `InventoryCatalogApi` module provides service contracts for default source and stock providers as well as bulk operations.
 
 This module is part of the new inventory infrastructure. The
-[Inventory Management overview](https://devdocs.magento.com/guides/v2.4/inventory/index.html)
+[Inventory Management overview](https://developer.adobe.com/commerce/webapi/rest/inventory/index.html)
 describes the MSI (Multi-Source Inventory) project in more detail.
 
 ## Installation details
@@ -27,3 +27,6 @@ Public APIs are defined in the `Api` directory.
 ### REST endpoints
 
 The `etc/webapi.xml` file defines endpoints for assigning, unassigning, and transferring sources in bulk.
+
+<InlineAlert slots="text" />
+The version of this module is 1.3.6.

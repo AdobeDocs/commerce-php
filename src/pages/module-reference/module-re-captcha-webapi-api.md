@@ -1,6 +1,6 @@
 ---
 title: ReCaptchaWebapiApi
-description: README.md contents of the module from the source code
+description: Google reCAPTCHA integration for Magento2
 ---
 
 # Magento reCAPTCHA
@@ -9,4 +9,7 @@ Google reCAPTCHA ensures that a human being, rather than a computer (or â€œbotâ€
 
 This module provides the service contracts related to the base reCAPTCHA implementation.
 
-For more information please visit the [Magento document for reCAPTCHA](https://docs.magento.com/user-guide/stores/security-google-recaptcha.html).
+For more information please visit the [reCAPTCHA documentation](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-google-recaptcha).
+
+<InlineAlert slots="text" />
+The version of this module is 1.0.4.

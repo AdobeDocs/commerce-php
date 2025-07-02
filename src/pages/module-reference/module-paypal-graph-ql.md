@@ -1,8 +1,11 @@
 ---
 title: PaypalGraphQl
-description: README.md contents of the module from the source code
+description: GraphQl support for Paypal
 ---
 
 # PaypalGraphQl
 
 **PaypalGraphQl** provides resolver information for using Paypal payment methods via GraphQl.
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.6.

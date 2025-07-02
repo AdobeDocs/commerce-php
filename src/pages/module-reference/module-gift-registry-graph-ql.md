@@ -1,9 +1,12 @@
 ---
 title: GiftRegistryGraphQl
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 # GiftCardGraphQl
 
 **GiftCardGraphQl** provides type and resolver information for the GraphQl module
 to generate giftcard product information.
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.4.

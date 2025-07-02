@@ -1,6 +1,6 @@
 ---
 title: InventoryReservations
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 # InventoryReservations module
@@ -8,7 +8,7 @@ description: README.md contents of the module from the source code
 The `InventoryReservations` module provides logic for handling product reservations.
 
 This module is part of the new inventory infrastructure. The
-[Inventory Management overview](https://devdocs.magento.com/guides/v2.4/inventory/index.html)
+[Inventory Management overview](https://developer.adobe.com/commerce/webapi/rest/inventory/index.html)
 describes the MSI (Multi-Source Inventory) project in more detail.
 
 ## Installation details
@@ -24,3 +24,6 @@ Use the interfaces defined in `InventoryReservationsApi` to extend this module.
 ## Additional information
 
 The `InventoryReservations` module creates the `inventory_cleanup_reservations` cron job.
+
+<InlineAlert slots="text" />
+The version of this module is 1.2.4.

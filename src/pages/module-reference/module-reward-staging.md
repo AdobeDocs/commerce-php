@@ -1,6 +1,6 @@
 ---
 title: RewardStaging
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 # Magento_RewardStaging module
@@ -19,4 +19,7 @@ You can find the list of modules that have dependencies on the Magento_RewardSta
 
 ## Extension points
 
-Extension points enable extension developers to interact with the Magento_RewardStaging module. [The Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html) enables you to override the functionality of the Magento_RewardStaging module.
+Extension points enable extension developers to interact with the Magento_RewardStaging module. [The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_RewardStaging module.
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.5.

@@ -1,6 +1,6 @@
 ---
 title: ResourceConnections
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 Magento\ResourceConnections module adds a mechanism to segregate database connections between master and slave
@@ -50,3 +50,6 @@ new element with same name and slave configuration for specified resource.
 Config structure retains backward compatibility if module is turned off.
 
 WARNING: 'indexer' connection is not designed to have slave configuration.
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.5.

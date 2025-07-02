@@ -14,11 +14,11 @@ import Docs from '/src/_includes/braintree-note.md'
 
 # Payment method facade
 
-Payment facade is an instance of [Payment Adapter](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Payment/Model/Method/Adapter.php) configured with virtual types. It allows you to process payment actions between Adobe Commerce Sales Management and the payment processor.
+Payment facade is an instance of [Payment Adapter](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/Model/Method/Adapter.php) configured with virtual types. It allows you to process payment actions between Adobe Commerce Sales Management and the payment processor.
 
 Add the [dependency injection (DI)](../../components/dependency-injection.md) configuration for payment method facade in your `%Vendor_Module%/etc/di.xml`.
 
-The following sample is an illustration of this configuration ([app/code/Magento/Braintree/etc/di.xml](https://github.com/magento/magento2/tree/2.3/app/code/Magento/Braintree/etc/di.xml)):
+The following sample is an illustration of this configuration ([app/code/Magento/Braintree/etc/di.xml](https://github.com/magento/magento2/blob/2.3/app/code/Magento/Braintree/etc/di.xml)):
 
 ```xml
 <virtualType name="BraintreeFacade" type="Magento\Payment\Model\Method\Adapter">
@@ -39,7 +39,7 @@ The following mandatory arguments must be configured:
 | ------------------ | ------------------------------------------------------------------- |
 | `code`           | The code for the payment method.
 | `formBlockType`  | The name of the block class responsible for payment provider gateway form rendering. Only the Admin panel uses this block because the storefront form renders using knockout.js. See the [Admin integration](formblocktype.md) topic for details.                                                                          |
-| `infoBlockType`  | The name of the block class responsible for Transaction/Payment Information details rendering in the Order block, in the Admin panel or in a customer account on storefront. In most cases it will be enough to specify the default implementation of [Configurable Info](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Payment/Block/ConfigurableInfo.php). To customize specify your own implementation. |
+| `infoBlockType`  | The name of the block class responsible for Transaction/Payment Information details rendering in the Order block, in the Admin panel or in a customer account on storefront. In most cases it will be enough to specify the default implementation of [Configurable Info](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/Block/ConfigurableInfo.php). To customize specify your own implementation. |
 | `valueHandlerPool` | Pool of value handlers used for queries to configuration. For details see the [following paragraph](#value-handlers-pool).|
 | `validatorPool`    | [Pool of validators](#validators-pool).|
 | `commandPool`      | [Pool of gateway commands](../payment-gateway/command-pool.md).|
@@ -48,7 +48,7 @@ The following mandatory arguments must be configured:
 
 Let's look closer at the value handlers pool of a payment method. This pool enables you to set payment configuration that is based on certain conditions.
 
-For example, the `can_void` configuration option might depend on payment transaction status or paid amount. The following sample shows how to set the corresponding configuration ([app/code/Magento/Braintree/etc/di.xml](https://github.com/magento/magento2/tree/2.3/app/code/Magento/Braintree/etc/di.xml)):
+For example, the `can_void` configuration option might depend on payment transaction status or paid amount. The following sample shows how to set the corresponding configuration ([app/code/Magento/Braintree/etc/di.xml](https://github.com/magento/magento2/blob/2.3/app/code/Magento/Braintree/etc/di.xml)):
 
 ```xml
 <virtualType name="BraintreeValueHandlerPool" type="Magento\Payment\Gateway\Config\ValueHandlerPool">
@@ -72,16 +72,16 @@ You must always specify the default handler. In this example it is the config re
 </virtualType>
 ```
 
-In your configuration you can use default [Magento\Payment\Gateway\Config\Config](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Payment/Gateway/Config/Config.php) or you can add a custom config interface by implementing the `Magento\Payment\Gateway\ConfigInterface` interface.
+In your configuration you can use default [Magento\Payment\Gateway\Config\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/Gateway/Config/Config.php) or you can add a custom config interface by implementing the `Magento\Payment\Gateway\ConfigInterface` interface.
 
 `Magento\Payment\Gateway\Config\Config` can read configuration by payment method code, so is useful to use it or extend it for your own purposes.
 
-And [Magento\Braintree\Gateway\Config\Config](https://github.com/magento/magento2/tree/2.3/app/code/Magento/Braintree/Gateway/Config/Config.php) reads
+And [Magento\Braintree\Gateway\Config\Config](https://github.com/magento/magento2/blob/2.3/app/code/Magento/Braintree/Gateway/Config/Config.php) reads
 configuration from database or payment config file.
 
 Other handlers contain some logic, for example, `can_cancel` option is the same as `can_void` and depends on whether the order has paid amount (invoiced).
 
-Your custom handlers must implement the [Value Handler interface](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Payment/Gateway/Config/ValueHandlerInterface.php).
+Your custom handlers must implement the [Value Handler interface](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/Gateway/Config/ValueHandlerInterface.php).
 
 #### Validators pool
 

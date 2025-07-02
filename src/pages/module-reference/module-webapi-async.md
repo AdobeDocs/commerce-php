@@ -1,6 +1,6 @@
 ---
 title: WebapiAsync
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 # Magento_WebapiAsync module
@@ -18,16 +18,19 @@ Before installing this module, note that the Magento_WebapiAsync is dependent on
 - Magento_User
 - Magento_Webapi
 
-For information about enabling or disabling a module, see [Enable or disable modules](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-enable.html).
+For information about enabling or disabling a module, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Structure
 
 `Code/` - the directory that contains Remote service reader configuration files.
 
-For information about a typical file structure of a module, see [Module file structure](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/module-file-structure.html#module-file-structure).
+For information about a typical file structure of a module, see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure/#module-file-structure).
 
 ## Extensibility
 
-Extension developers can interact with the Magento_WebapiAsync module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html).
+Extension developers can interact with the Magento_WebapiAsync module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
 
-[The Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html) enables you to override the functionality of the Magento_WebapiAsync module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_WebapiAsync module.
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.6.

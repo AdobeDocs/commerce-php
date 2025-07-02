@@ -13,7 +13,7 @@ Product attributes and attribute sets available in the form, can be customized a
 
 ## Prerequisites
 
-[Change to developer mode](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/set-mode.html) while you perform all customizations and debugging.
+[Change to developer mode](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode) while you perform all customizations and debugging.
 
 For the sake of compatibility, upgradability, and easy maintenance, do not edit the default application code. Instead, add your customizations in a separate module.
 

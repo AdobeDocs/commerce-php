@@ -1,6 +1,6 @@
 ---
 title: MediaGalleryMetadata
-description: README.md contents of the module from the source code
+description: Magento module responsible for images metadata processing
 ---
 
 # Magento_MediaGalleryMetadata module
@@ -9,10 +9,13 @@ The purpose of this module is to provide an ability to extract the metadata from
 
 ## Installation details
 
-For information about module installation in Magento 2, see [Enable or disable modules](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-enable.html).
+For information about module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Extensibility
 
-Extension developers can interact with the Magento_MediaGalleryMetadata module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html).
+Extension developers can interact with the Magento_MediaGalleryMetadata module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
 
-[The Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html) enables you to override the functionality of the Magento_MediaGalleryMetadata module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_MediaGalleryMetadata module.
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.6.

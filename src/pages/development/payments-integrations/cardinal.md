@@ -9,11 +9,11 @@ keywords:
 
 # CardinalCommerce 3-D Secure
 
-This document provides additional technical details for integrating Adobe Commerce payment modules with the [CardinalCommerce][]. CardinalCommerce (a wholly owned subsidiary of Visa) offers a rules-based 3-D Secure (3DS) solution called [Cardinal Consumer Authentication][]. Protect your web store from fraud, reduce false declines, reduce manual review of orders, and improve your authorizations.
+This document provides additional technical details for integrating Adobe Commerce payment modules with the [CardinalCommerce][]. CardinalCommerce (a wholly owned subsidiary of Visa) offers a rules-based 3-D Secure (3DS) solution called Cardinal Consumer Authentication. Protect your web store from fraud, reduce false declines, reduce manual review of orders, and improve your authorizations.
 
-The integration is based on the *Magento_CardinalCommerce* module that implements the [Cardinal Cruise Standard][] integration approach.
+The integration is based on the *Magento_CardinalCommerce* module that implements the Cardinal Cruise Standard integration approach.
 
-The Cardinal Cruise Standard integration is purely a JavaScript approach that is all encompassing. When enabling this approach for [Cardinal Consumer Authentication][], this integration will handle the device data collection, initiating the transaction for [CCA][Cardinal Consumer Authentication], presenting the authentication session if required, and returning the results of authentication once completed. This is recommended integration approach for CCA.
+The Cardinal Cruise Standard integration is purely a JavaScript approach that is all encompassing. When enabling this approach for Cardinal Consumer Authentication, this integration will handle the device data collection, initiating the transaction for [CCA][Cardinal Consumer Authentication], presenting the authentication session if required, and returning the results of authentication once completed. This is recommended integration approach for CCA.
 
 The following diagram shows a simplified 3-D Secure verification flow using Cardinal Cruise Standard integration approach provided by CardinalCommerce:
 
@@ -29,7 +29,7 @@ The *Magento_CardinalCommerce* [module][] allows you to:
 
 ## Payment method module integration with Magento_CardinalCommerce
 
-CardinalCommerce maintains a [list of compatible payment gateways][].
+CardinalCommerce maintains a list of compatible payment gateways.
 
 ### CardinalCommerce configuration for payment method
 
@@ -73,7 +73,7 @@ And the `system.xml` file of the AuthorizenetAcceptjs payment method:
 
 You can pass this parameter on storefront via checkout config using `\Magento\Checkout\Model\ConfigProviderInterface`
 
-See [app\code\AuthorizenetCardinal\Model\Checkout\ConfigProvider.php](https://github.com/magento/magento2/tree/2.3/app/code/Magento/AuthorizenetCardinal/Model/Checkout/ConfigProvider.php) as an example.
+See [app\code\AuthorizenetCardinal\Model\Checkout\ConfigProvider.php](https://github.com/magento/magento2/blob/2.3/app/code/Magento/AuthorizenetCardinal/Model/Checkout/ConfigProvider.php) as an example.
 
 ```php
 namespace Magento\AuthorizenetCardinal\Model\Checkout;
@@ -136,7 +136,7 @@ class ConfigProvider implements ConfigProviderInterface
 
 CCA is initiated by the merchant, typically when the customer clicks `Place Order` button. Instead of getting a card authorization, you should use the `Magento_CardinalCommerce/view/frontend/web/js/cardinal-client` JS component and initiate the CCA process before authorization.
 
-In the following example mixin, [app/code/Magento/AuthorizenetCardinal/view/frontend/web/js/authorizenet-accept-mixin.js](https://github.com/magento/magento2/tree/2.3/app/code/Magento/AuthorizenetCardinal/view/frontend/web/js/authorizenet-accept-mixin.js) is used to intercept the `placeOrder` method of the AuthorizenetAcceptjs payment method JS component and start consumer authentication:
+In the following example mixin, [app/code/Magento/AuthorizenetCardinal/view/frontend/web/js/authorizenet-accept-mixin.js](https://github.com/magento/magento2/blob/2.3/app/code/Magento/AuthorizenetCardinal/view/frontend/web/js/authorizenet-accept-mixin.js) is used to intercept the `placeOrder` method of the AuthorizenetAcceptjs payment method JS component and start consumer authentication:
 
 ```js
 define([
@@ -209,7 +209,7 @@ Once the response [JWT][] is received after consumer authentication, you will ne
 
 ### CCA Results Extracting And Validation On Backend
 
-Cardinal Consumer Authentication results can be extracted from CardinalCommerce response JWT with `\Magento\CardinalCommerce\Model\Response\JwtParserInterface`. Basic implementation of this interface includes response JWT signature validation, and validation of parameters such as `ActionCode`, `ErrorNumber`, `ECIFlag`. You can find detailed information about these parameters in [API Reference][].
+Cardinal Consumer Authentication results can be extracted from CardinalCommerce response JWT with `\Magento\CardinalCommerce\Model\Response\JwtParserInterface`. Basic implementation of this interface includes response JWT signature validation, and validation of parameters such as `ActionCode`, `ErrorNumber`, `ECIFlag`. You can find detailed information about these parameters in API Reference.
 
 You can customize CCA results validation by creating your own implementation of `\Magento\CardinalCommerce\Model\Response\JwtPayloadValidatorInterface`.
 
@@ -298,11 +298,7 @@ Then you can expect to see an additional field with a cardholder authentication 
 
 <!-- Link Definitions -->
 [CardinalCommerce]: https://cardinalcommerce.com/
-[Cardinal Consumer Authentication]: https://cardinaldocs.atlassian.net/wiki/spaces/CC/pages/196642/Consumer+Authentication#ConsumerAuthentication-CardinalConsumerAuthentication
-[Cardinal Cruise Standard]: https://cardinaldocs.atlassian.net/wiki/spaces/CC/pages/7929857/Cardinal+Cruise+Standard
-[list of compatible payment gateways]: https://cardinalcommerce.com/partners/
-[module]: https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/glossary.html#module
-[app\code\AuthorizenetCardinal\Model\Checkout\ConfigProvider.php]: https://github.com/magento/magento2/tree/2.3/app/code/Magento/AuthorizenetCardinal/Model/Checkout/ConfigProvider.php
+[module]: https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#module
+[app\code\AuthorizenetCardinal\Model\Checkout\ConfigProvider.php]: https://github.com/magento/magento2/blob/2.3/app/code/Magento/AuthorizenetCardinal/Model/Checkout/ConfigProvider.php
 [JWT]: https://en.wikipedia.org/wiki/JSON_Web_Token
-[API Reference]: https://cardinaldocs.atlassian.net/wiki/spaces/CC/pages/98315/Response+Objects
-[\Magento\AuthorizenetCardinal\Gateway\Request\Authorize3DSecureBuilder]: https://github.com/magento/magento2/tree/2.3/app/code/Magento/AuthorizenetCardinal/Gateway/Request/Authorize3DSecureBuilder.php
+[\Magento\AuthorizenetCardinal\Gateway\Request\Authorize3DSecureBuilder]: https://github.com/magento/magento2/blob/2.3/app/code/Magento/AuthorizenetCardinal/Gateway/Request/Authorize3DSecureBuilder.php

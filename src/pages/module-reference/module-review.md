@@ -1,6 +1,9 @@
 ---
 title: Review
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 Magento_Review module functionality allows to write reviews for products.
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.8.

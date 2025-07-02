@@ -1,6 +1,9 @@
 ---
 title: ReCaptchaMultipleWishlist
-description: README.md contents of the module from the source code
+description: Google reCAPTCHA integration for Magento2
 ---
 
 Please refer to: https://github.com/magento/security-package
+
+<InlineAlert slots="text" />
+The version of this module is 1.0.3.

@@ -1,6 +1,6 @@
 ---
 title: Weee
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 # Magento_Weee module
@@ -31,19 +31,19 @@ Before installing this module, note that the Magento_Weee is dependent on the fo
 - Magento_Store
 - Magento_Tax
 
-Refer to [how to enable or disable modules in Magento 2](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-enable.html).
+Refer to [how to enable or disable modules in Magento 2](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Structure
 
 `Pricing/` - directory that contain tax adjustment.
 
-For information about a typical file structure of a module, see [Module file structure](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/module-file-structure.html#module-file-structure).
+For information about a typical file structure of a module, see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure/#module-file-structure).
 
 ## Extensibility
 
-Extension developers can interact with the Magento_Weee module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html).
+Extension developers can interact with the Magento_Weee module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
 
-[The Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html) enables you to override the functionality of the Magento_Weee module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_Weee module.
 
 ### Layouts
 
@@ -89,7 +89,7 @@ This module introduces the following layouts and layout handles in the directori
     - `sales_order_printinvoice`
     - `sales_order_view`
 
-For more information about a layout, see the [Layout documentation](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/layout-overview.html).
+For more information about a layout, see the [Layout documentation](https://developer.adobe.com/commerce/frontend-core/guide/layouts/).
 
 ### UI components
 
@@ -101,4 +101,7 @@ You can extend a customer form and widgets using the configuration files located
     - `widget_recently_compared`
     - `widget_recently_viewed`
 
-For information about a UI component, see [Overview of UI components](https://devdocs.magento.com/guides/v2.4/ui_comp_guide/bk-ui_comps.html).
+For information about a UI component, see [Overview of UI components](https://developer.adobe.com/commerce/frontend-core/ui-components/).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.8.

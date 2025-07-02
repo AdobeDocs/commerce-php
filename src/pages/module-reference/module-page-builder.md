@@ -1,6 +1,6 @@
 ---
 title: PageBuilder
-description: README.md contents of the module from the source code
+description: Page Builder module
 ---
 
 # Magento_PageBuilder module
@@ -53,3 +53,6 @@ The following example disables the PageBuilder editor for the content field.
 ```
 
 **Note:** Disabling the editor this way overrides the value of `is_pagebuilder_enabled` for the specified field.
+
+<InlineAlert slots="text" />
+The version of this module is 2.2.6.

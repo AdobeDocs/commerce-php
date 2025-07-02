@@ -1,6 +1,6 @@
 ---
 title: CustomerAnalytics
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 # Magento_CustomerAnalytics module
@@ -14,11 +14,14 @@ Before installing this module, note that the Magento_CustomerAnalytics is depend
 - `Magento_Customer`
 - `Magento_Analytics`
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-enable.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Additional data
 
 More information can get at articles:
 
-- [Advanced Reporting](https://devdocs.magento.com/guides/v2.4/advanced-reporting/overview.html)
-- [Data collection for advanced reporting](https://devdocs.magento.com/guides/v2.4/advanced-reporting/data-collection.html)
+- [Advanced Reporting](https://developer.adobe.com/commerce/php/development/advanced-reporting/)
+- [Data collection for advanced reporting](https://developer.adobe.com/commerce/php/development/advanced-reporting/data-collection/)
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.5.

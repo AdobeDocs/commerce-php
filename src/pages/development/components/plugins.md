@@ -116,8 +116,8 @@ Below is an example of a before method modifying the `$name` argument before pas
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 namespace My\Module\Plugin;
@@ -144,8 +144,8 @@ Below is an example of an after method modifying the return value `$result` of a
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 namespace My\Module\Plugin;
@@ -168,8 +168,8 @@ Below is an example of an after method that accepts the `null` result and argume
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 namespace My\Module\Plugin;
@@ -207,8 +207,8 @@ The following example is a class with an after method for [`\Magento\Catalog\Mod
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 use Psr\Log\LoggerInterface;
@@ -258,8 +258,8 @@ Below is an example of an around method adding behavior before and after an obse
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 namespace My\Module\Plugin;
@@ -293,8 +293,8 @@ For example, the following code defines a parameter of type `SomeType`, which is
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 namespace My\Module\Model;
@@ -313,8 +313,8 @@ You should wrap this method with a plugin:
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 namespace My\Module\Plugin;
@@ -337,8 +337,8 @@ You are responsible for forwarding the arguments from the plugin to the `proceed
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 namespace My\Module\Plugin;
@@ -444,8 +444,8 @@ With these methods:
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 use Magento\Framework\App\Action\Action;
@@ -499,8 +499,8 @@ Using these methods:
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 use Magento\Framework\App\Action\Action;

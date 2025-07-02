@@ -1,9 +1,12 @@
 ---
 title: CheckoutAgreementsGraphQl
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 # CheckoutAgreementsGraphQl
 
 **CheckoutAgreementsGraphQl** provides type information for the GraphQl module
 to generate Checkout Agreements fields for Checkout Agreements information endpoints.
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.4.

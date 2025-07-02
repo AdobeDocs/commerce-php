@@ -1,6 +1,6 @@
 ---
 title: InventorySalesAsyncOrder
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 # InventorySalesAsyncOrder module
@@ -14,3 +14,6 @@ It gives ability to use "Use deferred Stock update" config option with async ord
 |-------------|---------------------------|---------------------------------------------------------------------------------------------------------------------|
 | 1           | 1                         | Reservation is created when async order is processed by consumer.                                                   |
 | 1           | 0                         | Reservation is created before initial async order is placed. Reservation is rolled back if async order is rejected. |
+
+<InlineAlert slots="text" />
+The version of this module is 100.2.2.

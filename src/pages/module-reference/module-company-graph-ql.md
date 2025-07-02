@@ -1,8 +1,11 @@
 ---
 title: CompanyGraphQl
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 # CompanyGraphQl
 
 Provides GraphQl mutations and queries to access company information.
+
+<InlineAlert slots="text" />
+The version of this module is 1.5.2.

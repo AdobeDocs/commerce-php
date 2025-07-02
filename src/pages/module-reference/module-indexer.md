@@ -1,6 +1,6 @@
 ---
 title: Indexer
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 # Magento_Indexer module
@@ -29,19 +29,19 @@ The Magento_Indexer module creates the following tables in the database:
 - `indexer_state`
 - `mview_state`
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-enable.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Structure
 
 `App/` - the directory that contains launch application entry point.
 
-For information about a typical file structure of a module in Magento 2, see [Module file structure](http://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/module-file-structure.html#module-file-structure).
+For information about a typical file structure of a module in Magento 2, see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure/#module-file-structure).
 
 ## Extensibility
 
-Extension developers can interact with the Magento_Indexer module. For more information about the Magento extension mechanism, see [Magento plugins](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html).
+Extension developers can interact with the Magento_Indexer module. For more information about the Magento extension mechanism, see [Magento plugins](https://developer.adobe.com/commerce/php/development/components/plugins/).
 
-[The Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html) enables you to override the functionality of the Magento_Indexer module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_Indexer module.
 
 ### Events
 
@@ -60,7 +60,7 @@ The module dispatches the following events:
 - `clean_cache_by_tags` event in the `\Magento\Indexer\Model\Processor\CleanCache::afterReindexAllInvalid` method. Parameters:
     - `object` is a `context` object (`Magento\Framework\Indexer\CacheContext` class)
 
-For information about an event in Magento 2, see [Events and observers](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/events-and-observers.html#events).
+For information about an event in Magento 2, see [Events and observers](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#events).
 
 ### Layouts
 
@@ -69,7 +69,7 @@ This module introduces the following layout handles in the `view/adminhtml/layou
 - `indexer_indexer_list`
 - `indexer_indexer_list_grid`
 
-For more information about layouts in Magento 2, see the [Layout documentation](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/layout-overview.html).
+For more information about layouts in Magento 2, see the [Layout documentation](https://developer.adobe.com/commerce/frontend-core/guide/layouts/).
 
 ## Additional information
 
@@ -101,12 +101,15 @@ Cron group configuration can be set at `etc/crontab.xml`:
 - `indexer_update_all_views` - update indexer views
 - `indexer_clean_all_changelogs` - clean indexer view changelogs
 
-[Learn how to configure and run cron in Magento.](http://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html).
+[Learn how to configure and run cron in Magento.](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs).
 
 More information can get at articles:
 
-- [Learn more about indexing](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/indexing.html)
-- [Learn more about Indexer optimization](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/indexer-batch.html)
-- [Learn more how to add custom indexer](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/indexing-custom.html)
-- [Learn how to manage indexers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html)
-- [Learn more about Index Management](https://docs.magento.com/user-guide/system/index-management.html)
+- [Learn more about indexing](https://developer.adobe.com/commerce/php/development/components/indexing/)
+- [Learn more about Indexer optimization](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/)
+- [Learn more how to add custom indexer](https://developer.adobe.com/commerce/php/development/components/indexing/custom-indexer/)
+- [Learn how to manage indexers](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers)
+- [Learn more about Index Management](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.8.

@@ -1,6 +1,6 @@
 ---
 title: Sales
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 # Overview
@@ -26,3 +26,6 @@ Depending on how many orders are being placed, there might be consideration for 
 ## Install
 
 The Magento_Sales module is installed automatically (using the native Magento install mechanism) without any additional actions.
+
+<InlineAlert slots="text" />
+The version of this module is 103.0.8.

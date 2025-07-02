@@ -1,6 +1,6 @@
 ---
 title: InventoryInStorePickupShippingApi
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 # InventoryInStorePickupShippingApi module
@@ -8,7 +8,7 @@ description: README.md contents of the module from the source code
 The `InventoryInStorePickupShippingApi` module provides service contracts for "In-Store Pickup Delivery Method" implementation of In-Store Pickup functionality.
 
 This module is part of the new inventory infrastructure. The
-[Inventory Management overview](https://devdocs.magento.com/guides/v2.4/inventory/index.html)
+[Inventory Management overview](https://developer.adobe.com/commerce/webapi/rest/inventory/index.html)
 describes the MSI (Multi-Source Inventory) project in more detail.
 
 ## Installation details
@@ -28,3 +28,6 @@ Public APIs are defined in the `Api` and `Api/Data` directories.
 ### REST endpoints
 
 The `etc/webapi.xml` file defines endpoints for configuring in store pickup for sources.
+
+<InlineAlert slots="text" />
+The version of this module is 1.1.4.

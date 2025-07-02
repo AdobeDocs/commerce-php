@@ -1,6 +1,6 @@
 ---
 title: NewRelicReporting
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 # Magento_NewRelicReporting module
@@ -26,17 +26,17 @@ This module creates the following tables in the database:
 - `reporting_users`
 - `reporting_system_updates`
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-enable.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Extensibility
 
-Extension developers can interact with the Magento_NewRelicReporting module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html).
+Extension developers can interact with the Magento_NewRelicReporting module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
 
-[The Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html) enables you to override the functionality of the Magento_NewRelicReporting module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_NewRelicReporting module.
 
 ## Additional information
 
-[Learn more about New Relic Reporting](https://docs.magento.com/user-guide/reports/new-relic-reporting.html).
+[Learn more about New Relic Reporting](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/new-relic-reporting).
 
 ### Console commands
 
@@ -44,7 +44,7 @@ The Magento_NewRelicReporting provides console commands:
 
 - `bin/magento newrelic:create:deploy-marker <message> <change_log> [<user>]` - check the deploy queue for entries and create an appropriate deploy marker
 
-[Learn more about command's parameters](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#newreliccreatedeploy-marker).
+[Learn more about command's parameters](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#newreliccreatedeploy-marker).
 
 ### Cron options
 
@@ -52,4 +52,7 @@ Cron group configuration can be set at `etc/crontab.xml`:
 
 - `magento_newrelicreporting_cron` - runs collecting all new relic reports
 
-[Learn how to configure and run cron in Magento.](http://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html).
+[Learn how to configure and run cron in Magento.](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.6.

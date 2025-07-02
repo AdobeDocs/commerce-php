@@ -16,7 +16,7 @@ Without indexing, the application would have to calculate the price of every pro
 ## Indexing terminology
 
 Dictionary
-: Original data entered to the system. Dictionaries are organized in <a href="http://en.wikipedia.org/wiki/Database_normalization" target="_blank">normal form</a> to facilitate maintenance (updating the data).
+: Original data entered to the system. Dictionaries are organized in <a href="https://en.wikipedia.org/wiki/Database_normalization" target="_blank">normal form</a> to facilitate maintenance (updating the data).
 
 Index
 : Representation of the original data for optimized reading and searching. Indexes can contain results of aggregations and various calculations. Index data can be always re-created from a dictionary using a certain algorithm.
@@ -36,8 +36,8 @@ The following components are involved in the indexing process:
 
 | Component                                                                                                    | Description                                                                                                                                                                                                                                                                                                                       |
 |--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Magento_Indexer](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Indexer)                     | Implements the following<ul><li>indexer declaration</li><li>indexer running</li><li>indexer running mode configuration</li><li>indexer status</li></ul>                                                                                                                                                                           |
-| [Magento/Framework/Mview](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Mview) | Allows tracking database changes for a certain entity (product, category, etc.) and running change handler.<br /><br />Emulates the materialized view technology for MySQL using triggers and separate materialization process (provides executing PHP code instead of SQL queries, which allows materializing multiple queries). |
+| [Magento_Indexer](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Indexer)                     | Implements the following<ul><li>indexer declaration</li><li>indexer running</li><li>indexer running mode configuration</li><li>indexer status</li></ul>                                                                                                                                                                           |
+| [Magento/Framework/Mview](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Mview) | Allows tracking database changes for a certain entity (product, category, etc.) and running change handler.<br /><br />Emulates the materialized view technology for MySQL using triggers and separate materialization process (provides executing PHP code instead of SQL queries, which allows materializing multiple queries). |
 
 <InlineAlert variant="warning" slots="text"/>
 
@@ -51,7 +51,7 @@ Each index can perform the following types of reindex operations:
 
    Full reindexing can be caused by a variety of things, including creating a new web store or new customer group.
 
-   You can optionally fully reindex at any time using the [command line](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html).
+   You can optionally fully reindex at any time using the [command line](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers).
 
 *  Partial reindex, which means rebuilding the database tables only for the things that changed (like changing a single product attribute or price)
 
@@ -74,7 +74,7 @@ Depending on whether index data is up to date, an indexer status value is one of
 The database status can be seen when viewing the SQL table `indexer_state`.
 The admin status can be seen when viewing the indexer grid in Admin or when running the index status from the CLI.
 
-The indexing mechanism uses the status value in reindex triggering process. You can check the status of an indexer in the Admin panel in **System >** Tools **> Index Management** or manually using the [command line](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#view-indexer-status).
+The indexing mechanism uses the status value in reindex triggering process. You can check the status of an indexer in the Admin panel in **System >** Tools **> Index Management** or manually using the [command line](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#view-indexer-status).
 
 ### Using application lock mode for reindex processes
 
@@ -113,7 +113,7 @@ Reindexing can be performed in two modes:
 
 <InlineAlert variant="info" slots="text"/>
 
-**Update by Schedule** does not support the `customer_grid` indexer. You must either use **Update on Save** or reindex the customer grid manually (`bin/magento indexer:reindex customer_grid`). See the [Help Center article](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/new-customers-not-displayed-in-customer-grid-after-csv-import.html).
+**Update by Schedule** does not support the `customer_grid` indexer. You must either use **Update on Save** or reindex the customer grid manually (`bin/magento indexer:reindex customer_grid`). See the [Help Center article](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/new-customers-not-displayed-in-customer-grid-after-csv-import).
 
 To set these options:
 
@@ -123,7 +123,7 @@ To set these options:
 1. From the **Actions** list, click the indexing mode.
 1. Click **Submit**.
 
-You can also reindex from the [command line](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers)
+You can also reindex from the [command line](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers)
 
 The following figure shows an example of setting indexers to Update by Schedule:
 
@@ -197,17 +197,17 @@ it defines IDs to be re-indexed from the change log by last applied `version_id`
 
 You can reindex by:
 
-*  Using a [cron job](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html), which is preferred because indexing runs every minute.
-*  Using the [`magento indexer:reindex [indexer]`](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#config-cli-subcommands-index-reindex) command, which reindexes selected indexers, or all indexers, one time only.
+*  Using a [cron job](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs), which is preferred because indexing runs every minute.
+*  Using the [`magento indexer:reindex [indexer]`](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindex) command, which reindexes selected indexers, or all indexers, one time only.
 
 ## Indexers
 
-Magento Open Source implements the following indexers (use [bin/magento indexer:info](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#indexerinfo) to list the indexers):
+Magento Open Source implements the following indexers (use [bin/magento indexer:info](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#indexerinfo) to list the indexers):
 
 | Indexer method name         | Indexer class                                                                                                                                                                          | Description                                                                                                                                                                                                                                                                      |
 |-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `design_config_grid`        | [Magento\Theme\Model\Indexer\Design\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Theme/Model/Indexer/Design/Config.php)                                       |                                                                                                                                                                                                                                                                                  |
-| `customer_grid`             | [Magento\Framework\Indexer\Action\Entity](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Indexer/Action/Entity.php)                                       | Rebuilds the customer grid index. Not supported by the `Update by Schedule` indexing mode. See the [Help Center article](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/new-customers-not-displayed-in-customer-grid-after-csv-import.html). |
+| `customer_grid`             | [Magento\Framework\Indexer\Action\Entity](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Indexer/Action/Entity.php)                                       | Rebuilds the customer grid index. Not supported by the `Update by Schedule` indexing mode. See the [Help Center article](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/new-customers-not-displayed-in-customer-grid-after-csv-import). |
 | `catalog_category_product`  | [Magento\Catalog\Model\Indexer\Category\Product](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/Indexer/Category/Product.php)                             | Creates category/products association                                                                                                                                                                                                                                            |
 | `catalog_product_category`  | [Magento\Catalog\Model\Indexer\Product\Category](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/Indexer/Product/Category.php)                             | Creates category/products association                                                                                                                                                                                                                                            |
 | `catalog_product_price`     | [Magento\Catalog\Model\Indexer\Product\Price](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/Indexer/Product/Price.php)                                   | Pre-calculates product prices                                                                                                                                                                                                                                                    |

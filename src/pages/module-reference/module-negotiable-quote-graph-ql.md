@@ -1,6 +1,9 @@
 ---
 title: NegotiableQuoteGraphQl
-description: README.md contents of the module from the source code
+description: Graphql support for the Negotiable Quote
 ---
 
 # Negotiable Quote GraphQL
+
+<InlineAlert slots="text" />
+The version of this module is 1.5.1.

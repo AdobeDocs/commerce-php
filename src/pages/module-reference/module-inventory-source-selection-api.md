@@ -1,6 +1,6 @@
 ---
 title: InventorySourceSelectionApi
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 # InventorySourceSelectionApi module
@@ -8,7 +8,7 @@ description: README.md contents of the module from the source code
 The `InventorySourceSelectionApi` module provides service contracts for source selection algorithms (SSA).
 
 This module is part of the new inventory infrastructure. The
-[Inventory Management overview](https://devdocs.magento.com/guides/v2.4/inventory/index.html)
+[Inventory Management overview](https://developer.adobe.com/commerce/webapi/rest/inventory/index.html)
 describes the MSI (Multi-Source Inventory) project in more detail.
 
 ## Installation details
@@ -27,3 +27,6 @@ Public APIs are defined in the `Api` and `Api/Data` directories.
 ### REST endpoints
 
 The `etc/webapi.xml` file defines endpoints for setting the SSA and retrieving a list of valid SSAs.
+
+<InlineAlert slots="text" />
+The version of this module is 1.4.5.

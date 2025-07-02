@@ -1,6 +1,6 @@
 ---
 title: Tax
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 # Overview
@@ -43,3 +43,6 @@ The Magento_Tax module is installed automatically (using the native Magento inst
 ## Uninstall
 
 The Magento_Tax module should not be uninstalled; it is a required module.
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.8.

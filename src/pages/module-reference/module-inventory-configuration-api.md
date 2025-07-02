@@ -1,6 +1,6 @@
 ---
 title: InventoryConfigurationApi
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 # InventoryConfigurationApi module
@@ -8,7 +8,7 @@ description: README.md contents of the module from the source code
 The `InventoryConfigurationApi` module provides service contracts for inventory management configuration.
 
 This module is part of the new inventory infrastructure. The
-[Inventory Management overview](https://devdocs.magento.com/guides/v2.4/inventory/index.html)
+[Inventory Management overview](https://developer.adobe.com/commerce/webapi/rest/inventory/index.html)
 describes the MSI (Multi-Source Inventory) project in more detail.
 
 ## Installation details
@@ -23,3 +23,6 @@ can use to provide custom inventory functionality.
 ### Public APIs
 
 Public APIs are defined in the `Api` and `Api/Data` directories.
+
+<InlineAlert slots="text" />
+The version of this module is 1.2.4.

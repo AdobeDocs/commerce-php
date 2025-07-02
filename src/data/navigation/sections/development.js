@@ -20,12 +20,12 @@ module.exports = [
           path: "/development/backward-incompatible-changes/",
           pages: [
             {
-              title: "Highlights",
-              path: "/development/backward-incompatible-changes/highlights/",
+              title: "Commerce reference",
+              path: "/development/backward-incompatible-changes/reference/",
             },
             {
-              title: "Reference",
-              path: "/development/backward-incompatible-changes/reference/",
+              title: "Magento reference",
+              path: "/development/backward-incompatible-changes/magento-reference/",
             },
           ],
         },
@@ -196,7 +196,7 @@ module.exports = [
       path: "/development/components/",
       pages: [
         {
-          title: "Application Server compatibility",
+          title: "GraphQL Application Server compatibility",
           path: "/development/components/app-server/",
         },
         {
@@ -598,6 +598,10 @@ module.exports = [
           path: "/development/security/cross-site-scripting/",
         },
         {
+          title: "Data re-encryption",
+          path: "/development/security/data-encryption/",
+        },
+        {
           title: "Denial of service (DoS) attacks",
           path: "/development/security/denial-of-service-attacks/",
         },
@@ -620,6 +624,10 @@ module.exports = [
         {
           title: "Server-side request forgery prevention",
           path: "/development/security/server-side-request-forgery/",
+        },
+        {
+          title: "Subresource Integrity",
+          path: "/development/security/subresource-integrity/",
         },
       ],
     },

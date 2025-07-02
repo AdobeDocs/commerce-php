@@ -1,8 +1,11 @@
 ---
 title: CatalogPageBuilderAnalytics
-description: README.md contents of the module from the source code
+description: Catalog Page Builder Analytics module
 ---
 
 # Magento_CatalogPageBuilderAnalytics module
 
-The Magento_CatalogPageBuilderAnalytics module configures data definitions for a data collection related to the PageBuilder module entities to be used in [Advanced Reporting](https://devdocs.magento.com/guides/v2.4/advanced-reporting/modules.html).
+The Magento_CatalogPageBuilderAnalytics module configures data definitions for a data collection related to the PageBuilder module entities to be used in [Advanced Reporting](https://developer.adobe.com/commerce/php/development/advanced-reporting/modules/).
+
+<InlineAlert slots="text" />
+The version of this module is 1.6.5.

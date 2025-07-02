@@ -1,6 +1,6 @@
 ---
 title: Checkout
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 # Magento_Checkout module
@@ -39,3 +39,6 @@ the purchase.
        `checkout_onepage_review_item_renderers`
        `checkout_onepage_success`
        `default`
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.8.

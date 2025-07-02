@@ -1,26 +1,26 @@
 ---
-title: Application Server | Commerce PHP Extensions
-description: Learn about the Application Server architecture and how to ensure compatibility with custom extensions.
+title: GraphQL Application Server | Commerce PHP Extensions
+description: Learn about GraphQL Application Server architecture and how to ensure compatibility with custom extensions.
 keywords:
   - Extensions
-edition: ee
+edition: pass
 ---
 
 <InlineAlert variant="info" slots="text" />
 
-Available in [2.4.7-beta](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html) only.
+Available in [2.4.7](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-7) only.
 
-# Application Server for GraphQL APIs
+# GraphQL Application Server
 
-The [Application Server for GraphQL APIs](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/performance-best-practices/application-server.html) enables Adobe Commerce to maintain state among GraphQL API requests. The Application Server, which is built on the Open Swoole extension, operates as a process with worker threads that handle request processing. By preserving a bootstrapped application state among GraphQL API requests, the Application Server enhances request handling and overall product performance. As a result, GraphQL request response time can be reduced by up to 30%.
+The [GraphQL Application Server](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/concepts/application-server) enables Adobe Commerce to maintain state among GraphQL API requests. GraphQL Application Server, which is built on the Open Swoole extension, operates as a process with worker threads that handle request processing. By preserving a bootstrapped application state among GraphQL API requests, GraphQL Application Server enhances request handling and overall product performance. As a result, GraphQL request response time can be reduced by up to 30%.
 
-The Application Server is supported on [Cloud Starter](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-architecture.html) deployments only. It is not available for Cloud Pro projects during Beta. It is not available for deployments of the Magento Open Source code base.
+GraphQL Application Server is available for Adobe Commerce only. It is not available for Magento Open Source. You must [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) to enable GraphQL Application Server on Pro projects.
 
 ## Challenges to consider
 
-Ensuring compatibility between your extension and the Application Server can be challenging without the right information.
+Ensuring compatibility between your extension and GraphQL Application Server can be challenging without the right information.
 
-This page provides all the details that you need to make sure that your code is compatible with the Application Server, including recommendations and testing instructions. Key concepts include:
+This page provides all the details that you need to make sure that your code is compatible with GraphQL Application Server, including recommendations and testing instructions. Key concepts include:
 
 - Resource management
 - Memory and resource leaks
@@ -49,7 +49,7 @@ Traditional debugging tools and techniques designed for synchronous PHP scripts 
 
 1. [Not following technical guidelines](../../coding-standards/technical-guidelines.md)
 
-  - 2.9. Service classes (ones that provide behavior but not data, like EventManager) SHOULD NOT have a mutable state. To make extensions codebase compliant with technical guidelines mutable states should be removed from Service classes. For example, a property cache introduced for better performance when dealing with data-intensive operations, such as database queries, API calls, or complex calculations, that does not need to be executed repeatedly within the same request. However, this can cause issues with the Application Server, since the property cache would be used in consequent requests and it should be reset after each request.
+  - 2.9. Service classes (ones that provide behavior but not data, like EventManager) SHOULD NOT have a mutable state. To make extensions codebase compliant with technical guidelines mutable states should be removed from Service classes. For example, a property cache introduced for better performance when dealing with data-intensive operations, such as database queries, API calls, or complex calculations, that does not need to be executed repeatedly within the same request. However, this can cause issues with GraphQL Application Server, since the property cache would be used in consequent requests and it should be reset after each request.
 
   - 2.14. Temporal coupling MUST be avoided. Changed state at one point in time can inadvertently affect the behavior of subsequent operations, requiring a specific order of execution for the application to function correctly. This coupling makes the code harder to understand and maintain, as the correct operation of the system becomes dependent on the sequence in which state-modifying actions are performed.
 
@@ -57,7 +57,7 @@ Traditional debugging tools and techniques designed for synchronous PHP scripts 
   
 ## Integration testing
 
-This section describes integration tests that you can use when developing your extension to ensure compatibility with the Application Server.
+This section describes integration tests that you can use when developing your extension to ensure compatibility with GraphQL Application Server.
 
 ### GraphQlStateTests
 
@@ -114,7 +114,7 @@ To set up local testing and debugging:
    pecl install swoole
    ```
 
-1. Route all GraphQL requests to the application server (nginx example):
+1. Route all GraphQL requests to GraphQL Application Server (nginx example):
 
    ```php
    location /graphql {
@@ -125,13 +125,13 @@ To set up local testing and debugging:
    }
    ```
 
-1. Run the application server with the CLI command:
+1. Run the GraphQL Application Server with the CLI command:
 
    ```bash
    bin/magento server:run
    ```
 
-1. Execute GraphQL mutations against the application server and debug with xDebug if needed.
+1. Execute GraphQL mutations against GraphQL Application Server and debug with xDebug if needed.
 
 ## Example of mutable state in code
 
@@ -181,6 +181,8 @@ For this purpose, we should implement the following:
 class Cache implements ResetAfterRequestInterface
 ```
 
+In version 2.4.8, you do not have to add `ResetAfterRequestInterface` to the class. The `_resetState()` method is found by reflection and called by implementing `ResetAfterRequestInterface`. This feature allows modules to be backwards compatible with previous versions before 2.4.7 that do not have this interface.
+
 Add the implementation of the `_resetState()` method with overriding `$data` property to its initial state - empty array:
 
 ```php
@@ -192,3 +194,36 @@ public function _resetState(): void
     $this->data = [];
 }
 ```
+
+<InlineAlert variant="info" slots="text"/>
+
+The following section only applies to Adobe Commerce 2.4.8:
+
+Version 2.4.8 includes an alternative to the `a _resetState` method. Instead of adding `_resetState` to a class, you can add a `reset.json` file to a module's `etc` directory. The `reset.json` file defines which class properties are reset, and what they reset to, after a request.
+
+This feature allows modules to be backwards compatible with previous versions `2.4.7` and earlier, which do not have the `ResetAfterRequestInterface` interface. This feature is also compatible with classes that do not allow adding new public functions. You can also add reset behavior to classes for modules that you do not control.
+
+Here's an example. A class `Magento\Reward\Model\Total\Quote\Reward` inherits from `Magento\Quote\Model\Quote\Address\Total\AbstractTotal`.  A `reset.json` file could be added to both modules:
+
+```json
+"Magento\\Quote\\Model\\Quote\\Address\\Total\\AbstractTotal": {
+  "_code": null,
+  "_address": null,
+  "_canAddAmountToAddress": true,
+  "_canSetAddressAmount": true,
+  "_itemRowTotalKey": null,
+  "total": null
+}
+```
+
+and
+
+```json
+{
+  "Magento\\Reward\\Model\\Total\\Quote\\Reward": {
+    "_code": "_code"
+  }
+}
+```
+
+Both `reset.json` definitions are used for a Reward object. They are called in proper order of inheritance, so subclasses can have specializations to their reset values that get called after the base class.
