@@ -109,7 +109,7 @@ Reindexing can be performed in two modes:
 
    The `customer_grid` indexer behavior changed in 2.4.8.
 
-   * **Prior to 2.4.8**: The indexer can only be reindexed using the Update on Save mode and does not support the Update by Schedule mode.
+   * **Prior to 2.4.8**: The indexer can only be reindexed using the Update on Save mode and does not support the Update by Schedule mode. See the [knowledge base](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/new-customers-not-displayed-in-customer-grid-after-csv-import#affected-versions) for troubleshooting the customer grid after a CSV import.
 
    * **2.4.8 and later**: The indexer supports both Update on Save and Update by Schedule modes, and defaults to Update by Schedule.
 
