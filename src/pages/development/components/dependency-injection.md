@@ -23,7 +23,7 @@ Follow the [dependency inversion principle] and use abstractions in your code to
 This means that your high level classes should use the interfaces of low level classes instead of working with them directly.
 
 Using interfaces in your code reduces the risk of incompatibility bugs when Adobe changes the underlying implementation of those interfaces.
-It also lets you focus on what a class does instead of how its implemented.
+It also lets you focus on what a class does instead of how it's implemented.
 
 Since the codebase follows this principle, you can map your own implementation of an interface to a dependent class or service using the [`di.xml`] file.
 
