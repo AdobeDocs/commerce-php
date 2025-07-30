@@ -306,6 +306,10 @@ module.exports = [
               path: "/development/components/web-api/services/",
             },
             {
+              title: "Resource accessibility",
+              path: "/development/components/web-api/resource-accessibility/",
+            },
+            {
               title: "Set custom routes",
               path: "/development/components/web-api/custom-routes/",
             },
