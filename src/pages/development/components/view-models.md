@@ -64,12 +64,11 @@ You can access the public methods for the view model class in the template:
 ```html
 <?php
 
-/** @var $viewModel \ExampleCorp\Catalog\ViewModel\MyNewViewModel */
-
+/** @var \ExampleCorp\Catalog\ViewModel\MyNewViewModel $viewModel */
 $viewModel = $block->getViewModel();
 
 ?>
-<h1><?= $block->escapeHtml($viewModel->getTitle()); ?></h1>
+<h1><?= $escaper->escapeHtml($viewModel->getTitle()); ?></h1>
 ```
 
 ## Examples
@@ -138,10 +137,10 @@ class PreparePostData implements ArgumentInterface
 The following is an example of the view model initialization in the `app/code/Magento/Catalog/view/frontend/templates/product/list/items.phtml` template.
 
 ```php
-/** @var $viewModel /Magento/Catalog/ViewModel/Product/Listing/PreparePostData */
+/** @var /Magento/Catalog/ViewModel/Product/Listing/PreparePostData $viewModel */
 $viewModel = $block->getViewModel();
 $postArray = $viewModel->getPostData(
-    $block->escapeUrl($block->getAddToCartUrl($_item)),
+    $escaper->escapeUrl($block->getAddToCartUrl($_item)),
     ['product' => $_item->getEntityId()]
 );
 ```
