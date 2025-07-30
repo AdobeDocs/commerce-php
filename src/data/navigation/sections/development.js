@@ -318,6 +318,10 @@ module.exports = [
               path: "/development/components/web-api/request-processor-pool/",
             },
             {
+              title: "cURL service wrapper",
+              path: "/development/components/web-api/curl/",
+            },
+            {
               title: "Inventory Management API reference",
               path: "/development/components/web-api/inventory-management/",
             },
