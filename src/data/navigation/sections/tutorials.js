@@ -143,6 +143,11 @@ module.exports = [
           title: "Modify media library folder permissions",
           path: "/tutorials/backend/modify-image-library-permissions/",
         },
+        {
+          title: "Create a custom product attribute input type",
+          path: "/tutorials/backend/create-custom-attribute-input-type/",
+        },
       ],
     },
   ];
+
