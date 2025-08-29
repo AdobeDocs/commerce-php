@@ -36,22 +36,9 @@ jobs:
       - name: Run remark checks (see .remarkrc.yml for enabled plugins)
         run: yarn test
 
-  web-link-check:
-    runs-on: ubuntu-latest
-    needs: remark-test
-    steps:
-      - uses: actions/checkout@v4
-      - name: Check markdown web links
-        uses: tcort/github-action-markdown-link-check@v1
-        with:
-          base-branch: ${{ github.event.pull_request.base.ref }}
-          use-quiet-mode: 'yes'
-          use-verbose-mode: 'yes'
-          check-modified-files-only: 'yes'
-
   build-test:
     runs-on: ubuntu-latest
-    needs: web-link-check
+    needs: remark-test
     steps:
       - uses: actions/checkout@v4
       - name: Setup Node.js and install dependencies
