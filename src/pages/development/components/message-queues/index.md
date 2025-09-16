@@ -9,9 +9,12 @@ keywords:
 
 Message queues provide an asynchronous communications mechanism in which the sender and the receiver of a message do not contact each other, nor do they need to communicate with the message queue at the same time. When a sender places a message onto a queue, it is stored until the recipient receives them.
 
-In Adobe Commerce and Magento Open Source, the Message Queue Framework (MQF) is a fully-functional system that allows a module to publish messages to queues. It also creates consumers to receive them asynchronously. The MQF primarily uses [RabbitMQ](http://www.rabbitmq.com) as the messaging broker, which provides a scalable platform for sending and receiving messages. It also includes a mechanism for storing undelivered messages. RabbitMQ is based on the Advanced Message Queuing Protocol (AMQP) 0.9.1 specification.
+In Adobe Commerce and Magento Open Source, the Message Queue Framework (MQF) is a fully-functional system that allows a module to publish messages to queues. It also creates consumers to receive them asynchronously. The MQF supports multiple messaging brokers:
 
-A basic message queue system can also be set up without using RabbitMQ. In this system, a MySQL adapter stores messages in the database. Three database tables (`queue`, `queue_message`, and `queue_message_status`) manage the message queue workload. Cron jobs ensure the consumers are able to receive messages. This solution is not very scalable. RabbitMQ should be used whenever possible.
+- **[RabbitMQ](http://www.rabbitmq.com)** - The primary messaging broker, which provides a scalable platform for sending and receiving messages. It includes a mechanism for storing undelivered messages and is based on the Advanced Message Queuing Protocol (AMQP) 0.9.1 specification.
+- **[Apache ActiveMQ Artemis](https://activemq.apache.org/components/artemis/)** - An alternative messaging broker that uses the STOMP (Simple Text Oriented Messaging Protocol) for reliable and scalable messaging, offering flexibility for STOMP-based integrations.
+
+A basic message queue system can also be set up without using external message brokers. In this system, a MySQL adapter stores messages in the database. Three database tables (`queue`, `queue_message`, and `queue_message_status`) manage the message queue workload. Cron jobs ensure the consumers are able to receive messages. This solution is not very scalable. External message brokers like RabbitMQ or ActiveMQ Artemis should be used whenever possible.
 
 See [Configure message queues](configuration.md) for information about setting up the message queue system.
 
@@ -49,7 +52,11 @@ Perform the following actions:
 1. Decode the message using topic name taken from the `\Magento\Framework\MessageQueue\ConsumerConfigurationInterface`.
 1. Invoke callback `Magento\Framework\MessageQueue\ConsumerConfigurationInterface::getCallback` and pass the decoded data as an argument.
 
-## Change message queue from MySQL to AMQP
+### ActiveMQ Artemis (STOMP)
+
+Same as RabbitMQ, this is also instantiates a consumer that is defined in a [`queue_consumer.xml`](configuration.md#queue_consumerxml) file. The consumer (`customer_created_listener`) listens to the queue and receives all new messages. For every message, it invokes `Magento\Some\Class::processMessage($message)`
+
+## Change message queue from MySQL to external brokers
 
 The following sample introduces a runtime configuration that allows you to redefine the adapter for a topic.
 
@@ -83,5 +90,42 @@ The following sample introduces a runtime configuration that allows you to redef
             'connection' => 'amqp',
         ],
     ],
+],
+```
+
+### Switch from MySQL to STOMP (ActiveMQ Artemis)
+
+The following configuration shows how to configure a topic to use STOMP instead of MySQL:
+
+```php
+'queue' => [
+    'topics' => [
+        'inventory.update' => [
+            'publisher' => 'stomp-magento'
+        ]
+    ],
+    'config' => [
+        'publishers' => [
+            'inventory.update' => [
+                'connections' => [
+                    'stomp' => [
+                        'name' => 'stomp',
+                        'exchange' => 'magento',
+                        'disabled' => false
+                    ],
+                    'db' => [
+                        'name' => 'db',
+                        'exchange' => 'magento',
+                        'disabled' => true
+                    ]
+                ]
+            ]
+        ]
+    ],
+    'consumers' => [
+        'inventory.update' => [
+            'connection' => 'stomp',
+        ],
+    ]
 ],
 ```
