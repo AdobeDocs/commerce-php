@@ -54,7 +54,7 @@ Perform the following actions:
 
 ### ActiveMQ Artemis (STOMP)
 
-Same as RabbitMQ, this is also instantiates a consumer that is defined in a [`queue_consumer.xml`](configuration.md#queue_consumerxml) file. The consumer (`customer_created_listener`) listens to the queue and receives all new messages. For every message, it invokes `Magento\Some\Class::processMessage($message)`
+Similar to RabbitMQ, ActiveMQ Artemis instantiates a consumer that is defined in a [`queue_consumer.xml`](configuration.md#queue_consumerxml) file. The consumer (`customer_created_listener`) listens to the queue and receives all new messages. For every message, it invokes `Magento\Some\Class::processMessage($message)`
 
 ## Change message queue from MySQL to external brokers
 
