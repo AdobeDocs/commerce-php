@@ -28,7 +28,7 @@ Depending on your needs, you may only need to create and configure `communicatio
 
 ## `communication.xml`
 
-The `<module>/etc/communication.xml` file defines aspects of the message queue system that all communication types have in common. This release supports AMQP and database connections.
+The `<module>/etc/communication.xml` file defines aspects of the message queue system that all communication types have in common. This release supports AMQP, STOMP, and database connections.
 
 ### Example
 
@@ -81,8 +81,8 @@ The `queue_consumer.xml` file contains one or more `consumer` elements:
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/consumer.xsd">
     <consumer name="basic.consumer" queue="basic.consumer.queue" handler="LoggerClass::log"/>
     <consumer name="synchronous.rpc.test" queue="synchronous.rpc.test.queue" handler="LoggerClass::log"/>
-    <consumer name="rpc.test" queue="queue.for.rpc.test.unused.queue" consumerInstance="Magento\Framework\MessageQueue\BatchConsumer" connection="amqp"/>
-    <consumer name="test.product.delete" queue="queue.for.test.product.delete" connection="amqp" handler="Magento\Queue\Model\ProductDeleteConsumer::processMessage" maxMessages="200" maxIdleTime="180" sleep="60" onlySpawnWhenMessageAvailable="0"/>
+    <consumer name="rpc.test" queue="queue.for.rpc.test.unused.queue" consumerInstance="Magento\Framework\MessageQueue\BatchConsumer"/>
+    <consumer name="test.product.delete" queue="queue.for.test.product.delete" handler="Magento\Queue\Model\ProductDeleteConsumer::processMessage" maxMessages="200" maxIdleTime="180" sleep="60" onlySpawnWhenMessageAvailable="0"/>
 </config>
 ```
 
@@ -94,7 +94,7 @@ The `queue_consumer.xml` file contains one or more `consumer` elements:
 | queue (required)              | Defines the queue name to send the message to.  |
 | handler                       | Specifies the class and method that processes the message. The value must be specified in the format `<Vendor>\Module\<ServiceName>::<methodName>`.|
 | consumerInstance              | The class name that consumes the message. Default value: `Magento\Framework\MessageQueue\Consumer`. |
-| connection                    | Connection is defined dynamically based on deployment configuration of message queue in `env.php`. If AMQP is configured in deployment configuration, AMQP connection is used. Otherwise, db connection is used. If you still want to specify connection type for consumer, keep in mind that for AMQP connections, the connection name must match the `connection` attribute in the `queue_topology.xml` file. Otherwise, the connection name must be `db`.  |
+| connection                    | Connection is defined dynamically based on deployment configuration of message queue in `env.php`. If AMQP or STOMP is configured in deployment configuration, the respective connection is used. Otherwise, db connection is used. If you still want to specify connection type for consumer, keep in mind that for AMQP connections, the connection name must match the `connection` attribute in the `queue_topology.xml` file. For STOMP connections, use `stomp`. Otherwise, the connection name must be `db`.  |
 | maxMessages                   | Specifies the maximum number of messages to consume.|
 | maxIdleTime                   | Defines the maximum waiting time in seconds for a new message from the queue. If no message was handled within this period of time, the consumer exits. Default value: `null`|
 | sleep                         | Specifies time in seconds to sleep before checking if a new message is available in the queue. Default value is `null` which equals to 1 second.|
@@ -178,7 +178,7 @@ The `queue_topology.xml` file defines the message routing rules and declares que
 | -------------- | ----------- |
  name (required) | A unique ID for the exchange.
  type | Specifies the type of exchange. The default value is `topic` because only `topic` type is supported.
- connection  (required) | Connection is defined dynamically based on deployment configuration of message queue in `env.php`. If AMQP is configured in deployment configuration, AMQP connection is used. Otherwise, db connection is used. If you still want to specify connection, the connection name must be `amqp` for AMQP. For MySQL connections, the connection name must be `db`.
+ connection  (required) | Connection is defined dynamically based on deployment configuration of message queue in `env.php`. If AMQP or STOMP is configured in deployment configuration, the respective connection is used. Otherwise, db connection is used. If you still want to specify connection, the connection name must be `amqp` for AMQP, `stomp` for STOMP. For MySQL connections, the connection name must be `db`.
  durable | Boolean value indicating whether the exchange is persistent. Non-durable exchanges are purged when the server restarts. The default is `true`.
  autoDelete | Boolean value indicating whether the exchange is deleted when all queues have finished using it. The default is `false`.
  internal | Boolean value. If set to true, the exchange may not be used directly by publishers, but only when bound to other exchanges. The default is `false`.
@@ -233,6 +233,8 @@ The `queue_publisher.xml` file defines which connection and exchange to use to p
 
 ### Example
 
+**For RabbitMQ (AMQP):**
+
 ```xml
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/publisher.xsd">
@@ -244,26 +246,46 @@ The `queue_publisher.xml` file defines which connection and exchange to use to p
 </config>
 ```
 
+**For ActiveMQ Artemis (STOMP):**
+
+```xml
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/publisher.xsd">
+    <publisher topic="magento.testModuleSynchronousAmqp.api.serviceInterface.execute" disabled="true" />
+    <publisher topic="asynchronous.test" queue="async.test.queue">
+        <connection name="stomp" disabled="false"/>
+        <connection name="db" disabled="true"/>
+    </publisher>
+</config>
+```
+
 #### `publisher` element
 
 | Attribute            | Description |
 | -------------------- | ----------- |
 | topic (required)     | The name of the topic. |
+| queue                | For ActiveMQ Artemis (STOMP), specify the queue name when it differs from the topic name. |
 | disabled             | Determines whether this queue is disabled. The default value is `false`. |
 
 #### `connection` element
 
-The `connection` element is a subnode of the `publisher` element. There must not be more than one enabled active connection to a publisher defined at a time. If you omit the `connection` element, connection will be defined dynamically based on deployment configuration of message queue in `env.php` and exchange `magento` will be used. If AMQP is configured in deployment configuration, AMQP connection is used. Otherwise, db connection is used.
+The `connection` element is a subnode of the `publisher` element. There must not be more than one enabled active connection to a publisher defined at a time. If you omit the `connection` element, connection will be defined dynamically based on deployment configuration of message queue in `env.php` and exchange `magento` will be used. If AMQP or STOMP is configured in deployment configuration, the respective connection is used. Otherwise, db connection is used.
 
 | Attribute            | Description |
 | -------------------- | ----------- |
-| name | Connection name is defined dynamically based on deployment configuration of message queue in `env.php`. If you still want to specify connection type for publisher, keep in mind that for AMQP connections, the connection name must match the `connection` attribute in the `queue_topology.xml` file. Otherwise, the connection name must be `db`. |
+| name | Connection name is defined dynamically based on deployment configuration of message queue in `env.php`. If you still want to specify connection type for publisher, keep in mind that for AMQP connections, the connection name must match the `connection` attribute in the `queue_topology.xml` file. For STOMP connections, use `stomp`. Otherwise, the connection name must be `db`. |
 | exchange             | The name of the exchange to publish to. The default system exchange name is `magento`. |
 | disabled             | Determines whether this queue is disabled. The default value is `false`. |
 
 <InlineAlert variant="warning" slots="text"/>
 
 You cannot enable more than one `publisher` for each `topic`.
+
+## ActiveMQ Artemis (STOMP) Support
+
+<InlineAlert variant="info" slots="text"/>
+
+ActiveMQ Artemis (STOMP) support was introduced in Adobe Commerce 2.4.6 and later versions. For STOMP connections, use ANYCAST addressing mode for point-to-point message delivery and load balancing across multiple consumers.
 
 ## Updating `queue.xml`
 
