@@ -233,7 +233,7 @@ The `queue_publisher.xml` file defines which connection and exchange to use to p
 
 ### Example
 
-**For RabbitMQ (AMQP):**
+__For RabbitMQ (AMQP):__
 
 ```xml
 <?xml version="1.0"?>
@@ -246,7 +246,7 @@ The `queue_publisher.xml` file defines which connection and exchange to use to p
 </config>
 ```
 
-**For ActiveMQ Artemis (STOMP):**
+__For ActiveMQ Artemis (STOMP):__
 
 ```xml
 <?xml version="1.0"?>
