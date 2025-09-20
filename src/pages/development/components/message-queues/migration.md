@@ -82,13 +82,13 @@ The following table shows the key differences between 2.4.5 and 2.4.6+ configura
 ]
 ```
 
->[!NOTE]
->
->The `default_connection` parameter is only required when multiple message brokers are configured. When only one broker (AMQP or STOMP) is configured, the system automatically uses the available broker.
+<InlineAlert variant="info" slots="text"/>
 
->[!NOTE]
->
->The `connection` attribute in XML configuration files (`queue_consumer.xml`, `queue_publisher.xml`, `queue_topology.xml`) is optional when you want to use the default broker from `env.php`. However, you can explicitly specify `connection="amqp"` or `connection="stomp"` when you want a particular module or functionality to use a specific broker, even when multiple brokers are configured.
+The `default_connection` parameter is only required when multiple message brokers are configured. When only one broker (AMQP or STOMP) is configured, the system automatically uses the available broker.
+
+<InlineAlert variant="info" slots="text"/>
+
+The `connection` attribute in XML configuration files (`queue_consumer.xml`, `queue_publisher.xml`, `queue_topology.xml`) is optional when you want to use the default broker from `env.php`. However, you can explicitly specify `connection="amqp"` or `connection="stomp"` when you want a particular module or functionality to use a specific broker, even when multiple brokers are configured.
 
 ### Update `queue_consumer.xml` Files
 
