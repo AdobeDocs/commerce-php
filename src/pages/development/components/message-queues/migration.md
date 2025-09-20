@@ -34,6 +34,7 @@ The following table shows the key differences between 2.4.5 and 2.4.6+ configura
 ### Update `env.php` Configuration
 
 **For RabbitMQ (AMQP) - No Changes Required:**
+
 ```php
 'queue' => [
     'amqp' => [
@@ -48,6 +49,7 @@ The following table shows the key differences between 2.4.5 and 2.4.6+ configura
 ```
 
 **For ActiveMQ Artemis (STOMP) - Available in 2.4.6+ (introduced in 2.4.9, backported to 2.4.6-2.4.8):**
+
 ```php
 'queue' => [
     'stomp' => [
@@ -61,6 +63,7 @@ The following table shows the key differences between 2.4.5 and 2.4.6+ configura
 ```
 
 **For Both Brokers - Available in 2.4.6+ (requires `default_connection`):**
+
 ```php
 'queue' => [
     'default_connection' => 'amqp', // Required when multiple brokers are configured
@@ -104,16 +107,19 @@ The first column in the following table lists parameters in 2.4.6+ `queue_consum
 | `<consumer>/maxMessages` | `<consumer>/maxMessages` | No change |
 
 **2.4.5 Example:**
+
 ```xml
 <consumer name="example.consumer" queue="example.queue" connection="amqp" maxMessages="100" />
 ```
 
 **2.4.6+ Example (Uses default broker from env.php):**
+
 ```xml
 <consumer name="example.consumer" queue="example.queue" maxMessages="100" />
 ```
 
 **2.4.6+ Example (Explicitly specifies broker):**
+
 ```xml
 <!-- Force this consumer to use AMQP even if multiple brokers are configured -->
 <consumer name="example.consumer" queue="example.queue" connection="amqp" maxMessages="100" />
@@ -136,6 +142,7 @@ The first column in the following table lists parameters in 2.4.6+ `queue_publis
 | `<publisher>/<connection>/disabled` | `<publisher>/<connection>/disabled` | Enhanced in 2.4.6+ for multiple connections |
 
 **2.4.5 Example (RabbitMQ only):**
+
 ```xml
 <publisher topic="example.topic">
     <connection name="amqp" exchange="magento" />
@@ -143,6 +150,7 @@ The first column in the following table lists parameters in 2.4.6+ `queue_publis
 ```
 
 **2.4.6+ Example (RabbitMQ):**
+
 ```xml
 <publisher topic="example.topic">
     <connection name="amqp" exchange="magento" disabled="false"/>
@@ -151,6 +159,7 @@ The first column in the following table lists parameters in 2.4.6+ `queue_publis
 ```
 
 **2.4.6+ Example (ActiveMQ Artemis):**
+
 ```xml
 <publisher topic="example.topic" queue="example.queue">
     <connection name="stomp" disabled="false"/>
@@ -175,6 +184,7 @@ The first column in the following table lists parameters in 2.4.6+ `queue_topolo
 | `<exchange>/<binding>/destination` | `<exchange>/<binding>/destination` | No change |
 
 **2.4.5 Example:**
+
 ```xml
 <exchange name="magento" type="topic" connection="amqp">
     <binding id="example.binding" topic="example.topic" destinationType="queue" destination="example.queue"/>
@@ -182,6 +192,7 @@ The first column in the following table lists parameters in 2.4.6+ `queue_topolo
 ```
 
 **2.4.6+ Example (Uses default broker from env.php):**
+
 ```xml
 <exchange name="magento" type="topic">
     <binding id="example.binding" topic="example.topic" destinationType="queue" destination="example.queue"/>
@@ -189,6 +200,7 @@ The first column in the following table lists parameters in 2.4.6+ `queue_topolo
 ```
 
 **2.4.6+ Example (Explicitly specifies broker):**
+
 ```xml
 <!-- Force this exchange to use AMQP even if multiple brokers are configured -->
 <exchange name="magento" type="topic" connection="amqp">
@@ -213,9 +225,9 @@ ActiveMQ Artemis (STOMP) was introduced in Adobe Commerce 2.4.9 and backported t
 
 To upgrade the message queues for Adobe Commerce or Magento Open Source 2.1, you must create the following files in the `<module>/etc` directory for each module that will use the message queue framework.
 
-*  `queue_consumer.xml` - Defines the relationship between an existing queue and its consumer.
-*  `queue_topology.xml`- Defines the message routing rules and declares queues and exchanges.
-*  `queue_publisher.xml` -   Defines the exchange where a topic is published.
+- `queue_consumer.xml` - Defines the relationship between an existing queue and its consumer.
+- `queue_topology.xml`- Defines the message routing rules and declares queues and exchanges.
+- `queue_publisher.xml` -   Defines the exchange where a topic is published.
 
 The existing `queue.xml` file is deprecated.
 
@@ -273,9 +285,9 @@ The first column in the following table lists the all the parameters in the `que
 
 To upgrade from Adobe Commerce or Magento Open Source 2.0, you must create the following files in the `<module>/etc` directory for each module that will use the message queue framework.
 
-*  `queue_consumer.xml` - Defines the relationship between an existing queue and its consumer.
-*  `queue_topology.xml`- Defines the message routing rules.
-*  `queue_publisher.xml` - Defines the relationship between a topic and its publisher.
+- `queue_consumer.xml` - Defines the relationship between an existing queue and its consumer.
+- `queue_topology.xml`- Defines the message routing rules.
+- `queue_publisher.xml` - Defines the relationship between a topic and its publisher.
 
 The existing `queue.xml` file is deprecated.
 
