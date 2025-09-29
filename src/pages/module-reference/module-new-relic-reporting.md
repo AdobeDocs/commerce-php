@@ -42,9 +42,90 @@ Extension developers can interact with the Magento_NewRelicReporting module. For
 
 The Magento_NewRelicReporting provides console commands:
 
-- `bin/magento newrelic:create:deploy-marker <message> <change_log> [<user>]` - check the deploy queue for entries and create an appropriate deploy marker
+#### newrelic:create:deploy-marker
+
+Creates deployment markers in New Relic to track application deployments and changes.
+
+**Syntax:**
+```bash
+bin/magento newrelic:create:deploy-marker <message> [<changelog>] [<user>] [<revision>] [options]
+```
+
+**Arguments:**
+- `<message>` - Required: Deployment description/title
+- `[<changelog>]` - Optional: Summary of changes in this deployment
+- `[<user>]` - Optional: User who performed the deployment (defaults to system user)
+- `[<revision>]` - Optional: Version or revision identifier
+
+**Options (NerdGraph enhanced):**
+- `--commit="<hash>"` - Git commit hash for this deployment
+- `--deep-link="<url>"` - Deep link to deployment details
+- `--group-id="<id>"` - Group ID for organizing deployments
+
+**Examples:**
+
+Basic usage (works with both APIs):
+```bash
+bin/magento newrelic:create:deploy-marker "Release v1.2.0" "Bug fixes and performance improvements"
+```
+
+With user and revision:
+```bash
+bin/magento newrelic:create:deploy-marker "Release v1.2.0" "Bug fixes and performance improvements" "dev-team" "v1.2.0"
+```
+
+Enhanced usage with NerdGraph options:
+```bash
+bin/magento newrelic:create:deploy-marker "Production Deploy" "Updates and new features" "ops-user" "v1.2.0" \
+  --commit="abc123def456" \
+  --deep-link="https://github.com/company/project/releases/tag/v1.2.0" \
+  --group-id="production"
+```
+
 
 [Learn more about command's parameters](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#newreliccreatedeploy-marker).
+
+### Configuration
+
+The module supports both v2 REST API and modern NerdGraph GraphQL API for deployment tracking.
+
+#### Admin Configuration
+
+Navigate to **Stores** > **Configuration** > **General** > **New Relic Reporting**:
+
+1. **Enable New Relic Integration**: Yes
+2. **Deployment API Mode**: Choose your preferred API:
+    - **v2_rest**: Legacy REST API (backward compatible)
+    - **nerdgraph**: Modern GraphQL API (recommended)
+
+#### NerdGraph Configuration (Recommended)
+
+When **Deployment API Mode** is set to **nerdgraph**, additional fields appear:
+
+- **New Relic API URL (NerdGraph)**:
+    - US: `https://api.newrelic.com/graphql`
+    - EU: `https://api.eu.newrelic.com/graphql`
+- **Entity GUID (NerdGraph)**: Your application's entity GUID
+- **New Relic API Key**: Create a user key, see [New Relic API Keys](https://docs.newrelic.com/docs/apis/intro-apis/new-relic-api-keys/) documentation
+
+#### V2 REST Configuration
+
+When **Deployment API Mode** is set to **v2_rest**, configure:
+
+- **New Relic API URL (v2 REST)**: API endpoint
+- **New Relic Application ID**: Found in APM URL after "/applications/"
+- **New Relic API Key**: Your REST API key
+
+### NerdGraph Features
+
+When using NerdGraph mode, the module provides:
+
+#### Enhanced Metadata Support
+- **Commit Hash**: Git commit tracking
+- **Deep Links**: Links to deployment details
+- **Group ID**: Environment/team organization
+- **Automatic Timestamps**: Precise deployment timing
+- **Version Tracking**: Automatic or manual version assignment
 
 ### Cron options
 
