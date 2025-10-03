@@ -84,7 +84,7 @@ If a service method argument is called `item`, there will be a problem during SO
 
 When a REST API call is made, the framework validates the constructor parameters of the class that implements the service interface. The framework checks that each parameter can be instantiated. If a parameter cannot be instantiated, the framework throws an exception.
 
-Adobe Commerce 2.4.9 and all prior supported versions of Adobe Commerce prior to 2.4.9 have been patched to validate constructors.
+Adobe Commerce 2.4.9 and all prior supported versions of Adobe Commerce have been patched to validate constructors.
 
 Supported parameter types:
 
