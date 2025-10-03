@@ -93,7 +93,7 @@ Supported parameter types:
 
 Unsupported parameter types:
 
--  Models,
+-  Models
 -  Service classes
 -  Other complex types
 
