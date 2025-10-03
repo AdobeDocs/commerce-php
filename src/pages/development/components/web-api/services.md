@@ -118,11 +118,15 @@ These error messages might appear in logs or responses:
 
 -  Unsupported field names for version 2.4.7 and higher:
 
-   ```{ "message": "\"{fieldName}\" is not supported. Correct the field name and try again." }```
+   ```json
+   { "message": "\"{fieldName}\" is not supported. Correct the field name and try again." }
+   ```
 
 -  Unsupported field names for 2.4.6 and lower:
 
-   ```{ "message": "Property \"{fieldName}\" does not have accessor method \"{methodName}\" in class \"{className}\"." }```
+   ```json
+   { "message": "Property \"{fieldName}\" does not have accessor method \"{methodName}\" in class \"{className}\"." }
+   ```
 
 When these errors occur, constructor parameters using complex types are rejected.
 
