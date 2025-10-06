@@ -89,6 +89,7 @@ Adobe Commerce 2.4.9 and all prior supported versions of Adobe Commerce have bee
 Supported parameter types:
 
 -  Simple types (string, int, float, boolean)
+-  Arrays of simple types
 -  `*\Api\Data\*Interface` classes
 
 Unsupported parameter types:
@@ -109,24 +110,17 @@ Developers that previously defined REST APIs must review service interfaces and 
 
 -  **Extension-specific APIs**: Review custom module API implementations.
 
-REST calls that implement unsupported parameter types cause the following behavior:
+### Troubleshooting
 
--  On version 2.4.7 and higher, invalid parameters are silently ignored. Requests succeed, but data might be missing.
--  On version 2.4.6 and lower, invalid parameters might trigger 400/500 errors.
+You might encounter the following error messages when you use an unsupported field name:
 
-These error messages might appear in logs or responses:
+-  On versions 2.4.7 and higher
 
--  Unsupported field names for version 2.4.7 and higher:
+   `{ "message": "\"{fieldName}\" is not supported. Correct the field name and try again." }`
 
-   ```json
-   { "message": "\"{fieldName}\" is not supported. Correct the field name and try again." }
-   ```
+-  On versions 2.4.6 and lower
 
--  Unsupported field names for 2.4.6 and lower:
-
-   ```json
-   { "message": "Property \"{fieldName}\" does not have accessor method \"{methodName}\" in class \"{className}\"." }
-   ```
+   `{ "message": "Property \"{fieldName}\" does not have accessor method \"{methodName}\" in class \"{className}\"." }`
 
 When these errors occur, constructor parameters using complex types are rejected.
 
