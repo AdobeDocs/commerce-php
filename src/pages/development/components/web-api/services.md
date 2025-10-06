@@ -89,7 +89,6 @@ Adobe Commerce 2.4.9 and all prior supported versions of Adobe Commerce have bee
 Supported parameter types:
 
 -  Simple types (string, int, float, boolean)
--  Arrays of simple types
 -  `*\Api\Data\*Interface` classes
 
 Unsupported parameter types:
