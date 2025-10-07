@@ -3,7 +3,7 @@
 name: Add pull requests and issues to projects
 
 on:
-  pull_request_target:
+  pull_request:
     types:
       - opened
   issues:
