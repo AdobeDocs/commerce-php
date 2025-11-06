@@ -9,7 +9,7 @@ The CMS module provides the create, edit, and manage functionality on pages for 
 
 ### Wysiwyg
 
-The Wysiwyg UI component is a customizable and configurable TinyMCE editor.
+The Wysiwyg UI component is a customizable and configurable HugeRTE editor.
 
 The default implementation has the following customizations:
 
