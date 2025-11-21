@@ -85,9 +85,9 @@ Following is a summary of the process:
 
     ```php
     <?php
-   
+
     declare(strict_types=1);
-   
+
     namespace Magento\CommandExample\Console\Command;
 
     use Magento\Framework\Exception\LocalizedException;
@@ -125,7 +125,7 @@ Following is a summary of the process:
          protected function execute(InputInterface $input, OutputInterface $output): int
          {
              $exitCode = 0;
-             
+
              if ($name = $input->getOption(self::NAME)) {
                  $output->writeln('<info>Provided name is `' . $name . '`</info>');
              }
@@ -144,7 +144,7 @@ Following is a summary of the process:
                  ));
                  $exitCode = 1;
              }
-             
+
              return $exitCode;
          }
     }
@@ -152,13 +152,13 @@ Following is a summary of the process:
 
     Style the output text by using `<error>`, `<info>`, or `<comment>` tags. See [Symfony](https://symfony.com/doc/current/console/coloring.html) documentation for more information about styling.
 
-1. Declare your Command class in `Magento\Framework\Console\CommandListInterface` and configure the command name using dependency injection (`<your component root dir>/etc/di.xml`):
+1. Declare your Command class in `Magento\Framework\Console\CommandList` and configure the command name using dependency injection (`<your component root dir>/etc/di.xml`):
 
     ```xml
     <?xml version="1.0"?>
     <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
         ...
-        <type name="Magento\Framework\Console\CommandListInterface">
+        <type name="Magento\Framework\Console\CommandList">
             <arguments>
                 <argument name="commands" xsi:type="array">
                     <item name="commandexample_somecommand" xsi:type="object">Magento\CommandExample\Console\Command\SomeCommand</item>
