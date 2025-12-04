@@ -78,4 +78,4 @@ As a result, if AMQP or STOMP is configured in deployment configuration of the q
 
 <InlineAlert variant="info" slots="text"/>
 
-ActiveMQ Artemis (STOMP) was introduced in Adobe Commerce 2.4.6 and later versions. For STOMP connections, use ANYCAST addressing mode for point-to-point message delivery and load balancing across multiple consumers.
+ActiveMQ Artemis (STOMP) was introduced in Adobe Commerce 2.4.5 and later versions. For STOMP connections, use ANYCAST addressing mode for point-to-point message delivery and load balancing across multiple consumers.

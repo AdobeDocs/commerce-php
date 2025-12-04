@@ -8,28 +8,28 @@ keywords:
 
 # Migrate message queue configuration
 
-## Migrate from 2.4.5 to 2.4.6, 2.4.7, 2.4.8, 2.4.9
+## Migrate from 2.4.4 to 2.4.5, 2.4.6, 2.4.7, 2.4.8, 2.4.9
 
-Adobe Commerce 2.4.9 introduced support for Apache ActiveMQ Artemis (STOMP) as an alternative message broker to RabbitMQ (AMQP). This feature was also backported to versions 2.4.6, 2.4.7, and 2.4.8. When upgrading from 2.4.5 (or earlier) to 2.4.6 or later versions, you have the option to continue using RabbitMQ or migrate to ActiveMQ Artemis.
+Adobe Commerce 2.4.9 introduced support for Apache ActiveMQ Artemis (STOMP) as an alternative message broker to RabbitMQ (AMQP). This feature was also backported to versions 2.4.5, 2.4.6, 2.4.7, and 2.4.8. When upgrading from 2.4.4 (or earlier) to 2.4.5 or later versions, you have the option to continue using RabbitMQ or migrate to ActiveMQ Artemis.
 
-### Key Changes in 2.4.6+
+### Key Changes in 2.4.5+
 
-- **ActiveMQ Artemis (STOMP) Support**: New message broker option alongside RabbitMQ (introduced in 2.4.9, backported to 2.4.6, 2.4.7, 2.4.8)
+- **ActiveMQ Artemis (STOMP) Support**: New message broker option alongside RabbitMQ (introduced in 2.4.9, backported to 2.4.5, 2.4.6, 2.4.7, 2.4.8)
 - **Extended Dynamic Connection Detection**: Existing dynamic connection detection now supports STOMP in addition to AMQP
 - **Enhanced SSL Configuration**: Improved SSL options for both brokers
 - **Multiple Named Connections**: Enhanced support for configuring multiple broker connections
 
 ### Configuration File Changes
 
-The following table shows the key differences between 2.4.5 and 2.4.6+ configurations:
+The following table shows the key differences between 2.4.4 and 2.4.5+ configurations:
 
-| Configuration Area | 2.4.5 | 2.4.6+ |
+| Configuration Area | 2.4.4 | 2.4.5+ |
 | ------------------ | ----- | ------ |
 | `env.php` default_connection | Optional when single broker configured | Optional when single broker configured; required when multiple brokers (can be `'amqp'`, `'stomp'`, or `'db'`) |
 | `env.php` broker configuration | RabbitMQ (AMQP) only | RabbitMQ (AMQP) and/or ActiveMQ Artemis (STOMP) |
-| `queue_consumer.xml` connection attribute | Optional (auto-detected from env.php) | Optional (auto-detected, now includes STOMP in 2.4.6+) |
+| `queue_consumer.xml` connection attribute | Optional (auto-detected from env.php) | Optional (auto-detected, now includes STOMP in 2.4.5+) |
 | `queue_publisher.xml` connection element | Optional for AMQP, supports multiple connections | Optional for AMQP/STOMP, enhanced multiple connections |
-| `queue_topology.xml` connection attribute | Optional (auto-detected from env.php) | Optional (auto-detected, now includes STOMP in 2.4.6+) |
+| `queue_topology.xml` connection attribute | Optional (auto-detected from env.php) | Optional (auto-detected, now includes STOMP in 2.4.5+) |
 
 ### Update `env.php` Configuration
 
@@ -48,7 +48,7 @@ The following table shows the key differences between 2.4.5 and 2.4.6+ configura
 ]
 ```
 
-**For ActiveMQ Artemis (STOMP) - Available in 2.4.6+ (introduced in 2.4.9, backported to 2.4.6-2.4.8):**
+**For ActiveMQ Artemis (STOMP) - Available in 2.4.5+ (introduced in 2.4.9, backported to 2.4.5-2.4.8):**
 
 ```php
 'queue' => [
@@ -62,7 +62,7 @@ The following table shows the key differences between 2.4.5 and 2.4.6+ configura
 ]
 ```
 
-**For Both Brokers - Available in 2.4.6+ (requires `default_connection`):**
+**For Both Brokers - Available in 2.4.5+ (requires `default_connection`):**
 
 ```php
 'queue' => [
@@ -95,30 +95,30 @@ The `connection` attribute in XML configuration files (`queue_consumer.xml`, `qu
 
 ### Update `queue_consumer.xml` Files
 
-The first column in the following table lists parameters in 2.4.6+ `queue_consumer.xml` files. The second column shows the equivalent in 2.4.5.
+The first column in the following table lists parameters in 2.4.5+ `queue_consumer.xml` files. The second column shows the equivalent in 2.4.4.
 
-| 2.4.6+ Attribute | 2.4.5 Equivalent | Notes |
+| 2.4.5+ Attribute | 2.4.4 Equivalent | Notes |
 | ----------------- | ----------------- | ----- |
 | `<consumer>/name` | `<consumer>/name` | No change |
 | `<consumer>/queue` | `<consumer>/queue` | No change |
 | `<consumer>/handler` | `<consumer>/handler` | No change |
 | `<consumer>/consumerInstance` | `<consumer>/consumerInstance` | No change |
-| `<consumer>/connection` | `<consumer>/connection` | Optional in both versions, auto-detected from env.php. In 2.4.6+ also supports STOMP. Use explicitly to force specific broker selection. |
+| `<consumer>/connection` | `<consumer>/connection` | Optional in both versions, auto-detected from env.php. In 2.4.5+ also supports STOMP. Use explicitly to force specific broker selection. |
 | `<consumer>/maxMessages` | `<consumer>/maxMessages` | No change |
 
-**2.4.5 Example:**
+**2.4.4 Example:**
 
 ```xml
 <consumer name="example.consumer" queue="example.queue" connection="amqp" maxMessages="100" />
 ```
 
-**2.4.6+ Example (Uses default broker from env.php):**
+**2.4.5+ Example (Uses default broker from env.php):**
 
 ```xml
 <consumer name="example.consumer" queue="example.queue" maxMessages="100" />
 ```
 
-**2.4.6+ Example (Explicitly specifies broker):**
+**2.4.5+ Example (Explicitly specifies broker):**
 
 ```xml
 <!-- Force this consumer to use AMQP even if multiple brokers are configured -->
@@ -130,18 +130,18 @@ The first column in the following table lists parameters in 2.4.6+ `queue_consum
 
 ### Update `queue_publisher.xml` Files
 
-The first column in the following table lists parameters in 2.4.6+ `queue_publisher.xml` files. The second column shows the equivalent in 2.4.5.
+The first column in the following table lists parameters in 2.4.5+ `queue_publisher.xml` files. The second column shows the equivalent in 2.4.4.
 
-| 2.4.6+ Attribute | 2.4.5 Equivalent | Notes |
+| 2.4.5+ Attribute | 2.4.4 Equivalent | Notes |
 | ----------------- | ----------------- | ----- |
 | `<publisher>/topic` | `<publisher>/topic` | No change |
-| `<publisher>/queue` | Not available | Available in 2.4.6+ for ActiveMQ Artemis |
+| `<publisher>/queue` | Not available | Available in 2.4.5+ for ActiveMQ Artemis |
 | `<publisher>/disabled` | `<publisher>/disabled` | No change |
-| `<publisher>/<connection>/name` | `<publisher>/<connection>/name` | Can specify `stomp` for ActiveMQ (2.4.6+) |
+| `<publisher>/<connection>/name` | `<publisher>/<connection>/name` | Can specify `stomp` for ActiveMQ (2.4.5+) |
 | `<publisher>/<connection>/exchange` | `<publisher>/<connection>/exchange` | Not used with STOMP |
-| `<publisher>/<connection>/disabled` | `<publisher>/<connection>/disabled` | Enhanced in 2.4.6+ for multiple connections |
+| `<publisher>/<connection>/disabled` | `<publisher>/<connection>/disabled` | Enhanced in 2.4.5+ for multiple connections |
 
-**2.4.5 Example (RabbitMQ only):**
+**2.4.4 Example (RabbitMQ only):**
 
 ```xml
 <publisher topic="example.topic">
@@ -149,7 +149,7 @@ The first column in the following table lists parameters in 2.4.6+ `queue_publis
 </publisher>
 ```
 
-**2.4.6+ Example (RabbitMQ):**
+**2.4.5+ Example (RabbitMQ):**
 
 ```xml
 <publisher topic="example.topic">
@@ -158,7 +158,7 @@ The first column in the following table lists parameters in 2.4.6+ `queue_publis
 </publisher>
 ```
 
-**2.4.6+ Example (ActiveMQ Artemis):**
+**2.4.5+ Example (ActiveMQ Artemis):**
 
 ```xml
 <publisher topic="example.topic" queue="example.queue">
@@ -169,13 +169,13 @@ The first column in the following table lists parameters in 2.4.6+ `queue_publis
 
 ### Update `queue_topology.xml` Files
 
-The first column in the following table lists parameters in 2.4.6+ `queue_topology.xml` files. The second column shows the equivalent in 2.4.5.
+The first column in the following table lists parameters in 2.4.5+ `queue_topology.xml` files. The second column shows the equivalent in 2.4.4.
 
-| 2.4.6+ Attribute | 2.4.5 Equivalent | Notes |
+| 2.4.5+ Attribute | 2.4.4 Equivalent | Notes |
 | ----------------- | ----------------- | ----- |
 | `<exchange>/name` | `<exchange>/name` | No change |
 | `<exchange>/type` | `<exchange>/type` | No change |
-| `<exchange>/connection` | `<exchange>/connection` | Optional in both versions, auto-detected from env.php. In 2.4.6+ also supports STOMP. Use explicitly to force specific broker selection. |
+| `<exchange>/connection` | `<exchange>/connection` | Optional in both versions, auto-detected from env.php. In 2.4.5+ also supports STOMP. Use explicitly to force specific broker selection. |
 | `<exchange>/durable` | `<exchange>/durable` | No change |
 | `<exchange>/autoDelete` | `<exchange>/autoDelete` | No change |
 | `<exchange>/<binding>/id` | `<exchange>/<binding>/id` | No change |
@@ -183,7 +183,7 @@ The first column in the following table lists parameters in 2.4.6+ `queue_topolo
 | `<exchange>/<binding>/destinationType` | `<exchange>/<binding>/destinationType` | No change |
 | `<exchange>/<binding>/destination` | `<exchange>/<binding>/destination` | No change |
 
-**2.4.5 Example:**
+**2.4.4 Example:**
 
 ```xml
 <exchange name="magento" type="topic" connection="amqp">
@@ -191,7 +191,7 @@ The first column in the following table lists parameters in 2.4.6+ `queue_topolo
 </exchange>
 ```
 
-**2.4.6+ Example (Uses default broker from env.php):**
+**2.4.5+ Example (Uses default broker from env.php):**
 
 ```xml
 <exchange name="magento" type="topic">
@@ -199,7 +199,7 @@ The first column in the following table lists parameters in 2.4.6+ `queue_topolo
 </exchange>
 ```
 
-**2.4.6+ Example (Explicitly specifies broker):**
+**2.4.5+ Example (Explicitly specifies broker):**
 
 ```xml
 <!-- Force this exchange to use AMQP even if multiple brokers are configured -->
@@ -215,11 +215,11 @@ The first column in the following table lists parameters in 2.4.6+ `queue_topolo
 
 <InlineAlert variant="info" slots="text"/>
 
-Connection detection has always been dynamic based on your `env.php` configuration. If AMQP is configured in deployment configuration, the AMQP connection is used automatically. In 2.4.6+, this same dynamic detection was extended to support STOMP connections. This allows you to omit connection declarations in XML configuration files.
+Connection detection has always been dynamic based on your `env.php` configuration. If AMQP is configured in deployment configuration, the AMQP connection is used automatically. In 2.4.5+, this same dynamic detection was extended to support STOMP connections. This allows you to omit connection declarations in XML configuration files.
 
 <InlineAlert variant="info" slots="text"/>
 
-ActiveMQ Artemis (STOMP) was introduced in Adobe Commerce 2.4.9 and backported to versions 2.4.6, 2.4.7, and 2.4.8. For STOMP connections, use ANYCAST addressing mode for point-to-point message delivery and load balancing across multiple consumers.
+ActiveMQ Artemis (STOMP) was introduced in Adobe Commerce 2.4.9 and backported to versions 2.4.5, 2.4.6, 2.4.7, and 2.4.8. For STOMP connections, use ANYCAST addressing mode for point-to-point message delivery and load balancing across multiple consumers.
 
 ## Migrate from 2.1 to 2.2
 
