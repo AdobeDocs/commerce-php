@@ -8,13 +8,12 @@ keywords:
 
 # Migrate message queue configuration
 
-## Migrate from 2.4.4 to 2.4.5, 2.4.6, 2.4.7, 2.4.8, 2.4.9
+## Migrate from 2.4.4 to 2.4.5, 2.4.6, 2.4.7, 2.4.8
 
-Adobe Commerce 2.4.9 introduced support for Apache ActiveMQ Artemis (STOMP) as an alternative message broker to RabbitMQ (AMQP). This feature was also backported to versions 2.4.5, 2.4.6, 2.4.7, and 2.4.8. When upgrading from 2.4.4 (or earlier) to 2.4.5 or later versions, you have the option to continue using RabbitMQ or migrate to ActiveMQ Artemis.
-
+Adobe Commerce introduced support for Apache ActiveMQ Artemis (STOMP) as an alternative message broker to RabbitMQ (AMQP), and this feature was backported to versions 2.4.5, 2.4.6, 2.4.7, and 2.4.8. When upgrading from 2.4.4 (or earlier) to 2.4.5 or later, you can continue using RabbitMQ or choose to migrate to ActiveMQ Artemis.
 ### Key Changes in 2.4.5+
 
-- **ActiveMQ Artemis (STOMP) Support**: New message broker option alongside RabbitMQ (introduced in 2.4.9, backported to 2.4.5, 2.4.6, 2.4.7, 2.4.8)
+- **ActiveMQ Artemis (STOMP) Support**: New message broker option alongside RabbitMQ (backported to 2.4.5, 2.4.6, 2.4.7, 2.4.8)
 - **Extended Dynamic Connection Detection**: Existing dynamic connection detection now supports STOMP in addition to AMQP
 - **Enhanced SSL Configuration**: Improved SSL options for both brokers
 - **Multiple Named Connections**: Enhanced support for configuring multiple broker connections
@@ -48,7 +47,7 @@ The following table shows the key differences between 2.4.4 and 2.4.5+ configura
 ]
 ```
 
-**For ActiveMQ Artemis (STOMP) - Available in 2.4.5+ (introduced in 2.4.9, backported to 2.4.5-2.4.8):**
+**For ActiveMQ Artemis (STOMP) - Available in 2.4.5+ (backported to 2.4.5-2.4.8):**
 
 ```php
 'queue' => [
@@ -219,8 +218,7 @@ Connection detection has always been dynamic based on your `env.php` configurati
 
 <InlineAlert variant="info" slots="text"/>
 
-ActiveMQ Artemis (STOMP) was introduced in Adobe Commerce 2.4.9 and backported to versions 2.4.5, 2.4.6, 2.4.7, and 2.4.8. For STOMP connections, use ANYCAST addressing mode for point-to-point message delivery and load balancing across multiple consumers.
-
+ActiveMQ Artemis (STOMP) was backported to Adobe Commerce versions 2.4.5, 2.4.6, 2.4.7, and 2.4.8. For STOMP connections, use ANYCAST addressing mode for point-to-point message delivery and load balancing across multiple consumers.
 ## Migrate from 2.1 to 2.2
 
 To upgrade the message queues for Adobe Commerce or Magento Open Source 2.1, you must create the following files in the `<module>/etc` directory for each module that will use the message queue framework.
