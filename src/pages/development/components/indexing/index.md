@@ -103,17 +103,15 @@ Without this mode, it was necessary to manually reset the indexer when it failed
 
 Reindexing can be performed in two modes:
 
-*  Update on Save - index tables are updated immediately after the dictionary data is changed.
+*  Update on Save - Index tables are updated immediately after the dictionary data is changed. Indexers set to Update on Save must use custom code (plugins, events or any other working approach) in order to trigger reindexing when entities are saved or deleted.
 
-<InlineAlert variant="info" slots="text"/>
+*  Update by Schedule - Index tables are updated by cron job according to the configured schedule.
 
-**Update on Save** indexers must use custom code (plugins, events or any other working approach) in order to trigger reindexing when entities are saved/deleted etc.
+   The `customer_grid` indexer behavior changed in 2.4.8.
 
-*  Update by Schedule - index tables are updated by cron job according to the configured schedule.
+   * **Prior to 2.4.8**: The indexer can only be reindexed using the Update on Save mode and does not support the Update by Schedule mode. See the [knowledge base](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/new-customers-not-displayed-in-customer-grid-after-csv-import#affected-versions) for troubleshooting the customer grid after a CSV import.
 
-<InlineAlert variant="info" slots="text"/>
-
-**Update by Schedule** does not support the `customer_grid` indexer. You must either use **Update on Save** or reindex the customer grid manually (`bin/magento indexer:reindex customer_grid`). See the [Help Center article](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/new-customers-not-displayed-in-customer-grid-after-csv-import).
+   * **2.4.8 and later**: The indexer supports both Update on Save and Update by Schedule modes, and defaults to Update by Schedule.
 
 To set these options:
 
@@ -123,7 +121,7 @@ To set these options:
 1. From the **Actions** list, click the indexing mode.
 1. Click **Submit**.
 
-You can also reindex from the [command line](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers)
+You can also reindex from the [command line](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers).
 
 The following figure shows an example of setting indexers to Update by Schedule:
 
