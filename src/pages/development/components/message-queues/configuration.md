@@ -285,7 +285,7 @@ You cannot enable more than one `publisher` for each `topic`.
 
 <InlineAlert variant="info" slots="text"/>
 
-ActiveMQ Artemis (STOMP) support was introduced in Adobe Commerce 2.4.6 and later versions. For STOMP connections, use ANYCAST addressing mode for point-to-point message delivery and load balancing across multiple consumers.
+ActiveMQ Artemis (STOMP) support was introduced in Adobe Commerce 2.4.5 and later versions. For STOMP connections, use ANYCAST addressing mode for point-to-point message delivery and load balancing across multiple consumers.
 
 ## Updating `queue.xml`
 
