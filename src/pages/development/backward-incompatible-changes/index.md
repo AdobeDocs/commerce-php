@@ -158,6 +158,7 @@ The GraphQL type for `ProductInterface.gift_message_available` was changed from 
 
 1. Update GraphQL queries and client-side code to expect a boolean for `gift_message_available`.
 2. Update any custom resolvers or mappers to cast or convert stored values to boolean, for example:
+
    ```php
    // Example resolver change in a PHP resolver
    return (bool) $product->getData('gift_message_available');
