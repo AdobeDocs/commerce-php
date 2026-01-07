@@ -143,6 +143,26 @@ The following module is affected by this change:
 
 * paypal/module-braintree-core
 
+### Updated GraphQL ProductInterface.gift_message_available type
+
+The GraphQL type for `ProductInterface.gift_message_available` was changed from `String` to a non-nullable boolean (`Boolean!`) to provide a consistent and type-safe representation of whether gift messages are available for a product.
+
+**Impact:**
+
+* GraphQL queries and clients that expect a string value will now receive a boolean.
+* Frontend code, integrations, and custom GraphQL clients must handle `true`/`false` instead of string values like `"1"`, `"0"`, `"true"`, or `"false"`.
+* Custom GraphQL resolvers and extensions that return or map this field must return a boolean value.
+* Unit and integration tests that assert string values for this field will fail until updated.
+
+**Action Required:**
+
+1. Update GraphQL queries and client-side code to expect a boolean for `gift_message_available`.
+2. Update any custom resolvers or mappers to cast or convert stored values to boolean, for example:
+   ```php
+   // Example resolver change in a PHP resolver
+   return (bool) $product->getData('gift_message_available');
+   ```
+
 ### Updated default collation for MySQL
 
 The system now defaults to using `utf8mb4` collation for MySQL, ensuring compatibility with MySQL 8 and future-proofing against the deprecation of `utf8mb3`. Previously, the system defaulted to using the `utf8mb3` collation, which is deprecated in MySQL 8.
