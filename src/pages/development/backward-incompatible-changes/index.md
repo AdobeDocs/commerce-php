@@ -153,6 +153,7 @@ The GraphQL type for `ProductInterface.gift_message_available` was changed from 
 * Frontend code, integrations, and custom GraphQL clients must handle `true`/`false` instead of string values like `"1"`, `"0"`, `"true"`, or `"false"`.
 * Custom GraphQL resolvers and extensions that return or map this field must return a boolean value.
 * Unit and integration tests that assert string values for this field will fail until updated.
+* REST is not affected.
 
 **Action Required:**
 
