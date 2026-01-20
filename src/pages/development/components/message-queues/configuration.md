@@ -269,7 +269,7 @@ __For ActiveMQ Artemis (STOMP):__
 
 #### `connection` element
 
-The `connection` element is a subnode of the `publisher` element. There must not be more than one enabled active connection to a publisher defined at a time. If you omit the `connection` element, connection will be defined dynamically based on deployment configuration of message queue in `env.php` and exchange `magento` will be used. If AMQP or STOMP is configured in deployment configuration, the respective connection is used. Otherwise, db connection is used.
+The `connection` element is a subnode of the `publisher` element. There must not be more than one enabled active connection to a publisher defined at a time. If you omit the `connection` element, the connection is defined dynamically based on deployment configuration of message queue in `env.php` and `magento` is used as the exchange. If AMQP or STOMP is configured in the deployment configuration, the respective connection is used. Otherwise, the `db` connection is used.
 
 | Attribute            | Description |
 | -------------------- | ----------- |
