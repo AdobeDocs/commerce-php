@@ -347,7 +347,9 @@ The `queue_publisher.xml` file defines the exchange where a topic is published. 
 </config>
 ```
 
-**Note**: For ActiveMQ Artemis, the `<connection>` element is not required as the connection type is determined from `env.php`. When the topic name and queue name are different, you must specify the `queue` attribute in the `<publisher>` element.
+>[!NOTE]
+>
+>For ActiveMQ Artemis, the `<connection>` element is not required as the connection type is determined from `env.php`. When the topic name and queue name are different, you must specify the `queue` attribute in the `<publisher>` element.
 
 ### Create `queue_topology.xml`
 
