@@ -306,12 +306,20 @@ module.exports = [
               path: "/development/components/web-api/services/",
             },
             {
+              title: "Resource accessibility",
+              path: "/development/components/web-api/resource-accessibility/",
+            },
+            {
               title: "Set custom routes",
               path: "/development/components/web-api/custom-routes/",
             },
             {
               title: "Request processor pool",
               path: "/development/components/web-api/request-processor-pool/",
+            },
+            {
+              title: "cURL service wrapper",
+              path: "/development/components/web-api/curl/",
             },
             {
               title: "Inventory Management API reference",

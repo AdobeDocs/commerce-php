@@ -1,4 +1,6 @@
 ##### Aggregate Commerce PRs and Issues into a respective Organizational Project #####
+# Security Note: Uses pull_request_target to allow fork PRs to be added to projects
+# This is safe because we only add PRs to projects, no code execution from PRs
 
 name: Add pull requests and issues to projects
 
@@ -9,6 +11,12 @@ on:
   issues:
     types: 
       - opened
+
+# Security: Limit permissions to only what's needed
+permissions:
+  pull-requests: write
+  issues: write
+  contents: read
 
 jobs:
   call-workflow-add-to-project:
