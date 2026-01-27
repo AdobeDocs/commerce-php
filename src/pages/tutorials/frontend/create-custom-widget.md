@@ -120,13 +120,13 @@ where `Vendor_Module` is replaced with the module name.
 
 After clearing the cache, the new widget `My New Widget` should be available.
 
-![Custom Widget](../../_images/tutorials/custom-widget.png)
+![Custom Widget](../../images/tutorials/custom-widget.png)
 
 To add it to the homepage, below the page content:
 
 After selecting the widget type and the layout location, we should be able to see the widget's options.
 
-![Widget Options](../../_images/tutorials/custom-widget-options.png)
+![Widget Options](../../images/tutorials/custom-widget-options.png)
 
 ### Step 4. Create the block
 
@@ -177,4 +177,4 @@ bin/magento cache:clean
 
 The widget is now shown on the frontend.
 
-![Widget Options](../../_images/tutorials/custom-widget-result.png)
+![Widget Options](../../images/tutorials/custom-widget-result.png)

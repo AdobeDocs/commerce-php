@@ -7,7 +7,7 @@ keywords:
   - Payments
 ---
 
-<Fragment src='/_includes/braintree-note.md'/>
+<Fragment src='/includes/braintree-note.md'/>
 
 # Commerce payment provider gateway
 
@@ -17,7 +17,7 @@ The Adobe Commerce payment provider gateway is a mechanism that allows you to in
 
 The following diagram shows a simplified interaction flow between Adobe Commerce sales management and external payment service provider using Commerce payment provider gateway:
 
-![Payment Gateway Interaction](../../../_images/pg_interaction_flow.png)
+![Payment Gateway Interaction](../../../images/pg_interaction_flow.png)
 
 Commerce payment provider supports the following payment operations:
 

@@ -55,11 +55,11 @@ In this tutorial, we are creating four custom resources (Custom Menu, Create, De
 
 1. Then, click a Role Resources tab and select **Resource Access as Custom**.
 
-   ![Resource access as custom](../../_images/tutorials/resource-access-custom-create-acl-rule.png)
+   ![Resource access as custom](../../images/tutorials/resource-access-custom-create-acl-rule.png)
 
 1. Select the **Custom Menu**, **Create**, and **Delete** resources and save the role.
 
-   ![Resource tree](../../_images/tutorials/role-resources-create-acl-rule.png)
+   ![Resource tree](../../images/tutorials/role-resources-create-acl-rule.png)
 
 ## Step 2. Restrict access to Admin users
 
@@ -97,7 +97,7 @@ bin/magento cache:clean
 
 The menu displays as follows:
 
-![custom menu](../../_images/tutorials/custom_menu.jpg)
+![custom menu](../../images/tutorials/custom_menu.jpg)
 
 ### Restrict admin controllers
 
@@ -158,11 +158,11 @@ The `view/adminhtml/layout/custommenu_view_index.xml` example file below contain
 
 When the ACL resource for `Vendor_ModuleName::view_additional` is enabled, the result is:
 
-![admin page full content](../../_images/tutorials/acl-admin-page-content-full-access.jpg)
+![admin page full content](../../images/tutorials/acl-admin-page-content-full-access.jpg)
 
 When the ACL resource is disabled, the content on the page differs:
 
-![admin page content limited](../../_images/tutorials/acl-admin-limited-page-content.jpg)
+![admin page content limited](../../images/tutorials/acl-admin-limited-page-content.jpg)
 
 ## Step 3. Restrict web API access
 

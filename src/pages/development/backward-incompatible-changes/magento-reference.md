@@ -29,20 +29,20 @@ Patch releases are primarily focused on delivering security and quality enhancem
 
 ## 2.4.7 - 2.4.8
 
-<Fragment src='/_includes/backward-incompatible-changes/open-source/2.4.7-2.4.8.md'/>
+<Fragment src='/includes/backward-incompatible-changes/open-source/2.4.7-2.4.8.md'/>
 
 ## 2.4.6 - 2.4.7
 
-<Fragment src='/_includes/backward-incompatible-changes/open-source/2.4.6-2.4.7.md'/>
+<Fragment src='/includes/backward-incompatible-changes/open-source/2.4.6-2.4.7.md'/>
 
 ## 2.4.5 - 2.4.6
 
-<Fragment src='/_includes/backward-incompatible-changes/open-source/2.4.5-2.4.6.md'/>
+<Fragment src='/includes/backward-incompatible-changes/open-source/2.4.5-2.4.6.md'/>
 
 ## 2.4.4 - 2.4.5
 
-<Fragment src='/_includes/backward-incompatible-changes/open-source/2.4.4-2.4.5.md'/>
+<Fragment src='/includes/backward-incompatible-changes/open-source/2.4.4-2.4.5.md'/>
 
 ## 2.4.3 - 2.4.4
 
-<Fragment src='/_includes/backward-incompatible-changes/open-source/2.4.3-2.4.4.md'/>
+<Fragment src='/includes/backward-incompatible-changes/open-source/2.4.3-2.4.4.md'/>

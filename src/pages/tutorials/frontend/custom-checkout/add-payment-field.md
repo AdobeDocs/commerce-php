@@ -348,7 +348,7 @@ Use the following steps to verify your changes work as expected.
 
 1. Verify that the **Purchase Order Comment** field is visible.
 
-   ![Custom field in checkout page](../../../_images/tutorials/custom_field_payment.png)
+   ![Custom field in checkout page](../../../images/tutorials/custom_field_payment.png)
 
 1. Fill the purchase order comment field in the checkout and place an order.
 

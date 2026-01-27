@@ -31,31 +31,31 @@ Patch releases are primarily focused on delivering security and quality enhancem
 
 Adobe Commerce v2.4.8 includes the [B2B extension][] v1.5.2.
 
-<Fragment src='/_includes/backward-incompatible-changes/commerce/2.4.7-2.4.8.md'/>
+<Fragment src='/includes/backward-incompatible-changes/commerce/2.4.7-2.4.8.md'/>
 
 ## 2.4.6 - 2.4.7
 
 Adobe Commerce v2.4.7 includes the [B2B extension][] v1.4.2.
 
-<Fragment src='/_includes/backward-incompatible-changes/commerce/2.4.6-2.4.7.md'/>
+<Fragment src='/includes/backward-incompatible-changes/commerce/2.4.6-2.4.7.md'/>
 
 ## 2.4.5 - 2.4.6
 
 Adobe Commerce v2.4.6 includes the [B2B extension][] v1.3.5.
 
-<Fragment src='/_includes/backward-incompatible-changes/commerce/2.4.5-2.4.6.md'/>
+<Fragment src='/includes/backward-incompatible-changes/commerce/2.4.5-2.4.6.md'/>
 
 ## 2.4.4 - 2.4.5
 
 Adobe Commerce v2.4.5 includes the [B2B extension][] v1.3.4.
 
-<Fragment src='/_includes/backward-incompatible-changes/commerce/2.4.4-2.4.5.md'/>
+<Fragment src='/includes/backward-incompatible-changes/commerce/2.4.4-2.4.5.md'/>
 
 ## 2.4.3 - 2.4.4
 
 Adobe Commerce v2.4.4 includes the [B2B extension][] v1.3.3.
 
-<Fragment src='/_includes/backward-incompatible-changes/commerce/2.4.3-2.4.4.md'/>
+<Fragment src='/includes/backward-incompatible-changes/commerce/2.4.3-2.4.4.md'/>
 
 
 \<!-- Links -->

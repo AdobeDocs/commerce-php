@@ -184,11 +184,11 @@ Use the following steps:
 
    `cache` table example.
 
-   ![Sample contents of the cache table with database caching enabled](../../../_images/config-db_cache-table.png)
+   ![Sample contents of the cache table with database caching enabled](../../../images/config-db_cache-table.png)
 
    `cache_tag` table example.
 
-   ![Sample contents of the cache tag table with database caching enabled](../../../_images/config-db_cache-tag-table.png)
+   ![Sample contents of the cache tag table with database caching enabled](../../../images/config-db_cache-tag-table.png)
 
 ## Configuration examples
 

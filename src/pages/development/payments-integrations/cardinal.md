@@ -17,7 +17,7 @@ The Cardinal Cruise Standard integration is purely a JavaScript approach that is
 
 The following diagram shows a simplified 3-D Secure verification flow using Cardinal Cruise Standard integration approach provided by CardinalCommerce:
 
-![CardinalCommerce Interaction](../../_images/cardinal_commerce.svg)
+![CardinalCommerce Interaction](../../images/cardinal_commerce.svg)
 
 ## Magento_CardinalCommerce module overview
 

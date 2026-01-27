@@ -13,7 +13,7 @@ In addition, you can choose the component root directory to start development. T
 
 ## Root directory location
 
-<Fragment src='/_includes/component-root.md'/>
+<Fragment src='/includes/component-root.md'/>
 
 ## Required files
 

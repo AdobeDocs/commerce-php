@@ -9,4 +9,4 @@ keywords:
 
 Each component type has a different [directory structure](../build/component-file-structure.md) and different contents for [`composer.json`](../build/composer-integration.md).
 
-<Fragment src='/_includes/composer-types.md'/>
+<Fragment src='/includes/composer-types.md'/>

@@ -13,7 +13,7 @@ Read more in the [official documentation](https://plugins.jetbrains.com/docs/int
 you can find plugin inspections  in `Settings | Preferences... | Editor | Inspections`.
 Use a filter to find only the plugin inspections: `Magento 2`.
 
-![Image of the Magento 2 Group Inspections](../../_images/best-practices/phpstorm/Intellij-idea-plugin-editor-local-inspections.png)
+![Image of the Magento 2 Group Inspections](../../images/best-practices/phpstorm/Intellij-idea-plugin-editor-local-inspections.png)
 
 See [Inspections topic](https://plugins.jetbrains.com/docs/intellij/inspections.html) in the IntelliJ Platform UI Guidelines
 for naming, writing descriptions, and messages for inspections to avoid basic naming convention issues before code review.
@@ -173,7 +173,7 @@ You must describe all inspections in the description file. To do this, you can a
 `./resources/inspectionDescriptions/{shortName}.html`, where `{shortName}` is a `shortName` attribute value in the
 local inspection declaration. Or you can just use Intellij Idea automation to do this (preferred).
 All inspection implementation classes have highlighted class names if they don't have description files. Here's a quick fix to create it:
-![Create Inspection Description File Quick Fix](../../_images/best-practices/phpstorm/Intellij-idea-plugin-create-inspection-description-quick-fix.png)
+![Create Inspection Description File Quick Fix](../../images/best-practices/phpstorm/Intellij-idea-plugin-create-inspection-description-quick-fix.png)
 
 Use [Inspections topic](https://plugins.jetbrains.com/docs/intellij/inspections.html) to write better descriptions for inspections using naming conventions.
 

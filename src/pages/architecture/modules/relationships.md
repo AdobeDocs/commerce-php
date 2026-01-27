@@ -27,22 +27,22 @@ A single module can have the following types of relationships with another modul
 
 In a scenario where module A uses module B and module C customizes module B, the customizations in module C must not break the API of module B so that module A still functions properly in the face of these customizations.
 
-![Module relationship scenarios: A uses B, C customizes B](../../_images/archi_first_relate.png)
+![Module relationship scenarios: A uses B, C customizes B](../../images/archi_first_relate.png)
 
 ### A reacts to B, C customizes B
 
 Similarly, in a case where module A reacts to module B and module C customizes module B, the customizations in module C must not interfere with the events in module B that module A depends on.
 
-![Module relationship scenarios: A reacts to B, C customizes B](../../_images/archi_second_relate.png)
+![Module relationship scenarios: A reacts to B, C customizes B](../../images/archi_second_relate.png)
 
 ### A and C customize B
 
 If both module A and C customize module B, be careful about how these customizations are implemented so that you avoid conflicts (see below).
 
-![Module relationship scenarios: A and C customize B](../../_images/archi_third_relate.png)
+![Module relationship scenarios: A and C customize B](../../images/archi_third_relate.png)
 
 ### A replaces B
 
 If module A replaces module B, it needs to be able to do so in such a way that other modules are not affected. That will mean not having direct hard dependencies on module B, but rather dependencies on a third module, module C, that both module A and B implement.
 
-![Module relationship scenarios: A replaces B](../../_images/archi_fourth_relate.png)
+![Module relationship scenarios: A replaces B](../../images/archi_fourth_relate.png)

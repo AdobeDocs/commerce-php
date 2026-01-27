@@ -7,7 +7,7 @@ keywords:
 
 <SuperHero slots="image, heading, text"/>
 
-![Commerce PHP Extensions](_images/home-bg.jpeg)
+![Commerce PHP Extensions](images/home-bg.jpeg)
 
 # Commerce PHP Extensions
 

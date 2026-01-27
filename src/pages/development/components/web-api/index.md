@@ -7,5 +7,5 @@ keywords:
 
 # Web APIs
 
-<Fragment src='/_includes/web-api.md'/>
+<Fragment src='/includes/web-api.md'/>
 

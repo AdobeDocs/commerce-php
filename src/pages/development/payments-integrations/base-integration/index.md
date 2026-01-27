@@ -7,7 +7,7 @@ keywords:
   - Payments
 ---
 
-<Fragment src='/_includes/braintree-note.md'/>
+<Fragment src='/includes/braintree-note.md'/>
 
 # Adding a new payment integration (payment method)
 

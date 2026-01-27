@@ -31,7 +31,7 @@ Element | Description
 
 The Commerce Marketplace does not support the Composer `source` and `dist` properties. All extensions distributed via the Marketplace are installed from the Commerce package repository. If your `composer.json` contains `source` or `dist` properties, it will cause failures in the EQP automation.
 
-<Fragment src='/_includes/composer-types.md'/>
+<Fragment src='/includes/composer-types.md'/>
 
 
 ### Using metapackages

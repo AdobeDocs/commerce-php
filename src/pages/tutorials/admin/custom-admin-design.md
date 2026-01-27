@@ -32,11 +32,11 @@ The following walk-through uses version 2.1.0 and later.
 
 On a default Adobe Commerce or Magento Open Source installation, when you navigate to **CONTENT > Design > Configuration** in Admin, the first page that opens displays a grid with the available configuration scopes and assigned themes. It looks like following:
 
-![Design Configuration](../../_images/tutorials/design_conf1.png)
+![Design Configuration](../../images/tutorials/design_conf1.png)
 
 When you click **Edit** in any of the scope records, the page with available design options is displayed. For example, the default set of design options for the store view level is the following:
 
-![Default Store View](../../_images/tutorials/design_conf2.png)
+![Default Store View](../../images/tutorials/design_conf2.png)
 
 Both the grid and the configuration form are implemented using UI components.
 
