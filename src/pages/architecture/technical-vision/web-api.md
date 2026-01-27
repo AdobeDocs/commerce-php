@@ -7,9 +7,7 @@ keywords:
 
 # Web API technical vision
 
-import Docs from '/src/_includes/web-api.md'
-
-<Docs />
+<Fragment src="/_includes/web-api.md"/>
 
 See [more details](https://en.wikipedia.org/wiki/Web_API) about the importance of web APIs in modern web applications.
 

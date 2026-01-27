@@ -222,8 +222,8 @@ Certificate value is cached.
 This authentication mechanism enabled for REST and SOAP web API areas.
 
 Examples, how developers can test functionality:
-curl -X GET "{domain}/rest/V1/customers/2" -H "Authorization: Bearer AddAdobeImsAccessToken"
-curl -X GET "{domain}/rest/V1/products/24-MB01" -H "Authorization: Bearer AddAdobeImsAccessToken"
+curl -X GET "\{domain\}/rest/V1/customers/2" -H "Authorization: Bearer AddAdobeImsAccessToken"
+curl -X GET "\{domain\}/rest/V1/products/24-MB01" -H "Authorization: Bearer AddAdobeImsAccessToken"
 
 ### Two-factor authentication
 

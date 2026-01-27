@@ -159,7 +159,7 @@ See table below:
 | Integer    | 1        | true          |
 | Integer    | 0        | false         |
 
-<small>*These String literals are case-sensitive</small>
+*These String literals are case-sensitive
 
 ---
 

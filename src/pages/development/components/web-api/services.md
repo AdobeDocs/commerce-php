@@ -128,131 +128,15 @@ When these errors occur, constructor parameters using complex types are rejected
 To define web API components, set these attributes on these XML elements in the
    `webapi.xml` configuration file, as follows:
 
-<table style="width:100%">
-   <tr bgcolor="lightgray">
-      <th>XML element</th>
-      <th>Description</th>
-      <th>Attributes</th>
-   </tr>
-   <tr>
-      <td>
-         <inlineCode class="spectrum-Body--sizeS">&lt;routes&gt;</inlineCode>
-      </td>
-      <td>
-         Required. Root element that defines the namespace and location of the XML schema file.
-      </td>
-      <td>
-         <ul>
-            <li>
-               <inlineCode class="spectrum-Body--sizeS">xmlns:xsi</inlineCode>. Required. Defines the namespace for the XML schema instance.
-            </li>
-            <li>
-               <inlineCode class="spectrum-Body--sizeS">xsi:noNamespaceSchemaLocation</inlineCode>. Required. Defines the path and file name of the XML schema file to use to validate the web API.
-            </li>
-         </ul>
-      </td>
-   </tr>
-   <tr>
-      <td>
-         <inlineCode class="spectrum-Body--sizeS">&lt;route&gt;</inlineCode>
-      </td>
-      <td>
-         Required. Child element of <inlineCode class="spectrum-Body--sizeS">&lt;routes&gt;</inlineCode>. Defines the HTTP route for the web API method.
-      </td>
-      <td>
-         <ul>
-            <li>
-               <inlineCode class="spectrum-Body--sizeS">method</inlineCode>. Required. String. HTTP method. Valid values are GET, POST, PUT, and DELETE.
-            </li>
-            <li>
-               <inlineCode class="spectrum-Body--sizeS">url</inlineCode>. Required. String.
-                  The URL to the resource. The string must begin with /V1 (or <inlineCode class="spectrum-Body--sizeS">&lt;integer&gt;</inlineCode>) to indicate the version number. You must prepend any template parameters with a colon. Example: /V1/products/:sku
-            </li>
-            <li>
-               <inlineCode class="spectrum-Body--sizeS">secure</inlineCode>. Optional. Boolean. Indicates that the route is accessible over only HTTPS. Any attempts to access this route over non-secure causes an exception.
-            </li>
-            <li>
-               <inlineCode class="spectrum-Body--sizeS">soapOperation</inlineCode>. Optional. String. Specifies the SOAP operation name to use instead of the interface's method name. Use this element to create multiple operations for the same service contract.
-            </li>
-         </ul>
-      </td>
-   </tr>
-   <tr>
-      <td>
-         <inlineCode class="spectrum-Body--sizeS">&lt;service&gt;</inlineCode>
-      </td>
-      <td>
-         Required. Child element of <inlineCode class="spectrum-Body--sizeS">&lt;route&gt;</inlineCode>. Defines the implemented interface and the web API method name.
-      </td>
-      <td>
-         <ul>
-            <li>
-               <inlineCode class="spectrum-Body--sizeS">class</inlineCode>. Required. String. Location and name of implemented interface.
-            </li>
-            <li>
-               <inlineCode class="spectrum-Body--sizeS">method</inlineCode>. Required. String. Web API method name.
-            </li>
-         </ul>
-      </td>
-   </tr>
-   <tr>
-      <td>
-         <inlineCode class="spectrum-Body--sizeS">&lt;resources&gt;</inlineCode>
-      </td>
-      <td>
-         Required. Child element of <inlineCode class="spectrum-Body--sizeS">&lt;route&gt;</inlineCode>. Container for one or more resource definitions.
-      </td>
-      <td>
-         None.
-      </td>
-   </tr>
-   <tr>
-      <td>
-         <inlineCode class="spectrum-Body--sizeS">&lt;resource&gt;</inlineCode>
-      </td>
-      <td>
-         Required. Child element of <inlineCode class="spectrum-Body--sizeS">&lt;resources&gt;</inlineCode>. Defines a resource to which the caller must have access.
-      </td>
-      <td>
-         <ul>
-            <li>
-               <inlineCode class="spectrum-Body--sizeS">ref</inlineCode>.
-                  Required. Referenced resource. Valid values are self, anonymous, or a resource, such as <inlineCode class="spectrum-Body--sizeS">Magento_Customer::group</inlineCode>.
-               <strong>Note:</strong> The web API framework enables guest users to access resources that are configured with anonymous permission. Any user that the framework cannot authenticate through existing <a href="https://developer.adobe.com/commerce/webapi/get-started/authentication/">authentication mechanisms</a> is considered a guest user.
-            </li>
-         </ul>
-      </td>
-   </tr>
-   <tr>
-      <td>
-         <inlineCode class="spectrum-Body--sizeS">&lt;data&gt;</inlineCode>
-      </td>
-      <td>
-         Optional. Child element of <inlineCode class="spectrum-Body--sizeS">&lt;route&gt;</inlineCode>. Container for one or more parameter definitions.
-      </td>
-      <td>
-         None.
-      </td>
-   </tr>
-   <tr>
-      <td>
-         <inlineCode class="spectrum-Body--sizeS">&lt;parameter&gt;</inlineCode>
-      </td>
-      <td>
-         Required if <inlineCode class="spectrum-Body--sizeS">&lt;data&gt;</inlineCode> is specified. Child element of <inlineCode class="spectrum-Body--sizeS">&lt;data&gt;</inlineCode>. Defines a parameter.
-      </td>
-      <td>
-         <ul>
-            <li>
-               <inlineCode class="spectrum-Body--sizeS">name</inlineCode>. String. Parameter name.
-            </li>
-            <li>
-               <inlineCode class="spectrum-Body--sizeS">force</inlineCode>. Boolean. <a href="#forcing-request-parameters">Forcing Request Parameters</a>
-            </li>
-         </ul>
-      </td>
-   </tr>
-</table>
+| XML element | Description | Attributes |
+| --- | --- | --- |
+| `<routes>` | Required. Root element that defines the namespace and location of the XML schema file. | - `xmlns:xsi`. Required. Defines the namespace for the XML schema instance.\<br/\>- `xsi:noNamespaceSchemaLocation`. Required. Defines the path and file name of the XML schema file to use to validate the web API. |
+| `<route>` | Required. Child element of `<routes>`. Defines the HTTP route for the web API method. | - `method`. Required. String. HTTP method. Valid values are GET, POST, PUT, and DELETE.\<br/\>- `url`. Required. String. The URL to the resource. The string must begin with /V1 (or `<integer>`) to indicate the version number. You must prepend any template parameters with a colon. Example: /V1/products/:sku\<br/\>- `secure`. Optional. Boolean. Indicates that the route is accessible over only HTTPS. Any attempts to access this route over non-secure causes an exception.\<br/\>- `soapOperation`. Optional. String. Specifies the SOAP operation name to use instead of the interface's method name. Use this element to create multiple operations for the same service contract. |
+| `<service>` | Required. Child element of `<route>`. Defines the implemented interface and the web API method name. | - `class`. Required. String. Location and name of implemented interface.\<br/\>- `method`. Required. String. Web API method name. |
+| `<resources>` | Required. Child element of `<route>`. Container for one or more resource definitions. | None. |
+| `<resource>` | Required. Child element of `<resources>`. Defines a resource to which the caller must have access. | `ref`. Required. Referenced resource. Valid values are self, anonymous, or a resource, such as `Magento_Customer::group`.\<br/\>**Note:** The web API framework enables guest users to access resources that are configured with anonymous permission. Any user that the framework cannot authenticate through existing [authentication mechanisms](https://developer.adobe.com/commerce/webapi/get-started/authentication/) is considered a guest user. |
+| `<data>` | Optional. Child element of `<route>`. Container for one or more parameter definitions. | None. |
+| `<parameter>` | Required if `<data>` is specified. Child element of `<data>`. Defines a parameter. | - `name`. String. Parameter name.\<br/\>- `force`. Boolean. [Forcing Request Parameters](#forcing-request-parameters) |
 
 ## Sample webapi.xml file
 
@@ -282,59 +166,13 @@ This excerpt is from the `webapi.xml` file that defines the Customer service web
 ```
 
 In this `webapi.xml` example:
-<table style="width:100%">
-   <tr bgcolor="lightgray">
-      <th>Line</th>
-      <th>Defines</th>
-   </tr>
-   <tr>
-      <td>
-         2
-      </td>
-      <td>
-         The XML schema file that is used to validate the XML.
-         The XML schema file is <inlineCode class="spectrum-Body--sizeS">xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd</inlineCode>.
-      </td>
-   </tr>
-   <tr>
-      <td>
-         4
-      </td>
-      <td>
-         The HTTP method and web resource through which to access the route.
-         The HTTP method is GET.
-         The resource is <inlineCode class="spectrum-Body--sizeS">/V1/customerGroups/:id</inlineCode>. Users must substitute a customer ID for the <inlineCode class="spectrum-Body--sizeS">id</inlineCode> template parameter.
-      </td>
-   </tr>
-   <tr>
-      <td>
-         5
-      </td>
-      <td>
-         The interface that the route implements and the name of the web API method.
-         The route implements the <inlineCode class="spectrum-Body--sizeS">Magento\Customer\Api\GroupRepositoryInterface</inlineCode> interface.
-         The web API method name is <inlineCode class="spectrum-Body--sizeS">getById</inlineCode>.
-      </td>
-   </tr>
-   <tr>
-      <td>
-         7
-      </td>
-      <td>
-         The resource to which the caller must have access.
-         The caller must have access to <inlineCode class="spectrum-Body--sizeS">Magento_Customer::group</inlineCode> resource.
-      </td>
-   </tr>
-   <tr>
-      <td>
-         17
-      </td>
-      <td>
-         A required parameter.
-         The <inlineCode class="spectrum-Body--sizeS">id</inlineCode> parameter is required on GET calls to <inlineCode class="spectrum-Body--sizeS">/V1/customers/me/billingAddress</inlineCode>.
-      </td>
-   </tr>
-</table>
+| Line | Defines |
+| --- | --- |
+| 2 | The XML schema file that is used to validate the XML. The XML schema file is `xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd`. |
+| 4 | The HTTP method and web resource through which to access the route. The HTTP method is GET. The resource is `/V1/customerGroups/:id`. Users must substitute a customer ID for the `id` template parameter. |
+| 5 | The interface that the route implements and the name of the web API method. The route implements the `Magento\Customer\Api\GroupRepositoryInterface` interface. The web API method name is `getById`. |
+| 7 | The resource to which the caller must have access. The caller must have access to `Magento_Customer::group` resource. |
+| 17 | A required parameter. The `id` parameter is required on GET calls to `/V1/customers/me/billingAddress`. |
 
 ## webapi.xsd XML schema file
 

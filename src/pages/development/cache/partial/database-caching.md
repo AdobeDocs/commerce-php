@@ -275,7 +275,7 @@ This section contains code sample snippets to refer to when configuring database
 ],
 ```
 
-<!-- Link references -->
+\<!-- Link references -->
 [Varnish]: https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/varnish/config-varnish
 [associate cache frontends with cache types]: https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/cache-types
 [sample configurations]: #configuration-examples

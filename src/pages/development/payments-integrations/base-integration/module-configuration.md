@@ -8,9 +8,7 @@ keywords:
   - Payments
 ---
 
-import Docs from '/src/_includes/braintree-note.md'
-
-<Docs />
+<Fragment src='/_includes/braintree-note.md'/>
 
 # Payment method module configuration
 

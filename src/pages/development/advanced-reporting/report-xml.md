@@ -128,11 +128,11 @@ Example of a nested condition in Report XML:
 
 The `<conditions>` node contains the following attributes:
 
-|Name|Description|Value|Required?|
-|--- |--- |--- |
-|`attribute`|Column name in the database.|string|Required|
-|`type`|Type of comparison value.|`value` for a scalar value (default)<br/> `identifier` for a column|Optional|
-|`operator`|Comparison operator|Required|
+|Name|Description| Value                                                                  |Required?|
+|--- |--- |------------------------------------------------------------------------|---|
+|`attribute`|Column name in the database.| string                                                                 |Required|
+|`type`|Type of comparison value.| `value` for a scalar value (default) \<br/\> `identifier` for a column |Optional|
+|`operator`|Comparison operator| Required                                                               |
 
 Comparison operator is used to compare columns with the value or columns that can be specified inside the `<conditions>` XML node.
 

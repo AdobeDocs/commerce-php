@@ -7,6 +7,5 @@ keywords:
 
 # Web APIs
 
-import Docs from '/src/_includes/web-api.md'
+<Fragment src='/_includes/web-api.md'/>
 
-<Docs />

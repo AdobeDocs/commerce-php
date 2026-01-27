@@ -162,6 +162,5 @@ Versioning works as follows:
 
 The customer data invalidation mechanism no longer relies on the `private_content_version`.
 
-import PageChecklist from '/src/_includes/page-cache-checklist.md'
+<Fragment src='/_includes/page-cache-checklist.md'/>
 
-<PageChecklist />

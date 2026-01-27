@@ -64,7 +64,7 @@ See the [MySQL documentation](https://dev.mysql.com/doc/refman/8.4/en/server-sys
 
 ### New 2FA system parameters
 
-New system parameters have been added to enable rate limiting on two-factor authentication (2FA) one-time password (OTP) validation:<!--AC-11945-->
+New system parameters have been added to enable rate limiting on two-factor authentication (2FA) one-time password (OTP) validation:\<!--AC-11945-->
 
 ```php
 ...    
@@ -93,7 +93,7 @@ The following module is affected by this change:
 
 ### New unique EAV key
 
-Added a unique key on the column pair (`option_id`, `store_id`) on the `eav_attribute_option_value` table.<!--AC-6984-->
+Added a unique key on the column pair (`option_id`, `store_id`) on the `eav_attribute_option_value` table.\<!--AC-6984-->
 
 The following module is affected by this change:
 
@@ -173,7 +173,7 @@ No features are affected by this change. This change introduces support for Basi
 
 ### Updated default value for 2FA OTP window
 
-The `spomky-labs/otphp` library has changed the way that the one-time password (OTP) window is calculated for two factor authentication (2FA). Previously, it used a "window" multiplier, but now it uses a "leeway" value in seconds. This change ensures that the configuration is up to date with the latest library behavior.<!--AC-12129-->
+The `spomky-labs/otphp` library has changed the way that the one-time password (OTP) window is calculated for two factor authentication (2FA). Previously, it used a "window" multiplier, but now it uses a "leeway" value in seconds. This change ensures that the configuration is up to date with the latest library behavior.\<!--AC-12129-->
 
 Merchants and customers using the Google Authenticator 2FA provider must reset the configuration value for the OTP window. The command has changed from `bin/magento config:set twofactorauth/google/otp_window VALUE` to `bin/magento config:set twofactorauth/google/leeway VALUE`. This change aligns with the updated `spomky-labs/otphp` library, which uses a default expiration period of 30 seconds.
 
@@ -189,7 +189,7 @@ The following module is affected by this change:
 
 ### Upgraded monolog/monolog dependency
 
-The `monolog/monolog` third-party dependency was updated to the latest stable version (3.x) to enhance platform stability and performance.<!--AC-12689-->
+The `monolog/monolog` third-party dependency was updated to the latest stable version (3.x) to enhance platform stability and performance.\<!--AC-12689-->
 
 **Action Required:**
 
@@ -407,7 +407,7 @@ Manually changing this setting (for example, using the `bin/magento config:set c
 
 ### New system configuration for limiting products in grid
 
-<!-- AC-6425 -->
+\<!-- AC-6425 -->
 
 To improve product grid performance for large catalogs, a new system configuration setting (disabled by default) was added to limit the number of products in the grid: **Stores > Settings > Configuration > Advanced > Admin > Admin Grids > Limit Number of Products in Grid**. See [Limit number of products in grid](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#limit-number-of-products-in-grid).
 
@@ -419,7 +419,7 @@ The following module is affected by this change:
 
 ### New system configuration for OpenSearch module
 
-<!-- AC-6339 -->
+\<!-- AC-6339 -->
 
 In Adobe Commerce and Magento Open Source 2.4.4 and 2.4.3-p2, all system configuration fields labeled **Elasticsearch** also apply to OpenSearch. When support for Elasticsearch 8.x was introduced in 2.4.6, new labels were created to distinguish between Elasticsearch and OpenSearch configurations. See [Search engine configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/configure-search-engine).
 
@@ -453,7 +453,7 @@ The following modules are affected by this change:
 
 ### New system configuration for customer segments
 
-<!-- AC-6832 -->
+\<!-- AC-6832 -->
 
 A new system configuration setting was added to avoid performance degradation when you have a large number of customer segments. See [customer segments validation](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#customer-segments-validation).
 
@@ -461,8 +461,8 @@ You can enable or disable this setting at any time. No additional actions are ne
 
 | Level | Target/Location                                                                                                                                                    | Code/Reason                  |
 |-------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|
-| MINOR | Magento\CustomerSegment\Model\Customer::XML_PATH_REAL_TIME_CHECK_IF_CUSTOMER_IS_MATCHED_BY_SEGMENT<br/>/app/code/Magento/CustomerSegment/Model/Customer.php:47     | M071 Constant has been added |
-| MINOR | customer/magento_customersegment/real_time_check_if_customer_is_matched_by_segment<br/>/app/code/Magento/CustomerSegment/etc/adminhtml/system.xml:0                | M302 A field-node was added  |
+| MINOR | Magento\CustomerSegment\Model\Customer::XML_PATH_REAL_TIME_CHECK_IF_CUSTOMER_IS_MATCHED_BY_SEGMENT\<br/\>/app/code/Magento/CustomerSegment/Model/Customer.php:47     | M071 Constant has been added |
+| MINOR | customer/magento_customersegment/real_time_check_if_customer_is_matched_by_segment\<br/\>/app/code/Magento/CustomerSegment/etc/adminhtml/system.xml:0                | M302 A field-node was added  |
 
 The following module is affected by this change:
 
@@ -470,7 +470,7 @@ The following module is affected by this change:
 
 ### Symfony dependencies upgraded to latest LTS version
 
-<!-- AC-6431 -->
+\<!-- AC-6431 -->
 
 This change adds support for the latest version of Symfony, so that you can use the latest solutions to build more stable functionality and avoid hypothetical security issues.
 
@@ -484,7 +484,7 @@ The following module is affected by this change:
 
 ### Zend_Filter replaced with laminas-filter
 
-<!-- AC-6519 -->
+\<!-- AC-6519 -->
 
 This change replaces the outdated `Zend_Filter` library with the actively supported `laminas-filter` library. The following modules are affected by this change:
 
@@ -497,25 +497,25 @@ The following interface changes are a result of replacing interfaces from the `Z
 
 | Level | Target/Location                                                                                                            | Code/Reason                                 |
 |-------|----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------|
-| MAJOR | Magento\Framework\Filter\FactoryInterface::createFilter<br/>/lib/internal/Magento/Framework/Filter/FactoryInterface.php:42 | M123 [public] Method return typing changed. |
+| MAJOR | Magento\Framework\Filter\FactoryInterface::createFilter\<br/\>/lib/internal/Magento/Framework/Filter/FactoryInterface.php:42 | M123 [public] Method return typing changed. |
 
 #### Class changes
 
 | Level | Target/Location                                                                                                              | Code/Reason                                    |
 |-------|------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| MAJOR | Magento\Framework\Stdlib\DateTime\Filter\Date<br/>/lib/internal/Magento/Framework/Stdlib/DateTime/Filter/Date.php:0          | M0123 Implements has been removed.             |
-| MAJOR | Magento\Framework\Filter\FilterManager::get<br/>/lib/internal/Magento/Framework/Filter/FilterManager.php:68                  | M120 [public] Method return typing changed.    |
-| MAJOR | Magento\Framework\Filter\FilterManager::createFilterInstance<br/>/lib/internal/Magento/Framework/Filter/FilterManager.php:87 | M121 [protected] Method return typing changed. |
-| MAJOR | Magento\Framework\Filter\FilterManager::__call<br/>/lib/internal/Magento/Framework/Filter/FilterManager.php:128              | M120 [public] Method return typing changed.    |
-| MAJOR | Magento\Framework\Filter\Template<br/>/lib/internal/Magento/Framework/Filter/Template.php:0                                  | M0123 Implements has been removed.             |
-| MAJOR | Magento\GoogleAdwords\Model\Filter\UppercaseTitle<br/>/app/code/Magento/GoogleAdwords/Model/Filter/UppercaseTitle.php:0      | M0123 Implements has been removed.             |
-| MINOR | Magento\Framework\Stdlib\DateTime\Filter\Date<br/>/lib/internal/Magento/Framework/Stdlib/DateTime/Filter/Date.php:0          | M0125 Interface has been added.                |
-| MINOR | Magento\Framework\Filter\Template<br/>/lib/internal/Magento/Framework/Filter/Template.php:0                                  | M0125 Interface has been added.                |
-| MINOR | Magento\GoogleAdwords\Model\Filter\UppercaseTitle<br/>/app/code/Magento/GoogleAdwords/Model/Filter/UppercaseTitle.php:0      | M0125 Interface has been added.                |
+| MAJOR | Magento\Framework\Stdlib\DateTime\Filter\Date\<br/\>/lib/internal/Magento/Framework/Stdlib/DateTime/Filter/Date.php:0          | M0123 Implements has been removed.             |
+| MAJOR | Magento\Framework\Filter\FilterManager::get\<br/\>/lib/internal/Magento/Framework/Filter/FilterManager.php:68                  | M120 [public] Method return typing changed.    |
+| MAJOR | Magento\Framework\Filter\FilterManager::createFilterInstance\<br/\>/lib/internal/Magento/Framework/Filter/FilterManager.php:87 | M121 [protected] Method return typing changed. |
+| MAJOR | Magento\Framework\Filter\FilterManager::__call\<br/\>/lib/internal/Magento/Framework/Filter/FilterManager.php:128              | M120 [public] Method return typing changed.    |
+| MAJOR | Magento\Framework\Filter\Template\<br/\>/lib/internal/Magento/Framework/Filter/Template.php:0                                  | M0123 Implements has been removed.             |
+| MAJOR | Magento\GoogleAdwords\Model\Filter\UppercaseTitle\<br/\>/app/code/Magento/GoogleAdwords/Model/Filter/UppercaseTitle.php:0      | M0123 Implements has been removed.             |
+| MINOR | Magento\Framework\Stdlib\DateTime\Filter\Date\<br/\>/lib/internal/Magento/Framework/Stdlib/DateTime/Filter/Date.php:0          | M0125 Interface has been added.                |
+| MINOR | Magento\Framework\Filter\Template\<br/\>/lib/internal/Magento/Framework/Filter/Template.php:0                                  | M0125 Interface has been added.                |
+| MINOR | Magento\GoogleAdwords\Model\Filter\UppercaseTitle\<br/\>/app/code/Magento/GoogleAdwords/Model/Filter/UppercaseTitle.php:0      | M0125 Interface has been added.                |
 
 ### Zend_HTTP replaced with laminas-http
 
-<!-- AC-6404 -->
+\<!-- AC-6404 -->
 
 This change replaces the outdated `Zend_HTTP` library with the actively supported `laminas-http` library. The following modules are affected by this change:
 
@@ -524,15 +524,15 @@ This change replaces the outdated `Zend_HTTP` library with the actively supporte
 
 | Level | Target/Location                                                                                                     | Code/Reason                                    |
 |-------|---------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| MAJOR | Magento\Framework\HTTP\Adapter\Curl::setOptions<br/>/lib/internal/Magento/Framework/HTTP/Adapter/Curl.php:103       | V088 [public] Method parameter typing removed. |
-| MAJOR | Magento\Framework\HTTP\Adapter\Curl::$_options<br/>/lib/internal/Magento/Framework/HTTP/Adapter/Curl.php:63         | V009 [protected] Property has been removed.    |
-| MAJOR | Magento\Framework\HTTP\Adapter\Curl<br/>/lib/internal/Magento/Framework/HTTP/Adapter/Curl.php:0                     | M0123 Implements has been removed.             |
-| MAJOR | Magento\Payment\Gateway\Http\Client\Zend::__construct<br/>/app/code/Magento/Payment/Gateway/Http/Client/Zend.php:46 | M113 [public] Method parameter typing changed. |
-| MINOR | Magento\Framework\HTTP\Adapter\Curl<br/>/lib/internal/Magento/Framework/HTTP/Adapter/Curl.php:0                     | M0125 Interface has been added.                |
+| MAJOR | Magento\Framework\HTTP\Adapter\Curl::setOptions\<br/\>/lib/internal/Magento/Framework/HTTP/Adapter/Curl.php:103       | V088 [public] Method parameter typing removed. |
+| MAJOR | Magento\Framework\HTTP\Adapter\Curl::$_options\<br/\>/lib/internal/Magento/Framework/HTTP/Adapter/Curl.php:63         | V009 [protected] Property has been removed.    |
+| MAJOR | Magento\Framework\HTTP\Adapter\Curl\<br/\>/lib/internal/Magento/Framework/HTTP/Adapter/Curl.php:0                     | M0123 Implements has been removed.             |
+| MAJOR | Magento\Payment\Gateway\Http\Client\Zend::__construct\<br/\>/app/code/Magento/Payment/Gateway/Http/Client/Zend.php:46 | M113 [public] Method parameter typing changed. |
+| MINOR | Magento\Framework\HTTP\Adapter\Curl\<br/\>/lib/internal/Magento/Framework/HTTP/Adapter/Curl.php:0                     | M0125 Interface has been added.                |
 
 ### Zend_Validate replaced with laminas-validator
 
-<!-- AC-6405 -->
+\<!-- AC-6405 -->
 
 This change replaces the outdated `Zend_Validate` library with the actively supported `laminas-validator` library. The following modules are affected by this change:
 
@@ -547,39 +547,39 @@ The following interface changes are a result of replacing interfaces from the `Z
 
 | Level | Target/Location                                                                                                                       | Code/Reason                                  |
 |-------|---------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
-| MAJOR | Magento\Framework\Validator\ValidatorInterface::setTranslator<br/>/lib/internal/Magento/Framework/Validator/ValidatorInterface.php:23 | V075 [public] Method parameter typing added. |
-| MAJOR | Magento\Framework\Validator\ValidatorInterface::getTranslator<br/>/lib/internal/Magento/Framework/Validator/ValidatorInterface.php:30 | M123 [public] Method return typing changed.  |
-| MAJOR | Magento\Framework\Validator\ValidatorInterface<br/>/lib/internal/Magento/Framework/Validator/ValidatorInterface.php:0                 | M0122 Extends has been removed.              |
-| MAJOR | Magento\Framework\Translate\AdapterInterface::translate<br/>/lib/internal/Magento/Framework/Translate/AdapterInterface.php:27         | M102 [public] Added optional parameter(s).   |
-| MINOR | Magento\Framework\Validator\ValidatorInterface<br/>/lib/internal/Magento/Framework/Validator/ValidatorInterface.php:0                 | M0127 Added parent to interface.             |
-| MINOR | Magento\Framework\Translate\AdapterInterface<br/>/lib/internal/Magento/Framework/Translate/AdapterInterface.php:0                     | M0127 Added parent to interface.             |
+| MAJOR | Magento\Framework\Validator\ValidatorInterface::setTranslator\<br/\>/lib/internal/Magento/Framework/Validator/ValidatorInterface.php:23 | V075 [public] Method parameter typing added. |
+| MAJOR | Magento\Framework\Validator\ValidatorInterface::getTranslator\<br/\>/lib/internal/Magento/Framework/Validator/ValidatorInterface.php:30 | M123 [public] Method return typing changed.  |
+| MAJOR | Magento\Framework\Validator\ValidatorInterface\<br/\>/lib/internal/Magento/Framework/Validator/ValidatorInterface.php:0                 | M0122 Extends has been removed.              |
+| MAJOR | Magento\Framework\Translate\AdapterInterface::translate\<br/\>/lib/internal/Magento/Framework/Translate/AdapterInterface.php:27         | M102 [public] Added optional parameter(s).   |
+| MINOR | Magento\Framework\Validator\ValidatorInterface\<br/\>/lib/internal/Magento/Framework/Validator/ValidatorInterface.php:0                 | M0127 Added parent to interface.             |
+| MINOR | Magento\Framework\Translate\AdapterInterface\<br/\>/lib/internal/Magento/Framework/Translate/AdapterInterface.php:0                     | M0127 Added parent to interface.             |
 
 #### Class changes
 
 | Level | Target/Location                                                                                                                                                     | Code/Reason                                    |
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| MAJOR | Magento\Framework\Validator::setTranslator<br/>/lib/internal/Magento/Framework/Validator.php:80                                                                     | V085 [public] Method parameter typing added.   |
-| MAJOR | Magento\Framework\Validator\AbstractValidator::setDefaultTranslator<br/>/lib/internal/Magento/Framework/Validator/AbstractValidator.php:40                          | M113 [public] Method parameter typing changed. |
-| MAJOR | Magento\Framework\Validator\AbstractValidator::getDefaultTranslator<br/>/lib/internal/Magento/Framework/Validator/AbstractValidator.php:50                          | M120 [public] Method return typing changed.    |
-| MAJOR | Magento\Framework\Validator\AbstractValidator::setTranslator<br/>/lib/internal/Magento/Framework/Validator/AbstractValidator.php:61                                 | V085 [public] Method parameter typing added.   |
-| MAJOR | Magento\Framework\Validator\AbstractValidator::getTranslator<br/>/lib/internal/Magento/Framework/Validator/AbstractValidator.php:72                                 | M120 [public] Method return typing changed.    |
-| MAJOR | Magento\Framework\Validator\Constraint::setTranslator<br/>/lib/internal/Magento/Framework/Validator/Constraint.php:89                                               | V085 [public] Method parameter typing added.   |
-| MAJOR | Magento\Framework\Validator\Constraint::getTranslator<br/>/lib/internal/Magento/Framework/Validator/Constraint.php:100                                              | M120 [public] Method return typing changed.    |
-| MAJOR | Magento\Framework\Validator\DataObject::addRule<br/>/lib/internal/Magento/Framework/Validator/DataObject.php:41                                                     | M113 [public] Method parameter typing changed. |
-| MAJOR | Magento\Framework\Validator\DataObject<br/>/lib/internal/Magento/Framework/Validator/DataObject.php:0                                                               | M0123 Implements has been removed.             |
-| MAJOR | Magento\Framework\Model\AbstractModel::_getValidatorBeforeSave<br/>/lib/internal/Magento/Framework/Model/AbstractModel.php:743                                      | M121 [protected] Method return typing changed. |
-| MAJOR | Magento\Framework\Model\AbstractModel::_createValidatorBeforeSave<br/>/lib/internal/Magento/Framework/Model/AbstractModel.php:758                                   | M121 [protected] Method return typing changed. |
-| MAJOR | Magento\Framework\Model\AbstractModel::_getValidationRulesBeforeSave<br/>/lib/internal/Magento/Framework/Model/AbstractModel.php:784                                | M121 [protected] Method return typing changed. |
-| MAJOR | Magento\User\Model\User::_getValidationRulesBeforeSave<br/>/app/code/Magento/User/Model/User.php:321                                                                | M121 [protected] Method return typing changed. |
-| MAJOR | Magento\User\Model\ResourceModel\User::getValidationRulesBeforeSave<br/>/app/code/Magento/User/Model/ResourceModel/User.php:495                                     | M120 [public] Method return typing changed.    |
-| MAJOR | Magento\Store\Model\Store::_getValidationRulesBeforeSave<br/>/app/code/Magento/Store/Model/Store.php:479                                                            | M121 [protected] Method return typing changed. |
-| MAJOR | Magento\GoogleAdwords\Model\Config\Backend\Color::_getValidationRulesBeforeSave<br/>/app/code/Magento/GoogleAdwords/Model/Config/Backend/Color.php:21               | M121 [protected] Method return typing changed. |
-| MAJOR | Magento\GoogleAdwords\Model\Config\Backend\ConversionId::_getValidationRulesBeforeSave<br/>/app/code/Magento/GoogleAdwords/Model/Config/Backend/ConversionId.php:21 | M121 [protected] Method return typing changed. |
-| MINOR | Magento\Framework\Validator\DataObject<br/>/lib/internal/Magento/Framework/Validator/DataObject.php:0                                                               | M0125 Interface has been added.                |
+| MAJOR | Magento\Framework\Validator::setTranslator\<br/\>/lib/internal/Magento/Framework/Validator.php:80                                                                     | V085 [public] Method parameter typing added.   |
+| MAJOR | Magento\Framework\Validator\AbstractValidator::setDefaultTranslator\<br/\>/lib/internal/Magento/Framework/Validator/AbstractValidator.php:40                          | M113 [public] Method parameter typing changed. |
+| MAJOR | Magento\Framework\Validator\AbstractValidator::getDefaultTranslator\<br/\>/lib/internal/Magento/Framework/Validator/AbstractValidator.php:50                          | M120 [public] Method return typing changed.    |
+| MAJOR | Magento\Framework\Validator\AbstractValidator::setTranslator\<br/\>/lib/internal/Magento/Framework/Validator/AbstractValidator.php:61                                 | V085 [public] Method parameter typing added.   |
+| MAJOR | Magento\Framework\Validator\AbstractValidator::getTranslator\<br/\>/lib/internal/Magento/Framework/Validator/AbstractValidator.php:72                                 | M120 [public] Method return typing changed.    |
+| MAJOR | Magento\Framework\Validator\Constraint::setTranslator\<br/\>/lib/internal/Magento/Framework/Validator/Constraint.php:89                                               | V085 [public] Method parameter typing added.   |
+| MAJOR | Magento\Framework\Validator\Constraint::getTranslator\<br/\>/lib/internal/Magento/Framework/Validator/Constraint.php:100                                              | M120 [public] Method return typing changed.    |
+| MAJOR | Magento\Framework\Validator\DataObject::addRule\<br/\>/lib/internal/Magento/Framework/Validator/DataObject.php:41                                                     | M113 [public] Method parameter typing changed. |
+| MAJOR | Magento\Framework\Validator\DataObject\<br/\>/lib/internal/Magento/Framework/Validator/DataObject.php:0                                                               | M0123 Implements has been removed.             |
+| MAJOR | Magento\Framework\Model\AbstractModel::_getValidatorBeforeSave\<br/\>/lib/internal/Magento/Framework/Model/AbstractModel.php:743                                      | M121 [protected] Method return typing changed. |
+| MAJOR | Magento\Framework\Model\AbstractModel::_createValidatorBeforeSave\<br/\>/lib/internal/Magento/Framework/Model/AbstractModel.php:758                                   | M121 [protected] Method return typing changed. |
+| MAJOR | Magento\Framework\Model\AbstractModel::_getValidationRulesBeforeSave\<br/\>/lib/internal/Magento/Framework/Model/AbstractModel.php:784                                | M121 [protected] Method return typing changed. |
+| MAJOR | Magento\User\Model\User::_getValidationRulesBeforeSave\<br/\>/app/code/Magento/User/Model/User.php:321                                                                | M121 [protected] Method return typing changed. |
+| MAJOR | Magento\User\Model\ResourceModel\User::getValidationRulesBeforeSave\<br/\>/app/code/Magento/User/Model/ResourceModel/User.php:495                                     | M120 [public] Method return typing changed.    |
+| MAJOR | Magento\Store\Model\Store::_getValidationRulesBeforeSave\<br/\>/app/code/Magento/Store/Model/Store.php:479                                                            | M121 [protected] Method return typing changed. |
+| MAJOR | Magento\GoogleAdwords\Model\Config\Backend\Color::_getValidationRulesBeforeSave\<br/\>/app/code/Magento/GoogleAdwords/Model/Config/Backend/Color.php:21               | M121 [protected] Method return typing changed. |
+| MAJOR | Magento\GoogleAdwords\Model\Config\Backend\ConversionId::_getValidationRulesBeforeSave\<br/\>/app/code/Magento/GoogleAdwords/Model/Config/Backend/ConversionId.php:21 | M121 [protected] Method return typing changed. |
+| MINOR | Magento\Framework\Validator\DataObject\<br/\>/lib/internal/Magento/Framework/Validator/DataObject.php:0                                                               | M0125 Interface has been added.                |
 
 ## 2.4.5
 
-The `grunt-contrib-jasmine.js` library has been updated. The `toBeFalsy()` function does not work correctly with undefined values. Use the `toBeUndefined()` function instead to check results. <!--- AC-2840-->
+The `grunt-contrib-jasmine.js` library has been updated. The `toBeFalsy()` function does not work correctly with undefined values. Use the `toBeUndefined()` function instead to check results. \<!--- AC-2840-->
 
 ### Static content deployment
 
@@ -743,7 +743,7 @@ Stores with a pre-existing custom theme and for which cookies are enabled now di
 
 ### pelago/emogrifier update
 
-The dependency `pelago/emogrifier` has been updated from version 3.1.0 to 5.0.0. This update resulted in the introduction of backwards-incompatible changes to the `Magento\Email\Model\Template\Filter` class. The changed code is executed during email templates rendering. See [reference](reference.md). <!--- MC-41445-->
+The dependency `pelago/emogrifier` has been updated from version 3.1.0 to 5.0.0. This update resulted in the introduction of backwards-incompatible changes to the `Magento\Email\Model\Template\Filter` class. The changed code is executed during email templates rendering. See [reference](reference.md). \<!--- MC-41445-->
 
 ### TinyMCE
 
@@ -868,7 +868,7 @@ changed.MAJOR: Magento\InventoryIndexer\Indexer\SourceItem\SourceItemIndexer::__
 
 ### JSON field support
 
-MySQL 5.7 supports the native JSON data type: <https://dev.mysql.com/doc/refman/5.7/en/json.html>. Version 2.4.0 now supports using JSON fields with a declarative schema.
+MySQL 5.7 supports the native JSON data type: [https://dev.mysql.com/doc/refman/5.7/en/json.html](https://dev.mysql.com/doc/refman/5.7/en/json.html). Version 2.4.0 now supports using JSON fields with a declarative schema.
 
 ### Laminas
 

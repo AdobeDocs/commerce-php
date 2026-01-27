@@ -197,14 +197,14 @@ It covers the following cases:
 
 -  `/* @noEscape */` before output. Output does not require escaping. Test is green.
 -  `/* @escapeNotVerified */` before output. Output escaping is not checked and should be verified. Test is green.
--  Methods which contain "html" in their names (for example echo $object->{suffix}Html{postfix}()). Data is ready for the HTML output. Test is green.
+-  Methods which contain "html" in their names (for example echo $object->\{suffix\}Html\{postfix\}()). Data is ready for the HTML output. Test is green.
 -  AbstractBlock methods `escapeHtml`, `escapeHtmlAttr`, `escapeUrl`, `escapeJs` are allowed. Test is green.
 -  Type casting and php function `count()` are allowed (for example `echo (int)$var`, `(bool)$var`, `count($var)`). Test is green.
 -  Output in single quotes (for example echo 'some text'). Test is green.
 -  Output in double quotes without variables (for example echo "some text"). Test is green.
 -  Other of previously mentioned. Output is not escaped. Test is red.
 
-<!-- Link Definitions -->
+\<!-- Link Definitions -->
 [product listing template]: https://github.com/magento/magento2/blob/78bb169ff9721c8d05c35b4c29a4464fd45bccbe/app/code/Magento/Catalog/view/frontend/templates/product/list.phtml#L16
 [Template guide]: https://developer.adobe.com/commerce/frontend-core/guide/templates/
 [Cross-site scripting]: https://owasp.org/www-community/attacks/xss/

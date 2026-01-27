@@ -296,7 +296,7 @@ In our example, the `ECIFlag` and `CAVV` values were included in the transaction
 
 Then you can expect to see an additional field with a cardholder authentication verification response code in the response from your payment gateway. This code lets you know whether the information got back to the issuer. If the issuer recognizes this data as matching whatever they recorded earlier in the transaction when the cardholder was authenticating, they will respond with a successful code in this field.
 
-<!-- Link Definitions -->
+\<!-- Link Definitions -->
 [CardinalCommerce]: https://cardinalcommerce.com/
 [module]: https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#module
 [app\code\AuthorizenetCardinal\Model\Checkout\ConfigProvider.php]: https://github.com/magento/magento2/blob/2.3/app/code/Magento/AuthorizenetCardinal/Model/Checkout/ConfigProvider.php

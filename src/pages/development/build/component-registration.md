@@ -21,7 +21,12 @@ ComponentRegistrar::register(ComponentRegistrar::MODULE, '<VendorName_ModuleName
 
 Here `<VendorName>` is the name of the company providing the module and `<ModuleName>` is the name of the module.
 
-Avoid using "Ui" for your custom module name because the <code>%Vendor%_Ui</code> notation, required when specifying paths, might cause issues.
+Avoid using "Ui" for your custom module name because the 
+
+```text
+%Vendor%_Ui
+``` 
+notation, required when specifying paths, might cause issues.
 
 ### Example
 
