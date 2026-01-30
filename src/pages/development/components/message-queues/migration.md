@@ -225,7 +225,7 @@ To upgrade the message queues for Adobe Commerce or Magento Open Source 2.1, you
 
 - `queue_consumer.xml` - Defines the relationship between an existing queue and its consumer.
 - `queue_topology.xml`- Defines the message routing rules and declares queues and exchanges.
-- `queue_publisher.xml` -   Defines the exchange where a topic is published.
+- `queue_publisher.xml` - Defines the exchange where a topic is published.
 
 The existing `queue.xml` file is deprecated.
 
