@@ -12,7 +12,7 @@ Message queues provide an asynchronous communications mechanism in which the sen
 In Adobe Commerce and Magento Open Source, the Message Queue Framework (MQF) is a fully-functional system that allows a module to publish messages to queues. It also creates consumers to receive them asynchronously. The MQF supports multiple messaging brokers:
 
 - **[RabbitMQ](http://www.rabbitmq.com)** - The primary messaging broker, which provides a scalable platform for sending and receiving messages. It includes a mechanism for storing undelivered messages and is based on the Advanced Message Queuing Protocol (AMQP) 0.9.1 specification.
-- **[Apache ActiveMQ Artemis](https://activemq.apache.org/components/artemis/)** - An alternative messaging broker that uses the STOMP (Simple Text Oriented Messaging Protocol) for reliable and scalable messaging, offering flexibility for STOMP-based integrations.
+- **[Apache ActiveMQ Artemis](https://activemq.apache.org/components/artemis/)** - An alternative messaging broker that uses STOMP (Simple Text Oriented Messaging Protocol) for reliable and scalable messaging, offering flexibility for STOMP-based integrations.
 
 A basic message queue system can also be set up without using external message brokers. In this system, a MySQL adapter stores messages in the database. Three database tables (`queue`, `queue_message`, and `queue_message_status`) manage the message queue workload. Cron jobs ensure the consumers are able to receive messages. This solution is not very scalable. External message brokers like RabbitMQ or ActiveMQ Artemis should be used whenever possible.
 
