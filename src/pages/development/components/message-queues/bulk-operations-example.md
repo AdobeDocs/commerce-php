@@ -15,9 +15,13 @@ This document describes how bulk operations can be implemented. There are three 
 
 ## Create a publisher
 
-A publisher's duties include scheduling a bulk operation. It must generate a `bulkUuid` for each operation, send each operation to the message queue, and report on the status of each operations.
+A publisher is responsible for scheduling a bulk operation that performs the following tasks:
 
-The following code sample shows how these duties can be completed.
+* Generate a bulkUuid for each operation
+* Publish each operation to the message queue
+* Track and report the status of each operation
+
+The following example defines a publisher that implements these responsibilities. 
 
 ```php
 <?php
@@ -323,7 +327,7 @@ The `queue_consumer.xml` file defines the relationship between a queue and its c
 </config>
 ```
 
-The connection type (AMQP or STOMP) is determined automatically based on your `env.php` configuration.
+The connection type (AMQP or STOMP) is determined automatically based on the configuration in the `env.php` file.
 
 ### Create `queue_publisher.xml`
 
@@ -349,11 +353,11 @@ The `queue_publisher.xml` file defines the exchange where a topic is published. 
 
 >[!NOTE]
 >
->For ActiveMQ Artemis, the `<connection>` element is not required as the connection type is determined from `env.php`. When the topic name and queue name are different, you must specify the `queue` attribute in the `<publisher>` element.
+>For ActiveMQ Artemis, the `<connection>` element is not required as the connection type is determined by the configuration in the `env.php` file. When the topic name and queue name are different, you must specify the `queue` attribute in the `<publisher>` element.
 
 ### Create `queue_topology.xml`
 
-The `queue_topology.xml` file defines the message routing rules and declares queues and exchanges. Create this file with the following contents:
+The `queue_topology.xml` file defines the message routing rules and declares queues and exchanges. Create this file with the following content:
 
 ```xml
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/topology.xsd">
@@ -363,12 +367,9 @@ The `queue_topology.xml` file defines the message routing rules and declares que
 </config>
 ```
 
-The connection type is automatically determined from your `env.php` configuration.
-
 <InlineAlert variant="info" slots="text"/>
 
-Message queue connections are defined dynamically, based on the deployment configuration in the `env.php` file. If AMQP or STOMP is configured in the deployment configuration of the queue, the respective connection is used. Otherwise, database connections are used.
-As a result, if AMQP or STOMP is configured in the deployment configuration of the queue, you can omit connection declarations in the `queue_consumer.xml`, `queue_publisher.xml`, and `queue_topology.xml` [message queue configuration files](./configuration.md).
+Message queue connections are resolved dynamically from the deployment configuration in the `env.php` file. If the queue is configured to use AMQP or STOMP, the corresponding connection is applied. Otherwise, the database connection is used. Therefore, when AMQP or STOMP is specified in the deployment configuration, you can omit connection declarations from `queue_consumer.xml`, `queue_publisher.xml`, and `queue_topology.xml`files (see the ./configuration.md).
 
 <InlineAlert variant="info" slots="text"/>
 
