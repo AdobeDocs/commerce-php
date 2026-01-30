@@ -273,7 +273,7 @@ The `connection` element is a subnode of the `publisher` element. There must not
 
 | Attribute            | Description |
 | -------------------- | ----------- |
-| name | Connection name is defined dynamically based on deployment configuration of message queue in `env.php`. If you still want to specify connection type for publisher, keep in mind that for AMQP connections, the connection name must match the `connection` attribute in the `queue_topology.xml` file. For STOMP connections, use `stomp`. Otherwise, the connection name must be `db`. |
+| name | The connection name is defined dynamically based on the deployment configuration for the message queue in `env.php`. If you still want to specify connection type for publisher, keep in mind that for AMQP connections, the connection name must match the `connection` attribute in the `queue_topology.xml` file. For STOMP connections, use `stomp`. Otherwise, the connection name must be `db`. |
 | exchange             | The name of the exchange to publish to. The default system exchange name is `magento`. |
 | disabled             | Determines whether this queue is disabled. The default value is `false`. |
 
