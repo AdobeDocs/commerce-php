@@ -6,6 +6,8 @@ keywords:
   - Extensions
 ---
 
+# Create a cache type
+
 A *cache type* enables you to specify what is cached and enables merchants to clear that cache type using the Cache Management page in the Admin.
 
 The tag *scope* provides a mechanism for a cache type.
