@@ -10,7 +10,7 @@ See [Subresource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/S
 
 ## Application Support
 
-To comply with PCI 4.0 requirements for verification of script integrity on payment pages, Adobe Commerce and Magento Open Source 2.4.4-p9, 2.4.5-p8, 2.4.6-p6, 2.4.7 and later include support for Subresource Integrity by providing integrity hashes for all Javascript assets residing in the local filesystem. (This
+To comply with PCI 4.0 requirements for verification of script integrity on payment pages, Adobe Commerce and Magento Open Source 2.4.4-p9, 2.4.5-p8, 2.4.6-p6, 2.4.7, 2.4.8 and later include support for Subresource Integrity by providing integrity hashes for all Javascript assets residing in the local filesystem. (This
 functionality is defined in the Magento_Csp module.)
 
 ## Default Configuration
