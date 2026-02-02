@@ -11,6 +11,7 @@ keywords:
 ## Migrate from 2.4.4 to 2.4.5, 2.4.6, 2.4.7, 2.4.8
 
 Adobe Commerce introduced support for Apache ActiveMQ Artemis (STOMP) as an alternative message broker to RabbitMQ (AMQP), and this feature was backported to versions 2.4.5, 2.4.6, 2.4.7, and 2.4.8. When upgrading from 2.4.4 (or earlier) to 2.4.5 or later, you can continue using RabbitMQ or choose to migrate to ActiveMQ Artemis.
+
 ### Key Changes in 2.4.5+
 
 - **ActiveMQ Artemis (STOMP) Support**: New message broker option alongside RabbitMQ (backported to 2.4.5, 2.4.6, 2.4.7, 2.4.8)
