@@ -338,7 +338,7 @@ The `queue_publisher.xml` file defines the exchange where a topic is published. 
 ```xml
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/publisher.xsd">
     <publisher topic="<topic_name>">
-        <connection exchange="<exchange>" />
+        <connection exchange=<exchange> />
     </publisher>
 </config>
 ```
@@ -351,9 +351,9 @@ The `queue_publisher.xml` file defines the exchange where a topic is published. 
 </config>
 ```
 
->[!NOTE]
->
->For ActiveMQ Artemis, the `<connection>` element is not required because the connection type is determined by the configuration in the `env.php` file. If the topic name and queue name differ, you must specify the `queue` attribute in the `<publisher>` element.
+<InlineAlert variant="info" slots="text"/>
+
+For ActiveMQ Artemis, the `<connection>` element is not required because the connection type is determined by the configuration in the `env.php` file. If the topic name and queue name differ, you must specify the `queue` attribute in the `<publisher>` element.
 
 ### Create `queue_topology.xml`
 
@@ -369,7 +369,7 @@ The `queue_topology.xml` file defines the message routing rules and declares que
 
 <InlineAlert variant="info" slots="text"/>
 
-Message queue connections are resolved dynamically from the deployment configuration in the `env.php` file. If the queue is configured to use AMQP or STOMP, the corresponding connection is applied. Otherwise, the database connection is used. Therefore, when AMQP or STOMP is specified in the deployment configuration, you can omit connection declarations from `queue_consumer.xml`, `queue_publisher.xml`, and `queue_topology.xml`files (see the ./configuration.md).
+Message queue connections are resolved dynamically from the deployment configuration in the `env.php` file. If the queue is configured to use AMQP or STOMP, the corresponding connection is applied. Otherwise, the database connection is used. Therefore, when AMQP or STOMP is specified in the deployment configuration, you can omit connection declarations from `queue_consumer.xml`, `queue_publisher.xml`, and `queue_topology.xml` files.(See [Message queue configuration files](./configuration.md).
 
 <InlineAlert variant="info" slots="text"/>
 
