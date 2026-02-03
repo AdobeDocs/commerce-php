@@ -1,5 +1,5 @@
 ---
-title: Example bulk operations implementation | Commerce PHP Extensions
+title: Example bulk operations implementation
 description: Learn how to implement bulk operations for asynchronous processing in Adobe Commerce.
 keywords:
   - Extensions
