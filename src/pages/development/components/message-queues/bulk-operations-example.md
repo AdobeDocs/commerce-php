@@ -327,7 +327,7 @@ The `queue_consumer.xml` file defines the relationship between a queue and its c
 </config>
 ```
 
-The connection type (AMQP or STOMP) is determined automatically based on the configuration in the `env.php` file.
+The connection name (AMQP or STOMP) is determined automatically based on the configuration in the `env.php` file.
 
 ### Create `queue_publisher.xml`
 
