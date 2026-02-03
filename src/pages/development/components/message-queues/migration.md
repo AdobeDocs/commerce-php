@@ -3,8 +3,6 @@ title: Migrate message queue configuration
 description: Learn how to migrate message queue configuration between Adobe Commerce versions, including support for RabbitMQ (AMQP) and ActiveMQ Artemis (STOMP).
 keywords:
   - Configuration
-  - Message Queue
-  - Migration
 ---
 
 # Migrate message queue configuration
