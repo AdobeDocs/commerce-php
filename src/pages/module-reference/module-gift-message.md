@@ -28,7 +28,7 @@ This module modifies the following tables in the database:
 - `sales_order` - adds column `gift_message_id`
 - `sales_order_item` - adds columns `gift_message_id` and `gift_message_available`
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Extensibility
 
@@ -108,4 +108,7 @@ For information about a public API in Magento 2, see [Public interfaces & APIs](
 
 ## Additional information
 
-[Learn more about Gift Options and Gift Message](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration.html#gift-options).
+[Learn more about Gift Options and Gift Message](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration#gift-options).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.7.

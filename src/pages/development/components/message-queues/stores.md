@@ -75,7 +75,7 @@ In this example, you can see that the plugin checks `application_headers` and ad
 
 ## Processing by consumer
 
-[Consumers](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/start-message-queues.html) pick up messages from the RabbitMQ queue and process them.
+[Consumers](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/start-message-queues) pick up messages from the RabbitMQ queue and process them.
 
 On a step when a consumer reads a message, the extension executes an around plugin, as shown here:
 
@@ -123,6 +123,6 @@ The plugin checks the message headers and sets the current store value in `store
 <!-- Link definitions -->
 [RabbitMQ]: http://www.rabbitmq.com
 [Configure message queues]: configuration.md
-[Message Queues Overview]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html
+[Message Queues Overview]: https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework
 [Configure message queues]: configuration.md
-[Install RabbitMQ]: https://devdocs.magento.com/guides/v2.4/install-gde/prereq/install-rabbitmq.html
+[Install RabbitMQ]: https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/rabbitmq

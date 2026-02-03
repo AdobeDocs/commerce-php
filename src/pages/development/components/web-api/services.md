@@ -80,6 +80,49 @@ Following are some examples of various types and what they would look like in th
 
 If a service method argument is called `item`, there will be a problem during SOAP processing. All item nodes are removed during SOAP request processing. This is done to unwrap array items that are wrapped by the SOAP server into an `item` element.
 
+## REST API constructor parameter validation
+
+When a REST API call is made, the framework validates the constructor parameters of the class that implements the service interface. The framework checks that each parameter can be instantiated. If a parameter cannot be instantiated, the framework throws an exception.
+
+Adobe Commerce 2.4.9 and all prior supported versions of Adobe Commerce have been patched to validate constructors. [Adobe Security Bulletin APSB25-88](https://helpx.adobe.com/security/products/magento/apsb25-88.html) describes the issue and provides additional information.
+
+Supported parameter types:
+
+-  Simple types (string, int, float, boolean)
+-  `*\Api\Data\*Interface` classes
+
+Unsupported parameter types:
+
+-  Models
+-  Service classes
+-  Other complex types
+
+Unsupported parameters will not be instantiated from REST payloads.
+
+Developers that previously defined REST APIs must review service interfaces and implementations for unsupported constructor parameters. Look for these patterns:
+
+-  **Constructor Parameter Injection**: Look for nested objects in API payloads.
+
+-  **Complex Object Types**: Check for references to `Model` classes or services.
+
+-  **Custom Properties**: Identify any non-standard API parameters.
+
+-  **Extension-specific APIs**: Review custom module API implementations.
+
+### Troubleshooting
+
+You might encounter the following error messages when you use an unsupported field name:
+
+-  On versions 2.4.7 and higher
+
+   `{ "message": "\"{fieldName}\" is not supported. Correct the field name and try again." }`
+
+-  On versions 2.4.6 and lower
+
+   `{ "message": "Property \"{fieldName}\" does not have accessor method \"{methodName}\" in class \"{className}\"." }`
+
+When these errors occur, constructor parameters using complex types are rejected.
+
 ## webapi.xml configuration options
 
 To define web API components, set these attributes on these XML elements in the
@@ -204,7 +247,7 @@ To define web API components, set these attributes on these XML elements in the
                <inlineCode class="spectrum-Body--sizeS">name</inlineCode>. String. Parameter name.
             </li>
             <li>
-               <inlineCode class="spectrum-Body--sizeS">force</inlineCode>. Boolean. <a href="#forced-parameters">Forcing Request Parameters</a>
+               <inlineCode class="spectrum-Body--sizeS">force</inlineCode>. Boolean. <a href="#forcing-request-parameters">Forcing Request Parameters</a>
             </li>
          </ul>
       </td>

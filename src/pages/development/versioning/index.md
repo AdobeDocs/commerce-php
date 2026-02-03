@@ -79,7 +79,7 @@ If you installed the application from GitHub without using Composer, the `versio
 
 [version-dependencies]: ../versioning/dependencies.md
 [codebase-changes]: ../versioning/code-changes.md
-[semantic-versioning]: http://semver.org/
+[semantic-versioning]: https://semver.org/
 [composer-versioning]: https://getcomposer.org/doc/04-schema.md#version
 [php-version-compare]: https://www.php.net/version_compare
 [composer-json]: ../build/composer-integration.md

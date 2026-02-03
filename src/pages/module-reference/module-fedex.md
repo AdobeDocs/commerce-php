@@ -9,7 +9,7 @@ This module implements the integration with the FedEx shipping carrier.
 
 ## Installation details
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Extensibility
 
@@ -30,6 +30,9 @@ This module introduces the following layouts in the `view/frontend/layout` direc
 
 You can get more information about delivery method in magento at the articles:
 
-- [FedEx Configuration Settings](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/delivery/shipping-carriers/fedex.html)
-- [Delivery Methods Configuration](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/delivery-methods.html)
+- [FedEx Configuration Settings](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/shipping-carriers/fedex)
+- [Delivery Methods Configuration](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/delivery-methods)
 - [Add custom shipping carrier](https://developer.adobe.com/commerce/php/tutorials/frontend/custom-checkout/add-shipping-carrier/)
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.6.

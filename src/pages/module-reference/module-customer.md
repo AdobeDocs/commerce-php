@@ -57,7 +57,7 @@ The Magento_Customer module creates the following tables in the database:
 - `customer_visitor`
 - `customer_log`
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Extensibility
 
@@ -353,11 +353,11 @@ For information about a UI component in Magento 2, see [Overview of UI component
 
 More information can get at articles:
 
-- [Customer Configurations](https://experienceleague.adobe.com/docs/commerce-admin/config/customers/customer-configuration.html)
-- [Customer Attributes](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/attributes/attribute-properties.html)
-- [Customer Address Attributes](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/attributes/address-attributes.html)
+- [Customer Configurations](https://experienceleague.adobe.com/en/docs/commerce-admin/config/customers/customer-configuration)
+- [Customer Attributes](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/attributes/attribute-properties)
+- [Customer Address Attributes](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/attributes/address-attributes)
 - [EAV And Extension Attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
-- [2.4.x Release information](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html)
+- [2.4.x Release information](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview)
 
 ### Console commands
 
@@ -371,7 +371,7 @@ Cron group configuration can be set at `etc/crontab.xml`:
 
 - `visitor_clean` - clean visitor's outdated records
 
-[Learn how to configure and run cron in Magento.](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html).
+[Learn how to configure and run cron in Magento.](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs).
 
 ### Indexers
 
@@ -379,4 +379,7 @@ This module introduces the following indexers:
 
 - `customer_grid` - customer grid indexer
 
-[Learn how to manage the indexers](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html).
+[Learn how to manage the indexers](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers).
+
+<InlineAlert slots="text" />
+The version of this module is 103.0.8.

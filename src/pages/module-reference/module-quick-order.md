@@ -28,3 +28,6 @@ Extension developers can interact with the Magento_QuickOrder module. For more i
 You can extend and override layouts in the `Magento\QuickOrder\view\frontend\layout` directory.
 
 For more information about layouts, see the [Layout documentation](https://developer.adobe.com/commerce/frontend-core/guide/layouts/).
+
+<InlineAlert slots="text" />
+The version of this module is 100.5.1.

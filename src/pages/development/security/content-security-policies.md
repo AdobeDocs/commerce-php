@@ -18,8 +18,8 @@ and other resources. Together, CSPs and built-in browser features help prevent:
 *  A malicious inline script from sending credit card info to an attacker's website
 *  Loading a malicious style that will make users click on an element that wasn't supposed to be on a page
 
-See [Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
-and [Content-Security-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy)
+See [Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP)
+and [Content-Security-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Content-Security-Policy)
 to learn more about CSP and each individual policy.
 
 ## Application support
@@ -256,6 +256,10 @@ Add the corresponding policy to a `csp_whitelist.xml` file:
     </policies>
 </csp_whitelist>
 ```
+
+<InlineAlert variant="warning" slots="text"/>
+
+You must whitelist the content of the `script` and `style` tags that you add in the Admin. For example, the **Scripts and Style Sheets** field in the [HTML Head](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/design/page-setup#html-head) section.
 
 <InlineAlert variant="info" slots="text"/>
 

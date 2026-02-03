@@ -5,7 +5,7 @@ description: N/A
 
 # Magento_IntegrationGraphQl module
 
-This module provides GraphQl resolvers for Integartion module.
+This module provides GraphQl resolvers for Integration module.
 
 ## Installation
 
@@ -14,7 +14,7 @@ Before installing this module, note that the Magento_IntegrationGraphQl is depen
 - `Magento_GraphQl`
 - `Magento_Integration`
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Extensibility
 
@@ -25,3 +25,6 @@ Extension developers can interact with the Magento_IntegrationGraphQl module. Fo
 ## Additional information
 
 You can get more information about [GraphQl In Magento 2](https://developer.adobe.com/commerce/webapi/graphql/).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.1.

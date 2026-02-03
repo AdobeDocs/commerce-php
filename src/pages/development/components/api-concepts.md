@@ -24,8 +24,8 @@ Third-party developers should use only these interfaces, that is, interfaces wit
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 namespace Magento\CatalogRule\Api;
@@ -53,8 +53,8 @@ The ``Magento\CatalogRule\Api\CatalogRuleRepositoryInterface`` interface
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 namespace Magento\CatalogRule\Api;
@@ -120,8 +120,8 @@ The ``Magento\CatalogRule\Model\CatalogRuleRepository`` implements the default m
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 namespace Magento\CatalogRule\Model;

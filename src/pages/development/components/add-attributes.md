@@ -58,8 +58,8 @@ Non-scalar attributes can be represented by Data Object.
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 use Magento\Catalog\Api\ProductRepositoryInterface;
@@ -91,8 +91,8 @@ Function `afterGetList` is similar to `afterGet`:
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 use Magento\Catalog\Api\ProductRepositoryInterface;
@@ -126,8 +126,8 @@ Likewise, the `afterSave` plugin should manipulate the entity data before return
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 use Magento\Catalog\Api\Data\ProductInterface;
@@ -159,8 +159,8 @@ Let's assume the product entity doesn't have any implementation of extension att
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 use Magento\Catalog\Api\Data\ProductExtensionInterface;

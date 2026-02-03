@@ -14,7 +14,7 @@ Before installing this module, note that the Magento_CustomerDownloadableGraphQl
 - `Magento_GraphQl`
 - `Magento_DownloadableGraphQl`
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Extensibility
 
@@ -31,3 +31,6 @@ You can get more information about [GraphQl In Magento 2](https://developer.adob
 - `customerDownloadableProducts` query - retrieve the list of purchased downloadable products for the logged-in customer
 
 [Learn more about customerDownloadableProducts query](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/downloadable-products/).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.4.

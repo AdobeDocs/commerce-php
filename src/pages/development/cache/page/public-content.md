@@ -43,8 +43,8 @@ You can use the Admin to define caching policies or you can define them programm
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 use Magento\Framework\App\Action\Action;
@@ -101,8 +101,8 @@ For example, let's declare a context variable that shows a drinks catalog and ad
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 use Magento\Customer\Model\Session;
@@ -160,8 +160,8 @@ First, your entity module must implement [`Magento/Framework/DataObject/Identity
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 use Magento\Framework\DataObject\IdentityInterface;
@@ -189,8 +189,8 @@ Second, the block object must also implement `Magento/Framework/DataObject/Ident
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 use Magento\Framework\DataObject\IdentityInterface;

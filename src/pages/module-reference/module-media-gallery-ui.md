@@ -11,7 +11,7 @@ The Magento_MediaGalleryUi module is responsible for the media gallery user inte
 
 Before installing this module, note that the Magento_MediaGalleryUi is dependent on the Magento_Cms module.
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Extensibility
 
@@ -47,6 +47,9 @@ For information about a UI component in Magento 2, see [Overview of UI component
 
 ## Additional information
 
-For information about significant changes in patch releases, see [2.4.x Release information](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
+For information about significant changes in patch releases, see [2.4.x Release information](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
-[Learn more about New Media Gallery](https://experienceleague.adobe.com/docs/commerce-admin/content-design/media/gallery/media-gallery.html).
+[Learn more about New Media Gallery](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/gallery/media-gallery).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.7.

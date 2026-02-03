@@ -9,7 +9,7 @@ The Magento_MediaGalleryCatalog module is responsible for for catalog gallery pr
 
 ## Installation details
 
-For information about module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Extensibility
 
@@ -19,4 +19,7 @@ Extension developers can interact with the Magento_MediaGalleryCatalog module. F
 
 ## Additional information
 
-For information about significant changes in patch releases, see [Release information](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
+For information about significant changes in patch releases, see [Release information](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.5.

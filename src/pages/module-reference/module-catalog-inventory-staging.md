@@ -20,3 +20,6 @@ You can find the list of modules that have dependencies on the Magento_CatalogIn
 You can interact with the Magento_CatalogInventoryStaging module using the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
 
 [The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_CatalogInventoryStaging module.
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.6.

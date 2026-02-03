@@ -20,3 +20,6 @@ is provided by a 3rd-party module, the module cannot be deleted or disabled.
 
 All public interfaces related to this module are located in the `InventoryCatalogApi` module.
 Use the interfaces defined in `InventoryCatalogApi` to extend this module.
+
+<InlineAlert slots="text" />
+The version of this module is 1.3.3.

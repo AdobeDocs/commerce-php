@@ -26,3 +26,6 @@ and do not run the compilation process.
 ## Install
 
 The Magento_Deploy module is installed automatically (using the native Magento install mechanism) without any additional actions.
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.8.

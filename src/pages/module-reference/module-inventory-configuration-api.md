@@ -23,3 +23,6 @@ can use to provide custom inventory functionality.
 ### Public APIs
 
 Public APIs are defined in the `Api` and `Api/Data` directories.
+
+<InlineAlert slots="text" />
+The version of this module is 1.2.4.

@@ -30,4 +30,4 @@ These are XML files that are used to specify the final state of the database.
 These files replace PHP update scripts that were required when upgrading a module.
 These files allow you to skip the progressive upgrade scripts and jump right to the final state of the database.
 
-Read more about writing [declarative XML schemas](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/).
+Read more about writing [declarative XML schemas](/development/components/declarative-schema/configuration/).

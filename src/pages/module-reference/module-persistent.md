@@ -26,7 +26,7 @@ This module modifies the following tables in the database:
 
 All database schema changes made by this module are rolled back when the module gets disabled and setup:upgrade command is run.
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Extensibility
 
@@ -58,8 +58,8 @@ For more information about a layout in Magento 2, see the [Layout documentation]
 
 More information can get at articles:
 
-- [Persistent Shopping Cart](https://experienceleague.adobe.com/docs/commerce-admin/config/customers/persistent-shopping-cart.html)
-- [Persistent Cart](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-persistent.html)
+- [Persistent Shopping Cart](https://experienceleague.adobe.com/en/docs/commerce-admin/config/customers/persistent-shopping-cart)
+- [Persistent Cart](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-persistent)
 
 ### Cron options
 
@@ -67,4 +67,7 @@ Cron group configuration can be set at `etc/crontab.xml`:
 
 - `persistent_clear_expired` - clear expired persistent sessions
 
-[Learn how to configure and run cron in Magento.](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html).
+[Learn how to configure and run cron in Magento.](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.8.

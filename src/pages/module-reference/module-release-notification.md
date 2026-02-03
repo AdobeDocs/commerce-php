@@ -13,7 +13,7 @@ The Magento_ReleaseNotification module creates the `release_notification_viewer_
 
 All database schema changes made by this module are rolled back when the module gets disabled and setup:upgrade command is run.
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Extensibility
 
@@ -80,3 +80,6 @@ A clickable link to internal or external content in any text field will be creat
 #### Link Format Example:
 
 The text: `https://developer.adobe.com/commerce/docs/ [Adobe Commerce Developer Documentation].` will appear as [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs/).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.6.

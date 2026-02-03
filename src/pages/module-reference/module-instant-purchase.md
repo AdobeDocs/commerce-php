@@ -9,7 +9,7 @@ This module allows the Customer to place the order in seconds without going thro
 
 ## Installation
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Structure
 
@@ -95,14 +95,17 @@ Basic implementation is a good start point but it's recommended to provide own i
 3. Customer has default shipping and billing address defined
 4. Customer has valid stored payment method with instant purchase support
 
-[Learn more about Instant Purchase](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html).
+[Learn more about Instant Purchase](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase).
 
 ### Backward incompatible changes
 
 The `Magento_InstantPurchase` module does not introduce backward incompatible changes.
 
-You can track [backward incompatible changes in patch releases](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/).
+You can track [backward incompatible changes in patch releases](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/).
 
 ***
 
-This module was initially developed by the [Creatuity Corp.](https://creatuity.com/) and [Magento Community Engineering Team](mailto:engcom@magento.com).
+This module was initially developed by the [Creatuity Corp.](https://creatuity.com/) and [Magento Community Engineering Team](https://commercemarketplace.adobe.com/partner/engcom/).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.7.

@@ -27,7 +27,7 @@ If you have a different payment flow for the storefront and the Admin panel, you
 
 ## Example
 
-For example, if the storefront 3D Secure verification uses the Braintree payment method, but you don't want it to be available in the Admin panel, then the DI configuration for the authorization request builder for the [admin area](https://github.com/magento/magento2/tree/2.3/app/code/Magento/Braintree/etc/adminhtml/di.xml) would be something similar to:
+For example, if the storefront 3D Secure verification uses the Braintree payment method, but you don't want it to be available in the Admin panel, then the DI configuration for the authorization request builder for the [admin area](https://github.com/magento/magento2/blob/2.3/app/code/Magento/Braintree/etc/adminhtml/di.xml) would be something similar to:
 
 ```xml
 <virtualType name="BraintreeAuthorizeRequest" type="Magento\Payment\Gateway\Request\BuilderComposite">
@@ -41,4 +41,4 @@ For example, if the storefront 3D Secure verification uses the Braintree payment
 </virtualType>
 ```
 
-While the general [app/code/Magento/Braintree/etc/di.xml](https://github.com/magento/magento2/tree/2.3/app/code/Magento/Braintree/etc/di.xml) does not have 3D secure verification builder for the Admin panel, you can use a virtual type with the same name (the object will be created according to the context of the area).
+While the general [app/code/Magento/Braintree/etc/di.xml](https://github.com/magento/magento2/blob/2.3/app/code/Magento/Braintree/etc/di.xml) does not have 3D secure verification builder for the Admin panel, you can use a virtual type with the same name (the object will be created according to the context of the area).

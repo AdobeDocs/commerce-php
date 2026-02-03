@@ -14,3 +14,6 @@ Extension developers can interact with the Magento_CatalogUrlRewrite module. For
 [The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_CatalogUrlRewrite module.
 
 A lot of functionality in the module is on JavaScript, use [mixins](https://developer.adobe.com/commerce/frontend-core/javascript/mixins/) to extend it.
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.8.
