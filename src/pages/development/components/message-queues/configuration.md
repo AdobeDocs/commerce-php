@@ -244,7 +244,6 @@ The `queue_publisher.xml` file defines which connection and exchange to use to p
 
 The `connection` element is a subnode of the `publisher` element. Only one enabled connection can be defined for a publisher at any given time. If you omit the `connection` element, the connection is resolved automatically and `magento` is used as the exchange. See [Connection resolution](#connection-resolution).
 
-
 | Attribute | Description |
 | --- | --- |
 | `name` | The connection name. For explicit values, use `amqp`, `stomp`, or `db`. See [Connection resolution](#connection-resolution). |
