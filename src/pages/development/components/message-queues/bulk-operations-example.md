@@ -1,27 +1,29 @@
 ---
-title: Bulk operations implementation | Commerce PHP Extensions
-description: Use this example to create your own bulk operation in Adobe Commerce or Magento Open Source.
+title: Example bulk operations implementation | Commerce PHP Extensions
+description: Learn how to implement bulk operations for asynchronous processing in Adobe Commerce.
 keywords:
   - Extensions
 ---
 
 # Example bulk operations implementation
 
-This document describes how bulk operations can be implemented. There are three primary tasks to accomplish this:
+This topic explains how to implement bulk operations in Adobe Commerce. Bulk operations allow you to process large sets of data asynchronously using message queues.
 
-*  Create a publisher that sends messages to the message queue
-*  Create a consumer that receives and processes messages
-*  Configure the message queues
+Implementation requires three components:
+
+* **Publisher** - Sends messages to the message queue
+* **Consumer** - Receives and processes messages from the queue
+* **Message queue configuration** - Defines the queue topology and routing
 
 ## Create a publisher
 
-A publisher is responsible for scheduling a bulk operation that performs the following tasks:
+The publisher schedules bulk operations by performing these tasks:
 
-* Generate a bulkUuid for each operation
-* Publish each operation to the message queue
-* Track and report the status of each operation
+* Generating a unique `bulkUuid` for the operation
+* Publishing each operation to the message queue
+* Tracking and reporting operation status
 
-The following example defines a publisher that implements these responsibilities. 
+The following example demonstrates a publisher implementation:
 
 ```php
 <?php
@@ -154,7 +156,7 @@ class ScheduleBulk
 
 ## Create a consumer
 
-A consumer class receives messages from the message queue and changes the status after it is processed. The following example defines a consumer that handles price update bulk operations.
+The consumer receives messages from the queue and updates the operation status after processing. The following example shows a consumer that handles price update operations:
 
 ```php
 <?php
@@ -281,19 +283,19 @@ class Consumer
 
 ## Configure message queues
 
-The message queue topology must be configured to implement bulk operations. Create or edit the following files in the module's `app/code/<vendor>/<module_name>/etc` directory.
+Configure the message queue topology by creating or editing the following files in the `app/code/<vendor>/<module_name>/etc` directory:
 
-*  `communication.xml`
-*  `di.xml`
-*  `queue_consumer.xml`
-*  `queue_publisher.xml`
-*  `queue_topology.xml`
+* `communication.xml`
+* `di.xml`
+* `queue_consumer.xml`
+* `queue_publisher.xml`
+* `queue_topology.xml`
 
-For more information about the `di.xml` file, see [Dependency Injection](../dependency-injection.md). For information the other files, see [Configure message queues](configuration.md).
+For more information about `di.xml`, see [Dependency Injection](../dependency-injection.md). For information about the other files, see [Configure message queues](configuration.md).
 
-### Create `communication.xml`
+### communication.xml
 
-The `communication.xml` file defines aspects of the message queue system that apply to all topics for the module. Create this file with the following contents:
+The `communication.xml` file defines message queue topics for the module:
 
 ```xml
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Communication/etc/communication.xsd">
@@ -303,9 +305,9 @@ The `communication.xml` file defines aspects of the message queue system that ap
 </config>
 ```
 
-### Create `di.xml`
+### di.xml
 
-Add the following type to the module's `di.xml` file.
+Add the following type to the module's `di.xml` file:
 
 ```xml
 <type name="Magento\Framework\MessageQueue\MergerFactory">
@@ -317,9 +319,9 @@ Add the following type to the module's `di.xml` file.
 </type>
 ```
 
-### Create `queue_consumer.xml`
+### queue_consumer.xml
 
-The `queue_consumer.xml` file defines the relationship between a queue and its consumer. Create this file with the following contents:
+The `queue_consumer.xml` file defines the relationship between a queue and its consumer:
 
 ```xml
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/consumer.xsd">
@@ -327,13 +329,13 @@ The `queue_consumer.xml` file defines the relationship between a queue and its c
 </config>
 ```
 
-The connection name (AMQP or STOMP) is determined automatically based on the configuration in the `env.php` file.
+The connection type (AMQP or STOMP) is determined automatically from the `env.php` configuration.
 
-### Create `queue_publisher.xml`
+### queue_publisher.xml
 
-The `queue_publisher.xml` file defines the exchange where a topic is published. Create this file with the following contents:
+The `queue_publisher.xml` file defines the exchange where a topic is published.
 
-**For RabbitMQ (AMQP):**
+**RabbitMQ (AMQP):**
 
 ```xml
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/publisher.xsd">
@@ -343,7 +345,7 @@ The `queue_publisher.xml` file defines the exchange where a topic is published. 
 </config>
 ```
 
-**For ActiveMQ Artemis (STOMP):**
+**ActiveMQ Artemis (STOMP):**
 
 ```xml
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/publisher.xsd">
@@ -353,11 +355,11 @@ The `queue_publisher.xml` file defines the exchange where a topic is published. 
 
 <InlineAlert variant="info" slots="text"/>
 
-For ActiveMQ Artemis, the `<connection>` element is not required because the connection type is determined by the configuration in the `env.php` file. If the topic name and queue name differ, you must specify the `queue` attribute in the `<publisher>` element.
+For ActiveMQ Artemis, the `<connection>` element is not required because the connection type is determined from `env.php`. If the topic name and queue name differ, specify the `queue` attribute in the `<publisher>` element.
 
-### Create `queue_topology.xml`
+### queue_topology.xml
 
-The `queue_topology.xml` file defines the message routing rules and declares queues and exchanges. Create this file with the following content:
+The `queue_topology.xml` file defines message routing rules and declares queues and exchanges:
 
 ```xml
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/topology.xsd">
@@ -369,8 +371,4 @@ The `queue_topology.xml` file defines the message routing rules and declares que
 
 <InlineAlert variant="info" slots="text"/>
 
-Message queue connections are resolved dynamically from the deployment configuration in the `env.php` file. If the queue is configured to use AMQP or STOMP, the corresponding connection is applied. Otherwise, the database connection is used. Therefore, when AMQP or STOMP is specified in the deployment configuration, you can omit connection declarations from `queue_consumer.xml`, `queue_publisher.xml`, and `queue_topology.xml` files.(See [Message queue configuration files](./configuration.md).
-
-<InlineAlert variant="info" slots="text"/>
-
-ActiveMQ Artemis (STOMP) was introduced in Adobe Commerce 2.4.5 and later versions. For STOMP connections, use ANYCAST addressing mode for point-to-point message delivery and load balancing across multiple consumers.
+Message queue connections are resolved dynamically from `env.php`. When AMQP or STOMP is configured, the corresponding connection is applied; otherwise, the database connection is used. You can omit connection declarations from `queue_consumer.xml`, `queue_publisher.xml`, and `queue_topology.xml` when using AMQP or STOMP. ActiveMQ Artemis (STOMP) was introduced in Adobe Commerce 2.4.5 and uses ANYCAST addressing mode for point-to-point message delivery and load balancing across multiple consumers. See [Message queue configuration files](configuration.md).
