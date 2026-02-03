@@ -9,7 +9,7 @@ keywords:
 
 Bulk operations are actions that are performed on a large scale. Example bulk operations tasks include importing or exporting items, changing prices on a mass scale, and assigning products to a warehouse.
 
-For each individual task of a bulk operation, the system creates a message that is published in a [message queue](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html). A consumer runs in the background and processes the messages that it receives. Because tasks are processed in the background through the message queue system, when a merchant launches a bulk operation from the Admin panel, control is quickly returned to the merchant. In previous releases, the merchant could not use the Admin panel until all tasks were completed.
+For each individual task of a bulk operation, the system creates a message that is published in a [message queue](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework). A consumer runs in the background and processes the messages that it receives. Because tasks are processed in the background through the message queue system, when a merchant launches a bulk operation from the Admin panel, control is quickly returned to the merchant. In previous releases, the merchant could not use the Admin panel until all tasks were completed.
 
 The primary Bulk Operation interface is `OperationInterface`. It defines the getter and setter methods the bulk operation uses to create and process messages. The following interfaces are also used:
 
@@ -51,7 +51,7 @@ The `BulkManagementInterface::scheduleBulk` is responsible for publishing bulk o
                 <li>status - The default operation status <inlineCode class="spectrum-Body--sizeS">OperationInterface::STATUS_TYPE_OPEN</inlineCode></li>
                 <li>serialized_data - An array of serialized data with the following required keys:</li>
                 <ul>
-                    <li>entity_id - Your <a href="https://glossary.magento.com/entity">entity</a> ID</li>
+                    <li>entity_id - Your <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#entity">entity</a> ID</li>
                     <li>entity_link - Link to your entity</li>
                     <li>meta_information - String that describes your entity. For example, "SKU: Simple_Product"</li>
                 </ul>

@@ -10,3 +10,6 @@ Module Magento\PayPal implements integration with the PayPal payment system. Nam
 * PayPal Payments Pro
 * PayPal Credit
 * PayFlow Payment Gateway
+
+<InlineAlert slots="text" />
+The version of this module is 101.0.8.

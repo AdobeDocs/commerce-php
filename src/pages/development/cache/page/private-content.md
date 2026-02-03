@@ -42,7 +42,7 @@ To render private content, create a block and a template to display user-agnosti
 
 Do not use the `$_isScopePrivate` property in your blocks. This property is obsolete and will not work properly.
 
-Replace private data in blocks with placeholders (using [Knockout](http://knockoutjs.com/documentation/introduction.html) syntax). The init scope on the root element is `data-bind="scope: 'compareProducts'"`, where you define the scope name (`compareProducts` in this example) in your layout.
+Replace private data in blocks with placeholders (using [Knockout](https://knockoutjs.com/documentation/introduction.html) syntax). The init scope on the root element is `data-bind="scope: 'compareProducts'"`, where you define the scope name (`compareProducts` in this example) in your layout.
 
 Initialize the component as follows:
 
@@ -92,8 +92,8 @@ The following example adds comments to [app/code/Magento/Catalog/etc/frontend/se
 <?xml version="1.0"?>
 <!--
 /**
- * Copyright &copy; 2016 Magento. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

@@ -9,7 +9,7 @@ Google reCAPTCHA ensures that a human being, rather than a computer (or â€œbotâ€
 
 This module provides the reCAPTCHA implementations related to user actions.
 
-For more information please visit the [Magento document for reCAPTCHA](https://docs.magento.com/user-guide/stores/security-google-recaptcha.html).
+For more information please visit the [reCAPTCHA documentation](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-google-recaptcha).
 
 ## Emergency commandline disable for Admin panel Login page:
 
@@ -26,3 +26,6 @@ Can disable Google reCAPTCHA for Admin panel Reset Password page from command-li
 `php bin/magento security:recaptcha:disable-for-user-forgot-password`
 
 This will disable Google reCAPTCHA for Admin panel Reset Password page form.
+
+<InlineAlert slots="text" />
+The version of this module is 1.1.5.

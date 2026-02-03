@@ -32,7 +32,7 @@ Let's go through each step.
 
 ## Step 1: Create a new module
 
-[Create a new module](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=en) named `Learning/CustomField` and register it.
+[Create a new module](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/backend-development/create-module) named `Learning/CustomField` and register it.
 
 ## Step 2 Add a `db_schema.xml` file
 

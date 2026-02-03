@@ -83,3 +83,6 @@ You can alternatively delete the Events Metadata no longer required by adding th
 ```bash
 bin/magento events:sync-events-metadata --delete
 ```
+
+<InlineAlert slots="text" />
+The version of this module is 1.8.1.

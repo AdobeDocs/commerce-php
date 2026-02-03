@@ -29,7 +29,7 @@ Extension developers can interact with the Magento_ConfigurableProduct module. F
 
 Modify the value of the `gallery_switch_strategy` variable in the theme view.xml file to configure how gallery images should be updated when a user switches between product configurations.
 
-Learn how to [configure variables](https://developer.adobe.com/commerce/frontend-core/guide/themes/configure/#view_xml_vars) in the view.xml file.
+Learn how to [configure variables](https://developer.adobe.com/commerce/frontend-core/guide/themes/configure/#configure-variables) in the view.xml file.
 
 There are two available values for the `gallery_switch_strategy` variable:
 
@@ -47,3 +47,6 @@ For example, adding these lines of code to the theme view.xml file will set the 
     <var name="gallery_switch_strategy">replace</var>
 </vars>
 ```
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.8.

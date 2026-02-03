@@ -29,3 +29,6 @@ Extension points enable extension developers to interact with the Magento_Review
 
 You can extend and override layouts in the `Magento\ReviewStaging\view\adminhtml\layout` directory.
 For more information about layouts, see the [Layout documentation](https://developer.adobe.com/commerce/frontend-core/guide/layouts/).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.5.

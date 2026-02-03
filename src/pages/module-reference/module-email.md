@@ -13,7 +13,7 @@ This module adds the page to create/edit email template at the admin side and po
 
 The Magento_Email module is one of the base Magento 2 modules. You cannot disable or uninstall this module.
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Extensibility
 
@@ -35,11 +35,14 @@ For information about a UI component in Magento 2, see [Overview of UI component
 
 ## Additional information
 
-For information about significant changes in patch releases, see [2.4.x Release information](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
+For information about significant changes in patch releases, see [2.4.x Release information](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
 More information about email templates are at articles:
 
-- [Marketing/Email](https://experienceleague.adobe.com/docs/commerce-admin/systems/communications/email-templates.html)
-- [Email templates list](https://experienceleague.adobe.com/docs/commerce-admin/systems/communications/email-templates.html#email-template-list)
+- [Marketing/Email](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/communications/email-templates)
+- [Email templates list](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/communications/email-templates#email-template-list)
 - [Customize email templates](https://developer.adobe.com/commerce/frontend-core/guide/templates/email/)
 - [Migrating custom email templates](https://developer.adobe.com/commerce/frontend-core/guide/templates/email-migration/#nested-arrays)
+
+<InlineAlert slots="text" />
+The version of this module is 101.1.8.

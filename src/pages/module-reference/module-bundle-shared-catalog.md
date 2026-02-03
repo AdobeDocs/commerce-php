@@ -42,3 +42,6 @@ The following directory contains extensible UI components:
 * `Magento\BundleSharedCatalog\view\adminhtml\ui_component` - renderer for pricing and structure listings
 
 For more information, see [UI Listing/Grid Component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/listing-grid/).
+
+<InlineAlert slots="text" />
+The version of this module is 100.5.1.

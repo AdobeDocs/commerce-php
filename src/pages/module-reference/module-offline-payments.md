@@ -20,7 +20,7 @@ Before installing this module, note that the Magento_OfflinePayments is dependen
 - `Magento_Store`
 - `Magento_Catalog`
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Extensibility
 
@@ -41,4 +41,7 @@ For more information about a layout in Magento 2, see the [Layout documentation]
 
 ## Additional information
 
-[Learn how to configure Offline Payment Methods](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#offline-payment-methods).
+[Learn how to configure Offline Payment Methods](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments#offline-payment-methods).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.6.

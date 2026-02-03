@@ -9,7 +9,7 @@ description: Security.txt file for Magento 2 websites
 >
 >  When security vulnerabilities are discovered by researchers, proper reporting channels are often lacking. As a result, vulnerabilities may be left unreported. This document defines a format ("security.txt") to help organizations describe their vulnerability disclosure practices to make it easier for researchers to report vulnerabilities.
 
-Source: https://tools.ietf.org/html/draft-foudil-securitytxt-09
+Source: <https://datatracker.ietf.org/doc/html/draft-foudil-securitytxt-09>
 
 The Magento_Securitytxt module provides the following functionality:
 
@@ -38,3 +38,6 @@ To create security.txt signature (security.txt.sig) file:
 To verify the security.txt file's signature:
 
 `gpg --verify security.txt.sig security.txt`
+
+<InlineAlert slots="text" />
+The version of this module is 1.1.4.

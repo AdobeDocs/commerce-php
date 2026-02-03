@@ -9,7 +9,7 @@ The Magento_Backup module allows administrators to perform backups and rollbacks
 
 The Magento_Backup module does not affect the storefront.
 
-For more information about this module, see [Backups](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/backups.html)
+For more information about this module, see [Backups](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/backups)
 
 ## Extensibility
 
@@ -30,4 +30,7 @@ For more information about layouts in Magento 2, see the [Layout documentation](
 
 ## Additional information
 
-For information about significant changes in patch releases, see [Release information](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
+For information about significant changes in patch releases, see [Release information](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.8.

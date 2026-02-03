@@ -17,7 +17,7 @@ The Magento_ImportExport module creates the following tables in the database:
 
 All database schema changes made by this module are rolled back when the module gets disabled and setup:upgrade command is run.
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Structure
 
@@ -73,7 +73,7 @@ For information about a public API in Magento 2, see [Public interfaces & APIs](
 
 - `exportProcessor` - consumer to run export process
 
-[Learn how to manage Message Queues](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues.html).
+[Learn how to manage Message Queues](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues).
 
 #### Create custom import entity
 
@@ -88,5 +88,8 @@ For information about a public API in Magento 2, see [Public interfaces & APIs](
 You can get more information about import/export processes in magento at the articles:
 
 - [Create custom import entity](https://developer.adobe.com/commerce/php/tutorials/backend/create-custom-import-entity/)
-- [Import](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/import/data-import.html)
-- [Export](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-export.html)
+- [Import](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import)
+- [Export](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-export)
+
+<InlineAlert slots="text" />
+The version of this module is 101.0.8.

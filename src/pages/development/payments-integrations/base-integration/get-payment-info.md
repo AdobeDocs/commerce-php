@@ -23,7 +23,7 @@ However, in any case you should write some code to retrieve payment details from
 
 We have specified `BraintreeAuthorizeRequest` builder composite to process authorization and it includes the `Magento\Braintree\Gateway\Request\PaymentDataBuilder` builder. This is builder responsible for the payment information part of the request, in other words, the credit card information. Let's look closer at it's implementation.
 
-The Braintree payment provider requires the [payment method nonce](https://developers.braintreepayments.com/start/overview#payment-method-nonce)
+The Braintree payment provider requires the [payment method nonce](https://developer.paypal.com/braintree/docs/start/overview#how-it-works)
 to process transactions, and our builder should send it for each authorization transaction.
 
 Here is how the Braintree payment builder looks:
@@ -68,7 +68,7 @@ In most cases, customers fill all required information (credit card, expiration 
 So our payment method implementation should provide the ability to display and process payment form on checkout step.
 
 We can send to backend any specific data, just need to override `getData()` method in
-[payment UI component](https://github.com/magento/magento2/tree/2.3/app/code/Magento/Braintree/view/frontend/web/js/view/payment/method-renderer/cc-form.js):
+[payment UI component](https://github.com/magento/magento2/blob/2.3/app/code/Magento/Braintree/view/frontend/web/js/view/payment/method-renderer/cc-form.js):
 
 ```javascript
 define(
@@ -111,13 +111,13 @@ define(
 
 The `getData()` method returns data what we need and depending on payment integration the returned data can be more
 complicated. we need last step to retrieve data from storefront in the backend. Adobe Commerce provides some
-mechanisms called [Observers](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/events-and-observers.html).
+mechanisms called [Observers](/development/components/events-and-observers/).
 
 ### Read additional data
 
 You need to add an observer to retrieve additional data from payment form and store it
 in the payment additional information. In most cases it will be enough to extend
-[AbstractDataAssignObserver](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Payment/Observer/AbstractDataAssignObserver.php) and add custom behavior.
+[AbstractDataAssignObserver](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/Observer/AbstractDataAssignObserver.php) and add custom behavior.
 
 That's how observer might looks:
 
@@ -170,7 +170,7 @@ And this observer should be added to list of events (`Module_Name/etc/events.xml
 </config>
 ```
 
-This event will be triggered in [Adapter::assignData()](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Payment/Model/Method/Adapter.php) method call:
+This event will be triggered in [Adapter::assignData()](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/Model/Method/Adapter.php) method call:
 
 ```php
 public function assignData(\Magento\Framework\DataObject $data)

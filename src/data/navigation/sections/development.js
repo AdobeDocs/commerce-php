@@ -20,12 +20,12 @@ module.exports = [
           path: "/development/backward-incompatible-changes/",
           pages: [
             {
-              title: "Highlights",
-              path: "/development/backward-incompatible-changes/highlights/",
+              title: "Commerce reference",
+              path: "/development/backward-incompatible-changes/reference/",
             },
             {
-              title: "Reference",
-              path: "/development/backward-incompatible-changes/reference/",
+              title: "Magento reference",
+              path: "/development/backward-incompatible-changes/magento-reference/",
             },
           ],
         },
@@ -306,12 +306,20 @@ module.exports = [
               path: "/development/components/web-api/services/",
             },
             {
+              title: "Resource accessibility",
+              path: "/development/components/web-api/resource-accessibility/",
+            },
+            {
               title: "Set custom routes",
               path: "/development/components/web-api/custom-routes/",
             },
             {
               title: "Request processor pool",
               path: "/development/components/web-api/request-processor-pool/",
+            },
+            {
+              title: "cURL service wrapper",
+              path: "/development/components/web-api/curl/",
             },
             {
               title: "Inventory Management API reference",
@@ -596,6 +604,10 @@ module.exports = [
         {
           title: "Cross-site scripting",
           path: "/development/security/cross-site-scripting/",
+        },
+        {
+          title: "Data re-encryption",
+          path: "/development/security/data-encryption/",
         },
         {
           title: "Denial of service (DoS) attacks",

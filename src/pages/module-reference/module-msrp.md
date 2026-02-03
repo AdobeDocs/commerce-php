@@ -26,7 +26,7 @@ because they use models and blocks from Magento_Msrp module:
 - `\Magento\Msrp\Model\Product\Attribute\Source\Type\Price`
 - `\Magento\Msrp\Block\Adminhtml\Product\Helper\Form\Type\Price`
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Structure
 
@@ -136,3 +136,6 @@ The Magento_Msrp provides extension attributes for `Magento\Catalog\Api\Data\Pro
 
 - attribute code: `msrp`
 - attribute type: `Magento\Msrp\Api\Data\ProductRender\MsrpPriceInfoInterface`
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.7.
