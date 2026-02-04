@@ -30,7 +30,7 @@ All report files are located in the `etc` directory of a module:
 
 The following is a visualized XML Schema for `reports.xml`:
 
-![Reports schema](../../_images/reports_xsd.svg)
+![Reports schema](../../images/reports_xsd.svg)
 
 Report files can be located in any module that depends on the `Analytics` module (for example, the `SalesAnalytics` module created for the reports related to *Sales*). Each report is declared in the `<report>` node. A `report` node is rendered into an SQL query.
 
@@ -128,11 +128,11 @@ Example of a nested condition in Report XML:
 
 The `<conditions>` node contains the following attributes:
 
-|Name|Description|Value|Required?|
-|--- |--- |--- |
-|`attribute`|Column name in the database.|string|Required|
-|`type`|Type of comparison value.|`value` for a scalar value (default)<br/> `identifier` for a column|Optional|
-|`operator`|Comparison operator|Required|
+|Name|Description| Value                                                                  |Required?|
+|--- |--- |------------------------------------------------------------------------|---|
+|`attribute`|Column name in the database.| string                                                                 |Required|
+|`type`|Type of comparison value.| `value` for a scalar value (default) \<br/\> `identifier` for a column |Optional|
+|`operator`|Comparison operator| Required                                                               |
 
 Comparison operator is used to compare columns with the value or columns that can be specified inside the `<conditions>` XML node.
 

@@ -270,12 +270,12 @@ short description must be omitted.
 **Good:**
 
 > Handler for PHP errors/warnings/notices that converts them to exceptions.
-> class ErrorHandler { ... }
+> class ErrorHandler \{ ... \}
 
 **Bad:**
 
 > Error Handler
-> class ErrorHandler { ... }
+> class ErrorHandler \{ ... \}
 
 If possible, add use cases which suggests where developers can or cannot use the class.
 

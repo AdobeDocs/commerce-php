@@ -93,74 +93,19 @@ The `column` subnode defines a column in a table. Each column requires its own d
 
 A column can have the following attributes:
 
-<table>
-    <tr>
-        <th>Attribute</th>
-        <th>Description</th>
-    </tr>
-    <tr>
-        <td><inlineCode class="spectrum-Body--sizeS">xsi:type</inlineCode></td>
-        <td>
-            <p>Specifies the column type. Must be one of the following:</p>
-            <ul>
-                <li><inlineCode class="spectrum-Body--sizeS">blob</inlineCode> (includes blob, mediumblob, longblob)</li>
-                <li><inlineCode class="spectrum-Body--sizeS">boolean</inlineCode></li>
-                <li><inlineCode class="spectrum-Body--sizeS">date</inlineCode></li>
-                <li><inlineCode class="spectrum-Body--sizeS">datetime</inlineCode></li>
-                <li><inlineCode class="spectrum-Body--sizeS">decimal</inlineCode></li>
-                <li><inlineCode class="spectrum-Body--sizeS">float</inlineCode></li>
-                <li><inlineCode class="spectrum-Body--sizeS">int</inlineCode> (includes smallint, bigint, tinyint)</li>
-                <li><inlineCode class="spectrum-Body--sizeS">json</inlineCode></li>
-                <li><inlineCode class="spectrum-Body--sizeS">real</inlineCode> (includes decimal, float, double, real)</li>
-                <li><inlineCode class="spectrum-Body--sizeS">smallint</inlineCode></li>
-                <li><inlineCode class="spectrum-Body--sizeS">text</inlineCode> (includes text, mediumtext, longtext)</li>
-                <li><inlineCode class="spectrum-Body--sizeS">timestamp</inlineCode></li>
-                <li><inlineCode class="spectrum-Body--sizeS">varbinary</inlineCode></li>
-                <li><inlineCode class="spectrum-Body--sizeS">varchar</inlineCode></li>
-            </ul>
-        </td>
-    </tr>
-    <tr>
-        <td><inlineCode class="spectrum-Body--sizeS">default</inlineCode></td>
-        <td>Initializes the column with the specified default value. The default value should have the same datatype defined in xsi:type.</td>
-    </tr>
-    <tr>
-        <td><inlineCode class="spectrum-Body--sizeS">disabled</inlineCode></td>
-        <td>Disables or deletes the declared table, column, constraint, or index.</td>
-    </tr>
-    <tr>
-        <td><inlineCode class="spectrum-Body--sizeS">identity</inlineCode></td>
-        <td>Indicates whether a column is auto incremented.</td>
-    </tr>
-    <tr>
-        <td><inlineCode class="spectrum-Body--sizeS">length</inlineCode></td>
-        <td>Specifies the length of a column. Can be used for <inlineCode class="spectrum-Body--sizeS">char</inlineCode>, <inlineCode class="spectrum-Body--sizeS">varchar</inlineCode>, and <inlineCode class="spectrum-Body--sizeS">varbinary types</inlineCode>.</td>
-    </tr>
-    <tr>
-        <td><inlineCode class="spectrum-Body--sizeS">nullable</inlineCode></td>
-        <td>Indicates whether column can be nullable.</td>
-    </tr>
-    <tr>
-        <td><inlineCode class="spectrum-Body--sizeS">onCreate</inlineCode></td>
-        <td>This is a DDL trigger that allows you to move data from an existing column to a newly created column. This trigger works only when a column is created.</td>
-    </tr>
-    <tr>
-        <td><inlineCode class="spectrum-Body--sizeS">padding</inlineCode></td>
-        <td>The size of an integer column.</td>
-    </tr>
-    <tr>
-        <td><inlineCode class="spectrum-Body--sizeS">precision</inlineCode></td>
-        <td>The number of allowed digits in a real data type.</td>
-    </tr>
-    <tr>
-        <td><inlineCode class="spectrum-Body--sizeS">scale</inlineCode></td>
-        <td>The number of digits after the decimal in a real data type.</td>
-    </tr>
-    <tr>
-        <td><inlineCode class="spectrum-Body--sizeS">unsigned</inlineCode></td>
-        <td>For numeric data types, specifies whether the column can contain positive and negative values or only positive values.</td>
-    </tr>
-</table>
+| Attribute | Description |
+| --- | --- |
+| `xsi:type` | Specifies the column type. Must be one of the following:\<br/\>\<br/\>`blob` (includes blob, mediumblob, longblob)\<br/\>`boolean`\<br/\>`date`\<br/\>`datetime`\<br/\>`decimal`\<br/\>`float`\<br/\>`int` (includes smallint, bigint, tinyint)\<br/\>`json`\<br/\>`real` (includes decimal, float, double, real)\<br/\>`smallint`\<br/\>`text` (includes text, mediumtext, longtext)\<br/\>`timestamp`\<br/\>`varbinary`\<br/\>`varchar` |
+| `default` | Initializes the column with the specified default value. The default value should have the same datatype defined in xsi:type. |
+| `disabled` | Disables or deletes the declared table, column, constraint, or index. |
+| `identity` | Indicates whether a column is auto incremented. |
+| `length` | Specifies the length of a column. Can be used for `char`, `varchar`, and `varbinary types`. |
+| `nullable` | Indicates whether column can be nullable. |
+| `onCreate` | This is a DDL trigger that allows you to move data from an existing column to a newly created column. This trigger works only when a column is created. |
+| `padding` | The size of an integer column. |
+| `precision` | The number of allowed digits in a real data type. |
+| `scale` | The number of digits after the decimal in a real data type. |
+| `unsigned` | For numeric data types, specifies whether the column can contain positive and negative values or only positive values. |
 
 For more information about each type, refer to the annotations in the corresponding XSD file.
 

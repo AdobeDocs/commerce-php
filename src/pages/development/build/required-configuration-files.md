@@ -15,9 +15,8 @@ Unlike Magento 1, there is no monolithic configuration file in Adobe Commerce an
 
 ## Root directory location
 
-import Docs from '/src/_includes/component-root.md'
+<Fragment src='/includes/component-root.md'/>
 
-<Docs />
 
 ## Location of configuration files
 

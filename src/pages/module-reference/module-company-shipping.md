@@ -33,7 +33,7 @@ For more information about layouts, see the [Layout documentation](https://devel
 
 The following directory contains extensible UI components:
 
-<!-- Should the description for the following directory be "company profile" or "company shipping methods"? -->
+\<!-- Should the description for the following directory be "company profile" or "company shipping methods"? -->
 
 * `Magento\CompanyShipping\view\frontend\ui_component` - company form
 

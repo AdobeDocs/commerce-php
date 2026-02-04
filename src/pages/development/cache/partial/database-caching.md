@@ -184,11 +184,11 @@ Use the following steps:
 
    `cache` table example.
 
-   ![Sample contents of the cache table with database caching enabled](../../../_images/config-db_cache-table.png)
+   ![Sample contents of the cache table with database caching enabled](../../../images/config-db_cache-table.png)
 
    `cache_tag` table example.
 
-   ![Sample contents of the cache tag table with database caching enabled](../../../_images/config-db_cache-tag-table.png)
+   ![Sample contents of the cache tag table with database caching enabled](../../../images/config-db_cache-tag-table.png)
 
 ## Configuration examples
 
@@ -275,7 +275,7 @@ This section contains code sample snippets to refer to when configuring database
 ],
 ```
 
-<!-- Link references -->
+\<!-- Link references -->
 [Varnish]: https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/varnish/config-varnish
 [associate cache frontends with cache types]: https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/cache-types
 [sample configurations]: #configuration-examples

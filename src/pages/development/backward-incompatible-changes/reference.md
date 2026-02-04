@@ -31,41 +31,32 @@ Patch releases are primarily focused on delivering security and quality enhancem
 
 Adobe Commerce v2.4.8 includes the [B2B extension][] v1.5.2.
 
-import Ac248 from '/src/_includes/backward-incompatible-changes/commerce/2.4.7-2.4.8.md'
-
-<Ac248 />
+<Fragment src='/includes/backward-incompatible-changes/commerce/2-4-7-2-4-8.md'/>
 
 ## 2.4.6 - 2.4.7
 
 Adobe Commerce v2.4.7 includes the [B2B extension][] v1.4.2.
 
-import Ac247 from '/src/_includes/backward-incompatible-changes/commerce/2.4.6-2.4.7.md'
-
-<Ac247 />
+<Fragment src='/includes/backward-incompatible-changes/commerce/2-4-6-2-4-7.md'/>
 
 ## 2.4.5 - 2.4.6
 
 Adobe Commerce v2.4.6 includes the [B2B extension][] v1.3.5.
 
-import Ac246 from '/src/_includes/backward-incompatible-changes/commerce/2.4.5-2.4.6.md'
-
-<Ac246 />
+<Fragment src='/includes/backward-incompatible-changes/commerce/2-4-5-2-4-6.md'/>
 
 ## 2.4.4 - 2.4.5
 
 Adobe Commerce v2.4.5 includes the [B2B extension][] v1.3.4.
 
-import Docs19 from '/src/_includes/backward-incompatible-changes/commerce/2.4.4-2.4.5.md'
-
-<Docs19 />
+<Fragment src='/includes/backward-incompatible-changes/commerce/2-4-4-2-4-5.md'/>
 
 ## 2.4.3 - 2.4.4
 
 Adobe Commerce v2.4.4 includes the [B2B extension][] v1.3.3.
 
-import Docs16 from '/src/_includes/backward-incompatible-changes/commerce/2.4.3-2.4.4.md'
+<Fragment src='/includes/backward-incompatible-changes/commerce/2-4-3-2-4-4.md'/>
 
-<Docs16 />
 
-<!-- Links -->
+\<!-- Links -->
 [B2B extension]: https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/reference/backward-incompatible-changes

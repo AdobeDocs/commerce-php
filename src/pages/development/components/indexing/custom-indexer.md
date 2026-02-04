@@ -170,7 +170,7 @@ These settings start `<VendorName>\Merchandizing\Model\Indexer\Popular::execute`
 
 After this, please refresh the cache and go to **System** > Tools > [**Index Management**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) through the Admin to verify the custom indexer result.
 
-![Custom indexer modes](../../../_images/custom-indexer-magento2.jpg)
+![Custom indexer modes](../../../images/custom-indexer-magento2.jpg)
 
 Now when an order is placed, the Popular Products indexer calculates the sorting order of the products by popularity and stores this data in the index table, so that it can be used in product displaying logic.
 

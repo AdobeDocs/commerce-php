@@ -109,7 +109,7 @@ When safe mode is enabled, Adobe Commerce and Magento Open Source create a CSV f
 
 Each CSV file contains a row that defines the column (or other database entity) names as well as rows of values, as shown in the following image:
 
-![Dump Example](../../../_images/dump_example.png)
+![Dump Example](../../../images/dump_example.png)
 
 ## Create a schema whitelist
 

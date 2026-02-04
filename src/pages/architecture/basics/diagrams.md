@@ -11,4 +11,4 @@ Depending upon your role and purpose for learning more about Adobe Commerce and 
 
 The following diagram illustrates the components and shows the "layers" or tiers in the Commerce framework.
 
-![Architectural Diagram](../../_images/archi_diagram_desired-state.png)
+![Architectural Diagram](../../images/archi_diagram_desired-state.png)

@@ -16,7 +16,7 @@ Without indexing, the application would have to calculate the price of every pro
 ## Indexing terminology
 
 Dictionary
-: Original data entered to the system. Dictionaries are organized in <a href="https://en.wikipedia.org/wiki/Database_normalization" target="_blank">normal form</a> to facilitate maintenance (updating the data).
+: Original data entered to the system. Dictionaries are organized in [normal form](https://en.wikipedia.org/wiki/Database_normalization) to facilitate maintenance (updating the data).
 
 Index
 : Representation of the original data for optimized reading and searching. Indexes can contain results of aggregations and various calculations. Index data can be always re-created from a dictionary using a certain algorithm.
@@ -34,10 +34,10 @@ This topic provides a high level description of how indexing is implemented from
 
 The following components are involved in the indexing process:
 
-| Component                                                                                                    | Description                                                                                                                                                                                                                                                                                                                       |
-|--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Magento_Indexer](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Indexer)                     | Implements the following<ul><li>indexer declaration</li><li>indexer running</li><li>indexer running mode configuration</li><li>indexer status</li></ul>                                                                                                                                                                           |
-| [Magento/Framework/Mview](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Mview) | Allows tracking database changes for a certain entity (product, category, etc.) and running change handler.<br /><br />Emulates the materialized view technology for MySQL using triggers and separate materialization process (provides executing PHP code instead of SQL queries, which allows materializing multiple queries). |
+| Component                                                                                                    | Description                                                                                                                                                                                                                                                                                                                         |
+|--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Magento_Indexer](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Indexer)                     | Implements the following\<ul\>\<li\>indexer declaration\</li\>\<li\>indexer running\</li\>\<li\>indexer running mode configuration\</li\>\<li\>indexer status\</li\>\</ul\>                                                                                                                                                         |
+| [Magento/Framework/Mview](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Mview) | Allows tracking database changes for a certain entity (product, category, etc.) and running change handler.\<br/\>\<br/\>Emulates the materialized view technology for MySQL using triggers and separate materialization process (provides executing PHP code instead of SQL queries, which allows materializing multiple queries). |
 
 <InlineAlert variant="warning" slots="text"/>
 
@@ -59,7 +59,7 @@ The type of reindex performed in each particular case depends on the type of cha
 
 The following figure shows the logic for partial reindexing.
 
-![Partial indexing workflow](../../../_images/index_indexers_flow.png)
+![Partial indexing workflow](../../../images/index_indexers_flow.png)
 
 ### Indexer status
 
@@ -125,7 +125,7 @@ You can also reindex from the [command line](https://experienceleague.adobe.com/
 
 The following figure shows an example of setting indexers to Update by Schedule:
 
-![Changing indexer modes](../../../_images/index_index-modes.png)
+![Changing indexer modes](../../../images/index_index-modes.png)
 
 ### Mview
 

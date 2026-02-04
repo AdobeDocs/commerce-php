@@ -11,15 +11,13 @@ In this section, we go over the different file structures for component types. T
 
 ## Root directory location
 
-import Docs from '/src/_includes/component-root.md'
-
-<Docs />
+<Fragment src='/includes/component-root.md'/>
 
 ## Module file structure
 
 A typical file structure for a module can look like the following:
 
-![Module File Structure](../../_images/pdg-config-file-structure.png)
+![Module File Structure](../../images/pdg-config-file-structure.png)
 
 ### Common directories
 

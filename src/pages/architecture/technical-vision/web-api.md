@@ -7,9 +7,7 @@ keywords:
 
 # Web API technical vision
 
-import Docs from '/src/_includes/web-api.md'
-
-<Docs />
+<Fragment src="/includes/web-api.md"/>
 
 See [more details](https://en.wikipedia.org/wiki/Web_API) about the importance of web APIs in modern web applications.
 
@@ -17,13 +15,13 @@ See [more details](https://en.wikipedia.org/wiki/Web_API) about the importance o
 
 The following diagram shows Web API component dependencies.
 
-![Web API components dependencies](../../_images/webapi-components-dependencies.png)
+![Web API components dependencies](../../images/webapi-components-dependencies.png)
 
 ## High-level architecture
 
 The following image provides an overview of how Web API requests are processed.
 
-![Web API request processing overview](../../_images/webapi-request-processing-high-level-overview.png)
+![Web API request processing overview](../../images/webapi-request-processing-high-level-overview.png)
 
 ## Extension scenarios
 

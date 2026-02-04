@@ -7,9 +7,7 @@ keywords:
   - Payments
 ---
 
-import Docs from '/src/_includes/braintree-note.md'
-
-<Docs />
+<Fragment src='/includes/braintree-note.md'/>
 
 # Adding vault integration
 
@@ -19,7 +17,7 @@ The [Commerce Vault](https://github.com/magento/magento2/tree/2.4/app/code/Magen
 
 The following diagram shows a simplified interaction flow between Commerce sales management, vault, payment integration and external payment service provider.
 
-![Vault Interaction](../../../_images/vault_interaction_flow1.png)
+![Vault Interaction](../../../images/vault_interaction_flow1.png)
 
 The flow is similar to usual Commerce [payment gateway interaction flow](../payment-gateway/index.md).
 

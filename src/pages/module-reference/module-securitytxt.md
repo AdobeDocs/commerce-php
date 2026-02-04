@@ -9,7 +9,7 @@ description: Security.txt file for Magento 2 websites
 >
 >  When security vulnerabilities are discovered by researchers, proper reporting channels are often lacking. As a result, vulnerabilities may be left unreported. This document defines a format ("security.txt") to help organizations describe their vulnerability disclosure practices to make it easier for researchers to report vulnerabilities.
 
-Source: <https://datatracker.ietf.org/doc/html/draft-foudil-securitytxt-09>
+Source: [https://datatracker.ietf.org/doc/html/draft-foudil-securitytxt-09](https://datatracker.ietf.org/doc/html/draft-foudil-securitytxt-09)
 
 The Magento_Securitytxt module provides the following functionality:
 

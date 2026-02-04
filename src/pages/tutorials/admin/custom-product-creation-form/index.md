@@ -26,4 +26,4 @@ This tutorial includes the following customizations:
 
 The following image is an illustration of the default view of the form on the **New Product** page:
 
-![The product creation page in Admin](../../../_images/tutorials/product_pmg.png)
+![The product creation page in Admin](../../../images/tutorials/product_pmg.png)

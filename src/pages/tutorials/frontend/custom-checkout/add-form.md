@@ -10,7 +10,7 @@ keywords:
 
 This topic describes how to add a custom input form (implemented as a UI component) to the Checkout page.
 
-![The input form with four fields](../../../_images/tutorials/how_checkout_form.png)
+![The input form with four fields](../../../images/tutorials/how_checkout_form.png)
 
 Most of the elements, including the default forms on the Checkout page are implemented as UI components. And we recommend your custom form to be a UI component, extending the default [Magento_Ui/js/form/form](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Ui/view/base/web/js/form/form.js) component.
 

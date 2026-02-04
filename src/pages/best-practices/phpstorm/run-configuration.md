@@ -20,17 +20,17 @@ The Run Configuration is a Graphical User Interface (GUI) for the Upgrade Compat
 
 The Upgrade Compatibility Tool is an Adobe Commerce feature. You need your Adobe Commerce license key to install it.
 
-![](../../_images/best-practices/phpstorm/uct-run-configuration-1-min.gif)
+![](../../images/best-practices/phpstorm/uct-run-configuration-1-min.gif)
 
 When you create a new run configuration for a specific tool, create it from one of the dedicated configuration templates. Templates implement the startup logic and define the list of parameters and their default values.
 
 The Upgrade Compatibility Tool Run Configuration template is located in the PHPStorm plugin menu, under **Run/Debug configurations** > **Add New Configuration** > **Upgrade Compatibility Tool**.
 
-![](../../_images/best-practices/phpstorm/uct-run-configuration-template-position.png)
+![](../../images/best-practices/phpstorm/uct-run-configuration-template-position.png)
 
 These are the main components of the Upgrade Compatibility Tool Run Configuration template:
 
-![](../../_images/best-practices/phpstorm/uct-run-configuration-template-view.png)
+![](../../images/best-practices/phpstorm/uct-run-configuration-template-view.png)
 
 *  *Upgrade Compatibility Tool (UCT) executable*: Path where the Upgrade Compatibility Tool executable script is located. Determined by the `bin/uct` path from the Upgrade Compatibility Tool source root directory.
 *  *Project root*: Current PHPStorm plugin root directory.
@@ -49,7 +49,7 @@ After you correctly configure the template, you can run the Upgrade Compatibilit
 
 To run the Upgrade Compatibility Tool click `UCT Run`.
 
-![](../../_images/best-practices/phpstorm/uct-run-configuration-3-min.gif)
+![](../../images/best-practices/phpstorm/uct-run-configuration-3-min.gif)
 
 The results are displayed in the console, including handy navigation to the compatibility issues in the code.
 

@@ -137,7 +137,7 @@ Remember to [disable](#disable-a-component) or [remove](#remove-a-component) the
 
 ### Order Summary Result
 
-![Discount Component](../../../_images/tutorials/discount_component.png)
+![Discount Component](../../../images/tutorials/discount_component.png)
 
 ## Disable a component
 

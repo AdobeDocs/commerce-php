@@ -20,7 +20,7 @@ A service contract includes [data interfaces](design-patterns.md#data-interfaces
 
 If developers define data and service interfaces according to a set of [design patterns](design-patterns.md), the result is a well-defined, durable API that other modules and third-party extensions can implement through models and resource models.
 
-![Service Contracts](../../../_images/msc.jpg)
+![Service Contracts](../../../images/msc.jpg)
 
 ## Benefits
 

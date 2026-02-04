@@ -5,9 +5,9 @@ keywords:
   - Extensions
 ---
 
-<Hero slots="image, heading, text"/>
+<SuperHero slots="image, heading, text"/>
 
-![Commerce PHP Extensions](_images/home-bg.jpeg)
+![Commerce PHP Extensions](images/home-bg.jpeg)
 
 # Commerce PHP Extensions
 
@@ -33,37 +33,37 @@ Use these sections to learn about how to develop PHP extensions.
 
 ### Sections
 
-[Architecture](architecture/)
+[Architecture](architecture/index.md)
 
 Explore resources that describe the foundational elements of the Adobe Commerce and Magento Open Source framework.
 
 <DiscoverBlock slots="link, text"/>
 
-[Extension Development](development/)
+[Extension Development](development/index.md)
 
 Learn about extending or customizing Adobe Commerce and Magento Open Source components. Apply this knowledge to create components that introduce new functionality and distribute them to merchants.
 
 <DiscoverBlock slots="link, text"/>
 
-[Best Practices](best-practices/)
+[Best Practices](best-practices/index.md)
 
 Use this collection of best practices curated by the community as well as the Adobe User Experience (UX), Product Management, and Engineering teams to avoid commonly reported issues in third-party Adobe Commerce and Magento Open source extensions.
 
 <DiscoverBlock slots="link, text"/>
 
-[Module Reference](module-reference/)
+[Module Reference](module-reference/index.md)
 
 Get module names and descriptions for PHP modules specific to Magento Open Source, Adobe Commerce, and B2B for Adobe Commerce.
 
 <DiscoverBlock slots="link, text"/>
 
-[Coding Standards](coding-standards/)
+[Coding Standards](coding-standards/index.md)
 
 Review Adobe Commerce and Magento Open Source coding standards for different languages, including PHP, JavaScript, LESS, and jQuery.
 
 <DiscoverBlock slots="link, text"/>
 
-[Tutorials](tutorials/)
+[Tutorials](tutorials/index.md)
 
 Follow step-by-step tutorials to customize default Adobe Commerce and Magento Open Source features, including checkout, attributes, and the product creation form.
 
