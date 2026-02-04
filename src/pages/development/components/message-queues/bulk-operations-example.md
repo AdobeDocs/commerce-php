@@ -319,21 +319,35 @@ The `queue_consumer.xml` file defines the relationship between a queue and its c
 
 ```xml
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/consumer.xsd">
-    <consumer name="<consumer_name>" queue="<queue_name>" connection="amqp" consumerInstance="Magento\Framework\MessageQueue\Consumer" handler="<Consumer_Class>::<Consumer_method>"/>
+    <consumer name="<consumer_name>" queue="<queue_name>" consumerInstance="Magento\Framework\MessageQueue\Consumer" handler="<Consumer_Class>::<Consumer_method>"/>
 </config>
 ```
+
+The connection type (AMQP or STOMP) is determined automatically based on your `env.php` configuration.
 
 ### Create `queue_publisher.xml`
 
 The `queue_publisher.xml` file defines the exchange where a topic is published. Create this file with the following contents:
 
+**For RabbitMQ (AMQP):**
+
 ```xml
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/publisher.xsd">
     <publisher topic="<topic_name>">
-        <connection name="amqp" exchange="<exchange>" />
+        <connection exchange="<exchange>" />
     </publisher>
 </config>
 ```
+
+**For ActiveMQ Artemis (STOMP):**
+
+```xml
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/publisher.xsd">
+    <publisher topic="<topic_name>" queue="<queue_name>" />
+</config>
+```
+
+**Note**: For ActiveMQ Artemis, the `<connection>` element is not required as the connection type is determined from `env.php`. When the topic name and queue name are different, you must specify the `queue` attribute in the `<publisher>` element.
 
 ### Create `queue_topology.xml`
 
@@ -341,13 +355,19 @@ The `queue_topology.xml` file defines the message routing rules and declares que
 
 ```xml
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/topology.xsd">
-    <exchange name="magento" type="topic" connection="amqp">
+    <exchange name="magento" type="topic">
         <binding id="defaultBinding" topic="" destinationType="queue" destination="<queue_name>"/>
     </exchange>
 </config>
 ```
 
+The connection type is automatically determined from your `env.php` configuration.
+
 <InlineAlert variant="info" slots="text"/>
 
-Message queue connections are defined dynamically, based on the deployment configuration in the `env.php` file. If AMQP is configured in the deployment configuration of the queue, AMQP connections are used. Otherwise, database connections are used.
-As a result, if AMQP is configured in the deployment configuration of the queue, you can omit connection declarations in the `queue_consumer.xml`, `queue_publisher.xml`, and `queue_topology.xml` [message queue configuration files](./configuration.md).
+Message queue connections are defined dynamically, based on the deployment configuration in the `env.php` file. If AMQP or STOMP is configured in the deployment configuration of the queue, the respective connection is used. Otherwise, database connections are used.
+As a result, if AMQP or STOMP is configured in the deployment configuration of the queue, you can omit connection declarations in the `queue_consumer.xml`, `queue_publisher.xml`, and `queue_topology.xml` [message queue configuration files](./configuration.md).
+
+<InlineAlert variant="info" slots="text"/>
+
+ActiveMQ Artemis (STOMP) was introduced in Adobe Commerce 2.4.6 and later versions. For STOMP connections, use ANYCAST addressing mode for point-to-point message delivery and load balancing across multiple consumers.
