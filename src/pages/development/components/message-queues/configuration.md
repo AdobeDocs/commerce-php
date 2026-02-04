@@ -324,6 +324,88 @@ The default global value is `1`. To override for a specific consumer, set the `o
 * **Infrequent consumers**—Combine `onlySpawnWhenMessageAvailable` with `maxIdleTime`. The consumer spawns only when needed and terminates after a period of inactivity.
 * **Resource optimization**—Combine the global `only_spawn_when_message_available` setting with `consumers-wait-for-messages` set to `false`. Consumers run only when messages exist and exit when the queue is empty.
 
+## `env.php` Configuration
+
+The message queue connection configuration is defined in the `app/etc/env.php` file. When `connection` elements are omitted from `queue_consumer.xml`, `queue_publisher.xml`, and `queue_topology.xml` files, the system automatically uses the connection configured in `env.php`.
+
+### Example configurations
+
+**For RabbitMQ (AMQP) only:**
+
+```php
+return [
+    // ... other configuration
+    'queue' => [
+        'amqp' => [
+            'host' => 'localhost',
+            'port' => '5672',
+            'user' => 'guest',
+            'password' => 'guest',
+            'virtualhost' => '/'
+        ],
+        'consumers_wait_for_messages' => 1
+    ]
+];
+```
+
+**For ActiveMQ Artemis (STOMP) only:**
+
+```php
+return [
+    // ... other configuration
+    'queue' => [
+        'stomp' => [
+            'host' => 'localhost',
+            'port' => '61613',
+            'user' => 'admin',
+            'password' => 'admin'
+        ],
+        'consumers_wait_for_messages' => 1
+    ]
+];
+```
+
+**For MySQL (Database) only:**
+
+```php
+return [
+    // ... other configuration
+    'queue' => [
+        'consumers_wait_for_messages' => 1
+    ]
+    // Database connection uses existing 'db' configuration
+];
+```
+
+**When multiple connection types are configured:**
+
+If you have both AMQP and STOMP configured, you must specify `default_connection` to indicate which one the system should use:
+
+```php
+return [
+    // ... other configuration
+    'queue' => [
+        'amqp' => [
+            'host' => 'localhost',
+            'port' => '5672',
+            'user' => 'guest',
+            'password' => 'guest',
+            'virtualhost' => '/'
+        ],
+        'stomp' => [
+            'host' => 'localhost',
+            'port' => '61613',
+            'user' => 'admin',
+            'password' => 'admin'
+        ],
+        'default_connection' => 'amqp',  // Required when multiple connections exist
+        'consumers_wait_for_messages' => 1
+    ]
+];
+```
+
+The `default_connection` value can be `db`, `amqp`, or `stomp`. When only one connection type is configured in `env.php`, the system automatically uses that connection and `default_connection` is not required. If `queue/default_connection` is specified, that connection is used for all message queues unless a specific connection is defined in a module's `queue_topology.xml`, `queue_publisher.xml`, or `queue_consumer.xml` file.
+
 ## ActiveMQ Artemis (STOMP) support
 
 <InlineAlert variant="info" slots="text"/>

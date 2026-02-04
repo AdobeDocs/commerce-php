@@ -335,17 +335,26 @@ The connection type (AMQP or STOMP) is determined automatically from the `env.ph
 
 The `queue_publisher.xml` file defines the exchange where a topic is published.
 
-**RabbitMQ (AMQP):**
+**For RabbitMQ (AMQP):**
+
+```xml
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/publisher.xsd">
+    <!-- Connection and exchange are resolved from app/etc/env.php configuration -->
+    <publisher topic="<topic_name>" />
+</config>
+```
+
+Alternatively, you can explicitly specify the connection and exchange:
 
 ```xml
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/publisher.xsd">
     <publisher topic="<topic_name>">
-        <connection exchange=<exchange> />
+        <connection name="amqp" exchange="magento" />
     </publisher>
 </config>
 ```
 
-**ActiveMQ Artemis (STOMP):**
+**For ActiveMQ Artemis (STOMP):**
 
 ```xml
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/publisher.xsd">
