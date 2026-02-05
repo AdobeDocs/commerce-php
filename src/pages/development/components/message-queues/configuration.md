@@ -246,7 +246,7 @@ The `connection` element is a subnode of the `publisher` element. Only one enabl
 
 | Attribute | Description |
 | --- | --- |
-| `name` | The connection name. For explicit values, use `amqp`, `stomp`, or `db`. See [Connection resolution](#connection-resolution). |
+| `name` | The connection name. For explicit values, use `amqp`, `stomp`, or `db`. If you omit the `connection` element, the [connection is resolved automatically](#connection-resolution).
 | `exchange` | The name of the exchange to publish to. The default system exchange name is `magento`. |
 | `disabled` | Determines whether this queue is disabled. The default value is `false`. |
 
