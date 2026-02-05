@@ -82,6 +82,7 @@ class DummyPatch
         //Please note, that one patch is responsible only for one setup version
         //So one UpgradeData can consist of few data patches
         $this->moduleDataSetup->getConnection()->endSetup();
+        return $this;
     }
 
     /**
