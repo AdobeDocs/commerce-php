@@ -23,7 +23,7 @@ View models are available in Adobe Commerce and Magento Open Source 2.2 and late
 
 The use of helpers in templates is discouraged. It is recommended to use view models instead.
 
-## How to write view models
+## Create and use view models
 
 View models can be used by passing the view model class as an argument to a template's block in the page layout configuration file. In the following example snippet, `MyNewViewModel` is the view model class of the ExampleCorp_Catalog module passed as an argument to a block.
 
@@ -72,8 +72,9 @@ $viewModel = $block->getViewModel();
 ```
 
 ## Examples
+Here are several examples of how view models are used in Adobe Commerce.
 
-[Theme](https://github.com/magento/magento2/blob/2.3.3/app/code/Magento/Theme/view/frontend/layout/default.xml#L43-L45 "view_model definition"). This `view_model` is injected into a template to return the target store redirect url.
+[Theme](https://github.com/magento/magento2/blob/2.3.3/app/code/Magento/Theme/view/frontend/layout/default.xml#L43-L45 "view_model definition"). In this example, the `view_model` is injected into a template to return the target store redirect URL.
 
 The following is an example of view model usage within the `Magento/Catalog/view/frontend/layout/catalog_product_view.xml` layout file.
 
@@ -144,3 +145,55 @@ $postArray = $viewModel->getPostData(
     ['product' => $_item->getEntityId()]
 );
 ```
+
+## Additional concepts and best practices
+
+### Difference between blocks and view models
+
+Blocks prepare data for rendering and interact with the layout system.  
+View models expose data or operations directly to templates without layout responsibilities.
+
+Use a block when layout manipulation is required.  
+Use a view model when the template needs business logic or computed values.
+
+### Single Responsibility Principle (SRP)
+
+View models help enforce SRP by moving business logic out of blocks.  
+This keeps classes smaller, easier to test, and more maintainable.
+
+### Reusability
+
+A view model can be injected into multiple templates or blocks.  
+This avoids duplicated logic and ensures consistent behavior across the storefront.
+
+### Using multiple view models
+
+You can provide several view models to the same block:
+
+```xml
+<arguments>
+    <argument name="product_view_model" xsi:type="object">Vendor\Module\ViewModel\ProductData</argument>
+    <argument name="utility_view_model" xsi:type="object">Vendor\Module\ViewModel\Utility</argument>
+</arguments>
+```
+Retrieve them in the template using $block->getViewModel() or custom accessors.
+### Cache and performance
+
+View models do not manage cache identities.  
+If a view model depends on cached entities, ensure the block implements  
+`\Magento\Framework\DataObject\IdentityInterface` to prevent stale output.
+
+### Naming conventions
+
+- Store view models in the `ViewModel` namespace.
+- Use descriptive names such as `PrepareData`, `Formatter`, or `Resolver`.
+- Keep methods small and focused on template-specific data.
+
+### Checklist
+
+1. Implement `\Magento\Framework\View\Element\Block\ArgumentInterface`.
+2. Inject dependencies in the constructor.
+3. Add only the logic required by the template.
+4. Register the view model in the layout XML.
+5. Access it using `$block->getViewModel()`.
+6. Use `$escaper` for proper HTML escaping.
