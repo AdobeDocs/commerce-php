@@ -1,37 +1,57 @@
 ---
 title: Message Queues | Commerce PHP Extensions
-description: Review an introduction to the message queue system in Adobe Commerce and Magento Open Source.
+description: Learn about the Message Queue Framework (MQF) for asynchronous communication in Adobe Commerce and how to configure different messaging brokers.
+role: Admin, Developer
 keywords:
   - Extensions
 ---
 
 # Message queues
 
-Message queues provide an asynchronous communications mechanism in which the sender and the receiver of a message do not contact each other, nor do they need to communicate with the message queue at the same time. When a sender places a message onto a queue, it is stored until the recipient receives them.
+Message queues provide an asynchronous communications mechanism in which the sender and the receiver of a message do not contact each other directly. When a sender places a message onto a queue, the message is stored until the recipient receives it.
 
-In Adobe Commerce and Magento Open Source, the Message Queue Framework (MQF) is a fully-functional system that allows a module to publish messages to queues. It also creates consumers to receive them asynchronously. The MQF primarily uses [RabbitMQ](http://www.rabbitmq.com) as the messaging broker, which provides a scalable platform for sending and receiving messages. It also includes a mechanism for storing undelivered messages. RabbitMQ is based on the Advanced Message Queuing Protocol (AMQP) 0.9.1 specification.
+## Message Queue Framework overview
 
-A basic message queue system can also be set up without using RabbitMQ. In this system, a MySQL adapter stores messages in the database. Three database tables (`queue`, `queue_message`, and `queue_message_status`) manage the message queue workload. Cron jobs ensure the consumers are able to receive messages. This solution is not very scalable. RabbitMQ should be used whenever possible.
+The Adobe Commerce Message Queue Framework (MQF) is a fully-functional system that allows a module to publish messages to queues and create consumers to receive them asynchronously.
+
+The MQF supports the following messaging brokers:
+
+| Broker | Protocol | Description |
+| --- | --- | --- |
+| [RabbitMQ](http://www.rabbitmq.com) | AMQP 0.9.1 | The primary messaging broker with a scalable platform for sending and receiving messages. Includes a mechanism for storing undelivered messages. |
+| [Apache ActiveMQ Artemis](https://activemq.apache.org/components/artemis/) | STOMP | An alternative messaging broker using Simple Text Oriented Messaging Protocol (STOMP) for reliable and scalable messaging. |
+| MySQL adapter | Database | A basic message queue system that stores messages in the database using three tables: `queue`, `queue_message`, and `queue_message_status`. Cron jobs ensure consumers receive messages. |
+
+<InlineAlert variant="info" slots="text"/>
+
+The MySQL adapter is not scalable. Use an external message broker like RabbitMQ or ActiveMQ Artemis for production environments whenever possible.
 
 See [Configure message queues](configuration.md) for information about setting up the message queue system.
 
-## Send a message from the publisher to a queue
+## Publish messages to a queue
 
-The following code sends a message to the queue. The `publish` method is defined in `PublisherInterface`
+Use the `publish` method defined in `PublisherInterface` to send a message to the queue:
 
 ```php
-$publisher->publish($topic, $message)
+$publisher->publish($topic, $message);
 ```
 
-In a MySQL adapter environment, a message that is published to multiple queues creates a single record in `queue_message` and multiple records in `queue_message_status`: one for each queue. (A join on the `queue`, `queue_message`, and `queue_message_status` tables is required).
+When using the MySQL adapter, a message published to multiple queues creates:
 
-## Instantiate a consumer
+- A single record in `queue_message`
+- Multiple records in `queue_message_status` (one for each queue)
 
-The procedure for instantiating a consumer differs, depending on which message queue system is being used.
+Retrieving these messages requires a join on the `queue`, `queue_message`, and `queue_message_status` tables.
 
-### RabbitMQ
+## Instantiate consumers
 
-This instantiates a consumer that is defined in a [`queue_consumer.xml`](configuration.md#queue_consumerxml) file. The consumer (`customer_created_listener`) listens to the queue and receives all new messages. For every message, it invokes `Magento\Some\Class::processMessage($message)`
+The procedure for instantiating a consumer differs depending on the message queue system.
+
+### RabbitMQ and ActiveMQ Artemis
+
+For external brokers, consumers are defined in a [`queue_consumer.xml`](configuration.md#queue_consumerxml) file. The consumer listens to the queue, receives messages, and invokes a callback method for each one.
+
+The following example instantiates the `customer_created_listener` consumer, which calls `Magento\Some\Class::processMessage($message)` for each message:
 
 ```php
 $this->consumerFactory->get('customer_created_listener')
@@ -40,32 +60,37 @@ $this->consumerFactory->get('customer_created_listener')
 
 ### MySQL adapter
 
-Implement `\Magento\Framework\MessageQueue\ConsumerInterface::process($maxNumberOfMessages)` to instantiate a consumer.
+For the MySQL adapter, implement `ConsumerInterface::process($maxNumberOfMessages)` and perform the following steps:
 
-Perform the following actions:
+1. Get the queue name using `ConsumerConfigurationInterface::getQueueName`.
+1. Select `$maxNumberOfMessages` records, filtering on `queue_name`. Join all three tables (`queue`, `queue_message`, `queue_message_status`). Extract fewer records at a time to improve load distribution across consumers.
+1. Decode the message using the topic name from `ConsumerConfigurationInterface`.
+1. Invoke `ConsumerConfigurationInterface::getCallback` with the decoded data.
 
-1. Define the queue name associated with current consumer using `\Magento\Framework\MessageQueue\ConsumerConfigurationInterface::getQueueName`.
-1. Select `$maxNumberOfMessages` message records, filtering on the `queue_name` field. You must join on all 3 tables. To accomplish this, you may want to extract fewer records at a time to improve load distribution between multiple consumers.
-1. Decode the message using topic name taken from the `\Magento\Framework\MessageQueue\ConsumerConfigurationInterface`.
-1. Invoke callback `Magento\Framework\MessageQueue\ConsumerConfigurationInterface::getCallback` and pass the decoded data as an argument.
+## Switch from MySQL to an external broker
 
-## Change message queue from MySQL to AMQP
+You can switch from the MySQL adapter to an external message broker by adding runtime configuration to redefine the adapter for a topic. The configuration disables the `db` connection and enables the external broker connection.
 
-The following sample introduces a runtime configuration that allows you to redefine the adapter for a topic.
+The following example shows how to switch a topic to an external broker. Replace the placeholder values based on your broker:
+
+| Broker | Publisher value | Connection name |
+| --- | --- | --- |
+| RabbitMQ | `amqp-magento` | `amqp` |
+| ActiveMQ Artemis | `stomp-magento` | `stomp` |
 
 ```php
 'queue' => [
     'topics' => [
-        'product_action_attribute.update' => [
-            'publisher' => 'amqp-magento'
+        '<topic.name>' => [
+            'publisher' => '<amqp-magento|stomp-magento>'
         ]
     ],
     'config' => [
         'publishers' => [
-            'product_action_attribute.update' => [
+            '<topic.name>' => [
                 'connections' => [
-                    'amqp' => [
-                        'name' => 'amqp',
+                    '<amqp|stomp>' => [
+                        'name' => '<amqp|stomp>',
                         'exchange' => 'magento',
                         'disabled' => false
                     ],
@@ -79,9 +104,11 @@ The following sample introduces a runtime configuration that allows you to redef
         ]
     ],
     'consumers' => [
-        'product_action_attribute.update' => [
-            'connection' => 'amqp',
-        ],
-    ],
+        '<topic.name>' => [
+            'connection' => '<amqp|stomp>',
+        ]
+    ]
 ],
 ```
+
+For example, to switch the `product_action_attribute.update` topic to RabbitMQ, use `amqp-magento` as the publisher and `amqp` as the connection name.
