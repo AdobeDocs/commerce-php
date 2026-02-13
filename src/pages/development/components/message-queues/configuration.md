@@ -8,27 +8,32 @@ keywords:
 
 # Configure message queues
 
-The message queue topology is an Adobe Commerce and Magento Open Source feature. You can also add it to existing modules.
+The message queue topology is an Adobe Commerce and Magento Open Source feature that can be added to existing modules.
 
 Configuring the message queue topology involves creating and modifying the following configuration files in the `<module>/etc` directory:
 
-*  [`communication.xml`](#communicationxml) - Defines aspects of the message queue system that all communication types have in common.
-*  [`queue_consumer.xml`](#queue_consumerxml) - Defines the relationship between an existing queue and its consumer.
-*  [`queue_topology.xml`](#queue_topologyxml) - Defines the message routing rules and declares queues and exchanges.
-*  [`queue_publisher.xml`](#queue_publisherxml) - Defines the exchange where a topic is published.
+* [`communication.xml`](#communicationxml)—Defines aspects of the message queue system that all communication types have in common.
+* [`queue_consumer.xml`](#queue_consumerxml)—Defines the relationship between an existing queue and its consumer.
+* [`queue_topology.xml`](#queue_topologyxml)—Defines the message routing rules and declares queues and exchanges.
+* [`queue_publisher.xml`](#queue_publisherxml)—Defines the exchange where a topic is published.
+
+<InlineAlert variant="info" slots="text"/>
+
+If you are upgrading from Adobe Commerce or Magento Open Source 2.0 or 2.1, see [Migrate message queue configuration](migration.md).
 
 ## Use cases
 
-Depending on your needs, you may only need to create and configure `communication.xml` and one or two of these files.
+Depending on your use case, you can create and configure `communication.xml` along with one or more of the following files:
 
-*  If you only want to publish to an existing queue created by a 3rd party system, you will only need the `queue_publisher.xml` file.
-*  If you only want to consume from an existing queue,  you will only need the `queue_consumer.xml` config file.
-*  In cases where you want to configure the local queue and publish to it for 3rd party systems to consume, you will need the `queue_publisher.xml` and `queue_topology.xml` files.
-*  When you want to configure the local queue and consume messages published by 3rd party system, you will need the `queue_topology.xml` and `queue_consumer.xml` files.
+* **Publish messages to an existing queue created by a third-party system**—Configure the `queue_publisher.xml` file only.
+
+* **Consume messages from an existing queue**—Configure the `queue_consumer.xml` file only.
+
+* **Define a local queue and consume messages published by a third-party system**—Configure both the `queue_topology.xml` and `queue_consumer.xml` files.
 
 ## `communication.xml`
 
-The `<module>/etc/communication.xml` file defines aspects of the message queue system that all communication types have in common. This release supports AMQP and database connections.
+The `<module>/etc/communication.xml` file defines aspects of the message queue system that all communication types have in common. Adobe Commerce supports AMQP, STOMP, and database connections.
 
 ### Example
 
@@ -46,29 +51,31 @@ The following sample defines two synchronous topics. The first topic is for RPC 
 </config>
 ```
 
-#### topic element
+#### `topic` element
 
 Topic configuration is flexible in that you can switch the transport layer for topics at deployment time. These values can be overwritten in the `env.php` file.
 
-The `name` parameter is required. The topic definition must include either a `request` or a `schema`. Use `schema` if you want to implement a custom service interface.  Otherwise, specify `request`. If `request` is specified, then also specify `response` if the topic is synchronous.
+The `name` parameter is required. The topic definition must include either a `request` or a `schema`. Use `schema` if you want to implement a custom service interface. Otherwise, specify `request`. If `request` is specified, then also specify `response` if the topic is synchronous.
 
-Parameter | Description
---- | ---
-name | A string that uniquely identifies the topic. A topic name should be a series of strings that are separated by periods. The leftmost string should be the most general, and each string afterward should narrow the scope. For example, to describe actions for tending to pets, you might create names such as `cat.white.feed` and `dog.retriever.walk`. Wildcards are not supported in the `communication.xml` file.
-request | Specifies the data type of the topic.
-response | Specifies the format of the response. This parameter is required if you are defining a synchronous topic. Omit this parameter if you are defining an asynchronous topic.
-schema | The interface that describes the structure of the message. The format must be  `<module>\Api\<ServiceName>::<methodName>`.
+| Parameter | Description |
+| --- | --- |
+| `name` | A unique string identifier for the topic. Use a series of period-separated strings, with the leftmost being most general and each subsequent string narrowing the scope. For example, `cat.white.feed` and `dog.retriever.walk`. Wildcards are not supported in `communication.xml`.
+| `request` | Specifies the data type of the topic. |
+| `response` | Specifies the format of the response. This parameter is required if you are defining a synchronous topic. Omit this parameter if you are defining an asynchronous topic. |
+| `schema` | The interface that describes the structure of the message. The format must be `<module>\Api\<ServiceName>::<methodName>`. |
 
-#### handler element
+#### `handler` element
 
 The `handler` element specifies the class where the logic for handling messages exists and the method it executes.
 
-Parameter | Description
---- | ---
-name | A string that uniquely defines the handler. The name can be derived from the topic name if the handler is specific to the topic. If the handler provides more generic capabilities, name the handler so that it describes those capabilities.
-type | The class or interface that defines the handler.
-method | The method this handler executes.
-disabled | Determines whether this handler is disabled. The default value is `false`.
+| Parameter | Description |
+| --- | --- |
+| `name` | A string that uniquely defines the handler. The name can be derived from the topic name if the handler is specific to the topic. If the handler provides more generic capabilities, name the handler so that it describes those capabilities. |
+| `type` | The class or interface that defines the handler. |
+| `method` | The method this handler executes. |
+| `disabled` | Determines whether this handler is disabled. The default value is `false`. |
+
+See [Handler processing](#handler-processing).
 
 ## `queue_consumer.xml`
 
@@ -81,71 +88,37 @@ The `queue_consumer.xml` file contains one or more `consumer` elements:
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/consumer.xsd">
     <consumer name="basic.consumer" queue="basic.consumer.queue" handler="LoggerClass::log"/>
     <consumer name="synchronous.rpc.test" queue="synchronous.rpc.test.queue" handler="LoggerClass::log"/>
-    <consumer name="rpc.test" queue="queue.for.rpc.test.unused.queue" consumerInstance="Magento\Framework\MessageQueue\BatchConsumer" connection="amqp"/>
-    <consumer name="test.product.delete" queue="queue.for.test.product.delete" connection="amqp" handler="Magento\Queue\Model\ProductDeleteConsumer::processMessage" maxMessages="200" maxIdleTime="180" sleep="60" onlySpawnWhenMessageAvailable="0"/>
+    <consumer name="rpc.test" queue="queue.for.rpc.test.unused.queue" consumerInstance="Magento\Framework\MessageQueue\BatchConsumer"/>
+    <consumer name="test.product.delete" queue="queue.for.test.product.delete" handler="Magento\Queue\Model\ProductDeleteConsumer::processMessage" maxMessages="200" maxIdleTime="180" sleep="60" onlySpawnWhenMessageAvailable="0"/>
 </config>
 ```
 
 #### `consumer` element
 
-| Attribute                     | Description |
-| ----------------------------- | ----------- |
-| name (required)               | The name of the consumer.  |
-| queue (required)              | Defines the queue name to send the message to.  |
-| handler                       | Specifies the class and method that processes the message. The value must be specified in the format `<Vendor>\Module\<ServiceName>::<methodName>`.|
-| consumerInstance              | The class name that consumes the message. Default value: `Magento\Framework\MessageQueue\Consumer`. |
-| connection                    | Connection is defined dynamically based on deployment configuration of message queue in `env.php`. If AMQP is configured in deployment configuration, AMQP connection is used. Otherwise, db connection is used. If you still want to specify connection type for consumer, keep in mind that for AMQP connections, the connection name must match the `connection` attribute in the `queue_topology.xml` file. Otherwise, the connection name must be `db`.  |
-| maxMessages                   | Specifies the maximum number of messages to consume.|
-| maxIdleTime                   | Defines the maximum waiting time in seconds for a new message from the queue. If no message was handled within this period of time, the consumer exits. Default value: `null`|
-| sleep                         | Specifies time in seconds to sleep before checking if a new message is available in the queue. Default value is `null` which equals to 1 second.|
-| onlySpawnWhenMessageAvailable | Boolean value (`1` or `0` only) that identifies whether a consumer should be spawned only if there is available message in the related queue. Default value: `null`|
+| Attribute | Description |
+| --- | --- |
+| `name` (required) | The name of the consumer. |
+| `queue` (required) | Specifies the queue name to send the message to. |
+| `handler` | Specifies the class and method that processes the message. The value must be specified in the format `<Vendor>\Module\<ServiceName>::<methodName>`. See [Handler processing](#handler-processing). |
+| `consumerInstance` | The class name that consumes the message. The default value is `Magento\Framework\MessageQueue\Consumer`. |
+| `connection` | For explicit values, use `amqp`, `stomp`, or `db`. If omitted, the connection is resolved automatically. See [Connection resolution](#connection-resolution). |
+| `maxMessages` | Specifies the maximum number of messages to consume. |
+| `maxIdleTime` | Defines the maximum waiting time in seconds for a new message from the queue. If no message was handled within this period of time, the consumer exits. The default value is `null`. |
+| `sleep` | Specifies time in seconds to sleep before checking if a new message is available in the queue. The default value is `null` which equals 1 second. |
+| `onlySpawnWhenMessageAvailable` | Boolean value (`1` or `0` only) that identifies whether a consumer should be spawned only if there is available message in the related queue. The default value is `null`. |
 
 <InlineAlert variant="info" slots="text"/>
 
-The `maxIdleTime` and `sleep` attributes will be handled only by consumers that were fired with a defined `maxMessages` parameter. The `onlySpawnWhenMessageAvailable` attribute is only checked and validated by the `\Magento\MessageQueue\Model\Cron\ConsumersRunner` class that runs consumer processes with cron.
-
-It is possible to set `onlySpawnWhenMessageAvailable` globally by setting `queue/only_spawn_when_message_available` equal to `0` or `1` in `app/etc/env.php`. By default, the global value of `only_spawn_when_message_available` for all consumers is `1`.
-The `onlySpawnWhenMessageAvailable` consumer attribute has higher priority than the global `queue/only_spawn_when_message_available` setting in `app/etc/env.php`. Therefore, it is possible to overwrite the global `only_spawn_when_message_available` value by setting `onlySpawnWhenMessageAvailable` equal to `0` or `1` for each consumer in `queue_consumer.xml`.
-
-The `onlySpawnWhenMessageAvailable` and `maxIdleTime` attributes may be combined if a specific consumer needs to run infrequently. The consumer will only spawn when it is needed, and it terminates itself if it is inactive for a certain period.
-It is also possible to combine the global `queue/only_spawn_when_message_available` setting in `app/etc/env.php` with the `queue/consumers-wait-for-messages` setting. That means that the consumer will run only when there is an available message in the queue, and it will be terminated when there are no more messages to process. This combination of settings is recommended to save server resources such as CPU usage.
-
-The [`consumers-wait-for-messages`](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/message-consumers) option works similar to `onlySpawnWhenMessageAvailable`. When it is set to `false`, the consumer processes all messages and exits if there are no available messages in the queue.
-The problem is that every time the cron job `cron_consumers_runner` runs, it spawns a new consumer process, the consumer checks if messages are available, and it terminates itself if there are no messages.
-Meanwhile, the `onlySpawnWhenMessageAvailable` attribute first checks if there are available messages, and it spawns a new consumer process only if there are messages. It means that it does not spawn unneeded processes which take up memory, live for a very short period, and then disappear.
-
-<InlineAlert variant="warning" slots="text"/>
-
-The [`consumers-wait-for-messages`](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/message-consumers) option is a global option and cannot be configured separately for each consumer, such as the `onlySpawnWhenMessageAvailable` option.
-
-#### `handler` element
-
-A handler is a class and method that processes a message. The application has two ways to define a handler for messages.
-
-*  In the `<handler>` element of the module's `communication.xml` file
-*  In the `handler` attribute of the module's `queue_consumer.xml` file
-
-The following conditions determine how these handlers are processed:
-
-*  If the consumer in `queue_consumer.xml` does not have a `consumerInstance` defined, then the system uses the default consumer: `Magento\Framework\MessageQueue\Consumer`. In this case, if the `<consumer>` element contains the `handler` attribute, then it will be used, and the `<handler>` element in `communication.xml` will be ignored.
-*  If the consumer in `queue_consumer.xml` has a `consumerInstance` defined, then the specific consumer implementation defines how the `handler` is used.
-
-The application provides these consumers out-of-the-box:
-
-| Class name        | Handler in `communication.xml` will be executed? | Handler in `queue_consumer.xml` will be executed? |
-| ---------------- | ----------- | ---------- |
-| `Magento\Framework\MessageQueue\Consumer` | Only if not defined in `queue_consumer.xml` | Yes, if exists |
-| `Magento\Framework\MessageQueue\BatchConsumer` | Only if not defined in `queue_consumer.xml` | Yes, if exists |
-| `Magento\AsynchronousOperations\Model\MassConsumer`  | Yes, if exists | Yes, if exists |
+The `maxIdleTime` and `sleep` attributes are handled only by consumers fired with a defined `maxMessages` parameter. The `onlySpawnWhenMessageAvailable` attribute is only validated by the `\Magento\MessageQueue\Model\Cron\ConsumersRunner` class that runs consumer processes with cron. For details, see [Consumer spawning behavior](#consumer-spawning-behavior).
 
 ## `queue_topology.xml`
 
 The `queue_topology.xml` file defines the message routing rules and declares queues and exchanges. It contains the following elements:
 
-*  `exchange`
-*  `exchange/binding` (optional)
-*  `exchange/arguments` (optional)
-*  `exchange/binding/arguments` (optional)
+* `exchange`
+* `exchange/binding` (optional)
+* `exchange/arguments` (optional)
+* `exchange/binding/arguments` (optional)
 
 ### Example
 
@@ -155,7 +128,7 @@ The `queue_topology.xml` file defines the message routing rules and declares que
   <exchange name="magento-topic-based-exchange1">
     <binding id="topicBasedRouting2" topic="anotherTopic" destination="topic-queue1">
         <arguments>
-            <!--Not part of our use case, but will be processed if someone specifies them-->
+            <!-- Optional: additional arguments are processed if specified -->
             <argument name="argument1" xsi:type="string">value</argument>
         </arguments>
     </binding>
@@ -176,12 +149,12 @@ The `queue_topology.xml` file defines the message routing rules and declares que
 
 | Attribute      | Description |
 | -------------- | ----------- |
- name (required) | A unique ID for the exchange.
- type | Specifies the type of exchange. The default value is `topic` because only `topic` type is supported.
- connection  (required) | Connection is defined dynamically based on deployment configuration of message queue in `env.php`. If AMQP is configured in deployment configuration, AMQP connection is used. Otherwise, db connection is used. If you still want to specify connection, the connection name must be `amqp` for AMQP. For MySQL connections, the connection name must be `db`.
- durable | Boolean value indicating whether the exchange is persistent. Non-durable exchanges are purged when the server restarts. The default is `true`.
- autoDelete | Boolean value indicating whether the exchange is deleted when all queues have finished using it. The default is `false`.
- internal | Boolean value. If set to true, the exchange may not be used directly by publishers, but only when bound to other exchanges. The default is `false`.
+| `name` (required) | A unique ID for the exchange. |
+| `type` | Specifies the type of exchange. Currently, the only value supported is `topic`. |
+| `connection` | For explicit values, use `amqp`, `stomp`, or `db`. If omitted, the connection is resolved automatically. See [Connection resolution](#connection-resolution). |
+| `durable` | Boolean value indicating whether the exchange is persistent. Non-durable exchanges are purged when the server restarts. The default value is `true`. |
+| `autoDelete` | Boolean value indicating whether the exchange is deleted when all queues have finished using it. The default is `false`. |
+| `internal` | Boolean value. If set to true, the exchange may not be used directly by publishers, but only when bound to other exchanges. The default is `false`. |
 
 #### `binding` element
 
@@ -189,20 +162,20 @@ The `binding` element is a subnode of the `exchange` element.
 
 | Attribute      | Description |
 | -------------- | ----------- |
-| id (required)  | A unique ID for this binding. |
-| topic (required)  | The name of a topic. You can specify an asterisk (*) or pound sign (#) as wildcards. These are described below the table.|
-| destinationType | The default value is `queue`. |
-| destination (required)  | Identifies the name of a queue. |
-| disabled       | Determines whether this binding is disabled. The default value is `false`. |
+| `id` (required)  | A unique ID for this binding. |
+| `topic` (required)  | The name of a topic. You can specify an asterisk (*) or pound sign (#) as wildcards. These are described below the table.|
+| `destinationType` | The default value is `queue`. |
+| `destination` (required)  | Identifies the name of a queue. |
+| `disabled` | Determines whether this binding is disabled. The default value is `false`. |
 
 Example topic names that include wildcards:
 
-| Pattern | Description | Example matching topics | Example non-matching topics
-| --- | --- | --- | ---
-`*.*.*` | Matches any topic that contains exactly two periods. | `mytopic.createOrder.success`, `mytopic.updatePrice.item1` | `mytopic.createOrder`, `mytopic.createOrder.success.true`
-`#`| Matches any topic name.  | `mytopic`, `mytopic.createOrder.success`, `this.is.a.long.topic.name` | Not applicable
-`mytopic.#` | Matches any topic name that begins with `mytopic` and has a period afterward. |  `mytopic.success`, `mytopic.createOrder.error` | `new.mytopic.success`,
-`*.Order.#` | There must be one string before __.Order__. There can be any number of strings (including 0) after that.  | `mytopic.Order`, `mytopic.Order.Create`, `newtopic.Order.delete.success` | `mytopic.Sales.Order.Create`
+| Pattern | Description | Example matching topics | Example non-matching topics |
+| --- | --- | --- | --- |
+| `*.*.*` | Matches any topic that contains three segments (two periods) | `mytopic.createOrder.success`, `mytopic.updatePrice.item1` | `mytopic.createOrder`, `mytopic.createOrder.success.true` |
+| `#` | Matches any topic name. | `mytopic`, `mytopic.createOrder.success`, `this.is.a.long.topic.name` | Not applicable |
+| `mytopic.#` | Matches any topic name that begins with `mytopic` and has a period afterward. | `mytopic.success`, `mytopic.createOrder.error` | `new.mytopic.success` |
+| `*.Order.#` | There must be one string before `.Order`. There can be any number of strings (including 0) after that. | `mytopic.Order`, `mytopic.Order.Create`, `newtopic.Order.delete.success` | `mytopic.Sales.Order.Create` |
 
 #### `arguments` element
 
@@ -210,10 +183,10 @@ The `arguments` element is an optional element that contains one or more `argume
 
 Each `argument` definition must have the following parameters:
 
-| Attribute      | Description |
-| --------------- | ----------- |
-| name | The parameter name |
-| type | The data type of the value |
+| Attribute | Description |
+| --- | --- |
+| `name` | The parameter name. |
+| `type` | The data type of the value. |
 
 The following illustrates an `arguments` block:
 
@@ -228,10 +201,12 @@ The following illustrates an `arguments` block:
 
 The `queue_publisher.xml` file defines which connection and exchange to use to publish messages for a specific topic. It contains the following elements:
 
-*  publisher
-*  publisher/connection
+* `publisher`
+* `publisher/connection`
 
 ### Example
+
+**For RabbitMQ (AMQP):**
 
 ```xml
 <?xml version="1.0"?>
@@ -244,26 +219,198 @@ The `queue_publisher.xml` file defines which connection and exchange to use to p
 </config>
 ```
 
+**For ActiveMQ Artemis (STOMP):**
+
+```xml
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/publisher.xsd">
+    <publisher topic="magento.testModuleSynchronousAmqp.api.serviceInterface.execute" disabled="true" />
+    <publisher topic="asynchronous.test" queue="async.test.queue">
+        <connection name="stomp" disabled="false"/>
+        <connection name="db" disabled="true"/>
+    </publisher>
+</config>
+```
+
 #### `publisher` element
 
-| Attribute            | Description |
-| -------------------- | ----------- |
-| topic (required)     | The name of the topic. |
-| disabled             | Determines whether this queue is disabled. The default value is `false`. |
+| Attribute | Description |
+| --- | --- |
+| `topic` (required) | The name of the topic. |
+| `queue` | For ActiveMQ Artemis (STOMP), specifies the queue name when it differs from the topic name. |
+| `disabled` | Determines whether this queue is disabled. The default value is `false`. |
 
 #### `connection` element
 
-The `connection` element is a subnode of the `publisher` element. There must not be more than one enabled active connection to a publisher defined at a time. If you omit the `connection` element, connection will be defined dynamically based on deployment configuration of message queue in `env.php` and exchange `magento` will be used. If AMQP is configured in deployment configuration, AMQP connection is used. Otherwise, db connection is used.
+The `connection` element is a subnode of the `publisher` element. Only one enabled connection can be defined for a publisher at any given time. If you omit the `connection` element, the connection is resolved automatically and `magento` is used as the exchange. See [Connection resolution](#connection-resolution).
 
-| Attribute            | Description |
-| -------------------- | ----------- |
-| name | Connection name is defined dynamically based on deployment configuration of message queue in `env.php`. If you still want to specify connection type for publisher, keep in mind that for AMQP connections, the connection name must match the `connection` attribute in the `queue_topology.xml` file. Otherwise, the connection name must be `db`. |
-| exchange             | The name of the exchange to publish to. The default system exchange name is `magento`. |
-| disabled             | Determines whether this queue is disabled. The default value is `false`. |
+| Attribute | Description |
+| --- | --- |
+| `name` | The connection name. For explicit values, use `amqp`, `stomp`, or `db`. If you omit the `connection` element, the [connection is resolved automatically](#connection-resolution).
+| `exchange` | The name of the exchange to publish to. The default system exchange name is `magento`. |
+| `disabled` | Determines whether this queue is disabled. The default value is `false`. |
 
 <InlineAlert variant="warning" slots="text"/>
 
 You cannot enable more than one `publisher` for each `topic`.
+
+## Connection resolution
+
+Connection names are resolved dynamically based on the message queue deployment configuration in `env.php`. If you don't explicitly specify a connection, the system automatically selects the appropriate one.
+
+### Automatic resolution
+
+The system checks `env.php` for message queue configuration:
+
+* If AMQP (RabbitMQ) is configured, the `amqp` connection is used
+* If STOMP (ActiveMQ Artemis) is configured, the `stomp` connection is used
+* Otherwise, the database (`db`) connection is used
+
+### Explicit connection values
+
+When specifying a connection explicitly, use one of these values:
+
+| Connection type | Value | Notes |
+| --- | --- | --- |
+| RabbitMQ | `amqp` | For AMQP connections in `queue_consumer.xml`, the value must match the `connection` attribute in `queue_topology.xml`. |
+| ActiveMQ Artemis | `stomp` | Requires Adobe Commerce or Magento Open Source 2.4.5 or later. Use ANYCAST addressing mode for point-to-point message delivery and load balancing across multiple consumers. |
+| Database | `db` | MySQL-based queue storage. Used as fallback when no message broker is configured. |
+
+## Handler processing
+
+A [handler](#handler-element) is a class and method that processes a message. You can define a handler in two places:
+
+* In the `<handler>` element of the module's `communication.xml` file
+* In the `handler` attribute of the module's `queue_consumer.xml` file
+
+The following conditions determine which handler is executed:
+
+* If the consumer in `queue_consumer.xml` does not have a `consumerInstance` defined, the system uses the default consumer: `Magento\Framework\MessageQueue\Consumer`. In this case, if the `<consumer>` element contains the `handler` attribute, it is used and the `<handler>` element in `communication.xml` is ignored.
+* If the consumer in `queue_consumer.xml` has a `consumerInstance` defined, the specific consumer implementation defines how the handler is used.
+
+The following table shows how the built-in consumers process handlers:
+
+| Class name | Handler in `communication.xml` executed? | Handler in `queue_consumer.xml` executed? |
+| --- | --- | --- |
+| `Magento\Framework\MessageQueue\Consumer` | Only if not defined in `queue_consumer.xml` | Yes, if exists |
+| `Magento\Framework\MessageQueue\BatchConsumer` | Only if not defined in `queue_consumer.xml` | Yes, if exists |
+| `Magento\AsynchronousOperations\Model\MassConsumer` | Yes, if exists | Yes, if exists |
+
+## Consumer spawning behavior
+
+Two settings control when consumers spawn and exit: `onlySpawnWhenMessageAvailable` and [`consumers-wait-for-messages`](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/message-consumers). Both help reduce server resource usage, but they work differently.
+
+| Setting | Scope | Behavior |
+| --- | --- | --- |
+| `onlySpawnWhenMessageAvailable` | Per-consumer or global | Checks for messages *before* spawning. Only creates a consumer process if messages exist in the queue. |
+| `consumers-wait-for-messages` | Global only | Always spawns a consumer. When set to `false`, the consumer exits immediately if no messages are available. Because this option is a global option, it cannot be configured separately for each consumer. |
+
+The key difference between the two settings: `onlySpawnWhenMessageAvailable` prevents unnecessary process creation, while `consumers-wait-for-messages` creates a process that immediately terminates if the queue is empty.
+
+### Configuration
+
+Set `onlySpawnWhenMessageAvailable` globally in `app/etc/env.php`:
+
+```php
+'queue' => [
+    'only_spawn_when_message_available' => 1
+]
+```
+
+The default global value is `1`. To override for a specific consumer, set the `onlySpawnWhenMessageAvailable` attribute in `queue_consumer.xml`. The per-consumer setting takes priority over the global setting.
+
+### Recommended combinations
+
+* **Infrequent consumers**—Combine `onlySpawnWhenMessageAvailable` with `maxIdleTime`. The consumer spawns only when needed and terminates after a period of inactivity.
+* **Resource optimization**—Combine the global `only_spawn_when_message_available` setting with `consumers-wait-for-messages` set to `false`. Consumers run only when messages exist and exit when the queue is empty.
+
+## `env.php` Configuration
+
+The message queue connection configuration is defined in the `app/etc/env.php` file. When `connection` elements are omitted from `queue_consumer.xml`, `queue_publisher.xml`, and `queue_topology.xml` files, the system automatically uses the connection configured in `env.php`.
+
+### Example configurations
+
+**For RabbitMQ (AMQP) only:**
+
+```php
+return [
+    // ... other configuration
+    'queue' => [
+        'amqp' => [
+            'host' => 'localhost',
+            'port' => '5672',
+            'user' => 'guest',
+            'password' => 'guest',
+            'virtualhost' => '/'
+        ],
+        'consumers_wait_for_messages' => 1
+    ]
+];
+```
+
+**For ActiveMQ Artemis (STOMP) only:**
+
+```php
+return [
+    // ... other configuration
+    'queue' => [
+        'stomp' => [
+            'host' => 'localhost',
+            'port' => '61613',
+            'user' => 'admin',
+            'password' => 'admin'
+        ],
+        'consumers_wait_for_messages' => 1
+    ]
+];
+```
+
+**For MySQL (Database) only:**
+
+```php
+return [
+    // ... other configuration
+    'queue' => [
+        'consumers_wait_for_messages' => 1
+    ]
+    // Database connection uses existing 'db' configuration
+];
+```
+
+**When multiple connection types are configured:**
+
+If you have both AMQP and STOMP configured, you must specify `default_connection` to indicate which one the system should use:
+
+```php
+return [
+    // ... other configuration
+    'queue' => [
+        'amqp' => [
+            'host' => 'localhost',
+            'port' => '5672',
+            'user' => 'guest',
+            'password' => 'guest',
+            'virtualhost' => '/'
+        ],
+        'stomp' => [
+            'host' => 'localhost',
+            'port' => '61613',
+            'user' => 'admin',
+            'password' => 'admin'
+        ],
+        'default_connection' => 'amqp',  // Required when multiple connections exist
+        'consumers_wait_for_messages' => 1
+    ]
+];
+```
+
+The `default_connection` value can be `db`, `amqp`, or `stomp`. When only one connection type is configured in `env.php`, the system automatically uses that connection and `default_connection` is not required. If `queue/default_connection` is specified, that connection is used for all message queues unless a specific connection is defined in a module's `queue_topology.xml`, `queue_publisher.xml`, or `queue_consumer.xml` file.
+
+## ActiveMQ Artemis (STOMP) support
+
+<InlineAlert variant="info" slots="text"/>
+
+ActiveMQ Artemis (STOMP) support was introduced in Adobe Commerce 2.4.5 and later versions. For STOMP connections, use ANYCAST addressing mode for point-to-point message delivery and load balancing across multiple consumers.
 
 ## Updating `queue.xml`
 
