@@ -122,6 +122,12 @@ A dedicated CLI command was added to configure and enable Valkey 8.x, minimizing
 
 No action is required for existing customers. Use the new CLI command when configuring Valkey instead of Redis.
 
+```terminal
+bin/magento setup:config:set --cache-backend=valkey
+```
+
+For details, see [Use Valkey for default cache](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache).
+
 ### Zend_Cache replaced with symfony/cache
 
 The deprecated Zend_Cache implementation was replaced with the `symfony/cache` component. Symfony/cache is actively maintained and improves cache management performance, maintainability, and compatibility with PHP 8.x and future framework updates.\<!--AC-16067--\>
