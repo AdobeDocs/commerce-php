@@ -9,6 +9,140 @@ keywords:
 
 This page highlights backward-incompatible changes between Adobe Commerce and Magento Open Source releases that have a major impact and require detailed explanation and special instructions to ensure third-party modules continue working. High-level reference information for all backward-incompatible changes in each release is documented in the [reference](reference.md) section.
 
+## 2.4.9-beta1
+
+The following major backward-incompatible changes were introduced in the 2.4.9-beta1 Adobe Commerce and Magento Open Source releases:
+
+* GraphQL alias limit validation
+* GraphQL query length validation
+* New 2FA blocks for identity verification
+* New Relic migration from REST v2 to NerdGraph
+* Symfony 7.4 LTS support
+* Valkey 8.x CLI command
+* Zend_Cache replaced with symfony/cache
+
+### GraphQL alias limit validation
+
+Validation was added to limit the number of aliases in GraphQL requests to ten. This limit prevents denial of service or resource degradation from excessive aliases. Previously, there was no limit on the number of aliases in a GraphQL request.\<!--AC-14701--\>
+
+**Impact:**
+
+* Only affects custom or non-standard clients that send a large number of aliases in a single request
+* Standard storefront and supported integrations are not expected to be impacted
+* The default maximum number of aliases is 10
+
+**Action required:**
+
+Configure the alias limit in the Admin from **Stores** > **Configuration** > **Services** > **Magento Web API** > **GraphQL Input Limits**:
+
+* **Enable Maximum Alias Limit** (Yes/No)
+* **Maximum Alias Allowed**
+
+### GraphQL query length validation
+
+A new configuration enables validation of GraphQL query length before processing. Queries exceeding the allowed limit are rejected to prevent denial of service and system crashes from oversized queries.\<!--AC-16203--\>
+
+**Impact:**
+
+* Only custom or non-standard clients using very large GraphQL queries may be impacted
+* No impact is expected on normal storefront usage
+* The default limit is 1,048,576 characters (~1 MB). Typical Magento GraphQL queries are usually in the range of a few kilobytes
+* The limit can be disabled or increased in configuration if needed
+
+**Action required:**
+
+No action is required for typical usage. To adjust the limit, use the system configuration path `webapi/graphql_validation/query_length_limit_enabled` and related options in **Stores** > **Configuration** > **Services** > **Magento Web API** > **GraphQL Input Limits**.
+
+### New 2FA blocks for identity verification
+
+New blocks were added to allow admin users to configure multiple two-factor authentication (2FA) providers by verifying identity with an already configured 2FA method or by validating an email link. This streamlines the 2FA configuration flow.\<!--AC-14709--\>
+
+**Impact:**
+
+* Affects Admin login when 2FA is enabled
+* Applicable for all Admin users using 2FA
+* No negative impact; the change improves the configuration experience
+
+**Action required:**
+
+No action is required for merchants or partners.
+
+The following module is affected by this change:
+
+* [Magento_TwoFactorAuth](/module-reference/module-two-factor-auth/)
+
+### New Relic migration from REST v2 to NerdGraph
+
+The New Relic integration was upgraded from REST API v2 to NerdGraph (GraphQL-based API) because REST API v2 is being deprecated by New Relic. NerdGraph offers enhanced deployment tracking, richer metadata, and more secure, granular permissions.\<!--AC-15831--\>
+
+**Impact:**
+
+* Configuration changes in the Admin (new fields added)
+* No breaking changes to existing functionality; backward compatibility is maintained during transition
+* Deployment marker functionality now uses NerdGraph API alongside REST API v2
+
+**Action required:**
+
+Update New Relic configuration in the Admin:
+
+1. Go to **Stores** > **Configuration** > **General** > **New Relic Reporting**
+1. Set **API Mode** to **NerdGraph API**
+1. Enter **NerdGraph API URL**: `https://api.newrelic.com/graphql`
+1. Get **Entity GUID** from the New Relic dashboard and enter it
+1. Update the **User API Key**
+
+The following module is affected by this change:
+
+* [Magento_NewRelicReporting](/module-reference/module-new-relic-reporting/)
+
+### Symfony 7.4 LTS support
+
+Adobe Commerce 2.4.9 adds support for the latest Symfony 7.4 LTS version. This is a major change in the Semantic Version Checker and affects framework dependencies.\<!--AC-16188--\>
+
+**Impact:**
+
+* Custom classes that extend Symfony core classes must have updated type declarations and method signatures aligned with Symfony 7.4
+* Ensures long-term compatibility with PHP 8.x and future framework updates
+* No negative impact when custom code is aligned with the new requirements
+
+**Action required:**
+
+Ensure that all custom classes extending Symfony core classes have updated type declarations and method signatures aligned with the latest Symfony requirements before upgrading to Adobe Commerce 2.4.9. This prevents compatibility issues and ensures a smooth transition.
+
+### Valkey 8.x CLI command
+
+A dedicated CLI command was added to configure and enable Valkey 8.x, minimizing confusion between Valkey and Redis and displaying Valkey-specific constants.\<!--AC-14631--\>
+
+**Impact:**
+
+* No feature behavior change; this adds a new CLI option for Valkey configuration
+* No negative impact on existing customers
+
+**Action required:**
+
+No action is required for existing customers. Use the new CLI command when configuring Valkey instead of Redis.
+
+```terminal
+bin/magento setup:config:set --cache-backend=valkey
+```
+
+For details, see [Use Valkey for default cache](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache).
+
+### Zend_Cache replaced with symfony/cache
+
+The deprecated Zend_Cache implementation was replaced with the `symfony/cache` component. Symfony/cache is actively maintained and improves cache management performance, maintainability, and compatibility with PHP 8.x and future framework updates.\<!--AC-16067--\>
+
+**Impact:**
+
+* All cache operations are affected: default cache and full-page cache (FPC) now use Symfony adapters instead of Zend Cache
+* Improved tag-based invalidation and cache cleaning across all cache types (config, layout, block_html, collections, EAV, compiled config, and others)
+* The change is transparent and backward compatible—existing cache commands (`cache:flush`, `cache:clean`) work identically but run 30–50% faster with reduced Redis load
+* Custom code that extended or replaced Zend Cache classes or interfaces may need to be updated to use Symfony cache adapters
+
+**Action required:**
+
+Existing customers can upgrade to Adobe Commerce 2.4.9 without configuration changes. For the Symfony cache implementation, additional parameters (such as igbinary, php-redis) are documented in the cache documentation and are recommended for performance. Extensions that depend on Zend_Cache classes or interfaces must be updated to use the corresponding Symfony cache APIs.
+
 ## 2.4.8
 
 The following major backward-incompatible changes were introduced in the 2.4.8 Adobe Commerce and Magento Open Source releases:
