@@ -78,7 +78,6 @@ The New Relic integration was upgraded from REST API v2 to NerdGraph (GraphQL-ba
 **Impact:**
 
 * Configuration changes in the Admin (new fields added)
-* Merchants need to update their New Relic configuration settings once
 * No breaking changes to existing functionality; backward compatibility is maintained during transition
 * Deployment marker functionality now uses NerdGraph API alongside REST API v2
 
