@@ -11,7 +11,7 @@ This page highlights backward-incompatible changes between Adobe Commerce and Ma
 
 ## 2.4.9-beta
 
-The following major backward-incompatible changes were introduced in the 2.4.9-beta Adobe Commerce and Magento Open Source releases:
+The following major backward-incompatible changes were introduced in the 2.4.9-beta1 Adobe Commerce and Magento Open Source releases:
 
 * GraphQL alias limit validation
 * GraphQL query length validation
@@ -23,17 +23,17 @@ The following major backward-incompatible changes were introduced in the 2.4.9-b
 
 ### GraphQL alias limit validation
 
-Validation was added to limit the number of aliases in GraphQL requests to prevent denial of service or resource degradation from excessive aliases. Previously, there was no limit on the number of aliases in a GraphQL request.\<!--AC-14701--\>
+Validation was added to limit the number of aliases in GraphQL requests to ten. This limit prevents denial of service or resource degradation from excessive aliases. Previously, there was no limit on the number of aliases in a GraphQL request.\<!--AC-14701--\>
 
 **Impact:**
 
-* Only custom or non-standard clients that send a large number of aliases in a single request may be affected
+* Only affects custom or non-standard clients that send a large number of aliases in a single request
 * Standard storefront and supported integrations are not expected to be impacted
 * The default maximum number of aliases is 10
 
 **Action required:**
 
-Configure the alias limit in the Admin: **Stores** > **Configuration** > **Services** > **Magento Web API** > **GraphQL Input Limits**:
+Configure the alias limit in the Admin from **Stores** > **Configuration** > **Services** > **Magento Web API** > **GraphQL Input Limits**:
 
 * **Enable Maximum Alias Limit** (Yes/No)
 * **Maximum Alias Allowed**
@@ -59,8 +59,8 @@ New blocks were added to allow admin users to configure multiple two-factor auth
 
 **Impact:**
 
-* Affects admin login when 2FA is enabled
-* Applicable for all admin users using 2FA
+* Affects Admin login when 2FA is enabled
+* Applicable for all Admin users using 2FA
 * No negative impact; the change improves the configuration experience
 
 **Action required:**
@@ -89,7 +89,7 @@ Update New Relic configuration in the Admin:
 1. Set **API Mode** to **NerdGraph API**
 1. Enter **NerdGraph API URL**: `https://api.newrelic.com/graphql`
 1. Get **Entity GUID** from the New Relic dashboard and enter it
-1. Update to **User API Key**
+1. Update the **User API Key**
 
 The following module is affected by this change:
 
