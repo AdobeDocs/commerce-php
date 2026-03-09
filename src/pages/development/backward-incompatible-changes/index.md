@@ -9,7 +9,7 @@ keywords:
 
 This page highlights backward-incompatible changes between Adobe Commerce and Magento Open Source releases that have a major impact and require detailed explanation and special instructions to ensure third-party modules continue working. High-level reference information for all backward-incompatible changes in each release is documented in the [reference](reference.md) section.
 
-## 2.4.9-beta
+## 2.4.9-beta1
 
 The following major backward-incompatible changes were introduced in the 2.4.9-beta1 Adobe Commerce and Magento Open Source releases:
 
