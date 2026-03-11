@@ -29,6 +29,8 @@ Patch releases are primarily focused on delivering security and quality enhancem
 
 ## 2.4.8 - 2.4.9-beta1
 
+Adobe Commerce v2.4.9-beta1 includes the [B2B extension][] v1.5.3-beta1.
+
 import Ac249 from '/src/_includes/backward-incompatible-changes/commerce/2.4.8-2.4.9-beta1.md'
 
 <Ac249 />
