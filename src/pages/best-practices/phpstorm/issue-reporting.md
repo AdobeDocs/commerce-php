@@ -13,12 +13,12 @@ There is now an extension point for the errorHandler to integrate the plugin wit
 
 *  Fill the issue description and click on the `Report Me` button:
 
-![](../../_images/best-practices/phpstorm/report-me.png)
+![](../../images/best-practices/phpstorm/report-me.png)
 
 *  Change the auto generated issue title to the proper one:
 
-![](../../_images/best-practices/phpstorm/issue-title.png)
+![](../../images/best-practices/phpstorm/issue-title.png)
 
 *  Fill the rest with available information about an issue (such as steps to reproduce, expected behaviour etc.) and click on the `Submit new issue` button:
 
-![](../../_images/best-practices/phpstorm/issue-description.png)
+![](../../images/best-practices/phpstorm/issue-description.png)

@@ -10,7 +10,7 @@ keywords:
 In web applications, such as Adobe Commerce and Magento Open Source, routing is the act of providing data from a URL request to the appropriate class for processing.
 Adobe Commerce and Magento Open Source routing uses the following flow:
 
-![Request processing](../../_images/magento2-request-processing.png)
+![Request processing](../../images/magento2-request-processing.png)
 
 ## `FrontController` class
 
@@ -405,7 +405,7 @@ class Router implements RouterInterface
 
 As a result, by accessing the `http://site.com/learning` route, the `http://site.com/routing/index/index` route is loaded.
 
-![Routing Result](../../_images/routing-result.png)
+![Routing Result](../../images/routing-result.png)
 
 ## Declaring the new route as Page Type
 
@@ -430,7 +430,7 @@ The `routing_index_index` represents the path for the new route.
 
 As result, the new page is available in the `Specified Page` dropdown widget when creating a page.
 
-![Routing Page Type](../../_images/routing-page-type-result.png)
+![Routing Page Type](../../images/routing-page-type-result.png)
 
 [`FrontController` class]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/FrontController.php
 [FrontController]: #frontcontroller-class

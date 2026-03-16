@@ -66,7 +66,7 @@ The message queue topology configuration links all auto-generated topic names wi
 
 <InlineAlert variant="info" slots="text"/>
 
-The message queue connection is defined dynamically based on the deployment configuration in `env.php`. If AMQP or STOMP is configured for the queue, that connection is used. Otherwise, the database connection is used. Because the connection is resolved dynamically, explicit declarations are unnecessary in the [message queue configuration files](./configuration.md): `queue_consumer.xml`, `queue_publisher.xml`, `queue_topology.xml`.
+The message queue connection is defined dynamically based on the deployment configuration in `env.php`. If AMQP or STOMP is configured for the queue, that connection is used. Otherwise, the database connection is used. Because the connection is resolved dynamically, explicit declarations are unnecessary in the [message queue configuration files](configuration.md): `queue_consumer.xml`, `queue_publisher.xml`, `queue_topology.xml`.
 
 <InlineAlert variant="info" slots="text"/>
 

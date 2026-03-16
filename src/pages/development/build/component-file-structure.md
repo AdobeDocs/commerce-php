@@ -19,7 +19,7 @@ import Docs from '/src/_includes/component-root.md'
 
 A typical file structure for a module can look like the following:
 
-![Module File Structure](../../_images/pdg-config-file-structure.png)
+![Module File Structure](../../images/pdg-config-file-structure.png)
 
 ### Common directories
 
