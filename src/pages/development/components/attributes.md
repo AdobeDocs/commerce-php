@@ -163,7 +163,7 @@ where:
 |--- |--- |--- |
 | for | The fully-qualified type name with the namespace that processes the extensions. The value must be a type that implements `ExtensibleDataInterface`. The interface can be in a different module. | `Magento\Quote\Api\Data\TotalsInterface` |
 | code | The name of the attribute. The attribute name should be in snake case (the first letter in each word should be in lowercase, with each word separated by an underscore). | `gift_cards_amount_used` |
-| type | The data type. This can be a simple data type, such as string or integer, or complex type, such as an interface. | `float`<br />`Magento\CatalogInventory\Api\Data\StockItemInterface` |
+| type | The data type. This can be a simple data type, such as string or integer, or complex type, such as an interface. | `float`\<br/\> `Magento\CatalogInventory\Api\Data\StockItemInterface` |
 | ref | Optional. Restricts access to the extension attribute to users with the specified permission. | `Magento_CatalogInventory::cataloginventory` |
 | reference_table | The table involved in a join operation. See [Searching extension attributes](#searching-extension-attributes) for details. | `admin_user` |
 | reference_field | Column in the `reference_table`. | `user_id` |

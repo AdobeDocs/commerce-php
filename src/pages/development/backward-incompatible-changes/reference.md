@@ -75,5 +75,5 @@ import Docs16 from '/src/_includes/backward-incompatible-changes/commerce/2.4.3-
 
 <Docs16 />
 
-<!-- Links -->
+\<!-- Links --\>
 [B2B extension]: https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/reference/backward-incompatible-changes
