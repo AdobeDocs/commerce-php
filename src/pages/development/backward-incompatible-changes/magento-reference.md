@@ -29,36 +29,24 @@ Patch releases are primarily focused on delivering security and quality enhancem
 
 ## 2.4.8 - 2.4.9-beta1
 
-import Os249 from '/src/_includes/backward-incompatible-changes/open-source/2.4.8-2.4.9-beta1.md'
-
-<Os249 />
+<Fragment src="/includes/backward-incompatible-changes/open-source/2-4-8-2-4-9-beta1.md"/>
 
 ## 2.4.7 - 2.4.8
 
-import Os248 from '/src/_includes/backward-incompatible-changes/open-source/2.4.7-2.4.8.md'
-
-<Os248 />
+<Fragment src="/includes/backward-incompatible-changes/open-source/2-4-7-2-4-8.md"/>
 
 ## 2.4.6 - 2.4.7
 
-import Os247 from '/src/_includes/backward-incompatible-changes/open-source/2.4.6-2.4.7.md'
-
-<Os247 />
+<Fragment src="/includes/backward-incompatible-changes/open-source/2-4-6-2-4-7.md"/>
 
 ## 2.4.5 - 2.4.6
 
-import Os246 from '/src/_includes/backward-incompatible-changes/open-source/2.4.5-2.4.6.md'
-
-<Os246 />
+<Fragment src="/includes/backward-incompatible-changes/open-source/2-4-5-2-4-6.md"/>
 
 ## 2.4.4 - 2.4.5
 
-import Os245 from '/src/_includes/backward-incompatible-changes/open-source/2.4.4-2.4.5.md'
-
-<Os245 />
+<Fragment src="/includes/backward-incompatible-changes/open-source/2-4-4-2-4-5.md"/>
 
 ## 2.4.3 - 2.4.4
 
-import Os244 from '/src/_includes/backward-incompatible-changes/open-source/2.4.3-2.4.4.md'
-
-<Os244 />
+<Fragment src="/includes/backward-incompatible-changes/open-source/2-4-3-2-4-4.md"/>

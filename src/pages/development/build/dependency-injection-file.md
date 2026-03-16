@@ -230,31 +230,31 @@ The node format is as follows:
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <type name="Magento\Example\Type">
         <arguments>
-            <!-- Pass simple string -->
+            \<!-- Pass simple string --\>
             <argument name="stringParam" xsi:type="string">someStringValue</argument>
-            <!-- Pass instance of Magento\Some\Type -->
+            \<!-- Pass instance of Magento\Some\Type --\>
             <argument name="instanceParam" xsi:type="object">Magento\Some\Type</argument>
-            <!-- Pass true -->
+            \<!-- Pass true --\>
             <argument name="boolParam" xsi:type="boolean">1</argument>
-            <!-- Pass 1 -->
+            \<!-- Pass 1 --\>
             <argument name="intParam" xsi:type="number">1</argument>
-            <!-- Pass application init argument, named by constant value -->
+            \<!-- Pass application init argument, named by constant value --\>
             <argument name="globalInitParam" xsi:type="init_parameter">Magento\Some\Class::SOME_CONSTANT</argument>
-            <!-- Pass constant value -->
+            \<!-- Pass constant value --\>
             <argument name="constantParam" xsi:type="const">Magento\Some\Class::SOME_CONSTANT</argument>
-            <!-- Pass null value -->
+            \<!-- Pass null value --\>
             <argument name="optionalParam" xsi:type="null"/>
-            <!-- Pass array -->
+            \<!-- Pass array --\>
             <argument name="arrayParam" xsi:type="array">
-                <!-- First element is value of constant -->
+                \<!-- First element is value of constant --\>
                 <item name="firstElem" xsi:type="const">Magento\Some\Class::SOME_CONSTANT</item>
-                <!-- Second element is null -->
+                \<!-- Second element is null --\>
                 <item name="secondElem" xsi:type="null"/>
-                <!-- Third element is a subarray -->
+                \<!-- Third element is a subarray --\>
                 <item name="thirdElem" xsi:type="array">
-                    <!-- Subarray contains scalar value -->
+                    \<!-- Subarray contains scalar value --\>
                     <item name="scalarValue" xsi:type="string">ScalarValue</item>
-                    <!-- and application init argument -->
+                    \<!-- and application init argument --\>
                     <item name="globalArgument " xsi:type="init_parameter">Magento\Some\Class::SOME_CONSTANT</item>
                 </item>
             </argument>
@@ -280,7 +280,7 @@ The object manager uses these mappings to determine what the default implementat
 The `preference` node specifies the default implementation:
 
 ```xml
-<!--  File: app/etc/di.xml -->
+\<!--  File: app/etc/di.xml --\>
 <config>
     <preference for="Magento\Framework\UrlInterface" type="Magento\Framework\Url" />
 </config>
@@ -289,7 +289,7 @@ The `preference` node specifies the default implementation:
 This mapping is in `app/etc/di.xml`, so the object manager injects the `Magento\Framework\Url` implementation class wherever there is a request for the `Magento\Framework\UrlInterface` in the global scope.
 
 ```xml
-<!-- File: app/code/Magento/Backend/etc/adminhtml/di.xml -->
+\<!-- File: app/code/Magento/Backend/etc/adminhtml/di.xml --\>
 <config>
     <preference for="Magento\Framework\UrlInterface" type="Magento\Backend\Model\UrlInterface" />
 </config>
@@ -303,7 +303,7 @@ If you want to override a public or protected method from a core class, utilize 
 Here is an example of overriding a method from a core file:
 
 ```xml
-<!-- app/code/ExampleCorp/OverrideExample/etc/di.xml -->
+\<!-- app/code/ExampleCorp/OverrideExample/etc/di.xml --\>
 <config  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <preference for="Magento\Checkout\Block\Onepage\Success" type="ExampleCorp\OverrideExample\Block\Onepage\Success" />
 </config>

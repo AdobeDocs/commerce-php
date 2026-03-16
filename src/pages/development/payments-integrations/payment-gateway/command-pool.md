@@ -7,9 +7,7 @@ keywords:
   - Payments
 ---
 
-import Docs from '/src/_includes/braintree-note.md'
-
-<Docs />
+<Fragment src="/includes/braintree-note.md"/>
 
 # Gateway Command Pool
 
@@ -30,7 +28,7 @@ Following is an example of the command pool configuring for the Braintree paymen
 
 ```xml
 ...
-<!-- BraintreeCommandPool - a command pool for the Braintree payments provider -->
+\<!-- BraintreeCommandPool - a command pool for the Braintree payments provider --\>
 <virtualType name="BraintreeCommandPool" type="Magento\Payment\Gateway\Command\CommandPool">
     <arguments>
         <argument name="commands" xsi:type="array">
@@ -42,7 +40,7 @@ Following is an example of the command pool configuring for the Braintree paymen
     </arguments>
 </virtualType>
 ...
-<!-- Adding BraintreeCommandPool to the Braintree payment method configuration:-->
+\<!-- Adding BraintreeCommandPool to the Braintree payment method configuration:--\>
 <virtualType name="BraintreeFacade" type="Magento\Payment\Model\Method\Adapter">
     <arguments>
         ...
