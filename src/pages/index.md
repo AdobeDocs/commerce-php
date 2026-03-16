@@ -5,7 +5,7 @@ keywords:
   - Extensions
 ---
 
-<Hero slots="image, heading, text"/>
+<Superhero slots="image, heading, text"/>
 
 ![Commerce PHP Extensions](images/home-bg.jpeg)
 
