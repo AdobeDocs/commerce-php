@@ -452,7 +452,6 @@ As result, the new page is available in the `Specified Page` dropdown widget whe
 [Router class section]: #router-class
 [`Magento\Robots\Controller\Router`]: https://github.com/magento/magento2/blob/2.4/app/code/Magento/Robots/etc/frontend/di.xml
 [`Config`]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Route/ConfigInterface.php
-[`Action`]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Action/Action.php
 [`ActionInterface`]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/ActionInterface.php
 [`DefaultRouter`]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Router/DefaultRouter.php
 [action class]: #action-class

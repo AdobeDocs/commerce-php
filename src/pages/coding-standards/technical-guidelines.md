@@ -49,7 +49,7 @@ Use [RFC2119](https://datatracker.ietf.org/doc/html/rfc2119) to interpret keywor
 
 Examples:
 
-__Not recommended:__
+**Not recommended:**
 
 ```php
 <?php
@@ -74,7 +74,7 @@ class Config
 }
 ```
 
-__Recommended:__
+**Recommended:**
 
 ```php
 <?php
@@ -139,7 +139,7 @@ class Composite
 
 Examples:
 
-__Not recommended:__
+**Not recommended:**
 
 ```php
 <?php
@@ -160,7 +160,7 @@ class Config
 }
 ```
 
-__Recommended:__
+**Recommended:**
 
 ```php
 <?php
@@ -196,7 +196,7 @@ class Config
 
 Examples:
 
-__Not recommended:__
+**Not recommended:**
 
 ```php
 interface SessionAdapterInterface
@@ -214,7 +214,7 @@ class SessionManager
 // Breaks polymorphism principle, restricts what types can be passed at the runtime.
 ```
 
-__Recommended:__
+**Recommended:**
 
 ```php
 interface SessionAdapterInterface
@@ -236,7 +236,7 @@ class SessionManager
 
 Examples:
 
-__Not recommended:__
+**Not recommended:**
 
 ```php
 <?php
@@ -277,7 +277,7 @@ class Edit extends AbstractController
 // Smaller classes, one responsibility, more flexible, easy to understand, more testable.
 ```
 
-__Recommended:__
+**Recommended:**
 
 ```php
 <?php
@@ -320,7 +320,7 @@ class Edit extends Action
 
 Example #1:
 
-__Not recommended:__
+**Not recommended:**
 
 ```php
 $url = new Url();
@@ -334,7 +334,7 @@ echo $url->get('custom/path'); // Throws exception, which makes issue smaller. I
 // Method with out parameters that does not return anything could be sign of temporal coupling.
 ```
 
-__Recommended:__
+**Recommended:**
 
 ```php
 $url = new Url($baseUrl);
@@ -349,7 +349,7 @@ echo $url->get($baseUrl, 'custom/path');
 
 Example #2:
 
-__Not recommended:__
+**Not recommended:**
 
 ```php
 <?php
@@ -378,7 +378,7 @@ class View extends Template
 }
 ```
 
-__Recommended:__
+**Recommended:**
 
 ```php
 <?php
@@ -510,9 +510,9 @@ You need to read configuration from different sources (like database or filesyst
 
 6.2.1. According to CQRS, the Presentation layer hosts the Command and the Query Infrastructures:
 
-*  __Command__ for Actions
+*  **Command** for Actions
 
-*  __Query__ for Layout and its elements (Blocks and UI Components)
+*  **Query** for Layout and its elements (Blocks and UI Components)
 
 6.2.2. Request, Response, Session, Store Manager and Cookie objects MUST be used only in the Presentation layer.
 

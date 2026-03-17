@@ -170,8 +170,6 @@ $cacheKey  = \VendorName\ModuleName\Model\Cache\Type\CacheType::TYPE_IDENTIFIER;
 $this->typeList->cleanType($cacheKey);
 ```
 
-[tagscope]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Frontend/Decorator/TagScope.php
-[type]: https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/Model/Cache/Type/Notification.php
 
 ## Examples
 

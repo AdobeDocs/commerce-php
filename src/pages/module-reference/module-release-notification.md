@@ -77,7 +77,7 @@ The Sub Heading section is ideally used on the first modal page as a way to desc
 
 A clickable link to internal or external content in any text field will be created by using the following format and opened in a new browser tab. Providing the URL for the link followed by the text to be displayed for that link in brackets will cause a clickable link to be created. The text between the brackets [text] will be the text that the clickable link shows.
 
-#### Link Format Example:
+#### Link Format Example
 
 The text: `https://developer.adobe.com/commerce/docs/ [Adobe Commerce Developer Documentation].` will appear as [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs/).
 
