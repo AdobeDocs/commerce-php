@@ -85,12 +85,6 @@ Authorization is granted to either an administrator (or an integration) defined 
 
 <InlineAlert variant="info" slots="text"/>
 
-<div>
-
-A guest or anonymous is a special permission that doesn't need to be defined in `acl.xml` (and will not show up in the permissions tree in the Admin). It just indicates that the current resource in `webapi.xml` can be accessed without the need for authentication.
-
-<br></br>
-
+A guest or anonymous is a special permission that doesn't need to be defined in `acl.xml` (and will not show up in the permissions tree in the Admin). It just indicates that the current resource in `webapi.xml` can be accessed without the need for authentication. \<br\>\</br\>
 Similarly, self is a special access used if you already have an authenticated session with the system. Self access enables a user to access resources they own. For example, `GET /V1/customers/me` fetches the logged-in customer's details. This is typically useful for JavaScript-based widgets.
 
-</div>

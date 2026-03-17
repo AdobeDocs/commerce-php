@@ -41,7 +41,7 @@ Add or edit a CMS page, cacheable block, or use the Admin to change the configur
 
 ## How to clear the directories
 
-To only clear directories and not perform other actions, log in to the application server as the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/overview">file system owner</a> and clear directories using a command like the following:
+To only clear directories and not perform other actions, log in to the application server as the [file system owner](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) and clear directories using a command like the following:
 
 ```bash
 rm -r <magento_root>/generated/*/*

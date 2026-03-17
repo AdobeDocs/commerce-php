@@ -50,7 +50,7 @@ All required settings for this connector type should appear in the **Stores** > 
 *  The style of the listing for your settings should match the look of the application's listed settings.
 *  Icons or images should not be used in the navigation listing for your settings.
 
----
+<HorizontalLine />
 
 ### Store Feature Connector
 
@@ -65,7 +65,7 @@ For example, if the extension is for Shipping, then you can place it under **Sto
 
 ![Store Feature Connector placement](../../images/best-practices/store-feature-connector-placement.png)
 
----
+<HorizontalLine />
 
 ### Connector with additional features
 
@@ -84,7 +84,7 @@ For example, if your extension is related to the "Reports" functionality then it
 *  The styles of the links in the admin should follow the same styles of the default navigation links.
 *  Do not introduce custom icons in the navigation submenus.
 
----
+<HorizontalLine />
 
 ### Feature Extensions
 
@@ -102,7 +102,7 @@ The name and icon for this section is still TBD. This new section is a future pr
 
 Since this section is not yet available, you should place your extension in one of the previously mentioned areas where it would be the most appropriate.
 
----
+<HorizontalLine />
 
 ### Integrated Extensions
 
@@ -112,7 +112,7 @@ These are add-ons to existing features and might appear as a nested feature.
 
 As these are integrated features no direct/indirect accessible links are available from the admin.
 
----
+<HorizontalLine />
 
 ### Codebase Extensions
 
