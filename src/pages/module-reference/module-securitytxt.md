@@ -5,7 +5,8 @@ description: Security.txt file for Magento 2 websites
 
 # Security.txt
 
-### Summary
+## Summary
+
 >
 > When security vulnerabilities are discovered by researchers, proper reporting channels are often lacking. As a result, vulnerabilities may be left unreported. This document defines a format ("security.txt") to help organizations describe their vulnerability disclosure practices to make it easier for researchers to report vulnerabilities.
 

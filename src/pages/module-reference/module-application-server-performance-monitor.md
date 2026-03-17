@@ -3,7 +3,7 @@ title: ApplicationServerPerformanceMonitor
 description: Performance data about Application Server
 ---
 
-**ApplicationServerPerformanceMonitor**
+## ApplicationServerPerformanceMonitor
 
 Monitors the Performance of the ApplicationServer
 

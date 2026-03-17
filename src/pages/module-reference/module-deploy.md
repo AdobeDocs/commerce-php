@@ -19,8 +19,6 @@ Where mode can be one of the following:
 When switching to production mode, you can pass optional parameter skip-compilation to do not compile static files, CSS
 and do not run the compilation process.
 
-# Deployment
-
 ## System requirements
 
 ## Install

@@ -84,13 +84,13 @@ Join conditions are described in the `<link-source>` node using the `<using>` ta
 
 ### `<attribute>`
 
-|Attribute|Description|Use
-|--- |--- |---
-|`name`|Column name in database|Required
-|`alias`|Column alias. It can be used in the same way as the column alias in SQL.|Optional
-|`function`|Available values: `count`, `lower`, `date`, `sum`, `max`, `avg`, `min`, `sha1`|Optional
-|`group`|boolean|Optional
-|`distinct`|boolean|Optional
+|Attribute|Description|Use|
+|--- |--- |--- |
+|`name`|Column name in database|Required|
+|`alias`|Column alias. It can be used in the same way as the column alias in SQL.|Optional|
+|`function`|Available values: `count`, `lower`, `date`, `sum`, `max`, `avg`, `min`, `sha1`.|Optional|
+|`group`|boolean|Optional|
+|`distinct`|boolean|Optional|
 
 ### `<filter>`
 

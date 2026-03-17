@@ -170,7 +170,6 @@ $cacheKey  = \VendorName\ModuleName\Model\Cache\Type\CacheType::TYPE_IDENTIFIER;
 $this->typeList->cleanType($cacheKey);
 ```
 
-
 ## Examples
 
 A cache type `translate` is declared in the Magento_Translation module using the `cache.xml` configuration file.

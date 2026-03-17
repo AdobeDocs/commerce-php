@@ -33,10 +33,10 @@ Learn how to [configure variables](https://developer.adobe.com/commerce/frontend
 
 There are two available values for the `gallery_switch_strategy` variable:
 
-Value | Description
---- | ---
-`replace` | In replace mode, images of the parent configurable product will be replaced by the simple product images upon a configuration change
-`prepend` | In prepend mode, the simple product images will be added in front of the parent configurable product upon a configuration change
+| Value | Description |
+| --- | --- |
+| `replace` | In replace mode, images of the parent configurable product will be replaced by the simple product images upon a configuration change |
+| `prepend` | In prepend mode, the simple product images will be added in front of the parent configurable product upon a configuration change |
 
 If the `gallery_switch_strategy` variable is not defined, the default value `replace` will be used.
 

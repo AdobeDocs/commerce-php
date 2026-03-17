@@ -11,7 +11,7 @@ keywords:
 
 # Gateway Command Pool
 
-All [gateway commands](/gateway-command.md) implemented for a particular payment provider, should be added to a command pool for this provider. A command pool is a set of gateway commands available for integration with a particular payment provider. The pool is added to the configuration of the payment provider using [dependency injection](../../components/dependency-injection.md).
+All [gateway commands](gateway-command.md) implemented for a particular payment provider, should be added to a command pool for this provider. A command pool is a set of gateway commands available for integration with a particular payment provider. The pool is added to the configuration of the payment provider using [dependency injection](../../components/dependency-injection.md).
 
 ## Interface
 

@@ -29,39 +29,39 @@ Patch releases are primarily focused on delivering security and quality enhancem
 
 ## 2.4.8 - 2.4.9-beta1
 
-Adobe Commerce v2.4.9-beta1 includes the [B2B extension][] v1.5.3-beta1.
+Adobe Commerce v2.4.9-beta1 includes the [B2B extension] v1.5.3-beta1.
 
 <Fragment src="/includes/backward-incompatible-changes/commerce/2-4-8-2-4-9-beta1.md"/>
 
 ## 2.4.7 - 2.4.8
 
-Adobe Commerce v2.4.8 includes the [B2B extension][] v1.5.2.
+Adobe Commerce v2.4.8 includes the [B2B extension] v1.5.2.
 
 <Fragment src="/includes/backward-incompatible-changes/commerce/2-4-7-2-4-8.md"/>
 
 ## 2.4.6 - 2.4.7
 
-Adobe Commerce v2.4.7 includes the [B2B extension][] v1.4.2.
+Adobe Commerce v2.4.7 includes the [B2B extension] v1.4.2.
 
 <Fragment src="/includes/backward-incompatible-changes/commerce/2-4-6-2-4-7.md"/>
 
 ## 2.4.5 - 2.4.6
 
-Adobe Commerce v2.4.6 includes the [B2B extension][] v1.3.5.
+Adobe Commerce v2.4.6 includes the [B2B extension] v1.3.5.
 
 <Fragment src="/includes/backward-incompatible-changes/commerce/2-4-5-2-4-6.md"/>
 
 ## 2.4.4 - 2.4.5
 
-Adobe Commerce v2.4.5 includes the [B2B extension][] v1.3.4.
+Adobe Commerce v2.4.5 includes the [B2B extension] v1.3.4.
 
 <Fragment src="/includes/backward-incompatible-changes/commerce/2-4-4-2-4-5.md"/>
 
 ## 2.4.3 - 2.4.4
 
-Adobe Commerce v2.4.4 includes the [B2B extension][] v1.3.3.
+Adobe Commerce v2.4.4 includes the [B2B extension] v1.3.3.
 
 <Fragment src="/includes/backward-incompatible-changes/commerce/2-4-3-2-4-4.md"/>
 
 \<!-- Links --\>
-[B2B extension]: https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/reference/backward-incompatible-changes
+[B2B extension]: https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/reference/backward-incompatible-changes "B2B extension"

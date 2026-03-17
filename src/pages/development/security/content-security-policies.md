@@ -98,22 +98,22 @@ instead.
 
 The following table describes each type of CSP:
 
-Policy name | Description
---- | ---
-`default-src` | The default policy.
-`base-uri` | Defines which URLs can appear in a page's `<base>` element.
-`child-src` | Defines the sources for workers and embedded frame contents.
-`connect-src` | Defines the sources that can be loaded using script interfaces.
-`font-src` | Defines which sources can serve fonts.
-`form-action` | Defines valid endpoints for submission from `<form>` tags.
-`frame-ancestors` | Defines the sources that can embed the current page.
-`frame-src` | Defines the sources for elements such as `<frame>` and `<iframe>`.
-`img-src` | Defines the sources from which images can be loaded.
-`manifest-src` | Defines the allowable contents of web app manifests.
-`media-src` | Defines the sources from which images can be loaded.
-`object-src` | Defines the sources for the `<object>`, `<embed>`, and `<applet>` elements.
-`script-src` | Defines the sources for JavaScript `<script>` elements.
-`style-src` | Defines the sources for stylesheets.
+| Policy name | Description |
+| --- | --- |
+| `default-src` | The default policy. |
+| `base-uri` | Defines which URLs can appear in a page's `<base>` element. |
+| `child-src` | Defines the sources for workers and embedded frame contents. |
+| `connect-src` | Defines the sources that can be loaded using script interfaces. |
+| `font-src` | Defines which sources can serve fonts. |
+| `form-action` | Defines valid endpoints for submission from `<form>` tags. |
+| `frame-ancestors` | Defines the sources that can embed the current page. |
+| `frame-src` | Defines the sources for elements such as `<frame>` and `<iframe>`. |
+| `img-src` | Defines the sources from which images can be loaded. |
+| `manifest-src` | Defines the allowable contents of web app manifests. |
+| `media-src` | Defines the sources from which images can be loaded. |
+| `object-src` | Defines the sources for the `<object>`, `<embed>`, and `<applet>` elements. |
+| `script-src` | Defines the sources for JavaScript `<script>` elements. |
+| `style-src` | Defines the sources for stylesheets. |
 
 ### Add a domain to the whitelist
 

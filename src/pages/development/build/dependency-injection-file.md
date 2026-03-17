@@ -165,7 +165,9 @@ See table below:
 | Integer    | 1        | true          |
 | Integer    | 0        | false         |
 
-*These String literals are case-sensitive*
+<InlineAlert variant="info" slots="text"/>
+
+These String literals are case-sensitive.
 
 <HorizontalLine />
 

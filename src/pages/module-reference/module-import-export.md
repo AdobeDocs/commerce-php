@@ -69,18 +69,18 @@ For information about a public API in Magento 2, see [Public interfaces & APIs](
 
 ## Additional information
 
-#### Message Queue Consumer
+### Message Queue Consumer
 
 - `exportProcessor` - consumer to run export process
 
 [Learn how to manage Message Queues](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues).
 
-#### Create custom import entity
+### Create custom import entity
 
 1. Declare the new import entity in `etc/import.xml`
 2. Create an import model
 
-#### Create custom export entity
+### Create custom export entity
 
 1. Declare the new import entity in `etc/export.xml`
 2. Create an export model

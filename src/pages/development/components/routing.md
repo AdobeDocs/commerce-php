@@ -213,14 +213,14 @@ Action class should return a `result object`.
 
 ## Result object
 
-Name | Description
---- | ---
-`json` | Sets `Content-Type:application/json` in the header and returns a json encoded representation of an array with data
-`raw` | Returns the data as it's been set. Does not set a `Content-Type` in the header
-`redirect` | Creates an external redirect, which the browser follows and requests a new url
-`forward` | Internally calls the execute method of another action class and does not trigger a new request from the browser. The URL stays the same
-`layout` | View result. You can use a generic layout response to render any kind of layout. The layout comprises a response body from its layout elements and sets it to the HTTP response
-`page` | View result. Encapsulates page type, page configuration, and imposes certain layout handles. `page` triggers `layout.xml` to render into HTML
+|   Name | Description |
+|------|-------------|
+| `json` | Sets `Content-Type:application/json` in the header and returns a json encoded representation of an array with data |
+| `raw` | Returns the data as it's been set. Does not set a `Content-Type` in the header |
+| `redirect` | Creates an external redirect, which the browser follows and requests a new url |
+| `forward` | Internally calls the execute method of another action class and does not trigger a new request from the browser. The URL stays the same |
+| `layout` | View result. You can use a generic layout response to render any kind of layout. The layout comprises a response body from its layout elements and sets it to the HTTP response |
+| `page` | View result. Encapsulates page type, page configuration, and imposes certain layout handles. `page` triggers `layout.xml` to render into HTML |
 
 ## Example of routing usage
 

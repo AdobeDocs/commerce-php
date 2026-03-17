@@ -21,7 +21,7 @@ Extension developers can interact with the Magento_MediaGalleryRenditions module
 
 For information about significant changes in patch releases, see [2.4.x Release information](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
-#### Message Queue Consumer
+### Message Queue Consumer
 
 - `media.gallery.renditions.update` - update renditions for given paths, if empty array is provided - all renditions are updated
 

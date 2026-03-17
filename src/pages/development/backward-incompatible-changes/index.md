@@ -402,7 +402,7 @@ The following modules are affected by this change:
 
 * [Magento_Elasticsearch](/module-reference/module-elasticsearch/)
 * [Magento_ElasticsearchCatalogPermissions](/module-reference/module-elasticsearch-catalog-permissions/)
-* [Magento_Elasticsearch7](/module-reference/module-elasticsearch-7/)
+* Magento_Elasticsearch7
 * [Magento_OpenSearch](/module-reference/module-open-search/)
 
 ### Fixes to resolve compatibility issues with Symfony
@@ -571,7 +571,7 @@ The following modules are affected by this change:
 *  [Magento_VisualMerchandiser](/module-reference/module-visual-merchandiser/)
 *  [Magento_GiftCard](/module-reference/module-gift-card/)
 *  [Magento_Elasticsearch](/module-reference/module-elasticsearch/)
-*  [Magento_Elasticsearch7](/module-reference/module-elasticsearch-7/)
+* Magento_Elasticsearch7
 *  [Magento_Search](/module-reference/module-search/)
 *  [Magento_LayeredNavigation](/module-reference/module-layered-navigation/)
 *  [Magento_GroupedProduct](/module-reference/module-grouped-product/)
@@ -761,21 +761,21 @@ Disabling the inventory check can improve performance for checkout steps, especi
 
 The following table contains metrics of checkout with a large amount of products (750) and additional product by guest:
 
-Step | Absolute numbers | Percentage change | Change in milliseconds | Status
------|------------------|-------------------|--------------|-------
-Add Bulk Of Simple Products to Cart | 6260 | -0.7% | -41ms | ok
-Load Cart Section - Total: 750 | 788 | -49.2% | -762ms | improvement
-Configurable Product 1 Add To Cart - Total: 751 | 1566 | -32.3% | -748ms | improvement
-Load Cart Section - Total: 751 | 789 | -49.0% | -757ms | improvement
-Configurable Product 2 Add To Cart - Total: 752 | 1574 | -32.1% | -745ms | improvement
-Load Cart Section - Total: 752 | 793 | -48.6% | -751ms | improvement
-Open Cart | 1587 | -33.1% | -785ms | improvement
-Checkout start | 942 | -44.6% | -757ms | improvement
-Checkout Email Available | 36 | +0.0% | +0ms | ok
-Checkout Estimate Shipping Methods | 1287 | -58.1% | -1782ms | improvement
-Checkout Billing/Shipping Information | 2098 | -61.5% | -3354ms | improvement
-Checkout Payment Info/Place Order | 4618 | -25.1% | -1549ms | improvement
-Checkout success | 270 | -0.4% | -1ms | ok
+| Step | Absolute numbers | Percentage change | Change in milliseconds | Status |
+|------|------------------|-------------------|--------------|-------|
+| Add Bulk Of Simple Products to Cart | 6260 | -0.7% | -41ms | ok |
+| Load Cart Section - Total: 750 | 788 | -49.2% | -762ms | improvement |
+| Configurable Product 1 Add To Cart - Total: 751 | 1566 | -32.3% | -748ms | improvement |
+| Load Cart Section - Total: 751 | 789 | -49.0% | -757ms | improvement |
+| Configurable Product 2 Add To Cart - Total: 752 | 1574 | -32.1% | -745ms | improvement |
+| Load Cart Section - Total: 752 | 793 | -48.6% | -751ms | improvement |
+| Open Cart | 1587 | -33.1% | -785ms | improvement |
+| Checkout start | 942 | -44.6% | -757ms | improvement |
+| Checkout Email Available | 36 | +0.0% | +0ms | ok |
+| Checkout Estimate Shipping Methods | 1287 | -58.1% | -1782ms | improvement |
+| Checkout Billing/Shipping Information | 2098 | -61.5% | -3354ms | improvement |
+| Checkout Payment Info/Place Order | 4618 | -25.1% | -1549ms | improvement |
+| Checkout success | 270 | -0.4% | -1ms | ok |
 
 ### TinyMCE
 

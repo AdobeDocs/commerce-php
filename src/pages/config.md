@@ -1,10 +1,8 @@
 - pathPrefix:
     - /commerce/php/
 
-- home:
-    - [Commerce](/commerce/docs.md)
-
 - pages:
+    - [Commerce](https://developer.adobe.com/commerce/docs)
     - [PHP Extensions](/index.md)
     - [Architecture](/architecture/index.md)
     - [Development](/development/index.md)
@@ -52,7 +50,7 @@
         - [Add code inspections](/best-practices/phpstorm/add-code-inspections.md)
         - [Issue reporting](/best-practices/phpstorm/issue-reporting.md)
         - [Run the Upgrade Compatibility Tool](/best-practices/phpstorm/run-configuration.md)
-        - [Built-in Upgrade Compaptibility Tool](/best-practices/phpstorm/upgrade-compatibility-tool.md)
+        - [Built-in Upgrade Compatibility Tool](/best-practices/phpstorm/upgrade-compatibility-tool.md)
     - [Storefront](/best-practices/storefront/index.md)
     - [Security](/best-practices/security/index.md)
     - [Introduction](/coding-standards/index.md)

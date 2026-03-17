@@ -8,7 +8,7 @@ keywords:
 
 # Cross-site scripting (XSS)
 
-[Cross-site scripting][], or XSS, is a security vulnerability that can be found in web applications. This vulnerability allows attackers to inject malicious code/styles into a web page viewed by users. Extension developers should be aware of these vulnerabilities to avoid introducing them in their code.
+[Cross-site scripting], or XSS, is a security vulnerability that can be found in web applications. This vulnerability allows attackers to inject malicious code/styles into a web page viewed by users. Extension developers should be aware of these vulnerabilities to avoid introducing them in their code.
 
 There are three main types of XSS vulnerabilities:
 
@@ -45,9 +45,9 @@ The general rule is: Do not trust dynamic values.
 
 The `\Magento\Framework\Escaper` class is provided for `.phtml` templates and PHP classes responsible for generating HTML. It contains HTML sanitization methods for a variety of contexts.
 
-The `$escaper` local variable is available inside the .phtml templates. See the [product listing template][] as example of `$escaper` usage in .phtml templates.
+The `$escaper` local variable is available inside the .phtml templates. See the [product listing template] as example of `$escaper` usage in .phtml templates.
 
-See [Template guide][] to read more about templates in Magento.
+See [Template guide] to read more about templates in Magento.
 
 When using the `\Magento\Framework\Escaper` or `$escaper`:
 
@@ -156,7 +156,7 @@ settings.<?= $escaper->escapeJs($myProperty) ?> = true;
 
 #### Knockout templates
 
-In knockout templates, you can bind a UI component's property/function as the 'inner HTML' of an element. Such properties may contain dynamic data and must be sanitized within componenets. See [binding syntax][] to learn more about UI component templates.
+In knockout templates, you can bind a UI component's property/function as the 'inner HTML' of an element. Such properties may contain dynamic data and must be sanitized within components. See [binding syntax] to learn more about UI component templates.
 
 In order to notify developers that these properties/function results may contain HTML, the application requires (with the help of a static test) that you name such properties/functions using "UnsanitizedHtml" suffix.
 
@@ -167,7 +167,7 @@ In order to notify developers that these properties/function results may contain
 
 #### Dynamically created DOM elements
 
-When using variables that are not supposed to contain HTML, the safest way to generate DOM elements is to create them programatically using the appropriate API, instead of using the _innerHtml_ property or jQuery's _.html()_ function.
+When using variables that are not supposed to contain HTML, the safest way to generate DOM elements is to create them programmatically using the appropriate API, instead of using the _innerHtml_ property or jQuery's _.html()_ function.
 
 ```javascript
 let newDiv = document.createElement("div");
@@ -178,7 +178,7 @@ parentElement.appendChild(newDiv);
 
 #### UI component data providers
 
-UI component data providers pass dynamic (user generated) data to UI components. The data they return is rendered in order to support component dynamic linking. Since user data is supposed to be treated as a literal value which is not refering to any other component, rendering of these properties must be disabled. See [UI component data providers][] to read more about data providers and component linking.
+UI component data providers pass dynamic (user generated) data to UI components. The data they return is rendered in order to support component dynamic linking. Since user data is supposed to be treated as a literal value which is not refering to any other component, rendering of these properties must be disabled. See [UI component data providers] to read more about data providers and component linking.
 
 ```php
 $uiData = ['linkProperty' => '${ $.otherComponent.value }'];
@@ -191,7 +191,7 @@ return $uiData;
 
 ### Static Test
 
-To check your .phtml template for XSS vulnerabilities, use the _Magento2.Security.XssTemplate_ sniff from [Coding Standard][].
+To check your .phtml template for XSS vulnerabilities, use the _Magento2.Security.XssTemplate_ sniff from [Coding Standard].
 This sniff finds all _echo_ calls in PHTML-templates and determines if the output is properly escaped.
 It covers the following cases:
 
