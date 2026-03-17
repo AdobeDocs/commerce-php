@@ -42,7 +42,7 @@ To deploy sample data from the Magento composer repository without Magento CLI:
 }
 ```
 
-Where `<version>` is the version of the packages; it should correspond to the version of the Magento instance.
+Where `{version}` is the version of the packages; it should correspond to the version of the Magento instance.
 
 Each package corresponds to a sample data module. The complete list of available modules can be viewed in the [sample data GitHub repository] (https://github.com/magento/magento2-sample-data/tree/develop/app/code/Magento)
 
@@ -53,7 +53,7 @@ Each package corresponds to a sample data module. The complete list of available
 To deploy sample data from the GitHub repository:
 
 1. Clone sample data from `https://github.com/magento/magento2-sample-data`. If your Magento instance was cloned from the mainline branch, choose the mainline branch when cloning sample data; choose the `develop` branch if Magento was cloned from `develop`.
-2. Link the sample data and your Magento instance by running: `# php -f <sample-data_clone_dir>/dev/tools/build-sample-data.php -- --ce-source="<path_to_your_magento_instance>"`
+2. Link the sample data and your Magento instance by running: `# php -f {sample-data_clone_dir}/dev/tools/build-sample-data.php -- --ce-source="{path_to_your_magento_instance}"`
 
 ## Install Sample Data
 
@@ -65,7 +65,7 @@ To remove the sample data modules from the code base, run one of the following c
 
 * If sample data was deployed from the composer repository, run: `# bin/magento sampledata:remove`
 * If sample data was deployed from the GitHub repository and linked to your Magento instance, run:
-`# php -f <sample-data_clone_dir>/dev/tools/build-sample-data.php – --command=unlink --ce-source="<path_to_your_magento_instance>"`
+`# php -f {sample-data_clone_dir}/dev/tools/build-sample-data.php -- --command=unlink --ce-source="{path_to_your_magento_instance}"`
 
 To delete all the products and other entities provided by the sample data modules, delete the database and reinstall Magento with a clean database.
 
@@ -80,7 +80,7 @@ The deleted sample data entities will be restored. Those entities, which were ch
 
 ## Documentation
 
-You can find the more detailed description of sample data manipulation procedures at <https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/next-steps/sample-data/overview>.
+You can find the more detailed description of sample data manipulation procedures at [Sample data overview](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/next-steps/sample-data/overview).
 
 <InlineAlert slots="text" />
 The version of this module is 100.4.6.
