@@ -17,7 +17,7 @@ This topic discusses how to set up database caching and how to verify database c
 
 <InlineAlert variant="warning" slots="text"/>
 
-Database caching---like file-based caching--- works well in a development environment but we _strongly recommend_ you use [Varnish] in production instead.
+Database caching---like file-based caching--- works well in a development environment but we _strongly recommend_ you use [Varnish][] in production instead.
 Varnish is designed to accelerate the HTTP protocol.
 
 ## Prerequisites
@@ -275,7 +275,6 @@ This section contains code sample snippets to refer to when configuring database
 ],
 ```
 
-\<!-- Link references --\>
 [Varnish]: https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/varnish/config-varnish
 [associate cache frontends with cache types]: https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/cache-types
 [sample configurations]: #configuration-examples

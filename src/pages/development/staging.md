@@ -1,10 +1,12 @@
 ---
 title: Staging | Commerce PHP Extensions
 description: Learn how to manage campaigns in Adobe Commerce and Magento Open Source using the staging module.
-edition: paas
 keywords:
   - Extensions
 ---
+
+<Edition slot="text" backgroundColor="blue"/>
+PaaS only
 
 # Staging
 

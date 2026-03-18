@@ -455,3 +455,4 @@ As result, the new page is available in the `Specified Page` dropdown widget whe
 [`ActionInterface`]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/ActionInterface.php
 [`DefaultRouter`]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Router/DefaultRouter.php
 [action class]: #action-class
+[routesxml]: #routesxml
