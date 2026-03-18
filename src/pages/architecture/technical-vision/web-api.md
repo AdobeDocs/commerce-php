@@ -27,7 +27,7 @@ The following image provides an overview of how Web API requests are processed.
 
 ### Declare a new REST and SOAP endpoint
 
-Any [service contract](/development/components/service-contracts/) can be [exposed as REST and SOAP](/development/components/web-api/services/) endpoints via configuration in a module's `webapi.xml` file.
+Any [service contract](/development/components/service-contracts/index.md) can be [exposed as REST and SOAP](/development/components/web-api/services.md) endpoints via configuration in a module's `webapi.xml` file.
 
 ### Declare a new GraphQL query/mutation
 

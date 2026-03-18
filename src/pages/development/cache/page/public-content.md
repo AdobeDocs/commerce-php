@@ -138,7 +138,7 @@ For another example of a context class, see [Magento/Framework/App/Http/Context]
 
 ### `X-Magento-Vary` cookie
 
-Use the `X-Magento-Vary` cookie to transfer context on the HTTP layer. HTTP proxies can be configured to calculate a unique identifier for cache based on the cookie and URL. For example, [our sample Varnish 4 configuration](https://github.com/magento/magento2/blob/2.4/app/code/Magento/PageCache/etc/varnish4.vcl#L63-L68) uses the following:
+Use the `X-Magento-Vary` cookie to transfer context on the HTTP layer. HTTP proxies can be configured to calculate a unique identifier for cache based on the cookie and URL. For example, [our sample Varnish 4 configuration](https://github.com/magento/magento2/blob/2.4/app/code/Magento/PageCache/etc/varnish4.vcl) uses the following:
 
 ```conf
 sub vcl_hash {

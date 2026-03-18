@@ -1,6 +1,6 @@
 A component's root directory matches the component's name and contains all its subdirectories and files. Based on how you installed Magento, you can put your component's root directory in one of two places:
 
-*  `<Magento install directory>/app`: This is the *recommended* location for component development. You can set up this environment by [Cloning the Magento 2 GitHub repository](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/).
+*  `<Magento install directory>/app`: This is the *recommended* location for component development. You can set up this environment by [Cloning the Magento 2 GitHub repository](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository).
 
    *  For modules, use `app/code`.
    *  For storefront themes, use `app/design/frontend`.

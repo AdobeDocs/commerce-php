@@ -298,7 +298,7 @@ Then you can expect to see an additional field with a cardholder authentication 
 
 \<!-- Link Definitions --\>
 
-[cardinalcommerce]: https://cardinalcommerce.com/
+[cardinalcommerce]: https://corporate.visa.com/en/solutions/visa-protect.html
 [module]: https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#module
 [app\code\AuthorizenetCardinal\Model\Checkout\ConfigProvider.php]: https://github.com/magento/magento2/blob/2.3/app/code/Magento/AuthorizenetCardinal/Model/Checkout/ConfigProvider.php
 [JWT]: https://en.wikipedia.org/wiki/JSON_Web_Token

@@ -46,7 +46,7 @@ To change the available design settings, you must [customize the grid](#customiz
 
 ## Customize the grid
 
-The grid containing the configuration scopes is implemented using the [grid UI component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/listing-grid/).
+The grid containing the configuration scopes is implemented using the [grid UI component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/listing-grid).
 
 To customize the grid view, take the following steps:
 

@@ -548,7 +548,7 @@ You need to read configuration from different sources (like database or filesyst
 
 6.4.2.1. Methods that have similar names MUST serve similar purposes across different services, but they still MAY have different signatures.
 
-6.4.2.2. Service contracts SHOULD NOT be used for read scenarios on the storefront. Instead, GraphQL SHOULD be used for storefront scenarios. Check out [web API technical vision](/architecture/technical-vision/web-api/) for more details.
+6.4.2.2. Service contracts SHOULD NOT be used for read scenarios on the storefront. Instead, GraphQL SHOULD be used for storefront scenarios. Check out [web API technical vision](/architecture/technical-vision/web-api.md) for more details.
 
 6.4.2.3. Each service interface SHOULD declare a single public method. An interface name SHOULD reflect the task or action to be performed. For example, `Magento\InventoryApi\Api\StockSourceLinksDeleteInterface::execute(array $links)`. The only exception is a Repository API, which MAY be added for convenience and MUST be limited to singular CRUD operations and `getList($searchCriteria)`.
 
@@ -825,7 +825,7 @@ You need to read configuration from different sources (like database or filesyst
 
 ## 13. Command line interface (CLI)
 
-13.1. [CLI command naming guidelines](/development/cli-commands/naming-guidelines/) MUST be followed.
+13.1. [CLI command naming guidelines](/development/cli-commands/naming-guidelines.md) MUST be followed.
 
 13.2. A CLI command MUST be created for any functionality intended to be used by a system integrator/system administrator/developer (for example: change indexer mode, generate a configuration file, etc.).
 

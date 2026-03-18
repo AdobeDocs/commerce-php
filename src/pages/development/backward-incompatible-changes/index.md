@@ -69,7 +69,7 @@ No action is required for merchants or partners.
 
 The following module is affected by this change:
 
-* [Magento_TwoFactorAuth](/module-reference/module-two-factor-auth/)
+* [Magento_TwoFactorAuth](/module-reference/module-two-factor-auth.md)
 
 ### New Relic migration from REST v2 to NerdGraph
 
@@ -93,7 +93,7 @@ Update New Relic configuration in the Admin:
 
 The following module is affected by this change:
 
-* [Magento_NewRelicReporting](/module-reference/module-new-relic-reporting/)
+* [Magento_NewRelicReporting](/module-reference/module-new-relic-reporting.md)
 
 ### Symfony 7.4 LTS support
 
@@ -223,7 +223,7 @@ These paramters correspond to the following system configuration options in the 
 
 The following module is affected by this change:
 
-* [Magento_TwoFactorAuth](/module-reference/module-two-factor-auth/)
+* [Magento_TwoFactorAuth](/module-reference/module-two-factor-auth.md)
 
 ### New unique EAV key
 
@@ -256,7 +256,7 @@ Merchants must update their configuration in the Admin settings to include a Cli
 
 The following module is affected by this change:
 
-* [Magento_TwoFactor Auth](https://developer.adobe.com/commerce/php/module-reference/module-two-factor-auth/)
+* [Magento_TwoFactor Auth](/module-reference/module-two-factor-auth.md)
 
 ### Updated Braintree blocks
 
@@ -319,7 +319,7 @@ bin/magento config:set twofactorauth/google/leeway 29
 
 The following module is affected by this change:
 
-* [Magento_TwoFactorAuth](/module-reference/module-two-factor-auth/)
+* [Magento_TwoFactorAuth](/module-reference/module-two-factor-auth.md)
 
 ### Upgraded monolog/monolog dependency
 
@@ -980,7 +980,7 @@ Magento\CatalogSearch\Model\Adapter\Mysql\Filter\AliasResolver
 
 ### Functional Testing Framework
 
-MFTF now uses Google Authenticator to execute tests with 2FA enabled. The functional test framework will not work with 2.4.0 without additional configuration steps to enable Google Authenticator. See [Configuring Two-Factor Authentication (2FA)](https://developer.adobe.com/commerce/testing/functional-testing-framework/two-factor-authentication/).
+MFTF now uses Google Authenticator to execute tests with 2FA enabled. The functional test framework will not work with 2.4.0 without additional configuration steps to enable Google Authenticator. See [Configuring Two-Factor Authentication (2FA)](https://developer.adobe.com/commerce/testing/functional-testing-framework/two-factor-authentication).
 
 ### Inventory asynchronous reindex
 

@@ -54,3 +54,4 @@ super-linter.log
 
 # GitHub Actions leftovers
 github_conf
+.claude

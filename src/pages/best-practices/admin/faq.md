@@ -17,7 +17,7 @@ The appropriate place for your extension to appear in the Admin depends on what 
 
 ## What are the rules about using the left-navigation "slide-out panels" in the Admin?
 
-The slide-out panel is designed to accommodate several links. There can be several columns in the slide-out panel to accommodate many extension links. See the details and specifications about [slide-out panels](https://developer.adobe.com/commerce/admin-developer/pattern-library/containers/slideouts-modals-overlays/).
+The slide-out panel is designed to accommodate several links. There can be several columns in the slide-out panel to accommodate many extension links. See the details and specifications about [slide-out panels](https://developer.adobe.com/commerce/admin-developer/pattern-library/containers/slideouts-modals-overlays).
 
 <HorizontalLine />
 

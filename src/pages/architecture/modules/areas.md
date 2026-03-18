@@ -21,7 +21,7 @@ The Commerce framework is organized into these main areas:
 
 *  **Basic** (`base`): used as a fallback for files absent in `adminhtml` and `frontend` areas.
 
-*  **Cron** (`crontab`): In `pub/cron.php`, the [`\Magento\Framework\App\Cron`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Cron.php#L68-L70) class always loads the 'crontab' area.
+*  **Cron** (`crontab`): In `pub/cron.php`, the [`\Magento\Framework\App\Cron`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Cron.php) class always loads the 'crontab' area.
 
 You can also send requests to the Commerce framework using the SOAP, REST and GraphQL APIs. These three areas
 

@@ -50,7 +50,7 @@ Before you publish your component, test installing it.
 See these resources for testing in PHP and validating components:
 
 *  The [Coding Standard] provides a set of rules and sniffs for the [PHP_CodeSniffer] tool
-*  [Extension Quality Program](https://developer.adobe.com/commerce/marketplace/guides/sellers/extension-quality-program/) in the Commerce Marketplace guide
+*  [Extension Quality Program](https://developer.adobe.com/commerce/marketplace/guides/sellers/extension-quality-program) in the Commerce Marketplace guide
 
 [Testing Overview]: https://developer.adobe.com/commerce/testing/guide/
 [Functional Testing Framework]: https://developer.adobe.com/commerce/testing/functional-testing-framework/

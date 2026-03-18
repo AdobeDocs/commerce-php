@@ -7,7 +7,7 @@ keywords:
 
 # Customize the product creation form
 
-This tutorial describes how developers can customize the product creation form used on the product creation and product edit pages in Admin. The product creation form is implemented using the [form UI component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/form/).
+This tutorial describes how developers can customize the product creation form used on the product creation and product edit pages in Admin. The product creation form is implemented using the [form UI component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/form).
 
 Product attributes and attribute sets available in the form, can be customized and added under **STORES** > **Attributes** in the Admin. But you can also customize the form view and behavior in code. The following sections describe what files define the form and how they can be customized in your module.
 

@@ -17,9 +17,9 @@ For information about a module installation in Magento 2, see [Enable or disable
 
 ## Extensibility
 
-Extension developers can interact with the Magento_Email module. For more information about the Magento extension mechanism, see [Magento plugins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_Email module. For more information about the Magento extension mechanism, see [Magento plugins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_Email module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_Email module.
 
 ### Layouts
 
@@ -41,8 +41,8 @@ More information about email templates are at articles:
 
 - [Marketing/Email](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/communications/email-templates)
 - [Email templates list](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/communications/email-templates#email-template-list)
-- [Customize email templates](https://developer.adobe.com/commerce/frontend-core/guide/templates/email/)
-- [Migrating custom email templates](https://developer.adobe.com/commerce/frontend-core/guide/templates/email-migration/#nested-arrays)
+- [Customize email templates](https://developer.adobe.com/commerce/frontend-core/guide/templates/email)
+- [Migrating custom email templates](https://developer.adobe.com/commerce/frontend-core/guide/templates/email-migration#nested-arrays)
 
 <InlineAlert slots="text" />
 The version of this module is 101.1.8.

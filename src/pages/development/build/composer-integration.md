@@ -221,8 +221,8 @@ Using Adobe Commerce and Magento Open Source code as an example, marketing versi
 [2]: https://packagist.org/
 [3]: https://getcomposer.org/doc/05-repositories.md#path
 [4]: https://www.iso.org/iso-639-language-code
-[5]: https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/
-[7]: https://marketplace.magento.com
+[5]: https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information
+[7]: https://commercemarketplace.adobe.com
 [8]: ../package/component.md#metapackage-example
 [9]: https://getcomposer.org/doc/03-cli.md#create-project
 [10]: https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer

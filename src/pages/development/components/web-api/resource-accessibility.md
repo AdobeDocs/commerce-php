@@ -27,7 +27,7 @@ All `acl.xml` files across all modules are consolidated to build an ACL tree, wh
 
 ### Sample customer `acl.xml`
 
-For example, account management, customer configuration, and customer group resource permissions are defined in the Customer module's [`acl.xml`](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Customer/etc/acl.xml).
+For example, account management, customer configuration, and customer group resource permissions are defined in the Customer module's [`acl.xml`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/etc/acl.xml).
 
 When a developer creates the Web API configuration file (`webapi.xml`), the permissions defined in acl.xml are referenced to create access rights for each API resource.
 
