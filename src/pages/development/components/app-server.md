@@ -5,8 +5,8 @@ keywords:
   - Extensions
 ---
 
-<Edition slot="text" backgroundColor="blue"/>
-PaaS only
+<Edition slots="text" backgroundColor="blue"/>
+[PaaS only](https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions)
 
 <InlineAlert variant="info" slots="text" />
 
