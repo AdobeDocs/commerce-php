@@ -17,7 +17,7 @@ Information on how the Staging functionality works and how to use the various fe
 The functionality is distributed between staging modules. The [Staging module](/module-reference/module-staging.md) is a framework for the staging functionality, and other staging modules are extensions for the existing modules. You can read about each staging module in a corresponding topic:
 
 -  [BundleStaging module](/module-reference/module-bundle-staging.md)
--  [CatalogImportExportStaging module](/module-reference/module-catalog-import-export-staging/)
+-  [CatalogImportExportStaging module](/module-reference/module-catalog-import-export-staging.md)
 -  [CatalogInventoryStaging module](/module-reference/module-catalog-inventory-staging/)
 -  [CatalogRuleStaging module](/module-reference/module-catalog-rule-staging/)
 -  [CatalogStaging module](/module-reference/module-catalog-staging/)

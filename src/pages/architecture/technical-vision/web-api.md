@@ -60,7 +60,7 @@ See the [GraphQL documentation](https://developer.adobe.com/commerce/webapi/grap
 
 The recommended approach for modifying an interface is to define a new endpoint. If you simply modify the schema, you might break existing integrations or extensions.
 
-To extend an interface, use [extension attributes](/development/components/attributes/).
+To extend an interface, use [extension attributes](/development/components/attributes.md).
 
 ### Modify the schema of an existing GraphQL query
 

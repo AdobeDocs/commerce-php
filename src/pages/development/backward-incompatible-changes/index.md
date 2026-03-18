@@ -175,7 +175,7 @@ No action is required for merchants or partners. This is a security enhancement 
 
 The following module is affected by this change:
 
-* [Magento_Sales](/module-reference/module-sales/)
+* [Magento_Sales](/module-reference/module-sales.md)
 
 ### MySQL 8.4 foreign key restrictions
 

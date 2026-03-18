@@ -88,10 +88,10 @@ The following services reside under the [`Magento/InventoryCatalogApi/Api`](http
 
 | Service | Description |
 | --- | --- |
-| [``DefaultSourceProviderInterface``](https://github.com/magento/inventory/tree/1.2.4/InventoryCatalogApi/Api/DefaultSourceProviderInterface.php) | Retrieves Default Source code |
-| [`DefaultStockProviderInterface`](https://github.com/magento/inventory/tree/1.2.4/InventoryCatalogApi/Api/DefaultStockProviderInterface.php) | Retrieves Default Stock id |
-| [`BulkInventoryTransferInterface`](https://github.com/magento/inventory/tree/1.2.4/InventoryCatalogApi/Api/BulkInventoryTransferInterface.php) | [Bulk transfers](https://developer.adobe.com/commerce/webapi/rest/inventory/bulk-inventory#bulk-transfer) the whole quantity of products from origin to destination source |
-| [`BulkPartialInventoryTransferInterface`](https://github.com/magento/inventory/tree/1.2.4/InventoryCatalogApi/Api/BulkPartialInventoryTransferInterface.php) | Runs [bulk partial inventory transfer](https://developer.adobe.com/commerce/webapi/rest/inventory/bulk-inventory#bulk-partial-transfer) for specified items |
+| [``DefaultSourceProviderInterface``](https://github.com/magento/inventory/blob/1.2.4/InventoryCatalogApi/Api/DefaultSourceProviderInterface.php) | Retrieves Default Source code |
+| [`DefaultStockProviderInterface`](https://github.com/magento/inventory/blob/1.2.4/InventoryCatalogApi/Api/DefaultStockProviderInterface.php) | Retrieves Default Stock id |
+| [`BulkInventoryTransferInterface`](https://github.com/magento/inventory/blob/1.2.4/InventoryCatalogApi/Api/BulkInventoryTransferInterface.php) | [Bulk transfers](https://developer.adobe.com/commerce/webapi/rest/inventory/bulk-inventory#bulk-transfer) the whole quantity of products from origin to destination source |
+| [`BulkPartialInventoryTransferInterface`](https://github.com/magento/inventory/blob/1.2.4/InventoryCatalogApi/Api/BulkPartialInventoryTransferInterface.php) | Runs [bulk partial inventory transfer](https://developer.adobe.com/commerce/webapi/rest/inventory/bulk-inventory#bulk-partial-transfer) for specified items |
 
 ## Inventory Sales API
 

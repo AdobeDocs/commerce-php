@@ -894,7 +894,7 @@ class SampleEventObserverThatModifiesInputs implements ObserverInterface
 
 15.3.1. Sanitize input; escape output.
 
-15.3.2. Follow [XSS prevention strategies guidelines](/development/security/cross-site-scripting/) for escaping output.
+15.3.2. Follow [XSS prevention strategies guidelines](/development/security/cross-site-scripting.md) for escaping output.
 
 15.3.3. Incoming data should be casted to the expected type. String data should be validated/sanitized.
 
