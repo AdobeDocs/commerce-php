@@ -17,9 +17,9 @@ This module does not create any backward incompatible changes.
 
 ## Extensibility
 
-Extension developers can interact with the Magento_CompanyRelation module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_CompanyRelation module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_CompanyRelation module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_CompanyRelation module.
 
 ### Layouts
 
@@ -27,7 +27,7 @@ For more information about layouts, see the [Layout documentation](https://devel
 
 ### UI components
 
-For more information, see [UI Listing/Grid Component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/listing-grid/).
+For more information, see [UI Listing/Grid Component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/listing-grid).
 
 <InlineAlert slots="text" />
 The version of this module is 1.5.2.

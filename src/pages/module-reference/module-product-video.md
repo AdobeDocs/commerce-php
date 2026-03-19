@@ -22,11 +22,11 @@ For information about a module installation in Magento 2, see [Enable or disable
 
 ## Extensibility
 
-Extension developers can interact with the Magento_ProductVideo module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_ProductVideo module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_ProductVideo module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_ProductVideo module.
 
-A lot of functionality in the module is on JavaScript, use [mixins](https://developer.adobe.com/commerce/frontend-core/javascript/mixins/) to extend it.
+A lot of functionality in the module is on JavaScript, use [mixins](https://developer.adobe.com/commerce/frontend-core/javascript/mixins) to extend it.
 
 ### Layouts
 
@@ -52,7 +52,7 @@ For information about a UI component in Magento 2, see [Overview of UI component
 More information can get at articles:
 
 - [Learn how to add Product Video](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-video)
-- [Learn how to configure Product Video](https://developer.adobe.com/commerce/frontend-core/guide/themes/product-video/)
+- [Learn how to configure Product Video](https://developer.adobe.com/commerce/frontend-core/guide/themes/product-video)
 
 <InlineAlert slots="text" />
 The version of this module is 100.4.8.

@@ -66,80 +66,80 @@ It MAY include minor and patch level changes. Patch and minor version MUST be re
 
 |Entity Type|Change|Version Increase|
 |---|---|---|
-|ActionGroup|`<actionGroup>` added|MINOR
-| |`<actionGroup>` removed|MAJOR
-| |`<actionGroup>` `<action>` added|MINOR
-| |`<actionGroup>` `<action>` removed|MAJOR
-| |`<actionGroup>` `<action>` type changed|PATCH
-| |`<actionGroup>` `<action>` attribute changed|PATCH
-| |`<actionGroup>` `<argument>` with `defaultValue`added|MINOR
-| |`<actionGroup>` `<argument>` without `defaultValue` added|MAJOR
-| |`<actionGroup>` `<argument>` removed|MAJOR
-| |`<actionGroup>` `<argument>` changed|MAJOR
-| |`<actionGroup>` `<remove>` `<action>` added|MAJOR
-| |`<actionGroup>` `<remove>` `<action>` removed|MAJOR
-|Data|`<entity>` added|MINOR
-| |`<entity>` removed|MAJOR
-| |`<entity>` `<array>` added|MINOR
-| |`<entity>` `<array>` removed|MAJOR
-| |`<entity>` `<array>` `<item>` removed|PATCH
-| |`<entity>` `<data>` added|MINOR
-| |`<entity>` `<data>` removed|MAJOR
-| |`<entity>` `<required-entity>` added|MAJOR
-| |`<entity>` `<required-entity>` removed|MAJOR
-| |`<entity>` `<var>` added|MAJOR
-| |`<entity>` `<var>` removed|MAJOR
-| |`<entity>` type added|MINOR
-| |`<entity>` type removed|MAJOR
-| |`<entity>` type changed|MAJOR
-|Metadata|`<operation>` added|MINOR
-| |`<operation>` removed|MAJOR
-| |`<operation>` changed|MINOR
-| |`<operation>` child element added|MINOR
-| |`<operation>` child element removed|MAJOR
-|Page|`<page>` added|MINOR
-| |`<page>` removed|MAJOR
-| |`<page>` `<section>` added|MINOR
-| |`<page>` `<section>` removed|MAJOR
-|Section|`<section>` added|MINOR
-| |`<section>` removed|MAJOR
-| |`<section>` `<element>` added|MINOR
-| |`<section>` `<element>` removed|MAJOR
-| |`<section>` `<element>` `selector` changed|PATCH
-| |`<section>` `<element>` `type` changed|PATCH
-| |`<section>` `<element>` `parameterized` changed|MAJOR
-|Test|`<test>` added|MINOR
-| |`<test>` removed|MAJOR
-| |`<test>` `<action>` added|MINOR
-| |`<test>` `<action>` removed|MAJOR
-| |`<test>` `<action>` changed|PATCH
-| |`<test>` `<action>` sequence changed|MAJOR
-| |`<test>` `<action>` type (`click`, `fillField`, etc) changed|PATCH
-| |`<test>` `<actionGroup>` `ref` changed|MINOR
-| |`<test>` `<before/after>` `<action>` added|MINOR
-| |`<test>` `<before/after>` `<action>` removed|MAJOR
-| |`<test>` `<before/after>` `<action>` changed|PATCH
-| |`<test>` `<before/after>` `<action>` sequence changed|MAJOR
-| |`<test>` `<before/after>` `<action>` type (`click`, `fillField`, etc) changed|PATCH
-| |`<test>` `<before/after>` `<actionGroup>` `ref` changed|MINOR
-| |`<test>` `<annotations>` `<annotation>` added|PATCH
-| |`<test>` `<annotations>` `<annotation>` changed|PATCH
-| |`<test>` `<annotations>` `<annotation>` GROUP removed|MAJOR
-| |`<test>` `<remove>` `<action>` added|MAJOR
-| |`<test>` `<remove>` `<action>` removed|MAJOR
-|Suite|`<suite>` added|MINOR
-| |`<suite>` removed|MAJOR
-| |`<suite>` `<include/exclude>` `<group/test/module>` added|PATCH
-| |`<suite>` `<include/exclude>` `<group/test/module>` removed|PATCH
-| |`<suite>` `<before/after>` `<action>` added|MINOR
-| |`<suite>` `<before/after>` `<action>` removed|MAJOR
-| |`<suite>` `<before/after>` `<remove>` `<action>` added|MAJOR
-| |`<suite>` `<before/after>` `<remove>` `<action>` removed|MAJOR
-| |`<suite>` `<before/after>` `<action>` changed|PATCH
-| |`<suite>` `<before/after>` `<action>` sequence changed|MAJOR
-| |`<suite>` `<before/after>` `<action>` type (`click`, `fillField`, etc) changed|PATCH
-| |`<suite>` `<before/after>` `<actionGroup>` `ref` changed|MINOR
+|ActionGroup|`<actionGroup>` added|MINOR|
+| |`<actionGroup>` removed|MAJOR|
+| |`<actionGroup>` `<action>` added|MINOR|
+| |`<actionGroup>` `<action>` removed|MAJOR|
+| |`<actionGroup>` `<action>` type changed|PATCH|
+| |`<actionGroup>` `<action>` attribute changed|PATCH|
+| |`<actionGroup>` `<argument>` with `defaultValue`added|MINOR|
+| |`<actionGroup>` `<argument>` without `defaultValue` added|MAJOR|
+| |`<actionGroup>` `<argument>` removed|MAJOR|
+| |`<actionGroup>` `<argument>` changed|MAJOR|
+| |`<actionGroup>` `<remove>` `<action>` added|MAJOR|
+| |`<actionGroup>` `<remove>` `<action>` removed|MAJOR|
+|Data|`<entity>` added|MINOR|
+| |`<entity>` removed|MAJOR|
+| |`<entity>` `<array>` added|MINOR|
+| |`<entity>` `<array>` removed|MAJOR|
+| |`<entity>` `<array>` `<item>` removed|PATCH|
+| |`<entity>` `<data>` added|MINOR|
+| |`<entity>` `<data>` removed|MAJOR|
+| |`<entity>` `<required-entity>` added|MAJOR|
+| |`<entity>` `<required-entity>` removed|MAJOR|
+| |`<entity>` `<var>` added|MAJOR|
+| |`<entity>` `<var>` removed|MAJOR|
+| |`<entity>` type added|MINOR|
+| |`<entity>` type removed|MAJOR|
+| |`<entity>` type changed|MAJOR|
+|Metadata|`<operation>` added|MINOR|
+| |`<operation>` removed|MAJOR|
+| |`<operation>` changed|MINOR|
+| |`<operation>` child element added|MINOR|
+| |`<operation>` child element removed|MAJOR|
+|Page|`<page>` added|MINOR|
+| |`<page>` removed|MAJOR|
+| |`<page>` `<section>` added|MINOR|
+| |`<page>` `<section>` removed|MAJOR|
+|Section|`<section>` added|MINOR|
+| |`<section>` removed|MAJOR|
+| |`<section>` `<element>` added|MINOR|
+| |`<section>` `<element>` removed|MAJOR|
+| |`<section>` `<element>` `selector` changed|PATCH|
+| |`<section>` `<element>` `type` changed|PATCH|
+| |`<section>` `<element>` `parameterized` changed|MAJOR|
+|Test|`<test>` added|MINOR|
+| |`<test>` removed|MAJOR|
+| |`<test>` `<action>` added|MINOR|
+| |`<test>` `<action>` removed|MAJOR|
+| |`<test>` `<action>` changed|PATCH|
+| |`<test>` `<action>` sequence changed|MAJOR|
+| |`<test>` `<action>` type (`click`, `fillField`, etc) changed|PATCH|
+| |`<test>` `<actionGroup>` `ref` changed|MINOR|
+| |`<test>` `<before/after>` `<action>` added|MINOR|
+| |`<test>` `<before/after>` `<action>` removed|MAJOR|
+| |`<test>` `<before/after>` `<action>` changed|PATCH|
+| |`<test>` `<before/after>` `<action>` sequence changed|MAJOR|
+| |`<test>` `<before/after>` `<action>` type (`click`, `fillField`, etc) changed|PATCH|
+| |`<test>` `<before/after>` `<actionGroup>` `ref` changed|MINOR|
+| |`<test>` `<annotations>` `<annotation>` added|PATCH|
+| |`<test>` `<annotations>` `<annotation>` changed|PATCH|
+| |`<test>` `<annotations>` `<annotation>` GROUP removed|MAJOR|
+| |`<test>` `<remove>` `<action>` added|MAJOR|
+| |`<test>` `<remove>` `<action>` removed|MAJOR|
+|Suite|`<suite>` added|MINOR|
+| |`<suite>` removed|MAJOR|
+| |`<suite>` `<include/exclude>` `<group/test/module>` added|PATCH|
+| |`<suite>` `<include/exclude>` `<group/test/module>` removed|PATCH|
+| |`<suite>` `<before/after>` `<action>` added|MINOR|
+| |`<suite>` `<before/after>` `<action>` removed|MAJOR|
+| |`<suite>` `<before/after>` `<remove>` `<action>` added|MAJOR|
+| |`<suite>` `<before/after>` `<remove>` `<action>` removed|MAJOR|
+| |`<suite>` `<before/after>` `<action>` changed|PATCH|
+| |`<suite>` `<before/after>` `<action>` sequence changed|MAJOR|
+| |`<suite>` `<before/after>` `<action>` type (`click`, `fillField`, etc) changed|PATCH|
+| |`<suite>` `<before/after>` `<actionGroup>` `ref` changed|MINOR|
 
----------------------------
+<HorizontalLine />
 
  ⃰ - `<action>` refers to any of the available [MFTF Actions](https://github.com/magento/magento2-functional-testing-framework/blob/2.x-develop/docs/test/actions.md).

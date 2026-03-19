@@ -8,9 +8,7 @@ keywords:
   - Payments
 ---
 
-import Docs from '/src/_includes/braintree-note.md'
-
-<Docs />
+<Fragment src="/includes/braintree-note.md"/>
 
 # Payment method facade
 
@@ -37,14 +35,14 @@ The following mandatory arguments must be configured:
 
 | Option | Description|
 | ------------------ | ------------------------------------------------------------------- |
-| `code`           | The code for the payment method.
+| `code`           | The code for the payment method. |
 | `formBlockType`  | The name of the block class responsible for payment provider gateway form rendering. Only the Admin panel uses this block because the storefront form renders using knockout.js. See the [Admin integration](formblocktype.md) topic for details.                                                                          |
 | `infoBlockType`  | The name of the block class responsible for Transaction/Payment Information details rendering in the Order block, in the Admin panel or in a customer account on storefront. In most cases it will be enough to specify the default implementation of [Configurable Info](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/Block/ConfigurableInfo.php). To customize specify your own implementation. |
 | `valueHandlerPool` | Pool of value handlers used for queries to configuration. For details see the [following paragraph](#value-handlers-pool).|
 | `validatorPool`    | [Pool of validators](#validators-pool).|
 | `commandPool`      | [Pool of gateway commands](../payment-gateway/command-pool.md).|
 
-#### Value handlers pool
+## Value handlers pool
 
 Let's look closer at the value handlers pool of a payment method. This pool enables you to set payment configuration that is based on certain conditions.
 
@@ -83,7 +81,7 @@ Other handlers contain some logic, for example, `can_cancel` option is the same 
 
 Your custom handlers must implement the [Value Handler interface](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/Gateway/Config/ValueHandlerInterface.php).
 
-#### Validators pool
+## Validators pool
 
 You can configure the pool of validators, which allows processing various payment method validations. Below are the examples of such validators:
 

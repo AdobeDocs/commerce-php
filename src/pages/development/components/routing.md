@@ -10,7 +10,7 @@ keywords:
 In web applications, such as Adobe Commerce and Magento Open Source, routing is the act of providing data from a URL request to the appropriate class for processing.
 Adobe Commerce and Magento Open Source routing uses the following flow:
 
-![Request processing](../../_images/magento2-request-processing.png)
+![Request processing](../../images/magento2-request-processing.png)
 
 ## `FrontController` class
 
@@ -213,14 +213,14 @@ Action class should return a `result object`.
 
 ## Result object
 
-Name | Description
---- | ---
-`json` | Sets `Content-Type:application/json` in the header and returns a json encoded representation of an array with data
-`raw` | Returns the data as it's been set. Does not set a `Content-Type` in the header
-`redirect` | Creates an external redirect, which the browser follows and requests a new url
-`forward` | Internally calls the execute method of another action class and does not trigger a new request from the browser. The URL stays the same
-`layout` | View result. You can use a generic layout response to render any kind of layout. The layout comprises a response body from its layout elements and sets it to the HTTP response
-`page` | View result. Encapsulates page type, page configuration, and imposes certain layout handles. `page` triggers `layout.xml` to render into HTML
+|   Name | Description |
+|------|-------------|
+| `json` | Sets `Content-Type:application/json` in the header and returns a json encoded representation of an array with data |
+| `raw` | Returns the data as it's been set. Does not set a `Content-Type` in the header |
+| `redirect` | Creates an external redirect, which the browser follows and requests a new url |
+| `forward` | Internally calls the execute method of another action class and does not trigger a new request from the browser. The URL stays the same |
+| `layout` | View result. You can use a generic layout response to render any kind of layout. The layout comprises a response body from its layout elements and sets it to the HTTP response |
+| `page` | View result. Encapsulates page type, page configuration, and imposes certain layout handles. `page` triggers `layout.xml` to render into HTML |
 
 ## Example of routing usage
 
@@ -405,7 +405,7 @@ class Router implements RouterInterface
 
 As a result, by accessing the `http://site.com/learning` route, the `http://site.com/routing/index/index` route is loaded.
 
-![Routing Result](../../_images/routing-result.png)
+![Routing Result](../../images/routing-result.png)
 
 ## Declaring the new route as Page Type
 
@@ -430,7 +430,7 @@ The `routing_index_index` represents the path for the new route.
 
 As result, the new page is available in the `Specified Page` dropdown widget when creating a page.
 
-![Routing Page Type](../../_images/routing-page-type-result.png)
+![Routing Page Type](../../images/routing-page-type-result.png)
 
 [`FrontController` class]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/FrontController.php
 [FrontController]: #frontcontroller-class
@@ -452,7 +452,7 @@ As result, the new page is available in the `Specified Page` dropdown widget whe
 [Router class section]: #router-class
 [`Magento\Robots\Controller\Router`]: https://github.com/magento/magento2/blob/2.4/app/code/Magento/Robots/etc/frontend/di.xml
 [`Config`]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Route/ConfigInterface.php
-[`Action`]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Action/Action.php
 [`ActionInterface`]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/ActionInterface.php
 [`DefaultRouter`]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Router/DefaultRouter.php
 [action class]: #action-class
+[routesxml]: #routesxml

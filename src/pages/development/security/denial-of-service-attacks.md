@@ -8,7 +8,7 @@ keywords:
 
 # Denial of service (DOS) attacks
 
-A __Denial-of-Service (DoS) attack__ attempts to shut down (halt) servers serving an application to make it
+A **Denial-of-Service (DoS) attack** attempts to shut down (halt) servers serving an application to make it
 inaccessible to users. It's accomplished by flooding a server with an excess amount of traffic or triggering heavy
 operations that cannot be handled efficiently by the server.
 

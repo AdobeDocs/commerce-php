@@ -38,9 +38,9 @@ For information about typical file structure of a module in Magento 2, see [Modu
 
 ## Extensibility
 
-Extension developers can interact with the Magento_Backend module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_Backend module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_Backend module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_Backend module.
 
 ### Events
 
@@ -67,7 +67,7 @@ The module dispatches the following events:
   - `user_name` is username extracted from the credential storage object (`null | \Magento\Backend\Model\Auth\Credential\StorageInterface`)
   - `exception` any exception generated (`\Magento\Framework\Exception\LocalizedException | \Magento\Framework\Exception\Plugin\AuthenticationException`)
 
-For information about an event in Magento 2, see [Events and observers](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#events).
+For information about an event in Magento 2, see [Events and observers](https://developer.adobe.com/commerce/php/development/components/events-and-observers#events).
 
 ### Layouts
 

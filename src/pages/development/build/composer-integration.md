@@ -19,7 +19,7 @@ Adobe Commerce and Magento Open Source do not support the [`path`][3] repository
 
 Here is an example of the `composer.json` file.
 
- ```json
+```json
   {
     "name": "mycompany/sample-module-minimal",
     "description": "A module that creates a page in the admin area",
@@ -39,11 +39,11 @@ Here is an example of the `composer.json` file.
       }
     }
   }
- ```
+```
 
 ## Composer binary location
 
-Adobe Commerce and Magento Open Source use the Composer binary in the `<Application root>/vendor/composer` directory instead of a globally installed composer.
+Adobe Commerce and Magento Open Source use the Composer binary in the `{Application root}/vendor/composer` directory instead of a globally installed composer.
 
 Keep this in mind while customizing, updating, or troubleshooting Composer while working with Adobe Commerce and Magento Open Source.
 
@@ -70,7 +70,7 @@ This is the main `composer.json` file, which declares dependencies and third-par
 
 Other root `composer.json` files use this file as a template.
 
----
+<HorizontalLine />
 
 ### Magento Open Source project
 
@@ -82,7 +82,7 @@ Other root `composer.json` files use this file as a template.
 
 System integrators use this `composer.json` file to deploy the Magento Open Source product and its dependencies.
 
----
+<HorizontalLine />
 
 ### Adobe Commerce project
 
@@ -94,7 +94,7 @@ System integrators use this `composer.json` file to deploy the Magento Open Sour
 
 System integrators use this `composer.json` file to deploy the Adobe Commerce product and its dependencies.
 
----
+<HorizontalLine />
 
 ### Commerce framework
 
@@ -106,50 +106,50 @@ System integrators use this `composer.json` file to deploy the Adobe Commerce pr
 
 The Adobe Commerce and Magento Open Source applications uses this `composer.json` file for its framework packages.
 
----
+<HorizontalLine />
 
 ### Module
 
 **Locations:**
 
-*  `app/code/<vendor-name>/<module-name>/composer.json`
-*  `vendor/<vendor-name>/<module-name>/composer.json`
+*  `app/code/{vendor-name}/{module-name}/composer.json`
+*  `vendor/{vendor-name}/{module-name}/composer.json`
 
-**Name:** `<vendor-name>/<package-name>`
+**Name:** `{vendor-name}/{package-name}`
 
 **Type:** `magento2-module`
 
 The `composer.json` file for a module extension declares external dependencies that it needs to function.
 
----
+<HorizontalLine />
 
 ### Theme
 
 **Locations:**
 
-*  `app/design/frontend/<vendor-name>/<theme-name>/composer.json`
-*  `app/design/adminhtml/<vendor-name>/<theme-name>/composer.json`
+*  `app/design/frontend/{vendor-name}/{theme-name}/composer.json`
+*  `app/design/adminhtml/{vendor-name}/{theme-name}/composer.json`
 
-**Name:** `<vendor-name>/<package-name>`
+**Name:** `{vendor-name}/{package-name}`
 
 **Type:** `magento2-theme`
 
 The `composer.json` file for a theme component contains parent theme dependencies the extension needs to inherit.
 
----
+<HorizontalLine />
 
 ### Language package
 
 **Location:**
 `app/i18n/<vendor-name>/<language-code>/composer.json`
 
-**Name:** `<vendor-name>/<package-name>`
+**Name:** `{vendor-name}/{package-name}`
 
 **Type:** `magento2-language`
 
 For language packages, you must use the correct [ISO code][4] for the language code in the `composer.json` file.
 
----
+<HorizontalLine />
 
 ## Magento-specific package types
 
@@ -166,7 +166,7 @@ The extension type tells the system where to install the directories and files o
 
 Since the namespace of a Composer package is global within a package repository, e.g. [packagist.org][2], use the following format when naming your package:
 
-`<vendor-name>/<package-name>`
+`{vendor-name}/{package-name}`
 
 Using the Composer naming convention helps distinguish packages from different vendors with a low risk of overlapping.
 
@@ -221,9 +221,8 @@ Using Adobe Commerce and Magento Open Source code as an example, marketing versi
 [2]: https://packagist.org/
 [3]: https://getcomposer.org/doc/05-repositories.md#path
 [4]: https://www.iso.org/iso-639-language-code
-[5]: https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/
-[6]: https://commercemarketplace.adobe.com/
-[7]: https://marketplace.magento.com
+[5]: https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information
+[7]: https://commercemarketplace.adobe.com
 [8]: ../package/component.md#metapackage-example
 [9]: https://getcomposer.org/doc/03-cli.md#create-project
 [10]: https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer

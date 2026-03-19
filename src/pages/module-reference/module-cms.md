@@ -7,7 +7,7 @@ description: N/A
 
 The CMS module provides the create, edit, and manage functionality on pages for different content types.
 
-### Wysiwyg
+## Wysiwyg
 
 The Wysiwyg UI component is a customizable and configurable TinyMCE editor.
 
@@ -15,7 +15,7 @@ The default implementation has the following customizations:
 
 * Magento Media Library support
 
-### Layouts
+## Layouts
 
 The module interacts with the following layout handles:
 
@@ -44,7 +44,7 @@ The module interacts with the following layout handles in the `view/frontend/lay
  * `default.xml`
  * `print.xml`
 
-### UI components
+## UI components
 
 This module extends following ui components located in the `view/base/ui_component` directory:
 This module extends following ui components located in the `view/adminhtml/ui_component` directory:

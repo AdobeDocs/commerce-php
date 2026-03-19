@@ -9,8 +9,10 @@ keywords:
 
 # List of events
 
-This is the list of [event](../events-and-observers/index.md) names ordered alphabetically.
+This is the list of [event](index.md) names ordered alphabetically.
 Each event contains a short description and a list of supported arguments.
+
+## Reference
 
 ### abstract_search_result_load_after
 

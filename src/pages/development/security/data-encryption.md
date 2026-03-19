@@ -10,7 +10,7 @@ keywords:
 
 Adobe Commerce and Magento Open Source provide functionality to re-encrypt certain encrypted system configuration, payment fields, and custom fields. These operations may be necessary after [rotating an encryption key](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key).
 
-# Default re-encryptors
+## Default re-encryptors
 
 The default re-encryption configuration provides two re-encryptors:
 
@@ -23,7 +23,7 @@ You can use the following command to run both re-encryptors after rotating an en
 bin/magento encryption:data:re-encrypt core_config_data sales_order_payment
 ```
 
-# Re-encrypting specific table columns
+## Re-encrypting specific table columns
 
 The `Magento\EncryptionKey\Model\Data\ReEncryptorList\ReEncryptor\SimpleHandler` class serves as a base for re-encryptors that simply tries to re-encrypt specific columns in a database table.
 

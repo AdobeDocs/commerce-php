@@ -15,7 +15,7 @@ To implement your own indexer, add the following code in your module:
 *  [Indexer configuration](#indexer-configuration)
 *  [MView configuration](#mview-configuration)
 
-### Custom indexer logic
+## Custom indexer logic
 
 Your custom indexer class should implement [\Magento\Framework\Indexer\ActionInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Indexer/ActionInterface.php), and the indexer should be able to perform three types of operations:
 
@@ -23,7 +23,7 @@ Your custom indexer class should implement [\Magento\Framework\Indexer\ActionInt
 *  List reindex: processing a set of dictionary entries; responsibility of `executeList($ids)`, where `$ids` is an array of entity IDs
 *  Full reindex: processing all entities from a specific dictionary; responsibility of `executeFull()`
 
-### Indexer configuration
+## Indexer configuration
 
 Declare a new indexer process in the `etc/indexer.xml` file with the following attributes:
 
@@ -79,7 +79,7 @@ For example:
 
 All indexers related to a module should be declared in one file.
 
-### MView configuration
+## MView configuration
 
 Add the `mview.xml` configuration file in the `etc` module directory, where you declare the following:
 
@@ -92,7 +92,7 @@ Add the `mview.xml` configuration file in the `etc` module directory, where you 
 
 All Mview declarations related to a module should be declared in one file.
 
-### Example of a custom indexer implementation
+## Example of a custom indexer implementation
 
 To push best-selling products to the top of a category listing, process statistics about sales to change the product position dynamically.
 
@@ -170,7 +170,7 @@ These settings start `<VendorName>\Merchandizing\Model\Indexer\Popular::execute`
 
 After this, please refresh the cache and go to **System** > Tools > [**Index Management**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) through the Admin to verify the custom indexer result.
 
-![Custom indexer modes](../../../_images/custom-indexer-magento2.jpg)
+![Custom indexer modes](../../../images/custom-indexer-magento2.jpg)
 
 Now when an order is placed, the Popular Products indexer calculates the sorting order of the products by popularity and stores this data in the index table, so that it can be used in product displaying logic.
 
