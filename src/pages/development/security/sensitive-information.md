@@ -139,7 +139,7 @@ stored in the form of a hash.
 
 Good examples include passwords, tokens, and secrets. After a password (or similar entity) is created, there is no need to ever
 display it to a user again. Later on, there's only a need to compare user input to the existing password.
-A hash allows allows you to compare a value to a hashed one and to avoid exposing the original value. A salt is often used with
+A hash allows you to compare a value to a hashed one and to avoid exposing the original value. A salt is often used with
 hashes for passwords to prevent attacks using rainbow tables.
 
 `\Magento\Framework\Encryption\EncryptorInterface` helps with hashes. Use `getHash()` method to generate a hash with
