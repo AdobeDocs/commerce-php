@@ -119,9 +119,3 @@ public function aroundExecute(SubjectMassConsumerEnvelopeCallback $subject, call
 ```
 
 The plugin checks the message headers and sets the current store value in `storeManager` to the received `store_id` value.
-
-[RabbitMQ]: https://www.rabbitmq.com
-[Configure message queues]: configuration.md
-[Message Queues Overview]: https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework
-[Configure message queues]: configuration.md
-[Install RabbitMQ]: https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/message-brokers/rabbitmq
