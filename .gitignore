@@ -7,6 +7,7 @@
 .idea
 .editorconfig
 .cursor/
+.claude/
 
 # npm yarn
 node_modules
@@ -46,7 +47,7 @@ local-test.yml
 .yalc
 yalc.lock
 
-tmp/
+
 
 # Super-linter outputs
 super-linter-output
@@ -54,4 +55,6 @@ super-linter.log
 
 # GitHub Actions leftovers
 github_conf
-.claude
+
+# Temporary files
+tmp/
