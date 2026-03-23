@@ -17,9 +17,9 @@ For information about a module installation in Magento 2, see [Enable or disable
 
 ## Extensibility
 
-Extension developers can interact with the Magento_ReleaseNotification module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_ReleaseNotification module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_ReleaseNotification module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_ReleaseNotification module.
 
 ### UI components
 
@@ -77,7 +77,7 @@ The Sub Heading section is ideally used on the first modal page as a way to desc
 
 A clickable link to internal or external content in any text field will be created by using the following format and opened in a new browser tab. Providing the URL for the link followed by the text to be displayed for that link in brackets will cause a clickable link to be created. The text between the brackets [text] will be the text that the clickable link shows.
 
-#### Link Format Example:
+#### Link Format Example
 
 The text: `https://developer.adobe.com/commerce/docs/ [Adobe Commerce Developer Documentation].` will appear as [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs/).
 

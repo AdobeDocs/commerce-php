@@ -16,7 +16,7 @@ For more information about catalog price rules, refer to [Catalog Rules](https:/
 
 In the `Conditions` tab, Adobe Commerce and Magento Open Source have the following product attributes in the `add conditions` section.
 
-![Catalog Rule Conditions](../../_images/conditions-section-v2.png)
+![Catalog Rule Conditions](../../images/conditions-section-v2.png)
 
 ## Implementation of existing conditions
 

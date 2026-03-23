@@ -9,8 +9,6 @@ description: N/A
 
 The Magento\RequireJs module introduces support for RequireJs JavaScript library and provides infrastructure for other modules to have them declared related configuration for RequireJs library.
 
-# Deployment
-
 ## System requirements
 
 The Magento\RequireJs module does not have any specific system requirements.

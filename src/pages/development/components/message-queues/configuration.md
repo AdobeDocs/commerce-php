@@ -59,7 +59,7 @@ The `name` parameter is required. The topic definition must include either a `re
 
 | Parameter | Description |
 | --- | --- |
-| `name` | A unique string identifier for the topic. Use a series of period-separated strings, with the leftmost being most general and each subsequent string narrowing the scope. For example, `cat.white.feed` and `dog.retriever.walk`. Wildcards are not supported in `communication.xml`.
+| `name` | A unique string identifier for the topic. Use a series of period-separated strings, with the leftmost being most general and each subsequent string narrowing the scope. For example, `cat.white.feed` and `dog.retriever.walk`. Wildcards are not supported in `communication.xml`. |
 | `request` | Specifies the data type of the topic. |
 | `response` | Specifies the format of the response. This parameter is required if you are defining a synchronous topic. Omit this parameter if you are defining an asynchronous topic. |
 | `schema` | The interface that describes the structure of the message. The format must be `<module>\Api\<ServiceName>::<methodName>`. |
@@ -246,7 +246,7 @@ The `connection` element is a subnode of the `publisher` element. Only one enabl
 
 | Attribute | Description |
 | --- | --- |
-| `name` | The connection name. For explicit values, use `amqp`, `stomp`, or `db`. If you omit the `connection` element, the [connection is resolved automatically](#connection-resolution).
+| `name` | The connection name. For explicit values, use `amqp`, `stomp`, or `db`. If you omit the `connection` element, the [connection is resolved automatically](#connection-resolution). |
 | `exchange` | The name of the exchange to publish to. The default system exchange name is `magento`. |
 | `disabled` | Determines whether this queue is disabled. The default value is `false`. |
 

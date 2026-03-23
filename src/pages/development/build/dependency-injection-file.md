@@ -31,7 +31,7 @@ The areas are:
 *  webapi_soap
 *  crontab
 
-During [bootstrapping](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/setup/initialization), each application entry point loads the appropriate `di.xml` files for the requested [area](/architecture/modules/areas/).
+During [bootstrapping](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/setup/initialization), each application entry point loads the appropriate `di.xml` files for the requested [area](/architecture/modules/areas.md).
 
 **Examples:**
 
@@ -117,8 +117,10 @@ The following example creates instances of `Magento\Core\Model\Session` with the
 
 Node Formats:
 
-`<argument xsi:type="object">{typeName}</argument>`
-`<argument xsi:type="object" shared="{shared}">{typeName}</argument>`
+```xml
+<argument xsi:type="object">{typeName}</argument>
+<argument xsi:type="object" shared="{shared}">{typeName}</argument>
+```
 
 Creates an instance of `typeName` type and passes it in as an argument.
 You can pass any class name, interface name, or virtual type as `typeName`.
@@ -126,24 +128,28 @@ You can pass any class name, interface name, or virtual type as `typeName`.
 Setting the `shared` property defines the lifestyle of a created instance.
 See [object lifestyle configuration](#object-lifestyle-configuration).
 
----
+<HorizontalLine />
 
 `string`
 
 Node Formats:
 
-`<argument xsi:type="string">{strValue}</argument>`
-`<argument xsi:type="string" translate="true">{strValue}</argument>`
+```xml
+<argument xsi:type="string">{strValue}</argument>
+<argument xsi:type="string" translate="true">{strValue}</argument>
+```
 
 The application interprets any value for this argument node as a string.
 
----
+<HorizontalLine />
 
 `boolean`
 
 Node Format:
 
-`<argument xsi:type="boolean">{boolValue}</argument>`
+```xml
+<argument xsi:type="boolean">{boolValue}</argument>
+```
 
 The application converts any value for this argument node into a boolean value.
 See table below:
@@ -159,49 +165,59 @@ See table below:
 | Integer    | 1        | true          |
 | Integer    | 0        | false         |
 
-<small>*These String literals are case-sensitive</small>
+<InlineAlert variant="info" slots="text"/>
 
----
+These String literals are case-sensitive.
+
+<HorizontalLine />
 
 `number`
 
 Node Format:
 
-`<argument xsi:type="number">{numericValue}</argument>`
+```xml
+<argument xsi:type="number">{numericValue}</argument>
+```
 
 Acceptable values for this type include: integers, floats, or [numeric strings](https://www.php.net/is_numeric).
 
----
+<HorizontalLine />
 
 `init_parameter`
 
 Node Format:
 
-`<argument xsi:type="init_parameter">{Constant::NAME}</argument>`
+```xml
+<argument xsi:type="init_parameter">{Constant::NAME}</argument>
+```
 
 This is the global application initialization argument represented by `Constant::NAME`.
 
----
+<HorizontalLine />
 
 `const`
 
 Node Format:
 
-`<argument xsi:type="const">{Constant::NAME}</argument>`
+```xml
+<argument xsi:type="const">{Constant::NAME}</argument>
+```
 
 This is the constant value represented by `Constant::NAME`.
 
----
+<HorizontalLine />
 
 `null`
 
 Node Format:
 
-`<argument xsi:type="null"/>`
+```xml
+<argument xsi:type="null"/>
+```
 
 This indicates a null value.
 
----
+<HorizontalLine />
 
 `array`
 
@@ -222,7 +238,7 @@ The node format is as follows:
 
   When the application loads a new configuration at a later time, either by a more specific scope or through code, then any array definitions in the new configuration will replace the loaded config instead of merging.
 
----
+<HorizontalLine />
 
 **Argument Examples:**
 

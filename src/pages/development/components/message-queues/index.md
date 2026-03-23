@@ -18,8 +18,8 @@ The MQF supports the following messaging brokers:
 
 | Broker | Protocol | Description |
 | --- | --- | --- |
-| [RabbitMQ](http://www.rabbitmq.com) | AMQP 0.9.1 | The primary messaging broker with a scalable platform for sending and receiving messages. Includes a mechanism for storing undelivered messages. |
-| [Apache ActiveMQ Artemis](https://activemq.apache.org/components/artemis/) | STOMP | An alternative messaging broker using Simple Text Oriented Messaging Protocol (STOMP) for reliable and scalable messaging. |
+| [RabbitMQ](https://www.rabbitmq.com) | AMQP 0.9.1 | The primary messaging broker with a scalable platform for sending and receiving messages. Includes a mechanism for storing undelivered messages. |
+| [Apache ActiveMQ Artemis](https://artemis.apache.org/components/artemis/) | STOMP | An alternative messaging broker using Simple Text Oriented Messaging Protocol (STOMP) for reliable and scalable messaging. |
 | MySQL adapter | Database | A basic message queue system that stores messages in the database using three tables: `queue`, `queue_message`, and `queue_message_status`. Cron jobs ensure consumers receive messages. |
 
 <InlineAlert variant="info" slots="text"/>

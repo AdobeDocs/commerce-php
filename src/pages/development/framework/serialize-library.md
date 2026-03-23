@@ -68,7 +68,6 @@ public function __construct(SerializerInterface $serializer) {
 }
 ```
 
-\\
 The following example shows how to use a serializer's `serialize()` and `unserialize()` functions to store and retrieve array data from a cache:
 
 ```php

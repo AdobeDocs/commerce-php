@@ -7,9 +7,7 @@ keywords:
   - Payments
 ---
 
-import Docs from '/src/_includes/braintree-note.md'
-
-<Docs />
+<Fragment src="/includes/braintree-note.md"/>
 
 # Request Builder
 
@@ -35,7 +33,7 @@ Example of adding composite builders for the Braintree payment provider ([`app/c
 
 ```xml
 ...
-<!-- is a builder composite comprising a number of builders -->
+\<!-- is a builder composite comprising a number of builders --\>
 <virtualType name="BraintreeAuthorizeRequest" type="Magento\Payment\Gateway\Request\BuilderComposite">
     <arguments>
         <argument name="builders" xsi:type="array">
@@ -53,7 +51,7 @@ Example of adding composite builders for the Braintree payment provider ([`app/c
     </arguments>
 </virtualType>
 ...
-<!-- The same BraintreeAuthorizeRequest builder composite is a part of the BraintreeSaleRequest builder composite -->
+\<!-- The same BraintreeAuthorizeRequest builder composite is a part of the BraintreeSaleRequest builder composite --\>
 <virtualType name="BraintreeSaleRequest" type="Magento\Payment\Gateway\Request\BuilderComposite">
     <arguments>
         <argument name="builders" xsi:type="array">

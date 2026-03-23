@@ -11,15 +11,13 @@ In this section, we go over the different file structures for component types. T
 
 ## Root directory location
 
-import Docs from '/src/_includes/component-root.md'
-
-<Docs />
+<Fragment src="/includes/component-root.md"/>
 
 ## Module file structure
 
 A typical file structure for a module can look like the following:
 
-![Module File Structure](../../_images/pdg-config-file-structure.png)
+![Module File Structure](../../images/pdg-config-file-structure.png)
 
 ### Common directories
 
@@ -113,13 +111,13 @@ Typical theme directories are:
 *  `media`: Theme preview images (screen capture of your theme) can be put in here.
 *  `web`: Optional directory that contains static files organized into the following subdirectories:
 
-   *  `css/source`: Contains a theme's `less` configuration files that invoke mixins for global elements from the [UI library](https://developer.adobe.com/commerce/frontend-core/guide/css/ui-library/), and the `theme.less` file that overrides the default variables values.
-   *  `css/source/lib`: Contains view files that override the [UI library](https://developer.adobe.com/commerce/frontend-core/guide/css/ui-library/) files stored in `lib/web/css/source/lib`.
+   *  `css/source`: Contains a theme's `less` configuration files that invoke mixins for global elements from the [UI library](https://developer.adobe.com/commerce/frontend-core/guide/css/ui-library), and the `theme.less` file that overrides the default variables values.
+   *  `css/source/lib`: Contains view files that override the [UI library](https://developer.adobe.com/commerce/frontend-core/guide/css/ui-library) files stored in `lib/web/css/source/lib`.
    *  `fonts`: The folder to place the different fonts for your theme.
    *  `images`: Static images folder.
    *  `js`: The folder for your JavaScript files.
 
-For more details on the theme folder structure, see [theme structure](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/).
+For more details on the theme folder structure, see [theme structure](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure).
 
 ### Language package file structure
 
