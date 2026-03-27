@@ -59,4 +59,4 @@ See these resources for testing in PHP and validating components:
 [Install your component]: https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/overview
 [Install using Composer]: https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/next-steps/sample-data/composer-packages
 [Coding Standard]: https://github.com/magento/magento-coding-standard
-[PHP_CodeSniffer]: https://github.com/squizlabs/PHP_CodeSniffer
+[PHP_CodeSniffer]: https://github.com/PHPCSStandards/PHP_CodeSniffer
