@@ -16,8 +16,6 @@ Magento\Sales module manages next system entities and flows:
 * credit memos management;
 Magento\Sales module is required for Magento\Checkout module to perform checkout operations.
 
-# Deployment
-
 ## System requirements
 
 The Magento_Sales module does not have any specific system requirements.

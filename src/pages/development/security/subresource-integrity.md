@@ -6,7 +6,7 @@ description: Security feature that enables browsers to verify the resources that
 # Subresource Integrity
 
 Subresource Integrity (SRI) is a security feature that enables browsers to verify that the resources they fetch (for example, from a CDN) are delivered without unexpected manipulation. This feature works by allowing you to provide a cryptographic hash that a fetched resource must match.
-See [Subresource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) to learn more about SRI.
+See [Subresource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Subresource_Integrity) to learn more about SRI.
 
 ## Application Support
 

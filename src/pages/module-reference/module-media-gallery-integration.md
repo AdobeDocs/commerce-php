@@ -14,7 +14,7 @@ For information about module installation in Magento 2, see [Enable or disable m
 
 ## Extensibility
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_MediaGalleryIntegration module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_MediaGalleryIntegration module.
 
 ## Additional information
 

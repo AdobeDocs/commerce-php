@@ -73,13 +73,13 @@ xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/et
 Each `db_schema.xml` file should contain one or more `table` nodes. Each table node represents a table in the database.
 A table node can contain the following attributes:
 
-Attribute | Description
---- | ---
-`name` | The name of the table
-`engine` | SQL engine. This value must be `innodb` or `memory`.
-`resource` | The database shard on which to install the table. This value must be `default`, `checkout`, or `sales`.
-`comment` | Table comment.
-`onCreate` | This is a DML trigger that allows you to move data from an existing table to a newly created table. This trigger works only when a table is created.
+| Attribute | Description |
+| --- | --- |
+| `name` | The name of the table |
+| `engine` | SQL engine. This value must be `innodb` or `memory`. |
+| `resource` | The database shard on which to install the table. This value must be a database resource. The defaults for Commerce are `default`, `checkout`, and `sales`. |
+| `comment` | Table comment. |
+| `onCreate` | This is a DML trigger that allows you to move data from an existing table to a newly created table. This trigger works only when a table is created. |
 
 A `table` node can contain three types of subnodes:
 
@@ -93,78 +93,40 @@ The `column` subnode defines a column in a table. Each column requires its own d
 
 A column can have the following attributes:
 
-<table>
-    <tr>
-        <th>Attribute</th>
-        <th>Description</th>
-    </tr>
-    <tr>
-        <td><inlineCode class="spectrum-Body--sizeS">xsi:type</inlineCode></td>
-        <td>
-            <p>Specifies the column type. Must be one of the following:</p>
-            <ul>
-                <li><inlineCode class="spectrum-Body--sizeS">blob</inlineCode> (includes blob, mediumblob, longblob)</li>
-                <li><inlineCode class="spectrum-Body--sizeS">boolean</inlineCode></li>
-                <li><inlineCode class="spectrum-Body--sizeS">date</inlineCode></li>
-                <li><inlineCode class="spectrum-Body--sizeS">datetime</inlineCode></li>
-                <li><inlineCode class="spectrum-Body--sizeS">decimal</inlineCode></li>
-                <li><inlineCode class="spectrum-Body--sizeS">float</inlineCode></li>
-                <li><inlineCode class="spectrum-Body--sizeS">int</inlineCode> (includes smallint, bigint, tinyint)</li>
-                <li><inlineCode class="spectrum-Body--sizeS">json</inlineCode></li>
-                <li><inlineCode class="spectrum-Body--sizeS">real</inlineCode> (includes decimal, float, double, real)</li>
-                <li><inlineCode class="spectrum-Body--sizeS">smallint</inlineCode></li>
-                <li><inlineCode class="spectrum-Body--sizeS">text</inlineCode> (includes text, mediumtext, longtext)</li>
-                <li><inlineCode class="spectrum-Body--sizeS">timestamp</inlineCode></li>
-                <li><inlineCode class="spectrum-Body--sizeS">varbinary</inlineCode></li>
-                <li><inlineCode class="spectrum-Body--sizeS">varchar</inlineCode></li>
-            </ul>
-        </td>
-    </tr>
-    <tr>
-        <td><inlineCode class="spectrum-Body--sizeS">default</inlineCode></td>
-        <td>Initializes the column with the specified default value. The default value should have the same datatype defined in xsi:type.</td>
-    </tr>
-    <tr>
-        <td><inlineCode class="spectrum-Body--sizeS">disabled</inlineCode></td>
-        <td>Disables or deletes the declared table, column, constraint, or index.</td>
-    </tr>
-    <tr>
-        <td><inlineCode class="spectrum-Body--sizeS">identity</inlineCode></td>
-        <td>Indicates whether a column is auto incremented.</td>
-    </tr>
-    <tr>
-        <td><inlineCode class="spectrum-Body--sizeS">length</inlineCode></td>
-        <td>Specifies the length of a column. Can be used for <inlineCode class="spectrum-Body--sizeS">char</inlineCode>, <inlineCode class="spectrum-Body--sizeS">varchar</inlineCode>, and <inlineCode class="spectrum-Body--sizeS">varbinary types</inlineCode>.</td>
-    </tr>
-    <tr>
-        <td><inlineCode class="spectrum-Body--sizeS">nullable</inlineCode></td>
-        <td>Indicates whether column can be nullable.</td>
-    </tr>
-    <tr>
-        <td><inlineCode class="spectrum-Body--sizeS">onCreate</inlineCode></td>
-        <td>This is a DDL trigger that allows you to move data from an existing column to a newly created column. This trigger works only when a column is created.</td>
-    </tr>
-    <tr>
-        <td><inlineCode class="spectrum-Body--sizeS">padding</inlineCode></td>
-        <td>The size of an integer column.</td>
-    </tr>
-    <tr>
-        <td><inlineCode class="spectrum-Body--sizeS">precision</inlineCode></td>
-        <td>The number of allowed digits in a real data type.</td>
-    </tr>
-    <tr>
-        <td><inlineCode class="spectrum-Body--sizeS">scale</inlineCode></td>
-        <td>The number of digits after the decimal in a real data type.</td>
-    </tr>
-    <tr>
-        <td><inlineCode class="spectrum-Body--sizeS">unsigned</inlineCode></td>
-        <td>For numeric data types, specifies whether the column can contain positive and negative values or only positive values.</td>
-    </tr>
-</table>
+| Attribute | Description |
+|---|---|
+| `xsi:type` | Specifies the column type. See valid values below. |
+| `default` | Initializes the column with the specified default value. The default value should have the same datatype defined in xsi:type. |
+| `disabled` | Disables or deletes the declared table, column, constraint, or index. |
+| `identity` | Indicates whether a column is auto incremented. |
+| `length` | Specifies the length of a column. Can be used for `char`, `varchar`, and `varbinary types`. |
+| `nullable` | Indicates whether column can be nullable. |
+| `onCreate` | This is a DDL trigger that allows you to move data from an existing column to a newly created column. This trigger works only when a column is created. |
+| `padding` | The size of an integer column. |
+| `precision` | The number of allowed digits in a real data type. |
+| `scale` | The number of digits after the decimal in a real data type. |
+| `unsigned` | For numeric data types, specifies whether the column can contain positive and negative values or only positive values. |
+
+**Valid `xsi:type` values:**
+
+- `blob` (includes blob, mediumblob, longblob)
+- `boolean`
+- `date`
+- `datetime`
+- `decimal`
+- `float`
+- `int` (includes smallint, bigint, tinyint)
+- `json`
+- `real` (includes decimal, float, double, real)
+- `smallint`
+- `text` (includes text, mediumtext, longtext)
+- `timestamp`
+- `varbinary`
+- `varchar`
 
 For more information about each type, refer to the annotations in the corresponding XSD file.
 
-*  [Composer](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer) or [GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) installation: `<Application_root_directory/lib/internal/Magento/Framework/Setup/Declaration/Schema/etc`
+*  [Composer](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer) or [GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository) installation: `<Application_root_directory/lib/internal/Magento/Framework/Setup/Declaration/Schema/etc`
 
 Example:
 
@@ -176,10 +138,10 @@ Example:
 
 The `constraint` subnode always contains the following attributes:
 
-Attribute | Description
---- | ---
-`type` | One of `primary`, `unique`, or `foreign`
-`referenceId` |  A custom identifier that is used only for relation mapping in the scope of `db_schema.xml` files. The real entity in the database has a system-generated name. The most convenient way to set the value of this attribute is to use the value that is written in the module's `db_schema_whitelist.json`  file when you [run the `generate-whitelist` command](migration-scripts.md#create-a-schema-whitelist).
+| Attribute | Description |
+| --- | --- |
+| `type` | One of `primary`, `unique`, or `foreign` |
+| `referenceId` | A custom identifier that is used only for relation mapping in the scope of `db_schema.xml` files. The real entity in the database has a system-generated name. The most convenient way to set the value of this attribute is to use the value that is written in the module's `db_schema_whitelist.json` file when you [run the `generate-whitelist` command](migration-scripts.md#create-a-schema-whitelist). |
 
 The `primary` and `unique` constraints are called "internal" constraints, because they can be applied only to the scope of the table where they are created. Internal constraints define one or more `column` subnodes. Each subnode defines a constrained column.
 
@@ -193,13 +155,13 @@ The following example shows the format of an internal constraint.
 
 The `foreign` constraint is similar to foreign keys in SQL. This type of constraint connects two tables with each other. The following attributes define a foreign constraint:
 
-Attribute | Description
---- | ---
-`table` | The name of the current table
-`column` | A column in the current table that refers to a specific column in another table
-`referenceTable` | The table being referenced
-`referenceColumn`| A column in the `referenceTable`
-`onDelete` | Foreign key trigger. The value must be `CASCADE`, `SET NULL`, or `NO ACTION`
+| Attribute | Description |
+| --- | --- |
+| `table` | The name of the current table |
+| `column` | A column in the current table that refers to a specific column in another table |
+| `referenceTable` | The table being referenced |
+| `referenceColumn` | A column in the `referenceTable` |
+| `onDelete` | Foreign key trigger. The value must be `CASCADE`, `SET NULL`, or `NO ACTION` |
 
 <InlineAlert variant="info" slots="text"/>
 
@@ -215,10 +177,10 @@ Example:
 
 The `index` subnode has the same structure as internal constraints but contains different logic. While constraints are used for defining limitations, indexes are used for speeding up DQL operations. The following attributes define an index:
 
-Attribute | Description
---- | ---
-`referenceId` |  A custom identifier that is used only for relation mapping in the scope of `db_schema.xml` files. The real entity in the database has a system-generated name. The most convenient way to set the value of this attribute is to use the value that is written in the module's `db_schema_whitelist.json`  file when you [run the `generate-whitelist` command](migration-scripts.md#create-a-schema-whitelist).
-`indexType` | The value must be `btree`, `fulltext`, or `hash`
+| Attribute | Description |
+| --- | --- |
+| `referenceId` | A custom identifier that is used only for relation mapping in the scope of `db_schema.xml` files. The real entity in the database has a system-generated name. The most convenient way to set the value of this attribute is to use the value that is written in the module's `db_schema_whitelist.json` file when you [run the `generate-whitelist` command](migration-scripts.md#create-a-schema-whitelist). |
+| `indexType` | The value must be `btree`, `fulltext`, or `hash` |
 
 Example:
 
@@ -508,5 +470,3 @@ Module B disables the original primary key and sets a new primary key with a `re
 When a module is disabled in `app/etc/config.php`, its database schema configuration is no longer read on upgrade or install. As a result, subsequent system upgrades rebuild the database schema without the module's tables, columns, or other elements.
 Please note that the `db_schema_whitelist.json` file of disabled modules is still read during upgrades of installs, so the declarative schema system can perform the necessary operations.
 Practically, this means that if you disable a module which uses declarative schema and run `bin/magento setup:upgrade`, _its database tables will be dropped_ (see more details and discussion at  https://github.com/magento/magento2/issues/24926). Please consider using `setup:upgrade --safe-mode=1` in order to create a database backup after disabling a module and then eventually `setup:upgrade --data-restore=1` if you enable the module back and wish to restore from that backup.
-
-[How to generate urns?]:https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/urn-highlighter
