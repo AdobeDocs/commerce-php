@@ -356,7 +356,7 @@ More information can get at articles:
 - [Customer Configurations](https://experienceleague.adobe.com/en/docs/commerce-admin/config/customers/customer-configuration)
 - [Customer Attributes](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/attributes/attribute-properties)
 - [Customer Address Attributes](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/attributes/address-attributes)
-- [EAV And Extension Attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
+- [EAV And Extension Attributes](https://developer.adobe.com/commerce/php/development/components/attributes)
 - [2.4.x Release information](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview)
 
 ### Console commands

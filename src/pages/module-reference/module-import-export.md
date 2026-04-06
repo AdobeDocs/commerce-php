@@ -23,7 +23,7 @@ For information about a module installation in Magento 2, see [Enable or disable
 
 `Files/` - the directory that contains sample import files.
 
-For information about a typical file structure of a module in Magento 2, see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure/#module-file-structure).
+For information about a typical file structure of a module in Magento 2, see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure#module-file-structure).
 
 ## Extensibility
 
@@ -87,7 +87,7 @@ For information about a public API in Magento 2, see [Public interfaces & APIs](
 
 You can get more information about import/export processes in magento at the articles:
 
-- [Create custom import entity](https://developer.adobe.com/commerce/php/tutorials/backend/create-custom-import-entity/)
+- [Create custom import entity](https://developer.adobe.com/commerce/php/tutorials/backend/create-custom-import-entity)
 - [Import](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import)
 - [Export](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-export)
 

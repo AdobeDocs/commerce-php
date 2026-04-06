@@ -30,11 +30,11 @@ For information about module installation in Magento 2, see [Enable or disable m
 
 ## Structure
 
-Beyond the [usual module file structure](https://developer.adobe.com/commerce/php/architecture/modules/overview/) the module contains a directory `Service/V1`.
+Beyond the [usual module file structure](https://developer.adobe.com/commerce/php/architecture/modules/overview) the module contains a directory `Service/V1`.
 
 `Service/V1` - contains logic to provide a list of modules installed in Magento.
 
-For information about typical file structure of a module in Magento 2, see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure/#module-file-structure).
+For information about typical file structure of a module in Magento 2, see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure#module-file-structure).
 
 ## Extensibility
 

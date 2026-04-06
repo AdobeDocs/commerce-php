@@ -34,7 +34,7 @@ For information about a module installation in Magento 2, see [Enable or disable
 
 `Pricing/` - the directory that contains solutions for grouped product price.
 
-For information about a typical file structure of a module in Magento 2, see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure/#module-file-structure).
+For information about a typical file structure of a module in Magento 2, see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure#module-file-structure).
 
 ## Extensibility
 

@@ -15,7 +15,7 @@ For information about a module installation in Magento 2, see [Enable or disable
 ## Structure
 
 For information about a typical file structure of a module in Magento 2,
- see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure/#module-file-structure).
+ see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure#module-file-structure).
 
 ## Extensibility
 
@@ -115,7 +115,7 @@ Module introduces the following resources:
 
 - `Magento_Multishipping::config_multishipping` - Multishipping Settings Section
 
-More information about [Access Control List rule](https://developer.adobe.com/commerce/php/tutorials/backend/create-access-control-list-rule/).
+More information about [Access Control List rule](https://developer.adobe.com/commerce/php/tutorials/backend/create-access-control-list-rule).
 
 ### Page Types
 
