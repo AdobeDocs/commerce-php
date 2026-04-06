@@ -43,7 +43,7 @@ which must be installed and enabled first. This module does not create any backw
 ## Structure
 
 ​
-[Learn about a typical file structure for a Magento 2 module](https://developer.adobe.com/commerce/php/development/build/component-file-structure/).
+[Learn about a typical file structure for a Magento 2 module](https://developer.adobe.com/commerce/php/development/build/component-file-structure).
 ​
 
 ## Extensibility

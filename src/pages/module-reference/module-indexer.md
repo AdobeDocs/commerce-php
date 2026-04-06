@@ -35,7 +35,7 @@ For information about a module installation in Magento 2, see [Enable or disable
 
 `App/` - the directory that contains launch application entry point.
 
-For information about a typical file structure of a module in Magento 2, see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure/#module-file-structure).
+For information about a typical file structure of a module in Magento 2, see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure#module-file-structure).
 
 ## Extensibility
 
@@ -60,7 +60,7 @@ The module dispatches the following events:
 - `clean_cache_by_tags` event in the `\Magento\Indexer\Model\Processor\CleanCache::afterReindexAllInvalid` method. Parameters:
     - `object` is a `context` object (`Magento\Framework\Indexer\CacheContext` class)
 
-For information about an event in Magento 2, see [Events and observers](https://developer.adobe.com/commerce/php/development/components/events-and-observers#events).
+For information about an event in Magento 2, see [Events and observers](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#events).
 
 ### Layouts
 
@@ -106,8 +106,8 @@ Cron group configuration can be set at `etc/crontab.xml`:
 More information can get at articles:
 
 - [Learn more about indexing](https://developer.adobe.com/commerce/php/development/components/indexing/)
-- [Learn more about Indexer optimization](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/)
-- [Learn more how to add custom indexer](https://developer.adobe.com/commerce/php/development/components/indexing/custom-indexer/)
+- [Learn more about Indexer optimization](https://developer.adobe.com/commerce/php/development/components/indexing/optimization)
+- [Learn more how to add custom indexer](https://developer.adobe.com/commerce/php/development/components/indexing/custom-indexer)
 - [Learn how to manage indexers](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers)
 - [Learn more about Index Management](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)
 

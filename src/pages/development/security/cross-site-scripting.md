@@ -207,6 +207,6 @@ It covers the following cases:
 [product listing template]: https://github.com/magento/magento2/blob/78bb169ff9721c8d05c35b4c29a4464fd45bccbe/app/code/Magento/Catalog/view/frontend/templates/product/list.phtml#L16
 [Template guide]: https://developer.adobe.com/commerce/frontend-core/guide/templates/
 [Cross-site scripting]: https://owasp.org/www-community/attacks/xss/
-[binding syntax]: https://developer.adobe.com/commerce/frontend-core/ui-components/concepts/binding-syntax/
+[binding syntax]: https://developer.adobe.com/commerce/frontend-core/ui-components/concepts/binding-syntax
 [UI component data providers]: https://developer.adobe.com/commerce/frontend-core/ui-components/concepts/data-source
 [Coding Standard]: https://github.com/magento/magento-coding-standard

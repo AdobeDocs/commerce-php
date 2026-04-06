@@ -115,7 +115,7 @@ The module dispatches the following events:
 - `sales_quote_item_collection_products_after_load` event in the `\Magento\Quote\Model\QuoteManagement::_assignProducts` method. Parameters:
     - `collection` is a product collection object (`\Magento\Catalog\Model\ResourceModel\Product\Collection` class)
 
-For information about an event in Magento 2, see [Events and observers](https://developer.adobe.com/commerce/php/development/components/events-and-observers#events).
+For information about an event in Magento 2, see [Events and observers](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#events).
 
 ### Public APIs
 

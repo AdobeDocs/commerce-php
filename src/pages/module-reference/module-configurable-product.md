@@ -15,7 +15,7 @@ For example, store owner sells t-shirts in two colors and three sizes.
 
 `ConfigurableProduct/` - the directory that declares ConfigurableProduct metadata used by the module.
 
-For information about a typical file structure of a module in Magento 2, see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure/#module-file-structure).
+For information about a typical file structure of a module in Magento 2, see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure#module-file-structure).
 
 ## Extensibility
 
