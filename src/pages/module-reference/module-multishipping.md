@@ -75,7 +75,7 @@ The module dispatches the following events:
   class `\Magento\Multishipping\Model\Checkout\Type\Multishipping::createOrders()` method. Parameters:
     - `orders` is order object array `\Magento\Sales\Model\Order`  that was created.
 
-For information about an event in Magento 2, see [Events and observers](https://developer.adobe.com/commerce/php/development/components/events-and-observers#events).
+For information about an event in Magento 2, see [Events and observers](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#events).
 
 ### Layouts
 

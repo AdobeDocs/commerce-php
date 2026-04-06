@@ -67,7 +67,7 @@ The module dispatches the following events:
   - `user_name` is username extracted from the credential storage object (`null | \Magento\Backend\Model\Auth\Credential\StorageInterface`)
   - `exception` any exception generated (`\Magento\Framework\Exception\LocalizedException | \Magento\Framework\Exception\Plugin\AuthenticationException`)
 
-For information about an event in Magento 2, see [Events and observers](https://developer.adobe.com/commerce/php/development/components/events-and-observers#events).
+For information about an event in Magento 2, see [Events and observers](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#events).
 
 ### Layouts
 

@@ -61,7 +61,7 @@ The module dispatches the following events:
     - `product` is a product object (`\Magento\Catalog\Api\Data\ProductInterface` class).
     - `item` is an item object (`\Magento\Wishlist\Model\Item` class).
 
-For information about the event, see [Events and observers](https://developer.adobe.com/commerce/php/development/components/events-and-observers#events).
+For information about the event, see [Events and observers](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#events).
 
 ### Layouts
 
