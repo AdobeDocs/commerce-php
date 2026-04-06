@@ -199,7 +199,7 @@ public function revert(): void
 
     try {
         $customerSetup->removeAttribute(
-            \Magento\Customer\Model\Customer::ENTITY,
+            CustomerMetadataInterface::ENTITY_TYPE_CUSTOMER,
             'custom_multi_options'
         );
     } catch (Exception $e) {
@@ -245,11 +245,11 @@ namespace ExampleCorp\Customer\Setup\Patch\Data;
 use Exception;
 use Psr\Log\LoggerInterface;
 use Magento\Customer\Api\CustomerMetadataInterface;
-use Magento\Customer\Model\Customer;
 use Magento\Customer\Model\ResourceModel\Attribute as AttributeResource;
 use Magento\Customer\Setup\CustomerSetup;
 use Magento\Customer\Setup\CustomerSetupFactory;
 use Magento\Eav\Model\Entity\Attribute\Backend\ArrayBackend;
+use Magento\Eav\Model\Entity\Attribute\Source\Table;
 use Magento\Framework\Setup\ModuleDataSetupInterface;
 use Magento\Framework\Setup\Patch\DataPatchInterface;
 use Magento\Framework\Setup\Patch\PatchRevertableInterface;
@@ -339,7 +339,7 @@ class AddCustomerAttributeMultipleOptions implements DataPatchInterface, PatchRe
                     'label' => 'Customer Custom Attribute MultiOptions',
                     'type' => 'varchar',
                     'input' => 'multiselect',
-                    'source' => \Magento\Eav\Model\Entity\Attribute\Source\Table::class,
+                    'source' => Table::class,
                     'backend' => ArrayBackend::class,
                     'required' => false,
                     'position' => 555,
@@ -394,7 +394,7 @@ class AddCustomerAttributeMultipleOptions implements DataPatchInterface, PatchRe
 
         try {
             $customerSetup->removeAttribute(
-                Customer::ENTITY,
+                CustomerMetadataInterface::ENTITY_TYPE_CUSTOMER,
                 'custom_multi_options'
             );
         } catch (Exception $e) {

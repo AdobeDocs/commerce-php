@@ -108,14 +108,14 @@ There are five steps in developing a data patch. All the steps below are written
             'type' => 'int',
             'input' => 'boolean',
             'source' => \Magento\Eav\Model\Entity\Attribute\Source\Boolean::class,
-            'required' => 0,
+            'required' => false,
             'position' => 333,
-            'system' => 0,
-            'user_defined' => 1,
-            'is_used_in_grid' => 1,
-            'is_visible_in_grid' => 1,
-            'is_filterable_in_grid' => 1,
-            'is_searchable_in_grid' => 0,
+            'system' => false,
+            'user_defined' => true,
+            'is_used_in_grid' => true,
+            'is_visible_in_grid' => true,
+            'is_filterable_in_grid' => true,
+            'is_searchable_in_grid' => false,
         ]
     );
     ```
@@ -126,14 +126,14 @@ There are five steps in developing a data patch. All the steps below are written
     | `type` | `int` - Stored as an integer in the database (`0` or `1`) |
     | `input` | `boolean` - Renders as a Yes/No select in the customer form |
     | `source` | Provides the Yes/No option list for the boolean input |
-    | `required` | `0` - Attribute will be an optional field in the customer form |
+    | `required` | `false` - Attribute will be an optional field in the customer form |
     | `position` | `333` - Sort order in the customer form |
-    | `system` | `0` - Not a system-defined attribute |
-    | `user_defined` | `1` - A user-defined attribute |
-    | `is_used_in_grid` | `1` - Ready for use in the customer grid |
-    | `is_visible_in_grid` | `1` - Visible in the customer grid |
-    | `is_filterable_in_grid` | `1` - Filterable in the customer grid |
-    | `is_searchable_in_grid` | `0` - Not searchable in the customer grid (boolean fields are filtered, not searched) |
+    | `system` | `false` - Not a system-defined attribute |
+    | `user_defined` | `true` - A user-defined attribute |
+    | `is_used_in_grid` | `true` - Ready for use in the customer grid |
+    | `is_visible_in_grid` | `true` - Visible in the customer grid |
+    | `is_filterable_in_grid` | `true` - Filterable in the customer grid |
+    | `is_searchable_in_grid` | `false` - Not searchable in the customer grid (boolean fields are filtered, not searched) |
 
 1. Add attribute to an attribute set and group.
 
@@ -213,6 +213,7 @@ use Psr\Log\LoggerInterface;
 use Magento\Customer\Api\CustomerMetadataInterface;
 use Magento\Customer\Model\ResourceModel\Attribute as AttributeResource;
 use Magento\Customer\Setup\CustomerSetupFactory;
+use Magento\Eav\Model\Entity\Attribute\Source\Boolean;
 use Magento\Framework\Setup\ModuleDataSetupInterface;
 use Magento\Framework\Setup\Patch\DataPatchInterface;
 
@@ -298,15 +299,15 @@ class AddCustomerAttributeBoolean implements DataPatchInterface
                     'label' => 'Custom Boolean Attribute',
                     'type' => 'int',
                     'input' => 'boolean',
-                    'source' => \Magento\Eav\Model\Entity\Attribute\Source\Boolean::class,
-                    'required' => 0,
+                    'source' => Boolean::class,
+                    'required' => false,
                     'position' => 333,
-                    'system' => 0,
-                    'user_defined' => 1,
-                    'is_used_in_grid' => 1,
-                    'is_visible_in_grid' => 1,
-                    'is_filterable_in_grid' => 1,
-                    'is_searchable_in_grid' => 0,
+                    'system' => false,
+                    'user_defined' => true,
+                    'is_used_in_grid' => true,
+                    'is_visible_in_grid' => true,
+                    'is_filterable_in_grid' => true,
+                    'is_searchable_in_grid' => false,
                 ]
             );
 

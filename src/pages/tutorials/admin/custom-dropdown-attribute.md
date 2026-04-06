@@ -197,7 +197,7 @@ public function revert(): void
 
     try {
         $customerSetup->removeAttribute(
-            \Magento\Customer\Model\Customer::ENTITY,
+            CustomerMetadataInterface::ENTITY_TYPE_CUSTOMER,
             'custom_options'
         );
     } catch (Exception $e) {
@@ -243,10 +243,10 @@ namespace ExampleCorp\Customer\Setup\Patch\Data;
 use Exception;
 use Psr\Log\LoggerInterface;
 use Magento\Customer\Api\CustomerMetadataInterface;
-use Magento\Customer\Model\Customer;
 use Magento\Customer\Model\ResourceModel\Attribute as AttributeResource;
 use Magento\Customer\Setup\CustomerSetup;
 use Magento\Customer\Setup\CustomerSetupFactory;
+use Magento\Eav\Model\Entity\Attribute\Source\Table;
 use Magento\Framework\Setup\ModuleDataSetupInterface;
 use Magento\Framework\Setup\Patch\DataPatchInterface;
 use Magento\Framework\Setup\Patch\PatchRevertableInterface;
@@ -336,7 +336,7 @@ class AddCustomerAttributeOptions implements DataPatchInterface, PatchRevertable
                     'label' => 'Customer Custom Attribute Options',
                     'type' => 'int',
                     'input' => 'select',
-                    'source' => \Magento\Eav\Model\Entity\Attribute\Source\Table::class,
+                    'source' => Table::class,
                     'required' => false,
                     'position' => 444,
                     'system' => false,
@@ -390,7 +390,7 @@ class AddCustomerAttributeOptions implements DataPatchInterface, PatchRevertable
 
         try {
             $customerSetup->removeAttribute(
-                Customer::ENTITY,
+                CustomerMetadataInterface::ENTITY_TYPE_CUSTOMER,
                 'custom_options'
             );
         } catch (Exception $e) {
