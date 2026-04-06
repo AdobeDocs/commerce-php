@@ -25,7 +25,7 @@ Coding standards are a set of guidelines that describe how code should be writte
 *  [PSR2](https://www.php-fig.org/psr/psr-2/)
 *  [PSR4](https://www.php-fig.org/psr/psr-4/)
 
-To help you stick to coding standards, we recommend using the [PHP_CodeSniffer tool](https://github.com/squizlabs/PHP_CodeSniffer).
+To help you stick to coding standards, we recommend using the [PHP_CodeSniffer tool](https://github.com/PHPCSStandards/PHP_CodeSniffer).
 
 ## Write and utilize reusable code
 
