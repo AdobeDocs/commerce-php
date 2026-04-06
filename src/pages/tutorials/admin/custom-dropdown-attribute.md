@@ -60,27 +60,27 @@ The dependencies to the data patch are injected using constructor DI and are lis
 
 Note that unlike previous tutorials, the dropdown patch stores `$customerSetupFactory` directly rather than instantiating `$customerSetup` in the constructor. This is because `revert()` also needs to create a `CustomerSetup` instance, so the factory is reused across both methods.
 
-    ```php
-    /**
-     * Constructor
-     *
-     * @param ModuleDataSetupInterface $moduleDataSetup
-     * @param CustomerSetupFactory $customerSetupFactory
-     * @param AttributeResource $attributeResource
-     * @param LoggerInterface $logger
-     */
-    public function __construct(
-        ModuleDataSetupInterface $moduleDataSetup,
-        CustomerSetupFactory $customerSetupFactory,
-        AttributeResource $attributeResource,
-        LoggerInterface $logger
-    ) {
-        $this->moduleDataSetup = $moduleDataSetup;
-        $this->customerSetupFactory = $customerSetupFactory;
-        $this->attributeResource = $attributeResource;
-        $this->logger = $logger;
-    }
-    ```
+```php
+/**
+ * Constructor
+ *
+ * @param ModuleDataSetupInterface $moduleDataSetup
+ * @param CustomerSetupFactory $customerSetupFactory
+ * @param AttributeResource $attributeResource
+ * @param LoggerInterface $logger
+ */
+public function __construct(
+    ModuleDataSetupInterface $moduleDataSetup,
+    CustomerSetupFactory $customerSetupFactory,
+    AttributeResource $attributeResource,
+    LoggerInterface $logger
+) {
+    $this->moduleDataSetup = $moduleDataSetup;
+    $this->customerSetupFactory = $customerSetupFactory;
+    $this->attributeResource = $attributeResource;
+    $this->logger = $logger;
+}
+```
 
 ### Implement the apply method
 
