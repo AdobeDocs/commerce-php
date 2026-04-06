@@ -7,9 +7,7 @@ keywords:
   - Payments
 ---
 
-import Docs from '/src/_includes/braintree-note.md'
-
-<Docs />
+<Fragment src="/includes/braintree-note.md"/>
 
 # Error Code Mapping
 
@@ -27,11 +25,11 @@ In most cases, you must define one or more mapping files and configure the defau
 
 The first step is to create one or more XML files that map message codes to messages. We recommend naming these files `<gateway_name>_error_mapping.xml`, but you can use any name you like. If you create more than one mapping file, each file must have the same file name. Use the following table to determine where to place mapping files:
 
-Audience | location
---- | ---
-All users | `<module>/etc`
-Merchants | `<module>/adminhtml`
-Customers | `<module>/frontend`
+| Audience | location |
+| --- | --- |
+| All users | `<module>/etc` |
+| Merchants | `<module>/adminhtml` |
+| Customers | `<module>/frontend` |
 
 The files placed in the `adminhtml` and `frontend` directories ensure that customers and store administrators see only audience-specific messages. For example, a customer should see error messages when a credit card fails verification due to mis-entered data and similar reasons. The store's administrator should have more detailed descriptions of why an attempt to create an invoice or refund failed.
 
@@ -92,7 +90,7 @@ Then customize the default `ErrorMessageMapper` via virtual type and specify the
 ```
 
 Because Braintree integration uses the default [`Magento\Payment\Gateway\Command\GatewayCommand`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/Gateway/Command/GatewayCommand.php),
-inject the created mapper pool to the required [gateway command](/gateway-command.md) as an argument:
+inject the created mapper pool to the required [gateway command](gateway-command.md) as an argument:
 
 ```xml
 <virtualType name="BraintreeAuthorizeCommand" type="Magento\Payment\Gateway\Command\GatewayCommand">
@@ -110,7 +108,7 @@ The payment integration should now retrieve error codes from the payment gateway
 
 ## Retrieve error codes from the response validator
 
-You can retrieve errors codes using a [response validator](/response-validator.md).
+You can retrieve errors codes using a [response validator](response-validator.md).
 A response validator verifies response codes from the payment gateway.
 It has different responsibilities and should not map messages, because it works on the lower layer of communication between Commerce and the payment gateway.
 It is the responsibility of a gateway command to call an appropriate service.

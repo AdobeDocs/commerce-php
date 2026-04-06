@@ -7,7 +7,7 @@ description: Allow for admin to enter a customer account
 
 This module provides API for ability to login into customer account for an admin user.
 
-### Public APIs
+## Public APIs
 
 - `\Magento\LoginAsCustomerApi\Api\Data\AuthenticationDataInterface`:
     - contains authentication data
@@ -53,7 +53,7 @@ This module provides API for ability to login into customer account for an admin
 - `\Magento\LoginAsCustomerApi\Api\SetLoggedAsCustomerCustomerIdInterface`:
     - set id of customer admin is logged as
 
-For information about a public API in Magento 2, see [Public interfaces & APIs](https://developer.adobe.com/commerce/php/development/components/api-concepts/).
+For information about a public API in Magento 2, see [Public interfaces & APIs](https://developer.adobe.com/commerce/php/development/components/api-concepts).
 
 ## Additional information
 

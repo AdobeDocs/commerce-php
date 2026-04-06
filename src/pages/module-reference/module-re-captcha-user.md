@@ -11,7 +11,7 @@ This module provides the reCAPTCHA implementations related to user actions.
 
 For more information please visit the [reCAPTCHA documentation](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-google-recaptcha).
 
-## Emergency commandline disable for Admin panel Login page:
+## Emergency commandline disable for Admin panel Login page
 
 Can disable Google reCAPTCHA for Admin Panel Login page from command-line:
 
@@ -19,7 +19,7 @@ Can disable Google reCAPTCHA for Admin Panel Login page from command-line:
 
 This will disable Google reCAPTCHA for Admin Panel Login page form.
 
-## Emergency commandline disable for Admin panel Reset Password page:
+## Emergency commandline disable for Admin panel Reset Password page
 
 Can disable Google reCAPTCHA for Admin panel Reset Password page from command-line:
 

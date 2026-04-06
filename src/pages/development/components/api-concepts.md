@@ -17,7 +17,7 @@ Public interfaces for a module are marked with the `@api` annotation.
 
 <InlineAlert variant="info" slots="text"/>
 
-Third-party developers should use only these interfaces, that is, interfaces with the `@api` annotation. You can use other interfaces but those may be modified or removed in subsequent Adobe Commerce and Magento Open Source releases. For more information, see [Backward compatibility](https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy/).
+Third-party developers should use only these interfaces, that is, interfaces with the `@api` annotation. You can use other interfaces but those may be modified or removed in subsequent Adobe Commerce and Magento Open Source releases. For more information, see [Backward compatibility](https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy).
 
 ### Example of public interface annotation
 

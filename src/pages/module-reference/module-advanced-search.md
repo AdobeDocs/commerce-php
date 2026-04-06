@@ -18,9 +18,9 @@ For information about module installation in Magento 2, see [Enable or disable m
 
 ## Extensibility
 
-Extension developers can interact with the Magento_AdvancedSearch module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_AdvancedSearch module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_AdvancedSearch module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_AdvancedSearch module.
 
 ### Events
 
@@ -28,7 +28,7 @@ This module observes the following event:
 
 - `catalogsearch_query_save_after` in the `Magento\AdvancedSearch\Model\Recommendations\SaveSearchQueryRelationsObserver` file.
 
-For information about an event in Magento 2, see [Events and observers](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#events).
+For information about an event in Magento 2, see [Events and observers](https://developer.adobe.com/commerce/php/development/components/events-and-observers#events).
 
 ### Layouts
 

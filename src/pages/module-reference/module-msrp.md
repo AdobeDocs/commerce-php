@@ -60,11 +60,11 @@ For information about a typical file structure of a module in Magento 2,
 </type>
 ```
 
- More information about [type configuration](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/).
+ More information about [type configuration](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file).
 
- Extension developers can interact with the Magento_Msrp module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+ Extension developers can interact with the Magento_Msrp module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_Msrp module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_Msrp module.
 
 ### Events
 
@@ -82,7 +82,7 @@ This module observes the following event:
 
  - `sales_quote_collect_totals_after` in the `Magento\Msrp\Observer\Frontend\Quote\SetCanApplyMsrpObserver` file.
 
-For information about an event in Magento 2, see [Events and observers](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#events).
+For information about an event in Magento 2, see [Events and observers](https://developer.adobe.com/commerce/php/development/components/events-and-observers#events).
 
 ### Layouts
 

@@ -27,8 +27,6 @@ The Magento_Tax module also handles special cases when computing tax, such as:
 * being able to handle 2 or more tax rates that are applied separately (examples include a "luxury tax" on exclusive items)
 * being able to handle a subsequent tax rate that is applied after a previous one is applied (a "tax on tax" situation, which recently was a part of Canadian tax law)
 
-# Deployment
-
 ## System requirements
 
 The Magento_Tax module does not have any specific system requirements.
