@@ -9,13 +9,13 @@ keywords:
 
 This tutorial describes how a developer can create a custom boolean (Yes/No) attribute for the Customer entity using code. This will reflect in both the [Customer Grid](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/manage-account) and the [Customer Form](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/update-account) in the Admin.
 
-This Customer attribute will be used to store a simple Yes/No flag on a customer record, as an example. It will be created as an EAV attribute in a data patch. The EAV model allows a developer to add custom functionality to the entities without modifying the core databases and schemas. Data patches are run just once, so this code will create the custom attribute and will never run again, which could cause issues.
+This Customer attribute will be used to store a simple Yes/No flag on a customer record, as an example. It will be created as an EAV attribute in a data patch. The EAV model allows a developer to add custom functionality to the entities without modifying the core databases and schemas. Data patches are run just once, so this code will create the custom attribute and will never run again, which could cause issues. This tutorial also implements `PatchRevertableInterface`, which allows the attribute to be cleanly removed by running `bin/magento setup:rollback`.
 
 ## Code
 
 ### Create the data patch class
 
-Create a data patch class called `AddCustomerAttributeBoolean` under the `\ExampleCorp\Customer\Setup\Patch\Data` namespace. This makes the application execute the data patch automatically when `bin/magento setup:upgrade` is run. All data patches must implement the `\Magento\Framework\Setup\Patch\DataPatchInterface` interface.
+Create a data patch class called `AddCustomerAttributeBoolean` under the `\ExampleCorp\Customer\Setup\Patch\Data` namespace. This makes the application execute the data patch automatically when `bin/magento setup:upgrade` is run. This class implements both `\Magento\Framework\Setup\Patch\DataPatchInterface` and `\Magento\Framework\Setup\Patch\PatchRevertableInterface`. Adding the revertable interface requires implementing a `revert()` method that removes the attribute when the patch is rolled back.
 
 ```php
 <?php declare(strict_types=1);
@@ -23,10 +23,16 @@ Create a data patch class called `AddCustomerAttributeBoolean` under the `\Examp
 namespace ExampleCorp\Customer\Setup\Patch\Data;
 
 use \Magento\Framework\Setup\Patch\DataPatchInterface;
+use \Magento\Framework\Setup\Patch\PatchRevertableInterface;
 
-class AddCustomerAttributeBoolean implements DataPatchInterface
+class AddCustomerAttributeBoolean implements DataPatchInterface, PatchRevertableInterface
 {
     public function apply(): void
+    {
+        // will be implemented in the next steps.
+    }
+
+    public function revert(): void
     {
         // will be implemented in the next steps.
     }
@@ -48,31 +54,33 @@ class AddCustomerAttributeBoolean implements DataPatchInterface
 The dependencies to the data patch are injected using constructor DI and are listed below:
 
 -  `\Magento\Framework\Setup\ModuleDataSetupInterface` for initializing and ending the setup.
--  `\Magento\Customer\Setup\CustomerSetupFactory` for creating a model of `\Magento\Customer\Setup\CustomerSetup` which is required to add the custom attribute.
+-  `\Magento\Customer\Setup\CustomerSetupFactory` for creating a model of `\Magento\Customer\Setup\CustomerSetup` which is required to add and remove the custom attribute.
 -  `\Magento\Customer\Model\ResourceModel\Attribute` aliased as `AttributeResource` for saving the attribute after adding custom data to it.
 -  `\Psr\Log\LoggerInterface` for logging exceptions thrown during the execution.
 
-    ```php
-    /**
-     * Constructor
-     *
-     * @param ModuleDataSetupInterface $moduleDataSetup
-     * @param CustomerSetupFactory $customerSetupFactory
-     * @param AttributeResource $attributeResource
-     * @param LoggerInterface $logger
-     */
-    public function __construct(
-        ModuleDataSetupInterface $moduleDataSetup,
-        CustomerSetupFactory $customerSetupFactory,
-        AttributeResource $attributeResource,
-        LoggerInterface $logger
-    ) {
-        $this->moduleDataSetup = $moduleDataSetup;
-        $this->customerSetup = $customerSetupFactory->create(['setup' => $moduleDataSetup]);
-        $this->attributeResource = $attributeResource;
-        $this->logger = $logger;
-    }
-    ```
+The factory is stored rather than a single `CustomerSetup` instance, because both `apply()` and `revert()` need to create their own instance.
+
+```php
+/**
+ * Constructor
+ *
+ * @param ModuleDataSetupInterface $moduleDataSetup
+ * @param CustomerSetupFactory $customerSetupFactory
+ * @param AttributeResource $attributeResource
+ * @param LoggerInterface $logger
+ */
+public function __construct(
+    ModuleDataSetupInterface $moduleDataSetup,
+    CustomerSetupFactory $customerSetupFactory,
+    AttributeResource $attributeResource,
+    LoggerInterface $logger
+) {
+    $this->moduleDataSetup = $moduleDataSetup;
+    $this->customerSetupFactory = $customerSetupFactory;
+    $this->attributeResource = $attributeResource;
+    $this->logger = $logger;
+}
+```
 
 ### Implement the apply method
 
@@ -100,7 +108,10 @@ There are five steps in developing a data patch. All the steps below are written
     The `\Magento\Customer\Api\CustomerMetadataInterface` interface contains constants like the customer entity's code and the default attribute set code, which can be referenced.
 
     ```php
-    $this->customerSetup->addAttribute(
+    /** @var CustomerSetup $customerSetup */
+    $customerSetup = $this->customerSetupFactory->create(['setup' => $this->moduleDataSetup]);
+
+    $customerSetup->addAttribute(
         CustomerMetadataInterface::ENTITY_TYPE_CUSTOMER, // entity type code
         'custom_boolean_attribute', // unique attribute code
         [
@@ -140,7 +151,7 @@ There are five steps in developing a data patch. All the steps below are written
     There is only one attribute set and group for the customer entity. The default attribute set ID is a constant defined in the `CustomerMetadataInterface` interface and setting the attribute group ID to null makes the application use the default attribute group ID for the customer entity.
 
     ```php
-    $this->customerSetup->addAttributeToSet(
+    $customerSetup->addAttributeToSet(
         CustomerMetadataInterface::ENTITY_TYPE_CUSTOMER, // entity type code
         CustomerMetadataInterface::ATTRIBUTE_SET_ID_CUSTOMER, // attribute set ID
         null, // attribute group ID
@@ -152,10 +163,10 @@ There are five steps in developing a data patch. All the steps below are written
 
     ```php
     // Get the newly created attribute's model
-    $attribute = $this->customerSetup->getEavConfig()
+    $attribute = $customerSetup->getEavConfig()
         ->getAttribute(CustomerMetadataInterface::ENTITY_TYPE_CUSTOMER, 'custom_boolean_attribute');
 
-    // Make attribute visible in Admin customer form
+    // Make attribute visible in Admin customer form and storefront forms
     $attribute->setData('used_in_forms', [
         'adminhtml_customer',
         'customer_account_create',
@@ -177,6 +188,31 @@ There are five steps in developing a data patch. All the steps below are written
         $this->logger->error($exception->getMessage());
     }
     ```
+
+### Implement the revert method
+
+Because this class implements `PatchRevertableInterface`, it must also define a `revert()` method. This method is called when `bin/magento setup:rollback` targets this patch and removes the attribute from the system.
+
+```php
+public function revert(): void
+{
+    $this->moduleDataSetup->getConnection()->startSetup();
+
+    /** @var CustomerSetup $customerSetup */
+    $customerSetup = $this->customerSetupFactory->create(['setup' => $this->moduleDataSetup]);
+
+    try {
+        $customerSetup->removeAttribute(
+            CustomerMetadataInterface::ENTITY_TYPE_CUSTOMER,
+            'custom_boolean_attribute'
+        );
+    } catch (Exception $e) {
+        $this->logger->error($e->getMessage());
+    }
+
+    $this->moduleDataSetup->getConnection()->endSetup();
+}
+```
 
 ### Implement rest of the interface
 
@@ -201,6 +237,8 @@ Run `bin/magento setup:upgrade` from the project root to execute the newly added
 -  The attribute is created in the customer form under the _Account Information_ section.
 -  The attribute is displayed in the customer grid and can be filtered using a Yes/No dropdown.
 
+To remove the attribute, run `bin/magento setup:rollback` and target this patch. The `revert()` method will execute and delete the attribute from the system.
+
 ### Code reference
 
 ```php
@@ -212,15 +250,17 @@ use Exception;
 use Psr\Log\LoggerInterface;
 use Magento\Customer\Api\CustomerMetadataInterface;
 use Magento\Customer\Model\ResourceModel\Attribute as AttributeResource;
+use Magento\Customer\Setup\CustomerSetup;
 use Magento\Customer\Setup\CustomerSetupFactory;
 use Magento\Eav\Model\Entity\Attribute\Source\Boolean;
 use Magento\Framework\Setup\ModuleDataSetupInterface;
 use Magento\Framework\Setup\Patch\DataPatchInterface;
+use Magento\Framework\Setup\Patch\PatchRevertableInterface;
 
 /**
  * Creates a customer attribute for managing a customer's boolean flag
  */
-class AddCustomerAttributeBoolean implements DataPatchInterface
+class AddCustomerAttributeBoolean implements DataPatchInterface, PatchRevertableInterface
 {
     /**
      * @var ModuleDataSetupInterface
@@ -228,9 +268,9 @@ class AddCustomerAttributeBoolean implements DataPatchInterface
     private $moduleDataSetup;
 
     /**
-     * @var \Magento\Customer\Setup\CustomerSetup
+     * @var CustomerSetupFactory
      */
-    private $customerSetup;
+    private $customerSetupFactory;
 
     /**
      * @var AttributeResource
@@ -257,7 +297,7 @@ class AddCustomerAttributeBoolean implements DataPatchInterface
         LoggerInterface $logger
     ) {
         $this->moduleDataSetup = $moduleDataSetup;
-        $this->customerSetup = $customerSetupFactory->create(['setup' => $moduleDataSetup]);
+        $this->customerSetupFactory = $customerSetupFactory;
         $this->attributeResource = $attributeResource;
         $this->logger = $logger;
     }
@@ -290,9 +330,12 @@ class AddCustomerAttributeBoolean implements DataPatchInterface
         // Start setup
         $this->moduleDataSetup->getConnection()->startSetup();
 
+        /** @var CustomerSetup $customerSetup */
+        $customerSetup = $this->customerSetupFactory->create(['setup' => $this->moduleDataSetup]);
+
         try {
             // Add customer attribute with settings
-            $this->customerSetup->addAttribute(
+            $customerSetup->addAttribute(
                 CustomerMetadataInterface::ENTITY_TYPE_CUSTOMER,
                 'custom_boolean_attribute',
                 [
@@ -312,7 +355,7 @@ class AddCustomerAttributeBoolean implements DataPatchInterface
             );
 
             // Add attribute to default attribute set and group
-            $this->customerSetup->addAttributeToSet(
+            $customerSetup->addAttributeToSet(
                 CustomerMetadataInterface::ENTITY_TYPE_CUSTOMER,
                 CustomerMetadataInterface::ATTRIBUTE_SET_ID_CUSTOMER,
                 null,
@@ -320,7 +363,7 @@ class AddCustomerAttributeBoolean implements DataPatchInterface
             );
 
             // Get the newly created attribute's model
-            $attribute = $this->customerSetup->getEavConfig()
+            $attribute = $customerSetup->getEavConfig()
                 ->getAttribute(CustomerMetadataInterface::ENTITY_TYPE_CUSTOMER, 'custom_boolean_attribute');
 
             // Make attribute visible in Admin customer form and storefront forms
@@ -332,6 +375,30 @@ class AddCustomerAttributeBoolean implements DataPatchInterface
 
             // Save attribute using its resource model
             $this->attributeResource->save($attribute);
+        } catch (Exception $e) {
+            $this->logger->error($e->getMessage());
+        }
+
+        // End setup
+        $this->moduleDataSetup->getConnection()->endSetup();
+    }
+
+    /**
+     * Rollback all changes, done by this patch
+     */
+    public function revert(): void
+    {
+        // Start setup
+        $this->moduleDataSetup->getConnection()->startSetup();
+
+        /** @var CustomerSetup $customerSetup */
+        $customerSetup = $this->customerSetupFactory->create(['setup' => $this->moduleDataSetup]);
+
+        try {
+            $customerSetup->removeAttribute(
+                CustomerMetadataInterface::ENTITY_TYPE_CUSTOMER,
+                'custom_boolean_attribute'
+            );
         } catch (Exception $e) {
             $this->logger->error($e->getMessage());
         }
