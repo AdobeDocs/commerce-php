@@ -166,7 +166,7 @@ There are five steps in developing a data patch. All the steps below are written
     try {
         // All the code inside the apply method goes into the try block.
     } catch (Exception $exception) {
-        $this->logger->err($exception->getMessage());
+        $this->logger->error($exception->getMessage());
     }
     ```
 
@@ -332,7 +332,7 @@ class ExternalId implements DataPatchInterface
             // Save attribute using its resource model
             $this->attributeResource->save($attribute);
         } catch (Exception $e) {
-            $this->logger->err($e->getMessage());
+            $this->logger->error($e->getMessage());
         }
 
         // End setup
