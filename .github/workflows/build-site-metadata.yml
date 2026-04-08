@@ -7,4 +7,4 @@ on:
 jobs:
   build-site-metadata:
     name: Build Site Metadata
-    uses: AdobeDocs/adp-devsite-workflow/.github/workflows/build-site-metadata.yml@main
+    uses: AdobeDocs/adp-devsite-workflow/.github/workflows/build-site-metadata.yml@ds_fix-build-site-metadata
