@@ -24,7 +24,7 @@ For information about enabling or disabling a module, see [Enable or disable mod
 
 `Code/` - the directory that contains Remote service reader configuration files.
 
-For information about a typical file structure of a module, see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure/#module-file-structure).
+For information about a typical file structure of a module, see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure#module-file-structure).
 
 ## Extensibility
 

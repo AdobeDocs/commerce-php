@@ -24,7 +24,7 @@ version.
 
 `SearchAdapter/` - the directory that contains solutions for adapting ElasticSearch query searching.
 
-For information about a typical file structure of a module in Magento 2, see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure/#module-file-structure).
+For information about a typical file structure of a module in Magento 2, see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure#module-file-structure).
 
 ## Additional information
 

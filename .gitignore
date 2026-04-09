@@ -49,9 +49,10 @@ yalc.lock
 
 
 
-# Super-linter outputs
+# Linter outputs
 super-linter-output
 super-linter.log
+linter-report.txt
 
 # GitHub Actions leftovers
 github_conf

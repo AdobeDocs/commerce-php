@@ -21,7 +21,7 @@ The module has a dependency on the Magento_Company module, which must be install
 
 ## Structure
 
-[Learn about a typical file structure for a Magento 2 module](https://developer.adobe.com/commerce/php/development/build/component-file-structure/).
+[Learn about a typical file structure for a Magento 2 module](https://developer.adobe.com/commerce/php/development/build/component-file-structure).
 
 ## Extensibility
 
@@ -29,7 +29,7 @@ Extension developers can interact with the Magento_CompanyCredit module. For mor
 
 [The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_CompanyCredit module.
 
-[Payment method configuration](https://developer.adobe.com/commerce/php/development/payments-integrations/base-integration/payment-option-config/) will allow you additional configuration to extend module functionality.
+[Payment method configuration](https://developer.adobe.com/commerce/php/development/payments-integrations/base-integration/payment-option-config) will allow you additional configuration to extend module functionality.
 
 ### Layouts
 
