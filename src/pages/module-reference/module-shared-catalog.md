@@ -23,15 +23,15 @@ When the module is uninstalled, the other [ProductType]SharedCatalog modules won
 
 ## Structure
 
-[Learn about a typical file structure for a Magento 2 module](https://developer.adobe.com/commerce/php/development/build/component-file-structure/).
+[Learn about a typical file structure for a Magento 2 module](https://developer.adobe.com/commerce/php/development/build/component-file-structure).
 
 ## Extensibility
 
 Shared catalogs are using message queues to save prices. For more information about queues, see [Message Queues](https://developer.adobe.com/commerce/php/development/components/message-queues/).
 
-Extension developers can interact with the Magento_SharedCatalog module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_SharedCatalog module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_SharedCatalog module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_SharedCatalog module.
 
 ### Layouts
 
@@ -47,7 +47,7 @@ The `Magento\SharedCatalog\view\adminhtml\ui_component` directory contains exten
 
 * Listings: Company, product, shared catalog company, shared catalog, shared catalog product pricing, shared catalog product listing.
 
-For more information, see [UI Listing/Grid Component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/listing-grid/) and [UI Form Component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/form/).
+For more information, see [UI Listing/Grid Component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/listing-grid) and [UI Form Component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/form).
 
 <InlineAlert slots="text" />
 The version of this module is 100.5.2.

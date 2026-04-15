@@ -2,14 +2,14 @@
 title: Glossary of common terms | Commerce PHP Extensions
 description: Review common terms that are used to describe technical aspects of Adobe Commerce and Magento Open Source extension development.
 keywords:
-  - Extensions
+- Extensions
 ---
 
 # Glossary of terms
 
 ## Component
 
-We refer to what you're coding as *components*. (Composer refers to them as <a href="https://getcomposer.org/doc/05-repositories.md#packages" target="_blank">*packages*</a>; the terms component and package are equivalent.) A component can be classified into the following *types*:
+We refer to what you're coding as *components*. (Composer refers to them as [*packages*](https://getcomposer.org/doc/05-repositories.md#packages); the terms component and package are equivalent.) A component can be classified into the following *types*:
 
 *  Module (extend application capabilities)
 *  Theme (change the look and feel of your storefront and Admin)

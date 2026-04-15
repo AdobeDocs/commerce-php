@@ -16,13 +16,13 @@ This module does not create any backward incompatible changes. This module can b
 
 ## Structure
 
-[Learn about a typical file structure for a Magento 2 module](https://developer.adobe.com/commerce/php/development/build/component-file-structure/).
+[Learn about a typical file structure for a Magento 2 module](https://developer.adobe.com/commerce/php/development/build/component-file-structure).
 
 ## Extensibility
 
-Extension developers can interact with the Magento_Company module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_Company module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_Company module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_Company module.
 
 ### Layouts
 
@@ -40,7 +40,7 @@ The following directories contain extensible UI components:
 
 * `Magento\Company\view\frontend\ui_component` - company users listing, role listing
 
-For more information, see [UI Listing/Grid Component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/listing-grid/).
+For more information, see [UI Listing/Grid Component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/listing-grid).
 
 <InlineAlert slots="text" />
 The version of this module is 102.0.2.

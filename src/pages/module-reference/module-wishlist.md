@@ -27,13 +27,13 @@ Refer to [how to enable or disable modules in Magento 2](https://experienceleagu
 
 `Pricing/` - the directory that contain solutions for configurable and downloadable product price.
 
-For information about a typical file structure of a module, see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure/#module-file-structure).
+For information about a typical file structure of a module, see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure#module-file-structure).
 
 ## Extensibility
 
-Extension developers can interact with the Magento_Wishlist module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_Wishlist module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_Wishlist module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_Wishlist module.
 
 ### Events
 

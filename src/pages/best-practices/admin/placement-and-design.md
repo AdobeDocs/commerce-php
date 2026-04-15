@@ -21,7 +21,7 @@ Icons should not be used in any of the navigation submenu panels to bring attent
 
 Your extension's settings and configuration area is an appropriate place to use icons.
 
-For more information about icon design and the application's icon library, see the article about  [Iconography](https://developer.adobe.com/commerce/admin-developer/style-guide/design/iconography/) in the Admin Style Guide book.
+For more information about icon design and the application's icon library, see the article about  [Iconography](https://developer.adobe.com/commerce/admin-developer/style-guide/design/iconography) in the Admin Style Guide book.
 
 ### Advertising in Navigation
 
@@ -43,14 +43,14 @@ These extensions provide additional APIs and are responsible for providing setti
 
 All required settings for this connector type should appear in the **Stores** > Settings > **Configuration** section. The actual listings for these extension settings should appear after all of the application's listed settings. All the setting details and configurations should appear in the section to the right.
 
-![Connector settings placement](../../_images/best-practices/connector-settings-placement.png)
+![Connector settings placement](../../images/best-practices/connector-settings-placement.png)
 
 **Style:**
 
 *  The style of the listing for your settings should match the look of the application's listed settings.
 *  Icons or images should not be used in the navigation listing for your settings.
 
----
+<HorizontalLine />
 
 ### Store Feature Connector
 
@@ -63,9 +63,9 @@ The settings for these extensions should be displayed under its respective paren
 
 For example, if the extension is for Shipping, then you can place it under **Store** > Settings > **Configuration** > **Sales** > **Shipping Settings**.
 
-![Store Feature Connector placement](../../_images/best-practices/store-feature-connector-placement.png)
+![Store Feature Connector placement](../../images/best-practices/store-feature-connector-placement.png)
 
----
+<HorizontalLine />
 
 ### Connector with additional features
 
@@ -77,14 +77,14 @@ If all the settings for an extension can be consolidated into one section, then 
 
 For example, if your extension is related to the "Reports" functionality then its settings should appear as a link under the Report Section in the Primary navigation.
 
-![Connector with additional features placement](../../_images/best-practices/additional-feature-placement.png)
+![Connector with additional features placement](../../images/best-practices/additional-feature-placement.png)
 
 **Style:**
 
 *  The styles of the links in the admin should follow the same styles of the default navigation links.
 *  Do not introduce custom icons in the navigation submenus.
 
----
+<HorizontalLine />
 
 ### Feature Extensions
 
@@ -94,7 +94,7 @@ These are extensions which provide additional functionality that do not already 
 
 There will be a new, dedicated section designed for such exclusive extensions. When feature-level extensions are installed, those extensions will live under this section. The exact final name of this new section has not been decided (we welcome your feedback), but in the image below it is named Extensions.
 
-![Feature Placement](../../_images/best-practices/feature-placement.png)
+![Feature Placement](../../images/best-practices/feature-placement.png)
 
 <InlineAlert variant="info" slots="text"/>
 
@@ -102,7 +102,7 @@ The name and icon for this section is still TBD. This new section is a future pr
 
 Since this section is not yet available, you should place your extension in one of the previously mentioned areas where it would be the most appropriate.
 
----
+<HorizontalLine />
 
 ### Integrated Extensions
 
@@ -112,7 +112,7 @@ These are add-ons to existing features and might appear as a nested feature.
 
 As these are integrated features no direct/indirect accessible links are available from the admin.
 
----
+<HorizontalLine />
 
 ### Codebase Extensions
 

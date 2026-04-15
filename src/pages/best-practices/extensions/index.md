@@ -15,7 +15,7 @@ You should follow common programming best practices to reduce bugs and improve t
 
 The following list of best practices addresses commonly reported issues in third-party extensions.
 
-### Follow a set of coding standards
+## Follow a set of coding standards
 
 Coding standards are a set of guidelines that describe how code should be written. These standards define coding practices that determine the style of the code. Whether you are a solo developer or part of a team, following a set of coding standards will help make your code consistent and maintainable.
 
@@ -25,9 +25,9 @@ Coding standards are a set of guidelines that describe how code should be writte
 *  [PSR2](https://www.php-fig.org/psr/psr-2/)
 *  [PSR4](https://www.php-fig.org/psr/psr-4/)
 
-To help you stick to coding standards, we recommend using the [PHP_CodeSniffer tool](https://github.com/squizlabs/PHP_CodeSniffer).
+To help you stick to coding standards, we recommend using the [PHP_CodeSniffer tool](https://github.com/PHPCSStandards/PHP_CodeSniffer).
 
-### Write and utilize reusable code
+## Write and utilize reusable code
 
 Avoid using redundant or duplicate code, which can be hard to maintain. Instead of copying and pasting the same code throughout your extension, create a single class or method and reference it when needed.
 
@@ -35,13 +35,13 @@ As a general rule, reuse code as much as possible to prevent code duplication.
 
 The code you write should be small, focused, and provide a generic solution. This will help you reuse code in future development.
 
-### Design your code to be replaceable
+## Design your code to be replaceable
 
 Designing and writing your code to be replaceable is just as important as making it reusable. Having a replaceable design means your code is modular and loosely coupled, which makes updates and improvements easier.
 
 It is common practice to replace parts of your codebase with newer and better pieces as bugs are found or newer strategies become available. Writing replaceable code in your codebase makes this practice easier and more efficient.
 
-### Avoid creating helper classes
+## Avoid creating helper classes
 
 Helper or utility classes are classes filled with static methods that do not quite fit anywhere else. These classes are considered an anti-pattern and violate the principles of object-oriented programming.
 
@@ -49,13 +49,13 @@ If you have `ClassA` and a `ClassAHelper` with static functions that work on `Cl
 
 A helper class that functions as a catch-all for random methods violates the single responsibility principle because it is an attempt to solve multiple problems in a single class. You should refactor your code and move those functions into the appropriate classes.
 
-### Be consistent with case and naming conventions
+## Be consistent with case and naming conventions
 
 You should be consistent in your naming conventions for files, folder names, classes, and methods. Following standard conventions makes your code easier to read and look professional.
 
 Not following this practice is a code standards violation and impacts your extension's readability and  maintainability.
 
-### Composition over inheritance
+## Composition over inheritance
 
 [Class inheritance](https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)) is the object-oriented programming concept that deals with code reuse and extending the behavior of a base class, which was preferred for Magento 1 development.
 
@@ -63,7 +63,7 @@ Not following this practice is a code standards violation and impacts your exten
 
 For Magento 2 extension development, we encourage the use of object composition over class inheritance. Using composition over inheritance makes your extension easier to maintain when class changes occur and update when new features need to be implemented.
 
-### Using around plugins
+## Using around plugins
 
 Avoid using [around method plugins](../../development/components/plugins.md) when they are not required because they increase stack traces and affect performance. The only use case for around method plugins is when you need to terminate the execution of all further plugins and original methods.
 
@@ -71,7 +71,7 @@ Avoid using [around method plugins](../../development/components/plugins.md) whe
 
 Access to method parameters was the primary justification for using **around** method plugins instead of **after** method plugins. Since 2.2, [after method plugins](../../development/components/plugins.md#after-methods) give you access to method parameters. Use **after** method plugins if you need to replace or modify function results using arguments.
 
-### Test your code
+## Test your code
 
 Write testable code and follow the [Testing Guide](https://developer.adobe.com/commerce/testing/guide/) to create tests for your code.
 

@@ -18,13 +18,13 @@ For information about a module installation in Magento 2, see [Enable or disable
 for Configurable Product (`Magento\MsrpConfigurableProduct\Pricing\MsrpPriceCalculator` class).
 
 For information about a typical file structure of a module in Magento 2,
- see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure/#module-file-structure).
+ see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure#module-file-structure).
 
 ## Extensibility
 
- Extension developers can interact with the Magento_Msrp module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+ Extension developers can interact with the Magento_Msrp module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_Msrp module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_Msrp module.
 
 ### Layouts
 

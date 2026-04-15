@@ -15,7 +15,7 @@ For information about a module installation in Magento 2, see [Enable or disable
 ## Structure
 
 For information about a typical file structure of a module in Magento 2,
- see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure/#module-file-structure).
+ see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure#module-file-structure).
 
 ## Extensibility
 
@@ -36,11 +36,11 @@ For example:
 
 Yo can check this configuration and find more examples in the `etc/frontend/di.xml` file.
 
-More information about [type configuration](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/).
+More information about [type configuration](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file).
 
-Extension developers can interact with the Magento_Multishipping module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_Multishipping module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_Msrp module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_Msrp module.
 
 ### Events
 
@@ -115,7 +115,7 @@ Module introduces the following resources:
 
 - `Magento_Multishipping::config_multishipping` - Multishipping Settings Section
 
-More information about [Access Control List rule](https://developer.adobe.com/commerce/php/tutorials/backend/create-access-control-list-rule/).
+More information about [Access Control List rule](https://developer.adobe.com/commerce/php/tutorials/backend/create-access-control-list-rule).
 
 ### Page Types
 
@@ -139,7 +139,7 @@ Module introduces the new pages:
 - `checkout_cart_multishipping_shipping` - Multishipping Checkout Shipping Information Step
 - `checkout_cart_multishipping_success` - Multishipping Checkout Success
 
-More information about [layout types](https://developer.adobe.com/commerce/frontend-core/guide/layouts/types/).
+More information about [layout types](https://developer.adobe.com/commerce/frontend-core/guide/layouts/types).
 
 For information about significant changes in patch releases, see [2.3.x Release information](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 

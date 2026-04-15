@@ -21,13 +21,13 @@ The Magento_BundleNegotiableQuote module does not create any backward incompatib
 
 ## Structure
 
-[Learn about a typical file structure for a Magento 2 module](https://developer.adobe.com/commerce/php/development/build/component-file-structure/).
+[Learn about a typical file structure for a Magento 2 module](https://developer.adobe.com/commerce/php/development/build/component-file-structure).
 
 ## Extensibility
 
-Extension developers can interact with the Magento_BundleNegotiableQuote module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_BundleNegotiableQuote module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_BundleNegotiableQuote module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_BundleNegotiableQuote module.
 
 <InlineAlert slots="text" />
 The version of this module is 100.5.1.

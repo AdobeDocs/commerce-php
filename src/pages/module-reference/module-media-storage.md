@@ -20,13 +20,13 @@ For information about a module installation in Magento 2, see [Enable or disable
 
 `App/` - the directory that contains launch application entry point.
 
-For information about a typical file structure of a module in Magento 2, see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure/#module-file-structure).
+For information about a typical file structure of a module in Magento 2, see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure#module-file-structure).
 
 ## Extensibility
 
-Extension developers can interact with the Magento_MediaStorage module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_MediaStorage module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_MediaStorage module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_MediaStorage module.
 
 ## Additional information
 
@@ -43,7 +43,7 @@ Extension developers can interact with the Magento_MediaStorage module. For more
 More information can get at articles:
 
 - [Learn how to configure Media Storage Database](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/media-storage-database).
-- [Learn how to Resize catalog images](https://developer.adobe.com/commerce/frontend-core/guide/themes/configure/#resize-catalog-images)
+- [Learn how to Resize catalog images](https://developer.adobe.com/commerce/frontend-core/guide/themes/configure#resize-catalog-images)
 
 <InlineAlert slots="text" />
 The version of this module is 100.4.7.

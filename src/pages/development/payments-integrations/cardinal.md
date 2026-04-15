@@ -13,15 +13,15 @@ This document provides additional technical details for integrating Adobe Commer
 
 The integration is based on the *Magento_CardinalCommerce* module that implements the Cardinal Cruise Standard integration approach.
 
-The Cardinal Cruise Standard integration is purely a JavaScript approach that is all encompassing. When enabling this approach for Cardinal Consumer Authentication, this integration will handle the device data collection, initiating the transaction for [CCA][Cardinal Consumer Authentication], presenting the authentication session if required, and returning the results of authentication once completed. This is recommended integration approach for CCA.
+The Cardinal Cruise Standard integration is purely a JavaScript approach that is all encompassing. When enabling this approach for Cardinal Consumer Authentication, this integration will handle the device data collection, initiating the transaction for [CCA][cardinalcommerce], presenting the authentication session if required, and returning the results of authentication once completed. This is recommended integration approach for CCA.
 
 The following diagram shows a simplified 3-D Secure verification flow using Cardinal Cruise Standard integration approach provided by CardinalCommerce:
 
-![CardinalCommerce Interaction](../../_images/cardinal_commerce.svg)
+![CardinalCommerce Interaction](../../images/cardinal-commerce.svg)
 
 ## Magento_CardinalCommerce module overview
 
-The *Magento_CardinalCommerce* [module][] allows you to:
+The *Magento_CardinalCommerce* [module] allows you to:
 
 -  Start `Cardinal Consumer Authentication` for enabling card network programs including Verified by Visa&reg;, MasterCard SecureCode&reg; and Identity Check&reg;, American Express SafeKey&reg;, Discover ProtectBuy&reg; and Diners International&reg; and JCB J-Secure&reg;.
 
@@ -73,7 +73,7 @@ And the `system.xml` file of the AuthorizenetAcceptjs payment method:
 
 You can pass this parameter on storefront via checkout config using `\Magento\Checkout\Model\ConfigProviderInterface`
 
-See [app\code\AuthorizenetCardinal\Model\Checkout\ConfigProvider.php](https://github.com/magento/magento2/blob/2.3/app/code/Magento/AuthorizenetCardinal/Model/Checkout/ConfigProvider.php) as an example.
+See [app\code\AuthorizenetCardinal\Model\Checkout\ConfigProvider.php] as an example.
 
 ```php
 namespace Magento\AuthorizenetCardinal\Model\Checkout;
@@ -205,7 +205,7 @@ define([
 });
 ```
 
-Once the response [JWT][] is received after consumer authentication, you will need to send it to your backend to verify and extract the results. In the example above response JWT is added to payment additional data and passed to backend along with them.
+Once the response [JWT] is received after consumer authentication, you will need to send it to your backend to verify and extract the results. In the example above response JWT is added to payment additional data and passed to backend along with them.
 
 ### CCA Results Extracting And Validation On Backend
 
@@ -213,7 +213,7 @@ Cardinal Consumer Authentication results can be extracted from CardinalCommerce 
 
 You can customize CCA results validation by creating your own implementation of `\Magento\CardinalCommerce\Model\Response\JwtPayloadValidatorInterface`.
 
-Below is an example of the extracting array content of a CardinalCommerce response JWT in [\Magento\AuthorizenetCardinal\Gateway\Request\Authorize3DSecureBuilder][]:
+Below is an example of the extracting array content of a CardinalCommerce response JWT in [\Magento\AuthorizenetCardinal\Gateway\Request\Authorize3DSecureBuilder]:
 
 ```php
 use Magento\AuthorizenetAcceptjs\Gateway\SubjectReader;
@@ -296,8 +296,7 @@ In our example, the `ECIFlag` and `CAVV` values were included in the transaction
 
 Then you can expect to see an additional field with a cardholder authentication verification response code in the response from your payment gateway. This code lets you know whether the information got back to the issuer. If the issuer recognizes this data as matching whatever they recorded earlier in the transaction when the cardholder was authenticating, they will respond with a successful code in this field.
 
-<!-- Link Definitions -->
-[CardinalCommerce]: https://cardinalcommerce.com/
+[cardinalcommerce]: https://corporate.visa.com/en/solutions/visa-protect.html
 [module]: https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#module
 [app\code\AuthorizenetCardinal\Model\Checkout\ConfigProvider.php]: https://github.com/magento/magento2/blob/2.3/app/code/Magento/AuthorizenetCardinal/Model/Checkout/ConfigProvider.php
 [JWT]: https://en.wikipedia.org/wiki/JSON_Web_Token

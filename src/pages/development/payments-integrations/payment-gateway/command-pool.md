@@ -7,13 +7,11 @@ keywords:
   - Payments
 ---
 
-import Docs from '/src/_includes/braintree-note.md'
-
-<Docs />
+<Fragment src="/includes/braintree-note.md"/>
 
 # Gateway Command Pool
 
-All [gateway commands](/gateway-command.md) implemented for a particular payment provider, should be added to a command pool for this provider. A command pool is a set of gateway commands available for integration with a particular payment provider. The pool is added to the configuration of the payment provider using [dependency injection](../../components/dependency-injection.md).
+All [gateway commands](gateway-command.md) implemented for a particular payment provider, should be added to a command pool for this provider. A command pool is a set of gateway commands available for integration with a particular payment provider. The pool is added to the configuration of the payment provider using [dependency injection](../../components/dependency-injection.md).
 
 ## Interface
 
@@ -30,7 +28,7 @@ Following is an example of the command pool configuring for the Braintree paymen
 
 ```xml
 ...
-<!-- BraintreeCommandPool - a command pool for the Braintree payments provider -->
+\<!-- BraintreeCommandPool - a command pool for the Braintree payments provider --\>
 <virtualType name="BraintreeCommandPool" type="Magento\Payment\Gateway\Command\CommandPool">
     <arguments>
         <argument name="commands" xsi:type="array">
@@ -42,7 +40,7 @@ Following is an example of the command pool configuring for the Braintree paymen
     </arguments>
 </virtualType>
 ...
-<!-- Adding BraintreeCommandPool to the Braintree payment method configuration:-->
+\<!-- Adding BraintreeCommandPool to the Braintree payment method configuration:--\>
 <virtualType name="BraintreeFacade" type="Magento\Payment\Model\Method\Adapter">
     <arguments>
         ...

@@ -17,7 +17,7 @@ Use this approach anytime you need to inject functionality into template files a
 
 <InlineAlert variant="info" slots="text"/>
 
-View models are available in Adobe Commerce and Magento Open Source 2.2 and later. If your code must be compatible with older versions of Magento, consider adding your logic to blocks. For more information, see [Backward compatibility](https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy/).
+View models are available in Adobe Commerce and Magento Open Source 2.2 and later. If your code must be compatible with older versions of Magento, consider adding your logic to blocks. For more information, see [Backward compatibility](https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy).
 
 <InlineAlert variant="info" slots="text"/>
 

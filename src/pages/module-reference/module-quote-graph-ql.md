@@ -20,9 +20,9 @@ For information about a module installation in Magento 2, see [Enable or disable
 
 ## Extensibility
 
-Extension developers can interact with the Magento_QuoteDownloadableLinks module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_QuoteDownloadableLinks module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_QuoteDownloadableLinks module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_QuoteDownloadableLinks module.
 
 ## Additional information
 
@@ -54,7 +54,7 @@ You can get more information about [GraphQl In Magento 2](https://developer.adob
   [Learn more about removeCouponFromCart mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/remove-coupon/).
 
 - `updateCartItems` mutation - allows you to modify items in the specified cart.
-  [Learn more about updateCartItems mutation]((https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/update-items/).
+  [Learn more about updateCartItems mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/update-items/).
 
 - `removeItemFromCart` mutation - deletes the entire quantity of a specified item from the cart.
   [Learn more about removeItemFromCart mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/remove-item/).

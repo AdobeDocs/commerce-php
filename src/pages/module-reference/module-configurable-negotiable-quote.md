@@ -19,13 +19,13 @@ The Magento_ConfigurableNegotiableQuote module has a dependency on the Magento_N
 
 ## Structure
 
-[Learn about a typical file structure for a Magento 2 module](https://developer.adobe.com/commerce/php/development/build/component-file-structure/).
+[Learn about a typical file structure for a Magento 2 module](https://developer.adobe.com/commerce/php/development/build/component-file-structure).
 
 ## Extensibility
 
-Extension developers can interact with the Magento_ConfigurableNegotiableQuote module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_ConfigurableNegotiableQuote module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_ConfigurableNegotiableQuote module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_ConfigurableNegotiableQuote module.
 
 <InlineAlert slots="text" />
 The version of this module is 100.5.1.

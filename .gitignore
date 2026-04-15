@@ -6,10 +6,12 @@
 .history
 .idea
 .editorconfig
+.cursor/
+.claude/
 
 # npm yarn
 node_modules
-package.lock
+package-lock.json
 yarn-error.log
 .pnp.*
 .yarn/*
@@ -45,11 +47,15 @@ local-test.yml
 .yalc
 yalc.lock
 
-tmp/
 
-# Super-linter outputs
+
+# Linter outputs
 super-linter-output
 super-linter.log
+linter-report.txt
 
 # GitHub Actions leftovers
 github_conf
+
+# Temporary files
+tmp/

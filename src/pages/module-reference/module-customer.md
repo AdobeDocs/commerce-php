@@ -61,11 +61,11 @@ For information about a module installation in Magento 2, see [Enable or disable
 
 ## Extensibility
 
-Extension developers can interact with the Magento_Customer module. For more information about the Magento extension mechanism, see [Magento plugins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_Customer module. For more information about the Magento extension mechanism, see [Magento plugins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_Customer module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_Customer module.
 
-A lot of functionality in the module is on JavaScript, use [mixins](https://developer.adobe.com/commerce/frontend-core/javascript/mixins/) to extend it.
+A lot of functionality in the module is on JavaScript, use [mixins](https://developer.adobe.com/commerce/frontend-core/javascript/mixins) to extend it.
 
 ### Events
 
@@ -331,7 +331,7 @@ For more information about a layout in Magento 2, see the [Layout documentation]
 - `\Magento\Customer\Model\Customer\Source\GroupSourceLoggedInOnlyInterface`
     - get customer group attribute source
 
-For information about a public API in Magento 2, see [Public interfaces & APIs](https://developer.adobe.com/commerce/php/development/components/api-concepts/).
+For information about a public API in Magento 2, see [Public interfaces & APIs](https://developer.adobe.com/commerce/php/development/components/api-concepts).
 
 ### UI components
 
@@ -356,7 +356,7 @@ More information can get at articles:
 - [Customer Configurations](https://experienceleague.adobe.com/en/docs/commerce-admin/config/customers/customer-configuration)
 - [Customer Attributes](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/attributes/attribute-properties)
 - [Customer Address Attributes](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/attributes/address-attributes)
-- [EAV And Extension Attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
+- [EAV And Extension Attributes](https://developer.adobe.com/commerce/php/development/components/attributes)
 - [2.4.x Release information](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview)
 
 ### Console commands

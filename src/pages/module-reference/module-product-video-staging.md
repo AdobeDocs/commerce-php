@@ -17,7 +17,7 @@ You can find the list of modules that have dependencies on the Magento_ProductVi
 
 ## Extension points
 
-Extension points enable extension developers to interact with the Magento_ProductVideoStaging module. [The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_ProductVideoStaging module.
+Extension points enable extension developers to interact with the Magento_ProductVideoStaging module. [The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_ProductVideoStaging module.
 
 ### Layouts
 

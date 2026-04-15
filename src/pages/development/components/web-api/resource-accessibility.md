@@ -13,11 +13,11 @@ The list of resources that you can access depends on your user type. All custome
 Each administrator or integration user can have a unique set of permissions which is configured in the Admin.
 Permissions required to access particular resource are configured in the `webapi.xml` file. This table lists the resources that each user type can access:
 
-User type | Accessible resources (defined in `webapi.xml`)
---- | ---
-Administrator or Integration | Resources for which administrators or integrators are authorized. For example, if administrators are authorized for the `Magento_Customer::group` resource, they can make a `GET /V1/customerGroups/:id` call.
-Customer | Resources with `anonymous` or `self` permission
-Guest user | Resources with `anonymous` permission
+| User type | Accessible resources (defined in `webapi.xml`) |
+| --- | --- |
+| Administrator or Integration | Resources for which administrators or integrators are authorized. For example, if administrators are authorized for the `Magento_Customer::group` resource, they can make a `GET /V1/customerGroups/:id` call. |
+| Customer | Resources with `anonymous` or `self` permission |
+| Guest user | Resources with `anonymous` permission |
 
 ## Relationship between `acl.xml` and `webapi.xml`
 
@@ -27,7 +27,7 @@ All `acl.xml` files across all modules are consolidated to build an ACL tree, wh
 
 ### Sample customer `acl.xml`
 
-For example, account management, customer configuration, and customer group resource permissions are defined in the Customer module's [`acl.xml`](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Customer/etc/acl.xml).
+For example, account management, customer configuration, and customer group resource permissions are defined in the Customer module's [`acl.xml`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/etc/acl.xml).
 
 When a developer creates the Web API configuration file (`webapi.xml`), the permissions defined in acl.xml are referenced to create access rights for each API resource.
 
@@ -85,12 +85,5 @@ Authorization is granted to either an administrator (or an integration) defined 
 
 <InlineAlert variant="info" slots="text"/>
 
-<div>
-
-A guest or anonymous is a special permission that doesn't need to be defined in `acl.xml` (and will not show up in the permissions tree in the Admin). It just indicates that the current resource in `webapi.xml` can be accessed without the need for authentication.
-
-<br></br>
-
+A guest or anonymous is a special permission that doesn't need to be defined in `acl.xml` (and will not show up in the permissions tree in the Admin). It just indicates that the current resource in `webapi.xml` can be accessed without the need for authentication. \<br\>\</br\>
 Similarly, self is a special access used if you already have an authenticated session with the system. Self access enables a user to access resources they own. For example, `GET /V1/customers/me` fetches the logged-in customer's details. This is typically useful for JavaScript-based widgets.
-
-</div>

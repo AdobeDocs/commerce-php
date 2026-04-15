@@ -44,7 +44,7 @@ For information about a UI component in Magento 2, see [Overview of UI component
 - `\Magento\LoginAsCustomerLog\Api\SaveLogsInterface`:
     - save login as custom logs entities
 
-For information about a public API in Magento 2, see [Public interfaces & APIs](https://developer.adobe.com/commerce/php/development/components/api-concepts/).
+For information about a public API in Magento 2, see [Public interfaces & APIs](https://developer.adobe.com/commerce/php/development/components/api-concepts).
 
 ## Additional information
 

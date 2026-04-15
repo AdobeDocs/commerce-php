@@ -23,15 +23,15 @@ The module does not create any backward incompatible changes. Can be deactivated
 
 ## Structure
 
-[Learn about a typical file structure for a Magento 2 module](https://developer.adobe.com/commerce/php/development/build/component-file-structure/).
+[Learn about a typical file structure for a Magento 2 module](https://developer.adobe.com/commerce/php/development/build/component-file-structure).
 
 ## Extensibility
 
-Magento_NegotiableQuote uses Extensible attributes to extend Magento_Quote. For more information about the Magento extensible attributes, see [Adding extension attributes to entity](https://developer.adobe.com/commerce/php/development/components/add-attributes/).
+Magento_NegotiableQuote uses Extensible attributes to extend Magento_Quote. For more information about the Magento extensible attributes, see [Adding extension attributes to entity](https://developer.adobe.com/commerce/php/development/components/add-attributes).
 
-Extension developers can interact with the Magento_NegotiableQuote module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_NegotiableQuote module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_NegotiableQuote module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_NegotiableQuote module.
 
 ### Layouts
 
@@ -47,7 +47,7 @@ The following directories contain extensible UI components:
 
 * `Magento\NegotiableQuote\view\frontend\ui_component` - negotiable quote listing
 
-For more information, see [UI Listing/Grid Component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/listing-grid/) and [UI Form Component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/form/).
+For more information, see [UI Listing/Grid Component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/listing-grid) and [UI Form Component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/form).
 
 <InlineAlert slots="text" />
 The version of this module is 101.0.2.

@@ -26,9 +26,9 @@ For information about a module installation in Magento 2, see [Enable or disable
 
 ## Extensibility
 
-Extension developers can interact with the Magento_Quote module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_Quote module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_Quote module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_Quote module.
 
 ### Events
 
@@ -300,7 +300,7 @@ For information about an event in Magento 2, see [Events and observers](https://
 - `\Magento\Quote\Model\QuoteIdToMaskedQuoteIdInterface`
     - converts quote ID to the masked quote ID
 
-For information about a public API in Magento 2, see [Public interfaces & APIs](https://developer.adobe.com/commerce/php/development/components/api-concepts/).
+For information about a public API in Magento 2, see [Public interfaces & APIs](https://developer.adobe.com/commerce/php/development/components/api-concepts).
 
 <InlineAlert slots="text" />
 The version of this module is 101.2.8.

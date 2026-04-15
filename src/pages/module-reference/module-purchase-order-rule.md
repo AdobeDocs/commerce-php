@@ -45,14 +45,14 @@ which must be installed and enabled first. This module does not create any backw
 ## Structure
 
 ​
-[Learn about a typical file structure for a Magento 2 module](https://developer.adobe.com/commerce/php/development/build/component-file-structure/).
+[Learn about a typical file structure for a Magento 2 module](https://developer.adobe.com/commerce/php/development/build/component-file-structure).
 ​
 
 ## Extensibility
 
-​Extension developers can interact with the Magento_PurchaseOrderRule module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+​Extension developers can interact with the Magento_PurchaseOrderRule module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_PurchaseOrderRule module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_PurchaseOrderRule module.
 
 ### Layouts
 
