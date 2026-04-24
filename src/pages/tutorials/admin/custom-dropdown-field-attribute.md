@@ -1,5 +1,5 @@
 ---
-title: Add a Custom dropdown Field Attribute | Commerce PHP Extensions
+title: Add a Custom Dropdown Field Attribute | Commerce PHP Extensions
 description: Follow this tutorial to create a custom dropdown field attribute for Adobe Commerce or Magento Open Source.
 contributor_name: Magesh TM
 contributor_link: https://github.com/mtmmahi
@@ -244,7 +244,8 @@ To remove the attribute, run `bin/magento setup:rollback` and target this patch.
 ### Code reference
 
 ```php
-<?php declare(strict_types=1);
+<?php
+declare(strict_types=1);
 
 namespace ExampleCorp\Customer\Setup\Patch\Data;
 
@@ -410,3 +411,4 @@ class AddCustomerAttributeOptions implements DataPatchInterface, PatchRevertable
     }
 }
 ```
+

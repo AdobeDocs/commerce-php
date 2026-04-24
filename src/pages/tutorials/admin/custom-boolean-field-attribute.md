@@ -1,5 +1,5 @@
 ---
-title: Add a Custom boolean Field Attribute | Commerce PHP Extensions
+title: Add a Custom Boolean Field Attribute | Commerce PHP Extensions
 description: Follow this tutorial to create a custom boolean field attribute for Adobe Commerce or Magento Open Source.
 contributor_name: Magesh TM
 contributor_link: https://github.com/mtmmahi
@@ -20,9 +20,6 @@ This Customer attribute will be used to store a simple Yes/No flag on a customer
 Create a data patch class called `AddCustomerAttributeBoolean` under the `\ExampleCorp\Customer\Setup\Patch\Data` namespace. This makes the application execute the data patch automatically when `bin/magento setup:upgrade` is run. This class implements both `\Magento\Framework\Setup\Patch\DataPatchInterface` and `\Magento\Framework\Setup\Patch\PatchRevertableInterface`. Adding the revertable interface requires implementing a `revert()` method that removes the attribute when the patch is rolled back.
 
 ```php
-<?php
-declare(strict_types=1);
-
 namespace ExampleCorp\Customer\Setup\Patch\Data;
 
 use \Magento\Framework\Setup\Patch\DataPatchInterface;
@@ -64,7 +61,7 @@ The dependencies to the data patch are injected using constructor DI and are lis
 The factory is stored rather than a single `CustomerSetup` instance, because both `apply()` and `revert()` need to create their own instance.
 
 ```php
-<?php declare(strict_types=1);
+
 /**
  * Constructor
  *
@@ -251,7 +248,8 @@ To remove the attribute, run `bin/magento setup:rollback` and target this patch.
 ### Code reference
 
 ```php
-<?php declare(strict_types=1);
+<?php
+declare(strict_types=1);
 
 namespace ExampleCorp\Customer\Setup\Patch\Data;
 
@@ -417,3 +415,4 @@ class AddCustomerAttributeBoolean implements DataPatchInterface, PatchRevertable
     }
 }
 ```
+

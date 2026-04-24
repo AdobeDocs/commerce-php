@@ -1,6 +1,6 @@
 ---
-title: Add a Custom boolean Field Attribute | Commerce PHP Extensions
-description: Follow this tutorial to create a custom boolean field attribute for Adobe Commerce or Magento Open Source.
+title: Add a Custom Multiselect Field Attribute | Commerce PHP Extensions
+description: Follow this tutorial to create a custom multiselect field attribute for Adobe Commerce or Magento Open Source.
 contributor_name: Magesh TM
 contributor_link: https://github.com/mtmmahi
 keywords:
@@ -11,7 +11,7 @@ keywords:
 
 This tutorial describes how a developer can create a custom multiselect attribute for the Customer entity using code. This will reflect in both the [Customer Grid](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/manage-account) and the [Customer Form](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/update-account) in the Admin.
 
-Use a multiselect attribute when you need to store multiple simultaneous values for a single customer field — for example, eligible shipping methods, allowed sales channels, or subscription preferences. Unlike the [dropdown attribute](custom-dropdown-attribute.md), which stores a single selected option ID as an integer, a multiselect attribute stores a comma-separated list of option IDs as a `varchar` value, handled by the `ArrayBackend` backend model. This tutorial also implements `PatchRevertableInterface`, which allows the attribute to be cleanly removed by running `bin/magento setup:rollback`.
+Use a multiselect attribute when you need to store multiple simultaneous values for a single customer field — for example, eligible shipping methods, allowed sales channels, or subscription preferences. Unlike the [dropdown attribute](custom-dropdown-field-attribute.md), which stores a single selected option ID as an integer, a multiselect attribute stores a comma-separated list of option IDs as a `varchar` value, handled by the `ArrayBackend` backend model. This tutorial also implements `PatchRevertableInterface`, which allows the attribute to be cleanly removed by running `bin/magento setup:rollback`.
 
 ## Code
 
@@ -20,8 +20,6 @@ Use a multiselect attribute when you need to store multiple simultaneous values 
 Create a data patch class called `AddCustomerAttributeMultipleOptions` under the `\ExampleCorp\Customer\Setup\Patch\Data` namespace. This makes the application execute the data patch automatically when `bin/magento setup:upgrade` is run. This class implements both `\Magento\Framework\Setup\Patch\DataPatchInterface` and `\Magento\Framework\Setup\Patch\PatchRevertableInterface`.
 
 ```php
-<?php
-declare(strict_types=1);
 
 namespace ExampleCorp\Customer\Setup\Patch\Data;
 
@@ -246,7 +244,8 @@ To remove the attribute, run `bin/magento setup:rollback` and target this patch.
 ### Code reference
 
 ```php
-<?php declare(strict_types=1);
+<?php
+declare(strict_types=1);
 
 namespace ExampleCorp\Customer\Setup\Patch\Data;
 
