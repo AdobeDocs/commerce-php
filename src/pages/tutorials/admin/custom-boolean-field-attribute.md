@@ -20,6 +20,9 @@ This Customer attribute will be used to store a simple Yes/No flag on a customer
 Create a data patch class called `AddCustomerAttributeBoolean` under the `\ExampleCorp\Customer\Setup\Patch\Data` namespace. This makes the application execute the data patch automatically when `bin/magento setup:upgrade` is run. This class implements both `\Magento\Framework\Setup\Patch\DataPatchInterface` and `\Magento\Framework\Setup\Patch\PatchRevertableInterface`. Adding the revertable interface requires implementing a `revert()` method that removes the attribute when the patch is rolled back.
 
 ```php
+<?php
+declare(strict_types=1);
+
 namespace ExampleCorp\Customer\Setup\Patch\Data;
 
 use \Magento\Framework\Setup\Patch\DataPatchInterface;
