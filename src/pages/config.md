@@ -782,6 +782,10 @@
             - [Customize form configuration](/tutorials/admin/custom-product-creation-form/configuration.md)
             - [Customize using a modifier class](/tutorials/admin/custom-product-creation-form/modifier-class.md)
         - [Create a text field attribute](/tutorials/admin/custom-text-field-attribute.md)
+        - [Create a boolean field attribute](/tutorials/admin/custom-boolean-field-attribute.md)
+        - [Create a dropdown field attribute](/tutorials/admin/custom-dropdown-field-attribute.md)
+        - [Create a multiselect field attribute](/tutorials/admin/custom-multiselect-field-attribute.md)
+
     - [Frontend development](/tutorials/frontend/index.md)
         - [Customize checkout](/tutorials/frontend/custom-checkout/index.md)
             - [Add a new checkout step](/tutorials/frontend/custom-checkout/add-new-step.md)
