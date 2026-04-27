@@ -20,6 +20,8 @@ Use a multiselect attribute when you need to store multiple simultaneous values 
 Create a data patch class called `AddCustomerAttributeMultipleOptions` under the `\ExampleCorp\Customer\Setup\Patch\Data` namespace. This makes the application execute the data patch automatically when `bin/magento setup:upgrade` is run. This class implements both `\Magento\Framework\Setup\Patch\DataPatchInterface` and `\Magento\Framework\Setup\Patch\PatchRevertableInterface`.
 
 ```php
+<?php
+declare(strict_types=1);
 
 namespace ExampleCorp\Customer\Setup\Patch\Data;
 
