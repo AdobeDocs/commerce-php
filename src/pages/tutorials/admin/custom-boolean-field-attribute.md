@@ -64,7 +64,6 @@ The dependencies to the data patch are injected using constructor DI and are lis
 The factory is stored rather than a single `CustomerSetup` instance, because both `apply()` and `revert()` need to create their own instance.
 
 ```php
-
 /**
  * Constructor
  *
