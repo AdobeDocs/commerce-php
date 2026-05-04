@@ -8,4 +8,4 @@ description: N/A
 NegotiableQuoteWeee module extends Weee if it is enabled in configuration and it adds fpt attributes to negotiable quote.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.1.
+The version of this module is 100.5.1.

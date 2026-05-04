@@ -27,7 +27,7 @@ The response to these requests will return objects with the following structure:
 </product>
 ```
 
-## Product list response:
+## Product list response
 
 ```xml
 <products>

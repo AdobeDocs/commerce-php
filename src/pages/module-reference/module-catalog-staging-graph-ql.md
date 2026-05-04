@@ -9,4 +9,4 @@ description: N/A
 This includes preview capabilities for catalog entities.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.6.
+The version of this module is 100.4.7.

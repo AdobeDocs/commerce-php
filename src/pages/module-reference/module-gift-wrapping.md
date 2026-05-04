@@ -8,4 +8,4 @@ from the store as gifts and charge it individually. Magento\GiftWrapping module 
 messages by combining gift messages with gift wrapping functionality
 
 <InlineAlert slots="text" />
-The version of this module is 101.2.6.
+The version of this module is 101.2.7.

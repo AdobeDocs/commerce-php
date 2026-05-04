@@ -30,4 +30,4 @@ Public APIs are defined in the `Api` and `Api/Data` directories.
 The `etc/webapi.xml` file defines endpoints for configuring in store pickup for sources.
 
 <InlineAlert slots="text" />
-The version of this module is 1.1.3.
+The version of this module is 1.1.4.

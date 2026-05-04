@@ -11,4 +11,4 @@ When a gift card is ordered, a unique code is generated that is emailed to a cus
 This unique number can only be redeemed by one customer.
 
 <InlineAlert slots="text" />
-The version of this module is 101.3.7.
+The version of this module is 101.3.8.

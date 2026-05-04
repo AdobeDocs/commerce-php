@@ -1,6 +1,6 @@
 ---
 title: Convert Serialized Data to JSON | Commerce PHP Extensions
-description: Follow this tutorial to convert database data from the defaul PHP serialized format to JSON.
+description: Follow this tutorial to convert database data from the default PHP serialized format to JSON.
 keywords:
   - Extensions
 ---
@@ -23,7 +23,7 @@ Your extension *must* convert data in the following cases:
 Your extension will continue working in Adobe Commerce and Magento Open Source 2.2 and above in the following cases, but we recommend you switch to using the JSON format for security reasons:
 
 1. The extension stores its own serialized data.
-1. The extension is responsible for serializing and unserializing data stored in core tables.
+1. The extension is responsible for serializing and deserializing data stored in core tables.
 
 ### API Overview
 
@@ -46,7 +46,7 @@ This tutorial uses the following framework API in the following ways:
 
 ## Step 1: Create the basic upgrade script
 
-The upgrade script is what runs during the upgrade step of your extension's [lifecycle][1].
+The upgrade script is what runs during the upgrade step of your extension's lifecycle.
 Create the `UpgradeData.php` file in the `Setup` directory inside your extension's root directory.
 
 Inside the file, create the class `UpgradeData` which implements `\Magento\Framework\Setup\UpgradeDataInterface`.
@@ -132,7 +132,7 @@ class UpgradeData implements UpgradeDataInterface
 ## Step 2: Check that the module exists
 
 Any module can replace another module.
-If your extension stores data in the tables of another module or it serializes or unserializes data stored in core modules, make sure the module exists and is active before executing the upgrade logic.
+If your extension stores data in the tables of another module or it serializes or deserializes data stored in core modules, make sure the module exists and is active before executing the upgrade logic.
 
 Use the `\Magento\Framework\Module\Manager` class to check the status of the module your extension depends on.
 
@@ -277,7 +277,7 @@ If your module uses nested serialized data in the database, create a custom data
 The following example is a custom data converter class that converts data in the `product_options` column in the `sales_order_item` table.
 This field contains nested serialized data that needs conversion.
 
-Since you cannot assume the format of the data when initially converted, the following example also checks the format and uses the appropriate methods to unserialize and serialize the data using the original format.
+Since you cannot assume the format of the data when initially converted, the following example also checks the format and uses the appropriate methods to deserialize and serialize the data using the original format.
 
 ```php
 <?php

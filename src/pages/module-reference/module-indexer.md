@@ -29,19 +29,19 @@ The Magento_Indexer module creates the following tables in the database:
 - `indexer_state`
 - `mview_state`
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Structure
 
 `App/` - the directory that contains launch application entry point.
 
-For information about a typical file structure of a module in Magento 2, see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure/#module-file-structure).
+For information about a typical file structure of a module in Magento 2, see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure#module-file-structure).
 
 ## Extensibility
 
-Extension developers can interact with the Magento_Indexer module. For more information about the Magento extension mechanism, see [Magento plugins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_Indexer module. For more information about the Magento extension mechanism, see [Magento plugins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_Indexer module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_Indexer module.
 
 ### Events
 
@@ -101,15 +101,15 @@ Cron group configuration can be set at `etc/crontab.xml`:
 - `indexer_update_all_views` - update indexer views
 - `indexer_clean_all_changelogs` - clean indexer view changelogs
 
-[Learn how to configure and run cron in Magento.](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html).
+[Learn how to configure and run cron in Magento.](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs).
 
 More information can get at articles:
 
 - [Learn more about indexing](https://developer.adobe.com/commerce/php/development/components/indexing/)
-- [Learn more about Indexer optimization](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/)
-- [Learn more how to add custom indexer](https://developer.adobe.com/commerce/php/development/components/indexing/custom-indexer/)
-- [Learn how to manage indexers](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
-- [Learn more about Index Management](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html)
+- [Learn more about Indexer optimization](https://developer.adobe.com/commerce/php/development/components/indexing/optimization)
+- [Learn more how to add custom indexer](https://developer.adobe.com/commerce/php/development/components/indexing/custom-indexer)
+- [Learn how to manage indexers](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers)
+- [Learn more about Index Management](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.7.
+The version of this module is 100.4.8.

@@ -9,4 +9,4 @@ description: N/A
 to generate giftcard product information.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.7.
+The version of this module is 100.4.8.

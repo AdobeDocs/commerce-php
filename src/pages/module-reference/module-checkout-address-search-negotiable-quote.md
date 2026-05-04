@@ -10,4 +10,4 @@ CheckoutAddressSearchNegotiableQuote module extends Magento_CheckoutAddressSearc
 CheckoutAddressSearchNegotiableQuote module removes shipping address search configuration on shipping step on checkout if negotiable quote address is locked and it replaces selected shipping address component to display only negotiable quote address.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.1.
+The version of this module is 100.5.1.

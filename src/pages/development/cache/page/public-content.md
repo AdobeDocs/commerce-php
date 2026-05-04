@@ -138,7 +138,7 @@ For another example of a context class, see [Magento/Framework/App/Http/Context]
 
 ### `X-Magento-Vary` cookie
 
-Use the `X-Magento-Vary` cookie to transfer context on the HTTP layer. HTTP proxies can be configured to calculate a unique identifier for cache based on the cookie and URL. For example, [our sample Varnish 4 configuration](https://github.com/magento/magento2/blob/2.4/app/code/Magento/PageCache/etc/varnish4.vcl#L63-L68) uses the following:
+Use the `X-Magento-Vary` cookie to transfer context on the HTTP layer. HTTP proxies can be configured to calculate a unique identifier for cache based on the cookie and URL. For example, [our sample Varnish 4 configuration](https://github.com/magento/magento2/blob/2.4/app/code/Magento/PageCache/etc/varnish4.vcl) uses the following:
 
 ```conf
 sub vcl_hash {
@@ -215,6 +215,4 @@ Adobe Commerce and Magento Open Source use cache tags for link creation. The per
 
 Use only HTTP POST or PUT methods to change state (e.g., adding to a shopping cart, adding to a wishlist, etc.) and don't expect to see caching on these methods. Using GET or HEAD methods might trigger caching and prevent updates to private content. For more information about caching, see [RFC-2616 section 13](https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html)
 
-import Docs from '/src/_includes/page-cache-checklist.md'
-
-<Docs />
+<Fragment src="/includes/page-cache-checklist.md"/>

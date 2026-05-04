@@ -26,4 +26,4 @@ The Magento_AdminGwsStaging module does not provide any specific extension point
 For more Magento 2 developer documentation, see [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs/).
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.4.
+The version of this module is 100.4.5.

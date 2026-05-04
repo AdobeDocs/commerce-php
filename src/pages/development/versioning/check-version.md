@@ -52,7 +52,7 @@ Magento/2.3 (Community)
 
 Log in as a registered Admin user. The application version is displayed at the bottom right of the page, above the  **Account Activity** and **Report an Issue** links:
 
-![Check the application version](../../_images/version.png)
+![Check the application version](../../images/version.png)
 
 ## The `composer.lock` file
 

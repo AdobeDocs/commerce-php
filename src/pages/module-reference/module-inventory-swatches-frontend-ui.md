@@ -18,4 +18,4 @@ This module is installed as part of Magento Open Source. It may be disabled if t
 is provided by a 3rd-party system or if you run a headless version of Magento.
 
 <InlineAlert slots="text" />
-The version of this module is 1.0.3.
+The version of this module is 1.0.4.

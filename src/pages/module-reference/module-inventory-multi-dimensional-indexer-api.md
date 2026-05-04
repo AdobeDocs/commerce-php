@@ -25,4 +25,4 @@ and the ability to reindex data in the scope of particular dimension only.
 An aliasing mechanism guarantees zero downtime to make Front-End responsive while Full Reindex being processed.
 
 <InlineAlert slots="text" />
-The version of this module is 1.2.3.
+The version of this module is 1.2.4.

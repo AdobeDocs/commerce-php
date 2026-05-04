@@ -3,7 +3,7 @@ title: ApplicationPerformanceMonitor
 description: Performance Monitor for Application
 ---
 
-**ApplicationPerformanceMonitor**
+# ApplicationPerformanceMonitor
 
 Monitors the Performance of the Application
 
@@ -71,4 +71,4 @@ The additional options `newrelic_output_enable` and `newrelic_output_verbose` ar
 See README.md in ApplicationPerformanceMonitorNewRelic for more details on that.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.0.
+The version of this module is 100.4.1.

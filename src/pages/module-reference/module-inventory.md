@@ -13,7 +13,7 @@ describes the MSI (Multi-Source Inventory) project in more detail.
 
 All Inventory Management modules follow the
 [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle).
-[Inventory management architecture](https://developer.adobe.com/commerce/php/architecture/modules/inventory-management/)
+[Inventory management architecture](https://developer.adobe.com/commerce/php/architecture/modules/inventory-management)
 provides additional insight about the overall structure of these modules.
 
 ## Installation details
@@ -28,4 +28,4 @@ interfaces and extension points related to this module are located in the `Inven
 Use the interfaces and extension points defined in `InventoryApi` to extend this module.
 
 <InlineAlert slots="text" />
-The version of this module is 1.2.5.
+The version of this module is 1.2.6.

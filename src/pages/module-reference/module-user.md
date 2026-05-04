@@ -11,4 +11,4 @@ Different roles can be assigned to different users to define their permissions.
 For admin passwords, it enables setting lifetimes and locking them when expired or when a specified numbers of failures have occurred. It allows preventing password brute force attacks for system backend.
 
 <InlineAlert slots="text" />
-The version of this module is 101.2.7.
+The version of this module is 101.2.8.

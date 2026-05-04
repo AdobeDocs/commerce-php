@@ -26,17 +26,17 @@ This module creates the following tables in the database:
 - `reporting_users`
 - `reporting_system_updates`
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Extensibility
 
-Extension developers can interact with the Magento_NewRelicReporting module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_NewRelicReporting module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_NewRelicReporting module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_NewRelicReporting module.
 
 ## Additional information
 
-[Learn more about New Relic Reporting](https://experienceleague.adobe.com/docs/commerce-admin/start/reporting/new-relic-reporting.html).
+[Learn more about New Relic Reporting](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service).
 
 ### Console commands
 
@@ -52,7 +52,7 @@ Cron group configuration can be set at `etc/crontab.xml`:
 
 - `magento_newrelicreporting_cron` - runs collecting all new relic reports
 
-[Learn how to configure and run cron in Magento.](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html).
+[Learn how to configure and run cron in Magento.](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs).
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.5.
+The version of this module is 100.4.6.

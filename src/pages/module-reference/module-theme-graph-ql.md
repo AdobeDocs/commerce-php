@@ -9,4 +9,4 @@ description: N/A
 to generate theme fields information endpoints.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.4.
+The version of this module is 100.4.5.

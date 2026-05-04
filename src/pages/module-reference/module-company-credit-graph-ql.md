@@ -8,4 +8,4 @@ description: N/A
 Provides GraphQl queries to access company credit information.
 
 <InlineAlert slots="text" />
-The version of this module is 1.4.0.
+The version of this module is 1.5.1.

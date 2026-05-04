@@ -23,7 +23,7 @@ Follow the [dependency inversion principle] and use abstractions in your code to
 This means that your high level classes should use the interfaces of low level classes instead of working with them directly.
 
 Using interfaces in your code reduces the risk of incompatibility bugs when Adobe changes the underlying implementation of those interfaces.
-It also lets you focus on what a class does instead of how its implemented.
+It also lets you focus on what a class does instead of how it's implemented.
 
 Since the codebase follows this principle, you can map your own implementation of an interface to a dependent class or service using the [`di.xml`] file.
 
@@ -129,10 +129,10 @@ Since you cannot specify this data in the constructor signature, the application
 To get around this limitation, injectable objects can depend on [factories] that produce newable objects.
 
 [Dependency Injection]: https://en.wikipedia.org/wiki/Dependency_injection
-[dependency inversion principle]: http://www.oodesign.com/dependency-inversion-principle.html
+[dependency inversion principle]: https://www.oodesign.com/dependency-inversion-principle
 [`di.xml`]: ../build/dependency-injection-file.md
 [`ObjectManager`]: object-manager/index.md
-[code compiler tool]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/code-compiler.html
+[code compiler tool]: https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/code-compiler
 [proxies]: proxies.md
 [proxy]: proxies.md
 [factories]: factories.md

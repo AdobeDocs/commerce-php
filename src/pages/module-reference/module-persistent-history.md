@@ -8,4 +8,4 @@ products added to  wishlist, recently ordered items, currently compared products
 products and customer group membership and segmentation.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.4.
+The version of this module is 100.4.5.

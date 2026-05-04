@@ -7,4 +7,4 @@ keywords:
 
 # Introduction
 
-The Module Reference contains brief descriptions for modules of the Adobe Commerce v2.4.7. All module topics are generated from the corresponding README file of the module.
+The Module Reference contains brief descriptions for modules of the Adobe Commerce v2.4.8. All module topics are generated from the corresponding README file of the module.

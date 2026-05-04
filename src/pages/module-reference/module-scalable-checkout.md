@@ -10,4 +10,4 @@ Extraction of Checkout tables to separate database will guarantee better scalabi
 and will allow main server to be optimized for read operations which will reduce latency.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.6.
+The version of this module is 100.4.7.

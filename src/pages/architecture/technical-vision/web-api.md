@@ -7,9 +7,7 @@ keywords:
 
 # Web API technical vision
 
-import Docs from '/src/_includes/web-api.md'
-
-<Docs />
+<Fragment src="/includes/web-api.md"/>
 
 See [more details](https://en.wikipedia.org/wiki/Web_API) about the importance of web APIs in modern web applications.
 
@@ -17,19 +15,19 @@ See [more details](https://en.wikipedia.org/wiki/Web_API) about the importance o
 
 The following diagram shows Web API component dependencies.
 
-![Web API components dependencies](../../_images/webapi-components-dependencies.png)
+![Web API components dependencies](../../images/webapi-components-dependencies.png)
 
 ## High-level architecture
 
 The following image provides an overview of how Web API requests are processed.
 
-![Web API request processing overview](../../_images/webapi-request-processing-high-level-overview.png)
+![Web API request processing overview](../../images/webapi-request-processing-high-level-overview.png)
 
 ## Extension scenarios
 
 ### Declare a new REST and SOAP endpoint
 
-Any [service contract](/development/components/service-contracts/) can be [exposed as REST and SOAP](/development/components/web-api/services/) endpoints via configuration in a module's `webapi.xml` file.
+Any [service contract](/development/components/service-contracts/index.md) can be [exposed as REST and SOAP](/development/components/web-api/services.md) endpoints via configuration in a module's `webapi.xml` file.
 
 ### Declare a new GraphQL query/mutation
 
@@ -62,7 +60,7 @@ See the [GraphQL documentation](https://developer.adobe.com/commerce/webapi/grap
 
 The recommended approach for modifying an interface is to define a new endpoint. If you simply modify the schema, you might break existing integrations or extensions.
 
-To extend an interface, use [extension attributes](/development/components/attributes/).
+To extend an interface, use [extension attributes](/development/components/attributes.md).
 
 ### Modify the schema of an existing GraphQL query
 

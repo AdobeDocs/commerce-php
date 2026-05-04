@@ -11,4 +11,4 @@ With Visual Merchandiser, products can be re-organised in seconds – visually.
 You see the products in place, with images, just like the customer sees them.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.7.
+The version of this module is 100.4.8.

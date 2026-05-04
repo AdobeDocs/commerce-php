@@ -718,7 +718,7 @@ Component name must meaningful. It can contain the `primary`, `secondary`, `tert
 
 ### Location
 
-Theme mixins (except extends) should be located in the `web/css/source` directory. For more details, refer to [Include CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/themes/).
+Theme mixins (except extends) should be located in the `web/css/source` directory. For more details, refer to [Include CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/themes).
 
 ### Naming
 

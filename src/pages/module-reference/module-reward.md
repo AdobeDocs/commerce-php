@@ -9,4 +9,4 @@ the merchant to control point allotment, balance, and expiration. Customers can 
 a conversion rate between points and currency that is set up by the merchant.
 
 <InlineAlert slots="text" />
-The version of this module is 101.2.7.
+The version of this module is 101.2.8.

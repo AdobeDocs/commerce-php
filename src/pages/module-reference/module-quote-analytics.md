@@ -5,7 +5,7 @@ description: N/A
 
 # Magento_QuoteAnalytics module
 
-This module configures data definitions for a data collection related to the Quote module entities to be used in [Advanced Reporting](https://developer.adobe.com/commerce/php/development/advanced-reporting/modules/).
+This module configures data definitions for a data collection related to the Quote module entities to be used in [Advanced Reporting](https://developer.adobe.com/commerce/php/development/advanced-reporting/modules).
 
 ## Installation
 
@@ -16,14 +16,14 @@ Before installing this module, note that the Magento_QuoteAnalytics is dependent
 
 This module does not introduce any database schema modifications or new data.
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Additional data
 
 More information can get at articles:
 
 - [Advanced Reporting](https://developer.adobe.com/commerce/php/development/advanced-reporting/)
-- [Data collection for advanced reporting](https://developer.adobe.com/commerce/php/development/advanced-reporting/data-collection/)
+- [Data collection for advanced reporting](https://developer.adobe.com/commerce/php/development/advanced-reporting/data-collection)
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.6.
+The version of this module is 100.4.7.

@@ -8,4 +8,4 @@ description: N/A
 The CompareListGraphQl module is designed to implement compare product functionality.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.3.
+The version of this module is 100.4.4.

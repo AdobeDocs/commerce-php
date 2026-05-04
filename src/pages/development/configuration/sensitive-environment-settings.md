@@ -101,4 +101,3 @@ To set a configuration setting as both sensitive and system-specific, create two
 
 [typepool]: https://github.com/magento/magento2/blob/2.4/app/code/Magento/Config/Model/Config/TypePool.php
 [di-xml]: ../build/dependency-injection-file.md
-[config-importers]: importers.md

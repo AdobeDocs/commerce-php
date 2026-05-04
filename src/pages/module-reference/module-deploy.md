@@ -19,8 +19,6 @@ Where mode can be one of the following:
 When switching to production mode, you can pass optional parameter skip-compilation to do not compile static files, CSS
 and do not run the compilation process.
 
-# Deployment
-
 ## System requirements
 
 ## Install
@@ -28,4 +26,4 @@ and do not run the compilation process.
 The Magento_Deploy module is installed automatically (using the native Magento install mechanism) without any additional actions.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.7.
+The version of this module is 100.4.8.

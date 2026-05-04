@@ -26,4 +26,4 @@ The Magento_AdminGwsConfigurableProduct module does not provide any specific ext
 For more developer documentation, see [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs/).
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.4.
+The version of this module is 100.4.5.

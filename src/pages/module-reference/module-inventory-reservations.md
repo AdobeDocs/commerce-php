@@ -26,4 +26,4 @@ Use the interfaces defined in `InventoryReservationsApi` to extend this module.
 The `InventoryReservations` module creates the `inventory_cleanup_reservations` cron job.
 
 <InlineAlert slots="text" />
-The version of this module is 1.2.3.
+The version of this module is 1.2.4.

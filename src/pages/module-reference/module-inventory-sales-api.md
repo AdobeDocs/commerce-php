@@ -29,4 +29,4 @@ Public APIs are defined in the `Api` and `Api/Data` directories.
 The `etc/webapi.xml` file defines endpoints for determining whether a salable amount of products are available for purchase.
 
 <InlineAlert slots="text" />
-The version of this module is 1.2.4.
+The version of this module is 1.2.5.

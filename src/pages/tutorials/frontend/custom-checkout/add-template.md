@@ -20,7 +20,7 @@ To change the template of the form field, do the following:
 
 ## Prerequisites
 
-[Change to developer mode](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/set-mode.html) when performing all customizations and debugging.
+[Change to developer mode](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode) when performing all customizations and debugging.
 
 For the sake of compatibility, upgradability, and easy maintenance, do not edit the default application code. Instead, add your customizations in a separate module. For your checkout customization to be applied correctly, your custom module should [depend](../../../development/build/composer-integration.md) on the Magento_Checkout module.
 

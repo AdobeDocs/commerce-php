@@ -8,4 +8,4 @@ products from store. The customer will need to accept the terms and conditions i
 checkout process to be able to place an order if Terms and Conditions functionality is enabled.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.6.
+The version of this module is 100.4.7.
