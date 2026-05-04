@@ -346,7 +346,7 @@ class AddAttributesToUiDataProvider
 
         $result->getSelect()->joinLeft(
             ['devgridname' => $attribute->getBackendTable()],
-            'devgridname.' . $column . ' = main_table.' . $column . ' AND devgridname.attribute_id = '
+            'devgridname.' . $column . ' = main_table.' . $column . ' AND devgridname.store_id = 0 AND devgridname.attribute_id = '
             . $attribute->getAttributeId(),
             ['name' => 'devgridname.value']
         );
