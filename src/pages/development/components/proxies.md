@@ -11,7 +11,7 @@ keywords:
 
 The Adobe Commerce and Magento Open Source [constructor injection pattern](dependency-injection.md#constructor-injection) enables you to flexibly manage your class dependencies. However, constructor injection also means that a chain reaction of object instantiation is often the result when you create an object. (The original object has dependencies that have dependencies, and those objects have dependencies, and so on.)
 
-If a class's constructor is particularly resource-intensive, this can lead to unnecessary performance impact when another class depends on it, if the expensive object does not end up being needed during a particular request. (You can display a *dependency graph* of such objects by enabling [profiling](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/mage-profiler.html).)
+If a class's constructor is particularly resource-intensive, this can lead to unnecessary performance impact when another class depends on it, if the expensive object does not end up being needed during a particular request. (You can display a *dependency graph* of such objects by enabling [profiling](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/setup/mage-profiler).)
 
 As an example, consider the following two classes:
 
@@ -55,7 +55,7 @@ Assume that class `SlowLoading` has a non-trivial performance impact when instan
 
 ## Proxies are generated code
 
-The application has a solution for this situation: proxies. [Proxies](http://en.wikipedia.org/wiki/Proxy_pattern) extend other classes to become lazy-loaded versions of them. That is, a real instance of the class a proxy extends is created only after one of the class's methods is actually called. A proxy implements the same interface as the original class and so can be used as a dependency anywhere the original class can.  Unlike its parent, a proxy has only one dependency: the object manager.
+The application has a solution for this situation: proxies. [Proxies](https://en.wikipedia.org/wiki/Proxy_pattern) extend other classes to become lazy-loaded versions of them. That is, a real instance of the class a proxy extends is created only after one of the class's methods is actually called. A proxy implements the same interface as the original class and so can be used as a dependency anywhere the original class can.  Unlike its parent, a proxy has only one dependency: the object manager.
 
 Proxies are generated code and therefore do not need to be manually written.  (See [Code generation](code-generation.md) for more information.) Simply reference a class in the form `\Original\Class\Name\Proxy`, and the class is generated if it does not exist.
 

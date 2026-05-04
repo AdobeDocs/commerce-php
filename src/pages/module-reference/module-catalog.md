@@ -16,7 +16,7 @@ Catalog module provides API filtering that allows to limit product selection wit
 ## Structure
 
   [Learn about a typical file structure for a Magento 2 module]
-  (https://developer.adobe.com/commerce/php/development/build/component-file-structure/).
+  (https://developer.adobe.com/commerce/php/development/build/component-file-structure).
 
 ## Observer
 
@@ -77,3 +77,6 @@ This module observes the following events:
    `Magento\Catalog\Observer\CategoryProductIndexer` file.
    - `category_move` event in
    `Magento\Catalog\Observer\FlushCategoryPagesCache`
+
+<InlineAlert slots="text" />
+The version of this module is 104.0.8.

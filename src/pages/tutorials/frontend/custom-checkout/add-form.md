@@ -10,7 +10,7 @@ keywords:
 
 This topic describes how to add a custom input form (implemented as a UI component) to the Checkout page.
 
-![The input form with four fields](../../../_images/tutorials/how_checkout_form.png)
+![The input form with four fields](../../../images/tutorials/how-checkout-form.png)
 
 Most of the elements, including the default forms on the Checkout page are implemented as UI components. And we recommend your custom form to be a UI component, extending the default [Magento_Ui/js/form/form](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Ui/view/base/web/js/form/form.js) component.
 
@@ -22,7 +22,7 @@ The application provides the ability to add a custom form to any of the checkout
 
 ## Prerequisites
 
-[Change to developer mode](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/set-mode.html) while you perform all customizations and debugging.
+[Change to developer mode](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode) while you perform all customizations and debugging.
 
 For the sake of compatibility, upgradability, and easy maintenance, do not edit the default application code. Instead, add your customizations in a separate module. For your checkout customization to be applied correctly, your custom module should [depend](../../../development/build/composer-integration.md) on the `Magento_Checkout` module.
 

@@ -10,15 +10,15 @@ keywords:
 Use the [ESLint rules](https://github.com/magento/magento-coding-standard/blob/develop/eslint/.eslintrc-magento) to make sure your code adheres to the coding standards.
 Developers writing JavaScript and jQuery code for Adobe Commerce and Magento Open Source must adhere to these guidelines and follow the standards listed in this document.
 
-Use [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt) to interpret the "must," "must not," "required," "shall," "shall not," "should," "should not," "recommended," "may," and "optional" keywords.
+Use [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt) to interpret the "must," "must not," "required," "shall," "shall not," "should," "should not," "recommended," "may," and "optional" keywords.
 
-Adobe Commerce and Magento Open Source uses the [jQuery library](https://jquery.com/) including standard and custom [jQuery widgets](http://api.jqueryui.com/category/widgets).
+Adobe Commerce and Magento Open Source uses the [jQuery library](https://jquery.com/) including standard and custom [jQuery widgets](https://api.jqueryui.com/category/widgets/).
 
 For the jQuery widget coding standard, see [jQuery widget coding standard](jquery-widgets.md).
 
 ## Eslint code analysis
 
-Use [ESLint](http://eslint.org/) to ensure the quality of your JavaScript code.
+Use [ESLint](https://eslint.org/) to ensure the quality of your JavaScript code.
 
 ESLint is a community-driven tool that detects errors and potential problems in JavaScript code.
 It can use custom rules to enforce specific coding standards.

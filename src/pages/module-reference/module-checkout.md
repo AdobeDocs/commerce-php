@@ -9,7 +9,7 @@ Magento\Checkout module allows merchant to register sale transaction with the cu
 that includes such actions like adding products to cart, providing shipping and billing information and confirming
 the purchase.
 
-#### Observer
+## Observer
 
   This module observes the following events
     `etc/events.xml`
@@ -20,7 +20,7 @@ the purchase.
        file.
       `customer_logout` event in `Magento\Checkout\Observer\UnsetAllObserver`
   
-### Layouts
+## Layouts
 
   The module interacts with the following layout handles in the
     `view/frontend/layout`
@@ -39,3 +39,6 @@ the purchase.
        `checkout_onepage_review_item_renderers`
        `checkout_onepage_success`
        `default`
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.8.

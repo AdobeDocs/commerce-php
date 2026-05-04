@@ -69,12 +69,25 @@ To prevent this error message, update `innodb_buffer_pool_size` or decrease the 
 
 Batching is available for the following indexers:
 
-| Index name                                    | Configured object                                                             | Parameter name                              | Default value |
-|-----------------------------------------------|-------------------------------------------------------------------------------|---------------------------------------------|---------------|
-| catalog_product_price (Product Price)         | Magento\Catalog\Model\<br/>ResourceModel\Product\Indexer\Price\BatchSizeCalculator | batchRowsCount['default']                   | 5000          |
-| cataloginventory_stock (Stock)                | Magento\CatalogInventory\Model\<br/>Indexer\Stock\Action\Full                      | batchRowsCount['default']                   | 200           |
-| catalog_category_product (Category Products)  | Magento\Catalog\Model\<br/>Indexer\Category\Product\Action\Full                    | batchRowsCount                              | 100000        |
-| catalog_product_attribute (Product Attribute) | Magento\Catalog\Model\<br/>ResourceModel\Product\Indexer\Eav\BatchSizeCalculator   | batchSizes['decimal'], batchSizes['source'] | 1000, 1000    |
+- **catalog_product_price (Product Price)**
+  - Configured object: `Magento\Catalog\Model\ResourceModel\Product\Indexer\Price\BatchSizeCalculator`
+  - Parameter name: `batchRowsCount['default']`
+  - Default value: `5000`
+
+- **cataloginventory_stock (Stock)**
+  - Configured object: `Magento\CatalogInventory\Model\Indexer\Stock\Action\Full`
+  - Parameter name: `batchRowsCount['default']`
+  - Default value: `200`
+
+- **catalog_category_product (Category Products)**
+  - Configured object: `Magento\Catalog\Model\Indexer\Category\Product\Action\Full`
+  - Parameter name: `batchRowsCount`
+  - Default value: `100000`
+
+- **catalog_product_attribute (Product Attribute)**
+  - Configured object: `Magento\Catalog\Model\ResourceModel\Product\Indexer\Eav\BatchSizeCalculator`
+  - Parameter name: `batchSizes['decimal']`, `batchSizes['source']`
+  - Default value: `1000`, `1000`
 
 Changing the batch size can help you optimize indexer running time. For example, for a store with the following characteristics:
 
@@ -169,14 +182,23 @@ Adobe Commerce and Magento Open Source optimize certain indexer processes to pre
 
 The application uses the following tables to support table switching.
 
-Indexer name | Tables used
---- | --- | ---
-`catalog_product_price` |  `catalog_product_index_price`, `catalog_product_index_price_replica`
-`cataloginventory_stock` | `cataloginventory_stock_status`, `cataloginventory_stock_status_replica`
-`catalog_category_product` | `catalog_category_product_index`, `catalog_category_product_index_replica`
-`catalog_product_attribute` (select, multiselect attributes) | `catalog_product_index_eav`, `catalog_product_index_eav_replica`
-`catalog_product_attribute` (decimal values) |`catalog_product_index_eav_decimal`, `catalog_product_index_eav_decimal_replica`
-`catalogrule_rule` | `catalogrule_product`, `catalogrule_product_replica`, `catalogrule_product_price`, `catalogrule_product_price_replica`, `catalogrule_group_website`, `catalogrule_group_website_replica`
+- **`catalog_product_price`**
+  - Tables: `catalog_product_index_price`, `catalog_product_index_price_replica`
+
+- **`cataloginventory_stock`**
+  - Tables: `cataloginventory_stock_status`, `cataloginventory_stock_status_replica`
+
+- **`catalog_category_product`**
+  - Tables: `catalog_category_product_index`, `catalog_category_product_index_replica`
+
+- **`catalog_product_attribute`** (select, multiselect attributes)
+  - Tables: `catalog_product_index_eav`, `catalog_product_index_eav_replica`
+
+- **`catalog_product_attribute`** (decimal values)
+  - Tables: `catalog_product_index_eav_decimal`, `catalog_product_index_eav_decimal_replica`
+
+- **`catalogrule_rule`**
+  - Tables: `catalogrule_product`, `catalogrule_product_replica`, `catalogrule_product_price`, `catalogrule_product_price_replica`, `catalogrule_group_website`, `catalogrule_group_website_replica`
 
 Make sure that these indexers are in "Update By Schedule" mode. If "Update On Save" mode is selected, some data can be lost if you make changes during full reindex.
 
@@ -201,7 +223,7 @@ To disable the Product EAV indexer in the Admin, go to **Stores** > Settings > *
 
 By default, all websites are assigned to a customer group. If there are a large number of products, websites, customer groups, and B2B shared catalogs, the execution time of the `Product Price` and `Catalog Rule` indexers may be quite long. This is because each website, customer group, shared catalog, and product SKU must all be indexed against each other in the product price and catalog rule indexer-related tables.
 
-You can exclude websites from a customer group or shared catalog on the [Customer Groups page](https://docs.magento.com/user-guide/customers/customer-groups.html#create-a-customer-group). Excluding websites can decrease `Product Price` and `Catalog Rule` indexing time, because excluded websites are not indexed.
+You can exclude websites from a customer group or shared catalog on the [Customer Groups page](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-groups#create-a-customer-group). Excluding websites can decrease `Product Price` and `Catalog Rule` indexing time, because excluded websites are not indexed.
 
 When a customer group with a new, excluded website is saved, the `Product Price`, `Catalog Rule` and `Catalog Search` indexes are invalidated. If you have a large number of products, websites, and customer groups, we recommended you pause the reindex process until you have excluded websites from the customer groups.
 
@@ -215,4 +237,4 @@ You cannot exclude websites from the `NOT LOGGED IN` customer group.
 <InlineAlert variant="warning" slots="text"/>
 
 When a website is added to the excluded customer group and a customer who belongs to this group is trying to login to their account on the excluded website, the customer gets the `"This website is excluded from customer's group."` warning.
-Customers are not allowed to login to the website even if [the scope of customer accounts is shared with all websites](https://docs.magento.com/user-guide/customers/account-scope.html), because there are no prices in the index table for this user.
+Customers are not allowed to login to the website even if [the scope of customer accounts is shared with all websites](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/customer-account-scope), because there are no prices in the index table for this user.

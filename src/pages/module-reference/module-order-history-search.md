@@ -30,3 +30,6 @@ The Magento_OrderHistorySearch module serves to handle advanced orders filtering
 ## Additional information
 
 ...
+
+<InlineAlert slots="text" />
+The version of this module is 100.5.2.

@@ -200,9 +200,9 @@ use Psr\Log\LoggerInterface;
 
 class Customshipping extends AbstractCarrier implements CarrierInterface
 {
-    protected string $_code = 'customshipping';
+    protected $_code = 'customshipping';
 
-    protected bool $_isFixed = true;
+    protected $_isFixed = true;
 
     private ResultFactory $rateResultFactory;
 
@@ -273,8 +273,8 @@ bin/magento module:enable Vendor_CustomShipping
 
 The backend settings for the custom shipping carrier appear as shown below.
 
-![Custom shipping carrier backend settings](../../../_images/tutorials/checkout-add-custom-carrier-01.png)
+![Custom shipping carrier backend settings](../../../images/tutorials/checkout-add-custom-carrier-01.png)
 
 The custom shipping carrier will appear on checkout as shown below.
 
-![Custom shipping carrier on checkout](../../../_images/tutorials/checkout-add-custom-carrier-02.png)
+![Custom shipping carrier on checkout](../../../images/tutorials/checkout-add-custom-carrier-02.png)

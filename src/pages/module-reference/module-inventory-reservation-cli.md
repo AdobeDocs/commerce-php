@@ -10,3 +10,6 @@ The `InventoryReservationCli` module provide a cli command which helps the devel
 This module is part of the new inventory infrastructure. The
 [Inventory Management overview](https://developer.adobe.com/commerce/webapi/rest/inventory/index.html)
 describes the MSI (Multi-Source Inventory) project in more detail.
+
+<InlineAlert slots="text" />
+The version of this module is 1.2.5.

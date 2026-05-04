@@ -6,6 +6,8 @@ keywords:
   - Extensions
 ---
 
+# Create a cache type
+
 A *cache type* enables you to specify what is cached and enables merchants to clear that cache type using the Cache Management page in the Admin.
 
 The tag *scope* provides a mechanism for a cache type.
@@ -46,8 +48,8 @@ You may declare multiple cache types.
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 namespace VendorName\ModuleName\Model\Cache\Type;
@@ -168,9 +170,6 @@ $cacheKey  = \VendorName\ModuleName\Model\Cache\Type\CacheType::TYPE_IDENTIFIER;
 $this->typeList->cleanType($cacheKey);
 ```
 
-[tagscope]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Frontend/Decorator/TagScope.php
-[type]: https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/Model/Cache/Type/Notification.php
-
 ## Examples
 
 A cache type `translate` is declared in the Magento_Translation module using the `cache.xml` configuration file.
@@ -189,8 +188,8 @@ Translate cache type model class is defined in `Magento\Framework\App\Cache\Type
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 namespace Magento\Framework\App\Cache\Type;

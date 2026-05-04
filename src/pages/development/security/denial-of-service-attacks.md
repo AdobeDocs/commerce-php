@@ -8,7 +8,7 @@ keywords:
 
 # Denial of service (DOS) attacks
 
-A __Denial-of-Service (DoS) attack__ attempts to shut down (halt) servers serving an application to make it
+A **Denial-of-Service (DoS) attack** attempts to shut down (halt) servers serving an application to make it
 inaccessible to users. It's accomplished by flooding a server with an excess amount of traffic or triggering heavy
 operations that cannot be handled efficiently by the server.
 
@@ -58,13 +58,13 @@ The following sections describe measures you can take to protect against DoS att
 The downside of this approach is the friction created by requiring legitimate users to solve a challenge while
 shopping.
 
-[Google ReCaptcha](https://docs.magento.com/user-guide/stores/security-google-recaptcha.html) is an example of a
+[Google ReCaptcha](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-google-recaptcha) is an example of a
 challenge provider. One of the biggest advantages of ReCaptcha is that it avoids actually presenting
 a user with a challenge, unless it detects suspicious behavior. [Protected endpoints](https://developer.adobe.com/commerce/webapi/rest/use-rest/protected-endpoints/)
 contains a list of forms/endpoints can be enabled for ReCaptcha out-of-the-box. You can extend the list by following the example
 on how to add coverage can be found in the [SecurityPackage](https://github.com/magento/security-package/tree/develop/ReCaptchaCustomer) repo.
 
-Our own [CAPTCHA](https://docs.magento.com/user-guide/stores/security-captcha.html) implementation is also available.
+Our own [CAPTCHA](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-captcha) implementation is also available.
 
 ### Limited input/output
 

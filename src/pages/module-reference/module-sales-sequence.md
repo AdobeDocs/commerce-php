@@ -16,8 +16,6 @@ Magento\SalesSequence module manages sequences for next system entities and flow
 * credit memos;
 Magento\SalesSequence module is required for Magento\Sales module.
 
-# Deployment
-
 ## System requirements
 
 The Magento_SalesSequence module does not have any specific system requirements.
@@ -25,3 +23,6 @@ The Magento_SalesSequence module does not have any specific system requirements.
 ## Install
 
 The Magento_SalesSequence module is installed automatically (using the native Magento install mechanism) without any additional actions.
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.5.

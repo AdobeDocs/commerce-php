@@ -7,17 +7,17 @@ keywords:
 
 # jQuery widget coding standard
 
-All Adobe Commerce and Magento Open Source jQuery UI widgets and interactions are built on a simple, reusable base---the [jQuery UI Widget Factory](http://jqueryui.com/widget/).
+All Adobe Commerce and Magento Open Source jQuery UI widgets and interactions are built on a simple, reusable base---the [jQuery UI Widget Factory](https://jqueryui.com/widget/).
 
 The factory provides a flexible base for building complex, stateful plug-ins with a consistent API.
 It is designed not only for plug-ins that are part of jQuery UI, but for general usage by developers who want to create object-oriented components without reinventing common infrastructure.
 
-For more information, see the [jQuery Widget API documentation](http://api.jqueryui.com/jQuery.widget/).
+For more information, see the [jQuery Widget API documentation](https://api.jqueryui.com/jQuery.widget/).
 
 This standard is mandatory for core developers and recommended for third-party extension developers.
 Some parts of the code might not comply with the standard, but we are working to gradually improve this.
 
-Use [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt) to interpret the "must," "must not," "required," "shall," "shall not," "should," "should not," "recommended," "may," and "optional" keywords.
+Use [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt) to interpret the "must," "must not," "required," "shall," "shall not," "should," "should not," "recommended," "may," and "optional" keywords.
 
 ## Naming conventions
 

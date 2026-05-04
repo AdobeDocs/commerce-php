@@ -9,7 +9,7 @@ keywords:
 
 # Add a custom text field attribute
 
-This tutorial describes how a developer can create a custom text field attribute for the Customer entity using code. This will reflect in both the [Customer Grid](https://docs.magento.com/user-guide/customers/customer-account-manage.html) and the [Customer Form](https://docs.magento.com/user-guide/customers/customer-account-update.html) in the Admin.
+This tutorial describes how a developer can create a custom text field attribute for the Customer entity using code. This will reflect in both the [Customer Grid](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/manage-account) and the [Customer Form](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/update-account) in the Admin.
 
 This Customer attribute will be used to save and view the customer's ID in an external system, as an example. It will be created as an EAV attribute in a data patch. The EAV model allows a developer to add custom functionality to the entities without modifying the core databases and schemas. Data patches are run just once, so this code will create the custom attribute and will never run again, which could cause issues.
 
@@ -192,11 +192,11 @@ Run `bin/magento setup:upgrade` from the project root to execute the newly added
 
 -  The attribute is created in the customer form under the _Account Information_ section.
 
-   ![Custom attribute in the customer form](../../_images/tutorials/customer-text-form.png)
+   ![Custom attribute in the customer form](../../images/tutorials/customer-text-form.png)
 
 -  The attribute is displayed in the customer grid.
 
-   ![Custom attribute in the customer grid](../../_images/tutorials/customer-text-grid.png)
+   ![Custom attribute in the customer grid](../../images/tutorials/customer-text-grid.png)
 
 ### Code reference
 

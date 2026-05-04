@@ -101,8 +101,8 @@ The following code snippets highlight the code pieces needed to copy a fieldset 
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 namespace Vendor\Module\Observer;

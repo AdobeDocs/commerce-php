@@ -13,7 +13,7 @@ These guidelines came from many years of hard work, experience, and discussions.
 
 ## Text conventions
 
-Use [RFC2119](https://tools.ietf.org/html/rfc2119) to interpret keywords like:
+Use [RFC2119](https://datatracker.ietf.org/doc/html/rfc2119) to interpret keywords like:
 
 *  MUST and MUST NOT
 
@@ -49,13 +49,13 @@ Use [RFC2119](https://tools.ietf.org/html/rfc2119) to interpret keywords like:
 
 Examples:
 
-__Not recommended:__
+**Not recommended:**
 
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 class Config
@@ -74,13 +74,13 @@ class Config
 }
 ```
 
-__Recommended:__
+**Recommended:**
 
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 class Config
@@ -139,13 +139,13 @@ class Composite
 
 Examples:
 
-__Not recommended:__
+**Not recommended:**
 
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 class Config
@@ -160,13 +160,13 @@ class Config
 }
 ```
 
-__Recommended:__
+**Recommended:**
 
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 class Config
@@ -196,7 +196,7 @@ class Config
 
 Examples:
 
-__Not recommended:__
+**Not recommended:**
 
 ```php
 interface SessionAdapterInterface
@@ -214,7 +214,7 @@ class SessionManager
 // Breaks polymorphism principle, restricts what types can be passed at the runtime.
 ```
 
-__Recommended:__
+**Recommended:**
 
 ```php
 interface SessionAdapterInterface
@@ -236,13 +236,13 @@ class SessionManager
 
 Examples:
 
-__Not recommended:__
+**Not recommended:**
 
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 class AbstractController extends Action
@@ -277,13 +277,13 @@ class Edit extends AbstractController
 // Smaller classes, one responsibility, more flexible, easy to understand, more testable.
 ```
 
-__Recommended:__
+**Recommended:**
 
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 class Edit extends Action
@@ -316,11 +316,11 @@ class Edit extends Action
 
 2.13. Static methods SHOULD NOT be used.
 
-2.14. [Temporal coupling](http://blog.ploeh.dk/2011/05/24/DesignSmellTemporalCoupling/) MUST be avoided
+2.14. Temporal coupling MUST be avoided.
 
 Example #1:
 
-__Not recommended:__
+**Not recommended:**
 
 ```php
 $url = new Url();
@@ -334,7 +334,7 @@ echo $url->get('custom/path'); // Throws exception, which makes issue smaller. I
 // Method with out parameters that does not return anything could be sign of temporal coupling.
 ```
 
-__Recommended:__
+**Recommended:**
 
 ```php
 $url = new Url($baseUrl);
@@ -349,13 +349,13 @@ echo $url->get($baseUrl, 'custom/path');
 
 Example #2:
 
-__Not recommended:__
+**Not recommended:**
 
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 class Edit extends Action
@@ -378,13 +378,13 @@ class View extends Template
 }
 ```
 
-__Recommended:__
+**Recommended:**
 
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 class Edit extends Action
@@ -504,15 +504,15 @@ You need to read configuration from different sources (like database or filesyst
     MUST process (handle or re-throw) exceptions of the underlying layer.
 
 6.1.3. A layer MUST NOT depend on a layer that invokes (above) it. A layer MUST only depend on a layer directly below it.
-![Commerce architecture layers](../_images/archi_diagrams_layers_alt4.jpg)
+![Commerce architecture layers](../images/archi-diagrams-layers-alt4.jpg)
 
 ### 6.2. Presentation layer
 
 6.2.1. According to CQRS, the Presentation layer hosts the Command and the Query Infrastructures:
 
-*  __Command__ for Actions
+*  **Command** for Actions
 
-*  __Query__ for Layout and its elements (Blocks and UI Components)
+*  **Query** for Layout and its elements (Blocks and UI Components)
 
 6.2.2. Request, Response, Session, Store Manager and Cookie objects MUST be used only in the Presentation layer.
 
@@ -521,6 +521,8 @@ You need to read configuration from different sources (like database or filesyst
 6.2.4. Actions MUST NOT reference blocks declared in layout.
 
 6.2.5 Blocks MUST NOT assume that a specific, or any, controller has been invoked for current request.
+
+6.2.6 Templates MUST NOT instantiate objects. All objects MUST be passed from the Block objects.
 
 ### 6.3. Data Access (Persistence) layer
 
@@ -546,7 +548,7 @@ You need to read configuration from different sources (like database or filesyst
 
 6.4.2.1. Methods that have similar names MUST serve similar purposes across different services, but they still MAY have different signatures.
 
-6.4.2.2. Service contracts SHOULD NOT be used for read scenarios on the storefront. Instead, GraphQL SHOULD be used for storefront scenarios. Check out [web API technical vision](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api/) for more details.
+6.4.2.2. Service contracts SHOULD NOT be used for read scenarios on the storefront. Instead, GraphQL SHOULD be used for storefront scenarios. Check out [web API technical vision](/architecture/technical-vision/web-api.md) for more details.
 
 6.4.2.3. Each service interface SHOULD declare a single public method. An interface name SHOULD reflect the task or action to be performed. For example, `Magento\InventoryApi\Api\StockSourceLinksDeleteInterface::execute(array $links)`. The only exception is a Repository API, which MAY be added for convenience and MUST be limited to singular CRUD operations and `getList($searchCriteria)`.
 
@@ -614,7 +616,7 @@ You need to read configuration from different sources (like database or filesyst
 
 6.4.4.13. A service contract MUST NOT rely on the execution context (application area). The service implementation MUST NOT depend on the application state.
 
-6.4.4.14. A service contract SHOULD be an [idempotent method](https://tools.ietf.org/html/rfc7231#section-4.2.2).
+6.4.4.14. A service contract SHOULD be an [idempotent method](https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.2).
 
 ## 7. Configuration
 
@@ -769,7 +771,7 @@ You need to read configuration from different sources (like database or filesyst
 
 #### 11.3.3. Elements
 
-11.3.3.1. All element selectors MUST follow these [best practices](https://devdocs.magento.com/mftf/docs/best-practices.html).
+11.3.3.1. All element selectors MUST follow these [best practices](https://developer.adobe.com/commerce/testing/functional-testing-framework/test-writing/best-practices).
 
 11.3.3.2. The element `name` MUST be unique within the `<section>`.
 
@@ -823,7 +825,7 @@ You need to read configuration from different sources (like database or filesyst
 
 ## 13. Command line interface (CLI)
 
-13.1. [CLI command naming guidelines](https://developer.adobe.com/commerce/php/development/cli-commands/naming-guidelines/) MUST be followed.
+13.1. [CLI command naming guidelines](/development/cli-commands/naming-guidelines.md) MUST be followed.
 
 13.2. A CLI command MUST be created for any functionality intended to be used by a system integrator/system administrator/developer (for example: change indexer mode, generate a configuration file, etc.).
 
@@ -892,7 +894,7 @@ class SampleEventObserverThatModifiesInputs implements ObserverInterface
 
 15.3.1. Sanitize input; escape output.
 
-15.3.2. Follow [XSS prevention strategies guidelines](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/) for escaping output.
+15.3.2. Follow [XSS prevention strategies guidelines](/development/security/cross-site-scripting.md) for escaping output.
 
 15.3.3. Incoming data should be casted to the expected type. String data should be validated/sanitized.
 
@@ -908,7 +910,7 @@ class SampleEventObserverThatModifiesInputs implements ObserverInterface
 
 15.5.2. A segmented application architecture that provides effective, secure separation between components or tenants, with segmentation, containerization, or cloud security groups (ACLs).
 
-15.5.3. Sending security directives to clients, e.g. [Security Headers](https://www.owasp.org/index.php/OWASP_Secure_Headers_Project).
+15.5.3. Sending security directives to clients, e.g. [Security Headers](https://owasp.org/www-project-secure-headers/).
 
 15.6. Sensitive Data Exposure protection.
 
@@ -948,7 +950,7 @@ class SampleEventObserverThatModifiesInputs implements ObserverInterface
 
 ## 16. Cron
 
-16.1. Cron job SHOULD be an [idempotent method](https://tools.ietf.org/html/rfc7231#section-4.2.2).
+16.1. Cron job SHOULD be an [idempotent method](https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.2).
 
 ## 17. Services
 

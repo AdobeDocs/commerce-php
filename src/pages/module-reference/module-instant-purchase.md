@@ -9,19 +9,19 @@ This module allows the Customer to place the order in seconds without going thro
 
 ## Installation
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Structure
 
 `PaymentMethodsIntegration` - directory contains interfaces and basic implementation of integration vault payment method to the instant purchase.
 
-For information about a typical file structure of a module in Magento 2, see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure/#module-file-structure).
+For information about a typical file structure of a module in Magento 2, see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure#module-file-structure).
 
 ## Extensibility
 
-Extension developers can interact with the Magento_InstantPurchase module. For more information about the Magento extension mechanism, see [Magento plugins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_InstantPurchase module. For more information about the Magento extension mechanism, see [Magento plugins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_InstantPurchase module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_InstantPurchase module.
 
 ### Public APIs
 
@@ -52,7 +52,7 @@ Extension developers can interact with the Magento_InstantPurchase module. For m
 - `\Magento\InstantPurchase\PaymentMethodIntegration\PaymentTokenFormatterInterface`
     - provides mechanism to create string presentation of token for payment method
 
-For information about a public API in Magento 2, see [Public interfaces & APIs](https://developer.adobe.com/commerce/php/development/components/api-concepts/).
+For information about a public API in Magento 2, see [Public interfaces & APIs](https://developer.adobe.com/commerce/php/development/components/api-concepts).
 
 ## Additional information
 
@@ -95,14 +95,17 @@ Basic implementation is a good start point but it's recommended to provide own i
 3. Customer has default shipping and billing address defined
 4. Customer has valid stored payment method with instant purchase support
 
-[Learn more about Instant Purchase](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html).
+[Learn more about Instant Purchase](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase).
 
 ### Backward incompatible changes
 
 The `Magento_InstantPurchase` module does not introduce backward incompatible changes.
 
-You can track [backward incompatible changes in patch releases](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/).
+You can track [backward incompatible changes in patch releases](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/).
 
-***
+## Additional information
 
-This module was initially developed by the [Creatuity Corp.](https://creatuity.com/) and [Magento Community Engineering Team](mailto:engcom@magento.com).
+This module was initially developed by the [Creatuity Corp.](https://www.creatuity.com/) and [Magento Community Engineering Team](https://commercemarketplace.adobe.com/partner/engcom/).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.7.

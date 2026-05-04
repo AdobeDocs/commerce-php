@@ -7,15 +7,13 @@ keywords:
   - Payments
 ---
 
-import Docs from '/src/_includes/braintree-note.md'
-
-<Docs />
+<Fragment src="/includes/braintree-note.md"/>
 
 # Error Code Mapping
 
 A payment gateway has error codes or messages that need to be transformed to user-friendly messages. When an error occurs, Adobe Commerce delivers the message to the appropriate audience so that the customer or merchant can resolve any problems. You can set up each payment integration to map the native error codes and messages into sets of text strings. As a result, you can ensure that only the proper audience (merchants only, customers only, or all) sees each error message. By default, the standard error message (`An error occurred on the server. Please try to place the order again.`) displays if a payment operation fails and a specific mapped message cannot be found.
 
-Commerce provides the [`\Magento\Payment\Gateway\ErrorMapper\ErrorMessageMapperInterface`](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Payment/Gateway/ErrorMapper/ErrorMessageMapperInterface.php) interface and default mapper implementation at [`\Magento\Payment\Gateway\ErrorMapper\ErrorMessageMapper`](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Payment/Gateway/ErrorMapper/ErrorMessageMapper.php) to enable customizations.
+Commerce provides the [`\Magento\Payment\Gateway\ErrorMapper\ErrorMessageMapperInterface`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/Gateway/ErrorMapper/ErrorMessageMapperInterface.php) interface and default mapper implementation at [`\Magento\Payment\Gateway\ErrorMapper\ErrorMessageMapper`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/Gateway/ErrorMapper/ErrorMessageMapper.php) to enable customizations.
 
 This topic uses examples based on the Commerce Braintree payment integration to illustrate how to enable error code mapping.
 
@@ -27,15 +25,15 @@ In most cases, you must define one or more mapping files and configure the defau
 
 The first step is to create one or more XML files that map message codes to messages. We recommend naming these files `<gateway_name>_error_mapping.xml`, but you can use any name you like. If you create more than one mapping file, each file must have the same file name. Use the following table to determine where to place mapping files:
 
-Audience | location
---- | ---
-All users | `<module>/etc`
-Merchants | `<module>/adminhtml`
-Customers | `<module>/frontend`
+| Audience | location |
+| --- | --- |
+| All users | `<module>/etc` |
+| Merchants | `<module>/adminhtml` |
+| Customers | `<module>/frontend` |
 
 The files placed in the `adminhtml` and `frontend` directories ensure that customers and store administrators see only audience-specific messages. For example, a customer should see error messages when a credit card fails verification due to mis-entered data and similar reasons. The store's administrator should have more detailed descriptions of why an attempt to create an invoice or refund failed.
 
-The [braintree_error_mapping.xml](https://github.com/magento/magento2/tree/2.3/app/code/Magento/Braintree/etc/braintree_error_mapping.xml) file provides an example collection:
+The [braintree_error_mapping.xml](https://github.com/magento/magento2/blob/2.3/app/code/Magento/Braintree/etc/braintree_error_mapping.xml) file provides an example collection:
 
 ```xml
 <mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Payment:etc/error_mapping.xsd">
@@ -48,7 +46,7 @@ The [braintree_error_mapping.xml](https://github.com/magento/magento2/tree/2.3/a
 </mapping>
 ```
 
-The message definitions are based on the [error_mapping.xsd](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Payment/etc/error_mapping.xsd) schema. Messages must comply with the following structure:
+The message definitions are based on the [error_mapping.xsd](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/etc/error_mapping.xsd) schema. Messages must comply with the following structure:
 
 -  `message_list` --- the root node. It can contain a list of specific messages
 
@@ -91,8 +89,8 @@ Then customize the default `ErrorMessageMapper` via virtual type and specify the
 </virtualType>
 ```
 
-Because Braintree integration uses the default [`Magento\Payment\Gateway\Command\GatewayCommand`](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Payment/Gateway/Command/GatewayCommand.php),
-inject the created mapper pool to the required [gateway command](/gateway-command.md) as an argument:
+Because Braintree integration uses the default [`Magento\Payment\Gateway\Command\GatewayCommand`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/Gateway/Command/GatewayCommand.php),
+inject the created mapper pool to the required [gateway command](gateway-command.md) as an argument:
 
 ```xml
 <virtualType name="BraintreeAuthorizeCommand" type="Magento\Payment\Gateway\Command\GatewayCommand">
@@ -110,12 +108,12 @@ The payment integration should now retrieve error codes from the payment gateway
 
 ## Retrieve error codes from the response validator
 
-You can retrieve errors codes using a [response validator](/response-validator.md).
+You can retrieve errors codes using a [response validator](response-validator.md).
 A response validator verifies response codes from the payment gateway.
 It has different responsibilities and should not map messages, because it works on the lower layer of communication between Commerce and the payment gateway.
 It is the responsibility of a gateway command to call an appropriate service.
 
-For example, Commerce provides a response validator for Braintree: [`\Magento\Braintree\Gateway\Validator\GeneralResponseValidator`](https://github.com/magento/magento2/tree/2.3/app/code/Magento/Braintree/Gateway/Validator/GeneralResponseValidator.php).
+For example, Commerce provides a response validator for Braintree: [`\Magento\Braintree\Gateway\Validator\GeneralResponseValidator`](https://github.com/magento/magento2/blob/2.3/app/code/Magento/Braintree/Gateway/Validator/GeneralResponseValidator.php).
 Its implementation allows to retrieve errors codes from a response.
 
 First, create a new code provider. It can be a simple class with a public method that should return a list of error codes by the provided response:
@@ -187,5 +185,5 @@ class GeneralResponseValidator extends AbstractValidator
 }
 ```
 
-The `GeneralResponseValidator` returns an implementation of [`\Magento\Payment\Gateway\Validator\ResultInterface`](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Payment/Gateway/Validator/ResultInterface.php)
+The `GeneralResponseValidator` returns an implementation of [`\Magento\Payment\Gateway\Validator\ResultInterface`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/Gateway/Validator/ResultInterface.php)
 and the `\Magento\Payment\Gateway\Command\GatewayCommand` uses method `ResultInterface::getErrorCodes()` method to map error codes to user-friendly messages.

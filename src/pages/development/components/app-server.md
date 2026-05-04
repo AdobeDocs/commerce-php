@@ -3,8 +3,10 @@ title: GraphQL Application Server | Commerce PHP Extensions
 description: Learn about GraphQL Application Server architecture and how to ensure compatibility with custom extensions.
 keywords:
   - Extensions
-edition: ee
 ---
+
+<Edition slots="text" backgroundColor="blue"/>
+[PaaS only](https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions)
 
 <InlineAlert variant="info" slots="text" />
 
@@ -14,7 +16,7 @@ Available in [2.4.7](https://experienceleague.adobe.com/en/docs/commerce-operati
 
 The [GraphQL Application Server](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/concepts/application-server) enables Adobe Commerce to maintain state among GraphQL API requests. GraphQL Application Server, which is built on the Open Swoole extension, operates as a process with worker threads that handle request processing. By preserving a bootstrapped application state among GraphQL API requests, GraphQL Application Server enhances request handling and overall product performance. As a result, GraphQL request response time can be reduced by up to 30%.
 
-GraphQL Application Server is available for Adobe Commerce only. It is not available for Magento Open Source. You must [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) to enable GraphQL Application Server on Pro projects.
+GraphQL Application Server is available for Adobe Commerce only. It is not available for Magento Open Source. You must [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) to enable GraphQL Application Server on Pro projects.
 
 ## Challenges to consider
 
@@ -80,7 +82,7 @@ In the `state-filter-list.php` file, there are three different types of filterin
 - The `parents` section first compares the service object to the specified class or interface using the `instanceof` operator. If it returns true, then those filters are applied.
 - The `services` section checks for direct matches of the `serviceName`. The `serviceName` can either be the class name, or virtual type of preferences (as defined in `di.xml` files) before applying the properties filter.
 
-If you are working on a failure and it does not look like it is safe to add to the skip or filter list, then consider if you can refactor the class in a [backwards-compatible](https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy/) way to use Factories of the service classes that have mutable state. If it is the class itself that has mutable state, then try to rewrite it in a way to avoid mutable state. If the mutable state is required for performance reasons, then implement `ResetAfterRequestInterface` and use `_resetState()` to reset the object back to its initial constructed state.
+If you are working on a failure and it does not look like it is safe to add to the skip or filter list, then consider if you can refactor the class in a [backwards-compatible](https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy) way to use Factories of the service classes that have mutable state. If it is the class itself that has mutable state, then try to rewrite it in a way to avoid mutable state. If the mutable state is required for performance reasons, then implement `ResetAfterRequestInterface` and use `_resetState()` to reset the object back to its initial constructed state.
 
 If the class is failing because of a `Typed property $x must not be accessed before initialization` error, then the property is not initialized by the constructor. This is a form of temporal coupling, because the object cannot be used after it is initially constructed. This happens even if the property is private because the Collector gets the data from the properties using PHP's reflection feature. In this case, refactor the class to avoid temporal coupling, and also to avoid mutable state. If that does not work, the property can change its type to a nullable type and be initialized to null. If the property is an array, it may be okay to initialize the property as an empty array.
 
@@ -181,6 +183,8 @@ For this purpose, we should implement the following:
 class Cache implements ResetAfterRequestInterface
 ```
 
+In version 2.4.8, you do not have to add `ResetAfterRequestInterface` to the class. The `_resetState()` method is found by reflection and called by implementing `ResetAfterRequestInterface`. This feature allows modules to be backwards compatible with previous versions before 2.4.7 that do not have this interface.
+
 Add the implementation of the `_resetState()` method with overriding `$data` property to its initial state - empty array:
 
 ```php
@@ -192,3 +196,36 @@ public function _resetState(): void
     $this->data = [];
 }
 ```
+
+<InlineAlert variant="info" slots="text"/>
+
+The following section only applies to Adobe Commerce 2.4.8:
+
+Version 2.4.8 includes an alternative to the `a _resetState` method. Instead of adding `_resetState` to a class, you can add a `reset.json` file to a module's `etc` directory. The `reset.json` file defines which class properties are reset, and what they reset to, after a request.
+
+This feature allows modules to be backwards compatible with previous versions `2.4.7` and earlier, which do not have the `ResetAfterRequestInterface` interface. This feature is also compatible with classes that do not allow adding new public functions. You can also add reset behavior to classes for modules that you do not control.
+
+Here's an example. A class `Magento\Reward\Model\Total\Quote\Reward` inherits from `Magento\Quote\Model\Quote\Address\Total\AbstractTotal`.  A `reset.json` file could be added to both modules:
+
+```json
+"Magento\\Quote\\Model\\Quote\\Address\\Total\\AbstractTotal": {
+  "_code": null,
+  "_address": null,
+  "_canAddAmountToAddress": true,
+  "_canSetAddressAmount": true,
+  "_itemRowTotalKey": null,
+  "total": null
+}
+```
+
+and
+
+```json
+{
+  "Magento\\Reward\\Model\\Total\\Quote\\Reward": {
+    "_code": "_code"
+  }
+}
+```
+
+Both `reset.json` definitions are used for a Reward object. They are called in proper order of inheritance, so subclasses can have specializations to their reset values that get called after the base class.

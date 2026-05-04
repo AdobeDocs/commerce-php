@@ -18,13 +18,13 @@ Before disabling or uninstalling this module, note that the following modules de
 
 - `Magento_WishlistGraphQl`
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Extensibility
 
-Extension developers can interact with the Magento_CustomerGraphQl module. For more information about the Magento extension mechanism, see [Magento plugins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_CustomerGraphQl module. For more information about the Magento extension mechanism, see [Magento plugins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_CustomerGraphQl module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_CustomerGraphQl module.
 
 ## Additional information
 
@@ -37,3 +37,6 @@ You can get more information about [GraphQl In Magento 2](https://developer.adob
 
 [Learn more about customer query](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/customer/).
 [Learn more about isEmailAvailable query](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/is-email-available).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.8.

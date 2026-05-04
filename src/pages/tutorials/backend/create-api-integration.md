@@ -19,7 +19,7 @@ GuzzleHttp uses cURL by default, but it can use any HTTP client that you want ot
 
 <InlineAlert variant="info" slots="text"/>
 
-It's much easier to cover a GuzzleHttp implementation by [Unit Tests](https://developer.adobe.com/commerce/testing/guide/unit/writing-testable-code/), as you're able to mock the HTTP requests.
+It's much easier to cover a GuzzleHttp implementation by [Unit Tests](https://developer.adobe.com/commerce/testing/guide/unit/writing-testable-code), as you're able to mock the HTTP requests.
 
 ## Request options
 
@@ -31,7 +31,7 @@ It's much easier to cover a GuzzleHttp implementation by [Unit Tests](https://de
 
 ## Create a GitHub API integration
 
-In the following example, we're using the [Github API](https://api.github.com/) as a web service and will fetch some data from the `magento/magento2` repository.
+In the following example, we're using the Github API `https://api.github.com/` as a web service and will fetch some data from the `magento/magento2` repository.
 
 ```php
 <?php

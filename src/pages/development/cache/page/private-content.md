@@ -20,7 +20,7 @@ The section source class is responsible for retrieving data for the section. As 
 
 The public method `getSectionData` must return an array with data for a private block.
 
-[Example](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/CustomerData/CompareProducts.php#L61-L70)
+[Example of the public method `getSectionData`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/CustomerData/CompareProducts.php)
 
 Add the following to your component's dependency injection configuration (`di.xml`):
 
@@ -42,7 +42,7 @@ To render private content, create a block and a template to display user-agnosti
 
 Do not use the `$_isScopePrivate` property in your blocks. This property is obsolete and will not work properly.
 
-Replace private data in blocks with placeholders (using [Knockout](http://knockoutjs.com/documentation/introduction.html) syntax). The init scope on the root element is `data-bind="scope: 'compareProducts'"`, where you define the scope name (`compareProducts` in this example) in your layout.
+Replace private data in blocks with placeholders (using [Knockout](https://knockoutjs.com/documentation/introduction.html) syntax). The init scope on the root element is `data-bind="scope: 'compareProducts'"`, where you define the scope name (`compareProducts` in this example) in your layout.
 
 Initialize the component as follows:
 
@@ -52,7 +52,7 @@ Initialize the component as follows:
 </script>
 ```
 
-[Example](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/view/frontend/templates/product/compare/sidebar.phtml#L50-L52)
+[Example of initializing the component](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/view/frontend/templates/product/compare/sidebar.phtml#L50-L52)
 
 ## Configure a UI component
 
@@ -65,7 +65,7 @@ initialize: function () {
 }
 ```
 
-[Example](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/view/frontend/web/js/view/compare-products.js#L32-L33)
+[Example of initializing a UI component](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/view/frontend/web/js/view/compare-products.js)
 
 All properties are available in the template where the UI component initialized.
 
@@ -92,8 +92,8 @@ The following example adds comments to [app/code/Magento/Catalog/etc/frontend/se
 <?xml version="1.0"?>
 <!--
 /**
- * Copyright &copy; 2016 Magento. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -162,6 +162,4 @@ Versioning works as follows:
 
 The customer data invalidation mechanism no longer relies on the `private_content_version`.
 
-import PageChecklist from '/src/_includes/page-cache-checklist.md'
-
-<PageChecklist />
+<Fragment src="/includes/page-cache-checklist.md"/>

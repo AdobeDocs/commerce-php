@@ -67,13 +67,13 @@ For example, persistent data entities for the Customer module include Customer, 
 
 Repository interfaces must provide these functions:
 
-Method | Description
---- | ---
-`save(data entity interface)` | If entity ID is not specified, creates a record. If entity ID is specified, updates the record for the specified ID.
-`get(id)` | Performs a database lookup by ID and returns a data entity interface, such as `CustomerInterface` or `AddressInterface`.
-`getList(search criteria)` | Performs a search for all data entities that match specified search criteria and returns a search result interface that gives access to the set of matches.
-`delete(data entity interface)` | Deletes a specified entity. The entity contains the key (ID).
-`deleteById(id)` | Deletes a specified entity by key (ID).
+| Method | Description |
+| --- | --- |
+| `save(data entity interface)` | If entity ID is not specified, creates a record. If entity ID is specified, updates the record for the specified ID. |
+| `get(id)` | Performs a database lookup by ID and returns a data entity interface, such as `CustomerInterface` or `AddressInterface`. |
+| `getList(search criteria)` | Performs a search for all data entities that match specified search criteria and returns a search result interface that gives access to the set of matches. |
+| `delete(data entity interface)` | Deletes a specified entity. The entity contains the key (ID). |
+| `deleteById(id)` | Deletes a specified entity by key (ID). |
 
 Each data entity has a corresponding interface. Consequently, the `getById()` function in the corresponding interface, for example, can return the exact type.
 
@@ -81,18 +81,18 @@ Each data entity has a corresponding interface. Consequently, the `getById()` fu
 
 Management interfaces provide management functions that are not related to repositories. For example:
 
-Interface | Description
---- | ---
-`AccountManagementInterface` | Defines the `createAccount()`, `changePassword()`, `activate()`, and `isEmailAvailable()` functions.
-`AddressManagementInterface` | Defines the `validate()` function that validates an address.
+| Interface | Description |
+| --- | --- |
+| `AccountManagementInterface` | Defines the `createAccount()`, `changePassword()`, `activate()`, and `isEmailAvailable()` functions. |
+| `AddressManagementInterface` | Defines the `validate()` function that validates an address. |
 
 ### Metadata interfaces
 
 Metadata interfaces provide methods for retrieving metadata, the interfaces are not related to repositories. For example:
 
-Interface | Description
---- | ---
-`AttributeMetadataInterface` | Provides customer attribute metadata and defines the constants used as keys of data array and methods. See more [AttributeMetadataInterface](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/Api/Data/AttributeMetadataInterface.php).
-`ProductMetadataInterface` | Provides application product metadata. Defines the `getVersion()`, `getEdition()`, `getName()` methods.
-`CustomerMetadataManagementInterface` | Interface for managing customer attributes metadata. Defines the constant `ENTITY_TYPE_CUSTOMER`.
-`AddressMetadataInterface` | Interface for retrieving information about customer address attributes metadata. Defines the constants `ATTRIBUTE_SET_ID_ADDRESS`, `ENTITY_TYPE_ADDRESS`, `DATA_INTERFACE_NAME`.
+| Interface | Description |
+| --- | --- |
+| `AttributeMetadataInterface` | Provides customer attribute metadata and defines the constants used as keys of data array and methods. See more [AttributeMetadataInterface](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/Api/Data/AttributeMetadataInterface.php). |
+| `ProductMetadataInterface` | Provides application product metadata. Defines the `getVersion()`, `getEdition()`, `getName()` methods. |
+| `CustomerMetadataManagementInterface` | Interface for managing customer attributes metadata. Defines the constant `ENTITY_TYPE_CUSTOMER`. |
+| `AddressMetadataInterface` | Interface for retrieving information about customer address attributes metadata. Defines the constants `ATTRIBUTE_SET_ID_ADDRESS`, `ENTITY_TYPE_ADDRESS`, `DATA_INTERFACE_NAME`. |

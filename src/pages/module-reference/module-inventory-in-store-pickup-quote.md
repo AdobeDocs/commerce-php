@@ -20,3 +20,6 @@ is provided by a 3rd-party module, the module cannot be deleted or disabled.
 
 All public interfaces related to this module are located in the `InventoryInStorePickupQuote` module.
 Use the interfaces defined in `InventoryInStorePickupQuote` to extend this module.
+
+<InlineAlert slots="text" />
+The version of this module is 1.1.4.

@@ -29,15 +29,15 @@ This module creates the following tables in the database:
 - `newsletter_queue_store_link`
 - `newsletter_problem`
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Extensibility
 
-Extension developers can interact with the Magento_Newsletter module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_Newsletter module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_Newsletter module.
+[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_Newsletter module.
 
-A lot of functionality in the module is on JavaScript, use [mixins](https://developer.adobe.com/commerce/frontend-core/javascript/mixins/) to extend it.
+A lot of functionality in the module is on JavaScript, use [mixins](https://developer.adobe.com/commerce/frontend-core/javascript/mixins) to extend it.
 
 ### Layouts
 
@@ -81,7 +81,7 @@ For information about a UI component in Magento 2, see [Overview of UI component
 
 ## Additional information
 
-[Learn more about newsletter](https://experienceleague.adobe.com/docs/commerce-admin/marketing/communications/newsletters/newsletters.html).
+[Learn more about newsletter](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/communications/newsletters/newsletters).
 
 ### Cron options
 
@@ -89,4 +89,7 @@ Cron group configuration can be set at `etc/crontab.xml`:
 
 - `newsletter_send_all` - schedules newsletter sending
 
-[Learn how to configure and run cron in Magento.](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html).
+[Learn how to configure and run cron in Magento.](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.8.

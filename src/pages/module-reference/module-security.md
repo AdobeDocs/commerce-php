@@ -17,3 +17,6 @@ _Main features:_
     * Change password link becomes invalid after the first use or after a configurable amount of time
     * Password/email change notifications are sent to both old and new email addresses
 4. Fixed: the password is not being reset until the new password is submitted via the form available by a one time link sent to the email address
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.8.

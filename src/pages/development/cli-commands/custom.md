@@ -71,7 +71,7 @@ Before you begin, make sure you understand the following:
     }
     ```
 
-   Otherwise the [Symfony](https://github.com/symfony/console/blob/master/Application.php#L470) framework will return an `The command defined in "<Command class>" cannot have an empty name.` error.
+   Otherwise the [Symfony](https://github.com/symfony/console/blob/7.2/Application.php#L557) framework will return an `The command defined in "<Command class>" cannot have an empty name.` error.
 
 ## Add CLI commands using dependency injection
 
@@ -150,7 +150,7 @@ Following is a summary of the process:
     }
     ```
 
-    Style the output text by using `<error>`, `<info>`, or `<comment>` tags. See [Symfony](https://symfony.com/doc/current/console/coloring.html) documentation for more information about styling.
+    Style the output text by using `<error>`, `<info>`, or `<comment>` tags. See [Symfony](https://symfony.com/doc/current/console/style.html#output-coloring) documentation for more information about styling.
 
 1. Declare your Command class in `Magento\Framework\Console\CommandListInterface` and configure the command name using dependency injection (`<your component root dir>/etc/di.xml`):
 

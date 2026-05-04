@@ -100,3 +100,6 @@ http.createServer(options, function (req, res) {
     res.end( JSON.stringify(json_response) );
 }).listen(9090);
 ```
+
+<InlineAlert slots="text" />
+The version of this module is 2.3.0.

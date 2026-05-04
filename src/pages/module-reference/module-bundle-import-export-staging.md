@@ -24,3 +24,6 @@ The Magento_BundleImportExportStaging module does not provide any specific exten
 ## Additional information
 
 For more Magento 2 developer documentation, see [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs/).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.5.

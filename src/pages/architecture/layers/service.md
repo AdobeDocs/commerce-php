@@ -43,9 +43,9 @@ The service contract of a module is defined by the set of interfaces in the modu
 
 This directory contains:
 
-*  Service interfaces in the `/Api` namespace of the module ([Catalog API](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Api)).
+*  Service interfaces in the `/Api` namespace of the module ([Catalog API](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Catalog/Api)).
 
-*  Data (or *entity*) interfaces in the `Api/Data` directory ([Catalog API/Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Api/Data)).
+*  Data (or *entity*) interfaces in the `Api/Data` directory ([Catalog API/Data](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Catalog/Api/Data)).
    Data entities* are data structures passed to and returned from service interfaces.
 
    Files in the data directory contain `get()` and `set()` methods for entries in the entity table and extension attributes.

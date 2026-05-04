@@ -11,7 +11,7 @@ Working with events and observers is one of the main ways to extend Adobe Commer
 
 Adobe Commerce developers can use the following event-driven technologies to create the next generation of apps and extensions:
 
-*  [Adobe I/O Events for Adobe Commerce](https://developer.adobe.com/commerce/extensibility/events/) allows you to send events asynchronously to applications built with [Adobe App Builder](https://developer.adobe.com/app-builder/docs/getting_started/first_app/). This feature is available on Adobe Commerce 2.4.4 and higher.
+*  [Adobe I/O Events for Adobe Commerce](https://developer.adobe.com/commerce/extensibility/events/) allows you to send events asynchronously to applications built with [Adobe App Builder](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app). This feature is available on Adobe Commerce 2.4.4 and higher.
 
 *  [Adobe Commerce Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/) enables you to synchronously send webhook calls to an external server for immediate processing. Webhooks are triggered by events and cancel the action that initiated the event if the external call does not succeed. This feature is available as of Adobe Commerce 2.4.4 and higher.
 
@@ -30,8 +30,8 @@ The following example shows you how to dispatch an event with and without an arr
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 namespace MyCompany\MyModule;
@@ -108,8 +108,8 @@ Below is an example of the basic observer class structure:
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 namespace MyCompany\MyModule\Observer;
@@ -137,8 +137,8 @@ One of the more powerful features of observers is that they are able to use para
 ```php
 <?php
 /**
- * Copyright &copy; Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 namespace MyCompany\MyModule\Observer;
@@ -213,4 +213,4 @@ Below is an example of how to disable the previously created observer.
 
 ## Recommended Reading
 
-*  [Observers best practices](https://developer.adobe.com/commerce/php/best-practices/extensions/observers/)
+*  [Observers best practices](/best-practices/extensions/observers.md)
