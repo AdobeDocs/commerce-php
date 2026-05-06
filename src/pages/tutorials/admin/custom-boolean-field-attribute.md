@@ -9,15 +9,17 @@ keywords:
 
 # Add a custom boolean attribute
 
-This tutorial describes how a developer can create a custom boolean (Yes/No) attribute for the Customer entity using code. This will reflect in both the [Customer Grid](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/manage-account) and the [Customer Form](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/update-account) in the Admin.
+This tutorial describes how you create a custom boolean (Yes/No) attribute for the Customer entity using code. The attribute appears in both the [Customer Grid](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/manage-account) and the [Customer Form](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/update-account) in the Admin.
 
-This Customer attribute will be used to store a simple Yes/No flag on a customer record, as an example. It will be created as an EAV attribute in a data patch. The EAV model allows a developer to add custom functionality to the entities without modifying the core databases and schemas. Data patches are run just once, so this code will create the custom attribute and will never run again, which could cause issues. This tutorial also implements `PatchRevertableInterface`, which allows the attribute to be cleanly removed by running `bin/magento setup:rollback`.
+Use this customer attribute as an example to store a simple Yes/No flag on a customer record. You create it as an EAV attribute in a data patch. The EAV model lets you extend entities without changing core database schemas. Data patches run once, so this code creates the attribute on the first run only. This tutorial also implements `PatchRevertableInterface`, so you can remove the attribute by running `bin/magento setup:rollback`.
 
-## Code
+## Data patch implementation
+
+The following sections show the PHP you add to your module.
 
 ### Create the data patch class
 
-Create a data patch class called `AddCustomerAttributeBoolean` under the `\ExampleCorp\Customer\Setup\Patch\Data` namespace. This makes the application execute the data patch automatically when `bin/magento setup:upgrade` is run. This class implements both `\Magento\Framework\Setup\Patch\DataPatchInterface` and `\Magento\Framework\Setup\Patch\PatchRevertableInterface`. Adding the revertable interface requires implementing a `revert()` method that removes the attribute when the patch is rolled back.
+Create a data patch class called `AddCustomerAttributeBoolean` under the `\ExampleCorp\Customer\Setup\Patch\Data` namespace. Magento runs this data patch automatically when you run `bin/magento setup:upgrade`. This class implements both `\Magento\Framework\Setup\Patch\DataPatchInterface` and `\Magento\Framework\Setup\Patch\PatchRevertableInterface`. Adding the revertable interface requires implementing a `revert()` method that removes the attribute when the patch is rolled back.
 
 ```php
 <?php
@@ -89,7 +91,9 @@ public function __construct(
 
 There are five steps in developing a data patch. All the steps below are written inside the `apply` method.
 
-1. Starting and ending the setup execution. This turns off foreign key checks and sets the SQL mode.
+1. Start and end the setup execution.
+
+    This turns off foreign key checks and sets the SQL mode.
 
     ```php
     $this->moduleDataSetup->getConnection()->startSetup();
@@ -149,7 +153,7 @@ There are five steps in developing a data patch. All the steps below are written
     | `is_filterable_in_grid` | `true` - Filterable in the customer grid |
     | `is_searchable_in_grid` | `false` - Not searchable in the customer grid (boolean fields are filtered, not searched) |
 
-1. Add attribute to an attribute set and group.
+1. Add the attribute to an attribute set and group.
 
     There is only one attribute set and group for the customer entity. The default attribute set ID is a constant defined in the `CustomerMetadataInterface` interface and setting the attribute group ID to null makes the application use the default attribute group ID for the customer entity.
 
@@ -182,7 +186,7 @@ There are five steps in developing a data patch. All the steps below are written
 
     Unlike the text field attribute, which is visible only in the Admin, the boolean attribute is also registered for the storefront registration and account edit forms. Adjust the `used_in_forms` values to match the visibility requirements of your project.
 
-1. Gracefully handle exceptions.
+1. Handle exceptions in a try/catch block.
 
     ```php
     try {
@@ -217,7 +221,7 @@ public function revert(): void
 }
 ```
 
-### Implement rest of the interface
+### Implement the rest of the interface
 
 This data patch does not have any other patch as a dependency, and this data patch was not renamed earlier, so both `getDependencies` and `getAliases` can return an empty array.
 
@@ -241,7 +245,7 @@ Run `bin/magento setup:upgrade` from the project root to execute the newly added
 
    ![Custom attribute in the customer form](../../images/tutorials/custom-attribute-customer-form.png)
 
--  The attribute is displayed in the customer grid and can be filtered using a Yes/No dropdown.
+-  The attribute is displayed in the customer grid and can be filtered using a Yes/No dropdown menu.
 
    ![Custom attribute in the customer grid](../../images/tutorials/custom-attribute-customer-grid.png)
 
@@ -417,4 +421,3 @@ class AddCustomerAttributeBoolean implements DataPatchInterface, PatchRevertable
     }
 }
 ```
-

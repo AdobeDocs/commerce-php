@@ -9,15 +9,17 @@ keywords:
 
 # Add a custom multiselect attribute
 
-This tutorial describes how a developer can create a custom multiselect attribute for the Customer entity using code. This will reflect in both the [Customer Grid](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/manage-account) and the [Customer Form](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/update-account) in the Admin.
+This tutorial describes how you create a custom multiselect attribute for the Customer entity using code. The attribute appears in both the [Customer Grid](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/manage-account) and the [Customer Form](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/update-account) in the Admin.
 
-Use a multiselect attribute when you need to store multiple simultaneous values for a single customer field — for example, eligible shipping methods, allowed sales channels, or subscription preferences. Unlike the [dropdown attribute](custom-dropdown-field-attribute.md), which stores a single selected option ID as an integer, a multiselect attribute stores a comma-separated list of option IDs as a `varchar` value, handled by the `ArrayBackend` backend model. This tutorial also implements `PatchRevertableInterface`, which allows the attribute to be cleanly removed by running `bin/magento setup:rollback`.
+Use a multiselect attribute when you need to store multiple simultaneous values for a single customer field. Examples include eligible shipping methods, allowed sales channels, or subscription preferences. Unlike the [dropdown attribute](custom-dropdown-field-attribute.md), a dropdown stores one selected option ID as an integer. A multiselect stores a comma-separated list of option IDs in a `varchar` value. Magento uses the `ArrayBackend` backend model to manage that storage. This tutorial also implements `PatchRevertableInterface`, so you can remove the attribute by running `bin/magento setup:rollback`.
 
-## Code
+## Data patch implementation
+
+The following sections show the PHP code you add to your module.
 
 ### Create the data patch class
 
-Create a data patch class called `AddCustomerAttributeMultipleOptions` under the `\ExampleCorp\Customer\Setup\Patch\Data` namespace. This makes the application execute the data patch automatically when `bin/magento setup:upgrade` is run. This class implements both `\Magento\Framework\Setup\Patch\DataPatchInterface` and `\Magento\Framework\Setup\Patch\PatchRevertableInterface`.
+Create a data patch class called `AddCustomerAttributeMultipleOptions` under the `\ExampleCorp\Customer\Setup\Patch\Data` namespace. Magento runs this data patch automatically when you run `bin/magento setup:upgrade`. This class implements both `\Magento\Framework\Setup\Patch\DataPatchInterface` and `\Magento\Framework\Setup\Patch\PatchRevertableInterface`.
 
 ```php
 <?php
@@ -89,7 +91,9 @@ public function __construct(
 
 There are five steps in developing a data patch. All the steps below are written inside the `apply` method.
 
-1. Starting and ending the setup execution. This turns off foreign key checks and sets the SQL mode.
+1. Start and end the setup execution.
+
+    This turns off foreign key checks and sets the SQL mode.
 
     ```php
     $this->moduleDataSetup->getConnection()->startSetup();
@@ -147,7 +151,7 @@ There are five steps in developing a data patch. All the steps below are written
     | `is_filterable_in_grid` | `true` - Filterable in the customer grid |
     | `is_searchable_in_grid` | `false` - Not searchable in the customer grid (multiselect fields are filtered by option, not free-text searched) |
 
-1. Add attribute to an attribute set and group.
+1. Add the attribute to an attribute set and group.
 
     There is only one attribute set and group for the customer entity. The default attribute set ID is a constant defined in the `CustomerMetadataInterface` interface and setting the attribute group ID to null makes the application use the default attribute group ID for the customer entity.
 
@@ -178,7 +182,7 @@ There are five steps in developing a data patch. All the steps below are written
     $this->attributeResource->save($attribute);
     ```
 
-1. Gracefully handle exceptions.
+1. Handle exceptions in a try/catch block.
 
     ```php
     try {
@@ -213,7 +217,7 @@ public function revert(): void
 }
 ```
 
-### Implement rest of the interface
+### Implement the rest of the interface
 
 This data patch does not have any other patch as a dependency, and this data patch was not renamed earlier, so both `getDependencies` and `getAliases` can return an empty array.
 

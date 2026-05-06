@@ -785,7 +785,6 @@
         - [Create a boolean field attribute](/tutorials/admin/custom-boolean-field-attribute.md)
         - [Create a dropdown field attribute](/tutorials/admin/custom-dropdown-field-attribute.md)
         - [Create a multiselect field attribute](/tutorials/admin/custom-multiselect-field-attribute.md)
-
     - [Frontend development](/tutorials/frontend/index.md)
         - [Customize checkout](/tutorials/frontend/custom-checkout/index.md)
             - [Add a new checkout step](/tutorials/frontend/custom-checkout/add-new-step.md)
