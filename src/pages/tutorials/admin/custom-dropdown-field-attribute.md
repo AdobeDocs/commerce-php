@@ -9,15 +9,17 @@ keywords:
 
 # Add a custom dropdown attribute
 
-This tutorial describes how a developer can create a custom dropdown (select) attribute for the Customer entity using code. This will reflect in both the [Customer Grid](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/manage-account) and the [Customer Form](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/update-account) in the Admin.
+This tutorial describes how you create a custom dropdown (select) attribute for the Customer entity using code. The attribute appears in both the [Customer Grid](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/manage-account) and the [Customer Form](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/update-account) in the Admin.
 
-Use a select attribute when you want administrators (and optionally customers) to choose a value from a controlled set of options — for example, a customer tier (Silver/Gold/Platinum) or an internal segmentation flag. The attribute will be created as an EAV attribute in a data patch. This tutorial also implements `PatchRevertableInterface`, which allows the attribute to be cleanly removed by running `bin/magento setup:rollback`.
+Use a select attribute when you want administrators (and optionally customers) to choose a value from a controlled set of options. Examples include a customer tier (Silver, Gold, Platinum) or an internal segmentation flag. You create the attribute as an EAV attribute in a data patch. This tutorial also implements `PatchRevertableInterface`, so you can remove the attribute by running `bin/magento setup:rollback`.
 
-## Code
+## Data patch implementation
+
+The following sections show the PHP you add to your module.
 
 ### Create the data patch class
 
-Create a data patch class called `AddCustomerAttributeOptions` under the `\ExampleCorp\Customer\Setup\Patch\Data` namespace. This makes the application execute the data patch automatically when `bin/magento setup:upgrade` is run. Unlike the text field and boolean attribute tutorials, this class implements both `\Magento\Framework\Setup\Patch\DataPatchInterface` and `\Magento\Framework\Setup\Patch\PatchRevertableInterface`. Adding the revertable interface requires implementing a `revert()` method that removes the attribute when the patch is rolled back.
+Create a data patch class called `AddCustomerAttributeOptions` under the `\ExampleCorp\Customer\Setup\Patch\Data` namespace. Magento runs this data patch automatically when you run `bin/magento setup:upgrade`. Unlike the text field and boolean attribute tutorials, this class implements both `\Magento\Framework\Setup\Patch\DataPatchInterface` and `\Magento\Framework\Setup\Patch\PatchRevertableInterface`. Adding the revertable interface requires implementing a `revert()` method that removes the attribute when the patch is rolled back.
 
 ```php
 <?php
@@ -61,7 +63,7 @@ The dependencies to the data patch are injected using constructor DI and are lis
 -  `\Magento\Customer\Model\ResourceModel\Attribute` aliased as `AttributeResource` for saving the attribute after adding custom data to it.
 -  `\Psr\Log\LoggerInterface` for logging exceptions thrown during the execution.
 
-Note that unlike previous tutorials, the dropdown patch stores `$customerSetupFactory` directly rather than instantiating `$customerSetup` in the constructor. This is because `revert()` also needs to create a `CustomerSetup` instance, so the factory is reused across both methods.
+Unlike the earlier tutorials, the dropdown patch stores `$customerSetupFactory` directly rather than instantiating `$customerSetup` in the constructor. The `revert()` method also needs a `CustomerSetup` instance, so the factory is reused across both methods.
 
 ```php
 /**
@@ -89,7 +91,9 @@ public function __construct(
 
 There are five steps in developing a data patch. All the steps below are written inside the `apply` method.
 
-1. Starting and ending the setup execution. This turns off foreign key checks and sets the SQL mode.
+1. Start and end the setup execution.
+
+    This turns off foreign key checks and sets the SQL mode.
 
     ```php
     $this->moduleDataSetup->getConnection()->startSetup();
@@ -134,7 +138,7 @@ There are five steps in developing a data patch. All the steps below are written
     | --- | --- |
     | `label` | `Customer Custom Attribute Options` - Label for displaying the attribute value |
     | `type` | `int` - Stores the selected option ID as an integer |
-    | `input` | `select` - Renders as a dropdown in the customer form |
+    | `input` | `select` - Renders as a dropdown menu in the customer form |
     | `source` | Provides the list of selectable options |
     | `required` | `false` - Attribute will be an optional field in the customer form |
     | `position` | `444` - Sort order in the customer form |
@@ -145,7 +149,7 @@ There are five steps in developing a data patch. All the steps below are written
     | `is_filterable_in_grid` | `true` - Filterable in the customer grid |
     | `is_searchable_in_grid` | `false` - Not searchable in the customer grid (dropdown fields are filtered by option, not free-text searched) |
 
-1. Add attribute to an attribute set and group.
+1. Add the attribute to an attribute set and group.
 
     There is only one attribute set and group for the customer entity. The default attribute set ID is a constant defined in the `CustomerMetadataInterface` interface and setting the attribute group ID to null makes the application use the default attribute group ID for the customer entity.
 
@@ -176,7 +180,7 @@ There are five steps in developing a data patch. All the steps below are written
     $this->attributeResource->save($attribute);
     ```
 
-1. Gracefully handle exceptions.
+1. Handle exceptions in a try/catch block.
 
     ```php
     try {
@@ -211,7 +215,7 @@ public function revert(): void
 }
 ```
 
-### Implement rest of the interface
+### Implement the rest of the interface
 
 This data patch does not have any other patch as a dependency, and this data patch was not renamed earlier, so both `getDependencies` and `getAliases` can return an empty array.
 
@@ -235,7 +239,7 @@ Run `bin/magento setup:upgrade` from the project root to execute the newly added
 
    ![Custom attribute in the customer form](../../images/tutorials/custom-attribute-customer-form.png)
 
--  The attribute is displayed in the customer grid and can be filtered using a dropdown of available options.
+-  The attribute is displayed in the customer grid and can be filtered using a dropdown menu of available options.
 
    ![Custom attribute in the customer grid](../../images/tutorials/custom-attribute-customer-grid.png)
 
