@@ -23,7 +23,7 @@ The following major backward-incompatible changes were introduced in the 2.4.9 A
 
 ### Admin Password Length Validation
 
-A new Admin configuration setting enables validation of minimum password length for admin users. Administrators can now set this requirement via **[!UICONTROL Stores > Configuration > Advanced > Admin > Security]**. The validation is enforced during admin user create or update operations and configuration saves, with real-time frontend feedback for improved user experience.
+A new Admin configuration setting enables validation of minimum password length for admin users. Administrators can now set this requirement via **Stores > Configuration > Advanced > Admin > Security**. The validation is enforced during admin user create or update operations and configuration saves, with real-time frontend feedback for improved user experience.
 
 **Impact:**
 
@@ -34,7 +34,7 @@ A new Admin configuration setting enables validation of minimum password length 
 
 **Action required:**
 
-No action is required for typical usage. To adjust the minimum password length, use the system configuration path `admin/security/minimum_password_length` in **[!UICONTRL Stores > Configuration > Advanced > Admin > Security]**. \<!--AC-15249--\>
+No action is required for typical usage. To adjust the minimum password length, use the system configuration path `admin/security/minimum_password_length` in **Stores > Configuration > Advanced > Admin > Security**. \<!--AC-15249--\>
 
 ### GraphQL alias limit validation
 
