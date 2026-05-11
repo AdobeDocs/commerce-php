@@ -9,9 +9,9 @@ keywords:
 
 This page highlights backward-incompatible changes between Adobe Commerce and Magento Open Source releases that have a major impact and require detailed explanation and special instructions to ensure third-party modules continue working. High-level reference information for all backward-incompatible changes in each release is documented in the [reference](reference.md) section.
 
-## 2.4.9-beta1
+## 2.4.9
 
-The following major backward-incompatible changes were introduced in the 2.4.9-beta1 Adobe Commerce and Magento Open Source releases:
+The following major backward-incompatible changes were introduced in the 2.4.9 Adobe Commerce and Magento Open Source releases:
 
 * GraphQL alias limit validation
 * GraphQL query length validation
@@ -20,6 +20,21 @@ The following major backward-incompatible changes were introduced in the 2.4.9-b
 * Symfony 7.4 LTS support
 * Valkey 8.x CLI command
 * Zend_Cache replaced with symfony/cache
+
+### Admin Password Length Validation
+
+A new Admin configuration setting enables validation of minimum password length for admin users. Administrators can now set this requirement via **[!UICONTROL Stores > Configuration > Advanced > Admin > Security]**. The validation is enforced during admin user create or update operations and configuration saves, with real-time frontend feedback for improved user experience.
+
+**Impact:**
+
+* Only custom or non-standard admin user creation flows are impacted if they do not comply with the new minimum password length requirement
+* No impact is expected on normal admin usage if passwords meet the configured minimum length
+* The default minimum length can be adjusted in configuration as needed
+* A constructor was added to the `Magento\User\Model\UserValidationRules.php` file to support this feature; EAT report shows zero affected modules
+
+**Action required:**
+
+No action is required for typical usage. To adjust the minimum password length, use the system configuration path `admin/security/minimum_password_length` in **[!UICONTRL Stores > Configuration > Advanced > Admin > Security]**. \<!--AC-15249--\>
 
 ### GraphQL alias limit validation
 
