@@ -21,7 +21,6 @@ The following major backward-incompatible changes were introduced in the 2.4.9 A
 * Valkey 8.x CLI command
 * Zend_Cache replaced with symfony/cache
 
-
 ### Admin Password Length Validation
 
 A new Admin configuration setting enables validation of minimum password length for admin users. Administrators can now set this requirement via **[!UICONTROL Stores > Configuration > Advanced > Admin > Security]**. The validation is enforced during admin user create or update operations and configuration saves, with real-time frontend feedback for improved user experience.
