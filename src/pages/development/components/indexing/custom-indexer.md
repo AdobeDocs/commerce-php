@@ -33,7 +33,7 @@ Declare a new indexer process in the `etc/indexer.xml` file with the following a
 | `class` | No | The class that processes indexer methods (`executeFull`, `executeList`, `executeRow`) |
 | `primary` | No | The source provider |
 | `shared_index` | No | Use this option to improve performance if your indexer is related to another indexer. In this [example](https://github.com/magento/magento2/blob/2.4/app/code/Magento/CatalogRule/etc/indexer.xml), if the Catalog Product Rule index needs to be reindexed, but other catalog product rule indexes are up-to-date, then only the Catalog Product Rule is reindexed. |
-| `view_id` | No | The ID of the view element that is defined in the `mview.xml` configuration file. |
+| `view_id` | Yes | The ID of the view element that is defined in the `mview.xml` configuration file. |
 
 For example,
 
