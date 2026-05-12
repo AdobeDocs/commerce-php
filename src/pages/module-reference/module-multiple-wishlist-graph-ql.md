@@ -3,9 +3,9 @@ title: MultipleWishlistGraphQl
 description: N/A
 ---
 
-# MultipleWishlistGraphQl
+# Magento_MultipleWishlistGraphQl module
 
-**MultipleWishlistGraphQl** provides type information regarding multiple wishlist functionality for the GraphQl module
+This module provides type information regarding multiple wishlist functionality for the GraphQl module.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.4.
+The version of this module is 100.4.5.

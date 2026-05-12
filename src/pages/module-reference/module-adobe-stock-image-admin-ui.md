@@ -9,9 +9,9 @@ The Magento_AdobeStockImageAdminUi module is responsible for the admin panel use
 
 ## Extensibility
 
-Extension developers can interact with the Magento_AdobeStockImageAdminUi module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins).
+Extension developers can interact with the Magento_AdobeStockImageAdminUi module. For more information about the extension mechanism, see [Plugins](https://developer.adobe.com/commerce/php/development/components/plugins/).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_AdobeStockImageAdminUi module.
+[The dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_AdobeStockImageAdminUi module.
 
 ### Layouts
 
@@ -29,7 +29,7 @@ For information about UI components in Magento 2, see [Overview of UI components
 
 ## Additional information
 
-For information about significant changes in patch releases, see [2.3.x Release information](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
+For information about significant changes in patch releases, see [Release information](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
 <InlineAlert slots="text" />
-The version of this module is 1.3.6.
+The version of this module is 1.3.7.

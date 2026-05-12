@@ -5,7 +5,7 @@ description: N/A
 
 # Magento_CatalogStaging module
 
-The Magento_CatalogStaging module is a part of the staging functionality in Magento EE. It enables you to create new catalog updates or add new changes to the existing store updates. In other words, you can modify the category and product entity attributes in updates. These updates are shown on the content dashboard.
+The Magento_CatalogStaging module is a part of the staging functionality in Adobe Commerce. It enables you to create new catalog updates or add new changes to the existing store updates. In other words, you can modify the category and product entity attributes in updates. These updates are shown on the content dashboard.
 
 ## Implementation Details
 
@@ -98,13 +98,13 @@ You can find the list of modules that have dependencies with the Magento_Catalog
 
 ## Extension Points
 
-Extension points enable extension developers to interact with the Magento_CatalogStaging module. You can interact with the Magento_CatalogStaging module using the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins).
+Extension points enable extension developers to interact with the Magento_CatalogStaging module. You can interact with the Magento_CatalogStaging module using the Magento extension mechanism, see [Plugins](https://developer.adobe.com/commerce/php/development/components/plugins/).
 
-[Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_CatalogStaging module.
+[Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_CatalogStaging module.
 
 ### UI components
 
-You can extend product and category updates using the UI components located in the `Magento\CatalogStaging\view\adminhtml\ui_component` directory. For more information, see [UI Listing/Grid Component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/listing-grid).
+You can extend product and category updates using the UI components located in the `Magento\CatalogStaging\view\adminhtml\ui_component` directory. For more information, see [UI Listing/Grid Component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/listing-grid/).
 
 ### Layouts
 
@@ -124,7 +124,7 @@ You can use the following events:
 
 ## Additional information
 
-For more Magento 2 developer documentation, see [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs/).
+For more developer documentation, see [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs/).
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.8.
+The version of this module is 100.4.9.

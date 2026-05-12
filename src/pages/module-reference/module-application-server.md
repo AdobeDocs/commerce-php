@@ -3,7 +3,7 @@ title: ApplicationServer
 description: A module that implements Application Server on Swoole
 ---
 
-# ApplicationServer module
+# Magento_ApplicationServer module
 
 The ApplicationServer module provides possibility to use Application Server (Container) to decrease bootstrapping time of each request.
 
@@ -17,7 +17,9 @@ Install either the OpenSwoole or Swoole PHP extension, and ensure that correspon
 
 Example of the installation command:
 
-`pecl install openswoole-22.0.0 | composer require openswoole/core:22.1.1`
+```bash
+pecl install openswoole-22.0.0 | composer require openswoole/core:22.1.1
+```
 
 ### Routing requests to Application Server
 
@@ -35,7 +37,13 @@ location /graphql {
 
 ## How to run Application Server
 
-To launch the Application Server, execute the following CLI command: `bin/magento server:run`. This will start HTTP service on 9501 port for GraphQl area
+To launch the Application Server, execute the following CLI command:
+
+```bash
+bin/magento server:run
+```
+
+This will start HTTP service on 9501 port for GraphQl area.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.1.
+The version of this module is 100.4.2.

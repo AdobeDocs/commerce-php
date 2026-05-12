@@ -3,22 +3,19 @@ title: Securitytxt
 description: Security.txt file for Magento 2 websites
 ---
 
-# Security.txt
+# Magento_Securitytxt module
 
-## Summary
-
->
 > When security vulnerabilities are discovered by researchers, proper reporting channels are often lacking. As a result, vulnerabilities may be left unreported. This document defines a format ("security.txt") to help organizations describe their vulnerability disclosure practices to make it easier for researchers to report vulnerabilities.
 
-Source: [security.txt specification](https://datatracker.ietf.org/doc/html/draft-foudil-securitytxt-09)
+_Source: <https://datatracker.ietf.org/doc/html/draft-foudil-securitytxt-09>_
 
 The Magento_Securitytxt module provides the following functionality:
 
 * allows to save the security configurations in the admin panel
-* contains a router to match application action class for requests to the `.well-known/security.txt` and `.well-known/security.txt.sig` files.
-* serves the content of the `.well-known/security.txt` and `.well-known/security.txt.sig` files.
+* contains a router to match application action class for requests to the `.well-known/security.txt` and `.well-known/security.txt.sig` files
+* serves the content of the `.well-known/security.txt` and `.well-known/security.txt.sig` files
 
-A valid security.txt file could look like the following example:
+A valid _security.txt_ file could look like the following example:
 
 ```txt
 Contact: mailto:security@example.com
@@ -29,16 +26,20 @@ Policy: https://example.com/security-policy.html
 Signature: https://example.com/.well-known/security.txt.sig
 ```
 
-Security.txt can be accessed at below location:
+_Security.txt_ can be accessed at the location of the following format:
 `https://example.com/.well-known/security.txt`
 
-To create security.txt signature (security.txt.sig) file:
+To create _security.txt_ signature (_security.txt.sig_) file, run the following command:
 
-`gpg -u KEYID --output security.txt.sig --armor --detach-sig security.txt`
+```bash
+gpg -u KEYID --output security.txt.sig --armor --detach-sig security.txt
+```
 
-To verify the security.txt file's signature:
+To verify the _security.txt_ file's signature, run the following command:
 
-`gpg --verify security.txt.sig security.txt`
+```bash
+gpg --verify security.txt.sig security.txt
+```
 
 <InlineAlert slots="text" />
-The version of this module is 1.1.4.
+The version of this module is 1.1.5.

@@ -3,20 +3,19 @@ title: Catalog
 description: N/A
 ---
 
-# Magento_Catalog
+# Magento_Catalog module
 
-Magento_Catalog module functionality is represented by the following sub-systems:
+This module functionality is represented by the following sub-systems:
 
-- Products Management. It includes CRUD operation of product, product media, product attributes, etc...
-- Category Management. It includes CRUD operation of category, category attributes
+- Products Management. It includes CRUD operations of a product, product media, product attributes, etc.
+- Category Management. It includes CRUD operations of a category, category attributes.
 
-Catalog module provides mechanism for creating new product type in the system.
-Catalog module provides API filtering that allows to limit product selection with advanced filters.
+This module provides a mechanism for creating a new product type in the system.
+This module provides API filtering that allows limiting product selection with advanced filters.
 
 ## Structure
 
-  [Learn about a typical file structure for a Magento 2 module]
-  (https://developer.adobe.com/commerce/php/development/build/component-file-structure).
+[Learn about a typical file structure for a module](https://developer.adobe.com/commerce/php/development/build/component-file-structure/).
 
 ## Observer
 
@@ -79,4 +78,4 @@ This module observes the following events:
    `Magento\Catalog\Observer\FlushCategoryPagesCache`
 
 <InlineAlert slots="text" />
-The version of this module is 104.0.8.
+The version of this module is 104.0.9.

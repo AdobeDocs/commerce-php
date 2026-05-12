@@ -3,7 +3,9 @@ title: Review
 description: N/A
 ---
 
-Magento_Review module functionality allows to write reviews for products.
+# Magento_Review module
+
+This module allows to write reviews for products.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.8.
+The version of this module is 100.4.9.

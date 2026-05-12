@@ -7,7 +7,7 @@ description: N/A
 
 The Magento_Admin_Adobe_Ims module contains integration with Adobe IMS for backend authentication.
 
-For information about module installation, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
+For information about module installation, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
 
 ## CLI command usage
 
@@ -17,7 +17,6 @@ Enables the AdminAdobeIMS Module. \
 Required values are `Organization ID`, `Client ID`, `Client Secret` and `2FA enabled`
 
 ### Argument Validation
-
 On enabling the AdminAdobeIMS Module, the input arguments will be validated. \
 The pattern for the validation are configured in the di.xml
 
@@ -32,7 +31,7 @@ The pattern for the validation are configured in the di.xml
 </type>
 ```
 
-We check if the arguments are not empty, as they are all required.
+We check if the arguments are not empty, as they are all required. 
 
 For the Organization ID, Client ID and Client Secret, we check if they contain only alphanumeric characters. \
 Additionally for the Organization ID, we check if it matches 24 characters and optional has the suffix `@AdobeOrg`. But we only store the ID and ignore the suffix.
@@ -222,8 +221,8 @@ Certificate value is cached.
 This authentication mechanism enabled for REST and SOAP web API areas.
 
 Examples, how developers can test functionality:
-curl -X GET "\{domain}/rest/V1/customers/2" -H "Authorization: Bearer AddAdobeImsAccessToken"
-curl -X GET "\{domain}/rest/V1/products/24-MB01" -H "Authorization: Bearer AddAdobeImsAccessToken"
+curl -X GET "{domain}/rest/V1/customers/2" -H "Authorization: Bearer AddAdobeImsAccessToken"
+curl -X GET "{domain}/rest/V1/products/24-MB01" -H "Authorization: Bearer AddAdobeImsAccessToken"
 
 ### Two-factor authentication
 
@@ -250,4 +249,4 @@ The reauth_token will be used to call the AdobeIms validateToken Endpoint.
 When this call is successful, the form will be submitted, otherwise we update the Message of the thrown `AuthenticationException` to return a matching error message, done by the `Magento/AdminAdobeIms/Plugin/PerformIdentityCheckMessagePlugin.php` Plugin.
 
 <InlineAlert slots="text" />
-The version of this module is 100.5.3.
+The version of this module is 100.5.4.

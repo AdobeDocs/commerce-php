@@ -57,13 +57,13 @@ The Magento_Customer module creates the following tables in the database:
 - `customer_visitor`
 - `customer_log`
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
+For information about a module installation, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Extensibility
 
-Extension developers can interact with the Magento_Customer module. For more information about the Magento extension mechanism, see [Magento plugins](https://developer.adobe.com/commerce/php/development/components/plugins).
+Extension developers can interact with the Magento_Customer module. For more information about the extension mechanism, see [Plugins](https://developer.adobe.com/commerce/php/development/components/plugins/).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_Customer module.
+[The dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_Customer module.
 
 A lot of functionality in the module is on JavaScript, use [mixins](https://developer.adobe.com/commerce/frontend-core/javascript/mixins) to extend it.
 
@@ -139,7 +139,7 @@ The module dispatches the following events:
 - `visitor_activity_save` event in the `\Magento\Customer\Model\Visitor::saveByRequest` method. Parameters:
     - `visitor` is a `$this` object (`\Magento\Customer\Model\Visitor` class)
 
-For information about an event in Magento 2, see [Events and observers](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#events).
+For information about an event, see [Events and observers](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#events).
 
 ### Layouts
 
@@ -171,7 +171,7 @@ This module introduces the following layouts in the `view/frontend/layout` and `
     - `customer_address_index`
     - `default`
 
-For more information about a layout in Magento 2, see the [Layout documentation](https://developer.adobe.com/commerce/frontend-core/guide/layouts/).
+For more information about a layout, see the [Layout documentation](https://developer.adobe.com/commerce/frontend-core/guide/layouts/).
 
 ### Public APIs
 
@@ -331,7 +331,7 @@ For more information about a layout in Magento 2, see the [Layout documentation]
 - `\Magento\Customer\Model\Customer\Source\GroupSourceLoggedInOnlyInterface`
     - get customer group attribute source
 
-For information about a public API in Magento 2, see [Public interfaces & APIs](https://developer.adobe.com/commerce/php/development/components/api-concepts).
+For information about a public API, see [Public interfaces & APIs](https://developer.adobe.com/commerce/php/development/components/api-concepts/).
 
 ### UI components
 
@@ -347,17 +347,17 @@ You can extend customer and customer address updates using the configuration fil
 - `view/base/ui_component`:
     - `customer_form`
 
-For information about a UI component in Magento 2, see [Overview of UI components](https://developer.adobe.com/commerce/frontend-core/ui-components/).
+For information about a UI component, see [Overview of UI components](https://developer.adobe.com/commerce/frontend-core/ui-components/).
 
 ## Additional information
 
-More information can get at articles:
+You can get more information at the following articles:
 
 - [Customer Configurations](https://experienceleague.adobe.com/en/docs/commerce-admin/config/customers/customer-configuration)
 - [Customer Attributes](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/attributes/attribute-properties)
 - [Customer Address Attributes](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/attributes/address-attributes)
-- [EAV And Extension Attributes](https://developer.adobe.com/commerce/php/development/components/attributes)
-- [2.4.x Release information](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview)
+- [EAV And Extension Attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
+- [Release information](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview)
 
 ### Console commands
 
@@ -371,7 +371,7 @@ Cron group configuration can be set at `etc/crontab.xml`:
 
 - `visitor_clean` - clean visitor's outdated records
 
-[Learn how to configure and run cron in Magento.](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs).
+[Learn how to configure and run cron in Magento](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs).
 
 ### Indexers
 
@@ -382,4 +382,4 @@ This module introduces the following indexers:
 [Learn how to manage the indexers](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers).
 
 <InlineAlert slots="text" />
-The version of this module is 103.0.8.
+The version of this module is 103.0.9.

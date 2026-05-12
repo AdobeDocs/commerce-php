@@ -5,17 +5,17 @@ description: Magento module responsible for images metadata synchronization
 
 # Magento_MediaGallerySynchronizationMetadata module
 
-The purpose of this module is to include assets metadata to media gallery synchronization process.
+This module includes assets metadata to the media gallery synchronization process.
 
 ## Installation details
 
-For information about module installation in Magento 2, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
+For information about module installation, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## Extensibility
 
-Extension developers can interact with the Magento_MediaGallerySynchronizationMetadata module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins).
+Extension developers can interact with the Magento_MediaGallerySynchronizationMetadata module. For more information about the extension mechanism, see [Plugins](https://developer.adobe.com/commerce/php/development/components/plugins/).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_MediaGallerySynchronizationMetadata module.
+[The dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_MediaGallerySynchronizationMetadata module.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.4.
+The version of this module is 100.4.5.

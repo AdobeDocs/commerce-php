@@ -5,11 +5,11 @@ description: N/A
 
 # Magento_GroupedProductStaging module
 
-The Magento_GroupedProductStaging module is a part of the staging functionality in Magento EE. It enables you to stage products assigned to grouped product.
+The Magento_GroupedProductStaging module is a part of the staging functionality in Adobe Commerce. It enables you to stage products assigned to a grouped product.
 
 ## Implementation details
 
-The Magento_GroupedProductStaging module extends functionality of the Magento_GroupedProduct to be used in staging. It adds Grouped Products field set to the Schedule Update form of a product.
+The Magento_GroupedProductStaging module extends the functionality of the Magento_GroupedProduct to be used in staging. It adds the Grouped Products field set to the Schedule Update form of a product.
 
 ## Dependencies
 
@@ -17,7 +17,7 @@ You can find the list of modules that have dependencies on the Magento_GroupedPr
 
 ## Extension points
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_GroupedProductStaging module.
+[The dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_GroupedProductStaging module.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.6.
+The version of this module is 100.4.7.

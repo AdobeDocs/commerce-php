@@ -5,7 +5,7 @@ description: N/A
 
 # Magento_MsrpStaging module
 
-The Magento_MsrpStaging module is a part of the staging functionality in Magento EE. It enables you to stage the manufacturer's suggested retail price.
+The Magento_MsrpStaging module is a part of the staging functionality in Adobe Commerce. It enables you to stage the manufacturer's suggested retail price.
 
 ## Implementation details
 
@@ -20,7 +20,7 @@ You can find the list of modules that have dependencies on the Magento_MsrpStagi
 
 ## Extension points
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_MsrpStaging module.
+[The dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_MsrpStaging module.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.6.
+The version of this module is 100.4.7.

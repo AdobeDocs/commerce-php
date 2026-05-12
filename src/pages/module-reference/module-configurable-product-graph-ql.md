@@ -3,10 +3,9 @@ title: ConfigurableProductGraphQl
 description: N/A
 ---
 
-# ConfigurableProductGraphQl
+# Magento_ConfigurableProductGraphQl module
 
-**ConfigurableProductGraphQl** provides type and resolver information for the GraphQl module
-to generate configurable product information.
+This module provides type and resolver information for the GraphQl module to generate configurable product information.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.8.
+The version of this module is 100.4.9.

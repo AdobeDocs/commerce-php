@@ -5,7 +5,7 @@ description: N/A
 
 # Magento_GiftWrappingStaging module
 
-The Magento_GiftWrappingStaging module is a part of the staging functionality in Magento EE. It allows to stage value of 'Allow Gift Wrapping' flag and price of the wrapping for each product update.
+The Magento_GiftWrappingStaging module is a part of the staging functionality in Adobe Commerce. It allows to stage value of 'Allow Gift Wrapping' flag and price of the wrapping for each product update.
 
 ## Implementation details
 
@@ -20,7 +20,7 @@ You can find the list of modules that have dependencies on the Magento_GiftWrapp
 
 ## Extension points
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_GiftWrappingStaging module.
+[The dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_GiftWrappingStaging module.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.5.
+The version of this module is 100.4.6.
