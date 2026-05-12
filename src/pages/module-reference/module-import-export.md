@@ -23,13 +23,13 @@ For information about a module installation, see [Enable or disable modules](htt
 
 `Files/` - the directory that contains sample import files.
 
-For information about a typical file structure of a module, see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure/#module-file-structure).
+For information about a typical file structure of a module, see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure#module-file-structure).
 
 ## Extensibility
 
-Extension developers can interact with the Magento_ImportExport module. For more information about the extension mechanism, see [Plugins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_ImportExport module. For more information about the extension mechanism, see [Plugins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_ImportExport module.
+[The dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_ImportExport module.
 
 ### Layouts
 
@@ -65,7 +65,7 @@ For information about a UI component, see [Overview of UI components](https://de
 - `\Magento\ImportExport\Api\ExportManagementInterface`
     - Executing actual export and returns export data
 
-For information about a public API, see [Public interfaces & APIs](https://developer.adobe.com/commerce/php/development/components/api-concepts/).
+For information about a public API, see [Public interfaces & APIs](https://developer.adobe.com/commerce/php/development/components/api-concepts).
 
 ## Additional information
 
@@ -87,7 +87,7 @@ For information about a public API, see [Public interfaces & APIs](https://devel
 
 You can get more information about import/export processes at the following articles:
 
-- [Create custom import entity](https://developer.adobe.com/commerce/php/tutorials/backend/create-custom-import-entity/)
+- [Create custom import entity](https://developer.adobe.com/commerce/php/tutorials/backend/create-custom-import-entity)
 - [Import](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import)
 - [Export](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-export)
 

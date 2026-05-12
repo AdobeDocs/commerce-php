@@ -13,9 +13,9 @@ For information about module installation, see [Enable or disable modules](https
 
 ## Extensibility
 
-Extension developers can interact with the Magento_MediaGalleryApi module. For more information about the extension mechanism, see [Plugins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_MediaGalleryApi module. For more information about the extension mechanism, see [Plugins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_MediaGalleryApi module.
+[The dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_MediaGalleryApi module.
 
 ### Public APIs
 
@@ -58,7 +58,7 @@ Extension developers can interact with the Magento_MediaGalleryApi module. For m
 - `\Magento\MediaGalleryApi\Api\SearchAssetsInterface`:
     - search media gallery assets
 
-For information about a public API, see [Public interfaces & APIs](https://developer.adobe.com/commerce/php/development/components/api-concepts/).
+For information about a public API, see [Public interfaces & APIs](https://developer.adobe.com/commerce/php/development/components/api-concepts).
 
 ## Additional information
 

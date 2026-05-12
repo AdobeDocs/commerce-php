@@ -12,7 +12,7 @@ The [Inventory Management overview](https://developer.adobe.com/commerce/webapi/
 describes the Multi-Source Inventory (MSI) project in more detail.
 
 All Inventory Management modules follow the [Single Responsibility Principle](https://blog.cleancoder.com/uncle-bob/2014/05/08/SingleReponsibilityPrinciple.html),
-and the [Inventory management architecture](https://developer.adobe.com/commerce/php/architecture/modules/inventory-management/)
+and the [Inventory management architecture](https://developer.adobe.com/commerce/php/architecture/modules/inventory-management)
 provides additional insight about the overall structure of these modules.
 
 ## Installation details

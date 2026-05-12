@@ -7,7 +7,7 @@ description: N/A
 
 The Magento_Admin_Adobe_Ims module contains integration with Adobe IMS for backend authentication.
 
-For information about module installation, see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
+For information about module installation, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 ## CLI command usage
 
@@ -222,8 +222,11 @@ Certificate value is cached.
 This authentication mechanism enabled for REST and SOAP web API areas.
 
 Examples, how developers can test functionality:
+
+```bash
 curl -X GET "{domain}/rest/V1/customers/2" -H "Authorization: Bearer AddAdobeImsAccessToken"
 curl -X GET "{domain}/rest/V1/products/24-MB01" -H "Authorization: Bearer AddAdobeImsAccessToken"
+```
 
 ### Two-factor authentication
 

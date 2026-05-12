@@ -19,11 +19,11 @@ The Magento_GiftCardRequisitionList module has a dependency on the Magento_Requi
 
 ## Structure
 
-[Learn about a typical file structure for a Magento 2 module](https://developer.adobe.com/commerce/php/development/build/component-file-structure/).
+[Learn about a typical file structure for a Magento 2 module](https://developer.adobe.com/commerce/php/development/build/component-file-structure).
 
 ## Additional information
 
-You can track [backward incompatible changes made in a Magento B2b mainline after the Magento 2.2 release]((https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes)).
+You can track [backward incompatible changes made in a Magento B2b mainline after the Magento 2.2 release](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).
 
 <InlineAlert slots="text" />
 The version of this module is 100.5.2.

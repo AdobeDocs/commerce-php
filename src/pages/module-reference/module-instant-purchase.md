@@ -15,13 +15,13 @@ For information about a module installation, see [Enable or disable modules](htt
 
 `PaymentMethodsIntegration/` - directory that contains interfaces and basic implementation of integration vault payment method to the instant purchase.
 
-For information about a typical file structure of a module, see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure/#module-file-structure).
+For information about a typical file structure of a module, see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure#module-file-structure).
 
 ## Extensibility
 
-Extension developers can interact with this module. For more information about the extension mechanism, see [Plugins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with this module. For more information about the extension mechanism, see [Plugins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of this module.
+[The dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of this module.
 
 ### Public APIs
 
@@ -52,7 +52,7 @@ Extension developers can interact with this module. For more information about t
 - `\Magento\InstantPurchase\PaymentMethodIntegration\PaymentTokenFormatterInterface`
     - provides mechanism to create string presentation of token for payment method
 
-For information about a public API, see [Public interfaces & APIs](https://developer.adobe.com/commerce/php/development/components/api-concepts/).
+For information about a public API, see [Public interfaces & APIs](https://developer.adobe.com/commerce/php/development/components/api-concepts).
 
 ## Additional information
 
@@ -105,7 +105,7 @@ You can track [backward incompatible changes in patch releases](https://develope
 
 ## Other information
 
-This module was initially developed by the [Creatuity Corp.](https://creatuity.com/) and [Magento Community Engineering Team](https://commercemarketplace.adobe.com/partner/engcom/).
+This module was initially developed by the [Creatuity Corp.](https://www.creatuity.com/) and [Magento Community Engineering Team](https://commercemarketplace.adobe.com/partner/engcom/).
 
 <InlineAlert slots="text" />
 The version of this module is 100.4.8.

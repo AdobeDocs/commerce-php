@@ -32,9 +32,9 @@ For information about a module installation, see [Enable or disable modules](htt
 
 ## Extensibility
 
-Extension developers can interact with the Magento_GiftMessage module. For more information about the extension mechanism, see [Plugins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_GiftMessage module. For more information about the extension mechanism, see [Plugins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_GiftMessage module.
+[The dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_GiftMessage module.
 
 A lot of functionality in the module is on JavaScript, use [mixins](https://developer.adobe.com/commerce/frontend-core/javascript/mixins) to extend it.
 
@@ -104,7 +104,7 @@ For more information about a layout, see the [Layout documentation](https://deve
     - get the gift message for a specified item in a specified order
     - set the gift message for a specified item in a specified order
 
-For information about a public API, see [Public interfaces & APIs](https://developer.adobe.com/commerce/php/development/components/api-concepts/).
+For information about a public API, see [Public interfaces & APIs](https://developer.adobe.com/commerce/php/development/components/api-concepts).
 
 ## Additional information
 

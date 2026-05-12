@@ -34,9 +34,9 @@ You can find the list of modules that have dependencies with the Magento_SalesRu
 
 Extension points enable extension developers to interact with this module. However, this module does not provide any specific extension points.
 
-For more information about Magento extension mechanism, see [Plugins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+For more information about Magento extension mechanism, see [Plugins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of this module.
+[Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of this module.
 
 ## Additional information
 

@@ -5,7 +5,7 @@ description: N/A
 
 # Magento_WishlistAnalytics module
 
-This module configures data definitions for a data collection related to the Wishlist module entities to be used in [Advanced Reporting](https://developer.adobe.com/commerce/php/development/advanced-reporting/modules/).
+This module configures data definitions for a data collection related to the Wishlist module entities to be used in [Advanced Reporting](https://developer.adobe.com/commerce/php/development/advanced-reporting/modules).
 
 ## Installation details
 

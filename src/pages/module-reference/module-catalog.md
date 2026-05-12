@@ -15,7 +15,7 @@ This module provides API filtering that allows limiting product selection with a
 
 ## Structure
 
-[Learn about a typical file structure for a module](https://developer.adobe.com/commerce/php/development/build/component-file-structure/).
+[Learn about a typical file structure for a module](https://developer.adobe.com/commerce/php/development/build/component-file-structure).
 
 ## Observer
 

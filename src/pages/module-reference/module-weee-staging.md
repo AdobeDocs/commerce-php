@@ -19,7 +19,7 @@ You can find the list of modules that have dependencies on this module in the `r
 
 ## Extension points
 
-Extension points enable extension developers to interact with this module. [The dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of this module.
+Extension points enable extension developers to interact with this module. [The dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of this module.
 
 <InlineAlert slots="text" />
 The version of this module is 100.4.6.

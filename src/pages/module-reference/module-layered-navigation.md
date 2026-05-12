@@ -15,9 +15,9 @@ For information about a module installation, see [Enable or disable modules](htt
 
 ## Extensibility
 
-Extension developers can interact with the Magento_LayeredNavigation module. For more information about the extension mechanism, see [Plugins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_LayeredNavigation module. For more information about the extension mechanism, see [Plugins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_LayeredNavigation module.
+[The dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_LayeredNavigation module.
 
 ### Layouts
 
@@ -44,7 +44,7 @@ For information about a UI component, see [Overview of UI components](https://de
 - `\Magento\LayeredNavigation\Block\Navigation\FilterRendererInterface`
     - render filter
 
-For information about a public API, see [Public interfaces & APIs](https://developer.adobe.com/commerce/php/development/components/api-concepts/).
+For information about a public API, see [Public interfaces & APIs](https://developer.adobe.com/commerce/php/development/components/api-concepts).
 
 ## Additional information
 

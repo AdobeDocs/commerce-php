@@ -13,7 +13,7 @@ For information about a module installation, see [Enable or disable modules](htt
 
 ## Extensibility
 
-[The dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_MediaGalleryCatalogIntegration module.
+[The dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_MediaGalleryCatalogIntegration module.
 
 <InlineAlert slots="text" />
 The version of this module is 100.4.6.

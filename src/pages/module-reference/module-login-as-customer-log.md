@@ -44,7 +44,7 @@ For information about a UI component, see [Overview of UI components](https://de
 - `\Magento\LoginAsCustomerLog\Api\SaveLogsInterface`:
     - save login as custom logs entities
 
-For information about a public API, see [Public interfaces & APIs](https://developer.adobe.com/commerce/php/development/components/api-concepts/).
+For information about a public API, see [Public interfaces & APIs](https://developer.adobe.com/commerce/php/development/components/api-concepts).
 
 ## Additional information
 

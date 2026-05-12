@@ -30,17 +30,17 @@ For information about module installation, see [Enable or disable modules](https
 
 ## Structure
 
-Beyond the [usual module file structure](https://developer.adobe.com/commerce/php/architecture/modules/overview/), this module contains a directory `Service/V1`.
+Beyond the [usual module file structure](https://developer.adobe.com/commerce/php/architecture/modules/overview), this module contains a directory `Service/V1`.
 
 `Service/V1` - contains logic to provide a list of modules installed in the application.
 
-For information about the typical file structure of a module, see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure/#module-file-structure).
+For information about the typical file structure of a module, see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure#module-file-structure).
 
 ## Extensibility
 
-Extension developers can interact with this module. For more information about the extension mechanism, see [Plugins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with this module. For more information about the extension mechanism, see [Plugins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of this module.
+[The dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of this module.
 
 ### Events
 

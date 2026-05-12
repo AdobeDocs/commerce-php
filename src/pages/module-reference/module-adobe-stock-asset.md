@@ -21,9 +21,9 @@ For information about module installation in Magento 2, see [Enable or disable m
 
 ## Extensibility
 
-Extension developers can interact with the Magento_AdobeStockAsset module. For more information about the extension mechanism, see [Plugins](https://developer.adobe.com/commerce/php/development/components/plugins/).
+Extension developers can interact with the Magento_AdobeStockAsset module. For more information about the extension mechanism, see [Plugins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) enables you to override the functionality of the Magento_AdobeStockAsset module.
+[The dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_AdobeStockAsset module.
 
 ## Additional information
 
