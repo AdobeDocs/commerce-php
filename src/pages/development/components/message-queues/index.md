@@ -12,7 +12,7 @@ Message queues provide an asynchronous communications mechanism in which the sen
 
 ## Message Queue Framework overview
 
-The Adobe Commerce Message Queue Framework (MQF) is a fully-functional system that allows a module to publish messages to queues and create consumers to receive them asynchronously.
+The Adobe Commerce and Magento Open Source Message Queue Framework (MQF) is a fully-functional system that allows a module to publish messages to queues and create consumers to receive them asynchronously.
 
 The MQF supports the following messaging brokers:
 
@@ -112,3 +112,40 @@ The following example shows how to switch a topic to an external broker. Replace
 ```
 
 For example, to switch the `product_action_attribute.update` topic to RabbitMQ, use `amqp-magento` as the publisher and `amqp` as the connection name.
+
+### Example: switch a topic to ActiveMQ Artemis (STOMP)
+
+The following configuration shows how to configure a topic to use STOMP instead of MySQL:
+
+```php
+'queue' => [
+    'topics' => [
+        'inventory.update' => [
+            'publisher' => 'stomp-magento'
+        ]
+    ],
+    'config' => [
+        'publishers' => [
+            'inventory.update' => [
+                'connections' => [
+                    'stomp' => [
+                        'name' => 'stomp',
+                        'exchange' => 'magento',
+                        'disabled' => false
+                    ],
+                    'db' => [
+                        'name' => 'db',
+                        'exchange' => 'magento',
+                        'disabled' => true
+                    ]
+                ]
+            ]
+        ]
+    ],
+    'consumers' => [
+        'inventory.update' => [
+            'connection' => 'stomp',
+        ],
+    ]
+],
+```
