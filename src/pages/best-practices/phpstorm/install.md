@@ -9,7 +9,7 @@ keywords:
 
 To install the Magento PHPStorm plugin:
 
-*  Download the plugin from the [PHPStorm Marketplace](https://plugins.jetbrains.com/plugin/8024-magento-phpstorm).
+*  Download the plugin from the [PHPStorm Marketplace](https://plugins.jetbrains.com/plugin/8024-magento-2-and-adobe-commerce).
 
    ![Download from JetBrains](../../images/best-practices/phpstorm/download-from-jetbrains.png)
 
