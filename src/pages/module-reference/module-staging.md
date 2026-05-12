@@ -24,7 +24,7 @@ This module has a configured timeline view that simplifies the representation of
   - `component` - timeline component that extends listing.
   - `recordTmpl` - overloaded template for timeline records.
   - `detailsTmpl` - template for tooltip that provide details about updates.
-- `status column` 
+- `status column`
   - `component` - extends selection column, sets class based on value.
   - `updateTypesMap` - array that contains bounded classes and values.
 

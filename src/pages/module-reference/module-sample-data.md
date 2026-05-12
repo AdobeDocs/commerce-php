@@ -40,24 +40,24 @@ To deploy sample data from the Magento composer repository without Magento CLI:
 
 1. Specify sample data packages in the `require` section of the root `composer.json` file, for example:
 
-```json
-{
-    "require": {
-        ...
-        "magento/module-catalog-sample-data": "{version}",
-        "magento/module-configurable-sample-data": "{version}",
-        "magento/module-cms-sample-data": "{version}",
-        "magento/module-sales-sample-data": "{version}"
-        ....
-    }
-}
-```
+   ```json
+   {
+      "require": {
+         ...
+         "magento/module-catalog-sample-data": "{version}",
+         "magento/module-configurable-sample-data": "{version}",
+         "magento/module-cms-sample-data": "{version}",
+         "magento/module-sales-sample-data": "{version}"
+         ....
+      }
+   }
+   ```
 
-Where `<version>` is the version of the packages; it should correspond to the version of the Magento instance.
+   Where `<version>` is the version of the packages; it should correspond to the version of the Magento instance.
 
-Each package corresponds to a sample data module. The complete list of available modules can be viewed in the [sample data GitHub repository](https://github.com/magento/magento2-sample-data/tree/2.4-develop/app/code/Magento)
+   Each package corresponds to a sample data module. The complete list of available modules can be viewed in the [sample data GitHub repository](https://github.com/magento/magento2-sample-data/tree/2.4-develop/app/code/Magento)
 
-2. To update the dependencies, in the Magento root directory, run:
+1. To update the dependencies, in the Magento root directory, run:
   
    ```bash
    composer update
@@ -102,11 +102,11 @@ If you have deleted certain entities provided by sample data and want to restore
 
 1. From the Magento root directory, run the following command:
 
-  ```bash
-  bin/magento sampledata:reset
-  ```
+   ```bash
+   bin/magento sampledata:reset
+   ```
 
-2. Upgrade Magento as usual.
+1. Upgrade Magento as usual.
 
 The deleted sample data entities will be restored. Those entities, which were changed, will preserve these changes and will not be restored to the default view.
 

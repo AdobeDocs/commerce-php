@@ -17,6 +17,7 @@ Enables the AdminAdobeIMS Module. \
 Required values are `Organization ID`, `Client ID`, `Client Secret` and `2FA enabled`
 
 ### Argument Validation
+
 On enabling the AdminAdobeIMS Module, the input arguments will be validated. \
 The pattern for the validation are configured in the di.xml
 
@@ -31,7 +32,7 @@ The pattern for the validation are configured in the di.xml
 </type>
 ```
 
-We check if the arguments are not empty, as they are all required. 
+We check if the arguments are not empty, as they are all required.
 
 For the Organization ID, Client ID and Client Secret, we check if they contain only alphanumeric characters. \
 Additionally for the Organization ID, we check if it matches 24 characters and optional has the suffix `@AdobeOrg`. But we only store the ID and ignore the suffix.

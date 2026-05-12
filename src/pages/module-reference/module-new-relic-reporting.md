@@ -41,6 +41,7 @@ Extension developers can interact with the Magento_NewRelicReporting module. For
 ### Console commands
 
 **Syntax:**
+
 ```bash
 bin/magento newrelic:create:deploy-marker <message> [<changelog>] [<user>] [<revision>] [options]
 ```
@@ -80,7 +81,6 @@ bin/magento newrelic:create:deploy-marker "Production Deploy" "Updates and new f
   --deep-link="https://github.com/<company>/<project>/releases/tag/v1.2.0" \
   --group-id="production"
 ```
-
 
 [Learn more about command's parameters](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#newreliccreatedeploy-marker).
 

@@ -103,7 +103,7 @@ This module does not introduce backward incompatible changes.
 
 You can track [backward incompatible changes in patch releases](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/).
 
-***
+## Other information
 
 This module was initially developed by the [Creatuity Corp.](https://creatuity.com/) and [Magento Community Engineering Team](https://commercemarketplace.adobe.com/partner/engcom/).
 
