@@ -9,27 +9,27 @@ on:
 jobs:
   lint:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pull-requests: write
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Lint
         id: lint
         continue-on-error: true
         run: npx --yes github:AdobeDocs/adp-devsite-utils runLint -v
 
-      - name: Post Linter Report to PR
+      - name: Save PR number
         if: always()
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PR_ID: ${{ github.event.pull_request.number }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
-        run: |
-          npm install --no-save github:AdobeDocs/adp-devsite-scripts
-          node node_modules/adp-devsite-scripts/linter-bot/postLinterReport.js
+        run: echo "${{ github.event.pull_request.number }}" > pr-number.txt
+
+      - name: Upload linter report
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: linter-report
+          path: |
+            linter-report.txt
+            pr-number.txt
 
       - name: Fail if linter found errors
         if: steps.lint.outcome == 'failure'
