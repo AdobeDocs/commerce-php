@@ -5,7 +5,7 @@ description: N/A
 
 # Magento_AdminGwsStaging module
 
-The Magento_AdminGwsStaging module is a part of the staging functionality in Magento EE. It extends the Magento_AdminGws module functionality to be used in staging mode.
+The Magento_AdminGwsStaging module is a part of the staging functionality in Adobe Commerce. It extends the Magento_AdminGws module functionality to be used in staging mode.
 
 ## Implementation Details
 
@@ -23,7 +23,7 @@ The Magento_AdminGwsStaging module does not provide any specific extension point
 
 ## Additional information
 
-For more Magento 2 developer documentation, see [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs/).
+For more developer documentation, see [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs/).
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.5.
+The version of this module is 100.4.6.

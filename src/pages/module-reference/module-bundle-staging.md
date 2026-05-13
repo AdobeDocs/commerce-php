@@ -5,7 +5,7 @@ description: N/A
 
 # Magento_BundleStaging module
 
-The Magento_BundleStaging module is a part of the staging functionality in Magento EE. This new functionality enables you to stage a bundle product in the Schedule Update form of the product.
+The Magento_BundleStaging module is a part of the staging functionality in Adobe Commerce. This new functionality enables you to stage a bundle product in the Schedule Update form of the product.
 
 ## Implementation Details
 
@@ -21,7 +21,7 @@ You can find the list of modules that have dependencies with the Magento_BundleS
 
 ## Extension Points
 
-Extension points enable extension developers to interact with the Magento_BundleStaging module. You can interact with the Magento_BundleStaging module using the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins).
+Extension points enable extension developers to interact with the Magento_BundleStaging module. You can interact with the Magento_BundleStaging module using the Magento extension mechanism, see [Plugins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
 [Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_BundleStaging module.
 
@@ -31,7 +31,7 @@ You can extend Bundle updates product listing using  the grid UI component locat
 
 ## Additional information
 
-For more Magento 2 developer documentation, see [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs/).
+For more developer documentation, see [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs/).
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.8.
+The version of this module is 100.4.9.

@@ -8,4 +8,4 @@ description: Commerce Services identity Layout
 The **ServicesIdLayout** module provides the UI for the Commerce Services Id module.
 
 <InlineAlert slots="text" />
-The version of this module is 1.1.4.
+The version of this module is 1.1.9.

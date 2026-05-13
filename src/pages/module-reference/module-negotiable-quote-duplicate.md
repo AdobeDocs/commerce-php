@@ -10,4 +10,4 @@ The Magento_NegotiableQuoteDuplicate module allows a customer to duplicate an ex
 Module introduces a button allowing customer to "Duplicate Quote". Newly duplicated quote is created as "Open" or "Draft" status allowing further modifications before it's sent for review, if necessary.
 
 <InlineAlert slots="text" />
-The version of this module is 1.5.2.
+The version of this module is 1.5.3.

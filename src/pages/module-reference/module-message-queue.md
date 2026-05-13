@@ -3,9 +3,9 @@ title: MessageQueue
 description: N/A
 ---
 
-# MessageQueue
+# Magento_MessageQueue module
 
-**MessageQueue** provides support of Advanced Message Queuing Protocol
+This module provides support of Advanced Message Queuing Protocol.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.8.
+The version of this module is 100.4.9.

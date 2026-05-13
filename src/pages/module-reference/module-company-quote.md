@@ -12,4 +12,4 @@ The Magento_CompanyQuote module allows Quotes to have assignment to a specific C
 This module does not create any backward incompatible changes.
 
 <InlineAlert slots="text" />
-The version of this module is 1.5.2.
+The version of this module is 1.5.3.
