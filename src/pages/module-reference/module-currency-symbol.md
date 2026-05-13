@@ -3,22 +3,22 @@ title: CurrencySymbol
 description: N/A
 ---
 
-# CurrencySymbol
+# Magento_CurrencySymbol module
 
-**CurrencySymbol** enables the creation of custom currencies and management of currency conversion rates.
+This module enables the creation of custom currencies and management of currency conversion rates.
 
 ## Controllers
 
 ### Currency Controllers
 
-***CurrencySymbol\Controller\Adminhtml\System\Currency\FetchRates.php*** gets a specified currency conversion rate.
-Supports all defined currencies in the system.
-***CurrencySymbol\Controller\Adminhtml\System\Currency\SaveRates.php*** saves rates for defined currencies.
+* `CurrencySymbol\Controller\Adminhtml\System\Currency\FetchRates.php` gets a specified currency conversion rate.
+  Supports all defined currencies in the system.
+* `CurrencySymbol\Controller\Adminhtml\System\Currency\SaveRates.php` saves rates for defined currencies.
 
 ### Currency Symbol Controllers
 
-***CurrencySymbol\Controller\Adminhtml\System\Currencysymbol\Reset.php*** resets all custom currency symbols.
-***CurrencySymbol\Controller\Adminhtml\System\Currencysymbol\Save.php*** creates custom currency symbols.
+* `CurrencySymbol\Controller\Adminhtml\System\Currencysymbol\Reset.php` resets all custom currency symbols.
+* `CurrencySymbol\Controller\Adminhtml\System\Currencysymbol\Save.php` creates custom currency symbols.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.6.
+The version of this module is 100.4.7.

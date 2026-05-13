@@ -3,11 +3,13 @@ title: ImportCsvApi
 description: N/A
 ---
 
-# ImportCsvApi module
+# Magento_ImportCsvApi module
 
-The `ImportCsvApi` module provides service contracts interfaces for uploading CSV sources
+The Magento_ImportCsvApi module provides service contracts interfaces for uploading CSV sources.
 
-**API Endpoint**: `{domain}/rest/default/V1/import/csv`
+## API Endpoint
+
+- `{domain}/rest/default/V1/import/csv`
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.2.
+The version of this module is 100.4.3.

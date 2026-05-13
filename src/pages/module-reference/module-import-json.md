@@ -3,9 +3,9 @@ title: ImportJson
 description: N/A
 ---
 
-# ImportJson module
+# Magento_ImportJson module
 
-The `ImportJson` module provides possibility to upload JSON files as source type
+The Magento_ImportJson module provides the possibility to upload JSON files as source type.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.1.
+The version of this module is 100.4.2.

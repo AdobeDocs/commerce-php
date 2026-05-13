@@ -6,4 +6,4 @@ description: Store data exporter
 The Magento_StoreDataExporter provides stores data export.
 
 <InlineAlert slots="text" />
-The version of this module is 2.11.1.
+The version of this module is 2.14.0.

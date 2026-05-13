@@ -3,9 +3,13 @@ title: AdvancedCheckout
 description: N/A
 ---
 
-Magento\AdvanceCheckout extends Magento_Checkout with following functions: adding product to cart by entering SKU on
-frontend, uploading list of SKUs to add products to cart on frontend and ability for admin to manage customer's shopping
-cart.
+# Magento_AdvancedCheckout module
+
+Magento_AdvancedCheckout module extends Magento_Checkout with the following functions:
+
+- Adding a product to the cart by entering the SKU on the frontend
+- Uploading a list of SKUs to add products to the cart on the frontend
+- Ability for the admin to manage the customer's shopping cart
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.8.
+The version of this module is 100.4.9.

@@ -3,12 +3,11 @@ title: SalesArchive
 description: N/A
 ---
 
-# Overview
+# Magento_SalesArchive module
 
-## Purpose of module
+This module is responsible for creating logical partitions for storing previews of orders, invoices, credit memos, shipments.
 
-Magento\SalesArchive module responsible for creating logical partitions for storing previews of orders, invoices, credit memos, shipments.
-Primary purpose of this module is to increase performance for read operation on orders (shipments, credit memos, shipments) grid.
+The primary purpose of this module is to increase performance for read operation on orders (shipments, credit memos, shipments) grid.
 
 <InlineAlert slots="text" />
-The version of this module is 101.0.6.
+The version of this module is 101.0.7.

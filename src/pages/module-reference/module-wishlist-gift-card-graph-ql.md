@@ -3,9 +3,9 @@ title: WishlistGiftCardGraphQl
 description: N/A
 ---
 
-# WishlistGiftCardGraphQl
+# Magento_WishlistGiftCardGraphQl module
 
-**WishlistGiftCardGraphQl** provides the needed provider for adding a gift card wishlist item to cart.
+This module provides the needed provider for adding a gift card wishlist item to cart.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.4.
+The version of this module is 100.4.5.

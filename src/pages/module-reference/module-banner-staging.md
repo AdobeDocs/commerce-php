@@ -5,7 +5,7 @@ description: N/A
 
 # Magento_BannerStaging module
 
-The Magento_BannerStaging module is a part of the staging functionality in Magento EE. It enables you to preview banners related to staged catalog rule and cart price rule.
+The Magento_BannerStaging module is a part of the staging functionality in Adobe Commerce. It enables you to preview banners related to staged catalog rule and cart price rule.
 
 ## Implementation details
 
@@ -19,9 +19,9 @@ You can find the list of modules that have dependencies on the Magento_BannerSta
 
 ## Extension points
 
-Extension points enable extension developers to interact with the Magento_BannerStaging module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins).
+Extension points enable extension developers to interact with the Magento_BannerStaging module. For more information about the Magento extension mechanism, see [Plugins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_BannerStaging module.
+[The dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_BannerStaging module.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.2.
+The version of this module is 100.4.3.

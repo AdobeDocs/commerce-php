@@ -85,4 +85,4 @@ bin/magento events:sync-events-metadata --delete
 ```
 
 <InlineAlert slots="text" />
-The version of this module is 1.8.1.
+The version of this module is 1.14.0.

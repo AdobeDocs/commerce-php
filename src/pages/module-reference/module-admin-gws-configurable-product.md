@@ -5,7 +5,7 @@ description: N/A
 
 # Magento_AdminGwsConfigurableProduct module
 
-The Magento_AdminGwsConfigurableProduct module is a part of the restricted admin user permissions functionality in Magento EE. It extends the Magento_AdminGws module functionality for configurable product.
+The Magento_AdminGwsConfigurableProduct module is a part of the restricted admin user permissions functionality in Adobe Commerce. It extends the Magento_AdminGws module functionality for configurable product.
 
 ## Implementation Details
 
@@ -26,4 +26,4 @@ The Magento_AdminGwsConfigurableProduct module does not provide any specific ext
 For more developer documentation, see [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs/).
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.5.
+The version of this module is 100.4.6.

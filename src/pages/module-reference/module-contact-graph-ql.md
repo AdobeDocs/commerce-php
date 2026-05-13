@@ -3,9 +3,9 @@ title: ContactGraphQl
 description: N/A
 ---
 
-# ContactGraphQlPwa
+# Magento_ContactGraphQl module
 
-**ContactGraphQlPwa** provides GraphQL support for `magento/module-contact`.
+This module provides GraphQL support for the Magento_Contact module.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.1.
+The version of this module is 100.4.2.

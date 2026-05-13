@@ -1,15 +1,15 @@
 ---
-title: QuoteCommerceGraphQl
+title: QuoteCommerceCeGraphQl
 description: N/A
 ---
 
-# Magento_QuoteCommerceGraphQl module
+# Magento_QuoteCommerceCeGraphQl module
 
-The Magento_QuoteCommerceGraphQl module contains mutation to clear the items of their shopping cart in a single action.
+This module contains mutation to clear the items of their shopping cart in a single action.
 
 ## Installation details
 
-Before installing this module, note that the Magento_QuoteCommerceGraphQl is dependent on the following modules:
+Before installing this module, note that the Magento_QuoteCommerceCeGraphQl module is dependent on the following modules:
 
 - Magento_Directory
 - Magento_GraphQl
@@ -18,4 +18,4 @@ Before installing this module, note that the Magento_QuoteCommerceGraphQl is dep
 For information about enabling or disabling a module, see [Enable or disable modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules).
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.1.
+The version of this module is 100.4.0.

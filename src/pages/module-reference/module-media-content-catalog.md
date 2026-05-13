@@ -5,17 +5,17 @@ description: Magento module provides the implementation of MediaContent function
 
 # Magento_MediaContentCatalog module
 
-The Magento_MediaContentCatalog provides the implementation of MediaContent functionality for Magento_Catalog module
+This module provides the implementation of MediaContent functionality for Magento_Catalog module.
 
 ## Extensibility
 
-Extension developers can interact with the Magento_MediaContent module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://developer.adobe.com/commerce/php/development/components/plugins).
+Extension developers can interact with the Magento_MediaContent module. For more information about the extension mechanism, see [Plugins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The Magento dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_MediaContent module.
+[The dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_MediaContent module.
 
 ## Additional information
 
 For information about significant changes in patch releases, see [Release information](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.6.
+The version of this module is 100.4.7.
