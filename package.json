@@ -1,14 +1,13 @@
 {
-  "name": "dev-docs-template",
+  "name": "commerce-php",
   "version": "1.0.0",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AdobeDocs/dev-docs-template"
+    "url": "https://github.com/AdobeDocs/commerce-php"
   },
-  "author": {
-    "name": "Tim Kim",
-    "url": "https://github.com/timkim"
+  "config": {
+    "sitePath": "commerce/php"
   },
   "engines": {
     "node": "^24.11.0"
@@ -27,6 +26,71 @@
     "link:externalLinkOnly": "npx --yes --prefer-online github:AdobeDocs/adp-devsite-utils runLint --external-links-only -v",
     "link:checkAllLinks": "npx --yes --prefer-online github:AdobeDocs/adp-devsite-utils runLint --internal-links-only --external-links-only -v",
     "redirectCheck:stage": "npx --yes --prefer-online github:AdobeDocs/adp-devsite-utils redirectChecker stage --verbose",
-    "redirectCheck:prod": "npx --yes --prefer-online github:AdobeDocs/adp-devsite-utils redirectChecker prod --verbose"
+    "redirectCheck:prod": "npx --yes --prefer-online github:AdobeDocs/adp-devsite-utils redirectChecker prod --verbose",
+    "lint:md": "npx --yes markdownlint-cli2 'src/pages/**/*.md' '*.md'",
+    "lint:md:fix": "npx --yes markdownlint-cli2 --fix 'src/pages/**/*.md' '*.md'",
+    "test": "npx --yes jest",
+    "test:config": "npx --yes jest tests/config.test.js"
+  },
+  "lint": {
+    "skipRules": {
+      "check-frontmatter": {
+        "paths": ["src/pages/includes"]
+      }
+    },
+    "skipUrlPatterns": [
+      "http://www.json.org/",
+      "https://business.adobe.com/products/commerce/business-intelligence.html",
+      "https://dev.mysql.com/doc/refman/5.7/en/json.html",
+      "https://dev.mysql.com/doc/refman/8.4/en/server-system-variables.html#sysvar_restrict_fk_on_non_standard_key",
+      "https://developer.adobe.com/commerce/webapi/rest/inventory/bulk-inventory#bulk-partial-transfer",
+      "https://developer.adobe.com/commerce/webapi/rest/inventory/bulk-inventory#bulk-transfer",
+      "https://developer.ups.com/oauth-developer-guide",
+      "https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-redirect-product-automatic#skip-rewrite",
+      "https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-captcha",
+      "https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/configure-varnish-commerce",
+      "https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/use-varnish-esi",
+      "https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer",
+      "https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/next-steps/sample-data/composer-packages",
+      "https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#devdiinfo",
+      "https://git-scm.com/docs",
+      "https://github.com/magento/inventory/blob/1.2.4/InventorySourceSelectionApi/Api/SourceSelectionServiceInterface.php",
+      "https://github.com/magento/inventory/tree/1.2.4/InventoryExportStockApi/Api",
+      "https://github.com/magento/magento2/blob/1f9186c3b9a96c5e642fd5d3d31ac5c7e1877d2b/app/code/Magento/Checkout/Block/Checkout/LayoutProcessor.php#L143",
+      "https://github.com/magento/magento2/blob/2.3.3/app/code/Magento/Theme/view/frontend/layout/default.xml#L43-L45",
+      "https://github.com/magento/magento2/blob/2.3/app/code/Magento/Braintree/Gateway/Config/Config.php",
+      "https://github.com/magento/magento2/blob/2.4-develop/app/code/Magento/CatalogUrlRewrite/etc/config.xml#L12",
+      "https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/etc/frontend/routes.xml#L10",
+      "https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/view/frontend/layout/default.xml#L55-L61",
+      "https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/view/frontend/templates/product/compare/sidebar.phtml#L50-L52",
+      "https://github.com/magento/magento2/blob/2.4/app/code/Magento/CatalogInventory/Api/Data/StockStatusInterface.php#L65",
+      "https://github.com/magento/magento2/blob/2.4/app/code/Magento/CatalogInventory/Api/StockItemRepositoryInterface.php#L25",
+      "https://github.com/magento/magento2/blob/2.4/app/code/Magento/CatalogInventory/Api/StockItemRepositoryInterface.php#L41",
+      "https://github.com/magento/magento2/blob/2.4/app/code/Magento/CatalogInventory/Api/StockItemRepositoryInterface.php#L49",
+      "https://github.com/magento/magento2/blob/2.4/app/code/Magento/CatalogInventory/Api/StockItemRepositoryInterface.php#L55",
+      "https://github.com/magento/magento2/blob/2.4/app/code/Magento/CatalogInventory/Api/StockRegistryInterface.php#L23",
+      "https://github.com/magento/magento2/blob/2.4/app/code/Magento/CatalogInventory/Api/StockRegistryInterface.php#L53",
+      "https://github.com/magento/magento2/blob/2.4/app/code/Magento/CatalogInventory/Api/StockRegistryInterface.php#L62",
+      "https://github.com/magento/magento2/blob/2.4/app/code/Magento/CatalogInventory/Api/StockRegistryInterface.php#L70",
+      "https://github.com/magento/magento2/blob/2.4/app/code/Magento/CatalogInventory/Api/StockStateInterface.php#L41",
+      "https://github.com/magento/magento2/blob/2.4/app/code/Magento/CatalogInventory/Api/StockStateInterface.php#L52",
+      "https://github.com/magento/magento2/blob/2.4/app/code/Magento/CatalogInventory/Api/StockStateInterface.php#L72",
+      "https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/Block/ConfigurableInfo.php",
+      "https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/Gateway/Config/Config.php",
+      "https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/Gateway/Config/ValueHandlerInterface.php",
+      "https://github.com/magento/magento2/blob/2.4/app/code/Magento/Webapi/etc/webapi_rest/di.xml",
+      "https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Api/SearchCriteria/CollectionProcessorInterface.php",
+      "https://github.com/magento/magento2/blob/78bb169ff9721c8d05c35b4c29a4464fd45bccbe/app/code/Magento/Catalog/view/frontend/templates/product/list.phtml#L16",
+      "https://github.com/symfony/console/blob/7.2/Application.php#L557",
+      "https://helpx.adobe.com/security/products/magento/apsb25-88.html",
+      "https://softwareengineering.stackexchange.com/questions/76229/predicting-the-output-of-phps-rand",
+      "https://symfony.com/doc/current/components/console.html",
+      "https://symfony.com/doc/current/console/style.html#output-coloring",
+      "https://www.adobe.com/trust/security/product-security.html",
+      "https://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html",
+      "https://www.php.net/manual/en/function.md5.php",
+      "https://www.php.net/manual/en/function.serialize.php",
+      "https://www.php.net/manual/en/function.srand.php"
+    ]
   }
 }
