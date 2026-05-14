@@ -35,7 +35,9 @@
   "lint": {
     "skipRules": {
       "check-frontmatter": {
-        "paths": ["src/pages/includes"]
+        "paths": [
+          "src/pages/includes"
+        ]
       }
     },
     "skipUrlPatterns": [
