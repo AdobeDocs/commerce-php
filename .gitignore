@@ -1,3 +1,4 @@
+# .gitignore
 
 # OS and IDE generated files #
 ##############################
@@ -6,6 +7,8 @@
 .history
 .idea
 .editorconfig
+.cursor/
+.claude/
 
 # npm yarn
 node_modules
@@ -45,6 +48,17 @@ local-test.yml
 .yalc
 yalc.lock
 
-#txt
-linter-output.txt
+# Linter outputs
+super-linter-output
+super-linter.log
 linter-report.txt
+
+# GitHub Actions leftovers
+github_conf
+
+# Temporary files
+tmp/
+
+# Added by update-bot
+linter-output.txt
+
