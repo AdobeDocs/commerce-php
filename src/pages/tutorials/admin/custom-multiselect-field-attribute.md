@@ -1,5 +1,5 @@
 ---
-title: Add a Custom Multiselect Field Attribute | Commerce PHP Extensions
+title: Add Custom Multiselect Attribute | Commerce PHP Extensions
 description: Follow this tutorial to create a custom multiselect field attribute for Adobe Commerce or Magento Open Source.
 contributor_name: Magesh TM
 contributor_link: https://github.com/mtmmahi
