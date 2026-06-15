@@ -1,6 +1,9 @@
 ---
-title: Sensitive and Environment-Specific Settings | Commerce PHP Extensions
+title: Sensitive settings | Commerce PHP Extensions
 description: Configure sensitive and environment-specific settings with Adobe Commerce or Magento Open Source components.
+keywords:
+  - Configuration
+  - Extensions
 ---
 
 # Sensitive and environment-specific settings
@@ -27,7 +30,7 @@ Examples of sensitive information include:
 
 <InlineAlert variant="info" slots="text"/>
 
-In keeping with current security and privacy best practices, be sure you are aware of any potential legal and security risks associated with the storage of customers’ full date of birth (month, day, year) along with other personal identifiers, such as full name, before collecting or processing such data.
+In keeping with current security and privacy best practices, be sure you are aware of any potential legal and security risks associated with the storage of customers' full date of birth (month, day, year) along with other personal identifiers, such as full name, before collecting or processing such data.
 
 ### Environment or system-specific values
 
@@ -98,4 +101,3 @@ To set a configuration setting as both sensitive and system-specific, create two
 
 [typepool]: https://github.com/magento/magento2/blob/2.4/app/code/Magento/Config/Model/Config/TypePool.php
 [di-xml]: ../build/dependency-injection-file.md
-[config-importers]: importers.md

@@ -1,15 +1,15 @@
 ---
 title: ReviewStaging
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 # Magento_ReviewStaging module
 
-The Magento_ReviewStaging module is a part of the staging functionality in Magento EE. It displays the Product Reviews grid on the Schedule Update form.
+This module is a part of the staging functionality in Adobe Commerce. It displays the Product Reviews grid on the Schedule Update form.
 
 ## Implementation details
 
-The Magento_ReviewStaging module extends the following Magento_Review module functionality to be used in staging mode:
+This module extends the following Magento_Review module functionality to be used in staging mode:
 
 - Adds Product Reviews grid on the Schedule Update form.
 
@@ -21,11 +21,14 @@ You can find the list of modules that have dependencies on the Magento_ReviewSta
 
 ## Extension points
 
-Extension points enable extension developers to interact with the Magento_ReviewStaging module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html).
+Extension points enable extension developers to interact with the Magento_ReviewStaging module. For more information about the Magento extension mechanism, see [Plugins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html) enables you to override the functionality of the Magento_ReviewStaging module.
+[The dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_ReviewStaging module.
 
 ### Layouts
 
 You can extend and override layouts in the `Magento\ReviewStaging\view\adminhtml\layout` directory.
-For more information about layouts, see the [Layout documentation](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/layout-overview.html).
+For more information about layouts, see the [Layout documentation](https://developer.adobe.com/commerce/frontend-core/guide/layouts/).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.6.

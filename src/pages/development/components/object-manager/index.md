@@ -1,6 +1,8 @@
 ---
 title: Object Manager | Commerce PHP Extensions
 description: Optimize your Adobe Commerce an Magento Open Source extension development skills by mastering the ObjectManagerInterface.
+keywords:
+  - Extensions
 ---
 
 # Object manager

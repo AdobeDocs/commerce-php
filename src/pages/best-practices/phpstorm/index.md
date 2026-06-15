@@ -1,6 +1,8 @@
 ---
 title: PHPStorm Plugin | Commerce PHP Extensions
 description: Review an introduction to the PHPStorm plugin that the Magento Open Source community developed to improve the Adobe Commerce developer experience.
+keywords:
+  - Extensions
 ---
 
 # PHPStorm plugin

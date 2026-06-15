@@ -3,6 +3,8 @@ title: Add an Admin Grid | Commerce PHP Extensions
 description: Use this tutorial to create a working Adobe Commerce and Magento Open Source Admin grid.
 contributor_name: Goivvy LLC
 contributor_link: https://www.goivvy.com
+keywords:
+  - Extensions
 ---
 
 # Add an Admin grid
@@ -39,8 +41,8 @@ Here are the required files to get started:
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 use Magento\Framework\Component\ComponentRegistrar;
@@ -241,8 +243,8 @@ The corresponding file is `app/code/Dev/Grid/Ui/DataProvider/Category/ListingDat
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 namespace Dev\Grid\Ui\DataProvider\Category;
@@ -286,8 +288,8 @@ The plugin then gets a `name` attribute:
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 namespace Dev\Grid\Plugin;
@@ -379,8 +381,8 @@ The collection class translates to `app/code/Dev/Grid/Ui/DataProvider/Category/L
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 namespace Dev\Grid\Ui\DataProvider\Category\Listing;
@@ -410,8 +412,8 @@ The resource model class translates to `app/code/Dev/Grid/Model/ResourceModel/Ca
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 namespace Dev\Grid\Model\ResourceModel;
@@ -432,8 +434,8 @@ The UI grid file defines a column actions class `Dev\Grid\Ui\Component\Category\
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 namespace Dev\Grid\Ui\Component\Category\Listing\Column;
@@ -512,8 +514,8 @@ The main route defined in `app/code/Dev/Grid/etc/adminhtml/menu.xml` as `dev_gri
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 namespace Dev\Grid\Controller\Adminhtml\Index;
@@ -567,8 +569,8 @@ The Ui grid file defines the custom route `dev_grid/category/massDelete` (mass d
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 namespace Dev\Grid\Controller\Adminhtml\Category;

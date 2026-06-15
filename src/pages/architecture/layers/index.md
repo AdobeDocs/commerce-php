@@ -1,6 +1,8 @@
 ---
 title: Architectural Layers Overview | Commerce PHP Extensions
 description: Learn about layered application design and details about each layer.
+keywords:
+  - Extensions
 ---
 
 # Architectural layers overview

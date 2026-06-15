@@ -1,6 +1,9 @@
 ---
 title: Content Security Policies | Commerce PHP Extensions
 description: Mitigate against cross-site scripting and related attacks in Adobe Commerce and Magento Open Source components with content security policies.
+keywords:
+  - Extensions
+  - Security
 ---
 
 # Content security policies
@@ -15,8 +18,8 @@ and other resources. Together, CSPs and built-in browser features help prevent:
 *  A malicious inline script from sending credit card info to an attacker's website
 *  Loading a malicious style that will make users click on an element that wasn't supposed to be on a page
 
-See [Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
-and [Content-Security-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy)
+See [Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP)
+and [Content-Security-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Content-Security-Policy)
 to learn more about CSP and each individual policy.
 
 ## Application support
@@ -35,9 +38,10 @@ CSP can work in two modes:
 
 ## Default configuration
 
-By default, CSP is configured in `report-only` mode, which allows merchants and developers to
-configure policies to work according to their custom code. After the policies have been configured,
-switch the mode to `restrict`.
+In Adobe Commerce and Magento Open Source version 2.4.7 and later, CSP is configured in `restrict-mode` by default for payment pages in the storefront and admin areas, and in `report-only` mode for all other pages.
+The corresponding CSP header does not contain the `unsafe-inline` keyword inside the `script-src` directive for payment pages. Also, only whitelisted inline scripts are allowed.
+
+Prior to version 2.4.7, CSP was configured in `report-only` mode for all pages.
 
 Once configured, the application can enforce policies like these:
 
@@ -94,22 +98,22 @@ instead.
 
 The following table describes each type of CSP:
 
-Policy name | Description
---- | ---
-`default-src` | The default policy.
-`base-uri` | Defines which URLs can appear in a page's `<base>` element.
-`child-src` | Defines the sources for workers and embedded frame contents.
-`connect-src` | Defines the sources that can be loaded using script interfaces.
-`font-src` | Defines which sources can serve fonts.
-`form-action` | Defines valid endpoints for submission from `<form>` tags.
-`frame-ancestors` | Defines the sources that can embed the current page.
-`frame-src` | Defines the sources for elements such as `<frame>` and `<iframe>`.
-`img-src` | Defines the sources from which images can be loaded.
-`manifest-src` | Defines the allowable contents of web app manifests.
-`media-src` | Defines the sources from which images can be loaded.
-`object-src` | Defines the sources for the `<object>`, `<embed>`, and `<applet>` elements.
-`script-src` | Defines the sources for JavaScript `<script>` elements.
-`style-src` | Defines the sources for stylesheets.
+| Policy name | Description |
+| --- | --- |
+| `default-src` | The default policy. |
+| `base-uri` | Defines which URLs can appear in a page's `<base>` element. |
+| `child-src` | Defines the sources for workers and embedded frame contents. |
+| `connect-src` | Defines the sources that can be loaded using script interfaces. |
+| `font-src` | Defines which sources can serve fonts. |
+| `form-action` | Defines valid endpoints for submission from `<form>` tags. |
+| `frame-ancestors` | Defines the sources that can embed the current page. |
+| `frame-src` | Defines the sources for elements such as `<frame>` and `<iframe>`. |
+| `img-src` | Defines the sources from which images can be loaded. |
+| `manifest-src` | Defines the allowable contents of web app manifests. |
+| `media-src` | Defines the sources from which images can be loaded. |
+| `object-src` | Defines the sources for the `<object>`, `<embed>`, and `<applet>` elements. |
+| `script-src` | Defines the sources for JavaScript `<script>` elements. |
+| `style-src` | Defines the sources for stylesheets. |
 
 ### Add a domain to the whitelist
 
@@ -133,6 +137,43 @@ adding a `csp_whitelist.xml` to your custom module's `etc` folder.
         </policy>
     </policies>
 </csp_whitelist>
+```
+
+### Using CSP nonce provider to allow inline scripts
+
+Adobe Commerce and Magento Open Source 2.4.7 and later include a Content Security Policy (CSP) nonce provider to facilitate the generation of unique nonce strings for each request.  These nonce strings are then attached to the CSP header.
+
+Use the `generateNonce` function in `Magento\Csp\Helper\CspNonceProvider` to obtain a nonce string.
+
+```php
+use Magento\Csp\Helper\CspNonceProvider;
+
+class MyClass
+{
+
+    /**
+     * @var CspNonceProvider
+     */
+    private $cspNonceProvider;
+
+    /**
+     * @param CspNonceProvider $cspNonceProvider
+     */
+    public function __construct(CspNonceProvider $cspNonceProvider)
+    {
+        $this->cspNonceProvider = $cspNonceProvider
+    }
+
+    /**
+     * Get CSP Nonce
+     *
+     * @return String
+     */
+    public function getNonce(): string
+    {
+        return $this->cspNonceProvider->generateNonce();
+    }
+}
 ```
 
 ### Whitelist an inline script or style
@@ -216,6 +257,10 @@ Add the corresponding policy to a `csp_whitelist.xml` file:
 </csp_whitelist>
 ```
 
+<InlineAlert variant="warning" slots="text"/>
+
+You must whitelist the content of the `script` and `style` tags that you add in the Admin. For example, the **Scripts and Style Sheets** field in the [HTML Head](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/design/page-setup#html-head) section.
+
 <InlineAlert variant="info" slots="text"/>
 
 When _unsafe-inline_ is allowed for `script-src` or `style-src` policies, whitelisted inline scripts/styles hashes
@@ -231,7 +276,18 @@ For reference, see `Magento\Csp\etc\config.xml`.
 ### Report-Uri configuration
 
 Regardless of `restrict` or `report-only` mode, CSP violations may be reported to an endpoint for collection.
-The URL to use for reporting by browsers can be configured in your custom module's `config.xml` file:
+
+1. On the _Admin_ sidebar, go to **Stores** > _Settings_ > **Configuration**.
+
+   If you have a multi-site installation, set the Store View control in the upper-left corner to the website where the configuration applies.
+
+2. In the left panel under _Security_, choose **Content Security Policy**.
+
+![CSP report URI configuration](../../images/security/csp-report-uri.png)
+
+The Create Order page in the Admin and the Checkout page in the storefront can be configured to have their own URI. However, if these fields are left blank, the default URI for the admin and storefront areas is used for reporting.
+
+The URL to use for reporting by browsers can also be configured programmatically in the `config.xml` for your custom module:
 
 ```xml
 <?xml version="1.0"?>
@@ -253,7 +309,33 @@ The URL to use for reporting by browsers can be configured in your custom module
 
 ### Page specific Content-Security-Policies
 
-Adobe Commerce and Magento Open Source can send unique policies for a specific page. To do so, implement `Magento\Csp\Api\CspAwareActionInterface`
+Adobe Commerce and Magento Open Source can send unique policies for a specific page.
+For example, to configure policies for the Checkout page in the storefront, add the following to the `config.xml` file for your custom module:
+
+```xml
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+       <csp>
+          <mode>
+             <storefront_checkout_index_index>
+                <report_only>0</report_only>
+             </storefront_checkout_index_index>
+          </mode>
+          <policies>
+             <storefront_checkout_index_index>
+                <scripts>
+                   <inline>0</inline>
+                   <event_handlers>1</event_handlers>
+                </scripts>
+             </storefront_checkout_index_index>
+          </policies>
+       </csp>
+    </default>
+</config>
+```
+
+Alternatively, you can implement `Magento\Csp\Api\CspAwareActionInterface`
 in a controller responsible for the page and define the `modifyCsp` method. It receives existing CSPs
 read from configs and allows you redefine them by returning a new list. See the example below:
 
@@ -286,3 +368,11 @@ class Mypage extends \Magento\Framework\App\Action\Action implements \Magento\Cs
 
 You do not need to define other policy options in contexts like _unsafe-inline_. The same
 policy options read from config will be merged later.
+
+### Troubleshooting
+
+Users might sometimes see browser errors due to certain scripts being blocked because of CSP:
+
+`Refused to execute inline script because it violates the following Content Security Policy directive: "script-src`
+
+To fix this issue, [whitelist](#whitelist-an-inline-script-or-style) the blocked scripts using the `SecureHtmlRenderer` class or use the [CSPNonceProvider](#using-csp-nonce-provider-to-allow-inline-scripts) class to allow scripts to be executed.

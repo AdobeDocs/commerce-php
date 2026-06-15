@@ -1,6 +1,9 @@
 ---
 title: Customize Checkout | Commerce PHP Extensions
 description: Review a list of tutorials focused on customizing the Adobe Commerce and Magento Open Source checkout experience.
+keywords:
+  - Checkout
+  - Extensions
 ---
 
 # Customize checkout

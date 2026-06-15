@@ -1,12 +1,14 @@
 ---
 title: Coding Standards | Commerce PHP Extensions
-description: Review Adobe Commerce and Magento Open Source coding standards for different languages, including PHP, JavaScript, LESS, and jQuery. 
+description: Review Adobe Commerce and Magento Open Source coding standards for different languages, including PHP, JavaScript, LESS, and jQuery.
+keywords:
+  - Extensions
 ---
 
 # Coding standards
 
-<!-- This topic is referred to from Magento 2 code! Don't change the URL without informing engineering! -->
-<!-- Referring file: contributing.md owned by core -->
+\<!-- This topic is referred to from Magento 2 code! Don't change the URL without informing engineering! --\>
+\<!-- Referring file: contributing.md owned by core --\>
 
 Like many large projects, Adobe Commerce and Magento Open Source have coding standards. Use the coding standards when you contribute to the codebase or create extensions.
 

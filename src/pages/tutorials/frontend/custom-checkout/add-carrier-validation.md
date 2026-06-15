@@ -1,6 +1,9 @@
 ---
-title: Add Custom Shipping Carrier Validations | Commerce PHP Extensions
+title: Add shipping carrier validation | Commerce PHP Extensions
 description: Follow this tutorial to create programmatic validations for custom shipping carriers in the Adobe Commerce and Magento Open Source checkout experience.
+keywords:
+  - Checkout
+  - Extensions
 ---
 
 # Add custom shipping carrier validations
@@ -34,7 +37,7 @@ The script must implement the `getRules()` method.
 
 For example, the FedEx shipping method requires only two fields of the shipping address to be filled: **Country**, **Zip Code** and **City**. This is how the validation rules for FedEx look:
 
-> _<Magento_Fedex_dir>/view/frontend/web/js/model/shipping-rates-validation-rules.js_
+> `_<Magento_Fedex_dir>/view/frontend/web/js/model/shipping-rates-validation-rules.js_`
 
 ```js
 define(

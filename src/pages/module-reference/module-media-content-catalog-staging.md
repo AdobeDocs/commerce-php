@@ -1,18 +1,21 @@
 ---
 title: MediaContentCatalogStaging
-description: README.md contents of the module from the source code
+description: Magento module provides the implementation of MediaContent functionality for Magento_Catalog module
 ---
 
 # Magento_MediaContentCatalogStaging module
 
-The Magento_MediaContentCatalogStaging provides the implementation of MediaContent functionality for Magento_Catalog module
+The Magento_MediaContentCatalogStaging module provides the implementation of MediaContent functionality for the Magento_Catalog module.
 
 ## Extensibility
 
-Extension developers can interact with the Magento_MediaContentStaging module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html).
+Extension developers can interact with the Magento_MediaContentCatalogStaging module. For more information about the Magento extension mechanism, see [Plugins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html) enables you to override the functionality of the Magento_MediaContentStaging module.
+[The dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_MediaContentCatalogStaging module.
 
 ## Additional information
 
-For information about significant changes in patch releases, see [2.3.x Release information](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html).
+For information about significant changes in patch releases, see [Release information](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.6.

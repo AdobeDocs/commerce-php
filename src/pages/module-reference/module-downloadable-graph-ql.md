@@ -1,9 +1,11 @@
 ---
 title: DownloadableGraphQl
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
-# DownloadableGraphQl
+# Magento_DownloadableGraphQl module
 
-**DownloadableGraphQl** provides type and resolver information for the GraphQl module
-to generate downloadable product information.
+This module provides type and resolver information for the GraphQl module to generate downloadable product information.
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.9.

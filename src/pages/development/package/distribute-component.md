@@ -1,6 +1,8 @@
 ---
 title: Distribute a Component | Commerce PHP Extensions
 description: Learn how to distribute Adobe Commerce and Magento Open Source components using the Commerce Marketplace.
+keywords:
+  - Extensions
 ---
 
 # Distribute a component

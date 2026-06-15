@@ -1,9 +1,11 @@
 ---
 title: DirectoryGraphQl
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
-# DirectoryGraphQl
+# Magento_DirectoryGraphQl module
 
-**DirectoryGraphQl** provides type and resolver information for the GraphQl module
-to generate directory information endpoints.
+This module provides type and resolver information for the GraphQl module to generate directory information endpoints.
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.7.

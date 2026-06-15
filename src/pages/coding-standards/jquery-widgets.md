@@ -1,25 +1,27 @@
 ---
 title: jQuery Widget Coding Standard | Commerce PHP Extensions
 description: Review standards for developing jQuery widgets for Adobe Commerce and Magento Open Source projects.
+keywords:
+  - Extensions
 ---
 
 # jQuery widget coding standard
 
-All Adobe Commerce and Magento Open Source jQuery UI widgets and interactions are built on a simple, reusable base---the [jQuery UI Widget Factory](http://jqueryui.com/widget/).
+All Adobe Commerce and Magento Open Source jQuery UI widgets and interactions are built on a simple, reusable base---the [jQuery UI Widget Factory](https://jqueryui.com/widget/).
 
 The factory provides a flexible base for building complex, stateful plug-ins with a consistent API.
 It is designed not only for plug-ins that are part of jQuery UI, but for general usage by developers who want to create object-oriented components without reinventing common infrastructure.
 
-For more information, see the [jQuery Widget API documentation](http://api.jqueryui.com/jQuery.widget/).
+For more information, see the [jQuery Widget API documentation](https://api.jqueryui.com/jQuery.widget/).
 
 This standard is mandatory for core developers and recommended for third-party extension developers.
 Some parts of the code might not comply with the standard, but we are working to gradually improve this.
 
-Use [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt) to interpret the "must," "must not," "required," "shall," "shall not," "should," "should not," "recommended," "may," and "optional" keywords.
+Use [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt) to interpret the "must," "must not," "required," "shall," "shall not," "should," "should not," "recommended," "may," and "optional" keywords.
 
 ## Naming conventions
 
-*  Widget names must consist of one or more non-abbreviated English word and in camelcase format.
+*  Widget names must consist of one or more non-abbreviated English word and in camel case format.
 
    ```javascript
    (function($) {
@@ -244,9 +246,9 @@ When a component is initialized, it is also important to send parameters to it, 
    });
    ```
 
-*  You must use [DOM event bubbling](http://stackoverflow.com/questions/4616694/what-is-event-bubbling-and-capturing) to perform one-way communication between a child widget and its parent widget.
+*  You must use [DOM event bubbling](https://stackoverflow.com/questions/4616694/what-is-event-bubbling-and-capturing) to perform one-way communication between a child widget and its parent widget.
 
-*  Widgets must comply with the [Law of Demeter](http://en.wikipedia.org/wiki/Law_of_Demeter) principle.
+*  Widgets must comply with the [Law of Demeter](https://en.wikipedia.org/wiki/Law_of_Demeter) principle.
 
    Do not instantiate a widget or call a widget's methods inside another widget.
 

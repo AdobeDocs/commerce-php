@@ -1,6 +1,9 @@
 ---
 title: Customize the Form Configuration | Commerce PHP Extensions
 description: Follow this tutorial to customize the Adobe Commerce and Magento Open Source product creation form configuration.
+keywords:
+  - Configuration
+  - Extensions
 ---
 
 # Customize the form configuration

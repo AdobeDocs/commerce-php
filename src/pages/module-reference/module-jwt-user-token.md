@@ -1,6 +1,12 @@
 ---
 title: JwtUserToken
-description: README.md contents of the module from the source code
+description: Introduces JWT token support for web API authentication
 ---
 
-Provides self-signed JWT support for admin users' and customers' web API authentication. Replaces opaque tokens.
+# Magento_JwtUserToken module
+
+This module provides self-signed JSON Web Token (JWT) support for web API authentication of admin users and customers.
+It replaces opaque tokens.
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.4.

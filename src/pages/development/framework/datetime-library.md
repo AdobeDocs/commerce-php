@@ -3,6 +3,8 @@ title: DateTime Library | Commerce PHP Extensions
 description: Use this library in your Adobe Commerce and Magento Open Source components to manipulate date and time formatting.
 contributor_name: Rakesh Jesadiya
 contributor_link: https://github.com/RakeshJesadiya
+keywords:
+  - Extensions
 ---
 
 # DateTime library

@@ -1,6 +1,8 @@
 ---
-title: Data collection for advanced reporting | Commerce PHP Extensions
+title: Data collection | Commerce PHP Extensions
 description: Learn about the data that the advanced reporting modules collect for Adobe Commerce and Magento Open Source.
+keywords:
+  - Extensions
 ---
 
 # Data collection for advanced reporting
@@ -70,7 +72,7 @@ Configuration of data collection can be extended or changed in any module adding
 
 The `etc/analytics.xsd` schema declares the structure of the `etc/analytics.xml` file.
 
-![Analytics schema](../../_images/analytics_xsd.svg)
+![Analytics schema](../../images/analytics-xsd.svg)
 
 ### `<config>`
 

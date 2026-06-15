@@ -1,6 +1,8 @@
 ---
 title: Code Generation | Commerce PHP Extensions
 description: Learn about Adobe Commerce and Magento Open Source code generation.
+keywords:
+  - Extensions
 ---
 
 # Code generation
@@ -20,7 +22,7 @@ Unlike some other languages or libraries, you can look at the generated code on 
 
 ## When is code generated?
 
-Provided that the application is not set to [production mode](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode), code is generated when the application cannot find a class when executing code.
+Provided that the application is not set to [production mode](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/setup/application-modes#production-mode), code is generated when the application cannot find a class when executing code.
 
 In particular,
 
@@ -30,7 +32,7 @@ In particular,
 
 *  Interceptor classes are automatically generated to facilitate Magento's plugin system. An interceptor class extends a type and is returned by the Object Manager to allow multiple plugin classes to inject logic into different methods. Interceptors work behind the scenes and are *not* directly referenced in application code.
 
-You can also use the [code compiler](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/code-compiler.html) to generate code at any time. "Compiling" your application means performing code generation for any eligible class encountered by the configuration/code scanner, as well as performing a number of different dependency injection optimizations.
+You can also use the [code compiler](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/code-compiler) to generate code at any time. "Compiling" your application means performing code generation for any eligible class encountered by the configuration/code scanner, as well as performing a number of different dependency injection optimizations.
 
 ## Why should you regenerate code?
 
@@ -42,7 +44,7 @@ If the code generator implementation itself is changed, you must regenerate all 
 
 Code generation is required in Adobe Commerce and Magento Open Source. Generating code assures you of the following:
 
-*  The code is correct. You don’t have to worry that the generated code is delegating to the wrong method or forgetting a semicolon, and you don’t have to write tests for the generated code.
+*  The code is correct. You don't have to worry that the generated code is delegating to the wrong method or forgetting a semicolon, and you don't have to write tests for the generated code.
 *  Code generation writes the boilerplate code to enable you to write more challenging and interesting code.
 *  Consistent implementation.
 

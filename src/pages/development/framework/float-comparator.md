@@ -3,6 +3,8 @@ title: Float Comparator | Commerce PHP Extensions
 description: Use this library in your Adobe Commerce and Magento Open Source components to compare float values with an appropriate epsilon value.
 contributor_name: Adarsh Manickam
 contributor_link: https://github.com/drpayyne
+keywords:
+  - Extensions
 ---
 
 # Float comparator

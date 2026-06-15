@@ -1,9 +1,11 @@
 ---
 title: TaxGraphQl
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
-# TaxGraphQl
+# Magento_TaxGraphQl module
 
-**TaxGraphQl** provides type information for the GraphQl module
-to generate tax fields for catalog and product information endpoints.
+This module provides type information for the GraphQL module to generate tax fields for catalog and product information endpoints.
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.5.

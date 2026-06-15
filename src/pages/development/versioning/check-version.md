@@ -3,6 +3,8 @@ title: Check the Commerce Version | Commerce PHP Extensions
 description: Use these options to identify the version of Adobe Commerce or Magento Open Source.
 contributor_name: Atwix
 contributor_link: https://www.atwix.com/
+keywords:
+  - Extensions
 ---
 
 # Check the Commerce version
@@ -50,7 +52,7 @@ Magento/2.3 (Community)
 
 Log in as a registered Admin user. The application version is displayed at the bottom right of the page, above the  **Account Activity** and **Report an Issue** links:
 
-![Check the application version](../../_images/version.png)
+![Check the application version](../../images/version.png)
 
 ## The `composer.lock` file
 

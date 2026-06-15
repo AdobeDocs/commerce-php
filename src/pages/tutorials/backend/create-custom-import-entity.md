@@ -3,6 +3,8 @@ title: Create a Custom Import Entity | Commerce PHP Extensions
 description: Follow this tutorial to import data into a custom Adobe Commerce or Magento Open Source module's database table.
 contributor_name: Atwix
 contributor_link: https://www.atwix.com/
+keywords:
+  - Extensions
 ---
 
 # Create a custom import entity
@@ -418,7 +420,7 @@ public function __construct(
 
 The validation rules will be checking for a required **name** and a greater than 0 **duration**.
 
-![Validating Data](../../_images/tutorials/import-validation.png)
+![Validating Data](../../images/tutorials/import-validation.png)
 
 ## Step 3. Providing the sample file
 
@@ -459,6 +461,6 @@ Next, register the sample file for our entity.
 
 As result, the new Entity Type and the sample CSV are available:
 
-![Import Entity](../../_images/tutorials/import-entity.png)
+![Import Entity](../../images/tutorials/import-entity.png)
 
-[0]: https://github.com/magento/magento2/blob/2.4}/app/code/Magento/ImportExport/Model/Import/Entity/AbstractEntity.php
+[0]: https://github.com/magento/magento2/blob/2.4/app/code/Magento/ImportExport/Model/Import/Entity/AbstractEntity.php

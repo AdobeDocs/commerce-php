@@ -3,11 +3,14 @@ title: Create a Custom REST API | Commerce PHP Extensions
 description: Follow this tutorial to manage custom data in your Adobe Commerce or Magento Open Source extension through custom REST API endpoints.
 contributor_name: Nitish Ranjan
 contributor_link: https://github.com/nitish-ranjan05
+keywords:
+  - Extensions
+  - REST
 ---
 
 # Create a custom REST API
 
-Although {{site.data.var.ee}} and {{site.data.var.ce}} provide numerous REST endpoints, you might need to create your own to manage custom data within your extension. This tutorial describes how you can create such a custom REST API.
+Although Adobe Commerce and Magento Open Source provide numerous REST endpoints, you might need to create your own to manage custom data within your extension. This tutorial describes how you can create such a custom REST API.
 
 In this tutorial, we will create two custom endpoints to read or modify the product information. `GET /V1/rest_dev/getProduct/{productId}` returns details about a specified product, and `PUT /V1/rest_dev/setDescription` modifies product description data.
 
@@ -468,11 +471,11 @@ class ProductRepository implements ProductRepositoryInterface
 }
 ```
 
-After manipulating .xml files mentioned in this topic, updating constructors, or introducing new classes, you must run [`bin/magento setup:upgrade`](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/database-upgrade.html) or [`bin/magento setup:di:compile`](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/code-compiler.html) from the directory where Adobe Commerce or Magento Open Source is installed to generate the code for the introduced changes.
+After manipulating .xml files mentioned in this topic, updating constructors, or introducing new classes, you must run [`bin/magento setup:upgrade`](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/database-upgrade) or [`bin/magento setup:di:compile`](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/code-compiler) from the directory where Adobe Commerce or Magento Open Source is installed to generate the code for the introduced changes.
 
 ## Step 7. Test your custom endpoint
 
-*  You can use any REST client to send calls. [Postman](https://www.getpostman.com/) is recommended.
+*  You can use any REST client to send calls. [Postman](https://www.postman.com/) is recommended.
 *  Obtain an admin authorization token. All calls in this tutorial require administrator privileges. See [Generate the admin token](https://developer.adobe.com/commerce/webapi/rest/tutorials/prerequisite-tasks/) for more information.
 
 ### Test the GET endpoint

@@ -1,8 +1,11 @@
 ---
 title: CatalogCustomerGraphQl
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
-# CatalogCustomerGraphQl
+# Magento_CatalogCustomerGraphQl module
 
-**CatalogCustomerGraphQl** provides type and resolver information for GraphQL attributes that have dependences on the Catalog and Customer modules.
+This module provides type and resolver information for GraphQL attributes that have dependences on the Catalog and Customer modules.
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.8.

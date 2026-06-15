@@ -1,11 +1,11 @@
 ---
 title: CatalogUrlRewriteStaging
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
-# Magento_CatalogUrlRewriteStaging
+# Magento_CatalogUrlRewriteStaging module
 
-The Magento_CatalogUrlRewriteStaging module is a part of the staging functionality in Magento EE. It extends the Magento_CatalogUrlRewrite module.
+The Magento_CatalogUrlRewriteStaging module is a part of the staging functionality in Adobe Commerce. It extends the Magento_CatalogUrlRewrite module.
 
 ## Implementation details
 
@@ -18,3 +18,6 @@ You can find the list of modules that have dependencies on the Magento_CatalogUr
 ## Extension points
 
 Extensions points for the Magento_CatalogUrlRewriteStaging module are not available.
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.8.

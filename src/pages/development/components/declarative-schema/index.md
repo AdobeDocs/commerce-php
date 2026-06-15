@@ -1,6 +1,8 @@
 ---
 title: Declarative Schema | Commerce PHP Extensions
 description: Simplify the installation and upgrade process for Adobe Commerce and Magento Open Source by using declarative schema.
+keywords:
+  - Extensions
 ---
 
 # Declarative schema

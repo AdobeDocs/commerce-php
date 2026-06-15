@@ -1,6 +1,9 @@
 ---
-title: Add a Custom Shipping Address Renderer | Commerce PHP Extensions
+title: Add shipping address renderer | Commerce PHP Extensions
 description: Follow this tutorial to create a custom shipping address renderer in the Adobe Commerce and Magento Open Source checkout experience.
+keywords:
+  - Checkout
+  - Extensions
 ---
 
 # Add a custom shipping address renderer
@@ -74,7 +77,7 @@ define([
 
 ## Step 2: Create a template for the shipping address renderer
 
-In your custom module directory, create a new `<your_module_dir>/view/frontend/web/template/<your_template>.html` file. The template can use [Knockout JS](http://knockoutjs.com/) syntax.
+In your custom module directory, create a new `<your_module_dir>/view/frontend/web/template/<your_template>.html` file. The template can use [Knockout JS](https://knockoutjs.com/) syntax.
 
 The template should contain a button for setting the address to be used for shipping.
 
@@ -284,7 +287,7 @@ If you want your custom address type to be displayed here as well, you need to c
 
 ### Add template for displaying the address in the Ship-To section
 
-In your custom module directory create a new `<your_module_dir>/view/frontend/web/template/<your_template>.html` file. The template can use [Knockout JS](http://knockoutjs.com/) syntax.
+In your custom module directory create a new `<your_module_dir>/view/frontend/web/template/<your_template>.html` file. The template can use [Knockout JS](https://knockoutjs.com/) syntax.
 
 You can use the code from the default template: [app/code/Magento/Checkout/view/frontend/web/template/shipping-information/address-renderer/default.html](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Checkout/view/frontend/web/template/shipping-information/address-renderer/default.html).
 

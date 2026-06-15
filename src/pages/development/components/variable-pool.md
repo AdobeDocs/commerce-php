@@ -1,6 +1,8 @@
 ---
 title: Variable Pool | Commerce PHP Extensions
 description: Learn how to use pre-defined values in Adobe Commerce and Magento Open source CMS content.
+keywords:
+  - Extensions
 ---
 
 # Variable pool
@@ -21,8 +23,8 @@ This list can be extended by adding more entries to the `configPaths` argument f
 <?xml version="1.0"?>
 <!--
 /**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">

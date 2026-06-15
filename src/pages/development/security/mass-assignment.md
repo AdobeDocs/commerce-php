@@ -1,6 +1,9 @@
 ---
 title: Mass Assignment | Commerce PHP Extensions
 description: Prevent Adobe Commerce and Magento Open Source components from allowing bad actors to override user-editable properties with arbitrary values in HTTP requests.
+keywords:
+  - Extensions
+  - Security
 ---
 
 # Mass assignment
@@ -172,7 +175,7 @@ Example:
             <resource ref="self"/>
         </resources>
         <data>
-            <!-- Enforcing UpdatedUserDataInterface::getId() to always equal to current user's ID -->
+            \<!-- Enforcing UpdatedUserDataInterface::getId() to always equal to current user's ID --\>
             <parameter name="user.id" force="true">%user_id%</parameter>
         </data>
     </route>

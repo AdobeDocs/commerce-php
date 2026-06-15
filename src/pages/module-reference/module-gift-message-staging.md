@@ -1,11 +1,11 @@
 ---
 title: GiftMessageStaging
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 # Magento_GiftMessageStaging module
 
-The Magento_GiftMessageStaging module is a part of the staging functionality in Magento EE. It extends the Magento_GiftMessage module functionality to be used in the Schedule Update form.
+The Magento_GiftMessageStaging module is a part of the staging functionality in Adobe Commerce. It extends the Magento_GiftMessage module functionality to be used in the Schedule Update form.
 
 ## Implementation details
 
@@ -17,4 +17,7 @@ You can find the list of modules that have dependencies on the Magento_GiftMessa
 
 ## Extension points
 
-[The Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html) enables you to override the functionality of the Magento_GiftMessageStaging module.
+[The dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_GiftMessageStaging module.
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.6.

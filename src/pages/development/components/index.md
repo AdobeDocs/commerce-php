@@ -1,6 +1,8 @@
 ---
 title: Component Development | Commerce PHP Extensions
 description: Review an introduction to Adobe Commerce and Magento Open Source component development, which includes modules, themes, and language packages.
+keywords:
+  - Extensions
 ---
 
 # Component development

@@ -1,6 +1,8 @@
 ---
 title: Create an Admin Page | Commerce PHP Extensions
 description: Follow this tutorial to create a module that displays a custom page in the Adobe Commerce and Magento Open Source Admin application.
+keywords:
+  - Extensions
 ---
 
 # Create an Admin page
@@ -61,8 +63,8 @@ For more information see: [registering your component](../../development/build/c
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 use Magento\Framework\Component\ComponentRegistrar;
@@ -120,7 +122,7 @@ The `menu.xml` file provided below adds two items in the Content section of the 
 1. A new separate section with the title **Greetings** under Content.
 1. A link with the label **Hello World** that leads to a page request for `exampleadminnewpage/helloworld/index` underneath that new section.
 
-   ![Hello World menu item](../../_images/tutorials/hello-world-menu-item.png)
+   ![Hello World menu item](../../images/tutorials/hello-world-menu-item.png)
 
 The following parts make up the generated page request link to the **Hello World** page:
 
@@ -167,13 +169,13 @@ In the module's root directory, run the following command:
 mkdir -p Controller/Adminhtml/HelloWorld
 ```
 
-Inside `Controller/Adminhtml/HelloWorld` directory, create the file `Index.php`. This file is the class assigned to the default Index action for the `HelloWorld` controller. Since the admin area serves this page, the file belongs in the `Adminhtml` directory, and the class itself extends [`\Magento\Backend\App\Action`](https://github.com/magento/magento2/blob/2.4}/app/code/Magento/Backend/App/Action.php).
+Inside `Controller/Adminhtml/HelloWorld` directory, create the file `Index.php`. This file is the class assigned to the default Index action for the `HelloWorld` controller. Since the admin area serves this page, the file belongs in the `Adminhtml` directory, and the class itself extends [`\Magento\Backend\App\Action`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Backend/App/Action.php).
 
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 namespace MyCompany\ExampleAdminNewPage\Controller\Adminhtml\HelloWorld;
@@ -305,9 +307,9 @@ Now that the module is code-complete, run the following commands to install it:
 1. `bin/magento module:enable MyCompany_ExampleAdminNewPage` - If necessary, run this to enable the disabled module.
 1. `bin/magento setup:upgrade` - This command will properly register the module.
 1. `bin/magento setup:di:compile` - This command compiles classes used in dependency injections.
-1. `bin/magento setup:static-content:deploy` - (Production mode only) This command deploys static view files. If you are in developer mode, refer to [Clean static files cache](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache) to refresh the static view files.
+1. `bin/magento setup:static-content:deploy` - (Production mode only) This command deploys static view files. If you are in developer mode, refer to [Clean static files cache](https://developer.adobe.com/commerce/frontend-core/guide/caching#clean-static-files-cache) to refresh the static view files.
 1. `bin/magento cache:clean` - This command cleans the cache.
 
 Once the module installation has completed, the link to the **Hello World** page should appear in the **Greetings** section under **Content** in the left navigation in the admin area. Clicking this link will take you to a page that looks like the one pictured below.
 
-![Hello World Page](../../_images/tutorials/hello-world-page.png)
+![Hello World Page](../../images/tutorials/hello-world-page.png)

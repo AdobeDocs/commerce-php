@@ -1,6 +1,9 @@
 ---
 title: Authorization | Commerce PHP Extensions
 description: Control access to Adobe Commerece and Magento Open Source pages using different authorization strategies.
+keywords:
+  - Extensions
+  - Security
 ---
 
 # Authorization

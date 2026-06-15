@@ -1,11 +1,19 @@
 ---
 title: Events and Observers | Commerce PHP Extensions
 description: Extend Adobe Commerce and Magento Open Source by running custom code in response to specific events.
+keywords:
+  - Extensions
 ---
 
 # Events and observers
 
 Working with events and observers is one of the main ways to extend Adobe Commerce and Magento Open Source functionality. The events and observers implementation in Adobe Commerce and Magento Open Source are based on the [publish-subscribe pattern](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern). Using events and observers, you can run your custom code in response to a specific event or even a custom event.
+
+Adobe Commerce developers can use the following event-driven technologies to create the next generation of apps and extensions:
+
+*  [Adobe I/O Events for Adobe Commerce](https://developer.adobe.com/commerce/extensibility/events/) allows you to send events asynchronously to applications built with [Adobe App Builder](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app). This feature is available on Adobe Commerce 2.4.4 and higher.
+
+*  [Adobe Commerce Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/) enables you to synchronously send webhook calls to an external server for immediate processing. Webhooks are triggered by events and cancel the action that initiated the event if the external call does not succeed. This feature is available as of Adobe Commerce 2.4.4 and higher.
 
 ## Events
 
@@ -22,8 +30,8 @@ The following example shows you how to dispatch an event with and without an arr
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 namespace MyCompany\MyModule;
@@ -100,8 +108,8 @@ Below is an example of the basic observer class structure:
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 namespace MyCompany\MyModule\Observer;
@@ -124,13 +132,13 @@ class MyObserver implements ObserverInterface
 }
 ```
 
-One of the more powerful feature of observers is that they are able to use parameters passed into the event when it was dispatched. Below is an example of an observer obtaining data passed in when the event was dispatched.
+One of the more powerful features of observers is that they are able to use parameters passed into the event when it was dispatched. Below is an example of an observer obtaining data passed in when the event was dispatched.
 
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All rights reserved.
  */
 
 namespace MyCompany\MyModule\Observer;
@@ -191,7 +199,7 @@ If you declare an observer with a name that is already in use within the same ev
 
 ### Disabling an observer
 
-Existing observers can be disabled, if you do not want to have them running. It is a good practice to disable the obsever if you want to change its logic rather than override it.
+Existing observers can be disabled, if you do not want to have them running. It is a good practice to disable the observer if you want to change its logic rather than override it.
 Below is an example of how to disable the previously created observer.
 
 ```xml
@@ -205,4 +213,4 @@ Below is an example of how to disable the previously created observer.
 
 ## Recommended Reading
 
-*  [Observers best practices](https://developer.adobe.com/commerce/php/best-practices/extensions/observers/)
+*  [Observers best practices](/best-practices/extensions/observers.md)

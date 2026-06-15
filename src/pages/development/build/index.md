@@ -1,6 +1,8 @@
 ---
 title: Build | Commerce PHP Extensions
 description: Review high-level prerequisites and steps for building Adobe Commerce and Magento Open Source components.
+keywords:
+  - Extensions
 ---
 
 # Build

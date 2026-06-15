@@ -1,8 +1,11 @@
 ---
 title: PaypalGraphQl
-description: README.md contents of the module from the source code
+description: GraphQl support for Paypal
 ---
 
-# PaypalGraphQl
+# Magento_PaypalGraphQl module
 
-**PaypalGraphQl** provides resolver information for using Paypal payment methods via GraphQl.
+This module provides resolver information for using PayPal payment methods via GraphQL.
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.7.

@@ -1,6 +1,8 @@
 ---
 title: Serialize Library | Commerce PHP Extensions
 description: Use this library in your Adobe Commerce and Magento Open Source components to manage the serialization and unserialization of data.
+keywords:
+  - Extensions
 ---
 
 # Serialize library
@@ -66,7 +68,6 @@ public function __construct(SerializerInterface $serializer) {
 }
 ```
 
-\\
 The following example shows how to use a serializer's `serialize()` and `unserialize()` functions to store and retrieve array data from a cache:
 
 ```php

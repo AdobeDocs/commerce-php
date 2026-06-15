@@ -1,11 +1,11 @@
 ---
 title: CatalogInventoryStaging
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
 # Magento_CatalogInventoryStaging module
 
-The Magento_CatalogInventoryStaging module is a part of the staging functionality in Magento EE. It extends the Magento_CatalogInventory module functionality, adding the capability to monitor the "Stock Status" field on the Schedule Update form of a product.
+The Magento_CatalogInventoryStaging module is a part of the staging functionality in Adobe Commerce. It extends the Magento_CatalogInventory module functionality, adding the capability to monitor the "Stock Status" field on the Schedule Update form of a product.
 
 ## Implementation details
 
@@ -17,6 +17,9 @@ You can find the list of modules that have dependencies on the Magento_CatalogIn
 
 ## Extension points
 
-You can interact with the Magento_CatalogInventoryStaging module using the Magento extension mechanism, see [Magento plug-ins](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html).
+You can interact with the Magento_CatalogInventoryStaging module using the Magento extension mechanism, see [Plugins](https://developer.adobe.com/commerce/php/development/components/plugins).
 
-[The Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html) enables you to override the functionality of the Magento_CatalogInventoryStaging module.
+[The dependency injection mechanism](https://developer.adobe.com/commerce/php/development/components/dependency-injection) enables you to override the functionality of the Magento_CatalogInventoryStaging module.
+
+<InlineAlert slots="text" />
+The version of this module is 100.4.7.

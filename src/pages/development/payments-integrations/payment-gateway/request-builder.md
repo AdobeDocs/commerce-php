@@ -1,11 +1,13 @@
 ---
 title: Request Builder
 description: Learn how to implement complex building strategies using builder composites.
+keywords:
+  - Extensions
+  - Integration
+  - Payments
 ---
 
-import Docs from '/src/pages/_includes/braintree-note.md'
-
-<Docs />
+<Fragment src="/includes/braintree-note.md"/>
 
 # Request Builder
 
@@ -13,7 +15,7 @@ Request Builder is a component of the Adobe Commerce payment gateway responsible
 
 ## Basic interface
 
-The basic interface for a request builder is [`\Magento\Payment\Gateway\Request\BuilderInterface`](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Payment/Gateway/Request/BuilderInterface.php).
+The basic interface for a request builder is [`\Magento\Payment\Gateway\Request\BuilderInterface`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/Gateway/Request/BuilderInterface.php).
 
 ## Builder composite
 
@@ -27,11 +29,11 @@ The concatenation strategy is defined in the `BuilderComposite::merge()` method.
 
 Builder composites are added using [dependency injection](../../components/dependency-injection.md) in `di.xml`. A builder composite might comprise simple builders as well as other builder composites.
 
-Example of adding composite builders for the Braintree payment provider ([`app/code/Magento/Braintree/etc/di.xml`](https://github.com/magento/magento2/tree/2.3/app/code/Magento/Braintree/etc/di.xml)):
+Example of adding composite builders for the Braintree payment provider ([`app/code/Magento/Braintree/etc/di.xml`](https://github.com/magento/magento2/blob/2.3/app/code/Magento/Braintree/etc/di.xml)):
 
 ```xml
 ...
-<!-- is a builder composite comprising a number of builders -->
+\<!-- is a builder composite comprising a number of builders --\>
 <virtualType name="BraintreeAuthorizeRequest" type="Magento\Payment\Gateway\Request\BuilderComposite">
     <arguments>
         <argument name="builders" xsi:type="array">
@@ -49,7 +51,7 @@ Example of adding composite builders for the Braintree payment provider ([`app/c
     </arguments>
 </virtualType>
 ...
-<!-- The same BraintreeAuthorizeRequest builder composite is a part of the BraintreeSaleRequest builder composite -->
+\<!-- The same BraintreeAuthorizeRequest builder composite is a part of the BraintreeSaleRequest builder composite --\>
 <virtualType name="BraintreeSaleRequest" type="Magento\Payment\Gateway\Request\BuilderComposite">
     <arguments>
         <argument name="builders" xsi:type="array">

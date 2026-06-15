@@ -1,6 +1,9 @@
 ---
-title: Create a Dynamic Row System Configuration | Commerce PHP Extensions
+title: Create dynamic row configuration | Commerce PHP Extensions
 description: Follow this tutorial to add a new dynamic row system configuration in the Adobe Commerce and Magento Open Source Admin application.
+keywords:
+  - Configuration
+  - Extensions
 ---
 
 # Create a dynamic row system configuration
@@ -250,6 +253,6 @@ bin/magento cache:clean config
 
 The result is a new dynamic system row field in the Admin panel. If you have set optional default values, these should also appear.
 
-![Dynamic Rows System Config](../../_images/tutorials/dynamic-rows-config-result.png)
+![Dynamic Rows System Config](../../images/tutorials/dynamic-rows-config-result.png)
 
 [0]: https://github.com/magento/magento2/blob/2.4/app/code/Magento/Config/Block/System/Config/Form/Field/FieldArray/AbstractFieldArray.php

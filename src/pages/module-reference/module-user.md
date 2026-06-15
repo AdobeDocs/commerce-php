@@ -1,11 +1,14 @@
 ---
 title: User
-description: README.md contents of the module from the source code
+description: N/A
 ---
 
-# User
+# Magento_User module
 
-**User** enables admin users to manage and assign roles to administrators and other non-customer users,
+This module enables admin users to manage and assign roles to administrators and other non-customer users,
 reset user passwords, and invalidate access tokens.
 Different roles can be assigned to different users to define their permissions.
 For admin passwords, it enables setting lifetimes and locking them when expired or when a specified numbers of failures have occurred. It allows preventing password brute force attacks for system backend.
+
+<InlineAlert slots="text" />
+The version of this module is 101.2.9.

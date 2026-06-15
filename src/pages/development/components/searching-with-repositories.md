@@ -1,6 +1,8 @@
 ---
 title: Searching with Repositories | Commerce PHP Extensions
 description: Learn how to use Adobe Commerce and Magento Open Source repositories to perform search opertions on entities.
+keywords:
+  - Extensions
 ---
 
 # Searching with repositories

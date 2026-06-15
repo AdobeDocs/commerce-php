@@ -3,6 +3,8 @@ title: Set Custom Routes | Commerce PHP Extensions
 description: Configure your Adobe Commerce or Magento Open Source extension to use custom routes.
 contributor_name: Comwrap GmbH
 contributor_link: https://www.comwrap.com
+keywords:
+  - Extensions
 ---
 
 # Set custom routes
@@ -26,8 +28,8 @@ This example redefines two routes:
 
 The following table defines the `route` node attributes:
 
-Attribute name | Required | Description
---- | --- | ---
-`url` | Yes | An existing REST endpoint. The route can be defined in the module's `webapi.xml` file, or derived, such as those for asynchronous and bulk endpoints.
-`method` | Yes | The HTTP request method. One of `GET`, `PUT`, `POST` or `DELETE`.
-`alias` | Yes | A string that defines the custom route for the route defined in `url`.
+| Attribute name | Required | Description |
+| --- | --- | --- |
+| `url` | Yes | An existing REST endpoint. The route can be defined in the module's `webapi.xml` file, or derived, such as those for asynchronous and bulk endpoints. |
+| `method` | Yes | The HTTP request method. One of `GET`, `PUT`, `POST` or `DELETE`. |
+| `alias` | Yes | A string that defines the custom route for the route defined in `url`. |

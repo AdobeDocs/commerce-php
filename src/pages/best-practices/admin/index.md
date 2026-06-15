@@ -1,6 +1,8 @@
 ---
 title: Admin | Commerce PHP Extensions
 description: Learn how third-party extensions impact the Adobe Commerce and Magento Open Source Admin application.
+keywords:
+  - Extensions
 ---
 
 # Admin

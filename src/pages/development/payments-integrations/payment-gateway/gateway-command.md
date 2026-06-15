@@ -1,11 +1,13 @@
 ---
 title: Gateway Command
 description: Learn how provider responses are sent, received, and processed.
+keywords:
+  - Extensions
+  - Integration
+  - Payments
 ---
 
-import Docs from '/src/pages/_includes/braintree-note.md'
-
-<Docs />
+<Fragment src="/includes/braintree-note.md"/>
 
 # Gateway Command
 
@@ -15,7 +17,7 @@ For each operation (authorization, capture and so on) of a certain payment provi
 
 ## Interface
 
-Basic interface for a gateway command is [`\Magento\Payment\Gateway\CommandInterface`](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Payment/Gateway/CommandInterface.php). It implements the [Command design pattern](https://designpatternsphp.readthedocs.io/en/latest/Behavioral/Command/README.html).
+Basic interface for a gateway command is [`\Magento\Payment\Gateway\CommandInterface`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/Gateway/CommandInterface.php). It implements the [Command design pattern](https://designpatternsphp.readthedocs.io/en/latest/Behavioral/Command/README.html).
 
 ## Basic implementation
 
@@ -25,7 +27,7 @@ The `\Magento\Payment\Gateway\Command\GatewayCommand` class is the default `Comm
 
 For each particular integration with a payment provider, gateway commands are added using virtual types in [dependency injection (DI)](../../components/dependency-injection.md) configuration.
 
-In the following example the `BraintreeAuthorizeCommand` gateway command is added. The command implements the "authorize" operation for the Braintree payment provider ([`app/code/Magento/Braintree/etc/di.xml`](https://github.com/magento/magento2/tree/2.3/app/code/Magento/Braintree/etc/di.xml)):
+In the following example the `BraintreeAuthorizeCommand` gateway command is added. The command implements the "authorize" operation for the Braintree payment provider ([`app/code/Magento/Braintree/etc/di.xml`](https://github.com/magento/magento2/blob/2.3/app/code/Magento/Braintree/etc/di.xml)):
 
 ```xml
 <virtualType name="BraintreeAuthorizeCommand" type="Magento\Payment\Gateway\Command\GatewayCommand">

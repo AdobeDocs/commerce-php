@@ -1,6 +1,8 @@
 ---
 title: Observers Best Practices | Commerce PHP Extensions
 description: Review best practices about observers when coding Adobe Commerce and Magento Open Source extensions.
+keywords:
+  - Extensions
 ---
 
 # Observers best practices

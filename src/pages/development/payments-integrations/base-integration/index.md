@@ -1,17 +1,19 @@
 ---
 title: Adding a new payment integration (payment method)
 description: This is an overview of how to add integrations to handle transactions with other payment providers.
+keywords:
+  - Extensions
+  - Integration
+  - Payments
 ---
 
-import Docs from '/src/pages/_includes/braintree-note.md'
-
-<Docs />
+<Fragment src="/includes/braintree-note.md"/>
 
 # Adding a new payment integration (payment method)
 
 Out-of-the-box Adobe Commerce implements integration with PayPal, Braintree, and Authorize.Net payment service providers. These integrations allow you to create and handle transactions based on order details.
 
-You can create integration with other payment providers, using [Commerce payment provider gateway](../payment-gateway/).
+You can create integration with other payment providers, using [Commerce payment provider gateway](../payment-gateway/index.md).
 
 <InlineAlert variant="info" slots="text"/>
 

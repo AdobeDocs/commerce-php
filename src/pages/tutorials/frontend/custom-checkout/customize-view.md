@@ -1,6 +1,9 @@
 ---
-title: Customize the View of a Checkout Step | Commerce PHP Extensions
+title: Customize the view of a checkout | Commerce PHP Extensions
 description: Follow this tutorial to customize the view of a step in the Adobe Commerce and Magento Open Source checkout experience.
+keywords:
+  - Checkout
+  - Extensions
 ---
 
 # Customize the view of a checkout step
@@ -134,7 +137,7 @@ Remember to [disable](#disable-a-component) or [remove](#remove-a-component) the
 
 ### Order Summary Result
 
-![Discount Component](../../../_images/tutorials/discount_component.png)
+![Discount Component](../../../images/tutorials/discount-component.png)
 
 ## Disable a component
 

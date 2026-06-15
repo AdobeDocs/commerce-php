@@ -3,6 +3,9 @@ title: Add a Custom Shipping Carrier | Commerce PHP Extensions
 description: Follow this tutorial to create a custom shipping carrier in the Adobe Commerce and Magento Open Source checkout experience.
 contributor_name: Atwix
 contributor_link: https://www.atwix.com/
+keywords:
+  - Checkout
+  - Extensions
 ---
 
 # Add a custom shipping carrier
@@ -197,9 +200,9 @@ use Psr\Log\LoggerInterface;
 
 class Customshipping extends AbstractCarrier implements CarrierInterface
 {
-    protected string $_code = 'customshipping';
+    protected $_code = 'customshipping';
 
-    protected bool $_isFixed = true;
+    protected $_isFixed = true;
 
     private ResultFactory $rateResultFactory;
 
@@ -270,8 +273,8 @@ bin/magento module:enable Vendor_CustomShipping
 
 The backend settings for the custom shipping carrier appear as shown below.
 
-![Custom shipping carrier backend settings](../../../_images/tutorials/checkout-add-custom-carrier-01.png)
+![Custom shipping carrier backend settings](../../../images/tutorials/checkout-add-custom-carrier-01.png)
 
 The custom shipping carrier will appear on checkout as shown below.
 
-![Custom shipping carrier on checkout](../../../_images/tutorials/checkout-add-custom-carrier-02.png)
+![Custom shipping carrier on checkout](../../../images/tutorials/checkout-add-custom-carrier-02.png)

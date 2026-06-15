@@ -1,6 +1,8 @@
 ---
 title: Customize the Design | Commerce PHP Extensions
 description: Follow this tutorial to customize the design of the Adobe Commerce and Magento Open Source Admin.
+keywords:
+  - Extensions
 ---
 
 # Customize the design
@@ -30,11 +32,11 @@ The following walk-through uses version 2.1.0 and later.
 
 On a default Adobe Commerce or Magento Open Source installation, when you navigate to **CONTENT > Design > Configuration** in Admin, the first page that opens displays a grid with the available configuration scopes and assigned themes. It looks like following:
 
-![Design Configuration](../../_images/tutorials/design_conf1.png)
+![Design Configuration](../../images/tutorials/design-conf1.png)
 
 When you click **Edit** in any of the scope records, the page with available design options is displayed. For example, the default set of design options for the store view level is the following:
 
-![Default Store View](../../_images/tutorials/design_conf2.png)
+![Default Store View](../../images/tutorials/design-conf2.png)
 
 Both the grid and the configuration form are implemented using UI components.
 
@@ -44,7 +46,7 @@ To change the available design settings, you must [customize the grid](#customiz
 
 ## Customize the grid
 
-The grid containing the configuration scopes is implemented using the [grid UI component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/listing-grid/).
+The grid containing the configuration scopes is implemented using the [grid UI component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/listing-grid).
 
 To customize the grid view, take the following steps:
 
@@ -75,7 +77,7 @@ For reference, view the grid configuration files of the modules:
 -  `<Magento_Backend_module_dir>/view/adminhtml/ui_component/design_config_listing.xml`
 -  `<Magento_Theme_module_dir>/view/adminhtml/ui_component/design_config_listing.xml`
 
-If you add a certain field as an additional grid column, you must also set the field’s `use_in_grid` property in the [field’s meta data](#add-fields-metadata) in the `di.xml` file.
+If you add a certain field as an additional grid column, you must also set the field's `use_in_grid` property in the [field's meta data](#add-fields-metadata) in the `di.xml` file.
 
 ## Customize the design options
 
@@ -170,7 +172,7 @@ For reference, view the form configuration files of these modules:
 -  `<Magento_Swatches_module_dir>/view/adminhtml/ui_component/design_config_form.xml`
 -  `<Magento_Theme_module_dir>/view/adminhtml/ui_component/design_config_form.xml`
 
-### Add fields’ metadata
+### Add fields' metadata
 
 If in the design configuration form you add new fields, `<your_module_dir>/etc/di.xml`, you must specify their parent field sets and the path in the database. You can also declare the backend model used for processing the field values. If you do not specify any model, the default `Magento\Framework\App\Config\Value` model is used.
 
