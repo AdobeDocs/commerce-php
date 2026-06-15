@@ -38,3 +38,6 @@ lerna-debug.log
 .secrets
 local-test.yml
 yalc.lock
+tmp
+.cursor
+.claude
