@@ -17,7 +17,7 @@ The **Source Selection Algorithm (SSA)** recommends how to fulfill partial and f
 
 <InlineAlert variant="info" slots="text" />
 
-See [Source Algorithms and Reservations](https://experienceleague.adobe.com/docs/commerce-admin/inventory/basics/selection-reservations.html) in the _Admin User Guide_.
+See [Source Algorithms and Reservations](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/basics/selection-reservations) in the _Admin User Guide_.
 
 ## SSA interfaces
 

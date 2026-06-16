@@ -12,7 +12,7 @@ Adobe Commerce and Magento Open Source use _reservations_ to calculate and keep 
 
 <InlineAlert variant="info" slots="text" />
 
-See [Source Algorithms and Reservations](https://experienceleague.adobe.com/docs/commerce-admin/inventory/basics/selection-reservations.html) in the _Admin User Guide_.
+See [Source Algorithms and Reservations](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/basics/selection-reservations) in the _Admin User Guide_.
 
 ## Interfaces and services
 
@@ -77,11 +77,11 @@ In Inventory Management, a product's `Quantity` value is not static. The salable
 
 Use the following dynamic services introduced instead of `StockItem`:
 
-Interface | Description
---- | ---
-`GetProductSalableQtyInterface` | Returns the salable product quantity for the specified stock ID
-`IsProductSalableInterface` | Checks whether the product is salable
-`IsProductSalableForRequestedQtyInterface` |  Checks whether there is enough salable quantity to fulfill an order or place the product into a shopping cart
+| Interface | Description |
+| --- | --- |
+| `GetProductSalableQtyInterface` | Returns the salable product quantity for the specified stock ID |
+| `IsProductSalableInterface` | Checks whether the product is salable |
+| `IsProductSalableForRequestedQtyInterface` | Checks whether there is enough salable quantity to fulfill an order or place the product into a shopping cart |
 
 ## Web API support
 

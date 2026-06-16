@@ -20,7 +20,7 @@ The standard was developed in the scope of our efforts to ensure the following:
 -  Reinstate emphasis on using of jQuery templates.
 -  Reinstate emphasis on decoupling HTML, CSS and JS from PHP classes.
 
-Use [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt) to interpret the "MUST," "MUST NOT," "REQUIRED," "SHALL," "SHALL NOT," "SHOULD," "SHOULD NOT," "RECOMMENDED," "MAY," and "OPTIONAL" keywords.
+Use [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt) to interpret the "MUST," "MUST NOT," "REQUIRED," "SHALL," "SHALL NOT," "SHOULD," "SHOULD NOT," "RECOMMENDED," "MAY," and "OPTIONAL" keywords.
 
 ## Semantics
 

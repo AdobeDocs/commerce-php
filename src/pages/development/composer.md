@@ -17,7 +17,7 @@ We use [Composer](https://getcomposer.org/) to manage components and their depen
 
 <InlineAlert variant="info" slots="text"/>
 
-You can also [download](https://magento.com/tech-resources/download) an archive file for a specific version of Adobe Commerce or Magento Open Source in either ZIP or TAR format. Installing the software from an archive lacks the advantages of using Composer. Contributing developers should use the [git-based](https://developer.adobe.com/commerce/contributor/guides/install/) installation method.
+You can also [download](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview) an archive file for a specific version of Adobe Commerce or Magento Open Source in either ZIP or TAR format. Installing the software from an archive lacks the advantages of using Composer. Contributing developers should use the [git-based](https://developer.adobe.com/commerce/contributor/guides/install/) installation method.
 
 ## Links to code
 

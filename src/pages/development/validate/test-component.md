@@ -50,7 +50,7 @@ Before you publish your component, test installing it.
 See these resources for testing in PHP and validating components:
 
 *  The [Coding Standard] provides a set of rules and sniffs for the [PHP_CodeSniffer] tool
-*  [Extension Quality Program](https://developer.adobe.com/commerce/marketplace/guides/sellers/extension-quality-program/) in the Commerce Marketplace guide
+*  [Extension Quality Program](https://developer.adobe.com/commerce/marketplace/guides/sellers/extension-quality-program) in the Commerce Marketplace guide
 
 [Testing Overview]: https://developer.adobe.com/commerce/testing/guide/
 [Functional Testing Framework]: https://developer.adobe.com/commerce/testing/functional-testing-framework/
@@ -59,5 +59,4 @@ See these resources for testing in PHP and validating components:
 [Install your component]: https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/overview
 [Install using Composer]: https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/next-steps/sample-data/composer-packages
 [Coding Standard]: https://github.com/magento/magento-coding-standard
-[PHP_CodeSniffer]: https://github.com/squizlabs/PHP_CodeSniffer
-[01 The Module Skeleton Kata]: https://www.youtube.com/watch?v=JvBWJ6Lm9MU)
+[PHP_CodeSniffer]: https://github.com/PHPCSStandards/PHP_CodeSniffer

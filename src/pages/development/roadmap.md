@@ -18,8 +18,8 @@ To satisfy the minimum required elements for creating or customizing your applic
 *  [Register](build/component-registration.md) the component using the `registration.php` file.
 *  Use these component-specific XML definition files:
    *  Modules: [`module.xml`](build/component-name.md)
-   *  Themes: [`theme.xml`](https://developer.adobe.com/commerce/frontend-core/guide/themes/create-storefront/#declare-your-theme)
-   *  Language packages: [`language.xml`](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/localization.html)
+   *  Themes: [`theme.xml`](https://developer.adobe.com/commerce/frontend-core/guide/themes/create-storefront#declare-your-theme)
+   *  Language packages: [`language.xml`](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/localization)
 
 *  Distribute your component:
    *  [Package your component](package/component.md) in `.zip` format.

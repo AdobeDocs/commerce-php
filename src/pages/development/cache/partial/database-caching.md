@@ -17,7 +17,7 @@ This topic discusses how to set up database caching and how to verify database c
 
 <InlineAlert variant="warning" slots="text"/>
 
-Database caching---like file-based caching--- works well in a development environment but we _strongly recommend_ you use [Varnish] in production instead.
+Database caching---like file-based caching--- works well in a development environment but we _strongly recommend_ you use [Varnish][] in production instead.
 Varnish is designed to accelerate the HTTP protocol.
 
 ## Prerequisites
@@ -184,11 +184,11 @@ Use the following steps:
 
    `cache` table example.
 
-   ![Sample contents of the cache table with database caching enabled](../../../_images/config-db_cache-table.png)
+   ![Sample contents of the cache table with database caching enabled](../../../images/config-db-cache-table.png)
 
    `cache_tag` table example.
 
-   ![Sample contents of the cache tag table with database caching enabled](../../../_images/config-db_cache-tag-table.png)
+   ![Sample contents of the cache tag table with database caching enabled](../../../images/config-db-cache-tag-table.png)
 
 ## Configuration examples
 
@@ -275,12 +275,11 @@ This section contains code sample snippets to refer to when configuring database
 ],
 ```
 
-<!-- Link references -->
-[Varnish]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/varnish/config-varnish.html
-[associate cache frontends with cache types]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/cache-types.html
+[Varnish]: https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/varnish/config-varnish
+[associate cache frontends with cache types]: https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/cache-types
 [sample configurations]: #configuration-examples
 [file system owner]: https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/overview
 [Verify database caching is working]: #verify-database-caching-is-working
 [Configuration examples]: #configuration-examples
-[enable developer mode]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/set-mode.html#change-to-developer-mode
+[enable developer mode]: https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode#change-to-developer-mode
 [phpMyAdmin]: https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin

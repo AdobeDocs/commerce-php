@@ -20,7 +20,7 @@ A service contract includes [data interfaces](design-patterns.md#data-interfaces
 
 If developers define data and service interfaces according to a set of [design patterns](design-patterns.md), the result is a well-defined, durable API that other modules and third-party extensions can implement through models and resource models.
 
-![Service Contracts](../../../_images/msc.jpg)
+![Service Contracts](../../../images/msc.jpg)
 
 ## Benefits
 
@@ -35,4 +35,4 @@ Eventually, you will be able to use different storage technologies for different
 
 ## Using the @api tag
 
-Backward compatibility can be indicated by the use of `@api`. For more information, see [Backward compatibility](https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy/).
+Backward compatibility can be indicated by the use of `@api`. For more information, see [Backward compatibility](https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy).

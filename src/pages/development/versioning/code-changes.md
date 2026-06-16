@@ -183,4 +183,4 @@ As the framework improves, this list should be reduced and, eventually, eliminat
 
 *  [Release policy](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/versioning-policy)
 *  [Upcoming releases](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)
-*  [Backward compatibility policy](https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy/)
+*  [Backward compatibility policy](https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy)

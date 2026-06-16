@@ -10,7 +10,7 @@ keywords:
 To add JavaScript code inline documentation, follow these guidelines. Some parts of the code may not comply with this standard, but we are working to gradually improve this. Following these standard is optional for third-party developers, but will help to create consistent, clean, and easy to read inline documentation.
 This standard are a subset of [Google JavaScript Style Guide](https://google.github.io/styleguide/javascriptguide.xml) regulations.
 
-Use [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt) to interpret the "must," "must not," "required," "shall," "shall not," "should," "should not," "recommended," "may," and "optional" keywords.
+Use [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt) to interpret the "must," "must not," "required," "shall," "shall not," "should," "should not," "recommended," "may," and "optional" keywords.
 
 ## Use JSDoc
 
@@ -190,7 +190,7 @@ Indicates that the keys of an object literal should be treated as properties of 
 
 Please note that the name in braces is not a type name like in other annotations. It's an object name. It names the object on which the properties are "lent". For example, `@type {Foo}` means "an instance of Foo," but `@lends {Foo}` means "the constructor Foo".
 
-Please refer to [JSDoc Toolkit](https://code.google.com/p/jsdoc-toolkit/wiki/TagLends) for more information about this annotation.
+Please refer to [JSDoc Toolkit](https://code.google.com/archive/p/jsdoc-toolkit/wikis/TagLends.wiki) for more information about this annotation.
 
 ```javascript
 project.MyClass.extend(

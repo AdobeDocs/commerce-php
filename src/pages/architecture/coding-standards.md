@@ -7,4 +7,4 @@ keywords:
 
 # Coding standards
 
-See [Coding Standards](/coding-standards/).
+See [Coding Standards](/coding-standards/index.md).

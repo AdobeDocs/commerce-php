@@ -21,7 +21,7 @@ The Commerce framework is organized into these main areas:
 
 *  **Basic** (`base`): used as a fallback for files absent in `adminhtml` and `frontend` areas.
 
-*  **Cron** (`crontab`): In `pub/cron.php`, the [`\Magento\Framework\App\Cron`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Cron.php#L68-L70) class always loads the 'crontab' area.
+*  **Cron** (`crontab`): In `pub/cron.php`, the [`\Magento\Framework\App\Cron`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Cron.php) class always loads the 'crontab' area.
 
 You can also send requests to the Commerce framework using the SOAP, REST and GraphQL APIs. These three areas
 
@@ -62,7 +62,7 @@ After the area name, the URI segment specifies the *frontname*. When an HTTP req
 The `frontName` is a value defined in the module. Using `catalog/product/view` as an example:
 
 *  `catalog` is the [frontName](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/etc/frontend/routes.xml#L10) in the module area's `routes.xml` file
-*  `product` is in the [controller folder](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Controller/Product)
+*  `product` is in the [controller folder](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Catalog/Controller/Product)
 *  `view` is the [controller class](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Controller/Product/View.php)
 
 For deeper directory structures, the controller folders are separated with an underscore (`_`). For example:

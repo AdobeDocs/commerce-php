@@ -12,7 +12,7 @@ The Adobe Commere and Magento Open Source framework incorporates the core archit
 The following discussion focuses on how these topics apply directly to Commerce:
 
 *  [Technology stack](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
-*  [View model](/development/components/view-models/)
+*  [View model](/development/components/view-models.md)
 *  [Modularity and extensibility](../modules/index.md)
-*  [Event-driven architecture](/development/components/events-and-observers/)
+*  [Event-driven architecture](/development/components/events-and-observers/index.md)
 *  [Security](security.md)

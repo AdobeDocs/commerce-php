@@ -7,9 +7,7 @@ keywords:
   - Payments
 ---
 
-import Docs from '/src/_includes/braintree-note.md'
-
-<Docs />
+<Fragment src="/includes/braintree-note.md"/>
 
 # Enable vault
 
@@ -31,26 +29,26 @@ The following paragraphs describe these points in details.
 
 Add the vault enabling controls to the payment form. In the following example, a checkbox bound to the Vault enabler is added.
 
-Example ([Magento/Braintree/view/frontend/web/template/payment/form.html](https://github.com/magento/magento2/tree/2.3/app/code/Magento/Braintree/view/frontend/web/template/payment/form.html)):
+Example ([Magento/Braintree/view/frontend/web/template/payment/form.html](https://github.com/magento/magento2/blob/2.3/app/code/Magento/Braintree/view/frontend/web/template/payment/form.html)):
 
 ```html
 <form id="co-transparent-form-braintree" class="form" data-bind="" method="post" action="#" novalidate="novalidate">
     <fieldset data-bind="attr: {class: 'fieldset payment items ccard' + getCode(), id: 'payment_form_' + getCode()}">
         <legend class="legend">
-            <span><!-- ko i18n: 'Credit Card Information'--><!-- /ko --></span>
+            <span>\<!-- ko i18n: 'Credit Card Information'--\>\<!-- /ko --\></span>
         </legend>
         ...
-        <!-- ko if: (isVaultEnabled())-->
+        \<!-- ko if: (isVaultEnabled())--\>
         <div class="field choice">
             <input type="checkbox"
                 name="vault[is_enabled]"
                 class="checkbox"
                 data-bind="attr: {'id': getCode() + '_enable_vault'}, checked: vaultEnabler.isActivePaymentTokenEnabler"/>
             <label class="label" data-bind="attr: {'for': getCode() + '_enable_vault'}">
-                <span><!-- ko i18n: 'Save for later use.'--><!-- /ko --></span>
+                <span>\<!-- ko i18n: 'Save for later use.'--\>\<!-- /ko --\></span>
             </label>
         </div>
-        <!-- /ko -->
+        \<!-- /ko --\>
         ...
     </fieldset>
     ...
@@ -61,9 +59,9 @@ Example ([Magento/Braintree/view/frontend/web/template/payment/form.html](https:
 
 The payment component must process the state of the vault-enabling control and update payment `additional_data` before it is sent to the backend.
 
-Commerce has a default vault enabler UI component (`Magento_Vault/js/view/payment/vault-enabler`). In the payment component, you just need to call its `visitAdditionalData` to update the `additional_data` property. The rest is done by the [`\Magento\Vault\Observer\VaultEnableAssigner`](https://github.com/magento/magento2/tree/2.4/app/code/Magento/Vault/Observer/VaultEnableAssigner.php) observer.
+Commerce has a default vault enabler UI component (`Magento_Vault/js/view/payment/vault-enabler`). In the payment component, you just need to call its `visitAdditionalData` to update the `additional_data` property. The rest is done by the [`\Magento\Vault\Observer\VaultEnableAssigner`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Vault/Observer/VaultEnableAssigner.php) observer.
 
-Example: [the Braintree payment UI component](https://github.com/magento/magento2/tree/2.3/app/code/Magento/Braintree/view/frontend/web/js/view/payment/method-renderer/cc-form.js)
+Example: [the Braintree payment UI component](https://github.com/magento/magento2/blob/2.3/app/code/Magento/Braintree/view/frontend/web/js/view/payment/method-renderer/cc-form.js)
 
 ```javascript
 define([

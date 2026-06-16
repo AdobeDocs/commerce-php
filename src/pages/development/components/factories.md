@@ -105,7 +105,7 @@ The `Flag` class has a `$data` constructor parameter which corresponds to the da
 
 Factories are smart enough to resolve dependencies and allow you to get the correct instance of an interface as defined in your module's `di.xml`.
 
-For example, in the [`CatalogInventory`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/CatalogInventory) module, the `di.xml` file contains the following entry:
+For example, in the [`CatalogInventory`](https://github.com/magento/magento2/tree/2.4/app/code/Magento/CatalogInventory) module, the `di.xml` file contains the following entry:
 
 ```xml
 <preference for="Magento\CatalogInventory\Api\Data\StockItemInterface" type="Magento\CatalogInventory\Model\Stock\Item" />

@@ -156,7 +156,7 @@ If your module adds several payment methods, you can register all payment method
 
 ## Step 3: Create the template for the payment method component
 
-In your custom module directory create a new `<your_module_dir>/view/frontend/web/template/<your_template>.html` file. The template can use [Knockout JS](http://knockoutjs.com/) syntax. You can find a sample `.html` template in any module implementing payment methods, for example the Paypal module.
+In your custom module directory create a new `<your_module_dir>/view/frontend/web/template/<your_template>.html` file. The template can use [Knockout JS](https://knockoutjs.com/) syntax. You can find a sample `.html` template in any module implementing payment methods, for example the Paypal module.
 
 The template for rendering the Paypal Express payment method in checkout is [`<Magento_Paypal_module_dir>/frontend/web/template/payment/paypal-express.html`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Paypal/view/frontend/web/template/payment/paypal-express.html).
 
