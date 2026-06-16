@@ -17,9 +17,9 @@ The syntax of defined by the [zip_code.xsd](https://github.com/magento/magento2/
 
 The following table defines the `zip` node attributes:
 
- Attribute name | Required | Description
---- | --- | ---
-`countryCode` | Yes | The country code (Alpha-2 format) for which the zip is defined
+| Attribute name | Required | Description |
+| --- | --- | --- |
+| `countryCode` | Yes | The country code (Alpha-2 format) for which the zip is defined |
 
 ```xml
     <zip countryCode="US">
@@ -29,11 +29,11 @@ The following table defines the `zip` node attributes:
 
 The following table defines the `code` node attributes:
 
- Attribute name | Required | Description
---- | --- | ---
-`id` | Yes | A random unique name within the same list.
-`example` | Yes | An example of the allowed pattern.
-`active` | No | Defines if this zip pattern is active or not.
+| Attribute name | Required | Description |
+| --- | --- | --- |
+| `id` | Yes | A random unique name within the same list. |
+| `example` | Yes | An example of the allowed pattern. |
+| `active` | No | Defines if this zip pattern is active or not. |
 
 You can define several zip `code` patterns for the same country, by passing a list of `codes`.
 

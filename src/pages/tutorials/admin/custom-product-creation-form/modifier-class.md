@@ -7,7 +7,7 @@ keywords:
 
 # Customize using a modifier class
 
-[Modifier classes](https://developer.adobe.com/commerce/frontend-core/ui-components/concepts/modifier/) should be used when static declaration is not applicable. For example, in cases when additional data should be loaded from database. Also, modifier is a place where you add validations to display only certain fields for certain product types.
+[Modifier classes](https://developer.adobe.com/commerce/frontend-core/ui-components/concepts/modifier) should be used when static declaration is not applicable. For example, in cases when additional data should be loaded from database. Also, modifier is a place where you add validations to display only certain fields for certain product types.
 
 In the run time, the form structure set in the modifier is merged with the configuration that comes from the `product_form.xml` configuration.
 

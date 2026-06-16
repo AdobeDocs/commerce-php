@@ -23,7 +23,7 @@ To start your contribution:
 
 PHPCS rules are called sniffs. A sniff is just a static code analyzer that will process our custom logic every time it finds an occurrence or any tokens we choose. This custom logic is in charge of identifying if there's a violation of a certain rule in an specific code, and will return an **error** or **warning** depending on the severity of that issue.
 
-Follow the [official PHPCS guide](https://github.com/squizlabs/PHP_CodeSniffer/wiki/Coding-Standard-Tutorial) steps to write a sniff.
+Follow the [official PHPCS guide](https://github.com/PHPCSStandards/PHP_CodeSniffer/wiki/Coding-Standard-Tutorial) steps to write a sniff.
 
 <InlineAlert variant="info" slots="text"/>
 

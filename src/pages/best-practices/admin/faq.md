@@ -13,13 +13,13 @@ This page is a compilation of frequently asked questions by the Magento Open Sou
 
 The appropriate place for your extension to appear in the Admin depends on what it does. For a list of extension types and their proper spot in the Admin, please consult the article: [Admin panel placement and design](placement-and-design.md).
 
-____
+<HorizontalLine />
 
 ## What are the rules about using the left-navigation "slide-out panels" in the Admin?
 
-The slide-out panel is designed to accommodate several links. There can be several columns in the slide-out panel to accommodate many extension links. See the details and specifications about [slide-out panels](https://developer.adobe.com/commerce/admin-developer/pattern-library/containers/slideouts-modals-overlays/).
+The slide-out panel is designed to accommodate several links. There can be several columns in the slide-out panel to accommodate many extension links. See the details and specifications about [slide-out panels](https://developer.adobe.com/commerce/admin-developer/pattern-library/containers/slideouts-modals-overlays).
 
-____
+<HorizontalLine />
 
 ## Are there "rules" about using icons or images that appear beside the name of my extension in the Admin?
 

@@ -3,10 +3,9 @@ title: Store
 description: N/A
 ---
 
-The Store module provides one of the basic and major features of a content management system for e-commerce web
-sites by creating and managing a store for the customers to conduct online-shopping. Stores can be combined in groups,
-and are linked to a specific website. All store related configurations (currency, locale, scope etc.), management and
-storage maintenance are covered under this module.
+# Magento_Store module
+
+This module provides one of the basic and major features of a content management system for e-commerce web sites by creating and managing a store for the customers to conduct online-shopping. Stores can be combined in groups, and are linked to a specific website. All store related configurations (currency, locale, scope etc.), management and storage maintenance are covered under this module.
 
 <InlineAlert slots="text" />
-The version of this module is 101.1.8.
+The version of this module is 101.1.9.

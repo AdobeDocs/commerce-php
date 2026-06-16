@@ -7,11 +7,11 @@ keywords:
 
 # Advanced reporting
 
-[Advanced reporting functionality](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting) is free to Adobe Commerce and Magento Open Source customers and is provided through an integration with [Adobe Commerce Reporting](https://business.adobe.com/products/magento/business-intelligence.html). The [Analytics](../../module-reference/module-analytics.md) module collects and sends data to Adobe Commerce Reporting. However, you do not need to have an Adobe Commerce Reporting account to use the Analytics module.
+[Advanced reporting functionality](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting) is free to Adobe Commerce and Magento Open Source customers and is provided through an integration with [Adobe Commerce Reporting](https://business.adobe.com/products/commerce/business-intelligence.html). The [Analytics](../../module-reference/module-analytics.md) module collects and sends data to Adobe Commerce Reporting. However, you do not need to have an Adobe Commerce Reporting account to use the Analytics module.
 
 <InlineAlert variant="info" slots="text" />
 
-If you encounter problems with Advanced Reporting, try the [troubleshooter](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/magento-advanced-reporting-troubleshooter) in the *Adobe Commerce Knowledge Base*.
+If you encounter problems with Advanced Reporting, try the [troubleshooter](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-29603) in the *Adobe Commerce Knowledge Base*.
 
 ## Prerequisites
 

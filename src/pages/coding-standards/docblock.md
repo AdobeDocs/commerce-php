@@ -270,12 +270,12 @@ short description must be omitted.
 **Good:**
 
 > Handler for PHP errors/warnings/notices that converts them to exceptions.
-> class ErrorHandler { ... }
+> class ErrorHandler \{ ... }
 
 **Bad:**
 
 > Error Handler
-> class ErrorHandler { ... }
+> class ErrorHandler \{ ... }
 
 If possible, add use cases which suggests where developers can or cannot use the class.
 
@@ -656,7 +656,7 @@ class LimitedMutableClass implements MutableInterface
 
 ### @api tag
 
-The `@api` tag indicates the code is part of the public API and is subject to the [Backward Compatibility Policy](https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy/).
+The `@api` tag indicates the code is part of the public API and is subject to the [Backward Compatibility Policy](https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy).
 
 The `@api` tag can be applied to a constant, a method, or to the entire class/interface.
 If the `@api` tag is applied at the file level, then all methods within the file are part of the public API.

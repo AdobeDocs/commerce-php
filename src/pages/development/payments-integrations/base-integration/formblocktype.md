@@ -7,9 +7,7 @@ keywords:
   - Payments
 ---
 
-import Docs from '/src/_includes/braintree-note.md'
-
-<Docs />
+<Fragment src="/includes/braintree-note.md"/>
 
 # Payment info rendering in Admin checkout
 
@@ -81,7 +79,7 @@ The following example adds the Braintree-specific template [`app/code/Magento/Pa
     <body>
         <referenceBlock name="order_create_billing_form">
             <action method="setMethodFormTemplate">
-                <!-- your method code and template -->
+                \<!-- your method code and template --\>
                 <argument name="method" xsi:type="string">braintree</argument>
                 <argument name="template" xsi:type="string">Magento_Braintree::form/cc.phtml</argument>
             </action>

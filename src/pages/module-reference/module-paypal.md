@@ -3,7 +3,11 @@ title: Paypal
 description: N/A
 ---
 
-Module Magento\PayPal implements integration with the PayPal payment system. Namely, it enables the following payment methods:
+# Magento_Paypal module
+
+This module implements integration with the PayPal payment system.
+
+It enables the following payment methods:
 
 * PayPal Express Checkout
 * PayPal Payments Standard
@@ -12,4 +16,4 @@ Module Magento\PayPal implements integration with the PayPal payment system. Nam
 * PayFlow Payment Gateway
 
 <InlineAlert slots="text" />
-The version of this module is 101.0.8.
+The version of this module is 101.0.9.

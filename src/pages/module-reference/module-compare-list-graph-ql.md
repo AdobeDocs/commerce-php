@@ -3,9 +3,9 @@ title: CompareListGraphQl
 description: N/A
 ---
 
-# CompareListGraphQl module
+# Magento_CompareListGraphQl module
 
-The CompareListGraphQl module is designed to implement compare product functionality.
+This module is designed to implement compare product functionality.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.4.
+The version of this module is 100.4.5.

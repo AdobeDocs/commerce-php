@@ -77,11 +77,11 @@ In Inventory Management, a product's `Quantity` value is not static. The salable
 
 Use the following dynamic services introduced instead of `StockItem`:
 
-Interface | Description
---- | ---
-`GetProductSalableQtyInterface` | Returns the salable product quantity for the specified stock ID
-`IsProductSalableInterface` | Checks whether the product is salable
-`IsProductSalableForRequestedQtyInterface` |  Checks whether there is enough salable quantity to fulfill an order or place the product into a shopping cart
+| Interface | Description |
+| --- | --- |
+| `GetProductSalableQtyInterface` | Returns the salable product quantity for the specified stock ID |
+| `IsProductSalableInterface` | Checks whether the product is salable |
+| `IsProductSalableForRequestedQtyInterface` | Checks whether there is enough salable quantity to fulfill an order or place the product into a shopping cart |
 
 ## Web API support
 

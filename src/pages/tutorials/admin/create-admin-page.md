@@ -122,7 +122,7 @@ The `menu.xml` file provided below adds two items in the Content section of the 
 1. A new separate section with the title **Greetings** under Content.
 1. A link with the label **Hello World** that leads to a page request for `exampleadminnewpage/helloworld/index` underneath that new section.
 
-   ![Hello World menu item](../../_images/tutorials/hello-world-menu-item.png)
+   ![Hello World menu item](../../images/tutorials/hello-world-menu-item.png)
 
 The following parts make up the generated page request link to the **Hello World** page:
 
@@ -307,9 +307,9 @@ Now that the module is code-complete, run the following commands to install it:
 1. `bin/magento module:enable MyCompany_ExampleAdminNewPage` - If necessary, run this to enable the disabled module.
 1. `bin/magento setup:upgrade` - This command will properly register the module.
 1. `bin/magento setup:di:compile` - This command compiles classes used in dependency injections.
-1. `bin/magento setup:static-content:deploy` - (Production mode only) This command deploys static view files. If you are in developer mode, refer to [Clean static files cache](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache) to refresh the static view files.
+1. `bin/magento setup:static-content:deploy` - (Production mode only) This command deploys static view files. If you are in developer mode, refer to [Clean static files cache](https://developer.adobe.com/commerce/frontend-core/guide/caching#clean-static-files-cache) to refresh the static view files.
 1. `bin/magento cache:clean` - This command cleans the cache.
 
 Once the module installation has completed, the link to the **Hello World** page should appear in the **Greetings** section under **Content** in the left navigation in the admin area. Clicking this link will take you to a page that looks like the one pictured below.
 
-![Hello World Page](../../_images/tutorials/hello-world-page.png)
+![Hello World Page](../../images/tutorials/hello-world-page.png)

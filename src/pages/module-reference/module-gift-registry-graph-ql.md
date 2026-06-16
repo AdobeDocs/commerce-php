@@ -3,10 +3,9 @@ title: GiftRegistryGraphQl
 description: N/A
 ---
 
-# GiftCardGraphQl
+# Magento_GiftRegistryGraphQl module
 
-**GiftCardGraphQl** provides type and resolver information for the GraphQl module
-to generate giftcard product information.
+The Magento_GiftRegistryGraphQl module provides type and resolver information for the GraphQl module to generate giftcard product information.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.4.
+The version of this module is 100.4.5.

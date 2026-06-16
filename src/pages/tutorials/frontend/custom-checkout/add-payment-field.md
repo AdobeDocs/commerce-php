@@ -32,7 +32,7 @@ Let's go through each step.
 
 ## Step 1: Create a new module
 
-[Create a new module](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/backend-development/create-module) named `Learning/CustomField` and register it.
+[Create a new module](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/backend-development/create-module) named `Learning/CustomField` and register it.
 
 ## Step 2 Add a `db_schema.xml` file
 
@@ -348,7 +348,7 @@ Use the following steps to verify your changes work as expected.
 
 1. Verify that the **Purchase Order Comment** field is visible.
 
-   ![Custom field in checkout page](../../../_images/tutorials/custom_field_payment.png)
+   ![Custom field in checkout page](../../../images/tutorials/custom-field-payment.png)
 
 1. Fill the purchase order comment field in the checkout and place an order.
 

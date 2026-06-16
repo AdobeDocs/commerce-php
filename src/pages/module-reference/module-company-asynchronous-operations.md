@@ -12,4 +12,4 @@ The Magento_CompanyAsynchronousOperations module allows AsynchronousOperations t
 This module does not create any backward incompatible changes.
 
 <InlineAlert slots="text" />
-The version of this module is 1.5.1.
+The version of this module is 1.5.2.

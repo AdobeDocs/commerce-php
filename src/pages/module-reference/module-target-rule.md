@@ -3,7 +3,9 @@ title: TargetRule
 description: N/A
 ---
 
-Magento_TargetRule module allows to configure the rules for showing related products.
+# Magento_TargetRule module
+
+This module allows to configure the rules for showing related products.
 
 <InlineAlert slots="text" />
-The version of this module is 101.2.8.
+The version of this module is 101.2.9.

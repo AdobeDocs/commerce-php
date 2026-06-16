@@ -13,9 +13,7 @@ In addition, you can choose the component root directory to start development. T
 
 ## Root directory location
 
-import Docs from '/src/_includes/component-root.md'
-
-<Docs />
+<Fragment src="/includes/component-root.md"/>
 
 ## Required files
 
@@ -29,5 +27,5 @@ Each component has an additional component-specific required file:
 | Component Type | Required file | Description |
 | --- | --- | --- |
 | `magento2-module` | [module.xml](../../architecture/modules/dependencies.md#managing-module-dependencies) | This file defines basic information about the component, such as component dependencies and version number. Adobe Commerce and Magento Open Source use the version number to determine which schema and data to update when executing `bin/magento setup:upgrade`. |
-| `magento2-theme` | [theme.xml](https://developer.adobe.com/commerce/frontend-core/guide/themes/create-storefront/#declare-your-theme) | Describes the theme. File specifies a theme name in the `title` node, a parent theme (optional), and a theme preview image (optional) in the `media/preview_image` node. |
+| `magento2-theme` | [theme.xml](https://developer.adobe.com/commerce/frontend-core/guide/themes/create-storefront#declare-your-theme) | Describes the theme. File specifies a theme name in the `title` node, a parent theme (optional), and a theme preview image (optional) in the `media/preview_image` node. |
 | `magento2-language` | [language.xml](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/localization#language-package-languagexml) | Declares a language translation package. |

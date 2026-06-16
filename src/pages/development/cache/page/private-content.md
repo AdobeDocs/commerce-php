@@ -20,7 +20,7 @@ The section source class is responsible for retrieving data for the section. As 
 
 The public method `getSectionData` must return an array with data for a private block.
 
-[Example](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/CustomerData/CompareProducts.php#L61-L70)
+[Example of the public method `getSectionData`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/CustomerData/CompareProducts.php)
 
 Add the following to your component's dependency injection configuration (`di.xml`):
 
@@ -52,7 +52,7 @@ Initialize the component as follows:
 </script>
 ```
 
-[Example](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/view/frontend/templates/product/compare/sidebar.phtml#L50-L52)
+[Example of initializing the component](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/view/frontend/templates/product/compare/sidebar.phtml#L50-L52)
 
 ## Configure a UI component
 
@@ -65,7 +65,7 @@ initialize: function () {
 }
 ```
 
-[Example](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/view/frontend/web/js/view/compare-products.js#L32-L33)
+[Example of initializing a UI component](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/view/frontend/web/js/view/compare-products.js)
 
 All properties are available in the template where the UI component initialized.
 
@@ -162,6 +162,4 @@ Versioning works as follows:
 
 The customer data invalidation mechanism no longer relies on the `private_content_version`.
 
-import PageChecklist from '/src/_includes/page-cache-checklist.md'
-
-<PageChecklist />
+<Fragment src="/includes/page-cache-checklist.md"/>

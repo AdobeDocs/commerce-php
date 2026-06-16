@@ -75,7 +75,7 @@ If you installed the application from GitHub without using Composer, the `versio
 
 *  [Module version dependencies][version-dependencies] - Information about how your module can depend on the version of other modules.
 *  [Codebase changes][codebase-changes] - Information on how changes in a module's codebase affect versions.
-*  [Backward compatible development](https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy/) - Information about MAJOR and MINOR changes and how they impact extension developers.
+*  [Backward compatible development](https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy) - Information about MAJOR and MINOR changes and how they impact extension developers.
 
 [version-dependencies]: ../versioning/dependencies.md
 [codebase-changes]: ../versioning/code-changes.md

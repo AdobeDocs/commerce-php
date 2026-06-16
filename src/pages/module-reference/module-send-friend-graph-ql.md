@@ -3,9 +3,9 @@ title: SendFriendGraphQl
 description: N/A
 ---
 
-# SendFriendGraphQl
+# Magento_SendFriendGraphQl module
 
-**SendFriendGraphQl** provides support of GraphQL for SendFriend functionality.
+This module provides support of GraphQL for the SendFriend functionality.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.4.
+The version of this module is 100.4.5.

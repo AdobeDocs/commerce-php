@@ -3,9 +3,9 @@ title: VersionsCmsPageCache
 description: VersionsCmsPageCache
 ---
 
-# VersionsCmsPageCache module
+# Magento_VersionsCmsPageCache module
 
-The Magento_VersionsCmsPageCache module provides adaptation to PageCache functionality
+This module provides adaptation to PageCache functionality.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.4.
+The version of this module is 100.4.5.

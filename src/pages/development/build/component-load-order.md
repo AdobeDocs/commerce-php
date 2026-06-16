@@ -24,7 +24,7 @@ If you change the component load order using `<sequence>`, you must regenerate t
 
 Assume you have a component that needs a configuration file from another component:
 
-__Component B__ introduces `gadgetlayout.xml`, which updates block `gadgetBlock` from __component A__. In this case, layout files from __component A__ should be loaded before __component B__, so you should specify that in __component B's__ `<sequence>` entry in module.xml. In other words, __component B__ is dependent on __component A__. That is to say:
+**Component B** introduces `gadgetlayout.xml`, which updates block `gadgetBlock` from **component A**. In this case, layout files from **component A** should be loaded before **component B**, so you should specify that in **component B's** `<sequence>` entry in module.xml. In other words, **component B** is dependent on **component A**. That is to say:
 
 ```xml
 <?xml version="1.0"?>
@@ -40,11 +40,11 @@ __Component B__ introduces `gadgetlayout.xml`, which updates block `gadgetBlock`
 
 For each particular scenario, files of the same type are loaded from different components taking into account the sequence information provided in each component's `module.xml` file.
 
-In another scenario, let's say you want to load all of the layout files with the name `default.xml`. __Component A__ specifies __component B__ in `<sequence>`. The files load in the following order:
+In another scenario, let's say you want to load all of the layout files with the name `default.xml`. **Component A** specifies **component B** in `<sequence>`. The files load in the following order:
 
 1. `component X/view/frontend/layout/default.xml`---Either we don't care about when component X loads or perhaps component B requires it to be loaded before it.
 1. `component B/view/frontend/layout/default.xml`
-1. `component A/view/frontend/layout/default.xml`---Loads after __component B__ because __component B__ is listed in __component A's__ `<sequence>` tag.
+1. `component A/view/frontend/layout/default.xml`---Loads after **component B** because **component B** is listed in **component A's** `<sequence>` tag.
 1. `component Z/view/frontend/layout/default.xml`---Either we don't care about the sequence for component Z or perhaps component Z requires component A files to be loaded before it.
 
 There are no limitations---you can specify any valid component in `<sequence>`.

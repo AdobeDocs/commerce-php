@@ -49,7 +49,7 @@ Use [RFC2119](https://datatracker.ietf.org/doc/html/rfc2119) to interpret keywor
 
 Examples:
 
-__Not recommended:__
+**Not recommended:**
 
 ```php
 <?php
@@ -74,7 +74,7 @@ class Config
 }
 ```
 
-__Recommended:__
+**Recommended:**
 
 ```php
 <?php
@@ -139,7 +139,7 @@ class Composite
 
 Examples:
 
-__Not recommended:__
+**Not recommended:**
 
 ```php
 <?php
@@ -160,7 +160,7 @@ class Config
 }
 ```
 
-__Recommended:__
+**Recommended:**
 
 ```php
 <?php
@@ -196,7 +196,7 @@ class Config
 
 Examples:
 
-__Not recommended:__
+**Not recommended:**
 
 ```php
 interface SessionAdapterInterface
@@ -214,7 +214,7 @@ class SessionManager
 // Breaks polymorphism principle, restricts what types can be passed at the runtime.
 ```
 
-__Recommended:__
+**Recommended:**
 
 ```php
 interface SessionAdapterInterface
@@ -236,7 +236,7 @@ class SessionManager
 
 Examples:
 
-__Not recommended:__
+**Not recommended:**
 
 ```php
 <?php
@@ -277,7 +277,7 @@ class Edit extends AbstractController
 // Smaller classes, one responsibility, more flexible, easy to understand, more testable.
 ```
 
-__Recommended:__
+**Recommended:**
 
 ```php
 <?php
@@ -320,7 +320,7 @@ class Edit extends Action
 
 Example #1:
 
-__Not recommended:__
+**Not recommended:**
 
 ```php
 $url = new Url();
@@ -334,7 +334,7 @@ echo $url->get('custom/path'); // Throws exception, which makes issue smaller. I
 // Method with out parameters that does not return anything could be sign of temporal coupling.
 ```
 
-__Recommended:__
+**Recommended:**
 
 ```php
 $url = new Url($baseUrl);
@@ -349,7 +349,7 @@ echo $url->get($baseUrl, 'custom/path');
 
 Example #2:
 
-__Not recommended:__
+**Not recommended:**
 
 ```php
 <?php
@@ -378,7 +378,7 @@ class View extends Template
 }
 ```
 
-__Recommended:__
+**Recommended:**
 
 ```php
 <?php
@@ -504,15 +504,15 @@ You need to read configuration from different sources (like database or filesyst
     MUST process (handle or re-throw) exceptions of the underlying layer.
 
 6.1.3. A layer MUST NOT depend on a layer that invokes (above) it. A layer MUST only depend on a layer directly below it.
-![Commerce architecture layers](../_images/archi_diagrams_layers_alt4.jpg)
+![Commerce architecture layers](../images/archi-diagrams-layers-alt4.jpg)
 
 ### 6.2. Presentation layer
 
 6.2.1. According to CQRS, the Presentation layer hosts the Command and the Query Infrastructures:
 
-*  __Command__ for Actions
+*  **Command** for Actions
 
-*  __Query__ for Layout and its elements (Blocks and UI Components)
+*  **Query** for Layout and its elements (Blocks and UI Components)
 
 6.2.2. Request, Response, Session, Store Manager and Cookie objects MUST be used only in the Presentation layer.
 
@@ -548,7 +548,7 @@ You need to read configuration from different sources (like database or filesyst
 
 6.4.2.1. Methods that have similar names MUST serve similar purposes across different services, but they still MAY have different signatures.
 
-6.4.2.2. Service contracts SHOULD NOT be used for read scenarios on the storefront. Instead, GraphQL SHOULD be used for storefront scenarios. Check out [web API technical vision](/architecture/technical-vision/web-api/) for more details.
+6.4.2.2. Service contracts SHOULD NOT be used for read scenarios on the storefront. Instead, GraphQL SHOULD be used for storefront scenarios. Check out [web API technical vision](/architecture/technical-vision/web-api.md) for more details.
 
 6.4.2.3. Each service interface SHOULD declare a single public method. An interface name SHOULD reflect the task or action to be performed. For example, `Magento\InventoryApi\Api\StockSourceLinksDeleteInterface::execute(array $links)`. The only exception is a Repository API, which MAY be added for convenience and MUST be limited to singular CRUD operations and `getList($searchCriteria)`.
 
@@ -771,7 +771,7 @@ You need to read configuration from different sources (like database or filesyst
 
 #### 11.3.3. Elements
 
-11.3.3.1. All element selectors MUST follow these [best practices](https://developer.adobe.com/commerce/testing/functional-testing-framework/test-writing/best-practices/).
+11.3.3.1. All element selectors MUST follow these [best practices](https://developer.adobe.com/commerce/testing/functional-testing-framework/test-writing/best-practices).
 
 11.3.3.2. The element `name` MUST be unique within the `<section>`.
 
@@ -825,7 +825,7 @@ You need to read configuration from different sources (like database or filesyst
 
 ## 13. Command line interface (CLI)
 
-13.1. [CLI command naming guidelines](/development/cli-commands/naming-guidelines/) MUST be followed.
+13.1. [CLI command naming guidelines](/development/cli-commands/naming-guidelines.md) MUST be followed.
 
 13.2. A CLI command MUST be created for any functionality intended to be used by a system integrator/system administrator/developer (for example: change indexer mode, generate a configuration file, etc.).
 
@@ -894,7 +894,7 @@ class SampleEventObserverThatModifiesInputs implements ObserverInterface
 
 15.3.1. Sanitize input; escape output.
 
-15.3.2. Follow [XSS prevention strategies guidelines](/development/security/cross-site-scripting/) for escaping output.
+15.3.2. Follow [XSS prevention strategies guidelines](/development/security/cross-site-scripting.md) for escaping output.
 
 15.3.3. Incoming data should be casted to the expected type. String data should be validated/sanitized.
 

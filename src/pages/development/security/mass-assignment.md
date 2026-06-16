@@ -175,7 +175,7 @@ Example:
             <resource ref="self"/>
         </resources>
         <data>
-            <!-- Enforcing UpdatedUserDataInterface::getId() to always equal to current user's ID -->
+            \<!-- Enforcing UpdatedUserDataInterface::getId() to always equal to current user's ID --\>
             <parameter name="user.id" force="true">%user_id%</parameter>
         </data>
     </route>

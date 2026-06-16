@@ -16,7 +16,7 @@ As a developer, you should avoid using features that introduce vulnerabilities i
 The following is a list of PHP functions that are known to be vulnerable and exploitable.
 Avoid using these functions in your code.
 
-*  [`eval`](https://www.php.net/manual/en/function.eval.php) - Using `eval` is considered bad practice because of its ability to [execute arbitrary PHP code](https://cheatsheetseries.owasp.org/cheatsheets/PHP_Configuration_Cheat_Sheet.html#Code_Injection).
+*  [`eval`](https://www.php.net/manual/en/function.eval.php) - Using `eval` is considered bad practice because of its ability to [execute arbitrary PHP code](https://cheatsheetseries.owasp.org/cheatsheets/Injection_Prevention_Cheat_Sheet.html#scripting-languages).
 *  [`serialize`](https://www.php.net/manual/en/function.serialize.php)/[`unserialize`](https://www.php.net/manual/en/function.unserialize.php) - Attackers can create an exploit for these functions by passing a string with a serialized arbitrary object to the `unserialize` function to [run arbitrary code](https://owasp.org/www-community/vulnerabilities/PHP_Object_Injection).
 *  [`md5`](https://www.php.net/manual/en/function.md5.php) - The algorithm for this function is known to have [cryptographic weaknesses](https://wiki.owasp.org/index.php/Guide_to_Cryptography#Hashes).
    You should never use this function for hashing passwords or any other sensitive data.

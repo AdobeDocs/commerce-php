@@ -3,10 +3,10 @@ title: CatalogInventoryGraphQl
 description: N/A
 ---
 
-# CatalogInventoryGraphQl
+# Magento_CatalogInventoryGraphQl module
 
-**CatalogInventoryGraphQl** provides type information for the GraphQl module
+This module provides type information for the GraphQl module
 to generate inventory stock fields for product information endpoints.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.5.
+The version of this module is 100.4.6.

@@ -3,8 +3,10 @@ title: GraphQL Application Server | Commerce PHP Extensions
 description: Learn about GraphQL Application Server architecture and how to ensure compatibility with custom extensions.
 keywords:
   - Extensions
-edition: pass
 ---
+
+<Edition slots="text" backgroundColor="blue"/>
+[PaaS only](https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions)
 
 <InlineAlert variant="info" slots="text" />
 
@@ -14,7 +16,7 @@ Available in [2.4.7](https://experienceleague.adobe.com/en/docs/commerce-operati
 
 The [GraphQL Application Server](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/concepts/application-server) enables Adobe Commerce to maintain state among GraphQL API requests. GraphQL Application Server, which is built on the Open Swoole extension, operates as a process with worker threads that handle request processing. By preserving a bootstrapped application state among GraphQL API requests, GraphQL Application Server enhances request handling and overall product performance. As a result, GraphQL request response time can be reduced by up to 30%.
 
-GraphQL Application Server is available for Adobe Commerce only. It is not available for Magento Open Source. You must [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) to enable GraphQL Application Server on Pro projects.
+GraphQL Application Server is available for Adobe Commerce only. It is not available for Magento Open Source. You must [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) to enable GraphQL Application Server on Pro projects.
 
 ## Challenges to consider
 
@@ -80,7 +82,7 @@ In the `state-filter-list.php` file, there are three different types of filterin
 - The `parents` section first compares the service object to the specified class or interface using the `instanceof` operator. If it returns true, then those filters are applied.
 - The `services` section checks for direct matches of the `serviceName`. The `serviceName` can either be the class name, or virtual type of preferences (as defined in `di.xml` files) before applying the properties filter.
 
-If you are working on a failure and it does not look like it is safe to add to the skip or filter list, then consider if you can refactor the class in a [backwards-compatible](https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy/) way to use Factories of the service classes that have mutable state. If it is the class itself that has mutable state, then try to rewrite it in a way to avoid mutable state. If the mutable state is required for performance reasons, then implement `ResetAfterRequestInterface` and use `_resetState()` to reset the object back to its initial constructed state.
+If you are working on a failure and it does not look like it is safe to add to the skip or filter list, then consider if you can refactor the class in a [backwards-compatible](https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy) way to use Factories of the service classes that have mutable state. If it is the class itself that has mutable state, then try to rewrite it in a way to avoid mutable state. If the mutable state is required for performance reasons, then implement `ResetAfterRequestInterface` and use `_resetState()` to reset the object back to its initial constructed state.
 
 If the class is failing because of a `Typed property $x must not be accessed before initialization` error, then the property is not initialized by the constructor. This is a form of temporal coupling, because the object cannot be used after it is initially constructed. This happens even if the property is private because the Collector gets the data from the properties using PHP's reflection feature. In this case, refactor the class to avoid temporal coupling, and also to avoid mutable state. If that does not work, the property can change its type to a nullable type and be initialized to null. If the property is an array, it may be okay to initialize the property as an empty array.
 

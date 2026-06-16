@@ -22,7 +22,7 @@ The Magento Coding Standard provides a set of rules that covers the following:
 *  Improper exception handling
 *  Raw SQL queries and many other general PHP and Adobe Commerce and Magento Open Source-specific code issues.
 
-### Coding standard compliance
+## Coding standard compliance
 
 Developers should consistently use [PHP_CodeSniffer](https://pear.php.net/manual/en/package.php.php-codesniffer.faq.php) to enhance the readability of the code and ensure that it meets the Magento Coding Standard. [PHP_CodeSniffer](https://pear.php.net/manual/en/package.php.php-codesniffer.faq.php) is the most popular tool in use throughout the PHP development community.
 It provides the mechanism of checking code compliance with specific coding standard.
@@ -31,7 +31,7 @@ The set of rules is located in [`ruleset.xml`](https://github.com/magento/magent
 
 Learn more about using rule sets with PHP CodeSniffer [ruleset](https://pear.php.net/manual/en/package.php.php-codesniffer.annotated-ruleset.php)
 
-### Literal Namespace Rule
+## Literal Namespace Rule
 
 For class name resolution, use the [`::class`](https://www.php.net/manual/en/language.oop5.basic.php#language.oop5.basic.class.class) keyword instead of a string literal for every class name reference outside of that class.
 This includes references to:

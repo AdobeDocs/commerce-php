@@ -7,9 +7,7 @@ keywords:
   - Payments
 ---
 
-import Docs from '/src/_includes/braintree-note.md'
-
-<Docs />
+<Fragment src="/includes/braintree-note.md"/>
 
 # Enable vault
 
@@ -37,20 +35,20 @@ Example ([Magento/Braintree/view/frontend/web/template/payment/form.html](https:
 <form id="co-transparent-form-braintree" class="form" data-bind="" method="post" action="#" novalidate="novalidate">
     <fieldset data-bind="attr: {class: 'fieldset payment items ccard' + getCode(), id: 'payment_form_' + getCode()}">
         <legend class="legend">
-            <span><!-- ko i18n: 'Credit Card Information'--><!-- /ko --></span>
+            <span>\<!-- ko i18n: 'Credit Card Information'--\>\<!-- /ko --\></span>
         </legend>
         ...
-        <!-- ko if: (isVaultEnabled())-->
+        \<!-- ko if: (isVaultEnabled())--\>
         <div class="field choice">
             <input type="checkbox"
                 name="vault[is_enabled]"
                 class="checkbox"
                 data-bind="attr: {'id': getCode() + '_enable_vault'}, checked: vaultEnabler.isActivePaymentTokenEnabler"/>
             <label class="label" data-bind="attr: {'for': getCode() + '_enable_vault'}">
-                <span><!-- ko i18n: 'Save for later use.'--><!-- /ko --></span>
+                <span>\<!-- ko i18n: 'Save for later use.'--\>\<!-- /ko --\></span>
             </label>
         </div>
-        <!-- /ko -->
+        \<!-- /ko --\>
         ...
     </fieldset>
     ...
