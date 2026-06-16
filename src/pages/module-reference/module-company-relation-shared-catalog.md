@@ -30,4 +30,4 @@ For more information about layouts, see the [Layout documentation](https://devel
 For more information, see [UI Listing/Grid Component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/listing-grid).
 
 <InlineAlert slots="text" />
-The version of this module is 1.5.1.
+The version of this module is 1.5.2.

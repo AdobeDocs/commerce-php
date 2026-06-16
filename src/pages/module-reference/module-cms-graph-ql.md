@@ -3,10 +3,9 @@ title: CmsGraphQl
 description: N/A
 ---
 
-# CmsGraphQl
+# Magento_CmsGraphQl module
 
-**CmsGraphQl** provides type information for the GraphQl module
-to generate CMS fields for cms information endpoints.
+This module provides type information for the GraphQl module to generate CMS fields for CMS information endpoints.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.5.
+The version of this module is 100.4.6.

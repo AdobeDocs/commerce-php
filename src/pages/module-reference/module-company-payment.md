@@ -33,11 +33,9 @@ For more information about layouts, see the [Layout documentation](https://devel
 
 The following directory contains extensible UI components:
 
-\<!-- Should the description for the following directory be "company profile" or "company payment methods"? --\>
-
 - `Magento\CompanyPayment\view\frontend\ui_component` - company form
 
 For more information, see [UI Form Component](https://developer.adobe.com/commerce/frontend-core/ui-components/components/form).
 
 <InlineAlert slots="text" />
-The version of this module is 100.5.1.
+The version of this module is 100.5.2.

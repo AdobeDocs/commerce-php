@@ -3,14 +3,13 @@ title: ResourceConnections
 description: N/A
 ---
 
-Magento\ResourceConnections module adds a mechanism to segregate database connections between master and slave
-database servers based on the request type.
+# Magento_ResourceConnections module
 
-For each master database connection (except the indexer connection) that are configured in db/connection section
-of app/etc/env.php you can add one slave connection that can be configured in db/slave_connection.
-Configuration format is the same as db/connection. Slave connection name must be the same as associated master
-connection name. To enable slave connections for specific resources create a slave connection configuration
-by adding slave_connection node as below:
+This module adds a mechanism to segregate database connections between master and slave database servers based on the request type.
+
+For each master database connection (except the indexer connection) that are configured in `db/connection` section of `app/etc/env.php` you can add one slave connection that can be configured in `db/slave_connection`.
+
+Configuration format is the same as `db/connection`. Slave connection name must be the same as associated master connection name. To enable slave connections for specific resources create a slave connection configuration by adding `slave_connection` node as below:
 
 ```php
 <?php
@@ -45,11 +44,11 @@ return array (
     //.......
 ```
 
-To add slave connection for resources other than 'default' repeat the step and add to db/slave_connection
-new element with same name and slave configuration for specified resource.
-Config structure retains backward compatibility if module is turned off.
+To add a slave connection for resources other than `default`, repeat the step and add to `db/slave_connection` a new element with the same name and slave configuration for the specified resource.
 
-WARNING: 'indexer' connection is not designed to have slave configuration.
+The config structure retains backward compatibility if the module is turned off.
+
+**WARNING**: `indexer` connection is not designed to have slave configuration.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.5.
+The version of this module is 100.4.6.

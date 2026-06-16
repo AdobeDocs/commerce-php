@@ -3,10 +3,9 @@ title: StagingGraphQl
 description: N/A
 ---
 
-# StagingGraphQl
+# Magento_StagingGraphQl module
 
-**StagingGraphQl** provides type information for the GraphQl module
-to stage and preview entities.
+This module provides type information for the GraphQl module to stage and preview entities.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.5.
+The version of this module is 100.4.6.

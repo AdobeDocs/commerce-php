@@ -102,4 +102,4 @@ http.createServer(options, function (req, res) {
 ```
 
 <InlineAlert slots="text" />
-The version of this module is 2.3.0.
+The version of this module is 3.4.1.

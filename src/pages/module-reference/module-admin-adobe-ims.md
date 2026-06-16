@@ -222,8 +222,11 @@ Certificate value is cached.
 This authentication mechanism enabled for REST and SOAP web API areas.
 
 Examples, how developers can test functionality:
-curl -X GET "\{domain}/rest/V1/customers/2" -H "Authorization: Bearer AddAdobeImsAccessToken"
-curl -X GET "\{domain}/rest/V1/products/24-MB01" -H "Authorization: Bearer AddAdobeImsAccessToken"
+
+```bash
+curl -X GET "{domain}/rest/V1/customers/2" -H "Authorization: Bearer AddAdobeImsAccessToken"
+curl -X GET "{domain}/rest/V1/products/24-MB01" -H "Authorization: Bearer AddAdobeImsAccessToken"
+```
 
 ### Two-factor authentication
 
@@ -250,4 +253,4 @@ The reauth_token will be used to call the AdobeIms validateToken Endpoint.
 When this call is successful, the form will be submitted, otherwise we update the Message of the thrown `AuthenticationException` to return a matching error message, done by the `Magento/AdminAdobeIms/Plugin/PerformIdentityCheckMessagePlugin.php` Plugin.
 
 <InlineAlert slots="text" />
-The version of this module is 100.5.3.
+The version of this module is 100.5.4.

@@ -27,11 +27,11 @@ To view changes in functional tests, refer to [Backward incompatible changes in 
 
 Patch releases are primarily focused on delivering security and quality enhancements on a regular basis to help you keep your sites performing at their peak. On an exceptional basis, breaking changes or additional patches or hotfixes may be released to address security or compliance issues and high-impact quality issues. On the module level, these are mostly PATCH-level changes; sometimes MINOR-level changes. See [Release policy](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/versioning-policy).
 
-## 2.4.8 - 2.4.9-beta1
+## 2.4.8 - 2.4.9
 
-Adobe Commerce v2.4.9-beta1 includes the [B2B extension] v1.5.3-beta1.
+Adobe Commerce v2.4.9 includes the [B2B extension] v1.5.3.
 
-<Fragment src="/includes/backward-incompatible-changes/commerce/2-4-8-2-4-9-beta1.md"/>
+<Fragment src="/includes/backward-incompatible-changes/commerce/2-4-8-to-2-4-9.md"/>
 
 ## 2.4.7 - 2.4.8
 
@@ -63,5 +63,4 @@ Adobe Commerce v2.4.4 includes the [B2B extension] v1.3.3.
 
 <Fragment src="/includes/backward-incompatible-changes/commerce/2-4-3-2-4-4.md"/>
 
-\<!-- Links --\>
 [B2B extension]: https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/reference/backward-incompatible-changes "B2B extension"

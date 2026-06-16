@@ -263,7 +263,7 @@ The Adobe Commerce and Magento Open Source 2.1 `communication.xml` file has not 
 
 To upgrade from Adobe Commerce or Magento Open Source 2.0, you must create the following files in the `<module>/etc` directory for each module that will use the message queue framework.
 
-- `queue_consumer.xml` - Defines the relationship between an existing queue and its consumer.
+- `queue_consumer.xml`—Defines the relationship between an existing queue and its consumer.
 - `queue_topology.xml`—Defines the message routing rules.
 - `queue_publisher.xml`—Defines the relationship between a topic and its publisher.
 

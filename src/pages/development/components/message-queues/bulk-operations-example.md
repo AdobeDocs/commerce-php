@@ -329,7 +329,7 @@ The `queue_consumer.xml` file defines the relationship between a queue and its c
 </config>
 ```
 
-The connection type (AMQP or STOMP) is determined automatically from the `env.php` configuration.
+The connection type (AMQP or STOMP) is determined automatically from your `env.php` configuration.
 
 ### queue_publisher.xml
 
@@ -345,6 +345,8 @@ The `queue_publisher.xml` file defines the exchange where a topic is published.
 ```
 
 Alternatively, you can explicitly specify the connection and exchange:
+
+**For RabbitMQ (AMQP):**
 
 ```xml
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/publisher.xsd">
@@ -378,6 +380,8 @@ The `queue_topology.xml` file defines message routing rules and declares queues 
 </config>
 ```
 
+The connection type is automatically determined from your `env.php` configuration.
+
 <InlineAlert variant="info" slots="text"/>
 
-Message queue connections are resolved dynamically from `env.php`. When AMQP or STOMP is configured, the corresponding connection is applied; otherwise, the database connection is used. You can omit connection declarations from `queue_consumer.xml`, `queue_publisher.xml`, and `queue_topology.xml` when using AMQP or STOMP. ActiveMQ Artemis (STOMP) was introduced in Adobe Commerce 2.4.5 and uses ANYCAST addressing mode for point-to-point message delivery and load balancing across multiple consumers. See [Message queue configuration files](configuration.md).
+Message queue connections are resolved dynamically from `env.php`. When AMQP or STOMP is configured, the corresponding connection is applied; otherwise, the database connection is used. You can omit connection declarations from `queue_consumer.xml`, `queue_publisher.xml`, and `queue_topology.xml` when using AMQP or STOMP. ActiveMQ Artemis (STOMP) support was introduced in Adobe Commerce 2.4.5. For STOMP connections, use ANYCAST addressing mode for point-to-point message delivery and load balancing across multiple consumers. See [Message queue configuration files](configuration.md).

@@ -3,10 +3,9 @@ title: SalesGraphQl
 description: N/A
 ---
 
-# SalesGraphQl
+# Magento_SalesGraphQl module
 
-**SalesGraphQl** provides type and resolver information for the GraphQl module
-to generate sales orders information.
+This module provides type and resolver information for the GraphQL module to generate sales orders information.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.8.
+The version of this module is 100.4.9.

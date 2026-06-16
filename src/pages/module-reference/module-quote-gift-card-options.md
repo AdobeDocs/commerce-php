@@ -3,9 +3,9 @@ title: QuoteGiftCardOptions
 description: Magento module provides data provider for creating buy request for gift card products
 ---
 
-# QuoteGiftCardOptions
+# Magento_QuoteGiftCardOptions module
 
-**QuoteGiftCardOptions** defines the data provider that creates buy requests for gift card products.
+This module defines the data provider that creates buy requests for gift card products.
 
 <InlineAlert slots="text" />
-The version of this module is 100.4.5.
+The version of this module is 100.4.6.

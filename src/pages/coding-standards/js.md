@@ -361,4 +361,33 @@ var foo = 'bar',
 
 There is a set of custom Eslint rules to ensure code compatibility with the latest versions of third-party libraries.
 
-These custom rules are included using the `rulePaths` setting in the [Eslint Grunt configuration](https://github.com/magento/magento2/blob/2.4/dev/tools/grunt/configs/eslint.json).
+In previous versions of ESLint, these custom rules were included using the `rulePaths` setting in the [ESLint Grunt configuration](https://github.com/magento/magento2/blob/2.4/dev/tools/grunt/configs/eslint.json).
+
+However, since ESLint 9 has deprecated `rulePaths`, you must update the configuration accordingly.
+
+The following example shows the necessary changes to implement custom Eslint rules in the `dev/tools/grunt/configs/eslint.json` file.
+
+```json
+{
+  "file": {
+    "options": {
+      "overrideConfigFile": "vendor/magento/magento-coding-standard/eslint/eslint.config.mjs",
+      "useEslintrc": false
+    }
+  },
+  "test": {
+    "options": {
+      "overrideConfigFile": "vendor/magento/magento-coding-standard/eslint/eslint.config.mjs",
+      "outputFile": "dev/tests/static/eslint-error-report.xml",
+      "format": "junit",
+      "quiet": true
+    }
+  }
+}
+```
+
+### Applying custom rules
+
+To add or modify custom rules, update the `eslint.config.mjs` file in the `magento-coding-standard` repository.
+In the latest version of ESLint, the configuration has transitioned from using the legacy `.eslintrc` settings to the new flat configuration.
+Refer to the [migration guide](https://eslint.org/docs/latest/use/configure/migration-guide) in the ESlint documentation for detailed instructions on migrating to the new format.
