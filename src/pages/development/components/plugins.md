@@ -231,11 +231,6 @@ If an argument is optional in the observed method, then the after method should 
 
 The application runs the code in around methods before and after their observed methods. Using these methods allow you to override an observed method. Around methods must have the same name as the observed method with 'around' as the prefix.
 
-<InlineAlert variant="warning" slots="text"/>
-
-Avoid using around method plugins when they are not required because they increase stack traces and affect performance.
-The only use case for around method plugins is when the execution of all further plugins and original methods need termination.
-Use after method plugins if you require arguments for replacing or altering function results.
 
 Before the list of the original method's arguments, around methods receive a `callable` that will allow a call to the next method in the chain. When your code executes the `callable`, the application calls the next plugin or the observed function.
 
