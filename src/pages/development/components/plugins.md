@@ -13,12 +13,22 @@ Extensions that wish to intercept and change the behavior of a *public method* c
 
 This interception approach reduces conflicts among extensions that change the behavior of the same class or method. Your `Plugin` class implementation changes the behavior of a class function, but it does not change the class itself. Adobe Commerce and Magento Open Source call these interceptors sequentially according to a configured sort order, so they do not conflict with one another.
 
+## Benefits
+
+For a module developer as you, Magento 2 Interception plugin allows:
+
+* Forwarding any method call that is used on an object manager controlled object and taken programmatic action
+* Modifying the return value of any method call that is used on an object manager controlled object
+* Modifying the arguments of any method call that is used on an object manager controlled object
+* Proceeding similarly when other modules are in progress of the same method in the same or predictable way.
+
 ## Limitations
 
 Plugins can not be used on following:
 
 *  Final methods
 *  Final classes
+*  Any class that contains at least one final public method
 *  Non-public methods
 *  Class methods (such as static methods)
 *  `__construct` and `__destruct`
