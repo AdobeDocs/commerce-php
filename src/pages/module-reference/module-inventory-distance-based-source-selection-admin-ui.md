@@ -8,7 +8,7 @@ description: N/A
 The `InventoryDistanceBasedSourceSelectionAdminUi` module extends Magento's admin UI with source selection based on distance functionality.
 
 This module is part of the new inventory infrastructure. The
-[Inventory Management overview](https://developer.adobe.com/commerce/webapi/rest/inventory/index.html)
+[Inventory Management overview](https://developer.adobe.com/commerce/webapi/rest/inventory/)
 describes the MSI (Multi-Source Inventory) project in more detail.
 
 ## Installation details
