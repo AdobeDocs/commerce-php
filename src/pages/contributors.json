@@ -1,7 +1,7 @@
 {
-  "total": 330,
+  "total": 396,
   "offset": 0,
-  "limit": 330,
+  "limit": 396,
   "data": [
     {
       "page": "/",
@@ -106,10 +106,11 @@
       "page": "/architecture/technical-vision/web-api",
       "avatars": [
         "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
         "https://avatars.githubusercontent.com/u/85212799?v=4",
         "https://avatars.githubusercontent.com/u/13662379?v=4"
       ],
-      "lastUpdated": "10/30/2024"
+      "lastUpdated": "9/22/2026"
     },
     {
       "page": "/best-practices/admin/faq",
@@ -2006,6 +2007,666 @@
         "https://avatars.githubusercontent.com/u/48562208?v=4"
       ],
       "lastUpdated": "4/24/2025"
+    },
+    {
+      "page": "/module-reference/module-inventory",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-admin-ui",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-api",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-bundle-import-export",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-bundle-product",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-bundle-product-admin-ui",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-bundle-product-indexer",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-cache",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-catalog",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-catalog-admin-ui",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-catalog-api",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-catalog-frontend-ui",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-catalog-search",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-configurable-product",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-configurable-product-admin-ui",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-configurable-product-frontend-ui",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-configurable-product-indexer",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-configuration",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-configuration-api",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-distance-based-source-selection",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-distance-based-source-selection-admin-ui",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-distance-based-source-selection-api",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-elasticsearch",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-export-stock",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-export-stock-api",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-graph-ql",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-grouped-product",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-grouped-product-admin-ui",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-grouped-product-indexer",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-import-export",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-in-store-pickup",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-in-store-pickup-admin-ui",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-in-store-pickup-api",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-in-store-pickup-frontend",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-in-store-pickup-graph-ql",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-in-store-pickup-multishipping",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-in-store-pickup-quote",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-in-store-pickup-quote-graph-ql",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-in-store-pickup-sales",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-in-store-pickup-sales-admin-ui",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-in-store-pickup-sales-api",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-in-store-pickup-shipping",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-in-store-pickup-shipping-admin-ui",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-in-store-pickup-shipping-api",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-in-store-pickup-webapi-extension",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-indexer",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-low-quantity-notification",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-low-quantity-notification-admin-ui",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-low-quantity-notification-api",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-multi-dimensional-indexer-api",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-product-alert",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-quote-graph-ql",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-reservation-cli",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-reservations",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-reservations-api",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-sales",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-sales-admin-ui",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-sales-api",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-sales-frontend-ui",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-setup-fixture-generator",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-shipping",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-shipping-admin-ui",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-source-deduction-api",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-source-selection",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-source-selection-api",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
+    },
+    {
+      "page": "/module-reference/module-inventory-swatches-frontend-ui",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/48562208?v=4",
+        "https://avatars.githubusercontent.com/u/48683871?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "9/22/2026"
     },
     {
       "page": "/module-reference/module-layered-navigation",
