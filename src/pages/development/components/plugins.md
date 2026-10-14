@@ -46,7 +46,7 @@ You must specify these elements:
 
 The following elements are optional:
 
-*  `plugin sortOrder`. Plugins that call the same method run them using this order.
+*  `plugin sortOrder`. Plugins that call the same method run them using this order. The default value is `PHP_INT_MIN` predefined PHP constant.
 *  `plugin disabled`. To disable a plugin, set this element to `true`. The default value is `false`.
 
 ### Defining a plugin
