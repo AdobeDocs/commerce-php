@@ -24,7 +24,7 @@ Both shipping address and billing address forms are [generated dynamically](add-
 
 The following code snippet enumerates sample logic for adding a field named `Custom Attribute` to the shipping address form:
 
-```php?start_inline=1
+```php
 $customAttributeCode = 'custom_field';
 $customField = [
     'component' => 'Magento_Ui/js/form/element/abstract',
