@@ -134,9 +134,7 @@ This tells The application to invalidate all sections. But if you have declared 
 </config>
 ```
 
-<InlineAlert variant="warning" slots="text"/>
-
-Use only HTTP POST or PUT methods to change state (e.g., adding to a shopping cart, adding to a wishlist, etc.) and do not expect to see caching on these methods. Using GET or HEAD methods might trigger caching and prevent updates to private content. For more information about caching, see [RFC-2616 section 13](https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html).
+<Fragment src="/_includes/cache-state-changing-requests.md"/>
 
 Other examples:
 
