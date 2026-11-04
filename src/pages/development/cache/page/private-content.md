@@ -162,4 +162,4 @@ Versioning works as follows:
 
 The customer data invalidation mechanism no longer relies on the `private_content_version`.
 
-<Fragment src="/includes/page-cache-checklist.md"/>
+<Fragment src="/_includes/page-cache-checklist.md"/>
