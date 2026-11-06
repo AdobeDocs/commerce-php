@@ -1,17 +1,235 @@
 {
-  "total": 400,
+  "total": 431,
   "offset": 0,
-  "limit": 400,
+  "limit": 431,
   "data": [
     {
       "page": "/",
       "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/6391769?v=4",
         "https://avatars.githubusercontent.com/u/11652541?v=4",
         "https://avatars.githubusercontent.com/u/57922?v=4"
       ],
-      "lastUpdated": "9/8/2023"
+      "lastUpdated": "11/4/2026"
+    },
+    {
+      "page": "/_includes/backward-incompatible-changes/commerce/2-3-0-2-4-0",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4"
+      ],
+      "lastUpdated": "11/4/2026"
+    },
+    {
+      "page": "/_includes/backward-incompatible-changes/commerce/2-4-0-2-4-1",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4"
+      ],
+      "lastUpdated": "11/4/2026"
+    },
+    {
+      "page": "/_includes/backward-incompatible-changes/commerce/2-4-1-2-4-2",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4"
+      ],
+      "lastUpdated": "11/4/2026"
+    },
+    {
+      "page": "/_includes/backward-incompatible-changes/commerce/2-4-2-2-4-3",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4"
+      ],
+      "lastUpdated": "11/4/2026"
+    },
+    {
+      "page": "/_includes/backward-incompatible-changes/commerce/2-4-3-2-4-3-p1",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4"
+      ],
+      "lastUpdated": "11/4/2026"
+    },
+    {
+      "page": "/_includes/backward-incompatible-changes/commerce/2-4-3-2-4-4",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4"
+      ],
+      "lastUpdated": "11/4/2026"
+    },
+    {
+      "page": "/_includes/backward-incompatible-changes/commerce/2-4-4-2-4-5",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4"
+      ],
+      "lastUpdated": "11/4/2026"
+    },
+    {
+      "page": "/_includes/backward-incompatible-changes/commerce/2-4-5-2-4-6",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4"
+      ],
+      "lastUpdated": "11/4/2026"
+    },
+    {
+      "page": "/_includes/backward-incompatible-changes/commerce/2-4-6-2-4-7",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4"
+      ],
+      "lastUpdated": "11/4/2026"
+    },
+    {
+      "page": "/_includes/backward-incompatible-changes/commerce/2-4-7-2-4-8",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4"
+      ],
+      "lastUpdated": "11/4/2026"
+    },
+    {
+      "page": "/_includes/backward-incompatible-changes/commerce/2-4-8-to-2-4-9",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4"
+      ],
+      "lastUpdated": "11/4/2026"
+    },
+    {
+      "page": "/_includes/backward-incompatible-changes/open-source/2-3-0-2-4-0",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4"
+      ],
+      "lastUpdated": "11/4/2026"
+    },
+    {
+      "page": "/_includes/backward-incompatible-changes/open-source/2-4-0-2-4-1",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4"
+      ],
+      "lastUpdated": "11/4/2026"
+    },
+    {
+      "page": "/_includes/backward-incompatible-changes/open-source/2-4-1-2-4-2",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4"
+      ],
+      "lastUpdated": "11/4/2026"
+    },
+    {
+      "page": "/_includes/backward-incompatible-changes/open-source/2-4-2-2-4-3",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4"
+      ],
+      "lastUpdated": "11/4/2026"
+    },
+    {
+      "page": "/_includes/backward-incompatible-changes/open-source/2-4-3-2-4-3-p1",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4"
+      ],
+      "lastUpdated": "11/4/2026"
+    },
+    {
+      "page": "/_includes/backward-incompatible-changes/open-source/2-4-3-2-4-4",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4"
+      ],
+      "lastUpdated": "11/4/2026"
+    },
+    {
+      "page": "/_includes/backward-incompatible-changes/open-source/2-4-4-2-4-5",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4"
+      ],
+      "lastUpdated": "11/4/2026"
+    },
+    {
+      "page": "/_includes/backward-incompatible-changes/open-source/2-4-5-2-4-6",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4"
+      ],
+      "lastUpdated": "11/4/2026"
+    },
+    {
+      "page": "/_includes/backward-incompatible-changes/open-source/2-4-6-2-4-7",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4"
+      ],
+      "lastUpdated": "11/4/2026"
+    },
+    {
+      "page": "/_includes/backward-incompatible-changes/open-source/2-4-7-2-4-8",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4"
+      ],
+      "lastUpdated": "11/4/2026"
+    },
+    {
+      "page": "/_includes/backward-incompatible-changes/open-source/2-4-8-to-2-4-9",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4"
+      ],
+      "lastUpdated": "11/4/2026"
+    },
+    {
+      "page": "/_includes/braintree-note",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4",
+        "https://avatars.githubusercontent.com/u/98363870?v=4"
+      ],
+      "lastUpdated": "11/4/2026"
+    },
+    {
+      "page": "/_includes/cache-state-changing-requests",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4"
+      ],
+      "lastUpdated": "11/4/2026"
+    },
+    {
+      "page": "/_includes/component-root",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "11/4/2026"
+    },
+    {
+      "page": "/_includes/composer-types",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "11/4/2026"
+    },
+    {
+      "page": "/_includes/notes/beta",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4"
+      ],
+      "lastUpdated": "11/4/2026"
+    },
+    {
+      "page": "/_includes/page-cache-checklist",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "11/4/2026"
+    },
+    {
+      "page": "/_includes/templated/whats-new",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4"
+      ],
+      "lastUpdated": "11/4/2026"
+    },
+    {
+      "page": "/_includes/web-api",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/architecture/",
@@ -111,7 +329,7 @@
         "https://avatars.githubusercontent.com/u/85212799?v=4",
         "https://avatars.githubusercontent.com/u/13662379?v=4"
       ],
-      "lastUpdated": "9/22/2026"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/best-practices/admin/faq",
@@ -269,10 +487,11 @@
       "page": "/coding-standards/technical-guidelines",
       "avatars": [
         "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/11199531?v=4"
       ],
-      "lastUpdated": "4/24/2025"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/config",
@@ -328,27 +547,30 @@
     {
       "page": "/development/backward-incompatible-changes/magento-reference",
       "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4"
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4"
       ],
-      "lastUpdated": "3/10/2026"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/backward-incompatible-changes/reference",
       "avatars": [
         "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
         "https://avatars.githubusercontent.com/u/13662379?v=4"
       ],
-      "lastUpdated": "3/11/2026"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/build/component-file-structure",
       "avatars": [
         "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
         "https://avatars.githubusercontent.com/u/5817319?v=4",
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/1495258?v=4"
       ],
-      "lastUpdated": "4/24/2025"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/build/component-load-order",
@@ -398,11 +620,12 @@
     {
       "page": "/development/build/required-configuration-files",
       "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
         "https://avatars.githubusercontent.com/u/66505755?v=4",
-        "https://avatars.githubusercontent.com/u/13662379?v=4",
-        "https://avatars.githubusercontent.com/u/12731225?v=4"
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
       ],
-      "lastUpdated": "5/11/2024"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/build/schema-validation",
@@ -413,21 +636,30 @@
       "lastUpdated": "9/8/2023"
     },
     {
+      "page": "/development/cache/page/",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4"
+      ],
+      "lastUpdated": "11/4/2026"
+    },
+    {
       "page": "/development/cache/page/private-content",
       "avatars": [
         "https://avatars.githubusercontent.com/u/12731225?v=4",
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/66505755?v=4"
       ],
-      "lastUpdated": "4/24/2025"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/cache/page/public-content",
       "avatars": [
         "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
         "https://avatars.githubusercontent.com/u/13662379?v=4"
       ],
-      "lastUpdated": "11/22/2024"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/cache/partial/cache-type",
@@ -703,9 +935,11 @@
     {
       "page": "/development/components/web-api/",
       "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
         "https://avatars.githubusercontent.com/u/13662379?v=4"
       ],
-      "lastUpdated": "9/8/2023"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/components/web-api/custom-routes",
@@ -783,89 +1017,100 @@
       "page": "/development/package/component",
       "avatars": [
         "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
         "https://avatars.githubusercontent.com/u/13662379?v=4"
       ],
-      "lastUpdated": "4/24/2025"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/payments-integrations/",
       "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/98363870?v=4"
       ],
-      "lastUpdated": "9/8/2023"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/payments-integrations/base-integration/",
       "avatars": [
-        "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/98363870?v=4"
       ],
-      "lastUpdated": "9/8/2023"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/payments-integrations/base-integration/admin-integration",
       "avatars": [
         "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/98363870?v=4"
       ],
-      "lastUpdated": "4/24/2025"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/payments-integrations/base-integration/facade-configuration",
       "avatars": [
         "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/98363870?v=4"
       ],
-      "lastUpdated": "4/24/2025"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/payments-integrations/base-integration/formblocktype",
       "avatars": [
         "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/98363870?v=4"
       ],
-      "lastUpdated": "4/24/2025"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/payments-integrations/base-integration/get-payment-info",
       "avatars": [
         "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/98363870?v=4"
       ],
-      "lastUpdated": "4/24/2025"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/payments-integrations/base-integration/module-configuration",
       "avatars": [
-        "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/98363870?v=4"
       ],
-      "lastUpdated": "9/8/2023"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/payments-integrations/base-integration/payment-action",
       "avatars": [
-        "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/98363870?v=4"
       ],
-      "lastUpdated": "9/8/2023"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/payments-integrations/base-integration/payment-option-config",
       "avatars": [
-        "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/98363870?v=4"
       ],
-      "lastUpdated": "9/8/2023"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/payments-integrations/cardinal",
@@ -879,163 +1124,182 @@
     {
       "page": "/development/payments-integrations/payment-gateway/",
       "avatars": [
-        "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/98363870?v=4"
       ],
-      "lastUpdated": "9/8/2023"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/payments-integrations/payment-gateway/command-pool",
       "avatars": [
         "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/98363870?v=4"
       ],
-      "lastUpdated": "4/24/2025"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/payments-integrations/payment-gateway/error-code-mapper",
       "avatars": [
         "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/98363870?v=4"
       ],
-      "lastUpdated": "4/24/2025"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/payments-integrations/payment-gateway/gateway-client",
       "avatars": [
         "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/98363870?v=4"
       ],
-      "lastUpdated": "4/24/2025"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/payments-integrations/payment-gateway/gateway-command",
       "avatars": [
         "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/98363870?v=4"
       ],
-      "lastUpdated": "4/24/2025"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/payments-integrations/payment-gateway/payment-gateway-structure",
       "avatars": [
-        "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/98363870?v=4"
       ],
-      "lastUpdated": "9/8/2023"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/payments-integrations/payment-gateway/request-builder",
       "avatars": [
         "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/98363870?v=4"
       ],
-      "lastUpdated": "4/24/2025"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/payments-integrations/payment-gateway/response-handler",
       "avatars": [
         "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/98363870?v=4"
       ],
-      "lastUpdated": "4/24/2025"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/payments-integrations/payment-gateway/response-validator",
       "avatars": [
         "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/98363870?v=4"
       ],
-      "lastUpdated": "4/24/2025"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/payments-integrations/vault/",
       "avatars": [
-        "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/98363870?v=4"
       ],
-      "lastUpdated": "9/8/2023"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/payments-integrations/vault/admin-integration",
       "avatars": [
         "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/98363870?v=4"
       ],
-      "lastUpdated": "4/24/2025"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/payments-integrations/vault/customer-stored-payments",
       "avatars": [
         "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/98363870?v=4"
       ],
-      "lastUpdated": "4/24/2025"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/payments-integrations/vault/enabler",
       "avatars": [
         "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/98363870?v=4"
       ],
-      "lastUpdated": "4/24/2025"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/payments-integrations/vault/module-configuration",
       "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/98363870?v=4"
       ],
-      "lastUpdated": "9/8/2023"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/payments-integrations/vault/payment-token",
       "avatars": [
         "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/98363870?v=4"
       ],
-      "lastUpdated": "4/24/2025"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/payments-integrations/vault/token-ui-component-provider",
       "avatars": [
         "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/98363870?v=4"
       ],
-      "lastUpdated": "4/24/2025"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/payments-integrations/vault/vault-di",
       "avatars": [
         "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/98363870?v=4"
       ],
-      "lastUpdated": "4/24/2025"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/payments-integrations/vault/vault-payment-configuration",
       "avatars": [
-        "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/98363870?v=4"
       ],
-      "lastUpdated": "9/8/2023"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/prepare/",
@@ -1049,16 +1313,19 @@
       "page": "/development/prepare/component-file-structure",
       "avatars": [
         "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
         "https://avatars.githubusercontent.com/u/13662379?v=4"
       ],
-      "lastUpdated": "4/24/2025"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/prepare/component-types",
       "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4",
         "https://avatars.githubusercontent.com/u/13662379?v=4"
       ],
-      "lastUpdated": "9/8/2023"
+      "lastUpdated": "11/4/2026"
     },
     {
       "page": "/development/prepare/extension-lifecycle",
