@@ -53,4 +53,4 @@ Reverse proxies serve "public" or shared content to more than one user. However,
 
 <InlineAlert variant="info" slots="text"/>
 
-Only HTTP [GET](https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.3) and [HEAD](https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.4) requests are cacheable. For more information about caching, see [RFC-2616 section 13](https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html).
+HTTP defines [GET](https://www.rfc-editor.org/rfc/rfc9110.html#name-get), [HEAD](https://www.rfc-editor.org/rfc/rfc9110.html#name-head), and POST as cacheable methods, but most cache implementations support only GET and HEAD. Other methods can be cacheable when their definitions allow it. For details, see [RFC 9110, Section 9.2.3](https://www.rfc-editor.org/rfc/rfc9110.html#section-9.2.3) and [RFC 9111, Section 3](https://www.rfc-editor.org/rfc/rfc9111.html#section-3).

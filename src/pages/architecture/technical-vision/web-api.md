@@ -7,7 +7,7 @@ keywords:
 
 # Web API technical vision
 
-<Fragment src="/includes/web-api.md"/>
+<Fragment src="/_includes/web-api.md"/>
 
 See [more details](https://en.wikipedia.org/wiki/Web_API) about the importance of web APIs in modern web applications.
 

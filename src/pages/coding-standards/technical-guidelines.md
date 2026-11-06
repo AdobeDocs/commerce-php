@@ -616,7 +616,7 @@ You need to read configuration from different sources (like database or filesyst
 
 6.4.4.13. A service contract MUST NOT rely on the execution context (application area). The service implementation MUST NOT depend on the application state.
 
-6.4.4.14. A service contract SHOULD be an [idempotent method](https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.2).
+6.4.4.14. A service contract SHOULD be an [idempotent method](https://www.rfc-editor.org/rfc/rfc9110.html#section-9.2.2).
 
 ## 7. Configuration
 
@@ -688,7 +688,7 @@ You need to read configuration from different sources (like database or filesyst
 
 9.7. All state-modifying requests from a browser SHOULD be performed with AJAX requests.
 
-9.8. If an error occurs during request handling, the server MUST return an appropriate [HTTP status code](https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html) and an explanation of an error in the response body.
+9.8. If an error occurs during request handling, the server MUST return an appropriate [HTTP status code](https://www.rfc-editor.org/rfc/rfc9110.html#name-status-codes) and an explanation of an error in the response body.
 
 9.9. All headers MUST be respected.
 
@@ -950,7 +950,7 @@ class SampleEventObserverThatModifiesInputs implements ObserverInterface
 
 ## 16. Cron
 
-16.1. Cron job SHOULD be an [idempotent method](https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.2).
+16.1. Cron job SHOULD be an [idempotent method](https://www.rfc-editor.org/rfc/rfc9110.html#section-9.2.2).
 
 ## 17. Services
 
