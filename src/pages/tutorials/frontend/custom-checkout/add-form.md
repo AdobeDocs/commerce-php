@@ -268,7 +268,7 @@ A plugin can add custom fields definitions to layout at runtime. The format of t
 
 For example:
 
-```php?start_inline=1
+```php
 $textField = [
     'component' => 'Magento_Ui/js/form/element/abstract',
     'config' => [

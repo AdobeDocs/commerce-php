@@ -88,7 +88,7 @@ In order to get access to the system configuration, your payment method or a gro
 
 This is a sample `.php` file implementing `\Magento\Checkout\Model\ConfigProviderInterface`:
 
-```php?start_inline=1
+```php
 class MyCustomPaymentConfigProvider implements \Magento\Checkout\Model\ConfigProviderInterface
 {
 ...

@@ -7,7 +7,7 @@ keywords:
 
 # Web API technical vision
 
-<Fragment src="/includes/web-api.md"/>
+<Fragment src="/_includes/web-api.md"/>
 
 See [more details](https://en.wikipedia.org/wiki/Web_API) about the importance of web APIs in modern web applications.
 
@@ -36,7 +36,7 @@ Any [service contract](/development/components/service-contracts/index.md) can b
 
 If the target module is called `MyModule`, then create the resolvers and configuration files in a new module called `MyModuleGraphQl`.
 
-See the [GraphQL documentation](https://developer.adobe.com/commerce/webapi/graphql/index.html) for more information.
+See the [GraphQL documentation](https://developer.adobe.com/commerce/webapi/graphql/) for more information.
 
 ### Add a custom authentication mechanism
 

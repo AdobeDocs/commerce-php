@@ -1,0 +1,11 @@
+---
+repo: AdobeDocs/commerce-php
+url: https://developer.adobe.com/commerce/php
+exclude:
+  - Rakefile
+  - tmp
+  - Gemfile
+  - Gemfile.lock
+kramdown:
+  smart_quotes: ["apos", "apos", "quot", "quot"]
+  syntax_highlighter: none

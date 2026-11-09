@@ -51,7 +51,7 @@ As you develop your custom Source Selection Algorithm, keep these design conside
 
 Your SSA must implement `SourceSelectionInterface`, which is shown below:
 
-```php?start_inline=1
+```php
 /**
  * Returns source selection algorithm result for given Inventory Request
  * Current interface should be implemented in order to add own Source Selection Method
@@ -72,7 +72,7 @@ interface SourceSelectionInterface
 
 For example, the following example defines the `MinimalDeliveryCostAlgorithm` class:
 
-```php?start_inline=1
+```php
 namespace Some\Vendor\Namespace\SourceSelection;
 
 /**
@@ -95,7 +95,7 @@ class MinimalDeliveryCostAlgorithm implements SourceSelectionInterface
 
 Magento provides the [`InventoryRequestFromOrderFactory`](https://github.com/magento/inventory/blob/1.1.3/app/code/Magento/InventoryShipping/Model/InventoryRequestFromOrderFactory.php), which determines the sources to use to fulfill the order at the time a shipment is created.
 
-```php?start_inline=1
+```php
 class InventoryRequestFromOrderFactory
 {
       /**
@@ -134,7 +134,7 @@ class InventoryRequestFromOrderFactory
 
 To add an SSA at the time of checkout, introduce your own factory that produces an  `InventoryRequestInterface` based on a `Quote` object, outlined as follows:
 
-```php?start_inline=1
+```php
 class InventoryRequestFactory
 {
     /**

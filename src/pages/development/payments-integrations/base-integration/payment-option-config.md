@@ -8,7 +8,7 @@ keywords:
   - Payments
 ---
 
-<Fragment src="/includes/braintree-note.md"/>
+<Fragment src="/_includes/braintree-note.md"/>
 
 # Payment method configuration
 

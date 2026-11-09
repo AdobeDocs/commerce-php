@@ -8,7 +8,7 @@ description: N/A
 The `Inventory` module is part of the new inventory infrastructure. It replaces the legacy `CatalogInventory` module,
 providing new and expanded features and APIs for Inventory Management.
 
-The [Inventory Management overview](https://developer.adobe.com/commerce/webapi/rest/inventory/index.html)
+The [Inventory Management overview](https://developer.adobe.com/commerce/webapi/rest/inventory/)
 describes the Multi-Source Inventory (MSI) project in more detail.
 
 All Inventory Management modules follow the [Single Responsibility Principle](https://blog.cleancoder.com/uncle-bob/2014/05/08/SingleReponsibilityPrinciple.html),

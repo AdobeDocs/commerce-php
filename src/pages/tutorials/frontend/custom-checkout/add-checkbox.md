@@ -22,7 +22,7 @@ To implement such a checkbox, take the following steps:
 
 In your custom module directory, create the following new file: `<your_module_dir>/Block/Checkout/SomeProcessor.php`. In this file, add the following code sample. This is a plugin that adds a checkbox, makes the street labels trackable, and assigns dependencies to the checkbox.
 
-```php?start_inline=1
+```php
 namespace Magento\Checkout\Block\Checkout;
 
 class SomeProcessor

@@ -11,7 +11,7 @@ In this section, we go over the different file structures for component types. T
 
 ## Root directory location
 
-<Fragment src="/includes/component-root.md"/>
+<Fragment src="/_includes/component-root.md"/>
 
 ## Module file structure
 

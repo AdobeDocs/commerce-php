@@ -15,7 +15,7 @@ By default, all pages in Adobe Commerce and Magento Open Source are cacheable, b
 If you need to refresh data every second consider using a cache.
 Requesting content from the cache is faster than generating it for every request.
 
-Only `GET` and `HEAD` methods are cacheable.
+Adobe Commerce page caching supports only `GET` and `HEAD` requests. HTTP semantics allow responses to other methods, including `POST`, to be cacheable under specific conditions ([RFC 9110, Section 9.2.3](https://www.rfc-editor.org/rfc/rfc9110.html#section-9.2.3)).
 
 ### Disable or enable caching
 
@@ -211,8 +211,6 @@ class View extends AbstractProduct implements IdentityInterface
 
 Adobe Commerce and Magento Open Source use cache tags for link creation. The performance of cache storage has a direct dependency on the number of tags per cache record, so try to minimize the number of tags and use them only for entities that are used in production mode. In other words, don't use invalidation for actions related to store setup.
 
-<InlineAlert variant="warning" slots="text"/>
+<Fragment src="/_includes/cache-state-changing-requests.md"/>
 
-Use only HTTP POST or PUT methods to change state (e.g., adding to a shopping cart, adding to a wishlist, etc.) and don't expect to see caching on these methods. Using GET or HEAD methods might trigger caching and prevent updates to private content. For more information about caching, see [RFC-2616 section 13](https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html)
-
-<Fragment src="/includes/page-cache-checklist.md"/>
+<Fragment src="/_includes/page-cache-checklist.md"/>
